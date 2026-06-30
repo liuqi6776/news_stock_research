@@ -1,0 +1,11 @@
+{
+  "s1_pass": true,
+  "s2_pass": false,
+  "s3_pass": true,
+  "dos_nwt": 4.662693957368116,
+  "dos_coef": 0.09215881826667377,
+  "sample_size": 4538,
+  "n_stocks": 1157,
+  "n_dates": 79,
+  "dos_zero_pct": 58.109299250771265
+}
