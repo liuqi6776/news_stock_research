@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多板块受积极影响",
+  "sectors": [
+    {
+      "sector_name": "进出口贸易",
+      "impact": 4,
+      "analysis": "进博会规模扩大，跨境电商受益"
+    },
+    {
+      "sector_name": "医美",
+      "impact": 3,
+      "analysis": "重组胶原蛋白成为主流，市场规模增长"
+    },
+    {
+      "sector_name": "辅助生殖",
+      "impact": 3,
+      "analysis": "广西纳入医保，板块活跃"
+    },
+    {
+      "sector_name": "新疆自贸区",
+      "impact": 3,
+      "analysis": "自贸区方案印发，基建和金属板块受益"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 2,
+      "analysis": "长鑫增资，封测板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "跨境电商相关",
+      "stock_code": "",
+      "impact": 4,
+      "analysis": "跨境电商龙头公司涨停"
+    },
+    {
+      "stock_name": "重组胶原蛋白相关",
+      "stock_code": "",
+      "impact": 3,
+      "analysis": "相关公司股价上涨"
+    },
+    {
+      "stock_name": "辅助生殖相关",
+      "stock_code": "",
+      "impact": 3,
+      "analysis": "相关公司涨停"
+    },
+    {
+      "stock_name": "新疆自贸区相关",
+      "stock_code": "",
+      "impact": 3,
+      "analysis": "相关公司股价上涨"
+    },
+    {
+      "stock_name": "半导体相关",
+      "stock_code": "",
+      "impact": 2,
+      "analysis": "相关公司股价上涨"
+    }
+  ],
+  "article_id": "5d77cb76a9a74307b63a43f29ed7c66b",
+  "article_date": "2023-10-31",
+  "article_title": "2023.10.31市场逻辑精选"
+}

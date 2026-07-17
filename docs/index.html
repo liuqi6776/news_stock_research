@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quant Engine Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d1117;--sf:#161b22;--sf2:#1c2230;--bd:#30363d;--ac:#58a6ff;--gn:#3fb950;--rd:#f85149;--yw:#d29922;--tx:#e6edf3;--tx2:#8b949e;--r:10px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--tx);min-height:100vh}
+.hdr{background:linear-gradient(135deg,#0d1117,#1a2236);border-bottom:1px solid var(--bd);padding:16px 28px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:10px}
+.logo-ic{width:34px;height:34px;background:linear-gradient(135deg,#58a6ff,#3fb950);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px}
+.logo-t{font-size:15px;font-weight:700}
+.logo-s{font-size:10px;color:var(--tx2)}
+#badge{display:flex;align-items:center;gap:7px;padding:6px 14px;border-radius:20px;border:1px solid;font-size:11px;font-weight:700;letter-spacing:.8px;transition:all .4s}
+.disc{background:rgba(248,81,73,.1);border-color:rgba(248,81,73,.4)!important;color:var(--rd)}
+.conn{background:rgba(63,185,80,.1);border-color:rgba(63,185,80,.4)!important;color:var(--gn)}
+.dot{width:8px;height:8px;border-radius:50%;background:currentColor}
+.on{animation:pulse 1.5s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.main{display:grid;grid-template-columns:320px 1fr;gap:18px;padding:20px 28px;max-width:1400px;margin:0 auto}
+.card{background:var(--sf);border:1px solid var(--bd);border-radius:var(--r);overflow:hidden;margin-bottom:16px}
+.ch{padding:14px 18px;border-bottom:1px solid var(--bd);display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:.3px}
+.cb{padding:16px 18px}
+label{display:block;font-size:10px;font-weight:600;color:var(--tx2);letter-spacing:.6px;text-transform:uppercase;margin-bottom:5px;margin-top:12px}
+label:first-child{margin-top:0}
+input,textarea,select{width:100%;background:var(--sf2);border:1px solid var(--bd);border-radius:6px;color:var(--tx);font-family:'JetBrains Mono',monospace;font-size:12px;padding:9px 11px;outline:none;transition:border-color .2s}
+input:focus,textarea:focus{border-color:var(--ac)}
+textarea{resize:vertical}
+.btn{width:100%;padding:10px;border:none;border-radius:6px;font-size:12px;font-weight:600;cursor:pointer;transition:all .2s;margin-top:8px}
+.bp{background:var(--ac);color:#0d1117}.bp:hover{background:#79c0ff}
+.bs{background:var(--sf2);color:var(--tx2);border:1px solid var(--bd)}.bs:hover{border-color:var(--ac);color:var(--ac)}
+.bg{background:var(--gn);color:#0d1117;margin-top:10px}.bg:hover{background:#56d364}
+.bo{background:#6e40c9;color:#fff}.bo:hover{background:#8957e5}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+.div{height:1px;background:var(--bd);margin:12px 0}
+.sr{display:flex;justify-content:space-between;align-items:center;padding:5px 0;font-size:11px}
+.sl{color:var(--tx2)}.sv{font-family:'JetBrains Mono',monospace;font-size:11px}
+.gn{color:var(--gn)}.rd{color:var(--rd)}.yw{color:var(--yw)}
+.tabs{display:flex;border-bottom:1px solid var(--bd);padding:0 18px}
+.tab{padding:10px 14px;font-size:11px;font-weight:600;cursor:pointer;border-bottom:2px solid transparent;color:var(--tx2);transition:all .2s}
+.tab.act{color:var(--ac);border-color:var(--ac)}
+.tc{display:none;padding:18px}.tc.act{display:block}
+.sig{background:var(--sf2);border:1px solid var(--bd);border-radius:8px;padding:14px 16px;margin-bottom:10px}
+.sig:hover{border-color:var(--ac)}
+.sgh{display:flex;justify-content:space-between;margin-bottom:10px}
+.sgc{font-family:'JetBrains Mono',monospace;font-size:17px;font-weight:700}
+.pbw{width:70px;height:5px;background:var(--bd);border-radius:3px;overflow:hidden;margin-top:4px}
+.pbb{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--ac),var(--gn))}
+.pbn{font-size:10px;font-weight:700;color:var(--gn);font-family:'JetBrains Mono',monospace}
+.sgg{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-bottom:8px}
+.sgi{background:var(--bg);border-radius:5px;padding:7px 9px}
+.sgl{font-size:9px;color:var(--tx2);margin-bottom:2px}
+.sgv{font-size:11px;font-weight:600;font-family:'JetBrains Mono',monospace}
+.sga{margin-top:6px;padding:7px 10px;background:rgba(88,166,255,.08);border:1px solid rgba(88,166,255,.2);border-radius:5px;font-size:10px;color:var(--ac);line-height:1.5}
+.empty{text-align:center;padding:40px 20px;color:var(--tx2)}
+.empty .ic{font-size:36px;margin-bottom:10px}
+.log{font-family:'JetBrains Mono',monospace;font-size:11px;background:var(--bg);border:1px solid var(--bd);border-radius:6px;padding:12px;height:180px;overflow-y:auto;line-height:1.7}
+.ll{padding:1px 0}.ok{color:var(--gn)}.er{color:var(--rd)}.inf{color:var(--ac)}.dim{color:var(--tx2)}
+.sp{display:inline-block;width:12px;height:12px;border:2px solid rgba(255,255,255,.2);border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite;vertical-align:middle;margin-right:4px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.pg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px}
+.pi{background:var(--sf2);border:1px solid var(--bd);border-radius:6px;padding:10px}
+.pl{font-size:9px;color:var(--tx2);text-transform:uppercase;letter-spacing:.4px;margin-bottom:3px}
+.pv{font-size:15px;font-weight:700;font-family:'JetBrains Mono',monospace;color:var(--ac)}
+.note{margin-top:12px;padding:11px 13px;background:rgba(210,153,34,.08);border:1px solid rgba(210,153,34,.25);border-radius:7px;font-size:10px;color:var(--yw);line-height:1.7}
+@media(max-width:860px){.main{grid-template-columns:1fr}}
+/* ── Login Gate ── */
+#gate{position:fixed;inset:0;z-index:9999;background:#0d1117;display:flex;align-items:center;justify-content:center;flex-direction:column}
+.gate-box{background:#161b22;border:1px solid #30363d;border-radius:16px;padding:48px 44px;width:340px;text-align:center;box-shadow:0 24px 80px rgba(0,0,0,.6)}
+.gate-logo{width:56px;height:56px;background:linear-gradient(135deg,#58a6ff,#3fb950);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:26px;margin:0 auto 20px}
+.gate-title{font-size:20px;font-weight:700;margin-bottom:6px}
+.gate-sub{font-size:12px;color:#8b949e;margin-bottom:28px}
+.gate-input{width:100%;background:#1c2230;border:2px solid #30363d;border-radius:8px;color:#e6edf3;font-size:16px;padding:13px 16px;outline:none;text-align:center;letter-spacing:3px;font-family:'JetBrains Mono',monospace;transition:border-color .2s}
+.gate-input:focus{border-color:#58a6ff}
+.gate-input.err{border-color:#f85149;animation:shake .3s}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-8px)}75%{transform:translateX(8px)}}
+.gate-btn{width:100%;margin-top:14px;padding:13px;background:#58a6ff;color:#0d1117;border:none;border-radius:8px;font-size:14px;font-weight:700;cursor:pointer;transition:background .2s}
+.gate-btn:hover{background:#79c0ff}
+.gate-err{color:#f85149;font-size:12px;margin-top:10px;height:18px}
+</style>
+</head>
+<body>
+
+<!-- ── Login Gate ── -->
+<div id="gate">
+  <div class="gate-box">
+    <div class="gate-logo">📈</div>
+    <div class="gate-title">Quant Engine</div>
+    <div class="gate-sub">T+1 News Alpha · 请输入访问密码</div>
+    <input class="gate-input" id="gate-pwd" type="password" placeholder="• • • • •" maxlength="20"
+      onkeydown="if(event.key==='Enter')gateLogin()" autofocus>
+    <button class="gate-btn" onclick="gateLogin()">进入 Dashboard</button>
+    <div class="gate-err" id="gate-err"></div>
+  </div>
+</div>
+<div class="hdr">
+  <div class="logo">
+    <div class="logo-ic">📈</div>
+    <div><div class="logo-t">QUANT ENGINE</div><div class="logo-s">T+1 News Alpha</div></div>
+  </div>
+  <div id="badge" class="disc"><div class="dot" id="dot"></div><span id="bt">NODE DISCONNECTED</span></div>
+</div>
+
+<div class="main">
+  <!-- LEFT -->
+  <div>
+    <!-- CONNECTION -->
+    <div class="card">
+      <div class="ch">🔌 Connection</div>
+      <div class="cb">
+        <label>FastAPI Endpoint URL</label>
+        <input id="url" value="https://percolate-zipfile-corned.ngrok-free.dev" placeholder="http://127.0.0.1:8000 或 ngrok URL">
+        <div style="font-size:10px;color:var(--tx2);margin-top:5px">跨网络请用 <b style='color:var(--ac)'>ngrok http 8000</b> 后粘贴 https://xxx.ngrok-free.app</div>
+        <button class="btn bs" onclick="testPing()">Test Ping</button>
+        <div class="div"></div>
+        <div class="sr"><span class="sl">Status</span><span class="sv" id="cs">—</span></div>
+        <div class="sr"><span class="sl">Last Check</span><span class="sv" id="ct">—</span></div>
+        <div class="sr"><span class="sl">Predictions Range</span><span class="sv gn" id="dr">—</span></div>
+      </div>
+    </div>
+
+    <!-- RAW HTML PARSE -->
+    <div class="card">
+      <div class="ch">📄 Step 1: 解析原始新闻</div>
+      <div class="cb">
+        <label>Target Date (T 日)</label>
+        <input id="pdate" type="date">
+        <label>粘贴 HTML 或 Markdown 原文</label>
+        <textarea id="rawin" style="min-height:100px;font-size:11px" placeholder="将韭研公社盘前纪要的完整 HTML 或 Markdown 原文粘贴在此处…"></textarea>
+        <button class="btn bo" id="parse-btn" onclick="parseRaw()" disabled>🔄 Parse → JSON (via ZhipuAI)</button>
+        <div id="parse-result" style="display:none;margin-top:10px">
+          <label>解析结果 (可复制到下方)</label>
+          <textarea id="parsed-json" style="min-height:80px;font-size:10px" readonly></textarea>
+          <button class="btn bs" onclick="copyToSignal()" style="font-size:10px">↓ 复制到信号推送</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- SIGNAL PUSH -->
+    <div class="card">
+      <div class="ch">🚀 Step 2: 推送信号</div>
+      <div class="cb">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+          <div>
+            <label>Target Date (T 日)</label>
+            <input id="sdate" type="date">
+          </div>
+          <div>
+            <label>交易策略模型</label>
+            <select id="strategy" style="cursor:pointer">
+              <option value="conservative">保守防守版 (005) - 低回撤</option>
+              <option value="aggressive">激进进攻版 (004) - 高收益</option>
+            </select>
+          </div>
+        </div>
+        <label>News JSON（可选，从上方 Parse 结果自动填入）</label>
+        <textarea id="njson" style="min-height:60px;font-size:10px" placeholder="留空则直接读取已有预测信号"></textarea>
+        <button class="btn bg" id="run-btn" onclick="runPipeline()" disabled>Push to Local Engine</button>
+      </div>
+    </div>
+
+    <!-- PARAMS -->
+    <div class="card">
+      <div class="ch">⚙️ Strategy Params</div>
+      <div class="cb">
+        <div class="pg">
+          <div class="pi"><div class="pl">Threshold</div><div class="pv">0.50</div></div>
+          <div class="pi"><div class="pl">Max Pos</div><div class="pv">3</div></div>
+          <div class="pi"><div class="pl">Gap Up</div><div class="pv" style="font-size:12px">2%~6%</div></div>
+          <div class="pi"><div class="pl">Hold</div><div class="pv" style="font-size:12px">T+1→T+2</div></div>
+          <div class="pi"><div class="pl">Stop Loss</div><div class="pv" style="color:var(--rd)">-5%</div></div>
+          <div class="pi"><div class="pl">Take Profit</div><div class="pv" style="color:var(--gn)">+5%</div></div>
+        </div>
+        <button class="btn bs" onclick="triggerRetrain()" style="font-size:10px">🔄 Trigger Monthly Retrain</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT -->
+  <div>
+    <div class="card" style="height:100%">
+      <div class="tabs">
+        <div class="tab act" onclick="sw('results',this)">📊 Results</div>
+        <div class="tab" onclick="sw('log',this)">📋 Log</div>
+      </div>
+      <div class="tc act" id="tc-results">
+        <div id="results">
+          <div class="empty"><div class="ic">🔍</div><p>连接本地引擎后<br>选择日期 → Push to Local Engine</p></div>
+        </div>
+      </div>
+      <div class="tc" id="tc-log">
+        <div class="log" id="log"><div class="ll dim">— Ready —</div></div>
+        <button class="btn bs" onclick="clrlog()" style="margin-top:6px;width:auto;padding:5px 12px;font-size:10px">Clear</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+let ok=false;
+
+// ── Login Gate ──
+const GATE_PWD='liuqe';
+function gateLogin(){
+  const v=$('gate-pwd').value;
+  if(v===GATE_PWD){
+    sessionStorage.setItem('qe_auth','1');
+    $('gate').style.opacity='0';
+    $('gate').style.transition='opacity .4s';
+    setTimeout(()=>$('gate').style.display='none',400);
+  } else {
+    const i=$('gate-pwd');i.classList.add('err');
+    $('gate-err').textContent='密码错误，请重试';
+    setTimeout(()=>{i.classList.remove('err');i.value='';i.focus()},400);
+  }
+}
+// Auto-unlock if already authenticated this session
+if(sessionStorage.getItem('qe_auth')==='1'){
+  $('gate').style.display='none';
+}
+
+window.onload=()=>{const t=new Date().toISOString().slice(0,10);$('pdate').value=t;$('sdate').value=t};
+function apiUrl(){return $('url').value.trim()}
+function headers(){return{'Content-Type':'application/json','ngrok-skip-browser-warning':'true'}}
+
+function log(msg,t='dim'){const e=$('log'),d=document.createElement('div');d.className='ll '+t;d.textContent='['+new Date().toLocaleTimeString('zh-CN')+'] '+msg;e.appendChild(d);e.scrollTop=e.scrollHeight}
+function clrlog(){$('log').innerHTML='<div class="ll dim">— Cleared —</div>'}
+
+function sw(n,el){document.querySelectorAll('.tab').forEach(t=>t.classList.remove('act'));document.querySelectorAll('.tc').forEach(t=>t.classList.remove('act'));el.classList.add('act');$('tc-'+n).classList.add('act')}
+
+function setConn(v,msg=''){
+  ok=v;const b=$('badge'),d=$('dot'),t=$('bt'),r=$('run-btn'),p=$('parse-btn');
+  if(v){b.className='conn';d.className='dot on';t.textContent='NODE CONNECTED';r.disabled=false;p.disabled=false;$('cs').textContent='Online';$('cs').className='sv gn'}
+  else{b.className='disc';d.className='dot';t.textContent='NODE DISCONNECTED';r.disabled=true;p.disabled=true;$('cs').textContent='Offline';$('cs').className='sv rd'}
+  $('ct').textContent=new Date().toLocaleTimeString('zh-CN');
+  if(msg)log(msg,v?'ok':'er');
+}
+
+async function testPing(){
+  log('Pinging '+apiUrl()+'/health …','inf');
+  try{
+    const r=await fetch(apiUrl()+'/health',{headers:headers(),signal:AbortSignal.timeout(6000)});
+    if(!r.ok)throw new Error('HTTP '+r.status);
+    const d=await r.json();
+    setConn(true,'✓ '+d.msg);
+    const p=d.data_status?.predictions;
+    if(p?.exists){$('dr').textContent=p.date_min+' ~ '+p.date_max}
+  }catch(e){setConn(false,'✗ '+e.message)}
+}
+
+async function parseRaw(){
+  if(!ok){alert('请先连接本地引擎');return}
+  const raw=$('rawin').value.trim(),date=$('pdate').value;
+  if(!raw){alert('请粘贴 HTML 或 Markdown 原文');return}
+  if(!date){alert('请选择日期');return}
+  const btn=$('parse-btn');btn.innerHTML='<span class="sp"></span>Parsing via ZhipuAI…';btn.disabled=true;
+  log('调用 ZhipuAI 解析原始新闻 …','inf');sw('log',document.querySelectorAll('.tab')[1]);
+  const isHtml=raw.trim().startsWith('<');
+  const body={target_date:date,save_to_disk:true};
+  if(isHtml)body.raw_html=raw;else body.raw_markdown=raw;
+  try{
+    const r=await fetch(apiUrl()+'/api/v1/parse/html',{method:'POST',headers:headers(),body:JSON.stringify(body),signal:AbortSignal.timeout(60000)});
+    if(!r.ok){const e=await r.json().catch(()=>({detail:'Error'}));throw new Error(e.detail)}
+    const d=await r.json();
+    log('✓ 解析成功: '+d.title,'ok');
+    log('  market_impact='+d.analysis.market_impact+'  stocks='+d.analysis.stocks?.length,'ok');
+    if(d.saved_to)log('  已保存: '+d.saved_to,'dim');
+    const js=JSON.stringify(d.analysis,null,2);
+    $('parsed-json').value=js;$('parse-result').style.display='block';
+    sw('results',document.querySelectorAll('.tab')[0]);
+    showParseResult(d);
+  }catch(e){log('✗ '+e.message,'er')}
+  finally{btn.innerHTML='🔄 Parse → JSON (via ZhipuAI)';btn.disabled=false}
+}
+
+function showParseResult(d){
+  const a=d.analysis,c=$('results');
+  const imp=a.market_impact>0?'<span class="gn">+'+a.market_impact+'</span>':a.market_impact<0?'<span class="rd">'+a.market_impact+'</span>':'<span>0</span>';
+  let h=`<div style="margin-bottom:14px"><div style="font-size:13px;font-weight:600;margin-bottom:6px">📰 ${d.title}</div>
+  <div style="font-size:11px;color:var(--tx2);margin-bottom:10px">${d.date} · ${d.content_length} 字</div>
+  <div style="background:var(--sf2);border:1px solid var(--bd);border-radius:7px;padding:12px;margin-bottom:10px">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px"><span style="font-size:11px;color:var(--tx2)">大盘影响</span>${imp}</div>
+    <div style="font-size:11px;line-height:1.6">${a.market_analysis||''}</div>
+  </div>`;
+  if(a.sectors?.length){h+='<div style="font-size:11px;font-weight:600;margin-bottom:6px;color:var(--tx2)">板块影响</div><div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:10px">';
+    a.sectors.slice(0,6).forEach(s=>{const c=s.impact>0?'var(--gn)':s.impact<0?'var(--rd)':'var(--tx2)';h+=`<div style="background:var(--sf2);border:1px solid var(--bd);border-radius:6px;padding:8px 10px"><div style="font-size:11px;font-weight:600">${s.sector_name}</div><div style="font-size:10px;color:${c};margin:2px 0">影响: ${s.impact>0?'+':''}${s.impact}</div><div style="font-size:10px;color:var(--tx2)">${s.analysis||''}</div></div>`});h+='</div>'}
+  if(a.stocks?.length){h+='<div style="font-size:11px;font-weight:600;margin-bottom:6px;color:var(--tx2)">个股 ('+a.stocks.length+'只)</div><div style="display:flex;flex-wrap:wrap;gap:6px">';
+    a.stocks.slice(0,12).forEach(s=>{const c=s.impact>0?'rgba(63,185,80,.15)':s.impact<0?'rgba(248,81,73,.1)':'var(--sf2)';h+=`<div style="background:${c};border:1px solid var(--bd);border-radius:5px;padding:5px 9px;font-size:10px"><b>${s.stock_name}</b>${s.stock_code?' ('+s.stock_code+')':''}</div>`});h+='</div>'}
+  h+='</div>';c.innerHTML=h;
+}
+
+function copyToSignal(){
+  $('njson').value=$('parsed-json').value;
+  $('sdate').value=$('pdate').value;
+  log('已复制解析结果到信号推送','inf');
+}
+
+async function runPipeline(){
+  if(!ok){alert('请先连接');return}
+  const date=$('sdate').value,njson=$('njson').value.trim(),strat=$('strategy').value;
+  if(!date){alert('请选择日期');return}
+  const btn=$('run-btn');btn.innerHTML='<span class="sp"></span>Processing…';btn.disabled=true;
+  log('── Pipeline: '+date+' ('+strat+') ──','inf');sw('log',document.querySelectorAll('.tab')[1]);
+  const body={target_date:date,strategy:strat};if(njson)body.news_json=njson;
+  try{
+    const r=await fetch(apiUrl()+'/api/v1/pipeline/run',{method:'POST',headers:headers(),body:JSON.stringify(body),signal:AbortSignal.timeout(30000)});
+    if(!r.ok){const e=await r.json().catch(()=>({detail:'Error'}));throw new Error(e.detail)}
+    const d=await r.json();
+    d.steps?.forEach(s=>log(s,s.startsWith('✓')?'ok':s.startsWith('⚠')?'er':'dim'));
+    log('信号数: '+d.signal_count,'ok');
+    renderSignals(d.results,date);sw('results',document.querySelectorAll('.tab')[0]);
+  }catch(e){log('✗ '+e.message,'er')}
+  finally{btn.innerHTML='Push to Local Engine';btn.disabled=false}
+}
+
+function renderSignals(sigs,date){
+  const c=$('results');
+  if(!sigs?.length){c.innerHTML='<div class="empty"><div class="ic">📭</div><p><b>'+date+'</b><br>无满足条件的信号 (prob≥0.50)</p></div>';return}
+  const rk=['🥇','🥈','🥉'];
+  let h='<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px"><div style="font-size:12px;font-weight:600">T+1 候选 <span style="color:var(--tx2);font-weight:400">('+date+')</span></div><div style="font-size:10px;color:var(--tx2)">共'+sigs.length+'个信号</div></div>';
+  sigs.forEach((s,i)=>{const p=Math.round(s.prob*100);const pr=s.entry_price?'¥'+s.entry_price.toFixed(2):'N/A';
+    h+=`<div class="sig"><div class="sgh"><div><div style="font-size:10px;color:var(--tx2);margin-bottom:3px">${rk[i]||'#'+(i+1)}</div><div class="sgc">${s.ts_code}</div></div><div style="text-align:right"><div class="pbn">${p}%</div><div class="pbw"><div class="pbb" style="width:${p}%"></div></div></div></div>
+    <div class="sgg"><div class="sgi"><div class="sgl">开盘价</div><div class="sgv" style="color:var(--ac)">${pr}</div></div><div class="sgi"><div class="sgl">止损</div><div class="sgv rd">${s.stop_loss}</div></div><div class="sgi"><div class="sgl">止盈</div><div class="sgv gn">${s.take_profit}</div></div></div>
+    <div class="sga">⚡ ${s.action}</div></div>`});
+  h+='<div class="note">⚠️ <b>操作提醒</b>：T+1日 9:25集合竞价结束后，计算实际高开幅度。仅 <b>2%~6%</b> 范围内才委托买入。持至T+2，涨5%止盈/跌5%止损，否则收盘平仓。</div>';
+  c.innerHTML=h;
+}
+
+async function triggerRetrain(){
+  if(!ok){alert('请先连接');return}
+  if(!confirm('确认触发月度 Retrain？约30-60分钟后台执行。'))return;
+  try{const r=await fetch(apiUrl()+'/api/v1/retrain/trigger',{method:'POST',headers:headers()});const d=await r.json();log('✓ '+d.msg,'ok')}
+  catch(e){log('✗ '+e.message,'er')}
+}
+</script>
+</body>
+</html>

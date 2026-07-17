@@ -1,0 +1,95 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受积极因素推动，但需关注后续政策落实。",
+  "sectors": [
+    {
+      "sector_name": "生物科技",
+      "impact": 4,
+      "analysis": "麦角硫因概念股受关注，板块有望受益。"
+    },
+    {
+      "sector_name": "国际工程",
+      "impact": 3,
+      "analysis": "俄乌重建谈判，相关工程板块受提振。"
+    },
+    {
+      "sector_name": "城市更新",
+      "impact": 3,
+      "analysis": "政策支持城市更新，相关板块有望受益。"
+    },
+    {
+      "sector_name": "化妆品",
+      "impact": 3,
+      "analysis": "618大促美妆销售火爆，相关个股受关注。"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "华为机器人业务合作，相关个股受提振。"
+    },
+    {
+      "sector_name": "燃气",
+      "impact": 3,
+      "analysis": "世界燃气大会聚焦天然气行业，相关个股受关注。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "川宁生物",
+      "stock_code": "300469",
+      "impact": 4,
+      "analysis": "麦角硫因概念，生物制造工艺开发。"
+    },
+    {
+      "stock_name": "福瑞达",
+      "stock_code": "300269",
+      "impact": 4,
+      "analysis": "高纯品麦角硫因结晶体粉末，参与起草相关标准。"
+    },
+    {
+      "stock_name": "贝肯能源",
+      "stock_code": "002828",
+      "impact": 3,
+      "analysis": "主营油气勘探开发，国际市场以乌克兰为主。"
+    },
+    {
+      "stock_name": "德必集团",
+      "stock_code": "603868",
+      "impact": 3,
+      "analysis": "城市更新，利用城市历史建筑发展文化产业。"
+    },
+    {
+      "stock_name": "华业香料",
+      "stock_code": "600777",
+      "impact": 3,
+      "analysis": "化妆品上游香料，产能全球领先。"
+    },
+    {
+      "stock_name": "百洋股份",
+      "stock_code": "002696",
+      "impact": 3,
+      "analysis": "罗非鱼出口业务受益关税缓和。"
+    },
+    {
+      "stock_name": "信质集团",
+      "stock_code": "300464",
+      "impact": 3,
+      "analysis": "机器人业务合作华为，电机产品配套华为。"
+    },
+    {
+      "stock_name": "洪通燃气",
+      "stock_code": "603363",
+      "impact": 3,
+      "analysis": "新疆燃气核心供应商，业绩增长显著。"
+    },
+    {
+      "stock_name": "拉芳家化",
+      "stock_code": "600834",
+      "impact": 3,
+      "analysis": "国产日化龙头企业，618大促美妆销售火爆。"
+    }
+  ],
+  "article_id": "0afa02d77f1742219c96bc4d70558f70",
+  "article_date": "2025-05-15",
+  "article_title": "2025.5.15市场逻辑精选"
+}

@@ -1,0 +1,96 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受地方国资改革和高端覆铜板需求提升影响，整体偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "地方国资",
+      "impact": 4,
+      "analysis": "政策支持力度加大，板块受益明显。"
+    },
+    {
+      "sector_name": "高端覆铜板",
+      "impact": 3,
+      "analysis": "需求旺盛，行业前景看好。"
+    },
+    {
+      "sector_name": "公用事业",
+      "impact": 2,
+      "analysis": "水务、垃圾处理等细分领域有望受益。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 2,
+      "analysis": "覆铜板需求提升，相关企业受益。"
+    },
+    {
+      "sector_name": "消费",
+      "impact": 2,
+      "analysis": "地方国资改革可能带来投资机会。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "武汉控股",
+      "stock_code": "600168",
+      "impact": 4,
+      "analysis": "地方国资改革受益，业务拓展预期良好。"
+    },
+    {
+      "stock_name": "石化机械",
+      "stock_code": "000852",
+      "impact": 3,
+      "analysis": "深海油气锻件品质得到认可，有望受益于地方国资改革。"
+    },
+    {
+      "stock_name": "东材科技",
+      "stock_code": "600693",
+      "impact": 3,
+      "analysis": "M9等级CCL树脂材料领先，有望受益于高端覆铜板需求提升。"
+    },
+    {
+      "stock_name": "生益科技",
+      "stock_code": "600183",
+      "impact": 3,
+      "analysis": "主供英伟达GB系列CCL，有望受益于高端覆铜板需求提升。"
+    },
+    {
+      "stock_name": "赛意信息",
+      "stock_code": "300152",
+      "impact": 3,
+      "analysis": "AI赋能制造业高质量发展，有望受益于广东省政策支持。"
+    },
+    {
+      "stock_name": "朗科科技",
+      "stock_code": "300682",
+      "impact": 3,
+      "analysis": "韶关国资委控股，有望受益于广东省政策支持。"
+    },
+    {
+      "stock_name": "振华股份",
+      "stock_code": "600331",
+      "impact": 3,
+      "analysis": "金属铬价格上涨，业绩有望提升。"
+    },
+    {
+      "stock_name": "西麦食品",
+      "stock_code": "002396",
+      "impact": 3,
+      "analysis": "新品燕麦肽减肥有望上市，业绩有望提升。"
+    },
+    {
+      "stock_name": "道明光学",
+      "stock_code": "002632",
+      "impact": 3,
+      "analysis": "石墨烯散热膜应用于努比亚旗舰机，业务拓展预期良好。"
+    },
+    {
+      "stock_name": "山东墨龙",
+      "stock_code": "002428",
+      "impact": 3,
+      "analysis": "油气装备出口俄罗斯，有望受益于俄乌重建。"
+    }
+  ],
+  "article_id": "ab19481c64a44f4fb0b3a80b78902326",
+  "article_date": "2025-10-21",
+  "article_title": "2025.10.21市场逻辑精选"
+}

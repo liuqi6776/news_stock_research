@@ -1,0 +1,77 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "算力芯片",
+      "impact": 4,
+      "analysis": "华为发布新一代算力芯片，相关产业链受益"
+    },
+    {
+      "sector_name": "储能",
+      "impact": 3,
+      "analysis": "储能需求增加，相关个股受关注"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "光伏设备订单增加，相关个股受益"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "宇树科技科创板IPO申请，机器人板块受关注"
+    },
+    {
+      "sector_name": "变压器",
+      "impact": 3,
+      "analysis": "变压器工厂订单增加，相关个股受益"
+    },
+    {
+      "sector_name": "AI应用",
+      "impact": 3,
+      "analysis": "ChatGPT将展示广告，AI应用板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "华为",
+      "stock_code": "000066",
+      "impact": 4,
+      "analysis": "发布新一代算力芯片，相关产业链受益"
+    },
+    {
+      "stock_name": "宇树科技",
+      "stock_code": "688598",
+      "impact": 3,
+      "analysis": "科创板IPO申请，机器人板块受关注"
+    },
+    {
+      "stock_name": "韶能股份",
+      "stock_code": "000601",
+      "impact": 3,
+      "analysis": "算电协同概念，股价上涨"
+    },
+    {
+      "stock_name": "华电辽能",
+      "stock_code": "600726",
+      "impact": 3,
+      "analysis": "算电协同概念，股价上涨"
+    },
+    {
+      "stock_name": "中利集团",
+      "stock_code": "002309",
+      "impact": 3,
+      "analysis": "光伏设备订单增加，股价上涨"
+    },
+    {
+      "stock_name": "正泰电源",
+      "stock_code": "601877",
+      "impact": 3,
+      "analysis": "储能需求增加，股价上涨"
+    }
+  ],
+  "article_title": "3月23日盘前纪要",
+  "html_file": "3fgf4tfg41f.html",
+  "article_date": "2026-03-23"
+}

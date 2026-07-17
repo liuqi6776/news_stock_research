@@ -1,0 +1,92 @@
+{
+  "market_impact": 3,
+  "market_analysis": "AI搜索和编程领域利好，卫星发射行业利好。",
+  "sectors": [
+    {
+      "sector_name": "AI搜索",
+      "impact": 4,
+      "analysis": "AI搜索技术发展，相关公司受益"
+    },
+    {
+      "sector_name": "AI编程",
+      "impact": 4,
+      "analysis": "AI编程功能升级，相关公司受益"
+    },
+    {
+      "sector_name": "卫星发射",
+      "impact": 3,
+      "analysis": "卫星发射行业迎来超级周期，相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "易点天下",
+      "stock_code": "300774",
+      "impact": 4,
+      "analysis": "GEO技术领先，出海业务优势明显"
+    },
+    {
+      "stock_name": "浙文互联",
+      "stock_code": "300606",
+      "impact": 4,
+      "analysis": "推出GEO智能体，抢占AI搜索流量入口"
+    },
+    {
+      "stock_name": "众诚科技",
+      "stock_code": "300599",
+      "impact": 4,
+      "analysis": "布局垂直大模型应用，多场景应用广泛"
+    },
+    {
+      "stock_name": "卓易信息",
+      "stock_code": "300846",
+      "impact": 4,
+      "analysis": "AI编程产品丰富，用户增长迅速"
+    },
+    {
+      "stock_name": "普元信息",
+      "stock_code": "300036",
+      "impact": 4,
+      "analysis": "低代码技术领先，智能编程助手功能强大"
+    },
+    {
+      "stock_name": "金现代",
+      "stock_code": "300454",
+      "impact": 4,
+      "analysis": "低代码平台与AI模型深度结合，降低企业成本"
+    },
+    {
+      "stock_name": "电科芯片",
+      "stock_code": "688012",
+      "impact": 3,
+      "analysis": "为商业航天提供高性能芯片，卫星通信领域领先"
+    },
+    {
+      "stock_name": "四创电子",
+      "stock_code": "600970",
+      "impact": 3,
+      "analysis": "自研PCB等核心部件，卫星通信领域领先"
+    },
+    {
+      "stock_name": "震有科技",
+      "stock_code": "300539",
+      "impact": 3,
+      "analysis": "核心网龙头企业，配套多卫星项目"
+    },
+    {
+      "stock_name": "神开股份",
+      "stock_code": "002278",
+      "impact": 3,
+      "analysis": "参股公司推进系统突破，卫星推进系统需求放量"
+    },
+    {
+      "stock_name": "美年健康",
+      "stock_code": "300009",
+      "impact": 3,
+      "analysis": "阿里间接持股，AI健康管理平台发展迅速"
+    }
+  ],
+  "article_id": "a41d55d96cda48dfa81401f0776d7469",
+  "article_date": "2026-01-11",
+  "article_title": "2026.1.11市场逻辑精选"
+}

@@ -1,0 +1,55 @@
+{
+  "market_impact": -3,
+  "market_analysis": "市场情绪受外部因素影响较大，部分板块和个股受利空消息影响。",
+  "sectors": [
+    {
+      "sector_name": "芯片",
+      "impact": -4,
+      "analysis": "美国限制芯片出口，对芯片行业利空。"
+    },
+    {
+      "sector_name": "卫星应用",
+      "impact": 2,
+      "analysis": "卫星应用行业受政策支持，有一定利好。"
+    },
+    {
+      "sector_name": "转基因",
+      "impact": 1,
+      "analysis": "转基因品种通过初审，对相关企业利好。"
+    },
+    {
+      "sector_name": "金融",
+      "impact": 1,
+      "analysis": "放宽境外机构入股金融资产管理公司，对金融行业利好。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "文一科技",
+      "stock_code": "600520",
+      "impact": -3,
+      "analysis": "受芯片行业利空影响。"
+    },
+    {
+      "stock_name": "华力创通",
+      "stock_code": "300045",
+      "impact": 2,
+      "analysis": "受卫星应用行业利好影响。"
+    },
+    {
+      "stock_name": "大北农",
+      "stock_code": "002385",
+      "impact": 1,
+      "analysis": "受转基因行业利好影响。"
+    },
+    {
+      "stock_name": "首创证券",
+      "stock_code": "601390",
+      "impact": 1,
+      "analysis": "受金融行业利好影响。"
+    }
+  ],
+  "article_title": "10月18日盘前早报 热点事件关注",
+  "html_file": "2kpvrsrphn.html",
+  "article_date": "2023-10-18"
+}

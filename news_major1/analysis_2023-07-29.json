@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策利好，相关个股表现强劲",
+  "sectors": [
+    {
+      "sector_name": "房地产",
+      "impact": 3,
+      "analysis": "政策调整，板块受提振"
+    },
+    {
+      "sector_name": "景观设计",
+      "impact": 3,
+      "analysis": "数字化转型，行业前景看好"
+    },
+    {
+      "sector_name": "城市更新",
+      "impact": 3,
+      "analysis": "政策支持，板块受益"
+    },
+    {
+      "sector_name": "证券软件",
+      "impact": 3,
+      "analysis": "AI技术发展，行业前景看好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "山水比德",
+      "stock_code": "300388",
+      "impact": 3,
+      "analysis": "数字化转型，业绩增长"
+    },
+    {
+      "stock_name": "金科股份",
+      "stock_code": "000656",
+      "impact": 3,
+      "analysis": "政策调整，债务重组"
+    },
+    {
+      "stock_name": "锦和商管",
+      "stock_code": "603950",
+      "impact": 3,
+      "analysis": "城市更新，行业领先"
+    },
+    {
+      "stock_name": "财富趋势",
+      "stock_code": "300059",
+      "impact": 3,
+      "analysis": "AI技术，金融数据解决方案"
+    }
+  ],
+  "article_id": "6c45c0d2e1db45319d301eda707f7be2",
+  "article_date": "2023-07-29",
+  "article_title": "本周大涨股盘点【免费】"
+}

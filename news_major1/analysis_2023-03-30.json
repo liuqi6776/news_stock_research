@@ -1,0 +1,83 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪积极",
+  "sectors": [
+    {
+      "sector_name": "人工智能",
+      "impact": 4,
+      "analysis": "多事件利好，技术发展加速"
+    },
+    {
+      "sector_name": "海南自由贸易港",
+      "impact": 3,
+      "analysis": "政策支持，发展前景看好"
+    },
+    {
+      "sector_name": "6G通信",
+      "impact": 3,
+      "analysis": "技术发展，未来商用"
+    },
+    {
+      "sector_name": "游戏",
+      "impact": 2,
+      "analysis": "微软活动，行业关注"
+    },
+    {
+      "sector_name": "混合现实",
+      "impact": 2,
+      "analysis": "苹果发布新设备，市场期待"
+    },
+    {
+      "sector_name": "AI购彩",
+      "impact": 1,
+      "analysis": "技术应用，服务升级"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "三六零",
+      "stock_code": "601360",
+      "impact": 4,
+      "analysis": "人工智能技术发展，利好"
+    },
+    {
+      "stock_name": "人民网",
+      "stock_code": "603000",
+      "impact": 3,
+      "analysis": "人工智能监管政策，利好"
+    },
+    {
+      "stock_name": "海南瑞泽",
+      "stock_code": "002532",
+      "impact": 3,
+      "analysis": "海南自由贸易港建设，利好"
+    },
+    {
+      "stock_name": "中国卫通",
+      "stock_code": "600111",
+      "impact": 3,
+      "analysis": "6G技术研究，利好"
+    },
+    {
+      "stock_name": "华立科技",
+      "stock_code": "300362",
+      "impact": 2,
+      "analysis": "微软游戏活动，利好"
+    },
+    {
+      "stock_name": "国光电器",
+      "stock_code": "002045",
+      "impact": 2,
+      "analysis": "苹果混合现实设备，利好"
+    },
+    {
+      "stock_name": "湖北广电",
+      "stock_code": "600643",
+      "impact": 1,
+      "analysis": "AI购彩服务，利好"
+    }
+  ],
+  "article_title": "3月30日盘前热点事件关注",
+  "html_file": "3xxj82sq7m.html",
+  "article_date": "2023-03-30"
+}

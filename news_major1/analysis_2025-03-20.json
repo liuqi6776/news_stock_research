@@ -1,0 +1,88 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极影响。",
+  "sectors": [
+    {
+      "sector_name": "一体机",
+      "impact": 3,
+      "analysis": "需求增长，板块受益"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "应用场景拓展，板块受益"
+    },
+    {
+      "sector_name": "大飞机",
+      "impact": 4,
+      "analysis": "产能提升，订单增加，板块利好"
+    },
+    {
+      "sector_name": "海洋经济",
+      "impact": 3,
+      "analysis": "发展规划出台，板块受益"
+    },
+    {
+      "sector_name": "云计算",
+      "impact": 3,
+      "analysis": "深度合作，板块受益"
+    },
+    {
+      "sector_name": "特种轴承",
+      "impact": 3,
+      "analysis": "垄断地位，板块受益"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "产品亮相，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "智微智能",
+      "stock_code": "300705",
+      "impact": 3,
+      "analysis": "一体机需求增长，公司受益"
+    },
+    {
+      "stock_name": "深信服",
+      "stock_code": "002366",
+      "impact": 3,
+      "analysis": "一体机需求增长，公司受益"
+    },
+    {
+      "stock_name": "中航西飞",
+      "stock_code": "600738",
+      "impact": 4,
+      "analysis": "C919机体结构件供应商，受益于国产大飞机"
+    },
+    {
+      "stock_name": "洪都航空",
+      "stock_code": "600316",
+      "impact": 4,
+      "analysis": "C919大部件供应商，受益于国产大飞机"
+    },
+    {
+      "stock_name": "荣联科技",
+      "stock_code": "002642",
+      "impact": 3,
+      "analysis": "华为长期合作伙伴，受益于云计算合作"
+    },
+    {
+      "stock_name": "国机精工",
+      "stock_code": "601366",
+      "impact": 3,
+      "analysis": "航天特种轴承垄断，机器人轴承开发能力"
+    },
+    {
+      "stock_name": "雷赛智能",
+      "stock_code": "002970",
+      "impact": 3,
+      "analysis": "灵巧手产品即将亮相，机器人板块受益"
+    }
+  ],
+  "article_id": "d42f58e5c9684fe28dfe2a2ac5b24fc5",
+  "article_date": "2025-03-20",
+  "article_title": "2025.3.20市场逻辑精选"
+}

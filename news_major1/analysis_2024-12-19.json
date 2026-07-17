@@ -1,0 +1,94 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股受积极消息影响",
+  "sectors": [
+    {
+      "sector_name": "数字社会",
+      "impact": 4,
+      "analysis": "数字社会建设推进，相关公司受益"
+    },
+    {
+      "sector_name": "AI眼镜",
+      "impact": 3,
+      "analysis": "AI眼镜市场发展，相关产业链受益"
+    },
+    {
+      "sector_name": "特斯拉",
+      "impact": 3,
+      "analysis": "特斯拉自动驾驶技术讨论，相关产业链受益"
+    },
+    {
+      "sector_name": "微信电商",
+      "impact": 3,
+      "analysis": "微信电商发展加速，相关公司受益"
+    },
+    {
+      "sector_name": "国产算力",
+      "impact": 3,
+      "analysis": "国产算力配套加速发展，相关产业链受益"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 2,
+      "analysis": "光伏行业受政策支持，相关公司受益"
+    },
+    {
+      "sector_name": "ISP技术",
+      "impact": 2,
+      "analysis": "ISP技术发展，相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "久其软件",
+      "stock_code": "002279",
+      "impact": 4,
+      "analysis": "数字社会建设推进，公司受益"
+    },
+    {
+      "stock_name": "中科通达",
+      "stock_code": "300394",
+      "impact": 4,
+      "analysis": "数字社会建设推进，公司受益"
+    },
+    {
+      "stock_name": "瑞声科技",
+      "stock_code": "002281",
+      "impact": 3,
+      "analysis": "AI眼镜市场发展，公司受益"
+    },
+    {
+      "stock_name": "科大讯飞",
+      "stock_code": "002230",
+      "impact": 3,
+      "analysis": "AI眼镜市场发展，公司受益"
+    },
+    {
+      "stock_name": "微盟集团",
+      "stock_code": "002161",
+      "impact": 3,
+      "analysis": "微信电商发展加速，公司受益"
+    },
+    {
+      "stock_name": "利通电子",
+      "stock_code": "002100",
+      "impact": 3,
+      "analysis": "为腾讯提供算力服务，公司受益"
+    },
+    {
+      "stock_name": "富煌钢构",
+      "stock_code": "002743",
+      "impact": 3,
+      "analysis": "筹划购买中科视界控股权，公司受益"
+    },
+    {
+      "stock_name": "盛天网络",
+      "stock_code": "300704",
+      "impact": 3,
+      "analysis": "产品接入豆包AI大模型，公司受益"
+    }
+  ],
+  "article_id": "e603a440546a47f69eef8920ddf81fcf",
+  "article_date": "2024-12-19",
+  "article_title": "2024.12.19市场逻辑精选"
+}

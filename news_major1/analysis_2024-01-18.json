@@ -1,0 +1,67 @@
+{
+  "market_impact": 4,
+  "market_analysis": "通信设备、半导体、光伏、IVD等行业利好，市场情绪提升。",
+  "sectors": [
+    {
+      "sector_name": "通信设备",
+      "impact": 4,
+      "analysis": "出海业务增长，板块指数大涨。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 4,
+      "analysis": "先进封装需求强劲，行业复苏。"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "低氧单晶炉降本增效，市场空间大。"
+    },
+    {
+      "sector_name": "IVD",
+      "impact": 3,
+      "analysis": "出海加速，打造第二增长引擎。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中际旭创",
+      "stock_code": "300308",
+      "impact": 4,
+      "analysis": "光模块出海，外销占比高。"
+    },
+    {
+      "stock_name": "联特科技",
+      "stock_code": "300576",
+      "impact": 4,
+      "analysis": "光模块出海，外销占比高。"
+    },
+    {
+      "stock_name": "剑桥科技",
+      "stock_code": "688287",
+      "impact": 4,
+      "analysis": "发布1.6T光模块产品，需求增长。"
+    },
+    {
+      "stock_name": "财富趋势",
+      "stock_code": "300059",
+      "impact": 3,
+      "analysis": "Q4单季扣非历史新高，业绩增长。"
+    },
+    {
+      "stock_name": "中文在线",
+      "stock_code": "300364",
+      "impact": 3,
+      "analysis": "ReelShot流水/下载量环比大增，爆款新剧上线。"
+    },
+    {
+      "stock_name": "上海新阳",
+      "stock_code": "600171",
+      "impact": 3,
+      "analysis": "半导体材料业务高增，光刻胶供货。"
+    }
+  ],
+  "article_id": "c8f70df9b3294d9c911da40fe87a4073",
+  "article_date": "2024-01-18",
+  "article_title": "2024.1.18市场逻辑精选"
+}

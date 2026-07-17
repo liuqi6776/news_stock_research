@@ -1,0 +1,62 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受光伏行业重组和低空经济政策推动，呈现利好。",
+  "sectors": [
+    {
+      "sector_name": "光伏",
+      "impact": 4,
+      "analysis": "行业重组和供给侧改革预期利好"
+    },
+    {
+      "sector_name": "低空经济",
+      "impact": 3,
+      "analysis": "政策推动，行业发展前景看好"
+    },
+    {
+      "sector_name": "白酒",
+      "impact": 2,
+      "analysis": "地产政策改善，板块估值修复"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "奥特维",
+      "stock_code": "300383",
+      "impact": 3,
+      "analysis": "受益降银技术，股价有望提升"
+    },
+    {
+      "stock_name": "三六五网",
+      "stock_code": "300295",
+      "impact": 3,
+      "analysis": "房产数据业务商业闭环，业绩有望增长"
+    },
+    {
+      "stock_name": "奕东电子",
+      "stock_code": "002792",
+      "impact": 3,
+      "analysis": "受益英伟达GB200量产，股价有望提升"
+    },
+    {
+      "stock_name": "清源股份",
+      "stock_code": "300234",
+      "impact": 3,
+      "analysis": "跟踪支架业务拓展，业绩有望增长"
+    },
+    {
+      "stock_name": "珠江股份",
+      "stock_code": "000505",
+      "impact": 2,
+      "analysis": "住房以旧换新活动，业绩有望增长"
+    },
+    {
+      "stock_name": "江淮汽车",
+      "stock_code": "600418",
+      "impact": 2,
+      "analysis": "华为合作工厂设备安装完成，股价有望提升"
+    }
+  ],
+  "article_id": "c07b1266b8a340c5943a9178be0d01b3",
+  "article_date": "2024-05-22",
+  "article_title": "2024.5.22市场逻辑精选"
+}

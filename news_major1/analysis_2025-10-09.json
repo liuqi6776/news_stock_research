@@ -1,0 +1,107 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受多因素影响，整体偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "白银",
+      "impact": 4,
+      "analysis": "供需缺口及库存下降推动价格上涨"
+    },
+    {
+      "sector_name": "稀土",
+      "impact": 3,
+      "analysis": "出口管制加强，行业需求有望提升"
+    },
+    {
+      "sector_name": "新材料",
+      "impact": 3,
+      "analysis": "MOFs材料市场化进程启动"
+    },
+    {
+      "sector_name": "国防军工",
+      "impact": 3,
+      "analysis": "反无人机技术发展，需求增加"
+    },
+    {
+      "sector_name": "黄金",
+      "impact": 2,
+      "analysis": "黄金储备增加，价格支撑"
+    },
+    {
+      "sector_name": "永磁材料",
+      "impact": 2,
+      "analysis": "业绩预增，订单充足"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "湖南白银",
+      "stock_code": "600382",
+      "impact": 4,
+      "analysis": "白银产量占全国10%以上"
+    },
+    {
+      "stock_name": "白银有色",
+      "stock_code": "601212",
+      "impact": 4,
+      "analysis": "具备多品种有色金属综合生产能力"
+    },
+    {
+      "stock_name": "中国稀土",
+      "stock_code": "000920",
+      "impact": 4,
+      "analysis": "国内产能规模最大的中重稀土分离企业"
+    },
+    {
+      "stock_name": "北方稀土",
+      "stock_code": "600111",
+      "impact": 4,
+      "analysis": "轻稀土市占率第一"
+    },
+    {
+      "stock_name": "国睿科技",
+      "stock_code": "600562",
+      "impact": 4,
+      "analysis": "拥有多型探测低小慢目标的反无雷达产品"
+    },
+    {
+      "stock_name": "联创光电",
+      "stock_code": "300363",
+      "impact": 4,
+      "analysis": "激光无人机反制系统"
+    },
+    {
+      "stock_name": "岳阳兴长",
+      "stock_code": "000819",
+      "impact": 3,
+      "analysis": "MOFs材料市场化进程启动"
+    },
+    {
+      "stock_name": "中电电机",
+      "stock_code": "600764",
+      "impact": 3,
+      "analysis": "珠拉金矿注入预期"
+    },
+    {
+      "stock_name": "西部超导",
+      "stock_code": "300381",
+      "impact": 3,
+      "analysis": "为合肥BEST建设提供超导材料"
+    },
+    {
+      "stock_name": "金力永磁",
+      "stock_code": "600362",
+      "impact": 3,
+      "analysis": "业绩预增，订单充足"
+    },
+    {
+      "stock_name": "大为股份",
+      "stock_code": "002552",
+      "impact": 2,
+      "analysis": "与国际知名存储厂商紧密合作"
+    }
+  ],
+  "article_id": "351798cca9e447a39410473f86a0aadb",
+  "article_date": "2025-10-09",
+  "article_title": "2025.10.9市场逻辑精选"
+}

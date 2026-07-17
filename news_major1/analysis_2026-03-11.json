@@ -1,0 +1,80 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，储能和化工板块表现强劲。",
+  "sectors": [
+    {
+      "sector_name": "储能",
+      "impact": 4,
+      "analysis": "需求增长，景气周期来临。"
+    },
+    {
+      "sector_name": "化工",
+      "impact": 3,
+      "analysis": "多类化工品价格上涨，业绩预期提升。"
+    },
+    {
+      "sector_name": "存储",
+      "impact": 3,
+      "analysis": "HBM产能争夺战升温，国产进程加速。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "阳光电源",
+      "stock_code": "300274",
+      "impact": 4,
+      "analysis": "海外AI储能龙头，AIDC配套补齐。"
+    },
+    {
+      "stock_name": "海博思创",
+      "stock_code": "688599",
+      "impact": 4,
+      "analysis": "国内独立储能龙头，大储核心。"
+    },
+    {
+      "stock_name": "安迪苏",
+      "stock_code": "600299",
+      "impact": 4,
+      "analysis": "蛋氨酸全球市占率第二。"
+    },
+    {
+      "stock_name": "兴发集团",
+      "stock_code": "600141",
+      "impact": 4,
+      "analysis": "草甘膦产能规模国内第一。"
+    },
+    {
+      "stock_name": "中泰化学",
+      "stock_code": "000912",
+      "impact": 4,
+      "analysis": "PVC产能国内市占率第一。"
+    },
+    {
+      "stock_name": "赛腾股份",
+      "stock_code": "300428",
+      "impact": 4,
+      "analysis": "HBM设备订单已交付。"
+    },
+    {
+      "stock_name": "盛美上海",
+      "stock_code": "603259",
+      "impact": 4,
+      "analysis": "Ultra ECP 3d设备可用于HBM工艺。"
+    },
+    {
+      "stock_name": "百川股份",
+      "stock_code": "002455",
+      "impact": 4,
+      "analysis": "TMP出厂价上涨，储能业务增长。"
+    },
+    {
+      "stock_name": "三孚股份",
+      "stock_code": "603070",
+      "impact": 3,
+      "analysis": "高纯四氯化硅供货国内主要光纤企业。"
+    }
+  ],
+  "article_id": "991fc21e2f374a61aa07022095a6043a",
+  "article_date": "2026-03-11",
+  "article_title": "2026.3.11市场逻辑精选"
+}

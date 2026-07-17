@@ -1,0 +1,39 @@
+{
+  "market_impact": 3,
+  "market_analysis": "医保2.0改革及车路云项目落地，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "医疗IT",
+      "impact": 4,
+      "analysis": "DRG/DIP改革推动医疗IT需求增长"
+    },
+    {
+      "sector_name": "智能网联汽车",
+      "impact": 3,
+      "analysis": "车路云项目落地，相关产业链受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "国新健康",
+      "stock_code": "000503",
+      "impact": 4,
+      "analysis": "DRG业务领先，受益于医保2.0改革"
+    },
+    {
+      "stock_name": "启明信息",
+      "stock_code": "002232",
+      "impact": 3,
+      "analysis": "车路云项目相关，受益于智能网联汽车发展"
+    },
+    {
+      "stock_name": "嘉和美康",
+      "stock_code": "300105",
+      "impact": 3,
+      "analysis": "电子病历业务占比高，受益于医保2.0改革"
+    }
+  ],
+  "article_id": "b05991389a104cbf86efe2be513a6ffb",
+  "article_date": "2024-07-23",
+  "article_title": "2024.7.23市场逻辑精选"
+}

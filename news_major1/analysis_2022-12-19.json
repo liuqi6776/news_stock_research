@@ -1,0 +1,99 @@
+{
+  "market_impact": 3,
+  "market_analysis": "数据基础制度意见发布，市场情绪提振。",
+  "sectors": [
+    {
+      "sector_name": "数据要素",
+      "impact": 4,
+      "analysis": "数据基础制度体系搭建，板块受益明显。"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "海源复材技术突破，光伏板块受提振。"
+    },
+    {
+      "sector_name": "养老服务",
+      "impact": 3,
+      "analysis": "恒锋信息智慧养老服务平台，板块受关注。"
+    },
+    {
+      "sector_name": "地产",
+      "impact": 2,
+      "analysis": "天保基建土地储备增加，地产板块异动。"
+    },
+    {
+      "sector_name": "医康养",
+      "impact": 2,
+      "analysis": "迪马股份构建医康养服务生态圈，板块受关注。"
+    },
+    {
+      "sector_name": "数字运营",
+      "impact": 2,
+      "analysis": "国脉文化作为数字运营平台，受数据基础制度影响。"
+    },
+    {
+      "sector_name": "电子",
+      "impact": 2,
+      "analysis": "铜峰电子PP复合铜箔新秀，电子板块受关注。"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 2,
+      "analysis": "福瑞股份NASH药公司盘前大涨，医药板块受提振。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "生意宝",
+      "stock_code": "002095",
+      "impact": 4,
+      "analysis": "数据基础制度意见发布，公司受益。"
+    },
+    {
+      "stock_name": "海源复材",
+      "stock_code": "002202",
+      "impact": 4,
+      "analysis": "光伏电镀铜技术突破，公司业绩有望提升。"
+    },
+    {
+      "stock_name": "恒锋信息",
+      "stock_code": "300082",
+      "impact": 4,
+      "analysis": "智慧养老服务平台，公司业绩有望提升。"
+    },
+    {
+      "stock_name": "天保基建",
+      "stock_code": "000965",
+      "impact": 3,
+      "analysis": "土地储备增加，公司业绩有望提升。"
+    },
+    {
+      "stock_name": "迪马股份",
+      "stock_code": "600565",
+      "impact": 3,
+      "analysis": "医康养服务生态圈，公司业绩有望提升。"
+    },
+    {
+      "stock_name": "国脉文化",
+      "stock_code": "600880",
+      "impact": 3,
+      "analysis": "数字运营平台，公司业绩有望提升。"
+    },
+    {
+      "stock_name": "铜峰电子",
+      "stock_code": "600237",
+      "impact": 3,
+      "analysis": "PP复合铜箔新秀，公司业绩有望提升。"
+    },
+    {
+      "stock_name": "福瑞股份",
+      "stock_code": "300049",
+      "impact": 3,
+      "analysis": "NASH药公司盘前大涨，公司业绩有望提升。"
+    }
+  ],
+  "article_id": "2a998e8a5fc34bd68855cba7112d3c6e",
+  "article_date": "2022-12-19",
+  "article_title": "2022.12.19市场逻辑精选"
+}

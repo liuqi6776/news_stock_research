@@ -1,0 +1,105 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏暖，多个板块和个股受利好消息影响。",
+  "sectors": [
+    {
+      "sector_name": "算力",
+      "impact": 4,
+      "analysis": "算力板块受多因素利好，预计持续上涨。"
+    },
+    {
+      "sector_name": "PCB",
+      "impact": 3,
+      "analysis": "PCB板块受技术升级利好，有望上涨。"
+    },
+    {
+      "sector_name": "消费",
+      "impact": 3,
+      "analysis": "消费板块受电商和微信小店利好，有望上涨。"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "机器人板块受CES展会订单利好，有望上涨。"
+    },
+    {
+      "sector_name": "稀土",
+      "impact": 3,
+      "analysis": "稀土板块受价格上调利好，有望上涨。"
+    },
+    {
+      "sector_name": "特斯拉FSD",
+      "impact": 3,
+      "analysis": "特斯拉FSD板块受技术测试利好，有望上涨。"
+    },
+    {
+      "sector_name": "和平重建",
+      "impact": 2,
+      "analysis": "和平重建板块受俄乌谈判利好，有望上涨。"
+    },
+    {
+      "sector_name": "豆包直播",
+      "impact": 2,
+      "analysis": "豆包直播板块受技术升级利好，有望上涨。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "雄韬股份",
+      "stock_code": "002733",
+      "impact": 4,
+      "analysis": "受算力板块利好，有望上涨。"
+    },
+    {
+      "stock_name": "海鸥股份",
+      "stock_code": "002085",
+      "impact": 4,
+      "analysis": "受PCB板块利好，有望上涨。"
+    },
+    {
+      "stock_name": "方正科技",
+      "stock_code": "600601",
+      "impact": 3,
+      "analysis": "受PCB板块利好，有望上涨。"
+    },
+    {
+      "stock_name": "利欧股份",
+      "stock_code": "002131",
+      "impact": 3,
+      "analysis": "受消费板块利好，有望上涨。"
+    },
+    {
+      "stock_name": "麦迪科技",
+      "stock_code": "002134",
+      "impact": 3,
+      "analysis": "受机器人板块利好，有望上涨。"
+    },
+    {
+      "stock_name": "中国稀土",
+      "stock_code": "000831",
+      "impact": 3,
+      "analysis": "受稀土板块利好，有望上涨。"
+    },
+    {
+      "stock_name": "宜通世纪",
+      "stock_code": "300310",
+      "impact": 3,
+      "analysis": "受特斯拉FSD板块利好，有望上涨。"
+    },
+    {
+      "stock_name": "北新路桥",
+      "stock_code": "002307",
+      "impact": 2,
+      "analysis": "受和平重建板块利好，有望上涨。"
+    },
+    {
+      "stock_name": "润欣科技",
+      "stock_code": "300224",
+      "impact": 2,
+      "analysis": "受豆包直播板块利好，有望上涨。"
+    }
+  ],
+  "article_title": "1月10日盘前早报 热点事件关注",
+  "html_file": "bffqsrp57e.html",
+  "article_date": "2025-01-10"
+}

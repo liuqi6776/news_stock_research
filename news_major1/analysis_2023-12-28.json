@@ -1,0 +1,45 @@
+{
+  "market_impact": 3,
+  "market_analysis": "光伏、铝等板块利好，市场情绪提升。",
+  "sectors": [
+    {
+      "sector_name": "光伏",
+      "impact": 4,
+      "analysis": "产能出清，需求稳定，估值低，利好明显。"
+    },
+    {
+      "sector_name": "铝",
+      "impact": 3,
+      "analysis": "期货上涨，需求改善，利好。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "晶科能源",
+      "stock_code": "600869",
+      "impact": 4,
+      "analysis": "光伏组件产能领先，利好。"
+    },
+    {
+      "stock_name": "钧达股份",
+      "stock_code": "002865",
+      "impact": 4,
+      "analysis": "光伏组件产能增长，利好。"
+    },
+    {
+      "stock_name": "闽发铝业",
+      "stock_code": "000545",
+      "impact": 3,
+      "analysis": "铝型材行业龙头，利好。"
+    },
+    {
+      "stock_name": "云铝股份",
+      "stock_code": "000807",
+      "impact": 3,
+      "analysis": "水电铝一体化，成本优势，利好。"
+    }
+  ],
+  "article_id": "44229d9cdd50444d95965900b37a5d0b",
+  "article_date": "2023-12-28",
+  "article_title": "2023.12.28市场逻辑精选"
+}

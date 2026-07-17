@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏向利好，AI和科技板块表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "电池行业",
+      "impact": 4,
+      "analysis": "豪鹏科技半固态电池技术突破，板块受益"
+    },
+    {
+      "sector_name": "软件行业",
+      "impact": 3,
+      "analysis": "东方通大模型中间件技术领先，板块受益"
+    },
+    {
+      "sector_name": "云计算行业",
+      "impact": 3,
+      "analysis": "优刻得AI多智能体开发平台上线，板块受益"
+    },
+    {
+      "sector_name": "AI行业",
+      "impact": 4,
+      "analysis": "Manus通用AI Agent发布，AI行业迎来新机遇"
+    },
+    {
+      "sector_name": "算力行业",
+      "impact": 3,
+      "analysis": "阿里通义千问推理模型登顶，算力行业受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "豪鹏科技",
+      "stock_code": "002595",
+      "impact": 4,
+      "analysis": "半固态电池技术突破，股价有望上涨"
+    },
+    {
+      "stock_name": "东方通",
+      "stock_code": "300379",
+      "impact": 3,
+      "analysis": "大模型中间件技术领先，股价有望上涨"
+    },
+    {
+      "stock_name": "优刻得",
+      "stock_code": "603260",
+      "impact": 3,
+      "analysis": "AI多智能体开发平台上线，股价有望上涨"
+    },
+    {
+      "stock_name": "蓝色光标",
+      "stock_code": "300058",
+      "impact": 3,
+      "analysis": "参与投资Manus，股价有望上涨"
+    },
+    {
+      "stock_name": "阿里算力",
+      "stock_code": "002938",
+      "impact": 3,
+      "analysis": "阿里通义千问推理模型登顶，股价有望上涨"
+    }
+  ],
+  "article_id": "0b114539b7894d03b9e7b49337941120",
+  "article_date": "2025-03-06",
+  "article_title": "2025.3.6市场逻辑精选"
+}

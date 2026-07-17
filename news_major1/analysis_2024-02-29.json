@@ -1,0 +1,61 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，半导体设备国产化加速，有机硅价格上涨。",
+  "sectors": [
+    {
+      "sector_name": "半导体设备",
+      "impact": 4,
+      "analysis": "国产化进程加速，利好相关设备供应商。"
+    },
+    {
+      "sector_name": "有机硅",
+      "impact": 3,
+      "analysis": "旺季来临，价格上涨，利好相关生产企业。"
+    },
+    {
+      "sector_name": "氢能",
+      "impact": 3,
+      "analysis": "制氢电源需求增长，利好相关设备供应商。"
+    },
+    {
+      "sector_name": "手机产业链",
+      "impact": 3,
+      "analysis": "华为P70发布预期，利好相关手机产业链公司。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "北方华创",
+      "stock_code": "002371",
+      "impact": 4,
+      "analysis": "薄膜沉积设备供应商，受益国产化进程。"
+    },
+    {
+      "stock_name": "拓荆科技",
+      "stock_code": "688012",
+      "impact": 4,
+      "analysis": "CVD设备供应商，受益国产化进程。"
+    },
+    {
+      "stock_name": "合盛硅业",
+      "stock_code": "600703",
+      "impact": 3,
+      "analysis": "有机硅单体生产企业，受益价格上涨。"
+    },
+    {
+      "stock_name": "阳光电源",
+      "stock_code": "300274",
+      "impact": 3,
+      "analysis": "IGBT制氢电源供应商，受益氢能发展。"
+    },
+    {
+      "stock_name": "华为",
+      "stock_code": "002502",
+      "impact": 3,
+      "analysis": "华为P70发布预期，利好相关手机产业链公司。"
+    }
+  ],
+  "article_id": "82c4bdf1e0d14082b8e7f9404d75acc7",
+  "article_date": "2024-02-29",
+  "article_title": "2024.2.29市场逻辑精选"
+}

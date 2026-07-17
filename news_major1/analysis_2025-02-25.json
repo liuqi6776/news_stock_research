@@ -1,0 +1,213 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "光伏",
+      "impact": 4,
+      "analysis": "产业链价值回暖，组件排产增加。"
+    },
+    {
+      "sector_name": "RISC-V",
+      "impact": 3,
+      "analysis": "阿里系论坛将发布RISC-V相关产品。"
+    },
+    {
+      "sector_name": "低空经济",
+      "impact": 3,
+      "analysis": "低空经济和商业航天产业集群重大项目签约。"
+    },
+    {
+      "sector_name": "AMD",
+      "impact": 3,
+      "analysis": "AMD将发布新高端显卡，拓展AI训练领域需求。"
+    },
+    {
+      "sector_name": "LED驱动一体化芯片",
+      "impact": 3,
+      "analysis": "淳中科技LED驱动一体化芯片产业进展。"
+    },
+    {
+      "sector_name": "SVG产品",
+      "impact": 3,
+      "analysis": "新风光SVG产品在数据中心应用市场前景广阔。"
+    },
+    {
+      "sector_name": "汽车零部件",
+      "impact": 3,
+      "analysis": "超达装备实际控制人拟变更，涉及汽车零部件行业。"
+    },
+    {
+      "sector_name": "工业物联网",
+      "impact": 3,
+      "analysis": "映翰通业绩增长，工业物联网产品销售额增长。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "大业股份",
+      "stock_code": "002592",
+      "impact": 4,
+      "analysis": "光伏产业链价值回暖，组件排产增加。"
+    },
+    {
+      "stock_name": "福莱特",
+      "stock_code": "600876",
+      "impact": 4,
+      "analysis": "光伏产业链价值回暖，组件排产增加。"
+    },
+    {
+      "stock_name": "钧达股份",
+      "stock_code": "002865",
+      "impact": 4,
+      "analysis": "光伏产业链价值回暖，组件排产增加。"
+    },
+    {
+      "stock_name": "仕净科技",
+      "stock_code": "300687",
+      "impact": 4,
+      "analysis": "光伏产业链价值回暖，组件排产增加。"
+    },
+    {
+      "stock_name": "爱旭股份",
+      "stock_code": "600385",
+      "impact": 4,
+      "analysis": "光伏产业链价值回暖，组件排产增加。"
+    },
+    {
+      "stock_name": "双良节能",
+      "stock_code": "600481",
+      "impact": 4,
+      "analysis": "光伏产业链价值回暖，组件排产增加。"
+    },
+    {
+      "stock_name": "全志科技",
+      "stock_code": "300454",
+      "impact": 3,
+      "analysis": "阿里系论坛将发布RISC-V相关产品。"
+    },
+    {
+      "stock_name": "佳禾智能",
+      "stock_code": "603643",
+      "impact": 3,
+      "analysis": "阿里系论坛将发布RISC-V相关产品。"
+    },
+    {
+      "stock_name": "太极股份",
+      "stock_code": "002368",
+      "impact": 3,
+      "analysis": "阿里系论坛将发布RISC-V相关产品。"
+    },
+    {
+      "stock_name": "卓易信息",
+      "stock_code": "300688",
+      "impact": 3,
+      "analysis": "阿里系论坛将发布RISC-V相关产品。"
+    },
+    {
+      "stock_name": "亿航智能",
+      "stock_code": "688016",
+      "impact": 3,
+      "analysis": "低空经济和商业航天产业集群重大项目签约。"
+    },
+    {
+      "stock_name": "安凯客车",
+      "stock_code": "000868",
+      "impact": 3,
+      "analysis": "低空经济和商业航天产业集群重大项目签约。"
+    },
+    {
+      "stock_name": "英搏尔",
+      "stock_code": "002743",
+      "impact": 3,
+      "analysis": "低空经济和商业航天产业集群重大项目签约。"
+    },
+    {
+      "stock_name": "长源东谷",
+      "stock_code": "300378",
+      "impact": 3,
+      "analysis": "低空经济和商业航天产业集群重大项目签约。"
+    },
+    {
+      "stock_name": "四川九洲",
+      "stock_code": "600801",
+      "impact": 3,
+      "analysis": "低空经济和商业航天产业集群重大项目签约。"
+    },
+    {
+      "stock_name": "纵横股份",
+      "stock_code": "002751",
+      "impact": 3,
+      "analysis": "低空经济和商业航天产业集群重大项目签约。"
+    },
+    {
+      "stock_name": "川大智胜",
+      "stock_code": "002253",
+      "impact": 3,
+      "analysis": "低空经济和商业航天产业集群重大项目签约。"
+    },
+    {
+      "stock_name": "中无人机",
+      "stock_code": "300118",
+      "impact": 3,
+      "analysis": "低空经济和商业航天产业集群重大项目签约。"
+    },
+    {
+      "stock_name": "通富微电",
+      "stock_code": "002156",
+      "impact": 3,
+      "analysis": "AMD将发布新高端显卡，拓展AI训练领域需求。"
+    },
+    {
+      "stock_name": "领益智造",
+      "stock_code": "002600",
+      "impact": 3,
+      "analysis": "AMD将发布新高端显卡，拓展AI训练领域需求。"
+    },
+    {
+      "stock_name": "胜宏科技",
+      "stock_code": "300008",
+      "impact": 3,
+      "analysis": "AMD将发布新高端显卡，拓展AI训练领域需求。"
+    },
+    {
+      "stock_name": "兴森科技",
+      "stock_code": "002866",
+      "impact": 3,
+      "analysis": "AMD将发布新高端显卡，拓展AI训练领域需求。"
+    },
+    {
+      "stock_name": "中电港",
+      "stock_code": "600989",
+      "impact": 3,
+      "analysis": "AMD将发布新高端显卡，拓展AI训练领域需求。"
+    },
+    {
+      "stock_name": "淳中科技",
+      "stock_code": "300418",
+      "impact": 3,
+      "analysis": "淳中科技LED驱动一体化芯片产业进展。"
+    },
+    {
+      "stock_name": "新风光",
+      "stock_code": "300432",
+      "impact": 3,
+      "analysis": "新风光SVG产品在数据中心应用市场前景广阔。"
+    },
+    {
+      "stock_name": "超达装备",
+      "stock_code": "002517",
+      "impact": 3,
+      "analysis": "超达装备实际控制人拟变更，涉及汽车零部件行业。"
+    },
+    {
+      "stock_name": "映翰通",
+      "stock_code": "300219",
+      "impact": 3,
+      "analysis": "映翰通业绩增长，工业物联网产品销售额增长。"
+    }
+  ],
+  "article_id": "2836b1a2e2ff418cbe0f1cbd6f932f1b",
+  "article_date": "2025-02-25",
+  "article_title": "2025.2.25市场逻辑精选"
+}

@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注政策落地情况。",
+  "sectors": [
+    {
+      "sector_name": "金属",
+      "impact": 4,
+      "analysis": "钴出口禁令延长，利好钴相关产业链。"
+    },
+    {
+      "sector_name": "商业航天",
+      "impact": 3,
+      "analysis": "商业航天大会召开，利好航天产业链。"
+    },
+    {
+      "sector_name": "AI眼镜",
+      "impact": 2,
+      "analysis": "小米发布AI眼镜新品，利好相关产业链。"
+    },
+    {
+      "sector_name": "深海经济",
+      "impact": 4,
+      "analysis": "深海科技写入政府工作报告，利好深海产业链。"
+    },
+    {
+      "sector_name": "港口航运",
+      "impact": 3,
+      "analysis": "美国船舶301法案听证会，利好航运产业链。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "华友钴业",
+      "stock_code": "300712",
+      "impact": 4,
+      "analysis": "钴出口禁令延长，利好公司。"
+    },
+    {
+      "stock_name": "邵阳液压",
+      "stock_code": "601717",
+      "impact": 3,
+      "analysis": "商业航天大会召开，利好公司。"
+    },
+    {
+      "stock_name": "星星科技",
+      "stock_code": "603828",
+      "impact": 2,
+      "analysis": "小米发布AI眼镜新品，利好公司。"
+    },
+    {
+      "stock_name": "石化机械",
+      "stock_code": "000852",
+      "impact": 4,
+      "analysis": "深海科技写入政府工作报告，利好公司。"
+    },
+    {
+      "stock_name": "宁波远洋",
+      "stock_code": "600017",
+      "impact": 3,
+      "analysis": "美国船舶301法案听证会，利好公司。"
+    }
+  ],
+  "article_id": "52dd8bc80e294c74b9e9f06764fea865",
+  "article_date": "2025-03-23",
+  "article_title": "2025.3.23市场逻辑精选"
+}

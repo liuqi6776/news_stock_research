@@ -1,0 +1,281 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注潜在风险。",
+  "sectors": [
+    {
+      "sector_name": "存储",
+      "impact": 3,
+      "analysis": "韩国紧急戒严可能影响存储供应商业务"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "光伏行业大会公布议程，相关公司受益"
+    },
+    {
+      "sector_name": "特斯拉机器人",
+      "impact": 3,
+      "analysis": "特斯拉机器人线束市场扩大，相关公司受益"
+    },
+    {
+      "sector_name": "益生股份",
+      "impact": 2,
+      "analysis": "美国禽流感疫情可能影响公司业务"
+    },
+    {
+      "sector_name": "华塑科技",
+      "impact": 2,
+      "analysis": "公司投资建设研发及智造基地，扩大产能"
+    },
+    {
+      "sector_name": "中航泰达",
+      "impact": 2,
+      "analysis": "公司拟收购资产，优化产业配置"
+    },
+    {
+      "sector_name": "低代码",
+      "impact": 3,
+      "analysis": "低代码走红，相关公司受益"
+    },
+    {
+      "sector_name": "出口反制",
+      "impact": 3,
+      "analysis": "商务部禁止两用物项对美军事出口，相关材料价格可能上涨"
+    },
+    {
+      "sector_name": "力星股份",
+      "impact": 3,
+      "analysis": "公司为特斯拉轴承钢球供应商，受益机器人市场"
+    },
+    {
+      "sector_name": "文一科技",
+      "impact": 3,
+      "analysis": "国资入驻，布局HBM先进封装"
+    },
+    {
+      "sector_name": "浙商证券",
+      "impact": 3,
+      "analysis": "收购国都证券股权，实现南北优势资源互补"
+    },
+    {
+      "sector_name": "三诺生物",
+      "impact": 3,
+      "analysis": "子公司签订重要合同，业绩有望提升"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "万润科技",
+      "stock_code": "002654",
+      "impact": 3,
+      "analysis": "韩国紧急戒严可能影响公司业务"
+    },
+    {
+      "stock_name": "江波龙",
+      "stock_code": "002061",
+      "impact": 3,
+      "analysis": "韩国紧急戒严可能影响公司业务"
+    },
+    {
+      "stock_name": "德明利",
+      "stock_code": "300643",
+      "impact": 3,
+      "analysis": "韩国紧急戒严可能影响公司业务"
+    },
+    {
+      "stock_name": "佰维存储",
+      "stock_code": "688012",
+      "impact": 3,
+      "analysis": "韩国紧急戒严可能影响公司业务"
+    },
+    {
+      "stock_name": "钧达股份",
+      "stock_code": "002865",
+      "impact": 3,
+      "analysis": "光伏行业大会公布议程，公司受益"
+    },
+    {
+      "stock_name": "爱旭股份",
+      "stock_code": "600385",
+      "impact": 3,
+      "analysis": "光伏行业大会公布议程，公司受益"
+    },
+    {
+      "stock_name": "晶澳科技",
+      "stock_code": "002459",
+      "impact": 3,
+      "analysis": "光伏行业大会公布议程，公司受益"
+    },
+    {
+      "stock_name": "福斯特",
+      "stock_code": "603806",
+      "impact": 3,
+      "analysis": "光伏行业大会公布议程，公司受益"
+    },
+    {
+      "stock_name": "广信材料",
+      "stock_code": "603206",
+      "impact": 3,
+      "analysis": "光伏行业大会公布议程，公司受益"
+    },
+    {
+      "stock_name": "英诺激光",
+      "stock_code": "688019",
+      "impact": 3,
+      "analysis": "光伏行业大会公布议程，公司受益"
+    },
+    {
+      "stock_name": "鑫宏业",
+      "stock_code": "002341",
+      "impact": 3,
+      "analysis": "特斯拉机器人线束市场扩大，公司受益"
+    },
+    {
+      "stock_name": "长城科技",
+      "stock_code": "002072",
+      "impact": 3,
+      "analysis": "特斯拉机器人线束市场扩大，公司受益"
+    },
+    {
+      "stock_name": "泓淋电力",
+      "stock_code": "603696",
+      "impact": 3,
+      "analysis": "特斯拉机器人线束市场扩大，公司受益"
+    },
+    {
+      "stock_name": "银禧科技",
+      "stock_code": "002126",
+      "impact": 3,
+      "analysis": "特斯拉机器人线束市场扩大，公司受益"
+    },
+    {
+      "stock_name": "新亚电子",
+      "stock_code": "002389",
+      "impact": 3,
+      "analysis": "特斯拉机器人线束市场扩大，公司受益"
+    },
+    {
+      "stock_name": "新炬网络",
+      "stock_code": "300568",
+      "impact": 3,
+      "analysis": "低代码走红，公司受益"
+    },
+    {
+      "stock_name": "金现代",
+      "stock_code": "300531",
+      "impact": 3,
+      "analysis": "低代码走红，公司受益"
+    },
+    {
+      "stock_name": "普元信息",
+      "stock_code": "688390",
+      "impact": 3,
+      "analysis": "低代码走红，公司受益"
+    },
+    {
+      "stock_name": "博睿数据",
+      "stock_code": "300528",
+      "impact": 3,
+      "analysis": "低代码走红，公司受益"
+    },
+    {
+      "stock_name": "众诚科技",
+      "stock_code": "871956",
+      "impact": 3,
+      "analysis": "低代码走红，公司受益"
+    },
+    {
+      "stock_name": "中国铝业",
+      "stock_code": "601600",
+      "impact": 3,
+      "analysis": "出口反制，相关材料价格可能上涨"
+    },
+    {
+      "stock_name": "中金岭南",
+      "stock_code": "000060",
+      "impact": 3,
+      "analysis": "出口反制，相关材料价格可能上涨"
+    },
+    {
+      "stock_name": "云南锗业",
+      "stock_code": "002428",
+      "impact": 3,
+      "analysis": "出口反制，相关材料价格可能上涨"
+    },
+    {
+      "stock_name": "驰宏锌锗",
+      "stock_code": "600497",
+      "impact": 3,
+      "analysis": "出口反制，相关材料价格可能上涨"
+    },
+    {
+      "stock_name": "湖南黄金",
+      "stock_code": "002155",
+      "impact": 3,
+      "analysis": "出口反制，相关材料价格可能上涨"
+    },
+    {
+      "stock_name": "华钰矿业",
+      "stock_code": "600955",
+      "impact": 3,
+      "analysis": "出口反制，相关材料价格可能上涨"
+    },
+    {
+      "stock_name": "华锡有色",
+      "stock_code": "600367",
+      "impact": 3,
+      "analysis": "出口反制，相关材料价格可能上涨"
+    },
+    {
+      "stock_name": "亚振家居",
+      "stock_code": "603385",
+      "impact": 3,
+      "analysis": "出口反制，相关材料价格可能上涨"
+    },
+    {
+      "stock_name": "惠丰钻石",
+      "stock_code": "600243",
+      "impact": 3,
+      "analysis": "出口反制，相关材料价格可能上涨"
+    },
+    {
+      "stock_name": "黄河旋风",
+      "stock_code": "600172",
+      "impact": 3,
+      "analysis": "出口反制，相关材料价格可能上涨"
+    },
+    {
+      "stock_name": "中兵红箭",
+      "stock_code": "000519",
+      "impact": 3,
+      "analysis": "出口反制，相关材料价格可能上涨"
+    },
+    {
+      "stock_name": "力星股份",
+      "stock_code": "603510",
+      "impact": 3,
+      "analysis": "特斯拉轴承钢球供应商，受益机器人市场"
+    },
+    {
+      "stock_name": "文一科技",
+      "stock_code": "300520",
+      "impact": 3,
+      "analysis": "国资入驻，布局HBM先进封装"
+    },
+    {
+      "stock_name": "浙商证券",
+      "stock_code": "600999",
+      "impact": 3,
+      "analysis": "收购国都证券股权，实现南北优势资源互补"
+    },
+    {
+      "stock_name": "三诺生物",
+      "stock_code": "300298",
+      "impact": 3,
+      "analysis": "子公司签订重要合同，业绩有望提升"
+    }
+  ],
+  "article_id": "5a69034920af420b839c1aec51a8f4b2",
+  "article_date": "2024-12-03",
+  "article_title": "2024.12.3市场逻辑精选"
+}

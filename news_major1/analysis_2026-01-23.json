@@ -1,0 +1,196 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体情绪偏积极，多个行业和个股受利好消息影响。",
+  "sectors": [
+    {
+      "sector_name": "商业航天",
+      "impact": 4,
+      "analysis": "蓝箭航天IPO进展及商业航天大会举办，板块受提振。"
+    },
+    {
+      "sector_name": "芯片",
+      "impact": 3,
+      "analysis": "平头哥拟独立上市，芯片板块受关注。"
+    },
+    {
+      "sector_name": "量子科技",
+      "impact": 3,
+      "analysis": "量子计算六大核心能力被提及，板块受关注。"
+    },
+    {
+      "sector_name": "药品零售",
+      "impact": 2,
+      "analysis": "促进药品零售行业高质量发展意见发布，板块受提振。"
+    },
+    {
+      "sector_name": "预制菜",
+      "impact": 2,
+      "analysis": "预制菜国家标准征求意见，板块受关注。"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 2,
+      "analysis": "马斯克计划销售机器人，机器人板块受关注。"
+    },
+    {
+      "sector_name": "星链",
+      "impact": 2,
+      "analysis": "SpaceX二代星链系统计划，星链板块受关注。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "蓝箭航天",
+      "stock_code": "000985",
+      "impact": 4,
+      "analysis": "IPO审核状态变更为已问询，股价受提振。"
+    },
+    {
+      "stock_name": "中科星图",
+      "stock_code": "300222",
+      "impact": 3,
+      "analysis": "受邀参会，股价受关注。"
+    },
+    {
+      "stock_name": "高华科技",
+      "stock_code": "300449",
+      "impact": 3,
+      "analysis": "受邀参会，股价受关注。"
+    },
+    {
+      "stock_name": "平头哥",
+      "stock_code": "000977",
+      "impact": 3,
+      "analysis": "拟独立上市，股价受关注。"
+    },
+    {
+      "stock_name": "利扬芯片",
+      "stock_code": "300476",
+      "impact": 3,
+      "analysis": "受平头哥消息影响，股价受关注。"
+    },
+    {
+      "stock_name": "探路者",
+      "stock_code": "002005",
+      "impact": 2,
+      "analysis": "太空旅行预订，股价受关注。"
+    },
+    {
+      "stock_name": "三夫户外",
+      "stock_code": "300382",
+      "impact": 2,
+      "analysis": "太空旅行预订，股价受关注。"
+    },
+    {
+      "stock_name": "国盾量子",
+      "stock_code": "688027",
+      "impact": 3,
+      "analysis": "量子计算六大核心能力被提及，股价受关注。"
+    },
+    {
+      "stock_name": "科大国创",
+      "stock_code": "688016",
+      "impact": 3,
+      "analysis": "量子计算六大核心能力被提及，股价受关注。"
+    },
+    {
+      "stock_name": "格尔软件",
+      "stock_code": "603388",
+      "impact": 3,
+      "analysis": "量子计算六大核心能力被提及，股价受关注。"
+    },
+    {
+      "stock_name": "药易购",
+      "stock_code": "603567",
+      "impact": 2,
+      "analysis": "促进药品零售行业高质量发展意见发布，股价受提振。"
+    },
+    {
+      "stock_name": "漱玉平民",
+      "stock_code": "603633",
+      "impact": 2,
+      "analysis": "促进药品零售行业高质量发展意见发布，股价受提振。"
+    },
+    {
+      "stock_name": "老百姓",
+      "stock_code": "603883",
+      "impact": 2,
+      "analysis": "促进药品零售行业高质量发展意见发布，股价受提振。"
+    },
+    {
+      "stock_name": "味知香",
+      "stock_code": "603969",
+      "impact": 2,
+      "analysis": "预制菜国家标准征求意见，股价受关注。"
+    },
+    {
+      "stock_name": "得利斯",
+      "stock_code": "002330",
+      "impact": 2,
+      "analysis": "预制菜国家标准征求意见，股价受关注。"
+    },
+    {
+      "stock_name": "惠发食品",
+      "stock_code": "603819",
+      "impact": 2,
+      "analysis": "预制菜国家标准征求意见，股价受关注。"
+    },
+    {
+      "stock_name": "千味央厨",
+      "stock_code": "603821",
+      "impact": 2,
+      "analysis": "预制菜国家标准征求意见，股价受关注。"
+    },
+    {
+      "stock_name": "拓普集团",
+      "stock_code": "601689",
+      "impact": 2,
+      "analysis": "马斯克计划销售机器人，股价受关注。"
+    },
+    {
+      "stock_name": "五洲新春",
+      "stock_code": "601569",
+      "impact": 2,
+      "analysis": "马斯克计划销售机器人，股价受关注。"
+    },
+    {
+      "stock_name": "浙江荣泰",
+      "stock_code": "603089",
+      "impact": 2,
+      "analysis": "马斯克计划销售机器人，股价受关注。"
+    },
+    {
+      "stock_name": "西部材料",
+      "stock_code": "002149",
+      "impact": 2,
+      "analysis": "SpaceX二代星链系统计划，股价受关注。"
+    },
+    {
+      "stock_name": "再升科技",
+      "stock_code": "300506",
+      "impact": 2,
+      "analysis": "SpaceX二代星链系统计划，股价受关注。"
+    },
+    {
+      "stock_name": "天银机电",
+      "stock_code": "603596",
+      "impact": 2,
+      "analysis": "SpaceX二代星链系统计划，股价受关注。"
+    },
+    {
+      "stock_name": "信维通信",
+      "stock_code": "300136",
+      "impact": 2,
+      "analysis": "SpaceX二代星链系统计划，股价受关注。"
+    },
+    {
+      "stock_name": "烽火通信",
+      "stock_code": "600498",
+      "impact": 2,
+      "analysis": "SpaceX二代星链系统计划，股价受关注。"
+    }
+  ],
+  "article_title": "1月23日盘前纪要",
+  "html_file": "111qa3qva68.html",
+  "article_date": "2026-01-23"
+}

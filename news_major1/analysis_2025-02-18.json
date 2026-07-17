@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注后续落实情况。",
+  "sectors": [
+    {
+      "sector_name": "人工智能",
+      "impact": 4,
+      "analysis": "DeepSeek新技术推出，利好相关产业链。"
+    },
+    {
+      "sector_name": "自动驾驶",
+      "impact": 3,
+      "analysis": "自动驾驶商用化推进，相关企业受益。"
+    },
+    {
+      "sector_name": "政务系统",
+      "impact": 2,
+      "analysis": "政务系统运维需求提升，相关企业受益。"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 2,
+      "analysis": "机器人业务拓展，相关企业受益。"
+    },
+    {
+      "sector_name": "先进封装",
+      "impact": 3,
+      "analysis": "先进封装业务景气，相关企业受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "DeepSeek",
+      "stock_code": "待定",
+      "impact": 4,
+      "analysis": "推出新技术，利好公司。"
+    },
+    {
+      "stock_name": "文远知行",
+      "stock_code": "待定",
+      "impact": 3,
+      "analysis": "自动驾驶商用化推进，利好公司。"
+    },
+    {
+      "stock_name": "华胜天成",
+      "stock_code": "待定",
+      "impact": 2,
+      "analysis": "政务系统运维需求提升，利好公司。"
+    },
+    {
+      "stock_name": "精锻科技",
+      "stock_code": "待定",
+      "impact": 2,
+      "analysis": "机器人业务拓展，利好公司。"
+    },
+    {
+      "stock_name": "路维光电",
+      "stock_code": "待定",
+      "impact": 3,
+      "analysis": "先进封装业务景气，利好公司。"
+    }
+  ],
+  "article_id": "4913bd3072684103be9a35c0bc179329",
+  "article_date": "2025-02-18",
+  "article_title": "2025.2.18市场逻辑精选"
+}

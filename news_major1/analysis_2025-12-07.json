@@ -1,0 +1,56 @@
+{
+  "market_impact": 3,
+  "market_analysis": "军工、券商、航天板块受利好消息推动，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "军工",
+      "impact": 4,
+      "analysis": "福建推进新质战斗力发展，美军对委内瑞拉登陆作战猜测，军工板块受益"
+    },
+    {
+      "sector_name": "券商",
+      "impact": 3,
+      "analysis": "券商资本空间与杠杆上限拓宽，市场活跃度提升"
+    },
+    {
+      "sector_name": "航天",
+      "impact": 3,
+      "analysis": "SpaceX估值高，计划IPO，航天板块受关注"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "红相股份",
+      "stock_code": "002695",
+      "impact": 4,
+      "analysis": "具备完全军工资质，产品应用于机载、弹载等"
+    },
+    {
+      "stock_name": "中富通",
+      "stock_code": "300057",
+      "impact": 4,
+      "analysis": "已完成武器装备质量管理体系认证，取得武器装备科研生产单位二级保密资格"
+    },
+    {
+      "stock_name": "兴业证券",
+      "stock_code": "601377",
+      "impact": 3,
+      "analysis": "财富管理、资产管理行业前列，托管业务领先"
+    },
+    {
+      "stock_name": "斯瑞新材",
+      "stock_code": "300362",
+      "impact": 3,
+      "analysis": "积极对接SpaceX，拓展液体火箭发动机燃烧室内衬应用"
+    },
+    {
+      "stock_name": "西部材料",
+      "stock_code": "002149",
+      "impact": 4,
+      "analysis": "SpaceX唯一铌合金C103国内供应商，火箭发动机材料核心标的"
+    }
+  ],
+  "article_id": "2fb019dd877c408db0925e5d696304cd",
+  "article_date": "2025-12-07",
+  "article_title": "2025.12.7市场逻辑精选"
+}

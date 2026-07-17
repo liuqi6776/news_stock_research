@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策预期和行业动态推动市场情绪",
+  "sectors": [
+    {
+      "sector_name": "土地流转",
+      "impact": 3,
+      "analysis": "政策预期利好，相关公司受益"
+    },
+    {
+      "sector_name": "卫星互联网",
+      "impact": 3,
+      "analysis": "行业增长预期，相关公司受益"
+    },
+    {
+      "sector_name": "计算机设备",
+      "impact": 2,
+      "analysis": "外贸和AI电脑需求增长，相关公司受益"
+    },
+    {
+      "sector_name": "工业自动化",
+      "impact": 2,
+      "analysis": "工业机器人市场预期增长，相关公司受益"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 2,
+      "analysis": "新药研发和出口，相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "亚通股份",
+      "stock_code": "600692",
+      "impact": 3,
+      "analysis": "土地流转预期受益"
+    },
+    {
+      "stock_name": "铖昌科技",
+      "stock_code": "002103",
+      "impact": 3,
+      "analysis": "卫星互联网制造环节受益"
+    },
+    {
+      "stock_name": "智迪科技",
+      "stock_code": "002712",
+      "impact": 2,
+      "analysis": "外贸和AI电脑需求增长受益"
+    },
+    {
+      "stock_name": "信邦智能",
+      "stock_code": "300821",
+      "impact": 2,
+      "analysis": "工业机器人市场预期增长受益"
+    },
+    {
+      "stock_name": "翰宇药业",
+      "stock_code": "002552",
+      "impact": 2,
+      "analysis": "新药研发和出口受益"
+    }
+  ],
+  "article_id": "0cd4d341bbf74b5b94747553646cfbe3",
+  "article_date": "2024-06-27",
+  "article_title": "2024.6.27市场逻辑精选"
+}

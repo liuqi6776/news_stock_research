@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策预期及业绩利好，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "水利建设",
+      "impact": 3,
+      "analysis": "财政赤字增加，水利建设受益"
+    },
+    {
+      "sector_name": "金融",
+      "impact": 3,
+      "analysis": "金融会议预期，金融板块受关注"
+    },
+    {
+      "sector_name": "数据要素",
+      "impact": 3,
+      "analysis": "国家数据局挂牌，数据要素板块受益"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "微软业绩超预期，人工智能板块受提振"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 3,
+      "analysis": "小鹏发布人形机器人，新能源汽车板块受关注"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "顺控发展",
+      "stock_code": "000692",
+      "impact": 3,
+      "analysis": "水利建设受益股"
+    },
+    {
+      "stock_name": "太平洋",
+      "stock_code": "600038",
+      "impact": 3,
+      "analysis": "金融会议预期，金融板块受益股"
+    },
+    {
+      "stock_name": "中国科传",
+      "stock_code": "600558",
+      "impact": 3,
+      "analysis": "数据要素板块受益股"
+    },
+    {
+      "stock_name": "金山办公",
+      "stock_code": "602833",
+      "impact": 3,
+      "analysis": "微软业绩超预期，人工智能板块受益股"
+    },
+    {
+      "stock_name": "小鹏汽车",
+      "stock_code": "09868",
+      "impact": 3,
+      "analysis": "新能源汽车板块受益股"
+    }
+  ],
+  "article_title": "10月25日盘前早报 热点事件关注",
+  "html_file": "5w189dvg0d.html",
+  "article_date": "2023-10-25"
+}

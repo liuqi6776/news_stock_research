@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注政策落实情况。",
+  "sectors": [
+    {
+      "sector_name": "土地流转",
+      "impact": 4,
+      "analysis": "政策支持，交易活跃，板块受益"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "人形机器人应用落地，相关产业链受益"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "AI大会召开，国产替代加速，板块受益"
+    },
+    {
+      "sector_name": "农机",
+      "impact": 3,
+      "analysis": "土地流转推动农机需求，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "辉隆股份",
+      "stock_code": "000429",
+      "impact": 4,
+      "analysis": "参与土地流转，业绩增长"
+    },
+    {
+      "stock_name": "优必选",
+      "stock_code": "002915",
+      "impact": 4,
+      "analysis": "人形机器人合作落地，业绩增长"
+    },
+    {
+      "stock_name": "一拖股份",
+      "stock_code": "000031",
+      "impact": 3,
+      "analysis": "拖拉机市场市占率行业第一"
+    },
+    {
+      "stock_name": "星光农机",
+      "stock_code": "300224",
+      "impact": 3,
+      "analysis": "农业机械营收占比高"
+    }
+  ],
+  "article_id": "1df582a6c6674f428422fbae1c11c4b3",
+  "article_date": "2024-07-01",
+  "article_title": "2024.7.1市场逻辑精选"
+}

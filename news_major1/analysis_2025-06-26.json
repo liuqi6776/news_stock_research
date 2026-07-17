@@ -1,0 +1,92 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受政策利好影响，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "虚拟资产",
+      "impact": 4,
+      "analysis": "政策支持，板块有望迎来发展机遇。"
+    },
+    {
+      "sector_name": "旅游",
+      "impact": 3,
+      "analysis": "暑假旺季来临，旅游行业景气度上行。"
+    },
+    {
+      "sector_name": "水利",
+      "impact": 3,
+      "analysis": "水利建设政策出台，相关公司有望受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "捷顺科技",
+      "stock_code": "002609",
+      "impact": 3,
+      "analysis": "智慧停车项目合作，RWA资产有望上链。"
+    },
+    {
+      "stock_name": "实达集团",
+      "stock_code": "600734",
+      "impact": 3,
+      "analysis": "与RWA生态合作伙伴合作，开展跨链数据业务。"
+    },
+    {
+      "stock_name": "天目湖",
+      "stock_code": "603323",
+      "impact": 3,
+      "analysis": "苏超比赛期间预订人次增长，公司为常州唯一旅游上市企业。"
+    },
+    {
+      "stock_name": "西域旅游",
+      "stock_code": "600570",
+      "impact": 3,
+      "analysis": "新疆旅游行业龙头企业，营收占比97.07%。"
+    },
+    {
+      "stock_name": "深水规院",
+      "stock_code": "002060",
+      "impact": 3,
+      "analysis": "主营水务工程项目设计、运营、咨询等业务。"
+    },
+    {
+      "stock_name": "韩建河山",
+      "stock_code": "601333",
+      "impact": 3,
+      "analysis": "PCCP业务占比65%，拥有水利行业甲级设计资质。"
+    },
+    {
+      "stock_name": "东方锆业",
+      "stock_code": "002166",
+      "impact": 3,
+      "analysis": "固态电池氧化锆用量有望增加。"
+    },
+    {
+      "stock_name": "唯特偶",
+      "stock_code": "300625",
+      "impact": 3,
+      "analysis": "锡膏产品可用于芯片堆叠，实现批量供货。"
+    },
+    {
+      "stock_name": "华媒控股",
+      "stock_code": "000607",
+      "impact": 3,
+      "analysis": "参股杭州文交所，有望受益于虚拟资产政策。"
+    },
+    {
+      "stock_name": "延华智能",
+      "stock_code": "300084",
+      "impact": 3,
+      "analysis": "探索现有业务与金融融合，寻求智能化基础设施支持。"
+    },
+    {
+      "stock_name": "信安世纪",
+      "stock_code": "300299",
+      "impact": 3,
+      "analysis": "安全技术产品或可复用于稳定币安全领域。"
+    }
+  ],
+  "article_id": "f7bc7f14379b4c8b8c4d2dffd65ddfc5",
+  "article_date": "2025-06-26",
+  "article_title": "2025.6.26市场逻辑精选"
+}

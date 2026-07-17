@@ -1,0 +1,44 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受积极政策推动，有望上涨。",
+  "sectors": [
+    {
+      "sector_name": "国产算力",
+      "impact": 4,
+      "analysis": "政策支持，行业前景广阔。"
+    },
+    {
+      "sector_name": "钛合金",
+      "impact": 3,
+      "analysis": "消费电子新趋势，市场空间大。"
+    },
+    {
+      "sector_name": "金融",
+      "impact": 2,
+      "analysis": "平安银行架构调整，业绩预期提升。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "华为昇腾一体机",
+      "stock_code": "000938",
+      "impact": 4,
+      "analysis": "国产算力核心，受益政策。"
+    },
+    {
+      "stock_name": "金太阳",
+      "stock_code": "600385",
+      "impact": 3,
+      "analysis": "抛光设备和材料，钛合金应用。"
+    },
+    {
+      "stock_name": "平安银行",
+      "stock_code": "000001",
+      "impact": 3,
+      "analysis": "架构调整，业绩预期提升。"
+    }
+  ],
+  "article_id": "67257e2968f747be81f5f7585ebd92f4",
+  "article_date": "2024-02-21",
+  "article_title": "2024.2.21市场逻辑精选"
+}

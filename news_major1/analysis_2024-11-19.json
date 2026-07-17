@@ -1,0 +1,262 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极消息推动。",
+  "sectors": [
+    {
+      "sector_name": "量子计算",
+      "impact": 3,
+      "analysis": "英伟达与谷歌合作，板块受提振。"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "C3.ai与微软合作，板块受提振。"
+    },
+    {
+      "sector_name": "新能源电池",
+      "impact": 3,
+      "analysis": "先惠技术与宁德时代合作，板块受提振。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "航锦科技引入战略投资者，板块受提振。"
+    },
+    {
+      "sector_name": "光刻胶",
+      "impact": 3,
+      "analysis": "久日新材光刻胶项目试生产，板块受提振。"
+    },
+    {
+      "sector_name": "建筑",
+      "impact": 3,
+      "analysis": "浙江建投收购股权，板块受提振。"
+    },
+    {
+      "sector_name": "人形机器人",
+      "impact": 3,
+      "analysis": "多巨头宣布人形机器人计划，板块受提振。"
+    },
+    {
+      "sector_name": "锂矿",
+      "impact": 3,
+      "analysis": "锂价击穿边际成本，减产信号出现，板块受提振。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "量子国盾",
+      "stock_code": "000938",
+      "impact": 3,
+      "analysis": "英伟达合作，个股受提振。"
+    },
+    {
+      "stock_name": "科大国创",
+      "stock_code": "688016",
+      "impact": 3,
+      "analysis": "英伟达合作，个股受提振。"
+    },
+    {
+      "stock_name": "格尔软件",
+      "stock_code": "300314",
+      "impact": 3,
+      "analysis": "英伟达合作，个股受提振。"
+    },
+    {
+      "stock_name": "神州信息",
+      "stock_code": "000555",
+      "impact": 3,
+      "analysis": "英伟达合作，个股受提振。"
+    },
+    {
+      "stock_name": "吉大正元",
+      "stock_code": "300038",
+      "impact": 3,
+      "analysis": "英伟达合作，个股受提振。"
+    },
+    {
+      "stock_name": "南兴股份",
+      "stock_code": "002757",
+      "impact": 3,
+      "analysis": "C3.ai合作，个股受提振。"
+    },
+    {
+      "stock_name": "鼎捷数智",
+      "stock_code": "300335",
+      "impact": 3,
+      "analysis": "C3.ai合作，个股受提振。"
+    },
+    {
+      "stock_name": "豆神教育",
+      "stock_code": "300010",
+      "impact": 3,
+      "analysis": "C3.ai合作，个股受提振。"
+    },
+    {
+      "stock_name": "彩讯股份",
+      "stock_code": "300634",
+      "impact": 3,
+      "analysis": "C3.ai合作，个股受提振。"
+    },
+    {
+      "stock_name": "先惠技术",
+      "stock_code": "603677",
+      "impact": 3,
+      "analysis": "宁德时代合作，个股受提振。"
+    },
+    {
+      "stock_name": "航锦科技",
+      "stock_code": "000818",
+      "impact": 3,
+      "analysis": "引入战略投资者，个股受提振。"
+    },
+    {
+      "stock_name": "久日新材",
+      "stock_code": "688528",
+      "impact": 3,
+      "analysis": "光刻胶项目试生产，个股受提振。"
+    },
+    {
+      "stock_name": "浙江建投",
+      "stock_code": "600706",
+      "impact": 3,
+      "analysis": "收购股权，个股受提振。"
+    },
+    {
+      "stock_name": "拓斯达",
+      "stock_code": "002383",
+      "impact": 3,
+      "analysis": "华为合作，个股受提振。"
+    },
+    {
+      "stock_name": "兆威机电",
+      "stock_code": "002681",
+      "impact": 3,
+      "analysis": "华为合作，个股受提振。"
+    },
+    {
+      "stock_name": "埃夫特",
+      "stock_code": "300105",
+      "impact": 3,
+      "analysis": "华为合作，个股受提振。"
+    },
+    {
+      "stock_name": "东方精工",
+      "stock_code": "002061",
+      "impact": 3,
+      "analysis": "英伟达合作，个股受提振。"
+    },
+    {
+      "stock_name": "阿尔特",
+      "stock_code": "300584",
+      "impact": 3,
+      "analysis": "英伟达合作，个股受提振。"
+    },
+    {
+      "stock_name": "天准科技",
+      "stock_code": "300378",
+      "impact": 3,
+      "analysis": "英伟达合作，个股受提振。"
+    },
+    {
+      "stock_name": "科大智能",
+      "stock_code": "002530",
+      "impact": 3,
+      "analysis": "宁德时代合作，个股受提振。"
+    },
+    {
+      "stock_name": "爱仕达",
+      "stock_code": "002403",
+      "impact": 3,
+      "analysis": "宁德时代合作，个股受提振。"
+    },
+    {
+      "stock_name": "埃斯顿",
+      "stock_code": "002747",
+      "impact": 3,
+      "analysis": "宁德时代合作，个股受提振。"
+    },
+    {
+      "stock_name": "威领股份",
+      "stock_code": "002242",
+      "impact": 3,
+      "analysis": "锂矿价格利好，个股受提振。"
+    },
+    {
+      "stock_name": "赣锋锂业",
+      "stock_code": "002460",
+      "impact": 3,
+      "analysis": "锂矿价格利好，个股受提振。"
+    },
+    {
+      "stock_name": "天华新能",
+      "stock_code": "600579",
+      "impact": 3,
+      "analysis": "锂矿价格利好，个股受提振。"
+    },
+    {
+      "stock_name": "新乡化纤",
+      "stock_code": "000963",
+      "impact": 3,
+      "analysis": "菌草纤维项目落地，个股受提振。"
+    },
+    {
+      "stock_code": "603012",
+      "impact": 3,
+      "analysis": "可控核聚变订单，个股受提振。"
+    },
+    {
+      "stock_code": "603012",
+      "impact": 3,
+      "analysis": "飞行汽车研发，个股受提振。"
+    },
+    {
+      "stock_code": "603012",
+      "impact": 3,
+      "analysis": "特斯拉供应商，个股受提振。"
+    },
+    {
+      "stock_code": "603012",
+      "impact": 3,
+      "analysis": "固态电池复合膜开发，个股受提振。"
+    },
+    {
+      "stock_code": "603012",
+      "impact": 3,
+      "analysis": "华为手机AI，个股受提振。"
+    },
+    {
+      "stock_code": "603012",
+      "impact": 3,
+      "analysis": "锂电材料去库阶段尾声，个股受提振。"
+    },
+    {
+      "stock_code": "603012",
+      "impact": 3,
+      "analysis": "特斯拉FSD入华，个股受提振。"
+    },
+    {
+      "stock_code": "603012",
+      "impact": 3,
+      "analysis": "光伏行业自律减产，个股受提振。"
+    },
+    {
+      "stock_code": "603012",
+      "impact": 3,
+      "analysis": "华为手表发布，个股受提振。"
+    },
+    {
+      "stock_code": "603012",
+      "impact": 3,
+      "analysis": "煤炭需求提升，个股受提振。"
+    },
+    {
+      "stock_code": "603012",
+      "impact": 3,
+      "analysis": "卫星互联网试飞，个股受提振。"
+    }
+  ],
+  "article_id": "433f4e6b787a43d586dc8f16e42dc874",
+  "article_date": "2024-11-19",
+  "article_title": "2024.11.19市场逻辑精选"
+}

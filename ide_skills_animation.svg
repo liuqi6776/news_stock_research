@@ -1,0 +1,89 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f5f5f5"/>
+  
+  <!-- IDE 界面 -->
+  <rect x="50" y="50" width="700" height="500" rx="10" fill="#ffffff" stroke="#e0e0e0" stroke-width="2"/>
+  
+  <!-- IDE 标题栏 -->
+  <rect x="50" y="50" width="700" height="40" rx="10 10 0 0" fill="#2196f3"/>
+  <text x="80" y="75" font-family="Arial" font-size="16" fill="white">Trae IDE</text>
+  
+  <!-- IDE 工具栏 -->
+  <rect x="50" y="90" width="700" height="30" fill="#f0f0f0" stroke="#e0e0e0" stroke-width="1"/>
+  <rect x="70" y="95" width="20" height="20" rx="3" fill="#4caf50"/>
+  <rect x="100" y="95" width="20" height="20" rx="3" fill="#ff9800"/>
+  <rect x="130" y="95" width="20" height="20" rx="3" fill="#f44336"/>
+  
+  <!-- IDE 编辑器区域 -->
+  <rect x="50" y="120" width="450" height="430" fill="#fafafa" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="70" y="140" font-family="Courier New" font-size="14" fill="#333333">function calculate() {</text>
+  <text x="90" y="160" font-family="Courier New" font-size="14" fill="#333333">  let result = 0;</text>
+  <text x="90" y="180" font-family="Courier New" font-size="14" fill="#333333">  // 需要一个技能来处理数据</text>
+  <text x="70" y="200" font-family="Courier New" font-size="14" fill="#333333">}</text>
+  
+  <!-- Skills 面板 -->
+  <rect x="510" y="120" width="240" height="430" fill="#f5f5f5" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="530" y="140" font-family="Arial" font-size="16" fill="#333333" font-weight="bold">Skills</text>
+  
+  <!-- 技能卡片 -->
+  <g id="skill1">
+    <rect x="530" y="160" width="200" height="60" rx="5" fill="#e3f2fd" stroke="#2196f3" stroke-width="2" opacity="0"/>
+    <text x="550" y="190" font-family="Arial" font-size="14" fill="#333333" opacity="0">数据处理技能</text>
+    <text x="550" y="210" font-family="Arial" font-size="12" fill="#666666" opacity="0">快速处理和分析数据</text>
+  </g>
+  
+  <g id="skill2">
+    <rect x="530" y="230" width="200" height="60" rx="5" fill="#e8f5e8" stroke="#4caf50" stroke-width="2" opacity="0"/>
+    <text x="550" y="260" font-family="Arial" font-size="14" fill="#333333" opacity="0">代码生成技能</text>
+    <text x="550" y="280" font-family="Arial" font-size="12" fill="#666666" opacity="0">自动生成重复代码</text>
+  </g>
+  
+  <g id="skill3">
+    <rect x="530" y="300" width="200" height="60" rx="5" fill="#fff3e0" stroke="#ff9800" stroke-width="2" opacity="0"/>
+    <text x="550" y="330" font-family="Arial" font-size="14" fill="#333333" opacity="0">调试技能</text>
+    <text x="550" y="350" font-family="Arial" font-size="12" fill="#666666" opacity="0">智能定位和修复错误</text>
+  </g>
+  
+  <!-- 技能添加动画 -->
+  <circle id="addSkill" cx="630" cy="400" r="20" fill="#4caf50" opacity="0">
+    <animate attributeName="opacity" values="0;1;1;0" dur="8s" begin="1s" repeatCount="indefinite"/>
+  </circle>
+  <text x="625" y="405" font-family="Arial" font-size="18" fill="white" text-anchor="middle" opacity="0">+</text>
+  
+  <!-- 技能使用动画 -->
+  <path id="skillUsage" d="M530,190 L350,180" stroke="#2196f3" stroke-width="3" stroke-dasharray="5,5" fill="none" opacity="0">
+    <animate attributeName="opacity" values="0;1;1;0" dur="8s" begin="3s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-dashoffset" values="200;0" dur="2s" begin="3s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- 代码更新动画 -->
+  <text id="updatedCode" x="90" y="180" font-family="Courier New" font-size="14" fill="#4caf50" opacity="0">  result = dataProcessor.analyze();</text>
+  
+  <!-- 效率提升指示 -->
+  <g id="efficiency">
+    <rect x="50" y="480" width="700" height="40" rx="5" fill="#e8f5e8" stroke="#4caf50" stroke-width="2" opacity="0"/>
+    <text x="80" y="505" font-family="Arial" font-size="14" fill="#333333" opacity="0">开发效率提升 300%</text>
+  </g>
+  
+  <!-- 动画定义 -->
+  <animateTransform xlink:href="#skill1" attributeName="transform" type="translate" from="0,20" to="0,0" dur="1s" begin="2s" repeatCount="indefinite"/>
+  <animate xlink:href="#skill1 rect" attributeName="opacity" values="0;1" dur="1s" begin="2s" repeatCount="indefinite"/>
+  <animate xlink:href="#skill1 text" attributeName="opacity" values="0;1" dur="1s" begin="2s" repeatCount="indefinite"/>
+  
+  <animateTransform xlink:href="#skill2" attributeName="transform" type="translate" from="0,20" to="0,0" dur="1s" begin="4s" repeatCount="indefinite"/>
+  <animate xlink:href="#skill2 rect" attributeName="opacity" values="0;1" dur="1s" begin="4s" repeatCount="indefinite"/>
+  <animate xlink:href="#skill2 text" attributeName="opacity" values="0;1" dur="1s" begin="4s" repeatCount="indefinite"/>
+  
+  <animateTransform xlink:href="#skill3" attributeName="transform" type="translate" from="0,20" to="0,0" dur="1s" begin="6s" repeatCount="indefinite"/>
+  <animate xlink:href="#skill3 rect" attributeName="opacity" values="0;1" dur="1s" begin="6s" repeatCount="indefinite"/>
+  <animate xlink:href="#skill3 text" attributeName="opacity" values="0;1" dur="1s" begin="6s" repeatCount="indefinite"/>
+  
+  <animate xlink:href="#updatedCode" attributeName="opacity" values="0;1" dur="1s" begin="4s" repeatCount="indefinite"/>
+  
+  <animate xlink:href="#efficiency rect" attributeName="opacity" values="0;1" dur="1s" begin="5s" repeatCount="indefinite"/>
+  <animate xlink:href="#efficiency text" attributeName="opacity" values="0;1" dur="1s" begin="5s" repeatCount="indefinite"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" font-family="Arial" font-size="24" fill="#333333" text-anchor="middle" font-weight="bold">IDE + Skills 能力展示</text>
+</svg>

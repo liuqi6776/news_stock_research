@@ -1,0 +1,107 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注后续政策落地情况。",
+  "sectors": [
+    {
+      "sector_name": "汽车智能化",
+      "impact": 4,
+      "analysis": "特斯拉FSD落地推动板块上涨，相关个股受益。"
+    },
+    {
+      "sector_name": "数据要素",
+      "impact": 3,
+      "analysis": "上海数据要素产业政策推动板块上涨，相关个股受益。"
+    },
+    {
+      "sector_name": "纺织服装",
+      "impact": 2,
+      "analysis": "盛泰集团收购热电联产业务，带动板块上涨。"
+    },
+    {
+      "sector_name": "宠物经济",
+      "impact": 2,
+      "analysis": "源飞宠物受益汇率贬值，带动板块上涨。"
+    },
+    {
+      "sector_name": "电动床",
+      "impact": 2,
+      "analysis": "麒盛科技受益海外订单增长和人民币贬值，带动板块上涨。"
+    },
+    {
+      "sector_name": "券商",
+      "impact": 2,
+      "analysis": "华林证券受印花税传闻影响，带动板块上涨。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "特斯拉",
+      "stock_code": "TSLA",
+      "impact": 4,
+      "analysis": "特斯拉FSD落地推动股价上涨。"
+    },
+    {
+      "stock_name": "小鹏汽车",
+      "stock_code": "XPEV",
+      "impact": 3,
+      "analysis": "特斯拉FSD落地推动股价上涨。"
+    },
+    {
+      "stock_name": "理想汽车",
+      "stock_code": "LI",
+      "impact": 3,
+      "analysis": "特斯拉FSD落地推动股价上涨。"
+    },
+    {
+      "stock_name": "德赛西威",
+      "stock_code": "002920",
+      "impact": 3,
+      "analysis": "特斯拉FSD落地推动股价上涨。"
+    },
+    {
+      "stock_name": "云赛智联",
+      "stock_code": "600745",
+      "impact": 3,
+      "analysis": "上海数据要素产业政策推动股价上涨。"
+    },
+    {
+      "stock_name": "上海钢联",
+      "stock_code": "600285",
+      "impact": 3,
+      "analysis": "上海数据要素产业政策推动股价上涨。"
+    },
+    {
+      "stock_name": "数据港",
+      "stock_code": "600848",
+      "impact": 3,
+      "analysis": "上海数据要素产业政策推动股价上涨。"
+    },
+    {
+      "stock_name": "华林证券",
+      "stock_code": "600628",
+      "impact": 3,
+      "analysis": "印花税传闻推动股价上涨。"
+    },
+    {
+      "stock_name": "盛泰集团",
+      "stock_code": "002099",
+      "impact": 2,
+      "analysis": "收购热电联产业务推动股价上涨。"
+    },
+    {
+      "stock_name": "源飞宠物",
+      "stock_code": "300598",
+      "impact": 2,
+      "analysis": "受益汇率贬值推动股价上涨。"
+    },
+    {
+      "stock_name": "麒盛科技",
+      "stock_code": "603803",
+      "impact": 2,
+      "analysis": "受益海外订单增长和人民币贬值推动股价上涨。"
+    }
+  ],
+  "article_id": "a69d3f8afdf74e55aaa7c2fc62b92df7",
+  "article_date": "2023-08-15",
+  "article_title": "2023.8.15市场逻辑精选"
+}

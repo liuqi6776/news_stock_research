@@ -1,0 +1,50 @@
+{
+  "market_impact": 2,
+  "market_analysis": "市场情绪偏积极，部分板块和个股受利好影响",
+  "sectors": [
+    {
+      "sector_name": "算力",
+      "impact": 3,
+      "analysis": "算力需求增长，相关个股受益"
+    },
+    {
+      "sector_name": "能源",
+      "impact": 2,
+      "analysis": "中东冲突影响能源板块"
+    },
+    {
+      "sector_name": "光通信",
+      "impact": 2,
+      "analysis": "美股光通信概念领涨，国内相关个股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "韶能股份",
+      "stock_code": "000601",
+      "impact": 3,
+      "analysis": "算电协同概念，受政策利好"
+    },
+    {
+      "stock_name": "奥瑞德",
+      "stock_code": "600703",
+      "impact": 3,
+      "analysis": "算力需求增长，股价上涨"
+    },
+    {
+      "stock_name": "美利云",
+      "stock_code": "002190",
+      "impact": 3,
+      "analysis": "算力需求增长，股价上涨"
+    },
+    {
+      "stock_name": "华电能源",
+      "stock_code": "600011",
+      "impact": 2,
+      "analysis": "中东冲突影响能源板块，股价上涨"
+    }
+  ],
+  "article_title": "3月20日盘前纪要",
+  "html_file": "3fga5zh7bwb.html",
+  "article_date": "2026-03-20"
+}

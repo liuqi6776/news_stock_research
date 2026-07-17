@@ -1,0 +1,61 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "卫星互联网",
+      "impact": 4,
+      "analysis": "牌照发放及发射加速推动板块上涨。"
+    },
+    {
+      "sector_name": "风电整机",
+      "impact": 3,
+      "analysis": "盈利修复及海外市场打开空间。"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 2,
+      "analysis": "政策调整及转型预期带来利好。"
+    },
+    {
+      "sector_name": "AI应用",
+      "impact": 2,
+      "analysis": "AI应用催化及业绩增长预期。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中国卫星",
+      "stock_code": "000852",
+      "impact": 4,
+      "analysis": "积极参与低轨互联网建设工程。"
+    },
+    {
+      "stock_name": "长江通信",
+      "stock_code": "600345",
+      "impact": 3,
+      "analysis": "卫星地面站核心供应商。"
+    },
+    {
+      "stock_name": "金风科技",
+      "stock_code": "002202",
+      "impact": 3,
+      "analysis": "风机及零部件销售毛利率提升。"
+    },
+    {
+      "stock_name": "万科A",
+      "stock_code": "000002",
+      "impact": 2,
+      "analysis": "地产行业龙头，区域聚焦。"
+    },
+    {
+      "stock_name": "豆神教育",
+      "stock_code": "300010",
+      "impact": 2,
+      "analysis": "AI教育生态矩阵产品发布。"
+    }
+  ],
+  "article_id": "689a310759c645899fc8fdfa4c66a6dd",
+  "article_date": "2025-08-25",
+  "article_title": "2025.8.25市场逻辑精选"
+}

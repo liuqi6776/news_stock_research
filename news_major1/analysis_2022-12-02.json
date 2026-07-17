@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪偏乐观",
+  "sectors": [
+    {
+      "sector_name": "油气",
+      "impact": 4,
+      "analysis": "中阿合作报告利好油气合作"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 3,
+      "analysis": "经济普查和房地产政策利好"
+    },
+    {
+      "sector_name": "医药医疗",
+      "impact": 3,
+      "analysis": "抗原检测和医药政策利好"
+    },
+    {
+      "sector_name": "信创",
+      "impact": 3,
+      "analysis": "信创政策利好"
+    },
+    {
+      "sector_name": "教育",
+      "impact": 2,
+      "analysis": "世界数字教育大会利好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中油资本",
+      "stock_code": "000617",
+      "impact": 4,
+      "analysis": "中阿合作报告利好油气合作"
+    },
+    {
+      "stock_name": "浦东金桥",
+      "stock_code": "600639",
+      "impact": 3,
+      "analysis": "陆家嘴重组利好"
+    },
+    {
+      "stock_name": "毅昌科技",
+      "stock_code": "002380",
+      "impact": 3,
+      "analysis": "抗原检测政策利好"
+    },
+    {
+      "stock_name": "南威软件",
+      "stock_code": "300059",
+      "impact": 3,
+      "analysis": "信创政策利好"
+    },
+    {
+      "stock_name": "昂立教育",
+      "stock_code": "601820",
+      "impact": 2,
+      "analysis": "世界数字教育大会利好"
+    }
+  ],
+  "article_title": "12月2日盘前早参 热点事件关注",
+  "html_file": "3s7eh93vw6.html",
+  "article_date": "2022-12-02"
+}

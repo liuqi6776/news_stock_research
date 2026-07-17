@@ -1,0 +1,71 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策支持与行业动态积极，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "金融",
+      "impact": 3,
+      "analysis": "政治局会议强调活跃资本市场，提振投资者信心。"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "政治局会议强调促进人工智能安全发展，相关产业链受益。"
+    },
+    {
+      "sector_name": "消费",
+      "impact": 3,
+      "analysis": "扩大内需政策，提振大宗消费和服务消费。"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 2,
+      "analysis": "政策调整优化，保障性住房建设和城中村改造受益。"
+    },
+    {
+      "sector_name": "液冷解决方案",
+      "impact": 3,
+      "analysis": "台积电升级液冷解决方案，相关硬件厂商受益。"
+    },
+    {
+      "sector_name": "跨境电商",
+      "impact": 2,
+      "analysis": "跨境融资便利化试点政策，科技型中小企业受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "首创证券",
+      "stock_code": "601390",
+      "impact": 3,
+      "analysis": "政治局会议强调活跃资本市场，提振投资者信心。"
+    },
+    {
+      "stock_name": "天孚通信",
+      "stock_code": "300458",
+      "impact": 3,
+      "analysis": "政治局会议强调促进人工智能安全发展，相关产业链受益。"
+    },
+    {
+      "stock_name": "金科股份",
+      "stock_code": "000656",
+      "impact": 2,
+      "analysis": "政策调整优化，保障性住房建设和城中村改造受益。"
+    },
+    {
+      "stock_name": "高澜股份",
+      "stock_code": "300410",
+      "impact": 3,
+      "analysis": "台积电升级液冷解决方案，相关硬件厂商受益。"
+    },
+    {
+      "stock_name": "焦点科技",
+      "stock_code": "002315",
+      "impact": 2,
+      "analysis": "跨境融资便利化试点政策，科技型中小企业受益。"
+    }
+  ],
+  "article_title": "7月25日 盘前热点事件关注",
+  "html_file": "apkmhn1d7b.html",
+  "article_date": "2023-07-25"
+}

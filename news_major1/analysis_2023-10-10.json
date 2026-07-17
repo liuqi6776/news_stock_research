@@ -1,0 +1,108 @@
+{
+  "market_impact": 4,
+  "market_analysis": "利好，车联网、鸿蒙生态、智慧车灯等概念股受提振",
+  "sectors": [
+    {
+      "sector_name": "车联网",
+      "impact": 4,
+      "analysis": "政策支持，行业空间大"
+    },
+    {
+      "sector_name": "鸿蒙生态",
+      "impact": 3,
+      "analysis": "鸿蒙系统应用拓展"
+    },
+    {
+      "sector_name": "智慧车灯",
+      "impact": 3,
+      "analysis": "创新技术提升安全与娱乐性"
+    },
+    {
+      "sector_name": "eVTOL",
+      "impact": 3,
+      "analysis": "政策支持，市场空间大"
+    },
+    {
+      "sector_name": "绿色航空",
+      "impact": 2,
+      "analysis": "氢能源飞机技术发展"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "金溢科技",
+      "stock_code": "002869",
+      "impact": 5,
+      "analysis": "智慧高速营收占比高"
+    },
+    {
+      "stock_name": "高鸿股份",
+      "stock_code": "000851",
+      "impact": 5,
+      "analysis": "华为车联网战略合作"
+    },
+    {
+      "stock_name": "四维图新",
+      "stock_code": "002405",
+      "impact": 4,
+      "analysis": "与华为合作"
+    },
+    {
+      "stock_name": "高新兴",
+      "stock_code": "300098",
+      "impact": 4,
+      "analysis": "与华为、百度等合作"
+    },
+    {
+      "stock_name": "深城交",
+      "stock_code": "300477",
+      "impact": 3,
+      "analysis": "与华为合作建设平台"
+    },
+    {
+      "stock_name": "数字认证",
+      "stock_code": "002275",
+      "impact": 3,
+      "analysis": "与华为建设服务平台"
+    },
+    {
+      "stock_name": "润和软件",
+      "stock_code": "300457",
+      "impact": 3,
+      "analysis": "发布基于OpenHarmony的操作系统"
+    },
+    {
+      "stock_name": "星宇股份",
+      "stock_code": "603778",
+      "impact": 4,
+      "analysis": "为华为合作车企供应车灯"
+    },
+    {
+      "stock_name": "光峰科技",
+      "stock_code": "300702",
+      "impact": 3,
+      "analysis": "车载光学领域定点通知"
+    },
+    {
+      "stock_name": "比亚迪",
+      "stock_code": "002594",
+      "impact": 3,
+      "analysis": "合作研发航空航天电池"
+    },
+    {
+      "stock_name": "亿华通",
+      "stock_code": "688698",
+      "impact": 3,
+      "analysis": "燃料电池技术"
+    },
+    {
+      "stock_name": "亿利洁能",
+      "stock_code": "600277",
+      "impact": 3,
+      "analysis": "绿氢项目"
+    }
+  ],
+  "article_id": "c69f5af713c840bdb4786dd43adcd865",
+  "article_date": "2023-10-10",
+  "article_title": "2023.10.10市场逻辑精选"
+}

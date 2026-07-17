@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注潜在风险。",
+  "sectors": [
+    {
+      "sector_name": "5G-A相关",
+      "impact": 4,
+      "analysis": "5G-A商用发布，相关设备升级需求提升。"
+    },
+    {
+      "sector_name": "隐身材料",
+      "impact": 3,
+      "analysis": "隐身材料需求放量，板块异动。"
+    },
+    {
+      "sector_name": "射频治疗仪",
+      "impact": 2,
+      "analysis": "射频治疗仪注册证要求，相关公司受益。"
+    },
+    {
+      "sector_name": "低空经济",
+      "impact": 3,
+      "analysis": "低空经济发展，相关产业链受益。"
+    },
+    {
+      "sector_name": "军工电子",
+      "impact": 2,
+      "analysis": "隐身材料需求增加，军工电子板块受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "硕贝德",
+      "stock_code": "300322",
+      "impact": 4,
+      "analysis": "5G-A基站升级，天线振子供应商受益。"
+    },
+    {
+      "stock_name": "盛路通信",
+      "stock_code": "002446",
+      "impact": 3,
+      "analysis": "5G-A商用，移动、华为供货商受益。"
+    },
+    {
+      "stock_name": "光启技术",
+      "stock_code": "002695",
+      "impact": 3,
+      "analysis": "隐身材料需求增加，公司业绩增长。"
+    },
+    {
+      "stock_name": "华秦科技",
+      "stock_code": "300428",
+      "impact": 3,
+      "analysis": "隐身材料产品进入小批试生产阶段。"
+    },
+    {
+      "stock_name": "奥特佳",
+      "stock_code": "002239",
+      "impact": 2,
+      "analysis": "湖北省国资委成为公司实控人，小米汽车合作。"
+    }
+  ],
+  "article_id": "e3e7eb31af414a5a915ad5e868e99af2",
+  "article_date": "2024-03-31",
+  "article_title": "2024.3.31市场逻辑精选"
+}

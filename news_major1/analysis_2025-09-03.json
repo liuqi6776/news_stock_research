@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "储能、小核酸药物、固态电池、苹果折叠屏等题材受关注，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "储能",
+      "impact": 4,
+      "analysis": "需求旺盛，产业链盈利改善，板块利好。"
+    },
+    {
+      "sector_name": "小核酸药物",
+      "impact": 3,
+      "analysis": "行业频现大单，市场前景广阔，板块利好。"
+    },
+    {
+      "sector_name": "固态电池",
+      "impact": 3,
+      "analysis": "核心厂商产品下线，市场关注度提升，板块利好。"
+    },
+    {
+      "sector_name": "苹果折叠屏",
+      "impact": 3,
+      "analysis": "苹果折叠屏出货量提升，产业链受益，板块利好。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "海博思创",
+      "stock_code": "300336",
+      "impact": 4,
+      "analysis": "储能需求强劲，出货量大增，个股利好。"
+    },
+    {
+      "stock_name": "亿纬锂能",
+      "stock_code": "300014",
+      "impact": 4,
+      "analysis": "固态电池产线投产，产能提升，个股利好。"
+    },
+    {
+      "stock_name": "宜安科技",
+      "stock_code": "300933",
+      "impact": 3,
+      "analysis": "液态金属折叠屏手机铰链结构件供应商，个股利好。"
+    },
+    {
+      "stock_name": "辰欣药业",
+      "stock_code": "300019",
+      "impact": 3,
+      "analysis": "抗耐药结核菌新药有望申报上市，个股利好。"
+    }
+  ],
+  "article_id": "e15933638d4e49e7af5c98439f582f3d",
+  "article_date": "2025-09-03",
+  "article_title": "2025.9.3市场逻辑精选"
+}

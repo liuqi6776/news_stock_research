@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，利好消息较多。",
+  "sectors": [
+    {
+      "sector_name": "人工智能",
+      "impact": 4,
+      "analysis": "AI眼镜、智能机器人等概念股受关注。"
+    },
+    {
+      "sector_name": "激光雷达",
+      "impact": 3,
+      "analysis": "奔驰合作激光雷达产品，相关股票受提振。"
+    },
+    {
+      "sector_name": "化工",
+      "impact": 3,
+      "analysis": "中欣氟材、渝三峡A等个股受关注。"
+    },
+    {
+      "sector_name": "消费",
+      "impact": 3,
+      "analysis": "五一长假临近，消费板块受提振。"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 2,
+      "analysis": "智能眼镜等创新产品受关注。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "龙溪股份",
+      "stock_code": "600802",
+      "impact": 4,
+      "analysis": "智能机器人概念股，受AI眼镜、智能机器人等概念股提振。"
+    },
+    {
+      "stock_name": "博士眼镜",
+      "stock_code": "601619",
+      "impact": 3,
+      "analysis": "智能眼镜概念股，受AI眼镜概念股提振。"
+    },
+    {
+      "stock_name": "渝三峡A",
+      "stock_code": "000565",
+      "impact": 3,
+      "analysis": "化工板块个股，受化工板块整体提振。"
+    },
+    {
+      "stock_name": "茂业商业",
+      "stock_code": "600837",
+      "impact": 3,
+      "analysis": "消费板块个股，受五一长假临近提振。"
+    },
+    {
+      "stock_name": "鸿博股份",
+      "stock_code": "002229",
+      "impact": 3,
+      "analysis": "一季报业绩预增，受业绩预增概念股提振。"
+    }
+  ],
+  "article_title": "4月30日盘前纪要",
+  "html_file": "j6sagv9ezz.html",
+  "article_date": "2025-04-30"
+}

@@ -1,0 +1,118 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "燃气轮机",
+      "impact": 4,
+      "analysis": "北美缺电及数据中心需求增长推动行业扩产，利好相关企业。"
+    },
+    {
+      "sector_name": "人形机器人",
+      "impact": 3,
+      "analysis": "特斯拉人形机器人发布预期，相关产业链受益。"
+    },
+    {
+      "sector_name": "制冷剂",
+      "impact": 3,
+      "analysis": "行业低库存及需求增长推动价格上涨，利好相关企业。"
+    },
+    {
+      "sector_name": "大飞机刹车",
+      "impact": 3,
+      "analysis": "国产替代预期，利好相关企业。"
+    },
+    {
+      "sector_name": "燃气轮机",
+      "impact": 3,
+      "analysis": "商用发动机国产替代，利好相关企业。"
+    },
+    {
+      "sector_name": "MLCC镍粉",
+      "impact": 3,
+      "analysis": "国产MLCC镍粉市占率第一，客户包括国巨，利好相关企业。"
+    },
+    {
+      "sector_name": "矿泉水",
+      "impact": 2,
+      "analysis": "春节消费旺季来临，利好相关企业。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "杰瑞股份",
+      "stock_code": "002353",
+      "impact": 4,
+      "analysis": "燃气轮机合同及订单增长，利好。"
+    },
+    {
+      "stock_name": "应流股份",
+      "stock_code": "600372",
+      "impact": 4,
+      "analysis": "燃气轮机叶片供应商，在手订单增长，利好。"
+    },
+    {
+      "stock_name": "博盈特焊",
+      "stock_code": "002701",
+      "impact": 4,
+      "analysis": "燃气轮机HRSG承压部件供应商，产能扩张，利好。"
+    },
+    {
+      "stock_name": "日盈电子",
+      "stock_code": "300434",
+      "impact": 3,
+      "analysis": "特斯拉人形机器人核心零部件供应商，利好。"
+    },
+    {
+      "stock_name": "五洲新春",
+      "stock_code": "603959",
+      "impact": 3,
+      "analysis": "特斯拉人形机器人核心零部件供应商，利好。"
+    },
+    {
+      "stock_name": "福莱新材",
+      "stock_code": "603805",
+      "impact": 3,
+      "analysis": "特斯拉人形机器人电子皮肤供应商，利好。"
+    },
+    {
+      "stock_name": "三美股份",
+      "stock_code": "002637",
+      "impact": 3,
+      "analysis": "制冷剂行业龙头，价格上涨，利好。"
+    },
+    {
+      "stock_name": "金石资源",
+      "stock_code": "603116",
+      "impact": 3,
+      "analysis": "氟化液液冷领域布局，利好。"
+    },
+    {
+      "stock_name": "北摩高科",
+      "stock_code": "002246",
+      "impact": 3,
+      "analysis": "大飞机刹车国产替代，利好。"
+    },
+    {
+      "stock_name": "航发科技",
+      "stock_code": "600893",
+      "impact": 3,
+      "analysis": "商用发动机国产替代，利好。"
+    },
+    {
+      "stock_name": "博迁新材",
+      "stock_code": "603588",
+      "impact": 3,
+      "analysis": "MLCC镍粉龙头，客户包括国巨，利好。"
+    },
+    {
+      "stock_name": "泉阳泉",
+      "stock_code": "600318",
+      "impact": 2,
+      "analysis": "聚焦矿泉水主业，春节消费旺季，利好。"
+    }
+  ],
+  "article_id": "0bbf597ec05845f3bc3839e230c25b59",
+  "article_date": "2026-01-19",
+  "article_title": "2026.1.19市场逻辑精选"
+}

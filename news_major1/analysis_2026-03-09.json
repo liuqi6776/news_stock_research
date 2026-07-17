@@ -1,0 +1,56 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受积极事件驱动，有望上涨。",
+  "sectors": [
+    {
+      "sector_name": "电力设备",
+      "impact": 4,
+      "analysis": "海外订单增加，行业前景看好。"
+    },
+    {
+      "sector_name": "商业航天",
+      "impact": 3,
+      "analysis": "行业活动增加，板块关注度提升。"
+    },
+    {
+      "sector_name": "算力设备",
+      "impact": 3,
+      "analysis": "算力需求增长，相关设备需求增加。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中国西电",
+      "stock_code": "601179",
+      "impact": 4,
+      "analysis": "变压器出口订单增加，业绩有望提升。"
+    },
+    {
+      "stock_name": "伊戈尔",
+      "stock_code": "002268",
+      "impact": 4,
+      "analysis": "北美市场拓展，收入增长可期。"
+    },
+    {
+      "stock_name": "四方股份",
+      "stock_code": "603179",
+      "impact": 4,
+      "analysis": "SST产品领先，市场份额有望提升。"
+    },
+    {
+      "stock_name": "顺灏股份",
+      "stock_code": "002538",
+      "impact": 3,
+      "analysis": "商业航天业务拓展，业绩增长潜力大。"
+    },
+    {
+      "stock_name": "超捷股份",
+      "stock_code": "002885",
+      "impact": 3,
+      "analysis": "商业航天业务增长，产能提升预期。"
+    }
+  ],
+  "article_id": "af6abb5c88f649c99aaa3f9dddf5d9ec",
+  "article_date": "2026-03-09",
+  "article_title": "2026.3.9市场逻辑精选"
+}

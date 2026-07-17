@@ -1,0 +1,44 @@
+{
+  "market_impact": 3,
+  "market_analysis": "电解锰价格上涨，军工卫星和太空算力领域投资增加，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "电解锰",
+      "impact": 4,
+      "analysis": "价格上涨，相关企业盈利能力增强"
+    },
+    {
+      "sector_name": "军工卫星",
+      "impact": 3,
+      "analysis": "美军大单，推动国内相关产业发展"
+    },
+    {
+      "sector_name": "太空算力",
+      "impact": 3,
+      "analysis": "SpaceX计划IPO，推动相关产业链发展"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "湘潭电化",
+      "stock_code": "002126",
+      "impact": 4,
+      "analysis": "电解锰价格上涨，公司盈利能力增强"
+    },
+    {
+      "stock_name": "盟升电子",
+      "stock_code": "300389",
+      "impact": 3,
+      "analysis": "军用卫星业务受益"
+    },
+    {
+      "stock_name": "信维通信",
+      "stock_code": "300136",
+      "impact": 3,
+      "analysis": "SpaceX地面接收器供应商"
+    }
+  ],
+  "article_id": "e6f1382d55f84de0b6e670623932de75",
+  "article_date": "2025-12-21",
+  "article_title": "2025.12.21市场逻辑精选"
+}

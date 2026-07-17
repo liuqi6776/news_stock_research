@@ -1,0 +1,151 @@
+{
+  "market_impact": 1,
+  "market_analysis": "市场整体呈现积极态势，多个热点板块表现强劲，尤其是算力、光通信、AI应用等领域。美股科技股上涨，中概股集体走强，市场情绪较为乐观。多个行业政策利好消息出台，如太空算力建设、AI应用发展等，为相关板块提供了有力支撑。",
+  "sectors": [
+    {
+      "sector_name": "算力",
+      "impact": 1,
+      "analysis": "算力板块表现强劲，DeepSeek V4进行灰度测试，智谱发布GLM-5.1模型并提价，中国日均Token调用量大幅增长，AI算力产业大会即将召开，多重利好推动算力板块持续走强。"
+    },
+    {
+      "sector_name": "光通信",
+      "impact": 1,
+      "analysis": "光通信板块领涨市场，汇源通信4连板，全球光纤市场涨价潮进一步确认，中国市场G652.D光纤价格自去年低点涨超400%，2026-2027年全球供需缺口预计将扩大至15%，行业前景看好。"
+    },
+    {
+      "sector_name": "AI应用",
+      "impact": 1,
+      "analysis": "AI应用板块活跃，Happy Horse视频模型应用引发关注，利欧股份等公司涨停。AI视频评测平台Artificial Analysis上的神秘模型表现优异，带动相关应用板块走强。"
+    },
+    {
+      "sector_name": "PCB",
+      "impact": 1,
+      "analysis": "PCB板块表现良好，世运电路等公司涨停。三菱瓦斯化学、建滔积层板宣布上调CCL类相关产品价格，行业景气度提升，相关公司受益。"
+    },
+    {
+      "sector_name": "太空算力",
+      "impact": 1,
+      "analysis": "工信部将谋划引导太空算力建设应用的政策措施，到2035年全球在轨数据中心市场规模将达390亿美元，复合年增长率高达67.4%，行业发展前景广阔。"
+    },
+    {
+      "sector_name": "游戏",
+      "impact": 1,
+      "analysis": "《王者荣耀世界》PC端4月10日公测，预计首月下载量突破3000万，首月流水预计在15亿至25亿元之间，全年增量收入有望达到100亿元，相关概念股受益。"
+    },
+    {
+      "sector_name": "黄金",
+      "impact": 1,
+      "analysis": "黄金板块表现强劲，西部黄金涨停，4月8日黄金期货大幅上涨，相关公司业绩大幅预增，西部黄金一季度净利润同比增长1161.38%-1469.71%。"
+    },
+    {
+      "sector_name": "燃气轮机",
+      "impact": 1,
+      "analysis": "燃气轮机板块活跃，万泽股份等公司涨停。研究机构数据显示，2025年全球燃气轮机新增装机60.4GW，市场规模在240亿美元至250亿美元之间，2031年市场规模预测将增至320亿美元。"
+    },
+    {
+      "sector_name": "液冷散热",
+      "impact": 1,
+      "analysis": "液冷散热板块表现良好，达实智能等公司涨停。科技板块反攻叠加业绩期来临，大部分液冷公司业绩兑现在26Q2以后，行业前景看好。"
+    },
+    {
+      "sector_name": "中东重建",
+      "impact": 1,
+      "analysis": "中东重建板块活跃，中工国际2连板。伊美同意停火两周，谈判将于10日开始，相关重建概念股受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "汇源通信",
+      "stock_code": "000586",
+      "impact": 1,
+      "analysis": "光通信龙头，4连板，全球光纤市场涨价潮进一步确认，行业前景看好。"
+    },
+    {
+      "stock_name": "中安科",
+      "stock_code": "600654",
+      "impact": 1,
+      "analysis": "算力概念股，3连板，DeepSeek V4进行灰度测试，算力板块持续走强。"
+    },
+    {
+      "stock_name": "西部黄金",
+      "stock_code": "601069",
+      "impact": 1,
+      "analysis": "黄金概念股，涨停，一季度净利润同比增长1161.38%-1469.71%，业绩大幅预增。"
+    },
+    {
+      "stock_name": "万泽股份",
+      "stock_code": "000534",
+      "impact": 1,
+      "analysis": "燃气轮机概念股，涨停，全球燃气轮机市场持续增长，行业前景看好。"
+    },
+    {
+      "stock_name": "世运电路",
+      "stock_code": "603920",
+      "impact": 1,
+      "analysis": "PCB概念股，涨停，CCL类相关产品价格上涨，行业景气度提升。"
+    },
+    {
+      "stock_name": "利欧股份",
+      "stock_code": "002131",
+      "impact": 1,
+      "analysis": "AI应用概念股，涨停，Happy Horse视频模型应用引发关注。"
+    },
+    {
+      "stock_name": "中工国际",
+      "stock_code": "002051",
+      "impact": 1,
+      "analysis": "中东重建概念股，2连板，伊美同意停火两周，相关重建概念股受益。"
+    },
+    {
+      "stock_name": "通鼎互联",
+      "stock_code": "002491",
+      "impact": 1,
+      "analysis": "光通信概念股，2连板，全球光纤市场涨价潮进一步确认。"
+    },
+    {
+      "stock_name": "天华新能",
+      "stock_code": "300390",
+      "impact": 1,
+      "analysis": "人气热榜股，一季度净利润同比增长2751%-32120%，业绩大幅预增。"
+    },
+    {
+      "stock_name": "奥瑞德",
+      "stock_code": "600666",
+      "impact": 1,
+      "analysis": "算力概念股，人气热榜股，算力板块持续走强。"
+    },
+    {
+      "stock_name": "蓝色光标",
+      "stock_code": "300058",
+      "impact": 1,
+      "analysis": "AI应用概念股，人气热榜股，AI应用板块活跃。"
+    },
+    {
+      "stock_name": "数据港",
+      "stock_code": "603881",
+      "impact": 1,
+      "analysis": "算力概念股，Happy Horse视频模型算力相关，算力板块持续走强。"
+    },
+    {
+      "stock_name": "电广传媒",
+      "stock_code": "000917",
+      "impact": 1,
+      "analysis": "AI应用概念股，PixVerse C1影视大模型相关，AI应用板块活跃。"
+    },
+    {
+      "stock_name": "欢瑞世纪",
+      "stock_code": "000892",
+      "impact": 1,
+      "analysis": "AI应用概念股，Happy Horse视频模型应用相关，AI应用板块活跃。"
+    },
+    {
+      "stock_name": "德才股份",
+      "stock_code": "603515",
+      "impact": 1,
+      "analysis": "AI应用概念股，Happy Horse视频模型应用相关，AI应用板块活跃。"
+    }
+  ],
+  "article_title": "4月9日盘前纪要",
+  "html_file": "20260409盘前纪要.html",
+  "article_date": "2026-04-09"
+}

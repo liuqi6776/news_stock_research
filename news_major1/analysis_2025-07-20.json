@@ -1,0 +1,96 @@
+{
+  "market_impact": 3,
+  "market_analysis": "重大基建项目启动，相关板块及个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "水电",
+      "impact": 4,
+      "analysis": "水电工程开工，带动相关产业链发展。"
+    },
+    {
+      "sector_name": "建材",
+      "impact": 3,
+      "analysis": "水泥、钢材等建材需求增加。"
+    },
+    {
+      "sector_name": "工程机械",
+      "impact": 3,
+      "analysis": "工程机械需求增加。"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "人工智能行业大会召开，相关企业有望受益。"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "robotaxi牌照发放，相关企业有望受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "高争民爆",
+      "stock_code": "600399",
+      "impact": 4,
+      "analysis": "民爆行业龙头，受益水电工程开工。"
+    },
+    {
+      "stock_name": "保利联合",
+      "stock_code": "002037",
+      "impact": 4,
+      "analysis": "电子雷管龙头，受益水电工程开工。"
+    },
+    {
+      "stock_name": "中化岩土",
+      "stock_code": "600390",
+      "impact": 4,
+      "analysis": "岩土工程专业服务商，受益水电工程开工。"
+    },
+    {
+      "stock_name": "筑博设计",
+      "stock_code": "300540",
+      "impact": 3,
+      "analysis": "建筑设计规划，受益水利基建。"
+    },
+    {
+      "stock_name": "西藏天路",
+      "stock_code": "600326",
+      "impact": 3,
+      "analysis": "水泥行业龙头，受益水电工程开工。"
+    },
+    {
+      "stock_name": "飞鹿股份",
+      "stock_code": "300359",
+      "impact": 3,
+      "analysis": "防水材料、防渗材料等，受益水电工程开工。"
+    },
+    {
+      "stock_name": "万兴科技",
+      "stock_code": "300624",
+      "impact": 3,
+      "analysis": "AI Agent产品，受益人工智能行业大会。"
+    },
+    {
+      "stock_name": "中文在线",
+      "stock_code": "300364",
+      "impact": 3,
+      "analysis": "AI 辅助写作与出海变现，受益人工智能行业大会。"
+    },
+    {
+      "stock_name": "锦江在线",
+      "stock_code": "600754",
+      "impact": 3,
+      "analysis": "出租车公司，受益robotaxi牌照发放。"
+    },
+    {
+      "stock_name": "大众交通",
+      "stock_code": "600611",
+      "impact": 3,
+      "analysis": "出租车公司，受益robotaxi牌照发放。"
+    }
+  ],
+  "article_id": "88b5dd42ec5e4b39bdc6199ab6781d01",
+  "article_date": "2025-07-20",
+  "article_title": "2025.7.20市场逻辑精选"
+}

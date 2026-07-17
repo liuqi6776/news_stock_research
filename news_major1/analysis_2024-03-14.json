@@ -1,0 +1,67 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "铜",
+      "impact": 4,
+      "analysis": "减产预期和降息预期推动铜价上涨，相关企业受益"
+    },
+    {
+      "sector_name": "人形机器人",
+      "impact": 3,
+      "analysis": "人形机器人技术进步，相关企业有望受益"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "组件涨价预期，光伏产业链相关企业受益"
+    },
+    {
+      "sector_name": "卫星通信",
+      "impact": 3,
+      "analysis": "卫星通信技术应用于飞行汽车，相关企业受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "北方铜业",
+      "stock_code": "000630",
+      "impact": 4,
+      "analysis": "铜产量减少，有望受益于铜价上涨"
+    },
+    {
+      "stock_name": "紫金矿业",
+      "stock_code": "601899",
+      "impact": 4,
+      "analysis": "铜矿产量增长，有望受益于铜价上涨"
+    },
+    {
+      "stock_name": "洛阳钼业",
+      "stock_code": "603993",
+      "impact": 4,
+      "analysis": "铜矿产量增长，有望受益于铜价上涨"
+    },
+    {
+      "stock_name": "仕净科技",
+      "stock_code": "300687",
+      "impact": 3,
+      "analysis": "光伏产业链相关企业，有望受益于组件涨价"
+    },
+    {
+      "stock_name": "阳光电源",
+      "stock_code": "300274",
+      "impact": 3,
+      "analysis": "光伏产业链相关企业，有望受益于组件涨价"
+    },
+    {
+      "stock_name": "华力创通",
+      "stock_code": "300385",
+      "impact": 3,
+      "analysis": "卫星通信技术应用于飞行汽车，有望受益"
+    }
+  ],
+  "article_id": "8c863cc76d784b3c853ca634f4328916",
+  "article_date": "2024-03-14",
+  "article_title": "2024.3.14市场逻辑精选"
+}

@@ -1,0 +1,72 @@
+{
+  "market_impact": 3,
+  "market_analysis": "稀土永磁和金属铬价格上涨，利好相关板块。",
+  "sectors": [
+    {
+      "sector_name": "稀土永磁",
+      "impact": 4,
+      "analysis": "供需缺口和价格上涨，板块利好。"
+    },
+    {
+      "sector_name": "金属铬",
+      "impact": 3,
+      "analysis": "需求旺盛，价格上涨，板块利好。"
+    },
+    {
+      "sector_name": "AI智算",
+      "impact": 3,
+      "analysis": "摩尔线程IPO注册通过，板块利好。"
+    },
+    {
+      "sector_name": "钢铁",
+      "impact": 2,
+      "analysis": "河南钢铁提质升级计划，板块利好。"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 2,
+      "analysis": "多厂商机器人产品即将发布，板块利好。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "广晟有色",
+      "stock_code": "600259",
+      "impact": 4,
+      "analysis": "业绩增长，板块龙头，利好。"
+    },
+    {
+      "stock_name": "北方稀土",
+      "stock_code": "600111",
+      "impact": 4,
+      "analysis": "业绩增长，轻稀土市占率第一，利好。"
+    },
+    {
+      "stock_name": "振华股份",
+      "stock_code": "600331",
+      "impact": 3,
+      "analysis": "铬盐龙头，金属铬产品满产满销，利好。"
+    },
+    {
+      "stock_name": "摩尔线程",
+      "stock_code": "688516",
+      "impact": 3,
+      "analysis": "IPO注册通过，AI智算领域，利好。"
+    },
+    {
+      "stock_name": "安阳钢铁",
+      "stock_code": "600569",
+      "impact": 2,
+      "analysis": "河南钢铁提质升级计划，受益者，利好。"
+    },
+    {
+      "stock_name": "方正电机",
+      "stock_code": "002196",
+      "impact": 2,
+      "analysis": "机器人关节项目开发，利好。"
+    }
+  ],
+  "article_id": "06e18a293fc0448984436a92da452b9d",
+  "article_date": "2025-10-30",
+  "article_title": "2025.10.30市场逻辑精选"
+}

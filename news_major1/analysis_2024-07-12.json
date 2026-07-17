@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，关注小盘股和科技股。",
+  "sectors": [
+    {
+      "sector_name": "小盘股",
+      "impact": 4,
+      "analysis": "受纳斯达克指数上涨影响，小盘股表现强劲。"
+    },
+    {
+      "sector_name": "科技股",
+      "impact": 3,
+      "analysis": "6G试验网搭建成功，科技股有望受益。"
+    },
+    {
+      "sector_name": "固态电池",
+      "impact": 3,
+      "analysis": "大众汽车提高固态电池产量，相关个股受关注。"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 3,
+      "analysis": "特斯拉自动驾驶出租车发布时间推迟，相关个股受影响。"
+    },
+    {
+      "sector_name": "消费电子",
+      "impact": 2,
+      "analysis": "苹果iPhone 16系列备货目标上调，相关个股受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中证2000ETF",
+      "stock_code": "563300",
+      "impact": 4,
+      "analysis": "追踪小盘股，受纳斯达克指数上涨影响。"
+    },
+    {
+      "stock_name": "莱坤通灵",
+      "stock_code": "600547",
+      "impact": 3,
+      "analysis": "美国通胀降温，美联储降息预期增强，贵金属股受益。"
+    },
+    {
+      "stock_name": "武汉凡谷",
+      "stock_code": "002194",
+      "impact": 3,
+      "analysis": "6G试验网搭建成功，相关个股受益。"
+    },
+    {
+      "stock_name": "金龙羽",
+      "stock_code": "002671",
+      "impact": 3,
+      "analysis": "大众汽车提高固态电池产量，相关个股受益。"
+    },
+    {
+      "stock_name": "特斯拉",
+      "stock_code": "TSLA",
+      "impact": -2,
+      "analysis": "自动驾驶出租车发布时间推迟，股价下跌。"
+    }
+  ],
+  "article_title": "7月12日盘前早报 热点事件关注",
+  "html_file": "2ynry8h3cn.html",
+  "article_date": "2024-07-12"
+}

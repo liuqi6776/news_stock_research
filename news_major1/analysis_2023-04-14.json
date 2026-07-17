@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "人工智能",
+      "impact": 4,
+      "analysis": "AI技术发展迅速，相关板块受益明显。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "半导体设备龙头业绩倍增，板块有望受益。"
+    },
+    {
+      "sector_name": "医疗",
+      "impact": 3,
+      "analysis": "医疗AI平台迈入大模型时代，板块有望受益。"
+    },
+    {
+      "sector_name": "数据要素",
+      "impact": 3,
+      "analysis": "广东拟将数据要素纳入GDP核算，板块有望受益。"
+    },
+    {
+      "sector_name": "金属镁",
+      "impact": 3,
+      "analysis": "镁价持续攀升，板块有望受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "掌阅科技",
+      "stock_code": "300383",
+      "impact": 4,
+      "analysis": "接入AI大模型，有望受益AI技术发展。"
+    },
+    {
+      "stock_name": "三六零",
+      "stock_code": "601360",
+      "impact": 3,
+      "analysis": "拥有多个战略数据入口，有望受益AI技术发展。"
+    },
+    {
+      "stock_name": "北方华创",
+      "stock_code": "002371",
+      "impact": 4,
+      "analysis": "半导体设备龙头，业绩倍增，有望受益行业增长。"
+    },
+    {
+      "stock_name": "天孚通信",
+      "stock_code": "300458",
+      "impact": 3,
+      "analysis": "有望受益算力需求增长。"
+    },
+    {
+      "stock_name": "奥飞数据",
+      "stock_code": "300738",
+      "impact": 3,
+      "analysis": "有望受益数据要素纳入GDP核算。"
+    }
+  ],
+  "article_title": "4月14日 盘前热点事件关注",
+  "html_file": "dumptj1fmj.html",
+  "article_date": "2023-04-14"
+}

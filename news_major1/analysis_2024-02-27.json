@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，算力、AI PC、游戏等板块受关注。",
+  "sectors": [
+    {
+      "sector_name": "算力板块",
+      "impact": 4,
+      "analysis": "华为昇腾系列芯片需求增长，利好相关企业。"
+    },
+    {
+      "sector_name": "AI PC板块",
+      "impact": 3,
+      "analysis": "英伟达新GPU支持AIGC，利好相关企业。"
+    },
+    {
+      "sector_name": "游戏板块",
+      "impact": 3,
+      "analysis": "游戏版号发布，利好相关企业。"
+    },
+    {
+      "sector_name": "湖北国资板块",
+      "impact": 2,
+      "analysis": "湖北国企改革深化，利好相关企业。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "华鲲振宇",
+      "stock_code": "000950",
+      "impact": 4,
+      "analysis": "华为昇腾生态出货量第一，利好。"
+    },
+    {
+      "stock_name": "联想小新",
+      "stock_code": "000950",
+      "impact": 3,
+      "analysis": "英伟达新GPU支持，利好。"
+    },
+    {
+      "stock_name": "中青宝",
+      "stock_code": "300055",
+      "impact": 3,
+      "analysis": "游戏版号获批，利好。"
+    },
+    {
+      "stock_name": "东湖高新",
+      "stock_code": "000950",
+      "impact": 2,
+      "analysis": "湖北国企改革，利好。"
+    }
+  ],
+  "article_id": "1136de261b274d6f90d1dfd447c92c18",
+  "article_date": "2024-02-27",
+  "article_title": "2024.2.27市场逻辑精选"
+}

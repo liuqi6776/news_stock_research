@@ -1,0 +1,56 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，关注鸿蒙PC和中欧贸易相关板块。",
+  "sectors": [
+    {
+      "sector_name": "鸿蒙PC",
+      "impact": 4,
+      "analysis": "鸿蒙PC发布预期利好相关产业链。"
+    },
+    {
+      "sector_name": "中欧贸易",
+      "impact": 3,
+      "analysis": "中欧贸易限制取消利好相关出口企业。"
+    },
+    {
+      "sector_name": "摘帽概念",
+      "impact": 2,
+      "analysis": "摘帽概念股活跃，关注摘帽后业绩改善的公司。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "慧为智能",
+      "stock_code": "300682",
+      "impact": 4,
+      "analysis": "鸿蒙系统核心公司，受益鸿蒙PC发布。"
+    },
+    {
+      "stock_name": "常山北明",
+      "stock_code": "000158",
+      "impact": 4,
+      "analysis": "鸿蒙生态市场服务商，受益鸿蒙PC发布。"
+    },
+    {
+      "stock_name": "九联科技",
+      "stock_code": "300395",
+      "impact": 3,
+      "analysis": "开源鸿蒙项目捐赠人，受益鸿蒙生态发展。"
+    },
+    {
+      "stock_name": "迪生力",
+      "stock_code": "002304",
+      "impact": 3,
+      "analysis": "主营轮胎等汽车配件业务，受益中欧贸易。"
+    },
+    {
+      "stock_name": "金麒麟",
+      "stock_code": "603378",
+      "impact": 3,
+      "analysis": "汽车刹车片、刹车盘制造商，受益中欧贸易。"
+    }
+  ],
+  "article_id": "50be422340794336b1f47b8c8e669f55",
+  "article_date": "2025-05-06",
+  "article_title": "2025.5.6市场逻辑精选"
+}

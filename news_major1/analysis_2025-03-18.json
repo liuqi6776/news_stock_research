@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股受积极消息影响",
+  "sectors": [
+    {
+      "sector_name": "基建",
+      "impact": 4,
+      "analysis": "俄乌重建消息利好相关基建板块"
+    },
+    {
+      "sector_name": "电池",
+      "impact": 3,
+      "analysis": "数据中心用铅酸电池需求增长，利好相关电池企业"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "人形机器人技术发展，利好相关机器人企业"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 3,
+      "analysis": "小米财报超预期，利好新能源汽车产业链"
+    },
+    {
+      "sector_name": "碳纤维",
+      "impact": 3,
+      "analysis": "吉林化纤与华为合作，利好碳纤维相关企业"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "北新路桥",
+      "stock_code": "002307",
+      "impact": 4,
+      "analysis": "俄乌重建利好相关基建股"
+    },
+    {
+      "stock_name": "圣阳股份",
+      "stock_code": "002580",
+      "impact": 3,
+      "analysis": "数据中心用铅酸电池需求增长"
+    },
+    {
+      "stock_name": "美的集团",
+      "stock_code": "000333",
+      "impact": 3,
+      "analysis": "人形机器人技术发展"
+    },
+    {
+      "stock_name": "小米集团",
+      "stock_code": "01810",
+      "impact": 3,
+      "analysis": "小米财报超预期"
+    },
+    {
+      "stock_name": "吉林化纤",
+      "stock_code": "000420",
+      "impact": 3,
+      "analysis": "吉林化纤与华为合作"
+    }
+  ],
+  "article_id": "bb65c5c96b3746eeb8fe8733f2081271",
+  "article_date": "2025-03-18",
+  "article_title": "2025.3.18市场逻辑精选"
+}

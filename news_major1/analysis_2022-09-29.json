@@ -1,0 +1,94 @@
+{
+  "market_impact": 3,
+  "market_analysis": "外围市场上涨，国内政策支持，市场情绪好转。",
+  "sectors": [
+    {
+      "sector_name": "贵金属",
+      "impact": 4,
+      "analysis": "外围市场上涨，贵金属板块受益"
+    },
+    {
+      "sector_name": "石油天然气",
+      "impact": 4,
+      "analysis": "外围市场上涨，油气板块受益"
+    },
+    {
+      "sector_name": "基建",
+      "impact": 3,
+      "analysis": "政策支持基建项目，相关板块受益"
+    },
+    {
+      "sector_name": "黄磷",
+      "impact": 3,
+      "analysis": "云南黄磷减停产，黄磷价格有望上涨"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "欧盟能源计划，光伏板块受益"
+    },
+    {
+      "sector_name": "纺织服饰",
+      "impact": 3,
+      "analysis": "人民币贬值，纺织服饰板块受益"
+    },
+    {
+      "sector_name": "医疗",
+      "impact": 3,
+      "analysis": "医疗新基建，医疗板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "金贵银业",
+      "stock_code": "600514",
+      "impact": 4,
+      "analysis": "贵金属价格上涨，公司受益"
+    },
+    {
+      "stock_name": "西部黄金",
+      "stock_code": "600614",
+      "impact": 4,
+      "analysis": "贵金属价格上涨，公司受益"
+    },
+    {
+      "stock_name": "中曼石油",
+      "stock_code": "601795",
+      "impact": 4,
+      "analysis": "油气价格上涨，公司受益"
+    },
+    {
+      "stock_name": "贝肯能源",
+      "stock_code": "002828",
+      "impact": 4,
+      "analysis": "油气价格上涨，公司受益"
+    },
+    {
+      "stock_name": "宏润建设",
+      "stock_code": "600066",
+      "impact": 3,
+      "analysis": "政策支持基建项目，公司受益"
+    },
+    {
+      "stock_name": "国统股份",
+      "stock_code": "002205",
+      "impact": 3,
+      "analysis": "政策支持基建项目，公司受益"
+    },
+    {
+      "stock_name": "力量钻石",
+      "stock_code": "603959",
+      "impact": 3,
+      "analysis": "欧盟提议禁止进口俄罗斯钻石，公司受益"
+    },
+    {
+      "stock_name": "尚荣医疗",
+      "stock_code": "002551",
+      "impact": 3,
+      "analysis": "医疗新基建，公司受益"
+    }
+  ],
+  "article_title": "9月29日 盘前早8点 股市要闻关注",
+  "html_file": "3p45fn7yk9.html",
+  "article_date": "2022-09-29"
+}

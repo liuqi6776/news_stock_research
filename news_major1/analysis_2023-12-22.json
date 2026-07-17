@@ -1,0 +1,83 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏乐观，多个行业和个股受利好消息影响。",
+  "sectors": [
+    {
+      "sector_name": "芯片",
+      "impact": 4,
+      "analysis": "美光科技业绩超预期，带动相关个股上涨。"
+    },
+    {
+      "sector_name": "北交所",
+      "impact": 3,
+      "analysis": "北交所属性个股受关注，相关个股有望受益。"
+    },
+    {
+      "sector_name": "抖音短剧",
+      "impact": 2,
+      "analysis": "抖音合作计划，相关个股有望受益。"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 2,
+      "analysis": "工信部计划支持，相关个股有望受益。"
+    },
+    {
+      "sector_name": "煤炭",
+      "impact": 2,
+      "analysis": "恢复煤炭进口关税，相关个股有望受益。"
+    },
+    {
+      "sector_name": "银行",
+      "impact": 1,
+      "analysis": "多家银行下调存款利率，相关个股有望受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "美光科技",
+      "stock_code": "000950",
+      "impact": 4,
+      "analysis": "业绩超预期，股价上涨。"
+    },
+    {
+      "stock_name": "流金科技",
+      "stock_code": "300838",
+      "impact": 3,
+      "analysis": "北交所+白酒属性，受关注。"
+    },
+    {
+      "stock_name": "华岭股份",
+      "stock_code": "300936",
+      "impact": 3,
+      "analysis": "北交所+芯片属性，受关注。"
+    },
+    {
+      "stock_name": "环球印务",
+      "stock_code": "002799",
+      "impact": 2,
+      "analysis": "抖音短剧合作，有望受益。"
+    },
+    {
+      "stock_name": "昊志机电",
+      "stock_code": "002890",
+      "impact": 2,
+      "analysis": "工信部计划支持，有望受益。"
+    },
+    {
+      "stock_name": "云维股份",
+      "stock_code": "600078",
+      "impact": 2,
+      "analysis": "恢复煤炭进口关税，有望受益。"
+    },
+    {
+      "stock_name": "瑞丰银行",
+      "stock_code": "600089",
+      "impact": 1,
+      "analysis": "多家银行下调存款利率，有望受益。"
+    }
+  ],
+  "article_title": "12月22日盘前早报 热点事件关注",
+  "html_file": "fuu53z7lkj.html",
+  "article_date": "2023-12-22"
+}

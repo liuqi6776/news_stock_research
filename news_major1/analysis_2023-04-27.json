@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股受利好消息提振。",
+  "sectors": [
+    {
+      "sector_name": "光伏",
+      "impact": 4,
+      "analysis": "光伏行业业绩增长，板块估值低，利好明显。"
+    },
+    {
+      "sector_name": "一带一路",
+      "impact": 3,
+      "analysis": "中乌元首通话，一带一路相关个股受益。"
+    },
+    {
+      "sector_name": "智能穿戴",
+      "impact": 3,
+      "analysis": "华为智能手表新功能，相关个股受关注。"
+    },
+    {
+      "sector_name": "数据中心",
+      "impact": 3,
+      "analysis": "数据中心液冷产品放量，相关个股有望受益。"
+    },
+    {
+      "sector_name": "锂电池",
+      "impact": 3,
+      "analysis": "锂价止跌反弹，板块有望迎来反弹。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "固德威",
+      "stock_code": "605013",
+      "impact": 4,
+      "analysis": "一季度净利润同比增长3473.72%，业绩大幅增长。"
+    },
+    {
+      "stock_name": "晶澳科技",
+      "stock_code": "002459",
+      "impact": 4,
+      "analysis": "一季度净利润同比增长244.45%，业绩大幅增长。"
+    },
+    {
+      "stock_name": "天合光能",
+      "stock_code": "600595",
+      "impact": 4,
+      "analysis": "一季度净利润同比增长225.43%，业绩大幅增长。"
+    },
+    {
+      "stock_name": "华为智能手表",
+      "stock_code": "暂无",
+      "impact": 3,
+      "analysis": "华为智能手表新功能，相关个股受关注。"
+    },
+    {
+      "stock_name": "同飞股份",
+      "stock_code": "603005",
+      "impact": 3,
+      "analysis": "数据中心液冷产品放量，有望受益。"
+    }
+  ],
+  "article_title": "4月27日 盘前热点事件关注",
+  "html_file": "fh8zvb1q45.html",
+  "article_date": "2023-04-27"
+}

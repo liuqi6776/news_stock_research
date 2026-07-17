@@ -1,0 +1,242 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多方面利好消息，市场情绪偏乐观",
+  "sectors": [
+    {
+      "sector_name": "光伏",
+      "impact": 4,
+      "analysis": "政策支持，板块受益"
+    },
+    {
+      "sector_name": "地产",
+      "impact": 3,
+      "analysis": "政府回购商品房，板块受益"
+    },
+    {
+      "sector_name": "钠电池",
+      "impact": 4,
+      "analysis": "传艺科技钠离子电池项目投产，板块受益"
+    },
+    {
+      "sector_name": "储能",
+      "impact": 3,
+      "analysis": "储能电站装机预期改善，板块受益"
+    },
+    {
+      "sector_name": "电暖器",
+      "impact": 3,
+      "analysis": "欧洲能源危机，出口增长，板块受益"
+    },
+    {
+      "sector_name": "化工",
+      "impact": 3,
+      "analysis": "欧洲化工品涨价，板块受益"
+    },
+    {
+      "sector_name": "数字经济",
+      "impact": 3,
+      "analysis": "数字经济发展强劲，板块受益"
+    },
+    {
+      "sector_name": "煤电",
+      "impact": 3,
+      "analysis": "煤电容量电价机制出台，板块受益"
+    },
+    {
+      "sector_name": "水务",
+      "impact": 2,
+      "analysis": "上海咸潮停水事件，板块关注"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "亿晶光电",
+      "stock_code": "600571",
+      "impact": 4,
+      "analysis": "光伏政策支持，个股受益"
+    },
+    {
+      "stock_name": "清源股份",
+      "stock_code": "600730",
+      "impact": 4,
+      "analysis": "光伏政策支持，个股受益"
+    },
+    {
+      "stock_name": "宝馨科技",
+      "stock_code": "002514",
+      "impact": 4,
+      "analysis": "光伏政策支持，个股受益"
+    },
+    {
+      "stock_name": "天合光能",
+      "stock_code": "600869",
+      "impact": 4,
+      "analysis": "光伏政策支持，个股受益"
+    },
+    {
+      "stock_name": "阳光电源",
+      "stock_code": "300274",
+      "impact": 4,
+      "analysis": "储能电站装机预期改善，个股受益"
+    },
+    {
+      "stock_name": "鹿山新材",
+      "stock_code": "603599",
+      "impact": 4,
+      "analysis": "光伏政策支持，个股受益"
+    },
+    {
+      "stock_name": "亚玛顿",
+      "stock_code": "002623",
+      "impact": 4,
+      "analysis": "光伏政策支持，个股受益"
+    },
+    {
+      "stock_name": "苏州高新",
+      "stock_code": "600736",
+      "impact": 3,
+      "analysis": "政府回购商品房，个股受益"
+    },
+    {
+      "stock_name": "栖霞建设",
+      "stock_code": "600503",
+      "impact": 3,
+      "analysis": "政府回购商品房，个股受益"
+    },
+    {
+      "stock_name": "传艺科技",
+      "stock_code": "002866",
+      "impact": 4,
+      "analysis": "钠离子电池项目投产，个股受益"
+    },
+    {
+      "stock_name": "维科技术",
+      "stock_code": "600634",
+      "impact": 4,
+      "analysis": "钠离子电池项目投产，个股受益"
+    },
+    {
+      "stock_name": "华阳股份",
+      "stock_code": "002906",
+      "impact": 4,
+      "analysis": "钠离子电池项目投产，个股受益"
+    },
+    {
+      "stock_name": "同兴环保",
+      "stock_code": "603733",
+      "impact": 4,
+      "analysis": "钠离子电池项目投产，个股受益"
+    },
+    {
+      "stock_name": "科远智慧",
+      "stock_code": "002380",
+      "impact": 3,
+      "analysis": "储能电站装机预期改善，个股受益"
+    },
+    {
+      "stock_name": "智光电气",
+      "stock_code": "002169",
+      "impact": 3,
+      "analysis": "储能电站装机预期改善，个股受益"
+    },
+    {
+      "stock_name": "圣阳股份",
+      "stock_code": "002580",
+      "impact": 3,
+      "analysis": "储能电站装机预期改善，个股受益"
+    },
+    {
+      "stock_name": "同力日升",
+      "stock_code": "300205",
+      "impact": 3,
+      "analysis": "储能电站装机预期改善，个股受益"
+    },
+    {
+      "stock_name": "南网科技",
+      "stock_code": "002058",
+      "impact": 3,
+      "analysis": "储能电站装机预期改善，个股受益"
+    },
+    {
+      "stock_name": "同飞股份",
+      "stock_code": "300396",
+      "impact": 3,
+      "analysis": "储能电站装机预期改善，个股受益"
+    },
+    {
+      "stock_name": "小崧股份",
+      "stock_code": "002384",
+      "impact": 3,
+      "analysis": "欧洲能源危机，出口增长，个股受益"
+    },
+    {
+      "stock_name": "真爱美家",
+      "stock_code": "603535",
+      "impact": 3,
+      "analysis": "欧洲能源危机，出口增长，个股受益"
+    },
+    {
+      "stock_name": "沧州大化",
+      "stock_code": "600230",
+      "impact": 3,
+      "analysis": "欧洲化工品涨价，个股受益"
+    },
+    {
+      "stock_name": "龙星化工",
+      "stock_code": "002442",
+      "impact": 3,
+      "analysis": "欧洲化工品涨价，个股受益"
+    },
+    {
+      "stock_name": "恒宝股份",
+      "stock_code": "002104",
+      "impact": 3,
+      "analysis": "数字经济发展强劲，个股受益"
+    },
+    {
+      "stock_name": "金财互联",
+      "stock_code": "002530",
+      "impact": 3,
+      "analysis": "数字经济发展强劲，个股受益"
+    },
+    {
+      "stock_name": "华电国际",
+      "stock_code": "600011",
+      "impact": 3,
+      "analysis": "煤电容量电价机制出台，个股受益"
+    },
+    {
+      "stock_name": "国电电力",
+      "stock_code": "600795",
+      "impact": 3,
+      "analysis": "煤电容量电价机制出台，个股受益"
+    },
+    {
+      "stock_name": "大唐发电",
+      "stock_code": "600991",
+      "impact": 3,
+      "analysis": "煤电容量电价机制出台，个股受益"
+    },
+    {
+      "stock_name": "巴安水务",
+      "stock_code": "002549",
+      "impact": 2,
+      "analysis": "上海咸潮停水事件，个股关注"
+    },
+    {
+      "stock_name": "泉阳泉",
+      "stock_code": "600318",
+      "impact": 2,
+      "analysis": "上海咸潮停水事件，个股关注"
+    },
+    {
+      "stock_name": "沃顿科技",
+      "stock_code": "300745",
+      "impact": 2,
+      "analysis": "上海咸潮停水事件，个股关注"
+    }
+  ],
+  "article_title": "10月12日 盘前早8点 股市要闻关注",
+  "html_file": "8mr9v6psf4.html",
+  "article_date": "2022-10-12"
+}

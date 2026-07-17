@@ -1,0 +1,102 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极影响。",
+  "sectors": [
+    {
+      "sector_name": "NASH治疗",
+      "impact": 4,
+      "analysis": "重大突破，市场空间大，相关个股受益"
+    },
+    {
+      "sector_name": "风电",
+      "impact": 3,
+      "analysis": "装机量有望大幅增长，海缆和桩基环节受益"
+    },
+    {
+      "sector_name": "信息安全",
+      "impact": 3,
+      "analysis": "信息安全事件频发，行业支出增长"
+    },
+    {
+      "sector_name": "TOPCon银浆",
+      "impact": 3,
+      "analysis": "N型电池技术提升，银浆龙头受益"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "光伏玻璃销售大单，相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "福瑞股份",
+      "stock_code": "300049",
+      "impact": 4,
+      "analysis": "FibroScan技术领先，检测环节受益"
+    },
+    {
+      "stock_name": "歌礼制药",
+      "stock_code": "01648",
+      "impact": 4,
+      "analysis": "THR-β激动剂研发进展良好"
+    },
+    {
+      "stock_name": "大金重工",
+      "stock_code": "002487",
+      "impact": 4,
+      "analysis": "海风龙头，定增落地，项目启动"
+    },
+    {
+      "stock_name": "东方电缆",
+      "stock_code": "600873",
+      "impact": 4,
+      "analysis": "海缆业务受益于风电装机增长"
+    },
+    {
+      "stock_name": "奇安信",
+      "stock_code": "688111",
+      "impact": 4,
+      "analysis": "网络安全龙头，市场前景广阔"
+    },
+    {
+      "stock_name": "聚和材料",
+      "stock_code": "688015",
+      "impact": 4,
+      "analysis": "TOPCon银浆龙头，技术领先"
+    },
+    {
+      "stock_name": "通宝能源",
+      "stock_code": "600863",
+      "impact": 3,
+      "analysis": "拓展清洁能源业务，重组预期"
+    },
+    {
+      "stock_name": "亚玛顿",
+      "stock_code": "002623",
+      "impact": 3,
+      "analysis": "光伏玻璃销售大单，业绩增长"
+    },
+    {
+      "stock_name": "特一药业",
+      "stock_code": "002728",
+      "impact": 3,
+      "analysis": "增加新冠咳嗽适应症，市场前景广阔"
+    },
+    {
+      "stock_name": "科陆电子",
+      "stock_code": "002121",
+      "impact": 3,
+      "analysis": "储能业务快速发展，盈利能力有望恢复"
+    },
+    {
+      "stock_name": "东威科技",
+      "stock_code": "688518",
+      "impact": 3,
+      "analysis": "真空磁控溅射设备出货，订单充足"
+    }
+  ],
+  "article_id": "768d5b10734a4671ac5f2f3f7fa9be09",
+  "article_date": "2022-12-20",
+  "article_title": "2022.12.20市场逻辑精选"
+}

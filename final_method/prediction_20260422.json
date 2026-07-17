@@ -1,0 +1,7 @@
+{
+  "date": "20260422",
+  "ts_filter": true,
+  "signal": "CASH",
+  "reason": "best_prob < 0.6",
+  "picks": []
+}

@@ -1,0 +1,68 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受消费和科技板块利好影响，整体情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "消费",
+      "impact": 4,
+      "analysis": "端午假期出游数据大增，相关消费板块受益"
+    },
+    {
+      "sector_name": "科技",
+      "impact": 3,
+      "analysis": "AI ISP技术和软件工程智能体标准发布，相关科技板块受益"
+    },
+    {
+      "sector_name": "核聚变",
+      "impact": 3,
+      "analysis": "核聚变金属需求上涨，相关核聚变板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "五芳斋",
+      "stock_code": "603187",
+      "impact": 4,
+      "analysis": "粽子业务占比高，受益端午假期出游"
+    },
+    {
+      "stock_name": "会稽山",
+      "stock_code": "600059",
+      "impact": 4,
+      "analysis": "黄酒业务受益于消费升级和年轻化趋势"
+    },
+    {
+      "stock_name": "莱绅通灵",
+      "stock_code": "603900",
+      "impact": 3,
+      "analysis": "钻石和黄金业务受益于消费需求"
+    },
+    {
+      "stock_name": "同为股份",
+      "stock_code": "300823",
+      "impact": 3,
+      "analysis": "AI ISP技术产品投放市场，受益于AI产业发展"
+    },
+    {
+      "stock_name": "合锻智能",
+      "stock_code": "300104",
+      "impact": 4,
+      "analysis": "承接核聚变项目核心部件，受益于核聚变产业发展"
+    },
+    {
+      "stock_name": "锡装股份",
+      "stock_code": "603610",
+      "impact": 3,
+      "analysis": "供货国内外多个大型核能发电项目，受益于核电产业发展"
+    },
+    {
+      "stock_name": "哈空调",
+      "stock_code": "600202",
+      "impact": 3,
+      "analysis": "布局核级空调处理机组，受益于核电产业发展"
+    }
+  ],
+  "article_id": "04f52eeb3fad4ba7b1ce4322708607b6",
+  "article_date": "2025-05-26",
+  "article_title": "2025.5.26市场逻辑精选"
+}

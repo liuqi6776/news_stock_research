@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "大件物流",
+      "impact": 4,
+      "analysis": "雅鲁水电工程带动大件物流需求增加，板块受益"
+    },
+    {
+      "sector_name": "商业航天",
+      "impact": 3,
+      "analysis": "民营火箭公司切入低轨星座组网，板块迎来发展机遇"
+    },
+    {
+      "sector_name": "体育产业",
+      "impact": 2,
+      "analysis": "广州体育强国规划发布，体育产业有望受益"
+    },
+    {
+      "sector_name": "游戏",
+      "impact": 2,
+      "analysis": "游戏行业催化因素增多，板块有望受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中铁特货",
+      "stock_code": "601595",
+      "impact": 4,
+      "analysis": "大件物流行业龙头，受益于雅鲁水电工程"
+    },
+    {
+      "stock_name": "长江通信",
+      "stock_code": "600345",
+      "impact": 3,
+      "analysis": "商业航天产业链相关公司，受益于民营火箭发展"
+    },
+    {
+      "stock_name": "金陵体育",
+      "stock_code": "600918",
+      "impact": 2,
+      "analysis": "体育产业相关公司，受益于广州体育强国规划"
+    },
+    {
+      "stock_name": "迅游科技",
+      "stock_code": "300496",
+      "impact": 2,
+      "analysis": "游戏行业龙头，受益于游戏行业催化因素"
+    }
+  ],
+  "article_id": "e99871121a12461abd9cbaf979025214",
+  "article_date": "2025-07-23",
+  "article_title": "2025.7.23市场逻辑精选"
+}

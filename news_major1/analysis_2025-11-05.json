@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "储能",
+      "impact": 4,
+      "analysis": "储能需求增长，板块受益明显。"
+    },
+    {
+      "sector_name": "电力设备",
+      "impact": 3,
+      "analysis": "电力设备需求增加，板块表现良好。"
+    },
+    {
+      "sector_name": "半导体设备",
+      "impact": 3,
+      "analysis": "HBM价格上涨，半导体设备板块受益。"
+    },
+    {
+      "sector_name": "金融",
+      "impact": 2,
+      "analysis": "金融强国政策推动，金融板块有望受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "伊戈尔",
+      "stock_code": "002268",
+      "impact": 3,
+      "analysis": "数据中心订单预期增长，公司受益。"
+    },
+    {
+      "stock_name": "新特电气",
+      "stock_code": "300839",
+      "impact": 3,
+      "analysis": "高压变频用变压器龙头，公司受益。"
+    },
+    {
+      "stock_name": "太极实业",
+      "stock_code": "600193",
+      "impact": 3,
+      "analysis": "与SK海力士合作，公司受益。"
+    },
+    {
+      "stock_name": "威士顿",
+      "stock_code": "603829",
+      "impact": 2,
+      "analysis": "金融衍生品交易软件供应商，公司受益。"
+    }
+  ],
+  "article_id": "88402f0eb53c441699261359a78e7184",
+  "article_date": "2025-11-05",
+  "article_title": "2025.11.5市场逻辑精选"
+}

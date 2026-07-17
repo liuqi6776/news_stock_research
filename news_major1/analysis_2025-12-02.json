@@ -1,0 +1,44 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受芯片产能扩张和消费刺激政策影响，整体偏利好。",
+  "sectors": [
+    {
+      "sector_name": "洁净室",
+      "impact": 4,
+      "analysis": "芯片产能扩张带动洁净室需求增长，板块受益明显。"
+    },
+    {
+      "sector_name": "消费",
+      "impact": 3,
+      "analysis": "福建消费政策支持，消费板块有望受益。"
+    },
+    {
+      "sector_name": "AEC",
+      "impact": 3,
+      "analysis": "AI数据中心需求增长，AEC行业受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "圣晖集成",
+      "stock_code": "300056",
+      "impact": 4,
+      "analysis": "台资洁净室工程服务商，受益芯片产能扩张。"
+    },
+    {
+      "stock_name": "安记食品",
+      "stock_code": "603345",
+      "impact": 3,
+      "analysis": "受益福建消费政策，复合调味粉龙头。"
+    },
+    {
+      "stock_name": "兆龙互联",
+      "stock_code": "002681",
+      "impact": 3,
+      "analysis": "高速电缆领域技术积累，受益AEC行业增长。"
+    }
+  ],
+  "article_id": "dd586218391549ed86b49f102580ce0c",
+  "article_date": "2025-12-02",
+  "article_title": "2025.12.2市场逻辑精选"
+}

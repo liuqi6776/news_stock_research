@@ -1,0 +1,109 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受积极题材驱动，有望提振",
+  "sectors": [
+    {
+      "sector_name": "固态电池",
+      "impact": 4,
+      "analysis": "产业进展加速，市场预期提升"
+    },
+    {
+      "sector_name": "无人物流车",
+      "impact": 3,
+      "analysis": "特斯拉Robotaxi预期，板块关注度提升"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 3,
+      "analysis": "小米新品发布，板块关注度提升"
+    },
+    {
+      "sector_name": "新能源设备",
+      "impact": 3,
+      "analysis": "宝光股份真空灭弧室需求提升"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "国轩高科",
+      "stock_code": "002074",
+      "impact": 4,
+      "analysis": "固态电池技术领先，市场预期提升"
+    },
+    {
+      "stock_name": "金龙羽",
+      "stock_code": "002882",
+      "impact": 3,
+      "analysis": "无人机用固态电芯订单，业绩预期提升"
+    },
+    {
+      "stock_name": "上海洗霸",
+      "stock_code": "603200",
+      "impact": 3,
+      "analysis": "固态电池技术合作，市场预期提升"
+    },
+    {
+      "stock_name": "中邮科技",
+      "stock_code": "600237",
+      "impact": 3,
+      "analysis": "无人配送车测试，业绩预期提升"
+    },
+    {
+      "stock_name": "云内动力",
+      "stock_code": "000903",
+      "impact": 3,
+      "analysis": "无人配送车测试，业绩预期提升"
+    },
+    {
+      "stock_name": "富特科技",
+      "stock_code": "603019",
+      "impact": 3,
+      "analysis": "车载电源供应商，业绩预期提升"
+    },
+    {
+      "stock_name": "华阳集团",
+      "stock_code": "002906",
+      "impact": 3,
+      "analysis": "小米核心供应商，业绩预期提升"
+    },
+    {
+      "stock_name": "威贸电子",
+      "stock_code": "603028",
+      "impact": 3,
+      "analysis": "小米供应商，业绩预期提升"
+    },
+    {
+      "stock_name": "江淮汽车",
+      "stock_code": "600418",
+      "impact": 3,
+      "analysis": "超高端豪车发布，业绩预期提升"
+    },
+    {
+      "stock_name": "宝光股份",
+      "stock_code": "600379",
+      "impact": 3,
+      "analysis": "真空灭弧室需求提升，业绩预期提升"
+    },
+    {
+      "stock_name": "海辰药业",
+      "stock_code": "300581",
+      "impact": 3,
+      "analysis": "固态电池布局，业绩预期提升"
+    },
+    {
+      "stock_name": "粤宏远A",
+      "stock_code": "000572",
+      "impact": 3,
+      "analysis": "高端智能装备转型，业绩预期提升"
+    },
+    {
+      "stock_name": "中农立华",
+      "stock_code": "300252",
+      "impact": 3,
+      "analysis": "拟收购台州农资，业绩预期提升"
+    }
+  ],
+  "article_id": "a8627044d0324e7c91b37b9f0f3dd639",
+  "article_date": "2025-05-21",
+  "article_title": "2025.5.21市场逻辑精选"
+}

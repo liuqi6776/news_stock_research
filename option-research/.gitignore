@@ -1,0 +1,4 @@
+# Ignore large raw data files and daily folder
+data/daily/
+data/*.parquet
+data/max_pain_features.csv

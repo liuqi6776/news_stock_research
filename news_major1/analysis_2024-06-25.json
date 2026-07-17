@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极影响。",
+  "sectors": [
+    {
+      "sector_name": "消费税相关",
+      "impact": 3,
+      "analysis": "消费税改革预期利好相关企业"
+    },
+    {
+      "sector_name": "农业机械",
+      "impact": 3,
+      "analysis": "农业机械报废更新政策持续发力"
+    },
+    {
+      "sector_name": "大飞机",
+      "impact": 3,
+      "analysis": "C919量产元年，产业链受益"
+    },
+    {
+      "sector_name": "民爆",
+      "impact": 3,
+      "analysis": "新疆区域民爆量价齐升"
+    },
+    {
+      "sector_name": "减肥药",
+      "impact": 3,
+      "analysis": "减肥药诺和诺德产品获批"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中科江南",
+      "stock_code": "000935",
+      "impact": 3,
+      "analysis": "消费税改革受益"
+    },
+    {
+      "stock_name": "一拖股份",
+      "stock_code": "000031",
+      "impact": 3,
+      "analysis": "农业机械报废更新政策受益"
+    },
+    {
+      "stock_name": "爱乐达",
+      "stock_code": "300762",
+      "impact": 3,
+      "analysis": "C919量产元年受益"
+    },
+    {
+      "stock_name": "保利联合",
+      "stock_code": "000038",
+      "impact": 3,
+      "analysis": "民爆行业景气度提升"
+    },
+    {
+      "stock_name": "诺泰生物",
+      "stock_code": "300715",
+      "impact": 3,
+      "analysis": "减肥药诺和诺德产品获批"
+    }
+  ],
+  "article_id": "feba36c1a24e428d898768ec9ae9e3f2",
+  "article_date": "2024-06-25",
+  "article_title": "2024.6.25市场逻辑精选"
+}

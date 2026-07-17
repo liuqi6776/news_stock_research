@@ -1,0 +1,96 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好影响，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "犒赏经济",
+      "impact": 4,
+      "analysis": "年轻群体消费模式兴起，相关产业链受益"
+    },
+    {
+      "sector_name": "存储芯片",
+      "impact": 3,
+      "analysis": "美光财报超预期，存储芯片行业有望增长"
+    },
+    {
+      "sector_name": "脑机接口",
+      "impact": 3,
+      "analysis": "行业进展加速，市场空间广阔"
+    },
+    {
+      "sector_name": "农药",
+      "impact": 3,
+      "analysis": "百菌清供应缺口，相关公司受益"
+    },
+    {
+      "sector_name": "商业航天",
+      "impact": 2,
+      "analysis": "星辰科技承接商业航天领域订单"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "广博股份",
+      "stock_code": "002103",
+      "impact": 4,
+      "analysis": "具备谷子经济全产业链能力"
+    },
+    {
+      "stock_name": "德艺文创",
+      "stock_code": "300535",
+      "impact": 3,
+      "analysis": "关注非遗文创产品研发"
+    },
+    {
+      "stock_name": "江波龙",
+      "stock_code": "300666",
+      "impact": 3,
+      "analysis": "美光科技上游主要存储晶圆供应商"
+    },
+    {
+      "stock_name": "赛腾股份",
+      "stock_code": "300606",
+      "impact": 3,
+      "analysis": "国内唯一能量产HBM量测设备的企业"
+    },
+    {
+      "stock_name": "成都华微",
+      "stock_code": "300335",
+      "impact": 3,
+      "analysis": "提供信号处理的基础硬件器件"
+    },
+    {
+      "stock_name": "翔宇医疗",
+      "stock_code": "300298",
+      "impact": 3,
+      "analysis": "已有脑机电方面的产品"
+    },
+    {
+      "stock_name": "苏利股份",
+      "stock_code": "002337",
+      "impact": 3,
+      "analysis": "现有百菌清产能"
+    },
+    {
+      "stock_name": "华体科技",
+      "stock_code": "300454",
+      "impact": 2,
+      "analysis": "参股天府星座主导企业"
+    },
+    {
+      "stock_name": "塞力医疗",
+      "stock_code": "300258",
+      "impact": 2,
+      "analysis": "电子病历领域合作蚂蚁"
+    },
+    {
+      "stock_name": "星辰科技",
+      "stock_code": "300795",
+      "impact": 2,
+      "analysis": "承接商业航天领域订单"
+    }
+  ],
+  "article_id": "255f7d8650ea4777a084baf24b0d4c42",
+  "article_date": "2025-12-18",
+  "article_title": "2025.12.18市场逻辑精选"
+}

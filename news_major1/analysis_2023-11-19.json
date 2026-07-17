@@ -1,0 +1,56 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，关注HBM和机器人板块。",
+  "sectors": [
+    {
+      "sector_name": "半导体",
+      "impact": 4,
+      "analysis": "HBM3供不应求，利好半导体设备、材料等产业链公司。"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "首款基于鸿蒙的机器人发布，利好机器人产业链公司。"
+    },
+    {
+      "sector_name": "汽车",
+      "impact": 2,
+      "analysis": "理想MEGA车型热销，利好相关汽车产业链公司。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "赛腾股份",
+      "stock_code": "300606",
+      "impact": 4,
+      "analysis": "收购日本OPTIMA切入半导体量检测设备领域，利好。"
+    },
+    {
+      "stock_name": "亚威股份",
+      "stock_code": "002540",
+      "impact": 3,
+      "analysis": "参股苏州芯测，收购韩国GSI公司，利好。"
+    },
+    {
+      "stock_name": "科力尔",
+      "stock_code": "002138",
+      "impact": 3,
+      "analysis": "华为伺服系统供应商，利好。"
+    },
+    {
+      "stock_name": "富佳股份",
+      "stock_code": "603895",
+      "impact": 3,
+      "analysis": "乐聚机器人供应商，利好。"
+    },
+    {
+      "stock_name": "博俊科技",
+      "stock_code": "603990",
+      "impact": 3,
+      "analysis": "理想汽车供应商，利好。"
+    }
+  ],
+  "article_id": "381421ade95b4332b963febbadbecaf9",
+  "article_date": "2023-11-19",
+  "article_title": "2023.11.19市场逻辑精选"
+}

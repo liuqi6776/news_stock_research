@@ -1,0 +1,27 @@
+{
+  "market_impact": 2,
+  "market_analysis": "市场情绪提振，但影响有限。",
+  "sectors": [
+    {
+      "sector_name": "互联网",
+      "impact": 2,
+      "analysis": "社群活跃度提升，可能带动相关个股表现。"
+    },
+    {
+      "sector_name": "传媒",
+      "impact": 2,
+      "analysis": "内容创作者获得认可，可能提升行业关注度。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "无",
+      "stock_code": "无",
+      "impact": 0,
+      "analysis": "未提及具体个股，无法评估影响。"
+    }
+  ],
+  "article_title": "连续三年人气之星，感谢公社，感谢大家，继续努力💪。踏过寒冬，股市的春天终有一天会来临！",
+  "html_file": "5zwxzjhd8a.html",
+  "article_date": "2024-01-13"
+}

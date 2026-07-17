@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，利好消息较多。",
+  "sectors": [
+    {
+      "sector_name": "军工",
+      "impact": 4,
+      "analysis": "印尼采购中国战机，军工板块受益"
+    },
+    {
+      "sector_name": "数据要素",
+      "impact": 3,
+      "analysis": "国家数据要素综合试验区建设，数据要素板块受益"
+    },
+    {
+      "sector_name": "海南",
+      "impact": 3,
+      "analysis": "海南用地审批授权，海南板块受益"
+    },
+    {
+      "sector_name": "稳定币",
+      "impact": 3,
+      "analysis": "稳定币相关消息，稳定币板块受益"
+    },
+    {
+      "sector_name": "算力",
+      "impact": 2,
+      "analysis": "算力相关消息，算力板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "成飞集成",
+      "stock_code": "002190",
+      "impact": 4,
+      "analysis": "印尼采购中国战机，军工板块受益"
+    },
+    {
+      "stock_name": "零点有数",
+      "stock_code": "603601",
+      "impact": 3,
+      "analysis": "国家数据要素综合试验区建设，数据要素板块受益"
+    },
+    {
+      "stock_name": "海汽集团",
+      "stock_code": "601099",
+      "impact": 3,
+      "analysis": "海南用地审批授权，海南板块受益"
+    },
+    {
+      "stock_name": "金时科技",
+      "stock_code": "300598",
+      "impact": 3,
+      "analysis": "稳定币相关消息，稳定币板块受益"
+    },
+    {
+      "stock_name": "中电鑫龙",
+      "stock_code": "002298",
+      "impact": 2,
+      "analysis": "算力相关消息，算力板块受益"
+    }
+  ],
+  "article_title": "6月6日盘前纪要",
+  "html_file": "1zngm8lf66y.html",
+  "article_date": "2025-06-06"
+}

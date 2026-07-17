@@ -1,0 +1,96 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受半导体设备投资增长和AI视频生成技术升级提振",
+  "sectors": [
+    {
+      "sector_name": "半导体",
+      "impact": 4,
+      "analysis": "设备投资增长，硅片涨价预期，板块利好"
+    },
+    {
+      "sector_name": "AI视频生成",
+      "impact": 3,
+      "analysis": "技术升级，用户偏好提升，板块利好"
+    },
+    {
+      "sector_name": "华为海思",
+      "impact": 3,
+      "analysis": "创新大会预期，产业链合作，板块利好"
+    },
+    {
+      "sector_name": "光模块电芯片",
+      "impact": 3,
+      "analysis": "电芯片国产替代，行业前景看好，板块利好"
+    },
+    {
+      "sector_name": "电磁弹射+舰船综合电力系统",
+      "impact": 2,
+      "analysis": "技术领先，行业前景看好，板块利好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "华峰测控",
+      "stock_code": "300242",
+      "impact": 4,
+      "analysis": "AI芯片及半导体扩产需求带动，公司产品获得认可"
+    },
+    {
+      "stock_name": "沪硅产业",
+      "stock_code": "688126",
+      "impact": 4,
+      "analysis": "半导体硅片制造商，国产替代，产能增长"
+    },
+    {
+      "stock_name": "引力传媒",
+      "stock_code": "300529",
+      "impact": 3,
+      "analysis": "快手可灵AI工具合作伙伴，技术升级，用户偏好提升"
+    },
+    {
+      "stock_name": "首都在线",
+      "stock_code": "002148",
+      "impact": 3,
+      "analysis": "与可灵AI战略合作，云计算服务商，助力AI视频生成"
+    },
+    {
+      "stock_name": "深圳华强",
+      "stock_code": "000062",
+      "impact": 3,
+      "analysis": "海思主要授权分销商，代理分销各类IC产品"
+    },
+    {
+      "stock_name": "力源信息",
+      "stock_code": "300184",
+      "impact": 3,
+      "analysis": "间接向华为提供元器件供应，代理海思产品"
+    },
+    {
+      "stock_name": "中晟微电子",
+      "stock_code": "688012",
+      "impact": 3,
+      "analysis": "电芯片研发设计、量产测试及市场运营，有望打破国外垄断"
+    },
+    {
+      "stock_name": "长川科技",
+      "stock_code": "688098",
+      "impact": 4,
+      "analysis": "半导体设备订单充裕，业绩大增，高端产品取得订单"
+    },
+    {
+      "stock_name": "矽电股份",
+      "stock_code": "688019",
+      "impact": 3,
+      "analysis": "晶粒/晶圆探针台设备核心供应商，国产替代空间大"
+    },
+    {
+      "stock_name": "湘电股份",
+      "stock_code": "600428",
+      "impact": 2,
+      "analysis": "电磁弹射+舰船综合电力系统国内独家，技术领先"
+    }
+  ],
+  "article_id": "26ac04779f7141d3b5853255b223e4ad",
+  "article_date": "2025-09-23",
+  "article_title": "2025.9.23市场逻辑精选"
+}

@@ -1,0 +1,61 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受消费电子、数字货币ATM、磷化铟等题材驱动，呈现一定利好。",
+  "sectors": [
+    {
+      "sector_name": "消费电子",
+      "impact": 4,
+      "analysis": "新品发布预期推动板块上涨。"
+    },
+    {
+      "sector_name": "数字货币",
+      "impact": 3,
+      "analysis": "稳定币行业发展带动相关设备需求。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "磷化铟国产化突破，推动成本降低。"
+    },
+    {
+      "sector_name": "商业航天",
+      "impact": 2,
+      "analysis": "政策支持商业航天发展。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "宜安科技",
+      "stock_code": "300151",
+      "impact": 4,
+      "analysis": "液态金属技术领先，绑定苹果供应链。"
+    },
+    {
+      "stock_name": "科森科技",
+      "stock_code": "002841",
+      "impact": 3,
+      "analysis": "转轴及石墨散热模组产品供货苹果、华为。"
+    },
+    {
+      "stock_name": "宸展光电",
+      "stock_code": "300513",
+      "impact": 3,
+      "analysis": "稳定币ATM机代工业务增长。"
+    },
+    {
+      "stock_name": "云南锗业",
+      "stock_code": "002428",
+      "impact": 3,
+      "analysis": "磷化铟晶片产能提升。"
+    },
+    {
+      "stock_name": "通宇通讯",
+      "stock_code": "002163",
+      "impact": 3,
+      "analysis": "卫星通信业务增长。"
+    }
+  ],
+  "article_id": "8ab35e60008144ffb744612aa2a006da",
+  "article_date": "2025-08-19",
+  "article_title": "2025.8.19市场逻辑精选"
+}

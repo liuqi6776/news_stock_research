@@ -1,0 +1,98 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场预期双边关系缓和，算力、商业航天、贵金属等板块受提振。",
+  "sectors": [
+    {
+      "sector_name": "算力",
+      "impact": 4,
+      "analysis": "算力板块受双边关系缓和及海外算力链反弹影响，利好"
+    },
+    {
+      "sector_name": "商业航天",
+      "impact": 3,
+      "analysis": "商业航天技术突破及规模爆发预期，利好"
+    },
+    {
+      "sector_name": "贵金属",
+      "impact": 3,
+      "analysis": "地缘紧张、降息押注升温、贸易战连锁反应等因素刺激贵金属板块，利好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "博通",
+      "stock_code": "600023",
+      "impact": 4,
+      "analysis": "发布TH6交换机芯片，股价反弹，利好"
+    },
+    {
+      "stock_name": "英伟达",
+      "stock_code": "600598",
+      "impact": 4,
+      "analysis": "研发新款AI芯片B30，股价接近新高，利好"
+    },
+    {
+      "stock_name": "生益电子",
+      "stock_code": "600183",
+      "impact": 3,
+      "analysis": "主营PCB，掌握先进技术能力，销售占比高，利好"
+    },
+    {
+      "stock_name": "胜宏科技",
+      "stock_code": "300369",
+      "impact": 3,
+      "analysis": "为英伟达核心供应链企业，全面配套英伟达全系产品，利好"
+    },
+    {
+      "stock_name": "贵研铂业",
+      "stock_code": "600459",
+      "impact": 3,
+      "analysis": "主营铂系金属深加工、回收及催化剂制造，利好"
+    },
+    {
+      "stock_name": "盛达资源",
+      "stock_code": "600483",
+      "impact": 3,
+      "analysis": "铅锌精粉+银锭业务占比高，控股多家矿业子公司，利好"
+    },
+    {
+      "stock_name": "天津普林",
+      "stock_code": "002059",
+      "impact": 3,
+      "analysis": "空客PCB供应商，资产并购预期，利好"
+    },
+    {
+      "stock_name": "华体科技",
+      "stock_code": "300454",
+      "impact": 3,
+      "analysis": "参股卫星公司含测运控服务，IPO预期，利好"
+    },
+    {
+      "stock_name": "永创智能",
+      "stock_code": "300610",
+      "impact": 3,
+      "analysis": "泡泡马特代工厂包装设备核心供应商，机器人业务布局，利好"
+    },
+    {
+      "stock_name": "天正电气",
+      "stock_code": "600871",
+      "impact": 3,
+      "analysis": "低压电器相关产品可用于智能电网、数据中心，利好"
+    },
+    {
+      "stock_name": "金陵饭店",
+      "stock_code": "601216",
+      "impact": 3,
+      "analysis": "深度布局江苏本地消费，酒店、食品业务，利好"
+    },
+    {
+      "stock_name": "腾达科技",
+      "stock_code": "002594",
+      "impact": 3,
+      "analysis": "紧固件产品应用于航天工程，利好"
+    }
+  ],
+  "article_id": "7249829f4d084abfb2edc3789811b625",
+  "article_date": "2025-06-05",
+  "article_title": "2025.6.5市场逻辑精选"
+}

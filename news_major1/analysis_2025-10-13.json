@@ -1,0 +1,88 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "半导体设备",
+      "impact": 4,
+      "analysis": "新凯来技术突破，带动板块上涨。"
+    },
+    {
+      "sector_name": "航运",
+      "impact": 3,
+      "analysis": "干散货指数大涨，航运板块受益。"
+    },
+    {
+      "sector_name": "卫星",
+      "impact": 3,
+      "analysis": "卫星应用大会召开，卫星板块有望受益。"
+    },
+    {
+      "sector_name": "矿冶装备",
+      "impact": 3,
+      "analysis": "稀土物项及技术出口管制收紧，矿冶装备板块受益。"
+    },
+    {
+      "sector_name": "环保",
+      "impact": 2,
+      "analysis": "废塑料利用项目进展顺利，环保板块受益。"
+    },
+    {
+      "sector_name": "新材料",
+      "impact": 2,
+      "analysis": "产品应用于超导、半导体领域，新材料板块受益。"
+    },
+    {
+      "sector_name": "包装",
+      "impact": 2,
+      "analysis": "两片罐行业提价，包装板块受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "新凯来",
+      "stock_code": "000938",
+      "impact": 4,
+      "analysis": "技术突破，带动股价上涨。"
+    },
+    {
+      "stock_name": "招商轮船",
+      "stock_code": "600017",
+      "impact": 3,
+      "analysis": "干散货运输占比高，股价受益。"
+    },
+    {
+      "stock_name": "中国卫星",
+      "stock_code": "600118",
+      "impact": 3,
+      "analysis": "积极参与卫星应用，股价受益。"
+    },
+    {
+      "stock_name": "北矿科技",
+      "stock_code": "000635",
+      "impact": 3,
+      "analysis": "稀土物项及技术出口管制收紧，股价受益。"
+    },
+    {
+      "stock_name": "惠城环保",
+      "stock_code": "300546",
+      "impact": 2,
+      "analysis": "废塑料利用项目进展顺利，股价受益。"
+    },
+    {
+      "stock_name": "东方坦业",
+      "stock_code": "002266",
+      "impact": 2,
+      "analysis": "产品应用于超导、半导体领域，股价受益。"
+    },
+    {
+      "stock_name": "奥瑞金",
+      "stock_code": "002701",
+      "impact": 2,
+      "analysis": "两片罐行业提价，股价受益。"
+    }
+  ],
+  "article_id": "ebc2fa4957694d198770b901efe9af55",
+  "article_date": "2025-10-13",
+  "article_title": "2025.10.13市场逻辑精选"
+}

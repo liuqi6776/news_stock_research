@@ -1,0 +1,113 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受创新药和AI概念驱动，情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "创新药",
+      "impact": 4,
+      "analysis": "欧洲肿瘤内科学会会议及创新药出海合同增长，板块利好。"
+    },
+    {
+      "sector_name": "AI概念",
+      "impact": 3,
+      "analysis": "谷歌AI模型发布预期，AI相关板块受关注。"
+    },
+    {
+      "sector_name": "科创板",
+      "impact": 2,
+      "analysis": "沐曦股份IPO推进，国产GPU产业链受提振。"
+    },
+    {
+      "sector_name": "黄金",
+      "impact": 2,
+      "analysis": "河西金矿投产，黄金产量增加，板块利好。"
+    },
+    {
+      "sector_name": "海南旅游",
+      "impact": 2,
+      "analysis": "海南离岛免税政策调整，旅游板块受提振。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 2,
+      "analysis": "华天科技拟收购华羿微电，半导体板块受关注。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "康方生物",
+      "stock_code": "300262",
+      "impact": 4,
+      "analysis": "创新药研发进展，公司受益。"
+    },
+    {
+      "stock_name": "科伦博泰",
+      "stock_code": "688023",
+      "impact": 4,
+      "analysis": "创新药研发进展，公司受益。"
+    },
+    {
+      "stock_name": "恒瑞医药",
+      "stock_code": "600276",
+      "impact": 4,
+      "analysis": "创新药研发进展，公司受益。"
+    },
+    {
+      "stock_name": "荣昌生物",
+      "stock_code": "688195",
+      "impact": 4,
+      "analysis": "创新药研发进展，公司受益。"
+    },
+    {
+      "stock_name": "君实生物",
+      "stock_code": "688023",
+      "impact": 4,
+      "analysis": "创新药研发进展，公司受益。"
+    },
+    {
+      "stock_name": "万兴科技",
+      "stock_code": "300624",
+      "impact": 3,
+      "analysis": "接入谷歌AI模型，公司受益。"
+    },
+    {
+      "stock_name": "中富电路",
+      "stock_code": "002545",
+      "impact": 3,
+      "analysis": "预期为谷歌TPU供应电源解决方案，公司受益。"
+    },
+    {
+      "stock_name": "沐曦股份",
+      "stock_code": "688387",
+      "impact": 3,
+      "analysis": "科创板IPO推进，公司受益。"
+    },
+    {
+      "stock_name": "宝鼎科技",
+      "stock_code": "002552",
+      "impact": 3,
+      "analysis": "河西金矿投产，公司受益。"
+    },
+    {
+      "stock_name": "华邦健康",
+      "stock_code": "002004",
+      "impact": 3,
+      "analysis": "参股公司签大额授权协议，公司受益。"
+    },
+    {
+      "stock_name": "海峡股份",
+      "stock_code": "000616",
+      "impact": 3,
+      "analysis": "海南离岛免税政策调整，公司受益。"
+    },
+    {
+      "stock_name": "华天科技",
+      "stock_code": "002185",
+      "impact": 3,
+      "analysis": "拟购买华羿微电，公司受益。"
+    }
+  ],
+  "article_id": "98e6f9cef796420593067d69136318c8",
+  "article_date": "2025-10-19",
+  "article_title": "2025.10.19市场逻辑精选"
+}

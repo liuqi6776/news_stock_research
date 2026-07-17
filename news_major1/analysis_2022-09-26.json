@@ -1,0 +1,89 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多方面利好消息，市场情绪偏乐观",
+  "sectors": [
+    {
+      "sector_name": "光伏",
+      "impact": 4,
+      "analysis": "欧盟能源计划、钨丝供不应求推动"
+    },
+    {
+      "sector_name": "风电",
+      "impact": 3,
+      "analysis": "海上风电招标创新高，装机需求明确"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 2,
+      "analysis": "金融化泡沫化势头得到实质性扭转"
+    },
+    {
+      "sector_name": "外贸出口",
+      "impact": 2,
+      "analysis": "人民币贬值，出口受益"
+    },
+    {
+      "sector_name": "航空",
+      "impact": 2,
+      "analysis": "香港放宽入境限制，航空业受益"
+    },
+    {
+      "sector_name": "机床",
+      "impact": 2,
+      "analysis": "新能源汽车需求拉动，订单猛增"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "清源股份",
+      "stock_code": "600194",
+      "impact": 4,
+      "analysis": "光伏板块受益股"
+    },
+    {
+      "stock_name": "宝馨科技",
+      "stock_code": "002514",
+      "impact": 4,
+      "analysis": "光伏板块受益股"
+    },
+    {
+      "stock_name": "万和电气",
+      "stock_code": "002543",
+      "impact": 4,
+      "analysis": "热泵板块受益股"
+    },
+    {
+      "stock_name": "大金重工",
+      "stock_code": "002487",
+      "impact": 3,
+      "analysis": "风电板块受益股"
+    },
+    {
+      "stock_name": "中交地产",
+      "stock_code": "000736",
+      "impact": 2,
+      "analysis": "房地产板块受益股"
+    },
+    {
+      "stock_name": "上海三毛",
+      "stock_code": "600638",
+      "impact": 2,
+      "analysis": "外贸出口板块受益股"
+    },
+    {
+      "stock_name": "中国国航",
+      "stock_code": "601111",
+      "impact": 2,
+      "analysis": "航空板块受益股"
+    },
+    {
+      "stock_name": "华东数控",
+      "stock_code": "002248",
+      "impact": 2,
+      "analysis": "机床板块受益股"
+    }
+  ],
+  "article_title": "9月26日 盘前早8点 股市要闻关注",
+  "html_file": "8lyytk8kcm.html",
+  "article_date": "2022-09-26"
+}

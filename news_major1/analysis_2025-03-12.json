@@ -1,0 +1,84 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极消息影响",
+  "sectors": [
+    {
+      "sector_name": "核电",
+      "impact": 4,
+      "analysis": "全球科技巨头支持核能扩张，板块受益"
+    },
+    {
+      "sector_name": "算力",
+      "impact": 3,
+      "analysis": "英伟达GTC大会技术升级，算力板块受提振"
+    },
+    {
+      "sector_name": "鸡肉",
+      "impact": 3,
+      "analysis": "多地鸡肉价格反弹，鸡肉板块受益"
+    },
+    {
+      "sector_name": "储能",
+      "impact": 3,
+      "analysis": "同力日升储能项目，储能板块受关注"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "福达股份布局机器人减速器，机器人板块受关注"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "融发核电",
+      "stock_code": "600191",
+      "impact": 4,
+      "analysis": "全球科技巨头支持核能扩张，公司受益"
+    },
+    {
+      "stock_name": "久盛电气",
+      "stock_code": "603206",
+      "impact": 4,
+      "analysis": "全球科技巨头支持核能扩张，公司受益"
+    },
+    {
+      "stock_name": "中核科技",
+      "stock_code": "002165",
+      "impact": 4,
+      "analysis": "全球科技巨头支持核能扩张，公司受益"
+    },
+    {
+      "stock_name": "罗博特科",
+      "stock_code": "300663",
+      "impact": 3,
+      "analysis": "英伟达GTC大会技术升级，公司受益"
+    },
+    {
+      "stock_name": "沃格光电",
+      "stock_code": "300602",
+      "impact": 3,
+      "analysis": "英伟达GTC大会技术升级，公司受益"
+    },
+    {
+      "stock_name": "仙坛股份",
+      "stock_code": "002714",
+      "impact": 3,
+      "analysis": "多地鸡肉价格反弹，公司受益"
+    },
+    {
+      "stock_name": "同力日升",
+      "stock_code": "300748",
+      "impact": 3,
+      "analysis": "储能项目，公司受益"
+    },
+    {
+      "stock_name": "福达股份",
+      "stock_code": "002564",
+      "impact": 3,
+      "analysis": "布局机器人减速器，公司受益"
+    }
+  ],
+  "article_id": "b27b14560ae54fd4bd985bddf7385c2c",
+  "article_date": "2025-03-12",
+  "article_title": "2025.3.12市场逻辑精选"
+}

@@ -1,0 +1,119 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受政策支持及稳增长预期影响，整体偏利好。",
+  "sectors": [
+    {
+      "sector_name": "医药板块",
+      "impact": 4,
+      "analysis": "居家治疗用药需求增加，相关个股受益"
+    },
+    {
+      "sector_name": "跨境电商板块",
+      "impact": 3,
+      "analysis": "多省出海抢订单，板块有望受益"
+    },
+    {
+      "sector_name": "快递电商包装印刷板块",
+      "impact": 3,
+      "analysis": "限塑令扩大，相关公司受益"
+    },
+    {
+      "sector_name": "电子元器件和集成电路板块",
+      "impact": 3,
+      "analysis": "深圳设立交易中心，板块有望受益"
+    },
+    {
+      "sector_name": "中药板块",
+      "impact": 3,
+      "analysis": "东方药业重整落地，相关公司受益"
+    },
+    {
+      "sector_name": "免税业务板块",
+      "impact": 3,
+      "analysis": "格力地产收购免税集团，板块有望受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "丰原药业",
+      "stock_code": "000153",
+      "impact": 4,
+      "analysis": "居家治疗用药需求增加"
+    },
+    {
+      "stock_name": "诚意药业",
+      "stock_code": "002626",
+      "impact": 4,
+      "analysis": "居家治疗用药需求增加"
+    },
+    {
+      "stock_name": "ST三圣",
+      "stock_code": "000741",
+      "impact": 4,
+      "analysis": "居家治疗用药需求增加"
+    },
+    {
+      "stock_name": "跨境电商通",
+      "stock_code": "002640",
+      "impact": 3,
+      "analysis": "多省出海抢订单"
+    },
+    {
+      "stock_name": "焦点科技",
+      "stock_code": "002315",
+      "impact": 3,
+      "analysis": "跨境电商支付产品"
+    },
+    {
+      "stock_name": "易点天下",
+      "stock_code": "300779",
+      "impact": 3,
+      "analysis": "跨境电商营销工具"
+    },
+    {
+      "stock_name": "天元股份",
+      "stock_code": "002912",
+      "impact": 4,
+      "analysis": "限塑令扩大，跨境电商业务"
+    },
+    {
+      "stock_name": "南化股份",
+      "stock_code": "000737",
+      "impact": 4,
+      "analysis": "重组上市再次启动"
+    },
+    {
+      "stock_name": "好上好",
+      "stock_code": "002594",
+      "impact": 3,
+      "analysis": "深圳电子元器件分销业务"
+    },
+    {
+      "stock_name": "汉商集团",
+      "stock_code": "000782",
+      "impact": 3,
+      "analysis": "东方药业重整落地"
+    },
+    {
+      "stock_name": "格力地产",
+      "stock_code": "000651",
+      "impact": 3,
+      "analysis": "收购免税集团"
+    },
+    {
+      "stock_name": "深圳华强",
+      "stock_code": "000062",
+      "impact": 3,
+      "analysis": "参与投资设立交易中心"
+    },
+    {
+      "stock_name": "游族网络",
+      "stock_code": "002174",
+      "impact": 3,
+      "analysis": "股权纠纷或将落地，《三体》动画上映"
+    }
+  ],
+  "article_id": "2a85cdf2ee314b8286dfff1e10197821",
+  "article_date": "2022-12-08",
+  "article_title": "2022.12.8市场逻辑精选"
+}

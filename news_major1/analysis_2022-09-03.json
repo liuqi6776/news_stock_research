@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "上合组织合作加强，利好新疆地区相关板块。",
+  "sectors": [
+    {
+      "sector_name": "新疆板块",
+      "impact": 4,
+      "analysis": "新疆作为上合组织合作中心，受益明显。"
+    },
+    {
+      "sector_name": "物流运输",
+      "impact": 3,
+      "analysis": "中吉乌铁路项目推进，物流运输板块受益。"
+    },
+    {
+      "sector_name": "基建",
+      "impact": 3,
+      "analysis": "新疆基建项目增多，基建板块受益。"
+    },
+    {
+      "sector_name": "石油天然气",
+      "impact": 3,
+      "analysis": "新疆石油天然气资源丰富，相关板块受益。"
+    },
+    {
+      "sector_name": "农业",
+      "impact": 3,
+      "analysis": "新疆农业发展潜力大，相关板块受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "天顺股份",
+      "stock_code": "002800",
+      "impact": 3,
+      "analysis": "新疆最大民营综合型第三方物流供应商。"
+    },
+    {
+      "stock_name": "新疆交建",
+      "stock_code": "002940",
+      "impact": 3,
+      "analysis": "参与新疆及中亚地区道路建设。"
+    },
+    {
+      "stock_name": "北新路桥",
+      "stock_code": "002307",
+      "impact": 3,
+      "analysis": "在巴基斯坦、吉尔吉斯斯坦等国家承建项目。"
+    },
+    {
+      "stock_name": "天富能源",
+      "stock_code": "600509",
+      "impact": 3,
+      "analysis": "新疆电力企业，受益于新疆地区发展。"
+    },
+    {
+      "stock_name": "新农开发",
+      "stock_code": "600359",
+      "impact": 3,
+      "analysis": "新疆农业开发企业，受益于新疆农业发展。"
+    }
+  ],
+  "article_title": "上合组织合作的纽带中心--新疆",
+  "html_file": "6xv397tv8n.html",
+  "article_date": "2022-09-03"
+}

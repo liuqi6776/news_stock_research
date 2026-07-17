@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注后续验证。",
+  "sectors": [
+    {
+      "sector_name": "光刻机",
+      "impact": 4,
+      "analysis": "国产化进程加速，市场空间广阔。"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "AI技术发展，相关产业链受益。"
+    },
+    {
+      "sector_name": "学前教育",
+      "impact": 2,
+      "analysis": "政策支持，行业有望增长。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "波长光电",
+      "stock_code": "300308",
+      "impact": 4,
+      "analysis": "光刻机光源核心供应商。"
+    },
+    {
+      "stock_name": "福晶科技",
+      "stock_code": "600362",
+      "impact": 4,
+      "analysis": "高端装备光学镜头供应商。"
+    },
+    {
+      "stock_name": "华为昇腾",
+      "stock_code": "000066",
+      "impact": 3,
+      "analysis": "AI服务器核心供应商。"
+    },
+    {
+      "stock_name": "爱婴室",
+      "stock_code": "603696",
+      "impact": 2,
+      "analysis": "学前教育行业领先企业。"
+    }
+  ],
+  "article_id": "75f9e5272d5d4c57aa5ef9eb603566c8",
+  "article_date": "2025-07-27",
+  "article_title": "2025.7.27市场逻辑精选"
+}

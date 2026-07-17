@@ -1,0 +1,86 @@
+{
+  "study_id": "004",
+  "timestamp": "20260503_181558",
+  "analysis": {
+    "1d": {
+      "threshold": 0.34,
+      "validation": {
+        "total_samples": 2298762,
+        "positive_samples": 189303,
+        "positive_ratio": 0.08234997794465021,
+        "avg_return_positive": 0.012682378660528099,
+        "avg_return_all": 0.0005128698218597514
+      },
+      "test": {
+        "total_samples": 904485,
+        "positive_samples": 41296,
+        "positive_ratio": 0.04565692078917837,
+        "avg_return_positive": 0.009694870652004962,
+        "avg_return_all": 0.0034914485919555803
+      }
+    },
+    "5d": {
+      "threshold": 0.3,
+      "validation": {
+        "total_samples": 2298762,
+        "positive_samples": 279430,
+        "positive_ratio": 0.12155673358094488,
+        "avg_return_positive": 0.024612505815943892,
+        "avg_return_all": 0.0005371599452688045
+      },
+      "test": {
+        "total_samples": 904485,
+        "positive_samples": 46615,
+        "positive_ratio": 0.051537615328059616,
+        "avg_return_positive": 0.01937847761346959,
+        "avg_return_all": 0.008667843158201976
+      }
+    },
+    "28d": {
+      "threshold": 0.5,
+      "validation": {
+        "total_samples": 2298762,
+        "positive_samples": 25033,
+        "positive_ratio": 0.010889774583014683,
+        "avg_return_positive": 0.21318446872226668,
+        "avg_return_all": 0.0020793741242916396
+      },
+      "test": {
+        "total_samples": 904485,
+        "positive_samples": 1157,
+        "positive_ratio": 0.001279180970386463,
+        "avg_return_positive": 0.0805589950682463,
+        "avg_return_all": 0.033356141156426246
+      }
+    }
+  },
+  "backtest_results": {
+    "1d": {
+      "total_return": 1.6838278780570657e+18,
+      "win_rate": 0.5473833097595474,
+      "avg_return": 0.021313695054369163,
+      "n_trades": 2121,
+      "sharpe": 3.7121733636732035
+    },
+    "5d": {
+      "total_return": 3.7943373579687685e+24,
+      "win_rate": 0.4891566265060241,
+      "avg_return": 0.030389032229211046,
+      "n_trades": 2075,
+      "sharpe": 3.618515011523145
+    },
+    "28d": {
+      "total_return": 4.8130494080991895e+33,
+      "win_rate": 0.6083650190114068,
+      "avg_return": 0.08134334872307242,
+      "n_trades": 1052,
+      "sharpe": 7.299241922261495
+    }
+  },
+  "recommendations": [
+    "28\u65e5\u76ee\u6807\u9608\u503c\u8fc7\u9ad8(8%)\uff0c\u5efa\u8bae\u964d\u81f33-5%",
+    "1\u65e5\u548c5\u65e5\u76ee\u6807\u8868\u73b0\u826f\u597d\uff0c\u53ef\u4ee5\u7ee7\u7eed\u4f18\u5316",
+    "\u5efa\u8bae\u589e\u52a0\u66f4\u591a\u57fa\u672c\u9762\u7279\u5f81",
+    "\u5efa\u8bae\u5c1d\u8bd5\u4e0d\u540c\u7684\u6a21\u578b\u67b6\u6784"
+  ]
+}

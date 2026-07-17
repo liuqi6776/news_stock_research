@@ -1,0 +1,73 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策支持西部大开发和房屋检测，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "西部大开发",
+      "impact": 4,
+      "analysis": "政策支持，相关产业链受益"
+    },
+    {
+      "sector_name": "房屋检测",
+      "impact": 3,
+      "analysis": "政策推动，市场空间大"
+    },
+    {
+      "sector_name": "华为相关",
+      "impact": 3,
+      "analysis": "华为鸿蒙和全连接大会，相关产业链受益"
+    },
+    {
+      "sector_name": "游戏",
+      "impact": 3,
+      "analysis": "《黑神话：悟空》热销，相关产业链受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "熙菱信息",
+      "stock_code": "300588",
+      "impact": 4,
+      "analysis": "西部大开发受益股"
+    },
+    {
+      "stock_name": "北新路桥",
+      "stock_code": "002307",
+      "impact": 4,
+      "analysis": "西部大开发受益股"
+    },
+    {
+      "stock_name": "深圳瑞捷",
+      "stock_code": "002588",
+      "impact": 3,
+      "analysis": "房屋检测行业龙头"
+    },
+    {
+      "stock_name": "网达软件",
+      "stock_code": "300733",
+      "impact": 3,
+      "analysis": "华为鸿蒙开发服务商"
+    },
+    {
+      "stock_name": "荣联科技",
+      "stock_code": "002642",
+      "impact": 3,
+      "analysis": "华为全连接大会参与者"
+    },
+    {
+      "stock_name": "致尚科技",
+      "stock_code": "002875",
+      "impact": 3,
+      "analysis": "PS5热销受益股"
+    },
+    {
+      "stock_name": "利和兴",
+      "stock_code": "002879",
+      "impact": 3,
+      "analysis": "华为海思供应商"
+    }
+  ],
+  "article_id": "d734eaebee2a4cb699e0226b345b6a35",
+  "article_date": "2024-08-25",
+  "article_title": "2024.8.25市场逻辑精选"
+}

@@ -1,0 +1,178 @@
+{
+  "market_impact": 2,
+  "market_analysis": "市场消息面较为活跃，部分行业和个股受利好消息影响较大。",
+  "sectors": [
+    {
+      "sector_name": "科创板块",
+      "impact": 3,
+      "analysis": "科创50成分股调整，新纳入个股可能带来短期关注。"
+    },
+    {
+      "sector_name": "卫星互联网",
+      "impact": 3,
+      "analysis": "马斯克与电信运营商合作，卫星互联网概念股受益。"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 3,
+      "analysis": "宁德时代麒麟电池落地，新能源汽车产业链个股受益。"
+    },
+    {
+      "sector_name": "虚拟电厂",
+      "impact": 3,
+      "analysis": "国内首家虚拟电厂管理中心成立，相关概念股受益。"
+    },
+    {
+      "sector_name": "储能",
+      "impact": 3,
+      "analysis": "工信部推动储能产业发展，相关概念股受益。"
+    },
+    {
+      "sector_name": "氢能源",
+      "impact": 3,
+      "analysis": "上海探索建立氢交易所，氢能源概念股受益。"
+    },
+    {
+      "sector_name": "风电",
+      "impact": 3,
+      "analysis": "第三批风光基地谋划，风电概念股受益。"
+    },
+    {
+      "sector_name": "天然气",
+      "impact": 3,
+      "analysis": "俄罗斯天然气价格预期上修，天然气概念股受益。"
+    },
+    {
+      "sector_name": "电力",
+      "impact": 3,
+      "analysis": "四川用电紧张缓解，电力概念股受益。"
+    },
+    {
+      "sector_name": "农业",
+      "impact": 3,
+      "analysis": "财政部安排中央预备费抗旱保秋粮，农业概念股受益。"
+    },
+    {
+      "sector_name": "中概互联网",
+      "impact": 3,
+      "analysis": "中美国监管机构签署审计监管合作协议，中概互联网概念股受益。"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 3,
+      "analysis": "美舰过航台湾海峡，军工概念股受益。"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "世界人工智能大会举行，人工智能概念股受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "禾迈股份",
+      "stock_code": "300823",
+      "impact": 3,
+      "analysis": "新纳入科创50成分股，短期可能受益。"
+    },
+    {
+      "stock_name": "盛美上海",
+      "stock_code": "603778",
+      "impact": 3,
+      "analysis": "新纳入科创50成分股，短期可能受益。"
+    },
+    {
+      "stock_name": "诺唯赞",
+      "stock_code": "688292",
+      "impact": 3,
+      "analysis": "新纳入科创50成分股，短期可能受益。"
+    },
+    {
+      "stock_name": "翱捷科技-U",
+      "stock_code": "688516",
+      "impact": 3,
+      "analysis": "新纳入科创50成分股，短期可能受益。"
+    },
+    {
+      "stock_name": "奕瑞科技",
+      "stock_code": "688599",
+      "impact": 3,
+      "analysis": "新纳入科创50成分股，短期可能受益。"
+    },
+    {
+      "stock_name": "中国卫通",
+      "stock_code": "600118",
+      "impact": 3,
+      "analysis": "马斯克与电信运营商合作，公司受益。"
+    },
+    {
+      "stock_name": "天银机电",
+      "stock_code": "300342",
+      "impact": 3,
+      "analysis": "马斯克与电信运营商合作，公司受益。"
+    },
+    {
+      "stock_name": "合众思壮",
+      "stock_code": "002383",
+      "impact": 3,
+      "analysis": "马斯克与电信运营商合作，公司受益。"
+    },
+    {
+      "stock_name": "松芝股份",
+      "stock_code": "002454",
+      "impact": 3,
+      "analysis": "宁德时代麒麟电池落地，公司受益。"
+    },
+    {
+      "stock_name": "科创新源",
+      "stock_code": "300683",
+      "impact": 3,
+      "analysis": "宁德时代麒麟电池落地，公司受益。"
+    },
+    {
+      "stock_name": "奥特佳",
+      "stock_code": "002239",
+      "impact": 3,
+      "analysis": "宁德时代麒麟电池落地，公司受益。"
+    },
+    {
+      "stock_name": "金智科技",
+      "stock_code": "600396",
+      "impact": 3,
+      "analysis": "国内首家虚拟电厂管理中心成立，公司受益。"
+    },
+    {
+      "stock_name": "积成电子",
+      "stock_code": "002339",
+      "impact": 3,
+      "analysis": "国内首家虚拟电厂管理中心成立，公司受益。"
+    },
+    {
+      "stock_name": "万胜智能",
+      "stock_code": "300743",
+      "impact": 3,
+      "analysis": "国内首家虚拟电厂管理中心成立，公司受益。"
+    },
+    {
+      "stock_name": "德龙汇能",
+      "stock_code": "601126",
+      "impact": 3,
+      "analysis": "俄罗斯天然气价格预期上修，公司受益。"
+    },
+    {
+      "stock_name": "成都燃气",
+      "stock_code": "600935",
+      "impact": 3,
+      "analysis": "俄罗斯天然气价格预期上修，公司受益。"
+    },
+    {
+      "stock_name": "国创高新",
+      "stock_code": "300687",
+      "impact": 3,
+      "analysis": "俄罗斯天然气价格预期上修，公司受益。"
+    }
+  ],
+  "article_title": "8月29日 盘前早8点 股市要闻关注",
+  "html_file": "a7lu3hzvtg.html",
+  "article_date": "2022-08-29"
+}

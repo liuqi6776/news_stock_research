@@ -1,0 +1,105 @@
+{
+  "market_impact": 3,
+  "market_analysis": "中东冲突影响油气资源，市场情绪波动。",
+  "sectors": [
+    {
+      "sector_name": "油气",
+      "impact": 3,
+      "analysis": "中东冲突利好油气板块"
+    },
+    {
+      "sector_name": "钾肥",
+      "impact": 3,
+      "analysis": "中东冲突利好钾肥板块"
+    },
+    {
+      "sector_name": "铜锌",
+      "impact": 3,
+      "analysis": "中东冲突利好铜锌板块"
+    },
+    {
+      "sector_name": "碳酸锶",
+      "impact": 3,
+      "analysis": "中东冲突利好碳酸锶板块"
+    },
+    {
+      "sector_name": "甲醇",
+      "impact": 3,
+      "analysis": "中东冲突利好甲醇板块"
+    },
+    {
+      "sector_name": "硫磺",
+      "impact": 3,
+      "analysis": "中东冲突利好硫磺板块"
+    },
+    {
+      "sector_name": "固态电池",
+      "impact": 3,
+      "analysis": "固态电池技术发展利好相关板块"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 3,
+      "analysis": "医药集采优化及AI制药领域利好医药板块"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "准油股份",
+      "stock_code": "000977",
+      "impact": 3,
+      "analysis": "中东冲突利好油气服务业务"
+    },
+    {
+      "stock_name": "贝肯能源",
+      "stock_code": "002828",
+      "impact": 3,
+      "analysis": "中东冲突利好油气勘探开发业务"
+    },
+    {
+      "stock_name": "亚钾国际",
+      "stock_code": "000738",
+      "impact": 3,
+      "analysis": "中东冲突利好钾肥业务"
+    },
+    {
+      "stock_name": "海辰药业",
+      "stock_code": "300584",
+      "impact": 3,
+      "analysis": "固态电池硫化锂材料开发"
+    },
+    {
+      "stock_name": "光华科技",
+      "stock_code": "300086",
+      "impact": 3,
+      "analysis": "固态电池硫化锂材料供应"
+    },
+    {
+      "stock_name": "有研新材",
+      "stock_code": "600206",
+      "impact": 3,
+      "analysis": "固态电池硫化锂材料供应"
+    },
+    {
+      "stock_name": "惠泰医疗",
+      "stock_code": "300606",
+      "impact": 3,
+      "analysis": "医药集采优化及电生理领域"
+    },
+    {
+      "stock_name": "南微医学",
+      "stock_code": "300529",
+      "impact": 3,
+      "analysis": "医药集采优化及内镜耗材业务"
+    },
+    {
+      "stock_name": "春立医疗",
+      "stock_code": "300682",
+      "impact": 3,
+      "analysis": "医药集采优化及骨科耗材业务"
+    }
+  ],
+  "article_id": "14c9d666e75d4be2aad8fe622b162250",
+  "article_date": "2025-06-15",
+  "article_title": "2025.6.15市场逻辑精选"
+}

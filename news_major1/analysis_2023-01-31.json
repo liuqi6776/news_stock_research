@@ -1,0 +1,85 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极影响。",
+  "sectors": [
+    {
+      "sector_name": "机器人",
+      "impact": 4,
+      "analysis": "日本出口限制推动国产化加速，板块受益"
+    },
+    {
+      "sector_name": "钙钛矿",
+      "impact": 3,
+      "analysis": "产业化起步，题材价值凸显"
+    },
+    {
+      "sector_name": "创投",
+      "impact": 2,
+      "analysis": "全面注册制预期，板块活跃"
+    },
+    {
+      "sector_name": "稀土",
+      "impact": 3,
+      "analysis": "出口限制反制技术封锁，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "达意隆",
+      "stock_code": "002209",
+      "impact": 4,
+      "analysis": "工业机器人产业链自主可控"
+    },
+    {
+      "stock_name": "爱仕达",
+      "stock_code": "002403",
+      "impact": 4,
+      "analysis": "机器人业务拓展"
+    },
+    {
+      "stock_name": "新时达",
+      "stock_code": "002527",
+      "impact": 4,
+      "analysis": "智能制造领域供应商"
+    },
+    {
+      "stock_name": "奥联电子",
+      "stock_code": "300382",
+      "impact": 3,
+      "analysis": "钙钛矿中试线投产"
+    },
+    {
+      "stock_name": "京山轻机",
+      "stock_code": "000821",
+      "impact": 3,
+      "analysis": "钙钛矿设备领域布局全面"
+    },
+    {
+      "stock_name": "创业黑马",
+      "stock_code": "300596",
+      "impact": 2,
+      "analysis": "创投板块活跃"
+    },
+    {
+      "stock_name": "首创证券",
+      "stock_code": "601390",
+      "impact": 2,
+      "analysis": "创投板块活跃"
+    },
+    {
+      "stock_name": "中国稀土",
+      "stock_code": "000831",
+      "impact": 3,
+      "analysis": "稀土出口限制反制技术封锁"
+    },
+    {
+      "stock_name": "广晟有色",
+      "stock_code": "600259",
+      "impact": 3,
+      "analysis": "稀土资源产量强"
+    }
+  ],
+  "article_id": "37f1c4b1a8c345b8a182430936ebcf2f",
+  "article_date": "2023-01-31",
+  "article_title": "2023.1.31市场逻辑精选"
+}

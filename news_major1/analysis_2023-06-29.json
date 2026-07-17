@@ -1,0 +1,194 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块利好。",
+  "sectors": [
+    {
+      "sector_name": "存储芯片",
+      "impact": 4,
+      "analysis": "存储芯片价格预期上涨，板块受益"
+    },
+    {
+      "sector_name": "芯片",
+      "impact": 3,
+      "analysis": "国家集成电路产业基金认购华虹半导体股份，板块利好"
+    },
+    {
+      "sector_name": "人民币贬值相关",
+      "impact": 2,
+      "analysis": "人民币贬值，相关板块可能受益"
+    },
+    {
+      "sector_name": "自动驾驶",
+      "impact": 3,
+      "analysis": "华为问界M5智驾版功能开放，板块受益"
+    },
+    {
+      "sector_name": "字节跳动概念",
+      "impact": 2,
+      "analysis": "字节跳动发布大模型MaaS平台，板块受益"
+    },
+    {
+      "sector_name": "恒生电子概念",
+      "impact": 2,
+      "analysis": "恒生电子发布数智金融新品，板块受益"
+    },
+    {
+      "sector_name": "三六零概念",
+      "impact": 2,
+      "analysis": "GPT产业联盟成立，板块受益"
+    },
+    {
+      "sector_name": "科大讯飞概念",
+      "impact": 2,
+      "analysis": "中国移动元宇宙产业联盟成立，板块受益"
+    },
+    {
+      "sector_name": "无人机概念",
+      "impact": 2,
+      "analysis": "国务院公布无人驾驶航空器飞行管理暂行条例，板块受益"
+    },
+    {
+      "sector_name": "京东方A、TCL科技",
+      "impact": 2,
+      "analysis": "iPhone15面板订单增长，相关公司受益"
+    },
+    {
+      "sector_name": "金牌厨柜、兔宝宝",
+      "impact": 2,
+      "analysis": "智能家居销售火热，相关公司受益"
+    },
+    {
+      "sector_name": "金证股份、亚康股份",
+      "impact": 2,
+      "analysis": "腾讯云自研计算网络性能提升，相关公司受益"
+    },
+    {
+      "sector_name": "中国重工、亚星锚链",
+      "impact": 2,
+      "analysis": "部分船企完成全年接单目标，相关公司受益"
+    },
+    {
+      "sector_name": "华工科技、福晶科技",
+      "impact": 2,
+      "analysis": "星地激光高速通信取得成功，相关公司受益"
+    },
+    {
+      "sector_name": "冠龙节能、韶能股份",
+      "impact": 2,
+      "analysis": "抽水蓄能电站项目核准提速，相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "佰维存储",
+      "stock_code": "603286",
+      "impact": 4,
+      "analysis": "存储芯片价格上涨预期，公司受益"
+    },
+    {
+      "stock_name": "深科技",
+      "stock_code": "000021",
+      "impact": 4,
+      "analysis": "存储芯片价格上涨预期，公司受益"
+    },
+    {
+      "stock_name": "德明利",
+      "stock_code": "688598",
+      "impact": 4,
+      "analysis": "存储芯片价格上涨预期，公司受益"
+    },
+    {
+      "stock_name": "江波龙",
+      "stock_code": "300661",
+      "impact": 4,
+      "analysis": "存储芯片价格上涨预期，公司受益"
+    },
+    {
+      "stock_name": "恒烁股份",
+      "stock_code": "688556",
+      "impact": 4,
+      "analysis": "存储芯片价格上涨预期，公司受益"
+    },
+    {
+      "stock_name": "北方华创",
+      "stock_code": "002371",
+      "impact": 3,
+      "analysis": "国家集成电路产业基金认购华虹半导体股份，公司受益"
+    },
+    {
+      "stock_name": "中微公司",
+      "stock_code": "688012",
+      "impact": 3,
+      "analysis": "国家集成电路产业基金认购华虹半导体股份，公司受益"
+    },
+    {
+      "stock_name": "拓荆科技",
+      "stock_code": "688599",
+      "impact": 3,
+      "analysis": "国家集成电路产业基金认购华虹半导体股份，公司受益"
+    },
+    {
+      "stock_name": "华海清科",
+      "stock_code": "688018",
+      "impact": 3,
+      "analysis": "国家集成电路产业基金认购华虹半导体股份，公司受益"
+    },
+    {
+      "stock_name": "龙头股份",
+      "stock_code": "600630",
+      "impact": 2,
+      "analysis": "人民币贬值，公司受益"
+    },
+    {
+      "stock_name": "上海三毛",
+      "stock_code": "600638",
+      "impact": 2,
+      "analysis": "人民币贬值，公司受益"
+    },
+    {
+      "stock_name": "泰慕士",
+      "stock_code": "603790",
+      "impact": 2,
+      "analysis": "人民币贬值，公司受益"
+    },
+    {
+      "stock_name": "盛泰集团",
+      "stock_code": "603939",
+      "impact": 2,
+      "analysis": "人民币贬值，公司受益"
+    },
+    {
+      "stock_name": "路畅科技",
+      "stock_code": "002813",
+      "impact": 3,
+      "analysis": "华为问界M5智驾版功能开放，公司受益"
+    },
+    {
+      "stock_name": "德赛西威",
+      "stock_code": "002920",
+      "impact": 3,
+      "analysis": "华为问界M5智驾版功能开放，公司受益"
+    },
+    {
+      "stock_name": "兴民智通",
+      "stock_code": "002355",
+      "impact": 3,
+      "analysis": "华为问界M5智驾版功能开放，公司受益"
+    },
+    {
+      "stock_name": "浙江世宝",
+      "stock_code": "002703",
+      "impact": 3,
+      "analysis": "华为问界M5智驾版功能开放，公司受益"
+    },
+    {
+      "stock_name": "四维图新",
+      "stock_code": "002405",
+      "impact": 3,
+      "analysis": "华为问界M5智驾版功能开放，公司受益"
+    }
+  ],
+  "article_title": "6月29日 盘前热点事件关注",
+  "html_file": "90ayz74vrl.html",
+  "article_date": "2023-06-29"
+}

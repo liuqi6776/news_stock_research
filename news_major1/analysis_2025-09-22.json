@@ -1,0 +1,45 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受消费电子和算力相关题材驱动，有望走强。",
+  "sectors": [
+    {
+      "sector_name": "消费电子",
+      "impact": 4,
+      "analysis": "iPhone 17销售超预期，安卓旗舰新品发布，板块受益明显。"
+    },
+    {
+      "sector_name": "算力",
+      "impact": 3,
+      "analysis": "阿里云栖大会和固态硬盘需求增长，板块有望受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "鸿富瀚",
+      "stock_code": "603027",
+      "impact": 4,
+      "analysis": "苹果产品供应商，订单增加，受益iPhone 17销售。"
+    },
+    {
+      "stock_name": "鹏鼎控股",
+      "stock_code": "002938",
+      "impact": 3,
+      "analysis": "苹果供应商，iPhone 17 Display软板单价提升，供货份额增长。"
+    },
+    {
+      "stock_name": "海光信息",
+      "stock_code": "600936",
+      "impact": 3,
+      "analysis": "阿里云栖大会合作伙伴，算力芯片大集群建设。"
+    },
+    {
+      "stock_name": "德明利",
+      "stock_code": "688027",
+      "impact": 3,
+      "analysis": "企业级存储解决方案提供商，固态硬盘需求增长。"
+    }
+  ],
+  "article_id": "5d34fb01d9694b1dacbf29b67514dfad",
+  "article_date": "2025-09-22",
+  "article_title": "2025.9.22市场逻辑精选"
+}

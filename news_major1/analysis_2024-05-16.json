@@ -1,0 +1,61 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注后续政策落实情况。",
+  "sectors": [
+    {
+      "sector_name": "建材",
+      "impact": 4,
+      "analysis": "地产链弹性品种利好，建材需求增加"
+    },
+    {
+      "sector_name": "化工",
+      "impact": 3,
+      "analysis": "工业级磷酸一铵价格上涨，相关产业链受益"
+    },
+    {
+      "sector_name": "跨境支付",
+      "impact": 3,
+      "analysis": "中俄建立独立支付系统，跨境支付领域受益"
+    },
+    {
+      "sector_name": "核电",
+      "impact": 3,
+      "analysis": "中俄核电领域合作，相关产业链受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "海南瑞泽",
+      "stock_code": "000963",
+      "impact": 3,
+      "analysis": "水泥行业受益，股价可能上涨"
+    },
+    {
+      "stock_name": "东方雨虹",
+      "stock_code": "002271",
+      "impact": 4,
+      "analysis": "防水材料行业受益，股价可能上涨"
+    },
+    {
+      "stock_name": "川发龙蟒",
+      "stock_code": "000979",
+      "impact": 3,
+      "analysis": "工业级磷酸一铵价格上涨，股价可能上涨"
+    },
+    {
+      "stock_name": "中油资本",
+      "stock_code": "000652",
+      "impact": 3,
+      "analysis": "跨境支付领域受益，股价可能上涨"
+    },
+    {
+      "stock_name": "应流股份",
+      "stock_code": "600827",
+      "impact": 3,
+      "analysis": "核电领域合作，股价可能上涨"
+    }
+  ],
+  "article_id": "9d72c3f6309d4aa8943726676b061846",
+  "article_date": "2024-05-16",
+  "article_title": "2024.5.16市场逻辑精选"
+}

@@ -1,0 +1,106 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受台积电提价消息提振，科技板块有望受益。",
+  "sectors": [
+    {
+      "sector_name": "半导体",
+      "impact": 4,
+      "analysis": "台积电提价利好半导体行业，相关公司受益"
+    },
+    {
+      "sector_name": "封测",
+      "impact": 3,
+      "analysis": "台积电提价利好封测行业，相关公司受益"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 2,
+      "analysis": "赛力斯机器人布局有望推动相关产业链发展"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 2,
+      "analysis": "宛西制药业绩增长，AI液冷技术有望提升公司价值"
+    },
+    {
+      "sector_name": "风电",
+      "impact": 2,
+      "analysis": "上海微电子预期上市，电气风电受益"
+    },
+    {
+      "sector_name": "锗业",
+      "impact": 3,
+      "analysis": "云南锗业子公司整合及增资扩股，股价有望受益"
+    },
+    {
+      "sector_name": "车联网",
+      "impact": 2,
+      "analysis": "万马科技与常州市共建自动驾驶数据闭环解决方案"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "通富微电",
+      "stock_code": "002156",
+      "impact": 4,
+      "analysis": "台积电产能不足，公司深度合作AMD"
+    },
+    {
+      "stock_name": "长电科技",
+      "stock_code": "600584",
+      "impact": 3,
+      "analysis": "国内封测龙头，已实现2.5D/3D封装技术全线通线"
+    },
+    {
+      "stock_name": "晶方科技",
+      "stock_code": "603005",
+      "impact": 3,
+      "analysis": "TSV技术相关，受益于半导体行业增长"
+    },
+    {
+      "stock_name": "华海诚科",
+      "stock_code": "300079",
+      "impact": 3,
+      "analysis": "材料相关，受益于半导体行业增长"
+    },
+    {
+      "stock_name": "兴森科技",
+      "stock_code": "002294",
+      "impact": 3,
+      "analysis": "设备相关，受益于半导体行业增长"
+    },
+    {
+      "stock_name": "赛力斯",
+      "stock_code": "600489",
+      "impact": 2,
+      "analysis": "布局人形机器人领域，有望推动相关产业链发展"
+    },
+    {
+      "stock_name": "飞龙股份",
+      "stock_code": "002502",
+      "impact": 2,
+      "analysis": "宛西制药业绩增长，AI液冷技术有望提升公司价值"
+    },
+    {
+      "stock_name": "电气风电",
+      "stock_code": "688019",
+      "impact": 2,
+      "analysis": "上海微电子预期上市，公司受益"
+    },
+    {
+      "stock_name": "云南锗业",
+      "stock_code": "002428",
+      "impact": 3,
+      "analysis": "子公司整合及增资扩股，股价有望受益"
+    },
+    {
+      "stock_name": "万马科技",
+      "stock_code": "300555",
+      "impact": 2,
+      "analysis": "与常州市共建自动驾驶数据闭环解决方案"
+    }
+  ],
+  "article_id": "e5505468e18d452cba9d41784432f424",
+  "article_date": "2024-11-03",
+  "article_title": "2024.11.3市场逻辑精选"
+}

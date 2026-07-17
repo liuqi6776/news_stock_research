@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注潜在风险。",
+  "sectors": [
+    {
+      "sector_name": "汽车无线充电",
+      "impact": 4,
+      "analysis": "特斯拉专利引发关注，板块受益"
+    },
+    {
+      "sector_name": "CXO",
+      "impact": 3,
+      "analysis": "生物安全法案未纳入NDAA，板块上涨"
+    },
+    {
+      "sector_name": "华为穿戴",
+      "impact": 3,
+      "analysis": "华为新品发布预期，板块受益"
+    },
+    {
+      "sector_name": "智能汽车",
+      "impact": 2,
+      "analysis": "美国拟禁止国产软硬件，板块受影响"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "万安科技",
+      "stock_code": "002590",
+      "impact": 4,
+      "analysis": "特斯拉专利引发关注，公司受益"
+    },
+    {
+      "stock_name": "药明康德",
+      "stock_code": "603259",
+      "impact": 3,
+      "analysis": "生物安全法案未纳入NDAA，公司上涨"
+    },
+    {
+      "stock_name": "华为",
+      "stock_code": "002502",
+      "impact": 3,
+      "analysis": "华为新品发布预期，公司受益"
+    },
+    {
+      "stock_name": "中科创达",
+      "stock_code": "300096",
+      "impact": 2,
+      "analysis": "美国拟禁止国产软硬件，公司受影响"
+    }
+  ],
+  "article_id": "b276fe9eea414a72be47d24d7a10a634",
+  "article_date": "2024-09-22",
+  "article_title": "2024.9.22市场逻辑精选"
+}

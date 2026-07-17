@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪积极",
+  "sectors": [
+    {
+      "sector_name": "电子烟",
+      "impact": 3,
+      "analysis": "消费税纳入，行业受益"
+    },
+    {
+      "sector_name": "大飞机",
+      "impact": 3,
+      "analysis": "C919交付，产业链受益"
+    },
+    {
+      "sector_name": "创投",
+      "impact": 3,
+      "analysis": "注册制推进，板块受益"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 2,
+      "analysis": "军工信息化，行业受益"
+    },
+    {
+      "sector_name": "汽车",
+      "impact": 2,
+      "analysis": "中德合作，汽车行业受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "陕西金叶",
+      "stock_code": "000981",
+      "impact": 3,
+      "analysis": "电子烟消费税利好"
+    },
+    {
+      "stock_name": "润贝航科",
+      "stock_code": "688389",
+      "impact": 3,
+      "analysis": "C919交付利好"
+    },
+    {
+      "stock_name": "创业黑马",
+      "stock_code": "300596",
+      "impact": 3,
+      "analysis": "注册制推进利好"
+    },
+    {
+      "stock_name": "宝塔实业",
+      "stock_code": "000595",
+      "impact": 2,
+      "analysis": "军工信息化利好"
+    },
+    {
+      "stock_name": "中原内配",
+      "stock_code": "002274",
+      "impact": 2,
+      "analysis": "中德合作汽车利好"
+    }
+  ],
+  "article_title": "10月26日盘前早参 热点事件关注",
+  "html_file": "bye4118k94.html",
+  "article_date": "2022-10-26"
+}

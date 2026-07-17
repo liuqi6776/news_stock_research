@@ -1,0 +1,66 @@
+{
+  "market_impact": 4,
+  "market_analysis": "AI应用和PC换机潮推动市场热点，利好科技板块。",
+  "sectors": [
+    {
+      "sector_name": "AI应用",
+      "impact": 4,
+      "analysis": "Kimi突破长文本能力，带动下游应用，利好相关公司。"
+    },
+    {
+      "sector_name": "AI PC",
+      "impact": 4,
+      "analysis": "换机潮推动产业链景气度提升，利好相关硬件和软件公司。"
+    },
+    {
+      "sector_name": "AI电商",
+      "impact": 3,
+      "analysis": "AI技术赋能电商，带动消费升级，利好相关电商公司。"
+    },
+    {
+      "sector_name": "影视",
+      "impact": 3,
+      "analysis": "华策影视与月之暗面合作，利好影视板块。"
+    },
+    {
+      "sector_name": "算力",
+      "impact": 3,
+      "analysis": "润泽科技受益于Kimi算力需求，利好算力相关公司。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "掌阅科技",
+      "stock_code": "300383",
+      "impact": 4,
+      "analysis": "Kimi接入端，利好公司。"
+    },
+    {
+      "stock_name": "华策影视",
+      "stock_code": "600077",
+      "impact": 3,
+      "analysis": "深度合作月之暗面，利好公司。"
+    },
+    {
+      "stock_name": "润泽科技",
+      "stock_code": "300183",
+      "impact": 3,
+      "analysis": "字节AI算力底座，或间接受益Kimi算力需求，利好公司。"
+    },
+    {
+      "stock_name": "易点天下",
+      "stock_code": "300776",
+      "impact": 3,
+      "analysis": "AI电商赋能，利好公司。"
+    },
+    {
+      "stock_name": "威海广泰",
+      "stock_code": "002111",
+      "impact": 3,
+      "analysis": "业绩增长，空港订单创历史最好水平，利好公司。"
+    }
+  ],
+  "article_id": "f9eb587867e44390982a0da6046cef5b",
+  "article_date": "2024-03-20",
+  "article_title": "2024.3.20市场逻辑精选"
+}

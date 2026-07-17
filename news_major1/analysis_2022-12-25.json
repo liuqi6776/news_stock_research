@@ -1,0 +1,45 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受血氧仪需求增加和白酒借壳预期影响，整体偏利好。",
+  "sectors": [
+    {
+      "sector_name": "医疗器械",
+      "impact": 4,
+      "analysis": "血氧仪需求增加，板块受益"
+    },
+    {
+      "sector_name": "白酒",
+      "impact": 3,
+      "analysis": "白酒借壳预期，板块活跃"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "康泰医学",
+      "stock_code": "002579",
+      "impact": 4,
+      "analysis": "血氧仪需求增加，公司受益"
+    },
+    {
+      "stock_name": "鱼跃医疗",
+      "stock_code": "002223",
+      "impact": 4,
+      "analysis": "血氧仪需求增加，公司受益"
+    },
+    {
+      "stock_name": "贵州茅台",
+      "stock_code": "600519",
+      "impact": 3,
+      "analysis": "白酒借壳预期，公司可能受益"
+    },
+    {
+      "stock_name": "贵广网络",
+      "stock_code": "600352",
+      "impact": 3,
+      "analysis": "白酒借壳预期，公司可能受益"
+    }
+  ],
+  "article_id": "21a011ae99fd4417bd061d674a4400d6",
+  "article_date": "2022-12-25",
+  "article_title": "2022.12.25市场逻辑精选"
+}

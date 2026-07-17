@@ -1,0 +1,61 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "医药",
+      "impact": 4,
+      "analysis": "创新药和集采政策利好，板块上涨动力强。"
+    },
+    {
+      "sector_name": "液冷",
+      "impact": 3,
+      "analysis": "高阶AI芯片需求推动液冷市场，板块有望受益。"
+    },
+    {
+      "sector_name": "反内卷",
+      "impact": 2,
+      "analysis": "政策规范市场秩序，相关行业有望受益。"
+    },
+    {
+      "sector_name": "等静压设备",
+      "impact": 3,
+      "analysis": "固态电池需求推动等静压设备，板块有望受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "南京新百",
+      "stock_code": "600382",
+      "impact": 4,
+      "analysis": "引进创新药，临床试验推进顺利，股价有望上涨。"
+    },
+    {
+      "stock_name": "智飞生物",
+      "stock_code": "300122",
+      "impact": 4,
+      "analysis": "疫苗管线丰富，产品上市，股价有望受益。"
+    },
+    {
+      "stock_name": "英维克",
+      "stock_code": "002898",
+      "impact": 4,
+      "analysis": "液冷解决方案领先，股价有望受益。"
+    },
+    {
+      "stock_name": "潞安环能",
+      "stock_code": "600798",
+      "impact": 3,
+      "analysis": "煤炭行业龙头，业绩有望提升，股价有望上涨。"
+    },
+    {
+      "stock_name": "先导智能",
+      "stock_code": "300450",
+      "impact": 4,
+      "analysis": "等静压设备领先，股价有望受益。"
+    }
+  ],
+  "article_id": "9f555a267867468a8c1fd437d25fa2e0",
+  "article_date": "2025-07-24",
+  "article_title": "2025.7.24市场逻辑精选"
+}

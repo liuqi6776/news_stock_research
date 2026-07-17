@@ -1,0 +1,246 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个行业和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "MR概念",
+      "impact": 3,
+      "analysis": "苹果Vision Pro发售，相关概念股受益"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "马斯克发布人形机器人视频，相关概念股受益"
+    },
+    {
+      "sector_name": "城中村改造",
+      "impact": 3,
+      "analysis": "国家开发银行发放专项借款，相关概念股受益"
+    },
+    {
+      "sector_name": "电影",
+      "impact": 3,
+      "analysis": "春节档预售开启，相关概念股受益"
+    },
+    {
+      "sector_name": "阿尔茨海默病",
+      "impact": 3,
+      "analysis": "科研人员提出新思路，相关概念股受益"
+    },
+    {
+      "sector_name": "汽车",
+      "impact": 3,
+      "analysis": "华为与江淮合作，小米汽车量产，相关概念股受益"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "N型硅料价格三连涨，相关概念股受益"
+    },
+    {
+      "sector_name": "高速飞车",
+      "impact": 3,
+      "analysis": "高速飞车试验成功，相关概念股受益"
+    },
+    {
+      "sector_name": "黄金",
+      "impact": 3,
+      "analysis": "黄金需求增长，相关概念股受益"
+    },
+    {
+      "sector_name": "生猪",
+      "impact": 3,
+      "analysis": "生猪价格上涨，相关概念股受益"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 3,
+      "analysis": "城市房地产融资协调机制落地，相关概念股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "易天股份",
+      "stock_code": "300259",
+      "impact": 3,
+      "analysis": "苹果Vision Pro发售，相关概念股受益"
+    },
+    {
+      "stock_name": "亿道信息",
+      "stock_code": "300259",
+      "impact": 3,
+      "analysis": "苹果Vision Pro发售，相关概念股受益"
+    },
+    {
+      "stock_name": "深科达",
+      "stock_code": "300259",
+      "impact": 3,
+      "analysis": "苹果Vision Pro发售，相关概念股受益"
+    },
+    {
+      "stock_name": "荣旗科技",
+      "stock_code": "300259",
+      "impact": 3,
+      "analysis": "苹果Vision Pro发售，相关概念股受益"
+    },
+    {
+      "stock_name": "巨轮智能",
+      "stock_code": "300259",
+      "impact": 3,
+      "analysis": "马斯克发布人形机器人视频，相关概念股受益"
+    },
+    {
+      "stock_name": "爱仕达",
+      "stock_code": "300259",
+      "impact": 3,
+      "analysis": "马斯克发布人形机器人视频，相关概念股受益"
+    },
+    {
+      "stock_name": "新时达",
+      "stock_code": "300259",
+      "impact": 3,
+      "analysis": "马斯克发布人形机器人视频，相关概念股受益"
+    },
+    {
+      "stock_name": "昊志机电",
+      "stock_code": "300259",
+      "impact": 3,
+      "analysis": "马斯克发布人形机器人视频，相关概念股受益"
+    },
+    {
+      "stock_name": "丰立智能",
+      "stock_code": "300259",
+      "impact": 3,
+      "analysis": "马斯克发布人形机器人视频，相关概念股受益"
+    },
+    {
+      "stock_name": "舜宇精工",
+      "stock_code": "300259",
+      "impact": 3,
+      "analysis": "马斯克发布人形机器人视频，相关概念股受益"
+    },
+    {
+      "stock_name": "巨能股份",
+      "stock_code": "300259",
+      "impact": 3,
+      "analysis": "马斯克发布人形机器人视频，相关概念股受益"
+    },
+    {
+      "stock_name": "中设股份",
+      "stock_code": "300259",
+      "impact": 3,
+      "analysis": "国家开发银行发放专项借款，相关概念股受益"
+    },
+    {
+      "stock_name": "蕾奥规划",
+      "stock_code": "300259",
+      "impact": 3,
+      "analysis": "国家开发银行发放专项借款，相关概念股受益"
+    },
+    {
+      "stock_name": "苏州规划",
+      "stock_code": "300259",
+      "impact": 3,
+      "analysis": "国家开发银行发放专项借款，相关概念股受益"
+    },
+    {
+      "stock_name": "中国电影",
+      "stock_code": "300259",
+      "impact": 3,
+      "analysis": "春节档预售开启，相关概念股受益"
+    },
+    {
+      "stock_name": "光线传媒",
+      "stock_code": "300259",
+      "impact": 3,
+      "analysis": "春节档预售开启，相关概念股受益"
+    },
+    {
+      "stock_name": "通化金马",
+      "stock_code": "300259",
+      "impact": 3,
+      "analysis": "科研人员提出新思路，相关概念股受益"
+    },
+    {
+      "stock_name": "双成药业",
+      "stock_code": "300259",
+      "impact": 3,
+      "analysis": "科研人员提出新思路，相关概念股受益"
+    },
+    {
+      "stock_name": "江淮汽车",
+      "stock_code": "300259",
+      "impact": 3,
+      "analysis": "华为与江淮合作，相关概念股受益"
+    },
+    {
+      "stock_name": "凯众股份",
+      "stock_code": "300259",
+      "impact": 3,
+      "analysis": "小米汽车量产，相关概念股受益"
+    },
+    {
+      "stock_name": "鹏翎股份",
+      "stock_code": "300259",
+      "impact": 3,
+      "analysis": "小米汽车量产，相关概念股受益"
+    },
+    {
+      "stock_name": "通威股份",
+      "stock_code": "300259",
+      "impact": 3,
+      "analysis": "N型硅料价格三连涨，相关概念股受益"
+    },
+    {
+      "stock_name": "大全能源",
+      "stock_code": "300259",
+      "impact": 3,
+      "analysis": "N型硅料价格三连涨，相关概念股受益"
+    },
+    {
+      "stock_name": "中国中铁",
+      "stock_code": "300259",
+      "impact": 3,
+      "analysis": "高速飞车试验成功，相关概念股受益"
+    },
+    {
+      "stock_name": "中国中车",
+      "stock_code": "300259",
+      "impact": 3,
+      "analysis": "高速飞车试验成功，相关概念股受益"
+    },
+    {
+      "stock_name": "山东黄金",
+      "stock_code": "300259",
+      "impact": 3,
+      "analysis": "黄金需求增长，相关概念股受益"
+    },
+    {
+      "stock_name": "紫金矿业",
+      "stock_code": "300259",
+      "impact": 3,
+      "analysis": "黄金需求增长，相关概念股受益"
+    },
+    {
+      "stock_name": "牧原股份",
+      "stock_code": "300259",
+      "impact": 3,
+      "analysis": "生猪价格上涨，相关概念股受益"
+    },
+    {
+      "stock_name": "中交地产",
+      "stock_code": "300259",
+      "impact": 3,
+      "analysis": "城市房地产融资协调机制落地，相关概念股受益"
+    },
+    {
+      "stock_name": "金科股份",
+      "stock_code": "300259",
+      "impact": 3,
+      "analysis": "城市房地产融资协调机制落地，相关概念股受益"
+    }
+  ],
+  "article_title": "2月1日盘前早报 热点事件关注",
+  "html_file": "aytuvtqr12.html",
+  "article_date": "2024-02-01"
+}

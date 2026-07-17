@@ -1,0 +1,113 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏乐观，多个板块和个股受利好消息提振。",
+  "sectors": [
+    {
+      "sector_name": "新型工业化",
+      "impact": 4,
+      "analysis": "政策支持，行业前景广阔。"
+    },
+    {
+      "sector_name": "一带一路",
+      "impact": 3,
+      "analysis": "国际合作高峰论坛，相关企业受益。"
+    },
+    {
+      "sector_name": "人形机器人",
+      "impact": 3,
+      "analysis": "技术突破，应用前景广阔。"
+    },
+    {
+      "sector_name": "ChatGPT概念",
+      "impact": 3,
+      "analysis": "人工智能领域发展迅速，相关企业受益。"
+    },
+    {
+      "sector_name": "铀矿概念",
+      "impact": 3,
+      "analysis": "铀价上涨，相关企业盈利能力增强。"
+    },
+    {
+      "sector_name": "一体压铸",
+      "impact": 3,
+      "analysis": "特斯拉技术突破，相关企业受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "精伦电子",
+      "stock_code": "300065",
+      "impact": 4,
+      "analysis": "新型工业化概念，受益政策支持。"
+    },
+    {
+      "stock_name": "冀凯股份",
+      "stock_code": "002691",
+      "impact": 4,
+      "analysis": "新型工业化概念，受益政策支持。"
+    },
+    {
+      "stock_name": "贝肯能源",
+      "stock_code": "002828",
+      "impact": 3,
+      "analysis": "一带一路概念，国际合作高峰论坛受益。"
+    },
+    {
+      "stock_name": "南方路机",
+      "stock_code": "603889",
+      "impact": 3,
+      "analysis": "一带一路概念，国际合作高峰论坛受益。"
+    },
+    {
+      "stock_name": "傅利叶智能",
+      "stock_code": "300768",
+      "impact": 3,
+      "analysis": "人形机器人概念，技术突破。"
+    },
+    {
+      "stock_name": "通力科技",
+      "stock_code": "603895",
+      "impact": 3,
+      "analysis": "人形机器人概念，技术突破。"
+    },
+    {
+      "stock_name": "网达软件",
+      "stock_code": "300992",
+      "impact": 3,
+      "analysis": "ChatGPT概念，人工智能领域发展迅速。"
+    },
+    {
+      "stock_name": "海天瑞声",
+      "stock_code": "688598",
+      "impact": 3,
+      "analysis": "ChatGPT概念，人工智能领域发展迅速。"
+    },
+    {
+      "stock_name": "海南矿业",
+      "stock_code": "603167",
+      "impact": 3,
+      "analysis": "铀矿概念，铀价上涨。"
+    },
+    {
+      "stock_name": "江西铜业",
+      "stock_code": "600062",
+      "impact": 3,
+      "analysis": "铀矿概念，铀价上涨。"
+    },
+    {
+      "stock_name": "春兴精工",
+      "stock_code": "603288",
+      "impact": 3,
+      "analysis": "一体压铸概念，特斯拉技术突破。"
+    },
+    {
+      "stock_name": "文灿股份",
+      "stock_code": "603328",
+      "impact": 3,
+      "analysis": "一体压铸概念，特斯拉技术突破。"
+    }
+  ],
+  "article_title": "9月27日盘前早报 热点事件关注",
+  "html_file": "2jpbz0h48d.html",
+  "article_date": "2023-09-27"
+}

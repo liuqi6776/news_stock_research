@@ -1,0 +1,90 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策支持提振消费，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "消费电子",
+      "impact": 3,
+      "analysis": "AI游戏、智能穿戴等受益"
+    },
+    {
+      "sector_name": "算力基础设施",
+      "impact": 3,
+      "analysis": "绿色低碳算力需求增长"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "机器人产业发展加速"
+    },
+    {
+      "sector_name": "婴幼儿相关",
+      "impact": 3,
+      "analysis": "育儿补贴政策利好"
+    },
+    {
+      "sector_name": "AI安全",
+      "impact": 3,
+      "analysis": "AI安全标准提升"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "科思科技",
+      "stock_code": "300595",
+      "impact": 3,
+      "analysis": "水下探测技术提升"
+    },
+    {
+      "stock_name": "美利云",
+      "stock_code": "000815",
+      "impact": 3,
+      "analysis": "数据中心建设推进"
+    },
+    {
+      "stock_name": "威力传动",
+      "stock_code": "002528",
+      "impact": 3,
+      "analysis": "回购股份及投资风电项目"
+    },
+    {
+      "stock_name": "恺英网络",
+      "stock_code": "002517",
+      "impact": 3,
+      "analysis": "AI游戏研发"
+    },
+    {
+      "stock_name": "巨人网络",
+      "stock_code": "002558",
+      "impact": 3,
+      "analysis": "AI大模型应用"
+    },
+    {
+      "stock_name": "诚益通",
+      "stock_code": "300598",
+      "impact": 3,
+      "analysis": "脑机接口技术"
+    },
+    {
+      "stock_name": "岭南控股",
+      "stock_code": "000524",
+      "impact": 3,
+      "analysis": "低空旅游发展"
+    },
+    {
+      "stock_name": "戴维医疗",
+      "stock_code": "300314",
+      "impact": 3,
+      "analysis": "育儿补贴受益"
+    },
+    {
+      "stock_name": "新相微",
+      "stock_code": "688598",
+      "impact": 3,
+      "analysis": "收购爱协生股权"
+    }
+  ],
+  "article_id": "9c37285f5753403294c0be7f533103b6",
+  "article_date": "2025-03-16",
+  "article_title": "2025.3.16市场逻辑精选"
+}

@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪积极",
+  "sectors": [
+    {
+      "sector_name": "新能源汽车",
+      "impact": 4,
+      "analysis": "特斯拉连涨，政策支持"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "美股半导体指数上涨，国内芯片企业受益"
+    },
+    {
+      "sector_name": "量子科技",
+      "impact": 3,
+      "analysis": "国家强化顶层设计，板块受益"
+    },
+    {
+      "sector_name": "职业教育",
+      "impact": 2,
+      "analysis": "政策支持，板块有望提升"
+    },
+    {
+      "sector_name": "体育",
+      "impact": 2,
+      "analysis": "亚运会临近，相关板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "上海物贸",
+      "stock_code": "600838",
+      "impact": 4,
+      "analysis": "特斯拉连涨，汽车贸易板块受益"
+    },
+    {
+      "stock_name": "通富微电",
+      "stock_code": "002156",
+      "impact": 3,
+      "analysis": "美股半导体指数上涨，芯片板块受益"
+    },
+    {
+      "stock_name": "大湖股份",
+      "stock_code": "600257",
+      "impact": 3,
+      "analysis": "福岛核污水排放，淡水鱼板块受益"
+    },
+    {
+      "stock_name": "国盾量子",
+      "stock_code": "688027",
+      "impact": 3,
+      "analysis": "国家强化量子科技顶层设计，量子科技板块受益"
+    },
+    {
+      "stock_name": "国新文化",
+      "stock_code": "600682",
+      "impact": 2,
+      "analysis": "职业教育产教融合赋能提升行动，职业教育板块受益"
+    }
+  ],
+  "article_title": "6月13日 盘前热点事件关注",
+  "html_file": "fkjakmtngg.html",
+  "article_date": "2023-06-13"
+}

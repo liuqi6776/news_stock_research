@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪提升",
+  "sectors": [
+    {
+      "sector_name": "科创板块",
+      "impact": 4,
+      "analysis": "科创50调入名单，投资机会增加"
+    },
+    {
+      "sector_name": "稀土板块",
+      "impact": 3,
+      "analysis": "稀土集团整合方案，行业前景看好"
+    },
+    {
+      "sector_name": "电力板块",
+      "impact": 3,
+      "analysis": "储能、虚拟电厂参与电力交易，行业空间广阔"
+    },
+    {
+      "sector_name": "辅助生殖板块",
+      "impact": 3,
+      "analysis": "辅助生殖纳入医保，政策支持力度增强"
+    },
+    {
+      "sector_name": "房地产板块",
+      "impact": 2,
+      "analysis": "金融支持房地产，市场情绪改善"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "尚荣医疗",
+      "stock_code": "002551",
+      "impact": 3,
+      "analysis": "方舱医院概念，机构买入"
+    },
+    {
+      "stock_name": "康芝药业",
+      "stock_code": "600557",
+      "impact": 3,
+      "analysis": "辅助生殖概念，政策支持"
+    },
+    {
+      "stock_name": "中国稀土",
+      "stock_code": "000970",
+      "impact": 3,
+      "analysis": "稀土集团整合方案，行业前景看好"
+    },
+    {
+      "stock_name": "华能国际",
+      "stock_code": "600011",
+      "impact": 3,
+      "analysis": "储能、虚拟电厂参与电力交易，行业空间广阔"
+    },
+    {
+      "stock_name": "平潭发展",
+      "stock_code": "000592",
+      "impact": 2,
+      "analysis": "台湾地区选举结果，政策支持"
+    }
+  ],
+  "article_title": "11月28日盘前早参 热点事件关注",
+  "html_file": "c00ef73ea6.html",
+  "article_date": "2022-11-28"
+}

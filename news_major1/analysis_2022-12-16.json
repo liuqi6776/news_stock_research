@@ -1,0 +1,100 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，关注政策导向。",
+  "sectors": [
+    {
+      "sector_name": "房地产",
+      "impact": 3,
+      "analysis": "政策支持，板块利好"
+    },
+    {
+      "sector_name": "生育",
+      "impact": 3,
+      "analysis": "人口政策支持，板块利好"
+    },
+    {
+      "sector_name": "农业",
+      "impact": 3,
+      "analysis": "政策支持，板块利好"
+    },
+    {
+      "sector_name": "工业母机",
+      "impact": 3,
+      "analysis": "政策支持，板块利好"
+    },
+    {
+      "sector_name": "互联网经济",
+      "impact": 3,
+      "analysis": "政策预期，板块利好"
+    },
+    {
+      "sector_name": "芯片",
+      "impact": 3,
+      "analysis": "政策支持，板块利好"
+    },
+    {
+      "sector_name": "教育",
+      "impact": 3,
+      "analysis": "政策支持，板块利好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "格力地产",
+      "stock_code": "600185",
+      "impact": 3,
+      "analysis": "政策支持，个股利好"
+    },
+    {
+      "stock_name": "陆家嘴",
+      "stock_code": "600663",
+      "impact": 3,
+      "analysis": "政策支持，个股利好"
+    },
+    {
+      "stock_name": "浦东金桥",
+      "stock_code": "600639",
+      "impact": 3,
+      "analysis": "政策支持，个股利好"
+    },
+    {
+      "stock_name": "中交地产",
+      "stock_code": "600017",
+      "impact": 3,
+      "analysis": "政策支持，个股利好"
+    },
+    {
+      "stock_name": "美吉姆",
+      "stock_code": "300099",
+      "impact": 3,
+      "analysis": "政策支持，个股利好"
+    },
+    {
+      "stock_name": "孩子王",
+      "stock_code": "002612",
+      "impact": 3,
+      "analysis": "政策支持，个股利好"
+    },
+    {
+      "stock_name": "高乐股份",
+      "stock_code": "002348",
+      "impact": 3,
+      "analysis": "政策支持，个股利好"
+    },
+    {
+      "stock_name": "悦心健康",
+      "stock_code": "002082",
+      "impact": 3,
+      "analysis": "政策支持，个股利好"
+    },
+    {
+      "stock_name": "达嘉维康",
+      "stock_code": "300761",
+      "impact": 3,
+      "analysis": "政策支持，个股利好"
+    }
+  ],
+  "article_title": "12月16日盘前早参 热点事件关注",
+  "html_file": "24wjada12p.html",
+  "article_date": "2022-12-16"
+}

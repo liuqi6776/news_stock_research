@@ -1,0 +1,95 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏多，关注政策导向和行业热点。",
+  "sectors": [
+    {
+      "sector_name": "土壤修复",
+      "impact": 3,
+      "analysis": "政策支持，关注相关个股表现。"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "华为需求增长，关注相关个股。"
+    },
+    {
+      "sector_name": "银发经济",
+      "impact": 3,
+      "analysis": "政策推动，关注相关个股。"
+    },
+    {
+      "sector_name": "电子烟",
+      "impact": 3,
+      "analysis": "出口质量体系建设，关注相关个股。"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 3,
+      "analysis": "政策支持，关注相关个股。"
+    },
+    {
+      "sector_name": "消费电子",
+      "impact": 3,
+      "analysis": "政策支持，关注相关个股。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "富邦股份",
+      "stock_code": "300387",
+      "impact": 3,
+      "analysis": "土壤修复概念，关注政策导向。"
+    },
+    {
+      "stock_name": "实朴检测",
+      "stock_code": "603105",
+      "impact": 3,
+      "analysis": "土壤修复概念，关注政策导向。"
+    },
+    {
+      "stock_name": "华西股份",
+      "stock_code": "000936",
+      "impact": 3,
+      "analysis": "人工智能概念，关注华为需求。"
+    },
+    {
+      "stock_name": "昆仑万维",
+      "stock_code": "300418",
+      "impact": 3,
+      "analysis": "人工智能概念，关注股东减持。"
+    },
+    {
+      "stock_name": "恒锋信息",
+      "stock_code": "002140",
+      "impact": 3,
+      "analysis": "银发经济概念，关注政策推动。"
+    },
+    {
+      "stock_name": "双箭股份",
+      "stock_code": "002381",
+      "impact": 3,
+      "analysis": "银发经济概念，关注政策推动。"
+    },
+    {
+      "stock_name": "赢合科技",
+      "stock_code": "300602",
+      "impact": 3,
+      "analysis": "电子烟概念，关注出口质量体系建设。"
+    },
+    {
+      "stock_name": "金龙机电",
+      "stock_code": "002223",
+      "impact": 3,
+      "analysis": "电子烟概念，关注出口质量体系建设。"
+    },
+    {
+      "stock_name": "荣盛发展",
+      "stock_code": "000662",
+      "impact": 3,
+      "analysis": "房地产概念，关注政策预期。"
+    }
+  ],
+  "article_title": "7月21日 盘前热点事件关注",
+  "html_file": "apd2hqngh8.html",
+  "article_date": "2023-07-21"
+}

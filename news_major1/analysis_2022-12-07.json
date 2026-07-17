@@ -1,0 +1,104 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受利好消息推动，有望上涨。",
+  "sectors": [
+    {
+      "sector_name": "抗病毒面料",
+      "impact": 4,
+      "analysis": "政策放松和需求增加推动板块上涨。"
+    },
+    {
+      "sector_name": "白羽鸡",
+      "impact": 3,
+      "analysis": "引种收缩和需求增加利好板块。"
+    },
+    {
+      "sector_name": "室外消费场景",
+      "impact": 3,
+      "analysis": "疫情管控放松，室外消费复苏预期。"
+    },
+    {
+      "sector_name": "电影",
+      "impact": 3,
+      "analysis": "疫情防控放松，电影行业复苏预期。"
+    },
+    {
+      "sector_name": "家庭医生",
+      "impact": 2,
+      "analysis": "家庭医生覆盖率提升，相关公司受益。"
+    },
+    {
+      "sector_name": "小商品城",
+      "impact": 3,
+      "analysis": "人民币跨境业务落地，利好公司发展。"
+    },
+    {
+      "sector_name": "茂金属催化剂",
+      "impact": 3,
+      "analysis": "N型电池扩产，POE粒子需求增加。"
+    },
+    {
+      "sector_name": "碳化硅",
+      "impact": 3,
+      "analysis": "碳化硅取得突破，国产替代需求增加。"
+    },
+    {
+      "sector_name": "地产",
+      "impact": 2,
+      "analysis": "地产重组和融资政策利好板块。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "安奈儿",
+      "stock_code": "002175",
+      "impact": 4,
+      "analysis": "抗病毒面料龙头，股价大幅上涨。"
+    },
+    {
+      "stock_name": "益生股份",
+      "stock_code": "002458",
+      "impact": 3,
+      "analysis": "白羽鸡引种收缩，公司受益。"
+    },
+    {
+      "stock_name": "华立科技",
+      "stock_code": "300603",
+      "impact": 3,
+      "analysis": "室外消费复苏，公司业务受益。"
+    },
+    {
+      "stock_name": "万达电影",
+      "stock_code": "002739",
+      "impact": 3,
+      "analysis": "电影行业复苏，公司受益。"
+    },
+    {
+      "stock_name": "小商品城",
+      "stock_code": "600415",
+      "impact": 3,
+      "analysis": "人民币跨境业务落地，公司受益。"
+    },
+    {
+      "stock_name": "鼎际得",
+      "stock_code": "603816",
+      "impact": 3,
+      "analysis": "茂金属催化剂产业化，公司受益。"
+    },
+    {
+      "stock_name": "东尼电子",
+      "stock_code": "300712",
+      "impact": 3,
+      "analysis": "碳化硅取得突破，公司受益。"
+    },
+    {
+      "stock_name": "汇通能源",
+      "stock_code": "600877",
+      "impact": 2,
+      "analysis": "地产重组预期，公司受益。"
+    }
+  ],
+  "article_id": "a01b70fcb4f34df9808dbe62eefc58bd",
+  "article_date": "2022-12-07",
+  "article_title": "2022.12.7市场逻辑精选"
+}

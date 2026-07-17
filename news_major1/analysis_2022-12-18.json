@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "新冠重症药",
+      "impact": 4,
+      "analysis": "新冠药物需求增加，相关公司受益"
+    },
+    {
+      "sector_name": "养老消费",
+      "impact": 3,
+      "analysis": "养老服务消费提升，相关公司受益"
+    },
+    {
+      "sector_name": "空气消毒机",
+      "impact": 3,
+      "analysis": "空气消毒机需求增长，相关公司受益"
+    },
+    {
+      "sector_name": "农业",
+      "impact": 3,
+      "analysis": "粮食增产政策，相关公司受益"
+    },
+    {
+      "sector_name": "平台经济",
+      "impact": 3,
+      "analysis": "平台经济支持，相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "新华制药",
+      "stock_code": "000756",
+      "impact": 4,
+      "analysis": "新冠药物需求增加，公司受益"
+    },
+    {
+      "stock_name": "悦心健康",
+      "stock_code": "002162",
+      "impact": 3,
+      "analysis": "养老服务消费提升，公司受益"
+    },
+    {
+      "stock_name": "奥佳华",
+      "stock_code": "002614",
+      "impact": 3,
+      "analysis": "空气消毒机需求增长，公司受益"
+    },
+    {
+      "stock_name": "敦煌种业",
+      "stock_code": "600354",
+      "impact": 3,
+      "analysis": "粮食增产政策，公司受益"
+    },
+    {
+      "stock_name": "君正集团",
+      "stock_code": "603611",
+      "impact": 3,
+      "analysis": "平台经济支持，公司受益"
+    }
+  ],
+  "article_id": "5d741bf25a7f4290944611197150983b",
+  "article_date": "2022-12-18",
+  "article_title": "2022.12.18市场逻辑精选"
+}

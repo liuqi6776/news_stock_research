@@ -1,0 +1,84 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极影响。",
+  "sectors": [
+    {
+      "sector_name": "软件与信息技术服务",
+      "impact": 4,
+      "analysis": "鸿蒙系统发展，相关公司受益"
+    },
+    {
+      "sector_name": "计算机设备",
+      "impact": 3,
+      "analysis": "AI PC发展，相关产业链受益"
+    },
+    {
+      "sector_name": "通信设备",
+      "impact": 3,
+      "analysis": "光芯片需求增长，相关公司受益"
+    },
+    {
+      "sector_name": "计算机应用",
+      "impact": 3,
+      "analysis": "鸿蒙应用相关公司受益"
+    },
+    {
+      "sector_name": "信创",
+      "impact": 3,
+      "analysis": "信创数据库龙头上市，板块估值提升"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "润和软件",
+      "stock_code": "300339",
+      "impact": 4,
+      "analysis": "全面融入OpenHarmony生态"
+    },
+    {
+      "stock_name": "拓维信息",
+      "stock_code": "002261",
+      "impact": 4,
+      "analysis": "推出行业操作系统“在鸿OS”"
+    },
+    {
+      "stock_name": "九联科技",
+      "stock_code": "300395",
+      "impact": 4,
+      "analysis": "成立鸿蒙实验室，参与产学研合作"
+    },
+    {
+      "stock_name": "诚迈科技",
+      "stock_code": "300598",
+      "impact": 4,
+      "analysis": "参与华为鸿蒙系统开发"
+    },
+    {
+      "stock_name": "软通动力",
+      "stock_code": "300072",
+      "impact": 4,
+      "analysis": "推出3款商业发行版OS"
+    },
+    {
+      "stock_name": "奥飞娱乐",
+      "stock_code": "002292",
+      "impact": 4,
+      "analysis": "获得“元梦之星”IP授权"
+    },
+    {
+      "stock_name": "长飞光纤",
+      "stock_code": "600969",
+      "impact": 4,
+      "analysis": "谷歌Gemini拉动AOC增长"
+    },
+    {
+      "stock_name": "万兴科技",
+      "stock_code": "300624",
+      "impact": 4,
+      "analysis": "发布生成式AI创作视频"
+    }
+  ],
+  "article_id": "cfd5ccc1c7204798a0babde18dd802ee",
+  "article_date": "2023-12-10",
+  "article_title": "2023.12.10市场逻辑精选"
+}

@@ -1,0 +1,78 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受积极因素推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "消费",
+      "impact": 4,
+      "analysis": "政策支持，消费活动增多，利好相关个股。"
+    },
+    {
+      "sector_name": "零售",
+      "impact": 4,
+      "analysis": "线下零售支持力度加大，利好零售板块。"
+    },
+    {
+      "sector_name": "消费品",
+      "impact": 3,
+      "analysis": "消费品行业受政策支持，部分公司有望受益。"
+    },
+    {
+      "sector_name": "科技",
+      "impact": 3,
+      "analysis": "AI算力需求增加，利好相关科技股。"
+    },
+    {
+      "sector_name": "燃气轮机",
+      "impact": 3,
+      "analysis": "美国数据中心建设推动燃气轮机需求，利好相关个股。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "杭州解百",
+      "stock_code": "600949",
+      "impact": 4,
+      "analysis": "线下零售支持力度加大，公司受益。"
+    },
+    {
+      "stock_name": "茂业商业",
+      "stock_code": "600837",
+      "impact": 4,
+      "analysis": "线下零售支持力度加大，公司受益。"
+    },
+    {
+      "stock_name": "中信尼雅",
+      "stock_code": "600519",
+      "impact": 3,
+      "analysis": "高端白酒产品有望成为业绩增长点。"
+    },
+    {
+      "stock_name": "拉芳家化",
+      "stock_code": "600315",
+      "impact": 3,
+      "analysis": "彩妆赛道布局，新品有望提升业绩。"
+    },
+    {
+      "stock_name": "青云科技",
+      "stock_code": "603035",
+      "impact": 3,
+      "analysis": "AI算力云服务接入Kimi K2.5，公司受益。"
+    },
+    {
+      "stock_name": "杰瑞股份",
+      "stock_code": "002353",
+      "impact": 3,
+      "analysis": "燃气轮机订单增加，公司受益。"
+    },
+    {
+      "stock_name": "豪迈科技",
+      "stock_code": "002595",
+      "impact": 3,
+      "analysis": "燃气轮机缸体核心供应商，公司受益。"
+    }
+  ],
+  "article_id": "1e0ed6bdd9e940f49ff608a8717666ab",
+  "article_date": "2026-02-05",
+  "article_title": "2026.2.5市场逻辑精选"
+}

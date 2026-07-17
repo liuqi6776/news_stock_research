@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "太空算力",
+      "impact": 4,
+      "analysis": "技术创新推动，板块前景广阔。"
+    },
+    {
+      "sector_name": "磷酸铁锂",
+      "impact": 3,
+      "analysis": "需求回暖，行业景气度提升。"
+    },
+    {
+      "sector_name": "生物航煤",
+      "impact": 3,
+      "analysis": "价格创新高，市场潜力巨大。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "普天科技",
+      "stock_code": "600641",
+      "impact": 4,
+      "analysis": "合作项目推动，股价有望上涨。"
+    },
+    {
+      "stock_name": "顺灏股份",
+      "stock_code": "002538",
+      "impact": 3,
+      "analysis": "业务发展前景良好。"
+    },
+    {
+      "stock_name": "丰元股份",
+      "stock_code": "002599",
+      "impact": 3,
+      "analysis": "产能扩张，业绩有望提升。"
+    },
+    {
+      "stock_name": "嘉澳环保",
+      "stock_code": "300213",
+      "impact": 4,
+      "analysis": "出口许可，产能领先。"
+    }
+  ],
+  "article_id": "034eaea3f77748eb91b3cb0a69ebbe66",
+  "article_date": "2025-11-09",
+  "article_title": "2025.11.9市场逻辑精选"
+}

@@ -1,0 +1,74 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注后续政策落实。",
+  "sectors": [
+    {
+      "sector_name": "数据安全",
+      "impact": 3,
+      "analysis": "政策加强数据安全保护，相关企业受益"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 4,
+      "analysis": "人形机器人产业加速，相关产业链受益"
+    },
+    {
+      "sector_name": "小红书",
+      "impact": 3,
+      "analysis": "美国用户涌入，平台受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "国华网安",
+      "stock_code": "300663",
+      "impact": 3,
+      "analysis": "数据安全政策利好"
+    },
+    {
+      "stock_name": "任子行",
+      "stock_code": "300311",
+      "impact": 3,
+      "analysis": "数据安全政策利好"
+    },
+    {
+      "stock_name": "亚信安全",
+      "stock_code": "300317",
+      "impact": 3,
+      "analysis": "数据安全政策利好"
+    },
+    {
+      "stock_name": "绿盟科技",
+      "stock_code": "300369",
+      "impact": 3,
+      "analysis": "数据安全政策利好"
+    },
+    {
+      "stock_name": "金奥博",
+      "stock_code": "002949",
+      "impact": 4,
+      "analysis": "机器人产业链受益"
+    },
+    {
+      "stock_name": "五洲新春",
+      "stock_code": "601569",
+      "impact": 4,
+      "analysis": "机器人产业链受益"
+    },
+    {
+      "stock_name": "遥望科技",
+      "stock_code": "300792",
+      "impact": 3,
+      "analysis": "小红书平台受益"
+    },
+    {
+      "stock_name": "引力传媒",
+      "stock_code": "300529",
+      "impact": 3,
+      "analysis": "小红书平台受益"
+    }
+  ],
+  "article_id": "5a531cec77b84de5a07f1a7689f01482",
+  "article_date": "2025-01-14",
+  "article_title": "2025.1.14市场逻辑精选"
+}

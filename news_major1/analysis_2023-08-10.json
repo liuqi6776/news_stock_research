@@ -1,0 +1,56 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，金融IT和机器人板块受政策支持，个股机会增多。",
+  "sectors": [
+    {
+      "sector_name": "金融IT",
+      "impact": 4,
+      "analysis": "政策支持，系统升级和交易量提升预期利好"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "巨头入局，产业加速，相关零部件受益"
+    },
+    {
+      "sector_name": "CIS",
+      "impact": 3,
+      "analysis": "苹果供应链紧张，替代方案需求增加"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "同花顺",
+      "stock_code": "300033",
+      "impact": 4,
+      "analysis": "金融IT龙头，受益系统升级和交易量提升"
+    },
+    {
+      "stock_name": "恒生电子",
+      "stock_code": "600570",
+      "impact": 4,
+      "analysis": "证券IT龙头，受益系统升级和交易量提升"
+    },
+    {
+      "stock_name": "拓普集团",
+      "stock_code": "601689",
+      "impact": 3,
+      "analysis": "执行器龙头，受益机器人产业加速"
+    },
+    {
+      "stock_name": "绿的谐波",
+      "stock_code": "688388",
+      "impact": 3,
+      "analysis": "谐波减速器龙头，受益机器人产业加速"
+    },
+    {
+      "stock_name": "韦尔股份",
+      "stock_code": "603501",
+      "impact": 3,
+      "analysis": "CIS龙头，受益苹果供应链紧张"
+    }
+  ],
+  "article_id": "b89f70a5a2324dcfb2d254bd4bcff481",
+  "article_date": "2023-08-10",
+  "article_title": "2023.8.10市场逻辑精选"
+}

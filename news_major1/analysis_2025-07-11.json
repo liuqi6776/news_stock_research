@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "稀土",
+      "impact": 4,
+      "analysis": "稀土价格上调，板块受益"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "光伏产业链涨价，板块受益"
+    },
+    {
+      "sector_name": "稳定币",
+      "impact": 3,
+      "analysis": "稳定币发展模式探讨，相关个股受益"
+    },
+    {
+      "sector_name": "核聚变",
+      "impact": 3,
+      "analysis": "核聚变技术突破，板块受益"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 2,
+      "analysis": "华为云城市峰会，相关个股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "北方稀土",
+      "stock_code": "600111",
+      "impact": 4,
+      "analysis": "稀土价格上调，股价受益"
+    },
+    {
+      "stock_name": "拓日新能",
+      "stock_code": "002218",
+      "impact": 3,
+      "analysis": "光伏产业链涨价，股价受益"
+    },
+    {
+      "stock_name": "华媒控股",
+      "stock_code": "000607",
+      "impact": 3,
+      "analysis": "稳定币发展模式探讨，股价受益"
+    },
+    {
+      "stock_name": "合锻智能",
+      "stock_code": "603011",
+      "impact": 3,
+      "analysis": "核聚变技术突破，股价受益"
+    },
+    {
+      "stock_name": "亿嘉和",
+      "stock_code": "300916",
+      "impact": 2,
+      "analysis": "华为云城市峰会，股价受益"
+    }
+  ],
+  "article_title": "7月11日盘前纪要",
+  "html_file": "2yn4hhmkmmd.html",
+  "article_date": "2025-07-11"
+}

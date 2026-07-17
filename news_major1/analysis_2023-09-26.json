@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受AI和智能制造板块推动，情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "AI应用",
+      "impact": 4,
+      "analysis": "ChatGPT功能更新及微软AI Copilot推出，板块受益明显。"
+    },
+    {
+      "sector_name": "智能制造",
+      "impact": 3,
+      "analysis": "新型工业化推进，智能制造板块有望受益。"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "人形机器人产业化趋势加速，相关公司受益。"
+    },
+    {
+      "sector_name": "新疆自贸区",
+      "impact": 3,
+      "analysis": "新疆自贸区政策预期，相关公司受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "大华股份",
+      "stock_code": "002236",
+      "impact": 4,
+      "analysis": "ChatGPT功能更新，公司有望受益。"
+    },
+    {
+      "stock_name": "贝肯能源",
+      "stock_code": "002828",
+      "impact": 3,
+      "analysis": "新疆自贸区政策预期，公司业务有望受益。"
+    },
+    {
+      "stock_name": "傅利叶智能",
+      "stock_code": "688598",
+      "impact": 3,
+      "analysis": "人形机器人产业化趋势加速，公司产品预售。"
+    },
+    {
+      "stock_name": "卓朗智能",
+      "stock_code": "002635",
+      "impact": 3,
+      "analysis": "新疆自贸区政策预期，公司地处新疆。"
+    }
+  ],
+  "article_id": "d5ea08998f6f45589f2c2a5cceac7c19",
+  "article_date": "2023-09-26",
+  "article_title": "2023.9.26市场逻辑精选"
+}

@@ -1,0 +1,92 @@
+{
+  "market_impact": 3,
+  "market_analysis": "AI眼镜和AIDC行业利好，机器人板块活跃。",
+  "sectors": [
+    {
+      "sector_name": "AI眼镜",
+      "impact": 4,
+      "analysis": "Meta首款消费级AR眼镜发布，行业迎来爆发式增长。"
+    },
+    {
+      "sector_name": "AIDC",
+      "impact": 3,
+      "analysis": "系统标准发布，国内招标密集落地，海外建设加速。"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "机器人业务进展迅速，人形机器人板块活跃。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "比依股份",
+      "stock_code": "300323",
+      "impact": 4,
+      "analysis": "参股AR眼镜光波导模组生产规模最大的供应商。"
+    },
+    {
+      "stock_name": "长盈精密",
+      "stock_code": "300223",
+      "impact": 3,
+      "analysis": "向Meta的AI眼镜提供结构件产品。"
+    },
+    {
+      "stock_name": "实丰文化",
+      "stock_code": "300082",
+      "impact": 3,
+      "analysis": "玩具业务占比约68%，已获得多个热门IP授权。"
+    },
+    {
+      "stock_name": "奥飞娱乐",
+      "stock_code": "002292",
+      "impact": 3,
+      "analysis": "玩具业务占比约38%，与AI企业开展战略合作。"
+    },
+    {
+      "stock_name": "科华数据",
+      "stock_code": "002335",
+      "impact": 3,
+      "analysis": "布局HVDC、UPS、IDC租赁，腾讯HVDC市占率大幅提升。"
+    },
+    {
+      "stock_name": "中恒电气",
+      "stock_code": "002364",
+      "impact": 3,
+      "analysis": "为BAT、数据中心、超算中心提供HVDC供电技术方案。"
+    },
+    {
+      "stock_name": "银轮股份",
+      "stock_code": "002126",
+      "impact": 4,
+      "analysis": "具身智能+液冷双轮驱动，机器人业务进展迅速。"
+    },
+    {
+      "stock_name": "长源东谷",
+      "stock_code": "300580",
+      "impact": 3,
+      "analysis": "机器人业务进展迅速，人形机器人板块活跃。"
+    },
+    {
+      "stock_name": "晶华新材",
+      "stock_code": "603687",
+      "impact": 3,
+      "analysis": "战略布局电子皮肤、灵巧手，设立美国硅谷分公司。"
+    },
+    {
+      "stock_name": "博敏电子",
+      "stock_code": "300009",
+      "impact": 3,
+      "analysis": "国内HDI板第一梯队企业，PCB业务占比约75%。"
+    },
+    {
+      "stock_name": "汉威科技",
+      "stock_code": "002023",
+      "impact": 3,
+      "analysis": "电子皮肤或切入特斯拉供应链。"
+    }
+  ],
+  "article_id": "8b35cc9601a641359aaa962b6d41ea9d",
+  "article_date": "2025-09-16",
+  "article_title": "2025.9.16市场逻辑精选"
+}

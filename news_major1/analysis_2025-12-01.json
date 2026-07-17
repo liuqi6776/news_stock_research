@@ -1,0 +1,73 @@
+{
+  "market_impact": 3,
+  "market_analysis": "AI手机和冰雪经济题材受关注，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "AI手机",
+      "impact": 4,
+      "analysis": "AI手机技术发展推动相关产业链个股表现"
+    },
+    {
+      "sector_name": "冰雪经济",
+      "impact": 3,
+      "analysis": "政策扶持和消费升温，冰雪经济板块受益"
+    },
+    {
+      "sector_name": "元器件",
+      "impact": 3,
+      "analysis": "AI手机和算力需求提升，元器件板块受益"
+    },
+    {
+      "sector_name": "智慧农业",
+      "impact": 2,
+      "analysis": "金属矿业务景气，智慧农业板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "道明光学",
+      "stock_code": "002846",
+      "impact": 3,
+      "analysis": "与努比亚手机合作，受益AI手机发展"
+    },
+    {
+      "stock_name": "天音控股",
+      "stock_code": "000829",
+      "impact": 3,
+      "analysis": "为荣耀和魅族提供手机分销服务，受益AI手机发展"
+    },
+    {
+      "stock_name": "长白山",
+      "stock_code": "600209",
+      "impact": 3,
+      "analysis": "拥有长白山景区独家经营权，受益冰雪经济发展"
+    },
+    {
+      "stock_name": "冰山冷热",
+      "stock_code": "000518",
+      "impact": 3,
+      "analysis": "拓展冰雪事业领域，受益冰雪经济发展"
+    },
+    {
+      "stock_name": "博通集成",
+      "stock_code": "688018",
+      "impact": 3,
+      "analysis": "受益华为AI玩具热销，芯片产品需求增加"
+    },
+    {
+      "stock_name": "美格智能",
+      "stock_code": "002881",
+      "impact": 3,
+      "analysis": "为豆包AI手机提供端侧计算支持，受益AI手机发展"
+    },
+    {
+      "stock_name": "实丰文化",
+      "stock_code": "300707",
+      "impact": 2,
+      "analysis": "获得疯狂动物城IP授权，AI玩具合作豆包"
+    }
+  ],
+  "article_id": "df213556275548a29e17d5a92a816df5",
+  "article_date": "2025-12-01",
+  "article_title": "2025.12.1市场逻辑精选"
+}

@@ -1,0 +1,88 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多事件利好。",
+  "sectors": [
+    {
+      "sector_name": "航空",
+      "impact": 3,
+      "analysis": "中航电测资产注入，利好航空板块。"
+    },
+    {
+      "sector_name": "旅游",
+      "impact": 3,
+      "analysis": "丽江旅游回暖，利好旅游板块。"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "机器人应用行动方案发布，利好机器人板块。"
+    },
+    {
+      "sector_name": "信创",
+      "impact": 3,
+      "analysis": "麒麟软件董事长任命，利好信创板块。"
+    },
+    {
+      "sector_name": "券商",
+      "impact": 3,
+      "analysis": "券商佣金政策发布，利好券商板块。"
+    },
+    {
+      "sector_name": "数字经济",
+      "impact": 3,
+      "analysis": "数据安全产业发展指导意见发布，利好数字经济板块。"
+    },
+    {
+      "sector_name": "网约车",
+      "impact": 3,
+      "analysis": "强国交通上线倒计时，利好网约车板块。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中航电测",
+      "stock_code": "002869",
+      "impact": 3,
+      "analysis": "资产注入，股价有望上涨。"
+    },
+    {
+      "stock_name": "丽江股份",
+      "stock_code": "002033",
+      "impact": 3,
+      "analysis": "旅游回暖，股价有望上涨。"
+    },
+    {
+      "stock_name": "中大力德",
+      "stock_code": "002896",
+      "impact": 3,
+      "analysis": "机器人应用行动方案，股价有望上涨。"
+    },
+    {
+      "stock_name": "中国软件",
+      "stock_code": "600536",
+      "impact": 3,
+      "analysis": "麒麟软件董事长任命，股价有望上涨。"
+    },
+    {
+      "stock_name": "国盛金控",
+      "stock_code": "002670",
+      "impact": 3,
+      "analysis": "券商佣金政策，股价有望上涨。"
+    },
+    {
+      "stock_name": "恒久科技",
+      "stock_code": "002890",
+      "impact": 3,
+      "analysis": "数据安全产业发展，股价有望上涨。"
+    },
+    {
+      "stock_name": "大众交通",
+      "stock_code": "600820",
+      "impact": 3,
+      "analysis": "强国交通上线，股价有望上涨。"
+    }
+  ],
+  "article_title": "1月20日盘前早参 热点事件关注",
+  "html_file": "8sksb9axvw.html",
+  "article_date": "2023-01-20"
+}

@@ -1,0 +1,99 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏暖，多事件利好。",
+  "sectors": [
+    {
+      "sector_name": "供气供热",
+      "impact": 3,
+      "analysis": "寒潮预警利好相关个股"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 2,
+      "analysis": "一线城市购房政策调整，利好地产股"
+    },
+    {
+      "sector_name": "有色金属",
+      "impact": 2,
+      "analysis": "伦敦金属价格上涨，利好相关个股"
+    },
+    {
+      "sector_name": "教育",
+      "impact": 3,
+      "analysis": "高途股价上涨，利好教育板块"
+    },
+    {
+      "sector_name": "国资",
+      "impact": 2,
+      "analysis": "国资委会议强调稳增长，利好国资股"
+    },
+    {
+      "sector_name": "传媒",
+      "impact": 2,
+      "analysis": "芒果TV与抖音合作，利好相关个股"
+    },
+    {
+      "sector_name": "白糖",
+      "impact": 3,
+      "analysis": "白糖价格创新高，利好相关个股"
+    },
+    {
+      "sector_name": "鸿蒙教育",
+      "impact": 2,
+      "analysis": "鸿蒙应用开发人才需求增加，利好相关个股"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "京能热力",
+      "stock_code": "600598",
+      "impact": 3,
+      "analysis": "寒潮预警，供气供热需求增加"
+    },
+    {
+      "stock_name": "我爱我家",
+      "stock_code": "600777",
+      "impact": 2,
+      "analysis": "一线城市购房政策调整，利好地产中介"
+    },
+    {
+      "stock_name": "新威凌",
+      "stock_code": "300845",
+      "impact": 2,
+      "analysis": "伦敦金属价格上涨，利好有色金属"
+    },
+    {
+      "stock_name": "高途",
+      "stock_code": "TAL",
+      "impact": 3,
+      "analysis": "股价上涨，教育板块受益"
+    },
+    {
+      "stock_name": "南宁百货",
+      "stock_code": "600749",
+      "impact": 2,
+      "analysis": "国资改革，股价上涨"
+    },
+    {
+      "stock_name": "芒果超媒",
+      "stock_code": "300413",
+      "impact": 2,
+      "analysis": "芒果TV与抖音合作，股价上涨"
+    },
+    {
+      "stock_name": "广农糖业",
+      "stock_code": "000576",
+      "impact": 3,
+      "analysis": "白糖价格创新高，股价上涨"
+    },
+    {
+      "stock_name": "传智教育",
+      "stock_code": "300667",
+      "impact": 2,
+      "analysis": "鸿蒙应用开发人才需求增加，股价上涨"
+    }
+  ],
+  "article_title": "12月15日盘前早报 热点事件关注",
+  "html_file": "fugmwlresb.html",
+  "article_date": "2023-12-15"
+}

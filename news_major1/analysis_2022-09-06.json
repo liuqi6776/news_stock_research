@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多因素利好，关注相关板块和个股",
+  "sectors": [
+    {
+      "sector_name": "金融",
+      "impact": 3,
+      "analysis": "央行降准，利好金融板块"
+    },
+    {
+      "sector_name": "化工",
+      "impact": 3,
+      "analysis": "欧洲化工涨价，利好化工板块"
+    },
+    {
+      "sector_name": "智能汽车",
+      "impact": 3,
+      "analysis": "上海智能网联汽车发展，利好智能汽车板块"
+    },
+    {
+      "sector_name": "家电",
+      "impact": 3,
+      "analysis": "液晶电视出口增长，利好家电板块"
+    },
+    {
+      "sector_name": "油气",
+      "impact": 3,
+      "analysis": "俄气管道故障，利好油气板块"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "天顺股份",
+      "stock_code": "002910",
+      "impact": 3,
+      "analysis": "上合峰会概念股"
+    },
+    {
+      "stock_name": "新和成",
+      "stock_code": "000972",
+      "impact": 3,
+      "analysis": "维生素A、E生产商"
+    },
+    {
+      "stock_name": "保隆科技",
+      "stock_code": "603005",
+      "impact": 3,
+      "analysis": "智能汽车概念股"
+    },
+    {
+      "stock_name": "深康佳A",
+      "stock_code": "000016",
+      "impact": 3,
+      "analysis": "液晶电视生产商"
+    },
+    {
+      "stock_name": "九丰能源",
+      "stock_code": "600383",
+      "impact": 3,
+      "analysis": "油气概念股"
+    }
+  ],
+  "article_title": "9月6日 盘前早8点 股市要闻关注",
+  "html_file": "f5zqvkfwqq.html",
+  "article_date": "2022-09-06"
+}

@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "航天、AI应用、低空经济等领域受关注，市场情绪偏积极。",
+  "sectors": [
+    {
+      "sector_name": "航天板块",
+      "impact": 4,
+      "analysis": "长征10号发射预期提升板块关注度。"
+    },
+    {
+      "sector_name": "AI应用板块",
+      "impact": 3,
+      "analysis": "阿里千问投入30亿启动春节请客计划，AI应用热度提升。"
+    },
+    {
+      "sector_name": "低空经济板块",
+      "impact": 3,
+      "analysis": "低空经济标准体系建设指南发布，板块迎来发展机遇。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "航天工程",
+      "stock_code": "000901",
+      "impact": 4,
+      "analysis": "长征10号研制主体，受益于航天发射预期。"
+    },
+    {
+      "stock_name": "巨力索具",
+      "stock_code": "002342",
+      "impact": 3,
+      "analysis": "国内首个可回收捕获臂生产，受益于航天发射需求。"
+    },
+    {
+      "stock_name": "三江购物",
+      "stock_code": "601116",
+      "impact": 3,
+      "analysis": "阿里系持股，受益于阿里AI应用推广。"
+    },
+    {
+      "stock_name": "四川九洲",
+      "stock_code": "600801",
+      "impact": 3,
+      "analysis": "国内空管领域核心企业，受益于低空经济标准体系建设。"
+    }
+  ],
+  "article_id": "4421e4090229431c82e5015d73755488",
+  "article_date": "2026-02-02",
+  "article_title": "2026.2.2市场逻辑精选"
+}

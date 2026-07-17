@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股受利好消息影响。",
+  "sectors": [
+    {
+      "sector_name": "AI电商",
+      "impact": 4,
+      "analysis": "AI技术应用推动电商行业创新，相关个股受益"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "微软总裁表示中国AI竞争力强，相关个股受关注"
+    },
+    {
+      "sector_name": "芯片制造",
+      "impact": 3,
+      "analysis": "长江存储拟用国产设备制造芯片，国产设备受益"
+    },
+    {
+      "sector_name": "数据合作",
+      "impact": 2,
+      "analysis": "数据领域国际合作，相关个股有望受益"
+    },
+    {
+      "sector_name": "华为概念",
+      "impact": 2,
+      "analysis": "华为官宣AI发展，相关个股受关注"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "值得买",
+      "stock_code": "300795",
+      "impact": 4,
+      "analysis": "AI电商概念，受AI开店消息提振"
+    },
+    {
+      "stock_name": "青木股份",
+      "stock_code": "300355",
+      "impact": 4,
+      "analysis": "AI电商概念，受AI开店消息提振"
+    },
+    {
+      "stock_name": "华海清科",
+      "stock_code": "688018",
+      "impact": 3,
+      "analysis": "芯片制造概念，受长江存储消息提振"
+    },
+    {
+      "stock_name": "数字政通",
+      "stock_code": "300075",
+      "impact": 2,
+      "analysis": "数据合作概念，受数据论坛消息提振"
+    },
+    {
+      "stock_name": "拓维信息",
+      "stock_code": "002261",
+      "impact": 2,
+      "analysis": "华为概念，受华为AI发展消息提振"
+    }
+  ],
+  "article_title": "4月25日 盘前热点事件关注",
+  "html_file": "8x61qj1pre.html",
+  "article_date": "2023-04-25"
+}

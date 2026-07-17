@@ -1,0 +1,117 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策利好，市场情绪偏乐观",
+  "sectors": [
+    {
+      "sector_name": "光伏",
+      "impact": 4,
+      "analysis": "政策支持，需求增加"
+    },
+    {
+      "sector_name": "绿色建筑",
+      "impact": 4,
+      "analysis": "政策推动，市场前景广阔"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "国产化加速，供应链安全受关注"
+    },
+    {
+      "sector_name": "钠离子电池",
+      "impact": 3,
+      "analysis": "产业化进程加快，市场潜力大"
+    },
+    {
+      "sector_name": "信创",
+      "impact": 3,
+      "analysis": "国产替代加速，业绩空间大"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 3,
+      "analysis": "政策支持，市场前景良好"
+    },
+    {
+      "sector_name": "高铁",
+      "impact": 3,
+      "analysis": "国际合作，市场前景广阔"
+    },
+    {
+      "sector_name": "汽车",
+      "impact": 3,
+      "analysis": "中德合作，市场前景良好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "罗普斯金",
+      "stock_code": "002333",
+      "impact": 4,
+      "analysis": "光伏屋顶政策受益"
+    },
+    {
+      "stock_name": "海螺新材",
+      "stock_code": "000546",
+      "impact": 4,
+      "analysis": "光伏屋顶政策受益"
+    },
+    {
+      "stock_name": "牧原股份",
+      "stock_code": "002714",
+      "impact": 4,
+      "analysis": "生猪业绩向好"
+    },
+    {
+      "stock_name": "山东华鹏",
+      "stock_code": "002545",
+      "impact": 3,
+      "analysis": "公告涨停，控股股东变更"
+    },
+    {
+      "stock_name": "宝明科技",
+      "stock_code": "002992",
+      "impact": 3,
+      "analysis": "实控人增持股份"
+    },
+    {
+      "stock_name": "大港股份",
+      "stock_code": "002231",
+      "impact": 3,
+      "analysis": "半导体供应链国产化受益"
+    },
+    {
+      "stock_name": "山东章鼓",
+      "stock_code": "002159",
+      "impact": 3,
+      "analysis": "钠离子电池产业化进程加快"
+    },
+    {
+      "stock_name": "荣联科技",
+      "stock_code": "002642",
+      "impact": 3,
+      "analysis": "信创国产替代受益"
+    },
+    {
+      "stock_name": "润贝航科",
+      "stock_code": "002912",
+      "impact": 3,
+      "analysis": "军工信息化受益"
+    },
+    {
+      "stock_name": "辉煌科技",
+      "stock_code": "002296",
+      "impact": 3,
+      "analysis": "印尼G20展示中国高铁"
+    },
+    {
+      "stock_name": "京威股份",
+      "stock_code": "002662",
+      "impact": 3,
+      "analysis": "中德合作汽车受益"
+    }
+  ],
+  "article_title": "10月25日盘前股市要闻关注",
+  "html_file": "aackkds8y8.html",
+  "article_date": "2022-10-25"
+}

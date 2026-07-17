@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策预期提振市场，部分板块和个股受益明显。",
+  "sectors": [
+    {
+      "sector_name": "地产",
+      "impact": 4,
+      "analysis": "政策预期利好，关注保交楼和存量房收储等政策。"
+    },
+    {
+      "sector_name": "国产CPU",
+      "impact": 3,
+      "analysis": "网安审查建议利好国产CPU发展。"
+    },
+    {
+      "sector_name": "低空经济",
+      "impact": 3,
+      "analysis": "产业政策密集催化，关注细分龙头。"
+    },
+    {
+      "sector_name": "星闪",
+      "impact": 3,
+      "analysis": "技术应用前景广阔，关注相关公司。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "财信发展",
+      "stock_code": "000838",
+      "impact": 4,
+      "analysis": "受益地产政策预期。"
+    },
+    {
+      "stock_name": "龙芯中科",
+      "stock_code": "688047",
+      "impact": 3,
+      "analysis": "国产CPU引领者。"
+    },
+    {
+      "stock_name": "中科星图",
+      "stock_code": "688013",
+      "impact": 3,
+      "analysis": "低空经济细分龙头。"
+    },
+    {
+      "stock_name": "数码视讯",
+      "stock_code": "300295",
+      "impact": 3,
+      "analysis": "星闪联盟成员。"
+    }
+  ],
+  "article_id": "32efec5540a9470db1239ddc96cfeb2a",
+  "article_date": "2024-10-16",
+  "article_title": "2024.10.16市场逻辑精选"
+}

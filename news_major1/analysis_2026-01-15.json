@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "半导体",
+      "impact": 4,
+      "analysis": "台积电业绩超预期，带动板块上涨。"
+    },
+    {
+      "sector_name": "电网",
+      "impact": 3,
+      "analysis": "电网投资增长预期，板块受益。"
+    },
+    {
+      "sector_name": "油气",
+      "impact": 2,
+      "analysis": "伊朗局势紧张，油气板块受关注。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "台积电",
+      "stock_code": "TSM",
+      "impact": 5,
+      "analysis": "业绩超预期，股价创新高。"
+    },
+    {
+      "stock_name": "亚翔集成",
+      "stock_code": "603335",
+      "impact": 4,
+      "analysis": "与台积电合作，业绩有望增长。"
+    },
+    {
+      "stock_name": "保变电气",
+      "stock_code": "600550",
+      "impact": 3,
+      "analysis": "电网投资增长，公司受益。"
+    },
+    {
+      "stock_name": "准油股份",
+      "stock_code": "002207",
+      "impact": 2,
+      "analysis": "伊朗局势紧张，公司业务受关注。"
+    }
+  ],
+  "article_id": "81ed2ebd31b74254aff498864e0e11d0",
+  "article_date": "2026-01-15",
+  "article_title": "2026.1.15市场逻辑精选"
+}

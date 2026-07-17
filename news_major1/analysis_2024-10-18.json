@@ -1,0 +1,89 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体情绪偏乐观，多个板块和个股受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "芯片",
+      "impact": 4,
+      "analysis": "英伟达GB200参与上市公司，利好芯片板块"
+    },
+    {
+      "sector_name": "地产",
+      "impact": 3,
+      "analysis": "化债地产相关公司受关注，利好地产板块"
+    },
+    {
+      "sector_name": "黄金",
+      "impact": 3,
+      "analysis": "现货黄金和COMEX黄金期货突破历史新高，利好黄金板块"
+    },
+    {
+      "sector_name": "智能汽车",
+      "impact": 3,
+      "analysis": "车路云一体化应用试点，利好智能汽车板块"
+    },
+    {
+      "sector_name": "跨境支付",
+      "impact": 3,
+      "analysis": "金砖国家支付系统演示卡，利好跨境支付板块"
+    },
+    {
+      "sector_name": "人口家庭",
+      "impact": 2,
+      "analysis": "新一轮人口家庭调查启动，利好多胎概念板块"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "麦格米特",
+      "stock_code": "002502",
+      "impact": 4,
+      "analysis": "英伟达GB200参与上市公司，利好个股"
+    },
+    {
+      "stock_name": "英维克",
+      "stock_code": "002837",
+      "impact": 4,
+      "analysis": "英伟达GB200参与上市公司，利好个股"
+    },
+    {
+      "stock_name": "工业富联",
+      "stock_code": "601138",
+      "impact": 4,
+      "analysis": "英伟达GB200参与上市公司，利好个股"
+    },
+    {
+      "stock_name": "立讯精密",
+      "stock_code": "002475",
+      "impact": 4,
+      "analysis": "英伟达GB200参与上市公司，利好个股"
+    },
+    {
+      "stock_name": "华立股份",
+      "stock_code": "002462",
+      "impact": 3,
+      "analysis": "公告一字，利好个股"
+    },
+    {
+      "stock_name": "光智科技",
+      "stock_code": "300614",
+      "impact": 3,
+      "analysis": "公告一字，利好个股"
+    },
+    {
+      "stock_name": "成都路桥",
+      "stock_code": "002628",
+      "impact": 3,
+      "analysis": "四川重庆相关公司，利好个股"
+    },
+    {
+      "stock_name": "重庆建工",
+      "stock_code": "002179",
+      "impact": 3,
+      "analysis": "四川重庆相关公司，利好个股"
+    }
+  ],
+  "article_title": "10月18日盘前早报 热点事件关注",
+  "html_file": "emdda3pazf.html",
+  "article_date": "2024-10-18"
+}

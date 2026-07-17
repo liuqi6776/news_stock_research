@@ -1,0 +1,56 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，AI推理芯片和存储行业表现强劲。",
+  "sectors": [
+    {
+      "sector_name": "AI推理芯片",
+      "impact": 4,
+      "analysis": "需求激增，市场规模增长迅速。"
+    },
+    {
+      "sector_name": "存储",
+      "impact": 3,
+      "analysis": "铠侠业绩超预期，推动存储行业上涨。"
+    },
+    {
+      "sector_name": "燃气轮机",
+      "impact": 3,
+      "analysis": "订单增加，产能紧缺。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "芯原股份",
+      "stock_code": "300706",
+      "impact": 4,
+      "analysis": "AI算力相关订单增长迅速。"
+    },
+    {
+      "stock_name": "云天励飞",
+      "stock_code": "002938",
+      "impact": 4,
+      "analysis": "NPU驱动AI推理芯片厂商，产品线丰富。"
+    },
+    {
+      "stock_name": "翱捷科技",
+      "stock_code": "688316",
+      "impact": 4,
+      "analysis": "自研NPU架构，订单储备丰富。"
+    },
+    {
+      "stock_name": "铠侠",
+      "stock_code": "698987",
+      "impact": 4,
+      "analysis": "业绩超预期，推动存储行业上涨。"
+    },
+    {
+      "stock_name": "江波龙",
+      "stock_code": "002061",
+      "impact": 3,
+      "analysis": "DRAM及NADA Flash存储核心厂商。"
+    }
+  ],
+  "article_id": "e921bd90743040c38f04458375687897",
+  "article_date": "2026-02-12",
+  "article_title": "2026.2.12市场逻辑精选"
+}

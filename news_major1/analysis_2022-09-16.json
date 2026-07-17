@@ -1,0 +1,100 @@
+{
+  "market_impact": 2,
+  "market_analysis": "多事件影响，市场情绪波动较大",
+  "sectors": [
+    {
+      "sector_name": "外贸出口",
+      "impact": 1,
+      "analysis": "人民币贬值利好出口"
+    },
+    {
+      "sector_name": "山东地产",
+      "impact": 2,
+      "analysis": "政策调整，地产板块受益"
+    },
+    {
+      "sector_name": "钼",
+      "impact": 3,
+      "analysis": "价格创新高，板块受益"
+    },
+    {
+      "sector_name": "中吉乌铁路建设",
+      "impact": 2,
+      "analysis": "基础设施建设，相关公司受益"
+    },
+    {
+      "sector_name": "地产产业链",
+      "impact": 2,
+      "analysis": "地产政策调整，产业链受益"
+    },
+    {
+      "sector_name": "风光储",
+      "impact": -2,
+      "analysis": "欧洲政策限制，板块受压"
+    },
+    {
+      "sector_name": "核电",
+      "impact": 1,
+      "analysis": "核电项目核准，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "龙头股份",
+      "stock_code": "600630",
+      "impact": 1,
+      "analysis": "人民币贬值利好出口"
+    },
+    {
+      "stock_name": "鲁商发展",
+      "stock_code": "600672",
+      "impact": 2,
+      "analysis": "地产政策调整，公司受益"
+    },
+    {
+      "stock_name": "金钼股份",
+      "stock_code": "601958",
+      "impact": 3,
+      "analysis": "钼价创新高，公司受益"
+    },
+    {
+      "stock_name": "洛阳钼业",
+      "stock_code": "603993",
+      "impact": 3,
+      "analysis": "钼价创新高，公司受益"
+    },
+    {
+      "stock_name": "博深股份",
+      "stock_code": "002282",
+      "impact": 2,
+      "analysis": "中吉乌铁路建设，公司受益"
+    },
+    {
+      "stock_name": "金鹰重工",
+      "stock_code": "002063",
+      "impact": 2,
+      "analysis": "中吉乌铁路建设，公司受益"
+    },
+    {
+      "stock_name": "新华联",
+      "stock_code": "000620",
+      "impact": 2,
+      "analysis": "地产政策调整，公司受益"
+    },
+    {
+      "stock_name": "沙河股份",
+      "stock_code": "000014",
+      "impact": 2,
+      "analysis": "地产政策调整，公司受益"
+    },
+    {
+      "stock_name": "鹏辉能源",
+      "stock_code": "300438",
+      "impact": -2,
+      "analysis": "欧洲政策限制，公司受压"
+    }
+  ],
+  "article_title": "9月16日 盘前早8点 股市要闻关注",
+  "html_file": "5agp1f13t8.html",
+  "article_date": "2022-09-16"
+}

@@ -1,0 +1,90 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股受积极事件影响",
+  "sectors": [
+    {
+      "sector_name": "有色金属",
+      "impact": 4,
+      "analysis": "受LME金属期货普涨影响，铜、锡相关个股受益"
+    },
+    {
+      "sector_name": "无人机",
+      "impact": 3,
+      "analysis": "浙江低空经济发展，无人机相关个股受关注"
+    },
+    {
+      "sector_name": "华为鸿蒙",
+      "impact": 3,
+      "analysis": "华为鸿蒙生态建设，相关个股受益"
+    },
+    {
+      "sector_name": "充电桩",
+      "impact": 3,
+      "analysis": "新能源汽车出口增长，充电桩出海市场空间广阔"
+    },
+    {
+      "sector_name": "氮化镓",
+      "impact": 3,
+      "analysis": "氮化镓量子光源芯片研制成功，相关个股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "北方铜业",
+      "stock_code": "000630",
+      "impact": 4,
+      "analysis": "LME金属期货普涨，铜价上涨"
+    },
+    {
+      "stock_name": "江西铜业",
+      "stock_code": "600362",
+      "impact": 4,
+      "analysis": "LME金属期货普涨，铜价上涨"
+    },
+    {
+      "stock_name": "云南铜业",
+      "stock_code": "000878",
+      "impact": 4,
+      "analysis": "LME金属期货普涨，铜价上涨"
+    },
+    {
+      "stock_name": "锡业股份",
+      "stock_code": "000960",
+      "impact": 4,
+      "analysis": "LME金属期货普涨，锡价上涨"
+    },
+    {
+      "stock_name": "万丰奥威",
+      "stock_code": "002085",
+      "impact": 3,
+      "analysis": "浙江低空经济发展，无人机相关个股受益"
+    },
+    {
+      "stock_name": "万安科技",
+      "stock_code": "002590",
+      "impact": 3,
+      "analysis": "浙江低空经济发展，无人机相关个股受益"
+    },
+    {
+      "stock_name": "润和软件",
+      "stock_code": "300339",
+      "impact": 3,
+      "analysis": "华为鸿蒙生态建设，相关个股受益"
+    },
+    {
+      "stock_name": "道通科技",
+      "stock_code": "603606",
+      "impact": 3,
+      "analysis": "新能源汽车出口增长，充电桩出海市场空间广阔"
+    },
+    {
+      "stock_name": "海特高新",
+      "stock_code": "002023",
+      "impact": 3,
+      "analysis": "氮化镓量子光源芯片研制成功，相关个股受益"
+    }
+  ],
+  "article_title": "4月19日盘前早报 热点事件关注",
+  "html_file": "g0kwnhz0w5.html",
+  "article_date": "2024-04-19"
+}

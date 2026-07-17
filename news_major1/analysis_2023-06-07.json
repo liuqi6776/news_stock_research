@@ -1,0 +1,66 @@
+{
+  "market_impact": 2,
+  "market_analysis": "多事件影响，市场情绪波动较大。",
+  "sectors": [
+    {
+      "sector_name": "环保",
+      "impact": 3,
+      "analysis": "政策支持，板块受益"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 2,
+      "analysis": "产能紧张，行业景气度高"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 2,
+      "analysis": "创新药研发，市场关注度高"
+    },
+    {
+      "sector_name": "传媒",
+      "impact": 2,
+      "analysis": "大模型发布，行业前景看好"
+    },
+    {
+      "sector_name": "水产",
+      "impact": -3,
+      "analysis": "核污染事件，板块受影响"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "华虹半导体",
+      "stock_code": "01347",
+      "impact": 3,
+      "analysis": "科创板IPO注册，资金关注度高"
+    },
+    {
+      "stock_name": "科大讯飞",
+      "stock_code": "002230",
+      "impact": 3,
+      "analysis": "大模型发布，技术领先"
+    },
+    {
+      "stock_name": "三六零",
+      "stock_code": "601360",
+      "impact": 3,
+      "analysis": "大模型应用发布会，行业前景看好"
+    },
+    {
+      "stock_name": "之江生物",
+      "stock_code": "300052",
+      "impact": 2,
+      "analysis": "猴痘病例，市场关注度高"
+    },
+    {
+      "stock_name": "大湖股份",
+      "stock_code": "600257",
+      "impact": -3,
+      "analysis": "核污染事件，公司受影响"
+    }
+  ],
+  "article_title": "6月7日 盘前热点事件关注",
+  "html_file": "dx8hv8xpga.html",
+  "article_date": "2023-06-07"
+}

@@ -1,0 +1,77 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股受积极事件影响",
+  "sectors": [
+    {
+      "sector_name": "券商",
+      "impact": 4,
+      "analysis": "国盛金控吸收合并国盛证券进展，利好券商板块"
+    },
+    {
+      "sector_name": "智能网联汽车",
+      "impact": 3,
+      "analysis": "工信部加强智能网联汽车准入管理，利好相关个股"
+    },
+    {
+      "sector_name": "信息化医疗",
+      "impact": 3,
+      "analysis": "国务院印发医保参保长效机制指导意见，利好相关个股"
+    },
+    {
+      "sector_name": "低空经济",
+      "impact": 3,
+      "analysis": "深圳低空经济高质量发展大会召开，利好相关个股"
+    },
+    {
+      "sector_name": "商业航天",
+      "impact": 3,
+      "analysis": "我国成功发射卫星互联网高轨卫星，利好相关个股"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 3,
+      "analysis": "多家新能源车企公布7月交付数据，利好相关个股"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "国盛金控",
+      "stock_code": "000387",
+      "impact": 4,
+      "analysis": "吸收合并国盛证券进展，利好"
+    },
+    {
+      "stock_name": "星网宇达",
+      "stock_code": "002829",
+      "impact": 3,
+      "analysis": "智能网联汽车准入管理加强，利好"
+    },
+    {
+      "stock_name": "塞力医疗",
+      "stock_code": "300258",
+      "impact": 3,
+      "analysis": "医保参保长效机制指导意见，利好"
+    },
+    {
+      "stock_name": "中信海直",
+      "stock_code": "000099",
+      "impact": 3,
+      "analysis": "深圳低空经济高质量发展大会，利好"
+    },
+    {
+      "stock_name": "航天晨光",
+      "stock_code": "600879",
+      "impact": 3,
+      "analysis": "卫星互联网高轨卫星发射成功，利好"
+    },
+    {
+      "stock_name": "比亚迪",
+      "stock_code": "002594",
+      "impact": 3,
+      "analysis": "新能源汽车销量增长，利好"
+    }
+  ],
+  "article_title": "8月2日盘前早报 热点事件关注",
+  "html_file": "g5nln8p4hh.html",
+  "article_date": "2024-08-02"
+}

@@ -1,0 +1,89 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块有望受益政策支持。",
+  "sectors": [
+    {
+      "sector_name": "消费",
+      "impact": 3,
+      "analysis": "消费券发放和扩大消费政策支持消费板块。"
+    },
+    {
+      "sector_name": "白酒",
+      "impact": 3,
+      "analysis": "中秋、国庆双节临近，白酒板块迎来动销拐点。"
+    },
+    {
+      "sector_name": "即时零售",
+      "impact": 3,
+      "analysis": "即时零售赛道迎来爆发，电商增长核心驱动。"
+    },
+    {
+      "sector_name": "体育",
+      "impact": 3,
+      "analysis": "体育产业政策支持，体育消费潜力释放。"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "光伏产业破除内卷，高质量发展。"
+    },
+    {
+      "sector_name": "VC均热板",
+      "impact": 3,
+      "analysis": "苹果新机推动VC均热板市场渗透率提升。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "汇嘉时代",
+      "stock_code": "600876",
+      "impact": 3,
+      "analysis": "新疆最大商超连锁，商品结构优化。"
+    },
+    {
+      "stock_name": "欢乐家",
+      "stock_code": "603366",
+      "impact": 3,
+      "analysis": "椰子水产品月销增速超200%，产能扩张。"
+    },
+    {
+      "stock_name": "力盛体育",
+      "stock_code": "603777",
+      "impact": 3,
+      "analysis": "体育赛事经营和体育场馆经营。"
+    },
+    {
+      "stock_name": "长白山",
+      "stock_code": "600598",
+      "impact": 3,
+      "analysis": "东北长白山区域旅游产业核心企业。"
+    },
+    {
+      "stock_name": "晶澳科技",
+      "stock_code": "002459",
+      "impact": 3,
+      "analysis": "光伏垂直一体化公司，主营太阳能光伏产品。"
+    },
+    {
+      "stock_name": "通威股份",
+      "stock_code": "600438",
+      "impact": 3,
+      "analysis": "光伏垂直一体化龙头公司，主营高纯晶硅、太阳能电池等。"
+    },
+    {
+      "stock_name": "捷邦科技",
+      "stock_code": "688599",
+      "impact": 3,
+      "analysis": "手机VC均热板蚀刻加工领域头部企业。"
+    },
+    {
+      "stock_name": "博威合金",
+      "stock_code": "603029",
+      "impact": 3,
+      "analysis": "VC散热材料重要供应商。"
+    }
+  ],
+  "article_id": "5616441028904667891499efeff3f877",
+  "article_date": "2025-09-04",
+  "article_title": "2025.9.4市场逻辑精选"
+}

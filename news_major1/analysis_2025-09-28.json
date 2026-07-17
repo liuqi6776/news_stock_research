@@ -1,0 +1,102 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受积极因素推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "固态电池",
+      "impact": 4,
+      "analysis": "技术突破推动产业发展，利好相关企业。"
+    },
+    {
+      "sector_name": "光刻机",
+      "impact": 3,
+      "analysis": "订单增加，行业前景看好。"
+    },
+    {
+      "sector_name": "超导",
+      "impact": 3,
+      "analysis": "技术突破，应用前景广阔。"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "订单增加，行业增长潜力大。"
+    },
+    {
+      "sector_name": "芯片",
+      "impact": 3,
+      "analysis": "国产芯片扩产，行业受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "先导智能",
+      "stock_code": "300060",
+      "impact": 4,
+      "analysis": "固态电池技术领先，业绩有望增长。"
+    },
+    {
+      "stock_name": "赢合科技",
+      "stock_code": "300602",
+      "impact": 4,
+      "analysis": "固态电池设备覆盖全面，业绩有望增长。"
+    },
+    {
+      "stock_name": "蓝英装备",
+      "stock_code": "002604",
+      "impact": 4,
+      "analysis": "EUV光刻机设备供应商，业绩有望增长。"
+    },
+    {
+      "stock_name": "波长光电",
+      "stock_code": "603828",
+      "impact": 3,
+      "analysis": "光刻机镜片供应商，业绩有望增长。"
+    },
+    {
+      "stock_name": "永鼎股份",
+      "stock_code": "600105",
+      "impact": 4,
+      "analysis": "高温超导领域领先企业，业绩有望增长。"
+    },
+    {
+      "stock_name": "西部超导",
+      "stock_code": "300662",
+      "impact": 4,
+      "analysis": "低温超导线材商业化生产企业，业绩有望增长。"
+    },
+    {
+      "stock_name": "蓝黛科技",
+      "stock_code": "002765",
+      "impact": 3,
+      "analysis": "机器人一体化关节订单增加，业绩有望增长。"
+    },
+    {
+      "stock_name": "跃岭股份",
+      "stock_code": "002710",
+      "impact": 3,
+      "analysis": "回购股份，参股光通信芯片企业，业绩有望增长。"
+    },
+    {
+      "stock_name": "芳源股份",
+      "stock_code": "300989",
+      "impact": 3,
+      "analysis": "技术出口合作协议签订，业绩有望增长。"
+    },
+    {
+      "stock_name": "凯文教育",
+      "stock_code": "300092",
+      "impact": 3,
+      "analysis": "成立合资公司，聚焦AI教育，业绩有望增长。"
+    },
+    {
+      "stock_name": "晶合集成",
+      "stock_code": "688018",
+      "impact": 3,
+      "analysis": "受益国产芯片扩产，业绩有望增长。"
+    }
+  ],
+  "article_id": "25177bbe72b24baa8b6569c5aed8c83a",
+  "article_date": "2025-09-28",
+  "article_title": "2025.9.28市场逻辑精选"
+}

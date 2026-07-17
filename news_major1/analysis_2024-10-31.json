@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "稀土永磁、光刻机等板块受事件催化，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "稀土永磁",
+      "impact": 4,
+      "analysis": "需求增长，供给刚性，板块利好"
+    },
+    {
+      "sector_name": "光刻机",
+      "impact": 3,
+      "analysis": "自主可控需求提升，板块利好"
+    },
+    {
+      "sector_name": "重组预期",
+      "impact": 2,
+      "analysis": "科创板重组案例，板块情绪提升"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中国稀土",
+      "stock_code": "000709",
+      "impact": 4,
+      "analysis": "稀土开采指标稳定，公司业绩有望提升"
+    },
+    {
+      "stock_name": "北方稀土",
+      "stock_code": "600111",
+      "impact": 4,
+      "analysis": "轻稀土龙头，业绩稳定"
+    },
+    {
+      "stock_name": "张江高科",
+      "stock_code": "600895",
+      "impact": 3,
+      "analysis": "持有上海微电子股权，光刻机产业链受益"
+    },
+    {
+      "stock_name": "长盈通",
+      "stock_code": "688599",
+      "impact": 2,
+      "analysis": "筹划收购，重组预期提升"
+    }
+  ],
+  "article_id": "64f7289228264ae099e1680c170a6282",
+  "article_date": "2024-10-31",
+  "article_title": "2024.10.31市场逻辑精选"
+}

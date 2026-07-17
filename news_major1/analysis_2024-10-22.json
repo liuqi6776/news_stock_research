@@ -1,0 +1,431 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏乐观，多个板块和个股受利好消息提振。",
+  "sectors": [
+    {
+      "sector_name": "航运",
+      "impact": 4,
+      "analysis": "出货潮持续，利好航运板块。"
+    },
+    {
+      "sector_name": "大金融",
+      "impact": 3,
+      "analysis": "政策支持，利好大金融板块。"
+    },
+    {
+      "sector_name": "小鹏汇天",
+      "impact": 3,
+      "analysis": "载人试飞成功，利好相关产业链。"
+    },
+    {
+      "sector_name": "传媒出海",
+      "impact": 3,
+      "analysis": "AI视频生成器大火，利好传媒板块。"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 2,
+      "analysis": "美国关税政策松动，利好光伏板块。"
+    },
+    {
+      "sector_name": "核电",
+      "impact": 2,
+      "analysis": "SMR核能建设启动，利好核电板块。"
+    },
+    {
+      "sector_name": "稀土",
+      "impact": 3,
+      "analysis": "缅甸内战影响稀土供给，利好稀土板块。"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "机器人技术突破，利好机器人板块。"
+    },
+    {
+      "sector_name": "双层OLED",
+      "impact": 2,
+      "analysis": "华为Mate 70将搭载双层OLED，利好相关产业链。"
+    },
+    {
+      "sector_name": "国产移动操作系统",
+      "impact": 2,
+      "analysis": "华为鸿蒙操作系统发布，利好相关产业链。"
+    },
+    {
+      "sector_name": "能源生产供应",
+      "impact": 2,
+      "analysis": "能源保供会议强调增加供应，利好能源板块。"
+    },
+    {
+      "sector_name": "北斗卫星",
+      "impact": 2,
+      "analysis": "华为nova13系列支持北斗卫星图片消息，利好北斗产业链。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中远海控",
+      "stock_code": "601919",
+      "impact": 4,
+      "analysis": "出货潮持续，利好航运板块。"
+    },
+    {
+      "stock_name": "招商轮船",
+      "stock_code": "601872",
+      "impact": 4,
+      "analysis": "出货潮持续，利好航运板块。"
+    },
+    {
+      "stock_name": "中远海能",
+      "stock_code": "600026",
+      "impact": 4,
+      "analysis": "出货潮持续，利好航运板块。"
+    },
+    {
+      "stock_name": "宁波海运",
+      "stock_code": "600110",
+      "impact": 4,
+      "analysis": "出货潮持续，利好航运板块。"
+    },
+    {
+      "stock_name": "天风证券",
+      "stock_code": "601162",
+      "impact": 3,
+      "analysis": "政策支持，利好大金融板块。"
+    },
+    {
+      "stock_name": "东方财富",
+      "stock_code": "300059",
+      "impact": 3,
+      "analysis": "政策支持，利好大金融板块。"
+    },
+    {
+      "stock_name": "银之杰",
+      "stock_code": "300385",
+      "impact": 3,
+      "analysis": "政策支持，利好大金融板块。"
+    },
+    {
+      "stock_name": "中粮资本",
+      "stock_code": "600011",
+      "impact": 3,
+      "analysis": "政策支持，利好大金融板块。"
+    },
+    {
+      "stock_name": "长源东谷",
+      "stock_code": "300049",
+      "impact": 3,
+      "analysis": "载人试飞成功，利好相关产业链。"
+    },
+    {
+      "stock_name": "光洋股份",
+      "stock_code": "002708",
+      "impact": 3,
+      "analysis": "载人试飞成功，利好相关产业链。"
+    },
+    {
+      "stock_name": "华安鑫创",
+      "stock_code": "300336",
+      "impact": 3,
+      "analysis": "载人试飞成功，利好相关产业链。"
+    },
+    {
+      "stock_name": "威贸电子",
+      "stock_code": "002909",
+      "impact": 3,
+      "analysis": "载人试飞成功，利好相关产业链。"
+    },
+    {
+      "stock_name": "因赛集团",
+      "stock_code": "300794",
+      "impact": 3,
+      "analysis": "AI视频生成器大火，利好传媒板块。"
+    },
+    {
+      "stock_name": "中文在线",
+      "stock_code": "300364",
+      "impact": 3,
+      "analysis": "AI视频生成器大火，利好传媒板块。"
+    },
+    {
+      "stock_name": "中广天择",
+      "stock_code": "603087",
+      "impact": 3,
+      "analysis": "AI视频生成器大火，利好传媒板块。"
+    },
+    {
+      "stock_name": "岭南股份",
+      "stock_code": "002717",
+      "impact": 3,
+      "analysis": "AI视频生成器大火，利好传媒板块。"
+    },
+    {
+      "stock_name": "大丰实业",
+      "stock_code": "002565",
+      "impact": 3,
+      "analysis": "AI视频生成器大火，利好传媒板块。"
+    },
+    {
+      "stock_name": "云南锗业",
+      "stock_code": "002428",
+      "impact": 3,
+      "analysis": "美国大选结果即将揭晓，利好选举概念。"
+    },
+    {
+      "stock_name": "华阳新材",
+      "stock_code": "300205",
+      "impact": 3,
+      "analysis": "美国大选结果即将揭晓，利好选举概念。"
+    },
+    {
+      "stock_name": "中科磁业",
+      "stock_code": "300424",
+      "impact": 3,
+      "analysis": "美国大选结果即将揭晓，利好选举概念。"
+    },
+    {
+      "stock_name": "省广集团",
+      "stock_code": "002400",
+      "impact": 3,
+      "analysis": "美国大选结果即将揭晓，利好选举概念。"
+    },
+    {
+      "stock_name": "天龙集团",
+      "stock_code": "600159",
+      "impact": 3,
+      "analysis": "美国大选结果即将揭晓，利好选举概念。"
+    },
+    {
+      "stock_name": "晶澳科技",
+      "stock_code": "002459",
+      "impact": 2,
+      "analysis": "美国关税政策松动，利好光伏板块。"
+    },
+    {
+      "stock_name": "晶科能源",
+      "stock_code": "601012",
+      "impact": 2,
+      "analysis": "美国关税政策松动，利好光伏板块。"
+    },
+    {
+      "stock_name": "天合光能",
+      "stock_code": "600869",
+      "impact": 2,
+      "analysis": "美国关税政策松动，利好光伏板块。"
+    },
+    {
+      "stock_name": "阿特斯",
+      "stock_code": "002179",
+      "impact": 2,
+      "analysis": "美国关税政策松动，利好光伏板块。"
+    },
+    {
+      "stock_name": "隆基股份",
+      "stock_code": "601012",
+      "impact": 2,
+      "analysis": "美国关税政策松动，利好光伏板块。"
+    },
+    {
+      "stock_name": "巨轮智能",
+      "stock_code": "002031",
+      "impact": 2,
+      "analysis": "SMR核能建设启动，利好核电板块。"
+    },
+    {
+      "stock_name": "融发核电",
+      "stock_code": "603027",
+      "impact": 2,
+      "analysis": "SMR核能建设启动，利好核电板块。"
+    },
+    {
+      "stock_name": "常辅股份",
+      "stock_code": "300435",
+      "impact": 2,
+      "analysis": "SMR核能建设启动，利好核电板块。"
+    },
+    {
+      "stock_name": "华西能源",
+      "stock_code": "002630",
+      "impact": 2,
+      "analysis": "SMR核能建设启动，利好核电板块。"
+    },
+    {
+      "stock_name": "佳电股份",
+      "stock_code": "000090",
+      "impact": 2,
+      "analysis": "SMR核能建设启动，利好核电板块。"
+    },
+    {
+      "stock_name": "北方稀土",
+      "stock_code": "600111",
+      "impact": 3,
+      "analysis": "缅甸内战影响稀土供给，利好稀土板块。"
+    },
+    {
+      "stock_name": "中国稀土",
+      "stock_code": "000831",
+      "impact": 3,
+      "analysis": "缅甸内战影响稀土供给，利好稀土板块。"
+    },
+    {
+      "stock_name": "广晟有色",
+      "stock_code": "600259",
+      "impact": 3,
+      "analysis": "缅甸内战影响稀土供给，利好稀土板块。"
+    },
+    {
+      "stock_name": "金力永磁",
+      "stock_code": "600443",
+      "impact": 3,
+      "analysis": "缅甸内战影响稀土供给，利好稀土板块。"
+    },
+    {
+      "stock_name": "巨轮智能",
+      "stock_code": "002031",
+      "impact": 3,
+      "analysis": "机器人技术突破，利好机器人板块。"
+    },
+    {
+      "stock_name": "汉宇集团",
+      "stock_code": "603710",
+      "impact": 3,
+      "analysis": "机器人技术突破，利好机器人板块。"
+    },
+    {
+      "stock_name": "绿的谐波",
+      "stock_code": "688599",
+      "impact": 3,
+      "analysis": "机器人技术突破，利好机器人板块。"
+    },
+    {
+      "stock_name": "方正电机",
+      "stock_code": "002196",
+      "impact": 3,
+      "analysis": "机器人技术突破，利好机器人板块。"
+    },
+    {
+      "stock_name": "鸣志电器",
+      "stock_code": "002925",
+      "impact": 3,
+      "analysis": "机器人技术突破，利好机器人板块。"
+    },
+    {
+      "stock_name": "创维数字",
+      "stock_code": "000810",
+      "impact": 2,
+      "analysis": "华为Mate 70将搭载双层OLED，利好相关产业链。"
+    },
+    {
+      "stock_name": "奥来德",
+      "stock_code": "300386",
+      "impact": 2,
+      "analysis": "华为Mate 70将搭载双层OLED，利好相关产业链。"
+    },
+    {
+      "stock_name": "易天股份",
+      "stock_code": "300259",
+      "impact": 2,
+      "analysis": "华为Mate 70将搭载双层OLED，利好相关产业链。"
+    },
+    {
+      "stock_name": "劲拓股份",
+      "stock_code": "300387",
+      "impact": 2,
+      "analysis": "华为Mate 70将搭载双层OLED，利好相关产业链。"
+    },
+    {
+      "stock_name": "东方中科",
+      "stock_code": "002819",
+      "impact": 2,
+      "analysis": "华为鸿蒙操作系统发布，利好相关产业链。"
+    },
+    {
+      "stock_name": "常山北明",
+      "stock_code": "000158",
+      "impact": 2,
+      "analysis": "华为鸿蒙操作系统发布，利好相关产业链。"
+    },
+    {
+      "stock_name": "银邦股份",
+      "stock_code": "600118",
+      "impact": 2,
+      "analysis": "华为鸿蒙操作系统发布，利好相关产业链。"
+    },
+    {
+      "stock_name": "润和软件",
+      "stock_code": "300339",
+      "impact": 2,
+      "analysis": "华为鸿蒙操作系统发布，利好相关产业链。"
+    },
+    {
+      "stock_name": "软通动力",
+      "stock_code": "300474",
+      "impact": 2,
+      "analysis": "华为鸿蒙操作系统发布，利好相关产业链。"
+    },
+    {
+      "stock_name": "京能热力",
+      "stock_code": "600598",
+      "impact": 2,
+      "analysis": "能源保供会议强调增加供应，利好能源板块。"
+    },
+    {
+      "stock_name": "大连热电",
+      "stock_code": "600719",
+      "impact": 2,
+      "analysis": "能源保供会议强调增加供应，利好能源板块。"
+    },
+    {
+      "stock_name": "惠天热电",
+      "stock_code": "600482",
+      "impact": 2,
+      "analysis": "能源保供会议强调增加供应，利好能源板块。"
+    },
+    {
+      "stock_name": "杭州热电",
+      "stock_code": "600745",
+      "impact": 2,
+      "analysis": "能源保供会议强调增加供应，利好能源板块。"
+    },
+    {
+      "stock_name": "金房能源",
+      "stock_code": "600388",
+      "impact": 2,
+      "analysis": "能源保供会议强调增加供应，利好能源板块。"
+    },
+    {
+      "stock_name": "普天科技",
+      "stock_code": "600641",
+      "impact": 2,
+      "analysis": "华为nova13系列支持北斗卫星图片消息，利好北斗产业链。"
+    },
+    {
+      "stock_name": "北斗星通",
+      "stock_code": "002151",
+      "impact": 2,
+      "analysis": "华为nova13系列支持北斗卫星图片消息，利好北斗产业链。"
+    },
+    {
+      "stock_name": "华力创通",
+      "stock_code": "300045",
+      "impact": 2,
+      "analysis": "华为nova13系列支持北斗卫星图片消息，利好北斗产业链。"
+    },
+    {
+      "stock_name": "中科星图",
+      "stock_code": "688016",
+      "impact": 2,
+      "analysis": "华为nova13系列支持北斗卫星图片消息，利好北斗产业链。"
+    },
+    {
+      "stock_name": "锐明技术",
+      "stock_code": "300470",
+      "impact": 2,
+      "analysis": "华为nova13系列支持北斗卫星图片消息，利好北斗产业链。"
+    }
+  ],
+  "article_id": "7fd95b1ab4064cb1a66cef8cd3fba0d1",
+  "article_date": "2024-10-22",
+  "article_title": "2024.10.22市场逻辑精选"
+}

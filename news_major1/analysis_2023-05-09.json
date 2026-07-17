@@ -1,0 +1,77 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多事件利好。",
+  "sectors": [
+    {
+      "sector_name": "央企",
+      "impact": 3,
+      "analysis": "央企估值回归预期提升板块表现。"
+    },
+    {
+      "sector_name": "一带一路",
+      "impact": 3,
+      "analysis": "中亚峰会召开，相关板块受益。"
+    },
+    {
+      "sector_name": "风电",
+      "impact": 3,
+      "analysis": "欧洲风电大订单，风电板块受益。"
+    },
+    {
+      "sector_name": "锂电池",
+      "impact": 3,
+      "analysis": "碳酸锂价格上涨，锂电池板块受益。"
+    },
+    {
+      "sector_name": "安全",
+      "impact": 2,
+      "analysis": "安全事件影响，相关板块关注。"
+    },
+    {
+      "sector_name": "其他",
+      "impact": 2,
+      "analysis": "多行业事件影响，关注相关个股。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中船科技",
+      "stock_code": "600011",
+      "impact": 3,
+      "analysis": "央企估值回归预期提升。"
+    },
+    {
+      "stock_name": "秦港股份",
+      "stock_code": "600026",
+      "impact": 3,
+      "analysis": "中亚峰会召开，相关个股受益。"
+    },
+    {
+      "stock_name": "大金重工",
+      "stock_code": "002443",
+      "impact": 3,
+      "analysis": "欧洲风电大订单，业绩提升预期。"
+    },
+    {
+      "stock_name": "天宏锂电",
+      "stock_code": "002140",
+      "impact": 3,
+      "analysis": "碳酸锂价格上涨，业绩提升预期。"
+    },
+    {
+      "stock_name": "安恒信息",
+      "stock_code": "603041",
+      "impact": 2,
+      "analysis": "安全事件影响，关注相关个股。"
+    },
+    {
+      "stock_name": "麦迪科技",
+      "stock_code": "002817",
+      "impact": 2,
+      "analysis": "试管婴儿技术发布，相关个股受益。"
+    }
+  ],
+  "article_title": "5月9日 盘前热点事件关注",
+  "html_file": "3zvb864plc.html",
+  "article_date": "2023-05-09"
+}

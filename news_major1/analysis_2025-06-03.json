@@ -1,0 +1,85 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "核电",
+      "impact": 4,
+      "analysis": "数据中心需求增长，核电设备需求提升。"
+    },
+    {
+      "sector_name": "超导",
+      "impact": 3,
+      "analysis": "可控核聚变项目推动超导材料需求。"
+    },
+    {
+      "sector_name": "政务数据",
+      "impact": 2,
+      "analysis": "政务数据共享条例实施，数据管理规范化。"
+    },
+    {
+      "sector_name": "混合核能",
+      "impact": 2,
+      "analysis": "混合堆技术进展，铀资源需求增加。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "锡装股份",
+      "stock_code": "000732",
+      "impact": 4,
+      "analysis": "核电设备制造许可，参与多个核电项目。"
+    },
+    {
+      "stock_name": "保变电气",
+      "stock_code": "600552",
+      "impact": 4,
+      "analysis": "核电变压器领域市场占有率较高。"
+    },
+    {
+      "stock_name": "百利电气",
+      "stock_code": "600468",
+      "impact": 3,
+      "analysis": "高温超导材料研发，参与ITER项目。"
+    },
+    {
+      "stock_name": "永鼎股份",
+      "stock_code": "600105",
+      "impact": 3,
+      "analysis": "高温超导带材及超导应用产品。"
+    },
+    {
+      "stock_name": "深桑达",
+      "stock_code": "000032",
+      "impact": 2,
+      "analysis": "布局高安全算力基础设施，推动数字化。"
+    },
+    {
+      "stock_name": "易华录",
+      "stock_code": "600285",
+      "impact": 2,
+      "analysis": "数据要素资产化全流程服务。"
+    },
+    {
+      "stock_name": "云赛智联",
+      "stock_code": "600879",
+      "impact": 2,
+      "analysis": "上海市大数据中心资源平台总集成商。"
+    },
+    {
+      "stock_name": "国光电气",
+      "stock_code": "600971",
+      "impact": 2,
+      "analysis": "混合堆工程化技术。"
+    },
+    {
+      "stock_name": "联创光电",
+      "stock_code": "600363",
+      "impact": 2,
+      "analysis": "高温超导D型线圈磁体设计。"
+    }
+  ],
+  "article_id": "94aabd2724274be6852df40fb56b29c9",
+  "article_date": "2025-06-03",
+  "article_title": "2025.6.3市场逻辑精选"
+}

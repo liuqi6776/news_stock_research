@@ -1,0 +1,44 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好影响，部分板块表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "煤化工",
+      "impact": 4,
+      "analysis": "成本优势凸显，产业链完整，利好明显。"
+    },
+    {
+      "sector_name": "海上风电",
+      "impact": 3,
+      "analysis": "取消风电组件进口关税，利好海上风电行业。"
+    },
+    {
+      "sector_name": "复合铜箔",
+      "impact": 3,
+      "analysis": "良率提升，量产拐点临近，利好明显。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "潞化科技",
+      "stock_code": "600585",
+      "impact": 4,
+      "analysis": "深耕煤气化领域，产业链延伸，利好明显。"
+    },
+    {
+      "stock_name": "大金重工",
+      "stock_code": "002487",
+      "impact": 3,
+      "analysis": "欧洲海上风电基础结构市场领先，利好明显。"
+    },
+    {
+      "stock_name": "东威科技",
+      "stock_code": "300254",
+      "impact": 4,
+      "analysis": "复合铜箔设备批量出货，利好明显。"
+    }
+  ],
+  "article_id": "be6689bf51d2405fa2f1e2d37e16532d",
+  "article_date": "2026-03-12",
+  "article_title": "2026.3.12市场逻辑精选"
+}

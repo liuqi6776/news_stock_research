@@ -1,0 +1,123 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受积极因素推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "智能手机散热",
+      "impact": 4,
+      "analysis": "新技术应用推动板块上涨"
+    },
+    {
+      "sector_name": "折叠屏手机",
+      "impact": 3,
+      "analysis": "苹果折叠屏预期推动相关产业链"
+    },
+    {
+      "sector_name": "液冷技术",
+      "impact": 3,
+      "analysis": "液冷技术发展推动相关公司"
+    },
+    {
+      "sector_name": "固态制冷材料",
+      "impact": 2,
+      "analysis": "新技术突破带来市场空间"
+    },
+    {
+      "sector_name": "电子信息制造",
+      "impact": 3,
+      "analysis": "工业富联合作推动相关公司"
+    },
+    {
+      "sector_name": "医疗健康",
+      "impact": 2,
+      "analysis": "脑机交互眼镜研发推动"
+    },
+    {
+      "sector_name": "化纤行业",
+      "impact": 2,
+      "analysis": "关税政策影响人造丝需求"
+    },
+    {
+      "sector_name": "数据中心冷却",
+      "impact": 2,
+      "analysis": "节能技术推动相关公司"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "日丰股份",
+      "stock_code": "002500",
+      "impact": 4,
+      "analysis": "华为微泵液冷手机壳供应商"
+    },
+    {
+      "stock_name": "艾为电子",
+      "stock_code": "688535",
+      "impact": 4,
+      "analysis": "压电微泵液冷驱动产品研发"
+    },
+    {
+      "stock_name": "宜安科技",
+      "stock_code": "300151",
+      "impact": 3,
+      "analysis": "苹果折叠屏液态金属铰链供应商"
+    },
+    {
+      "stock_name": "联得装备",
+      "stock_code": "300484",
+      "impact": 3,
+      "analysis": "苹果折叠屏UTG贴合设备供应商"
+    },
+    {
+      "stock_name": "川环科技",
+      "stock_code": "300381",
+      "impact": 3,
+      "analysis": "液冷管路和UQD产品供应商"
+    },
+    {
+      "stock_name": "英维克",
+      "stock_code": "002837",
+      "impact": 3,
+      "analysis": "英特尔UQD联盟认证合作伙伴"
+    },
+    {
+      "stock_name": "天际股份",
+      "stock_code": "002759",
+      "impact": 3,
+      "analysis": "六氟磷酸钾生产"
+    },
+    {
+      "stock_name": "天赐材料",
+      "stock_code": "002709",
+      "impact": 3,
+      "analysis": "六氟磷酸钾产能建设"
+    },
+    {
+      "stock_name": "金百泽",
+      "stock_code": "300362",
+      "impact": 3,
+      "analysis": "工业富联EMS合作方"
+    },
+    {
+      "stock_name": "仁和药业",
+      "stock_code": "000650",
+      "impact": 3,
+      "analysis": "研发全球首款脑机交互眼镜"
+    },
+    {
+      "stock_name": "吉林化纤",
+      "stock_code": "000420",
+      "impact": 2,
+      "analysis": "全球最大的人造丝生产基地"
+    },
+    {
+      "stock_name": "华升股份",
+      "stock_code": "000741",
+      "impact": 2,
+      "analysis": "易信科技双冷源阶梯冷却技术"
+    }
+  ],
+  "article_id": "40cd9fa70f634cc9aa06a4f129527d22",
+  "article_date": "2025-08-20",
+  "article_title": "2025.8.20市场逻辑精选"
+}

@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受多方面因素影响，整体偏利好。",
+  "sectors": [
+    {
+      "sector_name": "光伏",
+      "impact": 4,
+      "analysis": "欧洲能源危机推动光伏需求增长，利好光伏产业链。"
+    },
+    {
+      "sector_name": "新能源",
+      "impact": 3,
+      "analysis": "新能源政策支持，市场前景看好。"
+    },
+    {
+      "sector_name": "纺织",
+      "impact": 2,
+      "analysis": "人民币贬值利好纺织出口。"
+    },
+    {
+      "sector_name": "养老托育",
+      "impact": 2,
+      "analysis": "政策支持养老托育服务业发展。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "清源股份",
+      "stock_code": "600380",
+      "impact": 4,
+      "analysis": "光伏屋顶支架系统取得多国认证，市场开拓效果显著。"
+    },
+    {
+      "stock_name": "拓日新能",
+      "stock_code": "002218",
+      "impact": 4,
+      "analysis": "光伏组件出口业务增长，受益于欧洲光伏市场。"
+    },
+    {
+      "stock_name": "嘉麟杰",
+      "stock_code": "002486",
+      "impact": 2,
+      "analysis": "人民币贬值利好纺织出口业务。"
+    },
+    {
+      "stock_name": "威创股份",
+      "stock_code": "002308",
+      "impact": 2,
+      "analysis": "托育业务受益于政策支持。"
+    }
+  ],
+  "article_title": "8月30日 盘前早8点 股市要闻关注",
+  "html_file": "dhna89fw8p.html",
+  "article_date": "2022-08-30"
+}

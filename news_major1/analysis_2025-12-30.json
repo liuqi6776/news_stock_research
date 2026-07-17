@@ -1,0 +1,62 @@
+{
+  "market_impact": 3,
+  "market_analysis": "AI眼镜和半导体设备国产化推动相关板块上涨。",
+  "sectors": [
+    {
+      "sector_name": "AI眼镜",
+      "impact": 4,
+      "analysis": "补贴政策推动需求增长，板块受益"
+    },
+    {
+      "sector_name": "半导体设备",
+      "impact": 3,
+      "analysis": "国产化推进，设备需求增加"
+    },
+    {
+      "sector_name": "端侧AI",
+      "impact": 3,
+      "analysis": "AI赋能消费电子，市场空间大"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "博士眼镜",
+      "stock_code": "000516",
+      "impact": 4,
+      "analysis": "智能眼镜业务合作增加"
+    },
+    {
+      "stock_name": "比依股份",
+      "stock_code": "300323",
+      "impact": 4,
+      "analysis": "AR眼镜光波导模组供应商"
+    },
+    {
+      "stock_name": "珂玛科技",
+      "stock_code": "688598",
+      "impact": 4,
+      "analysis": "陶瓷零部件国产替代"
+    },
+    {
+      "stock_name": "长川科技",
+      "stock_code": "688598",
+      "impact": 4,
+      "analysis": "SoC测试机等核心产品放量"
+    },
+    {
+      "stock_name": "移远通信",
+      "stock_code": "300955",
+      "impact": 4,
+      "analysis": "端侧AI领域布局"
+    },
+    {
+      "stock_name": "博通集成",
+      "stock_code": "688598",
+      "impact": 4,
+      "analysis": "端侧芯片产品通过认证"
+    }
+  ],
+  "article_id": "32ee3fd1ab4d4e24b4045ebb3cc35680",
+  "article_date": "2025-12-30",
+  "article_title": "2025.12.30市场逻辑精选"
+}

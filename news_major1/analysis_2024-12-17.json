@@ -1,0 +1,85 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股受积极因素影响。",
+  "sectors": [
+    {
+      "sector_name": "科技板块",
+      "impact": 4,
+      "analysis": "AI芯片、换电技术等概念活跃"
+    },
+    {
+      "sector_name": "农业板块",
+      "impact": 3,
+      "analysis": "农业信息化率提升预期"
+    },
+    {
+      "sector_name": "商业航天板块",
+      "impact": 3,
+      "analysis": "卫星互联网发射成功"
+    },
+    {
+      "sector_name": "央企改革板块",
+      "impact": 3,
+      "analysis": "央企市值管理政策出台"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "抖音集团",
+      "stock_code": "待定",
+      "impact": 3,
+      "analysis": "特朗普会见TikTok首席执行官"
+    },
+    {
+      "stock_name": "博通",
+      "stock_code": "待定",
+      "impact": 4,
+      "analysis": "AI收入暴增，ASIC芯片定制"
+    },
+    {
+      "stock_name": "宁德时代",
+      "stock_code": "待定",
+      "impact": 3,
+      "analysis": "换电技术布局"
+    },
+    {
+      "stock_name": "中国卫通",
+      "stock_code": "待定",
+      "impact": 3,
+      "analysis": "卫星互联网发射成功"
+    },
+    {
+      "stock_name": "中航电测",
+      "stock_code": "待定",
+      "impact": 3,
+      "analysis": "央企并购预期"
+    },
+    {
+      "stock_name": "宁波能源",
+      "stock_code": "待定",
+      "impact": 3,
+      "analysis": "环保困境反转预期"
+    },
+    {
+      "stock_name": "蒙娜丽莎",
+      "stock_code": "待定",
+      "impact": 3,
+      "analysis": "国际米兰中国区官方合作伙伴"
+    },
+    {
+      "stock_name": "泰凌微",
+      "stock_code": "待定",
+      "impact": 3,
+      "analysis": "发布AI平台产品"
+    },
+    {
+      "stock_name": "高凌信息",
+      "stock_code": "待定",
+      "impact": 3,
+      "analysis": "拟收购上海欣诺通信"
+    }
+  ],
+  "article_id": "12a33e5ed2f04f88afdcdc19fbaf998d",
+  "article_date": "2024-12-17",
+  "article_title": "2024.12.17市场逻辑精选"
+}

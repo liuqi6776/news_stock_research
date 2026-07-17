@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体情绪偏乐观，多个板块和个股受利好消息驱动。",
+  "sectors": [
+    {
+      "sector_name": "消费电子",
+      "impact": 3,
+      "analysis": "AI眼镜、AI玩具等新产品推出，板块受益"
+    },
+    {
+      "sector_name": "冰雪经济",
+      "impact": 3,
+      "analysis": "冰雪旅游活动增多，相关产业链受益"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "机器人产品持续火热，相关公司受益"
+    },
+    {
+      "sector_name": "新能源",
+      "impact": 2,
+      "analysis": "宁德时代供应商收购，新能源产业链受益"
+    },
+    {
+      "sector_name": "文化传媒",
+      "impact": 2,
+      "analysis": "文化体制改革税收优惠，相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "乐鑫科技",
+      "stock_code": "300248",
+      "impact": 3,
+      "analysis": "豆包AI核心公司，受益于AI玩具代工"
+    },
+    {
+      "stock_name": "莱茵体育",
+      "stock_code": "000596",
+      "impact": 3,
+      "analysis": "冰雪旅游相关，受益于冰雪经济大会"
+    },
+    {
+      "stock_name": "宁波方正",
+      "stock_code": "600601",
+      "impact": 3,
+      "analysis": "宁德时代供应商收购，受益于新能源产业链"
+    },
+    {
+      "stock_name": "中威电子",
+      "stock_code": "300098",
+      "impact": 3,
+      "analysis": "布局智能机器人产品，受益于机器人板块"
+    },
+    {
+      "stock_name": "吉视传媒",
+      "stock_code": "600058",
+      "impact": 2,
+      "analysis": "文化传媒板块，受益于文化体制改革税收优惠"
+    }
+  ],
+  "article_id": "472212ca25444f449c3d5730a8f6b0e9",
+  "article_date": "2024-12-11",
+  "article_title": "2024.12.11市场逻辑精选"
+}

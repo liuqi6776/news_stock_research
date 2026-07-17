@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注后续政策及业绩验证。",
+  "sectors": [
+    {
+      "sector_name": "碳化硅",
+      "impact": 4,
+      "analysis": "行业订单放量，相关公司业绩超预期，板块受益明显。"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "OpenAI融资及ChatGPT发展，AI相关产业链受益。"
+    },
+    {
+      "sector_name": "新能源",
+      "impact": 3,
+      "analysis": "新能源车热管理及储能温控需求增长，相关公司业绩有望提升。"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 3,
+      "analysis": "创新药管线丰富，相关公司研发进展良好，板块受益。"
+    },
+    {
+      "sector_name": "元宇宙",
+      "impact": 2,
+      "analysis": "岭南股份子公司成为全国文化大数据交易中心场内交易主体，相关公司受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "三安光电",
+      "stock_code": "600703",
+      "impact": 4,
+      "analysis": "SiC全产业链龙头，业绩有望提升。"
+    },
+    {
+      "stock_name": "汉王科技",
+      "stock_code": "002362",
+      "impact": 3,
+      "analysis": "受益于OpenAI融资及ChatGPT发展，业绩有望提升。"
+    },
+    {
+      "stock_name": "朗进科技",
+      "stock_code": "300684",
+      "impact": 3,
+      "analysis": "新能源车热管理及储能温控需求增长，业绩有望提升。"
+    },
+    {
+      "stock_name": "百利天恒",
+      "stock_code": "300862",
+      "impact": 3,
+      "analysis": "创新药管线丰富，研发进展良好，业绩有望提升。"
+    },
+    {
+      "stock_name": "岭南股份",
+      "stock_code": "002717",
+      "impact": 2,
+      "analysis": "子公司成为全国文化大数据交易中心场内交易主体，业绩有望提升。"
+    }
+  ],
+  "article_id": "809a788aba724270bbfadc940bed6430",
+  "article_date": "2023-01-10",
+  "article_title": "2023.1.10市场逻辑精选"
+}

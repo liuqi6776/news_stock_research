@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多板块受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "机器人",
+      "impact": 4,
+      "analysis": "机器人板块受GPT-5发布及世界机器人大会影响，利好"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 3,
+      "analysis": "军工板块受俄乌谈判及商业航天发射计划影响，利好"
+    },
+    {
+      "sector_name": "芯片",
+      "impact": 3,
+      "analysis": "芯片板块受GPT-5发布及中芯国际业绩增长影响，利好"
+    },
+    {
+      "sector_name": "商业航天",
+      "impact": 3,
+      "analysis": "商业航天板块受发射计划及政策支持影响，利好"
+    },
+    {
+      "sector_name": "脑机接口",
+      "impact": 3,
+      "analysis": "脑机接口板块受政策支持及研发突破影响，利好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中马传动",
+      "stock_code": "002776",
+      "impact": 4,
+      "analysis": "机器人板块龙头，受利好消息影响，股价上涨"
+    },
+    {
+      "stock_name": "北纬科技",
+      "stock_code": "002148",
+      "impact": 4,
+      "analysis": "机器人板块龙头，受利好消息影响，股价上涨"
+    },
+    {
+      "stock_name": "国机精工",
+      "stock_code": "002733",
+      "impact": 4,
+      "analysis": "军工板块龙头，受利好消息影响，股价上涨"
+    },
+    {
+      "stock_name": "日海智能",
+      "stock_code": "002313",
+      "impact": 3,
+      "analysis": "eSIM概念龙头，受利好消息影响，股价上涨"
+    },
+    {
+      "stock_name": "富满微",
+      "stock_code": "300733",
+      "impact": 3,
+      "analysis": "芯片板块龙头，受利好消息影响，股价上涨"
+    }
+  ],
+  "article_title": "8月8日盘前纪要",
+  "html_file": "2g7hdl6edzf.html",
+  "article_date": "2025-08-08"
+}

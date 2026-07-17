@@ -1,0 +1,72 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受积极因素推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "新型消费",
+      "impact": 4,
+      "analysis": "消费新活力带动相关板块上涨"
+    },
+    {
+      "sector_name": "美妆个护",
+      "impact": 3,
+      "analysis": "国货品牌崛起，市场潜力大"
+    },
+    {
+      "sector_name": "宠物经济",
+      "impact": 3,
+      "analysis": "市场规模持续增长，关注相关个股"
+    },
+    {
+      "sector_name": "游乐经济",
+      "impact": 2,
+      "analysis": "主题乐园开园，相关个股受益"
+    },
+    {
+      "sector_name": "体育消费",
+      "impact": 2,
+      "analysis": "体育消费新趋势，关注相关个股"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "泡泡玛特",
+      "stock_code": "01918",
+      "impact": 4,
+      "analysis": "股价创新高，关注消费新活力"
+    },
+    {
+      "stock_name": "曼卡龙",
+      "stock_code": "002959",
+      "impact": 3,
+      "analysis": "国潮珠宝系列，关注IP经济"
+    },
+    {
+      "stock_name": "丽人丽妆",
+      "stock_code": "603180",
+      "impact": 3,
+      "analysis": "美妆代运营龙头，关注美妆个护"
+    },
+    {
+      "stock_name": "源飞宠物",
+      "stock_code": "603599",
+      "impact": 3,
+      "analysis": "宠物用品和食品，关注宠物经济"
+    },
+    {
+      "stock_name": "小马智行",
+      "stock_code": "02020",
+      "impact": 4,
+      "analysis": "财报发布，关注robotaxi业务"
+    },
+    {
+      "stock_name": "三生国健",
+      "stock_code": "300633",
+      "impact": 4,
+      "analysis": "授权辉瑞产品，关注海外权益"
+    }
+  ],
+  "article_id": "75f9c418f6064b1b960705c6ac009f3f",
+  "article_date": "2025-05-20",
+  "article_title": "2025.5.20市场逻辑精选"
+}

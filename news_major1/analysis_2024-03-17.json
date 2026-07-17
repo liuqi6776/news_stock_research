@@ -1,0 +1,161 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受多重利好消息推动，情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "甘肃本地股",
+      "impact": 3,
+      "analysis": "天水麻辣烫爆火，带动本地消费，相关公司受益。"
+    },
+    {
+      "sector_name": "钨矿",
+      "impact": 3,
+      "analysis": "钨价或呈稳定上行趋势，相关公司受益。"
+    },
+    {
+      "sector_name": "AI PC",
+      "impact": 3,
+      "analysis": "AMD/微软下周将有大动作，AI PC市场空间广阔。"
+    },
+    {
+      "sector_name": "无人机",
+      "impact": 3,
+      "analysis": "无人机包裹接收设备、智能巡检产品需求增长。"
+    },
+    {
+      "sector_name": "人形机器人",
+      "impact": 3,
+      "analysis": "人形机器人产品批量生产，相关公司受益。"
+    },
+    {
+      "sector_name": "制冷剂",
+      "impact": 3,
+      "analysis": "制冷剂旺季将近，行业龙头公司受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "众兴菌业",
+      "stock_code": "002772",
+      "impact": 3,
+      "analysis": "天水本地公司，主营金针菇/双孢菇。"
+    },
+    {
+      "stock_name": "兰州黄河",
+      "stock_code": "000929",
+      "impact": 3,
+      "analysis": "地处甘肃兰州，主营啤酒、饮料。"
+    },
+    {
+      "stock_name": "国芳百货",
+      "stock_code": "600153",
+      "impact": 3,
+      "analysis": "地处甘肃兰州，主营零售百货。"
+    },
+    {
+      "stock_name": "庄园牧场",
+      "stock_code": "002910",
+      "impact": 3,
+      "analysis": "地处甘肃兰州，主营液态奶。"
+    },
+    {
+      "stock_name": "皇台酒业",
+      "stock_code": "600559",
+      "impact": 3,
+      "analysis": "地处甘肃武威，主营白酒。"
+    },
+    {
+      "stock_name": "中钨高新",
+      "stock_code": "000657",
+      "impact": 3,
+      "analysis": "五矿集团钨产业链运营平台。"
+    },
+    {
+      "stock_name": "章源钨业",
+      "stock_code": "002378",
+      "impact": 3,
+      "analysis": "钨粉产量国内行业第一。"
+    },
+    {
+      "stock_name": "厦门钨业",
+      "stock_code": "600549",
+      "impact": 3,
+      "analysis": "在产钨矿产量约7000-8000吨。"
+    },
+    {
+      "stock_name": "翔鹭钨业",
+      "stock_code": "002858",
+      "impact": 3,
+      "analysis": "国内钨行业具备完整产业链的企业之一。"
+    },
+    {
+      "stock_name": "雷神科技",
+      "stock_code": "002296",
+      "impact": 3,
+      "analysis": "官宣了系列AI PC布局。"
+    },
+    {
+      "stock_name": "智微智能",
+      "stock_code": "300745",
+      "impact": 3,
+      "analysis": "与中软国际签订开源鸿蒙合作开发协议。"
+    },
+    {
+      "stock_name": "博杰股份",
+      "stock_code": "002848",
+      "impact": 3,
+      "analysis": "测试解决方案可以支持AI PC类产品测试需求。"
+    },
+    {
+      "stock_name": "亿道信息",
+      "stock_code": "688528",
+      "impact": 3,
+      "analysis": "AI PC处于项目研发阶段。"
+    },
+    {
+      "stock_name": "智莱科技",
+      "stock_code": "002712",
+      "impact": 3,
+      "analysis": "布局无人机包裹接收设备。"
+    },
+    {
+      "stock_name": "雷赛智能",
+      "stock_code": "002970",
+      "impact": 3,
+      "analysis": "人形机器人产品或于本月批量生产。"
+    },
+    {
+      "stock_name": "巨化股份",
+      "stock_code": "600160",
+      "impact": 3,
+      "analysis": "制冷剂旺季将近，行业龙头公司。"
+    },
+    {
+      "stock_name": "龙洲股份",
+      "stock_code": "002682",
+      "impact": 3,
+      "analysis": "研发无人机智能巡检产品。"
+    },
+    {
+      "stock_name": "水晶光电",
+      "stock_code": "002273",
+      "impact": 3,
+      "analysis": "有望受益华为P70带来的行业升级。"
+    },
+    {
+      "stock_name": "光启技术",
+      "stock_code": "002625",
+      "impact": 3,
+      "analysis": "签订大单约占2022年公司营收57%。"
+    },
+    {
+      "stock_name": "纳睿雷达",
+      "stock_code": "301318",
+      "impact": 3,
+      "analysis": "布局低空交通管理。"
+    }
+  ],
+  "article_id": "5fa53db0743a485eae7bb57363555ddf",
+  "article_date": "2024-03-17",
+  "article_title": "2024.3.17市场逻辑精选"
+}

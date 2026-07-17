@@ -1,0 +1,92 @@
+{
+  "1d": {
+    "validation": {
+      "total_return": 2623442.5539859436,
+      "annual_return": 168.05893127125114,
+      "sharpe": 9.22011861048856,
+      "max_drawdown": -0.18362382705784716,
+      "win_rate": 0.6717241379310345,
+      "n_trades": 725,
+      "n_trading_days": 726,
+      "avg_daily_return": 0.021241878924743978,
+      "threshold": 0.34,
+      "stop_loss": 0.03,
+      "take_profit": 0.15,
+      "max_positions": 3
+    },
+    "test": {
+      "total_return": 36.440890342942794,
+      "annual_return": 23.613265874941842,
+      "sharpe": 6.784824583429726,
+      "max_drawdown": -0.16480582472849514,
+      "win_rate": 0.6501766784452296,
+      "n_trades": 283,
+      "n_trading_days": 285,
+      "avg_daily_return": 0.013355239869279311,
+      "threshold": 0.34,
+      "stop_loss": 0.03,
+      "take_profit": 0.15,
+      "max_positions": 3
+    }
+  },
+  "5d": {
+    "validation": {
+      "total_return": 802509456.0785886,
+      "annual_return": 1231.5396003083501,
+      "sharpe": 8.6292661448899,
+      "max_drawdown": -0.339336242964227,
+      "win_rate": 0.6357340720221607,
+      "n_trades": 722,
+      "n_trading_days": 726,
+      "avg_daily_return": 0.030254286082858305,
+      "threshold": 0.3,
+      "stop_loss": 0.03,
+      "take_profit": 0.2,
+      "max_positions": 3
+    },
+    "test": {
+      "total_return": 456.1352490225292,
+      "annual_return": 223.9259344350594,
+      "sharpe": 7.5157280368002075,
+      "max_drawdown": -0.28626394604733557,
+      "win_rate": 0.624113475177305,
+      "n_trades": 282,
+      "n_trading_days": 285,
+      "avg_daily_return": 0.023077093991599153,
+      "threshold": 0.3,
+      "stop_loss": 0.03,
+      "take_profit": 0.2,
+      "max_positions": 3
+    }
+  },
+  "28d": {
+    "validation": {
+      "total_return": 269768171010030.94,
+      "annual_return": 102117.44958940425,
+      "sharpe": 9.687175283894694,
+      "max_drawdown": -0.5021397934800431,
+      "win_rate": 0.6613545816733067,
+      "n_trades": 502,
+      "n_trading_days": 726,
+      "avg_daily_return": 0.07216998215045821,
+      "threshold": 0.5,
+      "stop_loss": 0.03,
+      "take_profit": 0.2,
+      "max_positions": 3
+    },
+    "test": {
+      "total_return": 392.9264235544162,
+      "annual_return": 196.19384862124335,
+      "sharpe": 5.874906852134708,
+      "max_drawdown": -0.5280516358613145,
+      "win_rate": 0.5333333333333333,
+      "n_trades": 180,
+      "n_trading_days": 285,
+      "avg_daily_return": 0.03639599859883833,
+      "threshold": 0.5,
+      "stop_loss": 0.03,
+      "take_profit": 0.2,
+      "max_positions": 3
+    }
+  }
+}

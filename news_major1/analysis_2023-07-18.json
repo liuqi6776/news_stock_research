@@ -1,0 +1,55 @@
+{
+  "market_impact": 2,
+  "market_analysis": "多事件影响，市场情绪波动较大",
+  "sectors": [
+    {
+      "sector_name": "粮食",
+      "impact": 3,
+      "analysis": "受黑海粮食协议终止影响，板块利好"
+    },
+    {
+      "sector_name": "环保",
+      "impact": 2,
+      "analysis": "受公共卫生环境设施短板补齐政策影响，板块利好"
+    },
+    {
+      "sector_name": "算力",
+      "impact": 3,
+      "analysis": "受英伟达股价创新高及中国算力大会影响，板块利好"
+    },
+    {
+      "sector_name": "碳排放",
+      "impact": 2,
+      "analysis": "受全国碳排放权交易市场政策影响，板块利好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "丰乐种业",
+      "stock_code": "000713",
+      "impact": 3,
+      "analysis": "控股股东拟变更，利好"
+    },
+    {
+      "stock_name": "浪潮信息",
+      "stock_code": "000977",
+      "impact": 3,
+      "analysis": "受中国算力大会影响，利好"
+    },
+    {
+      "stock_name": "永安林业",
+      "stock_code": "000663",
+      "impact": 2,
+      "analysis": "受碳排放权交易市场政策影响，利好"
+    },
+    {
+      "stock_name": "中航电子",
+      "stock_code": "600372",
+      "impact": 2,
+      "analysis": "上半年净利润增长，利好"
+    }
+  ],
+  "article_title": "7月18日 盘前热点事件关注",
+  "html_file": "9187ma85lx.html",
+  "article_date": "2023-07-18"
+}

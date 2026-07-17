@@ -1,0 +1,80 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受短期热点驱动，整体偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "传媒",
+      "impact": 4,
+      "analysis": "短剧行业高速增长，相关公司受益"
+    },
+    {
+      "sector_name": "汽车",
+      "impact": 3,
+      "analysis": "华为智能驾驶平台推出，相关产业链受益"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "人形机器人指导意见出台，相关产业链受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "天威视讯",
+      "stock_code": "000902",
+      "impact": 4,
+      "analysis": "参股公司旗下短剧APP下载量第一"
+    },
+    {
+      "stock_name": "中文在线",
+      "stock_code": "300364",
+      "impact": 4,
+      "analysis": "已出品数十部短剧，多部播放量过亿次"
+    },
+    {
+      "stock_name": "掌阅科技",
+      "stock_code": "300383",
+      "impact": 4,
+      "analysis": "改编自公司IP的多部微短剧已在抖音上线"
+    },
+    {
+      "stock_name": "遥望科技",
+      "stock_code": "300792",
+      "impact": 3,
+      "analysis": "宣布进军短剧行业，首部短剧作品即将开拍"
+    },
+    {
+      "stock_name": "海看股份",
+      "stock_code": "002591",
+      "impact": 3,
+      "analysis": "海看微短剧项目自2023年5月份正式启动"
+    },
+    {
+      "stock_name": "鸣志电器",
+      "stock_code": "603716",
+      "impact": 3,
+      "analysis": "人形机器人指导意见出台，相关产业链受益"
+    },
+    {
+      "stock_name": "江苏雷利",
+      "stock_code": "603013",
+      "impact": 3,
+      "analysis": "人形机器人指导意见出台，相关产业链受益"
+    },
+    {
+      "stock_name": "伟创电气",
+      "stock_code": "603013",
+      "impact": 3,
+      "analysis": "人形机器人指导意见出台，相关产业链受益"
+    },
+    {
+      "stock_name": "中大力德",
+      "stock_code": "002896",
+      "impact": 3,
+      "analysis": "人形机器人指导意见出台，相关产业链受益"
+    }
+  ],
+  "article_id": "4fe638ab323c4b6da57bc888c4d993e0",
+  "article_date": "2023-11-02",
+  "article_title": "2023.11.2市场逻辑精选"
+}

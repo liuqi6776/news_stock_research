@@ -1,0 +1,296 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪提升",
+  "sectors": [
+    {
+      "sector_name": "数字货币",
+      "impact": 4,
+      "analysis": "央行数字货币研发试点，利好相关个股"
+    },
+    {
+      "sector_name": "抖音概念",
+      "impact": 3,
+      "analysis": "抖音集团新LOGO上线，可能预示上市，利好相关个股"
+    },
+    {
+      "sector_name": "白酒",
+      "impact": 3,
+      "analysis": "白酒三季报业绩稳健增长，利好相关个股"
+    },
+    {
+      "sector_name": "铝",
+      "impact": 3,
+      "analysis": "白宫考虑禁止进口俄罗斯铝，利好相关个股"
+    },
+    {
+      "sector_name": "化工",
+      "impact": 3,
+      "analysis": "巴斯夫投资新建装置，利好相关个股"
+    },
+    {
+      "sector_name": "信创",
+      "impact": 3,
+      "analysis": "信创行业政策支持，业绩拐点临近，利好相关个股"
+    },
+    {
+      "sector_name": "风电",
+      "impact": 3,
+      "analysis": "风光大基地申报启动，利好相关个股"
+    },
+    {
+      "sector_name": "一体压铸",
+      "impact": 3,
+      "analysis": "一体化压铸技术革新，利好相关个股"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "美国出口管制加码，国产化趋势明显，利好相关个股"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "南天信息",
+      "stock_code": "000948",
+      "impact": 4,
+      "analysis": "数字货币研发试点，利好"
+    },
+    {
+      "stock_name": "证通电子",
+      "stock_code": "002197",
+      "impact": 4,
+      "analysis": "数字货币研发试点，利好"
+    },
+    {
+      "stock_name": "京北方",
+      "stock_code": "002981",
+      "impact": 4,
+      "analysis": "数字货币研发试点，利好"
+    },
+    {
+      "stock_name": "省广集团",
+      "stock_code": "002400",
+      "impact": 3,
+      "analysis": "抖音概念，可能上市，利好"
+    },
+    {
+      "stock_name": "天龙集团",
+      "stock_code": "600129",
+      "impact": 3,
+      "analysis": "抖音概念，可能上市，利好"
+    },
+    {
+      "stock_name": "广博股份",
+      "stock_code": "002103",
+      "impact": 3,
+      "analysis": "抖音概念，可能上市，利好"
+    },
+    {
+      "stock_name": "贵州茅台",
+      "stock_code": "600519",
+      "impact": 3,
+      "analysis": "白酒三季报业绩增长，利好"
+    },
+    {
+      "stock_name": "天山铝业",
+      "stock_code": "002994",
+      "impact": 3,
+      "analysis": "白宫考虑禁止进口俄罗斯铝，利好"
+    },
+    {
+      "stock_name": "神火股份",
+      "stock_code": "000933",
+      "impact": 3,
+      "analysis": "白宫考虑禁止进口俄罗斯铝，利好"
+    },
+    {
+      "stock_name": "云铝股份",
+      "stock_code": "000807",
+      "impact": 3,
+      "analysis": "白宫考虑禁止进口俄罗斯铝，利好"
+    },
+    {
+      "stock_name": "利柏特",
+      "stock_code": "002220",
+      "impact": 3,
+      "analysis": "巴斯夫投资新建装置，利好"
+    },
+    {
+      "stock_name": "东华科技",
+      "stock_code": "002140",
+      "impact": 3,
+      "analysis": "巴斯夫投资新建装置，利好"
+    },
+    {
+      "stock_name": "中国化学",
+      "stock_code": "601117",
+      "impact": 3,
+      "analysis": "巴斯夫投资新建装置，利好"
+    },
+    {
+      "stock_name": "声讯股份",
+      "stock_code": "300289",
+      "impact": 3,
+      "analysis": "信创行业政策支持，业绩拐点临近，利好"
+    },
+    {
+      "stock_name": "高鸿股份",
+      "stock_code": "000941",
+      "impact": 3,
+      "analysis": "信创行业政策支持，业绩拐点临近，利好"
+    },
+    {
+      "stock_name": "同为股份",
+      "stock_code": "300832",
+      "impact": 3,
+      "analysis": "信创行业政策支持，业绩拐点临近，利好"
+    },
+    {
+      "stock_name": "美利云",
+      "stock_code": "002190",
+      "impact": 3,
+      "analysis": "信创行业政策支持，业绩拐点临近，利好"
+    },
+    {
+      "stock_name": "恒为科技",
+      "stock_code": "300365",
+      "impact": 3,
+      "analysis": "信创行业政策支持，业绩拐点临近，利好"
+    },
+    {
+      "stock_name": "南天信息",
+      "stock_code": "000948",
+      "impact": 3,
+      "analysis": "信创行业政策支持，业绩拐点临近，利好"
+    },
+    {
+      "stock_name": "竞业达",
+      "stock_code": "002610",
+      "impact": 3,
+      "analysis": "信创行业政策支持，业绩拐点临近，利好"
+    },
+    {
+      "stock_name": "中国软件",
+      "stock_code": "600536",
+      "impact": 3,
+      "analysis": "信创行业政策支持，业绩拐点临近，利好"
+    },
+    {
+      "stock_name": "金山办公",
+      "stock_code": "002377",
+      "impact": 3,
+      "analysis": "信创行业政策支持，业绩拐点临近，利好"
+    },
+    {
+      "stock_name": "联德股份",
+      "stock_code": "002899",
+      "impact": 3,
+      "analysis": "风光大基地申报启动，利好"
+    },
+    {
+      "stock_name": "恒润股份",
+      "stock_code": "601011",
+      "impact": 3,
+      "analysis": "风光大基地申报启动，利好"
+    },
+    {
+      "stock_name": "通达动力",
+      "stock_code": "002576",
+      "impact": 3,
+      "analysis": "风光大基地申报启动，利好"
+    },
+    {
+      "stock_name": "大金重工",
+      "stock_code": "002487",
+      "impact": 3,
+      "analysis": "风光大基地申报启动，利好"
+    },
+    {
+      "stock_name": "五洲新春",
+      "stock_code": "601569",
+      "impact": 3,
+      "analysis": "风光大基地申报启动，利好"
+    },
+    {
+      "stock_name": "天顺风能",
+      "stock_code": "002531",
+      "impact": 3,
+      "analysis": "风光大基地申报启动，利好"
+    },
+    {
+      "stock_name": "振江股份",
+      "stock_code": "603067",
+      "impact": 3,
+      "analysis": "风光大基地申报启动，利好"
+    },
+    {
+      "stock_name": "广东鸿图",
+      "stock_code": "002101",
+      "impact": 3,
+      "analysis": "一体压铸技术革新，利好"
+    },
+    {
+      "stock_name": "爱柯迪",
+      "stock_code": "603610",
+      "impact": 3,
+      "analysis": "一体压铸技术革新，利好"
+    },
+    {
+      "stock_name": "瑞鹄模具",
+      "stock_code": "002970",
+      "impact": 3,
+      "analysis": "一体压铸技术革新，利好"
+    },
+    {
+      "stock_name": "伊之密",
+      "stock_code": "300415",
+      "impact": 3,
+      "analysis": "一体压铸技术革新，利好"
+    },
+    {
+      "stock_name": "格林达",
+      "stock_code": "300470",
+      "impact": 3,
+      "analysis": "美国出口管制加码，国产化趋势明显，利好"
+    },
+    {
+      "stock_name": "朗迪集团",
+      "stock_code": "002698",
+      "impact": 3,
+      "analysis": "美国出口管制加码，国产化趋势明显，利好"
+    },
+    {
+      "stock_name": "亚威股份",
+      "stock_code": "002559",
+      "impact": 3,
+      "analysis": "美国出口管制加码，国产化趋势明显，利好"
+    },
+    {
+      "stock_name": "盈方微",
+      "stock_code": "300476",
+      "impact": 3,
+      "analysis": "美国出口管制加码，国产化趋势明显，利好"
+    },
+    {
+      "stock_name": "华亚智能",
+      "stock_code": "300390",
+      "impact": 3,
+      "analysis": "美国出口管制加码，国产化趋势明显，利好"
+    },
+    {
+      "stock_name": "纳思达",
+      "stock_code": "002180",
+      "impact": 3,
+      "analysis": "美国出口管制加码，国产化趋势明显，利好"
+    },
+    {
+      "stock_name": "赛腾股份",
+      "stock_code": "300433",
+      "impact": 3,
+      "analysis": "美国出口管制加码，国产化趋势明显，利好"
+    }
+  ],
+  "article_title": "10月13日 盘前早8点 股市要闻关注",
+  "html_file": "3pt6fsagfn.html",
+  "article_date": "2022-10-13"
+}

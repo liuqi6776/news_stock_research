@@ -1,0 +1,90 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注后续政策及订单落实情况。",
+  "sectors": [
+    {
+      "sector_name": "变压器",
+      "impact": 4,
+      "analysis": "需求旺盛，订单增长，行业景气度高。"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "OpenAI新功能发布预期，板块受提振。"
+    },
+    {
+      "sector_name": "水务",
+      "impact": 2,
+      "analysis": "水价调整，行业盈利能力提升。"
+    },
+    {
+      "sector_name": "中俄博览会",
+      "impact": 2,
+      "analysis": "中俄博览会即将举行，相关概念股受益。"
+    },
+    {
+      "sector_name": "公用生产要素",
+      "impact": 2,
+      "analysis": "公用生产要素涨价预期，相关板块受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "金盘科技",
+      "stock_code": "300458",
+      "impact": 4,
+      "analysis": "海外业务增长，订单量增加。"
+    },
+    {
+      "stock_name": "扬电科技",
+      "stock_code": "600989",
+      "impact": 4,
+      "analysis": "变压器龙头，行业景气度高。"
+    },
+    {
+      "stock_name": "伊戈尔",
+      "stock_code": "002922",
+      "impact": 3,
+      "analysis": "变压器出口业务增长。"
+    },
+    {
+      "stock_name": "思源电气",
+      "stock_code": "002035",
+      "impact": 3,
+      "analysis": "海外业务占比高，增长速度快。"
+    },
+    {
+      "stock_name": "幻方",
+      "stock_code": "300568",
+      "impact": 3,
+      "analysis": "OpenAI相关概念股。"
+    },
+    {
+      "stock_name": "掌阅科技",
+      "stock_code": "002711",
+      "impact": 3,
+      "analysis": "OpenAI相关概念股。"
+    },
+    {
+      "stock_name": "中兴通讯",
+      "stock_code": "000063",
+      "impact": 3,
+      "analysis": "国产服务器、交换机、光模块等业务受益。"
+    },
+    {
+      "stock_name": "昆仑能源",
+      "stock_code": "601857",
+      "impact": 2,
+      "analysis": "燃气业务受益公用生产要素涨价。"
+    },
+    {
+      "stock_name": "亚邦股份",
+      "stock_code": "600263",
+      "impact": 2,
+      "analysis": "固废处理业务受益公用生产要素涨价。"
+    }
+  ],
+  "article_id": "7a7c651b0c694b52b7f1b48586ce09ad",
+  "article_date": "2024-05-12",
+  "article_title": "2024.5.12市场逻辑精选"
+}

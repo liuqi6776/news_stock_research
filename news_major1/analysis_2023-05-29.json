@@ -1,0 +1,95 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股受利好消息提振。",
+  "sectors": [
+    {
+      "sector_name": "科创50",
+      "impact": 3,
+      "analysis": "新增成分股，利好相关个股。"
+    },
+    {
+      "sector_name": "存储芯片",
+      "impact": 3,
+      "analysis": "美光科技和迈威尔科技股价上涨，利好相关个股。"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "Opera推出AI服务，股价创历史新高，利好相关个股。"
+    },
+    {
+      "sector_name": "大飞机",
+      "impact": 3,
+      "analysis": "C919首次商业载客飞行，利好相关个股。"
+    },
+    {
+      "sector_name": "造船业",
+      "impact": 3,
+      "analysis": "订单排到2028年，利好相关个股。"
+    },
+    {
+      "sector_name": "脑机接口",
+      "impact": 3,
+      "analysis": "脑机接口概念股受关注，利好相关个股。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "华大智造",
+      "stock_code": "300676",
+      "impact": 3,
+      "analysis": "新增科创50成分股，利好。"
+    },
+    {
+      "stock_name": "中无人机",
+      "stock_code": "688011",
+      "impact": 3,
+      "analysis": "新增科创50成分股，利好。"
+    },
+    {
+      "stock_name": "美光科技",
+      "stock_code": "601231",
+      "impact": 3,
+      "analysis": "股价创今年新高，利好。"
+    },
+    {
+      "stock_name": "迈威尔科技",
+      "stock_code": "603986",
+      "impact": 3,
+      "analysis": "股价暴涨32%，利好。"
+    },
+    {
+      "stock_name": "昆仑万维",
+      "stock_code": "300418",
+      "impact": 3,
+      "analysis": "欧朋浏览器股价创历史新高，利好。"
+    },
+    {
+      "stock_name": "英伟达",
+      "stock_code": "0700.HK",
+      "impact": 3,
+      "analysis": "股价创历史新高，利好相关个股。"
+    },
+    {
+      "stock_name": "润贝航科",
+      "stock_code": "688389",
+      "impact": 3,
+      "analysis": "C919首次商业载客飞行，利好。"
+    },
+    {
+      "stock_name": "中国船舶",
+      "stock_code": "601717",
+      "impact": 3,
+      "analysis": "子公司购得海运股份股权，利好。"
+    },
+    {
+      "stock_name": "中国船舶",
+      "stock_code": "601717",
+      "impact": 3,
+      "analysis": "子公司购得海运股份股权，利好。"
+    }
+  ],
+  "article_title": "5月29日 盘前热点事件关注",
+  "html_file": "5nu4xcyksj.html",
+  "article_date": "2023-05-29"
+}

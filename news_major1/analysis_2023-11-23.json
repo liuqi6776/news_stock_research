@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受多事件催化，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "自动驾驶",
+      "impact": 4,
+      "analysis": "华为车路协同标准发布，行业升级预期强烈。"
+    },
+    {
+      "sector_name": "激光雷达",
+      "impact": 3,
+      "analysis": "激光雷达产业链受益，出货量增长。"
+    },
+    {
+      "sector_name": "制冷剂",
+      "impact": 3,
+      "analysis": "配额时代来临，供需平衡，价格有望上涨。"
+    },
+    {
+      "sector_name": "流感疫苗",
+      "impact": 2,
+      "analysis": "流感发病人数上升，疫苗需求增加。"
+    },
+    {
+      "sector_name": "GPU",
+      "impact": -2,
+      "analysis": "AMD相关显卡产品禁止在中国销售，行业竞争加剧。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "炬光科技",
+      "stock_code": "300383",
+      "impact": 4,
+      "analysis": "华为合作，激光元器件供应商。"
+    },
+    {
+      "stock_name": "万集科技",
+      "stock_code": "300378",
+      "impact": 3,
+      "analysis": "ETC拓展V2X路侧产品，市占率高。"
+    },
+    {
+      "stock_name": "永和股份",
+      "stock_code": "002795",
+      "impact": 3,
+      "analysis": "第三代制冷剂产能大，市值弹性高。"
+    },
+    {
+      "stock_name": "金迪克",
+      "stock_code": "300439",
+      "impact": 2,
+      "analysis": "流感疫苗营收占比高，产能大。"
+    },
+    {
+      "stock_name": "景嘉微",
+      "stock_code": "300474",
+      "impact": -2,
+      "analysis": "GPU芯片研发，行业竞争加剧。"
+    }
+  ],
+  "article_id": "f3657b2417dd49e295c0f9240209b7ca",
+  "article_date": "2023-11-23",
+  "article_title": "2023.11.23市场逻辑精选"
+}

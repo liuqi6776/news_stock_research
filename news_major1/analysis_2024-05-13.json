@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏乐观，多个板块和个股受利好消息推动",
+  "sectors": [
+    {
+      "sector_name": "家电出海",
+      "impact": 4,
+      "analysis": "出口额增长，机构配置增加"
+    },
+    {
+      "sector_name": "生物制品",
+      "impact": 3,
+      "analysis": "行业大会召开，相关公司受益"
+    },
+    {
+      "sector_name": "猪肉",
+      "impact": 3,
+      "analysis": "猪企降本，下半年周期有望来临"
+    },
+    {
+      "sector_name": "储能出海",
+      "impact": 4,
+      "analysis": "全球需求旺盛，相关公司受益"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "人形机器人发布，相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "美的集团",
+      "stock_code": "000333",
+      "impact": 4,
+      "analysis": "家电出海龙头，机构重仓"
+    },
+    {
+      "stock_name": "海尔智家",
+      "stock_code": "600690",
+      "impact": 4,
+      "analysis": "家电出海龙头，机构重仓"
+    },
+    {
+      "stock_name": "格力电器",
+      "stock_code": "000651",
+      "impact": 4,
+      "analysis": "家电出海龙头，机构重仓"
+    },
+    {
+      "stock_name": "牧原股份",
+      "stock_code": "002714",
+      "impact": 3,
+      "analysis": "猪肉行业龙头，降本增效"
+    },
+    {
+      "stock_name": "温氏股份",
+      "stock_code": "300498",
+      "impact": 3,
+      "analysis": "猪肉行业龙头，降本增效"
+    }
+  ],
+  "article_id": "ba1b96a8428a49a089806884d77ede5c",
+  "article_date": "2024-05-13",
+  "article_title": "2024.5.13市场逻辑精选"
+}

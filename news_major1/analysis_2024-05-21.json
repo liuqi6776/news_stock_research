@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "商业航天",
+      "impact": 4,
+      "analysis": "低轨卫星应用和星座计划推动板块上涨。"
+    },
+    {
+      "sector_name": "AI PC",
+      "impact": 3,
+      "analysis": "AI PC渗透率提升，相关产业链受益。"
+    },
+    {
+      "sector_name": "医美",
+      "impact": 3,
+      "analysis": "医美项目调整，行业空间扩大。"
+    },
+    {
+      "sector_name": "减肥药",
+      "impact": 3,
+      "analysis": "减肥药新药获批，市场空间扩大。"
+    },
+    {
+      "sector_name": "交换机",
+      "impact": 2,
+      "analysis": "MoE大模型推动交换机需求增加。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "银河航天",
+      "stock_code": "000519",
+      "impact": 4,
+      "analysis": "低轨卫星应用推动股价上涨。"
+    },
+    {
+      "stock_name": "隆盛科技",
+      "stock_code": "300686",
+      "impact": 4,
+      "analysis": "与银河航天合作，股价有望受益。"
+    },
+    {
+      "stock_name": "上海瀚讯",
+      "stock_code": "300331",
+      "impact": 3,
+      "analysis": "独供G60卫星载荷，股价有望受益。"
+    },
+    {
+      "stock_name": "爱美客",
+      "stock_code": "300827",
+      "impact": 3,
+      "analysis": "医美项目调整，股价有望受益。"
+    },
+    {
+      "stock_name": "礼来医药",
+      "stock_code": "600535",
+      "impact": 3,
+      "analysis": "减肥药新药获批，股价有望受益。"
+    }
+  ],
+  "article_id": "b148e1dad11149419880ab3ffdd49a1b",
+  "article_date": "2024-05-21",
+  "article_title": "2024.5.21市场逻辑精选"
+}

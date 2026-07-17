@@ -1,0 +1,79 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受积极因素影响，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "影视IP",
+      "impact": 3,
+      "analysis": "AI漫剧发展推动板块活跃"
+    },
+    {
+      "sector_name": "AI内容审核",
+      "impact": 3,
+      "analysis": "AI生成内容监管需求提升"
+    },
+    {
+      "sector_name": "AI+招标",
+      "impact": 3,
+      "analysis": "政策推动招标领域AI应用"
+    },
+    {
+      "sector_name": "算力服务",
+      "impact": 3,
+      "analysis": "AI发展带动算力需求增长"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "上海电影",
+      "stock_code": "600595",
+      "impact": 3,
+      "analysis": "AI影视合作及IP资源丰富"
+    },
+    {
+      "stock_name": "读客文化",
+      "stock_code": "300566",
+      "impact": 3,
+      "analysis": "IP孵化平台及电子书授权合作"
+    },
+    {
+      "stock_name": "人民网",
+      "stock_code": "603000",
+      "impact": 3,
+      "analysis": "内容风控大脑及智能风控平台"
+    },
+    {
+      "stock_name": "新点软件",
+      "stock_code": "300658",
+      "impact": 3,
+      "analysis": "AI招标解决方案提供商"
+    },
+    {
+      "stock_name": "华数传媒",
+      "stock_code": "000156",
+      "impact": 3,
+      "analysis": "合作火山引擎，布局算力服务"
+    },
+    {
+      "stock_name": "视觉中国",
+      "stock_code": "000681",
+      "impact": 3,
+      "analysis": "字节剪映合作方，AI版权服务"
+    },
+    {
+      "stock_name": "亚康股份",
+      "stock_code": "002921",
+      "impact": 3,
+      "analysis": "算力服务覆盖字节、阿里等大厂"
+    },
+    {
+      "stock_name": "西部建设",
+      "stock_code": "002302",
+      "impact": 3,
+      "analysis": "建材独供星际荣耀火箭生产基地"
+    }
+  ],
+  "article_id": "ea8f995b67024f03a453d3830430e63d",
+  "article_date": "2026-02-10",
+  "article_title": "2026.2.10市场逻辑精选"
+}

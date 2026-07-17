@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "光伏",
+      "impact": 4,
+      "analysis": "工信部座谈会利好光伏行业"
+    },
+    {
+      "sector_name": "医药医疗",
+      "impact": 3,
+      "analysis": "国家药监局发布支持高端医疗器械创新发展举措"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "国务院常务会议强调科技攻关，半导体板块受益"
+    },
+    {
+      "sector_name": "电力",
+      "impact": 3,
+      "analysis": "华银电力半年报净利润增长，电力板块受关注"
+    },
+    {
+      "sector_name": "海洋经济",
+      "impact": 3,
+      "analysis": "中央财经委员会研究海洋经济高质量发展"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "华银电力",
+      "stock_code": "600745",
+      "impact": 4,
+      "analysis": "预计半年度净利润增长36-44倍"
+    },
+    {
+      "stock_name": "亚玛顿",
+      "stock_code": "002623",
+      "impact": 3,
+      "analysis": "光伏行业座谈会有利于公司发展"
+    },
+    {
+      "stock_name": "塞力医疗",
+      "stock_code": "300258",
+      "impact": 3,
+      "analysis": "国家药监局发布支持高端医疗器械创新发展举措"
+    },
+    {
+      "stock_name": "诚邦股份",
+      "stock_code": "002828",
+      "impact": 3,
+      "analysis": "半导体板块受益于政策支持"
+    },
+    {
+      "stock_name": "吉鑫科技",
+      "stock_code": "002818",
+      "impact": 3,
+      "analysis": "海洋经济政策支持"
+    }
+  ],
+  "article_title": "7月4日盘前纪要",
+  "html_file": "3f3s4crk4p3.html",
+  "article_date": "2025-07-04"
+}

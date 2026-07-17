@@ -1,0 +1,56 @@
+{
+  "market_impact": 3,
+  "market_analysis": "数据要素和算力租赁板块受关注，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "数据要素",
+      "impact": 4,
+      "analysis": "数据要素市场规模扩大，产业链覆盖广泛，相关公司受益"
+    },
+    {
+      "sector_name": "算力租赁",
+      "impact": 3,
+      "analysis": "算力租赁市场潜力巨大，相关公司有望受益"
+    },
+    {
+      "sector_name": "水产",
+      "impact": -2,
+      "analysis": "日本核污染水排放引发担忧，水产相关公司受影响"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "山大地纬",
+      "stock_code": "300321",
+      "impact": 3,
+      "analysis": "数据要素相关公司，受益于数据要素市场规模扩大"
+    },
+    {
+      "stock_name": "久远银海",
+      "stock_code": "002779",
+      "impact": 3,
+      "analysis": "数据要素相关公司，受益于数据要素市场规模扩大"
+    },
+    {
+      "stock_name": "鸿博股份",
+      "stock_code": "002229",
+      "impact": 3,
+      "analysis": "算力租赁相关公司，受益于算力租赁市场潜力巨大"
+    },
+    {
+      "stock_name": "中贝通信",
+      "stock_code": "603098",
+      "impact": 3,
+      "analysis": "算力租赁相关公司，受益于算力租赁市场潜力巨大"
+    },
+    {
+      "stock_name": "中电环保",
+      "stock_code": "600795",
+      "impact": -2,
+      "analysis": "受日本核污染水排放影响，污染防治相关公司受关注"
+    }
+  ],
+  "article_id": "72d10cdcbfab401eb5f0f9f5e5ab202a",
+  "article_date": "2023-08-22",
+  "article_title": "2023.8.22市场逻辑精选"
+}

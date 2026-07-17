@@ -1,0 +1,44 @@
+{
+  "market_impact": 3,
+  "market_analysis": "光伏、虚拟电厂等板块受政策支持，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "光伏",
+      "impact": 4,
+      "analysis": "行业底部明朗，政策支持力度大。"
+    },
+    {
+      "sector_name": "虚拟电厂",
+      "impact": 3,
+      "analysis": "政策大力支持，市场空间广阔。"
+    },
+    {
+      "sector_name": "车网互动",
+      "impact": 3,
+      "analysis": "政策支持，市场空间大。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "阳光电源",
+      "stock_code": "300274",
+      "impact": 3,
+      "analysis": "光伏行业龙头，受益行业回暖。"
+    },
+    {
+      "stock_name": "国电南瑞",
+      "stock_code": "600406",
+      "impact": 3,
+      "analysis": "智能电网业务占比高，受益虚拟电厂发展。"
+    },
+    {
+      "stock_name": "特锐德",
+      "stock_code": "300001",
+      "impact": 3,
+      "analysis": "充电桩龙头，V2G优势领先。"
+    }
+  ],
+  "article_id": "77724be9d7124ec185a3efd77f0dbdaa",
+  "article_date": "2024-05-29",
+  "article_title": "2024.5.29市场逻辑精选"
+}

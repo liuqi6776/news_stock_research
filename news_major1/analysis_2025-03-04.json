@@ -1,0 +1,96 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极消息推动",
+  "sectors": [
+    {
+      "sector_name": "机器人",
+      "impact": 4,
+      "analysis": "人形机器人应用和人工智能部署推动板块上涨"
+    },
+    {
+      "sector_name": "芯片",
+      "impact": 3,
+      "analysis": "RISC-V芯片应用和人工智能技术突破利好芯片行业"
+    },
+    {
+      "sector_name": "云计算",
+      "impact": 3,
+      "analysis": "阿里巴巴云和AI投资计划推动相关供应商受益"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 3,
+      "analysis": "军工机器人和国防装备需求增加"
+    },
+    {
+      "sector_name": "农业",
+      "impact": 2,
+      "analysis": "大豆和鸡肉进口关税调整影响相关农业股"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "天奇股份",
+      "stock_code": "002009",
+      "impact": 4,
+      "analysis": "成立人形机器人事业部，利好"
+    },
+    {
+      "stock_name": "航天彩虹",
+      "stock_code": "002389",
+      "impact": 3,
+      "analysis": "无人机人工智能应用优势，利好"
+    },
+    {
+      "stock_name": "嘉必优",
+      "stock_code": "300816",
+      "impact": 3,
+      "analysis": "收购欧易生物，加码多组学技术布局，利好"
+    },
+    {
+      "stock_name": "全志科技",
+      "stock_code": "300458",
+      "impact": 3,
+      "analysis": "布局RISC-V生态，利好"
+    },
+    {
+      "stock_name": "芯原股份",
+      "stock_code": "688516",
+      "impact": 3,
+      "analysis": "RISC-V IP核供应商，利好"
+    },
+    {
+      "stock_name": "阿里巴巴",
+      "stock_code": "9988.HK",
+      "impact": 3,
+      "analysis": "云和AI投资计划，利好相关供应商"
+    },
+    {
+      "stock_name": "动力新科",
+      "stock_code": "600362",
+      "impact": 3,
+      "analysis": "柴油发动机核心厂商，订单增加，利好"
+    },
+    {
+      "stock_name": "德邦科技",
+      "stock_code": "603816",
+      "impact": 3,
+      "analysis": "合作宇树，提供热界面材料，利好"
+    },
+    {
+      "stock_name": "光弘科技",
+      "stock_code": "300701",
+      "impact": 3,
+      "analysis": "拟收购AC公司，拓展汽车电子业务，利好"
+    },
+    {
+      "stock_name": "安凯微",
+      "stock_code": "688023",
+      "impact": 3,
+      "analysis": "推出AK1080系列芯片，利好"
+    }
+  ],
+  "article_id": "cbda0203443e4a2e9794be25ce337fd0",
+  "article_date": "2025-03-04",
+  "article_title": "2025.3.4市场逻辑精选"
+}

@@ -1,0 +1,44 @@
+{
+  "market_impact": 3,
+  "market_analysis": "疫情相关医疗需求增加，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "血制品",
+      "impact": 4,
+      "analysis": "需求回暖，国产血制品市占率上升。"
+    },
+    {
+      "sector_name": "抗生素",
+      "impact": 3,
+      "analysis": "抗疫备用药需求增加，抗生素中间体价格上涨。"
+    },
+    {
+      "sector_name": "药店及治疗新冠中药",
+      "impact": 3,
+      "analysis": "疫情反复，业绩有望持续增长。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "卫光生物",
+      "stock_code": "002875",
+      "impact": 4,
+      "analysis": "血制品需求回暖，营收占比高。"
+    },
+    {
+      "stock_name": "川宁生物",
+      "stock_code": "300498",
+      "impact": 4,
+      "analysis": "抗生素中间体龙头，利润增长预期高。"
+    },
+    {
+      "stock_name": "健之佳",
+      "stock_code": "002001",
+      "impact": 3,
+      "analysis": "药店业绩有望持续增长，估值合理。"
+    }
+  ],
+  "article_id": "316c8813800b43c3a0883090e0daa72e",
+  "article_date": "2022-12-29",
+  "article_title": "2022.12.29市场逻辑精选"
+}

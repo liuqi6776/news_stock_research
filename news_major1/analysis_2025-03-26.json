@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏多，多个板块和个股受利好消息影响。",
+  "sectors": [
+    {
+      "sector_name": "AI智能",
+      "impact": 4,
+      "analysis": "AI智能体更新，相关个股受益"
+    },
+    {
+      "sector_name": "稀土永磁",
+      "impact": 3,
+      "analysis": "缅甸稀土出口政策变动，相关个股受影响"
+    },
+    {
+      "sector_name": "养殖",
+      "impact": 3,
+      "analysis": "多品种价格上涨，养殖板块受益"
+    },
+    {
+      "sector_name": "人形机器人",
+      "impact": 3,
+      "analysis": "中国具身智能大会即将召开，相关个股受益"
+    },
+    {
+      "sector_name": "涨价相关",
+      "impact": 3,
+      "analysis": "多品种价格上涨，相关个股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "南兴股份",
+      "stock_code": "002757",
+      "impact": 4,
+      "analysis": "AI智能体更新，受益"
+    },
+    {
+      "stock_name": "中国稀土",
+      "stock_code": "000920",
+      "impact": 3,
+      "analysis": "缅甸稀土出口政策变动，受益"
+    },
+    {
+      "stock_name": "晓鸣股份",
+      "stock_code": "002532",
+      "impact": 3,
+      "analysis": "养殖价格上涨，受益"
+    },
+    {
+      "stock_name": "力星股份",
+      "stock_code": "603608",
+      "impact": 3,
+      "analysis": "人形机器人相关，受益"
+    },
+    {
+      "stock_name": "合纵科技",
+      "stock_code": "300205",
+      "impact": 3,
+      "analysis": "金属价格上涨，受益"
+    }
+  ],
+  "article_id": "652f671f9cf9469fa8d333ad7b19128a",
+  "article_date": "2025-03-26",
+  "article_title": "2025.3.26市场逻辑精选"
+}

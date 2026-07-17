@@ -1,0 +1,56 @@
+{
+  "market_impact": 3,
+  "market_analysis": "特斯拉合作落地，智能驾驶板块受提振",
+  "sectors": [
+    {
+      "sector_name": "智能驾驶",
+      "impact": 4,
+      "analysis": "特斯拉合作落地，板块受益"
+    },
+    {
+      "sector_name": "汽车",
+      "impact": 3,
+      "analysis": "特斯拉合作落地，汽车板块受提振"
+    },
+    {
+      "sector_name": "车联网",
+      "impact": 3,
+      "analysis": "特斯拉合作落地，车联网板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "特斯拉",
+      "stock_code": "TSLA",
+      "impact": 4,
+      "analysis": "特斯拉合作落地，股价有望上涨"
+    },
+    {
+      "stock_name": "百度",
+      "stock_code": "BIDU",
+      "impact": 3,
+      "analysis": "百度合作落地，股价有望上涨"
+    },
+    {
+      "stock_name": "路畅科技",
+      "stock_code": "002813",
+      "impact": 3,
+      "analysis": "与百度合作，股价有望上涨"
+    },
+    {
+      "stock_name": "银江技术",
+      "stock_code": "300080",
+      "impact": 3,
+      "analysis": "加入百度Apollo生态，股价有望上涨"
+    },
+    {
+      "stock_name": "中海达",
+      "stock_code": "300177",
+      "impact": 4,
+      "analysis": "与百度合作研发高精度定位方案，股价有望上涨"
+    }
+  ],
+  "article_id": "a3f07cef328548b2bc441a89cb9fe0dc",
+  "article_date": "2024-04-29",
+  "article_title": "2024.4.29市场逻辑精选"
+}

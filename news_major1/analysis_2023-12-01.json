@@ -1,0 +1,95 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪提升",
+  "sectors": [
+    {
+      "sector_name": "土壤改造",
+      "impact": 4,
+      "analysis": "政策支持，板块受益"
+    },
+    {
+      "sector_name": "华为欧拉",
+      "impact": 3,
+      "analysis": "技术大会，关注相关企业"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 2,
+      "analysis": "座谈推动政策落实，板块受益"
+    },
+    {
+      "sector_name": "魅族",
+      "impact": 2,
+      "analysis": "造车消息，关注产业链"
+    },
+    {
+      "sector_name": "流感",
+      "impact": 2,
+      "analysis": "流感高发，相关医药股受益"
+    },
+    {
+      "sector_name": "拼多多",
+      "impact": 2,
+      "analysis": "市值超越阿里巴巴，关注相关概念股"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "实朴检测",
+      "stock_code": "603105",
+      "impact": 4,
+      "analysis": "土壤改造政策受益"
+    },
+    {
+      "stock_name": "富邦股份",
+      "stock_code": "300359",
+      "impact": 4,
+      "analysis": "土壤改造政策受益"
+    },
+    {
+      "stock_name": "建工修复",
+      "stock_code": "603259",
+      "impact": 4,
+      "analysis": "土壤改造政策受益"
+    },
+    {
+      "stock_name": "冠中生态",
+      "stock_code": "603860",
+      "impact": 4,
+      "analysis": "土壤改造政策受益"
+    },
+    {
+      "stock_name": "创意信息",
+      "stock_code": "300366",
+      "impact": 3,
+      "analysis": "华为欧拉操作系统大会"
+    },
+    {
+      "stock_name": "润和软件",
+      "stock_code": "300339",
+      "impact": 3,
+      "analysis": "华为欧拉操作系统大会"
+    },
+    {
+      "stock_name": "京能置业",
+      "stock_code": "600875",
+      "impact": 2,
+      "analysis": "房地产行业座谈会"
+    },
+    {
+      "stock_name": "新黄浦",
+      "stock_code": "600638",
+      "impact": 2,
+      "analysis": "房地产行业座谈会"
+    },
+    {
+      "stock_name": "迪马股份",
+      "stock_code": "600565",
+      "impact": 2,
+      "analysis": "房地产行业座谈会"
+    }
+  ],
+  "article_title": "12月1日盘前早报 热点事件关注",
+  "html_file": "49u760s1ap.html",
+  "article_date": "2023-12-01"
+}

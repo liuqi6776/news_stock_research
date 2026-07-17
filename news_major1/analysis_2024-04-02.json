@@ -1,0 +1,99 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息驱动，部分板块和个股表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "化工",
+      "impact": 4,
+      "analysis": "原油价格上涨，化工染料成本提升，利好相关企业。"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 3,
+      "analysis": "固态电池量产车即将上市，相关产业链受益。"
+    },
+    {
+      "sector_name": "铝塑膜",
+      "impact": 3,
+      "analysis": "固态电池发展，铝塑膜需求增加，利好相关企业。"
+    },
+    {
+      "sector_name": "氢能",
+      "impact": 3,
+      "analysis": "氢锂耦合技术发展，氢能产业链受益。"
+    },
+    {
+      "sector_name": "金属回收",
+      "impact": 3,
+      "analysis": "金属回收产业闭环形成，相关企业受益。"
+    },
+    {
+      "sector_name": "黄金",
+      "impact": 3,
+      "analysis": "黄金价格新高，相关企业受益。"
+    },
+    {
+      "sector_name": "物流",
+      "impact": 3,
+      "analysis": "物流运力扩张，相关企业受益。"
+    },
+    {
+      "sector_name": "养老",
+      "impact": 2,
+      "analysis": "养老政策支持，相关企业受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "分散染料相关个股",
+      "stock_code": "",
+      "impact": 4,
+      "analysis": "原油价格上涨，化工染料成本提升，相关个股受益。"
+    },
+    {
+      "stock_name": "固态电池相关个股",
+      "stock_code": "",
+      "impact": 3,
+      "analysis": "固态电池量产车即将上市，相关产业链个股受益。"
+    },
+    {
+      "stock_name": "铝塑膜相关个股",
+      "stock_code": "",
+      "impact": 3,
+      "analysis": "固态电池发展，铝塑膜需求增加，相关个股受益。"
+    },
+    {
+      "stock_name": "氢能相关个股",
+      "stock_code": "",
+      "impact": 3,
+      "analysis": "氢锂耦合技术发展，氢能产业链个股受益。"
+    },
+    {
+      "stock_name": "金属回收相关个股",
+      "stock_code": "",
+      "impact": 3,
+      "analysis": "金属回收产业闭环形成，相关个股受益。"
+    },
+    {
+      "stock_name": "黄金相关个股",
+      "stock_code": "",
+      "impact": 3,
+      "analysis": "黄金价格新高，相关个股受益。"
+    },
+    {
+      "stock_name": "物流相关个股",
+      "stock_code": "",
+      "impact": 3,
+      "analysis": "物流运力扩张，相关个股受益。"
+    },
+    {
+      "stock_name": "养老相关个股",
+      "stock_code": "",
+      "impact": 2,
+      "analysis": "养老政策支持，相关个股受益。"
+    }
+  ],
+  "article_id": "0ba461bad77d400d8a0a94e12b3f69bb",
+  "article_date": "2024-04-02",
+  "article_title": "2024.4.2市场逻辑精选"
+}

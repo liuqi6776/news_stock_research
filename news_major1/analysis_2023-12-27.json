@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "餐饮提价、烟花政策调整、eVTOL支持等利好消息较多。",
+  "sectors": [
+    {
+      "sector_name": "食品",
+      "impact": 3,
+      "analysis": "餐饮品牌提价，原材料价格上涨，利好相关企业。"
+    },
+    {
+      "sector_name": "烟花",
+      "impact": 3,
+      "analysis": "政策调整，行业有望回暖，利好相关企业。"
+    },
+    {
+      "sector_name": "eVTOL",
+      "impact": 3,
+      "analysis": "政策支持，行业发展前景看好，利好相关企业。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "HBM需求增长，行业有望持续增长，利好相关企业。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "惠发食品",
+      "stock_code": "002827",
+      "impact": 3,
+      "analysis": "餐饮品牌提价，公司为沙县小吃核心供应商。"
+    },
+    {
+      "stock_name": "ST熊猫",
+      "stock_code": "600775",
+      "impact": 3,
+      "analysis": "烟花政策调整，公司烟花营收占比高。"
+    },
+    {
+      "stock_name": "海特高新",
+      "stock_code": "002023",
+      "impact": 3,
+      "analysis": "eVTOL支持，公司研制eVTOL模拟机及解决方案。"
+    },
+    {
+      "stock_name": "凯华材料",
+      "stock_code": "603035",
+      "impact": 3,
+      "analysis": "HBM需求增长，公司环氧粉末包封料应用于半导体封装。"
+    }
+  ],
+  "article_id": "ff798e300415456dac9145da73514dee",
+  "article_date": "2023-12-27",
+  "article_title": "2023.12.27市场逻辑精选"
+}

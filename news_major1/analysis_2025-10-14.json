@@ -1,0 +1,56 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏乐观，多个板块和个股受利好消息影响。",
+  "sectors": [
+    {
+      "sector_name": "光伏",
+      "impact": 4,
+      "analysis": "政策支持，需求增长，板块受益"
+    },
+    {
+      "sector_name": "消费",
+      "impact": 3,
+      "analysis": "政策提振内需，消费板块受益"
+    },
+    {
+      "sector_name": "火电",
+      "impact": 3,
+      "analysis": "业绩预喜，成本下降，板块景气度提升"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "耀皮玻璃",
+      "stock_code": "600819",
+      "impact": 4,
+      "analysis": "光伏玻璃需求增长，公司受益"
+    },
+    {
+      "stock_name": "亿晶光电",
+      "stock_code": "600571",
+      "impact": 4,
+      "analysis": "光伏电池技术突破，公司产能提升"
+    },
+    {
+      "stock_name": "好太太",
+      "stock_code": "002739",
+      "impact": 3,
+      "analysis": "智能家居产品纳入以旧换新补贴，需求增长"
+    },
+    {
+      "stock_name": "建投能源",
+      "stock_code": "000600",
+      "impact": 3,
+      "analysis": "火电业务盈利能力提升，业绩预喜"
+    },
+    {
+      "stock_name": "佛燃能源",
+      "stock_code": "002911",
+      "impact": 4,
+      "analysis": "绿色燃料合作协议，公司受益"
+    }
+  ],
+  "article_id": "9a0acfe5f9374fab992c4910657d3907",
+  "article_date": "2025-10-14",
+  "article_title": "2025.10.14市场逻辑精选"
+}

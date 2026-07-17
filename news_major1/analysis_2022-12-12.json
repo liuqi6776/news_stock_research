@@ -1,0 +1,126 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受疫情相关及数字人民币政策影响，整体情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "医药板块",
+      "impact": 4,
+      "analysis": "退烧药、连翘等需求增加，利好医药行业。"
+    },
+    {
+      "sector_name": "数字货币板块",
+      "impact": 3,
+      "analysis": "数字人民币推广，利好相关服务商。"
+    },
+    {
+      "sector_name": "运输板块",
+      "impact": 2,
+      "analysis": "春运临近，公路运输行业受益。"
+    },
+    {
+      "sector_name": "数据服务板块",
+      "impact": 3,
+      "analysis": "数字资产入表新规，利好数据服务企业。"
+    },
+    {
+      "sector_name": "新能源板块",
+      "impact": 2,
+      "analysis": "钠离子电池技术进步，利好相关企业。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "新华制药",
+      "stock_code": "000756",
+      "impact": 4,
+      "analysis": "布洛芬原料药行业集中度提高，公司受益。"
+    },
+    {
+      "stock_name": "亨迪药业",
+      "stock_code": "301096",
+      "impact": 4,
+      "analysis": "布洛芬原料药行业集中度提高，公司受益。"
+    },
+    {
+      "stock_name": "振东制药",
+      "stock_code": "300138",
+      "impact": 3,
+      "analysis": "连翘价格上涨，公司受益。"
+    },
+    {
+      "stock_name": "康跃科技",
+      "stock_code": "300135",
+      "impact": 3,
+      "analysis": "连翘价格上涨，公司受益。"
+    },
+    {
+      "stock_name": "宇信科技",
+      "stock_code": "002574",
+      "impact": 3,
+      "analysis": "数字人民币推广，公司受益。"
+    },
+    {
+      "stock_name": "天阳科技",
+      "stock_code": "300033",
+      "impact": 3,
+      "analysis": "数字人民币推广，公司受益。"
+    },
+    {
+      "stock_name": "京北方",
+      "stock_code": "002149",
+      "impact": 3,
+      "analysis": "数字人民币推广，公司受益。"
+    },
+    {
+      "stock_name": "高伟达",
+      "stock_code": "300465",
+      "impact": 3,
+      "analysis": "数字人民币推广，公司受益。"
+    },
+    {
+      "stock_name": "富临运业",
+      "stock_code": "002357",
+      "impact": 2,
+      "analysis": "春运临近，公司受益。"
+    },
+    {
+      "stock_name": "雪迪龙",
+      "stock_code": "002658",
+      "impact": 3,
+      "analysis": "子公司产品可应用于新冠检测，公司受益。"
+    },
+    {
+      "stock_name": "上海钢联",
+      "stock_code": "300055",
+      "impact": 3,
+      "analysis": "数字资产入表新规，公司受益。"
+    },
+    {
+      "stock_name": "龙磁科技",
+      "stock_code": "603316",
+      "impact": 2,
+      "analysis": "收购恩沃新能源，打通产业链，公司受益。"
+    },
+    {
+      "stock_name": "蔚蓝锂芯",
+      "stock_code": "002175",
+      "impact": 3,
+      "analysis": "与中科海纳合作开发圆柱钠电，公司受益。"
+    },
+    {
+      "stock_name": "海翔药业",
+      "stock_code": "002099",
+      "impact": 3,
+      "analysis": "参股药厂生产右旋布洛芬，公司受益。"
+    },
+    {
+      "stock_name": "湘邮科技",
+      "stock_code": "300451",
+      "impact": 3,
+      "analysis": "数据资产迎重新定价，公司受益。"
+    }
+  ],
+  "article_id": "66965e04ac534dadb0e0ecc16a9989f3",
+  "article_date": "2022-12-12",
+  "article_title": "2022.12.12市场逻辑精选"
+}

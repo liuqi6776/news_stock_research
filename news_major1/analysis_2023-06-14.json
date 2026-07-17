@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件影响，市场情绪偏暖。",
+  "sectors": [
+    {
+      "sector_name": "电力",
+      "impact": 3,
+      "analysis": "高温天气和电力供需紧张预期利好"
+    },
+    {
+      "sector_name": "新能源车",
+      "impact": 3,
+      "analysis": "特斯拉股价上涨及政策支持利好"
+    },
+    {
+      "sector_name": "风电",
+      "impact": 2,
+      "analysis": "风电改造升级政策利好"
+    },
+    {
+      "sector_name": "智慧教育",
+      "impact": 2,
+      "analysis": "政策支持智慧教育发展利好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "桂东电力",
+      "stock_code": "600310",
+      "impact": 3,
+      "analysis": "广西电力需求增加利好"
+    },
+    {
+      "stock_name": "深南电A",
+      "stock_code": "000037",
+      "impact": 3,
+      "analysis": "电力供需紧张利好"
+    },
+    {
+      "stock_name": "迪生力",
+      "stock_code": "002594",
+      "impact": 3,
+      "analysis": "特斯拉股价上涨相关利好"
+    },
+    {
+      "stock_name": "大金重工",
+      "stock_code": "002487",
+      "impact": 2,
+      "analysis": "风电改造升级政策利好"
+    }
+  ],
+  "article_title": "6月14日 盘前热点事件关注",
+  "html_file": "5plftrn2d0.html",
+  "article_date": "2023-06-14"
+}

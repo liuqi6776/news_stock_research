@@ -1,0 +1,130 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "变压器板块",
+      "impact": 4,
+      "analysis": "订单激增，需求旺盛，利好"
+    },
+    {
+      "sector_name": "人工智能板块",
+      "impact": 3,
+      "analysis": "技术突破，应用前景广阔，利好"
+    },
+    {
+      "sector_name": "工业互联网板块",
+      "impact": 3,
+      "analysis": "政策支持，发展前景良好，利好"
+    },
+    {
+      "sector_name": "光伏板块",
+      "impact": 2,
+      "analysis": "市场空间广阔，利好"
+    },
+    {
+      "sector_name": "医药板块",
+      "impact": 2,
+      "analysis": "AI应用前景广阔，利好"
+    },
+    {
+      "sector_name": "影视板块",
+      "impact": 2,
+      "analysis": "AI技术应用，利好"
+    },
+    {
+      "sector_name": "电商板块",
+      "impact": 2,
+      "analysis": "AI技术应用，利好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "三变科技",
+      "stock_code": "000672",
+      "impact": 4,
+      "analysis": "订单激增，利好"
+    },
+    {
+      "stock_name": "金盘科技",
+      "stock_code": "300454",
+      "impact": 4,
+      "analysis": "订单激增，利好"
+    },
+    {
+      "stock_name": "特变电工",
+      "stock_code": "600089",
+      "impact": 4,
+      "analysis": "订单激增，利好"
+    },
+    {
+      "stock_name": "思源电气",
+      "stock_code": "002028",
+      "impact": 3,
+      "analysis": "订单激增，利好"
+    },
+    {
+      "stock_name": "伊戈尔",
+      "stock_code": "002922",
+      "impact": 3,
+      "analysis": "订单激增，利好"
+    },
+    {
+      "stock_name": "海量数据",
+      "stock_code": "300781",
+      "impact": 3,
+      "analysis": "技术突破，利好"
+    },
+    {
+      "stock_name": "星环科技",
+      "stock_code": "300708",
+      "impact": 3,
+      "analysis": "技术突破，利好"
+    },
+    {
+      "stock_name": "宝信软件",
+      "stock_code": "600845",
+      "impact": 3,
+      "analysis": "政策支持，利好"
+    },
+    {
+      "stock_name": "东土科技",
+      "stock_code": "300353",
+      "impact": 3,
+      "analysis": "政策支持，利好"
+    },
+    {
+      "stock_name": "帝科股份",
+      "stock_code": "300845",
+      "impact": 2,
+      "analysis": "市场空间广阔，利好"
+    },
+    {
+      "stock_name": "新里程",
+      "stock_code": "300787",
+      "impact": 2,
+      "analysis": "AI应用前景广阔，利好"
+    },
+    {
+      "stock_name": "博济医药",
+      "stock_code": "300754",
+      "impact": 2,
+      "analysis": "AI应用前景广阔，利好"
+    },
+    {
+      "stock_name": "博纳影业",
+      "stock_code": "600595",
+      "impact": 2,
+      "analysis": "AI技术应用，利好"
+    },
+    {
+      "stock_name": "普路通",
+      "stock_code": "002769",
+      "impact": 2,
+      "analysis": "AI技术应用，利好"
+    }
+  ],
+  "article_id": "2aa90449c3fd4399a2ad933d4db5c71f",
+  "article_date": "2026-01-13",
+  "article_title": "2026.1.13市场逻辑精选"
+}

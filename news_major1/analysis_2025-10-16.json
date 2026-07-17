@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受中美港口收费影响，航运板块利好。",
+  "sectors": [
+    {
+      "sector_name": "港口航运",
+      "impact": 4,
+      "analysis": "中美互征港务费，航运板块受益"
+    },
+    {
+      "sector_name": "智能驾驶",
+      "impact": 3,
+      "analysis": "智能驾驶产业规划，板块受益"
+    },
+    {
+      "sector_name": "卫星互联网",
+      "impact": 3,
+      "analysis": "上海垣信融资，卫星互联网板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "海通发展",
+      "stock_code": "600023",
+      "impact": 4,
+      "analysis": "航运核心公司，受益航运板块利好"
+    },
+    {
+      "stock_name": "南京港",
+      "stock_code": "600886",
+      "impact": 4,
+      "analysis": "港口核心公司，受益航运板块利好"
+    },
+    {
+      "stock_name": "北汽蓝谷",
+      "stock_code": "600733",
+      "impact": 3,
+      "analysis": "智能驾驶核心公司，受益智能驾驶板块利好"
+    },
+    {
+      "stock_name": "上海垣信",
+      "stock_code": "000682",
+      "impact": 3,
+      "analysis": "卫星互联网核心公司，受益卫星互联网板块利好"
+    }
+  ],
+  "article_id": "bd68360d8c96421886eb845ad3fa751a",
+  "article_date": "2025-10-16",
+  "article_title": "2025.10.16市场逻辑精选"
+}

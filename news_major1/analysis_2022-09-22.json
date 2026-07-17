@@ -1,0 +1,66 @@
+{
+  "market_impact": -2,
+  "market_analysis": "美联储加息预期，市场情绪偏谨慎。",
+  "sectors": [
+    {
+      "sector_name": "金融",
+      "impact": -3,
+      "analysis": "美联储加息预期，金融板块承压。"
+    },
+    {
+      "sector_name": "新能源",
+      "impact": 2,
+      "analysis": "光伏、风电装机容量增长，新能源板块受益。"
+    },
+    {
+      "sector_name": "锂电池",
+      "impact": 1,
+      "analysis": "钠电池技术进展，锂电池板块受提振。"
+    },
+    {
+      "sector_name": "消费电子",
+      "impact": 1,
+      "analysis": "华为Mate50开售，消费电子板块受关注。"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": -1,
+      "analysis": "房地产政策放松预期，板块情绪有所回暖。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "上海三毛",
+      "stock_code": "600638",
+      "impact": -2,
+      "analysis": "人民币贬值，相关概念股承压。"
+    },
+    {
+      "stock_name": "金贵银业",
+      "stock_code": "600514",
+      "impact": 2,
+      "analysis": "黄金、白银价格上涨，相关概念股受益。"
+    },
+    {
+      "stock_name": "美联新材",
+      "stock_code": "300389",
+      "impact": 2,
+      "analysis": "钠电池技术进展，公司受益。"
+    },
+    {
+      "stock_name": "数源科技",
+      "stock_code": "002464",
+      "impact": 1,
+      "analysis": "华为Mate50开售，相关概念股受益。"
+    },
+    {
+      "stock_name": "亿晶光电",
+      "stock_code": "600571",
+      "impact": 2,
+      "analysis": "光伏发电装机容量增长，公司受益。"
+    }
+  ],
+  "article_title": "9月22日 盘前早8点 股市要闻关注",
+  "html_file": "3nsmw69az1.html",
+  "article_date": "2022-09-22"
+}

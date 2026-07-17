@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "电力",
+      "impact": 4,
+      "analysis": "电力改革、南方电网负荷创新高等利好消息推动"
+    },
+    {
+      "sector_name": "OLED 显示器面板",
+      "impact": 3,
+      "analysis": "OLED 显示器面板出货量激增，相关个股受益"
+    },
+    {
+      "sector_name": "新疆基建",
+      "impact": 3,
+      "analysis": "新疆基建投资快速增长，相关个股有望受益"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 2,
+      "analysis": "社会融资规模增量增加，房地产板块受益"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 2,
+      "analysis": "人工智能行业政策利好，相关个股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "科远智慧",
+      "stock_code": "002380",
+      "impact": 4,
+      "analysis": "电力改革受益股"
+    },
+    {
+      "stock_name": "彩虹股份",
+      "stock_code": "600707",
+      "impact": 3,
+      "analysis": "OLED 显示器面板行业受益股"
+    },
+    {
+      "stock_name": "新疆交建",
+      "stock_code": "002940",
+      "impact": 3,
+      "analysis": "新疆基建投资受益股"
+    },
+    {
+      "stock_name": "上海电力",
+      "stock_code": "600021",
+      "impact": 3,
+      "analysis": "扭亏为盈，业绩改善"
+    },
+    {
+      "stock_name": "科大讯飞",
+      "stock_code": "002230",
+      "impact": 2,
+      "analysis": "人工智能行业政策利好"
+    }
+  ],
+  "article_title": "7月12日 盘前热点事件关注",
+  "html_file": "dyy3d4aasr.html",
+  "article_date": "2023-07-12"
+}

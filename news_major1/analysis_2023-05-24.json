@@ -1,0 +1,300 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪偏乐观",
+  "sectors": [
+    {
+      "sector_name": "半导体设备",
+      "impact": 3,
+      "analysis": "出口限制政策利好"
+    },
+    {
+      "sector_name": "电影",
+      "impact": 2,
+      "analysis": "免征专项资金支持行业"
+    },
+    {
+      "sector_name": "辅助生殖",
+      "impact": 2,
+      "analysis": "医保纳入利好"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 3,
+      "analysis": "销量增长利好"
+    },
+    {
+      "sector_name": "锰酸锂",
+      "impact": 3,
+      "analysis": "价格上涨利好"
+    },
+    {
+      "sector_name": "牛黄",
+      "impact": 2,
+      "analysis": "价格上涨利好"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "技术路线利好"
+    },
+    {
+      "sector_name": "元宇宙",
+      "impact": 2,
+      "analysis": "技术发展利好"
+    },
+    {
+      "sector_name": "电力",
+      "impact": 3,
+      "analysis": "供需紧缺利好"
+    },
+    {
+      "sector_name": "储能",
+      "impact": 2,
+      "analysis": "安全规程实施利好"
+    },
+    {
+      "sector_name": "液氮",
+      "impact": 2,
+      "analysis": "价格上涨利好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "北方华创",
+      "stock_code": "002371",
+      "impact": 3,
+      "analysis": "受益半导体设备出口限制"
+    },
+    {
+      "stock_name": "拓荆科技",
+      "stock_code": "688599",
+      "impact": 3,
+      "analysis": "受益半导体设备出口限制"
+    },
+    {
+      "stock_name": "华海清科",
+      "stock_code": "688018",
+      "impact": 3,
+      "analysis": "受益半导体设备出口限制"
+    },
+    {
+      "stock_name": "精测电子",
+      "stock_code": "300567",
+      "impact": 3,
+      "analysis": "受益半导体设备出口限制"
+    },
+    {
+      "stock_name": "芯源微",
+      "stock_code": "688516",
+      "impact": 3,
+      "analysis": "受益半导体设备出口限制"
+    },
+    {
+      "stock_name": "唐德影视",
+      "stock_code": "300426",
+      "impact": 2,
+      "analysis": "受益免征专项资金"
+    },
+    {
+      "stock_name": "华策影视",
+      "stock_code": "600073",
+      "impact": 2,
+      "analysis": "受益免征专项资金"
+    },
+    {
+      "stock_name": "光线传媒",
+      "stock_code": "600707",
+      "impact": 2,
+      "analysis": "受益免征专项资金"
+    },
+    {
+      "stock_name": "华谊兄弟",
+      "stock_code": "600027",
+      "impact": 2,
+      "analysis": "受益免征专项资金"
+    },
+    {
+      "stock_name": "中国电影",
+      "stock_code": "601955",
+      "impact": 2,
+      "analysis": "受益免征专项资金"
+    },
+    {
+      "stock_name": "达嘉维康",
+      "stock_code": "300705",
+      "impact": 2,
+      "analysis": "受益辅助生殖医保纳入"
+    },
+    {
+      "stock_name": "悦心健康",
+      "stock_code": "002162",
+      "impact": 2,
+      "analysis": "受益辅助生殖医保纳入"
+    },
+    {
+      "stock_name": "康芝药业",
+      "stock_code": "600557",
+      "impact": 2,
+      "analysis": "受益辅助生殖医保纳入"
+    },
+    {
+      "stock_name": "共同药业",
+      "stock_code": "300639",
+      "impact": 2,
+      "analysis": "受益辅助生殖医保纳入"
+    },
+    {
+      "stock_name": "江淮汽车",
+      "stock_code": "600418",
+      "impact": 3,
+      "analysis": "受益新能源汽车销量增长"
+    },
+    {
+      "stock_name": "长安汽车",
+      "stock_code": "000625",
+      "impact": 3,
+      "analysis": "受益新能源汽车销量增长"
+    },
+    {
+      "stock_name": "赛力斯",
+      "stock_code": "600695",
+      "impact": 3,
+      "analysis": "受益新能源汽车销量增长"
+    },
+    {
+      "stock_name": "北汽蓝谷",
+      "stock_code": "688019",
+      "impact": 3,
+      "analysis": "受益新能源汽车销量增长"
+    },
+    {
+      "stock_name": "比亚迪",
+      "stock_code": "002594",
+      "impact": 3,
+      "analysis": "受益新能源汽车销量增长"
+    },
+    {
+      "stock_name": "湘潭电化",
+      "stock_code": "002125",
+      "impact": 3,
+      "analysis": "受益锰酸锂价格上涨"
+    },
+    {
+      "stock_name": "红星发展",
+      "stock_code": "600367",
+      "impact": 3,
+      "analysis": "受益锰酸锂价格上涨"
+    },
+    {
+      "stock_name": "超频三",
+      "stock_code": "300562",
+      "impact": 3,
+      "analysis": "受益锰酸锂价格上涨"
+    },
+    {
+      "stock_name": "片仔癀",
+      "stock_code": "600436",
+      "impact": 2,
+      "analysis": "受益牛黄价格上涨"
+    },
+    {
+      "stock_name": "同仁堂",
+      "stock_code": "600085",
+      "impact": 2,
+      "analysis": "受益牛黄价格上涨"
+    },
+    {
+      "stock_name": "九芝堂",
+      "stock_code": "600414",
+      "impact": 2,
+      "analysis": "受益牛黄价格上涨"
+    },
+    {
+      "stock_name": "京新药业",
+      "stock_code": "002020",
+      "impact": 2,
+      "analysis": "受益牛黄价格上涨"
+    },
+    {
+      "stock_name": "步长制药",
+      "stock_code": "600535",
+      "impact": 2,
+      "analysis": "受益牛黄价格上涨"
+    },
+    {
+      "stock_name": "昆药集团",
+      "stock_code": "600422",
+      "impact": 2,
+      "analysis": "受益牛黄价格上涨"
+    },
+    {
+      "stock_name": "丰立智能",
+      "stock_code": "603606",
+      "impact": 3,
+      "analysis": "受益机器人技术路线利好"
+    },
+    {
+      "stock_name": "奥拓电子",
+      "stock_code": "002587",
+      "impact": 2,
+      "analysis": "受益元宇宙技术发展利好"
+    },
+    {
+      "stock_name": "浙文互联",
+      "stock_code": "300606",
+      "impact": 2,
+      "analysis": "受益元宇宙技术发展利好"
+    },
+    {
+      "stock_name": "奋达科技",
+      "stock_code": "002681",
+      "impact": 2,
+      "analysis": "受益AI助理发展利好"
+    },
+    {
+      "stock_name": "彩讯股份",
+      "stock_code": "300634",
+      "impact": 2,
+      "analysis": "受益AI助理发展利好"
+    },
+    {
+      "stock_name": "中国重工",
+      "stock_code": "601989",
+      "impact": 3,
+      "analysis": "受益造船业繁荣利好"
+    },
+    {
+      "stock_name": "中船科技",
+      "stock_code": "600072",
+      "impact": 3,
+      "analysis": "受益造船业繁荣利好"
+    },
+    {
+      "stock_name": "国安达",
+      "stock_code": "603027",
+      "impact": 2,
+      "analysis": "受益储能安全规程实施利好"
+    },
+    {
+      "stock_name": "青鸟消防",
+      "stock_code": "603378",
+      "impact": 2,
+      "analysis": "受益储能安全规程实施利好"
+    },
+    {
+      "stock_name": "侨源股份",
+      "stock_code": "002322",
+      "impact": 2,
+      "analysis": "受益液氮价格上涨利好"
+    },
+    {
+      "stock_name": "和远气体",
+      "stock_code": "603399",
+      "impact": 2,
+      "analysis": "受益液氮价格上涨利好"
+    }
+  ],
+  "article_title": "5月24日 盘前热点事件关注",
+  "html_file": "c8kkqw2ctp.html",
+  "article_date": "2023-05-24"
+}

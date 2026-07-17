@@ -1,0 +1,56 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受AR眼镜和测绘地理信息板块利好影响，整体情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "AR眼镜",
+      "impact": 4,
+      "analysis": "AR眼镜市场空间大，相关产业链受益"
+    },
+    {
+      "sector_name": "测绘地理信息",
+      "impact": 3,
+      "analysis": "政策支持，行业迎来发展机遇"
+    },
+    {
+      "sector_name": "苹果概念",
+      "impact": 3,
+      "analysis": "苹果业绩预期良好，相关产业链受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "亿道信息",
+      "stock_code": "300532",
+      "impact": 4,
+      "analysis": "合作Rokid开发AR空间计算产品"
+    },
+    {
+      "stock_name": "博士眼镜",
+      "stock_code": "601619",
+      "impact": 3,
+      "analysis": "为Rokid提供可调焦距解决方案"
+    },
+    {
+      "stock_name": "立讯精密",
+      "stock_code": "002475",
+      "impact": 3,
+      "analysis": "苹果手机组装业务"
+    },
+    {
+      "stock_name": "测绘股份",
+      "stock_code": "300057",
+      "impact": 3,
+      "analysis": "主营测绘地理信息"
+    },
+    {
+      "stock_name": "超图软件",
+      "stock_code": "300079",
+      "impact": 3,
+      "analysis": "地理信息系统(GIS)平台软件业务"
+    }
+  ],
+  "article_id": "7caa9707d0ac4367baf18079ca208600",
+  "article_date": "2024-07-29",
+  "article_title": "2024.7.29市场逻辑精选"
+}

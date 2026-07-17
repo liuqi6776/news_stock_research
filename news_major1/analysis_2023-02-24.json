@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪波动较大，部分板块受利好消息提振。",
+  "sectors": [
+    {
+      "sector_name": "券商",
+      "impact": 3,
+      "analysis": "前海合作区金融支持政策利好券商板块。"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "英伟达上涨及AI工作组成立利好AI板块。"
+    },
+    {
+      "sector_name": "互联网医疗",
+      "impact": 3,
+      "analysis": "乡村医疗卫生体系改革利好互联网医疗板块。"
+    },
+    {
+      "sector_name": "钠离子电池",
+      "impact": 3,
+      "analysis": "钠离子电池试验车亮相利好钠离子电池板块。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "湘财股份",
+      "stock_code": "000898",
+      "impact": 3,
+      "analysis": "前海合作区金融支持政策利好。"
+    },
+    {
+      "stock_name": "鸿博股份",
+      "stock_code": "002229",
+      "impact": 3,
+      "analysis": "AI工作组成立利好。"
+    },
+    {
+      "stock_name": "卫宁健康",
+      "stock_code": "300253",
+      "impact": 3,
+      "analysis": "乡村医疗卫生体系改革利好。"
+    },
+    {
+      "stock_name": "维科技术",
+      "stock_code": "600550",
+      "impact": 3,
+      "analysis": "钠离子电池试验车亮相利好。"
+    }
+  ],
+  "article_title": "2月24日盘前热点事件关注",
+  "html_file": "289nww1dex.html",
+  "article_date": "2023-02-24"
+}

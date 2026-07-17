@@ -1,0 +1,97 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "短剧行业",
+      "impact": 4,
+      "analysis": "腾讯和B站等推动行业发展，AI漫剧潜力大。"
+    },
+    {
+      "sector_name": "机器人行业",
+      "impact": 3,
+      "analysis": "马斯克和展会催化行业关注，相关公司受益。"
+    },
+    {
+      "sector_name": "AI游戏行业",
+      "impact": 3,
+      "analysis": "政策支持AI赋能游戏，市场空间广阔。"
+    },
+    {
+      "sector_name": "固态电池行业",
+      "impact": 3,
+      "analysis": "技术论坛和原材料应用推动行业增长。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "掌阅科技",
+      "stock_code": "300383",
+      "impact": 4,
+      "analysis": "布局短剧产业链，AI漫剧潜力大。"
+    },
+    {
+      "stock_name": "百纳千成",
+      "stock_code": "002665",
+      "impact": 3,
+      "analysis": "原创短剧和版权IP合作推动增长。"
+    },
+    {
+      "stock_name": "慈文传媒",
+      "stock_code": "300363",
+      "impact": 3,
+      "analysis": "布局短剧集市场，与腾讯合作。"
+    },
+    {
+      "stock_name": "浙江荣泰",
+      "stock_code": "603011",
+      "impact": 3,
+      "analysis": "机器人产业链相关，订单增加。"
+    },
+    {
+      "stock_name": "嵘泰股份",
+      "stock_code": "603966",
+      "impact": 3,
+      "analysis": "机器人产业链相关，产能提升。"
+    },
+    {
+      "stock_name": "恺英网络",
+      "stock_code": "002517",
+      "impact": 3,
+      "analysis": "AI赋能游戏研发，技术领先。"
+    },
+    {
+      "stock_name": "巨人网络",
+      "stock_code": "002558",
+      "impact": 3,
+      "analysis": "AI原生游戏研发，技术领先。"
+    },
+    {
+      "stock_name": "兴业股份",
+      "stock_code": "603605",
+      "impact": 3,
+      "analysis": "酚醛树脂应用固态电池，技术进步。"
+    },
+    {
+      "stock_name": "凯旺科技",
+      "stock_code": "603023",
+      "impact": 3,
+      "analysis": "宇树线缆供应商，合作增加。"
+    },
+    {
+      "stock_name": "宝莫股份",
+      "stock_code": "002476",
+      "impact": 3,
+      "analysis": "油田化学品供应商，中东局势影响。"
+    },
+    {
+      "stock_name": "海科新源",
+      "stock_code": "300871",
+      "impact": 3,
+      "analysis": "固态电解质研发，技术储备。"
+    }
+  ],
+  "article_id": "636849361a8940fc829054e8b775961f",
+  "article_date": "2025-06-19",
+  "article_title": "2025.6.19市场逻辑精选"
+}

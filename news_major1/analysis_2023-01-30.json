@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受积极因素推动，但需关注特斯拉降价影响。",
+  "sectors": [
+    {
+      "sector_name": "一体压铸",
+      "impact": 4,
+      "analysis": "降本增效趋势明显，板块受益"
+    },
+    {
+      "sector_name": "特斯拉汽车产业链",
+      "impact": 3,
+      "analysis": "特斯拉业绩强劲，产业链受益"
+    },
+    {
+      "sector_name": "稀土回收",
+      "impact": 3,
+      "analysis": "稀土价格回升，行业景气度提升"
+    },
+    {
+      "sector_name": "医保数据开放",
+      "impact": 3,
+      "analysis": "政策支持，行业前景看好"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "技术进步，行业持续发展"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "文灿股份",
+      "stock_code": "002283",
+      "impact": 4,
+      "analysis": "一体压铸行业龙头，业绩有望提升"
+    },
+    {
+      "stock_name": "拓普集团",
+      "stock_code": "603035",
+      "impact": 3,
+      "analysis": "特斯拉产业链核心供应商，业绩有望增长"
+    },
+    {
+      "stock_name": "旭升集团",
+      "stock_code": "603105",
+      "impact": 4,
+      "analysis": "特斯拉、比亚迪业务占比高，业绩增长确定"
+    },
+    {
+      "stock_name": "华宏科技",
+      "stock_code": "002140",
+      "impact": 3,
+      "analysis": "稀土回收龙头，业绩存在低估"
+    },
+    {
+      "stock_name": "久远银海",
+      "stock_code": "002777",
+      "impact": 3,
+      "analysis": "医保数据开放试点取得进展，未来弹性巨大"
+    }
+  ],
+  "article_id": "32841cfc3f1d4b778b3d2ba1fbbc0f8b",
+  "article_date": "2023-01-30",
+  "article_title": "2023.1.30市场逻辑精选"
+}

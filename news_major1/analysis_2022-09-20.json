@@ -1,0 +1,99 @@
+{
+  "market_impact": 2,
+  "market_analysis": "市场情绪偏积极，部分板块和个股受利好消息提振。",
+  "sectors": [
+    {
+      "sector_name": "新能源光伏",
+      "impact": 3,
+      "analysis": "兆新股份股权拍卖，可能引发行业关注。"
+    },
+    {
+      "sector_name": "5G",
+      "impact": 3,
+      "analysis": "中国广电5G商用，相关产业链受益。"
+    },
+    {
+      "sector_name": "旅游",
+      "impact": 2,
+      "analysis": "边境旅游管理办法修订，旅游行业受益。"
+    },
+    {
+      "sector_name": "VR",
+      "impact": 2,
+      "analysis": "Pico全球发布会，VR行业受关注。"
+    },
+    {
+      "sector_name": "农业",
+      "impact": 2,
+      "analysis": "豆粕减量替代行动，相关替代品受益。"
+    },
+    {
+      "sector_name": "机床",
+      "impact": 2,
+      "analysis": "机床ETF获批，工业母机顶层设计推进。"
+    },
+    {
+      "sector_name": "酒店",
+      "impact": 2,
+      "analysis": "后疫情消费复苏，酒店行业受益。"
+    },
+    {
+      "sector_name": "大飞机",
+      "impact": 2,
+      "analysis": "C919即将获得适航证，国产大飞机迈入商用阶段。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "兆新股份",
+      "stock_code": "002681",
+      "impact": 3,
+      "analysis": "实控人股权拍卖，可能引发股价波动。"
+    },
+    {
+      "stock_name": "中国广电",
+      "stock_code": "600831",
+      "impact": 3,
+      "analysis": "5G商用，相关产业链受益。"
+    },
+    {
+      "stock_name": "桂林旅游",
+      "stock_code": "600200",
+      "impact": 2,
+      "analysis": "边境旅游管理办法修订，旅游行业受益。"
+    },
+    {
+      "stock_name": "Pico",
+      "stock_code": "无",
+      "impact": 2,
+      "analysis": "全球发布会，VR行业受关注。"
+    },
+    {
+      "stock_name": "梅花生物",
+      "stock_code": "600856",
+      "impact": 2,
+      "analysis": "豆粕减量替代行动，相关替代品受益。"
+    },
+    {
+      "stock_name": "光洋股份",
+      "stock_code": "002708",
+      "impact": 2,
+      "analysis": "公告涨停，产品定点通知。"
+    },
+    {
+      "stock_name": "华天酒店",
+      "stock_code": "000428",
+      "impact": 2,
+      "analysis": "后疫情消费复苏，酒店行业受益。"
+    },
+    {
+      "stock_name": "C919",
+      "stock_code": "无",
+      "impact": 2,
+      "analysis": "即将获得适航证，国产大飞机迈入商用阶段。"
+    }
+  ],
+  "article_title": "9月20日 盘前早8点 股市要闻关注",
+  "html_file": "bwnxk2ac8f.html",
+  "article_date": "2022-09-20"
+}

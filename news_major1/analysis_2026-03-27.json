@@ -1,0 +1,28 @@
+{
+  "market_impact": 0,
+  "market_analysis": "文章内容为用户讨论，对市场整体影响中性。",
+  "sectors": [
+    {
+      "sector_name": "光伏设备",
+      "impact": 0,
+      "analysis": "文章提及晶盛机电，但未明确利好光伏设备板块。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "再升科技",
+      "stock_code": "300328",
+      "impact": 0,
+      "analysis": "文章提及再升科技，但未明确表示利好或利空。"
+    },
+    {
+      "stock_name": "晶盛机电",
+      "stock_code": "300316",
+      "impact": 0,
+      "analysis": "文章提及晶盛机电，但未明确表示利好或利空。"
+    }
+  ],
+  "article_title": "3月27日盘前纪要",
+  "html_file": "article_jnss9jl66y.html",
+  "article_date": "2026-03-27"
+}

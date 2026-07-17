@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多板块受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "AI芯片",
+      "impact": 4,
+      "analysis": "阿里加大AI芯片投资，板块受益"
+    },
+    {
+      "sector_name": "白酒",
+      "impact": 3,
+      "analysis": "国务院支持服务消费，白酒板块受益"
+    },
+    {
+      "sector_name": "石油",
+      "impact": 3,
+      "analysis": "伊朗军事演习，石油板块受关注"
+    },
+    {
+      "sector_name": "特斯拉",
+      "impact": 3,
+      "analysis": "SpaceX考虑合并特斯拉，股价上涨"
+    },
+    {
+      "sector_name": "存储芯片",
+      "impact": 3,
+      "analysis": "闪迪Q2营收超预期，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "阿里芯片",
+      "stock_code": "旋极信息、全志科技、利扬芯片",
+      "impact": 4,
+      "analysis": "阿里加大AI芯片投资，相关股票受益"
+    },
+    {
+      "stock_name": "白酒",
+      "stock_code": "皇台酒业、酒鬼酒",
+      "impact": 3,
+      "analysis": "国务院支持服务消费，白酒股票受益"
+    },
+    {
+      "stock_name": "石油",
+      "stock_code": "准油股份、石化油服、山东墨龙",
+      "impact": 3,
+      "analysis": "伊朗军事演习，石油股票受关注"
+    },
+    {
+      "stock_name": "特斯拉",
+      "stock_code": "三花智控、拓普集团、五洲新春",
+      "impact": 3,
+      "analysis": "SpaceX考虑合并特斯拉，相关股票受益"
+    },
+    {
+      "stock_name": "存储芯片",
+      "stock_code": "德明利、香农芯创、普冉股份",
+      "impact": 3,
+      "analysis": "闪迪Q2营收超预期，存储芯片股票受益"
+    }
+  ],
+  "article_title": "1月30日盘前纪要",
+  "html_file": "1hj0z5xyvp9.html",
+  "article_date": "2026-01-30"
+}

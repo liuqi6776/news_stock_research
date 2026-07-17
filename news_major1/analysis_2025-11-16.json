@@ -1,0 +1,74 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受利好消息推动，但需关注反制措施的不确定性。",
+  "sectors": [
+    {
+      "sector_name": "固态电池设备",
+      "impact": 4,
+      "analysis": "固态电池设备需求增长，利好相关设备制造商。"
+    },
+    {
+      "sector_name": "国产替代",
+      "impact": 3,
+      "analysis": "反制措施推动国产替代，利好相关行业。"
+    },
+    {
+      "sector_name": "云计算",
+      "impact": 3,
+      "analysis": "谷歌投资数据中心，利好云计算行业。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "锡装股份",
+      "stock_code": "002871",
+      "impact": 4,
+      "analysis": "固态电池设备核心部件研发，受益行业增长。"
+    },
+    {
+      "stock_name": "荣旗科技",
+      "stock_code": "300711",
+      "impact": 3,
+      "analysis": "等静压设备供应商，受益行业需求增长。"
+    },
+    {
+      "stock_name": "中国武夷",
+      "stock_code": "000797",
+      "impact": 3,
+      "analysis": "福建本地国资房企，受益国产替代。"
+    },
+    {
+      "stock_name": "中际旭创",
+      "stock_code": "300308",
+      "impact": 3,
+      "analysis": "谷歌光模块主供应商，受益云计算行业增长。"
+    },
+    {
+      "stock_name": "英维克",
+      "stock_code": "002898",
+      "impact": 3,
+      "analysis": "谷歌液冷领域深度协作，受益云计算行业增长。"
+    },
+    {
+      "stock_name": "日出东方",
+      "stock_code": "600885",
+      "impact": 3,
+      "analysis": "热泵业务受益寒潮，业绩有望增长。"
+    },
+    {
+      "stock_name": "华映科技",
+      "stock_code": "600536",
+      "impact": 3,
+      "analysis": "华为供应商，受益华为业务增长。"
+    },
+    {
+      "stock_name": "中一科技",
+      "stock_code": "002953",
+      "impact": 3,
+      "analysis": "固态电池自生成负极技术，受益行业增长。"
+    }
+  ],
+  "article_id": "fcd2eb256e664adaac1f7eb3890c182d",
+  "article_date": "2025-11-16",
+  "article_title": "2025.11.16市场逻辑精选"
+}

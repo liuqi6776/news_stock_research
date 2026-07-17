@@ -1,0 +1,67 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极影响。",
+  "sectors": [
+    {
+      "sector_name": "机器人",
+      "impact": 4,
+      "analysis": "机器人技术发展推动相关板块上涨。"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "人工智能技术进步带动相关板块活跃。"
+    },
+    {
+      "sector_name": "新能源",
+      "impact": 3,
+      "analysis": "新能源政策支持相关板块上涨。"
+    },
+    {
+      "sector_name": "云计算",
+      "impact": 3,
+      "analysis": "腾讯资本开支增加，云计算板块受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "景业智能",
+      "stock_code": "股票代码未知",
+      "impact": 3,
+      "analysis": "特种四足机器人产品开发推动股价上涨。"
+    },
+    {
+      "stock_name": "风语筑",
+      "stock_code": "股票代码未知",
+      "impact": 3,
+      "analysis": "成立具身智能研究院，推动股价上涨。"
+    },
+    {
+      "stock_name": "申科股份",
+      "stock_code": "股票代码未知",
+      "impact": 2,
+      "analysis": "轴承产品应用领域广泛，股价受支撑。"
+    },
+    {
+      "stock_name": "腾讯",
+      "stock_code": "股票代码未知",
+      "impact": 4,
+      "analysis": "资本开支大增，推动股价上涨。"
+    },
+    {
+      "stock_name": "科华数据",
+      "stock_code": "股票代码未知",
+      "impact": 3,
+      "analysis": "腾讯云合作伙伴，股价受益。"
+    },
+    {
+      "stock_name": "宇通客车",
+      "stock_code": "股票代码未知",
+      "impact": 3,
+      "analysis": "新能源公交车补贴政策推动股价上涨。"
+    }
+  ],
+  "article_id": "74ba6d6ec26f484caf335c687c2b08df",
+  "article_date": "2025-03-19",
+  "article_title": "2025.3.19市场逻辑精选"
+}

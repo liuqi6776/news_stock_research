@@ -1,0 +1,85 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多板块利好。",
+  "sectors": [
+    {
+      "sector_name": "人工智能+医药",
+      "impact": 4,
+      "analysis": "政策支持，板块受益"
+    },
+    {
+      "sector_name": "物流",
+      "impact": 3,
+      "analysis": "跨境贸易便利化，物流行业受益"
+    },
+    {
+      "sector_name": "跨境电商",
+      "impact": 3,
+      "analysis": "政策支持，跨境电商行业受益"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "机器人研发进展，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "泓博医药",
+      "stock_code": "300682",
+      "impact": 4,
+      "analysis": "医药工业数智化转型，公司受益"
+    },
+    {
+      "stock_name": "贝瑞基因",
+      "stock_code": "300676",
+      "impact": 4,
+      "analysis": "医药工业数智化转型，公司受益"
+    },
+    {
+      "stock_name": "成都先导",
+      "stock_code": "300397",
+      "impact": 4,
+      "analysis": "医药工业数智化转型，公司受益"
+    },
+    {
+      "stock_name": "润达医疗",
+      "stock_code": "300962",
+      "impact": 4,
+      "analysis": "医药工业数智化转型，公司受益"
+    },
+    {
+      "stock_name": "保税科技",
+      "stock_code": "601318",
+      "impact": 3,
+      "analysis": "跨境贸易便利化，公司受益"
+    },
+    {
+      "stock_name": "嘉诚国际",
+      "stock_code": "002917",
+      "impact": 3,
+      "analysis": "跨境贸易便利化，公司受益"
+    },
+    {
+      "stock_name": "华贸物流",
+      "stock_code": "601518",
+      "impact": 3,
+      "analysis": "跨境贸易便利化，公司受益"
+    },
+    {
+      "stock_name": "天元股份",
+      "stock_code": "002912",
+      "impact": 3,
+      "analysis": "跨境电商，公司受益"
+    },
+    {
+      "stock_name": "三木集团",
+      "stock_code": "002387",
+      "impact": 3,
+      "analysis": "跨境电商，公司受益"
+    }
+  ],
+  "article_title": "4月25日盘前纪要",
+  "html_file": "3xgc5ayg5ln.html",
+  "article_date": "2025-04-25"
+}

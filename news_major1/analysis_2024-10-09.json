@@ -1,0 +1,83 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注政策预期变化。",
+  "sectors": [
+    {
+      "sector_name": "证券",
+      "impact": 4,
+      "analysis": "国泰君安复牌及政策预期利好板块"
+    },
+    {
+      "sector_name": "互联网金融",
+      "impact": 3,
+      "analysis": "国泰君安复牌及政策预期利好板块"
+    },
+    {
+      "sector_name": "AMC",
+      "impact": 3,
+      "analysis": "国泰君安复牌及政策预期利好板块"
+    },
+    {
+      "sector_name": "数据要素",
+      "impact": 4,
+      "analysis": "政策出台推动行业快速发展"
+    },
+    {
+      "sector_name": "家电",
+      "impact": 3,
+      "analysis": "以旧换新政策推动消费扩大"
+    },
+    {
+      "sector_name": "智能穿戴",
+      "impact": 3,
+      "analysis": "字节AI耳机产品发布预期"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "国泰君安",
+      "stock_code": "601211",
+      "impact": 4,
+      "analysis": "复牌及合并方案利好"
+    },
+    {
+      "stock_name": "天风证券",
+      "stock_code": "601162",
+      "impact": 3,
+      "analysis": "国泰君安复牌及政策预期利好"
+    },
+    {
+      "stock_name": "海通证券",
+      "stock_code": "600837",
+      "impact": 3,
+      "analysis": "国泰君安复牌及政策预期利好"
+    },
+    {
+      "stock_name": "银之杰",
+      "stock_code": "300385",
+      "impact": 3,
+      "analysis": "国泰君安复牌及政策预期利好"
+    },
+    {
+      "stock_name": "美的集团",
+      "stock_code": "000333",
+      "impact": 3,
+      "analysis": "以旧换新政策推动消费扩大"
+    },
+    {
+      "stock_name": "海尔智家",
+      "stock_code": "600690",
+      "impact": 3,
+      "analysis": "以旧换新政策推动消费扩大"
+    },
+    {
+      "stock_name": "漫步者",
+      "stock_code": "002351",
+      "impact": 3,
+      "analysis": "字节AI耳机产品发布预期"
+    }
+  ],
+  "article_id": "0cda97a0693647ba8a529787045dee87",
+  "article_date": "2024-10-09",
+  "article_title": "2024.10.9市场逻辑精选"
+}

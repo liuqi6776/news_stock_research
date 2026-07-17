@@ -1,0 +1,77 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多项政策利好，市场情绪提振",
+  "sectors": [
+    {
+      "sector_name": "券商",
+      "impact": 5,
+      "analysis": "印花税减半，利好明显"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 4,
+      "analysis": "再融资限制放宽，板块受益"
+    },
+    {
+      "sector_name": "科创",
+      "impact": 3,
+      "analysis": "指数样本调整，部分个股受益"
+    },
+    {
+      "sector_name": "粮食",
+      "impact": 3,
+      "analysis": "印度大米出口限制，价格上涨"
+    },
+    {
+      "sector_name": "新疆",
+      "impact": 3,
+      "analysis": "政策支持，区域发展受益"
+    },
+    {
+      "sector_name": "核聚变",
+      "impact": 3,
+      "analysis": "技术突破，相关企业受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "锦龙股份",
+      "stock_code": "000712",
+      "impact": 5,
+      "analysis": "券商板块龙头，利好明显"
+    },
+    {
+      "stock_name": "珠江股份",
+      "stock_code": "000402",
+      "impact": 4,
+      "analysis": "房地产板块，再融资限制放宽"
+    },
+    {
+      "stock_name": "华海清科",
+      "stock_code": "688018",
+      "impact": 3,
+      "analysis": "科创50指数样本股，受益指数调整"
+    },
+    {
+      "stock_name": "金健米业",
+      "stock_code": "600127",
+      "impact": 3,
+      "analysis": "印度大米出口限制，价格上涨"
+    },
+    {
+      "stock_name": "新疆交建",
+      "stock_code": "002941",
+      "impact": 3,
+      "analysis": "新疆区域发展受益"
+    },
+    {
+      "stock_name": "百利电气",
+      "stock_code": "600468",
+      "impact": 3,
+      "analysis": "核聚变技术突破，相关企业受益"
+    }
+  ],
+  "article_title": "8月28日盘前早报 热点事件关注",
+  "html_file": "937mx3luxt.html",
+  "article_date": "2023-08-28"
+}

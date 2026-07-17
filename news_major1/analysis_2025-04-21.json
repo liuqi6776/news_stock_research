@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "金融科技",
+      "impact": 4,
+      "analysis": "跨境支付和金融科技发展利好相关公司"
+    },
+    {
+      "sector_name": "跨境电商",
+      "impact": 3,
+      "analysis": "自贸区政策利好跨境电商行业"
+    },
+    {
+      "sector_name": "环保包装",
+      "impact": 3,
+      "analysis": "快递包装绿色化政策利好环保包装相关公司"
+    },
+    {
+      "sector_name": "AI应用",
+      "impact": 3,
+      "analysis": "AI应用发展利好相关公司"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "海联金汇",
+      "stock_code": "002537",
+      "impact": 4,
+      "analysis": "跨境支付业务受益"
+    },
+    {
+      "stock_name": "青岛金王",
+      "stock_code": "002094",
+      "impact": 3,
+      "analysis": "跨境电商业务受益"
+    },
+    {
+      "stock_name": "天元股份",
+      "stock_code": "002912",
+      "impact": 4,
+      "analysis": "环保包装业务受益"
+    },
+    {
+      "stock_name": "宏和科技",
+      "stock_code": "603090",
+      "impact": 3,
+      "analysis": "苹果供应商受益"
+    }
+  ],
+  "article_id": "9639cc7ea8084621870e8979d41aac6c",
+  "article_date": "2025-04-21",
+  "article_title": "2025.4.21市场逻辑精选"
+}

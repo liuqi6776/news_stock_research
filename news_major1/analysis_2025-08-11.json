@@ -1,0 +1,111 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "电源",
+      "impact": 4,
+      "analysis": "AI算力建设推动电源需求增长，相关公司受益"
+    },
+    {
+      "sector_name": "无人环卫",
+      "impact": 3,
+      "analysis": "AI+应用商业化加速，无人环卫行业招标加速"
+    },
+    {
+      "sector_name": "AI SSD",
+      "impact": 3,
+      "analysis": "华为AI SSD技术突破，相关产业链受益"
+    },
+    {
+      "sector_name": "封装材料",
+      "impact": 3,
+      "analysis": "华为封装材料合作，相关公司受益"
+    },
+    {
+      "sector_name": "传感器",
+      "impact": 2,
+      "analysis": "九鼎投资收购传感器企业，相关领域受益"
+    },
+    {
+      "sector_name": "锂矿",
+      "impact": 2,
+      "analysis": "停产或带动锂价上涨，相关公司受益"
+    },
+    {
+      "sector_name": "循环经济",
+      "impact": 2,
+      "analysis": "废旧塑料循环项目投产，相关公司受益"
+    },
+    {
+      "sector_name": "芯片设计",
+      "impact": 2,
+      "analysis": "万通发展收购芯片设计公司，相关领域受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中恒电气",
+      "stock_code": "002136",
+      "impact": 4,
+      "analysis": "为BAT、数据中心、超算中心提供HVDC供电技术方案"
+    },
+    {
+      "stock_name": "欧陆通",
+      "stock_code": "300990",
+      "impact": 4,
+      "analysis": "我国服务器电源龙头企业"
+    },
+    {
+      "stock_name": "玉禾田",
+      "stock_code": "603663",
+      "impact": 3,
+      "analysis": "城市运营业务占比约85%，已有无人驾驶环卫车"
+    },
+    {
+      "stock_name": "劲旅环境",
+      "stock_code": "603868",
+      "impact": 3,
+      "analysis": "具备整车控制器研发和批量应用能力"
+    },
+    {
+      "stock_name": "佰维存储",
+      "stock_code": "688017",
+      "impact": 3,
+      "analysis": "面向AI PCE推出高端DDR5超频内存条、PCIe 5.0 SSD等高性能存储产品"
+    },
+    {
+      "stock_name": "华正新材",
+      "stock_code": "603186",
+      "impact": 3,
+      "analysis": "与华为合作，覆盖FR4、高频、高速、导热、半导体封装等材料"
+    },
+    {
+      "stock_name": "九鼎投资",
+      "stock_code": "600059",
+      "impact": 2,
+      "analysis": "拟收购传感器企业南京神源"
+    },
+    {
+      "stock_name": "江特电机",
+      "stock_code": "002176",
+      "impact": 2,
+      "analysis": "停产或带动锂价上涨"
+    },
+    {
+      "stock_name": "中材节能",
+      "stock_code": "601717",
+      "impact": 2,
+      "analysis": "废旧塑料循环项目投产"
+    },
+    {
+      "stock_name": "万通发展",
+      "stock_code": "600249",
+      "impact": 2,
+      "analysis": "拟收购芯片设计公司数渡科技"
+    }
+  ],
+  "article_id": "2c611651754243a8b9a68b5bb1b6c3a4",
+  "article_date": "2025-08-11",
+  "article_title": "2025.8.11市场逻辑精选"
+}

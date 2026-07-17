@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪提升",
+  "sectors": [
+    {
+      "sector_name": "半导体",
+      "impact": 4,
+      "analysis": "大基金二期投资、技术突破利好"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "OpenAI新模型发布，技术进步利好"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "上海打造千亿产业规模，政策支持利好"
+    },
+    {
+      "sector_name": "工业互联网",
+      "impact": 3,
+      "analysis": "工信部推动新型信息基础设施建设和应用利好"
+    },
+    {
+      "sector_name": "造纸",
+      "impact": 2,
+      "analysis": "多家造纸企业涨价，需求回暖利好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "晶方科技",
+      "stock_code": "300456",
+      "impact": 4,
+      "analysis": "大基金二期投资对接会利好"
+    },
+    {
+      "stock_name": "当虹科技",
+      "stock_code": "300336",
+      "impact": 3,
+      "analysis": "GPT-4发布，技术进步利好"
+    },
+    {
+      "stock_name": "新湖中宝",
+      "stock_code": "600208",
+      "impact": 3,
+      "analysis": "氧化镓研究取得进展利好"
+    },
+    {
+      "stock_name": "美利云",
+      "stock_code": "000815",
+      "impact": 3,
+      "analysis": "数字宁夏行动计划实施方案利好"
+    },
+    {
+      "stock_name": "新时达",
+      "stock_code": "002527",
+      "impact": 3,
+      "analysis": "上海市智能机器人产业政策利好"
+    }
+  ],
+  "article_title": "3月15日盘前热点事件关注",
+  "html_file": "ah6hfxkq5q.html",
+  "article_date": "2023-03-15"
+}

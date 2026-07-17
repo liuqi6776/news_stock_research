@@ -1,0 +1,92 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受积极消息推动，但需关注后续进展。",
+  "sectors": [
+    {
+      "sector_name": "航天装备",
+      "impact": 4,
+      "analysis": "利好，海上回收火箭产业化推进，相关公司受益"
+    },
+    {
+      "sector_name": "风电",
+      "impact": 3,
+      "analysis": "利好，全球风电需求维持高景气，相关公司受益"
+    },
+    {
+      "sector_name": "商业航天",
+      "impact": 3,
+      "analysis": "利好，广州市推动商业航天发展，相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "箭元科技",
+      "stock_code": "000733",
+      "impact": 4,
+      "analysis": "利好，首个海上回收复用火箭产能基地开工"
+    },
+    {
+      "stock_name": "海兰信",
+      "stock_code": "300065",
+      "impact": 3,
+      "analysis": "利好，中标海南商业航天项目"
+    },
+    {
+      "stock_name": "巨力索具",
+      "stock_code": "002342",
+      "impact": 3,
+      "analysis": "利好，商业航天订单持续落地"
+    },
+    {
+      "stock_name": "金风科技",
+      "stock_code": "002202",
+      "impact": 3,
+      "analysis": "利好，全球风电龙头，海外在手订单充足"
+    },
+    {
+      "stock_name": "大金重工",
+      "stock_code": "002238",
+      "impact": 3,
+      "analysis": "利好，深耕塔筒管桩行业，布局漂浮式市场"
+    },
+    {
+      "stock_name": "普天科技",
+      "stock_code": "600679",
+      "impact": 3,
+      "analysis": "利好，开展空天智算领域关键技术研发"
+    },
+    {
+      "stock_name": "广电计量",
+      "stock_code": "002967",
+      "impact": 3,
+      "analysis": "利好，为火箭企业提供高端检测服务"
+    },
+    {
+      "stock_name": "武进不锈",
+      "stock_code": "600282",
+      "impact": 4,
+      "analysis": "利好，火箭不锈钢核心厂商"
+    },
+    {
+      "stock_name": "直真科技",
+      "stock_code": "300877",
+      "impact": 3,
+      "analysis": "利好，服务国内主流卫星互联网企业"
+    },
+    {
+      "stock_name": "黄河旋风",
+      "stock_code": "600172",
+      "impact": 3,
+      "analysis": "利好，参股NV金刚石铜供应商"
+    },
+    {
+      "stock_name": "航天科技",
+      "stock_code": "600343",
+      "impact": 3,
+      "analysis": "利好，航天应用产品配套国家重点工程"
+    }
+  ],
+  "article_id": "c17fe4a505ce4b9c80b68fc69aada751",
+  "article_date": "2026-01-08",
+  "article_title": "2026.1.8市场逻辑精选"
+}

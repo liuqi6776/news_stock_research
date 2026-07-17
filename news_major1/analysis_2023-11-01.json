@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受积极事件推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "小米产业链",
+      "impact": 4,
+      "analysis": "小米手机销量超预期，产业链受益"
+    },
+    {
+      "sector_name": "400G OTN",
+      "impact": 3,
+      "analysis": "400G OTN商用加速，相关产业链受益"
+    },
+    {
+      "sector_name": "消费电子",
+      "impact": 3,
+      "analysis": "小米手机销量强劲，消费电子板块受益"
+    },
+    {
+      "sector_name": "物流",
+      "impact": 2,
+      "analysis": "进博会带来物流需求，相关公司受益"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 2,
+      "analysis": "新能源汽车销量超预期，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "小米集团",
+      "stock_code": "01810",
+      "impact": 4,
+      "analysis": "手机销量强劲，产业链受益"
+    },
+    {
+      "stock_name": "光迅科技",
+      "stock_code": "002281",
+      "impact": 3,
+      "analysis": "400G OTN商用加速，公司受益"
+    },
+    {
+      "stock_name": "德科立",
+      "stock_code": "300260",
+      "impact": 3,
+      "analysis": "400G OTN商用加速，公司受益"
+    },
+    {
+      "stock_name": "光库科技",
+      "stock_code": "300362",
+      "impact": 3,
+      "analysis": "400G OTN商用加速，公司受益"
+    },
+    {
+      "stock_name": "瑞斯康达",
+      "stock_code": "600289",
+      "impact": 3,
+      "analysis": "受益运营商400G OTN商用集采"
+    }
+  ],
+  "article_id": "ccba372bf83e44438d036ebe584cdd36",
+  "article_date": "2023-11-01",
+  "article_title": "2023.11.1市场逻辑精选"
+}

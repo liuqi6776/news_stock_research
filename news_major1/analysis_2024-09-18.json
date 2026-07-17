@@ -1,0 +1,61 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场预期向好，政策支持力度加大。",
+  "sectors": [
+    {
+      "sector_name": "金融",
+      "impact": 4,
+      "analysis": "美联储降息及国内政策预期利好金融板块。"
+    },
+    {
+      "sector_name": "创投",
+      "impact": 3,
+      "analysis": "政策支持创投行业发展，板块受益。"
+    },
+    {
+      "sector_name": "信创",
+      "impact": 3,
+      "analysis": "信创大单落地，市场空间广阔。"
+    },
+    {
+      "sector_name": "维生素",
+      "impact": 2,
+      "analysis": "维生素价格有望上涨，相关公司受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "弘业期货",
+      "stock_code": "600128",
+      "impact": 3,
+      "analysis": "金融板块受益，期货公司受益。"
+    },
+    {
+      "stock_name": "天风证券",
+      "stock_code": "601162",
+      "impact": 3,
+      "analysis": "金融板块受益，证券公司受益。"
+    },
+    {
+      "stock_name": "汇金科技",
+      "stock_code": "300454",
+      "impact": 3,
+      "analysis": "国资入股，金融科技板块受益。"
+    },
+    {
+      "stock_name": "中国软件",
+      "stock_code": "600536",
+      "impact": 3,
+      "analysis": "信创大单落地，软件公司受益。"
+    },
+    {
+      "stock_name": "浙江医药",
+      "stock_code": "600216",
+      "impact": 2,
+      "analysis": "维生素价格上涨，维生素E公司受益。"
+    }
+  ],
+  "article_id": "a1f136a0e48e46cc9c5d8bb720635b0d",
+  "article_date": "2024-09-18",
+  "article_title": "2024.9.18市场逻辑精选"
+}

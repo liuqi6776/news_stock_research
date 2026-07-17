@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "智能驾驶",
+      "impact": 4,
+      "analysis": "地平线业绩超预期，带动板块上涨。"
+    },
+    {
+      "sector_name": "卫星通信",
+      "impact": 3,
+      "analysis": "工信部指导意见，推动行业发展。"
+    },
+    {
+      "sector_name": "鸿蒙生态",
+      "impact": 2,
+      "analysis": "鸿蒙生态大会召开，关注相关公司。"
+    },
+    {
+      "sector_name": "医疗医药",
+      "impact": 2,
+      "analysis": "江苏自贸区生物医药方案印发，板块受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "地平线",
+      "stock_code": "股票代码（未提供）",
+      "impact": 4,
+      "analysis": "业绩超预期，智能驾驶业务加速。"
+    },
+    {
+      "stock_name": "中科创达",
+      "stock_code": "股票代码（未提供）",
+      "impact": 3,
+      "analysis": "智能物联网业务爆发，净利润增长。"
+    },
+    {
+      "stock_name": "华联股份",
+      "stock_code": "000882",
+      "impact": 2,
+      "analysis": "间接持有地平线股份。"
+    },
+    {
+      "stock_name": "上汽集团",
+      "stock_code": "600104",
+      "impact": 2,
+      "analysis": "产业金融投资地平线。"
+    }
+  ],
+  "article_id": "3e14421ef70949de86d85d1657260ac7",
+  "article_date": "2025-08-27",
+  "article_title": "2025.8.27市场逻辑精选"
+}

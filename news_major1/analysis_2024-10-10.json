@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策支持，市场情绪积极",
+  "sectors": [
+    {
+      "sector_name": "一带一路",
+      "impact": 4,
+      "analysis": "基建合作深化，利好相关企业"
+    },
+    {
+      "sector_name": "城投公司",
+      "impact": 3,
+      "analysis": "化债政策预期，利好相关企业"
+    },
+    {
+      "sector_name": "出版",
+      "impact": 2,
+      "analysis": "高分红政策，利好相关企业"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中国中铁",
+      "stock_code": "601390",
+      "impact": 4,
+      "analysis": "一带一路基建合作主要承包商"
+    },
+    {
+      "stock_name": "北部湾港",
+      "stock_code": "000582",
+      "impact": 4,
+      "analysis": "港口航运相关"
+    },
+    {
+      "stock_name": "云南城投",
+      "stock_code": "600239",
+      "impact": 3,
+      "analysis": "城投公司，受益化债政策"
+    },
+    {
+      "stock_name": "山东出版",
+      "stock_code": "600759",
+      "impact": 2,
+      "analysis": "国资出版，高分红"
+    }
+  ],
+  "article_id": "a0c2801972bd402eab81ef64a9d16123",
+  "article_date": "2024-10-10",
+  "article_title": "2024.10.10市场逻辑精选"
+}

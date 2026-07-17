@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受积极因素驱动，但需关注个别板块和个股的波动。",
+  "sectors": [
+    {
+      "sector_name": "软件外包",
+      "impact": 4,
+      "analysis": "鸿蒙系统发展利好软件外包行业"
+    },
+    {
+      "sector_name": "环保",
+      "impact": 3,
+      "analysis": "美丽中国建设推动环保行业"
+    },
+    {
+      "sector_name": "锂电池",
+      "impact": 3,
+      "analysis": "锂矿供应紧张利好锂电池行业"
+    },
+    {
+      "sector_name": "数字货币",
+      "impact": 3,
+      "analysis": "比特币ETF获批利好数字货币行业"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "浙江人工智能发展规划利好相关行业"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "润和软件",
+      "stock_code": "300339",
+      "impact": 4,
+      "analysis": "受益于鸿蒙系统发展"
+    },
+    {
+      "stock_name": "大千生态",
+      "stock_code": "300425",
+      "impact": 3,
+      "analysis": "受益于美丽中国建设"
+    },
+    {
+      "stock_name": "智度股份",
+      "stock_code": "000676",
+      "impact": 4,
+      "analysis": "受益于比特币和鸿蒙系统"
+    },
+    {
+      "stock_name": "中矿资源",
+      "stock_code": "002738",
+      "impact": 3,
+      "analysis": "受益于锂矿供应紧张"
+    },
+    {
+      "stock_name": "劲仔食品",
+      "stock_code": "603969",
+      "impact": 3,
+      "analysis": "业绩增长"
+    }
+  ],
+  "article_id": "346f4e4da10b4f489a264bf4b57db7a6",
+  "article_date": "2024-01-11",
+  "article_title": "2024.1.11市场逻辑精选"
+}

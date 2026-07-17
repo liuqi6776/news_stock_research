@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "半导体",
+      "impact": 4,
+      "analysis": "英伟达恢复H20销售，利好半导体行业"
+    },
+    {
+      "sector_name": "数据中心",
+      "impact": 3,
+      "analysis": "数据中心建设加速，利好相关产业链"
+    },
+    {
+      "sector_name": "化工",
+      "impact": 2,
+      "analysis": "科思创工厂火灾，利好相关替代品"
+    },
+    {
+      "sector_name": "汽车产业链",
+      "impact": 3,
+      "analysis": "特斯拉新车发布，利好相关产业链"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中电港",
+      "stock_code": "600979",
+      "impact": 4,
+      "analysis": "英伟达核心分销商，受益于H20恢复销售"
+    },
+    {
+      "stock_name": "鸿博股份",
+      "stock_code": "002229",
+      "impact": 4,
+      "analysis": "提供英伟达AI服务器解决方案，受益于H20恢复销售"
+    },
+    {
+      "stock_name": "光环新网",
+      "stock_code": "300383",
+      "impact": 3,
+      "analysis": "数据中心业务突破，受益于数据中心建设加速"
+    },
+    {
+      "stock_name": "华丰科技",
+      "stock_code": "002869",
+      "impact": 4,
+      "analysis": "华为昇腾芯片供应商，受益于国产AI芯片发展"
+    }
+  ],
+  "article_id": "f7d0499142ad498987de239619e603f4",
+  "article_date": "2025-07-16",
+  "article_title": "2025.7.16市场逻辑精选"
+}

@@ -1,0 +1,432 @@
+{
+  "market_impact": 3,
+  "market_analysis": "低空经济和军工飞机板块受政策支持，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "低空经济",
+      "impact": 4,
+      "analysis": "政策支持力度大，订单潮预期，板块受益明显。"
+    },
+    {
+      "sector_name": "军工飞机",
+      "impact": 3,
+      "analysis": "歼35A亮相航展，军机需求增长，板块有望受益。"
+    },
+    {
+      "sector_name": "智能装备",
+      "impact": 3,
+      "analysis": "国资控股股东受让股权，公司布局智能装备，板块受关注。"
+    },
+    {
+      "sector_name": "水务",
+      "impact": 2,
+      "analysis": "天津水务集团资产注入预期，板块有望受益。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 2,
+      "analysis": "拟收购苏州赛芯股权，公司布局半导体领域，板块受关注。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "古鳌科技",
+      "stock_code": "002935",
+      "impact": 3,
+      "analysis": "子公司东高科技致力于投教服务和证券分析软件，公司发展前景良好。"
+    },
+    {
+      "stock_name": "六九一二",
+      "stock_code": "002470",
+      "impact": 3,
+      "analysis": "搜索器产品获得军方定型列装，公司技术实力强。"
+    },
+    {
+      "stock_name": "甘化科工",
+      "stock_code": "000576",
+      "impact": 3,
+      "analysis": "布局低空无人机领域业务，公司发展前景良好。"
+    },
+    {
+      "stock_name": "吉大正元",
+      "stock_code": "600528",
+      "impact": 3,
+      "analysis": "技术经验可应用于低空经济领域，公司发展前景良好。"
+    },
+    {
+      "stock_name": "深城交",
+      "stock_code": "002916",
+      "impact": 3,
+      "analysis": "打造低空经济标杆，公司发展前景良好。"
+    },
+    {
+      "stock_name": "中信海直",
+      "stock_code": "000099",
+      "impact": 3,
+      "analysis": "国内通航龙头，与多家evtol厂家有联系合作，公司发展前景良好。"
+    },
+    {
+      "stock_name": "云天励飞",
+      "stock_code": "002968",
+      "impact": 3,
+      "analysis": "AI技术领先，低空经济受益，公司发展前景良好。"
+    },
+    {
+      "stock_name": "兴森科技",
+      "stock_code": "002436",
+      "impact": 3,
+      "analysis": "PCB技术领先，低空经济受益，公司发展前景良好。"
+    },
+    {
+      "stock_name": "科瑞技术",
+      "stock_code": "002741",
+      "impact": 3,
+      "analysis": "智能配送技术领先，低空经济受益，公司发展前景良好。"
+    },
+    {
+      "stock_name": "赛为智能",
+      "stock_code": "300044",
+      "impact": 3,
+      "analysis": "无人机技术领先，低空经济受益，公司发展前景良好。"
+    },
+    {
+      "stock_name": "润贝航科",
+      "stock_code": "002977",
+      "impact": 3,
+      "analysis": "涂料技术领先，低空经济受益，公司发展前景良好。"
+    },
+    {
+      "stock_name": "恒拓开源",
+      "stock_code": "832872",
+      "impact": 3,
+      "analysis": "北交所弹性，公司发展前景良好。"
+    },
+    {
+      "stock_name": "流金科技",
+      "stock_code": "832873",
+      "impact": 3,
+      "analysis": "北交所弹性，公司发展前景良好。"
+    },
+    {
+      "stock_name": "创远信科",
+      "stock_code": "832874",
+      "impact": 3,
+      "analysis": "北交所弹性，公司发展前景良好。"
+    },
+    {
+      "stock_name": "并行科技",
+      "stock_code": "832875",
+      "impact": 3,
+      "analysis": "北交所弹性，公司发展前景良好。"
+    },
+    {
+      "stock_name": "云星宇",
+      "stock_code": "832876",
+      "impact": 3,
+      "analysis": "北交所弹性，公司发展前景良好。"
+    },
+    {
+      "stock_name": "民士达",
+      "stock_code": "832877",
+      "impact": 3,
+      "analysis": "北交所弹性，公司发展前景良好。"
+    },
+    {
+      "stock_name": "中航沈飞",
+      "stock_code": "600760",
+      "impact": 4,
+      "analysis": "航空装备整机龙头，国防建设担当兴装强军首责，公司发展前景良好。"
+    },
+    {
+      "stock_name": "中航电测",
+      "stock_code": "600372",
+      "impact": 4,
+      "analysis": "成飞集团资产注入，公司盈利水平显著提升，公司发展前景良好。"
+    },
+    {
+      "stock_name": "中航西飞",
+      "stock_code": "600733",
+      "impact": 3,
+      "analysis": "航空装备整机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "中无人机",
+      "stock_code": "300118",
+      "impact": 3,
+      "analysis": "航空装备整机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "洪都航空",
+      "stock_code": "600316",
+      "impact": 3,
+      "analysis": "航空装备整机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "中直股份",
+      "stock_code": "600038",
+      "impact": 3,
+      "analysis": "航空装备整机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "航天彩虹",
+      "stock_code": "002389",
+      "impact": 3,
+      "analysis": "航空装备整机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "航发动力",
+      "stock_code": "600893",
+      "impact": 3,
+      "analysis": "航空发动机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "航发控制",
+      "stock_code": "600862",
+      "impact": 3,
+      "analysis": "航空发动机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "航宇科技",
+      "stock_code": "002863",
+      "impact": 3,
+      "analysis": "航空发动机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "航发科技",
+      "stock_code": "600893",
+      "impact": 3,
+      "analysis": "航空发动机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "派克新材",
+      "stock_code": "603033",
+      "impact": 3,
+      "analysis": "航空发动机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "中航重机",
+      "stock_code": "600765",
+      "impact": 3,
+      "analysis": "航空发动机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "中航高科",
+      "stock_code": "600091",
+      "impact": 3,
+      "analysis": "航空发动机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "铂力特",
+      "stock_code": "300382",
+      "impact": 3,
+      "analysis": "航空发动机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "利君股份",
+      "stock_code": "002192",
+      "impact": 3,
+      "analysis": "航空发动机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "三角防务",
+      "stock_code": "300049",
+      "impact": 3,
+      "analysis": "航空发动机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "航宇科技",
+      "stock_code": "002863",
+      "impact": 3,
+      "analysis": "航空发动机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "爱乐达",
+      "stock_code": "300610",
+      "impact": 3,
+      "analysis": "航空发动机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "成都华微",
+      "stock_code": "600483",
+      "impact": 3,
+      "analysis": "航空发动机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "中航光电",
+      "stock_code": "002179",
+      "impact": 3,
+      "analysis": "航空发动机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "高华科技",
+      "stock_code": "300390",
+      "impact": 3,
+      "analysis": "航空发动机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "振芯科技",
+      "stock_code": "300362",
+      "impact": 3,
+      "analysis": "航空发动机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "紫光国微",
+      "stock_code": "002049",
+      "impact": 3,
+      "analysis": "航空发动机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "复旦微电",
+      "stock_code": "603838",
+      "impact": 3,
+      "analysis": "航空发动机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "新雷能",
+      "stock_code": "300510",
+      "impact": 3,
+      "analysis": "航空发动机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "国博电子",
+      "stock_code": "300709",
+      "impact": 3,
+      "analysis": "航空发动机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "振华风光",
+      "stock_code": "300438",
+      "impact": 3,
+      "analysis": "航空发动机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "鸿远电子",
+      "stock_code": "300454",
+      "impact": 3,
+      "analysis": "航空发动机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "火炬电子",
+      "stock_code": "300561",
+      "impact": 3,
+      "analysis": "航空发动机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "宏达电子",
+      "stock_code": "300423",
+      "impact": 3,
+      "analysis": "航空发动机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "智明达",
+      "stock_code": "300689",
+      "impact": 3,
+      "analysis": "航空发动机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "臻镭科技",
+      "stock_code": "300802",
+      "impact": 3,
+      "analysis": "航空发动机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "国光电气",
+      "stock_code": "300424",
+      "impact": 3,
+      "analysis": "航空发动机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "光威复材",
+      "stock_code": "300383",
+      "impact": 3,
+      "analysis": "航空发动机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "中简科技",
+      "stock_code": "300708",
+      "impact": 3,
+      "analysis": "航空发动机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "西部材料",
+      "stock_code": "002149",
+      "impact": 3,
+      "analysis": "航空发动机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "图南股份",
+      "stock_code": "300432",
+      "impact": 3,
+      "analysis": "航空发动机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "抚顺特钢",
+      "stock_code": "600399",
+      "impact": 3,
+      "analysis": "航空发动机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "钢研高纳",
+      "stock_code": "300458",
+      "impact": 3,
+      "analysis": "航空发动机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "宝钛股份",
+      "stock_code": "600456",
+      "impact": 3,
+      "analysis": "航空发动机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "西部超导",
+      "stock_code": "300682",
+      "impact": 3,
+      "analysis": "航空发动机龙头，公司发展前景良好。"
+    },
+    {
+      "stock_name": "晟楠科技",
+      "stock_code": "832878",
+      "impact": 3,
+      "analysis": "北交所弹性，公司发展前景良好。"
+    },
+    {
+      "stock_name": "通易航天",
+      "stock_code": "832879",
+      "impact": 3,
+      "analysis": "北交所弹性，公司发展前景良好。"
+    },
+    {
+      "stock_name": "赛摩智能",
+      "stock_code": "300446",
+      "impact": 3,
+      "analysis": "国资控股股东受让股权，公司布局智能装备，板块受关注。"
+    },
+    {
+      "stock_name": "兴源环境",
+      "stock_code": "300183",
+      "impact": 2,
+      "analysis": "化债后或注入荣芯半导，公司发展前景良好。"
+    },
+    {
+      "stock_name": "渤海股份",
+      "stock_code": "000605",
+      "impact": 2,
+      "analysis": "天津水务集团资产注入预期，公司发展前景良好。"
+    },
+    {
+      "stock_name": "兆易创新",
+      "stock_code": "603986",
+      "impact": 2,
+      "analysis": "拟收购苏州赛芯股权，公司布局半导体领域，板块受关注。"
+    },
+    {
+      "stock_name": "邦彦技术",
+      "stock_code": "300803",
+      "impact": 2,
+      "analysis": "正式发布邦彦云PCV1.0，公司发展前景良好。"
+    }
+  ],
+  "article_id": "df3ab3375f714f7aac3a7612ecd721bb",
+  "article_date": "2024-11-05",
+  "article_title": "2025.11.5市场逻辑精选"
+}

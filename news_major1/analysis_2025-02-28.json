@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多板块受利好消息提振。",
+  "sectors": [
+    {
+      "sector_name": "消费",
+      "impact": 3,
+      "analysis": "消费板块受提振，相关个股有望上涨。"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "机器人板块受特斯拉人形机器人出货量增加利好消息提振。"
+    },
+    {
+      "sector_name": "算力",
+      "impact": 3,
+      "analysis": "算力板块受腾讯混元新一代快思考模型发布利好消息提振。"
+    },
+    {
+      "sector_name": "新能源",
+      "impact": 3,
+      "analysis": "新能源板块受政策支持利好消息提振。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "庄园牧场",
+      "stock_code": "002910",
+      "impact": 3,
+      "analysis": "消费板块龙头，受提振明显。"
+    },
+    {
+      "stock_name": "雪龙集团",
+      "stock_code": "600583",
+      "impact": 3,
+      "analysis": "机器人板块龙头，受特斯拉人形机器人出货量增加利好消息提振。"
+    },
+    {
+      "stock_name": "大位科技",
+      "stock_code": "300832",
+      "impact": 3,
+      "analysis": "算力板块龙头，受腾讯混元新一代快思考模型发布利好消息提振。"
+    },
+    {
+      "stock_name": "康欣新材",
+      "stock_code": "603638",
+      "impact": 3,
+      "analysis": "发布估值提升计划，受提振明显。"
+    }
+  ],
+  "article_title": "2月28日盘前早报 热点事件关注",
+  "html_file": "bhuave70gu.html",
+  "article_date": "2025-02-28"
+}

@@ -1,0 +1,61 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受政策利好影响，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "多胎消费",
+      "impact": 4,
+      "analysis": "生育补贴政策推动相关消费，板块受益"
+    },
+    {
+      "sector_name": "科学仪器",
+      "impact": 3,
+      "analysis": "国产替代需求提升，行业有望受益"
+    },
+    {
+      "sector_name": "农机",
+      "impact": 3,
+      "analysis": "农业强国规划推动，农机装备有望受益"
+    },
+    {
+      "sector_name": "中欧贸易",
+      "impact": 3,
+      "analysis": "中欧深化合作，相关行业受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "孩子王",
+      "stock_code": "300752",
+      "impact": 4,
+      "analysis": "母婴商品零售龙头，受益生育补贴"
+    },
+    {
+      "stock_name": "骑士乳业",
+      "stock_code": "600782",
+      "impact": 4,
+      "analysis": "受益呼和浩特生育补贴政策"
+    },
+    {
+      "stock_name": "聚光科技",
+      "stock_code": "688015",
+      "impact": 3,
+      "analysis": "国产分析仪器平台型厂商，受益国产替代"
+    },
+    {
+      "stock_name": "天鹅股份",
+      "stock_code": "002296",
+      "impact": 3,
+      "analysis": "采棉机市占率最高，受益农机发展"
+    },
+    {
+      "stock_name": "天顺股份",
+      "stock_code": "002800",
+      "impact": 3,
+      "analysis": "布局中欧供应链，受益中欧贸易"
+    }
+  ],
+  "article_id": "3a4e15641d0d4946a5767958adff124e",
+  "article_date": "2025-04-08",
+  "article_title": "2025.4.8市场逻辑精选"
+}

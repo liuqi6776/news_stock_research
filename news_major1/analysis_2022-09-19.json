@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪偏乐观",
+  "sectors": [
+    {
+      "sector_name": "芯片",
+      "impact": 4,
+      "analysis": "6只ETF获批，行业利好"
+    },
+    {
+      "sector_name": "大飞机",
+      "impact": 3,
+      "analysis": "C919取证交付，行业进入商用阶段"
+    },
+    {
+      "sector_name": "甲醇",
+      "impact": 3,
+      "analysis": "工信部推广甲醇汽车，行业发展加速"
+    },
+    {
+      "sector_name": "太空旅行",
+      "impact": 2,
+      "analysis": "太空旅行有望开启，相关产业链受益"
+    },
+    {
+      "sector_name": "食品级二氧化碳",
+      "impact": 2,
+      "analysis": "英国停产，价格大幅上涨，行业受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "华大九天",
+      "stock_code": "300345",
+      "impact": 4,
+      "analysis": "芯片ETF获批，公司受益"
+    },
+    {
+      "stock_name": "通达股份",
+      "stock_code": "002560",
+      "impact": 3,
+      "analysis": "C919取证交付，公司受益"
+    },
+    {
+      "stock_name": "恒久科技",
+      "stock_code": "002808",
+      "impact": 3,
+      "analysis": "甲醇汽车推广，公司受益"
+    },
+    {
+      "stock_name": "中国卫星",
+      "stock_code": "600118",
+      "impact": 2,
+      "analysis": "太空旅行有望开启，公司受益"
+    },
+    {
+      "stock_name": "凯美特气",
+      "stock_code": "002549",
+      "impact": 2,
+      "analysis": "英国停产，价格大幅上涨，公司受益"
+    }
+  ],
+  "article_title": "9月19日 盘前早8点 股市要闻关注",
+  "html_file": "f6m3y1vyek.html",
+  "article_date": "2022-09-19"
+}

@@ -1,0 +1,77 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个行业和个股受积极事件影响。",
+  "sectors": [
+    {
+      "sector_name": "新能源汽车",
+      "impact": 4,
+      "analysis": "特斯拉Cybertruck订单增加，板块受益"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "算力租赁价格上涨，AI行业需求旺盛"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "钙钛矿效率突破，光伏行业技术进步"
+    },
+    {
+      "sector_name": "卫星互联网",
+      "impact": 3,
+      "analysis": "卫星互联网技术试验卫星成功发射，板块受益"
+    },
+    {
+      "sector_name": "工业互联网",
+      "impact": 2,
+      "analysis": "工信部发布政策支持，板块受益"
+    },
+    {
+      "sector_name": "自动驾驶",
+      "impact": 2,
+      "analysis": "特斯拉FSD落地推进，自动驾驶板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "威唐工业",
+      "stock_code": "603733",
+      "impact": 4,
+      "analysis": "特斯拉Cybertruck订单增加，公司受益"
+    },
+    {
+      "stock_name": "弘信电子",
+      "stock_code": "300082",
+      "impact": 3,
+      "analysis": "算力租赁价格上涨，公司受益"
+    },
+    {
+      "stock_name": "京山轻机",
+      "stock_code": "000821",
+      "impact": 3,
+      "analysis": "钙钛矿效率突破，公司受益"
+    },
+    {
+      "stock_name": "华力创通",
+      "stock_code": "300045",
+      "impact": 3,
+      "analysis": "卫星互联网技术试验卫星成功发射，公司受益"
+    },
+    {
+      "stock_name": "东土科技",
+      "stock_code": "300353",
+      "impact": 2,
+      "analysis": "工信部发布政策支持，公司受益"
+    },
+    {
+      "stock_name": "日盈电子",
+      "stock_code": "300326",
+      "impact": 2,
+      "analysis": "特斯拉FSD落地推进，公司受益"
+    }
+  ],
+  "article_title": "11月24日盘前早报 热点事件关注",
+  "html_file": "2mgsfsx4qs.html",
+  "article_date": "2023-11-24"
+}

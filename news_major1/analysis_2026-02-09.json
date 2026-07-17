@@ -1,0 +1,100 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受多题材驱动，呈现偏多态势。",
+  "sectors": [
+    {
+      "sector_name": "多模态AI",
+      "impact": 4,
+      "analysis": "AI技术突破，推动内容领域变革，利好相关企业。"
+    },
+    {
+      "sector_name": "靶材",
+      "impact": 3,
+      "analysis": "靶材产业提价预期，利好相关半导体企业。"
+    },
+    {
+      "sector_name": "量子科技",
+      "impact": 3,
+      "analysis": "量子科技亮相春晚，行业关注度提升，利好相关企业。"
+    },
+    {
+      "sector_name": "光通信",
+      "impact": 3,
+      "analysis": "兆驰股份光通信业务有望放量，利好相关企业。"
+    },
+    {
+      "sector_name": "天然气发动机零部件",
+      "impact": 3,
+      "analysis": "联德股份天然气发动机零部件业务增长，利好相关企业。"
+    },
+    {
+      "sector_name": "AI漫剧",
+      "impact": 3,
+      "analysis": "德才股份与字节跳动合作，AI漫剧制作周期有望压缩，利好相关企业。"
+    },
+    {
+      "sector_name": "AI影视",
+      "impact": 3,
+      "analysis": "欢瑞世纪布局AI影视大模型，利好相关企业。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "海天瑞声",
+      "stock_code": "300329",
+      "impact": 4,
+      "analysis": "多模态AI领域领先企业，受益于技术突破。"
+    },
+    {
+      "stock_name": "当虹科技",
+      "stock_code": "300336",
+      "impact": 4,
+      "analysis": "多模态及超级压缩技术领先，降低传输成本。"
+    },
+    {
+      "stock_name": "江丰电子",
+      "stock_code": "603156",
+      "impact": 3,
+      "analysis": "靶材龙头企业，产品结构持续优化。"
+    },
+    {
+      "stock_name": "欧莱新材",
+      "stock_code": "603790",
+      "impact": 3,
+      "analysis": "半导体靶材供应商，业绩反转预期。"
+    },
+    {
+      "stock_name": "阿石创",
+      "stock_code": "300386",
+      "impact": 3,
+      "analysis": "面板靶材头部供应商，产品应用广泛。"
+    },
+    {
+      "stock_name": "兆驰股份",
+      "stock_code": "002429",
+      "impact": 3,
+      "analysis": "光通信业务有望放量，业绩增长预期。"
+    },
+    {
+      "stock_name": "联德股份",
+      "stock_code": "002846",
+      "impact": 3,
+      "analysis": "天然气发动机零部件核心供应商，业务增长预期。"
+    },
+    {
+      "stock_name": "德才股份",
+      "stock_code": "300528",
+      "impact": 3,
+      "analysis": "AI漫剧制作周期有望压缩，业绩增长预期。"
+    },
+    {
+      "stock_name": "欢瑞世纪",
+      "stock_code": "000892",
+      "impact": 3,
+      "analysis": "布局AI影视大模型，业绩增长预期。"
+    }
+  ],
+  "article_id": "39cc48cbf8264a73bcd1114e9fdee20c",
+  "article_date": "2026-02-09",
+  "article_title": "2026.2.9市场逻辑精选"
+}

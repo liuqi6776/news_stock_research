@@ -1,0 +1,90 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受积极因素影响，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "人工智能",
+      "impact": 4,
+      "analysis": "Transformer技术发展推动板块上涨。"
+    },
+    {
+      "sector_name": "影视院线",
+      "impact": 3,
+      "analysis": "贺岁档期临近，票房预期提升。"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 3,
+      "analysis": "半固态电池产业化推动板块上涨。"
+    },
+    {
+      "sector_name": "商业零售",
+      "impact": 2,
+      "analysis": "中越关系改善，商业零售板块受益。"
+    },
+    {
+      "sector_name": "国企改革",
+      "impact": 2,
+      "analysis": "国企改革板块活跃，相关个股受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "汉王科技",
+      "stock_code": "002362",
+      "impact": 4,
+      "analysis": "Transformer技术应用于文本生成。"
+    },
+    {
+      "stock_name": "中科金财",
+      "stock_code": "002657",
+      "impact": 3,
+      "analysis": "智能客服机器人采用Transformer算法。"
+    },
+    {
+      "stock_name": "拓尔思",
+      "stock_code": "300229",
+      "impact": 3,
+      "analysis": "自然语言处理工具使用Transformer架构。"
+    },
+    {
+      "stock_name": "神州泰岳",
+      "stock_code": "300002",
+      "impact": 3,
+      "analysis": "中文信息深度处理平台基于Transformer架构。"
+    },
+    {
+      "stock_name": "孩子王",
+      "stock_code": "002612",
+      "impact": 3,
+      "analysis": "KidsGPT智能顾问基于Transformer开发。"
+    },
+    {
+      "stock_name": "万达电影",
+      "stock_code": "002739",
+      "impact": 3,
+      "analysis": "贺岁档期临近，票房预期提升。"
+    },
+    {
+      "stock_name": "卫蓝新能源",
+      "stock_code": "300782",
+      "impact": 3,
+      "analysis": "半固态电池首次大批量出货。"
+    },
+    {
+      "stock_name": "当升科技",
+      "stock_code": "300074",
+      "impact": 3,
+      "analysis": "半固态电池正极材料供应商。"
+    },
+    {
+      "stock_name": "天齐锂业",
+      "stock_code": "002466",
+      "impact": 3,
+      "analysis": "半固态电池锂金属负极材料供应商。"
+    }
+  ],
+  "article_id": "295cafc850d547c9a1865fd2a06215ce",
+  "article_date": "2023-12-12",
+  "article_title": "2023.12.12市场逻辑精选"
+}

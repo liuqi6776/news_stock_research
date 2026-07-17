@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受预期事件影响，波动较大。",
+  "sectors": [
+    {
+      "sector_name": "机器人",
+      "impact": 4,
+      "analysis": "特斯拉机器人量产预期推动板块上涨。"
+    },
+    {
+      "sector_name": "冰雪经济",
+      "impact": 3,
+      "analysis": "亚洲冬季运动会举办，冰雪经济板块受益。"
+    },
+    {
+      "sector_name": "AI 眼镜",
+      "impact": 3,
+      "analysis": "小米 AI 眼镜发布，相关概念股受关注。"
+    },
+    {
+      "sector_name": "无人物流",
+      "impact": 3,
+      "analysis": "文远知行发布新物种，无人物流概念股上涨。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "拓普集团",
+      "stock_code": "002481",
+      "impact": 4,
+      "analysis": "特斯拉机器人量产预期，股价上涨。"
+    },
+    {
+      "stock_name": "通达电气",
+      "stock_code": "002576",
+      "impact": 3,
+      "analysis": "比亚迪智驾概念，股价上涨。"
+    },
+    {
+      "stock_name": "雷柏科技",
+      "stock_code": "002577",
+      "impact": 3,
+      "analysis": "小米 AI 眼镜概念，股价上涨。"
+    },
+    {
+      "stock_name": "文远知行",
+      "stock_code": "688598",
+      "impact": 4,
+      "analysis": "发布无人配送新物种，股价大涨。"
+    }
+  ],
+  "article_title": "2月7日盘前早报 热点事件关注",
+  "html_file": "4wu3seaj9h.html",
+  "article_date": "2025-02-07"
+}

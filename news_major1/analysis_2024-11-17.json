@@ -1,0 +1,68 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注个股风险。",
+  "sectors": [
+    {
+      "sector_name": "锂电池",
+      "impact": 4,
+      "analysis": "硅基负极技术突破，推动板块上涨。"
+    },
+    {
+      "sector_name": "电子元件",
+      "impact": 3,
+      "analysis": "固态电池技术提升，相关公司受益。"
+    },
+    {
+      "sector_name": "铜箔",
+      "impact": 3,
+      "analysis": "硅基负极应用提升对铜箔要求，相关公司受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "贝特瑞",
+      "stock_code": "300762",
+      "impact": 4,
+      "analysis": "硅基负极材料领先企业，技术突破利好。"
+    },
+    {
+      "stock_name": "硅宝科技",
+      "stock_code": "300019",
+      "impact": 4,
+      "analysis": "硅基负极材料相关企业，技术突破利好。"
+    },
+    {
+      "stock_name": "佳云科技",
+      "stock_code": "300242",
+      "impact": 3,
+      "analysis": "控股股东股权司法拍卖，关注控制权变动。"
+    },
+    {
+      "stock_name": "三六零",
+      "stock_code": "601360",
+      "impact": 3,
+      "analysis": "AI大模型助力广告业务，业绩有望提升。"
+    },
+    {
+      "stock_name": "南京化纤",
+      "stock_code": "600889",
+      "impact": 3,
+      "analysis": "拟购买南京工艺100%股份，业务拓展利好。"
+    },
+    {
+      "stock_name": "焦点科技",
+      "stock_code": "002315",
+      "impact": 3,
+      "analysis": "AI应用持续落地，业绩有望提升。"
+    },
+    {
+      "stock_name": "*ST有树",
+      "stock_code": "002361",
+      "impact": 3,
+      "analysis": "跨境电商“独角兽”成为投资人，业务有望拓展。"
+    }
+  ],
+  "article_id": "de47abeec5024dcb8d46ff61ec41810d",
+  "article_date": "2024-11-17",
+  "article_title": "2024.11.17市场逻辑精选"
+}

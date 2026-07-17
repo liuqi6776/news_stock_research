@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受AI和烯草酮价格上涨影响，偏利好。",
+  "sectors": [
+    {
+      "sector_name": "AI概念",
+      "impact": 4,
+      "analysis": "AI产品发布预期推动板块上涨。"
+    },
+    {
+      "sector_name": "化工",
+      "impact": 3,
+      "analysis": "烯草酮价格上涨，相关公司受益。"
+    },
+    {
+      "sector_name": "跨境电商",
+      "impact": 3,
+      "analysis": "实控人变更，跨境电商概念受关注。"
+    },
+    {
+      "sector_name": "核电",
+      "impact": 2,
+      "analysis": "核电项目核准，相关公司受益。"
+    },
+    {
+      "sector_name": "潮玩",
+      "impact": 2,
+      "analysis": "合作头部运营商，潮玩概念受关注。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "金桥信息",
+      "stock_code": "300777",
+      "impact": 4,
+      "analysis": "阿里司法行业人工智能联合创新基地合作。"
+    },
+    {
+      "stock_name": "先达股份",
+      "stock_code": "002456",
+      "impact": 4,
+      "analysis": "烯草酮价格上涨，公司为最大供应商。"
+    },
+    {
+      "stock_name": "绿康生化",
+      "stock_code": "300979",
+      "impact": 3,
+      "analysis": "实控人变更，跨境电商概念。"
+    },
+    {
+      "stock_name": "弘景光电",
+      "stock_code": "300676",
+      "impact": 3,
+      "analysis": "影石创新镜头模组核心供应商。"
+    },
+    {
+      "stock_name": "天沃科技",
+      "stock_code": "002564",
+      "impact": 3,
+      "analysis": "核电部件生产商，叠加摘帽。"
+    }
+  ],
+  "article_id": "aa2769c4f44540b4b78fcd9b700e82d5",
+  "article_date": "2025-04-28",
+  "article_title": "2025.4.28市场逻辑精选"
+}

@@ -1,0 +1,56 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受地缘政治和科技自主化驱动，短期内有上涨动力。",
+  "sectors": [
+    {
+      "sector_name": "国防军工",
+      "impact": 4,
+      "analysis": "导弹、雷达、3D打印等需求增加，板块受益明显。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "光刻机国产化加速，相关产业链受益。"
+    },
+    {
+      "sector_name": "航空航天",
+      "impact": 3,
+      "analysis": "商业航天和卫星应用推动板块上涨。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "雷科防务",
+      "stock_code": "002413",
+      "impact": 4,
+      "analysis": "雷达系统和智能弹药业务受益。"
+    },
+    {
+      "stock_name": "天箭科技",
+      "stock_code": "300378",
+      "impact": 4,
+      "analysis": "弹载固态发射机业务增长。"
+    },
+    {
+      "stock_name": "张江高科",
+      "stock_code": "600895",
+      "impact": 3,
+      "analysis": "上海微电子持股，光刻机产业链受益。"
+    },
+    {
+      "stock_name": "铂力特",
+      "stock_code": "300846",
+      "impact": 4,
+      "analysis": "金属3D打印领军企业，业务增长。"
+    },
+    {
+      "stock_name": "航天环宇",
+      "stock_code": "300690",
+      "impact": 3,
+      "analysis": "商业航天和卫星应用推动股价上涨。"
+    }
+  ],
+  "article_id": "9f3ca27bf9e0485e9302c0ae4b15f172",
+  "article_date": "2025-11-24",
+  "article_title": "2025.11.24市场逻辑精选"
+}

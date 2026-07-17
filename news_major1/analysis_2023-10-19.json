@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪活跃，多事件驱动板块和个股表现。",
+  "sectors": [
+    {
+      "sector_name": "华为概念",
+      "impact": 4,
+      "analysis": "华为相关业务及合作利好相关个股。"
+    },
+    {
+      "sector_name": "芯片概念",
+      "impact": 3,
+      "analysis": "芯片出口限制及国产替代预期提升板块关注度。"
+    },
+    {
+      "sector_name": "VR概念",
+      "impact": 3,
+      "analysis": "华为举办VR论坛，行业关注度提升。"
+    },
+    {
+      "sector_name": "黄金概念",
+      "impact": 2,
+      "analysis": "地缘政治紧张，黄金避险属性增强。"
+    },
+    {
+      "sector_name": "石油概念",
+      "impact": 2,
+      "analysis": "地缘政治紧张，石油价格波动预期增强。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "高新发展",
+      "stock_code": "000628",
+      "impact": 5,
+      "analysis": "拟购买华鲲振宇股权，复牌预期强烈。"
+    },
+    {
+      "stock_name": "荣科科技",
+      "stock_code": "300290",
+      "impact": 4,
+      "analysis": "收购超聚变，华为概念受益。"
+    },
+    {
+      "stock_name": "佳创视讯",
+      "stock_code": "300264",
+      "impact": 3,
+      "analysis": "华为举办VR论坛，VR概念受益。"
+    },
+    {
+      "stock_name": "四川黄金",
+      "stock_code": "002758",
+      "impact": 3,
+      "analysis": "地缘政治紧张，黄金避险属性增强。"
+    },
+    {
+      "stock_name": "贝肯能源",
+      "stock_code": "002828",
+      "impact": 3,
+      "analysis": "地缘政治紧张，石油价格波动预期增强。"
+    }
+  ],
+  "article_title": "10月19日盘前早报 热点事件关注",
+  "html_file": "7hr9fww8e7.html",
+  "article_date": "2023-10-19"
+}

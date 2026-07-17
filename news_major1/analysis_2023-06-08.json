@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "人工智能",
+      "impact": 4,
+      "analysis": "AI大会、数据版权倡议书等利好消息推动"
+    },
+    {
+      "sector_name": "边缘计算",
+      "impact": 3,
+      "analysis": "英伟达边缘计算平台亮相，相关产业链受益"
+    },
+    {
+      "sector_name": "体育",
+      "impact": 2,
+      "analysis": "全国村BA篮球大赛举办，体育板块受关注"
+    },
+    {
+      "sector_name": "算力",
+      "impact": 3,
+      "analysis": "浪潮发布算力网络操作系统，算力产业链受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "鸿博股份",
+      "stock_code": "002229",
+      "impact": 4,
+      "analysis": "AI创新赋能中心项目运营，股价受提振"
+    },
+    {
+      "stock_name": "浪潮信息",
+      "stock_code": "000977",
+      "impact": 3,
+      "analysis": "发布算力网络操作系统，股价受益"
+    },
+    {
+      "stock_name": "中科创达",
+      "stock_code": "300244",
+      "impact": 3,
+      "analysis": "与英伟达合作边缘计算，股价受益"
+    },
+    {
+      "stock_name": "中体产业",
+      "stock_code": "600882",
+      "impact": 2,
+      "analysis": "全国村BA篮球大赛举办，股价受益"
+    }
+  ],
+  "article_title": "6月8日 盘前热点事件关注",
+  "html_file": "7bahc3n2nr.html",
+  "article_date": "2023-06-08"
+}

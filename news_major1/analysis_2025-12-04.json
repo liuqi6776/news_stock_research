@@ -1,0 +1,79 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "卫星互联网",
+      "impact": 4,
+      "analysis": "利好，低轨卫星飞机互联合作推动行业发展。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "利好，国产存储巨头上市预期提升行业关注度。"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "利好，国产GPU龙头申购，行业关注度提升。"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "利好，机器人行业政策预期提升板块关注度。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "垣信卫星",
+      "stock_code": "600496",
+      "impact": 4,
+      "analysis": "利好，低轨卫星飞机互联合作推动股价上涨。"
+    },
+    {
+      "stock_name": "沐曦股份",
+      "stock_code": "688382",
+      "impact": 4,
+      "analysis": "利好，国产GPU龙头申购，股价有望上涨。"
+    },
+    {
+      "stock_name": "合肥长鑫",
+      "stock_code": "603986",
+      "impact": 3,
+      "analysis": "利好，国产存储巨头上市预期提升股价。"
+    },
+    {
+      "stock_name": "双星新材",
+      "stock_code": "002585",
+      "impact": 3,
+      "analysis": "利好，行业自律减产提升产品价格。"
+    },
+    {
+      "stock_name": "海昌新材",
+      "stock_code": "603399",
+      "impact": 3,
+      "analysis": "利好，人形机器人合作提升股价。"
+    },
+    {
+      "stock_name": "东珠生态",
+      "stock_code": "300388",
+      "impact": 3,
+      "analysis": "利好，机器人+卫星通信双重驱动股价上涨。"
+    },
+    {
+      "stock_name": "龙溪股份",
+      "stock_code": "600582",
+      "impact": 3,
+      "analysis": "利好，机器人关节轴承在研提升股价。"
+    },
+    {
+      "stock_name": "舒华体育",
+      "stock_code": "603850",
+      "impact": 3,
+      "analysis": "利好，体育行业政策预期提升股价。"
+    }
+  ],
+  "article_id": "9e15f582b88243c7ba876c0ec67d6ad9",
+  "article_date": "2025-12-04",
+  "article_title": "2025.12.4市场逻辑精选"
+}

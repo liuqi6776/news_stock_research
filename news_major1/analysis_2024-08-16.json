@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股受积极因素影响",
+  "sectors": [
+    {
+      "sector_name": "锑及超硬材料",
+      "impact": 3,
+      "analysis": "出口管制政策利好相关企业"
+    },
+    {
+      "sector_name": "商业航天",
+      "impact": 3,
+      "analysis": "美股商业航天概念上涨，带动A股相关个股"
+    },
+    {
+      "sector_name": "AI眼镜",
+      "impact": 3,
+      "analysis": "新增AI眼镜概念，多股受益"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "上海集成电路产投基金增资，利好半导体板块"
+    },
+    {
+      "sector_name": "AI PC",
+      "impact": 3,
+      "analysis": "联想AI PC出货量增长，利好相关企业"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "华钰矿业",
+      "stock_code": "600387",
+      "impact": 3,
+      "analysis": "锑金属出口管制受益"
+    },
+    {
+      "stock_name": "黄河旋风",
+      "stock_code": "600172",
+      "impact": 3,
+      "analysis": "超硬材料出口管制受益"
+    },
+    {
+      "stock_name": "航天晨光",
+      "stock_code": "600879",
+      "impact": 3,
+      "analysis": "商业航天概念受益"
+    },
+    {
+      "stock_name": "亚世光电",
+      "stock_code": "300381",
+      "impact": 3,
+      "analysis": "AI眼镜概念受益"
+    },
+    {
+      "stock_name": "上海贝岭",
+      "stock_code": "600171",
+      "impact": 3,
+      "analysis": "半导体板块受益"
+    }
+  ],
+  "article_title": "8月16日盘前早报 热点事件关注",
+  "html_file": "9lc01c3207.html",
+  "article_date": "2024-08-16"
+}

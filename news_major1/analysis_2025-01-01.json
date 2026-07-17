@@ -1,0 +1,96 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极影响。",
+  "sectors": [
+    {
+      "sector_name": "数据中心GPU",
+      "impact": 4,
+      "analysis": "沐曦股份改革，相关公司受益"
+    },
+    {
+      "sector_name": "消费",
+      "impact": 3,
+      "analysis": "提振消费政策，相关行业受益"
+    },
+    {
+      "sector_name": "机器狗",
+      "impact": 3,
+      "analysis": "商业化加速，相关公司受益"
+    },
+    {
+      "sector_name": "种业",
+      "impact": 3,
+      "analysis": "转基因持续推进，相关公司受益"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "闻泰科技转型，相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "沐曦股份",
+      "stock_code": "300568",
+      "impact": 4,
+      "analysis": "股份制改革，资本市场规划启动"
+    },
+    {
+      "stock_name": "超讯通信",
+      "stock_code": "300362",
+      "impact": 3,
+      "analysis": "沐曦GPU总代理商，获批量订单"
+    },
+    {
+      "stock_name": "优刻得",
+      "stock_code": "603260",
+      "impact": 3,
+      "analysis": "与沐曦合作发布GPU大模型"
+    },
+    {
+      "stock_name": "景嘉微",
+      "stock_code": "300474",
+      "impact": 3,
+      "analysis": "与沐曦合作开发GPU产品"
+    },
+    {
+      "stock_name": "友好集团",
+      "stock_code": "600723",
+      "impact": 3,
+      "analysis": "提振消费政策，零售行业受益"
+    },
+    {
+      "stock_name": "来伊份",
+      "stock_code": "603179",
+      "impact": 3,
+      "analysis": "微信小店激励计划，电商行业受益"
+    },
+    {
+      "stock_name": "闻泰科技",
+      "stock_code": "600745",
+      "impact": 4,
+      "analysis": "战略转型，聚焦半导体业务"
+    },
+    {
+      "stock_name": "炬芯科技",
+      "stock_code": "300806",
+      "impact": 3,
+      "analysis": "AI眼镜芯片，存内计算赋能"
+    },
+    {
+      "stock_name": "南华仪器",
+      "stock_code": "300502",
+      "impact": 3,
+      "analysis": "拟获得嘉得力控制权"
+    },
+    {
+      "stock_name": "海天股份",
+      "stock_code": "002122",
+      "impact": 3,
+      "analysis": "拟收购贺利氏光伏银浆事业部"
+    }
+  ],
+  "article_id": "5cc6f2a8f3ef43c583ce34bc02f2806f",
+  "article_date": "2025-01-01",
+  "article_title": "2025.1.1市场逻辑精选"
+}

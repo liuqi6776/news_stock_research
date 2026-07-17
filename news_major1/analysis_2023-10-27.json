@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "存储芯片",
+      "impact": 4,
+      "analysis": "三星存储产品价格上涨，板块受益"
+    },
+    {
+      "sector_name": "自动驾驶",
+      "impact": 3,
+      "analysis": "自动驾驶相关政策和标准出台，板块受益"
+    },
+    {
+      "sector_name": "能源算力",
+      "impact": 3,
+      "analysis": "协鑫能科计划建立能源算力中心，板块受益"
+    },
+    {
+      "sector_name": "AI",
+      "impact": 3,
+      "analysis": "创业黑马与亿微征信合作，AI板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "万润科技",
+      "stock_code": "002654",
+      "impact": 4,
+      "analysis": "存储芯片价格上涨，公司受益"
+    },
+    {
+      "stock_name": "启明信息",
+      "stock_code": "002594",
+      "impact": 3,
+      "analysis": "自动驾驶政策出台，公司受益"
+    },
+    {
+      "stock_name": "协鑫能科",
+      "stock_code": "002015",
+      "impact": 3,
+      "analysis": "公司计划建立能源算力中心，受益"
+    },
+    {
+      "stock_name": "创业黑马",
+      "stock_code": "300596",
+      "impact": 3,
+      "analysis": "公司与亿微征信合作，AI业务受益"
+    }
+  ],
+  "article_title": "10月27日盘前早报 热点事件关注",
+  "html_file": "au4a9xagkx.html",
+  "article_date": "2023-10-27"
+}

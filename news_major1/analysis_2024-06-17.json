@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪提升",
+  "sectors": [
+    {
+      "sector_name": "低空经济",
+      "impact": 4,
+      "analysis": "首飞事件及产业基金设立，板块受提振"
+    },
+    {
+      "sector_name": "智能网联汽车",
+      "impact": 3,
+      "analysis": "技术年会及产业预期增长，板块受益"
+    },
+    {
+      "sector_name": "科技创新",
+      "impact": 3,
+      "analysis": "再贷款政策及芯片行业利好"
+    },
+    {
+      "sector_name": "金融",
+      "impact": 2,
+      "analysis": "券商合并重组预期，板块情绪提升"
+    },
+    {
+      "sector_name": "电竞",
+      "impact": 2,
+      "analysis": "奥委会提议办电竞奥运会，板块受关注"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "小鹏汇天",
+      "stock_code": "000968",
+      "impact": 4,
+      "analysis": "首飞事件，股价有望上涨"
+    },
+    {
+      "stock_name": "中信海直",
+      "stock_code": "000099",
+      "impact": 3,
+      "analysis": "低空经济受益，股价有望上涨"
+    },
+    {
+      "stock_name": "金溢科技",
+      "stock_code": "002869",
+      "impact": 3,
+      "analysis": "车路云一体化，股价有望上涨"
+    },
+    {
+      "stock_name": "上海贝岭",
+      "stock_code": "600171",
+      "impact": 3,
+      "analysis": "科技创新再贷款，股价有望上涨"
+    },
+    {
+      "stock_name": "海联金汇",
+      "stock_code": "002537",
+      "impact": 2,
+      "analysis": "抖音支付变更，股价有望上涨"
+    }
+  ],
+  "article_title": "6月17日盘前早报 热点事件关注",
+  "html_file": "67fejntysm.html",
+  "article_date": "2024-06-17"
+}

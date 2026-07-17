@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受地缘政治和科技行业利好影响，整体偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "军工",
+      "impact": 4,
+      "analysis": "地缘政治紧张及中航电测复牌预期推动板块上涨。"
+    },
+    {
+      "sector_name": "电池",
+      "impact": 3,
+      "analysis": "特斯拉扩产及4680电池良率提升预期利好板块。"
+    },
+    {
+      "sector_name": "芯片",
+      "impact": 3,
+      "analysis": "日荷加入美对中制裁，但行业复苏预期支撑板块。"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "ChatGPT及AIGC概念炒作预期推动板块上涨。"
+    },
+    {
+      "sector_name": "航天工程",
+      "impact": 3,
+      "analysis": "航天科技集团资产注入预期利好板块。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中航电测",
+      "stock_code": "000738",
+      "impact": 4,
+      "analysis": "复牌预期及军工板块上涨推动股价。"
+    },
+    {
+      "stock_name": "当升科技",
+      "stock_code": "300074",
+      "impact": 3,
+      "analysis": "特斯拉4680电池扩产利好公司。"
+    },
+    {
+      "stock_name": "拓荆科技",
+      "stock_code": "688012",
+      "impact": 3,
+      "analysis": "半导体设备行业复苏预期利好公司。"
+    },
+    {
+      "stock_name": "海康威视",
+      "stock_code": "002415",
+      "impact": 3,
+      "analysis": "人工智能概念炒作预期推动股价。"
+    },
+    {
+      "stock_name": "航天工程",
+      "stock_code": "600116",
+      "impact": 3,
+      "analysis": "航天科技集团资产注入预期利好公司。"
+    }
+  ],
+  "article_id": "e28a73c54b1b49c1941d68b24ff418aa",
+  "article_date": "2023-01-29",
+  "article_title": "2023.1.29市场逻辑精选"
+}

@@ -1,0 +1,61 @@
+{
+  "market_impact": 4,
+  "market_analysis": "新型工业化政策推动，市场情绪积极。",
+  "sectors": [
+    {
+      "sector_name": "智能制造",
+      "impact": 4,
+      "analysis": "政策支持，行业前景看好。"
+    },
+    {
+      "sector_name": "工业互联网",
+      "impact": 4,
+      "analysis": "数字化转型加速，板块受益。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "硅光子技术发展，行业有望爆发。"
+    },
+    {
+      "sector_name": "工业软件",
+      "impact": 3,
+      "analysis": "国产替代加速，市场空间大。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "精伦电子",
+      "stock_code": "300065",
+      "impact": 4,
+      "analysis": "缝制智能数控领域积极探索。"
+    },
+    {
+      "stock_name": "博亚精工",
+      "stock_code": "603187",
+      "impact": 4,
+      "analysis": "精密制造体系完善。"
+    },
+    {
+      "stock_name": "德恩精工",
+      "stock_code": "002571",
+      "impact": 4,
+      "analysis": "机器人单元集成应用解决方案。"
+    },
+    {
+      "stock_name": "华辰装备",
+      "stock_code": "601710",
+      "impact": 3,
+      "analysis": "工业母机领域领先。"
+    },
+    {
+      "stock_name": "鼎捷软件",
+      "stock_code": "002619",
+      "impact": 3,
+      "analysis": "华为云和工业软件合作。"
+    }
+  ],
+  "article_id": "3213915fa1df4459acec27da3e2d0a08",
+  "article_date": "2023-09-24",
+  "article_title": "2023.9.24市场逻辑精选"
+}

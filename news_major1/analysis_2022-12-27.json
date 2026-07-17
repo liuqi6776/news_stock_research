@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪偏乐观",
+  "sectors": [
+    {
+      "sector_name": "旅游",
+      "impact": 4,
+      "analysis": "出境游恢复，旅游业复苏"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "政策支持，行业持续发展"
+    },
+    {
+      "sector_name": "元宇宙",
+      "impact": 3,
+      "analysis": "技术测试进展，概念股活跃"
+    },
+    {
+      "sector_name": "操作系统",
+      "impact": 3,
+      "analysis": "产业峰会，关注基础软件创新"
+    },
+    {
+      "sector_name": "种植牙",
+      "impact": 3,
+      "analysis": "集采启动，行业需求增长"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "众信旅游",
+      "stock_code": "002707",
+      "impact": 4,
+      "analysis": "出境游恢复，利好公司业务"
+    },
+    {
+      "stock_name": "绿康生化",
+      "stock_code": "300638",
+      "impact": 3,
+      "analysis": "光伏行业政策支持，公司受益"
+    },
+    {
+      "stock_name": "天娱数科",
+      "stock_code": "002354",
+      "impact": 3,
+      "analysis": "元宇宙直播技术领先，概念股活跃"
+    },
+    {
+      "stock_name": "麒麟信安",
+      "stock_code": "688023",
+      "impact": 3,
+      "analysis": "操作系统产业峰会，公司业务受益"
+    },
+    {
+      "stock_name": "通策医疗",
+      "stock_code": "600763",
+      "impact": 3,
+      "analysis": "种植牙集采启动，公司业务增长"
+    }
+  ],
+  "article_title": "12月27日盘前早参 热点事件关注",
+  "html_file": "3tejpsw5uf.html",
+  "article_date": "2022-12-27"
+}

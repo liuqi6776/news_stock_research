@@ -1,0 +1,61 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，AI和3D打印板块表现强劲。",
+  "sectors": [
+    {
+      "sector_name": "AI智能体社交网络",
+      "impact": 4,
+      "analysis": "AI智能体社交网络兴起，相关技术和服务需求增加。"
+    },
+    {
+      "sector_name": "3D打印",
+      "impact": 3,
+      "analysis": "下游需求旺盛，行业景气度提升。"
+    },
+    {
+      "sector_name": "云计算",
+      "impact": 3,
+      "analysis": "AI应用推动云计算需求增长。"
+    },
+    {
+      "sector_name": "网络安全",
+      "impact": 3,
+      "analysis": "AI应用带来新的安全挑战，网络安全需求增加。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "网宿科技",
+      "stock_code": "600977",
+      "impact": 3,
+      "analysis": "受益于AI智能体社交网络发展，CDN业务有望增长。"
+    },
+    {
+      "stock_name": "优刻得",
+      "stock_code": "603280",
+      "impact": 3,
+      "analysis": "云主机业务支持Clawdbot，有望受益于AI应用增长。"
+    },
+    {
+      "stock_name": "深信服",
+      "stock_code": "300456",
+      "impact": 3,
+      "analysis": "网络安全需求增加，公司有望受益。"
+    },
+    {
+      "stock_name": "铂力特",
+      "stock_code": "300382",
+      "impact": 3,
+      "analysis": "受益于3D打印行业景气度提升，公司业绩有望增长。"
+    },
+    {
+      "stock_name": "华曙高科",
+      "stock_code": "688012",
+      "impact": 3,
+      "analysis": "受益于3D打印行业景气度提升，公司业绩有望增长。"
+    }
+  ],
+  "article_id": "7e473727de0d492db48f10d751a4fbfa",
+  "article_date": "2026-02-01",
+  "article_title": "2026.2.1市场逻辑精选"
+}

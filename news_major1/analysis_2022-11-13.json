@@ -1,0 +1,86 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪提振，利好板块明显",
+  "sectors": [
+    {
+      "sector_name": "房地产",
+      "impact": 4,
+      "analysis": "政策利好，融资渠道拓宽"
+    },
+    {
+      "sector_name": "充电桩",
+      "impact": 3,
+      "analysis": "特斯拉开放专利，加速海外建设"
+    },
+    {
+      "sector_name": "钛白粉",
+      "impact": 3,
+      "analysis": "行业提价，利润有望增厚"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "龙湖集团",
+      "stock_code": "000668",
+      "impact": 4,
+      "analysis": "融资支持，利好明显"
+    },
+    {
+      "stock_name": "新城控股",
+      "stock_code": "600795",
+      "impact": 4,
+      "analysis": "融资支持，利好明显"
+    },
+    {
+      "stock_name": "美的置业",
+      "stock_code": "000768",
+      "impact": 4,
+      "analysis": "融资支持，利好明显"
+    },
+    {
+      "stock_name": "炬华科技",
+      "stock_code": "300208",
+      "impact": 3,
+      "analysis": "充电桩业务增长"
+    },
+    {
+      "stock_name": "盛弘股份",
+      "stock_code": "300080",
+      "impact": 3,
+      "analysis": "充电桩业务增长"
+    },
+    {
+      "stock_name": "道通科技",
+      "stock_code": "300356",
+      "impact": 3,
+      "analysis": "充电桩业务增长"
+    },
+    {
+      "stock_name": "龙佰集团",
+      "stock_code": "603179",
+      "impact": 4,
+      "analysis": "钛白粉提价，利润增厚"
+    },
+    {
+      "stock_name": "中核钛白",
+      "stock_code": "002145",
+      "impact": 4,
+      "analysis": "钛白粉提价，利润增厚"
+    },
+    {
+      "stock_name": "金浦钛业",
+      "stock_code": "002738",
+      "impact": 4,
+      "analysis": "钛白粉提价，利润增厚"
+    },
+    {
+      "stock_name": "惠云钛业",
+      "stock_code": "002254",
+      "impact": 4,
+      "analysis": "钛白粉提价，利润增厚"
+    }
+  ],
+  "article_id": "4d11636651a4422487234513a0ac55ed",
+  "article_date": "2022-11-13",
+  "article_title": "2022.11.13市场逻辑精选"
+}

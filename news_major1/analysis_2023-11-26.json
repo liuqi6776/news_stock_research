@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受呼吸道疾病和无人驾驶技术发展影响，整体偏利好。",
+  "sectors": [
+    {
+      "sector_name": "医药生物",
+      "impact": 3,
+      "analysis": "呼吸道疾病防治需求增加，板块受益"
+    },
+    {
+      "sector_name": "汽车",
+      "impact": 3,
+      "analysis": "自动泊车技术发展，汽车板块受益"
+    },
+    {
+      "sector_name": "计算机",
+      "impact": 3,
+      "analysis": "数据交易链启动，计算机板块受益"
+    },
+    {
+      "sector_name": "电力设备",
+      "impact": 3,
+      "analysis": "欧盟电网升级，电力设备出海受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "辰光医疗",
+      "stock_code": "300667",
+      "impact": 3,
+      "analysis": "质子治疗国产化，公司拥有相关专利"
+    },
+    {
+      "stock_name": "捷顺科技",
+      "stock_code": "002609",
+      "impact": 3,
+      "analysis": "华为无人代客泊车C端入口"
+    },
+    {
+      "stock_name": "长安汽车",
+      "stock_code": "000625",
+      "impact": 3,
+      "analysis": "与华为拟成立新公司，聚焦智能驾驶等领域"
+    },
+    {
+      "stock_name": "海兴电力",
+      "stock_code": "600406",
+      "impact": 3,
+      "analysis": "海外占比高，受益欧盟电网升级"
+    }
+  ],
+  "article_id": "4559443e38e444dfaac1c623de3ec6e1",
+  "article_date": "2023-11-26",
+  "article_title": "2023.11.26市场逻辑精选"
+}

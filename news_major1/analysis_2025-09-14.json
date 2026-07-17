@@ -1,0 +1,56 @@
+{
+  "market_impact": 3,
+  "market_analysis": "智能驾驶和模拟芯片行业利好，半导体国产替代加速。",
+  "sectors": [
+    {
+      "sector_name": "智能驾驶",
+      "impact": 4,
+      "analysis": "政策支持，技术突破，行业前景广阔。"
+    },
+    {
+      "sector_name": "模拟芯片",
+      "impact": 3,
+      "analysis": "反倾销调查，国产替代加速。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "国产替代持续推进，设备、零部件、材料等领域受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中科创达",
+      "stock_code": "300208",
+      "impact": 4,
+      "analysis": "智能驾驶技术领先，受益行业增长。"
+    },
+    {
+      "stock_name": "德赛西威",
+      "stock_code": "002920",
+      "impact": 4,
+      "analysis": "智能驾驶和智能座舱业务增长，与英伟达合作。"
+    },
+    {
+      "stock_name": "圣邦股份",
+      "stock_code": "300661",
+      "impact": 3,
+      "analysis": "国产模拟芯片龙头，受益国产替代。"
+    },
+    {
+      "stock_name": "长川科技",
+      "stock_code": "603028",
+      "impact": 3,
+      "analysis": "集成电路测试设备领域领先，受益国产替代。"
+    },
+    {
+      "stock_name": "华大九天",
+      "stock_code": "688038",
+      "impact": 3,
+      "analysis": "国产EDA龙头企业，市场持续扩大。"
+    }
+  ],
+  "article_id": "a0a004ef99054c0a8e97fd03c3077943",
+  "article_date": "2025-09-14",
+  "article_title": "2025.9.14市场逻辑精选"
+}

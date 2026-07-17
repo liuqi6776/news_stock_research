@@ -1,0 +1,62 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受政策支持，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "厦门板块",
+      "impact": 4,
+      "analysis": "厦门政策支持，相关公司受益"
+    },
+    {
+      "sector_name": "消费板块",
+      "impact": 3,
+      "analysis": "内需主导，消费板块受益"
+    },
+    {
+      "sector_name": "卫星检测/测控板块",
+      "impact": 3,
+      "analysis": "卫星超级工厂投产，相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "厦门空港",
+      "stock_code": "000905",
+      "impact": 4,
+      "analysis": "厦门政策支持，机场业务受益"
+    },
+    {
+      "stock_name": "厦门港务",
+      "stock_code": "000905",
+      "impact": 4,
+      "analysis": "厦门政策支持，港口业务受益"
+    },
+    {
+      "stock_name": "东百集团",
+      "stock_code": "600693",
+      "impact": 3,
+      "analysis": "内需主导，零售业务受益"
+    },
+    {
+      "stock_name": "永辉超市",
+      "stock_code": "601933",
+      "impact": 3,
+      "analysis": "内需主导，超市业务受益"
+    },
+    {
+      "stock_name": "ST思科瑞",
+      "stock_code": "002025",
+      "impact": 4,
+      "analysis": "卫星超级工厂投产，检测业务受益"
+    },
+    {
+      "stock_name": "星图测控",
+      "stock_code": "300704",
+      "impact": 4,
+      "analysis": "卫星超级工厂投产，测控业务受益"
+    }
+  ],
+  "article_id": "acf6d7ddbbe8490c8aa2801f1a210507",
+  "article_date": "2025-12-08",
+  "article_title": "2025.12.8市场逻辑精选"
+}

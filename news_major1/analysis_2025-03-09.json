@@ -1,0 +1,62 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受AI算力发展和金属价格上涨双重利好影响。",
+  "sectors": [
+    {
+      "sector_name": "存储芯片",
+      "impact": 4,
+      "analysis": "AI算力发展推动存储需求增长，板块受益"
+    },
+    {
+      "sector_name": "稀有金属",
+      "impact": 3,
+      "analysis": "金属价格上涨，相关企业盈利能力提升"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 2,
+      "analysis": "机器人领域投资增加，相关企业有望受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "长江存储",
+      "stock_code": "603160",
+      "impact": 4,
+      "analysis": "国产NAND龙头，受益于存储需求增长"
+    },
+    {
+      "stock_name": "德明利",
+      "stock_code": "688598",
+      "impact": 3,
+      "analysis": "固态硬盘营收占比高，有望受益于AI服务器需求"
+    },
+    {
+      "stock_name": "多利科技",
+      "stock_code": "002796",
+      "impact": 2,
+      "analysis": "可能进军机器人领域，关注相关业务进展"
+    },
+    {
+      "stock_name": "瀚川智能",
+      "stock_code": "688598",
+      "impact": 2,
+      "analysis": "参股坤维科技，关注机器人业务发展"
+    },
+    {
+      "stock_name": "雷迪克",
+      "stock_code": "300070",
+      "impact": 2,
+      "analysis": "拟收购誊展精密，拓展自动化丝杠业务"
+    },
+    {
+      "stock_name": "安孚科技",
+      "stock_code": "603218",
+      "impact": 2,
+      "analysis": "推进固态电池项目，关注技术进展"
+    }
+  ],
+  "article_id": "59f6f0f3ce8b489ebf59462ea171242b",
+  "article_date": "2025-03-09",
+  "article_title": "2025.3.9市场逻辑精选"
+}

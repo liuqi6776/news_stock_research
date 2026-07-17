@@ -1,0 +1,114 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪提升",
+  "sectors": [
+    {
+      "sector_name": "软件与信息技术服务",
+      "impact": 4,
+      "analysis": "华为MetaERP研发和替换，利好相关企业"
+    },
+    {
+      "sector_name": "通信设备",
+      "impact": 3,
+      "analysis": "工信部推动6G、光通信等技术创新，利好相关企业"
+    },
+    {
+      "sector_name": "游戏",
+      "impact": 3,
+      "analysis": "多款国产游戏获批，利好相关企业"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 2,
+      "analysis": "房地产贷款增长，深圳取消二手房参考价，利好相关企业"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 3,
+      "analysis": "宁德时代钠电池上车，利好相关企业"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "华为",
+      "stock_code": "000066",
+      "impact": 4,
+      "analysis": "MetaERP研发和替换，利好公司"
+    },
+    {
+      "stock_name": "软通动力",
+      "stock_code": "300072",
+      "impact": 3,
+      "analysis": "华为MetaERP合作伙伴，利好公司"
+    },
+    {
+      "stock_name": "赛意信息",
+      "stock_code": "300152",
+      "impact": 3,
+      "analysis": "华为MetaERP合作伙伴，利好公司"
+    },
+    {
+      "stock_name": "汉得信息",
+      "stock_code": "300198",
+      "impact": 3,
+      "analysis": "华为MetaERP合作伙伴，利好公司"
+    },
+    {
+      "stock_name": "奇安信",
+      "stock_code": "688516",
+      "impact": 3,
+      "analysis": "华为MetaERP合作伙伴，利好公司"
+    },
+    {
+      "stock_name": "用友网络",
+      "stock_code": "600588",
+      "impact": 3,
+      "analysis": "华为MetaERP合作伙伴，利好公司"
+    },
+    {
+      "stock_name": "华工科技",
+      "stock_code": "002004",
+      "impact": 3,
+      "analysis": "工信部推动光通信技术创新，利好公司"
+    },
+    {
+      "stock_name": "剑桥科技",
+      "stock_code": "688018",
+      "impact": 3,
+      "analysis": "工信部推动光通信技术创新，利好公司"
+    },
+    {
+      "stock_name": "联特科技",
+      "stock_code": "688035",
+      "impact": 3,
+      "analysis": "工信部推动光通信技术创新，利好公司"
+    },
+    {
+      "stock_name": "宁德时代",
+      "stock_code": "300750",
+      "impact": 3,
+      "analysis": "钠电池上车，利好公司"
+    },
+    {
+      "stock_name": "传艺科技",
+      "stock_code": "002866",
+      "impact": 3,
+      "analysis": "钠电池相关，利好公司"
+    },
+    {
+      "stock_name": "维科技术",
+      "stock_code": "600550",
+      "impact": 3,
+      "analysis": "钠电池相关，利好公司"
+    },
+    {
+      "stock_name": "同兴环保",
+      "stock_code": "300639",
+      "impact": 3,
+      "analysis": "钠电池相关，利好公司"
+    }
+  ],
+  "article_title": "4月21日 盘前热点事件关注",
+  "html_file": "78zk29vpdy.html",
+  "article_date": "2023-04-21"
+}

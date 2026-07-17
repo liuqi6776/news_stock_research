@@ -1,0 +1,61 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "金融科技",
+      "impact": 4,
+      "analysis": "腾讯合作 Stripe 和微信支付，推动跨境支付和金融科技发展。"
+    },
+    {
+      "sector_name": "服务消费",
+      "impact": 3,
+      "analysis": "政策支持服务消费，旅游、餐饮等板块受益。"
+    },
+    {
+      "sector_name": "酒店餐饮",
+      "impact": 3,
+      "analysis": "金陵饭店等酒店餐饮股受益于入境游消费增长。"
+    },
+    {
+      "sector_name": "食品饮料",
+      "impact": 3,
+      "analysis": "维维股份等豆奶饮料和食品加工股受益于消费扩大。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "腾讯",
+      "stock_code": "00700",
+      "impact": 4,
+      "analysis": "腾讯合作 Stripe 和微信支付，推动金融科技发展。"
+    },
+    {
+      "stock_name": "翠微股份",
+      "stock_code": "600736",
+      "impact": 3,
+      "analysis": "与腾讯合作，布局移动支付业务。"
+    },
+    {
+      "stock_name": "众信旅游",
+      "stock_code": "600610",
+      "impact": 3,
+      "analysis": "旅游服务业务占比高，受益于政策支持。"
+    },
+    {
+      "stock_name": "金陵饭店",
+      "stock_code": "601216",
+      "impact": 3,
+      "analysis": "酒店餐饮业务受益于入境游消费增长。"
+    },
+    {
+      "stock_name": "维维股份",
+      "stock_code": "600811",
+      "impact": 3,
+      "analysis": "豆奶饮料和食品加工业务受益于消费扩大。"
+    }
+  ],
+  "article_id": "00663288ca1c428a90294463402957a4",
+  "article_date": "2025-04-16",
+  "article_title": "2025.4.16市场逻辑精选"
+}

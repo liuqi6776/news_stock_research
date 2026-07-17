@@ -1,0 +1,80 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受政策支持提振，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "冰雪经济",
+      "impact": 4,
+      "analysis": "政策支持，消费升级，板块受益"
+    },
+    {
+      "sector_name": "量子科技",
+      "impact": 3,
+      "analysis": "国内外进展加快，市场关注度提升"
+    },
+    {
+      "sector_name": "航天强国",
+      "impact": 3,
+      "analysis": "政策支持，商业航天发展加速"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "大连圣亚",
+      "stock_code": "600593",
+      "impact": 4,
+      "analysis": "冰雪旅游龙头，受益政策支持"
+    },
+    {
+      "stock_name": "晶雪节能",
+      "stock_code": "603019",
+      "impact": 3,
+      "analysis": "冰雪产业基础设施建设"
+    },
+    {
+      "stock_name": "科大国创",
+      "stock_code": "688018",
+      "impact": 3,
+      "analysis": "量子计算技术领先"
+    },
+    {
+      "stock_name": "国盾量子",
+      "stock_code": "688027",
+      "impact": 3,
+      "analysis": "量子计算、量子通信、量子测量"
+    },
+    {
+      "stock_name": "中国卫星",
+      "stock_code": "600118",
+      "impact": 3,
+      "analysis": "商业航天产业链"
+    },
+    {
+      "stock_name": "斯瑞新材",
+      "stock_code": "603778",
+      "impact": 3,
+      "analysis": "液体火箭发动机推力室内壁产品"
+    },
+    {
+      "stock_name": "雄韬股份",
+      "stock_code": "002733",
+      "impact": 3,
+      "analysis": "空气电池领先企业，UPS锂电订单突破"
+    },
+    {
+      "stock_name": "力合科创",
+      "stock_code": "000510",
+      "impact": 3,
+      "analysis": "深圳国资创投，孵化多家半导体公司"
+    },
+    {
+      "stock_name": "常铝股份",
+      "stock_code": "002160",
+      "impact": 3,
+      "analysis": "铝产业一体化发展"
+    }
+  ],
+  "article_id": "5905a20a141240d6a9f9b2e6c6b703d3",
+  "article_date": "2025-10-23",
+  "article_title": "2025.10.23市场逻辑精选"
+}

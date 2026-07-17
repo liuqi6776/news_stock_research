@@ -1,0 +1,56 @@
+{
+  "market_impact": 3,
+  "market_analysis": "医药板块受政策支持，估值低，医疗设备更新需求提升，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "医药",
+      "impact": 4,
+      "analysis": "政策利好，创新药和医疗设备板块受益"
+    },
+    {
+      "sector_name": "电动两轮车",
+      "impact": 3,
+      "analysis": "国标换新驱动销量释放，市场空间大"
+    },
+    {
+      "sector_name": "军工信息化",
+      "impact": 3,
+      "analysis": "低空经济和军工信息化需求提升"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "恒瑞医药",
+      "stock_code": "600276",
+      "impact": 4,
+      "analysis": "创新药龙头，新品种放量"
+    },
+    {
+      "stock_name": "迈瑞医疗",
+      "stock_code": "300760",
+      "impact": 4,
+      "analysis": "医疗设备细分龙头，产品线丰富"
+    },
+    {
+      "stock_name": "爱玛科技",
+      "stock_code": "603787",
+      "impact": 3,
+      "analysis": "电动两轮车龙头，市场份额高"
+    },
+    {
+      "stock_name": "新晨科技",
+      "stock_code": "600352",
+      "impact": 3,
+      "analysis": "低空飞行管控业务受肯定"
+    },
+    {
+      "stock_name": "和顺石油",
+      "stock_code": "600893",
+      "impact": 3,
+      "analysis": "华为超充站合作伙伴，产业链完整"
+    }
+  ],
+  "article_id": "214e5ac8c17c4cc5bb8c0052745c0601",
+  "article_date": "2024-04-23",
+  "article_title": "2024.4.23市场逻辑精选"
+}

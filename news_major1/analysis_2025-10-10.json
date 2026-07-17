@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "稀土",
+      "impact": 4,
+      "analysis": "出口管制政策利好稀土板块"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 3,
+      "analysis": "反无人机技术公司被列入不可靠实体清单，利好军工板块"
+    },
+    {
+      "sector_name": "锂电池",
+      "impact": 3,
+      "analysis": "锂电池出口管制政策利好锂电池板块"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "赛力斯机器人合作字节跳动火山引擎，利好机器人板块"
+    },
+    {
+      "sector_name": "核聚变",
+      "impact": 3,
+      "analysis": "核聚变项目进展和德国核聚变发电站计划利好核聚变板块"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "北方稀土",
+      "stock_code": "600111",
+      "impact": 4,
+      "analysis": "稀土出口管制政策利好"
+    },
+    {
+      "stock_name": "成飞集成",
+      "stock_code": "002190",
+      "impact": 3,
+      "analysis": "反无人机技术公司被列入不可靠实体清单利好"
+    },
+    {
+      "stock_name": "赣锋锂业",
+      "stock_code": "002460",
+      "impact": 3,
+      "analysis": "锂电池出口管制政策利好"
+    },
+    {
+      "stock_name": "赛力斯",
+      "stock_code": "600489",
+      "impact": 3,
+      "analysis": "机器人合作字节跳动火山引擎利好"
+    },
+    {
+      "stock_name": "合锻智能",
+      "stock_code": "300118",
+      "impact": 3,
+      "analysis": "核聚变项目进展利好"
+    }
+  ],
+  "article_title": "10月10日盘前纪要",
+  "html_file": "2ysj6p4v727.html",
+  "article_date": "2025-10-10"
+}

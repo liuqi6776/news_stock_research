@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受积极题材推动，有望提振",
+  "sectors": [
+    {
+      "sector_name": "电子烟",
+      "impact": 4,
+      "analysis": "行业增长潜力大，相关公司受益"
+    },
+    {
+      "sector_name": "潮玩",
+      "impact": 3,
+      "analysis": "新兴消费模式，市场空间广阔"
+    },
+    {
+      "sector_name": "电力",
+      "impact": 3,
+      "analysis": "新型电力系统试点，相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "思摩尔国际",
+      "stock_code": "06096.HK",
+      "impact": 5,
+      "analysis": "电子烟行业龙头，股价创新高"
+    },
+    {
+      "stock_name": "泡泡玛特",
+      "stock_code": "09992.HK",
+      "impact": 4,
+      "analysis": "潮玩行业龙头，股价创新高"
+    },
+    {
+      "stock_name": "协鑫能科",
+      "stock_code": "002015.SZ",
+      "impact": 4,
+      "analysis": "绿电及热电联产，聚焦虚拟电厂"
+    },
+    {
+      "stock_name": "斯瑞新材",
+      "stock_code": "300362.SZ",
+      "impact": 5,
+      "analysis": "火箭回收/可控核聚变材料，核心股"
+    }
+  ],
+  "article_id": "a3b6070b89e949b89f7541bc1ec6f91c",
+  "article_date": "2025-06-04",
+  "article_title": "2025.6.4市场逻辑精选"
+}

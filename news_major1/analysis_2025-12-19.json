@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "商业航天",
+      "impact": 4,
+      "analysis": "特朗普签署登月目标行政命令，板块受益"
+    },
+    {
+      "sector_name": "存储芯片",
+      "impact": 3,
+      "analysis": "美光财报显示内存芯片需求强劲，板块受益"
+    },
+    {
+      "sector_name": "冰雪经济",
+      "impact": 3,
+      "analysis": "新闻联播报道冰雪产业规模预计突破万亿元，板块受益"
+    },
+    {
+      "sector_name": "稀土",
+      "impact": 2,
+      "analysis": "商务部批准部分稀土出口通用许可申请，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "盛洋科技",
+      "stock_code": "300070",
+      "impact": 4,
+      "analysis": "商业航天板块受益，股价上涨"
+    },
+    {
+      "stock_name": "美年健康",
+      "stock_code": "002044",
+      "impact": 3,
+      "analysis": "蚂蚁阿福概念，股价上涨"
+    },
+    {
+      "stock_name": "雪人集团",
+      "stock_code": "002639",
+      "impact": 3,
+      "analysis": "冰雪经济和商业航天板块受益，股价上涨"
+    },
+    {
+      "stock_name": "宁波韵升",
+      "stock_code": "600282",
+      "impact": 2,
+      "analysis": "稀土板块受益，股价上涨"
+    }
+  ],
+  "article_title": "12月19日盘前纪要",
+  "html_file": "4e9usy7v4cu.html",
+  "article_date": "2025-12-19"
+}

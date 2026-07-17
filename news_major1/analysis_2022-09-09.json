@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件驱动，市场情绪偏积极",
+  "sectors": [
+    {
+      "sector_name": "一带一路",
+      "impact": 4,
+      "analysis": "预期上合峰会带来政策利好"
+    },
+    {
+      "sector_name": "核酸检测",
+      "impact": 3,
+      "analysis": "政策要求加强核酸检测，相关企业受益"
+    },
+    {
+      "sector_name": "基础设施建设",
+      "impact": 3,
+      "analysis": "专项债限额盘活，支持在建项目"
+    },
+    {
+      "sector_name": "农业",
+      "impact": 2,
+      "analysis": "印度大米出口关税影响相关企业"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 3,
+      "analysis": "销量环比改善，行业高增长"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "天顺股份",
+      "stock_code": "002800",
+      "impact": 4,
+      "analysis": "上合峰会相关，预期受益"
+    },
+    {
+      "stock_name": "德邦股份",
+      "stock_code": "603567",
+      "impact": 4,
+      "analysis": "上合峰会相关，预期受益"
+    },
+    {
+      "stock_name": "合富中国",
+      "stock_code": "300191",
+      "impact": 3,
+      "analysis": "核酸检测政策利好"
+    },
+    {
+      "stock_name": "宏润建设",
+      "stock_code": "600066",
+      "impact": 3,
+      "analysis": "专项债限额盘活，支持在建项目"
+    },
+    {
+      "stock_name": "金健米业",
+      "stock_code": "600127",
+      "impact": 2,
+      "analysis": "印度大米出口关税影响"
+    }
+  ],
+  "article_title": "9月9日 盘前早8点 股市要闻关注",
+  "html_file": "dj4rj45k16.html",
+  "article_date": "2022-09-09"
+}

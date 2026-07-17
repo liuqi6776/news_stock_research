@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受积极消息推动，但需关注后续政策及市场反应。",
+  "sectors": [
+    {
+      "sector_name": "半导体设备",
+      "impact": 4,
+      "analysis": "光刻机项目中标及进口单价提升，板块受益明显。"
+    },
+    {
+      "sector_name": "商业航天",
+      "impact": 3,
+      "analysis": "商业航天发射场建设加速，相关产业链受益。"
+    },
+    {
+      "sector_name": "卫星通信",
+      "impact": 3,
+      "analysis": "卫星抗干扰技术发展，卫星通信板块受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中旗新材",
+      "stock_code": "300295",
+      "impact": 4,
+      "analysis": "光刻机相关业务，受益于光刻机项目中标。"
+    },
+    {
+      "stock_name": "国风新材",
+      "stock_code": "000859",
+      "impact": 3,
+      "analysis": "光刻胶及芯片封装材料业务，受益于行业发展趋势。"
+    },
+    {
+      "stock_name": "川仪股份",
+      "stock_code": "600845",
+      "impact": 3,
+      "analysis": "商业航天发射场设备供应商，受益于发射场建设加速。"
+    },
+    {
+      "stock_name": "天银机电",
+      "stock_code": "300342",
+      "impact": 4,
+      "analysis": "卫星抗干扰技术领先，受益于卫星安全需求。"
+    }
+  ],
+  "article_id": "676029d2f8c44e3f8a5ef46fac23f056",
+  "article_date": "2025-12-25",
+  "article_title": "2025.12.25市场逻辑精选"
+}

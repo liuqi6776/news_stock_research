@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "旅游",
+      "impact": 3,
+      "analysis": "受消费升级和文旅消费促进影响，板块有望受益。"
+    },
+    {
+      "sector_name": "淡水鱼",
+      "impact": 3,
+      "analysis": "受日本核废水排海事件影响，相关个股可能受益。"
+    },
+    {
+      "sector_name": "游戏",
+      "impact": 3,
+      "analysis": "游戏版号发布预期，板块有望受益。"
+    },
+    {
+      "sector_name": "抖音概念",
+      "impact": 3,
+      "analysis": "火山引擎创新科技峰会，相关概念股可能受益。"
+    },
+    {
+      "sector_name": "模拟飞行",
+      "impact": 3,
+      "analysis": "自研全动飞行模拟机视景系统发布，相关个股可能受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "泰豪科技",
+      "stock_code": "000810",
+      "impact": 3,
+      "analysis": "子公司增资引入战投，利好公司发展。"
+    },
+    {
+      "stock_name": "滨江集团",
+      "stock_code": "002244",
+      "impact": 3,
+      "analysis": "受让北鸿置业股权及对应债权，利好公司业务拓展。"
+    },
+    {
+      "stock_name": "大晟文化",
+      "stock_code": "300289",
+      "impact": 3,
+      "analysis": "游戏版号发布预期，利好公司业务发展。"
+    },
+    {
+      "stock_name": "掌阅科技",
+      "stock_code": "002711",
+      "impact": 3,
+      "analysis": "火山引擎创新科技峰会，相关概念股可能受益。"
+    },
+    {
+      "stock_name": "川大智胜",
+      "stock_code": "002253",
+      "impact": 3,
+      "analysis": "自研全动飞行模拟机视景系统发布，利好公司业务发展。"
+    }
+  ],
+  "article_title": "6月21日 盘前热点事件关注",
+  "html_file": "amxqmvtszg.html",
+  "article_date": "2023-06-21"
+}

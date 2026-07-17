@@ -1,0 +1,88 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪积极",
+  "sectors": [
+    {
+      "sector_name": "集成电路",
+      "impact": 4,
+      "analysis": "政策支持，行业前景看好"
+    },
+    {
+      "sector_name": "稀土",
+      "impact": 3,
+      "analysis": "出口限制，行业受益"
+    },
+    {
+      "sector_name": "数字人民币",
+      "impact": 3,
+      "analysis": "研发试点，应用创新"
+    },
+    {
+      "sector_name": "原油",
+      "impact": 3,
+      "analysis": "投资洽谈，合作规模大"
+    },
+    {
+      "sector_name": "聊天机器人",
+      "impact": 3,
+      "analysis": "技术竞争，行业关注"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 3,
+      "analysis": "行业机会，股价上涨空间大"
+    },
+    {
+      "sector_name": "空客",
+      "impact": 3,
+      "analysis": "新建生产线，产能翻倍"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "华大九天",
+      "stock_code": "300345",
+      "impact": 4,
+      "analysis": "国资委调研，政策支持"
+    },
+    {
+      "stock_name": "中国稀土",
+      "stock_code": "000831",
+      "impact": 3,
+      "analysis": "出口限制，行业受益"
+    },
+    {
+      "stock_name": "楚天龙",
+      "stock_code": "002052",
+      "impact": 3,
+      "analysis": "数字人民币研发试点"
+    },
+    {
+      "stock_name": "东华能源",
+      "stock_code": "002221",
+      "impact": 3,
+      "analysis": "原油项目投资洽谈"
+    },
+    {
+      "stock_name": "昆仑万维",
+      "stock_code": "300418",
+      "impact": 3,
+      "analysis": "谷歌对话式人工智能"
+    },
+    {
+      "stock_name": "中交地产",
+      "stock_code": "600038",
+      "impact": 3,
+      "analysis": "地产股上涨空间大"
+    },
+    {
+      "stock_name": "天保基建",
+      "stock_code": "000965",
+      "impact": 3,
+      "analysis": "空客新建生产线"
+    }
+  ],
+  "article_title": "4月7日 盘前热点事件关注",
+  "html_file": "2aase50xw8.html",
+  "article_date": "2023-04-07"
+}

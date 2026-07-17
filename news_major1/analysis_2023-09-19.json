@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "骨科医疗",
+      "impact": 4,
+      "analysis": "骨科集采续标，中选价提高，利好相关企业。"
+    },
+    {
+      "sector_name": "算力设备",
+      "impact": 3,
+      "analysis": "华为强调大算力，算力军备竞赛加剧，利好相关产业链。"
+    },
+    {
+      "sector_name": "存储芯片",
+      "impact": 3,
+      "analysis": "存储芯片价格普涨，利好相关企业。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "大博医疗",
+      "stock_code": "002908",
+      "impact": 4,
+      "analysis": "骨科集采续标，公司利润增加率32%。"
+    },
+    {
+      "stock_name": "威高骨科",
+      "stock_code": "300898",
+      "impact": 4,
+      "analysis": "骨科集采续标，公司利润增加率8%。"
+    },
+    {
+      "stock_name": "拓维信息",
+      "stock_code": "002261",
+      "impact": 3,
+      "analysis": "华为昇腾系列芯片合作，公司产品受益。"
+    },
+    {
+      "stock_name": "四川长虹",
+      "stock_code": "600839",
+      "impact": 3,
+      "analysis": "华为鲲鹏主板合作，公司产品受益。"
+    }
+  ],
+  "article_id": "60aa0d30b8b242e0908c02432278aca9",
+  "article_date": "2023-09-19",
+  "article_title": "2023.9.19市场逻辑精选"
+}

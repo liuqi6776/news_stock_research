@@ -1,0 +1,99 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪偏乐观",
+  "sectors": [
+    {
+      "sector_name": "央企",
+      "impact": 3,
+      "analysis": "国新办发布会，利好央企板块"
+    },
+    {
+      "sector_name": "交通强国",
+      "impact": 3,
+      "analysis": "交通强国发布会，利好交通板块"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 3,
+      "analysis": "证监会试点，利好房地产板块"
+    },
+    {
+      "sector_name": "Web3",
+      "impact": 3,
+      "analysis": "Web3手机亮相，利好Web3板块"
+    },
+    {
+      "sector_name": "AI绘画",
+      "impact": 3,
+      "analysis": "AI绘画发展，利好AI相关板块"
+    },
+    {
+      "sector_name": "数字货币",
+      "impact": 3,
+      "analysis": "香港证监会咨询，利好数字货币板块"
+    },
+    {
+      "sector_name": "Chiplet",
+      "impact": 3,
+      "analysis": "Chiplet AI芯片亮相，利好Chiplet板块"
+    },
+    {
+      "sector_name": "汽车排放",
+      "impact": 3,
+      "analysis": "国六b排放标准实施，利好汽车排放板块"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中成股份",
+      "stock_code": "000151",
+      "impact": 3,
+      "analysis": "央企发布会，利好"
+    },
+    {
+      "stock_name": "中国交建",
+      "stock_code": "601800",
+      "impact": 3,
+      "analysis": "央企发布会，利好"
+    },
+    {
+      "stock_name": "光大嘉宝",
+      "stock_code": "600622",
+      "impact": 3,
+      "analysis": "证监会试点，利好"
+    },
+    {
+      "stock_name": "天地在线",
+      "stock_code": "002999",
+      "impact": 3,
+      "analysis": "Web3手机亮相，利好"
+    },
+    {
+      "stock_name": "中文在线",
+      "stock_code": "300364",
+      "impact": 3,
+      "analysis": "AI绘画发展，利好"
+    },
+    {
+      "stock_name": "楚天龙",
+      "stock_code": "002238",
+      "impact": 3,
+      "analysis": "香港证监会咨询，利好"
+    },
+    {
+      "stock_name": "通富微电",
+      "stock_code": "002156",
+      "impact": 3,
+      "analysis": "Chiplet AI芯片亮相，利好"
+    },
+    {
+      "stock_name": "威孚高科",
+      "stock_code": "600380",
+      "impact": 3,
+      "analysis": "国六b排放标准实施，利好"
+    }
+  ],
+  "article_title": "2月21日盘前热点事件关注",
+  "html_file": "c4482k052c.html",
+  "article_date": "2023-02-21"
+}

@@ -1,0 +1,68 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受化工、固态电池、养老机器人等题材驱动，整体偏利好。",
+  "sectors": [
+    {
+      "sector_name": "化工",
+      "impact": 4,
+      "analysis": "供需偏紧，价格上涨，利好相关个股。"
+    },
+    {
+      "sector_name": "固态电池",
+      "impact": 3,
+      "analysis": "行业进展超预期，利好相关个股。"
+    },
+    {
+      "sector_name": "养老机器人",
+      "impact": 3,
+      "analysis": "政策支持，市场空间大，利好相关个股。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "锦鸡股份",
+      "stock_code": "300227",
+      "impact": 4,
+      "analysis": "深耕活性染料市场，配套H酸产能。"
+    },
+    {
+      "stock_name": "联化科技",
+      "stock_code": "002250",
+      "impact": 4,
+      "analysis": "拥有K胺产能，专利解禁后或打开供应局面。"
+    },
+    {
+      "stock_name": "奇德新材",
+      "stock_code": "300795",
+      "impact": 3,
+      "analysis": "掌握纳米复合改性技术，积极参与新兴行业应用。"
+    },
+    {
+      "stock_name": "信隆健康",
+      "stock_code": "002105",
+      "impact": 3,
+      "analysis": "康复器材营收占比高，研发智能康复器材。"
+    },
+    {
+      "stock_name": "众生药业",
+      "stock_code": "002317",
+      "impact": 4,
+      "analysis": "甲流/减肥药双重驱动，新药研发进展顺利。"
+    },
+    {
+      "stock_name": "双鹭药业",
+      "stock_code": "002038",
+      "impact": 3,
+      "analysis": "多个潜力品种即将结束临床，减肥药板块大涨。"
+    },
+    {
+      "stock_name": "引力传媒",
+      "stock_code": "300598",
+      "impact": 3,
+      "analysis": "可灵AI技术测试商，字节系核心代理商。"
+    }
+  ],
+  "article_id": "17c3e9304b094ae78b22fae8697f5524",
+  "article_date": "2025-06-09",
+  "article_title": "2025.6.9市场逻辑精选"
+}

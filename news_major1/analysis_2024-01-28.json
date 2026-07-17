@@ -1,0 +1,140 @@
+{
+  "market_impact": 2,
+  "market_analysis": "政策优化，市场情绪稳定，部分板块受益。",
+  "sectors": [
+    {
+      "sector_name": "融券相关",
+      "impact": 3,
+      "analysis": "融券限制，次新股和部分个股受益"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 2,
+      "analysis": "限购放宽，改善型住房需求释放"
+    },
+    {
+      "sector_name": "云计算",
+      "impact": 2,
+      "analysis": "游戏厂商标配，云服务器和游戏加速器受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "海光信息",
+      "stock_code": "600950",
+      "impact": 3,
+      "analysis": "融券余额高，次新股受益"
+    },
+    {
+      "stock_name": "联影医疗",
+      "stock_code": "688015",
+      "impact": 3,
+      "analysis": "融券余额高，次新股受益"
+    },
+    {
+      "stock_name": "云南白药",
+      "stock_code": "000538",
+      "impact": 3,
+      "analysis": "融券余额高，次新股受益"
+    },
+    {
+      "stock_name": "昱能科技",
+      "stock_code": "688599",
+      "impact": 3,
+      "analysis": "融券余额占比高"
+    },
+    {
+      "stock_name": "东土科技",
+      "stock_code": "300353",
+      "impact": 3,
+      "analysis": "融券余额占比高"
+    },
+    {
+      "stock_name": "百利天恒",
+      "stock_code": "300418",
+      "impact": 3,
+      "analysis": "融券余额占比高"
+    },
+    {
+      "stock_name": "永达股份",
+      "stock_code": "603388",
+      "impact": 3,
+      "analysis": "次新中融券余额占比高"
+    },
+    {
+      "stock_name": "杰华特",
+      "stock_code": "688598",
+      "impact": 3,
+      "analysis": "次新中融券余额占比高"
+    },
+    {
+      "stock_name": "中青宝",
+      "stock_code": "300055",
+      "impact": 3,
+      "analysis": "与阿里云合作，云服务器受益"
+    },
+    {
+      "stock_name": "电魂网络",
+      "stock_code": "300579",
+      "impact": 3,
+      "analysis": "与阿里云合作，云服务器受益"
+    },
+    {
+      "stock_name": "雷神科技",
+      "stock_code": "002577",
+      "impact": 3,
+      "analysis": "与幻兽帕鲁合作，游戏加速器受益"
+    },
+    {
+      "stock_name": "迅游科技",
+      "stock_code": "300496",
+      "impact": 3,
+      "analysis": "推出服务器套餐，云服务器受益"
+    },
+    {
+      "stock_name": "中邮科技",
+      "stock_code": "603366",
+      "impact": 3,
+      "analysis": "融券余额占比高，次新股受益"
+    },
+    {
+      "stock_name": "富瑞特装",
+      "stock_code": "300228",
+      "impact": 3,
+      "analysis": "业绩大增，LNG车用供气系统销量增长"
+    },
+    {
+      "stock_name": "腾达科技",
+      "stock_code": "002594",
+      "impact": 3,
+      "analysis": "受益融券政策，产品高外销"
+    },
+    {
+      "stock_name": "锦和商管",
+      "stock_code": "603950",
+      "impact": 3,
+      "analysis": "受益于上海城市更新改造"
+    },
+    {
+      "stock_name": "中机认检",
+      "stock_code": "603035",
+      "impact": 3,
+      "analysis": "中字次新央企，受益融券机制优化"
+    },
+    {
+      "stock_name": "澜起科技",
+      "stock_code": "300939",
+      "impact": 3,
+      "analysis": "Q4环增改善，新品有望上量"
+    },
+    {
+      "stock_name": "金帝股份",
+      "stock_code": "603916",
+      "impact": 3,
+      "analysis": "证监会暂停限售股出借"
+    }
+  ],
+  "article_id": "a8f8a3b0cf51421ba8b2adcfa8ee3b19",
+  "article_date": "2024-01-28",
+  "article_title": "2024.1.28市场逻辑精选"
+}

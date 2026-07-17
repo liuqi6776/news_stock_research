@@ -1,0 +1,39 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，关注光伏和半导体板块。",
+  "sectors": [
+    {
+      "sector_name": "光伏板块",
+      "impact": 4,
+      "analysis": "BC电池技术发展推动，激光设备需求增加。"
+    },
+    {
+      "sector_name": "半导体板块",
+      "impact": 3,
+      "analysis": "大基金三期推出，提振行业信心。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "帝尔激光",
+      "stock_code": "300335",
+      "impact": 4,
+      "analysis": "BC电池设备订单增加，业绩有望提升。"
+    },
+    {
+      "stock_name": "爱旭股份",
+      "stock_code": "600745",
+      "impact": 3,
+      "analysis": "ABC电池技术领先，出货量有望增长。"
+    },
+    {
+      "stock_name": "罗博特科",
+      "stock_code": "300663",
+      "impact": 3,
+      "analysis": "铜电镀方案可用于BC电池，业绩有望提升。"
+    }
+  ],
+  "article_id": "0d0f2262cae548a393a1322e61f6dd77",
+  "article_date": "2023-09-05",
+  "article_title": "2023.9.5市场逻辑精选"
+}

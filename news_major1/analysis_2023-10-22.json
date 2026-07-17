@@ -1,0 +1,158 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极影响。",
+  "sectors": [
+    {
+      "sector_name": "天然气重卡",
+      "impact": 4,
+      "analysis": "销量增长，产业链受益"
+    },
+    {
+      "sector_name": "华为手机产业链",
+      "impact": 3,
+      "analysis": "国产替代，份额提升"
+    },
+    {
+      "sector_name": "沉浸式旅游",
+      "impact": 2,
+      "analysis": "政策支持，行业数字化转型"
+    },
+    {
+      "sector_name": "新能源客车智能驾驶",
+      "impact": 3,
+      "analysis": "政策推动，技术进步"
+    },
+    {
+      "sector_name": "卫星通信及油气",
+      "impact": 2,
+      "analysis": "巴以冲突，油气价格上涨"
+    },
+    {
+      "sector_name": "光模块",
+      "impact": 3,
+      "analysis": "业绩超预期，市场份额提升"
+    },
+    {
+      "sector_name": "算力服务",
+      "impact": 2,
+      "analysis": "算力需求增长，项目推进"
+    },
+    {
+      "sector_name": "黄金、石墨矿",
+      "impact": 2,
+      "analysis": "黄金价格上涨，资源布局"
+    },
+    {
+      "sector_name": "汽车电子",
+      "impact": 2,
+      "analysis": "业绩增长，市场份额提升"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "富瑞特装",
+      "stock_code": "300228",
+      "impact": 4,
+      "analysis": "LNG供气系统需求增长"
+    },
+    {
+      "stock_name": "致新能",
+      "stock_code": "300918",
+      "impact": 4,
+      "analysis": "车载LNG模块需求增长"
+    },
+    {
+      "stock_name": "奥洋科技",
+      "stock_code": "300919",
+      "impact": 4,
+      "analysis": "车载LNG供气系统需求增长"
+    },
+    {
+      "stock_name": "中自科技",
+      "stock_code": "300797",
+      "impact": 4,
+      "analysis": "天然气车催化剂市场份额提升"
+    },
+    {
+      "stock_name": "潍柴动力",
+      "stock_code": "000338",
+      "impact": 4,
+      "analysis": "天然气重卡发动机市场份额提升"
+    },
+    {
+      "stock_name": "三湘印象",
+      "stock_code": "600249",
+      "impact": 3,
+      "analysis": "沉浸式旅游项目"
+    },
+    {
+      "stock_name": "百纳千成",
+      "stock_code": "300827",
+      "impact": 3,
+      "analysis": "沉浸式旅游项目"
+    },
+    {
+      "stock_name": "曲江文旅",
+      "stock_code": "600706",
+      "impact": 3,
+      "analysis": "沉浸式旅游项目"
+    },
+    {
+      "stock_name": "锋尚文化",
+      "stock_code": "300599",
+      "impact": 3,
+      "analysis": "沉浸式旅游项目"
+    },
+    {
+      "stock_name": "利亚德",
+      "stock_code": "300296",
+      "impact": 3,
+      "analysis": "沉浸式旅游项目"
+    },
+    {
+      "stock_name": "金龙汽车",
+      "stock_code": "600012",
+      "impact": 3,
+      "analysis": "新能源客车智能驾驶"
+    },
+    {
+      "stock_name": "龙洲股份",
+      "stock_code": "002682",
+      "impact": 3,
+      "analysis": "卫星通信及油气"
+    },
+    {
+      "stock_name": "中际旭创",
+      "stock_code": "300308",
+      "impact": 4,
+      "analysis": "光模块龙头，业绩超预期"
+    },
+    {
+      "stock_name": "润建股份",
+      "stock_code": "002949",
+      "impact": 3,
+      "analysis": "中标国家超级计算深圳中心运维项目"
+    },
+    {
+      "stock_name": "玉龙股份",
+      "stock_code": "300387",
+      "impact": 3,
+      "analysis": "黄金、石墨矿资源"
+    },
+    {
+      "stock_name": "水晶光电",
+      "stock_code": "002273",
+      "impact": 4,
+      "analysis": "业绩超预期，汽车电子业务增长"
+    },
+    {
+      "stock_name": "锦鸡股份",
+      "stock_code": "002517",
+      "impact": 3,
+      "analysis": "开展算力服务，规划万P算力"
+    }
+  ],
+  "article_id": "b023e80b765a4528a338dd8c9c71db59",
+  "article_date": "2023-10-22",
+  "article_title": "2023.10.22市场逻辑精选"
+}

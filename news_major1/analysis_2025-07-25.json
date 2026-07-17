@@ -1,0 +1,95 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多板块受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "人工智能",
+      "impact": 4,
+      "analysis": "世界人工智能大会开幕，相关概念股受益"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 3,
+      "analysis": "智能网联汽车示范运营牌照发放，相关个股受益"
+    },
+    {
+      "sector_name": "稀土",
+      "impact": 3,
+      "analysis": "商务部对战略矿产走私出口“零容忍”，相关个股受益"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "价格法修正草案征求意见，相关个股受益"
+    },
+    {
+      "sector_name": "煤炭",
+      "impact": 3,
+      "analysis": "价格法修正草案征求意见，相关个股受益"
+    },
+    {
+      "sector_name": "钢铁",
+      "impact": 3,
+      "analysis": "价格法修正草案征求意见，相关个股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "锦江在线",
+      "stock_code": "600754",
+      "impact": 4,
+      "analysis": "智能网联汽车示范运营牌照发放，受益"
+    },
+    {
+      "stock_name": "新华传媒",
+      "stock_code": "600825",
+      "impact": 4,
+      "analysis": "阶跃星辰推出全新旗舰模型，受益"
+    },
+    {
+      "stock_name": "恒为科技",
+      "stock_code": "300365",
+      "impact": 4,
+      "analysis": "昇腾384超节点技术亮相，受益"
+    },
+    {
+      "stock_name": "东珠生态",
+      "stock_code": "300378",
+      "impact": 4,
+      "analysis": "DeepSeek参与世界人工智能大会，受益"
+    },
+    {
+      "stock_name": "万兴科技",
+      "stock_code": "300624",
+      "impact": 4,
+      "analysis": "OpenAI推出GPT-5，受益"
+    },
+    {
+      "stock_name": "亚玛顿",
+      "stock_code": "002623",
+      "impact": 4,
+      "analysis": "价格法修正草案征求意见，受益"
+    },
+    {
+      "stock_name": "永杉锂业",
+      "stock_code": "002799",
+      "impact": 4,
+      "analysis": "价格法修正草案征求意见，受益"
+    },
+    {
+      "stock_name": "潞安环能",
+      "stock_code": "600798",
+      "impact": 4,
+      "analysis": "价格法修正草案征求意见，受益"
+    },
+    {
+      "stock_name": "中科三环",
+      "stock_code": "000970",
+      "impact": 4,
+      "analysis": "商务部对战略矿产走私出口“零容忍”，受益"
+    }
+  ],
+  "article_title": "7月25日盘前纪要",
+  "html_file": "2g6udpw6sls.html",
+  "article_date": "2025-07-25"
+}

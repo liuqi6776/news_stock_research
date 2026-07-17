@@ -1,0 +1,102 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "量子科技",
+      "impact": 4,
+      "analysis": "华为取得专利，推动板块上涨。"
+    },
+    {
+      "sector_name": "短剧",
+      "impact": 3,
+      "analysis": "人民日报评论及巨头布局，推动板块上涨。"
+    },
+    {
+      "sector_name": "生物识别",
+      "impact": 3,
+      "analysis": "华为AI隔空传送功能发布，推动相关公司上涨。"
+    },
+    {
+      "sector_name": "智能仓储",
+      "impact": 3,
+      "analysis": "英伟达、华为布局仓储机器人，推动相关公司上涨。"
+    },
+    {
+      "sector_name": "锂电池",
+      "impact": 3,
+      "analysis": "湖南白银宝山矿业复产，天赐材料开发硫化锂固态电解质，星源材质布局固态电池产品，推动相关公司上涨。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "德美化工",
+      "stock_code": "000599",
+      "impact": 4,
+      "analysis": "参与的产业基金对外投资了本源量子。"
+    },
+    {
+      "stock_name": "星光股份",
+      "stock_code": "600703",
+      "impact": 4,
+      "analysis": "持股51%子公司天芯量子。"
+    },
+    {
+      "stock_name": "复旦复华",
+      "stock_code": "600624",
+      "impact": 4,
+      "analysis": "与本源量子战略合作。"
+    },
+    {
+      "stock_name": "丽尚国潮",
+      "stock_code": "300827",
+      "impact": 3,
+      "analysis": "参股短剧公司逍遥贰场为公司与抖音的联营企业。"
+    },
+    {
+      "stock_name": "三六零",
+      "stock_code": "601360",
+      "impact": 3,
+      "analysis": "准备进军短剧。"
+    },
+    {
+      "stock_name": "五方光电",
+      "stock_code": "002382",
+      "impact": 3,
+      "analysis": "生物识别滤光片受益AI隔空传送推广。"
+    },
+    {
+      "stock_name": "诺力股份",
+      "stock_code": "603611",
+      "impact": 3,
+      "analysis": "智能仓储龙头企业受益AGV机器人发展。"
+    },
+    {
+      "stock_name": "湖南白银",
+      "stock_code": "600377",
+      "impact": 3,
+      "analysis": "宝山矿业复产。"
+    },
+    {
+      "stock_name": "光弘科技",
+      "stock_code": "300701",
+      "impact": 3,
+      "analysis": "拟收购汽车电子资产。"
+    },
+    {
+      "stock_name": "天赐材料",
+      "stock_code": "002709",
+      "impact": 3,
+      "analysis": "开发硫化锂固态电解质。"
+    },
+    {
+      "stock_name": "星源材质",
+      "stock_code": "603719",
+      "impact": 3,
+      "analysis": "布局固态电池产品。"
+    }
+  ],
+  "article_id": "748beaf9f0d943959d4dcc67db524a66",
+  "article_date": "2024-11-25",
+  "article_title": "2024.11.25市场逻辑精选"
+}

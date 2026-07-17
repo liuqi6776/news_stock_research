@@ -1,0 +1,77 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，利好消息较多。",
+  "sectors": [
+    {
+      "sector_name": "工业母机",
+      "impact": 4,
+      "analysis": "政策支持，行业前景看好。"
+    },
+    {
+      "sector_name": "信创",
+      "impact": 3,
+      "analysis": "政策推动，业绩增长预期。"
+    },
+    {
+      "sector_name": "医疗",
+      "impact": 3,
+      "analysis": "政策支持，市场空间大。"
+    },
+    {
+      "sector_name": "教育",
+      "impact": 3,
+      "analysis": "政策支持，行业景气度提升。"
+    },
+    {
+      "sector_name": "科学仪器",
+      "impact": 3,
+      "analysis": "科研投入增长，行业受益。"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 3,
+      "analysis": "国防安全重要性提升，行业受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "宇环数控",
+      "stock_code": "000886",
+      "impact": 4,
+      "analysis": "工业母机行业受益股。"
+    },
+    {
+      "stock_name": "国脉科技",
+      "stock_code": "002093",
+      "impact": 3,
+      "analysis": "信创行业受益股。"
+    },
+    {
+      "stock_name": "大博医疗",
+      "stock_code": "002904",
+      "impact": 3,
+      "analysis": "医疗行业受益股。"
+    },
+    {
+      "stock_name": "国新文化",
+      "stock_code": "600839",
+      "impact": 3,
+      "analysis": "教育行业受益股。"
+    },
+    {
+      "stock_name": "永新光学",
+      "stock_code": "603863",
+      "impact": 3,
+      "analysis": "科学仪器行业受益股。"
+    },
+    {
+      "stock_name": "威海广泰",
+      "stock_code": "002111",
+      "impact": 3,
+      "analysis": "军工行业受益股。"
+    }
+  ],
+  "article_title": "10月18日 盘前早8点 股市要闻关注",
+  "html_file": "5c1aan6n08.html",
+  "article_date": "2022-10-18"
+}

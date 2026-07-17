@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受华为汽车、国货品牌、假期消费等利好消息推动，但超级高铁和GLP-1药物等消息影响有限。",
+  "sectors": [
+    {
+      "sector_name": "汽车",
+      "impact": 4,
+      "analysis": "华为汽车销量超预期，板块受益"
+    },
+    {
+      "sector_name": "国货",
+      "impact": 3,
+      "analysis": "国货品牌受热捧，板块受益"
+    },
+    {
+      "sector_name": "消费",
+      "impact": 3,
+      "analysis": "假期消费预期提升，板块受益"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 2,
+      "analysis": "GLP-1药物市场前景广阔，板块受益"
+    },
+    {
+      "sector_name": "科技",
+      "impact": 2,
+      "analysis": "超级高铁技术发展，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "华为汽车",
+      "stock_code": "000002",
+      "impact": 4,
+      "analysis": "销量超预期，利好"
+    },
+    {
+      "stock_name": "国货品牌",
+      "stock_code": "000001",
+      "impact": 3,
+      "analysis": "品牌受热捧，利好"
+    },
+    {
+      "stock_name": "假期消费",
+      "stock_code": "000004",
+      "impact": 3,
+      "analysis": "假期消费预期提升，利好"
+    },
+    {
+      "stock_name": "GLP-1药物",
+      "stock_code": "000005",
+      "impact": 2,
+      "analysis": "市场前景广阔，利好"
+    },
+    {
+      "stock_name": "超级高铁",
+      "stock_code": "000006",
+      "impact": 2,
+      "analysis": "技术发展，利好"
+    }
+  ],
+  "article_id": "3a8bb3f14e27464385dbbf48b7b2528d",
+  "article_date": "2023-09-18",
+  "article_title": "2023.9.18市场逻辑精选"
+}

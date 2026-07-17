@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股受利好消息影响。",
+  "sectors": [
+    {
+      "sector_name": "人工智能",
+      "impact": 4,
+      "analysis": "腾讯、电信、阿里等大公司投入AI，板块受益"
+    },
+    {
+      "sector_name": "AI+银行",
+      "impact": 3,
+      "analysis": "科蓝软件发布智能对话服务，板块受关注"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 3,
+      "analysis": "华为超充桩亮相，充电桩行业受益"
+    },
+    {
+      "sector_name": "AI教育",
+      "impact": 2,
+      "analysis": "教育部发布会，智慧平台构建成新样态"
+    },
+    {
+      "sector_name": "储能",
+      "impact": 3,
+      "analysis": "国家能源局推动新型储能在油气上游规模化应用"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "鸿博股份",
+      "stock_code": "002229",
+      "impact": 4,
+      "analysis": "腾讯、阿里等大公司投入AI，公司受益"
+    },
+    {
+      "stock_name": "科蓝软件",
+      "stock_code": "300138",
+      "impact": 4,
+      "analysis": "发布智能对话服务，公司受益"
+    },
+    {
+      "stock_name": "双杰电气",
+      "stock_code": "002354",
+      "impact": 3,
+      "analysis": "与华为合作充电桩，公司受益"
+    },
+    {
+      "stock_name": "盛通股份",
+      "stock_code": "600560",
+      "impact": 3,
+      "analysis": "教育部发布会，公司受益"
+    },
+    {
+      "stock_name": "盛弘股份",
+      "stock_code": "300626",
+      "impact": 3,
+      "analysis": "储能行业受益"
+    }
+  ],
+  "article_title": "3月23日盘前热点事件关注",
+  "html_file": "3xl0jf90y7.html",
+  "article_date": "2023-03-23"
+}

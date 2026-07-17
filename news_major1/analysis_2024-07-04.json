@@ -1,0 +1,89 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受积极事件驱动，但需关注后续政策落地。",
+  "sectors": [
+    {
+      "sector_name": "无人驾驶",
+      "impact": 4,
+      "analysis": "无人驾驶技术获政策支持，板块受益"
+    },
+    {
+      "sector_name": "无人机",
+      "impact": 3,
+      "analysis": "电网安全风险排查，无人机巡检需求提升"
+    },
+    {
+      "sector_name": "心电生理",
+      "impact": 3,
+      "analysis": "国产替代加速，行业增长潜力大"
+    },
+    {
+      "sector_name": "一体化电感",
+      "impact": 3,
+      "analysis": "AI需求增长，一体化电感产销两旺"
+    },
+    {
+      "sector_name": "低空经济",
+      "impact": 2,
+      "analysis": "低空经济产业发展，相关企业受益"
+    },
+    {
+      "sector_name": "电动汽车",
+      "impact": -2,
+      "analysis": "欧盟对华电动汽车加征关税，行业承压"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "小马智行",
+      "stock_code": "股票代码未知",
+      "impact": 4,
+      "analysis": "无人驾驶技术获政策支持，公司受益"
+    },
+    {
+      "stock_name": "四维图新",
+      "stock_code": "002405",
+      "impact": 3,
+      "analysis": "小马智行战略合作伙伴，公司受益"
+    },
+    {
+      "stock_name": "南网科技",
+      "stock_code": "000531",
+      "impact": 3,
+      "analysis": "无人机巡检系统领先，公司受益"
+    },
+    {
+      "stock_name": "微电生理",
+      "stock_code": "300680",
+      "impact": 4,
+      "analysis": "业绩大幅增长，国产替代加速"
+    },
+    {
+      "stock_name": "麦捷科技",
+      "stock_code": "300669",
+      "impact": 3,
+      "analysis": "一体化电感产品产销两旺"
+    },
+    {
+      "stock_name": "青岛金王",
+      "stock_code": "002099",
+      "impact": 3,
+      "analysis": "业绩大增，低价股博弈"
+    },
+    {
+      "stock_name": "新疆天业",
+      "stock_code": "600075",
+      "impact": 3,
+      "analysis": "二季度扭亏为盈"
+    },
+    {
+      "stock_name": "胜利精密",
+      "stock_code": "002426",
+      "impact": 3,
+      "analysis": "复合铜箔即将量产"
+    }
+  ],
+  "article_id": "4c43afa253da4f4eacf69d9f3833410e",
+  "article_date": "2024-07-04",
+  "article_title": "2024.7.4市场逻辑精选"
+}

@@ -1,0 +1,68 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，新能源汽车、光伏、房地产板块表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "新能源汽车",
+      "impact": 4,
+      "analysis": "比亚迪发布新技术，轮边电机概念股活跃。"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "硅料价格下跌，光伏辅材和大储板块受益。"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 2,
+      "analysis": "住建部降首付降利率，房地产产业链受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "比亚迪",
+      "stock_code": "002594",
+      "impact": 4,
+      "analysis": "发布新技术，轮边电机概念股活跃。"
+    },
+    {
+      "stock_name": "通达动力",
+      "stock_code": "002576",
+      "impact": 3,
+      "analysis": "比亚迪铁芯核心供应商，受比亚迪新技术影响。"
+    },
+    {
+      "stock_name": "方正电机",
+      "stock_code": "002196",
+      "impact": 3,
+      "analysis": "新能源驱动电机出货量第三，客户不含比亚迪。"
+    },
+    {
+      "stock_name": "卧龙电驱",
+      "stock_code": "600362",
+      "impact": 3,
+      "analysis": "商用车驱动电机客户含比亚迪，正在开发轮边电机。"
+    },
+    {
+      "stock_name": "中交地产",
+      "stock_code": "600018",
+      "impact": 2,
+      "analysis": "住建部降首付降利率，房地产产业链受益。"
+    },
+    {
+      "stock_name": "新城控股",
+      "stock_code": "600732",
+      "impact": 2,
+      "analysis": "住建部降首付降利率，房地产产业链受益。"
+    },
+    {
+      "stock_name": "万科A",
+      "stock_code": "000002",
+      "impact": 2,
+      "analysis": "住建部降首付降利率，房地产产业链受益。"
+    }
+  ],
+  "article_id": "0589e9f314ac412f860537643f9525a2",
+  "article_date": "2023-01-05",
+  "article_title": "2023.1.5市场逻辑精选"
+}

@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注政策变化。",
+  "sectors": [
+    {
+      "sector_name": "并购重组",
+      "impact": 3,
+      "analysis": "上海并购重组政策利好相关上市公司"
+    },
+    {
+      "sector_name": "镁合金",
+      "impact": 3,
+      "analysis": "镁价有望上行，利好镁合金相关企业"
+    },
+    {
+      "sector_name": "养老",
+      "impact": 3,
+      "analysis": "智慧养老市场规模扩大，利好相关企业"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "机器人行业轻量化趋势明显，利好相关企业"
+    },
+    {
+      "sector_name": "大消费",
+      "impact": 3,
+      "analysis": "扩大内需政策利好大消费相关企业"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "新华传媒",
+      "stock_code": "600625",
+      "impact": 3,
+      "analysis": "上海并购重组政策利好"
+    },
+    {
+      "stock_name": "宝武镁业",
+      "stock_code": "600010",
+      "impact": 3,
+      "analysis": "镁价有望上行"
+    },
+    {
+      "stock_name": "双箭股份",
+      "stock_code": "002381",
+      "impact": 3,
+      "analysis": "智慧养老市场规模扩大"
+    },
+    {
+      "stock_name": "中研股份",
+      "stock_code": "002878",
+      "impact": 3,
+      "analysis": "机器人行业轻量化趋势"
+    },
+    {
+      "stock_name": "双塔食品",
+      "stock_code": "002481",
+      "impact": 3,
+      "analysis": "扩大内需政策利好"
+    }
+  ],
+  "article_id": "b8f99c11898b4dcd93205c8bdff82587",
+  "article_date": "2024-12-10",
+  "article_title": "2024.12.10市场逻辑精选"
+}

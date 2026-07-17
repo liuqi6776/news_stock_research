@@ -1,0 +1,149 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受关税缓和及补库需求推动，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "港口航运",
+      "impact": 4,
+      "analysis": "关税缓和，集运需求增加，板块受益"
+    },
+    {
+      "sector_name": "干散货",
+      "impact": 3,
+      "analysis": "航运需求增加，干散货板块受益"
+    },
+    {
+      "sector_name": "港口",
+      "impact": 3,
+      "analysis": "航运需求增加，港口板块受益"
+    },
+    {
+      "sector_name": "活性染料",
+      "impact": 3,
+      "analysis": "H酸缺口推动价格上升，板块受益"
+    },
+    {
+      "sector_name": "数字乡村",
+      "impact": 3,
+      "analysis": "政策支持，数字乡村建设推进"
+    },
+    {
+      "sector_name": "MXD6材料",
+      "impact": 3,
+      "analysis": "MXD6材料需求增长，行业受益"
+    },
+    {
+      "sector_name": "光伏胶",
+      "impact": 3,
+      "analysis": "光伏硅料减产，光伏胶需求增加"
+    },
+    {
+      "sector_name": "通用发电机组",
+      "impact": 3,
+      "analysis": "关税降低，通用发电机组出口受益"
+    },
+    {
+      "sector_name": "户外家具",
+      "impact": 3,
+      "analysis": "关税降低，户外家具出口受益"
+    },
+    {
+      "sector_name": "全球航运",
+      "impact": 3,
+      "analysis": "航运需求增加，全球航运板块受益"
+    },
+    {
+      "sector_name": "纺织品",
+      "impact": 3,
+      "analysis": "关税降低，纺织品出口受益"
+    },
+    {
+      "sector_name": "港口信息化",
+      "impact": 3,
+      "analysis": "中秘钱凯港信息化建设推进"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中远海控",
+      "stock_code": "601919",
+      "impact": 4,
+      "analysis": "集运需求增加，公司受益"
+    },
+    {
+      "stock_name": "中集集团",
+      "stock_code": "000039",
+      "impact": 4,
+      "analysis": "集装箱制造业务受益"
+    },
+    {
+      "stock_name": "宁波远洋",
+      "stock_code": "600017",
+      "impact": 3,
+      "analysis": "集运业务受益"
+    },
+    {
+      "stock_name": "闰土股份",
+      "stock_code": "002440",
+      "impact": 4,
+      "analysis": "活性染料产能充足，公司受益"
+    },
+    {
+      "stock_name": "吉华集团",
+      "stock_code": "002004",
+      "impact": 4,
+      "analysis": "活性染料产能充足，公司受益"
+    },
+    {
+      "stock_name": "浙农股份",
+      "stock_code": "600663",
+      "impact": 3,
+      "analysis": "农业数字化项目合作，公司受益"
+    },
+    {
+      "stock_name": "七彩化学",
+      "stock_code": "603678",
+      "impact": 3,
+      "analysis": "MXD6材料产能充足，公司受益"
+    },
+    {
+      "stock_name": "集泰股份",
+      "stock_code": "002909",
+      "impact": 4,
+      "analysis": "光伏胶需求增加，公司受益"
+    },
+    {
+      "stock_name": "神驰机电",
+      "stock_code": "002355",
+      "impact": 3,
+      "analysis": "通用发电机组出口受益"
+    },
+    {
+      "stock_name": "浙江正特",
+      "stock_code": "002476",
+      "impact": 3,
+      "analysis": "户外家具出口受益"
+    },
+    {
+      "stock_name": "海通发展",
+      "stock_code": "600486",
+      "impact": 3,
+      "analysis": "航运需求增加，公司受益"
+    },
+    {
+      "stock_name": "盛泰集团",
+      "stock_code": "002909",
+      "impact": 3,
+      "analysis": "纺织品出口受益"
+    },
+    {
+      "stock_name": "皖通科技",
+      "stock_code": "002331",
+      "impact": 3,
+      "analysis": "港口信息化业务受益"
+    }
+  ],
+  "article_id": "23d592c27c6f41cda2e93e64da99bf63",
+  "article_date": "2025-05-13",
+  "article_title": "2025.5.13市场逻辑精选"
+}

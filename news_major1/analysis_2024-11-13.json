@@ -1,0 +1,72 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策利好，市场情绪提振",
+  "sectors": [
+    {
+      "sector_name": "地产",
+      "impact": 4,
+      "analysis": "税收政策优化，板块受益"
+    },
+    {
+      "sector_name": "汽车",
+      "impact": 3,
+      "analysis": "金杯汽车人事变动，板块关注"
+    },
+    {
+      "sector_name": "锂电池",
+      "impact": 3,
+      "analysis": "永杉锂业实控人变更，板块关注"
+    },
+    {
+      "sector_name": "机器视觉",
+      "impact": 3,
+      "analysis": "凌云光拟收购JAI股权，板块受益"
+    },
+    {
+      "sector_name": "其他",
+      "impact": 2,
+      "analysis": "多题材信息，市场情绪活跃"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "金杯汽车",
+      "stock_code": "600609",
+      "impact": 3,
+      "analysis": "人事变动，关注公司发展"
+    },
+    {
+      "stock_name": "信宇人",
+      "stock_code": "300658",
+      "impact": 3,
+      "analysis": "电池设备研发布局，关注公司进展"
+    },
+    {
+      "stock_name": "世荣兆业",
+      "stock_code": "002016",
+      "impact": 4,
+      "analysis": "拍卖重组预期，关注公司动态"
+    },
+    {
+      "stock_name": "永杉锂业",
+      "stock_code": "002795",
+      "impact": 4,
+      "analysis": "实控人变更，关注公司转型"
+    },
+    {
+      "stock_name": "凌云光",
+      "stock_code": "300471",
+      "impact": 4,
+      "analysis": "拟收购JAI股权，关注公司业务拓展"
+    },
+    {
+      "stock_name": "武汉凡谷",
+      "stock_code": "002151",
+      "impact": 3,
+      "analysis": "参与增资扩股，关注公司合作进展"
+    }
+  ],
+  "article_id": "6d862dd5c99440d698adc02ab5fc0fef",
+  "article_date": "2024-11-13",
+  "article_title": "2024.11.13市场逻辑精选"
+}

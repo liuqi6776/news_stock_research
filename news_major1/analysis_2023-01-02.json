@@ -1,0 +1,108 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受疫情相关和业绩超预期个股影响，整体偏利好。",
+  "sectors": [
+    {
+      "sector_name": "医药板块",
+      "impact": 3,
+      "analysis": "蒙脱石散需求增加，相关个股受益。"
+    },
+    {
+      "sector_name": "光伏板块",
+      "impact": 2,
+      "analysis": "高纯石英砂稀缺，相关个股受关注。"
+    },
+    {
+      "sector_name": "电池板块",
+      "impact": 2,
+      "analysis": "HJT电池项目投资，相关个股受益。"
+    },
+    {
+      "sector_name": "游戏板块",
+      "impact": 2,
+      "analysis": "游戏公司股权变更，相关个股受关注。"
+    },
+    {
+      "sector_name": "旅游板块",
+      "impact": 2,
+      "analysis": "旅游数据恢复，相关个股受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "特一药业",
+      "stock_code": "002726",
+      "impact": 3,
+      "analysis": "蒙脱石散需求增加，股价受益。"
+    },
+    {
+      "stock_name": "康芝药业",
+      "stock_code": "002572",
+      "impact": 3,
+      "analysis": "蒙脱石散需求增加，股价受益。"
+    },
+    {
+      "stock_name": "方盛制药",
+      "stock_code": "300570",
+      "impact": 3,
+      "analysis": "蒙脱石散需求增加，股价受益。"
+    },
+    {
+      "stock_name": "奥维通信",
+      "stock_code": "002231",
+      "impact": 3,
+      "analysis": "HJT电池项目投资，股价受益。"
+    },
+    {
+      "stock_name": "游族网络",
+      "stock_code": "002174",
+      "impact": 3,
+      "analysis": "游戏公司股权变更，股价受益。"
+    },
+    {
+      "stock_name": "汇绿生态",
+      "stock_code": "603866",
+      "impact": 3,
+      "analysis": "高纯石英砂稀缺，股价受益。"
+    },
+    {
+      "stock_name": "爱玛科技",
+      "stock_code": "002595",
+      "impact": 3,
+      "analysis": "业绩持续超预期，股价受益。"
+    },
+    {
+      "stock_name": "深纺织A",
+      "stock_code": "000058",
+      "impact": 3,
+      "analysis": "拟收购偏光片龙头，股价受益。"
+    },
+    {
+      "stock_name": "长白山",
+      "stock_code": "600518",
+      "impact": 3,
+      "analysis": "旅游数据恢复，股价受益。"
+    },
+    {
+      "stock_name": "ST曙光",
+      "stock_code": "600303",
+      "impact": 2,
+      "analysis": "股权拍卖或有新进展，股价受关注。"
+    },
+    {
+      "stock_name": "君实生物",
+      "stock_code": "688180",
+      "impact": 2,
+      "analysis": "临床进展良好，股价受益。"
+    },
+    {
+      "stock_name": "江天化学",
+      "stock_code": "603678",
+      "impact": 2,
+      "analysis": "竞争对手装置关停，股价受益。"
+    }
+  ],
+  "article_id": "e4c7ace0e56b4991848b63660e4a98a4",
+  "article_date": "2023-01-02",
+  "article_title": "2023.1.2市场逻辑精选"
+}

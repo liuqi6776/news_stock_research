@@ -1,0 +1,88 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多板块利好，市场情绪积极",
+  "sectors": [
+    {
+      "sector_name": "AI+医疗",
+      "impact": 3,
+      "analysis": "政策支持，技术发展"
+    },
+    {
+      "sector_name": "游戏",
+      "impact": 3,
+      "analysis": "版号常态化，市场供给稳定"
+    },
+    {
+      "sector_name": "AI+能源",
+      "impact": 3,
+      "analysis": "农村能源革命试点，技术应用推进"
+    },
+    {
+      "sector_name": "AI液冷",
+      "impact": 3,
+      "analysis": "数据中心降温需求增长"
+    },
+    {
+      "sector_name": "氮化镓",
+      "impact": 3,
+      "analysis": "市场增长预测乐观"
+    },
+    {
+      "sector_name": "ARVR",
+      "impact": 3,
+      "analysis": "AI算力提升，交互方式优化"
+    },
+    {
+      "sector_name": "华为供货",
+      "impact": 3,
+      "analysis": "华为新品手机发布，供应链受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "卫宁健康",
+      "stock_code": "002761",
+      "impact": 3,
+      "analysis": "AI+医疗板块受益"
+    },
+    {
+      "stock_name": "三七互娱",
+      "stock_code": "002555",
+      "impact": 3,
+      "analysis": "游戏行业政策利好"
+    },
+    {
+      "stock_name": "国能日新",
+      "stock_code": "300687",
+      "impact": 3,
+      "analysis": "农村能源革命试点推进"
+    },
+    {
+      "stock_name": "高澜股份",
+      "stock_code": "300410",
+      "impact": 3,
+      "analysis": "数据中心降温市场增长"
+    },
+    {
+      "stock_name": "赛微电子",
+      "stock_code": "603160",
+      "impact": 3,
+      "analysis": "氮化镓市场增长预测"
+    },
+    {
+      "stock_name": "国光电器",
+      "stock_code": "002045",
+      "impact": 3,
+      "analysis": "ARVR交互方式优化"
+    },
+    {
+      "stock_name": "维信诺",
+      "stock_code": "688016",
+      "impact": 3,
+      "analysis": "华为新品手机供应链受益"
+    }
+  ],
+  "article_title": "3月24日盘前热点事件关注",
+  "html_file": "c5m82y669s.html",
+  "article_date": "2023-03-24"
+}

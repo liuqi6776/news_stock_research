@@ -1,0 +1,95 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "公用事业",
+      "impact": 4,
+      "analysis": "涨价预期强烈，相关个股受益"
+    },
+    {
+      "sector_name": "钨",
+      "impact": 3,
+      "analysis": "价格持续上涨，相关个股受益"
+    },
+    {
+      "sector_name": "农药",
+      "impact": 3,
+      "analysis": "需求旺季来临，相关个股受益"
+    },
+    {
+      "sector_name": "重症医学",
+      "impact": 3,
+      "analysis": "政策支持，相关个股受益"
+    },
+    {
+      "sector_name": "TMA",
+      "impact": 3,
+      "analysis": "行业龙头涨停，相关个股受益"
+    },
+    {
+      "sector_name": "合成生物",
+      "impact": 3,
+      "analysis": "政策支持，相关个股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "广深铁路",
+      "stock_code": "000008",
+      "impact": 4,
+      "analysis": "高铁票价上涨，公司受益"
+    },
+    {
+      "stock_name": "南京公用",
+      "stock_code": "000410",
+      "impact": 4,
+      "analysis": "天然气价格上涨，公司受益"
+    },
+    {
+      "stock_name": "中原环保",
+      "stock_code": "000544",
+      "impact": 4,
+      "analysis": "水务价格上涨，公司受益"
+    },
+    {
+      "stock_name": "章源钨业",
+      "stock_code": "002378",
+      "impact": 4,
+      "analysis": "钨价上涨，公司受益"
+    },
+    {
+      "stock_name": "明德生物",
+      "stock_code": "300247",
+      "impact": 4,
+      "analysis": "重症医学政策支持，公司受益"
+    },
+    {
+      "stock_name": "金禾实业",
+      "stock_code": "002597",
+      "impact": 4,
+      "analysis": "主要产品供需反转，公司受益"
+    },
+    {
+      "stock_name": "花园生物",
+      "stock_code": "300401",
+      "impact": 4,
+      "analysis": "布局合成生物，拓展维生素新产品，公司受益"
+    },
+    {
+      "stock_name": "百川股份",
+      "stock_code": "002455",
+      "impact": 4,
+      "analysis": "TMA板块强势，公司受益"
+    },
+    {
+      "stock_name": "瑞丰高材",
+      "stock_code": "300388",
+      "impact": 4,
+      "analysis": "拓展合成生物材料，公司受益"
+    }
+  ],
+  "article_id": "37bd5a01aaaa4e87a50392faf15dc678",
+  "article_date": "2024-05-06",
+  "article_title": "2024.5.6市场逻辑精选"
+}

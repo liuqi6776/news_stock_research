@@ -1,0 +1,88 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受多因素影响，整体偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "医药生物",
+      "impact": 4,
+      "analysis": "连花清瘟销售火爆，产业链受益"
+    },
+    {
+      "sector_name": "医疗器械",
+      "impact": 3,
+      "analysis": "抗原自测需求增加，市场空间大"
+    },
+    {
+      "sector_name": "互联网医疗",
+      "impact": 3,
+      "analysis": "家庭医生需求增加，行业受益"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 2,
+      "analysis": "芯片设计板块超跌，基本面拐点或于23Q2出现"
+    },
+    {
+      "sector_name": "传媒",
+      "impact": 3,
+      "analysis": "AIGC技术突破，行业迎来发展机遇"
+    },
+    {
+      "sector_name": "旅游",
+      "impact": 3,
+      "analysis": "跨省旅游政策优化，行业受益"
+    },
+    {
+      "sector_name": "电子元件",
+      "impact": 2,
+      "analysis": "滤波器技术突破，国产替代需求迫切"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "以岭药业",
+      "stock_code": "002603",
+      "impact": 4,
+      "analysis": "连花清瘟销售火爆，公司受益"
+    },
+    {
+      "stock_name": "振东制药",
+      "stock_code": "600336",
+      "impact": 3,
+      "analysis": "连翘种植面积大，公司受益"
+    },
+    {
+      "stock_name": "黄山胶囊",
+      "stock_code": "002817",
+      "impact": 3,
+      "analysis": "连花清瘟胶囊主要供应商，公司受益"
+    },
+    {
+      "stock_name": "泰林生物",
+      "stock_code": "300347",
+      "impact": 3,
+      "analysis": "NC膜批量量产，公司受益"
+    },
+    {
+      "stock_name": "视觉中国",
+      "stock_code": "000681",
+      "impact": 3,
+      "analysis": "AIGC技术赋能业务，公司受益"
+    },
+    {
+      "stock_name": "乾景园林",
+      "stock_code": "603778",
+      "impact": 4,
+      "analysis": "转型HJT，进度超预期"
+    },
+    {
+      "stock_name": "广信股份",
+      "stock_code": "600676",
+      "impact": 3,
+      "analysis": "扩产对氨基苯酚，受益于感冒药需求提升"
+    }
+  ],
+  "article_id": "85b03326676b421d87cc7de07e66dc4b",
+  "article_date": "2022-11-15",
+  "article_title": "2022.11.15市场逻辑精选"
+}

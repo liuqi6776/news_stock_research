@@ -1,0 +1,312 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股受积极因素影响。",
+  "sectors": [
+    {
+      "sector_name": "中概互联网",
+      "impact": 4,
+      "analysis": "中美协议利好，板块上涨预期强。"
+    },
+    {
+      "sector_name": "能源电子",
+      "impact": 3,
+      "analysis": "产业指导意见，长期发展前景看好。"
+    },
+    {
+      "sector_name": "光伏电池",
+      "impact": 3,
+      "analysis": "技术发展推动，相关个股受益。"
+    },
+    {
+      "sector_name": "储能",
+      "impact": 3,
+      "analysis": "新型电池研发，行业增长潜力大。"
+    },
+    {
+      "sector_name": "卫星通讯",
+      "impact": 3,
+      "analysis": "苹果新品发布预期，相关个股受关注。"
+    },
+    {
+      "sector_name": "旅游",
+      "impact": 2,
+      "analysis": "核酸检测取消，旅游行业恢复预期。"
+    },
+    {
+      "sector_name": "消费电子",
+      "impact": 3,
+      "analysis": "VR市场增长，相关个股受益。"
+    },
+    {
+      "sector_name": "环保",
+      "impact": 2,
+      "analysis": "碳排放统计核算体系建立，相关个股受益。"
+    },
+    {
+      "sector_name": "酒饮",
+      "impact": 2,
+      "analysis": "投资项目公告，相关个股受关注。"
+    },
+    {
+      "sector_name": "港口航运",
+      "impact": 2,
+      "analysis": "原油进口量反弹，行业复苏预期。"
+    },
+    {
+      "sector_name": "煤炭",
+      "impact": 2,
+      "analysis": "煤炭供给紧张，价格有望上涨。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "宝馨科技",
+      "stock_code": "002514",
+      "impact": 3,
+      "analysis": "光伏电池技术发展，公司受益。"
+    },
+    {
+      "stock_name": "星帅尔",
+      "stock_code": "002829",
+      "impact": 3,
+      "analysis": "光伏电池技术发展，公司受益。"
+    },
+    {
+      "stock_name": "京山轻机",
+      "stock_code": "000695",
+      "impact": 3,
+      "analysis": "光伏电池技术发展，公司受益。"
+    },
+    {
+      "stock_name": "金辰股份",
+      "stock_code": "300382",
+      "impact": 3,
+      "analysis": "光伏电池技术发展，公司受益。"
+    },
+    {
+      "stock_name": "德业股份",
+      "stock_code": "603358",
+      "impact": 3,
+      "analysis": "光伏逆变器技术发展，公司受益。"
+    },
+    {
+      "stock_name": "固德威",
+      "stock_code": "603933",
+      "impact": 3,
+      "analysis": "光伏逆变器技术发展，公司受益。"
+    },
+    {
+      "stock_name": "锦浪科技",
+      "stock_code": "603790",
+      "impact": 3,
+      "analysis": "光伏逆变器技术发展，公司受益。"
+    },
+    {
+      "stock_name": "科信技术",
+      "stock_code": "300538",
+      "impact": 3,
+      "analysis": "储能技术发展，公司受益。"
+    },
+    {
+      "stock_name": "祥鑫科技",
+      "stock_code": "002965",
+      "impact": 3,
+      "analysis": "储能技术发展，公司受益。"
+    },
+    {
+      "stock_name": "智光电气",
+      "stock_code": "002169",
+      "impact": 3,
+      "analysis": "储能技术发展，公司受益。"
+    },
+    {
+      "stock_name": "传艺科技",
+      "stock_code": "002866",
+      "impact": 3,
+      "analysis": "钠电池技术发展，公司受益。"
+    },
+    {
+      "stock_name": "华阳股份",
+      "stock_code": "002906",
+      "impact": 3,
+      "analysis": "钠电池技术发展，公司受益。"
+    },
+    {
+      "stock_name": "圣阳股份",
+      "stock_code": "002580",
+      "impact": 3,
+      "analysis": "钠电池技术发展，公司受益。"
+    },
+    {
+      "stock_name": "天银机电",
+      "stock_code": "300342",
+      "impact": 3,
+      "analysis": "卫星通讯技术发展，公司受益。"
+    },
+    {
+      "stock_name": "中国卫通",
+      "stock_code": "600118",
+      "impact": 3,
+      "analysis": "卫星通讯技术发展，公司受益。"
+    },
+    {
+      "stock_name": "合众思壮",
+      "stock_code": "002383",
+      "impact": 3,
+      "analysis": "卫星通讯技术发展，公司受益。"
+    },
+    {
+      "stock_name": "众信旅游",
+      "stock_code": "600610",
+      "impact": 2,
+      "analysis": "核酸检测取消，公司受益。"
+    },
+    {
+      "stock_name": "西域旅游",
+      "stock_code": "002059",
+      "impact": 2,
+      "analysis": "核酸检测取消，公司受益。"
+    },
+    {
+      "stock_name": "天目湖",
+      "stock_code": "603321",
+      "impact": 2,
+      "analysis": "核酸检测取消，公司受益。"
+    },
+    {
+      "stock_name": "华天酒店",
+      "stock_code": "000428",
+      "impact": 2,
+      "analysis": "核酸检测取消，公司受益。"
+    },
+    {
+      "stock_name": "捷荣技术",
+      "stock_code": "002855",
+      "impact": 3,
+      "analysis": "VR市场增长，公司受益。"
+    },
+    {
+      "stock_name": "北纬科技",
+      "stock_code": "002148",
+      "impact": 3,
+      "analysis": "VR市场增长，公司受益。"
+    },
+    {
+      "stock_name": "五方光电",
+      "stock_code": "603115",
+      "impact": 3,
+      "analysis": "VR市场增长，公司受益。"
+    },
+    {
+      "stock_name": "雪迪龙",
+      "stock_code": "002658",
+      "impact": 2,
+      "analysis": "环保政策利好，公司受益。"
+    },
+    {
+      "stock_name": "中晟高科",
+      "stock_code": "300205",
+      "impact": 2,
+      "analysis": "环保政策利好，公司受益。"
+    },
+    {
+      "stock_name": "达意隆",
+      "stock_code": "002709",
+      "impact": 2,
+      "analysis": "投资项目公告，公司受益。"
+    },
+    {
+      "stock_name": "成都路桥",
+      "stock_code": "002628",
+      "impact": 2,
+      "analysis": "投资项目公告，公司受益。"
+    },
+    {
+      "stock_name": "珠海港",
+      "stock_code": "000507",
+      "impact": 2,
+      "analysis": "原油进口量反弹，公司受益。"
+    },
+    {
+      "stock_name": "中远海能",
+      "stock_code": "600026",
+      "impact": 2,
+      "analysis": "原油进口量反弹，公司受益。"
+    },
+    {
+      "stock_name": "长久物流",
+      "stock_code": "603050",
+      "impact": 2,
+      "analysis": "原油进口量反弹，公司受益。"
+    },
+    {
+      "stock_name": "南京港",
+      "stock_code": "600029",
+      "impact": 2,
+      "analysis": "原油进口量反弹，公司受益。"
+    },
+    {
+      "stock_name": "中远海特",
+      "stock_code": "600026",
+      "impact": 2,
+      "analysis": "原油进口量反弹，公司受益。"
+    },
+    {
+      "stock_name": "长航凤凰",
+      "stock_code": "600716",
+      "impact": 2,
+      "analysis": "原油进口量反弹，公司受益。"
+    },
+    {
+      "stock_name": "神火股份",
+      "stock_code": "000933",
+      "impact": 2,
+      "analysis": "煤炭供给紧张，公司受益。"
+    },
+    {
+      "stock_name": "上海能源",
+      "stock_code": "600508",
+      "impact": 2,
+      "analysis": "煤炭供给紧张，公司受益。"
+    },
+    {
+      "stock_name": "兖矿能源",
+      "stock_code": "600188",
+      "impact": 2,
+      "analysis": "煤炭供给紧张，公司受益。"
+    },
+    {
+      "stock_name": "晋控煤业",
+      "stock_code": "600981",
+      "impact": 2,
+      "analysis": "煤炭供给紧张，公司受益。"
+    },
+    {
+      "stock_name": "首华燃气",
+      "stock_code": "601099",
+      "impact": 2,
+      "analysis": "LNG价格上涨，公司受益。"
+    },
+    {
+      "stock_name": "新天然气",
+      "stock_code": "603393",
+      "impact": 2,
+      "analysis": "LNG价格上涨，公司受益。"
+    },
+    {
+      "stock_name": "华新水泥",
+      "stock_code": "600801",
+      "impact": 2,
+      "analysis": "水泥价格回暖，公司受益。"
+    },
+    {
+      "stock_name": "上峰水泥",
+      "stock_code": "000672",
+      "impact": 2,
+      "analysis": "水泥价格回暖，公司受益。"
+    }
+  ],
+  "article_title": "8月26日 盘前早8点 股市要闻关注",
+  "html_file": "dhfqhctm64.html",
+  "article_date": "2022-08-26"
+}

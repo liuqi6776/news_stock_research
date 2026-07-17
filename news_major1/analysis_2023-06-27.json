@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪提升",
+  "sectors": [
+    {
+      "sector_name": "华为概念",
+      "impact": 4,
+      "analysis": "华为盘古大模型升级预期利好"
+    },
+    {
+      "sector_name": "体育产业",
+      "impact": 3,
+      "analysis": "体育助力乡村振兴政策利好"
+    },
+    {
+      "sector_name": "VR/AR",
+      "impact": 3,
+      "analysis": "Meta VR订阅服务推出，行业受益"
+    },
+    {
+      "sector_name": "数据中心",
+      "impact": 3,
+      "analysis": "粤港澳大湾区大数据中心建设启动"
+    },
+    {
+      "sector_name": "新能源",
+      "impact": 3,
+      "analysis": "特斯拉无线充电技术及燃料电池汽车法规利好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "拓维信息",
+      "stock_code": "002261",
+      "impact": 4,
+      "analysis": "华为大模型相关概念股"
+    },
+    {
+      "stock_name": "中体产业",
+      "stock_code": "600882",
+      "impact": 3,
+      "analysis": "体育助力乡村振兴概念股"
+    },
+    {
+      "stock_name": "恒信东方",
+      "stock_code": "600570",
+      "impact": 3,
+      "analysis": "VR订阅服务相关概念股"
+    },
+    {
+      "stock_name": "深桑达A",
+      "stock_code": "000032",
+      "impact": 3,
+      "analysis": "粤港澳大湾区大数据中心概念股"
+    },
+    {
+      "stock_name": "京城股份",
+      "stock_code": "600860",
+      "impact": 3,
+      "analysis": "特斯拉无线充电及燃料电池汽车概念股"
+    }
+  ],
+  "article_title": "6月27日 盘前热点事件关注",
+  "html_file": "ca7hal78j4.html",
+  "article_date": "2023-06-27"
+}

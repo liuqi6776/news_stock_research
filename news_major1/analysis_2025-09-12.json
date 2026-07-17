@@ -1,0 +1,269 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏乐观，多个板块和个股受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "光模块",
+      "impact": 3,
+      "analysis": "相关个股受关注"
+    },
+    {
+      "sector_name": "PCB",
+      "impact": 3,
+      "analysis": "相关个股受关注"
+    },
+    {
+      "sector_name": "液冷",
+      "impact": 3,
+      "analysis": "相关个股受关注"
+    },
+    {
+      "sector_name": "甲骨文",
+      "impact": 3,
+      "analysis": "相关个股受关注"
+    },
+    {
+      "sector_name": "绿醇",
+      "impact": 3,
+      "analysis": "相关个股受关注"
+    },
+    {
+      "sector_name": "生猪",
+      "impact": 3,
+      "analysis": "相关个股受关注"
+    },
+    {
+      "sector_name": "消费",
+      "impact": 3,
+      "analysis": "相关个股受关注"
+    },
+    {
+      "sector_name": "数据要素",
+      "impact": 3,
+      "analysis": "相关个股受关注"
+    },
+    {
+      "sector_name": "存储芯片",
+      "impact": 3,
+      "analysis": "相关个股受关注"
+    },
+    {
+      "sector_name": "AI云计算",
+      "impact": 3,
+      "analysis": "相关个股受关注"
+    },
+    {
+      "sector_name": "AI药物",
+      "impact": 3,
+      "analysis": "相关个股受关注"
+    },
+    {
+      "sector_name": "核聚变",
+      "impact": 3,
+      "analysis": "相关个股受关注"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "青山纸业",
+      "stock_code": "600103",
+      "impact": 3,
+      "analysis": "光模块板块相关个股"
+    },
+    {
+      "stock_name": "中际旭创",
+      "stock_code": "300308",
+      "impact": 3,
+      "analysis": "光模块板块相关个股"
+    },
+    {
+      "stock_name": "景旺电子",
+      "stock_code": "300596",
+      "impact": 3,
+      "analysis": "PCB板块相关个股"
+    },
+    {
+      "stock_name": "金安国纪",
+      "stock_code": "002636",
+      "impact": 3,
+      "analysis": "PCB板块相关个股"
+    },
+    {
+      "stock_name": "淳中科技",
+      "stock_code": "300775",
+      "impact": 3,
+      "analysis": "液冷板块相关个股"
+    },
+    {
+      "stock_name": "新炬网络",
+      "stock_code": "300568",
+      "impact": 3,
+      "analysis": "甲骨文板块相关个股"
+    },
+    {
+      "stock_name": "荣联科技",
+      "stock_code": "002642",
+      "impact": 3,
+      "analysis": "甲骨文板块相关个股"
+    },
+    {
+      "stock_name": "嘉泽新能",
+      "stock_code": "603719",
+      "impact": 3,
+      "analysis": "绿醇板块相关个股"
+    },
+    {
+      "stock_name": "邦基科技",
+      "stock_code": "002752",
+      "impact": 3,
+      "analysis": "生猪板块相关个股"
+    },
+    {
+      "stock_name": "三江购物",
+      "stock_code": "601116",
+      "impact": 3,
+      "analysis": "消费板块相关个股"
+    },
+    {
+      "stock_name": "数字认证",
+      "stock_code": "002275",
+      "impact": 3,
+      "analysis": "数据要素板块相关个股"
+    },
+    {
+      "stock_name": "易华录",
+      "stock_code": "300212",
+      "impact": 3,
+      "analysis": "数据要素板块相关个股"
+    },
+    {
+      "stock_name": "深桑达",
+      "stock_code": "000032",
+      "impact": 3,
+      "analysis": "数据要素板块相关个股"
+    },
+    {
+      "stock_name": "兆易创新",
+      "stock_code": "603986",
+      "impact": 3,
+      "analysis": "存储芯片板块相关个股"
+    },
+    {
+      "stock_name": "香农芯创",
+      "stock_code": "688558",
+      "impact": 3,
+      "analysis": "存储芯片板块相关个股"
+    },
+    {
+      "stock_name": "佰维存储",
+      "stock_code": "688012",
+      "impact": 3,
+      "analysis": "存储芯片板块相关个股"
+    },
+    {
+      "stock_name": "江波龙",
+      "stock_code": "300669",
+      "impact": 3,
+      "analysis": "存储芯片板块相关个股"
+    },
+    {
+      "stock_name": "朗科科技",
+      "stock_code": "300682",
+      "impact": 3,
+      "analysis": "存储芯片板块相关个股"
+    },
+    {
+      "stock_name": "阿里巴巴",
+      "stock_code": "9988.HK",
+      "impact": 3,
+      "analysis": "AI云计算板块相关个股"
+    },
+    {
+      "stock_name": "科华数据",
+      "stock_code": "002335",
+      "impact": 3,
+      "analysis": "AI云计算板块相关个股"
+    },
+    {
+      "stock_name": "数据港",
+      "stock_code": "600847",
+      "impact": 3,
+      "analysis": "AI云计算板块相关个股"
+    },
+    {
+      "stock_name": "浙大网新",
+      "stock_code": "600797",
+      "impact": 3,
+      "analysis": "AI云计算板块相关个股"
+    },
+    {
+      "stock_name": "利扬芯片",
+      "stock_code": "688316",
+      "impact": 3,
+      "analysis": "AI云计算板块相关个股"
+    },
+    {
+      "stock_name": "雅达股份",
+      "stock_code": "301388",
+      "impact": 3,
+      "analysis": "AI云计算板块相关个股"
+    },
+    {
+      "stock_name": "泓博医药",
+      "stock_code": "688023",
+      "impact": 3,
+      "analysis": "AI药物板块相关个股"
+    },
+    {
+      "stock_name": "成都先导",
+      "stock_code": "688111",
+      "impact": 3,
+      "analysis": "AI药物板块相关个股"
+    },
+    {
+      "stock_name": "贝瑞基因",
+      "stock_code": "002606",
+      "impact": 3,
+      "analysis": "AI药物板块相关个股"
+    },
+    {
+      "stock_name": "塞力医疗",
+      "stock_code": "300258",
+      "impact": 3,
+      "analysis": "AI药物板块相关个股"
+    },
+    {
+      "stock_name": "合锻智能",
+      "stock_code": "603011",
+      "impact": 3,
+      "analysis": "核聚变板块相关个股"
+    },
+    {
+      "stock_name": "旭光电子",
+      "stock_code": "600709",
+      "impact": 3,
+      "analysis": "核聚变板块相关个股"
+    },
+    {
+      "stock_name": "融发核电",
+      "stock_code": "603058",
+      "impact": 3,
+      "analysis": "核聚变板块相关个股"
+    },
+    {
+      "stock_name": "中洲特材",
+      "stock_code": "002574",
+      "impact": 3,
+      "analysis": "核聚变板块相关个股"
+    },
+    {
+      "stock_name": "常辅股份",
+      "stock_code": "301389",
+      "impact": 3,
+      "analysis": "核聚变板块相关个股"
+    }
+  ],
+  "article_title": "9月12日盘前纪要",
+  "html_file": "3f75ab0qbg0.html",
+  "article_date": "2025-09-12"
+}

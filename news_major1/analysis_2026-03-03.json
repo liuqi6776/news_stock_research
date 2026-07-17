@@ -1,0 +1,67 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受能源价格上涨及技术创新驱动，整体偏利好。",
+  "sectors": [
+    {
+      "sector_name": "储能",
+      "impact": 4,
+      "analysis": "户储需求增长，板块受益明显。"
+    },
+    {
+      "sector_name": "热泵",
+      "impact": 3,
+      "analysis": "热泵行业受能源价格上涨推动，有望增长。"
+    },
+    {
+      "sector_name": "化工",
+      "impact": 3,
+      "analysis": "尿素价格上涨，化工板块受益。"
+    },
+    {
+      "sector_name": "航天",
+      "impact": 3,
+      "analysis": "电循环火箭发动机技术突破，航天板块受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "首航新能",
+      "stock_code": "300696",
+      "impact": 4,
+      "analysis": "欧洲户用光储龙头，受益户储需求增长。"
+    },
+    {
+      "stock_name": "艾罗能源",
+      "stock_code": "688599",
+      "impact": 4,
+      "analysis": "户储、工商储、大储实现高增长。"
+    },
+    {
+      "stock_name": "德业股份",
+      "stock_code": "603216",
+      "impact": 4,
+      "analysis": "工商储为公司2026年最大增量。"
+    },
+    {
+      "stock_name": "赤天化",
+      "stock_code": "600396",
+      "impact": 3,
+      "analysis": "尿素营收占比高，受益尿素价格上涨。"
+    },
+    {
+      "stock_name": "四川美丰",
+      "stock_code": "000731",
+      "impact": 3,
+      "analysis": "尿素和天然气供应业务占比高。"
+    },
+    {
+      "stock_name": "昊志机电",
+      "stock_code": "603870",
+      "impact": 3,
+      "analysis": "火箭控制系统组件供应商，受益航天技术突破。"
+    }
+  ],
+  "article_id": "2bcb6b316e6643218196dcff438d1684",
+  "article_date": "2026-03-03",
+  "article_title": "2026.3.3市场逻辑精选"
+}

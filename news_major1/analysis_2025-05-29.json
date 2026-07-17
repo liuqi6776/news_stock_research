@@ -1,0 +1,74 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "稳定币",
+      "impact": 4,
+      "analysis": "香港立法通过稳定币条例，推动行业发展。"
+    },
+    {
+      "sector_name": "创新药",
+      "impact": 3,
+      "analysis": "国内外政策带动产业回暖，创新药企受益。"
+    },
+    {
+      "sector_name": "车路云",
+      "impact": 3,
+      "analysis": "Robotaxi市场空间巨大，相关产业链受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "朗新集团",
+      "stock_code": "300682",
+      "impact": 4,
+      "analysis": "与蚂蚁金服合作新能源RWA，受益稳定币发展。"
+    },
+    {
+      "stock_name": "四方精创",
+      "stock_code": "300963",
+      "impact": 3,
+      "analysis": "深度参与香港金管局数字货币项目，受益车路云发展。"
+    },
+    {
+      "stock_name": "金溢科技",
+      "stock_code": "002869",
+      "impact": 3,
+      "analysis": "提供车路云一体化解决方案，受益Robotaxi市场。"
+    },
+    {
+      "stock_name": "瀛通通讯",
+      "stock_code": "002869",
+      "impact": 3,
+      "analysis": "影石供应商，受益智能眼镜市场。"
+    },
+    {
+      "stock_name": "众生药业",
+      "stock_code": "002317",
+      "impact": 3,
+      "analysis": "多款创新药取得关键进展，业绩有望增长。"
+    },
+    {
+      "stock_name": "远东股份",
+      "stock_code": "000682",
+      "impact": 3,
+      "analysis": "供应ITER电线电缆产品，受益核聚变项目。"
+    },
+    {
+      "stock_name": "合众思壮",
+      "stock_code": "002383",
+      "impact": 3,
+      "analysis": "高精度定位导航技术为无人驾驶关键技术支撑。"
+    },
+    {
+      "stock_name": "东风股份",
+      "stock_code": "002515",
+      "impact": 3,
+      "analysis": "合作九识智能，布局智能商用车市场。"
+    }
+  ],
+  "article_id": "4612974eea17401ab87df397c506e25b",
+  "article_date": "2025-05-29",
+  "article_title": "2025.5.29市场逻辑精选"
+}

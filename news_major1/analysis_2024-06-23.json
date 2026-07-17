@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "利好，航天、卫星通讯、低空经济、大飞机板块表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "航天",
+      "impact": 4,
+      "analysis": "火箭技术突破，推动行业发展。"
+    },
+    {
+      "sector_name": "卫星通讯",
+      "impact": 3,
+      "analysis": "卫星制造成本降低，市场需求增加。"
+    },
+    {
+      "sector_name": "低空经济",
+      "impact": 2,
+      "analysis": "低空游览项目增加，相关公司受益。"
+    },
+    {
+      "sector_name": "大飞机",
+      "impact": 3,
+      "analysis": "大额订单推动国产化进程。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "铖昌科技",
+      "stock_code": "002103",
+      "impact": 3,
+      "analysis": "卫星端技术领先，受益于行业增长。"
+    },
+    {
+      "stock_name": "通宇通讯",
+      "stock_code": "002792",
+      "impact": 3,
+      "analysis": "卫星无线路由器等业务增长。"
+    },
+    {
+      "stock_name": "亿航智能",
+      "stock_code": "688016",
+      "impact": 3,
+      "analysis": "低空游览项目合作增加，订单增长。"
+    },
+    {
+      "stock_name": "航发动力",
+      "stock_code": "600893",
+      "impact": 3,
+      "analysis": "航空发动机业务受益于国产化进程。"
+    }
+  ],
+  "article_id": "cae5e859e92840adb620b7de3d4071d1",
+  "article_date": "2024-06-23",
+  "article_title": "2024.6.23市场逻辑精选"
+}

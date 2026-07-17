@@ -1,0 +1,7 @@
+Features: ['hot_rank_pct', 'chip_concentration', 'winner_rate', 'news_market_impact', 'news_stock_impact']
+
+=== Original Model Quick Backtest (2023-01 to 2024-01) ===
+Total trades: 80
+Winning trades: 37 (46.25%)
+Average return per trade: -0.0269
+Median return per trade: -0.0191

@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏乐观，多个板块和个股受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "人工智能",
+      "impact": 4,
+      "analysis": "受微软合作和华为鸿蒙升级利好"
+    },
+    {
+      "sector_name": "芯片",
+      "impact": 3,
+      "analysis": "受英伟达涨超16%和5G、人工智能等数字技术创新应用利好"
+    },
+    {
+      "sector_name": "新能源",
+      "impact": 3,
+      "analysis": "受光伏组件市场涨价和固态电池生产线投产利好"
+    },
+    {
+      "sector_name": "国资",
+      "impact": 2,
+      "analysis": "受市值管理要求加速落地利好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "英伟达",
+      "stock_code": "NVDA",
+      "impact": 4,
+      "analysis": "业绩超预期，目标价上调"
+    },
+    {
+      "stock_name": "华为鸿蒙",
+      "stock_code": "HUAWEI",
+      "impact": 4,
+      "analysis": "鸿蒙OS将有大版本升级"
+    },
+    {
+      "stock_name": "辉能科技",
+      "stock_code": "300344",
+      "impact": 3,
+      "analysis": "全球首条固态电池生产线投产"
+    },
+    {
+      "stock_name": "晶澳科技",
+      "stock_code": "002459",
+      "impact": 3,
+      "analysis": "光伏组件市场涨价"
+    }
+  ],
+  "article_title": "2月23日 周五盘前早报 热点事件关注",
+  "html_file": "e9vvdmu6jg.html",
+  "article_date": "2024-02-23"
+}

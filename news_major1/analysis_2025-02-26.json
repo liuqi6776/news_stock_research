@@ -1,0 +1,83 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极影响。",
+  "sectors": [
+    {
+      "sector_name": "工业智能",
+      "impact": 4,
+      "analysis": "太极股份产品入选AI产品榜单，板块受益"
+    },
+    {
+      "sector_name": "AI芯片",
+      "impact": 3,
+      "analysis": "RISC-V生态大会召开，相关芯片公司受益"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "星动纪元发布人形机器人，相关公司受益"
+    },
+    {
+      "sector_name": "AI政务",
+      "impact": 3,
+      "analysis": "广电运通布局昇腾一体机，政务云需求提升"
+    },
+    {
+      "sector_name": "一体化压铸",
+      "impact": 2,
+      "analysis": "机器人减重趋势，一体化压铸设备需求增加"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 2,
+      "analysis": "锑价上涨，光伏行业需求增加"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "太极股份",
+      "stock_code": "002368",
+      "impact": 4,
+      "analysis": "产品入选AI产品榜单，股价有望上涨"
+    },
+    {
+      "stock_name": "芯原股份",
+      "stock_code": "688516",
+      "impact": 3,
+      "analysis": "RISC-V生态大会合作伙伴，股价有望上涨"
+    },
+    {
+      "stock_name": "全志科技",
+      "stock_code": "300454",
+      "impact": 3,
+      "analysis": "RISC-V生态领域合作伙伴，股价有望上涨"
+    },
+    {
+      "stock_name": "星动纪元",
+      "stock_code": "301096",
+      "impact": 3,
+      "analysis": "发布人形机器人，股价有望上涨"
+    },
+    {
+      "stock_name": "广电运通",
+      "stock_code": "002152",
+      "impact": 3,
+      "analysis": "布局昇腾一体机，股价有望上涨"
+    },
+    {
+      "stock_name": "创世纪",
+      "stock_code": "002506",
+      "impact": 2,
+      "analysis": "一体化压铸设备需求增加，股价有望上涨"
+    },
+    {
+      "stock_name": "华钰矿业",
+      "stock_code": "600387",
+      "impact": 2,
+      "analysis": "锑价上涨，股价有望上涨"
+    }
+  ],
+  "article_id": "cac4fc9af3fc4cfebe456af3403f13e4",
+  "article_date": "2025-02-26",
+  "article_title": "2025.2.26市场逻辑精选"
+}

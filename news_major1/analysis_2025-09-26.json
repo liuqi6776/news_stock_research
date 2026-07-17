@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "光刻机",
+      "impact": 4,
+      "analysis": "国产光刻机测试预期，板块受益"
+    },
+    {
+      "sector_name": "数字人民币",
+      "impact": 3,
+      "analysis": "数字人民币国际运营中心正式运营，板块受益"
+    },
+    {
+      "sector_name": "算力",
+      "impact": 3,
+      "analysis": "算力基础设施建设推进，板块受益"
+    },
+    {
+      "sector_name": "新能源",
+      "impact": 3,
+      "analysis": "新能源政策支持，板块受益"
+    },
+    {
+      "sector_name": "互联网平台",
+      "impact": 2,
+      "analysis": "互联网平台涉税信息报送规定，板块受影响"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "华软科技",
+      "stock_code": "000502",
+      "impact": 4,
+      "analysis": "光刻机板块龙头，受益于国产光刻机测试预期"
+    },
+    {
+      "stock_name": "恒宝股份",
+      "stock_code": "002104",
+      "impact": 3,
+      "analysis": "数字人民币板块龙头，受益于数字人民币国际运营中心正式运营"
+    },
+    {
+      "stock_name": "浪潮信息",
+      "stock_code": "000977",
+      "impact": 3,
+      "analysis": "算力板块龙头，受益于算力基础设施建设推进"
+    },
+    {
+      "stock_name": "省广集团",
+      "stock_code": "002400",
+      "impact": 3,
+      "analysis": "TikTok 美国运营方案符合美国相关法律要求，受益于字节跳动 TikTok 美国公司运营"
+    },
+    {
+      "stock_name": "税友股份",
+      "stock_code": "002153",
+      "impact": 2,
+      "analysis": "互联网平台涉税信息报送规定，公司受影响"
+    }
+  ],
+  "article_title": "9月26日盘前纪要",
+  "html_file": "4e5smx7ve4u.html",
+  "article_date": "2025-09-26"
+}

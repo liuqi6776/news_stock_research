@@ -1,0 +1,77 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受政策优化和新产品发布影响，呈现一定利好。",
+  "sectors": [
+    {
+      "sector_name": "医药",
+      "impact": 4,
+      "analysis": "药品集采优化方案利好创新药和原料药企业。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "新凯来亮相上海国际半导体展览会，利好相关设备供应商。"
+    },
+    {
+      "sector_name": "餐饮",
+      "impact": 2,
+      "analysis": "富岭股份与霸王茶姬合作，利好相关餐饮供应链企业。"
+    },
+    {
+      "sector_name": "农药",
+      "impact": 3,
+      "analysis": "农药中间体紧缺，利好相关农药中间体生产企业。"
+    },
+    {
+      "sector_name": "化工",
+      "impact": 2,
+      "analysis": "华康股份收购豫鑫糖醇，利好相关化工企业。"
+    },
+    {
+      "sector_name": "有色金属",
+      "impact": 2,
+      "analysis": "恒星科技获得金矿采矿权证，利好相关有色金属企业。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "奥赛康",
+      "stock_code": "002272",
+      "impact": 4,
+      "analysis": "创新药企业，受药品集采优化方案利好。"
+    },
+    {
+      "stock_name": "至纯科技",
+      "stock_code": "600259",
+      "impact": 3,
+      "analysis": "半导体设备供应商，受新凯来亮相利好。"
+    },
+    {
+      "stock_name": "富岭股份",
+      "stock_code": "002402",
+      "impact": 2,
+      "analysis": "餐饮供应链企业，受与霸王茶姬合作利好。"
+    },
+    {
+      "stock_name": "善水科技",
+      "stock_code": "603726",
+      "impact": 3,
+      "analysis": "农药中间体生产企业，受农药中间体紧缺利好。"
+    },
+    {
+      "stock_name": "华康股份",
+      "stock_code": "002672",
+      "impact": 2,
+      "analysis": "化工企业，受收购豫鑫糖醇利好。"
+    },
+    {
+      "stock_name": "恒星科技",
+      "stock_code": "002132",
+      "impact": 2,
+      "analysis": "有色金属企业，受获得金矿采矿权证利好。"
+    }
+  ],
+  "article_id": "f9e7874a0b2343dcad60c0bef2275648",
+  "article_date": "2025-03-27",
+  "article_title": "2025.3.27市场逻辑精选"
+}

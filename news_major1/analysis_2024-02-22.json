@@ -1,0 +1,79 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受煤炭和光伏板块利好影响，部分个股表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "煤炭",
+      "impact": 4,
+      "analysis": "供应紧张，价格预期乐观，板块受益。"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "排产好转，涨价预期，产业链受益。"
+    },
+    {
+      "sector_name": "铰链",
+      "impact": 2,
+      "analysis": "折叠屏技术突破，相关公司受益。"
+    },
+    {
+      "sector_name": "AI",
+      "impact": 2,
+      "analysis": "AI+概念活跃，相关个股表现。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "兖矿能源",
+      "stock_code": "600188",
+      "impact": 4,
+      "analysis": "煤炭板块龙头，股息率高。"
+    },
+    {
+      "stock_name": "新集能源",
+      "stock_code": "600188",
+      "impact": 3,
+      "analysis": "坑口煤电一体化，成长性标的。"
+    },
+    {
+      "stock_name": "潞安环能",
+      "stock_code": "600798",
+      "impact": 3,
+      "analysis": "低估值高股息焦煤标的。"
+    },
+    {
+      "stock_name": "宇邦新材",
+      "stock_code": "603380",
+      "impact": 3,
+      "analysis": "光伏辅材放量，弹性显著。"
+    },
+    {
+      "stock_name": "德业股份",
+      "stock_code": "603357",
+      "impact": 3,
+      "analysis": "逆变器板块弹性显著。"
+    },
+    {
+      "stock_name": "东睦股份",
+      "stock_code": "002869",
+      "impact": 2,
+      "analysis": "华为手机MIM件供应商。"
+    },
+    {
+      "stock_name": "卓朗科技",
+      "stock_code": "300482",
+      "impact": 2,
+      "analysis": "国资算力企业，英伟达合作伙伴。"
+    },
+    {
+      "stock_name": "麦迪科技",
+      "stock_code": "300433",
+      "impact": 2,
+      "analysis": "拟收购中科院下属AI公司。"
+    }
+  ],
+  "article_id": "cf88b5c21c6f4273b246af3128b1d072",
+  "article_date": "2024-02-22",
+  "article_title": "2024.2.22市场逻辑精选"
+}

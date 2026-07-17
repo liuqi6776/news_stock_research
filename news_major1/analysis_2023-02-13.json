@@ -1,0 +1,126 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股受积极因素影响。",
+  "sectors": [
+    {
+      "sector_name": "乡村振兴",
+      "impact": 4,
+      "analysis": "政策支持，板块受益"
+    },
+    {
+      "sector_name": "网络游戏",
+      "impact": 3,
+      "analysis": "版号发放稳定，行业持续发展"
+    },
+    {
+      "sector_name": "算力",
+      "impact": 3,
+      "analysis": "技术升级，需求提升"
+    },
+    {
+      "sector_name": "存算一体",
+      "impact": 3,
+      "analysis": "AI计算需求增长，板块受益"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 2,
+      "analysis": "信贷增加，行业有望回暖"
+    },
+    {
+      "sector_name": "钒钛股份",
+      "impact": 3,
+      "analysis": "钒价回升，业绩弹性大"
+    },
+    {
+      "sector_name": "巨化股份",
+      "impact": 3,
+      "analysis": "氟化工景气反转，业绩弹性大"
+    },
+    {
+      "sector_name": "视源股份",
+      "impact": 2,
+      "analysis": "数字教育大会召开，数字化转型提速"
+    },
+    {
+      "sector_name": "蔚蓝生物",
+      "impact": 2,
+      "analysis": "生物合成技术，粮食危机有望缓解"
+    },
+    {
+      "sector_name": "宇信科技",
+      "impact": 2,
+      "analysis": "华为超融合产品发布，软硬件生态跨越"
+    },
+    {
+      "sector_name": "雷科防务",
+      "impact": 2,
+      "analysis": "超距毫米波雷达发布，智慧交通感知力提升"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "敦煌种业",
+      "stock_code": "600354",
+      "impact": 4,
+      "analysis": "乡村振兴政策支持，业绩有望提升"
+    },
+    {
+      "stock_name": "隆平高科",
+      "stock_code": "000998",
+      "impact": 4,
+      "analysis": "乡村振兴政策支持，业绩有望提升"
+    },
+    {
+      "stock_name": "中青宝",
+      "stock_code": "300118",
+      "impact": 3,
+      "analysis": "网络游戏版号稳定，行业持续发展"
+    },
+    {
+      "stock_name": "首都在线",
+      "stock_code": "300816",
+      "impact": 3,
+      "analysis": "算力技术升级，需求提升"
+    },
+    {
+      "stock_name": "寒武纪",
+      "stock_code": "688256",
+      "impact": 3,
+      "analysis": "自主算力产业链，政策支持"
+    },
+    {
+      "stock_name": "江波龙",
+      "stock_code": "300724",
+      "impact": 3,
+      "analysis": "存算一体架构，AI计算需求增长"
+    },
+    {
+      "stock_name": "中交地产",
+      "stock_code": "600017",
+      "impact": 2,
+      "analysis": "信贷增加，行业有望回暖"
+    },
+    {
+      "stock_name": "钒钛股份",
+      "stock_code": "000629",
+      "impact": 3,
+      "analysis": "钒价回升，业绩弹性大"
+    },
+    {
+      "stock_name": "巨化股份",
+      "stock_code": "600160",
+      "impact": 3,
+      "analysis": "氟化工景气反转，业绩弹性大"
+    },
+    {
+      "stock_name": "视源股份",
+      "stock_code": "002841",
+      "impact": 2,
+      "analysis": "数字教育大会召开，数字化转型提速"
+    }
+  ],
+  "article_title": "2月13日盘前早参 热点事件关注",
+  "html_file": "8tr8qqzh26.html",
+  "article_date": "2023-02-13"
+}

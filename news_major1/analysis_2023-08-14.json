@@ -1,0 +1,110 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受积极因素推动，但需关注具体板块和个股表现。",
+  "sectors": [
+    {
+      "sector_name": "一带一路",
+      "impact": 4,
+      "analysis": "会议密集召开，相关板块受提振"
+    },
+    {
+      "sector_name": "轨交装备",
+      "impact": 3,
+      "analysis": "出口增速高，行业前景看好"
+    },
+    {
+      "sector_name": "国际工程",
+      "impact": 3,
+      "analysis": "新签合同额增长，行业活跃"
+    },
+    {
+      "sector_name": "数据跨境",
+      "impact": 3,
+      "analysis": "政策支持，数据流动加速"
+    },
+    {
+      "sector_name": "算力",
+      "impact": 3,
+      "analysis": "产业大会召开，算力需求增长"
+    },
+    {
+      "sector_name": "数据确权",
+      "impact": 3,
+      "analysis": "确权平台推出，市场潜力大"
+    },
+    {
+      "sector_name": "铁路投资",
+      "impact": 3,
+      "analysis": "铁路投资增长，相关公司受益"
+    },
+    {
+      "sector_name": "虚拟专用网",
+      "impact": 3,
+      "analysis": "政策支持，行业前景看好"
+    },
+    {
+      "sector_name": "TOPCon电池",
+      "impact": 3,
+      "analysis": "新技术提升效率，行业增长"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "长青科技",
+      "stock_code": "002638",
+      "impact": 3,
+      "analysis": "铁路投资增长，轨交板块受益"
+    },
+    {
+      "stock_name": "中材国际",
+      "stock_code": "600970",
+      "impact": 3,
+      "analysis": "国际工程合同增长，行业活跃"
+    },
+    {
+      "stock_name": "中国中车",
+      "stock_code": "601766",
+      "impact": 3,
+      "analysis": "轨交装备出口增速高，行业前景看好"
+    },
+    {
+      "stock_name": "美亚柏科",
+      "stock_code": "300188",
+      "impact": 3,
+      "analysis": "数据跨境流动加速，公司受益"
+    },
+    {
+      "stock_name": "鸿博股份",
+      "stock_code": "002229",
+      "impact": 3,
+      "analysis": "算力业务进展，公司布局积极"
+    },
+    {
+      "stock_name": "竞业达",
+      "stock_code": "002383",
+      "impact": 3,
+      "analysis": "算力基地落成，助力数字化升级"
+    },
+    {
+      "stock_name": "人民网",
+      "stock_code": "603000",
+      "impact": 3,
+      "analysis": "数据确权平台推出，公司受益"
+    },
+    {
+      "stock_name": "南凌科技",
+      "stock_code": "002354",
+      "impact": 3,
+      "analysis": "虚拟专用网业务增长，行业前景看好"
+    },
+    {
+      "stock_name": "帝尔激光",
+      "stock_code": "300335",
+      "impact": 3,
+      "analysis": "TOPCon电池技术提升，行业增长"
+    }
+  ],
+  "article_id": "42ae2989cd3049d59457188281dc2f96",
+  "article_date": "2023-08-14",
+  "article_title": "2023.8.14市场逻辑精选"
+}

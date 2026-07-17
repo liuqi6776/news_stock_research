@@ -1,0 +1,88 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪提升",
+  "sectors": [
+    {
+      "sector_name": "物联网",
+      "impact": 4,
+      "analysis": "政策支持，行业前景广阔"
+    },
+    {
+      "sector_name": "并购重组",
+      "impact": 3,
+      "analysis": "活跃期，助力技术创新"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "美股上涨，国内关注度高"
+    },
+    {
+      "sector_name": "锂电",
+      "impact": 3,
+      "analysis": "宁德时代停产，价格预期上涨"
+    },
+    {
+      "sector_name": "PCB",
+      "impact": 3,
+      "analysis": "英伟达需求强劲，行业受益"
+    },
+    {
+      "sector_name": "镍钛铀",
+      "impact": 2,
+      "analysis": "俄罗斯出口限制，价格预期上涨"
+    },
+    {
+      "sector_name": "特斯拉无人驾驶",
+      "impact": 2,
+      "analysis": "Robotaxi发布，行业关注度高"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "武汉凡谷",
+      "stock_code": "002555",
+      "impact": 4,
+      "analysis": "物联网政策利好"
+    },
+    {
+      "stock_name": "天茂集团",
+      "stock_code": "600016",
+      "impact": 3,
+      "analysis": "并购重组活跃"
+    },
+    {
+      "stock_name": "海源复材",
+      "stock_code": "002533",
+      "impact": 3,
+      "analysis": "光伏行业关注度高"
+    },
+    {
+      "stock_name": "宁德时代",
+      "stock_code": "300750",
+      "impact": 3,
+      "analysis": "锂电行业受益"
+    },
+    {
+      "stock_name": "沪电股份",
+      "stock_code": "002463",
+      "impact": 3,
+      "analysis": "PCB行业受益"
+    },
+    {
+      "stock_name": "鹏欣资源",
+      "stock_code": "600099",
+      "impact": 2,
+      "analysis": "镍价预期上涨"
+    },
+    {
+      "stock_name": "宜通世纪",
+      "stock_code": "300292",
+      "impact": 2,
+      "analysis": "特斯拉无人驾驶受益"
+    }
+  ],
+  "article_title": "9月12日盘前早报 热点事件关注",
+  "html_file": "7znh2tbg4h.html",
+  "article_date": "2024-09-12"
+}

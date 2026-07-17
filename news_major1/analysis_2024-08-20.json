@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受积极事件驱动，但需关注后续政策落实。",
+  "sectors": [
+    {
+      "sector_name": "机器人",
+      "impact": 4,
+      "analysis": "宇树机器人相关活动及世界机器人大会将推动板块上涨。"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 3,
+      "analysis": "保障房政策持续推进，利好房地产板块。"
+    },
+    {
+      "sector_name": "VR/游戏",
+      "impact": 3,
+      "analysis": "《三体：远征》首曝，VR游戏市场受提振。"
+    },
+    {
+      "sector_name": "云计算",
+      "impact": 2,
+      "analysis": "顺网科技边缘算力应用，云计算板块受益。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 2,
+      "analysis": "华为合作及收购事件，半导体板块受关注。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "宇树科技",
+      "stock_code": "股票代码未知",
+      "impact": 4,
+      "analysis": "世界机器人大会及新产品发布，股价有望上涨。"
+    },
+    {
+      "stock_name": "特发服务",
+      "stock_code": "000070",
+      "impact": 3,
+      "analysis": "保障房政策，物业管理公司受益。"
+    },
+    {
+      "stock_name": "浙版传媒",
+      "stock_code": "600633",
+      "impact": 3,
+      "analysis": "《三体：远征》首曝，VR游戏相关公司受益。"
+    },
+    {
+      "stock_name": "顺网科技",
+      "stock_code": "300113",
+      "impact": 2,
+      "analysis": "边缘算力应用，股价有望上涨。"
+    },
+    {
+      "stock_name": "慧博云通",
+      "stock_code": "300576",
+      "impact": 2,
+      "analysis": "与华为海思合作，股价有望上涨。"
+    }
+  ],
+  "article_id": "261f0b022b8848899e9594f9dff5246f",
+  "article_date": "2024-08-20",
+  "article_title": "2024.8.20市场逻辑精选"
+}

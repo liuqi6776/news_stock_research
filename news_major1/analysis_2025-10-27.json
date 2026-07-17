@@ -1,0 +1,56 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "铜",
+      "impact": 4,
+      "analysis": "供需矛盾支撑铜价，板块受益"
+    },
+    {
+      "sector_name": "手机直连卫星",
+      "impact": 3,
+      "analysis": "技术进步和市场需求推动，板块受益"
+    },
+    {
+      "sector_name": "锂",
+      "impact": 3,
+      "analysis": "锂价上涨，产业链受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "北方铜业",
+      "stock_code": "000655",
+      "impact": 4,
+      "analysis": "铜价上涨，公司业绩有望提升"
+    },
+    {
+      "stock_name": "西部矿业",
+      "stock_code": "601168",
+      "impact": 3,
+      "analysis": "获得大型铜金矿床资源，公司前景看好"
+    },
+    {
+      "stock_name": "臻镭科技",
+      "stock_code": "688599",
+      "impact": 3,
+      "analysis": "卫星通信技术领先，公司有望受益"
+    },
+    {
+      "stock_name": "盛新锂能",
+      "stock_code": "002240",
+      "impact": 3,
+      "analysis": "锂资源丰富，公司业绩有望增长"
+    },
+    {
+      "stock_name": "金龙汽车",
+      "stock_code": "600686",
+      "impact": 3,
+      "analysis": "与京东合作，自动驾驶物流车业务有望增长"
+    }
+  ],
+  "article_id": "a9bb6a9edbdd44ea836629c1ce183614",
+  "article_date": "2025-10-27",
+  "article_title": "2025.10.27市场逻辑精选"
+}

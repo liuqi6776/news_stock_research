@@ -1,0 +1,105 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个行业和个股受积极影响。",
+  "sectors": [
+    {
+      "sector_name": "AI算力",
+      "impact": 4,
+      "analysis": "华为AI算力增长预测利好相关产业链。"
+    },
+    {
+      "sector_name": "算力平台",
+      "impact": 3,
+      "analysis": "上海算力平台建设推动相关公司发展。"
+    },
+    {
+      "sector_name": "6G通信",
+      "impact": 3,
+      "analysis": "6G技术研发突破利好相关企业。"
+    },
+    {
+      "sector_name": "AI应用端",
+      "impact": 3,
+      "analysis": "蓝色光标业绩大增带动AI应用端个股。"
+    },
+    {
+      "sector_name": "数据要素",
+      "impact": 2,
+      "analysis": "Reddit向AI公司收取数据使用费利好数据要素行业。"
+    },
+    {
+      "sector_name": "内存芯片",
+      "impact": 2,
+      "analysis": "内存芯片价格上涨利好相关企业。"
+    },
+    {
+      "sector_name": "AI金融",
+      "impact": 2,
+      "analysis": "大和证券使用ChatGPT技术利好AI金融行业。"
+    },
+    {
+      "sector_name": "VR",
+      "impact": 2,
+      "analysis": "PICO 4 Pro正式发售利好VR行业。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中科曙光",
+      "stock_code": "603019",
+      "impact": 4,
+      "analysis": "华为AI算力增长预测利好。"
+    },
+    {
+      "stock_name": "浪潮信息",
+      "stock_code": "000977",
+      "impact": 4,
+      "analysis": "华为AI算力增长预测利好。"
+    },
+    {
+      "stock_name": "寒武纪",
+      "stock_code": "688005",
+      "impact": 4,
+      "analysis": "华为AI算力增长预测利好。"
+    },
+    {
+      "stock_name": "海光信息",
+      "stock_code": "688041",
+      "impact": 4,
+      "analysis": "华为AI算力增长预测利好。"
+    },
+    {
+      "stock_name": "润和软件",
+      "stock_code": "300339",
+      "impact": 3,
+      "analysis": "华为算力利好相关企业。"
+    },
+    {
+      "stock_name": "软通动力",
+      "stock_code": "300072",
+      "impact": 3,
+      "analysis": "华为算力利好相关企业。"
+    },
+    {
+      "stock_name": "拓维信息",
+      "stock_code": "002261",
+      "impact": 3,
+      "analysis": "华为算力利好相关企业。"
+    },
+    {
+      "stock_name": "四川长虹",
+      "stock_code": "600839",
+      "impact": 3,
+      "analysis": "华为算力利好相关企业。"
+    },
+    {
+      "stock_name": "蓝色光标",
+      "stock_code": "300058",
+      "impact": 4,
+      "analysis": "一季报大增355%利好。"
+    }
+  ],
+  "article_title": "4月20日 盘前热点事件关注",
+  "html_file": "2ay5ks6p7z.html",
+  "article_date": "2023-04-20"
+}

@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "消费、科技板块利好，市场情绪提升。",
+  "sectors": [
+    {
+      "sector_name": "消费",
+      "impact": 4,
+      "analysis": "性价比消费趋势增强，利好相关品牌及零售商。"
+    },
+    {
+      "sector_name": "科技",
+      "impact": 3,
+      "analysis": "WIFI 7路由器开售，相关芯片及零部件公司受益。"
+    },
+    {
+      "sector_name": "汽车",
+      "impact": 2,
+      "analysis": "自动驾驶安全指南发布，T-Box市场空间扩大。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "拼多多",
+      "stock_code": "PDD",
+      "impact": 4,
+      "analysis": "消费新趋势，股价有望上涨。"
+    },
+    {
+      "stock_name": "华为",
+      "stock_code": "002502",
+      "impact": 3,
+      "analysis": "WIFI 7路由器开售，利好相关产业链。"
+    },
+    {
+      "stock_name": "东软集团",
+      "stock_code": "600718",
+      "impact": 3,
+      "analysis": "T-Box市场空间扩大，公司市占率领先。"
+    },
+    {
+      "stock_name": "翰宇药业",
+      "stock_code": "002758",
+      "impact": 3,
+      "analysis": "司美格鲁肽注射液临床获批，糖尿病治疗市场前景广阔。"
+    }
+  ],
+  "article_id": "e141891919c44ea0b6b98f5649480372",
+  "article_date": "2023-12-05",
+  "article_title": "2023.12.5市场逻辑精选"
+}

@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好影响，AI和云计算板块表现强劲。",
+  "sectors": [
+    {
+      "sector_name": "AI芯片",
+      "impact": 4,
+      "analysis": "华为昇腾发布新产品，推动板块上涨。"
+    },
+    {
+      "sector_name": "云计算",
+      "impact": 3,
+      "analysis": "云厂商支持DeepSeek部署，板块受益。"
+    },
+    {
+      "sector_name": "AI应用",
+      "impact": 3,
+      "analysis": "DeepSeek应用增长迅速，推动相关公司上涨。"
+    },
+    {
+      "sector_name": "国产算力",
+      "impact": 3,
+      "analysis": "DeepSeek拓宽算力生态需求，板块受益。"
+    },
+    {
+      "sector_name": "影视传媒",
+      "impact": 2,
+      "analysis": "春节档电影票房火爆，相关公司受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "华胜天成",
+      "stock_code": "600266",
+      "impact": 3,
+      "analysis": "受益于华为昇腾新产品发布。"
+    },
+    {
+      "stock_name": "金山云",
+      "stock_code": "02009",
+      "impact": 3,
+      "analysis": "云厂商支持DeepSeek部署，股价上涨。"
+    },
+    {
+      "stock_name": "新炬网络",
+      "stock_code": "300590",
+      "impact": 3,
+      "analysis": "AI智能体相关公司，受益于AI应用增长。"
+    },
+    {
+      "stock_name": "杭钢股份",
+      "stock_code": "600231",
+      "impact": 3,
+      "analysis": "完成DeepSeek-R1适配，推动股价上涨。"
+    },
+    {
+      "stock_name": "光线传媒",
+      "stock_code": "600707",
+      "impact": 2,
+      "analysis": "春节档电影票房火爆，公司受益。"
+    }
+  ],
+  "article_id": "4c399220f00d456ea5a763bee0b004da",
+  "article_date": "2025-02-04",
+  "article_title": "2025.2.4市场逻辑精选"
+}

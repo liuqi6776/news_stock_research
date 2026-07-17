@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极因素影响",
+  "sectors": [
+    {
+      "sector_name": "电影",
+      "impact": 3,
+      "analysis": "电影资助项目公布，相关公司受益"
+    },
+    {
+      "sector_name": "消费",
+      "impact": 2,
+      "analysis": "以旧换新政策，相关家居企业受益"
+    },
+    {
+      "sector_name": "科技",
+      "impact": 3,
+      "analysis": "智慧港航政务、无人机接驳柜等科技项目进展"
+    },
+    {
+      "sector_name": "金融",
+      "impact": 2,
+      "analysis": "数字金融高质量发展行动方案发布"
+    },
+    {
+      "sector_name": "动漫",
+      "impact": 3,
+      "analysis": "动漫数据资产管理与交易平台共建，相关IP公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "北京文化",
+      "stock_code": "000802",
+      "impact": 3,
+      "analysis": "入选电影资助项目"
+    },
+    {
+      "stock_name": "华是科技",
+      "stock_code": "300739",
+      "impact": 3,
+      "analysis": "智慧港航政务业务及数据挖掘进展"
+    },
+    {
+      "stock_name": "智莱科技",
+      "stock_code": "002766",
+      "impact": 3,
+      "analysis": "无人机接驳柜及无人驾驶配送小车项目"
+    },
+    {
+      "stock_name": "中邮科技",
+      "stock_code": "300454",
+      "impact": 3,
+      "analysis": "子公司土地征收补偿"
+    },
+    {
+      "stock_name": "视觉中国",
+      "stock_code": "000681",
+      "impact": 3,
+      "analysis": "共建动漫数据资产管理与交易平台"
+    }
+  ],
+  "article_id": "da1ba63c0fc6407c9344cb7a926386a5",
+  "article_date": "2024-11-27",
+  "article_title": "2024.11.27市场逻辑精选"
+}

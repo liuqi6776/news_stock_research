@@ -1,0 +1,55 @@
+{
+  "market_impact": 4,
+  "market_analysis": "政策利好，市场情绪提振",
+  "sectors": [
+    {
+      "sector_name": "券商板块",
+      "impact": 5,
+      "analysis": "业绩弹性足，估值低"
+    },
+    {
+      "sector_name": "参股券商",
+      "impact": 4,
+      "analysis": "政策利好，辨识度高"
+    },
+    {
+      "sector_name": "破发次新股",
+      "impact": -3,
+      "analysis": "限制减持，短期利空"
+    },
+    {
+      "sector_name": "地产+金融",
+      "impact": 3,
+      "analysis": "再融资不受限制，利好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "锦龙股份",
+      "stock_code": "000712",
+      "impact": 5,
+      "analysis": "拥有两家证券公司，业绩弹性高"
+    },
+    {
+      "stock_name": "恒银科技",
+      "stock_code": "601655",
+      "impact": 4,
+      "analysis": "深耕银行金融领域，技术领先"
+    },
+    {
+      "stock_name": "中迪投资",
+      "stock_code": "000881",
+      "impact": 3,
+      "analysis": "受益于地产+金融双重利好"
+    },
+    {
+      "stock_name": "天晟新材",
+      "stock_code": "300709",
+      "impact": 3,
+      "analysis": "创业板小市值券商概念股"
+    }
+  ],
+  "article_id": "f1fbabd379a34af09320af06eb3c957c",
+  "article_date": "2023-08-27",
+  "article_title": "2023.8.27市场逻辑精选"
+}

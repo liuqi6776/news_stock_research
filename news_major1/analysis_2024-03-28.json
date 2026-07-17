@@ -1,0 +1,96 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受政策和技术驱动有望上涨。",
+  "sectors": [
+    {
+      "sector_name": "航空发动机",
+      "impact": 4,
+      "analysis": "政策支持混动技术，相关企业受益"
+    },
+    {
+      "sector_name": "户外露营",
+      "impact": 3,
+      "analysis": "清明假期临近，露营经济受关注"
+    },
+    {
+      "sector_name": "无线通信",
+      "impact": 3,
+      "analysis": "星闪技术峰会即将举行，相关企业受益"
+    },
+    {
+      "sector_name": "铜矿",
+      "impact": 3,
+      "analysis": "铜矿减产预期，相关企业受益"
+    },
+    {
+      "sector_name": "锂电池",
+      "impact": 3,
+      "analysis": "锂硫电池技术突破，相关企业受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "宗申动力",
+      "stock_code": "001696",
+      "impact": 4,
+      "analysis": "航空发动机业务受益"
+    },
+    {
+      "stock_name": "应流股份",
+      "stock_code": "600372",
+      "impact": 4,
+      "analysis": "航空发动机零部件业务受益"
+    },
+    {
+      "stock_name": "浙江自然",
+      "stock_code": "603901",
+      "impact": 3,
+      "analysis": "户外用品业务受益"
+    },
+    {
+      "stock_name": "三夫户外",
+      "stock_code": "300959",
+      "impact": 3,
+      "analysis": "户外用品业务受益"
+    },
+    {
+      "stock_name": "创耀科技",
+      "stock_code": "300610",
+      "impact": 3,
+      "analysis": "星闪技术相关业务受益"
+    },
+    {
+      "stock_name": "恒玄科技",
+      "stock_code": "688018",
+      "impact": 3,
+      "analysis": "星闪技术相关业务受益"
+    },
+    {
+      "stock_name": "北方铜业",
+      "stock_code": "000638",
+      "impact": 3,
+      "analysis": "铜矿减产预期受益"
+    },
+    {
+      "stock_name": "金诚信",
+      "stock_code": "002030",
+      "impact": 3,
+      "analysis": "铜矿减产预期受益"
+    },
+    {
+      "stock_name": "长安汽车",
+      "stock_code": "000625",
+      "impact": 3,
+      "analysis": "锂硫电池技术突破受益"
+    },
+    {
+      "stock_name": "国轩高科",
+      "stock_code": "002074",
+      "impact": 3,
+      "analysis": "锂硫电池技术突破受益"
+    }
+  ],
+  "article_id": "7eb87412764b4f21913791d8498dfb72",
+  "article_date": "2024-03-28",
+  "article_title": "2024.3.28市场逻辑精选"
+}

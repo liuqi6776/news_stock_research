@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "光伏、科技股等板块受政策利好，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "光伏",
+      "impact": 4,
+      "analysis": "政策支持，装机量有望增长，技术创新带来新机遇。"
+    },
+    {
+      "sector_name": "科技",
+      "impact": 3,
+      "analysis": "华为合作、科技资产重组等消息提振板块。"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 3,
+      "analysis": "公交车电动化推进，相关产业链受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "隆基股份",
+      "stock_code": "601012",
+      "impact": 4,
+      "analysis": "BC电池表现强劲，业绩转好。"
+    },
+    {
+      "stock_name": "深科技",
+      "stock_code": "000021",
+      "impact": 3,
+      "analysis": "营收增长，技术合作增强。"
+    },
+    {
+      "stock_name": "石头科技",
+      "stock_code": "688169",
+      "impact": 3,
+      "analysis": "新品热销，市场地位稳固。"
+    },
+    {
+      "stock_name": "寒武纪",
+      "stock_code": "688005",
+      "impact": 3,
+      "analysis": "存货大增，备料生产积极。"
+    }
+  ],
+  "article_id": "6ba9f7b7c9004717b3d37af441184503",
+  "article_date": "2024-10-30",
+  "article_title": "2024.10.30市场逻辑精选"
+}

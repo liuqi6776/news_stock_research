@@ -1,0 +1,77 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "芯片",
+      "impact": 4,
+      "analysis": "芯片板块受寒武纪、中芯国际等公司利好消息提振"
+    },
+    {
+      "sector_name": "金融",
+      "impact": 3,
+      "analysis": "国泰君安国际推出加密货币交易服务，金融板块受益"
+    },
+    {
+      "sector_name": "云计算",
+      "impact": 3,
+      "analysis": "阿里巴巴财报前瞻，云业务和AI成亮点"
+    },
+    {
+      "sector_name": "城市发展",
+      "impact": 3,
+      "analysis": "国务院推动城市高质量发展，相关公司受益"
+    },
+    {
+      "sector_name": "跨境支付",
+      "impact": 3,
+      "analysis": "上合组织峰会即将召开，跨境支付相关公司受益"
+    },
+    {
+      "sector_name": "苯酚",
+      "impact": 2,
+      "analysis": "商务部对进口苯酚征收反倾销税，苯酚相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "天普股份",
+      "stock_code": "600845",
+      "impact": 4,
+      "analysis": "实控人变更，公司基本面改善"
+    },
+    {
+      "stock_name": "国泰君安国际",
+      "stock_code": "01788",
+      "impact": 3,
+      "analysis": "推出加密货币交易服务，公司业务拓展"
+    },
+    {
+      "stock_name": "阿里巴巴",
+      "stock_code": "9988",
+      "impact": 3,
+      "analysis": "财报前瞻，云业务和AI成亮点"
+    },
+    {
+      "stock_name": "新城市",
+      "stock_code": "002539",
+      "impact": 3,
+      "analysis": "国务院推动城市高质量发展，公司受益"
+    },
+    {
+      "stock_name": "天津港",
+      "stock_code": "600717",
+      "impact": 3,
+      "analysis": "上合组织峰会即将召开，公司受益"
+    },
+    {
+      "stock_name": "维远股份",
+      "stock_code": "002163",
+      "impact": 2,
+      "analysis": "商务部对进口苯酚征收反倾销税，公司受益"
+    }
+  ],
+  "article_title": "8月29日盘前纪要",
+  "html_file": "3xnfdsn8nyz.html",
+  "article_date": "2025-08-29"
+}

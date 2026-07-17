@@ -1,0 +1,337 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股受利好消息提振。",
+  "sectors": [
+    {
+      "sector_name": "MiniLED",
+      "impact": 3,
+      "analysis": "行业热度提升，相关个股受关注。"
+    },
+    {
+      "sector_name": "智能经济",
+      "impact": 3,
+      "analysis": "两会报告提及，相关个股有望受益。"
+    },
+    {
+      "sector_name": "未来能源",
+      "impact": 3,
+      "analysis": "培育新增长点，相关个股受关注。"
+    },
+    {
+      "sector_name": "算电协同",
+      "impact": 3,
+      "analysis": "新基建工程，相关个股有望受益。"
+    },
+    {
+      "sector_name": "卫星互联网",
+      "impact": 3,
+      "analysis": "发展卫星互联网，相关个股受关注。"
+    },
+    {
+      "sector_name": "AI智能体",
+      "impact": 3,
+      "analysis": "AI技术进步，相关个股有望受益。"
+    },
+    {
+      "sector_name": "国产算力",
+      "impact": 3,
+      "analysis": "美国拟限制AI芯片出口，相关个股有望受益。"
+    },
+    {
+      "sector_name": "电力电网",
+      "impact": 3,
+      "analysis": "输电扩容项目，相关个股受关注。"
+    },
+    {
+      "sector_name": "石化",
+      "impact": 3,
+      "analysis": "地缘安全影响，相关个股受关注。"
+    },
+    {
+      "sector_name": "智能经济",
+      "impact": 3,
+      "analysis": "两会报告提及，相关个股有望受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "兆驰股份",
+      "stock_code": "002429",
+      "impact": 3,
+      "analysis": "MiniLED行业热度提升，公司受益。"
+    },
+    {
+      "stock_name": "国星光电",
+      "stock_code": "002005",
+      "impact": 3,
+      "analysis": "MiniLED行业热度提升，公司受益。"
+    },
+    {
+      "stock_name": "华灿光电",
+      "stock_code": "603012",
+      "impact": 3,
+      "analysis": "MiniLED行业热度提升，公司受益。"
+    },
+    {
+      "stock_name": "南兴股份",
+      "stock_code": "002757",
+      "impact": 3,
+      "analysis": "智能经济概念，公司受益。"
+    },
+    {
+      "stock_name": "酷特智能",
+      "stock_code": "002291",
+      "impact": 3,
+      "analysis": "智能经济概念，公司受益。"
+    },
+    {
+      "stock_name": "利欧股份",
+      "stock_code": "000729",
+      "impact": 3,
+      "analysis": "智能经济概念，公司受益。"
+    },
+    {
+      "stock_name": "天地在线",
+      "stock_code": "002995",
+      "impact": 3,
+      "analysis": "智能经济概念，公司受益。"
+    },
+    {
+      "stock_name": "引力传媒",
+      "stock_code": "300529",
+      "impact": 3,
+      "analysis": "智能经济概念，公司受益。"
+    },
+    {
+      "stock_name": "雄韬股份",
+      "stock_code": "002733",
+      "impact": 3,
+      "analysis": "未来能源概念，公司受益。"
+    },
+    {
+      "stock_name": "京城股份",
+      "stock_code": "600860",
+      "impact": 3,
+      "analysis": "未来能源概念，公司受益。"
+    },
+    {
+      "stock_name": "厚普股份",
+      "stock_code": "603629",
+      "impact": 3,
+      "analysis": "未来能源概念，公司受益。"
+    },
+    {
+      "stock_name": "昇辉科技",
+      "stock_code": "300254",
+      "impact": 3,
+      "analysis": "未来能源概念，公司受益。"
+    },
+    {
+      "stock_name": "豫能控股",
+      "stock_code": "000860",
+      "impact": 3,
+      "analysis": "算电协同概念，公司受益。"
+    },
+    {
+      "stock_name": "协鑫能科",
+      "stock_code": "002015",
+      "impact": 3,
+      "analysis": "算电协同概念，公司受益。"
+    },
+    {
+      "stock_name": "金开新能",
+      "stock_code": "603915",
+      "impact": 3,
+      "analysis": "算电协同概念，公司受益。"
+    },
+    {
+      "stock_name": "信维通信",
+      "stock_code": "300136",
+      "impact": 3,
+      "analysis": "卫星互联网概念，公司受益。"
+    },
+    {
+      "stock_name": "通宇通讯",
+      "stock_code": "002792",
+      "impact": 3,
+      "analysis": "卫星互联网概念，公司受益。"
+    },
+    {
+      "stock_name": "海格通信",
+      "stock_code": "002465",
+      "impact": 3,
+      "analysis": "卫星互联网概念，公司受益。"
+    },
+    {
+      "stock_name": "信科移动",
+      "stock_code": "600481",
+      "impact": 3,
+      "analysis": "卫星互联网概念，公司受益。"
+    },
+    {
+      "stock_name": "中贝通信",
+      "stock_code": "600898",
+      "impact": 3,
+      "analysis": "AI技术进步，公司受益。"
+    },
+    {
+      "stock_name": "新华传媒",
+      "stock_code": "600825",
+      "impact": 3,
+      "analysis": "AI技术进步，公司受益。"
+    },
+    {
+      "stock_name": "云赛智联",
+      "stock_code": "600879",
+      "impact": 3,
+      "analysis": "AI技术进步，公司受益。"
+    },
+    {
+      "stock_name": "寒武纪",
+      "stock_code": "688256",
+      "impact": 3,
+      "analysis": "国产算力概念，公司受益。"
+    },
+    {
+      "stock_name": "摩尔线程",
+      "stock_code": "688516",
+      "impact": 3,
+      "analysis": "国产算力概念，公司受益。"
+    },
+    {
+      "stock_name": "沐曦股份",
+      "stock_code": "688318",
+      "impact": 3,
+      "analysis": "国产算力概念，公司受益。"
+    },
+    {
+      "stock_name": "海光信息",
+      "stock_code": "603019",
+      "impact": 3,
+      "analysis": "国产算力概念，公司受益。"
+    },
+    {
+      "stock_name": "云天励飞",
+      "stock_code": "688023",
+      "impact": 3,
+      "analysis": "国产算力概念，公司受益。"
+    },
+    {
+      "stock_name": "顺钠股份",
+      "stock_code": "002575",
+      "impact": 3,
+      "analysis": "电力电网概念，公司受益。"
+    },
+    {
+      "stock_name": "汉缆股份",
+      "stock_code": "600498",
+      "impact": 3,
+      "analysis": "电力电网概念，公司受益。"
+    },
+    {
+      "stock_name": "积成电子",
+      "stock_code": "002339",
+      "impact": 3,
+      "analysis": "电力电网概念，公司受益。"
+    },
+    {
+      "stock_name": "东方电气",
+      "stock_code": "600875",
+      "impact": 3,
+      "analysis": "电力电网概念，公司受益。"
+    },
+    {
+      "stock_name": "上海电气",
+      "stock_code": "601727",
+      "impact": 3,
+      "analysis": "电力电网概念，公司受益。"
+    },
+    {
+      "stock_name": "中国西电",
+      "stock_code": "601179",
+      "impact": 3,
+      "analysis": "电力电网概念，公司受益。"
+    },
+    {
+      "stock_name": "三晖电气",
+      "stock_code": "603035",
+      "impact": 3,
+      "analysis": "电力电网概念，公司受益。"
+    },
+    {
+      "stock_name": "华银电力",
+      "stock_code": "600023",
+      "impact": 3,
+      "analysis": "电力电网概念，公司受益。"
+    },
+    {
+      "stock_name": "百利电气",
+      "stock_code": "600469",
+      "impact": 3,
+      "analysis": "电力电网概念，公司受益。"
+    },
+    {
+      "stock_name": "中超控股",
+      "stock_code": "002471",
+      "impact": 3,
+      "analysis": "电力电网概念，公司受益。"
+    },
+    {
+      "stock_name": "金煤科技",
+      "stock_code": "603398",
+      "impact": 3,
+      "analysis": "石化概念，公司受益。"
+    },
+    {
+      "stock_name": "宇新股份",
+      "stock_code": "603633",
+      "impact": 3,
+      "analysis": "石化概念，公司受益。"
+    },
+    {
+      "stock_name": "渤海化学",
+      "stock_code": "601616",
+      "impact": 3,
+      "analysis": "石化概念，公司受益。"
+    },
+    {
+      "stock_name": "海新能科",
+      "stock_code": "603096",
+      "impact": 3,
+      "analysis": "石化概念，公司受益。"
+    },
+    {
+      "stock_name": "恒逸石化",
+      "stock_code": "600703",
+      "impact": 3,
+      "analysis": "石化概念，公司受益。"
+    },
+    {
+      "stock_name": "卓郎智能",
+      "stock_code": "002916",
+      "impact": 3,
+      "analysis": "智能经济概念，公司受益。"
+    },
+    {
+      "stock_name": "智能自控",
+      "stock_code": "002334",
+      "impact": 3,
+      "analysis": "智能经济概念，公司受益。"
+    },
+    {
+      "stock_name": "安妮股份",
+      "stock_code": "002235",
+      "impact": 3,
+      "analysis": "筹划控制权变更，公司受益。"
+    },
+    {
+      "stock_name": "亚威股份",
+      "stock_code": "002559",
+      "impact": 3,
+      "analysis": "定增募资，公司受益。"
+    }
+  ],
+  "article_title": "3月6日盘前纪要",
+  "html_file": "3xxl9ywnxwj.html",
+  "article_date": "2026-03-06"
+}

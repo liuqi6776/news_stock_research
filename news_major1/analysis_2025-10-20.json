@@ -1,0 +1,74 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受商业航天和流感题材驱动，整体情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "商业航天",
+      "impact": 4,
+      "analysis": "发射加速，政策支持，板块利好"
+    },
+    {
+      "sector_name": "深地经济",
+      "impact": 3,
+      "analysis": "规划预期，万亿市场，板块利好"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 2,
+      "analysis": "流感季节提前，医药板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "星网宇达",
+      "stock_code": "002829",
+      "impact": 4,
+      "analysis": "业绩增长，技术领先，个股利好"
+    },
+    {
+      "stock_name": "天奥电子",
+      "stock_code": "600970",
+      "impact": 3,
+      "analysis": "核心供应商，产品配套，个股利好"
+    },
+    {
+      "stock_name": "神开股份",
+      "stock_code": "002278",
+      "impact": 3,
+      "analysis": "油气设备供应商，深地工程，个股利好"
+    },
+    {
+      "stock_name": "众生药业",
+      "stock_code": "002317",
+      "impact": 3,
+      "analysis": "创新药研发，流感药物，个股利好"
+    },
+    {
+      "stock_name": "博盈特焊",
+      "stock_code": "002745",
+      "impact": 3,
+      "analysis": "AI与油气基建，业绩增长，个股利好"
+    },
+    {
+      "stock_name": "七匹狼",
+      "stock_code": "002029",
+      "impact": 2,
+      "analysis": "金融资产投资收益，个股利好"
+    },
+    {
+      "stock_name": "吉大正元",
+      "stock_code": "300663",
+      "impact": 2,
+      "analysis": "安全可控，战略合作，个股利好"
+    },
+    {
+      "stock_name": "嘉澳环保",
+      "stock_code": "300213",
+      "impact": 3,
+      "analysis": "生物航煤生产，业绩增长，个股利好"
+    }
+  ],
+  "article_id": "103e991b07e6420ca42a03a1aa5225d2",
+  "article_date": "2025-10-20",
+  "article_title": "2025.10.20市场逻辑精选"
+}

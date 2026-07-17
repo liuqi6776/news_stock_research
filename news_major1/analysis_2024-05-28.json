@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，航天卫星和电力改革相关板块表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "航天卫星",
+      "impact": 4,
+      "analysis": "卫星互联网产业发展加速，相关产业链受益"
+    },
+    {
+      "sector_name": "电力设备",
+      "impact": 3,
+      "analysis": "火电灵活改造和特高压建设推进，设备需求增加"
+    },
+    {
+      "sector_name": "大飞机",
+      "impact": 3,
+      "analysis": "C919商业载客成功，产业链相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "斯瑞新材",
+      "stock_code": "300388",
+      "impact": 4,
+      "analysis": "液体火箭推力室内壁产品，订单增加"
+    },
+    {
+      "stock_name": "航天电器",
+      "stock_code": "002025",
+      "impact": 3,
+      "analysis": "卫星制造、发射与地面设备环节，受益于卫星互联网发展"
+    },
+    {
+      "stock_name": "中国卫通",
+      "stock_code": "600118",
+      "impact": 3,
+      "analysis": "卫星运营环节，受益于卫星互联网发展"
+    },
+    {
+      "stock_name": "东航",
+      "stock_code": "600115",
+      "impact": 3,
+      "analysis": "C919商业载客成功，订单增加"
+    }
+  ],
+  "article_id": "aaec4c71b6544a79bb6fb11b1824b154",
+  "article_date": "2024-05-28",
+  "article_title": "2024.5.28市场逻辑精选"
+}

@@ -1,0 +1,89 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多板块利好。",
+  "sectors": [
+    {
+      "sector_name": "锂电",
+      "impact": 4,
+      "analysis": "锂电材料价格上涨，板块受益"
+    },
+    {
+      "sector_name": "6G",
+      "impact": 3,
+      "analysis": "6G技术试验完成，板块有望受益"
+    },
+    {
+      "sector_name": "量子科技",
+      "impact": 3,
+      "analysis": "量子计算机搭建完成，板块有望受益"
+    },
+    {
+      "sector_name": "制冷剂",
+      "impact": 3,
+      "analysis": "制冷剂价格上涨，板块受益"
+    },
+    {
+      "sector_name": "消费",
+      "impact": 2,
+      "analysis": "消费政策支持，板块受益"
+    },
+    {
+      "sector_name": "AI电力",
+      "impact": 2,
+      "analysis": "AI电力需求增长，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "孚日股份",
+      "stock_code": "002083",
+      "impact": 4,
+      "analysis": "锂电板块龙头，受益于价格上涨"
+    },
+    {
+      "stock_name": "石大胜华",
+      "stock_code": "603026",
+      "impact": 4,
+      "analysis": "锂电材料企业，受益于价格上涨"
+    },
+    {
+      "stock_name": "摩恩电气",
+      "stock_code": "002451",
+      "impact": 4,
+      "analysis": "AI电力板块龙头，受益于需求增长"
+    },
+    {
+      "stock_name": "沐曦股份",
+      "stock_code": "688598",
+      "impact": 3,
+      "analysis": "科创板IPO注册，有望受益"
+    },
+    {
+      "stock_name": "摩尔线程",
+      "stock_code": "688590",
+      "impact": 3,
+      "analysis": "科创板上市，有望受益"
+    },
+    {
+      "stock_name": "本川智能",
+      "stock_code": "300432",
+      "impact": 3,
+      "analysis": "6G技术试验受益，有望受益"
+    },
+    {
+      "stock_name": "国盾量子",
+      "stock_code": "688027",
+      "impact": 3,
+      "analysis": "量子计算机搭建受益，有望受益"
+    },
+    {
+      "stock_name": "永和股份",
+      "stock_code": "002795",
+      "impact": 3,
+      "analysis": "制冷剂价格上涨，受益"
+    }
+  ],
+  "article_title": "11月14日盘前纪要",
+  "html_file": "jgc04c2u4l.html",
+  "article_date": "2025-11-14"
+}

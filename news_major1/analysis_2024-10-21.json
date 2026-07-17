@@ -1,0 +1,57 @@
+{
+  "market_impact": 3,
+  "market_analysis": "低空经济和光芯片产业受政策支持，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "低空经济",
+      "impact": 4,
+      "analysis": "政策支持，行业前景广阔。"
+    },
+    {
+      "sector_name": "光芯片",
+      "impact": 3,
+      "analysis": "广东省政策支持，产业升级加速。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "新晨科技",
+      "stock_code": "300389",
+      "impact": 3,
+      "analysis": "低空经济概念，受益政策。"
+    },
+    {
+      "stock_name": "宗申动力",
+      "stock_code": "001696",
+      "impact": 3,
+      "analysis": "低空经济概念，动力系统解决方案提供商。"
+    },
+    {
+      "stock_name": "苏交科",
+      "stock_code": "300057",
+      "impact": 3,
+      "analysis": "低空经济概念，提供一站式解决方案。"
+    },
+    {
+      "stock_name": "万丰奥威",
+      "stock_code": "002085",
+      "impact": 3,
+      "analysis": "低空经济概念，电动飞机商业化进程加速。"
+    },
+    {
+      "stock_name": "太辰光",
+      "stock_code": "300253",
+      "impact": 3,
+      "analysis": "光芯片概念，广东省政策支持。"
+    },
+    {
+      "stock_name": "聚飞光电",
+      "stock_code": "300045",
+      "impact": 3,
+      "analysis": "光芯片概念，广东省政策支持。"
+    }
+  ],
+  "article_id": "a644db1e5ba44510aa770292e897d305",
+  "article_date": "2024-10-21",
+  "article_title": "2024.10.21市场逻辑精选"
+}

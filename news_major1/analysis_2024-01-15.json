@@ -1,0 +1,82 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏乐观，多个板块和个股受利好消息推动",
+  "sectors": [
+    {
+      "sector_name": "文旅消费",
+      "impact": 4,
+      "analysis": "春节旺季预期提升板块景气度"
+    },
+    {
+      "sector_name": "电解槽",
+      "impact": 3,
+      "analysis": "招标翻倍，行业加速跑马圈地"
+    },
+    {
+      "sector_name": "功率半导体",
+      "impact": 2,
+      "analysis": "去库存阶段，汽车需求偏紧"
+    },
+    {
+      "sector_name": "轮胎",
+      "impact": 3,
+      "analysis": "反倾销税落地及业绩预增催化反弹"
+    },
+    {
+      "sector_name": "氢能",
+      "impact": 3,
+      "analysis": "绿氢制储用产业链布局加速"
+    },
+    {
+      "sector_name": "家居服装",
+      "impact": 2,
+      "analysis": "深耕家居服装领域，业绩预期提升"
+    },
+    {
+      "sector_name": "化工",
+      "impact": 2,
+      "analysis": "化工叠加氢能，可转债上市在即"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "同庆楼",
+      "stock_code": "600208",
+      "impact": 3,
+      "analysis": "业绩大幅增长，年夜饭业务表现良好"
+    },
+    {
+      "stock_name": "川宁生物",
+      "stock_code": "300362",
+      "impact": 3,
+      "analysis": "业绩超预期，主要产品量价齐升"
+    },
+    {
+      "stock_name": "嘉美包装",
+      "stock_code": "002945",
+      "impact": 3,
+      "analysis": "业绩大增，核心客户订单增长明显"
+    },
+    {
+      "stock_name": "华电重工",
+      "stock_code": "601226",
+      "impact": 3,
+      "analysis": "布局绿氢制储用产业链"
+    },
+    {
+      "stock_name": "洪兴股份",
+      "stock_code": "002547",
+      "impact": 2,
+      "analysis": "深耕家居服装领域"
+    },
+    {
+      "stock_name": "镇洋发展",
+      "stock_code": "600873",
+      "impact": 2,
+      "analysis": "化工叠加氢能，可转债上市在即"
+    }
+  ],
+  "article_id": "55df8a3926824540a204e95411aa1c1e",
+  "article_date": "2024-01-15",
+  "article_title": "2024.1.15市场逻辑精选"
+}

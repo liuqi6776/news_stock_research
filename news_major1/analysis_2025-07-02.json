@@ -1,0 +1,44 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个行业有望受益政策导向。",
+  "sectors": [
+    {
+      "sector_name": "光伏",
+      "impact": 4,
+      "analysis": "供给侧改革和减产预期利好行业"
+    },
+    {
+      "sector_name": "钢铁",
+      "impact": 3,
+      "analysis": "供给收缩周期临近，行业困境反转"
+    },
+    {
+      "sector_name": "汽车",
+      "impact": 3,
+      "analysis": "行业反内卷，生态改善"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "隆基绿能",
+      "stock_code": "601012",
+      "impact": 4,
+      "analysis": "BC组件技术领先，产能规划高"
+    },
+    {
+      "stock_name": "柳钢股份",
+      "stock_code": "600282",
+      "impact": 3,
+      "analysis": "广西最大钢企，利润占比高"
+    },
+    {
+      "stock_name": "西上海",
+      "stock_code": "600664",
+      "impact": 3,
+      "analysis": "配套新能源汽车品牌，产品应用广泛"
+    }
+  ],
+  "article_id": "0f661ead11e74f8bb2bd01524daf3eea",
+  "article_date": "2025-07-02",
+  "article_title": "2025.7.2市场逻辑精选"
+}

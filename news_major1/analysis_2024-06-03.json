@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "5G-A发展及啤酒销售旺季预期，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "通信设备",
+      "impact": 4,
+      "analysis": "5G-A技术发展推动板块利好"
+    },
+    {
+      "sector_name": "啤酒",
+      "impact": 3,
+      "analysis": "啤酒销售旺季预期，板块受益"
+    },
+    {
+      "sector_name": "天然气",
+      "impact": 3,
+      "analysis": "挪威天然气供应中断，天然气价格飙升，板块受益"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "天然气价格上涨，光伏行业受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "通宇通讯",
+      "stock_code": "002792",
+      "impact": 4,
+      "analysis": "5G基站天线市场规模增长，公司受益"
+    },
+    {
+      "stock_name": "重庆啤酒",
+      "stock_code": "600079",
+      "impact": 3,
+      "analysis": "啤酒销售旺季，公司高端产品增长"
+    },
+    {
+      "stock_name": "德龙汇能",
+      "stock_code": "600798",
+      "impact": 3,
+      "analysis": "天然气价格上涨，公司受益"
+    },
+    {
+      "stock_name": "固德威",
+      "stock_code": "603933",
+      "impact": 3,
+      "analysis": "光伏逆变器需求增长，公司受益"
+    }
+  ],
+  "article_id": "98f4ab54aae14cc68893c28fec312e89",
+  "article_date": "2024-06-03",
+  "article_title": "2024.6.3市场逻辑精选"
+}

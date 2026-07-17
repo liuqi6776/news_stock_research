@@ -1,0 +1,90 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "光模块",
+      "impact": 4,
+      "analysis": "需求增长，技术迭代加速，板块受益明显。"
+    },
+    {
+      "sector_name": "游戏",
+      "impact": 3,
+      "analysis": "爆款游戏出现，行业监管优化，板块有望受益。"
+    },
+    {
+      "sector_name": "上海贸易区",
+      "impact": 3,
+      "analysis": "政策推动，浦东新区改革试点，相关板块受益。"
+    },
+    {
+      "sector_name": "金融",
+      "impact": 2,
+      "analysis": "浦东新区新政，金融支持科技创新，板块受益。"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 2,
+      "analysis": "预制菜国标出台，相关医药公司受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "剑桥科技",
+      "stock_code": "300663",
+      "impact": 4,
+      "analysis": "光模块需求增长，公司产品处于起步阶段。"
+    },
+    {
+      "stock_name": "特发信息",
+      "stock_code": "000070",
+      "impact": 4,
+      "analysis": "控股子公司光模块产品测试中，预计2024年出货。"
+    },
+    {
+      "stock_name": "意华股份",
+      "stock_code": "002897",
+      "impact": 4,
+      "analysis": "旗下涵盖各类光模块产品，外销占比高。"
+    },
+    {
+      "stock_name": "恺英网络",
+      "stock_code": "002517",
+      "impact": 3,
+      "analysis": "游戏业务稳定，预计推出多款新产品。"
+    },
+    {
+      "stock_name": "姚记科技",
+      "stock_code": "002605",
+      "impact": 3,
+      "analysis": "游戏流水稳健，出海产品表现良好。"
+    },
+    {
+      "stock_name": "中华企业",
+      "stock_code": "600675",
+      "impact": 3,
+      "analysis": "浦东新区改革试点，公司受益。"
+    },
+    {
+      "stock_name": "浦东金桥",
+      "stock_code": "600696",
+      "impact": 3,
+      "analysis": "浦东新区改革试点，公司受益。"
+    },
+    {
+      "stock_name": "建元信托",
+      "stock_code": "600897",
+      "impact": 3,
+      "analysis": "浦东新区新政，金融支持科技创新，公司受益。"
+    },
+    {
+      "stock_name": "圣达生物",
+      "stock_code": "300084",
+      "impact": 2,
+      "analysis": "预制菜国标出台，公司生物保鲜剂产品受益。"
+    }
+  ],
+  "article_id": "5aecdc223dc5421cae07ce7309816c63",
+  "article_date": "2024-01-23",
+  "article_title": "2024.1.23市场逻辑精选"
+}

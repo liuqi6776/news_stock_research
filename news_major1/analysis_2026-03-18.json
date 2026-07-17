@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "存储芯片",
+      "impact": 4,
+      "analysis": "受美光科技股价创新高及三星电子罢工影响，板块表现强劲。"
+    },
+    {
+      "sector_name": "太空算力",
+      "impact": 3,
+      "analysis": "马斯克对SpaceX的表态及英伟达太空计算平台推出，板块受关注。"
+    },
+    {
+      "sector_name": "化工",
+      "impact": 3,
+      "analysis": "国际能源价格上涨，化工板块受益。"
+    },
+    {
+      "sector_name": "次新股",
+      "impact": 2,
+      "analysis": "次新股锡华科技带动板块活跃。"
+    },
+    {
+      "sector_name": "生物燃料",
+      "impact": 2,
+      "analysis": "特朗普邀请生物燃料生产商参加活动，板块受关注。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "顺灏股份",
+      "stock_code": "002565",
+      "impact": 3,
+      "analysis": "太空算力概念股，受马斯克表态影响。"
+    },
+    {
+      "stock_name": "协鑫集成",
+      "stock_code": "002506",
+      "impact": 3,
+      "analysis": "太空算力概念股，受马斯克表态影响。"
+    },
+    {
+      "stock_name": "三房巷",
+      "stock_code": "600247",
+      "impact": 3,
+      "analysis": "化工板块，受国际能源价格上涨影响。"
+    },
+    {
+      "stock_name": "锡华科技",
+      "stock_code": "301318",
+      "impact": 3,
+      "analysis": "次新股，带动板块活跃。"
+    },
+    {
+      "stock_name": "山高环能",
+      "stock_code": "603639",
+      "impact": 2,
+      "analysis": "生物燃料概念股，受特朗普活动影响。"
+    }
+  ],
+  "article_title": "3月18日盘前纪要",
+  "html_file": "1hla9xaz2l1.html",
+  "article_date": "2026-03-18"
+}

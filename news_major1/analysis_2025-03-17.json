@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，新能源汽车、机器人、数据中心等板块表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "新能源汽车",
+      "impact": 4,
+      "analysis": "比亚迪发布新技术，推动板块上涨。"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "科远智慧布局机器人，板块受关注。"
+    },
+    {
+      "sector_name": "数据中心",
+      "impact": 3,
+      "analysis": "垃圾焚烧发电与数据中心合作，板块受益。"
+    },
+    {
+      "sector_name": "液冷板",
+      "impact": 3,
+      "analysis": "英伟达GB300变革，液冷板需求增加。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "比亚迪",
+      "stock_code": "002594",
+      "impact": 4,
+      "analysis": "发布新技术，股价上涨。"
+    },
+    {
+      "stock_name": "科远智慧",
+      "stock_code": "002380",
+      "impact": 3,
+      "analysis": "布局机器人，股价上涨。"
+    },
+    {
+      "stock_name": "军信股份",
+      "stock_code": "002019",
+      "impact": 3,
+      "analysis": "垃圾焚烧发电业务增长，股价上涨。"
+    },
+    {
+      "stock_name": "英维克",
+      "stock_code": "002837",
+      "impact": 3,
+      "analysis": "液冷板业务增长，股价上涨。"
+    }
+  ],
+  "article_id": "4fc3aab8989e461ba5ccea389c25ac32",
+  "article_date": "2025-03-17",
+  "article_title": "2025.3.17市场逻辑精选"
+}

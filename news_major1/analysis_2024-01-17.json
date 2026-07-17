@@ -1,0 +1,44 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "智能电表",
+      "impact": 4,
+      "analysis": "招标量增长，海外市场潜力大"
+    },
+    {
+      "sector_name": "国货",
+      "impact": 3,
+      "analysis": "商务部鼓励出海，国货品牌受青睐"
+    },
+    {
+      "sector_name": "证券并购",
+      "impact": 2,
+      "analysis": "并购进程提速，牌照不足限制并购潮"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "海兴电力",
+      "stock_code": "002236",
+      "impact": 4,
+      "analysis": "海外业务占比高，受益智能电表增长"
+    },
+    {
+      "stock_name": "龙头股份",
+      "stock_code": "600616",
+      "impact": 3,
+      "analysis": "老字号品牌，受益国货出海"
+    },
+    {
+      "stock_name": "方正证券",
+      "stock_code": "601901",
+      "impact": 2,
+      "analysis": "中大型券商，受益证券并购提速"
+    }
+  ],
+  "article_id": "8afeb07117494d398d33a145fa572a8e",
+  "article_date": "2024-01-17",
+  "article_title": "2024.1.17市场逻辑精选"
+}

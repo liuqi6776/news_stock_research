@@ -1,0 +1,56 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "汽车零部件",
+      "impact": 4,
+      "analysis": "供应商账期缩短，行业生态改善，利好板块。"
+    },
+    {
+      "sector_name": "猪肉",
+      "impact": 2,
+      "analysis": "反倾销调查期限延长，短期价格风险，中期价格底部显现。"
+    },
+    {
+      "sector_name": "游戏",
+      "impact": 3,
+      "analysis": "政策扶持出海业务，行业数据良好，利好板块。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "美晨科技",
+      "stock_code": "300386",
+      "impact": 4,
+      "analysis": "汽车配件营收占比高，应收账款周转天数较长。"
+    },
+    {
+      "stock_name": "欣锐科技",
+      "stock_code": "300799",
+      "impact": 4,
+      "analysis": "新能源汽车车载电源解决方案提供商。"
+    },
+    {
+      "stock_name": "英利汽车",
+      "stock_code": "603778",
+      "impact": 4,
+      "analysis": "汽车结构件产品供应商。"
+    },
+    {
+      "stock_name": "电魂网络",
+      "stock_code": "300059",
+      "impact": 3,
+      "analysis": "网络游戏业务，积极探索游戏出海。"
+    },
+    {
+      "stock_name": "神州泰岳",
+      "stock_code": "300002",
+      "impact": 3,
+      "analysis": "游戏业务占比高，海外及中国港澳台地区营收占比高。"
+    }
+  ],
+  "article_id": "891e4dd939b54bf688fef30119bc6cc1",
+  "article_date": "2025-06-11",
+  "article_title": "2025.6.11市场逻辑精选"
+}

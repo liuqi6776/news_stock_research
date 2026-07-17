@@ -1,0 +1,137 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受供需紧张影响，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "有色金属",
+      "impact": 4,
+      "analysis": "铜价上涨，板块受益"
+    },
+    {
+      "sector_name": "化工",
+      "impact": 3,
+      "analysis": "纯碱价格上涨，板块受益"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 3,
+      "analysis": "充电桩海外业务增长，板块受益"
+    },
+    {
+      "sector_name": "通信设备",
+      "impact": 2,
+      "analysis": "华为伸缩摄像头热议，相关公司受益"
+    },
+    {
+      "sector_name": "航运",
+      "impact": 3,
+      "analysis": "航运指数大涨，板块受益"
+    },
+    {
+      "sector_name": "低空经济",
+      "impact": 2,
+      "analysis": "低空经济布局，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "北方铜业",
+      "stock_code": "000638",
+      "impact": 4,
+      "analysis": "铜价上涨，公司受益"
+    },
+    {
+      "stock_name": "西部矿业",
+      "stock_code": "601168",
+      "impact": 4,
+      "analysis": "铜价上涨，公司受益"
+    },
+    {
+      "stock_name": "江西铜业",
+      "stock_code": "600362",
+      "impact": 4,
+      "analysis": "铜价上涨，公司受益"
+    },
+    {
+      "stock_name": "铜陵有色",
+      "stock_code": "000630",
+      "impact": 4,
+      "analysis": "铜价上涨，公司受益"
+    },
+    {
+      "stock_name": "云南铜业",
+      "stock_code": "000878",
+      "impact": 4,
+      "analysis": "铜价上涨，公司受益"
+    },
+    {
+      "stock_name": "紫金矿业",
+      "stock_code": "601899",
+      "impact": 4,
+      "analysis": "铜价上涨，公司受益"
+    },
+    {
+      "stock_name": "山东海化",
+      "stock_code": "000822",
+      "impact": 3,
+      "analysis": "纯碱价格上涨，公司受益"
+    },
+    {
+      "stock_name": "中盐化工",
+      "stock_code": "600299",
+      "impact": 3,
+      "analysis": "纯碱价格上涨，公司受益"
+    },
+    {
+      "stock_name": "三友化工",
+      "stock_code": "600409",
+      "impact": 3,
+      "analysis": "纯碱价格上涨，公司受益"
+    },
+    {
+      "stock_name": "远兴能源",
+      "stock_code": "002089",
+      "impact": 3,
+      "analysis": "纯碱价格上涨，公司受益"
+    },
+    {
+      "stock_name": "道通科技",
+      "stock_code": "300359",
+      "impact": 3,
+      "analysis": "充电桩海外业务增长，公司受益"
+    },
+    {
+      "stock_name": "盛弘股份",
+      "stock_code": "300626",
+      "impact": 3,
+      "analysis": "充电桩海外业务增长，公司受益"
+    },
+    {
+      "stock_name": "科士达",
+      "stock_code": "002405",
+      "impact": 3,
+      "analysis": "充电桩海外业务增长，公司受益"
+    },
+    {
+      "stock_name": "辉煌科技",
+      "stock_code": "002296",
+      "impact": 3,
+      "analysis": "业绩大增，公司受益"
+    },
+    {
+      "stock_name": "万丰奥威",
+      "stock_code": "002085",
+      "impact": 2,
+      "analysis": "eVtol合作事宜，公司受益"
+    },
+    {
+      "stock_name": "中国通号",
+      "stock_code": "601800",
+      "impact": 2,
+      "analysis": "低空经济布局，公司受益"
+    }
+  ],
+  "article_id": "980025b10ab040d1905946d591e4fe3e",
+  "article_date": "2024-04-18",
+  "article_title": "2024.4.18市场逻辑精选"
+}

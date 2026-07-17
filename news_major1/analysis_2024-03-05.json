@@ -1,0 +1,205 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息驱动，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "飞行汽车",
+      "impact": 4,
+      "analysis": "政策支持和市场需求旺盛，板块受益明显。"
+    },
+    {
+      "sector_name": "存储",
+      "impact": 3,
+      "analysis": "DRAM市场上涨预期，相关公司受益。"
+    },
+    {
+      "sector_name": "黄金",
+      "impact": 3,
+      "analysis": "黄金价格上涨，相关公司受益。"
+    },
+    {
+      "sector_name": "动车更新",
+      "impact": 3,
+      "analysis": "动车维保业务增长，相关公司受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "金盾股份",
+      "stock_code": "300360",
+      "impact": 4,
+      "analysis": "飞行汽车研发，受益政策支持。"
+    },
+    {
+      "stock_name": "万丰奥威",
+      "stock_code": "002085",
+      "impact": 4,
+      "analysis": "电动飞机首飞成功，市场前景广阔。"
+    },
+    {
+      "stock_name": "商洛电子",
+      "stock_code": "300912",
+      "impact": 4,
+      "analysis": "飞行汽车测试完成，即将首飞。"
+    },
+    {
+      "stock_name": "江波龙",
+      "stock_code": "300666",
+      "impact": 3,
+      "analysis": "存储业务扭亏为盈，市场前景看好。"
+    },
+    {
+      "stock_name": "德明利",
+      "stock_code": "301028",
+      "impact": 3,
+      "analysis": "存储业务扭亏为盈，市场前景看好。"
+    },
+    {
+      "stock_name": "朗科科技",
+      "stock_code": "300118",
+      "impact": 3,
+      "analysis": "闪存业务占比高，市场前景看好。"
+    },
+    {
+      "stock_name": "佰维存储",
+      "stock_code": "688012",
+      "impact": 3,
+      "analysis": "存储业务占比高，市场前景看好。"
+    },
+    {
+      "stock_name": "香农芯创",
+      "stock_code": "688012",
+      "impact": 3,
+      "analysis": "海力士国内核心分销商，市场前景看好。"
+    },
+    {
+      "stock_name": "玉龙股份",
+      "stock_code": "600383",
+      "impact": 3,
+      "analysis": "黄金产量高，市场前景看好。"
+    },
+    {
+      "stock_name": "株冶集团",
+      "stock_code": "600961",
+      "impact": 3,
+      "analysis": "黄金开采规模大，市场前景看好。"
+    },
+    {
+      "stock_name": "银泰黄金",
+      "stock_code": "601888",
+      "impact": 3,
+      "analysis": "黄金资源量丰富，市场前景看好。"
+    },
+    {
+      "stock_name": "山东黄金",
+      "stock_code": "600547",
+      "impact": 3,
+      "analysis": "黄金产量高，市场前景看好。"
+    },
+    {
+      "stock_name": "金贵银业",
+      "stock_code": "603399",
+      "impact": 3,
+      "analysis": "黄金产量高，市场前景看好。"
+    },
+    {
+      "stock_name": "中金黄金",
+      "stock_code": "600489",
+      "impact": 3,
+      "analysis": "黄金储量丰富，市场前景看好。"
+    },
+    {
+      "stock_name": "中润资源",
+      "stock_code": "000503",
+      "impact": 3,
+      "analysis": "黄金业务占比高，市场前景看好。"
+    },
+    {
+      "stock_name": "思维列控",
+      "stock_code": "300343",
+      "impact": 3,
+      "analysis": "机车相关业务占比高，市场前景看好。"
+    },
+    {
+      "stock_name": "中国中车",
+      "stock_code": "601766",
+      "impact": 3,
+      "analysis": "铁路装备市场领先，市场前景看好。"
+    },
+    {
+      "stock_name": "时代电气",
+      "stock_code": "300444",
+      "impact": 3,
+      "analysis": "轨交行业领先，市场前景看好。"
+    },
+    {
+      "stock_name": "中国通号",
+      "stock_code": "601901",
+      "impact": 3,
+      "analysis": "CTCS-3列控系统市场领先，市场前景看好。"
+    },
+    {
+      "stock_name": "时代新材",
+      "stock_code": "300682",
+      "impact": 3,
+      "analysis": "轨道交通减振降噪元件市场领先，市场前景看好。"
+    },
+    {
+      "stock_name": "永贵电气",
+      "stock_code": "300183",
+      "impact": 3,
+      "analysis": "轨交连接器行业领先，市场前景看好。"
+    },
+    {
+      "stock_name": "神州高铁",
+      "stock_code": "000008",
+      "impact": 3,
+      "analysis": "高铁车载核心装备供应商，市场前景看好。"
+    },
+    {
+      "stock_name": "东风汽车",
+      "stock_code": "600006",
+      "impact": 3,
+      "analysis": "新能源汽车业务发展迅速，市场前景看好。"
+    },
+    {
+      "stock_name": "大华股份",
+      "stock_code": "002236",
+      "impact": 3,
+      "analysis": "AI业务布局领先，市场前景看好。"
+    },
+    {
+      "stock_name": "观想科技",
+      "stock_code": "300373",
+      "impact": 3,
+      "analysis": "AI赋能军用机器人，市场前景看好。"
+    },
+    {
+      "stock_name": "超捷股份",
+      "stock_code": "002885",
+      "impact": 3,
+      "analysis": "商业火箭结构件制造，市场前景看好。"
+    },
+    {
+      "stock_name": "*ST碳元",
+      "stock_code": "002953",
+      "impact": 3,
+      "analysis": "石墨膜产品供货华为，市场前景看好。"
+    },
+    {
+      "stock_name": "思泉新材",
+      "stock_code": "688012",
+      "impact": 3,
+      "analysis": "石墨散热材料供应商，市场前景看好。"
+    },
+    {
+      "stock_name": "翰宇药业",
+      "stock_code": "002552",
+      "impact": 3,
+      "analysis": "利拉鲁肽原料药获得DMF合格信函，市场前景看好。"
+    }
+  ],
+  "article_id": "09f2653a36614e13ac246a4c7993400d",
+  "article_date": "2024-03-05",
+  "article_title": "2024.3.5市场逻辑精选"
+}

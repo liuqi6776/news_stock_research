@@ -1,0 +1,136 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注政策落实情况。",
+  "sectors": [
+    {
+      "sector_name": "光伏",
+      "impact": 4,
+      "analysis": "多晶硅价格上涨，光伏板块受益"
+    },
+    {
+      "sector_name": "稳就业",
+      "impact": 3,
+      "analysis": "政策支持，稳就业相关板块受提振"
+    },
+    {
+      "sector_name": "电力",
+      "impact": 2,
+      "analysis": "高温天气，电力需求增加"
+    },
+    {
+      "sector_name": "煤炭",
+      "impact": 2,
+      "analysis": "火电调峰带动煤炭需求提升"
+    },
+    {
+      "sector_name": "虚拟电厂",
+      "impact": 2,
+      "analysis": "高温天气，电力需求增加，虚拟电厂受益"
+    },
+    {
+      "sector_name": "冷链冷库",
+      "impact": 2,
+      "analysis": "高温天气，制冰设备需求增加"
+    },
+    {
+      "sector_name": "避暑游",
+      "impact": 2,
+      "analysis": "高温天气，避暑游需求增加"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "通威股份",
+      "stock_code": "600438",
+      "impact": 4,
+      "analysis": "光伏硅料龙头，受益多晶硅价格上涨"
+    },
+    {
+      "stock_name": "大全能源",
+      "stock_code": "600380",
+      "impact": 4,
+      "analysis": "高纯多晶硅营收占比高，受益多晶硅价格上涨"
+    },
+    {
+      "stock_name": "合盛硅业",
+      "stock_code": "600703",
+      "impact": 4,
+      "analysis": "高纯多晶硅项目推进，受益多晶硅价格上涨"
+    },
+    {
+      "stock_name": "北京人力",
+      "stock_code": "603881",
+      "impact": 3,
+      "analysis": "人力资源服务行业，受益稳就业政策"
+    },
+    {
+      "stock_name": "德生科技",
+      "stock_code": "300685",
+      "impact": 3,
+      "analysis": "AI就业服务，受益稳就业政策"
+    },
+    {
+      "stock_name": "科陆电子",
+      "stock_code": "002121",
+      "impact": 2,
+      "analysis": "储能系统控制核心单元自研自产"
+    },
+    {
+      "stock_name": "众智科技",
+      "stock_code": "300543",
+      "impact": 2,
+      "analysis": "智能电网、虚拟电网应用"
+    },
+    {
+      "stock_name": "玉马科技",
+      "stock_code": "002726",
+      "impact": 2,
+      "analysis": "遮阳多功能产品，受益高温天气"
+    },
+    {
+      "stock_name": "大中矿业",
+      "stock_code": "002845",
+      "impact": 3,
+      "analysis": "新探获超大型锂矿床，资源丰富"
+    },
+    {
+      "stock_name": "岳化兴长",
+      "stock_code": "000819",
+      "impact": 2,
+      "analysis": "参股公司塑料裂解项目有望投产"
+    },
+    {
+      "stock_name": "豪森智能",
+      "stock_code": "603895",
+      "impact": 2,
+      "analysis": "人形机器人合作方，受益人形机器人发展"
+    },
+    {
+      "stock_name": "长华集团",
+      "stock_code": "002890",
+      "impact": 2,
+      "analysis": "行星滚柱丝杠完成样品开发，受益人形机器人发展"
+    },
+    {
+      "stock_name": "越秀资本",
+      "stock_code": "600377",
+      "impact": 3,
+      "analysis": "业绩预增，绿色转型成效显著"
+    },
+    {
+      "stock_name": "国晟科技",
+      "stock_code": "603696",
+      "impact": 3,
+      "analysis": "储备多种光伏技术，受益光伏行业反内卷"
+    },
+    {
+      "stock_name": "锋尚文化",
+      "stock_code": "300598",
+      "impact": 2,
+      "analysis": "曾对接周杰伦数实融合的相关产品"
+    }
+  ],
+  "article_id": "81554a545b8a431cb9be1ed1509e7f32",
+  "article_date": "2025-07-09",
+  "article_title": "2025.7.9市场逻辑精选"
+}

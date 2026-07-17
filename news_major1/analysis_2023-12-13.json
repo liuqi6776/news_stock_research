@@ -1,0 +1,151 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受特斯拉人形机器人发布及政策利好影响，整体偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "机器人",
+      "impact": 4,
+      "analysis": "特斯拉人形机器人发布，相关产业链受益"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 3,
+      "analysis": "新冠新变种传播，医药板块受关注"
+    },
+    {
+      "sector_name": "国改",
+      "impact": 3,
+      "analysis": "国改概念股受政策利好影响"
+    },
+    {
+      "sector_name": "横琴",
+      "impact": 3,
+      "analysis": "横琴发展规划批复，相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "八方股份",
+      "stock_code": "300377",
+      "impact": 4,
+      "analysis": "特斯拉人形机器人增量环节供应商"
+    },
+    {
+      "stock_name": "华依科技",
+      "stock_code": "603035",
+      "impact": 3,
+      "analysis": "主营汽车测试设备及服务，惯导业务受益"
+    },
+    {
+      "stock_name": "芯动联科",
+      "stock_code": "688568",
+      "impact": 3,
+      "analysis": "主营高端工业惯性传感器，往下游做IMU模组"
+    },
+    {
+      "stock_name": "汉威科技",
+      "stock_code": "002023",
+      "impact": 3,
+      "analysis": "柔性传感、电子皮肤技术领先"
+    },
+    {
+      "stock_name": "柯力传感",
+      "stock_code": "601518",
+      "impact": 3,
+      "analysis": "开发了六维力等多维力传感器"
+    },
+    {
+      "stock_name": "奥比中光",
+      "stock_code": "688012",
+      "impact": 3,
+      "analysis": "力矩传感器国产替代方向"
+    },
+    {
+      "stock_name": "中研股份",
+      "stock_code": "300845",
+      "impact": 3,
+      "analysis": "高端工程塑料，轻量化解决方案"
+    },
+    {
+      "stock_name": "森萱医药",
+      "stock_code": "300679",
+      "impact": 3,
+      "analysis": "国内利托那韦中间体主要生产供应商"
+    },
+    {
+      "stock_name": "新华制药",
+      "stock_code": "000756",
+      "impact": 3,
+      "analysis": "布洛芬+山东国资委"
+    },
+    {
+      "stock_name": "丰原药业",
+      "stock_code": "000153",
+      "impact": 3,
+      "analysis": "全国第二大扑热息痛原料药生产商"
+    },
+    {
+      "stock_name": "特一药业",
+      "stock_code": "002728",
+      "impact": 3,
+      "analysis": "止咳药"
+    },
+    {
+      "stock_name": "格力地产",
+      "stock_code": "000651",
+      "impact": 3,
+      "analysis": "地产+免税+珠海国资委"
+    },
+    {
+      "stock_name": "华发股份",
+      "stock_code": "000020",
+      "impact": 3,
+      "analysis": "珠海国资委"
+    },
+    {
+      "stock_name": "宝钢包装",
+      "stock_code": "600968",
+      "impact": 3,
+      "analysis": "中粮包装重组预期"
+    },
+    {
+      "stock_name": "云维股份",
+      "stock_code": "600725",
+      "impact": 3,
+      "analysis": "云南能投集团推进公司业务整合"
+    },
+    {
+      "stock_name": "生益科技",
+      "stock_code": "600183",
+      "impact": 3,
+      "analysis": "英伟达AI服务器与AI PC受益"
+    },
+    {
+      "stock_name": "京能热力",
+      "stock_code": "600588",
+      "impact": 3,
+      "analysis": "北京供热系统全力保供"
+    },
+    {
+      "stock_name": "思特奇",
+      "stock_code": "300396",
+      "impact": 3,
+      "analysis": "华创云信溢价收购公司股份"
+    },
+    {
+      "stock_name": "华虹公司",
+      "stock_code": "600527",
+      "impact": 3,
+      "analysis": "大基金二期入股华虹成都"
+    },
+    {
+      "stock_name": "超捷股份",
+      "stock_code": "002535",
+      "impact": 3,
+      "analysis": "工业机器人明年会明显增长"
+    }
+  ],
+  "article_id": "cda08b3053e840cebced00e4bc7df4e9",
+  "article_date": "2023-12-13",
+  "article_title": "2023.12.13市场逻辑精选"
+}

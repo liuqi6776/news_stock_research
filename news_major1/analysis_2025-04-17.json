@@ -1,0 +1,72 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受政策预期和行业发展趋势利好。",
+  "sectors": [
+    {
+      "sector_name": "房地产",
+      "impact": 4,
+      "analysis": "政策预期和改善需求释放推动板块上涨。"
+    },
+    {
+      "sector_name": "家居",
+      "impact": 3,
+      "analysis": "旧换新政策及定制家居需求增长利好。"
+    },
+    {
+      "sector_name": "数智供应链",
+      "impact": 3,
+      "analysis": "政策支持和技术创新推动行业增长。"
+    },
+    {
+      "sector_name": "金融数据跨境流动",
+      "impact": 2,
+      "analysis": "政策规范数据跨境流动，利好相关企业。"
+    },
+    {
+      "sector_name": "商业航天",
+      "impact": 3,
+      "analysis": "政策支持和市场增长推动板块上涨。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "荣丰控股",
+      "stock_code": "000668",
+      "impact": 3,
+      "analysis": "物业管理营收占比高，受益于改善需求。"
+    },
+    {
+      "stock_name": "特立A",
+      "stock_code": "000025",
+      "impact": 3,
+      "analysis": "物业转型推动公司业绩增长。"
+    },
+    {
+      "stock_name": "尚品宅配",
+      "stock_code": "603816",
+      "impact": 3,
+      "analysis": "全屋定制家具行业领先。"
+    },
+    {
+      "stock_name": "音飞储存",
+      "stock_code": "603066",
+      "impact": 3,
+      "analysis": "与京东合作，受益于数智供应链发展。"
+    },
+    {
+      "stock_name": "国投智能",
+      "stock_code": "600864",
+      "impact": 3,
+      "analysis": "数据跨境流动服务枢纽项目数据安全平台供应商。"
+    },
+    {
+      "stock_name": "中国卫星",
+      "stock_code": "600118",
+      "impact": 3,
+      "analysis": "商业航天产业链上游企业。"
+    }
+  ],
+  "article_id": "593f32b5772b4bbe915e83a1c83b4da0",
+  "article_date": "2025-04-17",
+  "article_title": "2025.4.17市场逻辑精选"
+}

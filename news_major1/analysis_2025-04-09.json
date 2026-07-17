@@ -1,0 +1,61 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注政策落实情况。",
+  "sectors": [
+    {
+      "sector_name": "离境退税",
+      "impact": 4,
+      "analysis": "政策推广利好相关行业"
+    },
+    {
+      "sector_name": "一带一路",
+      "impact": 3,
+      "analysis": "周边命运共同体建设带来机遇"
+    },
+    {
+      "sector_name": "大消费",
+      "impact": 3,
+      "analysis": "提振政策预期，板块受益"
+    },
+    {
+      "sector_name": "虚拟电厂",
+      "impact": 3,
+      "analysis": "行业发展指导意见发布，市场前景看好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中国中免",
+      "stock_code": "601888",
+      "impact": 4,
+      "analysis": "免税行业龙头，受益政策推广"
+    },
+    {
+      "stock_name": "广百股份",
+      "stock_code": "002187",
+      "impact": 3,
+      "analysis": "广州地区国资百货零售企业，受益离境退税政策"
+    },
+    {
+      "stock_name": "金鹰重工",
+      "stock_code": "002063",
+      "impact": 3,
+      "analysis": "一带一路核心公司，参与基础设施建设"
+    },
+    {
+      "stock_name": "贝肯能源",
+      "stock_code": "002828",
+      "impact": 3,
+      "analysis": "跨境支付核心公司，受益人民币跨境支付体系构建"
+    },
+    {
+      "stock_name": "国能日新",
+      "stock_code": "300683",
+      "impact": 3,
+      "analysis": "虚拟电厂核心公司，技术领先"
+    }
+  ],
+  "article_id": "a8a96df2827a4708bcd5a882811b9ef8",
+  "article_date": "2025-04-09",
+  "article_title": "2025.4.9市场逻辑精选"
+}

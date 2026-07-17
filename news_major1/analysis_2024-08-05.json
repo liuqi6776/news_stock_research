@@ -1,0 +1,44 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，军工、光伏、猪肉等板块有望受益。",
+  "sectors": [
+    {
+      "sector_name": "军工",
+      "impact": 4,
+      "analysis": "订单确定性高，信息化和无人智能化发展迅速。"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "硅料价格上涨，需求回暖。"
+    },
+    {
+      "sector_name": "猪肉",
+      "impact": 3,
+      "analysis": "猪价持续上涨，行业翻转预期强化。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "航天科技",
+      "stock_code": "000901",
+      "impact": 4,
+      "analysis": "军工配套产品，受益军工订单释放。"
+    },
+    {
+      "stock_name": "通威股份",
+      "stock_code": "600438",
+      "impact": 3,
+      "analysis": "全球高纯晶硅龙头企业，受益硅料价格上涨。"
+    },
+    {
+      "stock_name": "正虹科技",
+      "stock_code": "600843",
+      "impact": 3,
+      "analysis": "猪饲料产品，受益猪价上涨。"
+    }
+  ],
+  "article_id": "b2a8c443efcb4a389e08d94a1ee73b47",
+  "article_date": "2024-08-05",
+  "article_title": "2024.8.5市场逻辑精选"
+}

@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "算力",
+      "impact": 4,
+      "analysis": "算力板块受 Manus 热潮影响，利好"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "机器人板块受 Manus 和政府政策支持，利好"
+    },
+    {
+      "sector_name": "创投",
+      "impact": 3,
+      "analysis": "国家创业投资引导基金设立，利好创投板块"
+    },
+    {
+      "sector_name": "俄乌重建",
+      "impact": 2,
+      "analysis": "俄乌和平协议讨论，利好相关板块"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "人工智能相关技术发展，利好相关板块"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "南兴股份",
+      "stock_code": "002778",
+      "impact": 4,
+      "analysis": "受 Manus 热潮影响，利好"
+    },
+    {
+      "stock_name": "酷特智能",
+      "stock_code": "002691",
+      "impact": 4,
+      "analysis": "受 Manus 热潮影响，利好"
+    },
+    {
+      "stock_name": "中航产融",
+      "stock_code": "000738",
+      "impact": 3,
+      "analysis": "受创投基金利好，利好"
+    },
+    {
+      "stock_name": "四川双马",
+      "stock_code": "000935",
+      "impact": 3,
+      "analysis": "受创投基金利好，利好"
+    },
+    {
+      "stock_name": "北新路桥",
+      "stock_code": "002307",
+      "impact": 2,
+      "analysis": "受俄乌和平协议利好，利好"
+    }
+  ],
+  "article_title": "3月7日盘前早报 热点事件关注",
+  "html_file": "j45gq0v1ml.html",
+  "article_date": "2025-03-07"
+}

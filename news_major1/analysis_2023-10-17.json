@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "卫星互联",
+      "impact": 4,
+      "analysis": "卫星应用大会及小米新机发布推动板块上涨。"
+    },
+    {
+      "sector_name": "跨境电商",
+      "impact": 3,
+      "analysis": "行业大会及头部公司业绩增长带动板块。"
+    },
+    {
+      "sector_name": "种业",
+      "impact": 3,
+      "analysis": "转基因玉米、大豆商业化进展推动板块。"
+    },
+    {
+      "sector_name": "麻醉药物",
+      "impact": 2,
+      "analysis": "免疫集采政策稳定行业竞争格局。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "上海沪工",
+      "stock_code": "600825",
+      "impact": 4,
+      "analysis": "卫星应用大会及公司业务推动股价上涨。"
+    },
+    {
+      "stock_name": "瑞贝卡",
+      "stock_code": "600439",
+      "impact": 3,
+      "analysis": "资产注入预期及一带一路业务推动股价。"
+    },
+    {
+      "stock_name": "ST金圆",
+      "stock_code": "000546",
+      "impact": 3,
+      "analysis": "子公司复产及摘帽预期推动股价。"
+    },
+    {
+      "stock_name": "普利特",
+      "stock_code": "002324",
+      "impact": 3,
+      "analysis": "三季报大增及LCP国产替代推动股价。"
+    }
+  ],
+  "article_id": "fdd1f4f6ba9c44bda1f7b236738899b3",
+  "article_date": "2023-10-17",
+  "article_title": "2023.10.17市场逻辑精选"
+}

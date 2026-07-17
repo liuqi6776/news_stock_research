@@ -1,0 +1,144 @@
+{
+  "market_impact": -3,
+  "market_analysis": "关税政策提升，市场情绪偏谨慎。",
+  "sectors": [
+    {
+      "sector_name": "黄金",
+      "impact": 2,
+      "analysis": "关税政策利好黄金板块。"
+    },
+    {
+      "sector_name": "稀土永磁",
+      "impact": 1,
+      "analysis": "关税政策利好稀土永磁板块。"
+    },
+    {
+      "sector_name": "服务器芯片",
+      "impact": 3,
+      "analysis": "英伟达订单利好服务器芯片板块。"
+    },
+    {
+      "sector_name": "外骨骼机器人",
+      "impact": 2,
+      "analysis": "外骨骼机器人市场空间广阔。"
+    },
+    {
+      "sector_name": "数据资产",
+      "impact": 2,
+      "analysis": "数据资产价格政策利好相关板块。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "明牌珠宝",
+      "stock_code": "002574",
+      "impact": 2,
+      "analysis": "关税政策利好。"
+    },
+    {
+      "stock_name": "西部黄金",
+      "stock_code": "601377",
+      "impact": 2,
+      "analysis": "关税政策利好。"
+    },
+    {
+      "stock_name": "恒星科技",
+      "stock_code": "002132",
+      "impact": 2,
+      "analysis": "关税政策利好。"
+    },
+    {
+      "stock_name": "湖南黄金",
+      "stock_code": "002155",
+      "impact": 2,
+      "analysis": "关税政策利好。"
+    },
+    {
+      "stock_name": "天和磁材",
+      "stock_code": "600489",
+      "impact": 1,
+      "analysis": "关税政策利好。"
+    },
+    {
+      "stock_name": "英洛华",
+      "stock_code": "000795",
+      "impact": 1,
+      "analysis": "关税政策利好。"
+    },
+    {
+      "stock_name": "西磁科技",
+      "stock_code": "300056",
+      "impact": 1,
+      "analysis": "关税政策利好。"
+    },
+    {
+      "stock_name": "中国稀土",
+      "stock_code": "000831",
+      "impact": 1,
+      "analysis": "关税政策利好。"
+    },
+    {
+      "stock_name": "正海磁材",
+      "stock_code": "300224",
+      "impact": 1,
+      "analysis": "关税政策利好。"
+    },
+    {
+      "stock_name": "胜宏科技",
+      "stock_code": "300009",
+      "impact": 3,
+      "analysis": "英伟达订单利好。"
+    },
+    {
+      "stock_name": "麦格米特",
+      "stock_code": "002183",
+      "impact": 3,
+      "analysis": "英伟达订单利好。"
+    },
+    {
+      "stock_name": "淳中科技",
+      "stock_code": "300602",
+      "impact": 3,
+      "analysis": "英伟达订单利好。"
+    },
+    {
+      "stock_name": "沃尔核材",
+      "stock_code": "002130",
+      "impact": 3,
+      "analysis": "英伟达订单利好。"
+    },
+    {
+      "stock_name": "伟思医疗",
+      "stock_code": "300602",
+      "impact": 2,
+      "analysis": "外骨骼机器人市场空间广阔。"
+    },
+    {
+      "stock_name": "翔宇医疗",
+      "stock_code": "002503",
+      "impact": 2,
+      "analysis": "外骨骼机器人市场空间广阔。"
+    },
+    {
+      "stock_name": "人民网",
+      "stock_code": "603000",
+      "impact": 2,
+      "analysis": "数据资产价格政策利好。"
+    },
+    {
+      "stock_name": "深桑达A",
+      "stock_code": "000032",
+      "impact": 2,
+      "analysis": "数据资产价格政策利好。"
+    },
+    {
+      "stock_name": "易华录",
+      "stock_code": "600285",
+      "impact": 2,
+      "analysis": "数据资产价格政策利好。"
+    }
+  ],
+  "article_id": "852a1d248137411e95111b0d91eaf6ad",
+  "article_date": "2025-04-02",
+  "article_title": "2025.4.2市场逻辑精选"
+}

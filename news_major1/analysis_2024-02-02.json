@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策支持与行业利好消息较多，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "人工智能",
+      "impact": 4,
+      "analysis": "政策支持，行业前景广阔。"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 3,
+      "analysis": "销量增长，市场前景看好。"
+    },
+    {
+      "sector_name": "金融",
+      "impact": 3,
+      "analysis": "降准预期，流动性增强。"
+    },
+    {
+      "sector_name": "芯片设备",
+      "impact": 3,
+      "analysis": "技术升级，需求增加。"
+    },
+    {
+      "sector_name": "量子通信",
+      "impact": 3,
+      "analysis": "技术发展，应用前景广阔。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "剑桥科技",
+      "stock_code": "300663",
+      "impact": 4,
+      "analysis": "受益于人工智能行业利好。"
+    },
+    {
+      "stock_name": "华西股份",
+      "stock_code": "000537",
+      "impact": 3,
+      "analysis": "受益于新能源汽车行业利好。"
+    },
+    {
+      "stock_name": "华鑫股份",
+      "stock_code": "600675",
+      "impact": 3,
+      "analysis": "受益于金融行业利好。"
+    },
+    {
+      "stock_name": "张江高科",
+      "stock_code": "600895",
+      "impact": 3,
+      "analysis": "受益于芯片设备行业利好。"
+    },
+    {
+      "stock_name": "国盾量子",
+      "stock_code": "688027",
+      "impact": 3,
+      "analysis": "受益于量子通信行业利好。"
+    }
+  ],
+  "article_title": "2月2日盘前早报 热点事件关注",
+  "html_file": "7nvnkexeeh.html",
+  "article_date": "2024-02-02"
+}

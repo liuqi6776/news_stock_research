@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多事件利好板块和个股。",
+  "sectors": [
+    {
+      "sector_name": "中药",
+      "impact": 4,
+      "analysis": "政策支持，板块受益"
+    },
+    {
+      "sector_name": "环氧丙烷",
+      "impact": 3,
+      "analysis": "工厂关闭，供需紧张"
+    },
+    {
+      "sector_name": "深海经济",
+      "impact": 3,
+      "analysis": "政策推动，行业前景看好"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "创新产品，市场关注度高"
+    },
+    {
+      "sector_name": "海南",
+      "impact": 2,
+      "analysis": "博鳌论坛，信息量可能大"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "陇神戎发",
+      "stock_code": "300238",
+      "impact": 4,
+      "analysis": "中药政策利好"
+    },
+    {
+      "stock_name": "红宝丽",
+      "stock_code": "002165",
+      "impact": 3,
+      "analysis": "环氧丙烷工厂关闭"
+    },
+    {
+      "stock_name": "国联水产",
+      "stock_code": "002099",
+      "impact": 3,
+      "analysis": "深海经济政策推动"
+    },
+    {
+      "stock_name": "雪龙集团",
+      "stock_code": "600583",
+      "impact": 3,
+      "analysis": "机器人创新产品"
+    },
+    {
+      "stock_name": "海南瑞泽",
+      "stock_code": "002532",
+      "impact": 2,
+      "analysis": "博鳌论坛召开"
+    }
+  ],
+  "article_title": "3月21日盘前早报 热点事件关注",
+  "html_file": "10ltnvryy2k.html",
+  "article_date": "2025-03-21"
+}

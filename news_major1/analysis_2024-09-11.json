@@ -1,0 +1,56 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，光伏、并购重组、保险板块表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "逆变器",
+      "impact": 4,
+      "analysis": "光伏景气，出海需求回暖，板块受益"
+    },
+    {
+      "sector_name": "并购重组",
+      "impact": 3,
+      "analysis": "并购重组活跃，硬科技资产注入预期"
+    },
+    {
+      "sector_name": "保险",
+      "impact": 3,
+      "analysis": "政策推动保险业高质量发展，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "锦浪科技",
+      "stock_code": "300763",
+      "impact": 4,
+      "analysis": "逆变器龙头，海外出货高增"
+    },
+    {
+      "stock_name": "上能电气",
+      "stock_code": "603636",
+      "impact": 4,
+      "analysis": "逆变器国内出货目标大幅增长，海外市场订单有望快速落地"
+    },
+    {
+      "stock_name": "阳光电源",
+      "stock_code": "300274",
+      "impact": 4,
+      "analysis": "光伏逆变器业务出货增长，储能业务表现良好"
+    },
+    {
+      "stock_name": "旗天科技",
+      "stock_code": "300383",
+      "impact": 3,
+      "analysis": "旗下七彩虹为著名电脑硬件品牌，并购重组预期"
+    },
+    {
+      "stock_name": "澳柯玛",
+      "stock_code": "600336",
+      "impact": 3,
+      "analysis": "旗下芯恩集成电路为中国首个协同式集成电路制造项目，并购重组预期"
+    }
+  ],
+  "article_id": "184cf8ead92a499cb8ad2e890c49f91c",
+  "article_date": "2024-09-11",
+  "article_title": "2024.9.11市场逻辑精选"
+}

@@ -1,0 +1,61 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受政策支持及个股事件驱动，呈现一定活跃度。",
+  "sectors": [
+    {
+      "sector_name": "出版传媒",
+      "impact": 4,
+      "analysis": "政策支持及业绩增长推动板块上涨。"
+    },
+    {
+      "sector_name": "禽流感概念",
+      "impact": 2,
+      "analysis": "疫情事件驱动相关个股表现。"
+    },
+    {
+      "sector_name": "新疆国资",
+      "impact": 3,
+      "analysis": "新疆国资相关个股受关注。"
+    },
+    {
+      "sector_name": "黄金",
+      "impact": 2,
+      "analysis": "金价预期上涨，相关个股受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中国科传",
+      "stock_code": "601949",
+      "impact": 3,
+      "analysis": "出版传媒板块受益股。"
+    },
+    {
+      "stock_name": "时代出版",
+      "stock_code": "601928",
+      "impact": 4,
+      "analysis": "业绩大增，出版传媒板块龙头。"
+    },
+    {
+      "stock_name": "贤丰控股",
+      "stock_code": "002111",
+      "impact": 2,
+      "analysis": "禽流感概念股。"
+    },
+    {
+      "stock_name": "宁夏建材",
+      "stock_code": "600108",
+      "impact": 3,
+      "analysis": "新疆国资，农业相关。"
+    },
+    {
+      "stock_name": "老凤祥",
+      "stock_code": "600612",
+      "impact": 3,
+      "analysis": "黄金概念，业绩预期良好。"
+    }
+  ],
+  "article_id": "e8ea76b6f3ad4ce2a17d0697ea92abf0",
+  "article_date": "2024-01-31",
+  "article_title": "2024.1.31市场逻辑精选"
+}

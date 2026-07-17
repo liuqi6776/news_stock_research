@@ -1,0 +1,61 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策支持核聚变和低空经济，相关板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "核聚变",
+      "impact": 4,
+      "analysis": "政策支持，产业链相关个股受益"
+    },
+    {
+      "sector_name": "低空经济",
+      "impact": 3,
+      "analysis": "航展和合作协议推动，相关个股受益"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 2,
+      "analysis": "第三代半导体龙头参股，相关个股受益"
+    },
+    {
+      "sector_name": "风电",
+      "impact": 2,
+      "analysis": "招标量增长，相关个股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "辰光医疗",
+      "stock_code": "300383",
+      "impact": 4,
+      "analysis": "超导磁体规模化量产，受益核聚变政策"
+    },
+    {
+      "stock_name": "永鼎股份",
+      "stock_code": "600105",
+      "impact": 4,
+      "analysis": "独有磁通钉扎技术，受益核聚变政策"
+    },
+    {
+      "stock_name": "小鹏汇天",
+      "stock_code": "001339",
+      "impact": 3,
+      "analysis": "低空经济馆参展，受益低空经济发展"
+    },
+    {
+      "stock_name": "万丰奥威",
+      "stock_code": "002085",
+      "impact": 3,
+      "analysis": "纯电动飞机首飞，受益低空经济发展"
+    },
+    {
+      "stock_name": "天富能源",
+      "stock_code": "600509",
+      "impact": 4,
+      "analysis": "参股第三代半导体龙头，受益行业增长"
+    }
+  ],
+  "article_id": "3caf48159da84c838962abab702e53cf",
+  "article_date": "2024-10-24",
+  "article_title": "2024.10.24市场逻辑精选"
+}

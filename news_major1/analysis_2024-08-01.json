@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "智能网联汽车、注塑机、内河船运等板块利好，安凯客车、康盛股份等个股受关注。",
+  "sectors": [
+    {
+      "sector_name": "智能网联汽车",
+      "impact": 4,
+      "analysis": "政策支持，技术渗透率提升，行业前景看好。"
+    },
+    {
+      "sector_name": "注塑机",
+      "impact": 3,
+      "analysis": "设备更新需求旺盛，行业增长潜力大。"
+    },
+    {
+      "sector_name": "内河船运",
+      "impact": 3,
+      "analysis": "设备更新政策推动，市场需求空间大。"
+    },
+    {
+      "sector_name": "新能源",
+      "impact": 3,
+      "analysis": "补贴政策支持，行业景气度提升。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "安凯客车",
+      "stock_code": "000868",
+      "impact": 3,
+      "analysis": "受益新能源补贴，布局自动驾驶客车。"
+    },
+    {
+      "stock_name": "康盛股份",
+      "stock_code": "002418",
+      "impact": 3,
+      "analysis": "西南地区无人驾驶整车企业，制冷管路业务受益家电更新政策。"
+    },
+    {
+      "stock_name": "万里石",
+      "stock_code": "002785",
+      "impact": 2,
+      "analysis": "拟收购大股东铀矿资产，拓展战略性矿产类资源业务。"
+    },
+    {
+      "stock_name": "江苏神通",
+      "stock_code": "002438",
+      "impact": 2,
+      "analysis": "参股公司混动航空发动机正在国内取证，受益低空经济。"
+    }
+  ],
+  "article_id": "de56996fb36e40c591c8dd4f651051e1",
+  "article_date": "2024-08-01",
+  "article_title": "2024.8.1市场逻辑精选"
+}

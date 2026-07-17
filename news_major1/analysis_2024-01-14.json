@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，部分板块和个股受积极影响。",
+  "sectors": [
+    {
+      "sector_name": "光伏板块",
+      "impact": 4,
+      "analysis": "POE胶膜需求前景佳，带动相关个股上涨。"
+    },
+    {
+      "sector_name": "券商板块",
+      "impact": 3,
+      "analysis": "券商业绩预增，推动板块上涨。"
+    },
+    {
+      "sector_name": "房地产板块",
+      "impact": 2,
+      "analysis": "政策支持房地产融资，板块受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "福斯特",
+      "stock_code": "603806",
+      "impact": 4,
+      "analysis": "国内最大的POE胶膜生产商，受益于行业增长。"
+    },
+    {
+      "stock_name": "赛伍技术",
+      "stock_code": "300362",
+      "impact": 4,
+      "analysis": "POE胶膜市占率第二，行业增长受益。"
+    },
+    {
+      "stock_name": "西南证券",
+      "stock_code": "600369",
+      "impact": 3,
+      "analysis": "业绩预增，推动股价上涨。"
+    },
+    {
+      "stock_name": "国元证券",
+      "stock_code": "600017",
+      "impact": 3,
+      "analysis": "业绩预增，推动股价上涨。"
+    }
+  ],
+  "article_id": "ae786616f03643c8aa7430671e7fe948",
+  "article_date": "2024-01-14",
+  "article_title": "2024.1.14市场逻辑精选"
+}

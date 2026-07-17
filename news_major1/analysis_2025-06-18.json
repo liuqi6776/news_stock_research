@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "AI眼镜和液冷技术预期推动相关板块上涨。",
+  "sectors": [
+    {
+      "sector_name": "AI眼镜",
+      "impact": 4,
+      "analysis": "新品发布预期推动板块上涨。"
+    },
+    {
+      "sector_name": "液冷技术",
+      "impact": 3,
+      "analysis": "行业标准发布推动板块上涨。"
+    },
+    {
+      "sector_name": "超导材料",
+      "impact": 3,
+      "analysis": "上海超导IPO申请受理推动板块上涨。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "比依股份",
+      "stock_code": "300323",
+      "impact": 4,
+      "analysis": "AR眼镜产业链布局。"
+    },
+    {
+      "stock_name": "中京电子",
+      "stock_code": "002579",
+      "impact": 3,
+      "analysis": "VR/AR智能眼镜领域应用。"
+    },
+    {
+      "stock_name": "曙光数创",
+      "stock_code": "300545",
+      "impact": 3,
+      "analysis": "浸没相变液冷技术商业化。"
+    },
+    {
+      "stock_name": "精达股份",
+      "stock_code": "600577",
+      "impact": 3,
+      "analysis": "上海超导IPO受益。"
+    }
+  ],
+  "article_id": "b9b0a63463d341b3ad9b1dc9d06e6d43",
+  "article_date": "2025-06-18",
+  "article_title": "2025.6.18市场逻辑精选"
+}

@@ -1,0 +1,209 @@
+{
+  "market_impact": 2,
+  "market_analysis": "市场情绪偏乐观，多板块利好。",
+  "sectors": [
+    {
+      "sector_name": "特斯拉机器人",
+      "impact": 3,
+      "analysis": "特斯拉机器人概念股受提振"
+    },
+    {
+      "sector_name": "物流",
+      "impact": 2,
+      "analysis": "物流行业政策利好"
+    },
+    {
+      "sector_name": "自动驾驶",
+      "impact": 2,
+      "analysis": "自动驾驶测试场景评价国际标准立项"
+    },
+    {
+      "sector_name": "电池回收",
+      "impact": 2,
+      "analysis": "锂价上涨推动回收价格"
+    },
+    {
+      "sector_name": "信创",
+      "impact": 2,
+      "analysis": "信创行业国产化加速"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 2,
+      "analysis": "国产大飞机适航证预期，俄乌冲突升级"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中大力德",
+      "stock_code": "002896",
+      "impact": 3,
+      "analysis": "特斯拉机器人概念股"
+    },
+    {
+      "stock_name": "鸣志电器",
+      "stock_code": "002915",
+      "impact": 3,
+      "analysis": "特斯拉机器人概念股"
+    },
+    {
+      "stock_name": "赛象科技",
+      "stock_code": "002337",
+      "impact": 3,
+      "analysis": "特斯拉机器人概念股"
+    },
+    {
+      "stock_name": "绿的谐波",
+      "stock_code": "688528",
+      "impact": 3,
+      "analysis": "特斯拉机器人概念股"
+    },
+    {
+      "stock_name": "江苏北人",
+      "stock_code": "603959",
+      "impact": 3,
+      "analysis": "特斯拉机器人概念股"
+    },
+    {
+      "stock_name": "长久物流",
+      "stock_code": "603606",
+      "impact": 2,
+      "analysis": "物流行业政策利好"
+    },
+    {
+      "stock_name": "畅联股份",
+      "stock_code": "600836",
+      "impact": 2,
+      "analysis": "物流行业政策利好"
+    },
+    {
+      "stock_name": "三羊马",
+      "stock_code": "603717",
+      "impact": 2,
+      "analysis": "物流行业政策利好"
+    },
+    {
+      "stock_name": "新宁物流",
+      "stock_code": "603755",
+      "impact": 2,
+      "analysis": "物流行业政策利好"
+    },
+    {
+      "stock_name": "飞力达",
+      "stock_code": "603868",
+      "impact": 2,
+      "analysis": "物流行业政策利好"
+    },
+    {
+      "stock_name": "路畅科技",
+      "stock_code": "002813",
+      "impact": 2,
+      "analysis": "自动驾驶测试场景评价国际标准立项"
+    },
+    {
+      "stock_name": "万安科技",
+      "stock_code": "002590",
+      "impact": 2,
+      "analysis": "自动驾驶测试场景评价国际标准立项"
+    },
+    {
+      "stock_name": "亚太股份",
+      "stock_code": "002284",
+      "impact": 2,
+      "analysis": "自动驾驶测试场景评价国际标准立项"
+    },
+    {
+      "stock_name": "迪生力",
+      "stock_code": "300342",
+      "impact": 2,
+      "analysis": "锂价上涨推动回收价格"
+    },
+    {
+      "stock_name": "天奇股份",
+      "stock_code": "002009",
+      "impact": 2,
+      "analysis": "锂价上涨推动回收价格"
+    },
+    {
+      "stock_name": "格林美",
+      "stock_code": "002340",
+      "impact": 2,
+      "analysis": "锂价上涨推动回收价格"
+    },
+    {
+      "stock_name": "超越科技",
+      "stock_code": "300655",
+      "impact": 2,
+      "analysis": "锂价上涨推动回收价格"
+    },
+    {
+      "stock_name": "南天信息",
+      "stock_code": "000948",
+      "impact": 2,
+      "analysis": "信创行业国产化加速"
+    },
+    {
+      "stock_name": "吉大正元",
+      "stock_code": "300663",
+      "impact": 2,
+      "analysis": "信创行业国产化加速"
+    },
+    {
+      "stock_name": "久其软件",
+      "stock_code": "002279",
+      "impact": 2,
+      "analysis": "信创行业国产化加速"
+    },
+    {
+      "stock_name": "恒为科技",
+      "stock_code": "300365",
+      "impact": 2,
+      "analysis": "信创行业国产化加速"
+    },
+    {
+      "stock_name": "中国软件",
+      "stock_code": "600536",
+      "impact": 2,
+      "analysis": "信创行业国产化加速"
+    },
+    {
+      "stock_name": "东方中科",
+      "stock_code": "002819",
+      "impact": 2,
+      "analysis": "信创行业国产化加速"
+    },
+    {
+      "stock_name": "四川九洲",
+      "stock_code": "000738",
+      "impact": 2,
+      "analysis": "国产大飞机适航证预期，俄乌冲突升级"
+    },
+    {
+      "stock_name": "润贝航科",
+      "stock_code": "688019",
+      "impact": 2,
+      "analysis": "国产大飞机适航证预期，俄乌冲突升级"
+    },
+    {
+      "stock_name": "北化股份",
+      "stock_code": "002246",
+      "impact": 2,
+      "analysis": "国产大飞机适航证预期，俄乌冲突升级"
+    },
+    {
+      "stock_name": "西仪股份",
+      "stock_code": "002265",
+      "impact": 2,
+      "analysis": "国产大飞机适航证预期，俄乌冲突升级"
+    },
+    {
+      "stock_name": "起帆电缆",
+      "stock_code": "002876",
+      "impact": 2,
+      "analysis": "国产大飞机适航证预期，俄乌冲突升级"
+    }
+  ],
+  "article_title": "9月23日 盘前早8点 股市要闻关注",
+  "html_file": "bwtvgdxka5.html",
+  "article_date": "2022-09-23"
+}

@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "金属价格上涨，金融政策支持，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "有色金属",
+      "impact": 4,
+      "analysis": "金属价格上涨，板块受益明显。"
+    },
+    {
+      "sector_name": "金融",
+      "impact": 3,
+      "analysis": "政策性金融工具投入，券商板块有望上涨。"
+    },
+    {
+      "sector_name": "卫星通信",
+      "impact": 3,
+      "analysis": "行业政策支持，未来发展潜力大。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "紫金矿业",
+      "stock_code": "600388",
+      "impact": 4,
+      "analysis": "金、铜矿储量及产量全国第一，受益金属价格上涨。"
+    },
+    {
+      "stock_name": "盛达资源",
+      "stock_code": "000603",
+      "impact": 4,
+      "analysis": "查明银金属量约1.2万吨，白银价格上涨受益。"
+    },
+    {
+      "stock_name": "国盛金控",
+      "stock_code": "000387",
+      "impact": 3,
+      "analysis": "证券业务聚焦，政策性金融工具投入受益。"
+    },
+    {
+      "stock_name": "中国卫星",
+      "stock_code": "600118",
+      "impact": 3,
+      "analysis": "积极参与低轨互联网建设工程，卫星通信业务发展受益。"
+    }
+  ],
+  "article_id": "54c21230efed40cea3079386b9e436ae",
+  "article_date": "2025-09-29",
+  "article_title": "2025.9.29市场逻辑精选"
+}

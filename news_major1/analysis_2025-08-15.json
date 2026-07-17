@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏积极，多板块利好。",
+  "sectors": [
+    {
+      "sector_name": "机器人",
+      "impact": 4,
+      "analysis": "人形机器人概念受关注，利好相关个股。"
+    },
+    {
+      "sector_name": "储能",
+      "impact": 3,
+      "analysis": "储能行业反内卷，利好相关个股。"
+    },
+    {
+      "sector_name": "英特尔概念",
+      "impact": 3,
+      "analysis": "英特尔概念股受特朗普政府入股消息提振。"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 2,
+      "analysis": "俄乌概念股受“特普会”消息提振。"
+    },
+    {
+      "sector_name": "金融和稳定币",
+      "impact": 2,
+      "analysis": "稳定币发行牌照审批标准提高，利好相关个股。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "卧龙电驱",
+      "stock_code": "600580",
+      "impact": 4,
+      "analysis": "人形机器人概念，受摩根士丹利预测利好。"
+    },
+    {
+      "stock_name": "锦浪科技",
+      "stock_code": "300763",
+      "impact": 3,
+      "analysis": "储能行业反内卷，公司业绩增长。"
+    },
+    {
+      "stock_name": "康希通信",
+      "stock_code": "002050",
+      "impact": 3,
+      "analysis": "英特尔概念，受特朗普政府入股利好。"
+    },
+    {
+      "stock_name": "恒宝股份",
+      "stock_code": "002104",
+      "impact": 3,
+      "analysis": "稳定币概念，受牌照审批标准提高利好。"
+    },
+    {
+      "stock_name": "烽火电子",
+      "stock_code": "000561",
+      "impact": 2,
+      "analysis": "军工概念，受俄乌概念股利好。"
+    }
+  ],
+  "article_title": "8月15日盘前纪要",
+  "html_file": "3xmsdgwrk51.html",
+  "article_date": "2025-08-15"
+}

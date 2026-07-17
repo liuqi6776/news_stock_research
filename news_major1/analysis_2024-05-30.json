@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，航天、AI科技板块受关注。",
+  "sectors": [
+    {
+      "sector_name": "商业航天",
+      "impact": 4,
+      "analysis": "行业进入密集发射期，利好相关个股。"
+    },
+    {
+      "sector_name": "AI科技",
+      "impact": 3,
+      "analysis": "AI手机与AI PC共享科技盛宴，利好相关个股。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "掩膜板有望实现弯道超车，利好相关个股。"
+    },
+    {
+      "sector_name": "氢能",
+      "impact": 3,
+      "analysis": "氢能电解槽出海，利好相关个股。"
+    },
+    {
+      "sector_name": "视频车联网",
+      "impact": 3,
+      "analysis": "出海高景气，利好相关个股。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "信科移动",
+      "stock_code": "600485",
+      "impact": 4,
+      "analysis": "商业航天板块，受益于行业密集发射期。"
+    },
+    {
+      "stock_name": "光大同创",
+      "stock_code": "300079",
+      "impact": 3,
+      "analysis": "AI手机与AI PC板块，受益于AI科技盛宴。"
+    },
+    {
+      "stock_name": "冠石科技",
+      "stock_code": "688012",
+      "impact": 4,
+      "analysis": "半导体板块，掩膜板有望实现弯道超车。"
+    },
+    {
+      "stock_name": "昇辉科技",
+      "stock_code": "300633",
+      "impact": 4,
+      "analysis": "氢能板块，氢能电解槽出海。"
+    },
+    {
+      "stock_name": "锐明技术",
+      "stock_code": "300438",
+      "impact": 4,
+      "analysis": "视频车联网板块，出海高景气。"
+    }
+  ],
+  "article_id": "2dbe3e74cca843bbb2199474160a3955",
+  "article_date": "2024-05-30",
+  "article_title": "2024.5.30市场逻辑精选"
+}

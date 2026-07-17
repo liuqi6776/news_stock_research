@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受多事件影响，波动较大。",
+  "sectors": [
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "AI技术合作及DeepSeek事件推动板块活跃。"
+    },
+    {
+      "sector_name": "影视",
+      "impact": 2,
+      "analysis": "《哪吒2》票房突破百亿，提振板块信心。"
+    },
+    {
+      "sector_name": "农业",
+      "impact": 2,
+      "analysis": "一号文件预期，农业板块受关注。"
+    },
+    {
+      "sector_name": "俄乌重建",
+      "impact": 2,
+      "analysis": "俄乌重建相关概念股受关注。"
+    },
+    {
+      "sector_name": "算力",
+      "impact": 2,
+      "analysis": "苹果与百度合作，算力板块受提振。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "杭钢股份",
+      "stock_code": "600231",
+      "impact": 4,
+      "analysis": "DeepSeek事件及AI合作推动股价上涨。"
+    },
+    {
+      "stock_name": "梦网科技",
+      "stock_code": "300479",
+      "impact": 4,
+      "analysis": "DeepSeek事件及AI合作推动股价上涨。"
+    },
+    {
+      "stock_name": "光线传媒",
+      "stock_code": "600707",
+      "impact": 3,
+      "analysis": "《哪吒2》票房突破百亿，股价上涨。"
+    },
+    {
+      "stock_name": "北新路桥",
+      "stock_code": "002307",
+      "impact": 3,
+      "analysis": "俄乌重建概念股，股价受提振。"
+    },
+    {
+      "stock_name": "百度",
+      "stock_code": "9888",
+      "impact": 3,
+      "analysis": "苹果合作及AI业务推动股价上涨。"
+    }
+  ],
+  "article_title": "2月14日盘前早报 热点事件关注",
+  "html_file": "et53xpxzar.html",
+  "article_date": "2025-02-14"
+}

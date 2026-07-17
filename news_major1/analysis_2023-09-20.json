@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "医药生物",
+      "impact": 4,
+      "analysis": "GLP-1受体激动剂市场空间大，相关产业链受益。"
+    },
+    {
+      "sector_name": "环保",
+      "impact": 3,
+      "analysis": "环保化债方案利好环保行业。"
+    },
+    {
+      "sector_name": "电子",
+      "impact": 2,
+      "analysis": "华为IPC芯片回归，视频监控端有望降本。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "翰宇药业",
+      "stock_code": "002702",
+      "impact": 4,
+      "analysis": "多肽减重/降糖管线布局，关注度高。"
+    },
+    {
+      "stock_name": "诺泰生物",
+      "stock_code": "300705",
+      "impact": 3,
+      "analysis": "替尔泊肽原料药处于小试阶段。"
+    },
+    {
+      "stock_name": "众生药业",
+      "stock_code": "002317",
+      "impact": 3,
+      "analysis": "自主研发的RAY1225注射液有望用于降糖、减肥。"
+    },
+    {
+      "stock_name": "海康威视",
+      "stock_code": "002415",
+      "impact": 2,
+      "analysis": "华为IPC芯片回归，视频监控龙头有望受益。"
+    }
+  ],
+  "article_id": "b4942cc9c11c4110a849642f6d1b3af9",
+  "article_date": "2023-09-20",
+  "article_title": "2023.9.20市场逻辑精选"
+}

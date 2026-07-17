@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受多事件影响，波动较大。",
+  "sectors": [
+    {
+      "sector_name": "中俄基建",
+      "impact": 4,
+      "analysis": "普京视察远东带地区，利好中俄基建板块。"
+    },
+    {
+      "sector_name": "农业",
+      "impact": 3,
+      "analysis": "加快建设农业强国政策，利好农业板块。"
+    },
+    {
+      "sector_name": "海南",
+      "impact": 3,
+      "analysis": "博鳌亚洲论坛召开，利好海南板块。"
+    },
+    {
+      "sector_name": "字节跳动",
+      "impact": 3,
+      "analysis": "阿联酋科技巨头入股，利好字节跳动概念股。"
+    },
+    {
+      "sector_name": "水泥",
+      "impact": 3,
+      "analysis": "水泥市场迎来涨价潮，利好水泥板块。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "哈空调",
+      "stock_code": "600806",
+      "impact": 4,
+      "analysis": "普京视察远东带地区，利好哈空调。"
+    },
+    {
+      "stock_name": "龙建股份",
+      "stock_code": "600853",
+      "impact": 4,
+      "analysis": "普京视察远东带地区，利好龙建股份。"
+    },
+    {
+      "stock_name": "中粮科工",
+      "stock_code": "600960",
+      "impact": 3,
+      "analysis": "加快建设农业强国政策，利好中粮科工。"
+    },
+    {
+      "stock_name": "一拖股份",
+      "stock_code": "600038",
+      "impact": 3,
+      "analysis": "加快建设农业强国政策，利好一拖股份。"
+    },
+    {
+      "stock_name": "海南瑞泽",
+      "stock_code": "002519",
+      "impact": 3,
+      "analysis": "博鳌亚洲论坛召开，利好海南瑞泽。"
+    }
+  ],
+  "article_title": "3月16日盘前热点事件关注",
+  "html_file": "ff7wydwgxz.html",
+  "article_date": "2023-03-16"
+}

@@ -1,0 +1,56 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "3D打印",
+      "impact": 4,
+      "analysis": "泡泡玛特Labubu产品火爆，推动3D打印需求增长，相关公司受益。"
+    },
+    {
+      "sector_name": "高速铜缆",
+      "impact": 3,
+      "analysis": "全球高速铜缆创新大会召开，行业前景看好，相关公司受益。"
+    },
+    {
+      "sector_name": "稀土永磁",
+      "impact": 3,
+      "analysis": "海外原材料告急，稀土价格大涨，相关公司受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "海正生材",
+      "stock_code": "300082",
+      "impact": 4,
+      "analysis": "聚乳酸PLA研产销领先，3D打印耗材收入增长。"
+    },
+    {
+      "stock_name": "金橙子",
+      "stock_code": "300595",
+      "impact": 3,
+      "analysis": "激光3D打印控制系统产品，部分型号可用于3D打印业务。"
+    },
+    {
+      "stock_name": "沃尔核材",
+      "stock_code": "002130",
+      "impact": 3,
+      "analysis": "子公司乐庭智联为高速数通铜缆全球龙头供应商。"
+    },
+    {
+      "stock_name": "广晟有色",
+      "stock_code": "600259",
+      "impact": 4,
+      "analysis": "稀土资源开采、冶炼分离、功能材料深加工、稀土贸易全产业链。"
+    },
+    {
+      "stock_name": "正海磁材",
+      "stock_code": "600871",
+      "impact": 3,
+      "analysis": "主要永磁材料生产商，客户覆盖电声器件及电子元器件厂商。"
+    }
+  ],
+  "article_id": "90923111df0d4bfeb23b7ecc04749cc6",
+  "article_date": "2025-06-16",
+  "article_title": "2025.6.16市场逻辑精选"
+}

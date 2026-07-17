@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "AI及大数据",
+      "impact": 4,
+      "analysis": "AI多模态技术升级，相关公司受益"
+    },
+    {
+      "sector_name": "生物科技",
+      "impact": 3,
+      "analysis": "基因编辑疗法审批，行业前景广阔"
+    },
+    {
+      "sector_name": "数据要素",
+      "impact": 3,
+      "analysis": "数据要素建设提速，相关公司受益"
+    },
+    {
+      "sector_name": "医疗健康",
+      "impact": 2,
+      "analysis": "医疗设备需求回暖，相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "网达软件",
+      "stock_code": "300993",
+      "impact": 4,
+      "analysis": "AI视频技术平台布局，受益AI多模态"
+    },
+    {
+      "stock_name": "贝瑞基因",
+      "stock_code": "000710",
+      "impact": 3,
+      "analysis": "基因编辑疗法审批，公司受益"
+    },
+    {
+      "stock_name": "云赛智联",
+      "stock_code": "600971",
+      "impact": 3,
+      "analysis": "数据要素建设提速，公司受益"
+    },
+    {
+      "stock_name": "润达医疗",
+      "stock_code": "300601",
+      "impact": 2,
+      "analysis": "协办华为云数字健康创新高峰论坛，公司受益"
+    }
+  ],
+  "article_id": "85affe640dbe4c928b2b4f8c2d4c7510",
+  "article_date": "2023-12-07",
+  "article_title": "2023.12.7市场逻辑精选"
+}

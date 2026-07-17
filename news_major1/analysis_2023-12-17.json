@@ -1,0 +1,56 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策支持推动相关板块活跃",
+  "sectors": [
+    {
+      "sector_name": "农业",
+      "impact": 4,
+      "analysis": "农村工作会议及高标准农田建设政策利好"
+    },
+    {
+      "sector_name": "消费",
+      "impact": 3,
+      "analysis": "内外贸一体化发展及跨境电商政策支持"
+    },
+    {
+      "sector_name": "数据要素",
+      "impact": 4,
+      "analysis": "数据要素三年行动计划发布，市场空间大"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "润农节水",
+      "stock_code": "300497",
+      "impact": 4,
+      "analysis": "受益高标准农田建设"
+    },
+    {
+      "stock_name": "大禹节水",
+      "stock_code": "300021",
+      "impact": 4,
+      "analysis": "智慧农水项目及高标准农田建设"
+    },
+    {
+      "stock_name": "星光农机",
+      "stock_code": "603895",
+      "impact": 4,
+      "analysis": "受益高标准农田建设"
+    },
+    {
+      "stock_name": "南极电商",
+      "stock_code": "002127",
+      "impact": 3,
+      "analysis": "跨境电商政策支持"
+    },
+    {
+      "stock_name": "赛意信息",
+      "stock_code": "300474",
+      "impact": 4,
+      "analysis": "数据要素行动计划相关"
+    }
+  ],
+  "article_id": "a9b6874978144f0997e5c261672890dc",
+  "article_date": "2023-12-17",
+  "article_title": "2023.12.17市场逻辑精选"
+}

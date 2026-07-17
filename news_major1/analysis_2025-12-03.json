@@ -1,0 +1,61 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受多因素影响，部分行业有望反转。",
+  "sectors": [
+    {
+      "sector_name": "面板",
+      "impact": 4,
+      "analysis": "需求旺季，价格企稳，行业有望反转。"
+    },
+    {
+      "sector_name": "煤炭",
+      "impact": 3,
+      "analysis": "寒潮来袭，煤炭需求增加。"
+    },
+    {
+      "sector_name": "石油",
+      "impact": 3,
+      "analysis": "委内瑞拉局势升级，石油供应受影响。"
+    },
+    {
+      "sector_name": "PCB",
+      "impact": 3,
+      "analysis": "奥士康发布股权激励，PCB业务有望增长。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "京东方A",
+      "stock_code": "000725",
+      "impact": 4,
+      "analysis": "LCD行业龙头，利润有望迎来拐点。"
+    },
+    {
+      "stock_name": "彩虹股份",
+      "stock_code": "600382",
+      "impact": 3,
+      "analysis": "优化产线配置，推动产品结构升级。"
+    },
+    {
+      "stock_name": "安泰集团",
+      "stock_code": "000969",
+      "impact": 3,
+      "analysis": "地处山西，主要从事焦炭及其副产品生产。"
+    },
+    {
+      "stock_name": "通源石油",
+      "stock_code": "600803",
+      "impact": 3,
+      "analysis": "泵送射孔技术全球领先，与全球能源巨头合作。"
+    },
+    {
+      "stock_name": "奥士康",
+      "stock_code": "002913",
+      "impact": 4,
+      "analysis": "发布股权激励，PCB业务有望增长。"
+    }
+  ],
+  "article_id": "4b4f6f6bb0ce44bd9fd396fabd0a6437",
+  "article_date": "2025-12-03",
+  "article_title": "2025.12.3市场逻辑精选"
+}

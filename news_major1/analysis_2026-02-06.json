@@ -1,0 +1,66 @@
+{
+  "market_impact": 2,
+  "market_analysis": "市场整体偏暖，部分行业和个股受利好消息提振。",
+  "sectors": [
+    {
+      "sector_name": "中药",
+      "impact": 3,
+      "analysis": "政策支持，行业前景看好。"
+    },
+    {
+      "sector_name": "北斗短信",
+      "impact": 3,
+      "analysis": "商用试运行，相关公司受益。"
+    },
+    {
+      "sector_name": "燃气轮机",
+      "impact": 2,
+      "analysis": "美国电荒引发全球短缺，相关公司受益。"
+    },
+    {
+      "sector_name": "CDN",
+      "impact": 2,
+      "analysis": "Kimi算力紧缺，CDN价格上涨。"
+    },
+    {
+      "sector_name": "功率半导体",
+      "impact": 2,
+      "analysis": "英飞凌宣布涨价，行业景气度提升。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "盘龙药业",
+      "stock_code": "000516",
+      "impact": 3,
+      "analysis": "中药政策支持，股价有望上涨。"
+    },
+    {
+      "stock_name": "北斗星通",
+      "stock_code": "002151",
+      "impact": 3,
+      "analysis": "北斗短信商用试运行，股价有望上涨。"
+    },
+    {
+      "stock_name": "常宝股份",
+      "stock_code": "002478",
+      "impact": 2,
+      "analysis": "燃气轮机短缺，股价有望上涨。"
+    },
+    {
+      "stock_name": "网宿科技",
+      "stock_code": "300017",
+      "impact": 2,
+      "analysis": "CDN价格上涨，股价有望上涨。"
+    },
+    {
+      "stock_name": "士兰微",
+      "stock_code": "600460",
+      "impact": 2,
+      "analysis": "功率半导体涨价，股价有望上涨。"
+    }
+  ],
+  "article_title": "2月6日盘前纪要",
+  "html_file": "3xw88vh9dx6.html",
+  "article_date": "2026-02-06"
+}

@@ -1,0 +1,97 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受政策支持及行业利好影响，整体偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "台资企业",
+      "impact": 4,
+      "analysis": "两岸关系改善，台资企业受益，板块利好。"
+    },
+    {
+      "sector_name": "信创",
+      "impact": 3,
+      "analysis": "政策支持信创发展，板块受益。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "电子特气价格上涨，半导体行业受益。"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 2,
+      "analysis": "台资企业医疗合作，医药板块受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "合富中国",
+      "stock_code": "600715",
+      "impact": 4,
+      "analysis": "两岸医疗资源整合，公司受益。"
+    },
+    {
+      "stock_name": "宏和科技",
+      "stock_code": "603019",
+      "impact": 4,
+      "analysis": "Low-CTE缺货，公司产能爬产，受益。"
+    },
+    {
+      "stock_name": "金山办公",
+      "stock_code": "002377",
+      "impact": 3,
+      "analysis": "信创政策支持，公司受益。"
+    },
+    {
+      "stock_name": "深信服",
+      "stock_code": "300456",
+      "impact": 3,
+      "analysis": "信创政策支持，公司受益。"
+    },
+    {
+      "stock_name": "中船特气",
+      "stock_code": "600011",
+      "impact": 3,
+      "analysis": "电子特气价格上涨，公司受益。"
+    },
+    {
+      "stock_name": "昊华科技",
+      "stock_code": "600378",
+      "impact": 3,
+      "analysis": "电子特气价格上涨，公司受益。"
+    },
+    {
+      "stock_name": "中钨高新",
+      "stock_code": "600970",
+      "impact": 4,
+      "analysis": "PCB钻针和钨精矿业务增长，公司受益。"
+    },
+    {
+      "stock_name": "宁波精达",
+      "stock_code": "603868",
+      "impact": 3,
+      "analysis": "与维谛技术合作，公司受益。"
+    },
+    {
+      "stock_name": "方大炭素",
+      "stock_code": "600399",
+      "impact": 3,
+      "analysis": "氧化物固态电解质应用取得进展，公司受益。"
+    },
+    {
+      "stock_name": "航天发展",
+      "stock_code": "000547",
+      "impact": 3,
+      "analysis": "航天产业发展，公司受益。"
+    },
+    {
+      "stock_name": "榕基软件",
+      "stock_code": "002474",
+      "impact": 3,
+      "analysis": "信创政务自主可控，公司受益。"
+    }
+  ],
+  "article_id": "97e2b8f9c6a94af7aa8cbecf2b5b129f",
+  "article_date": "2025-10-28",
+  "article_title": "2025.10.28市场逻辑精选"
+}

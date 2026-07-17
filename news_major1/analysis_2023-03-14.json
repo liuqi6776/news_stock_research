@@ -1,0 +1,77 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多板块利好。",
+  "sectors": [
+    {
+      "sector_name": "黄金白银",
+      "impact": 4,
+      "analysis": "美加息预期下调，金价银价上涨利好"
+    },
+    {
+      "sector_name": "虚拟数字人",
+      "impact": 3,
+      "analysis": "AI生成算法进步，数字人应用前景广阔利好"
+    },
+    {
+      "sector_name": "鸡苗",
+      "impact": 3,
+      "analysis": "鸡苗价格上涨利好"
+    },
+    {
+      "sector_name": "风电",
+      "impact": 3,
+      "analysis": "风电开标规模翻倍，订单充足利好"
+    },
+    {
+      "sector_name": "氢能",
+      "impact": 3,
+      "analysis": "绿氢市场启动，行业景气度提升利好"
+    },
+    {
+      "sector_name": "氟化工",
+      "impact": 3,
+      "analysis": "三代制冷剂提价，行业底部反转利好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "金贵银业",
+      "stock_code": "600514",
+      "impact": 4,
+      "analysis": "金价上涨利好"
+    },
+    {
+      "stock_name": "天娱数科",
+      "stock_code": "300058",
+      "impact": 3,
+      "analysis": "数字人应用前景广阔利好"
+    },
+    {
+      "stock_name": "益生股份",
+      "stock_code": "002458",
+      "impact": 3,
+      "analysis": "鸡苗价格上涨利好"
+    },
+    {
+      "stock_name": "大金重工",
+      "stock_code": "002487",
+      "impact": 3,
+      "analysis": "风电开标规模翻倍，订单充足利好"
+    },
+    {
+      "stock_name": "中泰股份",
+      "stock_code": "600845",
+      "impact": 3,
+      "analysis": "绿氢市场启动，行业景气度提升利好"
+    },
+    {
+      "stock_name": "三美股份",
+      "stock_code": "600739",
+      "impact": 3,
+      "analysis": "三代制冷剂提价，行业底部反转利好"
+    }
+  ],
+  "article_title": "3月14日盘前热点事件关注",
+  "html_file": "8v4ygjpp6q.html",
+  "article_date": "2023-03-14"
+}

@@ -1,0 +1,113 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极因素影响",
+  "sectors": [
+    {
+      "sector_name": "模拟芯片",
+      "impact": 4,
+      "analysis": "行业提价，国产化率低，替代空间大"
+    },
+    {
+      "sector_name": "CPU",
+      "impact": 3,
+      "analysis": "AI Agent需求激增，市场空间广阔"
+    },
+    {
+      "sector_name": "体育",
+      "impact": 3,
+      "analysis": "U23国足创造历史，足球赛事活跃"
+    },
+    {
+      "sector_name": "半导体封装材料",
+      "impact": 3,
+      "analysis": "业务转型，先进封装业务增长"
+    },
+    {
+      "sector_name": "锂矿",
+      "impact": 3,
+      "analysis": "LCE供给缩减，锂矿业绩提升"
+    },
+    {
+      "sector_name": "中速机",
+      "impact": 3,
+      "analysis": "进军北美市场，订单测试进行中"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "圣邦股份",
+      "stock_code": "300362",
+      "impact": 4,
+      "analysis": "国产模拟芯片龙头，聚焦新兴领域"
+    },
+    {
+      "stock_name": "思瑞浦",
+      "stock_code": "688555",
+      "impact": 4,
+      "analysis": "国内信号链芯片行业龙头"
+    },
+    {
+      "stock_name": "纳芯微",
+      "stock_code": "688299",
+      "impact": 4,
+      "analysis": "国内汽车模拟芯片龙头"
+    },
+    {
+      "stock_name": "中国长城",
+      "stock_code": "000066",
+      "impact": 3,
+      "analysis": "飞腾芯片产品，AI服务器领域"
+    },
+    {
+      "stock_name": "龙芯中科",
+      "stock_code": "688056",
+      "impact": 3,
+      "analysis": "研发高性能CPU，AI推理性能提升"
+    },
+    {
+      "stock_name": "海光信息",
+      "stock_code": "688041",
+      "impact": 3,
+      "analysis": "整合CPU+GPU+互联+服务集群"
+    },
+    {
+      "stock_name": "舒华体育",
+      "stock_code": "603716",
+      "impact": 3,
+      "analysis": "全民健身解决方案，足球场地建设"
+    },
+    {
+      "stock_name": "共创草坪",
+      "stock_code": "603699",
+      "impact": 3,
+      "analysis": "运动草坪业务，足球场地设施建设"
+    },
+    {
+      "stock_name": "三利谱",
+      "stock_code": "002876",
+      "impact": 3,
+      "analysis": "TAC膜国产替代，偏光片利润修复"
+    },
+    {
+      "stock_name": "至正股份",
+      "stock_code": "603806",
+      "impact": 3,
+      "analysis": "业务转型，先进封装业务增长"
+    },
+    {
+      "stock_name": "盛新锂能",
+      "stock_code": "002240",
+      "impact": 3,
+      "analysis": "国内锂矿资源龙头，LCE供给缩减"
+    },
+    {
+      "stock_name": "潍柴重机",
+      "stock_code": "000880",
+      "impact": 3,
+      "analysis": "中速机进军北美市场，订单测试进行中"
+    }
+  ],
+  "article_id": "55fd2bbd2baf4bd9a022dde35d899322",
+  "article_date": "2026-01-21",
+  "article_title": "2026.1.21市场逻辑精选"
+}

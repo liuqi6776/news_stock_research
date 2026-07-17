@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "种业",
+      "impact": 4,
+      "analysis": "政策支持，转基因商业化推进，板块受益"
+    },
+    {
+      "sector_name": "火电",
+      "impact": 3,
+      "analysis": "高股息确定性资产，盈利模式重塑，区域火电预期较好"
+    },
+    {
+      "sector_name": "脑机接口",
+      "impact": 3,
+      "analysis": "技术突破，产业化进程加速，市场空间巨大"
+    },
+    {
+      "sector_name": "存储",
+      "impact": 3,
+      "analysis": "现货行情上涨，多家公司业绩喜人，行业景气度高"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "敦煌种业",
+      "stock_code": "600354",
+      "impact": 4,
+      "analysis": "业绩增长，转基因商业化受益"
+    },
+    {
+      "stock_name": "深南电A",
+      "stock_code": "000037",
+      "impact": 3,
+      "analysis": "火电行业，盈利预期较好"
+    },
+    {
+      "stock_name": "康拓医疗",
+      "stock_code": "300662",
+      "impact": 3,
+      "analysis": "脑机接口上游厂商，技术领先"
+    },
+    {
+      "stock_name": "兆易创新",
+      "stock_code": "603986",
+      "impact": 3,
+      "analysis": "存储芯片，行业景气度高"
+    }
+  ],
+  "article_id": "23478df7e4b7429881f8099c81cd9d69",
+  "article_date": "2024-01-30",
+  "article_title": "2024.1.30市场逻辑精选"
+}

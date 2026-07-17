@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股受积极因素影响。",
+  "sectors": [
+    {
+      "sector_name": "苹果产业链",
+      "impact": 4,
+      "analysis": "苹果新产品发布，相关产业链受益"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 3,
+      "analysis": "政策支持，市场预期改善"
+    },
+    {
+      "sector_name": "集成电路",
+      "impact": 3,
+      "analysis": "大基金三期获批，行业支持力度加大"
+    },
+    {
+      "sector_name": "自动驾驶",
+      "impact": 3,
+      "analysis": "特斯拉与百度地图合作，行业前景看好"
+    },
+    {
+      "sector_name": "水利建设",
+      "impact": 2,
+      "analysis": "汛情预警，水利建设需求增加"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "亿道信息",
+      "stock_code": "300532",
+      "impact": 4,
+      "analysis": "苹果MR产品发布，公司受益"
+    },
+    {
+      "stock_name": "思泉新材",
+      "stock_code": "300699",
+      "impact": 4,
+      "analysis": "苹果AI产品发布，公司受益"
+    },
+    {
+      "stock_name": "中天服务",
+      "stock_code": "000523",
+      "impact": 3,
+      "analysis": "房地产政策支持，公司受益"
+    },
+    {
+      "stock_name": "中晶科技",
+      "stock_code": "002005",
+      "impact": 3,
+      "analysis": "集成电路大基金三期获批，公司受益"
+    },
+    {
+      "stock_name": "中海达",
+      "stock_code": "300177",
+      "impact": 3,
+      "analysis": "特斯拉与百度地图合作，公司受益"
+    }
+  ],
+  "article_title": "6月11日盘前早报 让阅读成为一种习惯",
+  "html_file": "7v5hwmga7h.html",
+  "article_date": "2024-06-11"
+}

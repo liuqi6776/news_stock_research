@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注潜在风险。",
+  "sectors": [
+    {
+      "sector_name": "铜金属",
+      "impact": 4,
+      "analysis": "铜价上涨，相关企业受益"
+    },
+    {
+      "sector_name": "旅游酒店",
+      "impact": 3,
+      "analysis": "清明假期临近，旅游酒店板块受益"
+    },
+    {
+      "sector_name": "核聚变",
+      "impact": 3,
+      "analysis": "核聚变技术发展，相关企业受益"
+    },
+    {
+      "sector_name": "稀土材料",
+      "impact": 3,
+      "analysis": "稀土材料需求增加，相关企业受益"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "机器人行业发展，相关企业受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "紫金矿业",
+      "stock_code": "600388",
+      "impact": 4,
+      "analysis": "铜价上涨，公司受益"
+    },
+    {
+      "stock_name": "峨眉山",
+      "stock_code": "603037",
+      "impact": 3,
+      "analysis": "旅游酒店板块受益"
+    },
+    {
+      "stock_name": "合锻智能",
+      "stock_code": "300118",
+      "impact": 3,
+      "analysis": "核聚变技术发展，公司受益"
+    },
+    {
+      "stock_name": "天和磁材",
+      "stock_code": "600316",
+      "impact": 3,
+      "analysis": "稀土材料需求增加，公司受益"
+    },
+    {
+      "stock_name": "大丰实业",
+      "stock_code": "603085",
+      "impact": 3,
+      "analysis": "机器人行业发展，公司受益"
+    }
+  ],
+  "article_id": "5ec2138958a74c29b8acd720a2b67959",
+  "article_date": "2025-03-24",
+  "article_title": "2025.3.24市场逻辑精选"
+}

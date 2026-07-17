@@ -1,0 +1,73 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注政策落实情况。",
+  "sectors": [
+    {
+      "sector_name": "海南板块",
+      "impact": 4,
+      "analysis": "海南自贸港建设加速，相关公司受益"
+    },
+    {
+      "sector_name": "房地产板块",
+      "impact": 3,
+      "analysis": "万科纾困方案及房贷贴息政策预期利好"
+    },
+    {
+      "sector_name": "量子计算板块",
+      "impact": 3,
+      "analysis": "国仪量子IPO申请获受理，板块关注度提升"
+    },
+    {
+      "sector_name": "光纤光缆板块",
+      "impact": 3,
+      "analysis": "长飞光纤拓展海外业务，行业前景看好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "罗牛山",
+      "stock_code": "000735",
+      "impact": 4,
+      "analysis": "海南封关带来发展机遇"
+    },
+    {
+      "stock_name": "海南瑞泽",
+      "stock_code": "002532",
+      "impact": 4,
+      "analysis": "积极参与自贸港基建、房地产等项目"
+    },
+    {
+      "stock_name": "广宇集团",
+      "stock_code": "000537",
+      "impact": 3,
+      "analysis": "房地产营收占比高，受益于政策预期"
+    },
+    {
+      "stock_name": "财信发展",
+      "stock_code": "000838",
+      "impact": 3,
+      "analysis": "执行“保交楼、稳民生”战略，控股股东变更预期"
+    },
+    {
+      "stock_name": "科大国创",
+      "stock_code": "688029",
+      "impact": 3,
+      "analysis": "参股国仪量子，推动量子软件协同合作"
+    },
+    {
+      "stock_name": "国盾量子",
+      "stock_code": "688027",
+      "impact": 3,
+      "analysis": "量子计算领域领先，量子通信专利数量全球第一"
+    },
+    {
+      "stock_name": "长飞光纤",
+      "stock_code": "601869",
+      "impact": 3,
+      "analysis": "拓展海外业务，空芯光纤技术领先"
+    }
+  ],
+  "article_id": "bc88df491fa94951a72e23c66dc91aa9",
+  "article_date": "2025-12-10",
+  "article_title": "2025.12.10市场逻辑精选"
+}

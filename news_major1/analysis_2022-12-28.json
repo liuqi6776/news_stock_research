@@ -1,0 +1,61 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极影响。",
+  "sectors": [
+    {
+      "sector_name": "数字资产",
+      "impact": 4,
+      "analysis": "数字资产交易平台启动，相关概念股受益"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "光伏产业链降价，需求预期爆发"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 3,
+      "analysis": "围手术用药需求激增，相关医药股受益"
+    },
+    {
+      "sector_name": "风电光伏",
+      "impact": 3,
+      "analysis": "全球最大风电光伏基地项目开工，相关概念股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "华媒控股",
+      "stock_code": "000607",
+      "impact": 4,
+      "analysis": "参股杭州文化产权交易所，受益数字资产交易平台"
+    },
+    {
+      "stock_name": "博瑞传播",
+      "stock_code": "600828",
+      "impact": 4,
+      "analysis": "参股成都文化产权交易所，受益数字资产交易平台"
+    },
+    {
+      "stock_name": "安妮股份",
+      "stock_code": "002235",
+      "impact": 4,
+      "analysis": "NFT在版权领域应用，受益数字资产交易平台"
+    },
+    {
+      "stock_name": "金开新能",
+      "stock_code": "603915",
+      "impact": 3,
+      "analysis": "光伏装机占比高，受益光伏产业链降价"
+    },
+    {
+      "stock_name": "太阳能",
+      "stock_code": "600869",
+      "impact": 3,
+      "analysis": "光伏装机占比高，受益光伏产业链降价"
+    }
+  ],
+  "article_id": "c59bca2387eb4dc29d1d6f152589eb2b",
+  "article_date": "2022-12-28",
+  "article_title": "2022.12.28市场逻辑精选"
+}

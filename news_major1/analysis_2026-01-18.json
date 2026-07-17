@@ -1,0 +1,86 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，关注半导体产业链",
+  "sectors": [
+    {
+      "sector_name": "封测",
+      "impact": 4,
+      "analysis": "国产替代加速，需求旺盛"
+    },
+    {
+      "sector_name": "封装基板",
+      "impact": 3,
+      "analysis": "产业链提价，需求增长"
+    },
+    {
+      "sector_name": "电阻",
+      "impact": 2,
+      "analysis": "行业龙头涨价，需求旺盛"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "长电科技",
+      "stock_code": "600584",
+      "impact": 4,
+      "analysis": "国内最强封测龙头，技术领先"
+    },
+    {
+      "stock_name": "通富微电",
+      "stock_code": "002156",
+      "impact": 3,
+      "analysis": "积极布局先进封装技术"
+    },
+    {
+      "stock_name": "康强电子",
+      "stock_code": "002119",
+      "impact": 2,
+      "analysis": "半导体封装材料供应商"
+    },
+    {
+      "stock_name": "深南电路",
+      "stock_code": "002916",
+      "impact": 3,
+      "analysis": "布局封装基板，订单增长"
+    },
+    {
+      "stock_name": "兴森科技",
+      "stock_code": "002436",
+      "impact": 2,
+      "analysis": "IC封装基板业务占比高"
+    },
+    {
+      "stock_name": "风华高科",
+      "stock_code": "000636",
+      "impact": 3,
+      "analysis": "国产电阻龙头，产品涨价"
+    },
+    {
+      "stock_name": "钧崴电子",
+      "stock_code": "688598",
+      "impact": 2,
+      "analysis": "电流感测精密电阻全球第三"
+    },
+    {
+      "stock_name": "赛腾股份",
+      "stock_code": "300428",
+      "impact": 4,
+      "analysis": "HBM检测设备有望放量"
+    },
+    {
+      "stock_name": "天岳先进",
+      "stock_code": "688598",
+      "impact": 3,
+      "analysis": "12英寸全系列衬底，进台积电"
+    },
+    {
+      "stock_name": "森源电气",
+      "stock_code": "002358",
+      "impact": 2,
+      "analysis": "持续受益国网投资提升"
+    }
+  ],
+  "article_id": "1252310785ac4a85a05d803e4d9176c4",
+  "article_date": "2026-01-18",
+  "article_title": "2026.1.18市场逻辑精选"
+}

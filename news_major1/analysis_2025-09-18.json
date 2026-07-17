@@ -1,0 +1,68 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，半导体和量子计算板块表现强劲。",
+  "sectors": [
+    {
+      "sector_name": "半导体",
+      "impact": 4,
+      "analysis": "华为AI芯片发布，国产先进逻辑扩产趋势明确，利好半导体板块。"
+    },
+    {
+      "sector_name": "量子计算",
+      "impact": 3,
+      "analysis": "产业投资加速，美股相关公司大涨，利好量子计算板块。"
+    },
+    {
+      "sector_name": "数据中心",
+      "impact": 2,
+      "analysis": "液冷数据中心成为趋势，利好数据中心相关板块。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中微公司",
+      "stock_code": "688012",
+      "impact": 4,
+      "analysis": "受益于先进逻辑和存储芯片扩产，业绩增长显著。"
+    },
+    {
+      "stock_name": "中芯国际",
+      "stock_code": "688981",
+      "impact": 3,
+      "analysis": "晶圆代工龙头企业，产能有望翻倍。"
+    },
+    {
+      "stock_name": "国盾量子",
+      "stock_code": "688027",
+      "impact": 3,
+      "analysis": "全球唯一覆盖量子通信、计算、精密测量三大领域的上市公司。"
+    },
+    {
+      "stock_name": "海鸥股份",
+      "stock_code": "002084",
+      "impact": 2,
+      "analysis": "液冷数据中心冷却塔业务有望增长。"
+    },
+    {
+      "stock_name": "永泰能源",
+      "stock_code": "600157",
+      "impact": 2,
+      "analysis": "钒电解液固体增容材料技术突破，成本降低。"
+    },
+    {
+      "stock_name": "烽火通信",
+      "stock_code": "600498",
+      "impact": 2,
+      "analysis": "华为超节点首批合作伙伴，业绩有望增长。"
+    },
+    {
+      "stock_name": "远东股份",
+      "stock_code": "000682",
+      "impact": 2,
+      "analysis": "人形机器人电缆已有应用，液冷板送样NV。"
+    }
+  ],
+  "article_id": "97af7fa685814ee88c9ccabdceef2ed9",
+  "article_date": "2025-09-18",
+  "article_title": "2025.9.18市场逻辑精选"
+}

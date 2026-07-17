@@ -1,0 +1,61 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "半导体",
+      "impact": 4,
+      "analysis": "英伟达合作消息利好，氮化镓和碳化硅技术受关注。"
+    },
+    {
+      "sector_name": "电子元件",
+      "impact": 3,
+      "analysis": "AI算力提升，HVDC架构应用前景广阔。"
+    },
+    {
+      "sector_name": "消费电子",
+      "impact": 3,
+      "analysis": "AI眼镜新品发布，市场增长迅速。"
+    },
+    {
+      "sector_name": "家电",
+      "impact": 2,
+      "analysis": "国补提振，小家电需求有望增长。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "纳微半导体",
+      "stock_code": "688012",
+      "impact": 5,
+      "analysis": "与英伟达合作，股价大幅上涨。"
+    },
+    {
+      "stock_name": "中恒电气",
+      "stock_code": "002364",
+      "impact": 4,
+      "analysis": "HVDC头部企业，市场份额领先。"
+    },
+    {
+      "stock_name": "麦格米特",
+      "stock_code": "002851",
+      "impact": 4,
+      "analysis": "AI服务器电源领先者，具备800V HVDC能力。"
+    },
+    {
+      "stock_name": "雷鸟创新",
+      "stock_code": "300838",
+      "impact": 4,
+      "analysis": "AR眼镜新品发布，市场占有率第一。"
+    },
+    {
+      "stock_name": "北鼎股份",
+      "stock_code": "603356",
+      "impact": 3,
+      "analysis": "高品质厨房小家电，国补背景下优势明显。"
+    }
+  ],
+  "article_id": "1f72b7d49d5f42fdbdc2f7610d178268",
+  "article_date": "2025-05-22",
+  "article_title": "2025.5.22市场逻辑精选"
+}

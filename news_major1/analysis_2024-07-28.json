@@ -1,0 +1,68 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受积极事件驱动，有望上涨。",
+  "sectors": [
+    {
+      "sector_name": "卫星互联网",
+      "impact": 4,
+      "analysis": "卫星互联网板块受利好消息推动，有望上涨。"
+    },
+    {
+      "sector_name": "特高压",
+      "impact": 3,
+      "analysis": "特高压板块受政策支持，有望上涨。"
+    },
+    {
+      "sector_name": "工业母机",
+      "impact": 3,
+      "analysis": "工业母机板块受政策支持，有望上涨。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "AST SpaceMobile",
+      "stock_code": "ASTM",
+      "impact": 4,
+      "analysis": "AST SpaceMobile股价大涨，带动相关概念股上涨。"
+    },
+    {
+      "stock_name": "垣信卫星",
+      "stock_code": "股票代码未知",
+      "impact": 4,
+      "analysis": "垣信卫星融资成功，带动卫星互联网板块上涨。"
+    },
+    {
+      "stock_name": "华东重机",
+      "stock_code": "000737",
+      "impact": 3,
+      "analysis": "华东重机布局GPU国产替代，有望受益。"
+    },
+    {
+      "stock_name": "霍莱沃",
+      "stock_code": "股票代码未知",
+      "impact": 3,
+      "analysis": "霍莱沃订单增长，有望受益。"
+    },
+    {
+      "stock_name": "昊志机电",
+      "stock_code": "002908",
+      "impact": 3,
+      "analysis": "昊志机电业绩大增，有望受益。"
+    },
+    {
+      "stock_name": "新晨科技",
+      "stock_code": "股票代码未知",
+      "impact": 3,
+      "analysis": "新晨科技提供商业航天发射保障系统，有望受益。"
+    },
+    {
+      "stock_name": "普天科技",
+      "stock_code": "600641",
+      "impact": 3,
+      "analysis": "普天科技布局卫星互联网产业，有望受益。"
+    }
+  ],
+  "article_id": "3a5072887ddc427b9e1d37d10218f213",
+  "article_date": "2024-07-28",
+  "article_title": "2024.7.28市场逻辑精选"
+}

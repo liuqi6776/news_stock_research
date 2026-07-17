@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "新能源",
+      "impact": 4,
+      "analysis": "算电协同、光通信等板块受政策支持，利好"
+    },
+    {
+      "sector_name": "科技股",
+      "impact": 3,
+      "analysis": "特斯拉机器人、AI硬件等概念股受关注，利好"
+    },
+    {
+      "sector_name": "算力",
+      "impact": 3,
+      "analysis": "国家超算互联网政策支持，利好"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 2,
+      "analysis": "反无人机激光武器等概念股受关注，利好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "新能泰山",
+      "stock_code": "000720",
+      "impact": 4,
+      "analysis": "算电协同概念股，受政策支持，利好"
+    },
+    {
+      "stock_name": "通鼎互联",
+      "stock_code": "002491",
+      "impact": 3,
+      "analysis": "光通信概念股，受行业利好，利好"
+    },
+    {
+      "stock_name": "再升科技",
+      "stock_code": "300508",
+      "impact": 3,
+      "analysis": "特斯拉机器人概念股，受关注，利好"
+    },
+    {
+      "stock_name": "奥瑞德",
+      "stock_code": "600703",
+      "impact": 3,
+      "analysis": "算力概念股，受政策支持，利好"
+    }
+  ],
+  "article_title": "3月26日盘前纪要",
+  "html_file": "4eejcc75mka.html",
+  "article_date": "2026-03-26"
+}

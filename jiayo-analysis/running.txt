@@ -1,0 +1,3 @@
+C:\Users\liuqi\anaconda3\envs\iquant\python.exe jiayo-analysis\scraper.py --step1
+C:\Users\liuqi\anaconda3\envs\iquant\python.exe jiayo-analysis\scraper.py --step2
+C:\Users\liuqi\anaconda3\envs\iquant\python.exe jiayo-analysis\analyzer.py --latest

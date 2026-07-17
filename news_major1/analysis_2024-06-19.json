@@ -1,0 +1,143 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受政策利好影响，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "财税信息化",
+      "impact": 4,
+      "analysis": "强化税费征管，相关企业受益"
+    },
+    {
+      "sector_name": "创投",
+      "impact": 3,
+      "analysis": "国务院发文促进创投发展，相关企业受益"
+    },
+    {
+      "sector_name": "封装",
+      "impact": 3,
+      "analysis": "封装价格调涨，相关企业受益"
+    },
+    {
+      "sector_name": "PCB",
+      "impact": 3,
+      "analysis": "PCB产品可用于AI领域，相关企业受益"
+    },
+    {
+      "sector_name": "MEMS传感器",
+      "impact": 3,
+      "analysis": "MEMS传感器国内唯一量产交付，相关企业受益"
+    },
+    {
+      "sector_name": "水泥",
+      "impact": 3,
+      "analysis": "受益墨脱水电站建设，相关企业受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "税友股份",
+      "stock_code": "002878",
+      "impact": 4,
+      "analysis": "主营财税信息化，受益政策"
+    },
+    {
+      "stock_name": "金财互联",
+      "stock_code": "002530",
+      "impact": 4,
+      "analysis": "携手华为展示业财税一体化合规智能化解决方案"
+    },
+    {
+      "stock_name": "航天信息",
+      "stock_code": "600271",
+      "impact": 4,
+      "analysis": "企业财税服务业务占比高"
+    },
+    {
+      "stock_name": "国投智能",
+      "stock_code": "600869",
+      "impact": 4,
+      "analysis": "子公司江苏税软承建税务稽查视频指挥系统"
+    },
+    {
+      "stock_name": "东港股份",
+      "stock_code": "002117",
+      "impact": 4,
+      "analysis": "完成基于金税四期全电发票相关技术要求的产品设计和开发"
+    },
+    {
+      "stock_name": "华金资本",
+      "stock_code": "002007",
+      "impact": 4,
+      "analysis": "致力于打造全国领先的综合产业投资平台"
+    },
+    {
+      "stock_name": "四川双马",
+      "stock_code": "000935",
+      "impact": 4,
+      "analysis": "私募股权投资基金管理公司西藏锦合目前在管基金规模超260亿元"
+    },
+    {
+      "stock_name": "鲁信创投",
+      "stock_code": "600783",
+      "impact": 4,
+      "analysis": "公司及参股基金在投企业达208家"
+    },
+    {
+      "stock_name": "电广传媒",
+      "stock_code": "000917",
+      "impact": 4,
+      "analysis": "旗下达晨创投、达晨财智是国内著名的创投机构"
+    },
+    {
+      "stock_name": "张江高科",
+      "stock_code": "600895",
+      "impact": 4,
+      "analysis": "以“直投+基金+孵化”的方式，聚合市场资源助推产业发展"
+    },
+    {
+      "stock_name": "气派科技",
+      "stock_code": "300855",
+      "impact": 4,
+      "analysis": "受益封装价格调涨"
+    },
+    {
+      "stock_name": "科翔股份",
+      "stock_code": "002885",
+      "impact": 4,
+      "analysis": "PCB产品可用于AI领域"
+    },
+    {
+      "stock_name": "燕麦科技",
+      "stock_code": "300396",
+      "impact": 4,
+      "analysis": "MEMS传感器国内唯一量产交付"
+    },
+    {
+      "stock_name": "西藏天路",
+      "stock_code": "600326",
+      "impact": 4,
+      "analysis": "受益墨脱水电站建设"
+    },
+    {
+      "stock_name": "诺泰生物",
+      "stock_code": "300705",
+      "impact": 4,
+      "analysis": "上半年业绩超去年全年"
+    },
+    {
+      "stock_name": "华设集团",
+      "stock_code": "600779",
+      "impact": 4,
+      "analysis": "车路协同产品落地各省市示范项目"
+    },
+    {
+      "stock_name": "ST万林",
+      "stock_code": "002317",
+      "impact": 4,
+      "analysis": "拟1.5至3亿元回购股份"
+    }
+  ],
+  "article_id": "39c0e649ce784f4692c7561f6e501e7f",
+  "article_date": "2024-06-19",
+  "article_title": "2024.6.19市场逻辑精选"
+}

@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪提升",
+  "sectors": [
+    {
+      "sector_name": "人工智能",
+      "impact": 4,
+      "analysis": "政策支持，技术发展"
+    },
+    {
+      "sector_name": "区块链",
+      "impact": 3,
+      "analysis": "技术合作，试点项目"
+    },
+    {
+      "sector_name": "钼矿",
+      "impact": 3,
+      "analysis": "价格创新高，供需缺口扩大"
+    },
+    {
+      "sector_name": "物流",
+      "impact": 3,
+      "analysis": "金融支持，基础设施建设"
+    },
+    {
+      "sector_name": "特高压",
+      "impact": 3,
+      "analysis": "重大工程开工，带动上下游产业"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "力盛体育",
+      "stock_code": "000682",
+      "impact": 4,
+      "analysis": "AI运动平台，腾讯小米入股"
+    },
+    {
+      "stock_name": "格灵深瞳",
+      "stock_code": "688005",
+      "impact": 3,
+      "analysis": "体育健康类产品试点，智能视觉训练"
+    },
+    {
+      "stock_name": "金钼股份",
+      "stock_code": "601958",
+      "impact": 3,
+      "analysis": "钼精矿价格创新高，行业集中度提高"
+    },
+    {
+      "stock_name": "天顺股份",
+      "stock_code": "002800",
+      "impact": 3,
+      "analysis": "金融支持，交通物流基础设施建设"
+    },
+    {
+      "stock_name": "国电南自",
+      "stock_code": "600268",
+      "impact": 3,
+      "analysis": "特高压直流输电工程开工，带动上下游产业"
+    }
+  ],
+  "article_title": "2月17日盘前热点事件关注",
+  "html_file": "75xx7txr4w.html",
+  "article_date": "2023-02-17"
+}

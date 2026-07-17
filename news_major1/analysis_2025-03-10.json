@@ -1,0 +1,92 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，AI和机器人相关板块受关注。",
+  "sectors": [
+    {
+      "sector_name": "人工智能",
+      "impact": 4,
+      "analysis": "政策支持，产业发展加速。"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "具身智能大模型应用前景广阔。"
+    },
+    {
+      "sector_name": "电子",
+      "impact": 3,
+      "analysis": "英伟达新品发布，相关产业链受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "湖北广电",
+      "stock_code": "000665",
+      "impact": 3,
+      "analysis": "武汉市财政部门支持人工智能产业发展。"
+    },
+    {
+      "stock_name": "居然智家",
+      "stock_code": "603636",
+      "impact": 3,
+      "analysis": "武汉市财政部门支持人工智能产业发展。"
+    },
+    {
+      "stock_name": "塞力医疗",
+      "stock_code": "300258",
+      "impact": 3,
+      "analysis": "武汉市财政部门支持人工智能产业发展。"
+    },
+    {
+      "stock_name": "中贝通信",
+      "stock_code": "603098",
+      "impact": 3,
+      "analysis": "武汉市财政部门支持人工智能产业发展。"
+    },
+    {
+      "stock_name": "盛天网络",
+      "stock_code": "300494",
+      "impact": 3,
+      "analysis": "武汉市财政部门支持人工智能产业发展。"
+    },
+    {
+      "stock_name": "东湖高新",
+      "stock_code": "000938",
+      "impact": 3,
+      "analysis": "武汉市财政部门支持人工智能产业发展。"
+    },
+    {
+      "stock_name": "辰安科技",
+      "stock_code": "300788",
+      "impact": 3,
+      "analysis": "子公司推出基于机器狗的消防识别和灭火系统。"
+    },
+    {
+      "stock_name": "万丰奥威",
+      "stock_code": "002085",
+      "impact": 3,
+      "analysis": "子公司拟收购德国eVTOL公司相关资产。"
+    },
+    {
+      "stock_name": "胜宏科技",
+      "stock_code": "002388",
+      "impact": 4,
+      "analysis": "2025Q1业绩预增，绑定英伟达。"
+    },
+    {
+      "stock_name": "致尚科技",
+      "stock_code": "300816",
+      "impact": 3,
+      "analysis": "有望受益NVDA的CPO交换机业务。"
+    },
+    {
+      "stock_name": "名臣健康",
+      "stock_code": "002919",
+      "impact": 3,
+      "analysis": "字节代理手游即将上线。"
+    }
+  ],
+  "article_id": "a685121b20f84e938e2f1eb6de26bf1f",
+  "article_date": "2025-03-10",
+  "article_title": "2025.3.10市场逻辑精选"
+}

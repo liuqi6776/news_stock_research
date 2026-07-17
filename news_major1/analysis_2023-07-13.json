@@ -1,0 +1,71 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股受积极因素影响",
+  "sectors": [
+    {
+      "sector_name": "贵金属",
+      "impact": 3,
+      "analysis": "受美国CPI下降影响，贵金属价格上涨"
+    },
+    {
+      "sector_name": "有色金属",
+      "impact": 3,
+      "analysis": "受美国CPI下降影响，有色金属价格上涨"
+    },
+    {
+      "sector_name": "平台经济",
+      "impact": 2,
+      "analysis": "政策支持平台经济规范发展，相关个股上涨"
+    },
+    {
+      "sector_name": "AI芯片",
+      "impact": 2,
+      "analysis": "英伟达A800价格上涨，AI芯片相关个股受益"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 2,
+      "analysis": "马斯克成立人工智能公司，相关个股上涨"
+    },
+    {
+      "sector_name": "造船业",
+      "impact": 2,
+      "analysis": "中国造船业多项指标世界第一，相关个股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "四川黄金",
+      "stock_code": "600595",
+      "impact": 3,
+      "analysis": "贵金属价格上涨，公司受益"
+    },
+    {
+      "stock_name": "美图",
+      "stock_code": "3690",
+      "impact": 2,
+      "analysis": "平台经济政策支持，公司股价上涨"
+    },
+    {
+      "stock_name": "海光信息",
+      "stock_code": "688012",
+      "impact": 2,
+      "analysis": "AI芯片价格上涨，公司受益"
+    },
+    {
+      "stock_name": "浪潮信息",
+      "stock_code": "000977",
+      "impact": 2,
+      "analysis": "马斯克成立人工智能公司，公司受益"
+    },
+    {
+      "stock_name": "中国船舶",
+      "stock_code": "601717",
+      "impact": 2,
+      "analysis": "中国造船业表现强劲，公司受益"
+    }
+  ],
+  "article_title": "7月13日 盘前热点事件关注",
+  "html_file": "4308mmfzgr.html",
+  "article_date": "2023-07-13"
+}

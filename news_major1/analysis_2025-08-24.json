@@ -1,0 +1,67 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，关注国产GPU和数据中心互联板块。",
+  "sectors": [
+    {
+      "sector_name": "国产GPU",
+      "impact": 4,
+      "analysis": "技术突破，生态完善，需求提升。"
+    },
+    {
+      "sector_name": "数据中心互联",
+      "impact": 3,
+      "analysis": "英伟达新产品推动，算力需求提升。"
+    },
+    {
+      "sector_name": "稀土",
+      "impact": 2,
+      "analysis": "总量调控，冶炼加工费提高。"
+    },
+    {
+      "sector_name": "EDA",
+      "impact": 3,
+      "analysis": "GPU芯片发展带动，国产化率低。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "天普股份",
+      "stock_code": "600345",
+      "impact": 3,
+      "analysis": "实控人变更，掌握TPU架构AI芯片核心技术。"
+    },
+    {
+      "stock_name": "云天励飞",
+      "stock_code": "002938",
+      "impact": 3,
+      "analysis": "NPUNova500实现对FP8的硬件原生支持。"
+    },
+    {
+      "stock_name": "德科立",
+      "stock_code": "300712",
+      "impact": 3,
+      "analysis": "交付400G DCI产品，800G DCI产品已进入客户定制开发阶段。"
+    },
+    {
+      "stock_name": "三川智慧",
+      "stock_code": "300285",
+      "impact": 2,
+      "analysis": "控股子公司天和永磁专注于稀土回收。"
+    },
+    {
+      "stock_name": "成都华微",
+      "stock_code": "600682",
+      "impact": 3,
+      "analysis": "与燧原科技合作，布局AI芯片。"
+    },
+    {
+      "stock_name": "奥海科技",
+      "stock_code": "002993",
+      "impact": 3,
+      "analysis": "电源模块受益AI服务器迭代。"
+    }
+  ],
+  "article_id": "f128a631e8ad4d5481291e957c47b562",
+  "article_date": "2025-08-24",
+  "article_title": "2025.8.24市场逻辑精选"
+}

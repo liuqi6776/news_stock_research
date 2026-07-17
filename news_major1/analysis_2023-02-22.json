@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪波动较大，部分板块受利好消息提振。",
+  "sectors": [
+    {
+      "sector_name": "4D成像雷达",
+      "impact": 4,
+      "analysis": "特斯拉4D成像雷达应用预期提升相关产业链。"
+    },
+    {
+      "sector_name": "钠电池",
+      "impact": 3,
+      "analysis": "钠电池产业化进程加速，相关企业受益。"
+    },
+    {
+      "sector_name": "转基因",
+      "impact": 2,
+      "analysis": "转基因玉米大豆产业化应用试点范围扩大。"
+    },
+    {
+      "sector_name": "上海大数据",
+      "impact": 2,
+      "analysis": "ChatGPT有望融入“一网通办”，相关企业受益。"
+    },
+    {
+      "sector_name": "稀土开采冶炼",
+      "impact": 2,
+      "analysis": "稀土开采冶炼指标发放，产业链竞争优势提升。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "威孚高科",
+      "stock_code": "000581",
+      "impact": 4,
+      "analysis": "特斯拉4D成像雷达应用预期提升。"
+    },
+    {
+      "stock_name": "同兴环保",
+      "stock_code": "300639",
+      "impact": 3,
+      "analysis": "钠电池产业化进程加速。"
+    },
+    {
+      "stock_name": "隆平高科",
+      "stock_code": "000998",
+      "impact": 2,
+      "analysis": "转基因玉米大豆产业化应用试点范围扩大。"
+    },
+    {
+      "stock_name": "华扬联众",
+      "stock_code": "300079",
+      "impact": 2,
+      "analysis": "ChatGPT有望融入“一网通办”。"
+    },
+    {
+      "stock_name": "中国稀土",
+      "stock_code": "000831",
+      "impact": 2,
+      "analysis": "稀土开采冶炼指标发放。"
+    }
+  ],
+  "article_title": "2月22日盘前热点事件关注",
+  "html_file": "fe5q19hrvk.html",
+  "article_date": "2023-02-22"
+}

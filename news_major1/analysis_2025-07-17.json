@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极影响。",
+  "sectors": [
+    {
+      "sector_name": "半导体",
+      "impact": 4,
+      "analysis": "台积电推进CoWoS技术，带动相关封装技术需求增长。"
+    },
+    {
+      "sector_name": "芯片设计",
+      "impact": 3,
+      "analysis": "RISC-V架构推广，推动高性能计算产品落地。"
+    },
+    {
+      "sector_name": "影视传媒",
+      "impact": 3,
+      "analysis": "深圳市支持微短剧产业发展，推动行业增长。"
+    },
+    {
+      "sector_name": "医疗设备",
+      "impact": 3,
+      "analysis": "脑机接口技术取得新进展，市场空间广阔。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "通富微电",
+      "stock_code": "002156",
+      "impact": 4,
+      "analysis": "受益于CoWoS技术推进，产能扩充。"
+    },
+    {
+      "stock_name": "翱捷科技",
+      "stock_code": "688316",
+      "impact": 3,
+      "analysis": "RISC-V架构产品落地，定制化ASIC能力领先。"
+    },
+    {
+      "stock_name": "天威视讯",
+      "stock_code": "000917",
+      "impact": 3,
+      "analysis": "深圳市支持微短剧产业发展，公司受益。"
+    },
+    {
+      "stock_name": "岩山科技",
+      "stock_code": "688598",
+      "impact": 3,
+      "analysis": "脑机接口技术取得突破，商业化前景广阔。"
+    }
+  ],
+  "article_id": "007cc1dcf35245caac37010f0ef4c980",
+  "article_date": "2025-07-17",
+  "article_title": "2025.7.17市场逻辑精选"
+}

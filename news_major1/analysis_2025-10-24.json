@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏积极，受政策支持和行业热点推动。",
+  "sectors": [
+    {
+      "sector_name": "航天强国概念",
+      "impact": 4,
+      "analysis": "政策支持，行业前景看好。"
+    },
+    {
+      "sector_name": "量子科技",
+      "impact": 3,
+      "analysis": "新闻联播报道，行业关注度提升。"
+    },
+    {
+      "sector_name": "煤炭",
+      "impact": 3,
+      "analysis": "供需格局好转，价格有望上涨。"
+    },
+    {
+      "sector_name": "深地深海",
+      "impact": 3,
+      "analysis": "政策支持，行业前景看好。"
+    },
+    {
+      "sector_name": "漫剧",
+      "impact": 2,
+      "analysis": "市场规模预计再创新高。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "时空科技",
+      "stock_code": "000901",
+      "impact": 3,
+      "analysis": "公告利好，股价有望上涨。"
+    },
+    {
+      "stock_name": "盈新发展",
+      "stock_code": "000401",
+      "impact": 3,
+      "analysis": "公告利好，股价有望上涨。"
+    },
+    {
+      "stock_name": "神开股份",
+      "stock_code": "002278",
+      "impact": 3,
+      "analysis": "行业热点，股价有望上涨。"
+    },
+    {
+      "stock_name": "大有能源",
+      "stock_code": "601558",
+      "impact": 3,
+      "analysis": "行业热点，股价有望上涨。"
+    },
+    {
+      "stock_name": "格尔软件",
+      "stock_code": "603388",
+      "impact": 3,
+      "analysis": "行业热点，股价有望上涨。"
+    }
+  ],
+  "article_title": "10月24日盘前纪要",
+  "html_file": "1zv8y8z5sw2.html",
+  "article_date": "2025-10-24"
+}

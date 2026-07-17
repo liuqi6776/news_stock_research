@@ -1,0 +1,90 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多方面利好消息，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "风电",
+      "impact": 4,
+      "analysis": "波罗的海八国海上风电产能增倍计划利好"
+    },
+    {
+      "sector_name": "汽车零部件",
+      "impact": 3,
+      "analysis": "汽车市场恢复，订单排至明年利好"
+    },
+    {
+      "sector_name": "白酒",
+      "impact": 2,
+      "analysis": "酱王府酒业相关利好"
+    },
+    {
+      "sector_name": "水利",
+      "impact": 3,
+      "analysis": "用水权改革指导意见利好"
+    },
+    {
+      "sector_name": "老旧小区改造",
+      "impact": 2,
+      "analysis": "政策支持老旧小区改造利好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "大金重工",
+      "stock_code": "002487",
+      "impact": 4,
+      "analysis": "风电产能增倍计划直接受益"
+    },
+    {
+      "stock_name": "振江股份",
+      "stock_code": "300750",
+      "impact": 4,
+      "analysis": "风电产能增倍计划直接受益"
+    },
+    {
+      "stock_name": "贵州岩博人民小酒",
+      "stock_code": "002785",
+      "impact": 3,
+      "analysis": "IPO冲刺，业绩增长预期"
+    },
+    {
+      "stock_name": "盘江股份",
+      "stock_code": "600395",
+      "impact": 3,
+      "analysis": "贵州岩博人民小酒第一大股东"
+    },
+    {
+      "stock_name": "飞龙股份",
+      "stock_code": "002536",
+      "impact": 3,
+      "analysis": "汽车零部件订单增加"
+    },
+    {
+      "stock_name": "三花智控",
+      "stock_code": "002050",
+      "impact": 3,
+      "analysis": "汽车零部件订单增加"
+    },
+    {
+      "stock_name": "钱江水利",
+      "stock_code": "600285",
+      "impact": 3,
+      "analysis": "用水权改革指导意见"
+    },
+    {
+      "stock_name": "江南水务",
+      "stock_code": "600502",
+      "impact": 3,
+      "analysis": "用水权改革指导意见"
+    },
+    {
+      "stock_name": "快意电梯",
+      "stock_code": "002774",
+      "impact": 2,
+      "analysis": "老旧小区改造政策支持"
+    }
+  ],
+  "article_title": "9月1日 盘前早8点 股市要闻关注",
+  "html_file": "1zs67dykgz.html",
+  "article_date": "2022-09-01"
+}

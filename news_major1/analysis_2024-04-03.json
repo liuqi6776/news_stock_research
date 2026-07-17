@@ -1,0 +1,110 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "黄金",
+      "impact": 3,
+      "analysis": "地缘风险升温，黄金价格创新高，相关个股受益"
+    },
+    {
+      "sector_name": "白酒",
+      "impact": 3,
+      "analysis": "贵州茅台业绩增长，白酒板块整体受益"
+    },
+    {
+      "sector_name": "AI医疗",
+      "impact": 3,
+      "analysis": "支付宝推出AI医疗服务，相关个股受益"
+    },
+    {
+      "sector_name": "养老",
+      "impact": 3,
+      "analysis": "十四五规划支持养老和托育服务，相关个股受益"
+    },
+    {
+      "sector_name": "数字化转型",
+      "impact": 3,
+      "analysis": "智慧城市发展指导意见发布，相关个股受益"
+    },
+    {
+      "sector_name": "海南",
+      "impact": 3,
+      "analysis": "海南自由贸易港建设推进，相关个股受益"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 3,
+      "analysis": "小米汽车上市，新能源汽车相关个股受益"
+    },
+    {
+      "sector_name": "化工",
+      "impact": 3,
+      "analysis": "印染订单火爆，化工板块受益"
+    },
+    {
+      "sector_name": "风电",
+      "impact": 3,
+      "analysis": "风电项目推进，风电板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "莱绅通灵",
+      "stock_code": "600890",
+      "impact": 3,
+      "analysis": "黄金价格创新高，相关个股受益"
+    },
+    {
+      "stock_name": "贵州茅台",
+      "stock_code": "600519",
+      "impact": 3,
+      "analysis": "业绩增长，白酒板块整体受益"
+    },
+    {
+      "stock_name": "润达医疗",
+      "stock_code": "300129",
+      "impact": 3,
+      "analysis": "支付宝推出AI医疗服务，相关个股受益"
+    },
+    {
+      "stock_name": "悦心健康",
+      "stock_code": "002162",
+      "impact": 3,
+      "analysis": "十四五规划支持养老和托育服务，相关个股受益"
+    },
+    {
+      "stock_name": "数字认证",
+      "stock_code": "002275",
+      "impact": 3,
+      "analysis": "智慧城市发展指导意见发布，相关个股受益"
+    },
+    {
+      "stock_name": "海峡股份",
+      "stock_code": "002320",
+      "impact": 3,
+      "analysis": "海南自由贸易港建设推进，相关个股受益"
+    },
+    {
+      "stock_name": "江特电机",
+      "stock_code": "002176",
+      "impact": 3,
+      "analysis": "小米汽车上市，新能源汽车相关个股受益"
+    },
+    {
+      "stock_name": "万丰股份",
+      "stock_code": "002085",
+      "impact": 3,
+      "analysis": "印染订单火爆，化工板块受益"
+    },
+    {
+      "stock_name": "博菲电气",
+      "stock_code": "603090",
+      "impact": 3,
+      "analysis": "风电项目推进，风电板块受益"
+    }
+  ],
+  "article_title": "4月3日盘前早报 热点事件关注",
+  "html_file": "fztkk0s114.html",
+  "article_date": "2024-04-03"
+}

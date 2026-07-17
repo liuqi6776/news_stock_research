@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "存储设备",
+      "impact": 4,
+      "analysis": "扩产加速，需求旺盛，利好板块。"
+    },
+    {
+      "sector_name": "网红经济",
+      "impact": 2,
+      "analysis": "头部网红带货，短期利好相关公司。"
+    },
+    {
+      "sector_name": "乳业",
+      "impact": 3,
+      "analysis": "关税落地，国产替代受益，利好板块。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "精智达",
+      "stock_code": "300845",
+      "impact": 3,
+      "analysis": "与长鑫存储合作，利好公司。"
+    },
+    {
+      "stock_name": "珂玛科技",
+      "stock_code": "300876",
+      "impact": 3,
+      "analysis": "产品应用于晶圆制造，利好公司。"
+    },
+    {
+      "stock_name": "嘉美包装",
+      "stock_code": "002087",
+      "impact": 2,
+      "analysis": "为旺旺提供包装服务，利好公司。"
+    },
+    {
+      "stock_name": "阳光乳业",
+      "stock_code": "600788",
+      "impact": 3,
+      "analysis": "受益国产替代，利好公司。"
+    }
+  ],
+  "article_id": "0422c935b36f425f9a48b65eae06828d",
+  "article_date": "2025-12-22",
+  "article_title": "2025.12.22市场逻辑精选"
+}

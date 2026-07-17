@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股受利好消息影响。",
+  "sectors": [
+    {
+      "sector_name": "数字中国",
+      "impact": 3,
+      "analysis": "国家数据局成立，数字中国概念股受益"
+    },
+    {
+      "sector_name": "光伏组件",
+      "impact": 3,
+      "analysis": "美国光伏进口政策放松，光伏组件需求提升"
+    },
+    {
+      "sector_name": "合成数据",
+      "impact": 2,
+      "analysis": "证监会科技监管局支持合成数据产业，相关个股受益"
+    },
+    {
+      "sector_name": "电梯",
+      "impact": 2,
+      "analysis": "住建部计划改造老旧小区，电梯需求增加"
+    },
+    {
+      "sector_name": "氢能",
+      "impact": 2,
+      "analysis": "氢能峰会召开，绿氢市场进入启动阶段"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "数字政通",
+      "stock_code": "300075",
+      "impact": 3,
+      "analysis": "数字中国概念股，受益国家数据局成立"
+    },
+    {
+      "stock_name": "美利云",
+      "stock_code": "000815",
+      "impact": 3,
+      "analysis": "数据资源概念股，受益国家数据局成立"
+    },
+    {
+      "stock_name": "天合光能",
+      "stock_code": "600869",
+      "impact": 3,
+      "analysis": "光伏组件概念股，受益美国光伏进口政策放松"
+    },
+    {
+      "stock_name": "晶澳科技",
+      "stock_code": "002121",
+      "impact": 3,
+      "analysis": "光伏组件概念股，受益美国光伏进口政策放松"
+    },
+    {
+      "stock_name": "海天瑞声",
+      "stock_code": "300138",
+      "impact": 2,
+      "analysis": "合成数据概念股，受益证监会科技监管局支持"
+    }
+  ],
+  "article_title": "3月8日盘前热点事件关注",
+  "html_file": "feurdx9q8y.html",
+  "article_date": "2023-03-08"
+}

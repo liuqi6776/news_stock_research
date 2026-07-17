@@ -1,0 +1,66 @@
+{
+  "study_id": "004",
+  "study_name": "\u7cfb\u7edf\u5316\u7814\u7a76\u6846\u67b6\uff08\u5b8c\u6574\u7248\uff09",
+  "timestamp": "20260503_174657",
+  "targets": [
+    "1d",
+    "5d",
+    "28d"
+  ],
+  "thresholds": {
+    "1d": 0.34,
+    "5d": 0.3
+  },
+  "best_params": {
+    "1d": {
+      "stop_loss": 0.03,
+      "take_profit": 0.15,
+      "max_positions": 3
+    },
+    "5d": {
+      "stop_loss": 0.03,
+      "take_profit": 0.2,
+      "max_positions": 3
+    },
+    "28d": {
+      "stop_loss": 0.03,
+      "take_profit": 0.2,
+      "max_positions": 3
+    }
+  },
+  "n_features": 32,
+  "feature_list": [
+    "open",
+    "high",
+    "low",
+    "close",
+    "pre_close",
+    "change",
+    "pct_chg",
+    "vol",
+    "amount",
+    "amplitude",
+    "body_size",
+    "upper_shadow",
+    "lower_shadow",
+    "is_yang",
+    "gap",
+    "close_to_high",
+    "close_to_low",
+    "vol_ratio",
+    "vol_amount",
+    "turnover",
+    "mom_5d",
+    "mom_10d",
+    "mom_20d",
+    "mom_60d",
+    "vol_5d",
+    "vol_10d",
+    "vol_20d",
+    "rsi_14",
+    "kdj_k",
+    "bb_position",
+    "atr_14",
+    "macd"
+  ]
+}

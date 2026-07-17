@@ -1,0 +1,67 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受水电工程及设备需求推动，整体利好。",
+  "sectors": [
+    {
+      "sector_name": "输变电",
+      "impact": 4,
+      "analysis": "输变电设备需求增加，板块利好。"
+    },
+    {
+      "sector_name": "TBM",
+      "impact": 4,
+      "analysis": "TBM需求增长，板块利好。"
+    },
+    {
+      "sector_name": "水轮机",
+      "impact": 3,
+      "analysis": "水轮机设备市场空间扩大，板块利好。"
+    },
+    {
+      "sector_name": "电力调度",
+      "impact": 2,
+      "analysis": "电力调度压力增加，虚拟电厂和储能需求提升，板块利好。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中国西电",
+      "stock_code": "601179",
+      "impact": 4,
+      "analysis": "受益于输变电设备需求，股价可能上涨。"
+    },
+    {
+      "stock_name": "国电南瑞",
+      "stock_code": "600869",
+      "impact": 3,
+      "analysis": "水电智能化控制系统和调度自动化系统需求增加，股价可能上涨。"
+    },
+    {
+      "stock_name": "中铁工业",
+      "stock_code": "000928",
+      "impact": 4,
+      "analysis": "TBM需求增长，股价可能上涨。"
+    },
+    {
+      "stock_name": "东方电气",
+      "stock_code": "600875",
+      "impact": 3,
+      "analysis": "水轮机设备市场空间扩大，股价可能上涨。"
+    },
+    {
+      "stock_name": "苏文电能",
+      "stock_code": "300282",
+      "impact": 3,
+      "analysis": "虚拟电厂业务增长，股价可能上涨。"
+    },
+    {
+      "stock_name": "科陆电子",
+      "stock_code": "002121",
+      "impact": 3,
+      "analysis": "储能需求提升，股价可能上涨。"
+    }
+  ],
+  "article_id": "9b2eb08ad82c47d8b6d5bc8f4c041356",
+  "article_date": "2025-07-21",
+  "article_title": "2025.7.21市场逻辑精选"
+}

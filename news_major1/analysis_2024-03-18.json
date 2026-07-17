@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "AI手机和AI应用推动相关板块上涨。",
+  "sectors": [
+    {
+      "sector_name": "AI手机",
+      "impact": 4,
+      "analysis": "AI手机发布推动相关硬件和软件需求增长。"
+    },
+    {
+      "sector_name": "AI应用",
+      "impact": 3,
+      "analysis": "AI应用升级和大会召开提升行业关注度。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "NAND闪存价格上涨，半导体行业受益。"
+    },
+    {
+      "sector_name": "锂电池",
+      "impact": 2,
+      "analysis": "eVTOL电池市场前景看好，锂电池行业受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "香农芯创",
+      "stock_code": "300623",
+      "impact": 4,
+      "analysis": "海力士分销商，受益于NAND闪存价格上涨。"
+    },
+    {
+      "stock_name": "韦尔股份",
+      "stock_code": "603501",
+      "impact": 4,
+      "analysis": "高端旗舰主摄CIS核心供应商，受益于AI手机需求增长。"
+    },
+    {
+      "stock_name": "掌阅科技",
+      "stock_code": "300383",
+      "impact": 3,
+      "analysis": "接入Kimi等AI大模型，打造智能阅读App。"
+    },
+    {
+      "stock_name": "国轩高科",
+      "stock_code": "002074",
+      "impact": 3,
+      "analysis": "亿航智能战略合作，共同开发eVTOL产品的动力电芯。"
+    }
+  ],
+  "article_id": "e5afb2dfe6e54c689eb0d7ca69853c25",
+  "article_date": "2024-03-18",
+  "article_title": "2024.3.18市场逻辑精选"
+}

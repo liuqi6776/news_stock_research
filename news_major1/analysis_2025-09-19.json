@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，科技板块受关注",
+  "sectors": [
+    {
+      "sector_name": "芯片",
+      "impact": 4,
+      "analysis": "华为芯片路线图发布，英伟达入股英特尔，利好"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "微软建立全球最大AI数据中心，利好"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "华为芯片路线图发布，利好"
+    },
+    {
+      "sector_name": "数据中心",
+      "impact": 3,
+      "analysis": "英伟达入股英特尔，微软建立全球最大AI数据中心，利好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "川润股份",
+      "stock_code": "002272",
+      "impact": 4,
+      "analysis": "华为芯片路线图发布，利好"
+    },
+    {
+      "stock_name": "泰嘉股份",
+      "stock_code": "002824",
+      "impact": 4,
+      "analysis": "华为芯片路线图发布，利好"
+    },
+    {
+      "stock_name": "华丰科技",
+      "stock_code": "603358",
+      "impact": 4,
+      "analysis": "华为芯片路线图发布，利好"
+    },
+    {
+      "stock_name": "海光信息",
+      "stock_code": "603019",
+      "impact": 3,
+      "analysis": "英特尔将为英伟达定制x86 CPU，利好"
+    }
+  ],
+  "article_title": "9月19日盘前纪要",
+  "html_file": "1ztkcch3bb4.html",
+  "article_date": "2025-09-19"
+}

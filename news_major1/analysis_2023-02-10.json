@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受AI、教育、脑机接口等热点事件提振。",
+  "sectors": [
+    {
+      "sector_name": "AI及芯片",
+      "impact": 4,
+      "analysis": "AI算力提升，芯片需求增加。"
+    },
+    {
+      "sector_name": "教育",
+      "impact": 3,
+      "analysis": "世界数字教育大会召开，教育板块受益。"
+    },
+    {
+      "sector_name": "脑机接口",
+      "impact": 3,
+      "analysis": "脑机接口产业联盟成立，市场前景广阔。"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 2,
+      "analysis": "1月社融数据公布，关注房地产板块表现。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "浪潮信息",
+      "stock_code": "000977",
+      "impact": 4,
+      "analysis": "AIGC领域布局，持续研发投入。"
+    },
+    {
+      "stock_name": "全通教育",
+      "stock_code": "300359",
+      "impact": 3,
+      "analysis": "世界数字教育大会受益。"
+    },
+    {
+      "stock_name": "创新医疗",
+      "stock_code": "300605",
+      "impact": 3,
+      "analysis": "脑机接口产业联盟成立，市场前景广阔。"
+    },
+    {
+      "stock_name": "中交地产",
+      "stock_code": "600018",
+      "impact": 2,
+      "analysis": "1月社融数据公布，关注房地产板块表现。"
+    }
+  ],
+  "article_title": "2月10日盘前早参 热点事件关注",
+  "html_file": "3vlkenxmzg.html",
+  "article_date": "2023-02-10"
+}

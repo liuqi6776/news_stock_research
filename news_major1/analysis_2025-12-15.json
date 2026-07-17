@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，卫星和高温合金板块受关注。",
+  "sectors": [
+    {
+      "sector_name": "卫星",
+      "impact": 4,
+      "analysis": "SpaceX需求增长，低轨卫星项目推进。"
+    },
+    {
+      "sector_name": "高温合金",
+      "impact": 3,
+      "analysis": "航空航天需求旺盛，可回收火箭和卫星通信推动。"
+    },
+    {
+      "sector_name": "无人驾驶",
+      "impact": 3,
+      "analysis": "L3级自动驾驶试点，产业链受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "臻镭科技",
+      "stock_code": "300817",
+      "impact": 4,
+      "analysis": "卫星通讯射频芯片供应商，受益卫星项目。"
+    },
+    {
+      "stock_name": "中国卫星",
+      "stock_code": "600118",
+      "impact": 4,
+      "analysis": "低轨卫星项目参与者，订单稳定。"
+    },
+    {
+      "stock_name": "抚顺特钢",
+      "stock_code": "600399",
+      "impact": 3,
+      "analysis": "高温合金产量最大企业，航空航天需求旺盛。"
+    },
+    {
+      "stock_name": "德赛西威",
+      "stock_code": "002920",
+      "impact": 3,
+      "analysis": "L3级自动驾驶域控制器领先企业。"
+    }
+  ],
+  "article_id": "a844dc40578d4f449d8b4425f0e8efd2",
+  "article_date": "2025-12-15",
+  "article_title": "2025.12.15市场逻辑精选"
+}

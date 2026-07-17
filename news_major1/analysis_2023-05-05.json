@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪积极",
+  "sectors": [
+    {
+      "sector_name": "人工智能",
+      "impact": 4,
+      "analysis": "AI监管计划、芯片研发、制药突破等利好"
+    },
+    {
+      "sector_name": "医疗美容",
+      "impact": 3,
+      "analysis": "监管加强，行业有序发展"
+    },
+    {
+      "sector_name": "芯片",
+      "impact": 3,
+      "analysis": "微软资助AMD进军AI芯片领域"
+    },
+    {
+      "sector_name": "AI制药",
+      "impact": 3,
+      "analysis": "AI制药取得突破，技术颠覆性"
+    },
+    {
+      "sector_name": "传媒",
+      "impact": 3,
+      "analysis": "欧盟拟立法保护AI相关版权"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "百度",
+      "stock_code": "BIDU",
+      "impact": 3,
+      "analysis": "AI制药突破，研究成果发表"
+    },
+    {
+      "stock_name": "爱美客",
+      "stock_code": "300720",
+      "impact": 3,
+      "analysis": "医美行业监管加强，行业有序发展"
+    },
+    {
+      "stock_name": "华熙生物",
+      "stock_code": "300679",
+      "impact": 3,
+      "analysis": "医美行业监管加强，行业有序发展"
+    },
+    {
+      "stock_name": "AMD",
+      "stock_code": "AMD",
+      "impact": 3,
+      "analysis": "微软资助AMD进军AI芯片领域"
+    },
+    {
+      "stock_name": "成都先导",
+      "stock_code": "688111",
+      "impact": 3,
+      "analysis": "AI制药取得突破，技术颠覆性"
+    }
+  ],
+  "article_title": "5月5日 盘前热点事件关注",
+  "html_file": "79nkqyxhce.html",
+  "article_date": "2023-05-05"
+}

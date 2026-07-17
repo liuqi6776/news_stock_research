@@ -1,0 +1,95 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注后续政策及市场反应。",
+  "sectors": [
+    {
+      "sector_name": "智慧政务",
+      "impact": 4,
+      "analysis": "DeepSeek大模型应用推广，板块受益明显。"
+    },
+    {
+      "sector_name": "AI游戏",
+      "impact": 3,
+      "analysis": "马斯克AI游戏工作室成立，AI游戏板块受关注。"
+    },
+    {
+      "sector_name": "算力租赁",
+      "impact": 3,
+      "analysis": "利通电子算力租赁业务有望受益腾讯AI业务。"
+    },
+    {
+      "sector_name": "液冷技术",
+      "impact": 3,
+      "analysis": "淳中科技液冷价值量提升，板块受益。"
+    },
+    {
+      "sector_name": "工业气体",
+      "impact": 3,
+      "analysis": "蜀道装备拟收购科益气体，板块受益。"
+    },
+    {
+      "sector_name": "工业软件",
+      "impact": 3,
+      "analysis": "索辰科技拟收购力控科技，板块受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "云赛智联",
+      "stock_code": "600035",
+      "impact": 4,
+      "analysis": "中标上海市政府电子政务云服务项目，受益DeepSeek大模型。"
+    },
+    {
+      "stock_name": "南兴股份",
+      "stock_code": "002757",
+      "impact": 4,
+      "analysis": "全资子公司唯一网络为政务客户提供综合数字化解决方案。"
+    },
+    {
+      "stock_name": "南天信息",
+      "stock_code": "000948",
+      "impact": 3,
+      "analysis": "为数字政府、智慧政务等领域提供全阶段网格型数字化服务。"
+    },
+    {
+      "stock_name": "掌趣科技",
+      "stock_code": "300315",
+      "impact": 3,
+      "analysis": "布局AI 3D场景生成功能，受益AI游戏发展。"
+    },
+    {
+      "stock_name": "电魂网络",
+      "stock_code": "300509",
+      "impact": 3,
+      "analysis": "AI养成游戏《吾家有女.AI》即将上架Steam平台。"
+    },
+    {
+      "stock_name": "利通电子",
+      "stock_code": "002657",
+      "impact": 4,
+      "analysis": "AI算力租赁业务有望受益腾讯AI业务。"
+    },
+    {
+      "stock_name": "淳中科技",
+      "stock_code": "300418",
+      "impact": 4,
+      "analysis": "液冷价值量提升，受益英伟达新产品。"
+    },
+    {
+      "stock_name": "蜀道装备",
+      "stock_code": "600535",
+      "impact": 4,
+      "analysis": "拟收购科益气体，转型升级气体投资运营业务。"
+    },
+    {
+      "stock_name": "索辰科技",
+      "stock_code": "300539",
+      "impact": 4,
+      "analysis": "拟收购力控科技，完善物理AI布局。"
+    }
+  ],
+  "article_id": "c0b713f2e880407b950e6c8b3e38f920",
+  "article_date": "2025-02-17",
+  "article_title": "2025.2.17市场逻辑精选"
+}

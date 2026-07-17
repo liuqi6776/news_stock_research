@@ -1,0 +1,88 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪偏乐观",
+  "sectors": [
+    {
+      "sector_name": "国资云",
+      "impact": 4,
+      "analysis": "国资委推进云体系和大数据建设，板块受益"
+    },
+    {
+      "sector_name": "数字人民币",
+      "impact": 3,
+      "analysis": "常熟公务员工资数字人民币发放，数字货币应用推广"
+    },
+    {
+      "sector_name": "工业母机",
+      "impact": 3,
+      "analysis": "德玛吉要求加装感应器，高端机床需求增加"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 2,
+      "analysis": "新冠核酸阳性率上升，医药需求或增加"
+    },
+    {
+      "sector_name": "国企改革",
+      "impact": 3,
+      "analysis": "国资委推进世界一流示范企业创建，国企改革推进"
+    },
+    {
+      "sector_name": "软件正版化",
+      "impact": 2,
+      "analysis": "国家版权局推进软件正版化，行业规范提升"
+    },
+    {
+      "sector_name": "IPv6",
+      "impact": 2,
+      "analysis": "八部门推进IPv6技术演进和应用，网络技术升级"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "深桑达A",
+      "stock_code": "000032",
+      "impact": 4,
+      "analysis": "国资云推进，公司受益"
+    },
+    {
+      "stock_name": "楚天龙",
+      "stock_code": "002238",
+      "impact": 3,
+      "analysis": "数字人民币应用推广，公司受益"
+    },
+    {
+      "stock_name": "华东数控",
+      "stock_code": "002248",
+      "impact": 3,
+      "analysis": "德玛吉要求加装感应器，公司受益"
+    },
+    {
+      "stock_name": "华润双鹤",
+      "stock_code": "600297",
+      "impact": 2,
+      "analysis": "新冠核酸阳性率上升，公司受益"
+    },
+    {
+      "stock_name": "中国海油",
+      "stock_code": "600938",
+      "impact": 3,
+      "analysis": "国资委推进世界一流示范企业创建，公司受益"
+    },
+    {
+      "stock_name": "中国软件",
+      "stock_code": "600536",
+      "impact": 2,
+      "analysis": "软件正版化推进，公司受益"
+    },
+    {
+      "stock_name": "紫光股份",
+      "stock_code": "000938",
+      "impact": 2,
+      "analysis": "IPv6技术演进和应用，公司受益"
+    }
+  ],
+  "article_title": "4月24日 盘前热点事件关注",
+  "html_file": "c747yaev6s.html",
+  "article_date": "2023-04-24"
+}

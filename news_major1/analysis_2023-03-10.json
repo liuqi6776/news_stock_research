@@ -1,0 +1,162 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块有望受益。",
+  "sectors": [
+    {
+      "sector_name": "白糖",
+      "impact": 3,
+      "analysis": "白糖价格新高，相关企业受益"
+    },
+    {
+      "sector_name": "汽车",
+      "impact": 3,
+      "analysis": "汽车降价潮，相关企业受益"
+    },
+    {
+      "sector_name": "防水材料",
+      "impact": 3,
+      "analysis": "防水新规实施，市场空间扩大"
+    },
+    {
+      "sector_name": "水质提升",
+      "impact": 3,
+      "analysis": "海水提锂项目启动，相关企业受益"
+    },
+    {
+      "sector_name": "啤酒",
+      "impact": 2,
+      "analysis": "燕京啤酒推出玻尿酸啤酒，相关企业受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "南宁糖业",
+      "stock_code": "000911",
+      "impact": 3,
+      "analysis": "白糖价格新高，公司受益"
+    },
+    {
+      "stock_name": "中粮糖业",
+      "stock_code": "600949",
+      "impact": 3,
+      "analysis": "白糖价格新高，公司受益"
+    },
+    {
+      "stock_name": "山西焦煤",
+      "stock_code": "000983",
+      "impact": 3,
+      "analysis": "煤炭价格上涨，公司受益"
+    },
+    {
+      "stock_name": "潞安环能",
+      "stock_code": "600798",
+      "impact": 3,
+      "analysis": "煤炭价格上涨，公司受益"
+    },
+    {
+      "stock_name": "金岭矿业",
+      "stock_code": "000655",
+      "impact": 3,
+      "analysis": "铁矿价格上涨，公司受益"
+    },
+    {
+      "stock_name": "河钢资源",
+      "stock_code": "000616",
+      "impact": 3,
+      "analysis": "铁矿价格上涨，公司受益"
+    },
+    {
+      "stock_name": "国机汽车",
+      "stock_code": "600765",
+      "impact": 3,
+      "analysis": "汽车降价潮，公司受益"
+    },
+    {
+      "stock_name": "广汇汽车",
+      "stock_code": "600716",
+      "impact": 3,
+      "analysis": "汽车降价潮，公司受益"
+    },
+    {
+      "stock_name": "申华控股",
+      "stock_code": "000626",
+      "impact": 3,
+      "analysis": "汽车降价潮，公司受益"
+    },
+    {
+      "stock_name": "庞大集团",
+      "stock_code": "601258",
+      "impact": 3,
+      "analysis": "汽车降价潮，公司受益"
+    },
+    {
+      "stock_name": "东方雨虹",
+      "stock_code": "002271",
+      "impact": 3,
+      "analysis": "防水新规实施，公司受益"
+    },
+    {
+      "stock_name": "凯伦股份",
+      "stock_code": "603018",
+      "impact": 3,
+      "analysis": "防水新规实施，公司受益"
+    },
+    {
+      "stock_name": "北新建材",
+      "stock_code": "000786",
+      "impact": 3,
+      "analysis": "防水新规实施，公司受益"
+    },
+    {
+      "stock_name": "飞鹿股份",
+      "stock_code": "300359",
+      "impact": 3,
+      "analysis": "防水新规实施，公司受益"
+    },
+    {
+      "stock_name": "津膜科技",
+      "stock_code": "300692",
+      "impact": 3,
+      "analysis": "海水提锂项目启动，公司受益"
+    },
+    {
+      "stock_name": "沃顿科技",
+      "stock_code": "300745",
+      "impact": 3,
+      "analysis": "海水提锂项目启动，公司受益"
+    },
+    {
+      "stock_name": "三达膜",
+      "stock_code": "300776",
+      "impact": 3,
+      "analysis": "海水提锂项目启动，公司受益"
+    },
+    {
+      "stock_name": "燕京啤酒",
+      "stock_code": "000729",
+      "impact": 2,
+      "analysis": "推出玻尿酸啤酒，公司受益"
+    },
+    {
+      "stock_name": "惠泉啤酒",
+      "stock_code": "600579",
+      "impact": 2,
+      "analysis": "燕京啤酒推出玻尿酸啤酒，公司受益"
+    },
+    {
+      "stock_name": "珠江啤酒",
+      "stock_code": "002461",
+      "impact": 2,
+      "analysis": "燕京啤酒推出玻尿酸啤酒，公司受益"
+    },
+    {
+      "stock_name": "重庆啤酒",
+      "stock_code": "600132",
+      "impact": 2,
+      "analysis": "燕京啤酒推出玻尿酸啤酒，公司受益"
+    }
+  ],
+  "article_title": "3月10日盘前热点事件关注",
+  "html_file": "28yqmgx45l.html",
+  "article_date": "2023-03-10"
+}

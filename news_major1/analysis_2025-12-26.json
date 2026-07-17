@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏积极，多个板块和个股受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "航天航空",
+      "impact": 4,
+      "analysis": "商业航天和太空武器化相关个股受益"
+    },
+    {
+      "sector_name": "光伏设备",
+      "impact": 3,
+      "analysis": "头部硅片企业联合调价，光伏设备板块受益"
+    },
+    {
+      "sector_name": "游戏",
+      "impact": 2,
+      "analysis": "游戏版号获批，游戏板块情绪提升"
+    },
+    {
+      "sector_name": "锂电池",
+      "impact": 3,
+      "analysis": "磷酸铁锂减产检修，锂电池板块受益"
+    },
+    {
+      "sector_name": "冰雪经济",
+      "impact": 2,
+      "analysis": "冰雪经济发展报告发布，相关个股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "神剑股份",
+      "stock_code": "002361",
+      "impact": 4,
+      "analysis": "商业航天概念，受益于国防部回应日本建造航宙母舰"
+    },
+    {
+      "stock_name": "九鼎新材",
+      "stock_code": "002201",
+      "impact": 4,
+      "analysis": "商业航天概念，受益于国防部回应日本建造航宙母舰"
+    },
+    {
+      "stock_name": "隆基机械",
+      "stock_code": "002363",
+      "impact": 4,
+      "analysis": "商业航天概念，受益于国防部回应日本建造航宙母舰"
+    },
+    {
+      "stock_name": "京运通",
+      "stock_code": "603035",
+      "impact": 3,
+      "analysis": "光伏设备概念，受益于头部硅片企业联合调价"
+    },
+    {
+      "stock_name": "通威股份",
+      "stock_code": "600438",
+      "impact": 3,
+      "analysis": "光伏设备概念，受益于头部硅片企业联合调价"
+    }
+  ],
+  "article_title": "12月26日盘前纪要",
+  "html_file": "3fc80fbdylw.html",
+  "article_date": "2025-12-26"
+}

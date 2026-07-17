@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受多事件影响，整体偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "超导",
+      "impact": 4,
+      "analysis": "室温超导突破，板块受提振"
+    },
+    {
+      "sector_name": "赛马",
+      "impact": 3,
+      "analysis": "广州争取速度赛马赛事试点，板块受益"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "谷歌发布全球最大视觉语言模型，板块受关注"
+    },
+    {
+      "sector_name": "稀土",
+      "impact": 3,
+      "analysis": "稀土进口量价大增，板块受益"
+    },
+    {
+      "sector_name": "炭黑",
+      "impact": 3,
+      "analysis": "美国炭黑巨头调价，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "西部超导",
+      "stock_code": "300388",
+      "impact": 4,
+      "analysis": "室温超导突破，公司受益"
+    },
+    {
+      "stock_name": "珠江实业",
+      "stock_code": "000702",
+      "impact": 3,
+      "analysis": "广州争取速度赛马赛事试点，公司受益"
+    },
+    {
+      "stock_name": "网达软件",
+      "stock_code": "300995",
+      "impact": 3,
+      "analysis": "谷歌发布全球最大视觉语言模型，公司受益"
+    },
+    {
+      "stock_name": "中国稀土",
+      "stock_code": "000920",
+      "impact": 3,
+      "analysis": "稀土进口量价大增，公司受益"
+    },
+    {
+      "stock_name": "黑猫股份",
+      "stock_code": "002068",
+      "impact": 3,
+      "analysis": "美国炭黑巨头调价，公司受益"
+    }
+  ],
+  "article_title": "3月9日盘前热点事件关注",
+  "html_file": "8uwry3m7rv.html",
+  "article_date": "2023-03-09"
+}

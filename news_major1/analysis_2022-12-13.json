@@ -1,0 +1,72 @@
+{
+  "market_impact": 3,
+  "market_analysis": "消费复苏、血制品需求、原材料涨价等利好消息较多。",
+  "sectors": [
+    {
+      "sector_name": "可选消费",
+      "impact": 3,
+      "analysis": "消费券发放，可选消费受益"
+    },
+    {
+      "sector_name": "血制品",
+      "impact": 3,
+      "analysis": "血浆资源稀缺，血制品需求稳定"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 3,
+      "analysis": "金银花、维生素C涨价，医药板块受益"
+    },
+    {
+      "sector_name": "造纸",
+      "impact": 2,
+      "analysis": "木浆价格下调，纸企盈利弹性释放"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 2,
+      "analysis": "国产化补贴传闻，半导体设备需求提升"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "爱美客",
+      "stock_code": "300240",
+      "impact": 3,
+      "analysis": "可选消费受益"
+    },
+    {
+      "stock_name": "朗姿股份",
+      "stock_code": "002612",
+      "impact": 3,
+      "analysis": "可选消费受益"
+    },
+    {
+      "stock_name": "派林生物",
+      "stock_code": "002166",
+      "impact": 3,
+      "analysis": "血制品需求稳定"
+    },
+    {
+      "stock_name": "贵州百灵",
+      "stock_code": "002424",
+      "impact": 3,
+      "analysis": "金银花涨价，医药板块受益"
+    },
+    {
+      "stock_name": "东北制药",
+      "stock_code": "000597",
+      "impact": 3,
+      "analysis": "维生素C断货，医药板块受益"
+    },
+    {
+      "stock_name": "北方华创",
+      "stock_code": "002371",
+      "impact": 2,
+      "analysis": "国产化补贴传闻，半导体设备需求提升"
+    }
+  ],
+  "article_id": "2a2d92292ea7403bb8d6dbde2cc3e768",
+  "article_date": "2022-12-13",
+  "article_title": "2022.12.13市场逻辑精选"
+}

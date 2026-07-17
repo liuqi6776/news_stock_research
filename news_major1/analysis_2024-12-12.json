@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，政策支持与行业发展趋势积极。",
+  "sectors": [
+    {
+      "sector_name": "消费电子",
+      "impact": 3,
+      "analysis": "消费电子行业受益于提振消费政策。"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "人工智能行业受政策支持，发展前景看好。"
+    },
+    {
+      "sector_name": "通信设备",
+      "impact": 3,
+      "analysis": "通信设备行业受益于高速通信线订单增长。"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 2,
+      "analysis": "房地产政策预期改善，板块受益。"
+    },
+    {
+      "sector_name": "养老产业",
+      "impact": 3,
+      "analysis": "养老产业受益于个人养老金制度推广。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "大商股份",
+      "stock_code": "600694",
+      "impact": 3,
+      "analysis": "公司引入新CEO，门店全面调改，业绩有望提升。"
+    },
+    {
+      "stock_name": "广博股份",
+      "stock_code": "002103",
+      "impact": 3,
+      "analysis": "子公司与字节跳动合作，拓展业务增长点。"
+    },
+    {
+      "stock_name": "朗科科技",
+      "stock_code": "300118",
+      "impact": 3,
+      "analysis": "与中兴通讯合作，订单落地，算力生态格局持续打造。"
+    },
+    {
+      "stock_name": "沃尔核材",
+      "stock_code": "002130",
+      "impact": 3,
+      "analysis": "高速通信线订单增长，与华为合作，业绩有望提升。"
+    },
+    {
+      "stock_name": "海欣股份",
+      "stock_code": "600781",
+      "impact": 3,
+      "analysis": "旗下基金产品入选个人养老金基金名录，受益养老金入市。"
+    }
+  ],
+  "article_id": "6f5b9991334d4c95934f094f7306d29f",
+  "article_date": "2024-12-12",
+  "article_title": "2024.12.12市场逻辑精选"
+}

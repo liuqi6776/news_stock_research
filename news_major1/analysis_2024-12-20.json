@@ -1,0 +1,95 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏暖，多个板块和个股受利好消息影响。",
+  "sectors": [
+    {
+      "sector_name": "消费",
+      "impact": 3,
+      "analysis": "微信小店、岭南股份等受关注"
+    },
+    {
+      "sector_name": "算力",
+      "impact": 3,
+      "analysis": "瑞斯康达、鑫科材料等受关注"
+    },
+    {
+      "sector_name": "AI应用",
+      "impact": 3,
+      "analysis": "粤传媒受关注"
+    },
+    {
+      "sector_name": "AI芯片",
+      "impact": 3,
+      "analysis": "星宸科技受关注"
+    },
+    {
+      "sector_name": "种业",
+      "impact": 3,
+      "analysis": "神农种业、丰乐种业等受关注"
+    },
+    {
+      "sector_name": "横琴粤澳深度合作区",
+      "impact": 3,
+      "analysis": "珠海港、珠海中富等受关注"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "友阿股份",
+      "stock_code": "000716",
+      "impact": 3,
+      "analysis": "消费板块，受关注"
+    },
+    {
+      "stock_name": "微盟集团",
+      "stock_code": "002161",
+      "impact": 3,
+      "analysis": "微信小店，受关注"
+    },
+    {
+      "stock_name": "岭南股份",
+      "stock_code": "002717",
+      "impact": 3,
+      "analysis": "微信小店，受关注"
+    },
+    {
+      "stock_name": "闪极科技",
+      "stock_code": "300523",
+      "impact": 3,
+      "analysis": "AI拍摄眼镜，受关注"
+    },
+    {
+      "stock_name": "H公司",
+      "stock_code": "未提供",
+      "impact": 3,
+      "analysis": "玻璃基板中试线项目，受关注"
+    },
+    {
+      "stock_name": "神农种业",
+      "stock_code": "000930",
+      "impact": 3,
+      "analysis": "种业振兴，受关注"
+    },
+    {
+      "stock_name": "丰乐种业",
+      "stock_code": "000713",
+      "impact": 3,
+      "analysis": "种业振兴，受关注"
+    },
+    {
+      "stock_name": "珠海港",
+      "stock_code": "000507",
+      "impact": 3,
+      "analysis": "横琴粤澳深度合作区，受关注"
+    },
+    {
+      "stock_name": "珠海中富",
+      "stock_code": "000659",
+      "impact": 3,
+      "analysis": "横琴粤澳深度合作区，受关注"
+    }
+  ],
+  "article_title": "12月20日盘前早报 热点事件关注",
+  "html_file": "84fb5bmd6d.html",
+  "article_date": "2024-12-20"
+}

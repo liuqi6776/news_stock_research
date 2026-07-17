@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪提升",
+  "sectors": [
+    {
+      "sector_name": "新能源汽车",
+      "impact": 4,
+      "analysis": "充电桩、整车产业链受益"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "AIGC、AI工具发布推动"
+    },
+    {
+      "sector_name": "游戏",
+      "impact": 2,
+      "analysis": "游戏版号发布预期"
+    },
+    {
+      "sector_name": "核电",
+      "impact": 2,
+      "analysis": "钍基熔盐实验堆进展"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 2,
+      "analysis": "光模块、芯片电感项目"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "通合科技",
+      "stock_code": "300407",
+      "impact": 4,
+      "analysis": "充电桩产业链"
+    },
+    {
+      "stock_name": "赛力斯",
+      "stock_code": "600489",
+      "impact": 3,
+      "analysis": "新能源汽车产业链"
+    },
+    {
+      "stock_name": "美图公司",
+      "stock_code": "01357",
+      "impact": 3,
+      "analysis": "AIGC工具发布"
+    },
+    {
+      "stock_name": "中青宝",
+      "stock_code": "300118",
+      "impact": 2,
+      "analysis": "游戏版号预期"
+    },
+    {
+      "stock_name": "上海建工",
+      "stock_code": "600170",
+      "impact": 2,
+      "analysis": "钍基核电项目"
+    }
+  ],
+  "article_title": "6月20日 盘前热点事件关注",
+  "html_file": "dxvwxvjnk8.html",
+  "article_date": "2023-06-20"
+}

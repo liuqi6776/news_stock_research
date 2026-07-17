@@ -1,0 +1,77 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股受积极因素影响。",
+  "sectors": [
+    {
+      "sector_name": "人工智能",
+      "impact": 4,
+      "analysis": "OpenAI新产品发布，相关公司受益"
+    },
+    {
+      "sector_name": "地产",
+      "impact": 3,
+      "analysis": "西安取消限购，地产板块受益"
+    },
+    {
+      "sector_name": "无人驾驶航空器",
+      "impact": 3,
+      "analysis": "立法授权，无人驾驶航空器行业受益"
+    },
+    {
+      "sector_name": "铟金属",
+      "impact": 3,
+      "analysis": "铟金属价格上涨，相关公司受益"
+    },
+    {
+      "sector_name": "锂电池",
+      "impact": 2,
+      "analysis": "工信部征求意见，锂电池行业有望受益"
+    },
+    {
+      "sector_name": "航运",
+      "impact": 2,
+      "analysis": "集运指数上涨，航运板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "三六零",
+      "stock_code": "601360",
+      "impact": 4,
+      "analysis": "受益于OpenAI新产品发布"
+    },
+    {
+      "stock_name": "昆仑万维",
+      "stock_code": "300418",
+      "impact": 4,
+      "analysis": "受益于OpenAI新产品发布"
+    },
+    {
+      "stock_name": "天地源",
+      "stock_code": "600665",
+      "impact": 3,
+      "analysis": "受益于西安取消限购"
+    },
+    {
+      "stock_name": "山东矿机",
+      "stock_code": "002526",
+      "impact": 3,
+      "analysis": "受益于无人驾驶航空器立法授权"
+    },
+    {
+      "stock_name": "株冶集团",
+      "stock_code": "000706",
+      "impact": 3,
+      "analysis": "受益于铟金属价格上涨"
+    },
+    {
+      "stock_name": "星光股份",
+      "stock_code": "300256",
+      "impact": 2,
+      "analysis": "受益于锂电池行业政策"
+    }
+  ],
+  "article_title": "5月10日盘前早报 热点事件关注",
+  "html_file": "65lyj9ujd3.html",
+  "article_date": "2024-05-10"
+}

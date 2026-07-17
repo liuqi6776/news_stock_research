@@ -1,0 +1,67 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "商业航天",
+      "impact": 4,
+      "analysis": "广州攻关可复用火箭技术，推动基地落地"
+    },
+    {
+      "sector_name": "石油",
+      "impact": 3,
+      "analysis": "原油期货大涨，中国石化与中国航油重组"
+    },
+    {
+      "sector_name": "燃料电池",
+      "impact": 3,
+      "analysis": "美国电力公司签署26.5亿美元SOFC采购协议"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 2,
+      "analysis": "小鹏汽车将规模量产人形机器人和飞行汽车"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中科宇航",
+      "stock_code": "000902",
+      "impact": 4,
+      "analysis": "广州推动基地建设，研发大推力、可复用液体火箭"
+    },
+    {
+      "stock_name": "星河动力",
+      "stock_code": "002549",
+      "impact": 4,
+      "analysis": "广州推动基地建设，研发大推力、可复用液体火箭"
+    },
+    {
+      "stock_name": "中国石化",
+      "stock_code": "600028",
+      "impact": 3,
+      "analysis": "与中国航油实施重组"
+    },
+    {
+      "stock_name": "泰山石油",
+      "stock_code": "000554",
+      "impact": 3,
+      "analysis": "中国石化重组相关"
+    },
+    {
+      "stock_name": "小鹏汽车-W",
+      "stock_code": "09868",
+      "impact": 3,
+      "analysis": "规模量产人形机器人和飞行汽车"
+    },
+    {
+      "stock_name": "方正电机",
+      "stock_code": "002196",
+      "impact": 2,
+      "analysis": "小鹏概念股"
+    }
+  ],
+  "article_title": "1月9日盘前纪要",
+  "html_file": "2geyr7puguz.html",
+  "article_date": "2026-01-09"
+}

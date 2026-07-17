@@ -1,0 +1,44 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，关注存储器、网约车、碳酸锂等板块。",
+  "sectors": [
+    {
+      "sector_name": "存储器",
+      "impact": 4,
+      "analysis": "需求复苏预期，价格有望反弹。"
+    },
+    {
+      "sector_name": "网约车",
+      "impact": 3,
+      "analysis": "国家级出行平台上线，行业竞争格局有望改善。"
+    },
+    {
+      "sector_name": "碳酸锂",
+      "impact": 3,
+      "analysis": "价格维持高位，相关公司业绩有望提升。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "东芯股份",
+      "stock_code": "300331",
+      "impact": 3,
+      "analysis": "低估值，新品放量。"
+    },
+    {
+      "stock_name": "江波龙",
+      "stock_code": "300666",
+      "impact": 3,
+      "analysis": "品牌溢价，信创存储龙头。"
+    },
+    {
+      "stock_name": "天齐锂业",
+      "stock_code": "002466",
+      "impact": 3,
+      "analysis": "碳酸锂量价齐升，业绩增长。"
+    }
+  ],
+  "article_id": "6a7a51a888834866898995d67df66808",
+  "article_date": "2023-01-18",
+  "article_title": "2023.1.18市场逻辑精选"
+}

@@ -1,0 +1,24 @@
+{
+  "study_name": "Walk-Forward v3£¨ÎÞÊý¾ÝÐ¹Â©£©",
+  "timestamp": "20260504_094039",
+  "n_features": 54,
+  "target": "1d",
+  "walk_forward_years": [
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "top_features_per_year": {},
+  "thresholds": {
+    "1d": 0.32
+  },
+  "best_params": {
+    "1d": {
+      "stop_loss": 0.03,
+      "take_profit": 0.1,
+      "max_positions": 3
+    }
+  }
+}

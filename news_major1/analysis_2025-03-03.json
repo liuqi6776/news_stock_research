@@ -1,0 +1,153 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受政策预期和热点题材推动，整体偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "稀土",
+      "impact": 3,
+      "analysis": "关税政策预期推动板块活跃"
+    },
+    {
+      "sector_name": "量子科技",
+      "impact": 3,
+      "analysis": "合作布局推动板块升温"
+    },
+    {
+      "sector_name": "AI编程",
+      "impact": 3,
+      "analysis": "AI编程工具发布推动板块关注"
+    },
+    {
+      "sector_name": "人工智能+",
+      "impact": 3,
+      "analysis": "深圳政策支持推动板块活跃"
+    },
+    {
+      "sector_name": "工业智能",
+      "impact": 3,
+      "analysis": "行业应用推动板块升温"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "技术交流推动板块关注"
+    },
+    {
+      "sector_name": "新材料",
+      "impact": 3,
+      "analysis": "战略合作推动板块活跃"
+    },
+    {
+      "sector_name": "高端制造",
+      "impact": 3,
+      "analysis": "技术进步推动板块升温"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "天和磁材",
+      "stock_code": "600585",
+      "impact": 3,
+      "analysis": "稀土关税预期推动"
+    },
+    {
+      "stock_name": "英洛华",
+      "stock_code": "000795",
+      "impact": 3,
+      "analysis": "稀土关税预期推动"
+    },
+    {
+      "stock_name": "盛和资源",
+      "stock_code": "600392",
+      "impact": 3,
+      "analysis": "稀土关税预期推动"
+    },
+    {
+      "stock_name": "九菱科技",
+      "stock_code": "002743",
+      "impact": 3,
+      "analysis": "稀土关税预期推动"
+    },
+    {
+      "stock_name": "卓易信息",
+      "stock_code": "300846",
+      "impact": 3,
+      "analysis": "AI编程工具推动"
+    },
+    {
+      "stock_name": "普元信息",
+      "stock_code": "300036",
+      "impact": 3,
+      "analysis": "AI编程工具推动"
+    },
+    {
+      "stock_name": "金现代",
+      "stock_code": "300457",
+      "impact": 3,
+      "analysis": "AI编程工具推动"
+    },
+    {
+      "stock_name": "科大国创",
+      "stock_code": "300520",
+      "impact": 3,
+      "analysis": "AI编程工具推动"
+    },
+    {
+      "stock_name": "中国长城",
+      "stock_code": "000066",
+      "impact": 3,
+      "analysis": "深圳政策支持推动"
+    },
+    {
+      "stock_name": "协创数据",
+      "stock_code": "300545",
+      "impact": 3,
+      "analysis": "深圳政策支持推动"
+    },
+    {
+      "stock_name": "云天励飞",
+      "stock_code": "002936",
+      "impact": 3,
+      "analysis": "深圳政策支持推动"
+    },
+    {
+      "stock_name": "兆威机电",
+      "stock_code": "002881",
+      "impact": 3,
+      "analysis": "深圳政策支持推动"
+    },
+    {
+      "stock_name": "雷赛智能",
+      "stock_code": "002970",
+      "impact": 3,
+      "analysis": "深圳政策支持推动"
+    },
+    {
+      "stock_name": "云鼎科技",
+      "stock_code": "300383",
+      "impact": 3,
+      "analysis": "工业智能行业应用推动"
+    },
+    {
+      "stock_name": "丰茂股份",
+      "stock_code": "603709",
+      "impact": 3,
+      "analysis": "机器人技术交流推动"
+    },
+    {
+      "stock_name": "跃岭股份",
+      "stock_code": "002725",
+      "impact": 3,
+      "analysis": "实控人变更推动"
+    },
+    {
+      "stock_name": "强瑞技术",
+      "stock_code": "300796",
+      "impact": 3,
+      "analysis": "液冷检测设备及散热器产品进展推动"
+    }
+  ],
+  "article_id": "4c400a12e7b24168a7f8bb2789315d33",
+  "article_date": "2025-03-03",
+  "article_title": "2025.3.3市场逻辑精选"
+}

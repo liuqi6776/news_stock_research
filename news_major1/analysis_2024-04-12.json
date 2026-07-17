@@ -1,0 +1,110 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股受积极因素影响",
+  "sectors": [
+    {
+      "sector_name": "家电",
+      "impact": 3,
+      "analysis": "以旧换新政策利好家电行业"
+    },
+    {
+      "sector_name": "家装",
+      "impact": 3,
+      "analysis": "以旧换新政策利好家装行业"
+    },
+    {
+      "sector_name": "汽车",
+      "impact": 3,
+      "analysis": "以旧换新政策利好汽车行业"
+    },
+    {
+      "sector_name": "电子商务",
+      "impact": 3,
+      "analysis": "亚马逊股价创新高，利好电商行业"
+    },
+    {
+      "sector_name": "黄金",
+      "impact": 3,
+      "analysis": "黄金价格创新高，利好黄金行业"
+    },
+    {
+      "sector_name": "钴",
+      "impact": 3,
+      "analysis": "刚果考虑限制钴出口，利好钴行业"
+    },
+    {
+      "sector_name": "低空经济",
+      "impact": 3,
+      "analysis": "万丰奥威签署飞机销售订单，利好低空经济"
+    },
+    {
+      "sector_name": "科技",
+      "impact": 3,
+      "analysis": "工信部大力发展智能装备、软件等智能产品，利好科技行业"
+    },
+    {
+      "sector_name": "自动驾驶",
+      "impact": 3,
+      "analysis": "京津冀首条智能网联汽车测试高速开放，利好自动驾驶行业"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "海信家电",
+      "stock_code": "000725",
+      "impact": 3,
+      "analysis": "以旧换新政策利好"
+    },
+    {
+      "stock_name": "长虹华意",
+      "stock_code": "000547",
+      "impact": 3,
+      "analysis": "以旧换新政策利好"
+    },
+    {
+      "stock_name": "赛力斯",
+      "stock_code": "600104",
+      "impact": 3,
+      "analysis": "以旧换新政策利好"
+    },
+    {
+      "stock_name": "南极电商",
+      "stock_code": "002127",
+      "impact": 3,
+      "analysis": "亚马逊股价创新高利好"
+    },
+    {
+      "stock_name": "莱绅通灵",
+      "stock_code": "600388",
+      "impact": 3,
+      "analysis": "黄金价格创新高利好"
+    },
+    {
+      "stock_name": "华友钴业",
+      "stock_code": "600409",
+      "impact": 3,
+      "analysis": "刚果考虑限制钴出口利好"
+    },
+    {
+      "stock_name": "万丰奥威",
+      "stock_code": "002085",
+      "impact": 3,
+      "analysis": "签署飞机销售订单利好"
+    },
+    {
+      "stock_name": "中际旭创",
+      "stock_code": "300308",
+      "impact": 3,
+      "analysis": "工信部大力发展智能装备利好"
+    },
+    {
+      "stock_name": "路畅科技",
+      "stock_code": "002813",
+      "impact": 3,
+      "analysis": "京津冀首条智能网联汽车测试高速开放利好"
+    }
+  ],
+  "article_title": "4月12日盘前早报 热点事件关注",
+  "html_file": "ec8gmpcsvs.html",
+  "article_date": "2024-04-12"
+}

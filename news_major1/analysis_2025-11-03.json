@@ -1,0 +1,67 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受积极因素影响，部分行业和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "化工",
+      "impact": 4,
+      "analysis": "芳香胺脱氨技术突破，相关产业链受益"
+    },
+    {
+      "sector_name": "旅游",
+      "impact": 3,
+      "analysis": "海南离岛免税政策实施，旅游行业受益"
+    },
+    {
+      "sector_name": "影视",
+      "impact": 3,
+      "analysis": "优质IP电影上映，影视行业受益"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 2,
+      "analysis": "存储封装测试，深度绑定SK海力士"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "百合花",
+      "stock_code": "600827",
+      "impact": 4,
+      "analysis": "重氮化工艺替代领域，设备改造、工艺优化"
+    },
+    {
+      "stock_name": "美瑞新材",
+      "stock_code": "603778",
+      "impact": 4,
+      "analysis": "芳香胺原料→特种异氰酸酯→聚氨酯新材料"
+    },
+    {
+      "stock_name": "海汽集团",
+      "stock_code": "601099",
+      "impact": 3,
+      "analysis": "海南离岛免税政策，转型免税商业综合业务"
+    },
+    {
+      "stock_name": "幸福蓝海",
+      "stock_code": "300226",
+      "impact": 3,
+      "analysis": "涵盖电影全产业链业务，院线旗下影城累计596家"
+    },
+    {
+      "stock_name": "华策影视",
+      "stock_code": "600073",
+      "impact": 3,
+      "analysis": "围绕影视生态型内容平台，积极与国际动漫IP合作"
+    },
+    {
+      "stock_name": "太极实业",
+      "stock_code": "600193",
+      "impact": 2,
+      "analysis": "深度绑定SK海力士，聚焦存储封装测试"
+    }
+  ],
+  "article_id": "5ba8c6bd14c54d85b7f555f818af3869",
+  "article_date": "2025-11-03",
+  "article_title": "2025.11.3市场逻辑精选"
+}

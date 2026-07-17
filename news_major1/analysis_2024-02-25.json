@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策支持设备更新和消费品以旧换新，利好相关板块。",
+  "sectors": [
+    {
+      "sector_name": "机床",
+      "impact": 4,
+      "analysis": "设备更新政策推动，板块弹性大。"
+    },
+    {
+      "sector_name": "物流",
+      "impact": 3,
+      "analysis": "物流成本降低，相关企业受益。"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "人形机器人技术更新，产业化加速。"
+    },
+    {
+      "sector_name": "包装",
+      "impact": 2,
+      "analysis": "包装行业并购，增强央企竞争力。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "东方精工",
+      "stock_code": "002611",
+      "impact": 3,
+      "analysis": "参股英伟达展示的嘉腾机器人，受益政策和技术。"
+    },
+    {
+      "stock_name": "汉马科技",
+      "stock_code": "600712",
+      "impact": 2,
+      "analysis": "启动预重整，专注醇氢、电动技术发展。"
+    },
+    {
+      "stock_name": "莱特光电",
+      "stock_code": "300101",
+      "impact": 3,
+      "analysis": "一季度业绩高增，OLED材料国产突破。"
+    },
+    {
+      "stock_name": "宝钢包装",
+      "stock_code": "600709",
+      "impact": 2,
+      "analysis": "中国宝武收购中粮包装，增强行业竞争力。"
+    }
+  ],
+  "article_id": "9ed5bdd6abe04e4a95e9a26ae6776cb5",
+  "article_date": "2024-02-25",
+  "article_title": "2024.2.25市场逻辑精选"
+}

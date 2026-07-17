@@ -1,0 +1,73 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，机器人、车路云一体化等板块受关注。",
+  "sectors": [
+    {
+      "sector_name": "机器人",
+      "impact": 4,
+      "analysis": "政策支持，特斯拉等公司推动技术发展，板块受益明显。"
+    },
+    {
+      "sector_name": "车路云一体化",
+      "impact": 3,
+      "analysis": "北京项目启动，政策落地加速，板块前景看好。"
+    },
+    {
+      "sector_name": "航空航天",
+      "impact": 3,
+      "analysis": "航空航天涂料需求增加，行业前景广阔。"
+    },
+    {
+      "sector_name": "FSD概念",
+      "impact": 3,
+      "analysis": "特斯拉FSD软件推广，相关概念股受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "航天动力",
+      "stock_code": "000547",
+      "impact": 4,
+      "analysis": "航天六院唯一证券化平台，业务前景良好。"
+    },
+    {
+      "stock_name": "超捷股份",
+      "stock_code": "002885",
+      "impact": 3,
+      "analysis": "商业航天业务发展，产品交付预期良好。"
+    },
+    {
+      "stock_name": "骏成科技",
+      "stock_code": "300387",
+      "impact": 3,
+      "analysis": "液晶屏供货电子烟龙头，业绩增长可期。"
+    },
+    {
+      "stock_name": "苏试试验",
+      "stock_code": "300382",
+      "impact": 3,
+      "analysis": "为航空类客户提供测试服务，技术优势明显。"
+    },
+    {
+      "stock_name": "力星股份",
+      "stock_code": "300895",
+      "impact": 3,
+      "analysis": "精密陶瓷球布局国内领先，应用前景广阔。"
+    },
+    {
+      "stock_name": "万集科技",
+      "stock_code": "300698",
+      "impact": 3,
+      "analysis": "车路云协同构建智慧交通生态，业务前景良好。"
+    },
+    {
+      "stock_name": "千方科技",
+      "stock_code": "002373",
+      "impact": 3,
+      "analysis": "北京市自动驾驶重点建设单位，业务前景良好。"
+    }
+  ],
+  "article_id": "943d6839d8d2414181e5eb75c33eb836",
+  "article_date": "2024-06-02",
+  "article_title": "2024.6.2市场逻辑精选"
+}

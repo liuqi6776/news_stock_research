@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股表现积极。",
+  "sectors": [
+    {
+      "sector_name": "光模块",
+      "impact": 4,
+      "analysis": "受益于通信基础设施建设，板块表现强劲。"
+    },
+    {
+      "sector_name": "超算",
+      "impact": 3,
+      "analysis": "国家超算互联网部署工作启动，板块有望受益。"
+    },
+    {
+      "sector_name": "白糖",
+      "impact": 3,
+      "analysis": "白糖期货价格创新高，板块受关注。"
+    },
+    {
+      "sector_name": "GPU/AI芯片",
+      "impact": 3,
+      "analysis": "英伟达AI芯片需求旺盛，板块受提振。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "剑桥科技",
+      "stock_code": "300206",
+      "impact": 4,
+      "analysis": "一季度净利润扭亏为盈，股价有望上涨。"
+    },
+    {
+      "stock_name": "寒武纪",
+      "stock_code": "688005",
+      "impact": 3,
+      "analysis": "受益于国家超算互联网部署，股价有望上涨。"
+    },
+    {
+      "stock_name": "南宁糖业",
+      "stock_code": "000911",
+      "impact": 3,
+      "analysis": "白糖期货价格创新高，股价有望上涨。"
+    },
+    {
+      "stock_name": "和林微纳",
+      "stock_code": "688016",
+      "impact": 3,
+      "analysis": "受益于英伟达AI芯片需求，股价有望上涨。"
+    }
+  ],
+  "article_title": "4月18日 盘前热点事件关注",
+  "html_file": "78ulx0ebnx.html",
+  "article_date": "2023-04-18"
+}

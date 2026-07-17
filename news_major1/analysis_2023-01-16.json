@@ -1,0 +1,108 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，创新药和半导体板块表现强劲。",
+  "sectors": [
+    {
+      "sector_name": "创新药",
+      "impact": 4,
+      "analysis": "政策支持，医保谈判稳定预期，板块迎来成长期。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "周期底部，库存压力缓解，板块估值低，周期反转可期。"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "上海艾录切入光伏背板行业，有望成为公司最大利润贡献源。"
+    },
+    {
+      "sector_name": "家居建材",
+      "impact": 2,
+      "analysis": "美凯龙阿里巴巴溢价换股，线上线下融合，赋能新零售。"
+    },
+    {
+      "sector_name": "国企改革",
+      "impact": 2,
+      "analysis": "航天晨光存在国改预期，航天三江全面推进国企改革。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "百利天恒",
+      "stock_code": "300418",
+      "impact": 4,
+      "analysis": "创新药研发品种丰富，医保谈判稳定预期。"
+    },
+    {
+      "stock_name": "微芯生物",
+      "stock_code": "300790",
+      "impact": 4,
+      "analysis": "降糖新药进医保，创新药研发进展良好。"
+    },
+    {
+      "stock_name": "贝达药业",
+      "stock_code": "300558",
+      "impact": 3,
+      "analysis": "关注3代EGFR获批进展，创新药研发稳步推进。"
+    },
+    {
+      "stock_name": "恒瑞医药",
+      "stock_code": "600276",
+      "impact": 4,
+      "analysis": "医保谈判促进创新药放量，研发管线深厚。"
+    },
+    {
+      "stock_name": "凯因科技",
+      "stock_code": "300008",
+      "impact": 3,
+      "analysis": "丙肝创新药基层市场放量，瞄准千亿市场。"
+    },
+    {
+      "stock_name": "圣邦股份",
+      "stock_code": "300362",
+      "impact": 3,
+      "analysis": "模拟芯片行业周期底部，库存压力缓解。"
+    },
+    {
+      "stock_name": "韦尔股份",
+      "stock_code": "603501",
+      "impact": 3,
+      "analysis": "计提减值充分，业绩有望逐季改善。"
+    },
+    {
+      "stock_name": "凯莱英",
+      "stock_code": "002821",
+      "impact": 4,
+      "analysis": "CDMO龙头，机构净买入，业绩增长预期良好。"
+    },
+    {
+      "stock_name": "上海艾录",
+      "stock_code": "603051",
+      "impact": 4,
+      "analysis": "切入光伏背板行业，有望成为公司最大利润贡献源。"
+    },
+    {
+      "stock_name": "美凯龙",
+      "stock_code": "601827",
+      "impact": 3,
+      "analysis": "阿里巴巴溢价换股，线上线下融合，赋能新零售。"
+    },
+    {
+      "stock_name": "航天晨光",
+      "stock_code": "600501",
+      "impact": 3,
+      "analysis": "存在国改预期，航天三江全面推进国企改革。"
+    },
+    {
+      "stock_name": "昭衍新药",
+      "stock_code": "300547",
+      "impact": 4,
+      "analysis": "国内安评龙头，业绩披露超预期。"
+    }
+  ],
+  "article_id": "539c49bdc0bc4c239602c5d24f0c164a",
+  "article_date": "2023-01-16",
+  "article_title": "2023.1.16市场逻辑精选"
+}

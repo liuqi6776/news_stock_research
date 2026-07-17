@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪偏乐观",
+  "sectors": [
+    {
+      "sector_name": "芯片",
+      "impact": 4,
+      "analysis": "摩尔线程IPO、盛合晶微IPO受理，利好"
+    },
+    {
+      "sector_name": "免税",
+      "impact": 3,
+      "analysis": "完善免税店政策，利好"
+    },
+    {
+      "sector_name": "航天",
+      "impact": 3,
+      "analysis": "神舟二十一号发射，利好"
+    },
+    {
+      "sector_name": "特斯拉",
+      "impact": 2,
+      "analysis": "特斯拉无人驾驶出租车亮相，利好"
+    },
+    {
+      "sector_name": "量子通信",
+      "impact": 2,
+      "analysis": "神州信息、国盾量子相关项目，利好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "摩尔线程",
+      "stock_code": "688099",
+      "impact": 4,
+      "analysis": "科创板IPO注册申请获批，利好"
+    },
+    {
+      "stock_name": "盛合晶微",
+      "stock_code": "688598",
+      "impact": 4,
+      "analysis": "科创板IPO已受理，利好"
+    },
+    {
+      "stock_name": "珠免集团",
+      "stock_code": "600383",
+      "impact": 3,
+      "analysis": "免税政策利好，利好"
+    },
+    {
+      "stock_name": "王府井",
+      "stock_code": "600859",
+      "impact": 3,
+      "analysis": "免税政策利好，利好"
+    },
+    {
+      "stock_name": "上海沪工",
+      "stock_code": "601719",
+      "impact": 3,
+      "analysis": "神舟二十一号发射，利好"
+    }
+  ],
+  "article_title": "10月31日盘前纪要",
+  "html_file": "2gbklc7f5dk.html",
+  "article_date": "2025-10-31"
+}

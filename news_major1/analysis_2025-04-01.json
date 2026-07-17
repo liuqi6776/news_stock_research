@@ -1,0 +1,74 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注后续政策及市场反应。",
+  "sectors": [
+    {
+      "sector_name": "激光雷达",
+      "impact": 2,
+      "analysis": "行业回调后，基本面向上，但需关注小米事故影响。"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 4,
+      "analysis": "行业催化不断，创新药和医疗器械板块受益。"
+    },
+    {
+      "sector_name": "商业航天",
+      "impact": 3,
+      "analysis": "卫星互联网技术试验卫星发射成功，商业航天板块受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "小米",
+      "stock_code": "01810",
+      "impact": -2,
+      "analysis": "小米SU7事故发酵，短期利空。"
+    },
+    {
+      "stock_name": "佐力药业",
+      "stock_code": "600963",
+      "impact": 3,
+      "analysis": "国家专利密集型产品认定，利好。"
+    },
+    {
+      "stock_name": "金石亚药",
+      "stock_code": "603790",
+      "impact": 2,
+      "analysis": "感冒药品牌知名度提升，利好。"
+    },
+    {
+      "stock_name": "陇神戎发",
+      "stock_code": "300488",
+      "impact": 3,
+      "analysis": "独家品种宣肺止嗽合剂，利好。"
+    },
+    {
+      "stock_name": "多瑞生物",
+      "stock_code": "300842",
+      "impact": 3,
+      "analysis": "布洛芬混悬液生产线通过GMP核查，利好。"
+    },
+    {
+      "stock_name": "银河航天",
+      "stock_code": "688555",
+      "impact": 3,
+      "analysis": "卫星互联网技术试验卫星发射成功，利好。"
+    },
+    {
+      "stock_name": "翔港科技",
+      "stock_code": "603638",
+      "impact": 3,
+      "analysis": "印刷包装业务大幅增长，利好。"
+    },
+    {
+      "stock_name": "湖南发展",
+      "stock_code": "600863",
+      "impact": 3,
+      "analysis": "拟收购湖南省内核心流域水电资产，利好。"
+    }
+  ],
+  "article_id": "90fe1a44f6e94853a15b1544074a9964",
+  "article_date": "2025-04-01",
+  "article_title": "2025.4.1市场逻辑精选"
+}

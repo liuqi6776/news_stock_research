@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，关注农业、医药、风电等板块。",
+  "sectors": [
+    {
+      "sector_name": "农业",
+      "impact": 4,
+      "analysis": "乡村振兴政策支持，种业需求提升。"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 3,
+      "analysis": "新冠病毒变异株影响，特效药需求增加。"
+    },
+    {
+      "sector_name": "风电",
+      "impact": 3,
+      "analysis": "海上风电项目开工，行业迎来发展机遇。"
+    },
+    {
+      "sector_name": "聚丙烯",
+      "impact": 2,
+      "analysis": "N95口罩需求激增，聚丙烯价格上升。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "天禾股份",
+      "stock_code": "002999",
+      "impact": 4,
+      "analysis": "供销合作社综合改革，助力乡村振兴。"
+    },
+    {
+      "stock_name": "众生药业",
+      "stock_code": "002317",
+      "impact": 3,
+      "analysis": "新冠病毒变异株影响，特效药需求增加。"
+    },
+    {
+      "stock_name": "天顺风能",
+      "stock_code": "002531",
+      "impact": 3,
+      "analysis": "海上风电项目开工，行业迎来发展机遇。"
+    },
+    {
+      "stock_name": "卫星化学",
+      "stock_code": "603678",
+      "impact": 2,
+      "analysis": "N95口罩需求激增，聚丙烯价格上升。"
+    }
+  ],
+  "article_title": "12月21日盘前早参 热点事件关注",
+  "html_file": "8r4egk3nzm.html",
+  "article_date": "2022-12-21"
+}

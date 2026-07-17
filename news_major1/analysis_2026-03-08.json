@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受多因素影响，整体情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "人工智能",
+      "impact": 4,
+      "analysis": "AI智能体应用推动相关产业链发展。"
+    },
+    {
+      "sector_name": "化工",
+      "impact": 3,
+      "analysis": "化工品涨价趋势延续，部分子行业受益。"
+    },
+    {
+      "sector_name": "油气",
+      "impact": 3,
+      "analysis": "美伊冲突加剧，油价上涨，油气产业链受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "宁波建工",
+      "stock_code": "600754",
+      "impact": 3,
+      "analysis": "数据中心业务受益于AI智能体应用。"
+    },
+    {
+      "stock_name": "云天励飞",
+      "stock_code": "002938",
+      "impact": 4,
+      "analysis": "AI推理芯片厂商，受益于AI智能体应用。"
+    },
+    {
+      "stock_name": "新疆天业",
+      "stock_code": "600086",
+      "impact": 3,
+      "analysis": "氯碱行业领先企业，受益于化工品涨价。"
+    },
+    {
+      "stock_name": "中远海能",
+      "stock_code": "600026",
+      "impact": 3,
+      "analysis": "全球油运龙头，受益于油价上涨。"
+    }
+  ],
+  "article_id": "745e1f0547ae48ebb18bc2f28899f7b5",
+  "article_date": "2026-03-08",
+  "article_title": "2026.3.8市场逻辑精选"
+}

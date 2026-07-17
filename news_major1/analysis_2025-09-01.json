@@ -1,0 +1,61 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "有色金属",
+      "impact": 4,
+      "analysis": "美联储降息预期提升有色金属板块估值。"
+    },
+    {
+      "sector_name": "燃气轮机",
+      "impact": 3,
+      "analysis": "燃气轮机产能提升，产业链相关公司受益。"
+    },
+    {
+      "sector_name": "北斗导航",
+      "impact": 3,
+      "analysis": "北斗导航应用推广，相关公司受益。"
+    },
+    {
+      "sector_name": "工业母机",
+      "impact": 3,
+      "analysis": "工业母机标准体系建设，相关公司受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "西部黄金",
+      "stock_code": "600639",
+      "impact": 4,
+      "analysis": "黄金产量增加，公司业绩有望提升。"
+    },
+    {
+      "stock_name": "白银有色",
+      "stock_code": "601212",
+      "impact": 4,
+      "analysis": "铜金矿资源增加，公司业绩有望提升。"
+    },
+    {
+      "stock_name": "应流股份",
+      "stock_code": "600827",
+      "impact": 4,
+      "analysis": "燃气轮机叶片订单增加，公司业绩有望提升。"
+    },
+    {
+      "stock_name": "海格通信",
+      "stock_code": "002465",
+      "impact": 4,
+      "analysis": "北斗导航装备研制专家，公司业绩有望提升。"
+    },
+    {
+      "stock_name": "华中数控",
+      "stock_code": "300161",
+      "impact": 4,
+      "analysis": "数控系统龙头，公司业绩有望提升。"
+    }
+  ],
+  "article_id": "e98b29be12314e33a004a86f9f76a907",
+  "article_date": "2025-09-01",
+  "article_title": "2025.9.1市场逻辑精选"
+}

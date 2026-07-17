@@ -1,0 +1,99 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "光伏储能",
+      "impact": 4,
+      "analysis": "特斯拉宏图第三篇章可能涉及光伏储能，相关个股受益"
+    },
+    {
+      "sector_name": "信创",
+      "impact": 3,
+      "analysis": "顶点软件信创版产权交易系统上线，信创板块受关注"
+    },
+    {
+      "sector_name": "数字乡村",
+      "impact": 3,
+      "analysis": "浙江建设数字乡村引领区，相关个股有望受益"
+    },
+    {
+      "sector_name": "教育",
+      "impact": 3,
+      "analysis": "网易有道AI技术团队投入ChatGPT同源技术，教育板块受关注"
+    },
+    {
+      "sector_name": "华为",
+      "impact": 3,
+      "analysis": "华为发布超融合系列产品，相关产业链个股受益"
+    },
+    {
+      "sector_name": "OLED",
+      "impact": 3,
+      "analysis": "OLED关键材料金属掩膜版实现国产替代，相关个股受益"
+    },
+    {
+      "sector_name": "锂电池",
+      "impact": 3,
+      "analysis": "特斯拉电池干电极工艺取得突破，锂电池板块受益"
+    },
+    {
+      "sector_name": "预制菜",
+      "impact": 3,
+      "analysis": "珠海大力发展预制菜产业，相关产业链个股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "新朋股份",
+      "stock_code": "002545",
+      "impact": 4,
+      "analysis": "特斯拉宏图第三篇章可能涉及光伏储能，公司受益"
+    },
+    {
+      "stock_name": "北京科锐",
+      "stock_code": "002350",
+      "impact": 4,
+      "analysis": "特斯拉宏图第三篇章可能涉及光伏储能，公司受益"
+    },
+    {
+      "stock_name": "顶点软件",
+      "stock_code": "300244",
+      "impact": 3,
+      "analysis": "信创版产权交易系统上线，公司受益"
+    },
+    {
+      "stock_name": "浙农股份",
+      "stock_code": "002504",
+      "impact": 3,
+      "analysis": "浙江建设数字乡村引领区，公司受益"
+    },
+    {
+      "stock_name": "全通教育",
+      "stock_code": "300359",
+      "impact": 3,
+      "analysis": "网易有道AI技术团队投入ChatGPT同源技术，公司受益"
+    },
+    {
+      "stock_name": "拓维信息",
+      "stock_code": "002261",
+      "impact": 3,
+      "analysis": "华为发布超融合系列产品，公司受益"
+    },
+    {
+      "stock_name": "大富科技",
+      "stock_code": "300134",
+      "impact": 3,
+      "analysis": "OLED关键材料金属掩膜版实现国产替代，公司受益"
+    },
+    {
+      "stock_name": "新筑股份",
+      "stock_code": "002480",
+      "impact": 3,
+      "analysis": "特斯拉电池干电极工艺取得突破，公司受益"
+    }
+  ],
+  "article_title": "2月9日盘前早参 热点事件关注",
+  "html_file": "3vjxj57yzz.html",
+  "article_date": "2023-02-09"
+}

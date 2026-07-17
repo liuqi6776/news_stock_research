@@ -1,0 +1,96 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受积极因素推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "AI眼镜",
+      "impact": 4,
+      "analysis": "行业迎来新进展，利好相关公司。"
+    },
+    {
+      "sector_name": "AI算力",
+      "impact": 3,
+      "analysis": "AI算力服务商融资，行业前景看好。"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "英伟达机器人技术发布预期，板块受关注。"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 3,
+      "analysis": "军工企业新产品发布，板块活跃。"
+    },
+    {
+      "sector_name": "卫星通信",
+      "impact": 3,
+      "analysis": "卫星物联网商用试验，板块受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "科森科技",
+      "stock_code": "603638",
+      "impact": 4,
+      "analysis": "为谷歌、XREAL等提供VR产品相关结构件。"
+    },
+    {
+      "stock_name": "博杰股份",
+      "stock_code": "002812",
+      "impact": 4,
+      "analysis": "AR眼镜领域公司，订单已超亿元。"
+    },
+    {
+      "stock_name": "电光科技",
+      "stock_code": "300405",
+      "impact": 3,
+      "analysis": "为无问芯穹提供算力服务。"
+    },
+    {
+      "stock_name": "金开新能",
+      "stock_code": "603933",
+      "impact": 3,
+      "analysis": "与无问芯穹签署AI算力技术服务合同。"
+    },
+    {
+      "stock_name": "中电港",
+      "stock_code": "600989",
+      "impact": 3,
+      "analysis": "代理英伟达GPU、Jetson等产品。"
+    },
+    {
+      "stock_name": "豪恩汽电",
+      "stock_code": "603790",
+      "impact": 3,
+      "analysis": "与英伟达合作开发机器人域控制器。"
+    },
+    {
+      "stock_name": "中天火箭",
+      "stock_code": "002574",
+      "impact": 3,
+      "analysis": "小型固体火箭行业龙头。"
+    },
+    {
+      "stock_name": "电科芯片",
+      "stock_code": "688012",
+      "impact": 3,
+      "analysis": "卫星通信核心芯片供应商。"
+    },
+    {
+      "stock_name": "恒立液压",
+      "stock_code": "601100",
+      "impact": 3,
+      "analysis": "新丝杠方案获北美大客户反馈顺利。"
+    },
+    {
+      "stock_name": "通宇通讯",
+      "stock_code": "002792",
+      "impact": 3,
+      "analysis": "合作蓝箭航天，投资“凌空天行”。"
+    }
+  ],
+  "article_id": "d91f1da2dc3947969c8abc248647495c",
+  "article_date": "2025-11-27",
+  "article_title": "2025.11.27市场逻辑精选"
+}

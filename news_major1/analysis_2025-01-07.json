@@ -1,0 +1,90 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，AI和数据中心相关板块受提振",
+  "sectors": [
+    {
+      "sector_name": "数据中心",
+      "impact": 4,
+      "analysis": "数据中心建设加速，相关产业链受益"
+    },
+    {
+      "sector_name": "AI芯片",
+      "impact": 3,
+      "analysis": "AI芯片需求增长，相关公司受益"
+    },
+    {
+      "sector_name": "服务器",
+      "impact": 3,
+      "analysis": "服务器需求增长，相关公司受益"
+    },
+    {
+      "sector_name": "超级电容",
+      "impact": 3,
+      "analysis": "超级电容在数据中心应用增加，相关公司受益"
+    },
+    {
+      "sector_name": "燃气轮机",
+      "impact": 2,
+      "analysis": "燃气轮机在数据中心应用增加，相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "英伟达",
+      "stock_code": "NVDA",
+      "impact": 4,
+      "analysis": "发布全新GPU和世界基础模型，股价上涨"
+    },
+    {
+      "stock_name": "寒武纪",
+      "stock_code": "688598",
+      "impact": 3,
+      "analysis": "AI芯片需求增长，股价上涨"
+    },
+    {
+      "stock_name": "沃格光电",
+      "stock_code": "300101",
+      "impact": 3,
+      "analysis": "玻璃基板需求增长，股价上涨"
+    },
+    {
+      "stock_name": "芯碁微装",
+      "stock_code": "688568",
+      "impact": 3,
+      "analysis": "先进封装需求增长，股价上涨"
+    },
+    {
+      "stock_name": "浪潮信息",
+      "stock_code": "000977",
+      "impact": 3,
+      "analysis": "服务器需求增长，股价上涨"
+    },
+    {
+      "stock_name": "江海股份",
+      "stock_code": "002484",
+      "impact": 3,
+      "analysis": "AI服务器电容需求提升，股价上涨"
+    },
+    {
+      "stock_name": "联德股份",
+      "stock_code": "002890",
+      "impact": 3,
+      "analysis": "压缩机应用于数据中心，股价上涨"
+    },
+    {
+      "stock_name": "凯伦股份",
+      "stock_code": "603018",
+      "impact": 3,
+      "analysis": "拟收购苏州佳智彩光电，股价上涨"
+    },
+    {
+      "stock_name": "丛麟科技",
+      "stock_code": "603348",
+      "impact": 3,
+      "analysis": "切入生物柴油赛道，股价上涨"
+    }
+  ],
+  "article_id": "56466b88f05b42f9b4bb7a12cfd2303e",
+  "article_date": "2025-01-07",
+  "article_title": "2025.1.7市场逻辑精选"
+}

@@ -1,0 +1,90 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股受积极事件影响",
+  "sectors": [
+    {
+      "sector_name": "AI+腾讯",
+      "impact": 3,
+      "analysis": "腾讯发布AI智能创作助手，板块受提振"
+    },
+    {
+      "sector_name": "白糖",
+      "impact": 3,
+      "analysis": "白糖价格持续上涨，相关个股受益"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "大基金二期增资士兰微，半导体板块受关注"
+    },
+    {
+      "sector_name": "FPGA",
+      "impact": 3,
+      "analysis": "英特尔计划推出多款新FPGA，板块受提振"
+    },
+    {
+      "sector_name": "石英砂",
+      "impact": 3,
+      "analysis": "石英砂价格持续上涨，相关个股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "岭南股份",
+      "stock_code": "000524",
+      "impact": 3,
+      "analysis": "腾讯AI智能创作助手发布，公司受益"
+    },
+    {
+      "stock_name": "世纪华通",
+      "stock_code": "002602",
+      "impact": 3,
+      "analysis": "腾讯AI智能创作助手发布，公司受益"
+    },
+    {
+      "stock_name": "常山北明",
+      "stock_code": "000158",
+      "impact": 3,
+      "analysis": "腾讯AI智能创作助手发布，公司受益"
+    },
+    {
+      "stock_name": "南宁糖业",
+      "stock_code": "000911",
+      "impact": 3,
+      "analysis": "白糖价格上涨，公司受益"
+    },
+    {
+      "stock_name": "中粮糖业",
+      "stock_code": "600914",
+      "impact": 3,
+      "analysis": "白糖价格上涨，公司受益"
+    },
+    {
+      "stock_name": "士兰微",
+      "stock_code": "600460",
+      "impact": 3,
+      "analysis": "大基金二期增资，公司受益"
+    },
+    {
+      "stock_name": "北方华创",
+      "stock_code": "002371",
+      "impact": 3,
+      "analysis": "大基金二期增资，公司受益"
+    },
+    {
+      "stock_name": "兆易创新",
+      "stock_code": "603986",
+      "impact": 3,
+      "analysis": "大基金二期增资，公司受益"
+    },
+    {
+      "stock_name": "韦尔股份",
+      "stock_code": "603060",
+      "impact": 3,
+      "analysis": "大基金二期增资，公司受益"
+    }
+  ],
+  "article_title": "3月31日盘前热点事件关注",
+  "html_file": "c5yrszkslw.html",
+  "article_date": "2023-03-31"
+}

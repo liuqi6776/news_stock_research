@@ -1,0 +1,77 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪活跃",
+  "sectors": [
+    {
+      "sector_name": "中医药",
+      "impact": 4,
+      "analysis": "政策支持，行业受益"
+    },
+    {
+      "sector_name": "钛白粉",
+      "impact": 3,
+      "analysis": "涨价预期，行业景气"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "技术突破，行业前景广阔"
+    },
+    {
+      "sector_name": "生育",
+      "impact": 2,
+      "analysis": "政策支持，行业有望增长"
+    },
+    {
+      "sector_name": "淡水鱼",
+      "impact": 2,
+      "analysis": "核污染影响，价格预期上涨"
+    },
+    {
+      "sector_name": "特斯拉概念",
+      "impact": 3,
+      "analysis": "特斯拉宏图第三篇章，概念股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "金陵药业",
+      "stock_code": "000919",
+      "impact": 4,
+      "analysis": "中医药政策支持，股价有望上涨"
+    },
+    {
+      "stock_name": "惠云钛业",
+      "stock_code": "002886",
+      "impact": 3,
+      "analysis": "钛白粉涨价，业绩有望提升"
+    },
+    {
+      "stock_name": "百度",
+      "stock_code": "91588",
+      "impact": 3,
+      "analysis": "人工智能技术突破，股价有望上涨"
+    },
+    {
+      "stock_name": "深桑达A",
+      "stock_code": "000032",
+      "impact": 3,
+      "analysis": "大模型国产算力云平台，股价有望上涨"
+    },
+    {
+      "stock_name": "金发拉比",
+      "stock_code": "002762",
+      "impact": 2,
+      "analysis": "生育政策支持，股价有望上涨"
+    },
+    {
+      "stock_name": "大湖股份",
+      "stock_code": "600257",
+      "impact": 2,
+      "analysis": "核污染影响，股价有望上涨"
+    }
+  ],
+  "article_title": "3月1日盘前热点事件关注",
+  "html_file": "3whu3409f1.html",
+  "article_date": "2023-03-01"
+}

@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多事件利好。",
+  "sectors": [
+    {
+      "sector_name": "AI概念",
+      "impact": 4,
+      "analysis": "ChatGPT插件、英伟达GPU缺货等利好AI板块"
+    },
+    {
+      "sector_name": "锂电池",
+      "impact": 3,
+      "analysis": "锂价上涨，利好锂电池产业链"
+    },
+    {
+      "sector_name": "一带一路",
+      "impact": 2,
+      "analysis": "中亚峰会、一带一路相关项目利好"
+    },
+    {
+      "sector_name": "太阳能",
+      "impact": 2,
+      "analysis": "美国太阳能公司并购案利好太阳能板块"
+    },
+    {
+      "sector_name": "央企",
+      "impact": 1,
+      "analysis": "央企红利ETF、央企主题基金受追捧"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "昆仑万维",
+      "stock_code": "300418",
+      "impact": 4,
+      "analysis": "ChatGPT插件利好"
+    },
+    {
+      "stock_name": "宁德时代",
+      "stock_code": "300750",
+      "impact": 3,
+      "analysis": "锂价上涨利好"
+    },
+    {
+      "stock_name": "陕西建工",
+      "stock_code": "600056",
+      "impact": 2,
+      "analysis": "中亚峰会相关"
+    },
+    {
+      "stock_name": "京山轻机",
+      "stock_code": "000821",
+      "impact": 2,
+      "analysis": "太阳能公司并购案利好"
+    },
+    {
+      "stock_name": "京沪高铁",
+      "stock_code": "601816",
+      "impact": 2,
+      "analysis": "MSCI纳入利好"
+    }
+  ],
+  "article_title": "5月15日 盘前热点事件关注",
+  "html_file": "4056t2ny7g.html",
+  "article_date": "2023-05-15"
+}

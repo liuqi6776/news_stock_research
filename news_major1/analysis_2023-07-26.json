@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪积极",
+  "sectors": [
+    {
+      "sector_name": "人工智能",
+      "impact": 4,
+      "analysis": "政策支持，技术发展"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 3,
+      "analysis": "技术进步，政策支持"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 2,
+      "analysis": "利率优惠，政策预期"
+    },
+    {
+      "sector_name": "卫星互联",
+      "impact": 3,
+      "analysis": "新项目推进，技术发展"
+    },
+    {
+      "sector_name": "化工",
+      "impact": 3,
+      "analysis": "原材料价格上涨"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "鸿博股份",
+      "stock_code": "002229",
+      "impact": 4,
+      "analysis": "人工智能概念，技术发展"
+    },
+    {
+      "stock_name": "宁德时代",
+      "stock_code": "300750",
+      "impact": 3,
+      "analysis": "新能源汽车产业链，业绩增长"
+    },
+    {
+      "stock_name": "松芝股份",
+      "stock_code": "002454",
+      "impact": 3,
+      "analysis": "新能源汽车产业链，技术进步"
+    },
+    {
+      "stock_name": "锦和商管",
+      "stock_code": "600650",
+      "impact": 2,
+      "analysis": "房地产产业链，利率优惠"
+    },
+    {
+      "stock_name": "江山股份",
+      "stock_code": "600383",
+      "impact": 3,
+      "analysis": "化工产业链，原材料价格上涨"
+    }
+  ],
+  "article_title": "7月26日 盘前热点事件关注",
+  "html_file": "43mlnt22my.html",
+  "article_date": "2023-07-26"
+}

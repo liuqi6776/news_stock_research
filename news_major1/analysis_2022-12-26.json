@@ -1,0 +1,44 @@
+{
+  "market_impact": 3,
+  "market_analysis": "光伏产业链、美国储能、金刚线等板块利好，市场情绪提振。",
+  "sectors": [
+    {
+      "sector_name": "光伏产业链",
+      "impact": 4,
+      "analysis": "硅料价格下跌，需求提升，估值低，板块利好。"
+    },
+    {
+      "sector_name": "美国储能",
+      "impact": 3,
+      "analysis": "美国严寒天气刺激储能需求，板块利好。"
+    },
+    {
+      "sector_name": "金刚线",
+      "impact": 3,
+      "analysis": "金刚线个股业绩超预期，板块利好。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "隆基绿能",
+      "stock_code": "601012",
+      "impact": 4,
+      "analysis": "一体化组件，估值低，利好。"
+    },
+    {
+      "stock_name": "阳光电源",
+      "stock_code": "300274",
+      "impact": 3,
+      "analysis": "逆变器，需求、盈利强势，利好。"
+    },
+    {
+      "stock_name": "高测股份",
+      "stock_code": "603638",
+      "impact": 4,
+      "analysis": "业绩超预期，设备订单增加，利好。"
+    }
+  ],
+  "article_id": "ec94b090f7524c26a30c4d33b37cb57d",
+  "article_date": "2022-12-26",
+  "article_title": "2022.12.26市场逻辑精选"
+}

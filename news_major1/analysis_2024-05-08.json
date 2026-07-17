@@ -1,0 +1,59 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受多因素驱动，呈现一定活跃度。",
+  "sectors": [
+    {
+      "sector_name": "细胞治疗",
+      "impact": 4,
+      "analysis": "干细胞治疗、基因编辑等技术创新推动板块上涨。"
+    },
+    {
+      "sector_name": "储能",
+      "impact": 3,
+      "analysis": "特斯拉储能工厂获批，推动相关产业链发展。"
+    },
+    {
+      "sector_name": "锰",
+      "impact": 3,
+      "analysis": "全球锰供给扰动，价格上涨。"
+    },
+    {
+      "sector_name": "黑磷",
+      "impact": 2,
+      "analysis": "黑磷应用领域拓展，概念股活跃。"
+    },
+    {
+      "sector_name": "煤炭",
+      "impact": 3,
+      "analysis": "电力需求旺季，煤价有望反弹。"
+    },
+    {
+      "sector_name": "医学设备",
+      "impact": 3,
+      "analysis": "合成生物学推动上游设备增长。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "开能健康",
+      "stock_code": "600592",
+      "impact": 4,
+      "analysis": "参股企业合作长征医院，干细胞治疗技术突破。"
+    },
+    {
+      "stock_name": "冠昊生物",
+      "stock_code": "300538",
+      "impact": 4,
+      "analysis": "深耕干细胞研究及再生材料，技术领先。"
+    },
+    {
+      "stock_name": "诚达药业",
+      "stock_code": "002620",
+      "impact": 3,
+      "analysis": "布局合成生物，拓展生物细胞技术。"
+    }
+  ],
+  "article_id": "fda5f9113d894a3ea50da41e042a71d0",
+  "article_date": "2024-05-08",
+  "article_title": "2024.5.8市场逻辑精选"
+}

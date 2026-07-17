@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策利好，市场情绪偏乐观",
+  "sectors": [
+    {
+      "sector_name": "抗原检测",
+      "impact": 4,
+      "analysis": "政策支持，需求增长"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 3,
+      "analysis": "金融支持，板块受益"
+    },
+    {
+      "sector_name": "消费电子",
+      "impact": 3,
+      "analysis": "补贴政策，行业受益"
+    },
+    {
+      "sector_name": "白酒",
+      "impact": 2,
+      "analysis": "上市推进，板块受益"
+    },
+    {
+      "sector_name": "降解塑料",
+      "impact": 2,
+      "analysis": "限塑令扩大，行业受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "毅昌科技",
+      "stock_code": "002380",
+      "impact": 4,
+      "analysis": "抗原检测上游，需求增长"
+    },
+    {
+      "stock_name": "光大嘉宝",
+      "stock_code": "600622",
+      "impact": 3,
+      "analysis": "房地产，金融支持"
+    },
+    {
+      "stock_name": "深圳华强",
+      "stock_code": "000062",
+      "impact": 3,
+      "analysis": "消费电子，补贴政策"
+    },
+    {
+      "stock_name": "贵州茅台",
+      "stock_code": "600519",
+      "impact": 2,
+      "analysis": "白酒，上市推进"
+    },
+    {
+      "stock_name": "莫高股份",
+      "stock_code": "600543",
+      "impact": 2,
+      "analysis": "降解塑料，限塑令扩大"
+    }
+  ],
+  "article_title": "12月9日盘前早参 热点事件关注",
+  "html_file": "72jsbvrpzx.html",
+  "article_date": "2022-12-09"
+}

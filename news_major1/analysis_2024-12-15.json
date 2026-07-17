@@ -1,0 +1,513 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极影响。",
+  "sectors": [
+    {
+      "sector_name": "通信设备",
+      "impact": 4,
+      "analysis": "以太网方案应用加速，板块受益"
+    },
+    {
+      "sector_name": "元宇宙",
+      "impact": 3,
+      "analysis": "华星创业等公司布局元宇宙，板块受关注"
+    },
+    {
+      "sector_name": "半导体设备",
+      "impact": 3,
+      "analysis": "江丰电子收购子公司，业务拓展"
+    },
+    {
+      "sector_name": "数字人",
+      "impact": 3,
+      "analysis": "洲明科技与字节跳动合作，板块受关注"
+    },
+    {
+      "sector_name": "首发经济",
+      "impact": 3,
+      "analysis": "中央经济会议提出发展首发经济，板块受益"
+    },
+    {
+      "sector_name": "AI应用",
+      "impact": 3,
+      "analysis": "字节跳动豆包AI快速发展，相关公司受益"
+    },
+    {
+      "sector_name": "文旅演出",
+      "impact": 2,
+      "analysis": "文旅演出为首发经济分支，板块受关注"
+    },
+    {
+      "sector_name": "澳门回归",
+      "impact": 2,
+      "analysis": "澳门回归庆典，相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "锐捷网络",
+      "stock_code": "002496",
+      "impact": 4,
+      "analysis": "以太网方案加速应用，公司受益"
+    },
+    {
+      "stock_name": "紫光股份",
+      "stock_code": "000938",
+      "impact": 4,
+      "analysis": "商用以太网芯片，公司受益"
+    },
+    {
+      "stock_name": "盛科通信",
+      "stock_code": "688028",
+      "impact": 4,
+      "analysis": "商用以太网芯片，公司受益"
+    },
+    {
+      "stock_name": "裕太微",
+      "stock_code": "688528",
+      "impact": 4,
+      "analysis": "通信芯片，公司受益"
+    },
+    {
+      "stock_name": "洲明科技",
+      "stock_code": "300773",
+      "impact": 4,
+      "analysis": "与字节跳动合作数字人系统，公司受益"
+    },
+    {
+      "stock_name": "华星创业",
+      "stock_code": "300035",
+      "impact": 3,
+      "analysis": "布局元宇宙，公司受益"
+    },
+    {
+      "stock_name": "江丰电子",
+      "stock_code": "603806",
+      "impact": 3,
+      "analysis": "收购子公司拓展业务，公司受益"
+    },
+    {
+      "stock_name": "珠海中富",
+      "stock_code": "000659",
+      "impact": 2,
+      "analysis": "定增募资，公司受益"
+    },
+    {
+      "stock_name": "梦网科技",
+      "stock_code": "002123",
+      "impact": 3,
+      "analysis": "融入豆包大模型，公司受益"
+    },
+    {
+      "stock_name": "遥望科技",
+      "stock_code": "300792",
+      "impact": 3,
+      "analysis": "打造新型商业综合体，公司受益"
+    },
+    {
+      "stock_name": "中百集团",
+      "stock_code": "000759",
+      "impact": 3,
+      "analysis": "实控人武汉国资委，公司受益"
+    },
+    {
+      "stock_name": "益民集团",
+      "stock_code": "600856",
+      "impact": 3,
+      "analysis": "沪上知名品牌，公司受益"
+    },
+    {
+      "stock_name": "开开实业",
+      "stock_code": "600272",
+      "impact": 3,
+      "analysis": "联名上海东方明珠，公司受益"
+    },
+    {
+      "stock_name": "地素时尚",
+      "stock_code": "603087",
+      "impact": 3,
+      "analysis": "上海市首发经济引领性本土品牌，公司受益"
+    },
+    {
+      "stock_name": "开润股份",
+      "stock_code": "603160",
+      "impact": 3,
+      "analysis": "上海市首发经济引领性创意品牌，公司受益"
+    },
+    {
+      "stock_name": "上海凤凰",
+      "stock_code": "600679",
+      "impact": 3,
+      "analysis": "两轮车，上海市首发经济引领性本土品牌，公司受益"
+    },
+    {
+      "stock_name": "武商集团",
+      "stock_code": "600388",
+      "impact": 3,
+      "analysis": "武汉零售，公司受益"
+    },
+    {
+      "stock_name": "永辉超市",
+      "stock_code": "601933",
+      "impact": 3,
+      "analysis": "合作胖东来，公司受益"
+    },
+    {
+      "stock_name": "重庆百货",
+      "stock_code": "600729",
+      "impact": 3,
+      "analysis": "重庆零售，公司受益"
+    },
+    {
+      "stock_name": "华联股份",
+      "stock_code": "000882",
+      "impact": 3,
+      "analysis": "北京零售，公司受益"
+    },
+    {
+      "stock_name": "视觉中国",
+      "stock_code": "000681",
+      "impact": 3,
+      "analysis": "深度合作字节跳动，公司受益"
+    },
+    {
+      "stock_name": "掌阅科技",
+      "stock_code": "002711",
+      "impact": 3,
+      "analysis": "与抖音深度合作，公司受益"
+    },
+    {
+      "stock_name": "城地香江",
+      "stock_code": "002965",
+      "impact": 3,
+      "analysis": "为字节跳动定制数据中心，公司受益"
+    },
+    {
+      "stock_name": "润泽科技",
+      "stock_code": "300259",
+      "impact": 3,
+      "analysis": "为字节跳动提供算力基础服务，公司受益"
+    },
+    {
+      "stock_name": "高澜股份",
+      "stock_code": "300410",
+      "impact": 3,
+      "analysis": "为字节跳动提供浸没液冷解决方案，公司受益"
+    },
+    {
+      "stock_name": "三维通信",
+      "stock_code": "002115",
+      "impact": 3,
+      "analysis": "子公司巨网科技取得字节跳动平台荣誉，公司受益"
+    },
+    {
+      "stock_name": "省广集团",
+      "stock_code": "002400",
+      "impact": 3,
+      "analysis": "为TikTok出海核心代理商，公司受益"
+    },
+    {
+      "stock_name": "天龙集团",
+      "stock_code": "600749",
+      "impact": 3,
+      "analysis": "为巨量引擎广告授权代理商，公司受益"
+    },
+    {
+      "stock_name": "富春股份",
+      "stock_code": "300299",
+      "impact": 3,
+      "analysis": "深度合作字节跳动布局游戏出海，公司受益"
+    },
+    {
+      "stock_name": "天娱数科",
+      "stock_code": "002354",
+      "impact": 3,
+      "analysis": "AI营销SaaS平台服务豆包等AI产品，公司受益"
+    },
+    {
+      "stock_name": "锋尚文化",
+      "stock_code": "300595",
+      "impact": 3,
+      "analysis": "业务涵盖大型文化演艺活动，公司受益"
+    },
+    {
+      "stock_name": "奥雅股份",
+      "stock_code": "002717",
+      "impact": 3,
+      "analysis": "旗下平台整合线上线下服务，公司受益"
+    },
+    {
+      "stock_name": "珠海中富",
+      "stock_code": "000659",
+      "impact": 2,
+      "analysis": "定增募资，公司受益"
+    },
+    {
+      "stock_name": "珠海港",
+      "stock_code": "000507",
+      "impact": 2,
+      "analysis": "毗邻澳门，公司受益"
+    },
+    {
+      "stock_name": "岭南控股",
+      "stock_code": "000524",
+      "impact": 2,
+      "analysis": "横琴粤澳深度合作区发展规划，公司受益"
+    },
+    {
+      "stock_name": "格力地产",
+      "stock_code": "000651",
+      "impact": 2,
+      "analysis": "横琴粤澳深度合作区发展规划，公司受益"
+    },
+    {
+      "stock_name": "省广集团",
+      "stock_code": "002400",
+      "impact": 2,
+      "analysis": "TikTok出海核心代理商，公司受益"
+    },
+    {
+      "stock_name": "广百股份",
+      "stock_code": "000759",
+      "impact": 2,
+      "analysis": "推出品牌IP盲盒，公司受益"
+    },
+    {
+      "stock_name": "广博股份",
+      "stock_code": "002502",
+      "impact": 2,
+      "analysis": "推出二次元周边产品，公司受益"
+    },
+    {
+      "stock_name": "天下秀",
+      "stock_code": "300362",
+      "impact": 2,
+      "analysis": "发布数字藏品，公司受益"
+    },
+    {
+      "stock_name": "美邦服饰",
+      "stock_code": "002269",
+      "impact": 2,
+      "analysis": "合作迪士尼IP，公司受益"
+    },
+    {
+      "stock_name": "奥飞娱乐",
+      "stock_code": "002292",
+      "impact": 2,
+      "analysis": "推出AI毛绒产品，公司受益"
+    },
+    {
+      "stock_name": "实丰文化",
+      "stock_code": "300086",
+      "impact": 2,
+      "analysis": "推出智能玩具产品，公司受益"
+    },
+    {
+      "stock_name": "元隆雅图",
+      "stock_code": "002899",
+      "impact": 2,
+      "analysis": "推出IP文创产品，公司受益"
+    },
+    {
+      "stock_name": "居然智家",
+      "stock_code": "603825",
+      "impact": 2,
+      "analysis": "构筑数字化通用智能家居操控系统，公司受益"
+    },
+    {
+      "stock_name": "亚振家具",
+      "stock_code": "603385",
+      "impact": 2,
+      "analysis": "推进家居服务云平台项目，公司受益"
+    },
+    {
+      "stock_name": "梦天家居",
+      "stock_code": "603398",
+      "impact": 2,
+      "analysis": "推出智能门锁，公司受益"
+    },
+    {
+      "stock_name": "米奥会展",
+      "stock_code": "603689",
+      "impact": 2,
+      "analysis": "为中小企业提供会展服务，公司受益"
+    },
+    {
+      "stock_name": "利亚德",
+      "stock_code": "300296",
+      "impact": 2,
+      "analysis": "技术可与展览展陈领域具身智能技术结合，公司受益"
+    },
+    {
+      "stock_name": "视觉中国",
+      "stock_code": "000681",
+      "impact": 2,
+      "analysis": "深度合作字节跳动，公司受益"
+    },
+    {
+      "stock_name": "掌阅科技",
+      "stock_code": "002711",
+      "impact": 2,
+      "analysis": "与抖音深度合作，公司受益"
+    },
+    {
+      "stock_name": "捷成股份",
+      "stock_code": "600746",
+      "impact": 2,
+      "analysis": "抖音影视版权，公司受益"
+    },
+    {
+      "stock_name": "海天瑞声",
+      "stock_code": "688516",
+      "impact": 2,
+      "analysis": "为豆包提供智能语音、自然语言等服务，公司受益"
+    },
+    {
+      "stock_name": "慧博云通",
+      "stock_code": "300414",
+      "impact": 2,
+      "analysis": "数据标注，公司受益"
+    },
+    {
+      "stock_name": "中文在线",
+      "stock_code": "300364",
+      "impact": 2,
+      "analysis": "网文数据，公司受益"
+    },
+    {
+      "stock_name": "城地香江",
+      "stock_code": "002965",
+      "impact": 2,
+      "analysis": "为字节跳动定制数据中心，公司受益"
+    },
+    {
+      "stock_name": "润泽科技",
+      "stock_code": "300259",
+      "impact": 2,
+      "analysis": "为字节跳动提供算力基础服务，公司受益"
+    },
+    {
+      "stock_name": "高澜股份",
+      "stock_code": "300410",
+      "impact": 2,
+      "analysis": "为字节跳动提供浸没液冷解决方案，公司受益"
+    },
+    {
+      "stock_name": "浙大网新",
+      "stock_code": "600990",
+      "impact": 2,
+      "analysis": "为字节跳动提供算力服务，公司受益"
+    },
+    {
+      "stock_name": "立昂技术",
+      "stock_code": "300681",
+      "impact": 2,
+      "analysis": "为字节跳动提供算力服务，公司受益"
+    },
+    {
+      "stock_name": "亚康股份",
+      "stock_code": "300357",
+      "impact": 2,
+      "analysis": "为字节跳动提供算力服务，公司受益"
+    },
+    {
+      "stock_name": "南陵科技",
+      "stock_code": "603688",
+      "impact": 2,
+      "analysis": "为字节跳动提供算力服务，公司受益"
+    },
+    {
+      "stock_name": "华塑科技",
+      "stock_code": "300387",
+      "impact": 2,
+      "analysis": "为字节跳动提供算力服务，公司受益"
+    },
+    {
+      "stock_name": "三维通信",
+      "stock_code": "002115",
+      "impact": 2,
+      "analysis": "子公司巨网科技取得字节跳动平台荣誉，公司受益"
+    },
+    {
+      "stock_name": "省广集团",
+      "stock_code": "002400",
+      "impact": 2,
+      "analysis": "为TikTok出海核心代理商，公司受益"
+    },
+    {
+      "stock_name": "天龙集团",
+      "stock_code": "600749",
+      "impact": 2,
+      "analysis": "为巨量引擎广告授权代理商，公司受益"
+    },
+    {
+      "stock_name": "引力传媒",
+      "stock_code": "300595",
+      "impact": 2,
+      "analysis": "为TikTok出海营销合作伙伴，公司受益"
+    },
+    {
+      "stock_name": "佳云科技",
+      "stock_code": "300746",
+      "impact": 2,
+      "analysis": "为TikTok出海营销合作伙伴，公司受益"
+    },
+    {
+      "stock_name": "蓝色光标",
+      "stock_code": "300058",
+      "impact": 2,
+      "analysis": "为TikTok出海营销合作伙伴，公司受益"
+    },
+    {
+      "stock_name": "遥望科技",
+      "stock_code": "300792",
+      "impact": 2,
+      "analysis": "为抖音巨量千川服务商，公司受益"
+    },
+    {
+      "stock_name": "值得买",
+      "stock_code": "603103",
+      "impact": 2,
+      "analysis": "子公司具备巨量引擎、巨量干川等多个服务资质，公司受益"
+    },
+    {
+      "stock_name": "青木科技",
+      "stock_code": "300832",
+      "impact": 2,
+      "analysis": "抖音代运营，公司受益"
+    },
+    {
+      "stock_name": "若羽臣",
+      "stock_code": "300662",
+      "impact": 2,
+      "analysis": "抖音店铺，公司受益"
+    },
+    {
+      "stock_name": "富春股份",
+      "stock_code": "300299",
+      "impact": 2,
+      "analysis": "深度合作字节跳动布局游戏出海，公司受益"
+    },
+    {
+      "stock_name": "天娱数科",
+      "stock_code": "002354",
+      "impact": 2,
+      "analysis": "AI营销SaaS平台服务豆包等AI产品，公司受益"
+    },
+    {
+      "stock_name": "蓝色光标",
+      "stock_code": "300058",
+      "impact": 2,
+      "analysis": "为Tiktok2024年游戏出海营销合作伙伴，公司受益"
+    },
+    {
+      "stock_name": "梦网科技",
+      "stock_code": "002123",
+      "impact": 2,
+      "analysis": "旗下天慧云平台引入火山引擎，公司受益"
+    }
+  ],
+  "article_id": "ad6a21c903654d398ad024155664d4b3",
+  "article_date": "2024-12-15",
+  "article_title": "2024.12.15市场逻辑精选"
+}

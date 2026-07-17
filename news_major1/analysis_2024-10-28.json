@@ -1,0 +1,100 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场热点事件较多，部分板块和个股受利好影响较大。",
+  "sectors": [
+    {
+      "sector_name": "并购重组",
+      "impact": 4,
+      "analysis": "并购重组政策推动，相关板块受益"
+    },
+    {
+      "sector_name": "北交所",
+      "impact": 3,
+      "analysis": "北交所并购重组座谈会，相关个股受关注"
+    },
+    {
+      "sector_name": "国资改革",
+      "impact": 3,
+      "analysis": "国资改革持续推进，相关个股受益"
+    },
+    {
+      "sector_name": "冰雪运动",
+      "impact": 2,
+      "analysis": "冰雪运动发展，相关个股受关注"
+    },
+    {
+      "sector_name": "钢铁",
+      "impact": 2,
+      "analysis": "钢铁行业产能治理和联合重组，相关个股受益"
+    },
+    {
+      "sector_name": "飞行汽车",
+      "impact": 2,
+      "analysis": "飞行汽车基地建设，相关个股受益"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 2,
+      "analysis": "人工智能技术进步，相关个股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "华立股份",
+      "stock_code": "000607",
+      "impact": 4,
+      "analysis": "并购重组，股价上涨"
+    },
+    {
+      "stock_name": "城地香江",
+      "stock_code": "000971",
+      "impact": 4,
+      "analysis": "实际控制人变更，股价上涨"
+    },
+    {
+      "stock_name": "文一科技",
+      "stock_code": "600520",
+      "impact": 4,
+      "analysis": "实际控制人变更，股价上涨"
+    },
+    {
+      "stock_name": "松发股份",
+      "stock_code": "002454",
+      "impact": 4,
+      "analysis": "重大资产重组，股价上涨"
+    },
+    {
+      "stock_name": "远达环保",
+      "stock_code": "600726",
+      "impact": 4,
+      "analysis": "重大资产重组，股价上涨"
+    },
+    {
+      "stock_name": "川润股份",
+      "stock_code": "002272",
+      "impact": 4,
+      "analysis": "芯片概念，股价上涨"
+    },
+    {
+      "stock_name": "海能达",
+      "stock_code": "002583",
+      "impact": 4,
+      "analysis": "对讲机概念，股价上涨"
+    },
+    {
+      "stock_name": "海源复材",
+      "stock_code": "002533",
+      "impact": 4,
+      "analysis": "光伏概念，股价上涨"
+    },
+    {
+      "stock_name": "上工申贝",
+      "stock_code": "601735",
+      "impact": 4,
+      "analysis": "低空经济概念，股价上涨"
+    }
+  ],
+  "article_title": "10月28日盘前早报 热点事件关注",
+  "html_file": "81w5tdmyqa.html",
+  "article_date": "2024-10-28"
+}

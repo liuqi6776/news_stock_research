@@ -1,0 +1,343 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策刺激，市场情绪提振",
+  "sectors": [
+    {
+      "sector_name": "商用汽车",
+      "impact": 4,
+      "analysis": "政策补贴力度大，板块受益"
+    },
+    {
+      "sector_name": "农机",
+      "impact": 3,
+      "analysis": "采棉机补贴提升，细分领域受益"
+    },
+    {
+      "sector_name": "网约车",
+      "impact": 2,
+      "analysis": "合作拓展，业务增长"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 2,
+      "analysis": "富士康造车，行业关注"
+    },
+    {
+      "sector_name": "无人驾驶",
+      "impact": 2,
+      "analysis": "上海国资背景，技术领先"
+    },
+    {
+      "sector_name": "生物柴油",
+      "impact": 2,
+      "analysis": "生物柴油试点，市场拓展"
+    },
+    {
+      "sector_name": "算力服务",
+      "impact": 2,
+      "analysis": "算力技术服务协议，业务增长"
+    },
+    {
+      "sector_name": "造纸",
+      "impact": 1,
+      "analysis": "人民币升值，成本降低"
+    },
+    {
+      "sector_name": "进口原材料",
+      "impact": 1,
+      "analysis": "人民币升值，购买力增强"
+    },
+    {
+      "sector_name": "直播电商",
+      "impact": 1,
+      "analysis": "董宇辉独立运营，行业关注"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中国重汽",
+      "stock_code": "000951",
+      "impact": 4,
+      "analysis": "重型货车受益，市占率高"
+    },
+    {
+      "stock_name": "东风汽车",
+      "stock_code": "000488",
+      "impact": 4,
+      "analysis": "中型货车受益，市占率高"
+    },
+    {
+      "stock_name": "一汽解放",
+      "stock_code": "000800",
+      "impact": 4,
+      "analysis": "重型货车受益，市占率高"
+    },
+    {
+      "stock_name": "江淮汽车",
+      "stock_code": "000418",
+      "impact": 3,
+      "analysis": "中型货车受益，市占率较高"
+    },
+    {
+      "stock_name": "金龙汽车",
+      "stock_code": "600686",
+      "impact": 4,
+      "analysis": "新能源客车受益，市占率高"
+    },
+    {
+      "stock_name": "中通客车",
+      "stock_code": "600717",
+      "impact": 3,
+      "analysis": "新能源客车受益，市占率较高"
+    },
+    {
+      "stock_name": "福田汽车",
+      "stock_code": "600729",
+      "impact": 3,
+      "analysis": "新能源客车受益，市占率较高"
+    },
+    {
+      "stock_name": "宇通客车",
+      "stock_code": "600733",
+      "impact": 3,
+      "analysis": "新能源客车受益，市占率较高"
+    },
+    {
+      "stock_name": "天鹅股份",
+      "stock_code": "002296",
+      "impact": 3,
+      "analysis": "采棉机业务受益，营收占比高"
+    },
+    {
+      "stock_name": "星光农机",
+      "stock_code": "300226",
+      "impact": 2,
+      "analysis": "采棉机业务受益，营收占比高"
+    },
+    {
+      "stock_name": "铁建重工",
+      "stock_code": "002528",
+      "impact": 2,
+      "analysis": "采棉机业务受益，子公司主营"
+    },
+    {
+      "stock_name": "山河智能",
+      "stock_code": "002066",
+      "impact": 2,
+      "analysis": "采棉机业务受益，自主开发"
+    },
+    {
+      "stock_name": "唯万密封",
+      "stock_code": "603021",
+      "impact": 2,
+      "analysis": "采棉机业务受益，替代进口"
+    },
+    {
+      "stock_name": "富临运业",
+      "stock_code": "002105",
+      "impact": 3,
+      "analysis": "网约车业务拓展，合作T3出行"
+    },
+    {
+      "stock_name": "海马汽车",
+      "stock_code": "000572",
+      "impact": 3,
+      "analysis": "富士康造车，业务拓展"
+    },
+    {
+      "stock_name": "动力新科",
+      "stock_code": "600362",
+      "impact": 3,
+      "analysis": "无人驾驶技术领先，国资背景"
+    },
+    {
+      "stock_name": "海新能科",
+      "stock_code": "300737",
+      "impact": 3,
+      "analysis": "生物柴油业务拓展，资产重组预期"
+    },
+    {
+      "stock_name": "飞利信",
+      "stock_code": "300287",
+      "impact": 3,
+      "analysis": "算力技术服务协议，业务增长"
+    },
+    {
+      "stock_name": "宜宾纸业",
+      "stock_code": "600793",
+      "impact": 2,
+      "analysis": "人民币升值，成本降低"
+    },
+    {
+      "stock_name": "冠豪高新",
+      "stock_code": "600052",
+      "impact": 2,
+      "analysis": "人民币升值，成本降低"
+    },
+    {
+      "stock_name": "岳阳林纸",
+      "stock_code": "600963",
+      "impact": 2,
+      "analysis": "人民币升值，成本降低"
+    },
+    {
+      "stock_name": "中顺洁柔",
+      "stock_code": "002511",
+      "impact": 2,
+      "analysis": "人民币升值，成本降低"
+    },
+    {
+      "stock_name": "广博股份",
+      "stock_code": "002103",
+      "impact": 2,
+      "analysis": "人民币升值，成本降低"
+    },
+    {
+      "stock_name": "品渥食品",
+      "stock_code": "603719",
+      "impact": 2,
+      "analysis": "人民币升值，购买力增强"
+    },
+    {
+      "stock_name": "众信旅游",
+      "stock_code": "600640",
+      "impact": 2,
+      "analysis": "人民币升值，出境旅游受益"
+    },
+    {
+      "stock_name": "南方航空",
+      "stock_code": "600029",
+      "impact": 2,
+      "analysis": "人民币升值，美元负债降低"
+    },
+    {
+      "stock_name": "中国国航",
+      "stock_code": "601111",
+      "impact": 2,
+      "analysis": "人民币升值，美元负债降低"
+    },
+    {
+      "stock_name": "浙农股份",
+      "stock_code": "600295",
+      "impact": 2,
+      "analysis": "人民币升值，购买力增强"
+    },
+    {
+      "stock_name": "与辉同行",
+      "stock_code": "待定",
+      "impact": 2,
+      "analysis": "董宇辉独立运营，行业关注"
+    },
+    {
+      "stock_name": "捷成股份",
+      "stock_code": "600746",
+      "impact": 2,
+      "analysis": "直播系统方案，行业领先"
+    },
+    {
+      "stock_name": "遥望科技",
+      "stock_code": "300362",
+      "impact": 2,
+      "analysis": "MCN行业头部，供应链资源丰富"
+    },
+    {
+      "stock_name": "天龙集团",
+      "stock_code": "600749",
+      "impact": 2,
+      "analysis": "电商直播服务，行业领先"
+    },
+    {
+      "stock_name": "浩丰科技",
+      "stock_code": "300413",
+      "impact": 2,
+      "analysis": "会议直播解决方案，行业领先"
+    },
+    {
+      "stock_name": "果麦文化",
+      "stock_code": "603359",
+      "impact": 2,
+      "analysis": "合作董宇辉，业务拓展"
+    },
+    {
+      "stock_name": "读客文化",
+      "stock_code": "603019",
+      "impact": 2,
+      "analysis": "合作董宇辉，业务拓展"
+    },
+    {
+      "stock_name": "读者传媒",
+      "stock_code": "601999",
+      "impact": 2,
+      "analysis": "合作董宇辉，业务拓展"
+    },
+    {
+      "stock_name": "中信出版",
+      "stock_code": "601098",
+      "impact": 2,
+      "analysis": "合作董宇辉，业务拓展"
+    },
+    {
+      "stock_name": "世纪天鸿",
+      "stock_code": "603637",
+      "impact": 2,
+      "analysis": "合作董宇辉，业务拓展"
+    },
+    {
+      "stock_name": "三峡旅游",
+      "stock_code": "600272",
+      "impact": 2,
+      "analysis": "与辉同行湖北行，业务拓展"
+    },
+    {
+      "stock_name": "曲江文旅",
+      "stock_code": "600706",
+      "impact": 2,
+      "analysis": "网传参与董宇辉离职事件互动"
+    },
+    {
+      "stock_name": "西安旅游",
+      "stock_code": "600629",
+      "impact": 2,
+      "analysis": "董宇辉祖籍陕西省，业务拓展"
+    },
+    {
+      "stock_name": "西安饮食",
+      "stock_code": "600058",
+      "impact": 2,
+      "analysis": "董宇辉祖籍陕西省，业务拓展"
+    },
+    {
+      "stock_name": "奥佳华",
+      "stock_code": "002614",
+      "impact": 2,
+      "analysis": "与辉同行合作，业务拓展"
+    },
+    {
+      "stock_name": "承德露露",
+      "stock_code": "000827",
+      "impact": 2,
+      "analysis": "与辉同行合作，业务拓展"
+    },
+    {
+      "stock_name": "湘佳股份",
+      "stock_code": "002981",
+      "impact": 2,
+      "analysis": "与辉同行合作，业务拓展"
+    },
+    {
+      "stock_name": "天马科技",
+      "stock_code": "002482",
+      "impact": 2,
+      "analysis": "与辉同行合作，业务拓展"
+    },
+    {
+      "stock_name": "北汽蓝谷",
+      "stock_code": "688019",
+      "impact": 2,
+      "analysis": "与辉同行合作，业务拓展"
+    }
+  ],
+  "article_id": "b024929e4fba49e0b5234f3b5c39735e",
+  "article_date": "2024-07-25",
+  "article_title": "2024.7.25市场逻辑精选"
+}

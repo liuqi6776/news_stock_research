@@ -1,0 +1,135 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏多，多个板块和个股受利好消息影响。",
+  "sectors": [
+    {
+      "sector_name": "机器人",
+      "impact": 4,
+      "analysis": "山东矿机、大业股份等受关注"
+    },
+    {
+      "sector_name": "AI应用",
+      "impact": 3,
+      "analysis": "利欧股份、华扬联众等受关注"
+    },
+    {
+      "sector_name": "新型城市",
+      "impact": 3,
+      "analysis": "新城市、蕾奥规划等受政策利好"
+    },
+    {
+      "sector_name": "国产替代",
+      "impact": 3,
+      "analysis": "中国软件、中国长城等受政策支持"
+    },
+    {
+      "sector_name": "军工信息化",
+      "impact": 3,
+      "analysis": "展鹏科技、七一二等受关注"
+    },
+    {
+      "sector_name": "冰雪经济",
+      "impact": 3,
+      "analysis": "大连圣亚、长白山等受政策支持"
+    },
+    {
+      "sector_name": "AI",
+      "impact": 3,
+      "analysis": "利欧股份、华扬联众等受OpenAI活动影响"
+    },
+    {
+      "sector_name": "HW手机",
+      "impact": 3,
+      "analysis": "光弘科技、福日电子等受Mate70系列加单影响"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "山东矿机",
+      "stock_code": "002795",
+      "impact": 4,
+      "analysis": "机器人概念，受关注"
+    },
+    {
+      "stock_name": "大业股份",
+      "stock_code": "002641",
+      "impact": 4,
+      "analysis": "机器人概念，受关注"
+    },
+    {
+      "stock_name": "利欧股份",
+      "stock_code": "002732",
+      "impact": 4,
+      "analysis": "AI应用，受关注"
+    },
+    {
+      "stock_name": "华扬联众",
+      "stock_code": "300877",
+      "impact": 4,
+      "analysis": "AI应用，受关注"
+    },
+    {
+      "stock_name": "新城市",
+      "stock_code": "000014",
+      "impact": 4,
+      "analysis": "新型城市，受政策利好"
+    },
+    {
+      "stock_name": "蕾奥规划",
+      "stock_code": "002624",
+      "impact": 4,
+      "analysis": "新型城市，受政策利好"
+    },
+    {
+      "stock_name": "中国软件",
+      "stock_code": "600536",
+      "impact": 4,
+      "analysis": "国产替代，受政策支持"
+    },
+    {
+      "stock_name": "中国长城",
+      "stock_code": "000066",
+      "impact": 4,
+      "analysis": "国产替代，受政策支持"
+    },
+    {
+      "stock_name": "大连圣亚",
+      "stock_code": "600593",
+      "impact": 4,
+      "analysis": "冰雪经济，受政策支持"
+    },
+    {
+      "stock_name": "长白山",
+      "stock_code": "600598",
+      "impact": 4,
+      "analysis": "冰雪经济，受政策支持"
+    },
+    {
+      "stock_name": "利欧股份",
+      "stock_code": "002732",
+      "impact": 4,
+      "analysis": "AI，受OpenAI活动影响"
+    },
+    {
+      "stock_name": "华扬联众",
+      "stock_code": "300877",
+      "impact": 4,
+      "analysis": "AI，受OpenAI活动影响"
+    },
+    {
+      "stock_name": "光弘科技",
+      "stock_code": "300701",
+      "impact": 4,
+      "analysis": "HW手机，受Mate70系列加单影响"
+    },
+    {
+      "stock_name": "福日电子",
+      "stock_code": "600203",
+      "impact": 4,
+      "analysis": "HW手机，受Mate70系列加单影响"
+    }
+  ],
+  "article_title": "12月6日盘前早报 热点事件关注",
+  "html_file": "6fsd6udatv.html",
+  "article_date": "2024-12-06"
+}

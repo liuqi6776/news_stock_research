@@ -1,0 +1,39 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，关注一体化压铸和海风板块。",
+  "sectors": [
+    {
+      "sector_name": "一体化压铸",
+      "impact": 4,
+      "analysis": "多家车企新品使用一体化压铸技术，推动产业链发展。"
+    },
+    {
+      "sector_name": "海风",
+      "impact": 3,
+      "analysis": "国内外海风进入新一轮高增周期，带动产业链发展。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "文灿股份",
+      "stock_code": "002799",
+      "impact": 4,
+      "analysis": "M9一体压铸件和动总壳供应商，一体化压铸龙头。"
+    },
+    {
+      "stock_name": "立中集团",
+      "stock_code": "603968",
+      "impact": 3,
+      "analysis": "免热合金龙头，受益海风高增周期。"
+    },
+    {
+      "stock_name": "金风科技",
+      "stock_code": "002202",
+      "impact": 3,
+      "analysis": "风机龙头，全球风机新增装机量第一。"
+    }
+  ],
+  "article_id": "3d969daabeb947548a650dec4fae376d",
+  "article_date": "2023-12-25",
+  "article_title": "2023.12.25市场逻辑精选"
+}

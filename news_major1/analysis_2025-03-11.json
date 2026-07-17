@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极消息影响",
+  "sectors": [
+    {
+      "sector_name": "激光雷达",
+      "impact": 4,
+      "analysis": "禾赛科技涨超50%，带动板块上涨"
+    },
+    {
+      "sector_name": "数据要素",
+      "impact": 3,
+      "analysis": "国家数据局推动数据要素市场化，板块受益"
+    },
+    {
+      "sector_name": "算力",
+      "impact": 4,
+      "analysis": "杭州算力大会召开，算力板块受关注"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 3,
+      "analysis": "比亚迪超充发布，新能源汽车板块受益"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "机器人技术发展，相关板块受关注"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "禾赛科技",
+      "stock_code": "688598",
+      "impact": 4,
+      "analysis": "美股涨超50%，带动A股上涨"
+    },
+    {
+      "stock_name": "深桑达A",
+      "stock_code": "000032",
+      "impact": 3,
+      "analysis": "数据要素板块受益"
+    },
+    {
+      "stock_name": "数据港",
+      "stock_code": "600845",
+      "impact": 4,
+      "analysis": "算力大会召开，公司深度绑定阿里"
+    },
+    {
+      "stock_name": "华数传媒",
+      "stock_code": "000156",
+      "impact": 3,
+      "analysis": "控股浙江算力科技公司"
+    },
+    {
+      "stock_name": "比亚迪",
+      "stock_code": "002594",
+      "impact": 3,
+      "analysis": "超充发布，公司受益"
+    }
+  ],
+  "article_id": "ec903def60a54170b03199a0fb52b430",
+  "article_date": "2025-03-11",
+  "article_title": "2025.3.11市场逻辑精选"
+}

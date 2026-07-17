@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受多因素影响，整体偏中性",
+  "sectors": [
+    {
+      "sector_name": "盐业",
+      "impact": 4,
+      "analysis": "抢盐热潮推动盐业需求增加"
+    },
+    {
+      "sector_name": "环保",
+      "impact": 3,
+      "analysis": "环保基础设施建设提升行动利好环保板块"
+    },
+    {
+      "sector_name": "金融",
+      "impact": 2,
+      "analysis": "券商下调佣金可能刺激市场交易活跃度"
+    },
+    {
+      "sector_name": "水产",
+      "impact": 2,
+      "analysis": "韩国海鲜市场空无一人，淡水鱼替代需求增加"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "江盐集团",
+      "stock_code": "600386",
+      "impact": 4,
+      "analysis": "食盐产品需求增加，公司受益"
+    },
+    {
+      "stock_name": "苏盐井神",
+      "stock_code": "600779",
+      "impact": 4,
+      "analysis": "食盐产品需求增加，公司受益"
+    },
+    {
+      "stock_name": "国泰环保",
+      "stock_code": "600875",
+      "impact": 3,
+      "analysis": "环保基础设施建设提升行动利好公司"
+    },
+    {
+      "stock_name": "恒银科技",
+      "stock_code": "601628",
+      "impact": 2,
+      "analysis": "券商下调佣金可能刺激公司业绩"
+    }
+  ],
+  "article_title": "8月25日盘前早报 热点事件关注",
+  "html_file": "452ztmzkxr.html",
+  "article_date": "2023-08-25"
+}

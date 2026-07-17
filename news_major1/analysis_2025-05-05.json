@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，AI和科技板块受关注",
+  "sectors": [
+    {
+      "sector_name": "算力板块",
+      "impact": 4,
+      "analysis": "受AI需求增长和资本支出增加推动"
+    },
+    {
+      "sector_name": "中俄合作板块",
+      "impact": 3,
+      "analysis": "受中俄关系发展和合作项目推动"
+    },
+    {
+      "sector_name": "AI Agent板块",
+      "impact": 3,
+      "analysis": "受AI Agent生态发展预期推动"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "鸿博股份",
+      "stock_code": "000502",
+      "impact": 4,
+      "analysis": "AI服务器和算力平台业务增长"
+    },
+    {
+      "stock_name": "电光科技",
+      "stock_code": "002730",
+      "impact": 3,
+      "analysis": "数据中心和算力服务业务扩张"
+    },
+    {
+      "stock_name": "龙建股份",
+      "stock_code": "600233",
+      "impact": 3,
+      "analysis": "黑龙江省内公路与桥梁工程施工业务"
+    },
+    {
+      "stock_name": "创意信息",
+      "stock_code": "300665",
+      "impact": 3,
+      "analysis": "AI Agent和行业大模型开发"
+    }
+  ],
+  "article_id": "cfe3f2323ffb443d90c9b5f898f9b898",
+  "article_date": "2025-05-05",
+  "article_title": "2025.5.5市场逻辑精选"
+}

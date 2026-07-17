@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，轨交设备、有色金属、教育、半导体等板块受政策及行业利好影响较大。",
+  "sectors": [
+    {
+      "sector_name": "轨交设备",
+      "impact": 4,
+      "analysis": "政策支持轨交设备更新，行业迎来高速增长期。"
+    },
+    {
+      "sector_name": "有色金属",
+      "impact": 3,
+      "analysis": "美联储降息预期，有色金属价格有望上涨。"
+    },
+    {
+      "sector_name": "教育",
+      "impact": 3,
+      "analysis": "监管条例落地，AI教育关注度提升。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "半导体划片机国产替代，行业迎来发展机遇。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中国中车",
+      "stock_code": "601766",
+      "impact": 4,
+      "analysis": "轨交设备行业龙头，维保业务进入上升期。"
+    },
+    {
+      "stock_name": "四川黄金",
+      "stock_code": "002758",
+      "impact": 3,
+      "analysis": "美联储降息预期，黄金期货连续上涨。"
+    },
+    {
+      "stock_name": "竞业达",
+      "stock_code": "002619",
+      "impact": 3,
+      "analysis": "布局职业教育实训业务，AI教育关注度提升。"
+    },
+    {
+      "stock_name": "光力科技",
+      "stock_code": "300480",
+      "impact": 3,
+      "analysis": "致力于半导体划片机国产替代。"
+    }
+  ],
+  "article_id": "c523ec1a35ec456a91fd2b2a3bb6c2ec",
+  "article_date": "2024-03-07",
+  "article_title": "2024.3.7市场逻辑精选"
+}

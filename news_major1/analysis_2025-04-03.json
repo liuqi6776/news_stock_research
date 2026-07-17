@@ -1,0 +1,55 @@
+{
+  "market_impact": 2,
+  "market_analysis": "市场情绪受特朗普关税政策及国内政策影响波动",
+  "sectors": [
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "受特朗普关税政策及国产大模型升级利好"
+    },
+    {
+      "sector_name": "算力租赁",
+      "impact": 3,
+      "analysis": "受国产大模型升级及算力租赁需求增长利好"
+    },
+    {
+      "sector_name": "化工",
+      "impact": 2,
+      "analysis": "受特朗普关税政策及国内政策利好"
+    },
+    {
+      "sector_name": "农业",
+      "impact": 2,
+      "analysis": "受特朗普关税政策及国内政策利好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "凯美特气",
+      "stock_code": "002549",
+      "impact": 3,
+      "analysis": "受特朗普关税政策及半导体行业利好"
+    },
+    {
+      "stock_name": "恒润股份",
+      "stock_code": "002956",
+      "impact": 3,
+      "analysis": "受算力租赁需求增长利好"
+    },
+    {
+      "stock_name": "神通科技",
+      "stock_code": "002755",
+      "impact": 3,
+      "analysis": "受特朗普关税政策及激光雷达行业利好"
+    },
+    {
+      "stock_name": "振江股份",
+      "stock_code": "300676",
+      "impact": 3,
+      "analysis": "受特朗普关税政策及外骨骼机器人行业利好"
+    }
+  ],
+  "article_title": "4月3日盘前纪要",
+  "html_file": "2yhbng6va9r.html",
+  "article_date": "2025-04-03"
+}

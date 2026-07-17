@@ -1,0 +1,56 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，关注固态电池、火箭隔热材料、卫星遥感等板块。",
+  "sectors": [
+    {
+      "sector_name": "固态电池",
+      "impact": 4,
+      "analysis": "技术进步和产业应用前景看好，利好相关设备、电解质等公司。"
+    },
+    {
+      "sector_name": "火箭隔热材料",
+      "impact": 3,
+      "analysis": "火箭可重复使用技术发展，利好相关隔热材料公司。"
+    },
+    {
+      "sector_name": "卫星遥感",
+      "impact": 3,
+      "analysis": "政策支持商业卫星遥感数据开发，利好相关数据处理和应用公司。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "纳科诺尔",
+      "stock_code": "002129",
+      "impact": 4,
+      "analysis": "固态电池设备领先，订单增长，利好。"
+    },
+    {
+      "stock_name": "先导智能",
+      "stock_code": "300060",
+      "impact": 4,
+      "analysis": "电池设备龙头，固态电池全环节研发生产能力，利好。"
+    },
+    {
+      "stock_name": "鲁阳节能",
+      "stock_code": "002088",
+      "impact": 3,
+      "analysis": "陶瓷纤维产品应用于航天项目，利好。"
+    },
+    {
+      "stock_name": "航天宏图",
+      "stock_code": "300344",
+      "impact": 3,
+      "analysis": "遥感卫星星座建设，数据处理能力强，利好。"
+    },
+    {
+      "stock_name": "东方日升",
+      "stock_code": "300118",
+      "impact": 3,
+      "analysis": "HJT组件技术领先，太空光伏应用前景广阔，利好。"
+    }
+  ],
+  "article_id": "83f6aac8058b472d875ae34c7d01825e",
+  "article_date": "2026-01-25",
+  "article_title": "2025.1.25市场化逻辑精选"
+}

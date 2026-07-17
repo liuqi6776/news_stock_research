@@ -1,0 +1,77 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "量子科技",
+      "impact": 4,
+      "analysis": "英伟达设立量子日，板块受提振"
+    },
+    {
+      "sector_name": "算力",
+      "impact": 3,
+      "analysis": "小红书崩盘，算力板块受关注"
+    },
+    {
+      "sector_name": "芯片",
+      "impact": 3,
+      "analysis": "商务部回应美企低价倾销芯片，国产替代预期增强"
+    },
+    {
+      "sector_name": "汽车",
+      "impact": 3,
+      "analysis": "汽车购新补贴细则发布预期，板块受提振"
+    },
+    {
+      "sector_name": "流感/新冠",
+      "impact": 2,
+      "analysis": "国务院发布防治通知，相关医药股受关注"
+    },
+    {
+      "sector_name": "AI玩具",
+      "impact": 2,
+      "analysis": "中国AI玩具出海中东，相关个股受关注"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "星光股份",
+      "stock_code": "300386",
+      "impact": 4,
+      "analysis": "英伟达设立量子日，公司受益"
+    },
+    {
+      "stock_name": "苏豪弘业",
+      "stock_code": "600480",
+      "impact": 4,
+      "analysis": "AI玩具出海中东，公司受益"
+    },
+    {
+      "stock_name": "金奥博",
+      "stock_code": "002949",
+      "impact": 4,
+      "analysis": "机器人板块受关注，公司受益"
+    },
+    {
+      "stock_name": "共进股份",
+      "stock_code": "300285",
+      "impact": 3,
+      "analysis": "交换机/CPO板块受关注，公司受益"
+    },
+    {
+      "stock_name": "超越科技",
+      "stock_code": "002956",
+      "impact": 3,
+      "analysis": "汽车购新补贴细则发布预期，公司受益"
+    },
+    {
+      "stock_name": "鲁抗医药",
+      "stock_code": "600789",
+      "impact": 2,
+      "analysis": "流感/新冠防治通知，公司受益"
+    }
+  ],
+  "article_title": "1月17日盘前早报 热点事件关注",
+  "html_file": "37tn3xfe83.html",
+  "article_date": "2025-01-17"
+}

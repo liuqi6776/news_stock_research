@@ -1,0 +1,49 @@
+{
+  "ols": {
+    "mae": 1.4060529130356636,
+    "rmse": 1.9528529285971339,
+    "r2": -0.2797645777150142,
+    "corr": 0.5337207496399711
+  },
+  "gbdt": {
+    "mae": 0.9265137311932394,
+    "rmse": 1.4696464012046377,
+    "r2": 0.27520244173045705,
+    "corr": 0.5404815495316314
+  },
+  "improvement": {
+    "mae_pct": 34.10534393098341,
+    "rmse_pct": 24.743621002715038,
+    "r2_diff": 0.5549670194454712
+  },
+  "feat_importance": [
+    {
+      "feature": "hist_vol5",
+      "used_in_trees": 18
+    },
+    {
+      "feature": "hist_amp5",
+      "used_in_trees": 9
+    },
+    {
+      "feature": "hist_vol20",
+      "used_in_trees": 3
+    },
+    {
+      "feature": "news_cnt",
+      "used_in_trees": 0
+    },
+    {
+      "feature": "total_sentiment",
+      "used_in_trees": 0
+    },
+    {
+      "feature": "dos",
+      "used_in_trees": 0
+    },
+    {
+      "feature": "hist_turn5",
+      "used_in_trees": 0
+    }
+  ]
+}

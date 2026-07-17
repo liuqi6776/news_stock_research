@@ -1,0 +1,61 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "生猪养殖",
+      "impact": 4,
+      "analysis": "猪价上涨，行业景气度提升。"
+    },
+    {
+      "sector_name": "覆铜板",
+      "impact": 3,
+      "analysis": "原材料价格上涨，行业或开启涨价潮。"
+    },
+    {
+      "sector_name": "煤炭",
+      "impact": 3,
+      "analysis": "煤价底部或已确立，行业有望复苏。"
+    },
+    {
+      "sector_name": "光伏设备",
+      "impact": 3,
+      "analysis": "银价上涨，0BB设备需求增加。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "北方铜业",
+      "stock_code": "000635",
+      "impact": 3,
+      "analysis": "加强资源勘探，拓展海外资源。"
+    },
+    {
+      "stock_name": "均瑶健康",
+      "stock_code": "600834",
+      "impact": 3,
+      "analysis": "行业巨头退出俄罗斯市场，市场空间扩大。"
+    },
+    {
+      "stock_name": "三角防务",
+      "stock_code": "300049",
+      "impact": 3,
+      "analysis": "C919弹性品种，在手订单充足。"
+    },
+    {
+      "stock_name": "海目星",
+      "stock_code": "300871",
+      "impact": 3,
+      "analysis": "长波红外飞秒激光器全球独创。"
+    },
+    {
+      "stock_name": "东富龙",
+      "stock_code": "300387",
+      "impact": 3,
+      "analysis": "生物制造设备龙头欧洲建厂。"
+    }
+  ],
+  "article_id": "84a4f7f0624a4dd4b54147bba04585c3",
+  "article_date": "2024-05-20",
+  "article_title": "2024.5.20市场逻辑精选"
+}

@@ -1,0 +1,339 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注后续政策落地。",
+  "sectors": [
+    {
+      "sector_name": "黄金",
+      "impact": 3,
+      "analysis": "黄金业务试点利好相关企业"
+    },
+    {
+      "sector_name": "AI+医疗",
+      "impact": 3,
+      "analysis": "DeepSeek技术推动AI医疗发展"
+    },
+    {
+      "sector_name": "算力",
+      "impact": 3,
+      "analysis": "DeepSeek开源推动国产算力发展"
+    },
+    {
+      "sector_name": "云计算",
+      "impact": 3,
+      "analysis": "DeepSeek适配推动云计算业务"
+    },
+    {
+      "sector_name": "AI应用",
+      "impact": 2,
+      "analysis": "AI应用领域受关注"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 2,
+      "analysis": "光伏供给侧改革政策预期"
+    },
+    {
+      "sector_name": "AIPC",
+      "impact": 2,
+      "analysis": "DeepSeek推动AIPC换机需求"
+    },
+    {
+      "sector_name": "半导体设备",
+      "impact": -2,
+      "analysis": "台积电断供消息利空"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "紫金矿业",
+      "stock_code": "600388",
+      "impact": 3,
+      "analysis": "黄金业务试点受益"
+    },
+    {
+      "stock_name": "创业慧康",
+      "stock_code": "300451",
+      "impact": 3,
+      "analysis": "AI+医疗领域布局"
+    },
+    {
+      "stock_name": "软通动力",
+      "stock_code": "300072",
+      "impact": 3,
+      "analysis": "AI基础设施业务强化"
+    },
+    {
+      "stock_name": "洲明科技",
+      "stock_code": "300232",
+      "impact": 3,
+      "analysis": "AI全息产品推出"
+    },
+    {
+      "stock_name": "拓维信息",
+      "stock_code": "002261",
+      "impact": 3,
+      "analysis": "AI算力一体机合作"
+    },
+    {
+      "stock_name": "四川长虹",
+      "stock_code": "600839",
+      "impact": 3,
+      "analysis": "AI服务器合作"
+    },
+    {
+      "stock_name": "恒为科技",
+      "stock_code": "300365",
+      "impact": 3,
+      "analysis": "AI智算中心合作"
+    },
+    {
+      "stock_name": "神州数码",
+      "stock_code": "000034",
+      "impact": 3,
+      "analysis": "华为昇腾合作伙伴"
+    },
+    {
+      "stock_name": "高新发展",
+      "stock_code": "000628",
+      "impact": 3,
+      "analysis": "华鲲振宇股权收购"
+    },
+    {
+      "stock_name": "广电运通",
+      "stock_code": "002152",
+      "impact": 3,
+      "analysis": "华为鲲鹏合作伙伴"
+    },
+    {
+      "stock_name": "常山北明",
+      "stock_code": "000158",
+      "impact": 3,
+      "analysis": "华为鲲鹏生态适配"
+    },
+    {
+      "stock_name": "云创数据",
+      "stock_code": "300598",
+      "impact": 3,
+      "analysis": "AI算力产品布局"
+    },
+    {
+      "stock_name": "中国长城",
+      "stock_code": "000066",
+      "impact": 3,
+      "analysis": "AI算力产品布局"
+    },
+    {
+      "stock_name": "深桑达A",
+      "stock_code": "000032",
+      "impact": 3,
+      "analysis": "AI算力产品布局"
+    },
+    {
+      "stock_name": "超讯通信",
+      "stock_code": "300362",
+      "impact": 3,
+      "analysis": "AI算力产品布局"
+    },
+    {
+      "stock_name": "首都在线",
+      "stock_code": "000739",
+      "impact": 3,
+      "analysis": "DeepSeek全系列模型适配"
+    },
+    {
+      "stock_name": "杭钢股份",
+      "stock_code": "600126",
+      "impact": 3,
+      "analysis": "DeepSeek-R1适配"
+    },
+    {
+      "stock_name": "优刻得",
+      "stock_code": "603260",
+      "impact": 3,
+      "analysis": "中立IaaS业务快速发展"
+    },
+    {
+      "stock_name": "青云科技",
+      "stock_code": "603035",
+      "impact": 3,
+      "analysis": "全栈私有云及AI算力服务"
+    },
+    {
+      "stock_name": "用友网络",
+      "stock_code": "600588",
+      "impact": 3,
+      "analysis": "DeepSeek-V3和DeepSeek-R1作为基座大模型"
+    },
+    {
+      "stock_name": "中亦科技",
+      "stock_code": "300816",
+      "impact": 3,
+      "analysis": "DeepSeek应用相关"
+    },
+    {
+      "stock_name": "浪潮软件",
+      "stock_code": "600879",
+      "impact": 3,
+      "analysis": "DeepSeek应用相关"
+    },
+    {
+      "stock_name": "每日互动",
+      "stock_code": "300779",
+      "impact": 3,
+      "analysis": "DeepSeek应用相关"
+    },
+    {
+      "stock_name": "海南华铁",
+      "stock_code": "002532",
+      "impact": 3,
+      "analysis": "海南算力服务商间接受益"
+    },
+    {
+      "stock_name": "安诺其",
+      "stock_code": "300066",
+      "impact": 3,
+      "analysis": "GPU算力平台独立部署DeepSeek"
+    },
+    {
+      "stock_name": "富淼科技",
+      "stock_code": "603672",
+      "impact": 3,
+      "analysis": "钢铁巨头入主"
+    },
+    {
+      "stock_name": "奥浦迈",
+      "stock_code": "300799",
+      "impact": 3,
+      "analysis": "拟购买澎立生物100%股权"
+    },
+    {
+      "stock_name": "信测标准",
+      "stock_code": "300877",
+      "impact": 3,
+      "analysis": "切入智能检测机器人赛道"
+    },
+    {
+      "stock_name": "塞力医疗",
+      "stock_code": "002338",
+      "impact": 2,
+      "analysis": "AI医疗领域受关注"
+    },
+    {
+      "stock_name": "卫宁健康",
+      "stock_code": "002261",
+      "impact": 2,
+      "analysis": "AI医疗领域受关注"
+    },
+    {
+      "stock_name": "贝瑞基因",
+      "stock_code": "002603",
+      "impact": 2,
+      "analysis": "AI医疗领域受关注"
+    },
+    {
+      "stock_name": "美年健康",
+      "stock_code": "600610",
+      "impact": 2,
+      "analysis": "AI医疗领域受关注"
+    },
+    {
+      "stock_name": "金域医学",
+      "stock_code": "603882",
+      "impact": 2,
+      "analysis": "AI医疗领域受关注"
+    },
+    {
+      "stock_name": "中科云网",
+      "stock_code": "002454",
+      "impact": 2,
+      "analysis": "光伏供给侧改革政策预期"
+    },
+    {
+      "stock_name": "仕净科技",
+      "stock_code": "300687",
+      "impact": 2,
+      "analysis": "光伏供给侧改革政策预期"
+    },
+    {
+      "stock_name": "钧达股份",
+      "stock_code": "002865",
+      "impact": 2,
+      "analysis": "光伏供给侧改革政策预期"
+    },
+    {
+      "stock_name": "爱旭股份",
+      "stock_code": "600385",
+      "impact": 2,
+      "analysis": "光伏供给侧改革政策预期"
+    },
+    {
+      "stock_name": "北玻股份",
+      "stock_code": "600703",
+      "impact": 2,
+      "analysis": "光伏供给侧改革政策预期"
+    },
+    {
+      "stock_name": "光大同创",
+      "stock_code": "300747",
+      "impact": 2,
+      "analysis": "DeepSeek推动AIPC换机需求"
+    },
+    {
+      "stock_name": "雷神科技",
+      "stock_code": "002296",
+      "impact": 2,
+      "analysis": "DeepSeek推动AIPC换机需求"
+    },
+    {
+      "stock_name": "智微智能",
+      "stock_code": "300745",
+      "impact": 2,
+      "analysis": "DeepSeek推动AIPC换机需求"
+    },
+    {
+      "stock_name": "华勤技术",
+      "stock_code": "300745",
+      "impact": 2,
+      "analysis": "DeepSeek推动AIPC换机需求"
+    },
+    {
+      "stock_name": "春秋电子",
+      "stock_code": "002377",
+      "impact": 2,
+      "analysis": "DeepSeek推动AIPC换机需求"
+    },
+    {
+      "stock_name": "中芯国际",
+      "stock_code": "688981",
+      "impact": -2,
+      "analysis": "台积电断供消息利空"
+    },
+    {
+      "stock_name": "北方华创",
+      "stock_code": "002371",
+      "impact": -2,
+      "analysis": "台积电断供消息利空"
+    },
+    {
+      "stock_name": "拓荆科技",
+      "stock_code": "688599",
+      "impact": -2,
+      "analysis": "台积电断供消息利空"
+    },
+    {
+      "stock_name": "至纯科技",
+      "stock_code": "688012",
+      "impact": -2,
+      "analysis": "台积电断供消息利空"
+    },
+    {
+      "stock_name": "赛腾股份",
+      "stock_code": "300383",
+      "impact": -2,
+      "analysis": "台积电断供消息利空"
+    }
+  ],
+  "article_id": "a5c40bfba67a414b8315d7135b1f9a27",
+  "article_date": "2025-02-09",
+  "article_title": "2025.2.9市场逻辑精选"
+}

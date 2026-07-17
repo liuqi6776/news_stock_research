@@ -1,0 +1,67 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "光通信",
+      "impact": 4,
+      "analysis": "FAU需求增长，相关公司受益"
+    },
+    {
+      "sector_name": "卫星通信",
+      "impact": 3,
+      "analysis": "卫星通信技术发展，相关公司受益"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 3,
+      "analysis": "纪念活动及军贸需求，相关公司受益"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 2,
+      "analysis": "大模型一体机标准化推进，相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "天孚通信",
+      "stock_code": "300452",
+      "impact": 4,
+      "analysis": "FAU技术领先，业绩增长"
+    },
+    {
+      "stock_name": "仕佳光子",
+      "stock_code": "300696",
+      "impact": 4,
+      "analysis": "光纤列阵业务增长，业绩大幅增长"
+    },
+    {
+      "stock_name": "华力创通",
+      "stock_code": "300045",
+      "impact": 3,
+      "analysis": "卫星应用业务占比高，业绩稳定"
+    },
+    {
+      "stock_name": "硕贝德",
+      "stock_code": "300316",
+      "impact": 3,
+      "analysis": "天线业务稳定，5G基站天线供应商"
+    },
+    {
+      "stock_name": "北方长龙",
+      "stock_code": "002052",
+      "impact": 3,
+      "analysis": "阅兵核心公司，军用装备供应商"
+    },
+    {
+      "stock_name": "建设工业",
+      "stock_code": "000065",
+      "impact": 3,
+      "analysis": "军贸业务增长，无人智能装备出口"
+    }
+  ],
+  "article_id": "ebc064a7670c45b2ad7d2544da0122ed",
+  "article_date": "2025-07-29",
+  "article_title": "2025.7.29市场逻辑精选"
+}

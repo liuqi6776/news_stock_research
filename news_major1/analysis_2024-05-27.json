@@ -1,0 +1,61 @@
+{
+  "market_impact": 4,
+  "market_analysis": "市场整体利好，大基金三期成立及上海地产新政推动相关板块及个股上涨。",
+  "sectors": [
+    {
+      "sector_name": "半导体",
+      "impact": 5,
+      "analysis": "大基金三期投资推动，板块全面利好。"
+    },
+    {
+      "sector_name": "电力",
+      "impact": 4,
+      "analysis": "负荷聚合商模式兴起，电力板块受益。"
+    },
+    {
+      "sector_name": "船舶",
+      "impact": 4,
+      "analysis": "造船热度不减，船舶板块利好。"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 3,
+      "analysis": "上海地产新政，房地产板块受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "彤程新材",
+      "stock_code": "300385",
+      "impact": 4,
+      "analysis": "子公司签订合作协议，股价有望上涨。"
+    },
+    {
+      "stock_name": "三湘印象",
+      "stock_code": "600429",
+      "impact": 3,
+      "analysis": "国资入驻持续推进，股价有望上涨。"
+    },
+    {
+      "stock_name": "国林科技",
+      "stock_code": "300454",
+      "impact": 4,
+      "analysis": "半导体设备即将完成产线验证，股价有望上涨。"
+    },
+    {
+      "stock_name": "城投控股",
+      "stock_code": "600649",
+      "impact": 3,
+      "analysis": "国资地产受益上海地产新政，股价有望上涨。"
+    },
+    {
+      "stock_name": "博纳影业",
+      "stock_code": "600595",
+      "impact": 3,
+      "analysis": "AI技术深度参与的视觉呈现，股价有望上涨。"
+    }
+  ],
+  "article_id": "e399e9de284747bd9c6e8a22f8d610dd",
+  "article_date": "2024-05-27",
+  "article_title": "2024.5.27市场逻辑精选"
+}

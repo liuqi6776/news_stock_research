@@ -1,0 +1,80 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，3C设备需求增长，芯片金属材料受AI驱动，入境游支付便利升级。",
+  "sectors": [
+    {
+      "sector_name": "3C设备",
+      "impact": 4,
+      "analysis": "苹果备货目标上调，需求增长，板块利好"
+    },
+    {
+      "sector_name": "芯片金属材料",
+      "impact": 3,
+      "analysis": "AI需求驱动，产业发展，板块利好"
+    },
+    {
+      "sector_name": "旅游",
+      "impact": 2,
+      "analysis": "支付便利升级，入境游增长，板块利好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "博众精工",
+      "stock_code": "300433",
+      "impact": 4,
+      "analysis": "苹果产业链利润占比高，组装设备需求增长"
+    },
+    {
+      "stock_name": "快克智能",
+      "stock_code": "603322",
+      "impact": 4,
+      "analysis": "精密焊接设备，AI手机升级需求增长"
+    },
+    {
+      "stock_name": "赛腾股份",
+      "stock_code": "300433",
+      "impact": 4,
+      "analysis": "组装检测设备，AI手机升级需求增长"
+    },
+    {
+      "stock_name": "铂科新材",
+      "stock_code": "688399",
+      "impact": 4,
+      "analysis": "合金软磁粉芯龙头，进入英伟达供应链"
+    },
+    {
+      "stock_name": "悦安新材",
+      "stock_code": "603730",
+      "impact": 4,
+      "analysis": "羰基铁粉国内市占率超50%，全球份额第二"
+    },
+    {
+      "stock_name": "江丰电子",
+      "stock_code": "300666",
+      "impact": 3,
+      "analysis": "金属靶材，应用于晶圆制造和芯片封装"
+    },
+    {
+      "stock_name": "有研新材",
+      "stock_code": "600206",
+      "impact": 3,
+      "analysis": "金属靶材，应用于晶圆制造和芯片封装"
+    },
+    {
+      "stock_name": "众信旅游",
+      "stock_code": "600610",
+      "impact": 2,
+      "analysis": "入境游增长，旅游需求增加"
+    },
+    {
+      "stock_name": "中青旅",
+      "stock_code": "600118",
+      "impact": 2,
+      "analysis": "入境游增长，旅游需求增加"
+    }
+  ],
+  "article_id": "25e5d0aafb404b9d8868fef85eb07ff2",
+  "article_date": "2024-07-09",
+  "article_title": "2024.7.9市场逻辑精选"
+}

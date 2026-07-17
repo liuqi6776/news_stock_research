@@ -1,0 +1,179 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，政策支持力度增强。",
+  "sectors": [
+    {
+      "sector_name": "央国企",
+      "impact": 4,
+      "analysis": "政策支持分红，提升投资回报，板块受益。"
+    },
+    {
+      "sector_name": "造船",
+      "impact": 3,
+      "analysis": "行业景气，业绩有望增长，板块受益。"
+    },
+    {
+      "sector_name": "手机",
+      "impact": 3,
+      "analysis": "华为P系列升级，行业回暖，板块受益。"
+    },
+    {
+      "sector_name": "物流",
+      "impact": 3,
+      "analysis": "疆煤外运受益，业绩增长，板块受益。"
+    },
+    {
+      "sector_name": "铝业",
+      "impact": 3,
+      "analysis": "第一大股东变更，市场预期借壳，板块受益。"
+    },
+    {
+      "sector_name": "洁净室",
+      "impact": 3,
+      "analysis": "高分红，订单增长，板块受益。"
+    },
+    {
+      "sector_name": "检测",
+      "impact": 3,
+      "analysis": "业绩大增，加大分红力度，板块受益。"
+    },
+    {
+      "sector_name": "火电",
+      "impact": 3,
+      "analysis": "一季度业绩大增，板块受益。"
+    },
+    {
+      "sector_name": "零部件",
+      "impact": 3,
+      "analysis": "拟收购武汉元丰，业务拓展，板块受益。"
+    },
+    {
+      "sector_name": "光学",
+      "impact": 3,
+      "analysis": "第一季度扣非净利润大幅增长，板块受益。"
+    },
+    {
+      "sector_name": "轮胎",
+      "impact": 3,
+      "analysis": "净利润大增，计划高分红，板块受益。"
+    },
+    {
+      "sector_name": "充电桩",
+      "impact": 3,
+      "analysis": "建设规模超3000亿，板块受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "南钢股份",
+      "stock_code": "600282",
+      "impact": 4,
+      "analysis": "央国企，分红动力增强。"
+    },
+    {
+      "stock_name": "粤高速Ａ",
+      "stock_code": "000429",
+      "impact": 4,
+      "analysis": "央国企，分红动力增强。"
+    },
+    {
+      "stock_name": "平煤股份",
+      "stock_code": "600587",
+      "impact": 4,
+      "analysis": "央国企，分红动力增强。"
+    },
+    {
+      "stock_name": "中国船舶",
+      "stock_code": "601717",
+      "impact": 3,
+      "analysis": "造船行业景气，业绩增长。"
+    },
+    {
+      "stock_name": "中船防务",
+      "stock_code": "600685",
+      "impact": 3,
+      "analysis": "造船行业景气，业绩增长。"
+    },
+    {
+      "stock_name": "中国重工",
+      "stock_code": "601989",
+      "impact": 3,
+      "analysis": "造船行业景气，业绩增长。"
+    },
+    {
+      "stock_name": "光弘科技",
+      "stock_code": "300701",
+      "impact": 3,
+      "analysis": "华为手机+汽车第一大EMS厂商。"
+    },
+    {
+      "stock_name": "力芯微",
+      "stock_code": "688516",
+      "impact": 3,
+      "analysis": "华为手机+汽车电源类模拟芯片供应商。"
+    },
+    {
+      "stock_name": "顺络电子",
+      "stock_code": "002138",
+      "impact": 3,
+      "analysis": "华为手机+安卓系手机电感龙头。"
+    },
+    {
+      "stock_name": "广汇物流",
+      "stock_code": "600545",
+      "impact": 3,
+      "analysis": "疆煤外运受益，业绩增长。"
+    },
+    {
+      "stock_name": "焦作万方",
+      "stock_code": "000612",
+      "impact": 3,
+      "analysis": "第一大股东变更，市场预期借壳。"
+    },
+    {
+      "stock_name": "亚翔集成",
+      "stock_code": "603335",
+      "impact": 3,
+      "analysis": "高分红，订单增长。"
+    },
+    {
+      "stock_name": "英诺特",
+      "stock_code": "300610",
+      "impact": 3,
+      "analysis": "业绩大增，加大分红力度。"
+    },
+    {
+      "stock_name": "赣能股份",
+      "stock_code": "002876",
+      "impact": 3,
+      "analysis": "一季度业绩大增。"
+    },
+    {
+      "stock_name": "西上海",
+      "stock_code": "600641",
+      "impact": 3,
+      "analysis": "拟收购武汉元丰，业务拓展。"
+    },
+    {
+      "stock_name": "宇瞳光学",
+      "stock_code": "603108",
+      "impact": 3,
+      "analysis": "第一季度扣非净利润大幅增长。"
+    },
+    {
+      "stock_name": "贵州轮胎",
+      "stock_code": "601099",
+      "impact": 3,
+      "analysis": "净利润大增，计划高分红。"
+    },
+    {
+      "stock_name": "盛弘股份",
+      "stock_code": "300626",
+      "impact": 3,
+      "analysis": "充电桩建设规模超3000亿。"
+    }
+  ],
+  "article_id": "7aed488b132e4276b2a91d31f06b8abb",
+  "article_date": "2024-04-15",
+  "article_title": "2024.4.15市场逻辑精选"
+}

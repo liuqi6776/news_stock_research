@@ -1,0 +1,61 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受积极政策支持，整体偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "虚拟电厂",
+      "impact": 4,
+      "analysis": "政策支持关键设备量产，板块受益明显。"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "特斯拉机器人进展可能推动相关产业链。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 2,
+      "analysis": "光刻胶国产替代，行业有望增长。"
+    },
+    {
+      "sector_name": "航运",
+      "impact": 2,
+      "analysis": "航运价格上调，行业盈利能力增强。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "金冠电气",
+      "stock_code": "002565",
+      "impact": 4,
+      "analysis": "受益于虚拟电厂政策支持。"
+    },
+    {
+      "stock_name": "科陆电子",
+      "stock_code": "002121",
+      "impact": 4,
+      "analysis": "受益于虚拟电厂政策支持。"
+    },
+    {
+      "stock_name": "斯菱股份",
+      "stock_code": "603898",
+      "impact": 3,
+      "analysis": "特斯拉机器人进展可能推动公司发展。"
+    },
+    {
+      "stock_name": "艾森股份",
+      "stock_code": "688012",
+      "impact": 3,
+      "analysis": "光刻胶国产替代，公司产品有望受益。"
+    },
+    {
+      "stock_name": "安通控股",
+      "stock_code": "600179",
+      "impact": 3,
+      "analysis": "重组上市，业务规模扩大。"
+    }
+  ],
+  "article_id": "db8868fa702c420290cdf835749548c2",
+  "article_date": "2024-06-13",
+  "article_title": "2024.6.13市场逻辑精选"
+}

@@ -1,0 +1,56 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，关注芯片、银发经济、智能穿戴等领域。",
+  "sectors": [
+    {
+      "sector_name": "国产芯片",
+      "impact": 4,
+      "analysis": "AI芯片国产化加速，利好相关企业。"
+    },
+    {
+      "sector_name": "银发经济",
+      "impact": 3,
+      "analysis": "政策利好，市场空间广阔。"
+    },
+    {
+      "sector_name": "智能穿戴",
+      "impact": 3,
+      "analysis": "合作阿里，有望提升市场竞争力。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "万通发展",
+      "stock_code": "600711",
+      "impact": 4,
+      "analysis": "掌握PCIe5.0芯片设计能力，有望解决国产AI芯片互联性能瓶颈。"
+    },
+    {
+      "stock_name": "华东重机",
+      "stock_code": "601715",
+      "impact": 4,
+      "analysis": "GPU芯片量产，实现国产替代。"
+    },
+    {
+      "stock_name": "延华智能",
+      "stock_code": "300176",
+      "impact": 3,
+      "analysis": "智慧康养平台，构建居家社区机构相协调的养老服务体系。"
+    },
+    {
+      "stock_name": "悦心健康",
+      "stock_code": "002162",
+      "impact": 3,
+      "analysis": "计划通过技术创新和合作，引入智能机器人和优化智慧养老产品。"
+    },
+    {
+      "stock_name": "奋达科技",
+      "stock_code": "002681",
+      "impact": 3,
+      "analysis": "智能穿戴领域合作阿里，有望提升市场竞争力。"
+    }
+  ],
+  "article_id": "782c68336ce1461e91832445249f953a",
+  "article_date": "2025-11-26",
+  "article_title": "2025.11.26市场逻辑精选"
+}

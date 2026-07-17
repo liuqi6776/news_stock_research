@@ -1,0 +1,44 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受机器人、华为手机等利好消息提振",
+  "sectors": [
+    {
+      "sector_name": "机器人",
+      "impact": 4,
+      "analysis": "人形机器人产业化加速，板块整体受益"
+    },
+    {
+      "sector_name": "华为生态",
+      "impact": 3,
+      "analysis": "华为手机销量提升，相关产业链受益"
+    },
+    {
+      "sector_name": "5G",
+      "impact": 2,
+      "analysis": "5G技术进步，相关设备需求增加"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "拓普集团",
+      "stock_code": "601966",
+      "impact": 4,
+      "analysis": "机器人业务进展超预期，股价有望上涨"
+    },
+    {
+      "stock_name": "鸣志电器",
+      "stock_code": "603716",
+      "impact": 3,
+      "analysis": "手部关节集成业务受益"
+    },
+    {
+      "stock_name": "华为生态供应链",
+      "stock_code": "000012",
+      "impact": 3,
+      "analysis": "华为手机销量提升，相关供应链受益"
+    }
+  ],
+  "article_id": "9df2f034fef343f59c020895134d1ec4",
+  "article_date": "2023-08-29",
+  "article_title": "2023.8.29市场逻辑精选"
+}

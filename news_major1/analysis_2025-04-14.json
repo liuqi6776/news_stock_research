@@ -1,0 +1,85 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "可控核聚变",
+      "impact": 4,
+      "analysis": "产业进程加速，利好相关个股。"
+    },
+    {
+      "sector_name": "中概股回归",
+      "impact": 3,
+      "analysis": "超万亿市值中概股有望回流，利好相关公司。"
+    },
+    {
+      "sector_name": "交通出海",
+      "impact": 3,
+      "analysis": "东盟合作开启新篇章，利好相关个股。"
+    },
+    {
+      "sector_name": "煤电升级",
+      "impact": 2,
+      "analysis": "新一代煤电升级行动，利好相关个股。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "合锻智能",
+      "stock_code": "300231",
+      "impact": 4,
+      "analysis": "参与核聚变堆核心部件研制，利好。"
+    },
+    {
+      "stock_name": "中洲特材",
+      "stock_code": "002574",
+      "impact": 3,
+      "analysis": "为核电公司上游供应商，利好。"
+    },
+    {
+      "stock_name": "海陆重工",
+      "stock_code": "002255",
+      "impact": 3,
+      "analysis": "堆内构件吊篮筒体填补国内空白，利好。"
+    },
+    {
+      "stock_name": "九鼎投资",
+      "stock_code": "600058",
+      "impact": 3,
+      "analysis": "主板首家纯PE机构，利好。"
+    },
+    {
+      "stock_name": "爱建集团",
+      "stock_code": "600643",
+      "impact": 3,
+      "analysis": "全资孙公司拥有香港证监会牌照，利好。"
+    },
+    {
+      "stock_name": "金鹰重工",
+      "stock_code": "002667",
+      "impact": 3,
+      "analysis": "轨道工程装备产品提供商，利好。"
+    },
+    {
+      "stock_name": "佳讯飞鸿",
+      "stock_code": "300213",
+      "impact": 3,
+      "analysis": "参与越南铁路调度通信系统项目，利好。"
+    },
+    {
+      "stock_name": "青达环保",
+      "stock_code": "300338",
+      "impact": 3,
+      "analysis": "节能环保系统设备领先企业，利好。"
+    },
+    {
+      "stock_name": "甘肃能源",
+      "stock_code": "600382",
+      "impact": 3,
+      "analysis": "拟购买电投集团持有的常乐公司股权，利好。"
+    }
+  ],
+  "article_id": "d41901e73f584a8cbbb7ad3a89f59e05",
+  "article_date": "2025-04-14",
+  "article_title": "2025.4.14市场逻辑精选"
+}

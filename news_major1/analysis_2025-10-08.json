@@ -1,0 +1,96 @@
+{
+  "market_impact": 3,
+  "market_analysis": "AI和量子计算领域利好，部分个股受提振",
+  "sectors": [
+    {
+      "sector_name": "AI应用",
+      "impact": 4,
+      "analysis": "OpenAI新模型发布，相关公司受益"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "AMD与OpenAI合作，相关封测和PCB公司受益"
+    },
+    {
+      "sector_name": "量子计算",
+      "impact": 3,
+      "analysis": "诺贝尔奖得主研究量子相关，相关公司受益"
+    },
+    {
+      "sector_name": "电源设备",
+      "impact": 2,
+      "analysis": "新雷能产能扩张，营收有望增长"
+    },
+    {
+      "sector_name": "光模块",
+      "impact": 2,
+      "analysis": "华懋科技收购光模块PCBA公司，业绩有望提升"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "当虹科技",
+      "stock_code": "300336",
+      "impact": 4,
+      "analysis": "AI产品丰富，与DeepSeek等合作"
+    },
+    {
+      "stock_name": "网达软件",
+      "stock_code": "300739",
+      "impact": 3,
+      "analysis": "布局AI视频技术平台，加大研发投入"
+    },
+    {
+      "stock_name": "通富微电",
+      "stock_code": "002156",
+      "impact": 3,
+      "analysis": "AMD最大封测供应商，订单稳定"
+    },
+    {
+      "stock_name": "世运电路",
+      "stock_code": "002026",
+      "impact": 3,
+      "analysis": "完成AMD全系产品认证，进入量产供应"
+    },
+    {
+      "stock_name": "国盾量子",
+      "stock_code": "688027",
+      "impact": 3,
+      "analysis": "研发超导量子计算机，打破国际垄断"
+    },
+    {
+      "stock_name": "禾信仪器",
+      "stock_code": "688599",
+      "impact": 3,
+      "analysis": "稀释制冷机市占率约31%，行业第一"
+    },
+    {
+      "stock_name": "新雷能",
+      "stock_code": "300022",
+      "impact": 2,
+      "analysis": "产能扩张，营收有望增长"
+    },
+    {
+      "stock_name": "华懋科技",
+      "stock_code": "603090",
+      "impact": 2,
+      "analysis": "收购光模块PCBA公司，业绩有望提升"
+    },
+    {
+      "stock_name": "恒为科技",
+      "stock_code": "300365",
+      "impact": 2,
+      "analysis": "购买AI应用公司数珩科技75%股份"
+    },
+    {
+      "stock_name": "盛屯矿业",
+      "stock_code": "600231",
+      "impact": 2,
+      "analysis": "受益铜和黄金价格上涨"
+    }
+  ],
+  "article_id": "677a5af669df44a49bf16fe5bd195cdf",
+  "article_date": "2025-10-08",
+  "article_title": "2025.10.8市场逻辑精选"
+}

@@ -1,0 +1,91 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "无人驾驶",
+      "impact": 4,
+      "analysis": "英伟达开源模型发布，板块受益"
+    },
+    {
+      "sector_name": "面板",
+      "impact": 3,
+      "analysis": "大厂停产，价格上调，板块受益"
+    },
+    {
+      "sector_name": "液冷",
+      "impact": 3,
+      "analysis": "英伟达液冷服务器即将面市，板块受益"
+    },
+    {
+      "sector_name": "商业航天",
+      "impact": 3,
+      "analysis": "航天连接器龙头布局商业航天，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "浙江世宝",
+      "stock_code": "002703",
+      "impact": 4,
+      "analysis": "与特斯拉FSD配套可行性高"
+    },
+    {
+      "stock_name": "汉鑫科技",
+      "stock_code": "300655",
+      "impact": 4,
+      "analysis": "车路协同智能网联软硬件系统研发"
+    },
+    {
+      "stock_name": "万集科技",
+      "stock_code": "300552",
+      "impact": 4,
+      "analysis": "智能交通生态综合服务提供商"
+    },
+    {
+      "stock_name": "京东方",
+      "stock_code": "000725",
+      "impact": 3,
+      "analysis": "全球液晶电视面板市占率第一"
+    },
+    {
+      "stock_name": "TCL科技",
+      "stock_code": "000100",
+      "impact": 3,
+      "analysis": "全球液晶电视面板市占率第二"
+    },
+    {
+      "stock_name": "淳中科技",
+      "stock_code": "300418",
+      "impact": 3,
+      "analysis": "液冷测试设备推进中"
+    },
+    {
+      "stock_name": "捷邦科技",
+      "stock_code": "002609",
+      "impact": 3,
+      "analysis": "液冷散热模组产品送样资格"
+    },
+    {
+      "stock_name": "航天电器",
+      "stock_code": "002025",
+      "impact": 3,
+      "analysis": "积极布局商业航天"
+    },
+    {
+      "stock_name": "江顺科技",
+      "stock_code": "002802",
+      "impact": 3,
+      "analysis": "商业航天3D打印技术稀缺标的"
+    },
+    {
+      "stock_name": "星环科技",
+      "stock_code": "300349",
+      "impact": 3,
+      "analysis": "已有GPU-Native数据库产品"
+    }
+  ],
+  "article_id": "d3954c9107dc468fbea44bccecdd1dda",
+  "article_date": "2026-01-06",
+  "article_title": "2026.1.6市场逻辑精选"
+}

@@ -1,0 +1,270 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策变动及行业新闻较多，市场情绪偏积极。",
+  "sectors": [
+    {
+      "sector_name": "地产",
+      "impact": 2,
+      "analysis": "深圳户籍政策调整，利好地产板块"
+    },
+    {
+      "sector_name": "CRO",
+      "impact": -3,
+      "analysis": "美国法案提案议员减少，利空CRO板块"
+    },
+    {
+      "sector_name": "水环保",
+      "impact": 2,
+      "analysis": "日本核污染水泄漏事件，利好水环保板块"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "机器人相关事件及政策利好机器人板块"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 2,
+      "analysis": "医药行业政策利好医药板块"
+    },
+    {
+      "sector_name": "稀土",
+      "impact": 2,
+      "analysis": "稀土开采、冶炼分离总量控制指标下达，利好稀土板块"
+    },
+    {
+      "sector_name": "储能",
+      "impact": 2,
+      "analysis": "储能电容器薄膜性能突破，利好储能板块"
+    },
+    {
+      "sector_name": "数据中心",
+      "impact": 2,
+      "analysis": "绿色数据中心发展加速，利好数据中心板块"
+    },
+    {
+      "sector_name": "风电光伏",
+      "impact": 2,
+      "analysis": "风电光伏发电基地建设提速，利好风电光伏板块"
+    },
+    {
+      "sector_name": "碳捕集",
+      "impact": 2,
+      "analysis": "欧盟减排建议，利好碳捕集技术板块"
+    },
+    {
+      "sector_name": "脑组织3D打印",
+      "impact": 2,
+      "analysis": "脑组织3D打印成功，利好相关板块"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "蕾奥规划",
+      "stock_code": "002735",
+      "impact": 2,
+      "analysis": "深圳户籍政策调整，利好地产板块"
+    },
+    {
+      "stock_name": "特发服务",
+      "stock_code": "000070",
+      "impact": 2,
+      "analysis": "深圳户籍政策调整，利好地产板块"
+    },
+    {
+      "stock_name": "深深房A",
+      "stock_code": "000029",
+      "impact": 2,
+      "analysis": "深圳户籍政策调整，利好地产板块"
+    },
+    {
+      "stock_name": "深物业A",
+      "stock_code": "000011",
+      "impact": 2,
+      "analysis": "深圳户籍政策调整，利好地产板块"
+    },
+    {
+      "stock_name": "沙河股份",
+      "stock_code": "000014",
+      "impact": 2,
+      "analysis": "深圳户籍政策调整，利好地产板块"
+    },
+    {
+      "stock_name": "药明康德",
+      "stock_code": "603259",
+      "impact": -3,
+      "analysis": "美国法案提案议员减少，利空CRO板块"
+    },
+    {
+      "stock_name": "药明生物",
+      "stock_code": "603259",
+      "impact": -3,
+      "analysis": "美国法案提案议员减少，利空CRO板块"
+    },
+    {
+      "stock_name": "泰格医药",
+      "stock_code": "300347",
+      "impact": -3,
+      "analysis": "美国法案提案议员减少，利空CRO板块"
+    },
+    {
+      "stock_name": "康龙化成",
+      "stock_code": "300692",
+      "impact": -3,
+      "analysis": "美国法案提案议员减少，利空CRO板块"
+    },
+    {
+      "stock_name": "昭衍新药",
+      "stock_code": "300541",
+      "impact": -3,
+      "analysis": "美国法案提案议员减少，利空CRO板块"
+    },
+    {
+      "stock_name": "中电环保",
+      "stock_code": "600795",
+      "impact": 2,
+      "analysis": "日本核污染水泄漏事件，利好水环保板块"
+    },
+    {
+      "stock_name": "捷强装备",
+      "stock_code": "300813",
+      "impact": 2,
+      "analysis": "日本核污染水泄漏事件，利好水环保板块"
+    },
+    {
+      "stock_name": "克莱机电",
+      "stock_code": "603980",
+      "impact": 3,
+      "analysis": "机器人相关事件及政策利好机器人板块"
+    },
+    {
+      "stock_name": "中重科技",
+      "stock_code": "002179",
+      "impact": 3,
+      "analysis": "机器人相关事件及政策利好机器人板块"
+    },
+    {
+      "stock_name": "川仪股份",
+      "stock_code": "600843",
+      "impact": 3,
+      "analysis": "机器人相关事件及政策利好机器人板块"
+    },
+    {
+      "stock_name": "亚宝药业",
+      "stock_code": "600355",
+      "impact": 2,
+      "analysis": "医药行业政策利好医药板块"
+    },
+    {
+      "stock_name": "新里程",
+      "stock_code": "300787",
+      "impact": 2,
+      "analysis": "医药行业政策利好医药板块"
+    },
+    {
+      "stock_name": "万泰生物",
+      "stock_code": "603392",
+      "impact": 2,
+      "analysis": "医药行业政策利好医药板块"
+    },
+    {
+      "stock_name": "普洛药业",
+      "stock_code": "000739",
+      "impact": 2,
+      "analysis": "医药行业政策利好医药板块"
+    },
+    {
+      "stock_name": "信立泰",
+      "stock_code": "002294",
+      "impact": 2,
+      "analysis": "医药行业政策利好医药板块"
+    },
+    {
+      "stock_name": "中国稀土",
+      "stock_code": "000831",
+      "impact": 2,
+      "analysis": "稀土开采、冶炼分离总量控制指标下达，利好稀土板块"
+    },
+    {
+      "stock_name": "广晟有色",
+      "stock_code": "600259",
+      "impact": 2,
+      "analysis": "稀土开采、冶炼分离总量控制指标下达，利好稀土板块"
+    },
+    {
+      "stock_name": "盛和资源",
+      "stock_code": "600392",
+      "impact": 2,
+      "analysis": "稀土开采、冶炼分离总量控制指标下达，利好稀土板块"
+    },
+    {
+      "stock_name": "中科三环",
+      "stock_code": "000970",
+      "impact": 2,
+      "analysis": "稀土开采、冶炼分离总量控制指标下达，利好稀土板块"
+    },
+    {
+      "stock_name": "江海股份",
+      "stock_code": "002484",
+      "impact": 2,
+      "analysis": "储能电容器薄膜性能突破，利好储能板块"
+    },
+    {
+      "stock_name": "索通发展",
+      "stock_code": "300305",
+      "impact": 2,
+      "analysis": "储能电容器薄膜性能突破，利好储能板块"
+    },
+    {
+      "stock_name": "英维克",
+      "stock_code": "002898",
+      "impact": 2,
+      "analysis": "绿色数据中心发展加速，利好数据中心板块"
+    },
+    {
+      "stock_name": "高澜股份",
+      "stock_code": "300410",
+      "impact": 2,
+      "analysis": "绿色数据中心发展加速，利好数据中心板块"
+    },
+    {
+      "stock_name": "中国西电",
+      "stock_code": "601179",
+      "impact": 2,
+      "analysis": "风电光伏发电基地建设提速，利好风电光伏板块"
+    },
+    {
+      "stock_name": "炬华科技",
+      "stock_code": "300104",
+      "impact": 2,
+      "analysis": "风电光伏发电基地建设提速，利好风电光伏板块"
+    },
+    {
+      "stock_name": "仕净科技",
+      "stock_code": "300467",
+      "impact": 2,
+      "analysis": "欧盟减排建议，利好碳捕集技术板块"
+    },
+    {
+      "stock_name": "冰轮环境",
+      "stock_code": "002280",
+      "impact": 2,
+      "analysis": "欧盟减排建议，利好碳捕集技术板块"
+    },
+    {
+      "stock_name": "迈普医学",
+      "stock_code": "300783",
+      "impact": 2,
+      "analysis": "脑组织3D打印成功，利好相关板块"
+    },
+    {
+      "stock_name": "光韵达",
+      "stock_code": "300227",
+      "impact": 2,
+      "analysis": "脑组织3D打印成功，利好相关板块"
+    }
+  ],
+  "article_title": "2月8日盘前早报 热点事件关注",
+  "html_file": "fx52lpzvwr.html",
+  "article_date": "2024-02-08"
+}

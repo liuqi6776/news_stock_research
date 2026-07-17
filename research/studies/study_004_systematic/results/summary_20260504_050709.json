@@ -1,0 +1,96 @@
+{
+  "study_id": "004",
+  "study_name": "\u7cfb\u7edf\u5316\u7814\u7a76\u6846\u67b6v2\uff08\u65b0\u80a1\u8fc7\u6ee4+\u5168\u7279\u5f81\uff09",
+  "timestamp": "20260504_050709",
+  "targets": [
+    "1d",
+    "5d",
+    "28d"
+  ],
+  "thresholds": {
+    "1d": 0.32,
+    "5d": 0.3
+  },
+  "best_params": {
+    "1d": {
+      "stop_loss": 0.03,
+      "take_profit": 0.2,
+      "max_positions": 3
+    },
+    "5d": {
+      "stop_loss": 0.03,
+      "take_profit": 0.2,
+      "max_positions": 3
+    },
+    "28d": {
+      "stop_loss": 0.03,
+      "take_profit": 0.2,
+      "max_positions": 3
+    }
+  },
+  "n_features": 54,
+  "feature_list": [
+    "open",
+    "high",
+    "low",
+    "close",
+    "pre_close",
+    "change",
+    "pct_chg",
+    "vol",
+    "amount",
+    "amplitude",
+    "body_size",
+    "upper_shadow",
+    "lower_shadow",
+    "is_yang",
+    "gap",
+    "close_to_high",
+    "close_to_low",
+    "vol_ratio",
+    "vol_amount",
+    "mom_5d",
+    "mom_10d",
+    "mom_20d",
+    "mom_60d",
+    "vol_5d",
+    "vol_10d",
+    "vol_20d",
+    "pe",
+    "pb",
+    "circ_mv",
+    "turnover_rate",
+    "volume_ratio",
+    "log_circ_mv",
+    "log_pe",
+    "log_pb",
+    "net_mf_amount",
+    "net_mf_vol",
+    "buy_lg_amount",
+    "sell_lg_amount",
+    "buy_elg_amount",
+    "sell_elg_amount",
+    "net_mf_amount_norm",
+    "rsi_14",
+    "kdj_k",
+    "bb_position",
+    "atr_14",
+    "macd",
+    "new_gs",
+    "new_bs",
+    "new_gi",
+    "ths_hot",
+    "ths_hot_rank",
+    "news_stock_impact",
+    "news_market_impact",
+    "news_has_mention"
+  ],
+  "improvements": [
+    "\u8fc7\u6ee4\u4e0a\u5e02<60\u5929\u65b0\u80a1",
+    "\u589e\u52a0\u57fa\u672c\u9762\u7279\u5f81(PE/PB/\u6d41\u901a\u5e02\u503c)",
+    "\u589e\u52a0\u65b0\u95fb\u7279\u5f81(news_major1)",
+    "\u589e\u52a0\u6392\u540d\u7279\u5f81(ths_rank1/hot)",
+    "\u589e\u52a0\u8d44\u91d1\u6d41\u7279\u5f81(moneyflow1)",
+    "\u589e\u52a0\u540c\u82b1\u987a\u65b0\u95fb(ths_news1)"
+  ]
+}

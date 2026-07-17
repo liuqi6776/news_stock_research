@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受政策支持，部分板块有望受益。",
+  "sectors": [
+    {
+      "sector_name": "信创",
+      "impact": 4,
+      "analysis": "政策支持国产替代，需求旺盛。"
+    },
+    {
+      "sector_name": "创新药",
+      "impact": 3,
+      "analysis": "全链条鼓励创新药发展，政策利好。"
+    },
+    {
+      "sector_name": "数控机床",
+      "impact": 2,
+      "analysis": "展会回归，行业关注度提升。"
+    },
+    {
+      "sector_name": "AI设计",
+      "impact": 2,
+      "analysis": "AI技术应用于家居装饰，市场潜力大。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中国软件",
+      "stock_code": "600536",
+      "impact": 4,
+      "analysis": "聚焦基础软件产品，受益信创政策。"
+    },
+    {
+      "stock_name": "榕基软件",
+      "stock_code": "002474",
+      "impact": 3,
+      "analysis": "办公软件行业受益信创政策。"
+    },
+    {
+      "stock_name": "药明康德",
+      "stock_code": "603259",
+      "impact": 3,
+      "analysis": "创新药行业受益政策支持。"
+    },
+    {
+      "stock_name": "贝斯特",
+      "stock_code": "603288",
+      "impact": 2,
+      "analysis": "数控机床行业受益展会回归。"
+    }
+  ],
+  "article_id": "7cae2727922741de9b3f0fed7fcdb237",
+  "article_date": "2024-03-13",
+  "article_title": "2024.3.13市场逻辑精选"
+}

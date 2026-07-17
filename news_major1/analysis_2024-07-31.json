@@ -1,0 +1,78 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策支持力度大，市场情绪积极",
+  "sectors": [
+    {
+      "sector_name": "上海国资",
+      "impact": 4,
+      "analysis": "并购重组和市值管理政策利好"
+    },
+    {
+      "sector_name": "创新药",
+      "impact": 3,
+      "analysis": "临床试验审批加速，市场预期提升"
+    },
+    {
+      "sector_name": "无人机",
+      "impact": 3,
+      "analysis": "出口管制调整，市场空间扩大"
+    },
+    {
+      "sector_name": "房地产服务",
+      "impact": 2,
+      "analysis": "住房租赁市场发展，经纪业务受益"
+    },
+    {
+      "sector_name": "科创企业",
+      "impact": 3,
+      "analysis": "科创企业政策支持，相关企业受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "华鑫股份",
+      "stock_code": "600621",
+      "impact": 5,
+      "analysis": "上海国资并购重组概念股"
+    },
+    {
+      "stock_name": "上海汽配",
+      "stock_code": "600615",
+      "impact": 5,
+      "analysis": "上海国资并购重组概念股"
+    },
+    {
+      "stock_name": "百花医药",
+      "stock_code": "600596",
+      "impact": 4,
+      "analysis": "创新药临床试验审批加速受益"
+    },
+    {
+      "stock_name": "航天彩虹",
+      "stock_code": "002389",
+      "impact": 4,
+      "analysis": "无人机出口管制调整受益"
+    },
+    {
+      "stock_name": "我爱我家",
+      "stock_code": "600777",
+      "impact": 3,
+      "analysis": "住房租赁市场发展受益"
+    },
+    {
+      "stock_name": "张江高科",
+      "stock_code": "600895",
+      "impact": 4,
+      "analysis": "上海科创企业政策直接受益"
+    },
+    {
+      "stock_name": "维信诺",
+      "stock_code": "300690",
+      "impact": 4,
+      "analysis": "AMOLED显示驱动芯片量产"
+    }
+  ],
+  "article_id": "5f88974b0c0b4a51921e6b449639ad35",
+  "article_date": "2024-07-31",
+  "article_title": "2024.7.31市场逻辑精选"
+}

@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "AI芯片和先进封装技术受关注，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "半导体",
+      "impact": 4,
+      "analysis": "AI芯片需求增长，相关产业链受益"
+    },
+    {
+      "sector_name": "封装测试",
+      "impact": 3,
+      "analysis": "先进封装技术推动行业升级"
+    },
+    {
+      "sector_name": "光学光电子",
+      "impact": 3,
+      "analysis": "精密光学镜头和系统需求增加"
+    },
+    {
+      "sector_name": "机械制造",
+      "impact": 2,
+      "analysis": "工业汽轮机制造商合并，行业整合"
+    },
+    {
+      "sector_name": "通信设备",
+      "impact": 2,
+      "analysis": "6G和卫星出海题材受关注"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "晶方科技",
+      "stock_code": "300323",
+      "impact": 4,
+      "analysis": "HBM芯片供应商，受益行业增长"
+    },
+    {
+      "stock_name": "长电科技",
+      "stock_code": "600584",
+      "impact": 3,
+      "analysis": "封测行业龙头，受益行业升级"
+    },
+    {
+      "stock_name": "福光股份",
+      "stock_code": "600702",
+      "impact": 3,
+      "analysis": "精密光学镜头和系统供应商"
+    },
+    {
+      "stock_name": "海联讯",
+      "stock_code": "300068",
+      "impact": 3,
+      "analysis": "吸收合并杭汽轮，拓展业务领域"
+    },
+    {
+      "stock_name": "长飞光纤",
+      "stock_code": "600969",
+      "impact": 3,
+      "analysis": "收购激光器业务，拓展海外市场"
+    }
+  ],
+  "article_id": "03216bd9677b4e67a62988c722271531",
+  "article_date": "2024-11-10",
+  "article_title": "2024.11.10市场逻辑精选"
+}

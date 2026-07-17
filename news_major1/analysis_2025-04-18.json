@@ -1,0 +1,191 @@
+{
+  "market_impact": 2,
+  "market_analysis": "市场情绪偏积极，多板块受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "跨境电商",
+      "impact": 3,
+      "analysis": "浔兴股份等受益"
+    },
+    {
+      "sector_name": "电力",
+      "impact": 2,
+      "analysis": "乐山电力等受益"
+    },
+    {
+      "sector_name": "化工",
+      "impact": 2,
+      "analysis": "红宝丽等受益"
+    },
+    {
+      "sector_name": "次新股",
+      "impact": 2,
+      "analysis": "亚联机械等受益"
+    },
+    {
+      "sector_name": "光刻机",
+      "impact": 2,
+      "analysis": "国风新材等受益"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 2,
+      "analysis": "渝开发等受益"
+    },
+    {
+      "sector_name": "服务业",
+      "impact": 3,
+      "analysis": "大连圣亚、宁波中百等受益"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "长盛轴承、卧龙电驱等受益"
+    },
+    {
+      "sector_name": "核聚变",
+      "impact": 2,
+      "analysis": "海陆重工、合锻智能等受益"
+    },
+    {
+      "sector_name": "算力租赁",
+      "impact": 2,
+      "analysis": "拓维信息、福鞍股份等受益"
+    },
+    {
+      "sector_name": "智慧物流",
+      "impact": 2,
+      "analysis": "音飞储存、北自科技等受益"
+    },
+    {
+      "sector_name": "减肥药",
+      "impact": 2,
+      "analysis": "常山药业、翰宇药业等受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "泰慕士",
+      "stock_code": "000596",
+      "impact": 3,
+      "analysis": "消费板块受益"
+    },
+    {
+      "stock_name": "国光连锁",
+      "stock_code": "002749",
+      "impact": 3,
+      "analysis": "消费板块受益"
+    },
+    {
+      "stock_name": "浔兴股份",
+      "stock_code": "002098",
+      "impact": 3,
+      "analysis": "跨境电商板块受益"
+    },
+    {
+      "stock_name": "乐山电力",
+      "stock_code": "600644",
+      "impact": 3,
+      "analysis": "电力板块受益"
+    },
+    {
+      "stock_name": "红宝丽",
+      "stock_code": "002165",
+      "impact": 3,
+      "analysis": "化工板块受益"
+    },
+    {
+      "stock_name": "亚联机械",
+      "stock_code": "002895",
+      "impact": 3,
+      "analysis": "次新股板块受益"
+    },
+    {
+      "stock_name": "国风新材",
+      "stock_code": "600777",
+      "impact": 3,
+      "analysis": "光刻机板块受益"
+    },
+    {
+      "stock_name": "渝开发",
+      "stock_code": "000514",
+      "impact": 3,
+      "analysis": "房地产板块受益"
+    },
+    {
+      "stock_name": "大连圣亚",
+      "stock_code": "600593",
+      "impact": 3,
+      "analysis": "服务业板块受益"
+    },
+    {
+      "stock_name": "宁波中百",
+      "stock_code": "600857",
+      "impact": 3,
+      "analysis": "服务业板块受益"
+    },
+    {
+      "stock_name": "长盛轴承",
+      "stock_code": "600835",
+      "impact": 3,
+      "analysis": "机器人板块受益"
+    },
+    {
+      "stock_name": "卧龙电驱",
+      "stock_code": "600806",
+      "impact": 3,
+      "analysis": "机器人板块受益"
+    },
+    {
+      "stock_name": "海陆重工",
+      "stock_code": "601766",
+      "impact": 3,
+      "analysis": "核聚变板块受益"
+    },
+    {
+      "stock_name": "合锻智能",
+      "stock_code": "603019",
+      "impact": 3,
+      "analysis": "核聚变板块受益"
+    },
+    {
+      "stock_name": "拓维信息",
+      "stock_code": "002261",
+      "impact": 3,
+      "analysis": "算力租赁板块受益"
+    },
+    {
+      "stock_name": "福鞍股份",
+      "stock_code": "600031",
+      "impact": 3,
+      "analysis": "算力租赁板块受益"
+    },
+    {
+      "stock_name": "音飞储存",
+      "stock_code": "603066",
+      "impact": 3,
+      "analysis": "智慧物流板块受益"
+    },
+    {
+      "stock_name": "北自科技",
+      "stock_code": "600760",
+      "impact": 3,
+      "analysis": "智慧物流板块受益"
+    },
+    {
+      "stock_name": "常山药业",
+      "stock_code": "300255",
+      "impact": 3,
+      "analysis": "减肥药板块受益"
+    },
+    {
+      "stock_name": "翰宇药业",
+      "stock_code": "002552",
+      "impact": 3,
+      "analysis": "减肥药板块受益"
+    }
+  ],
+  "article_title": "4月18日盘前纪要",
+  "html_file": "3xg0myz6qw1.html",
+  "article_date": "2025-04-18"
+}

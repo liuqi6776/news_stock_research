@@ -1,0 +1,67 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受积极事件驱动，短期看涨。",
+  "sectors": [
+    {
+      "sector_name": "影视娱乐",
+      "impact": 4,
+      "analysis": "电影票房和周边产品热销，板块受益"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "人形机器人领域有新进展，板块受关注"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 2,
+      "analysis": "光刻机维保服务需求增加，板块受益"
+    },
+    {
+      "sector_name": "数据中心",
+      "impact": 2,
+      "analysis": "金属铬价格上涨，数据中心受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "光线传媒",
+      "stock_code": "600707",
+      "impact": 4,
+      "analysis": "电影投资收益预期增加"
+    },
+    {
+      "stock_name": "泡泡玛特",
+      "stock_code": "09992",
+      "impact": 4,
+      "analysis": "周边产品热销，公司业绩受益"
+    },
+    {
+      "stock_name": "汇成真空",
+      "stock_code": "603160",
+      "impact": 3,
+      "analysis": "光刻机维保服务市场空间扩大"
+    },
+    {
+      "stock_name": "振华股份",
+      "stock_code": "600240",
+      "impact": 3,
+      "analysis": "金属铬价格上涨，公司业绩受益"
+    },
+    {
+      "stock_name": "果麦文化",
+      "stock_code": "300743",
+      "impact": 3,
+      "analysis": "动画电影投资收益预期增加"
+    },
+    {
+      "stock_name": "安博通",
+      "stock_code": "688023",
+      "impact": 3,
+      "analysis": "签订大额销售合同，业绩增长"
+    }
+  ],
+  "article_id": "eeaf54be139e4f8d9aaade5752f9d6a7",
+  "article_date": "2025-02-11",
+  "article_title": "2025.2.11市场逻辑精选"
+}

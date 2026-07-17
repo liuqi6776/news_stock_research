@@ -1,0 +1,56 @@
+{
+  "market_impact": 3,
+  "market_analysis": "AI技术突破，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "AI概念",
+      "impact": 4,
+      "analysis": "DeepSeek技术突破，相关个股受益"
+    },
+    {
+      "sector_name": "软件服务",
+      "impact": 3,
+      "analysis": "AI应用拓展，软件服务行业受益"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "AI芯片需求增加，半导体行业受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "思特奇",
+      "stock_code": "300393",
+      "impact": 3,
+      "analysis": "DeepSeek技术突破，公司受益"
+    },
+    {
+      "stock_name": "新大陆",
+      "stock_code": "000997",
+      "impact": 3,
+      "analysis": "DeepSeek技术突破，公司受益"
+    },
+    {
+      "stock_name": "拓尔思",
+      "stock_code": "300229",
+      "impact": 3,
+      "analysis": "DeepSeek技术突破，公司受益"
+    },
+    {
+      "stock_name": "润达医疗",
+      "stock_code": "603108",
+      "impact": 3,
+      "analysis": "AI医疗应用拓展，公司受益"
+    },
+    {
+      "stock_name": "豆神教育",
+      "stock_code": "300010",
+      "impact": 3,
+      "analysis": "AI教育应用拓展，公司受益"
+    }
+  ],
+  "article_id": "8edb5f767a47480fbdb826568be0ef10",
+  "article_date": "2025-01-26",
+  "article_title": "2025.1.26市场逻辑精选"
+}

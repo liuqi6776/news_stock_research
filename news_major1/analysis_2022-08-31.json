@@ -1,0 +1,55 @@
+{
+  "market_impact": 2,
+  "market_analysis": "市场情绪偏积极，利好消息较多。",
+  "sectors": [
+    {
+      "sector_name": "卫星互联网",
+      "impact": 3,
+      "analysis": "苹果和华为新款手机支持卫星通信，板块受益"
+    },
+    {
+      "sector_name": "热泵",
+      "impact": 2,
+      "analysis": "万和电气热泵销售同比翻番，板块受益"
+    },
+    {
+      "sector_name": "电商",
+      "impact": 2,
+      "analysis": "拼多多财报利好，电商板块受益"
+    },
+    {
+      "sector_name": "VR",
+      "impact": 2,
+      "analysis": "VR市场零售额增长，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "三维通信",
+      "stock_code": "002115",
+      "impact": 3,
+      "analysis": "苹果和华为新款手机支持卫星通信，公司受益"
+    },
+    {
+      "stock_name": "合众思壮",
+      "stock_code": "002383",
+      "impact": 3,
+      "analysis": "苹果和华为新款手机支持卫星通信，公司受益"
+    },
+    {
+      "stock_name": "万和电气",
+      "stock_code": "000533",
+      "impact": 3,
+      "analysis": "热泵销售同比翻番，公司受益"
+    },
+    {
+      "stock_name": "拼多多",
+      "stock_code": "PDD",
+      "impact": 3,
+      "analysis": "财报利好，公司受益"
+    }
+  ],
+  "article_title": "8月31日 盘前早8点 股市要闻关注",
+  "html_file": "3mqfhcmv3k.html",
+  "article_date": "2022-08-31"
+}

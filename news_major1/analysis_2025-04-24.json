@@ -1,0 +1,56 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "机器人",
+      "impact": 4,
+      "analysis": "人形机器人需求增长，相关材料受益"
+    },
+    {
+      "sector_name": "电力",
+      "impact": 3,
+      "analysis": "夏季用电高峰，电力投资增加"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 3,
+      "analysis": "AI赋能医药，提升研发效率"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中欣氟材",
+      "stock_code": "600799",
+      "impact": 4,
+      "analysis": "氟酮产能稳定，特斯拉认证"
+    },
+    {
+      "stock_name": "中广核技",
+      "stock_code": "000881",
+      "impact": 4,
+      "analysis": "研发航空航天线缆材料，实现自主可控"
+    },
+    {
+      "stock_name": "华银电力",
+      "stock_code": "600023",
+      "impact": 3,
+      "analysis": "火力发电及水电业务，业绩大增"
+    },
+    {
+      "stock_name": "泓博医药",
+      "stock_code": "300889",
+      "impact": 3,
+      "analysis": "AI药物研发平台，加速研发进程"
+    },
+    {
+      "stock_name": "迪生力",
+      "stock_code": "002572",
+      "impact": 3,
+      "analysis": "轮胎业务受益关税豁免"
+    }
+  ],
+  "article_id": "22a77ea1cb3048079f3f682ad39cb39e",
+  "article_date": "2025-04-24",
+  "article_title": "2025.4.24市场逻辑精选"
+}

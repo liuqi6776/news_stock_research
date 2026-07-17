@@ -1,0 +1,79 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策利好创新药和汽车行业，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "创新药",
+      "impact": 4,
+      "analysis": "政策支持，投资机会多。"
+    },
+    {
+      "sector_name": "汽车",
+      "impact": 3,
+      "analysis": "享界S9亮相，高端轿车市场空间大。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 2,
+      "analysis": "台积电代工价格上涨，产业链受益。"
+    },
+    {
+      "sector_name": "低空经济",
+      "impact": 2,
+      "analysis": "雄安新区支持，产业发展有望。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "长药控股",
+      "stock_code": "000538",
+      "impact": 3,
+      "analysis": "创新药政策受益。"
+    },
+    {
+      "stock_name": "向日葵",
+      "stock_code": "300042",
+      "impact": 3,
+      "analysis": "创新药研发受益。"
+    },
+    {
+      "stock_name": "罗欣药业",
+      "stock_code": "002001",
+      "impact": 3,
+      "analysis": "创新药进入医保。"
+    },
+    {
+      "stock_name": "北汽蓝谷",
+      "stock_code": "600733",
+      "impact": 3,
+      "analysis": "享界S9合作升级。"
+    },
+    {
+      "stock_name": "恒瑞医药",
+      "stock_code": "600276",
+      "impact": 3,
+      "analysis": "创新药龙头。"
+    },
+    {
+      "stock_name": "百济神州",
+      "stock_code": "688235",
+      "impact": 3,
+      "analysis": "商业化阶段创新管线。"
+    },
+    {
+      "stock_name": "澜起科技",
+      "stock_code": "300584",
+      "impact": 3,
+      "analysis": "单季扣非净利润创历史新高。"
+    },
+    {
+      "stock_name": "韦尔股份",
+      "stock_code": "603501",
+      "impact": 3,
+      "analysis": "半年报超预期，业绩上调。"
+    }
+  ],
+  "article_id": "24f154ff34174ebfab51c28819675827",
+  "article_date": "2024-07-07",
+  "article_title": "2024.7.7市场逻辑精选"
+}

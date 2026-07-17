@@ -1,0 +1,94 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受积极因素推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "液冷技术",
+      "impact": 4,
+      "analysis": "谷歌液冷技术升级推动需求增长，板块受益"
+    },
+    {
+      "sector_name": "贵金属",
+      "impact": 3,
+      "analysis": "铂钯价格上涨，板块受支撑"
+    },
+    {
+      "sector_name": "AI应用",
+      "impact": 3,
+      "analysis": "字节AI大会推动AI应用发展，板块受益"
+    },
+    {
+      "sector_name": "航天装备",
+      "impact": 2,
+      "analysis": "航天发射推动相关产业链"
+    },
+    {
+      "sector_name": "发电设备",
+      "impact": 2,
+      "analysis": "发电设备制造合作推动板块"
+    },
+    {
+      "sector_name": "光纤光缆",
+      "impact": 2,
+      "analysis": "光纤价格上涨，板块受益"
+    },
+    {
+      "sector_name": "新能源电池",
+      "impact": 2,
+      "analysis": "钙钛矿叠层电池小批量出货，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "飞龙股份",
+      "stock_code": "002236",
+      "impact": 4,
+      "analysis": "液冷CDU泵核心供应商，受益液冷技术升级"
+    },
+    {
+      "stock_name": "英维克",
+      "stock_code": "002837",
+      "impact": 4,
+      "analysis": "液冷设备供应商，受益谷歌液冷订单"
+    },
+    {
+      "stock_name": "贵研铂业",
+      "stock_code": "600399",
+      "impact": 3,
+      "analysis": "铂族金属领先企业，受益铂钯价格上涨"
+    },
+    {
+      "stock_name": "汉得信息",
+      "stock_code": "300108",
+      "impact": 3,
+      "analysis": "火山引擎合作伙伴，受益AI应用发展"
+    },
+    {
+      "stock_name": "航天晨光",
+      "stock_code": "600501",
+      "impact": 2,
+      "analysis": "长征十二号金属软管供应商，受益航天发射"
+    },
+    {
+      "stock_name": "博菲电气",
+      "stock_code": "603090",
+      "impact": 2,
+      "analysis": "绑定发电设备制造巨头，受益发电设备升级"
+    },
+    {
+      "stock_name": "长飞光纤",
+      "stock_code": "600488",
+      "impact": 2,
+      "analysis": "光纤市占率全球第一，受益光纤价格上涨"
+    },
+    {
+      "stock_name": "钧达股份",
+      "stock_code": "002865",
+      "impact": 2,
+      "analysis": "钙钛矿叠层电池小批量出货，受益新能源电池发展"
+    }
+  ],
+  "article_id": "2eee2e44fac04826bfe9b9939e74aff0",
+  "article_date": "2025-12-17",
+  "article_title": "2025.12.17市场逻辑精选"
+}

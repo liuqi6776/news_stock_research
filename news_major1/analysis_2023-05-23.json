@@ -1,0 +1,77 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪积极",
+  "sectors": [
+    {
+      "sector_name": "网络游戏",
+      "impact": 3,
+      "analysis": "多款游戏获批，板块受益"
+    },
+    {
+      "sector_name": "氢能源",
+      "impact": 3,
+      "analysis": "世界氢能技术大会召开，板块受关注"
+    },
+    {
+      "sector_name": "脑机接口",
+      "impact": 3,
+      "analysis": "创新发展论坛召开，板块受关注"
+    },
+    {
+      "sector_name": "新冠药",
+      "impact": 2,
+      "analysis": "钟南山预测疫情高峰，板块受关注"
+    },
+    {
+      "sector_name": "网络安全",
+      "impact": 2,
+      "analysis": "AI诈骗事件，板块受关注"
+    },
+    {
+      "sector_name": "工业母机",
+      "impact": 2,
+      "analysis": "国新办发布会，板块受关注"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "三七互娱",
+      "stock_code": "002555",
+      "impact": 3,
+      "analysis": "游戏获批，公司受益"
+    },
+    {
+      "stock_name": "电魂网络",
+      "stock_code": "300059",
+      "impact": 3,
+      "analysis": "游戏获批，公司受益"
+    },
+    {
+      "stock_name": "吉比特",
+      "stock_code": "603444",
+      "impact": 3,
+      "analysis": "游戏获批，公司受益"
+    },
+    {
+      "stock_name": "图灵机器人",
+      "stock_code": "002231",
+      "impact": 3,
+      "analysis": "儿童AI学习机产品发布，公司受益"
+    },
+    {
+      "stock_name": "致远新能",
+      "stock_code": "300685",
+      "impact": 3,
+      "analysis": "氢能技术大会召开，公司受益"
+    },
+    {
+      "stock_name": "厚普股份",
+      "stock_code": "603678",
+      "impact": 3,
+      "analysis": "氢能技术大会召开，公司受益"
+    }
+  ],
+  "article_title": "5月23日 盘前热点事件关注",
+  "html_file": "40jc7vns24.html",
+  "article_date": "2023-05-23"
+}

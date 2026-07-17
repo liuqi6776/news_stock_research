@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "水务",
+      "impact": 4,
+      "analysis": "水价上涨预期推动水务板块上涨。"
+    },
+    {
+      "sector_name": "疫苗",
+      "impact": 3,
+      "analysis": "HPV疫苗市场预期推动相关个股上涨。"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "光伏需求放量预期推动光伏辅材板块上涨。"
+    },
+    {
+      "sector_name": "转基因种子",
+      "impact": 3,
+      "analysis": "转基因种子市场放开预期推动相关个股上涨。"
+    },
+    {
+      "sector_name": "PC鸿蒙",
+      "impact": 2,
+      "analysis": "PC鸿蒙系统接近完成预期推动相关个股上涨。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "联合水务",
+      "stock_code": "600052",
+      "impact": 4,
+      "analysis": "水价上涨预期推动股价上涨。"
+    },
+    {
+      "stock_name": "万泰生物",
+      "stock_code": "603392",
+      "impact": 4,
+      "analysis": "HPV疫苗市场预期推动股价上涨。"
+    },
+    {
+      "stock_name": "清源股份",
+      "stock_code": "603198",
+      "impact": 3,
+      "analysis": "光伏需求放量预期推动股价上涨。"
+    },
+    {
+      "stock_name": "隆平高科",
+      "stock_code": "000998",
+      "impact": 3,
+      "analysis": "转基因种子市场放开预期推动股价上涨。"
+    },
+    {
+      "stock_name": "软通动力",
+      "stock_code": "300073",
+      "impact": 2,
+      "analysis": "PC鸿蒙系统预期推动股价上涨。"
+    }
+  ],
+  "article_id": "9bbc75229c334725a6a7d3ba65cb9dc3",
+  "article_date": "2023-12-26",
+  "article_title": "2023.12.26市场逻辑精选"
+}

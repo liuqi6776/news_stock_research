@@ -1,0 +1,55 @@
+{
+  "market_impact": 2,
+  "market_analysis": "市场情绪偏积极，部分板块和个股受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "英伟达人形机器人亮相，相关产业链受益"
+    },
+    {
+      "sector_name": "锂电池",
+      "impact": 2,
+      "analysis": "磷酸铁锂行业协会设成本红线，行业规范报价"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 2,
+      "analysis": "航天发展等军工股受关注"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 2,
+      "analysis": "新能源汽车政府采购需求标准征求意见稿发布"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "豪恩汽电",
+      "stock_code": "002953",
+      "impact": 3,
+      "analysis": "英伟达人形机器人合作伙伴"
+    },
+    {
+      "stock_name": "湖南裕能",
+      "stock_code": "300418",
+      "impact": 2,
+      "analysis": "磷酸铁锂行业协会设成本红线"
+    },
+    {
+      "stock_name": "航天发展",
+      "stock_code": "000547",
+      "impact": 2,
+      "analysis": "军工板块受关注"
+    },
+    {
+      "stock_name": "九牧王",
+      "stock_code": "002234",
+      "impact": 2,
+      "analysis": "连板梯队和涨停事件"
+    }
+  ],
+  "article_title": "11月21日盘前纪要",
+  "html_file": "2yukac7y8t7.html",
+  "article_date": "2025-11-21"
+}

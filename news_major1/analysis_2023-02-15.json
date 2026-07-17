@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪偏乐观",
+  "sectors": [
+    {
+      "sector_name": "新能源汽车",
+      "impact": 4,
+      "analysis": "欧洲停售燃油车政策，利好相关产业链"
+    },
+    {
+      "sector_name": "锂电池",
+      "impact": 3,
+      "analysis": "国产钙钛矿电池效率创新高，利好相关企业"
+    },
+    {
+      "sector_name": "5G消息",
+      "impact": 3,
+      "analysis": "ChatGPT有望重构5G消息业务，利好相关企业"
+    },
+    {
+      "sector_name": "元宇宙",
+      "impact": 3,
+      "analysis": "元宇宙产业大会召开，利好相关企业"
+    },
+    {
+      "sector_name": "体育",
+      "impact": -2,
+      "analysis": "足协主席涉嫌违纪违法，利空相关企业"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "比亚迪",
+      "stock_code": "002594",
+      "impact": 4,
+      "analysis": "欧洲停售燃油车政策，利好新能源汽车产业链"
+    },
+    {
+      "stock_name": "宁德时代",
+      "stock_code": "300750",
+      "impact": 3,
+      "analysis": "国产钙钛矿电池效率创新高，利好锂电池产业链"
+    },
+    {
+      "stock_name": "梦网科技",
+      "stock_code": "300770",
+      "impact": 3,
+      "analysis": "ChatGPT有望重构5G消息业务，利好相关企业"
+    },
+    {
+      "stock_name": "中文在线",
+      "stock_code": "300364",
+      "impact": 3,
+      "analysis": "元宇宙产业大会召开，利好相关企业"
+    },
+    {
+      "stock_name": "莱茵体育",
+      "stock_code": "000596",
+      "impact": -2,
+      "analysis": "足协主席涉嫌违纪违法，利空相关企业"
+    }
+  ],
+  "article_title": "2月15日盘前早参 热点事件关注",
+  "html_file": "75umh6v3us.html",
+  "article_date": "2023-02-15"
+}

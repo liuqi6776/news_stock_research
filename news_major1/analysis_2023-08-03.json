@@ -1,0 +1,55 @@
+{
+  "market_impact": -2,
+  "market_analysis": "市场情绪受美国评级下调影响，整体偏弱。",
+  "sectors": [
+    {
+      "sector_name": "汽车客运站",
+      "impact": 1,
+      "analysis": "政策支持，利好相关个股。"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 2,
+      "analysis": "世界机器人大会及AI模型发展，利好相关个股。"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 1,
+      "analysis": "新药物研发，利好相关个股。"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 1,
+      "analysis": "政策支持及销量增长，利好相关个股。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "江西长运",
+      "stock_code": "600101",
+      "impact": 1,
+      "analysis": "汽车客运站转型，利好。"
+    },
+    {
+      "stock_name": "新时达",
+      "stock_code": "002527",
+      "impact": 2,
+      "analysis": "机器人大会及AI模型发展，利好。"
+    },
+    {
+      "stock_name": "济民医疗",
+      "stock_code": "002223",
+      "impact": 1,
+      "analysis": "新药物研发，利好。"
+    },
+    {
+      "stock_name": "比亚迪",
+      "stock_code": "002594",
+      "impact": 1,
+      "analysis": "新能源汽车销量增长，利好。"
+    }
+  ],
+  "article_title": "8月3日盘前早报 热点事件关注",
+  "html_file": "920j1tn524.html",
+  "article_date": "2023-08-03"
+}

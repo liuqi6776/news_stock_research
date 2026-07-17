@@ -1,0 +1,90 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，AI和芯片板块受关注。",
+  "sectors": [
+    {
+      "sector_name": "AI芯片",
+      "impact": 4,
+      "analysis": "腾讯接入DeepSeek，AI芯片需求提升。"
+    },
+    {
+      "sector_name": "云计算",
+      "impact": 3,
+      "analysis": "腾讯云AI代码助手等接入DeepSeek，云计算需求提升。"
+    },
+    {
+      "sector_name": "家居家装",
+      "impact": 2,
+      "analysis": "群核科技上市，家居家装行业受关注。"
+    },
+    {
+      "sector_name": "司法科技",
+      "impact": 2,
+      "analysis": "金桥信息与阿里合作，司法科技板块受关注。"
+    },
+    {
+      "sector_name": "OLED材料",
+      "impact": 2,
+      "analysis": "艾森股份拟收购棓诺新材，OLED材料板块受关注。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "云天励飞",
+      "stock_code": "002537",
+      "impact": 3,
+      "analysis": "政务系统接入DS，公司业务受益。"
+    },
+    {
+      "stock_name": "太极股份",
+      "stock_code": "002936",
+      "impact": 3,
+      "analysis": "政务系统接入DS，公司业务受益。"
+    },
+    {
+      "stock_name": "四川长虹",
+      "stock_code": "600839",
+      "impact": 3,
+      "analysis": "政务系统接入DS，公司业务受益。"
+    },
+    {
+      "stock_name": "海光信息",
+      "stock_code": "603019",
+      "impact": 3,
+      "analysis": "政务系统接入DS，公司业务受益。"
+    },
+    {
+      "stock_name": "创业黑马",
+      "stock_code": "300596",
+      "impact": 3,
+      "analysis": "政务系统接入DS，公司业务受益。"
+    },
+    {
+      "stock_name": "弘信电子",
+      "stock_code": "688012",
+      "impact": 4,
+      "analysis": "腾讯AI产品接入DeepSeek，公司业务受益。"
+    },
+    {
+      "stock_name": "首都在线",
+      "stock_code": "000739",
+      "impact": 3,
+      "analysis": "腾讯AI产品接入DeepSeek，公司业务受益。"
+    },
+    {
+      "stock_name": "科华数据",
+      "stock_code": "002335",
+      "impact": 3,
+      "analysis": "腾讯AI产品接入DeepSeek，公司业务受益。"
+    },
+    {
+      "stock_name": "电魂网络",
+      "stock_code": "300579",
+      "impact": 2,
+      "analysis": "腾讯AI游戏潜力提升，公司业务受益。"
+    }
+  ],
+  "article_id": "0bd35e75e9374fb78b4287381b7ad1c8",
+  "article_date": "2025-02-16",
+  "article_title": "2025.2.16市场逻辑精选"
+}

@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "AI应用和AI医疗领域利好，部分个股受正丙醇涨价影响。",
+  "sectors": [
+    {
+      "sector_name": "AI应用",
+      "impact": 4,
+      "analysis": "AI Agent爆发期，相关公司受益"
+    },
+    {
+      "sector_name": "AI医疗",
+      "impact": 3,
+      "analysis": "国家卫健委发布AI医疗应用指引，相关公司受益"
+    },
+    {
+      "sector_name": "化工",
+      "impact": 2,
+      "analysis": "正丙醇价格上涨，相关化工股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中科金财",
+      "stock_code": "002657",
+      "impact": 4,
+      "analysis": "深化AI Agent研发，受益AI应用爆发"
+    },
+    {
+      "stock_name": "南兴股份",
+      "stock_code": "002778",
+      "impact": 3,
+      "analysis": "与微软、OpenAI合作，受益AI应用爆发"
+    },
+    {
+      "stock_name": "朗玛信息",
+      "stock_code": "300682",
+      "impact": 3,
+      "analysis": "开发“39AI全科医生”，受益AI医疗指引"
+    },
+    {
+      "stock_name": "三维化学",
+      "stock_code": "002469",
+      "impact": 2,
+      "analysis": "受益正丙醇价格上涨"
+    }
+  ],
+  "article_id": "aa9d29e1b29d44ce92ce7b61932602d2",
+  "article_date": "2024-11-14",
+  "article_title": "2024.11.14市场逻辑精选"
+}

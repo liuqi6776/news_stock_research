@@ -1,0 +1,261 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪提升",
+  "sectors": [
+    {
+      "sector_name": "人工智能",
+      "impact": 4,
+      "analysis": "AutoGPT 和马斯克新公司利好"
+    },
+    {
+      "sector_name": "科技自立自强",
+      "impact": 3,
+      "analysis": "解决卡脖子问题，科技发展利好"
+    },
+    {
+      "sector_name": "信息安全",
+      "impact": 3,
+      "analysis": "商用密码管理条例修订利好"
+    },
+    {
+      "sector_name": "一体化压铸",
+      "impact": 3,
+      "analysis": "先进工艺技术产业化利好"
+    },
+    {
+      "sector_name": "钠电池",
+      "impact": 3,
+      "analysis": "宁德时代钠离子电池首发落地利好"
+    },
+    {
+      "sector_name": "无人驾驶",
+      "impact": 3,
+      "analysis": "百度Apollo和华为智能驾驶系统发布利好"
+    },
+    {
+      "sector_name": "氢能源",
+      "impact": 3,
+      "analysis": "长距离输氢技术突破利好"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 2,
+      "analysis": "DRAM现货价格止跌企稳利好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "法本信息",
+      "stock_code": "300136",
+      "impact": 4,
+      "analysis": "RPA概念股，马斯克新公司竞争者"
+    },
+    {
+      "stock_name": "赛意信息",
+      "stock_code": "300684",
+      "impact": 4,
+      "analysis": "RPA概念股，马斯克新公司竞争者"
+    },
+    {
+      "stock_name": "汉得信息",
+      "stock_code": "300378",
+      "impact": 4,
+      "analysis": "RPA概念股，马斯克新公司竞争者"
+    },
+    {
+      "stock_name": "金证股份",
+      "stock_code": "600446",
+      "impact": 4,
+      "analysis": "RPA概念股，马斯克新公司竞争者"
+    },
+    {
+      "stock_name": "中科金财",
+      "stock_code": "002657",
+      "impact": 4,
+      "analysis": "RPA概念股，马斯克新公司竞争者"
+    },
+    {
+      "stock_name": "掌阅科技",
+      "stock_code": "300383",
+      "impact": 3,
+      "analysis": "Prompt概念股，马斯克新公司竞争者"
+    },
+    {
+      "stock_name": "金海通",
+      "stock_code": "300470",
+      "impact": 3,
+      "analysis": "科技自立自强概念股"
+    },
+    {
+      "stock_name": "耐科装备",
+      "stock_code": "688029",
+      "impact": 3,
+      "analysis": "科技自立自强概念股"
+    },
+    {
+      "stock_name": "北方华创",
+      "stock_code": "002371",
+      "impact": 3,
+      "analysis": "科技自立自强概念股"
+    },
+    {
+      "stock_name": "华亚智能",
+      "stock_code": "688598",
+      "impact": 3,
+      "analysis": "科技自立自强概念股"
+    },
+    {
+      "stock_name": "晶方科技",
+      "stock_code": "603060",
+      "impact": 3,
+      "analysis": "科技自立自强概念股"
+    },
+    {
+      "stock_name": "安恒信息",
+      "stock_code": "300537",
+      "impact": 3,
+      "analysis": "信息安全概念股"
+    },
+    {
+      "stock_name": "美亚柏科",
+      "stock_code": "300188",
+      "impact": 3,
+      "analysis": "信息安全概念股"
+    },
+    {
+      "stock_name": "永信至诚",
+      "stock_code": "603593",
+      "impact": 3,
+      "analysis": "信息安全概念股"
+    },
+    {
+      "stock_name": "电科网安",
+      "stock_code": "688023",
+      "impact": 3,
+      "analysis": "信息安全概念股"
+    },
+    {
+      "stock_name": "三未信安",
+      "stock_code": "688528",
+      "impact": 3,
+      "analysis": "信息安全概念股"
+    },
+    {
+      "stock_name": "嵘泰股份",
+      "stock_code": "603709",
+      "impact": 3,
+      "analysis": "一体化压铸概念股"
+    },
+    {
+      "stock_name": "合力科技",
+      "stock_code": "603719",
+      "impact": 3,
+      "analysis": "一体化压铸概念股"
+    },
+    {
+      "stock_name": "广东鸿图",
+      "stock_code": "002101",
+      "impact": 3,
+      "analysis": "一体化压铸概念股"
+    },
+    {
+      "stock_name": "瑞鹄模具",
+      "stock_code": "002997",
+      "impact": 3,
+      "analysis": "一体化压铸概念股"
+    },
+    {
+      "stock_name": "传艺科技",
+      "stock_code": "002866",
+      "impact": 3,
+      "analysis": "钠电池概念股"
+    },
+    {
+      "stock_name": "维科技术",
+      "stock_code": "600616",
+      "impact": 3,
+      "analysis": "钠电池概念股"
+    },
+    {
+      "stock_name": "同兴环保",
+      "stock_code": "603721",
+      "impact": 3,
+      "analysis": "钠电池概念股"
+    },
+    {
+      "stock_name": "路畅科技",
+      "stock_code": "002813",
+      "impact": 3,
+      "analysis": "无人驾驶概念股"
+    },
+    {
+      "stock_name": "亚太股份",
+      "stock_code": "002284",
+      "impact": 3,
+      "analysis": "无人驾驶概念股"
+    },
+    {
+      "stock_name": "万安科技",
+      "stock_code": "002590",
+      "impact": 3,
+      "analysis": "无人驾驶概念股"
+    },
+    {
+      "stock_name": "华阳集团",
+      "stock_code": "002909",
+      "impact": 3,
+      "analysis": "无人驾驶概念股"
+    },
+    {
+      "stock_name": "北京君正",
+      "stock_code": "603969",
+      "impact": 2,
+      "analysis": "DRAM芯片概念股"
+    },
+    {
+      "stock_name": "恒烁股份",
+      "stock_code": "688027",
+      "impact": 2,
+      "analysis": "DRAM芯片概念股"
+    },
+    {
+      "stock_name": "佰维存储",
+      "stock_code": "688017",
+      "impact": 2,
+      "analysis": "DRAM芯片概念股"
+    },
+    {
+      "stock_name": "江波龙",
+      "stock_code": "002158",
+      "impact": 2,
+      "analysis": "DRAM芯片概念股"
+    },
+    {
+      "stock_name": "致远新能",
+      "stock_code": "603359",
+      "impact": 3,
+      "analysis": "氢能源概念股"
+    },
+    {
+      "stock_name": "厚普股份",
+      "stock_code": "603678",
+      "impact": 3,
+      "analysis": "氢能源概念股"
+    },
+    {
+      "stock_name": "京城股份",
+      "stock_code": "600860",
+      "impact": 3,
+      "analysis": "氢能源概念股"
+    },
+    {
+      "stock_name": "雪人股份",
+      "stock_code": "002639",
+      "impact": 3,
+      "analysis": "氢能源概念股"
+    }
+  ],
+  "article_title": "4月17日 盘前热点事件关注",
+  "html_file": "dusmg54exs.html",
+  "article_date": "2023-04-17"
+}

@@ -1,0 +1,74 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注政策变化。",
+  "sectors": [
+    {
+      "sector_name": "国产大模型",
+      "impact": 4,
+      "analysis": "国产替代加速，行业前景看好。"
+    },
+    {
+      "sector_name": "存储器",
+      "impact": 3,
+      "analysis": "三星提价，行业景气度提升。"
+    },
+    {
+      "sector_name": "卫星互联网",
+      "impact": 3,
+      "analysis": "手机直连成核心应用，市场潜力巨大。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "因赛集团",
+      "stock_code": "300385",
+      "impact": 4,
+      "analysis": "商业化落地，业绩有望增长。"
+    },
+    {
+      "stock_name": "昆仑万维",
+      "stock_code": "300418",
+      "impact": 4,
+      "analysis": "推出对标GPT的大模型，技术领先。"
+    },
+    {
+      "stock_name": "科大讯飞",
+      "stock_code": "002230",
+      "impact": 4,
+      "analysis": "星火大模型升级，应用场景丰富。"
+    },
+    {
+      "stock_name": "宏鑫科技",
+      "stock_code": "603966",
+      "impact": 3,
+      "analysis": "Rivian采购量猛增，业绩有望提升。"
+    },
+    {
+      "stock_name": "云南锗业",
+      "stock_code": "002428",
+      "impact": 4,
+      "analysis": "锗价上涨，业绩弹性较大。"
+    },
+    {
+      "stock_name": "鼎捷软件",
+      "stock_code": "603520",
+      "impact": 3,
+      "analysis": "合作微软Azure及Openai，技术领先。"
+    },
+    {
+      "stock_name": "西王食品",
+      "stock_code": "000639",
+      "impact": 3,
+      "analysis": "健康食品解决方案，市场前景广阔。"
+    },
+    {
+      "stock_name": "沃尔核材",
+      "stock_code": "002130",
+      "impact": 3,
+      "analysis": "224G通信线缆送样反馈正面，订单有望增长。"
+    }
+  ],
+  "article_id": "599b40259982477f931464eca3d7dd3f",
+  "article_date": "2024-06-26",
+  "article_title": "2024.6.26市场逻辑精选"
+}

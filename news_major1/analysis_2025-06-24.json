@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，关注无人驾驶和固态电池板块。",
+  "sectors": [
+    {
+      "sector_name": "无人驾驶",
+      "impact": 4,
+      "analysis": "商业化加速，利好相关企业。"
+    },
+    {
+      "sector_name": "固态电池",
+      "impact": 3,
+      "analysis": "技术突破，市场空间大。"
+    },
+    {
+      "sector_name": "消费",
+      "impact": 2,
+      "analysis": "政策支持，消费领域受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "万马科技",
+      "stock_code": "300555",
+      "impact": 4,
+      "analysis": "自动驾驶数据闭环平台，受益无人驾驶。"
+    },
+    {
+      "stock_name": "浙江世宝",
+      "stock_code": "002703",
+      "impact": 3,
+      "analysis": "线控转向技术，受益无人驾驶。"
+    },
+    {
+      "stock_name": "信德新材",
+      "stock_code": "300686",
+      "impact": 3,
+      "analysis": "硅基负极材料，受益固态电池。"
+    },
+    {
+      "stock_name": "一致魔芋",
+      "stock_code": "603229",
+      "impact": 2,
+      "analysis": "魔芋粉收入占比高，受益消费政策。"
+    }
+  ],
+  "article_id": "c08d45ebf77d451f8ae8af4e6cfc925f",
+  "article_date": "2025-06-24",
+  "article_title": "2025.6.24市场逻辑精选"
+}

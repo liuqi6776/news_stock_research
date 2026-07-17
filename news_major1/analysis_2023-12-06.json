@@ -1,0 +1,51 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏乐观，游戏和半导体行业受利好影响较大。",
+  "sectors": [
+    {
+      "sector_name": "游戏",
+      "impact": 4,
+      "analysis": "版号发布和AI赋能推动行业增长，利好相关公司。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "AMD新产品发布，利好相关半导体公司。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "掌趣科技",
+      "stock_code": "300059",
+      "impact": 4,
+      "analysis": "AI游戏创作平台发布，利好公司。"
+    },
+    {
+      "stock_name": "盛天网络",
+      "stock_code": "300494",
+      "impact": 3,
+      "analysis": "AI音乐社交应用和AR/VR游戏项目，利好公司。"
+    },
+    {
+      "stock_name": "紫天科技",
+      "stock_code": "300520",
+      "impact": 3,
+      "analysis": "AI休闲游戏和合作项目，利好公司。"
+    },
+    {
+      "stock_name": "文一科技",
+      "stock_code": "600520",
+      "impact": 3,
+      "analysis": "华为封装产业链，利好公司。"
+    },
+    {
+      "stock_name": "佰维存储",
+      "stock_code": "688019",
+      "impact": 3,
+      "analysis": "HBM封测技术，利好公司。"
+    }
+  ],
+  "article_id": "e2557af90bce49c1a6cbeea37590e276",
+  "article_date": "2023-12-06",
+  "article_title": "2023.12.6市场逻辑精选"
+}

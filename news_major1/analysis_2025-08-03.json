@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注后续进展。",
+  "sectors": [
+    {
+      "sector_name": "芯片半导体",
+      "impact": 4,
+      "analysis": "英诺赛科入选英伟达合作伙伴，板块受益"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 3,
+      "analysis": "无人装备集群作战技术发展，军工板块受益"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "AI政务推进，AI板块受益"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "机器人相关催化事件，机器人板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "英诺赛科",
+      "stock_code": "002845",
+      "impact": 4,
+      "analysis": "入选英伟达合作伙伴，股价有望上涨"
+    },
+    {
+      "stock_name": "科思科技",
+      "stock_code": "300698",
+      "impact": 3,
+      "analysis": "无人装备集群作战技术发展，股价有望上涨"
+    },
+    {
+      "stock_name": "深桑达A",
+      "stock_code": "000362",
+      "impact": 3,
+      "analysis": "AI政务推进，股价有望上涨"
+    },
+    {
+      "stock_name": "机器人",
+      "stock_code": "300024",
+      "impact": 3,
+      "analysis": "机器人相关催化事件，股价有望上涨"
+    }
+  ],
+  "article_id": "7f4b986c392f4853a6b523a7297b1ca5",
+  "article_date": "2025-08-03",
+  "article_title": "2025.8.3市场逻辑精选"
+}

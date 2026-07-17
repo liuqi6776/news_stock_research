@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，关注相关产业链。",
+  "sectors": [
+    {
+      "sector_name": "碳化硅",
+      "impact": 4,
+      "analysis": "产业链有望快速崛起，关注衬底和器件环节。"
+    },
+    {
+      "sector_name": "光学镜头",
+      "impact": 3,
+      "analysis": "玻塑混合镜头成为新趋势，关注相关公司。"
+    },
+    {
+      "sector_name": "AI电商",
+      "impact": 3,
+      "analysis": "AI电商时代来临，关注相关应用公司。"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "机器人产业大会召开，关注相关产业链。"
+    },
+    {
+      "sector_name": "换电",
+      "impact": 3,
+      "analysis": "蔚来换电业务加速，关注相关公司。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "天科合达",
+      "stock_code": "暂无",
+      "impact": 4,
+      "analysis": "全球SIC衬底市占率国内企业第一。"
+    },
+    {
+      "stock_name": "斯达半导",
+      "stock_code": "暂无",
+      "impact": 3,
+      "analysis": "国产IGBT模块龙头，车规级SiCMOSFET模块在主电机控制器客户完成验证。"
+    },
+    {
+      "stock_name": "民德电子",
+      "stock_code": "暂无",
+      "impact": 3,
+      "analysis": "碳化硅器件核心环节全产业链布局。"
+    },
+    {
+      "stock_name": "晶升股份",
+      "stock_code": "暂无",
+      "impact": 3,
+      "analysis": "市占率29%，碳化硅单晶硅炉市场空间约88亿元人民币。"
+    },
+    {
+      "stock_name": "宇环数控",
+      "stock_code": "暂无",
+      "impact": 3,
+      "analysis": "碳化硅设备部分样机已推出。"
+    }
+  ],
+  "article_id": "867208b5cdb74352a0d8dbf2732c1787",
+  "article_date": "2023-11-29",
+  "article_title": "2023.11.29市场逻辑精选"
+}

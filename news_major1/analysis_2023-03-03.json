@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股受利好消息提振。",
+  "sectors": [
+    {
+      "sector_name": "芯片",
+      "impact": 4,
+      "analysis": "政策支持，行业前景看好。"
+    },
+    {
+      "sector_name": "6G技术",
+      "impact": 3,
+      "analysis": "技术大会召开，相关企业受益。"
+    },
+    {
+      "sector_name": "数据交易",
+      "impact": 3,
+      "analysis": "政策支持，数据交易市场活跃。"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "ChatGPT应用受阻，相关企业受关注。"
+    },
+    {
+      "sector_name": "电池技术",
+      "impact": 3,
+      "analysis": "新技术发布，电池行业受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "大港股份",
+      "stock_code": "000895",
+      "impact": 4,
+      "analysis": "政策支持，行业前景看好。"
+    },
+    {
+      "stock_name": "同兴达",
+      "stock_code": "002845",
+      "impact": 4,
+      "analysis": "政策支持，行业前景看好。"
+    },
+    {
+      "stock_name": "通富微电",
+      "stock_code": "002156",
+      "impact": 4,
+      "analysis": "政策支持，行业前景看好。"
+    },
+    {
+      "stock_name": "龙芯中科",
+      "stock_code": "688047",
+      "impact": 4,
+      "analysis": "政策支持，行业前景看好。"
+    },
+    {
+      "stock_name": "北方华创",
+      "stock_code": "002371",
+      "impact": 4,
+      "analysis": "政策支持，行业前景看好。"
+    }
+  ],
+  "article_title": "3月3日盘前热点事件关注",
+  "html_file": "dsllqpe492.html",
+  "article_date": "2023-03-03"
+}

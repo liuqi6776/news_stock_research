@@ -1,0 +1,61 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股受积极消息影响。",
+  "sectors": [
+    {
+      "sector_name": "减肥药",
+      "impact": 4,
+      "analysis": "拜登提议医保覆盖减肥药，相关公司受益"
+    },
+    {
+      "sector_name": "锂电池",
+      "impact": 3,
+      "analysis": "英联股份获批量订单，复合集流体需求增长"
+    },
+    {
+      "sector_name": "造纸",
+      "impact": 2,
+      "analysis": "岳阳林纸拟收购骏泰科技，完善产业链布局"
+    },
+    {
+      "sector_name": "食用菌",
+      "impact": 2,
+      "analysis": "众兴菌业拟实施产业园项目，扩大产能"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "壹网壹创",
+      "stock_code": "300792",
+      "impact": 2,
+      "analysis": "获设计大奖，品牌设计项目受关注"
+    },
+    {
+      "stock_name": "诺泰生物",
+      "stock_code": "300795",
+      "impact": 4,
+      "analysis": "替尔泊肽原料药处于工艺验证阶段"
+    },
+    {
+      "stock_name": "英联股份",
+      "stock_code": "002312",
+      "impact": 4,
+      "analysis": "获韩国客户批量订单，签订战略合作协议"
+    },
+    {
+      "stock_name": "岳阳林纸",
+      "stock_code": "600963",
+      "impact": 3,
+      "analysis": "拟收购骏泰科技，打造高端绿色浆纸产业"
+    },
+    {
+      "stock_name": "众兴菌业",
+      "stock_code": "002772",
+      "impact": 3,
+      "analysis": "拟实施产业园项目，扩大食用菌产能"
+    }
+  ],
+  "article_id": "68e39080a99f4421a21ed80d395e5687",
+  "article_date": "2024-11-26",
+  "article_title": "2024.11.26市场逻辑精选"
+}

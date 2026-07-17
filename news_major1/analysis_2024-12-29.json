@@ -1,0 +1,123 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极因素影响",
+  "sectors": [
+    {
+      "sector_name": "变压器",
+      "impact": 4,
+      "analysis": "AI算力需求增长，带动相关个股上涨"
+    },
+    {
+      "sector_name": "化工",
+      "impact": 3,
+      "analysis": "乙烷进口关税下调，降低相关企业成本"
+    },
+    {
+      "sector_name": "农业",
+      "impact": 2,
+      "analysis": "牛肉进口保障措施，利好国内养殖企业"
+    },
+    {
+      "sector_name": "云计算",
+      "impact": 3,
+      "analysis": "金山云上涨，带动相关服务商受益"
+    },
+    {
+      "sector_name": "数据中心",
+      "impact": 4,
+      "analysis": "上海算力目标提升，相关个股受益"
+    },
+    {
+      "sector_name": "电池",
+      "impact": 3,
+      "analysis": "HVDC电池有望加速渗透数据中心电源"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "英伟达机器人革命，相关个股受益"
+    },
+    {
+      "sector_name": "光通信",
+      "impact": 3,
+      "analysis": "光通信解决方案提供商受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "金盘科技",
+      "stock_code": "300560",
+      "impact": 4,
+      "analysis": "AI算力需求增长，带动公司业绩提升"
+    },
+    {
+      "stock_name": "新特电气",
+      "stock_code": "002168",
+      "impact": 4,
+      "analysis": "AI算力需求增长，带动公司业绩提升"
+    },
+    {
+      "stock_name": "顺纳股份",
+      "stock_code": "002985",
+      "impact": 4,
+      "analysis": "AI算力需求增长，带动公司业绩提升"
+    },
+    {
+      "stock_name": "广电电气",
+      "stock_code": "600706",
+      "impact": 4,
+      "analysis": "AI算力需求增长，带动公司业绩提升"
+    },
+    {
+      "stock_name": "卫星化学",
+      "stock_code": "603719",
+      "impact": 3,
+      "analysis": "乙烷进口关税下调，降低公司成本"
+    },
+    {
+      "stock_name": "福成股份",
+      "stock_code": "600965",
+      "impact": 2,
+      "analysis": "牛肉进口保障措施，利好公司业务"
+    },
+    {
+      "stock_name": "亚康股份",
+      "stock_code": "300702",
+      "impact": 3,
+      "analysis": "金山云上涨，带动公司业绩提升"
+    },
+    {
+      "stock_name": "凯龙股份",
+      "stock_code": "002783",
+      "impact": 3,
+      "analysis": "公司控制权变更，利好公司发展"
+    },
+    {
+      "stock_name": "英威腾",
+      "stock_code": "002334",
+      "impact": 4,
+      "analysis": "数据中心UPS核心供应商，业绩有望提升"
+    },
+    {
+      "stock_name": "东港股份",
+      "stock_code": "002117",
+      "impact": 3,
+      "analysis": "机器人产品落地，业绩有望提升"
+    },
+    {
+      "stock_name": "博创科技",
+      "stock_code": "300545",
+      "impact": 3,
+      "analysis": "拟收购长芯盛股权，拓展业务领域"
+    },
+    {
+      "stock_name": "观想科技",
+      "stock_code": "300383",
+      "impact": 3,
+      "analysis": "签署AI载荷大单，业绩有望提升"
+    }
+  ],
+  "article_id": "6cc0b741640948439aa2ff3fcd2de8c3",
+  "article_date": "2024-12-29",
+  "article_title": "2024.12.29市场逻辑精选"
+}

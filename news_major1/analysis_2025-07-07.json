@@ -1,0 +1,78 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "稀土永磁",
+      "impact": 4,
+      "analysis": "需求旺季和价格上涨推动板块上涨。"
+    },
+    {
+      "sector_name": "虚拟电厂",
+      "impact": 3,
+      "analysis": "夏季用电高峰和政策扶持推动板块上涨。"
+    },
+    {
+      "sector_name": "存储芯片",
+      "impact": 3,
+      "analysis": "长鑫存储上市辅导和行业需求增长推动板块上涨。"
+    },
+    {
+      "sector_name": "医疗器械",
+      "impact": 2,
+      "analysis": "国产替代政策推动板块上涨。"
+    },
+    {
+      "sector_name": "包装材料",
+      "impact": 2,
+      "analysis": "外卖和快递需求增长推动板块上涨。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "广晟有色",
+      "stock_code": "600259",
+      "impact": 4,
+      "analysis": "稀土永磁行业龙头，价格上涨受益。"
+    },
+    {
+      "stock_name": "中国稀土",
+      "stock_code": "000970",
+      "impact": 4,
+      "analysis": "稀土永磁行业龙头，价格上涨受益。"
+    },
+    {
+      "stock_name": "苏文电能",
+      "stock_code": "300282",
+      "impact": 3,
+      "analysis": "虚拟电厂行业领先企业，政策扶持受益。"
+    },
+    {
+      "stock_name": "东方电子",
+      "stock_code": "000682",
+      "impact": 3,
+      "analysis": "虚拟电厂行业领先企业，政策扶持受益。"
+    },
+    {
+      "stock_name": "长鑫存储",
+      "stock_code": "688012",
+      "impact": 3,
+      "analysis": "存储芯片行业领先企业，上市辅导受益。"
+    },
+    {
+      "stock_name": "宝莱特",
+      "stock_code": "300246",
+      "impact": 2,
+      "analysis": "医疗器械行业领先企业，国产替代受益。"
+    },
+    {
+      "stock_name": "吉宏股份",
+      "stock_code": "002803",
+      "impact": 2,
+      "analysis": "包装材料行业领先企业，需求增长受益。"
+    }
+  ],
+  "article_id": "b73648ba1f0344f48dda0ebfcb0999b1",
+  "article_date": "2025-07-07",
+  "article_title": "2025.7.7市场逻辑精选"
+}

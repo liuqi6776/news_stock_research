@@ -1,0 +1,44 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏多，关注一带一路、AI、黄金等板块。",
+  "sectors": [
+    {
+      "sector_name": "一带一路",
+      "impact": 4,
+      "analysis": "政策支持，国际合作增加，利好相关个股。"
+    },
+    {
+      "sector_name": "AI",
+      "impact": 3,
+      "analysis": "AI研发和算力需求增加，利好相关个股。"
+    },
+    {
+      "sector_name": "黄金",
+      "impact": 3,
+      "analysis": "黄金价格上涨，利好相关个股。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中铁装配",
+      "stock_code": "601390",
+      "impact": 4,
+      "analysis": "一带一路政策支持，利好。"
+    },
+    {
+      "stock_name": "安恒信息",
+      "stock_code": "300537",
+      "impact": 3,
+      "analysis": "AI安全需求增加，利好。"
+    },
+    {
+      "stock_name": "四川黄金",
+      "stock_code": "600531",
+      "impact": 3,
+      "analysis": "黄金价格上涨，利好。"
+    }
+  ],
+  "article_title": "4月6日盘前热点事件关注",
+  "html_file": "du8jb8zyll.html",
+  "article_date": "2023-04-06"
+}

@@ -1,0 +1,77 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注潜在风险。",
+  "sectors": [
+    {
+      "sector_name": "新能源汽车",
+      "impact": 4,
+      "analysis": "特斯拉FSD功能更新利好相关产业链。"
+    },
+    {
+      "sector_name": "钴金属",
+      "impact": -3,
+      "analysis": "刚果暂停钴出口利空钴金属板块。"
+    },
+    {
+      "sector_name": "基建工程",
+      "impact": 3,
+      "analysis": "俄乌重建预期利好基建工程板块。"
+    },
+    {
+      "sector_name": "半导体设备",
+      "impact": 3,
+      "analysis": "三星与长存专利协议利好半导体设备板块。"
+    },
+    {
+      "sector_name": "AR眼镜",
+      "impact": 2,
+      "analysis": "天科合达进军AR眼镜领域利好相关产业链。"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 2,
+      "analysis": "步科股份布局无框电机利好机器人板块。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "宜通世纪",
+      "stock_code": "300292",
+      "impact": 4,
+      "analysis": "特斯拉FSD功能更新利好。"
+    },
+    {
+      "stock_name": "洛阳钼业",
+      "stock_code": "603993",
+      "impact": -3,
+      "analysis": "刚果暂停钴出口利空。"
+    },
+    {
+      "stock_name": "北方国际",
+      "stock_code": "000065",
+      "impact": 3,
+      "analysis": "俄乌重建预期利好。"
+    },
+    {
+      "stock_name": "拓荆科技",
+      "stock_code": "688599",
+      "impact": 3,
+      "analysis": "三星与长存专利协议利好。"
+    },
+    {
+      "stock_name": "天科合达",
+      "stock_code": "688599",
+      "impact": 2,
+      "analysis": "AR眼镜领域布局利好。"
+    },
+    {
+      "stock_name": "步科股份",
+      "stock_code": "300292",
+      "impact": 2,
+      "analysis": "机器人业务布局利好。"
+    }
+  ],
+  "article_id": "cc416a3dac28436e8d01c71d1a73f3ca",
+  "article_date": "2025-02-24",
+  "article_title": "2025.2.24市场逻辑精选"
+}

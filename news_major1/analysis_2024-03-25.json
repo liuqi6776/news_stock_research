@@ -1,0 +1,73 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极因素影响",
+  "sectors": [
+    {
+      "sector_name": "汽车板块",
+      "impact": 4,
+      "analysis": "小米汽车上市，固态电池技术突破"
+    },
+    {
+      "sector_name": "科技板块",
+      "impact": 3,
+      "analysis": "百度AI合作，光伏装机量超预期"
+    },
+    {
+      "sector_name": "光伏板块",
+      "impact": 3,
+      "analysis": "装机量超预期，组件价格反弹"
+    },
+    {
+      "sector_name": "地产板块",
+      "impact": 2,
+      "analysis": "房地产市场出现积极信号"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "小米汽车",
+      "stock_code": "000061",
+      "impact": 4,
+      "analysis": "小米汽车上市，技术优势明显"
+    },
+    {
+      "stock_name": "智己汽车",
+      "stock_code": "000625",
+      "impact": 4,
+      "analysis": "搭载超快充固态电池，技术领先"
+    },
+    {
+      "stock_name": "百度",
+      "stock_code": "002231",
+      "impact": 3,
+      "analysis": "与苹果合作，AI功能应用"
+    },
+    {
+      "stock_name": "康达新材",
+      "stock_code": "002669",
+      "impact": 3,
+      "analysis": "4D全息凝视雷达供货，技术突破"
+    },
+    {
+      "stock_name": "众生药业",
+      "stock_code": "002317",
+      "impact": 3,
+      "analysis": "创新药物研发进展顺利"
+    },
+    {
+      "stock_name": "长盈通",
+      "stock_code": "300224",
+      "impact": 3,
+      "analysis": "业绩高增长，订单需求旺盛"
+    },
+    {
+      "stock_name": "景兴纸业",
+      "stock_code": "002067",
+      "impact": 3,
+      "analysis": "参股机器人公司，技术突破"
+    }
+  ],
+  "article_id": "3bc1e6f1837842bc923aef77a552aa4f",
+  "article_date": "2024-03-25",
+  "article_title": "2024.3.25市场逻辑精选"
+}

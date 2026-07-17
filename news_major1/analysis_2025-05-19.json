@@ -1,0 +1,87 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策利好，市场活跃度提升",
+  "sectors": [
+    {
+      "sector_name": "并购重组",
+      "impact": 4,
+      "analysis": "政策修正，市场活跃度提升"
+    },
+    {
+      "sector_name": "计算机",
+      "impact": 3,
+      "analysis": "宝德计算机借道慧博云通登入二级市场"
+    },
+    {
+      "sector_name": "铝土矿",
+      "impact": 3,
+      "analysis": "几内亚出口降低，氧化铝期货大涨"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 3,
+      "analysis": "航天动力资产整合预期"
+    },
+    {
+      "sector_name": "无人机",
+      "impact": 3,
+      "analysis": "海格通信承制“九天”无人机"
+    },
+    {
+      "sector_name": "财税",
+      "impact": 3,
+      "analysis": "金财互联承建“金税四期”核心项目"
+    },
+    {
+      "sector_name": "私募股权",
+      "impact": 3,
+      "analysis": "九鼎投资深耕私募股权投资"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "安彩高科半导体石英管已形成销售"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "宝德计算机",
+      "stock_code": "000938",
+      "impact": 4,
+      "analysis": "借道慧博云通登入二级市场"
+    },
+    {
+      "stock_name": "航天动力",
+      "stock_code": "600893",
+      "impact": 4,
+      "analysis": "航天科技集团资产整合预期"
+    },
+    {
+      "stock_name": "海格通信",
+      "stock_code": "002465",
+      "impact": 4,
+      "analysis": "承制“九天”无人机"
+    },
+    {
+      "stock_name": "金财互联",
+      "stock_code": "002530",
+      "impact": 4,
+      "analysis": "承建“金税四期”核心项目"
+    },
+    {
+      "stock_name": "九鼎投资",
+      "stock_code": "600058",
+      "impact": 4,
+      "analysis": "深耕私募股权投资"
+    },
+    {
+      "stock_name": "安彩高科",
+      "stock_code": "600207",
+      "impact": 4,
+      "analysis": "半导体石英管已形成销售"
+    }
+  ],
+  "article_id": "01b053ffc97f4f958e38dcba6b1a3f59",
+  "article_date": "2025-05-19",
+  "article_title": "2025.5.19市场逻辑精选"
+}

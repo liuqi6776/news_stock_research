@@ -1,0 +1,80 @@
+{
+  "market_impact": 1,
+  "market_analysis": "多个利好消息，包括美股存储板块上涨、SpaceX IPO、特斯拉FSD发布等，市场偏利好。",
+  "sectors": [
+    {
+      "sector_name": "创新药",
+      "impact": 1,
+      "analysis": "昨日热点，津药药业领涨，创新药出海BD总包达571亿美元。",
+      "stocks": ["津药药业"]
+    },
+    {
+      "sector_name": "算力",
+      "impact": 1,
+      "analysis": "昨日热点，奥瑞德领涨，智谱API调用量增长400%。",
+      "stocks": ["奥瑞德"]
+    },
+    {
+      "sector_name": "光通信",
+      "impact": 1,
+      "analysis": "昨日热点，铭普光磁领涨，英伟达投资硅光子技术。",
+      "stocks": ["铭普光磁"]
+    },
+    {
+      "sector_name": "电子布",
+      "impact": 1,
+      "analysis": "昨日热点，山东玻纤领涨，4月电子布报价继续上调。",
+      "stocks": ["山东玻纤"]
+    },
+    {
+      "sector_name": "体育",
+      "impact": 0,
+      "analysis": "美加墨世界杯赛程出炉，对市场影响中性。",
+      "stocks": ["金陵体育", "舒华体育", "共创草坪"]
+    },
+    {
+      "sector_name": "存储芯片",
+      "impact": 1,
+      "analysis": "美股存储板块全线上涨，铠侠发布停产通知，利好存储芯片板块。",
+      "stocks": ["德明利", "普冉股份", "佰维存储", "香农芯创"]
+    },
+    {
+      "sector_name": "特斯拉自动驾驶",
+      "impact": 1,
+      "analysis": "FSD 14.3版本预计本周末向大众发布，利好相关板块。",
+      "stocks": ["宜通世纪", "中海达"]
+    },
+    {
+      "sector_name": "SpaceX/商业航天",
+      "impact": 1,
+      "analysis": "SpaceX已秘密提交IPO文件，有望6月份挂牌上市，利好相关板块。",
+      "stocks": ["再升科技", "西部材料"]
+    }
+  ],
+  "stocks": [
+    {"stock_name": "津药药业", "stock_code": "600488", "impact": 1, "analysis": "昨日热点，创新药板块，4连板。"},
+    {"stock_name": "奥瑞德", "stock_code": "600666", "impact": 1, "analysis": "昨日热点，算力板块。"},
+    {"stock_name": "铭普光磁", "stock_code": "002902", "impact": 1, "analysis": "昨日热点，光通信板块。"},
+    {"stock_name": "山东玻纤", "stock_code": "605006", "impact": 1, "analysis": "昨日热点，电子布板块。"},
+    {"stock_name": "金陵体育", "stock_code": "300651", "impact": 0, "analysis": "体育板块，美加墨世界杯赛程出炉。"},
+    {"stock_name": "舒华体育", "stock_code": "605299", "impact": 0, "analysis": "体育板块，美加墨世界杯赛程出炉。"},
+    {"stock_name": "共创草坪", "stock_code": "605099", "impact": 0, "analysis": "体育板块，美加墨世界杯赛程出炉。"},
+    {"stock_name": "德明利", "stock_code": "001309", "impact": 1, "analysis": "存储芯片板块，美股存储板块上涨。"},
+    {"stock_name": "普冉股份", "stock_code": "688766", "impact": 1, "analysis": "存储芯片板块，美股存储板块上涨。"},
+    {"stock_name": "佰维存储", "stock_code": "688525", "impact": 1, "analysis": "存储芯片板块，美股存储板块上涨。"},
+    {"stock_name": "香农芯创", "stock_code": "300475", "impact": 1, "analysis": "存储芯片板块，美股存储板块上涨。"},
+    {"stock_name": "宜通世纪", "stock_code": "300310", "impact": 1, "analysis": "特斯拉自动驾驶板块，FSD 14.3发布。"},
+    {"stock_name": "中海达", "stock_code": "300177", "impact": 1, "analysis": "特斯拉自动驾驶板块，FSD 14.3发布。"},
+    {"stock_name": "再升科技", "stock_code": "603601", "impact": 1, "analysis": "SpaceX概念股，SpaceX提交IPO。"},
+    {"stock_name": "西部材料", "stock_code": "002149", "impact": 1, "analysis": "SpaceX概念股，SpaceX提交IPO。"},
+    {"stock_name": "真爱美家", "stock_code": "003041", "impact": 1, "analysis": "探迹远擎要约收购，要约价格27.74元/股。"},
+    {"stock_name": "杰瑞股份", "stock_code": "002353", "impact": 1, "analysis": "签署约20.8亿元燃气轮机发电机组销售合同。"},
+    {"stock_name": "华秦科技", "stock_code": "688281", "impact": 1, "analysis": "签订1.03亿元航空发动机用特种功能材料销售合同。"},
+    {"stock_name": "沪电股份", "stock_code": "002463", "impact": 1, "analysis": "拟约68亿元建设印制电路板生产项目。"},
+    {"stock_name": "荣昌生物", "stock_code": "688331", "impact": 1, "analysis": "双抗ADC药物RC288获临床试验批准。"},
+    {"stock_name": "东鹏饮料", "stock_code": "605499", "impact": 1, "analysis": "拟10亿至20亿元回购股份。"}
+  ],
+  "article_title": "4月2日盘前纪要",
+  "html_file": "article_1hm0y80ek1c.html",
+  "article_date": "2026-04-02"
+}

@@ -1,0 +1,156 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注个股风险。",
+  "sectors": [
+    {
+      "sector_name": "电力板块",
+      "impact": 4,
+      "analysis": "淮河能源收购电力集团股权，利好板块。"
+    },
+    {
+      "sector_name": "汽车板块",
+      "impact": 3,
+      "analysis": "金龙汽车收购股权，利好板块。"
+    },
+    {
+      "sector_name": "半导体板块",
+      "impact": 3,
+      "analysis": "台积电CPO技术进展，利好板块。"
+    },
+    {
+      "sector_name": "消费电子板块",
+      "impact": 3,
+      "analysis": "CES 2025展会，利好板块。"
+    },
+    {
+      "sector_name": "芯片板块",
+      "impact": 3,
+      "analysis": "英伟达等芯片公司新品发布，利好板块。"
+    },
+    {
+      "sector_name": "机器人板块",
+      "impact": 3,
+      "analysis": "CES 2025机器人展示，利好板块。"
+    },
+    {
+      "sector_name": "ABF载板板块",
+      "impact": 3,
+      "analysis": "揖斐电扩产，利好板块。"
+    },
+    {
+      "sector_name": "数据中心板块",
+      "impact": 3,
+      "analysis": "上海算力规模目标，利好板块。"
+    },
+    {
+      "sector_name": "零售消费板块",
+      "impact": 3,
+      "analysis": "财政支出提振消费，利好板块。"
+    },
+    {
+      "sector_name": "光芯片板块",
+      "impact": 3,
+      "analysis": "AI需求激增，利好板块。"
+    },
+    {
+      "sector_name": "5G工厂板块",
+      "impact": 3,
+      "analysis": "5G+工业互联网发展，利好板块。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "淮河能源",
+      "stock_code": "600123",
+      "impact": 4,
+      "analysis": "收购电力集团股权，利好公司。"
+    },
+    {
+      "stock_name": "金龙汽车",
+      "stock_code": "600686",
+      "impact": 4,
+      "analysis": "收购金龙旅行车股权，利好公司。"
+    },
+    {
+      "stock_name": "罗博特科",
+      "stock_code": "300663",
+      "impact": 3,
+      "analysis": "参股公司提供CPO封装设备，利好公司。"
+    },
+    {
+      "stock_name": "太辰光",
+      "stock_code": "300253",
+      "impact": 3,
+      "analysis": "具备光元器件封装能力，利好公司。"
+    },
+    {
+      "stock_name": "仕佳光子",
+      "stock_code": "300636",
+      "impact": 3,
+      "analysis": "具备光芯片技术储备，利好公司。"
+    },
+    {
+      "stock_name": "光库科技",
+      "stock_code": "300638",
+      "impact": 3,
+      "analysis": "铌酸锂调制器件技术，利好公司。"
+    },
+    {
+      "stock_name": "兴森科技",
+      "stock_code": "002436",
+      "impact": 3,
+      "analysis": "FCBGA封装基板项目，利好公司。"
+    },
+    {
+      "stock_name": "深南电路",
+      "stock_code": "002916",
+      "impact": 3,
+      "analysis": "广州封装基板项目投产，利好公司。"
+    },
+    {
+      "stock_name": "中天精装",
+      "stock_code": "002921",
+      "impact": 3,
+      "analysis": "参股公司主营业务为FCBGA高端载板，利好公司。"
+    },
+    {
+      "stock_name": "华正新材",
+      "stock_code": "603186",
+      "impact": 3,
+      "analysis": "研发CBF膜产品，利好公司。"
+    },
+    {
+      "stock_name": "宏昌电子",
+      "stock_code": "603002",
+      "impact": 3,
+      "analysis": "开发GBF先进封装增层膜新材料，利好公司。"
+    },
+    {
+      "stock_name": "良信股份",
+      "stock_code": "002706",
+      "impact": 3,
+      "analysis": "为维谛技术提供低压电器，利好公司。"
+    },
+    {
+      "stock_name": "华扬联众",
+      "stock_code": "300871",
+      "impact": 3,
+      "analysis": "央视合作方，或受益AIGC晚会，利好公司。"
+    },
+    {
+      "stock_name": "利扬芯片",
+      "stock_code": "300474",
+      "impact": 3,
+      "analysis": "拟收购国芯微100%股权，利好公司。"
+    },
+    {
+      "stock_name": "华工科技",
+      "stock_code": "300229",
+      "impact": 3,
+      "analysis": "AEC模块需求即将释放，利好公司。"
+    }
+  ],
+  "article_id": "7004a90f39d84353ba7cf8e6f1a30723",
+  "article_date": "2024-12-30",
+  "article_title": "2024.12.30市场逻辑精选"
+}

@@ -1,0 +1,285 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注风险提示。",
+  "sectors": [
+    {
+      "sector_name": "减速器",
+      "impact": 4,
+      "analysis": "特斯拉人形机器人推动需求增长，板块受益"
+    },
+    {
+      "sector_name": "农业",
+      "impact": 3,
+      "analysis": "中央农村工作会议及一号文件预期利好"
+    },
+    {
+      "sector_name": "小米汽车",
+      "impact": 3,
+      "analysis": "小米年度科技盛宴及汽车发布预期"
+    },
+    {
+      "sector_name": "自动化",
+      "impact": 3,
+      "analysis": "苹果Vision Pro发布预期及业务绑定"
+    },
+    {
+      "sector_name": "软件",
+      "impact": 3,
+      "analysis": "数据库龙头公司IPO获批，参股公司受益"
+    },
+    {
+      "sector_name": "传媒",
+      "impact": 2,
+      "analysis": "解决同业竞争问题，业务规模提升"
+    },
+    {
+      "sector_name": "数据交易",
+      "impact": 2,
+      "analysis": "上海数交所数据交易服务平台升级，相关公司受益"
+    },
+    {
+      "sector_name": "消费电子",
+      "impact": 2,
+      "analysis": "苹果Vision Pro发布预期及业务绑定"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "丰光精密",
+      "stock_code": "002930",
+      "impact": 4,
+      "analysis": "谐波减速器下游应用场景广阔"
+    },
+    {
+      "stock_name": "绿的谐波",
+      "stock_code": "688388",
+      "impact": 4,
+      "analysis": "国内谐波减速器龙头"
+    },
+    {
+      "stock_name": "双环传动",
+      "stock_code": "002472",
+      "impact": 4,
+      "analysis": "RV减速器及精密行星减速器供应商"
+    },
+    {
+      "stock_name": "昊志机电",
+      "stock_code": "688023",
+      "impact": 4,
+      "analysis": "多系列高精度谐波减速器量产"
+    },
+    {
+      "stock_name": "汉宇集团",
+      "stock_code": "603710",
+      "impact": 4,
+      "analysis": "持股同川科技，谐波减速器产品"
+    },
+    {
+      "stock_name": "星光农机",
+      "stock_code": "002504",
+      "impact": 3,
+      "analysis": "农业机械受益政策支持"
+    },
+    {
+      "stock_name": "花溪科技",
+      "stock_code": "300827",
+      "impact": 3,
+      "analysis": "农业机械受益政策支持"
+    },
+    {
+      "stock_name": "润农节水",
+      "stock_code": "300187",
+      "impact": 3,
+      "analysis": "农业节水受益政策支持"
+    },
+    {
+      "stock_name": "富邦股份",
+      "stock_code": "300387",
+      "impact": 3,
+      "analysis": "农业节水受益政策支持"
+    },
+    {
+      "stock_name": "大北农",
+      "stock_code": "002385",
+      "impact": 3,
+      "analysis": "种业振兴受益"
+    },
+    {
+      "stock_name": "登海种业",
+      "stock_code": "002041",
+      "impact": 3,
+      "analysis": "种业振兴受益"
+    },
+    {
+      "stock_name": "隆平高科",
+      "stock_code": "000998",
+      "impact": 3,
+      "analysis": "种业振兴受益"
+    },
+    {
+      "stock_name": "秋乐种业",
+      "stock_code": "300617",
+      "impact": 3,
+      "analysis": "种业振兴受益"
+    },
+    {
+      "stock_name": "小米集团",
+      "stock_code": "01810",
+      "impact": 3,
+      "analysis": "小米汽车发布预期"
+    },
+    {
+      "stock_name": "创维数字",
+      "stock_code": "000810",
+      "impact": 3,
+      "analysis": "苹果Vision Pro发布预期"
+    },
+    {
+      "stock_name": "智信精密",
+      "stock_code": "603259",
+      "impact": 3,
+      "analysis": "自动化业务深度绑定苹果"
+    },
+    {
+      "stock_name": "中国软件",
+      "stock_code": "600536",
+      "impact": 3,
+      "analysis": "参股数据库龙头公司IPO获批"
+    },
+    {
+      "stock_name": "博众精工",
+      "stock_code": "603828",
+      "impact": 3,
+      "analysis": "参与苹果MR二代产线打样"
+    },
+    {
+      "stock_name": "红旗连锁",
+      "stock_code": "002697",
+      "impact": 3,
+      "analysis": "实控人拟变更为四川国资"
+    },
+    {
+      "stock_name": "中文传媒",
+      "stock_code": "600373",
+      "impact": 3,
+      "analysis": "解决同业竞争问题，业务规模提升"
+    },
+    {
+      "stock_name": "优刻得",
+      "stock_code": "603260",
+      "impact": 2,
+      "analysis": "上海数交所数据交易服务平台升级"
+    },
+    {
+      "stock_name": "上海钢联",
+      "stock_code": "600377",
+      "impact": 2,
+      "analysis": "上海数交所数据交易服务平台升级"
+    },
+    {
+      "stock_name": "万国数据",
+      "stock_code": "601099",
+      "impact": 2,
+      "analysis": "上海数交所数据交易服务平台升级"
+    },
+    {
+      "stock_name": "华扬联众",
+      "stock_code": "300877",
+      "impact": 2,
+      "analysis": "字节跳动销售额超越腾讯"
+    },
+    {
+      "stock_name": "中文在线",
+      "stock_code": "300364",
+      "impact": 2,
+      "analysis": "字节跳动销售额超越腾讯"
+    },
+    {
+      "stock_name": "岭南股份",
+      "stock_code": "002717",
+      "impact": 2,
+      "analysis": "字节跳动销售额超越腾讯"
+    },
+    {
+      "stock_name": "智度股份",
+      "stock_code": "000676",
+      "impact": 2,
+      "analysis": "字节跳动销售额超越腾讯"
+    },
+    {
+      "stock_name": "金鹰股份",
+      "stock_code": "002912",
+      "impact": 2,
+      "analysis": "新增中越概念"
+    },
+    {
+      "stock_name": "岩山科技",
+      "stock_code": "603988",
+      "impact": 2,
+      "analysis": "比亚迪AEB系统测试视频曝光"
+    },
+    {
+      "stock_name": "万安科技",
+      "stock_code": "002590",
+      "impact": 2,
+      "analysis": "比亚迪AEB系统测试视频曝光"
+    },
+    {
+      "stock_name": "虹软科技",
+      "stock_code": "603068",
+      "impact": 2,
+      "analysis": "比亚迪AEB系统测试视频曝光"
+    },
+    {
+      "stock_name": "南侨食品",
+      "stock_code": "603369",
+      "impact": 2,
+      "analysis": "净利润同比增长454.99%"
+    },
+    {
+      "stock_name": "华峰超纤",
+      "stock_code": "300091",
+      "impact": 2,
+      "analysis": "华为与中国银联合作"
+    },
+    {
+      "stock_name": "拉卡拉",
+      "stock_code": "300560",
+      "impact": 2,
+      "analysis": "华为与中国银联合作"
+    },
+    {
+      "stock_name": "仁东控股",
+      "stock_code": "002647",
+      "impact": 2,
+      "analysis": "华为与中国银联合作"
+    },
+    {
+      "stock_name": "智飞生物",
+      "stock_code": "300122",
+      "impact": 2,
+      "analysis": "百白破疫苗进入Ⅲ期临床试验"
+    },
+    {
+      "stock_name": "龙湖集团",
+      "stock_code": "00960",
+      "impact": 2,
+      "analysis": "提前偿还银团贷款"
+    },
+    {
+      "stock_name": "*ST商城",
+      "stock_code": "600827",
+      "impact": 2,
+      "analysis": "布局集成电路材料项目"
+    },
+    {
+      "stock_name": "闽东电力",
+      "stock_code": "600669",
+      "impact": 2,
+      "analysis": "用电用气峰值创新高"
+    }
+  ],
+  "article_id": "1e807393af1b495dbfcbd3bcb23aedec",
+  "article_date": "2023-12-20",
+  "article_title": "2023.12.20市场逻辑精选"
+}

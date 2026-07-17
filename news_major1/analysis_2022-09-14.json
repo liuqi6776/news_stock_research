@@ -1,0 +1,66 @@
+{
+  "market_impact": -2,
+  "market_analysis": "市场情绪受美国CPI数据及芯片限制影响，偏谨慎。",
+  "sectors": [
+    {
+      "sector_name": "国产芯片",
+      "impact": -3,
+      "analysis": "受美国芯片限制影响，板块情绪偏弱。"
+    },
+    {
+      "sector_name": "网络游戏",
+      "impact": 2,
+      "analysis": "新游戏版号发放，板块情绪偏乐观。"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 1,
+      "analysis": "郑州棚改贷款协议，板块情绪略有提振。"
+    },
+    {
+      "sector_name": "白酒",
+      "impact": 2,
+      "analysis": "白酒营销体制改革，板块情绪偏乐观。"
+    },
+    {
+      "sector_name": "CXO",
+      "impact": -3,
+      "analysis": "美国生物制造政策，板块情绪偏弱。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "盈方微",
+      "stock_code": "300226",
+      "impact": -3,
+      "analysis": "受芯片限制影响，股价可能承压。"
+    },
+    {
+      "stock_name": "中青宝",
+      "stock_code": "300118",
+      "impact": 2,
+      "analysis": "新游戏版号，股价可能受益。"
+    },
+    {
+      "stock_name": "中交地产",
+      "stock_code": "600017",
+      "impact": 1,
+      "analysis": "棚改贷款协议，股价可能受益。"
+    },
+    {
+      "stock_name": "习酒",
+      "stock_code": "600519",
+      "impact": 2,
+      "analysis": "白酒营销体制改革，股价可能受益。"
+    },
+    {
+      "stock_name": "康龙化成",
+      "stock_code": "300759",
+      "impact": -3,
+      "analysis": "美国生物制造政策，股价可能承压。"
+    }
+  ],
+  "article_title": "9月14日 盘前早8点 股市要闻关注",
+  "html_file": "djcz68zrt7.html",
+  "article_date": "2022-09-14"
+}

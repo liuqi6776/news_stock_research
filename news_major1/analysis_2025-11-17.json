@@ -1,0 +1,91 @@
+{
+  "market_impact": 3,
+  "market_analysis": "AI领域重大进展，市场情绪提振",
+  "sectors": [
+    {
+      "sector_name": "AI概念",
+      "impact": 4,
+      "analysis": "AI技术突破，板块整体受益"
+    },
+    {
+      "sector_name": "软件",
+      "impact": 3,
+      "analysis": "AI技术推动，软件行业有望增长"
+    },
+    {
+      "sector_name": "硬件",
+      "impact": 3,
+      "analysis": "AI应用需求增加，硬件行业受益"
+    },
+    {
+      "sector_name": "核聚变",
+      "impact": 3,
+      "analysis": "核聚变技术突破，相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "值得买",
+      "stock_code": "300059",
+      "impact": 3,
+      "analysis": "与阿里AI合作，有望受益"
+    },
+    {
+      "stock_name": "新开普",
+      "stock_code": "300248",
+      "impact": 3,
+      "analysis": "高校场景AI应用，有望增长"
+    },
+    {
+      "stock_name": "三六零",
+      "stock_code": "601360",
+      "impact": 3,
+      "analysis": "AI原生互联网产品，业绩增长"
+    },
+    {
+      "stock_name": "榕基软件",
+      "stock_code": "600194",
+      "impact": 3,
+      "analysis": "政务大模型布局，有望受益"
+    },
+    {
+      "stock_name": "海陆重工",
+      "stock_code": "002255",
+      "impact": 3,
+      "analysis": "核聚变设备供应商，有望受益"
+    },
+    {
+      "stock_name": "宝色股份",
+      "stock_code": "600496",
+      "impact": 3,
+      "analysis": "钍基熔盐堆设备供应商，有望受益"
+    },
+    {
+      "stock_name": "直真科技",
+      "stock_code": "300582",
+      "impact": 3,
+      "analysis": "华为合作，有望受益"
+    },
+    {
+      "stock_name": "精达股份",
+      "stock_code": "600577",
+      "impact": 3,
+      "analysis": "上海超导IPO，有望受益"
+    },
+    {
+      "stock_name": "盛视科技",
+      "stock_code": "300028",
+      "impact": 3,
+      "analysis": "低功耗AI芯片，有望受益"
+    },
+    {
+      "stock_name": "浪潮软件",
+      "stock_code": "300074",
+      "impact": 3,
+      "analysis": "AI政务，有望受益"
+    }
+  ],
+  "article_id": "8c8f634ae91e42b680162a251b43adfa",
+  "article_date": "2025-11-17",
+  "article_title": "2025.11.17市场逻辑精选"
+}

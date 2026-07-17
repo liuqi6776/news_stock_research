@@ -1,0 +1,90 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注后续政策落实。",
+  "sectors": [
+    {
+      "sector_name": "医疗信息化",
+      "impact": 4,
+      "analysis": "医保影像云政策利好相关公司"
+    },
+    {
+      "sector_name": "汽车零部件",
+      "impact": 3,
+      "analysis": "比亚迪智驾技术升级，相关零部件公司受益"
+    },
+    {
+      "sector_name": "黄金",
+      "impact": 3,
+      "analysis": "金价上涨，黄金相关公司受益"
+    },
+    {
+      "sector_name": "数据中心",
+      "impact": 3,
+      "analysis": "沙特数据中心建设，相关公司受益"
+    },
+    {
+      "sector_name": "AI应用",
+      "impact": 3,
+      "analysis": "AI应用平台发展，相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "万达信息",
+      "stock_code": "300168",
+      "impact": 4,
+      "analysis": "医保影像云政策利好"
+    },
+    {
+      "stock_name": "万东医疗",
+      "stock_code": "600055",
+      "impact": 4,
+      "analysis": "医保影像云政策利好"
+    },
+    {
+      "stock_name": "东软集团",
+      "stock_code": "600718",
+      "impact": 4,
+      "analysis": "医保影像云政策利好"
+    },
+    {
+      "stock_name": "卫宁健康",
+      "stock_code": "300253",
+      "impact": 4,
+      "analysis": "医保影像云政策利好"
+    },
+    {
+      "stock_name": "久远银海",
+      "stock_code": "300065",
+      "impact": 4,
+      "analysis": "医保影像云政策利好"
+    },
+    {
+      "stock_name": "比亚迪",
+      "stock_code": "002594",
+      "impact": 3,
+      "analysis": "比亚迪智驾技术升级"
+    },
+    {
+      "stock_name": "紫金矿业",
+      "stock_code": "600388",
+      "impact": 3,
+      "analysis": "金价上涨"
+    },
+    {
+      "stock_name": "湖南黄金",
+      "stock_code": "600548",
+      "impact": 3,
+      "analysis": "金价上涨"
+    },
+    {
+      "stock_name": "华钰矿业",
+      "stock_code": "600955",
+      "impact": 3,
+      "analysis": "金价上涨"
+    }
+  ],
+  "article_id": "16bad43f67654ba8a3f06b763343dada",
+  "article_date": "2025-02-10",
+  "article_title": "2025.2.10市场逻辑精选"
+}

@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极消息影响",
+  "sectors": [
+    {
+      "sector_name": "智能驾驶",
+      "impact": 4,
+      "analysis": "比亚迪智能化战略发布，相关产业链受益"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "重庆加快打造智能网联新能源汽车之都，机器人产业受益"
+    },
+    {
+      "sector_name": "无人物流",
+      "impact": 3,
+      "analysis": "无人物流车技术进步，相关公司受益"
+    },
+    {
+      "sector_name": "AI眼镜",
+      "impact": 3,
+      "analysis": "小米AI眼镜或加速发布，相关产业链受益"
+    },
+    {
+      "sector_name": "新材料",
+      "impact": 2,
+      "analysis": "南山智尚UHMWPE材料应用前景广阔"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "比亚迪",
+      "stock_code": "002594",
+      "impact": 4,
+      "analysis": "智能化战略发布，产业链受益"
+    },
+    {
+      "stock_name": "华为",
+      "stock_code": "002502",
+      "impact": 3,
+      "analysis": "机器人业务有望快速发展"
+    },
+    {
+      "stock_name": "小米",
+      "stock_code": "01810",
+      "impact": 3,
+      "analysis": "AI眼镜或加速发布，相关产业链受益"
+    },
+    {
+      "stock_name": "南山智尚",
+      "stock_code": "300543",
+      "impact": 3,
+      "analysis": "UHMWPE材料应用前景广阔"
+    },
+    {
+      "stock_name": "首都在线",
+      "stock_code": "002840",
+      "impact": 3,
+      "analysis": "DeepSeek-R1模型免费使用，相关产业链受益"
+    }
+  ],
+  "article_id": "a6bf485164e640b6af984e976352b70f",
+  "article_date": "2025-02-06",
+  "article_title": "2025.2.6市场逻辑精选"
+}

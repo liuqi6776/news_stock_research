@@ -1,0 +1,78 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极影响。",
+  "sectors": [
+    {
+      "sector_name": "人工智能",
+      "impact": 4,
+      "analysis": "数据中心建设投资增加，相关产业链受益"
+    },
+    {
+      "sector_name": "数控机床",
+      "impact": 3,
+      "analysis": "特斯拉人形机器人需求提升，相关设备需求增加"
+    },
+    {
+      "sector_name": "数据中心",
+      "impact": 3,
+      "analysis": "数据中心建设带动备用电源需求"
+    },
+    {
+      "sector_name": "电影",
+      "impact": 2,
+      "analysis": "春节档电影定档，相关影视公司受益"
+    },
+    {
+      "sector_name": "芯片封装",
+      "impact": 2,
+      "analysis": "纳尔股份拟收购蓝微电子，切入芯片封装领域"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "沃尔核材",
+      "stock_code": "002130",
+      "impact": 3,
+      "analysis": "铜连接行业受美股安费诺大涨影响"
+    },
+    {
+      "stock_name": "神宇股份",
+      "stock_code": "300299",
+      "impact": 3,
+      "analysis": "铜连接行业受美股安费诺大涨影响"
+    },
+    {
+      "stock_name": "胜蓝股份",
+      "stock_code": "300369",
+      "impact": 3,
+      "analysis": "铜连接行业受美股安费诺大涨影响"
+    },
+    {
+      "stock_name": "瑞可达",
+      "stock_code": "300603",
+      "impact": 3,
+      "analysis": "铜连接行业受美股安费诺大涨影响"
+    },
+    {
+      "stock_name": "新亚电子",
+      "stock_code": "300389",
+      "impact": 4,
+      "analysis": "高频高速数据线材供应甲骨文，业绩增长"
+    },
+    {
+      "stock_name": "纳尔股份",
+      "stock_code": "002202",
+      "impact": 2,
+      "analysis": "拟收购蓝微电子，切入芯片封装领域"
+    },
+    {
+      "stock_name": "青龙管业",
+      "stock_code": "002457",
+      "impact": 3,
+      "analysis": "业绩大幅增长，受益国家水网建设"
+    }
+  ],
+  "article_id": "e336d9f3dfd24edd82361465e2d78864",
+  "article_date": "2025-01-22",
+  "article_title": "2025.1.22市场逻辑精选"
+}

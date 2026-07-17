@@ -1,0 +1,130 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多政策利好，市场情绪积极",
+  "sectors": [
+    {
+      "sector_name": "并购重组",
+      "impact": 4,
+      "analysis": "政策支持，板块活跃"
+    },
+    {
+      "sector_name": "国资改革",
+      "impact": 3,
+      "analysis": "国资改革深化，板块受益"
+    },
+    {
+      "sector_name": "新能源",
+      "impact": 3,
+      "analysis": "政策支持，板块受益"
+    },
+    {
+      "sector_name": "贵金属",
+      "impact": 3,
+      "analysis": "金价创新高，板块受益"
+    },
+    {
+      "sector_name": "太空科技",
+      "impact": 2,
+      "analysis": "商业太空行走，板块受益"
+    },
+    {
+      "sector_name": "地产",
+      "impact": 2,
+      "analysis": "房贷利率调降预期，板块受益"
+    },
+    {
+      "sector_name": "跨境电商",
+      "impact": 2,
+      "analysis": "关税优惠，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "双成药业",
+      "stock_code": "002294",
+      "impact": 4,
+      "analysis": "并购重组，股价受益"
+    },
+    {
+      "stock_name": "汉嘉设计",
+      "stock_code": "300416",
+      "impact": 4,
+      "analysis": "控制权变更，股价受益"
+    },
+    {
+      "stock_name": "莫高股份",
+      "stock_code": "600543",
+      "impact": 3,
+      "analysis": "并购重组，股价受益"
+    },
+    {
+      "stock_name": "国中水务",
+      "stock_code": "600187",
+      "impact": 3,
+      "analysis": "并购重组，股价受益"
+    },
+    {
+      "stock_name": "中南股份",
+      "stock_code": "000423",
+      "impact": 3,
+      "analysis": "新央企，股价受益"
+    },
+    {
+      "stock_name": "马钢股份",
+      "stock_code": "600808",
+      "impact": 3,
+      "analysis": "新央企，股价受益"
+    },
+    {
+      "stock_name": "莱绅通灵",
+      "stock_code": "600890",
+      "impact": 3,
+      "analysis": "贵金属价格上涨，股价受益"
+    },
+    {
+      "stock_name": "玉龙股份",
+      "stock_code": "300387",
+      "impact": 3,
+      "analysis": "贵金属价格上涨，股价受益"
+    },
+    {
+      "stock_name": "烽火电子",
+      "stock_code": "000561",
+      "impact": 2,
+      "analysis": "太空科技，股价受益"
+    },
+    {
+      "stock_name": "探路者",
+      "stock_code": "300005",
+      "impact": 2,
+      "analysis": "太空科技，股价受益"
+    },
+    {
+      "stock_name": "世联行",
+      "stock_code": "002285",
+      "impact": 2,
+      "analysis": "房贷利率调降预期，股价受益"
+    },
+    {
+      "stock_name": "我爱我家",
+      "stock_code": "600777",
+      "impact": 2,
+      "analysis": "房贷利率调降预期，股价受益"
+    },
+    {
+      "stock_name": "跨境通",
+      "stock_code": "002640",
+      "impact": 2,
+      "analysis": "跨境电商，股价受益"
+    },
+    {
+      "stock_name": "生意宝",
+      "stock_code": "002095",
+      "impact": 2,
+      "analysis": "跨境电商，股价受益"
+    }
+  ],
+  "article_title": "9月13日盘前早报 热点事件关注",
+  "html_file": "g7ppn5lu58.html",
+  "article_date": "2024-09-13"
+}

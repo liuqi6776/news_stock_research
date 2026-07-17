@@ -1,0 +1,74 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策利好，市场情绪提振",
+  "sectors": [
+    {
+      "sector_name": "房地产",
+      "impact": 4,
+      "analysis": "政策支持，板块有望回暖"
+    },
+    {
+      "sector_name": "旅游",
+      "impact": 3,
+      "analysis": "疫情管控优化，旅游复苏预期增强"
+    },
+    {
+      "sector_name": "疫苗",
+      "impact": 3,
+      "analysis": "加强针接种率提升，疫苗企业受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "垒知集团",
+      "stock_code": "002311",
+      "impact": 4,
+      "analysis": "受益于房地产政策，抗原检测业务增长"
+    },
+    {
+      "stock_name": "城建发展",
+      "stock_code": "600649",
+      "impact": 4,
+      "analysis": "土地竞得，业绩有望提升"
+    },
+    {
+      "stock_name": "宁波联合",
+      "stock_code": "600051",
+      "impact": 3,
+      "analysis": "有望重启资产注入，业绩提升预期"
+    },
+    {
+      "stock_name": "泰瑞机器",
+      "stock_code": "300343",
+      "impact": 3,
+      "analysis": "抗原检测盒需求增长，注塑机业务受益"
+    },
+    {
+      "stock_name": "新城控股",
+      "stock_code": "600732",
+      "impact": 4,
+      "analysis": "再融资申请有望获批，债务压力缓解"
+    },
+    {
+      "stock_name": "光大嘉宝",
+      "stock_code": "600622",
+      "impact": 4,
+      "analysis": "受益于REITs和不动产投资基金政策"
+    },
+    {
+      "stock_name": "福星股份",
+      "stock_code": "000926",
+      "impact": 3,
+      "analysis": "筹划非公开发行股票，融资渠道拓宽"
+    },
+    {
+      "stock_name": "丽珠集团",
+      "stock_code": "000538",
+      "impact": 3,
+      "analysis": "适合老年人接种的疫苗，市场需求增长"
+    }
+  ],
+  "article_id": "33fe670070a44cdb8b01eee11d1dc384",
+  "article_date": "2022-11-29",
+  "article_title": "2022.11.29市场逻辑精选"
+}

@@ -1,0 +1,44 @@
+{
+  "market_impact": 0,
+  "market_analysis": "市场影响中性，无明确利好或利空信息。",
+  "sectors": [
+    {
+      "sector_name": "半导体",
+      "impact": 0,
+      "analysis": "无明确利好或利空信息。"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 0,
+      "analysis": "无明确利好或利空信息。"
+    },
+    {
+      "sector_name": "铜箔",
+      "impact": 0,
+      "analysis": "无明确利好或利空信息。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "神州高铁",
+      "stock_code": "S000005",
+      "impact": 0,
+      "analysis": "无明确利好或利空信息。"
+    },
+    {
+      "stock_name": "晶盛机电",
+      "stock_code": "300316",
+      "impact": 0,
+      "analysis": "无明确利好或利空信息。"
+    },
+    {
+      "stock_name": "海亮股份",
+      "stock_code": "002203",
+      "impact": 0,
+      "analysis": "无明确利好或利空信息。"
+    }
+  ],
+  "article_title": "4月1日盘前纪要",
+  "html_file": "article_3xyv24uhq00.html",
+  "article_date": "2026-04-01"
+}

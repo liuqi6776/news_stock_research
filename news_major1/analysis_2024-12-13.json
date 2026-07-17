@@ -1,0 +1,72 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，政策支持力度大。",
+  "sectors": [
+    {
+      "sector_name": "消费",
+      "impact": 4,
+      "analysis": "消费政策支持，板块受益明显。"
+    },
+    {
+      "sector_name": "量子",
+      "impact": 3,
+      "analysis": "量子板块受关注，但具体影响待观察。"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "机器人板块受特斯拉新动作影响，短期看涨。"
+    },
+    {
+      "sector_name": "金融",
+      "impact": 3,
+      "analysis": "金融政策支持，板块受益。"
+    },
+    {
+      "sector_name": "地产",
+      "impact": 2,
+      "analysis": "地产政策支持，板块受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "友阿股份",
+      "stock_code": "002277",
+      "impact": 4,
+      "analysis": "消费政策支持，股价有望上涨。"
+    },
+    {
+      "stock_name": "中百集团",
+      "stock_code": "000759",
+      "impact": 4,
+      "analysis": "消费政策支持，股价有望上涨。"
+    },
+    {
+      "stock_name": "星光股份",
+      "stock_code": "603087",
+      "impact": 3,
+      "analysis": "量子板块受关注，股价有望上涨。"
+    },
+    {
+      "stock_name": "复旦复华",
+      "stock_code": "600624",
+      "impact": 3,
+      "analysis": "量子板块受关注，股价有望上涨。"
+    },
+    {
+      "stock_name": "卓郎智能",
+      "stock_code": "601718",
+      "impact": 3,
+      "analysis": "机器人板块受特斯拉新动作影响，股价有望上涨。"
+    },
+    {
+      "stock_name": "建设工业",
+      "stock_code": "601569",
+      "impact": 3,
+      "analysis": "机器人板块受特斯拉新动作影响，股价有望上涨。"
+    }
+  ],
+  "article_title": "12月13日盘前早报 热点事件关注",
+  "html_file": "be3mq61z7j.html",
+  "article_date": "2024-12-13"
+}

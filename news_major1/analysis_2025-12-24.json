@@ -1,0 +1,118 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，关注相关题材和个股表现。",
+  "sectors": [
+    {
+      "sector_name": "AIDC电源",
+      "impact": 4,
+      "analysis": "市场扩容，谷歌带来增量，板块利好。"
+    },
+    {
+      "sector_name": "航天装备",
+      "impact": 3,
+      "analysis": "天龙三号首飞，板块利好。"
+    },
+    {
+      "sector_name": "商业航天",
+      "impact": 3,
+      "analysis": "星河动力商业化营收稳定，板块利好。"
+    },
+    {
+      "sector_name": "芯片材料",
+      "impact": 3,
+      "analysis": "M9材料全球唯二供应商，板块利好。"
+    },
+    {
+      "sector_name": "航天材料",
+      "impact": 3,
+      "analysis": "航天太阳翼关键封装材料，板块利好。"
+    },
+    {
+      "sector_name": "航天设备",
+      "impact": 3,
+      "analysis": "航天轴承国内市占率高，板块利好。"
+    },
+    {
+      "sector_name": "航天燃料",
+      "impact": 3,
+      "analysis": "火箭燃料扩产，板块利好。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "新雷能",
+      "stock_code": "300782",
+      "impact": 4,
+      "analysis": "AIDC电源核心供应商，利好。"
+    },
+    {
+      "stock_name": "欧陆通",
+      "stock_code": "300990",
+      "impact": 4,
+      "analysis": "谷歌TPU电源供应商，利好。"
+    },
+    {
+      "stock_name": "麦格米特",
+      "stock_code": "002501",
+      "impact": 4,
+      "analysis": "英伟达AI电源核心供应商，利好。"
+    },
+    {
+      "stock_name": "隆基机械",
+      "stock_code": "002063",
+      "impact": 3,
+      "analysis": "天兵科技火箭发动机零部件供应商，利好。"
+    },
+    {
+      "stock_name": "飞沃科技",
+      "stock_code": "002506",
+      "impact": 3,
+      "analysis": "天兵科技航天紧固件产品合作，利好。"
+    },
+    {
+      "stock_name": "泰胜风能",
+      "stock_code": "600582",
+      "impact": 3,
+      "analysis": "星河动力贮箱供应商，利好。"
+    },
+    {
+      "stock_name": "铂力特",
+      "stock_code": "300387",
+      "impact": 3,
+      "analysis": "星河动力发动机零部件供应商，利好。"
+    },
+    {
+      "stock_name": "四川金顶",
+      "stock_code": "000678",
+      "impact": 3,
+      "analysis": "星河动力合作，利好。"
+    },
+    {
+      "stock_name": "生益科技",
+      "stock_code": "600183",
+      "impact": 4,
+      "analysis": "M9材料全球唯二供应商，利好。"
+    },
+    {
+      "stock_name": "瑞华泰",
+      "stock_code": "300387",
+      "impact": 4,
+      "analysis": "航天太阳翼关键封装材料，利好。"
+    },
+    {
+      "stock_name": "国机精工",
+      "stock_code": "002063",
+      "impact": 4,
+      "analysis": "航天轴承国内市占率高，利好。"
+    },
+    {
+      "stock_name": "九丰能源",
+      "stock_code": "300387",
+      "impact": 4,
+      "analysis": "火箭燃料扩产，利好。"
+    }
+  ],
+  "article_id": "7b8715ddd5684d3cae0348949102722c",
+  "article_date": "2025-12-24",
+  "article_title": "2025.12.24市场逻辑精选"
+}

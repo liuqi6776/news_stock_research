@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪提升",
+  "sectors": [
+    {
+      "sector_name": "太空数据中心",
+      "impact": 4,
+      "analysis": "政策支持，技术突破"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "行业规范，技术发展"
+    },
+    {
+      "sector_name": "脑机接口",
+      "impact": 3,
+      "analysis": "技术突破，应用前景"
+    },
+    {
+      "sector_name": "核聚变",
+      "impact": 3,
+      "analysis": "科技成果转化，投资机构关注"
+    },
+    {
+      "sector_name": "量子科技",
+      "impact": 3,
+      "analysis": "科研突破，应用前景"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "上海港湾",
+      "stock_code": "600503",
+      "impact": 4,
+      "analysis": "太空数据中心概念"
+    },
+    {
+      "stock_name": "三花智控",
+      "stock_code": "002050",
+      "impact": 3,
+      "analysis": "机器人行业规范"
+    },
+    {
+      "stock_name": "创新医疗",
+      "stock_code": "300605",
+      "impact": 3,
+      "analysis": "脑机接口技术突破"
+    },
+    {
+      "stock_name": "合锻智能",
+      "stock_code": "603011",
+      "impact": 3,
+      "analysis": "核聚变技术转化"
+    },
+    {
+      "stock_name": "格尔软件",
+      "stock_code": "300321",
+      "impact": 3,
+      "analysis": "量子科技科研突破"
+    }
+  ],
+  "article_title": "11月28日盘前纪要",
+  "html_file": "4e8u8yk4ddq.html",
+  "article_date": "2025-11-28"
+}

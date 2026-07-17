@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体情绪偏乐观，多个板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "核聚变",
+      "impact": 4,
+      "analysis": "商业化电力采购标志着核聚变能源发展进入新阶段。"
+    },
+    {
+      "sector_name": "军工AI",
+      "impact": 3,
+      "analysis": "阅兵式和海外AI应用推动军工AI市场增长。"
+    },
+    {
+      "sector_name": "国产GPU",
+      "impact": 3,
+      "analysis": "IPO申请获受理，国产GPU市场有望进一步扩大。"
+    },
+    {
+      "sector_name": "风电",
+      "impact": 3,
+      "analysis": "项目开工旺盛，装机提速，业绩有望改善。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "长城电工",
+      "stock_code": "600835",
+      "impact": 4,
+      "analysis": "核聚变商业化电力采购受益股。"
+    },
+    {
+      "stock_name": "华如科技",
+      "stock_code": "300068",
+      "impact": 3,
+      "analysis": "军工AI领域领先企业。"
+    },
+    {
+      "stock_name": "沐曦股份",
+      "stock_code": "688382",
+      "impact": 3,
+      "analysis": "国产GPU四小龙之一。"
+    },
+    {
+      "stock_name": "吉鑫科技",
+      "stock_code": "002015",
+      "impact": 3,
+      "analysis": "风电铸件领先企业。"
+    }
+  ],
+  "article_id": "074c71a3c33f4e1bbb0c9a2d5c67c4f9",
+  "article_date": "2025-06-30",
+  "article_title": "2025.6.30市场逻辑精选"
+}

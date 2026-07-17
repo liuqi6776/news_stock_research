@@ -1,0 +1,56 @@
+{
+  "market_impact": 3,
+  "market_analysis": "新能源汽车和CCUS领域利好，市场情绪提升。",
+  "sectors": [
+    {
+      "sector_name": "新能源汽车",
+      "impact": 4,
+      "analysis": "小米汽车和特斯拉Cybertruck发布，板块受益"
+    },
+    {
+      "sector_name": "CCUS",
+      "impact": 3,
+      "analysis": "中美合作推进CCUS，技术进步空间大"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 2,
+      "analysis": "四川政府签订光伏订单，行业景气度提升"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "小米汽车",
+      "stock_code": "000061",
+      "impact": 4,
+      "analysis": "首款纯电轿车亮相，市场预期积极"
+    },
+    {
+      "stock_name": "特斯拉Cybertruck",
+      "stock_code": "000001",
+      "impact": 4,
+      "analysis": "交付活动举行，订单量高"
+    },
+    {
+      "stock_name": "冰轮环境",
+      "stock_code": "000811",
+      "impact": 3,
+      "analysis": "CCUS技术应用于示范项目"
+    },
+    {
+      "stock_name": "远达环保",
+      "stock_code": "600726",
+      "impact": 3,
+      "analysis": "CCUS技术实际应用"
+    },
+    {
+      "stock_name": "金刚光伏",
+      "stock_code": "688599",
+      "impact": 2,
+      "analysis": "异质结电池片下线，技术领先"
+    }
+  ],
+  "article_id": "ad08a3eab430472ba95e1201f2afe08f",
+  "article_date": "2023-11-15",
+  "article_title": "2023.11.15市场逻辑精选"
+}

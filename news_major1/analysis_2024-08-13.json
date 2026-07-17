@@ -1,0 +1,166 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受清洁能源和配电网投资利好影响，整体情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "西南水电",
+      "impact": 4,
+      "analysis": "水电开发加速，相关产业链受益"
+    },
+    {
+      "sector_name": "配电网",
+      "impact": 3,
+      "analysis": "配电网升级改造项目加速，相关设备企业受益"
+    },
+    {
+      "sector_name": "水泥",
+      "impact": 3,
+      "analysis": "水泥需求增加，水泥企业受益"
+    },
+    {
+      "sector_name": "民爆",
+      "impact": 3,
+      "analysis": "民爆需求增加，民爆企业受益"
+    },
+    {
+      "sector_name": "设计施工",
+      "impact": 3,
+      "analysis": "大型工程项目推进，设计施工企业受益"
+    },
+    {
+      "sector_name": "工程机械",
+      "impact": 3,
+      "analysis": "工程机械需求增加，相关企业受益"
+    },
+    {
+      "sector_name": "其他相关",
+      "impact": 3,
+      "analysis": "水利工程等相关企业受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "西藏天路",
+      "stock_code": "000755",
+      "impact": 4,
+      "analysis": "水泥龙头，受益水电建设"
+    },
+    {
+      "stock_name": "高争民爆",
+      "stock_code": "002827",
+      "impact": 3,
+      "analysis": "民爆需求增加，受益水电建设"
+    },
+    {
+      "stock_name": "苏博特",
+      "stock_code": "002018",
+      "impact": 3,
+      "analysis": "水泥外加剂产品应用于大型项目"
+    },
+    {
+      "stock_name": "华新水泥",
+      "stock_code": "600015",
+      "impact": 3,
+      "analysis": "水泥企业，受益水电建设"
+    },
+    {
+      "stock_name": "中岩大地",
+      "stock_code": "002529",
+      "impact": 3,
+      "analysis": "岩土工程设计，受益水电建设"
+    },
+    {
+      "stock_name": "筑博设计",
+      "stock_code": "300059",
+      "impact": 3,
+      "analysis": "设计施工企业，受益水电建设"
+    },
+    {
+      "stock_name": "正平股份",
+      "stock_code": "603843",
+      "impact": 3,
+      "analysis": "水利工程施工资质，受益水电建设"
+    },
+    {
+      "stock_name": "深水规院",
+      "stock_code": "603939",
+      "impact": 3,
+      "analysis": "工程设计水利行业甲级资质，受益水电建设"
+    },
+    {
+      "stock_name": "法兰泰克",
+      "stock_code": "002528",
+      "impact": 3,
+      "analysis": "起重机械，受益水电建设"
+    },
+    {
+      "stock_name": "五新隧装",
+      "stock_code": "300896",
+      "impact": 3,
+      "analysis": "隧道施工智能装备，受益水电建设"
+    },
+    {
+      "stock_name": "铁建重工",
+      "stock_code": "002528",
+      "impact": 3,
+      "analysis": "TBM掘进机，受益水电建设"
+    },
+    {
+      "stock_name": "泽宇智能",
+      "stock_code": "300062",
+      "impact": 3,
+      "analysis": "数智化电网标的，受益配电网升级改造"
+    },
+    {
+      "stock_name": "东方电子",
+      "stock_code": "000795",
+      "impact": 3,
+      "analysis": "数智化电网标的，受益配电网升级改造"
+    },
+    {
+      "stock_name": "国网信通",
+      "stock_code": "600487",
+      "impact": 3,
+      "analysis": "数智化电网标的，受益配电网升级改造"
+    },
+    {
+      "stock_name": "威胜信息",
+      "stock_code": "300029",
+      "impact": 3,
+      "analysis": "数智化电网标的，受益配电网升级改造"
+    },
+    {
+      "stock_name": "宏力达",
+      "stock_code": "002001",
+      "impact": 3,
+      "analysis": "配电网智能设备，受益配电网升级改造"
+    },
+    {
+      "stock_name": "力合微",
+      "stock_code": "300810",
+      "impact": 3,
+      "analysis": "智能电网芯片供应商，受益配电网升级改造"
+    },
+    {
+      "stock_name": "科大智能",
+      "stock_code": "603035",
+      "impact": 3,
+      "analysis": "智能电网终端设备，受益配电网升级改造"
+    },
+    {
+      "stock_name": "映翰通",
+      "stock_code": "300219",
+      "impact": 3,
+      "analysis": "配电网人工智能算法引擎，受益配电网升级改造"
+    },
+    {
+      "stock_name": "科陆电子",
+      "stock_code": "002121",
+      "impact": 3,
+      "analysis": "智能电表和智能配电网设备，受益配电网升级改造"
+    }
+  ],
+  "article_id": "a75c0f4365ab457d95ab364f8c52654a",
+  "article_date": "2024-08-13",
+  "article_title": "2024.8.13市场逻辑精选"
+}

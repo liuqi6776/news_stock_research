@@ -1,0 +1,68 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "医药板块",
+      "impact": 3,
+      "analysis": "反腐行动推动SPD模式发展，相关公司受益。"
+    },
+    {
+      "sector_name": "氢能源板块",
+      "impact": 3,
+      "analysis": "氢能全产业链标准体系建设，相关公司受益。"
+    },
+    {
+      "sector_name": "制冷剂板块",
+      "impact": 3,
+      "analysis": "配额分配方案利好，相关公司受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "塞力医疗",
+      "stock_code": "300146",
+      "impact": 3,
+      "analysis": "SPD业务快速增长，受益于反腐行动。"
+    },
+    {
+      "stock_name": "国科恒泰",
+      "stock_code": "300520",
+      "impact": 3,
+      "analysis": "SPD平台数据+智能硬件综合服务体系，受益于反腐行动。"
+    },
+    {
+      "stock_name": "重药控股",
+      "stock_code": "600496",
+      "impact": 3,
+      "analysis": "有序推进器械SPD项目，受益于反腐行动。"
+    },
+    {
+      "stock_name": "威龙股份",
+      "stock_code": "002354",
+      "impact": 3,
+      "analysis": "资产注入预期，独董辞职引发关注。"
+    },
+    {
+      "stock_name": "国新健康",
+      "stock_code": "000502",
+      "impact": 3,
+      "analysis": "医保基金监管国家队，受益于医疗反腐。"
+    },
+    {
+      "stock_name": "宇信科技",
+      "stock_code": "300709",
+      "impact": 3,
+      "analysis": "中标65亿金融信创大单，业绩增长。"
+    },
+    {
+      "stock_name": "工业富联",
+      "stock_code": "601138",
+      "impact": 3,
+      "analysis": "AI业务逐步兑现，业绩超预期。"
+    }
+  ],
+  "article_id": "b0ed186c4de54e9cad5e103b80bec597",
+  "article_date": "2023-08-08",
+  "article_title": "2023.8.8市场逻辑精选"
+}

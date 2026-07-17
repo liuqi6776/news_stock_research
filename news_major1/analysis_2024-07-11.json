@@ -1,0 +1,68 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场对换电技术和无人驾驶概念关注升温。",
+  "sectors": [
+    {
+      "sector_name": "新能源汽车",
+      "impact": 3,
+      "analysis": "换电技术提升运营效率，利好板块。"
+    },
+    {
+      "sector_name": "无人驾驶",
+      "impact": 3,
+      "analysis": "百度无人驾驶网约车采用换电模式，利好板块。"
+    },
+    {
+      "sector_name": "电池管理系统",
+      "impact": 3,
+      "analysis": "电池管理系统与大数据分析结合，提升电池使用寿命，利好板块。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "协鑫能科",
+      "stock_code": "002014",
+      "impact": 4,
+      "analysis": "独家为百度提供标准电池包及换电站，利好。"
+    },
+    {
+      "stock_name": "瀚川智能",
+      "stock_code": "300362",
+      "impact": 3,
+      "analysis": "合作协鑫能科开发换电站产品，利好。"
+    },
+    {
+      "stock_name": "宁德时代",
+      "stock_code": "300750",
+      "impact": 3,
+      "analysis": "电池供应，利好。"
+    },
+    {
+      "stock_name": "华塑科技",
+      "stock_code": "603015",
+      "impact": 3,
+      "analysis": "电池管理系统，利好。"
+    },
+    {
+      "stock_name": "超达装备",
+      "stock_code": "002515",
+      "impact": 3,
+      "analysis": "产品供给换电项目，利好。"
+    },
+    {
+      "stock_name": "海天瑞声",
+      "stock_code": "688012",
+      "impact": 3,
+      "analysis": "为百度提供数据产品服务，利好。"
+    },
+    {
+      "stock_name": "常铝股份",
+      "stock_code": "002175",
+      "impact": 3,
+      "analysis": "Q2大幅扭亏，利好。"
+    }
+  ],
+  "article_id": "d3f323a5099e4301b20d23470dff97d8",
+  "article_date": "2024-07-11",
+  "article_title": "2024.7.11市场逻辑精选"
+}

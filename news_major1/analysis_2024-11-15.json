@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股受积极因素影响。",
+  "sectors": [
+    {
+      "sector_name": "6G",
+      "impact": 4,
+      "analysis": "技术标准研究启动，相关个股受益"
+    },
+    {
+      "sector_name": "AI+医疗",
+      "impact": 3,
+      "analysis": "政策推动，医疗AI应用场景拓展"
+    },
+    {
+      "sector_name": "数字中国",
+      "impact": 3,
+      "analysis": "数字中国建设推进，相关个股受益"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 3,
+      "analysis": "固态电池和销量增长，相关个股受益"
+    },
+    {
+      "sector_name": "AI大模型",
+      "impact": 3,
+      "analysis": "字节跳动视频生成模型上线，相关个股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "武汉凡谷",
+      "stock_code": "002151",
+      "impact": 4,
+      "analysis": "6G技术标准研究启动，受益"
+    },
+    {
+      "stock_name": "润达医疗",
+      "stock_code": "300969",
+      "impact": 3,
+      "analysis": "AI+医疗政策推动，受益"
+    },
+    {
+      "stock_name": "数字认证",
+      "stock_code": "002275",
+      "impact": 3,
+      "analysis": "数字中国建设推进，受益"
+    },
+    {
+      "stock_name": "粤桂股份",
+      "stock_code": "002711",
+      "impact": 3,
+      "analysis": "新能源汽车固态电池，受益"
+    },
+    {
+      "stock_name": "中科金财",
+      "stock_code": "002657",
+      "impact": 3,
+      "analysis": "AI大模型，受益"
+    }
+  ],
+  "article_title": "11月15日盘前早报 热点事件关注",
+  "html_file": "d0rgyzw86k.html",
+  "article_date": "2024-11-15"
+}

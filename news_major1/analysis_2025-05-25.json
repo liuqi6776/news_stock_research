@@ -1,0 +1,67 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受积极事件推动，但需关注潜在风险。",
+  "sectors": [
+    {
+      "sector_name": "半导体",
+      "impact": 4,
+      "analysis": "国产芯片突破，利好板块"
+    },
+    {
+      "sector_name": "信息科技",
+      "impact": 3,
+      "analysis": "并购重组政策支持，利好板块"
+    },
+    {
+      "sector_name": "物流",
+      "impact": 2,
+      "analysis": "中欧合作关税影响，利好板块"
+    },
+    {
+      "sector_name": "新材料",
+      "impact": 2,
+      "analysis": "国产替代，利好板块"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中科曙光",
+      "stock_code": "600939",
+      "impact": 4,
+      "analysis": "并购重组，利好个股"
+    },
+    {
+      "stock_name": "海光信息",
+      "stock_code": "688046",
+      "impact": 4,
+      "analysis": "并购重组，利好个股"
+    },
+    {
+      "stock_name": "深圳华强",
+      "stock_code": "000062",
+      "impact": 3,
+      "analysis": "华为供应商，利好个股"
+    },
+    {
+      "stock_name": "森远股份",
+      "stock_code": "300387",
+      "impact": 3,
+      "analysis": "中科院背景，利好个股"
+    },
+    {
+      "stock_name": "天顺股份",
+      "stock_code": "002800",
+      "impact": 2,
+      "analysis": "中欧班列，利好个股"
+    },
+    {
+      "stock_name": "天保基建",
+      "stock_code": "000965",
+      "impact": 2,
+      "analysis": "空中客车供应商，利好个股"
+    }
+  ],
+  "article_id": "c81c118727344e769205b680eacd5f7f",
+  "article_date": "2025-05-25",
+  "article_title": "2025.5.25市场逻辑精选"
+}

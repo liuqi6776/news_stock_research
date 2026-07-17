@@ -1,0 +1,18 @@
+import pandas as pd
+doubao_dir = r'c:\Users\liuqi\quant_system_v2\new_idea\final_result\doubao'
+t1 = pd.read_csv(doubao_dir + '\\trades.csv')
+t2 = pd.read_csv(doubao_dir + '\\doubao_trades.csv')
+print(f'trades.csv: {len(t1)} rows, cols={t1.columns.tolist()}')
+print(f'doubao_trades.csv: {len(t2)} rows, cols={t2.columns.tolist()}')
+print()
+print('trades.csv head:')
+print(t1.head(3))
+print()
+print('doubao_trades.csv head:')
+print(t2.head(3))
+print()
+print(f'trades.csv date range: {t1["date_t"].min()} - {t1["date_t"].max()}')
+print(f'doubao_trades.csv date range: {t2["date_t"].min()} - {t2["date_t"].max()}')
+print()
+print(f'trades.csv unique dates: {t1["date_t2"].nunique()}')
+print(f'doubao_trades.csv unique dates: {t2["date_t2"].nunique()}')

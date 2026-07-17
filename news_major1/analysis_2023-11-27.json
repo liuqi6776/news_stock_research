@@ -1,0 +1,81 @@
+{
+  "market_impact": 3,
+  "market_analysis": "智能驾驶和数据要素政策推动相关板块上涨。",
+  "sectors": [
+    {
+      "sector_name": "智能驾驶",
+      "impact": 4,
+      "analysis": "华为与长安合作，特斯拉FSD更新，政策支持，技术优势明显。"
+    },
+    {
+      "sector_name": "数据要素",
+      "impact": 3,
+      "analysis": "数据交易链启用，资产入表落地，市场规模扩大。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "汉鑫科技",
+      "stock_code": "300335",
+      "impact": 3,
+      "analysis": "车路协同智能网联软硬件系统研发。"
+    },
+    {
+      "stock_name": "英唐智控",
+      "stock_code": "300118",
+      "impact": 3,
+      "analysis": "MEMS振镜产品应用，自动装配产线调试。"
+    },
+    {
+      "stock_name": "奥迪威",
+      "stock_code": "002701",
+      "impact": 3,
+      "analysis": "车载超声波传感器产品应用。"
+    },
+    {
+      "stock_name": "高鸿股份",
+      "stock_code": "000851",
+      "impact": 3,
+      "analysis": "车联网技术领先，受益车路协同。"
+    },
+    {
+      "stock_name": "光库科技",
+      "stock_code": "300638",
+      "impact": 3,
+      "analysis": "受益1.6T光模块推广。"
+    },
+    {
+      "stock_name": "中远海科",
+      "stock_code": "000881",
+      "impact": 3,
+      "analysis": "航运数据受益数据要素发展。"
+    },
+    {
+      "stock_name": "兴民智通",
+      "stock_code": "002355",
+      "impact": 3,
+      "analysis": "长安一级供应商，车路协同领域合作。"
+    },
+    {
+      "stock_name": "川环科技",
+      "stock_code": "300387",
+      "impact": 3,
+      "analysis": "长安汽车第一大客户，汽车配套产品丰富。"
+    },
+    {
+      "stock_name": "金桥信息",
+      "stock_code": "300776",
+      "impact": 3,
+      "analysis": "人工智能辅助办案试点。"
+    },
+    {
+      "stock_name": "每日互动",
+      "stock_code": "300709",
+      "impact": 3,
+      "analysis": "数据要素多领域发力。"
+    }
+  ],
+  "article_id": "2d536571aff64392a5bf9eb901c0f28d",
+  "article_date": "2023-11-27",
+  "article_title": "2023.11.27市场逻辑精选"
+}

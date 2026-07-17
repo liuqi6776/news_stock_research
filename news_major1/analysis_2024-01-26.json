@@ -1,0 +1,88 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪提升",
+  "sectors": [
+    {
+      "sector_name": "国资",
+      "impact": 4,
+      "analysis": "基金成立，推动国企优化升级"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 3,
+      "analysis": "优化贷款政策，支持住房需求"
+    },
+    {
+      "sector_name": "游戏",
+      "impact": 3,
+      "analysis": "国产游戏审批数量增加"
+    },
+    {
+      "sector_name": "华为鸿蒙",
+      "impact": 3,
+      "analysis": "淘宝启动鸿蒙原生应用开发"
+    },
+    {
+      "sector_name": "超导概念",
+      "impact": 3,
+      "analysis": "美国超导上涨，技术突破"
+    },
+    {
+      "sector_name": "燃料电池",
+      "impact": 3,
+      "analysis": "国际标准发布，产业走出去"
+    },
+    {
+      "sector_name": "低空经济",
+      "impact": 2,
+      "analysis": "同花顺新建概念板块"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "长江投资",
+      "stock_code": "600052",
+      "impact": 4,
+      "analysis": "国资板块受益股"
+    },
+    {
+      "stock_name": "中华企业",
+      "stock_code": "600675",
+      "impact": 3,
+      "analysis": "房地产板块受益股"
+    },
+    {
+      "stock_name": "中青宝",
+      "stock_code": "300118",
+      "impact": 3,
+      "analysis": "游戏板块受益股"
+    },
+    {
+      "stock_name": "常山北明",
+      "stock_code": "000158",
+      "impact": 3,
+      "analysis": "华为鸿蒙板块受益股"
+    },
+    {
+      "stock_name": "百利电气",
+      "stock_code": "600468",
+      "impact": 3,
+      "analysis": "超导概念板块受益股"
+    },
+    {
+      "stock_name": "京城股份",
+      "stock_code": "600860",
+      "impact": 3,
+      "analysis": "燃料电池板块受益股"
+    },
+    {
+      "stock_name": "光洋股份",
+      "stock_code": "002708",
+      "impact": 2,
+      "analysis": "低空经济板块受益股"
+    }
+  ],
+  "article_title": "1月26日盘前早报 热点事件关注",
+  "html_file": "60j7z85y6l.html",
+  "article_date": "2024-01-26"
+}

@@ -1,0 +1,200 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极影响。",
+  "sectors": [
+    {
+      "sector_name": "环保设备",
+      "impact": 4,
+      "analysis": "国四排放标准实施，相关设备需求增加。"
+    },
+    {
+      "sector_name": "游戏",
+      "impact": 3,
+      "analysis": "官媒发文，游戏行业估值修复。"
+    },
+    {
+      "sector_name": "数字经济",
+      "impact": 3,
+      "analysis": "数字经济行动计划提出，相关公司受益。"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 3,
+      "analysis": "低浓度阿托品研发进展，相关公司受益。"
+    },
+    {
+      "sector_name": "云计算",
+      "impact": 3,
+      "analysis": "国资云崛起，相关公司受益。"
+    },
+    {
+      "sector_name": "数字内容",
+      "impact": 3,
+      "analysis": "AI技术应用于内容创作，相关公司受益。"
+    },
+    {
+      "sector_name": "农业",
+      "impact": 3,
+      "analysis": "白羽鸡业务增长，相关公司受益。"
+    },
+    {
+      "sector_name": "数字城市",
+      "impact": 3,
+      "analysis": "中阿数字经济合作，相关公司受益。"
+    },
+    {
+      "sector_name": "网络设备",
+      "impact": 3,
+      "analysis": "交换机业务放量，相关公司受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "艾可蓝",
+      "stock_code": "300682",
+      "impact": 4,
+      "analysis": "具备非道路国四产品生产能力。"
+    },
+    {
+      "stock_name": "凯龙高科",
+      "stock_code": "300782",
+      "impact": 4,
+      "analysis": "非道路移动机械国四项目完成认证。"
+    },
+    {
+      "stock_name": "华丰股份",
+      "stock_code": "603011",
+      "impact": 4,
+      "analysis": "非道路国四排放标准柴油机系列产品开发。"
+    },
+    {
+      "stock_name": "三七互娱",
+      "stock_code": "002555",
+      "impact": 3,
+      "analysis": "境外收入占比高。"
+    },
+    {
+      "stock_name": "盛天网络",
+      "stock_code": "300704",
+      "impact": 3,
+      "analysis": "境外收入占比高。"
+    },
+    {
+      "stock_name": "电魂网络",
+      "stock_code": "300579",
+      "impact": 3,
+      "analysis": "境外收入占比高。"
+    },
+    {
+      "stock_name": "完美世界",
+      "stock_code": "002624",
+      "impact": 3,
+      "analysis": "境外收入占比高。"
+    },
+    {
+      "stock_name": "吉比特",
+      "stock_code": "603444",
+      "impact": 3,
+      "analysis": "境外收入占比高。"
+    },
+    {
+      "stock_name": "电科数字",
+      "stock_code": "300369",
+      "impact": 3,
+      "analysis": "本土政务IT龙头。"
+    },
+    {
+      "stock_name": "太极股份",
+      "stock_code": "002368",
+      "impact": 3,
+      "analysis": "国资云。"
+    },
+    {
+      "stock_name": "创意信息",
+      "stock_code": "300369",
+      "impact": 3,
+      "analysis": "数据安全。"
+    },
+    {
+      "stock_name": "吉大正元",
+      "stock_code": "300098",
+      "impact": 3,
+      "analysis": "数据安全。"
+    },
+    {
+      "stock_name": "卫士通",
+      "stock_code": "002268",
+      "impact": 3,
+      "analysis": "数据安全。"
+    },
+    {
+      "stock_name": "创意信息",
+      "stock_code": "300369",
+      "impact": 3,
+      "analysis": "大数据分析。"
+    },
+    {
+      "stock_name": "超图软件",
+      "stock_code": "300036",
+      "impact": 3,
+      "analysis": "大数据分析。"
+    },
+    {
+      "stock_name": "星环科技",
+      "stock_code": "688012",
+      "impact": 3,
+      "analysis": "大数据分析。"
+    },
+    {
+      "stock_name": "兴齐眼药",
+      "stock_code": "300192",
+      "impact": 4,
+      "analysis": "低浓度阿托品研发领先。"
+    },
+    {
+      "stock_name": "兆科眼科",
+      "stock_code": "01342",
+      "impact": 3,
+      "analysis": "与Vyluma公司合作。"
+    },
+    {
+      "stock_name": "深桑达A",
+      "stock_code": "000032",
+      "impact": 4,
+      "analysis": "电子云底座助力国资云。"
+    },
+    {
+      "stock_name": "视觉中国",
+      "stock_code": "000681",
+      "impact": 3,
+      "analysis": "AI生成数字艺术品。"
+    },
+    {
+      "stock_name": "中文在线",
+      "stock_code": "300364",
+      "impact": 3,
+      "analysis": "AI技术应用于内容创作。"
+    },
+    {
+      "stock_name": "禾丰股份",
+      "stock_code": "002118",
+      "impact": 4,
+      "analysis": "白羽鸡业务增长。"
+    },
+    {
+      "stock_name": "立昂技术",
+      "stock_code": "300702",
+      "impact": 4,
+      "analysis": "中阿数字经济先行者。"
+    },
+    {
+      "stock_name": "菲菱科思",
+      "stock_code": "688023",
+      "impact": 4,
+      "analysis": "交换机业务放量。"
+    }
+  ],
+  "article_id": "c1cee774544a4accba84de4b6eb9320a",
+  "article_date": "2022-11-16",
+  "article_title": "2022.11.16市场逻辑精选"
+}

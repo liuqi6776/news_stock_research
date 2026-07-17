@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "电力设备",
+      "impact": 4,
+      "analysis": "电力紧缺，燃气轮机需求旺盛，板块受益"
+    },
+    {
+      "sector_name": "先进封装",
+      "impact": 3,
+      "analysis": "先进封装技术助力AI服务器性能提升，板块受益"
+    },
+    {
+      "sector_name": "环保",
+      "impact": 3,
+      "analysis": "生态环境法典草案审议，环保板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "万泽股份",
+      "stock_code": "000055",
+      "impact": 4,
+      "analysis": "燃气轮机叶片供应商，订单强劲"
+    },
+    {
+      "stock_name": "博盈特焊",
+      "stock_code": "002745",
+      "impact": 4,
+      "analysis": "燃气轮机HRSG承压部供应商，产能充足"
+    },
+    {
+      "stock_name": "盛合晶微",
+      "stock_code": "688012",
+      "impact": 3,
+      "analysis": "先进封装技术领先，产能紧张"
+    },
+    {
+      "stock_name": "美丽生态",
+      "stock_code": "000310",
+      "impact": 3,
+      "analysis": "工程施工、园林绿化及环境综合整治"
+    }
+  ],
+  "article_id": "4e25671674994469819f616bcf9038b5",
+  "article_date": "2026-02-26",
+  "article_title": "2026.2.26市场逻辑精选"
+}

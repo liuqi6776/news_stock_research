@@ -1,0 +1,77 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多事件利好。",
+  "sectors": [
+    {
+      "sector_name": "国资国企",
+      "impact": 4,
+      "analysis": "国资委推进重组，估值提升预期"
+    },
+    {
+      "sector_name": "光刻胶",
+      "impact": 3,
+      "analysis": "光刻胶断供，行业需求增加"
+    },
+    {
+      "sector_name": "国资云",
+      "impact": 3,
+      "analysis": "国家数据局成立，数据资产价值提升"
+    },
+    {
+      "sector_name": "数字人民币",
+      "impact": 3,
+      "analysis": "数字人民币APP内嵌微信支付，应用场景拓展"
+    },
+    {
+      "sector_name": "6G通信",
+      "impact": 3,
+      "analysis": "6G技术研发推进，行业前景看好"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "光伏产业政策支持，需求增长"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中公高科",
+      "stock_code": "000603",
+      "impact": 4,
+      "analysis": "国资委推进重组，估值提升预期"
+    },
+    {
+      "stock_name": "彤程新材",
+      "stock_code": "603678",
+      "impact": 3,
+      "analysis": "光刻胶断供，行业需求增加"
+    },
+    {
+      "stock_name": "美利云",
+      "stock_code": "000815",
+      "impact": 3,
+      "analysis": "国家数据局成立，数据资产价值提升"
+    },
+    {
+      "stock_name": "楚天龙",
+      "stock_code": "002052",
+      "impact": 3,
+      "analysis": "数字人民币APP内嵌微信支付，应用场景拓展"
+    },
+    {
+      "stock_name": "中国卫通",
+      "stock_code": "600118",
+      "impact": 3,
+      "analysis": "6G技术研发推进，行业前景看好"
+    },
+    {
+      "stock_name": "欧晶科技",
+      "stock_code": "603695",
+      "impact": 3,
+      "analysis": "光伏产业政策支持，需求增长"
+    }
+  ],
+  "article_title": "3月7日盘前热点事件关注",
+  "html_file": "8utf64b85p.html",
+  "article_date": "2023-03-07"
+}

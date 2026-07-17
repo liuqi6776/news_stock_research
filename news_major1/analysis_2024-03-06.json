@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "硅光模块",
+      "impact": 4,
+      "analysis": "受益于1.6T光模块放量，渗透率提升，板块表现强劲。"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "优必选暴涨，带动机器人板块活跃。"
+    },
+    {
+      "sector_name": "算力",
+      "impact": 3,
+      "analysis": "IPO收紧，资产注入预期，板块受资金青睐。"
+    },
+    {
+      "sector_name": "光伏玻璃",
+      "impact": 3,
+      "analysis": "二季度盈利有望提升，板块表现活跃。"
+    },
+    {
+      "sector_name": "海上风电",
+      "impact": 3,
+      "analysis": "新一轮建设高峰，板块迎来发展机遇。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "优必选",
+      "stock_code": "002912",
+      "impact": 5,
+      "analysis": "供货比亚迪传言，股价暴涨。"
+    },
+    {
+      "stock_name": "天奇股份",
+      "stock_code": "002009",
+      "impact": 4,
+      "analysis": "与优必选合作，打造人形机器人整机。"
+    },
+    {
+      "stock_name": "瑞贝卡",
+      "stock_code": "600439",
+      "impact": 3,
+      "analysis": "实控人参股黄河信产，聚焦国产化通用计算。"
+    },
+    {
+      "stock_name": "安彩高科",
+      "stock_code": "600207",
+      "impact": 3,
+      "analysis": "光伏玻璃生产基地，受益于行业景气度提升。"
+    },
+    {
+      "stock_name": "东方电缆",
+      "stock_code": "600873",
+      "impact": 3,
+      "analysis": "海缆企业，受益于海上风电建设高峰。"
+    }
+  ],
+  "article_id": "c456ebac3bc149f68abb96aca528354e",
+  "article_date": "2024-03-06",
+  "article_title": "2024.3.6市场逻辑精选"
+}

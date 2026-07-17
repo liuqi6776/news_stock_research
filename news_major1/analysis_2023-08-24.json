@@ -1,0 +1,85 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受日本核废水排放影响，部分板块和个股受益。",
+  "sectors": [
+    {
+      "sector_name": "远洋捕捞",
+      "impact": 4,
+      "analysis": "短期利好，受日本核废水排放影响较小"
+    },
+    {
+      "sector_name": "黄金",
+      "impact": 3,
+      "analysis": "美联储降息预期推动金价上涨"
+    },
+    {
+      "sector_name": "国产化妆品",
+      "impact": 3,
+      "analysis": "日本核废水排放引发安全担忧，利好国妆"
+    },
+    {
+      "sector_name": "淡水养殖",
+      "impact": 3,
+      "analysis": "日本核废水排放，暂停进口日本水产品，利好淡水养殖"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "开创国际",
+      "stock_code": "600751",
+      "impact": 4,
+      "analysis": "国内第一批发展远洋捕捞的企业"
+    },
+    {
+      "stock_name": "中水渔业",
+      "stock_code": "000798",
+      "impact": 4,
+      "analysis": "主营远洋捕捞，已在南太平洋建立远洋渔业基地"
+    },
+    {
+      "stock_name": "贝泰妮",
+      "stock_code": "300719",
+      "impact": 3,
+      "analysis": "国产化妆品，受日本核废水排放影响"
+    },
+    {
+      "stock_name": "珀莱雅",
+      "stock_code": "603338",
+      "impact": 3,
+      "analysis": "国产化妆品，受日本核废水排放影响"
+    },
+    {
+      "stock_name": "大湖股份",
+      "stock_code": "600257",
+      "impact": 3,
+      "analysis": "淡水鱼龙头，受益暂停进口日本水产品"
+    },
+    {
+      "stock_name": "百洋股份",
+      "stock_code": "002322",
+      "impact": 3,
+      "analysis": "水产品加工业务原材料以国内养殖的淡水鱼产品为主"
+    },
+    {
+      "stock_name": "中润资源",
+      "stock_code": "000507",
+      "impact": 3,
+      "analysis": "黄金业务占营收86.93%"
+    },
+    {
+      "stock_name": "银泰黄金",
+      "stock_code": "601888",
+      "impact": 3,
+      "analysis": "黄金业务占营收41.42%"
+    },
+    {
+      "stock_name": "山东黄金",
+      "stock_code": "600547",
+      "impact": 3,
+      "analysis": "黄金业务占营收94.39%"
+    }
+  ],
+  "article_id": "e4589fc7f8e446908cf7e2c0c3b127fb",
+  "article_date": "2023-08-24",
+  "article_title": "2023.8.24市场逻辑精选"
+}

@@ -1,0 +1,101 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "存储设备",
+      "impact": 4,
+      "analysis": "扩产预期和海外龙头扩产推动板块上涨。"
+    },
+    {
+      "sector_name": "铜箔",
+      "impact": 3,
+      "analysis": "高端AI铜箔和锂电铜箔需求旺盛，推动价格上涨。"
+    },
+    {
+      "sector_name": "商业航天",
+      "impact": 3,
+      "analysis": "回收试验和发射计划推动板块上涨。"
+    },
+    {
+      "sector_name": "锂资源",
+      "impact": 3,
+      "analysis": "盐湖提锂技术布局和海外锂资源收购推动板块上涨。"
+    },
+    {
+      "sector_name": "磷化铟衬底",
+      "impact": 3,
+      "analysis": "全球供需缺口和产能扩张推动板块上涨。"
+    },
+    {
+      "sector_name": "有机硅",
+      "impact": 2,
+      "analysis": "有机硅单体价格上涨推动板块上涨。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "精智达",
+      "stock_code": "300845",
+      "impact": 4,
+      "analysis": "深度绑定长鑫、长存，设备订单增加。"
+    },
+    {
+      "stock_name": "拓荆科技",
+      "stock_code": "688599",
+      "impact": 4,
+      "analysis": "薄膜沉积设备业务增长，获得大基金投资。"
+    },
+    {
+      "stock_name": "诺德股份",
+      "stock_code": "002150",
+      "impact": 3,
+      "analysis": "AI铜箔和锂电铜箔业务有望增长。"
+    },
+    {
+      "stock_name": "铜冠铜箔",
+      "stock_code": "002001",
+      "impact": 3,
+      "analysis": "HVLP铜箔业务有望增长，业绩拐点显现。"
+    },
+    {
+      "stock_name": "德福科技",
+      "stock_code": "603666",
+      "impact": 3,
+      "analysis": "高端铜箔产品将迎来放量。"
+    },
+    {
+      "stock_name": "超捷股份",
+      "stock_code": "002887",
+      "impact": 3,
+      "analysis": "商业航天火箭公司客户订单增加。"
+    },
+    {
+      "stock_name": "电科蓝天",
+      "stock_code": "688598",
+      "impact": 3,
+      "analysis": "商业航天卫星研制项目参与度高。"
+    },
+    {
+      "stock_name": "华联控股",
+      "stock_code": "000036",
+      "impact": 3,
+      "analysis": "盐湖提锂技术布局和海外锂资源收购推动股价上涨。"
+    },
+    {
+      "stock_name": "云南锗业",
+      "stock_code": "002428",
+      "impact": 3,
+      "analysis": "磷化铟衬底业务有望增长。"
+    },
+    {
+      "stock_name": "东岳硅材",
+      "stock_code": "600389",
+      "impact": 2,
+      "analysis": "有机硅单体价格上涨推动股价上涨。"
+    }
+  ],
+  "article_id": "0f30f48daccb4801b6ea0009c48ba0bf",
+  "article_date": "2026-02-25",
+  "article_title": "2026.2.25市场逻辑精选"
+}

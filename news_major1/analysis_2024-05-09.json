@@ -1,0 +1,72 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好影响，船舶航运和锂电池产业链表现强劲。",
+  "sectors": [
+    {
+      "sector_name": "船舶航运",
+      "impact": 4,
+      "analysis": "运价上涨，出口预期改善，板块整体受益"
+    },
+    {
+      "sector_name": "锂电池产业链",
+      "impact": 3,
+      "analysis": "供给侧改革预期，行业有望迎来增长"
+    },
+    {
+      "sector_name": "氨基酸",
+      "impact": 3,
+      "analysis": "需求高增长，助力解决粮食安全问题"
+    },
+    {
+      "sector_name": "生物育种",
+      "impact": 3,
+      "analysis": "转基因政策支持，行业迎来发展机遇"
+    },
+    {
+      "sector_name": "航空制造",
+      "impact": 3,
+      "analysis": "C919量产，航材需求提升"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中远海控",
+      "stock_code": "601919",
+      "impact": 4,
+      "analysis": "集装箱航运龙头，运力规模第一梯队"
+    },
+    {
+      "stock_name": "招商南油",
+      "stock_code": "000635",
+      "impact": 4,
+      "analysis": "油品运输营收占比高，受益于运价上涨"
+    },
+    {
+      "stock_name": "中国船舶",
+      "stock_code": "601989",
+      "impact": 3,
+      "analysis": "船舶制造龙头，受益于船舶出口增长"
+    },
+    {
+      "stock_name": "宁德时代",
+      "stock_code": "300750",
+      "impact": 3,
+      "analysis": "锂电池行业龙头，供给侧改革预期"
+    },
+    {
+      "stock_name": "梅花生物",
+      "stock_code": "600856",
+      "impact": 3,
+      "analysis": "氨基酸行业领先企业，需求高增长"
+    },
+    {
+      "stock_name": "荃银高科",
+      "stock_code": "600975",
+      "impact": 3,
+      "analysis": "转基因育种企业，政策支持"
+    }
+  ],
+  "article_id": "38fc066da7be4f0bb5afb5f923828f7d",
+  "article_date": "2024-05-09",
+  "article_title": "2024.5.9市场逻辑精选"
+}

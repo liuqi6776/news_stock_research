@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受多事件影响，整体偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "锂电池",
+      "impact": 4,
+      "analysis": "碳酸锂价格上涨，板块受益"
+    },
+    {
+      "sector_name": "传媒",
+      "impact": 3,
+      "analysis": "欧盟AI版权法提案，板块受关注"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "G7监管AI，板块受提振"
+    },
+    {
+      "sector_name": "化工",
+      "impact": -2,
+      "analysis": "鲁西化工事故，板块受负面影响"
+    },
+    {
+      "sector_name": "苹果产业链",
+      "impact": 3,
+      "analysis": "苹果MR新品发布预期，板块受关注"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "天齐锂业",
+      "stock_code": "002466",
+      "impact": 4,
+      "analysis": "碳酸锂价格上涨，公司受益"
+    },
+    {
+      "stock_name": "长江传媒",
+      "stock_code": "600757",
+      "impact": 3,
+      "analysis": "欧盟AI版权法提案，公司受关注"
+    },
+    {
+      "stock_name": "立讯精密",
+      "stock_code": "002475",
+      "impact": 3,
+      "analysis": "苹果MR新品发布预期，公司受关注"
+    },
+    {
+      "stock_name": "鲁西化工",
+      "stock_code": "000830",
+      "impact": -2,
+      "analysis": "发生爆炸火灾事故，公司受负面影响"
+    },
+    {
+      "stock_name": "皇庭国际",
+      "stock_code": "000056",
+      "impact": 3,
+      "analysis": "公告债务化解取得突破性进展，公司受关注"
+    }
+  ],
+  "article_title": "5月4日 盘前热点事件关注",
+  "html_file": "3zm3kqt9gz.html",
+  "article_date": "2023-05-04"
+}

@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块利好。",
+  "sectors": [
+    {
+      "sector_name": "人工智能",
+      "impact": 4,
+      "analysis": "Meta开源视觉大模型，英伟达评级上调，微软芯片研发，利好明显。"
+    },
+    {
+      "sector_name": "芯片",
+      "impact": 3,
+      "analysis": "欧盟芯片法案，英伟达评级上调，利好。"
+    },
+    {
+      "sector_name": "元宇宙",
+      "impact": 3,
+      "analysis": "GPT产业联盟成立，苹果ARVR设备开发，利好。"
+    },
+    {
+      "sector_name": "基建",
+      "impact": 2,
+      "analysis": "新疆和西藏基建加快推进，利好。"
+    },
+    {
+      "sector_name": "自动驾驶",
+      "impact": 2,
+      "analysis": "Autox获示范运营许可，商业化服务提速，利好。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "凌云光",
+      "stock_code": "688316",
+      "impact": 4,
+      "analysis": "Meta开源视觉大模型，利好。"
+    },
+    {
+      "stock_name": "鸿博股份",
+      "stock_code": "002229",
+      "impact": 3,
+      "analysis": "英伟达评级上调，利好。"
+    },
+    {
+      "stock_name": "中国联通",
+      "stock_code": "600050",
+      "impact": 3,
+      "analysis": "GPT产业联盟成员，利好。"
+    },
+    {
+      "stock_name": "宁夏建材",
+      "stock_code": "600292",
+      "impact": 3,
+      "analysis": "微软芯片研发，利好。"
+    },
+    {
+      "stock_name": "拓荆科技",
+      "stock_code": "688012",
+      "impact": 3,
+      "analysis": "欧盟芯片法案，利好。"
+    }
+  ],
+  "article_title": "4月19日 盘前热点事件关注",
+  "html_file": "ajw32z9wxy.html",
+  "article_date": "2023-04-19"
+}

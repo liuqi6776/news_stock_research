@@ -1,0 +1,71 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪偏乐观",
+  "sectors": [
+    {
+      "sector_name": "金融",
+      "impact": 3,
+      "analysis": "陆家嘴论坛政策预期利好"
+    },
+    {
+      "sector_name": "券商",
+      "impact": 3,
+      "analysis": "并购重组预期提升行业集中度"
+    },
+    {
+      "sector_name": "电力",
+      "impact": 2,
+      "analysis": "高温天气利好电力需求"
+    },
+    {
+      "sector_name": "消费电子",
+      "impact": 2,
+      "analysis": "苹果链和AI手机概念受关注"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 2,
+      "analysis": "特斯拉机器人进展利好相关个股"
+    },
+    {
+      "sector_name": "科创板",
+      "impact": 2,
+      "analysis": "科创板五周年及开户门槛传闻利好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "华鑫股份",
+      "stock_code": "600675",
+      "impact": 3,
+      "analysis": "陆家嘴论坛政策预期利好"
+    },
+    {
+      "stock_name": "首创证券",
+      "stock_code": "601099",
+      "impact": 3,
+      "analysis": "陆家嘴论坛政策预期利好"
+    },
+    {
+      "stock_name": "艾森股份",
+      "stock_code": "688012",
+      "impact": 2,
+      "analysis": "科创板五周年及开户门槛传闻利好"
+    },
+    {
+      "stock_name": "斯菱股份",
+      "stock_code": "603833",
+      "impact": 2,
+      "analysis": "特斯拉机器人进展利好"
+    },
+    {
+      "stock_name": "奥拓电子",
+      "stock_code": "002587",
+      "impact": 2,
+      "analysis": "欧洲杯概念受关注"
+    }
+  ],
+  "article_title": "6月14日盘前早报 热点事件关注",
+  "html_file": "2xapc6gpxq.html",
+  "article_date": "2024-06-14"
+}

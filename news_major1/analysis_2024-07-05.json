@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏暖，关注业绩和行业政策。",
+  "sectors": [
+    {
+      "sector_name": "旅游",
+      "impact": 4,
+      "analysis": "暑期旅游旺季，相关个股受益"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 3,
+      "analysis": "政策支持，行业持续发展"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "人形机器人亮相，相关个股受关注"
+    },
+    {
+      "sector_name": "水泥",
+      "impact": 2,
+      "analysis": "价格上涨，相关个股受益"
+    },
+    {
+      "sector_name": "医药",
+      "impact": -1,
+      "analysis": "部分个股涨幅较大，需关注风险"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "西藏旅游",
+      "stock_code": "600749",
+      "impact": 4,
+      "analysis": "暑期旅游旺季，业绩有望增长"
+    },
+    {
+      "stock_name": "大连圣亚",
+      "stock_code": "600528",
+      "impact": 4,
+      "analysis": "暑期旅游旺季，业绩有望增长"
+    },
+    {
+      "stock_name": "宁德时代",
+      "stock_code": "300750",
+      "impact": 3,
+      "analysis": "商用车动力电池品牌推出，业绩有望增长"
+    },
+    {
+      "stock_name": "新时达",
+      "stock_code": "002527",
+      "impact": 3,
+      "analysis": "人形机器人亮相，业绩有望增长"
+    },
+    {
+      "stock_name": "海螺水泥",
+      "stock_code": "600585",
+      "impact": 2,
+      "analysis": "水泥价格上涨，业绩有望增长"
+    }
+  ],
+  "article_title": "7月5日盘前早报 热点事件关注",
+  "html_file": "68b1sppla6.html",
+  "article_date": "2024-07-05"
+}

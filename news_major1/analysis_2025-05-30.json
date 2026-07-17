@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏积极，多板块利好。",
+  "sectors": [
+    {
+      "sector_name": "稳定币",
+      "impact": 4,
+      "analysis": "香港和美国政策利好，板块受益"
+    },
+    {
+      "sector_name": "创新药",
+      "impact": 3,
+      "analysis": "国家药监局批准新药上市，板块受益"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "华为芯片性能提升，板块受益"
+    },
+    {
+      "sector_name": "智算云",
+      "impact": 3,
+      "analysis": "浙江政策支持，板块受益"
+    },
+    {
+      "sector_name": "碳排放",
+      "impact": 2,
+      "analysis": "政策支持，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "御银股份",
+      "stock_code": "002177",
+      "impact": 4,
+      "analysis": "稳定币概念，受益政策"
+    },
+    {
+      "stock_name": "海创药业",
+      "stock_code": "300681",
+      "impact": 3,
+      "analysis": "创新药概念，受益新药上市"
+    },
+    {
+      "stock_name": "泰嘉股份",
+      "stock_code": "002823",
+      "impact": 3,
+      "analysis": "华为芯片概念，受益技术提升"
+    },
+    {
+      "stock_name": "杭钢股份",
+      "stock_code": "000709",
+      "impact": 3,
+      "analysis": "智算云概念，受益政策支持"
+    },
+    {
+      "stock_name": "百川畅银",
+      "stock_code": "300369",
+      "impact": 2,
+      "analysis": "碳排放概念，受益政策支持"
+    }
+  ],
+  "article_title": "5月30日盘前纪要",
+  "html_file": "j87msg7jtw.html",
+  "article_date": "2025-05-30"
+}

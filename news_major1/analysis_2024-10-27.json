@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，并购重组和新技术应用推动板块活跃。",
+  "sectors": [
+    {
+      "sector_name": "北交所",
+      "impact": 4,
+      "analysis": "北交所并购重组活跃，相关个股受益"
+    },
+    {
+      "sector_name": "汽车制造",
+      "impact": 3,
+      "analysis": "飞行汽车工厂动工，相关产业链个股受益"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "旷视科技创始人加入董事会，相关个股受益"
+    },
+    {
+      "sector_name": "国资改革",
+      "impact": 3,
+      "analysis": "国资改革推动，相关个股受益"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "并购重组和新技术应用推动，相关个股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "润农节水",
+      "stock_code": "871866",
+      "impact": 4,
+      "analysis": "北交所重组第一股，湖北国资入主"
+    },
+    {
+      "stock_name": "小鹏汇天",
+      "stock_code": "001269",
+      "impact": 4,
+      "analysis": "飞行汽车工厂动工，产能规划1万台"
+    },
+    {
+      "stock_name": "力帆科技",
+      "stock_code": "600662",
+      "impact": 3,
+      "analysis": "旷视科技创始人加入董事会"
+    },
+    {
+      "stock_name": "远东股份",
+      "stock_code": "600869",
+      "impact": 3,
+      "analysis": "进入英伟达供应链，布局低空基础建设"
+    },
+    {
+      "stock_name": "民德电子",
+      "stock_code": "002647",
+      "impact": 3,
+      "analysis": "广芯微股权收购将于年底完成"
+    }
+  ],
+  "article_id": "58b42999abc74af6b92e4ed0cda9c6f5",
+  "article_date": "2024-10-27",
+  "article_title": "2024.10.27市场逻辑精选"
+}

@@ -1,0 +1,77 @@
+{
+  "market_impact": 2,
+  "market_analysis": "市场情绪偏积极，部分板块和个股受利好消息提振。",
+  "sectors": [
+    {
+      "sector_name": "算力",
+      "impact": 3,
+      "analysis": "算力板块受政策支持，行业前景看好。"
+    },
+    {
+      "sector_name": "液冷",
+      "impact": 2,
+      "analysis": "液冷板块受业绩超预期影响，板块表现活跃。"
+    },
+    {
+      "sector_name": "云计算",
+      "impact": 2,
+      "analysis": "云计算板块受政策支持，行业前景看好。"
+    },
+    {
+      "sector_name": "资源股",
+      "impact": 2,
+      "analysis": "资源股受钨价上涨影响，板块表现活跃。"
+    },
+    {
+      "sector_name": "电子布",
+      "impact": 2,
+      "analysis": "电子布板块受需求增加影响，板块表现活跃。"
+    },
+    {
+      "sector_name": "AI应用",
+      "impact": 2,
+      "analysis": "AI应用板块受技术进步影响，板块表现活跃。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "大位科技",
+      "stock_code": "000906",
+      "impact": 3,
+      "analysis": "算力板块龙头，受政策支持，股价有望上涨。"
+    },
+    {
+      "stock_name": "特发信息",
+      "stock_code": "000070",
+      "impact": 3,
+      "analysis": "算力板块龙头，受政策支持，股价有望上涨。"
+    },
+    {
+      "stock_name": "优刻得",
+      "stock_code": "603260",
+      "impact": 3,
+      "analysis": "云计算板块龙头，受业绩超预期影响，股价有望上涨。"
+    },
+    {
+      "stock_name": "掌阅科技",
+      "stock_code": "002711",
+      "impact": 3,
+      "analysis": "AI应用板块龙头，受技术进步影响，股价有望上涨。"
+    },
+    {
+      "stock_name": "宏和科技",
+      "stock_code": "603118",
+      "impact": 3,
+      "analysis": "电子布板块龙头，受需求增加影响，股价有望上涨。"
+    },
+    {
+      "stock_name": "江钨装备",
+      "stock_code": "600971",
+      "impact": 3,
+      "analysis": "资源股龙头，受钨价上涨影响，股价有望上涨。"
+    }
+  ],
+  "article_title": "2月13日盘前纪要",
+  "html_file": "1hjpzrwvcew.html",
+  "article_date": "2026-02-13"
+}

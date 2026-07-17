@@ -1,0 +1,100 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受行业催化和技术突破影响，整体偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "固态电池",
+      "impact": 4,
+      "analysis": "行业催化频繁，技术突破预期提升板块关注度。"
+    },
+    {
+      "sector_name": "AI硬件",
+      "impact": 3,
+      "analysis": "OpenAI硬件产品发布预期，带动相关产业链。"
+    },
+    {
+      "sector_name": "摩尔线程",
+      "impact": 3,
+      "analysis": "科创板上会，关注公司业绩和行业地位。"
+    },
+    {
+      "sector_name": "光通信",
+      "impact": 3,
+      "analysis": "Micro TEC产品通过海外验证，提升行业竞争力。"
+    },
+    {
+      "sector_name": "碳化硅",
+      "impact": 3,
+      "analysis": "碳化硅产业发展，相关公司受益。"
+    },
+    {
+      "sector_name": "光刻胶",
+      "impact": 3,
+      "analysis": "光刻胶技术突破，提升行业地位。"
+    },
+    {
+      "sector_name": "快递",
+      "impact": 2,
+      "analysis": "单票提价和并购预期，提升盈利能力。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "赣锋锂业",
+      "stock_code": "002460",
+      "impact": 4,
+      "analysis": "具备电池级硫化锂量产能力，固态电池产品小批量量产。"
+    },
+    {
+      "stock_name": "厦钨新能",
+      "stock_code": "600549",
+      "impact": 4,
+      "analysis": "固态电解质技术突破，硫化锂订单有望增加。"
+    },
+    {
+      "stock_name": "立讯精密",
+      "stock_code": "002475",
+      "impact": 4,
+      "analysis": "获得OpenAI设备组装合同，业绩有望提升。"
+    },
+    {
+      "stock_name": "歌尔股份",
+      "stock_code": "002241",
+      "impact": 4,
+      "analysis": "与OpenAI合作，有望获得扬声器模块等组件订单。"
+    },
+    {
+      "stock_name": "摩尔线程",
+      "stock_code": "688516",
+      "impact": 4,
+      "analysis": "科创板上会，关注公司业绩和行业地位。"
+    },
+    {
+      "stock_name": "富信科技",
+      "stock_code": "300194",
+      "impact": 4,
+      "analysis": "Micro TEC产品通过海外验证，提升行业竞争力。"
+    },
+    {
+      "stock_name": "天富能源",
+      "stock_code": "600509",
+      "impact": 4,
+      "analysis": "参股公司天科合达受益碳化硅产业发展。"
+    },
+    {
+      "stock_name": "西陇科学",
+      "stock_code": "002584",
+      "impact": 4,
+      "analysis": "布局光刻胶，合作英特尔，提升行业地位。"
+    },
+    {
+      "stock_name": "申通快递",
+      "stock_code": "600233",
+      "impact": 3,
+      "analysis": "单票提价和并购预期，提升盈利能力。"
+    }
+  ],
+  "article_id": "36b8390b6246483a9c572e0006a3cdb4",
+  "article_date": "2025-09-21",
+  "article_title": "2025.9.21市场逻辑精选"
+}

@@ -1,0 +1,66 @@
+{
+  "market_impact": 4,
+  "market_analysis": "多项政策利好科技和新能源汽车板块，市场情绪提振。",
+  "sectors": [
+    {
+      "sector_name": "虚拟现实",
+      "impact": 4,
+      "analysis": "政策支持，行业前景广阔。"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 3,
+      "analysis": "复合集流体技术突破，提升电池性能。"
+    },
+    {
+      "sector_name": "自动驾驶",
+      "impact": 3,
+      "analysis": "试点文件发布，推进速度加快。"
+    },
+    {
+      "sector_name": "疫苗+药+呼吸机",
+      "impact": 3,
+      "analysis": "疫情后时代需求增加。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 2,
+      "analysis": "苹果XR/AR设备推动洁净室需求。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "锋尚文化",
+      "stock_code": "300595",
+      "impact": 4,
+      "analysis": "VR文旅/文创行业受益。"
+    },
+    {
+      "stock_name": "华立科技",
+      "stock_code": "300362",
+      "impact": 4,
+      "analysis": "VR游戏/娱乐行业受益。"
+    },
+    {
+      "stock_name": "宝明科技",
+      "stock_code": "002019",
+      "impact": 4,
+      "analysis": "复合集流体行业受益。"
+    },
+    {
+      "stock_name": "启明信息",
+      "stock_code": "002232",
+      "impact": 3,
+      "analysis": "车联网安全建设受益。"
+    },
+    {
+      "stock_name": "康希诺",
+      "stock_code": "688185",
+      "impact": 3,
+      "analysis": "吸入式新冠疫苗研发。"
+    }
+  ],
+  "article_id": "edb0dc6a73344179b2ac1d0340138589",
+  "article_date": "2022-11-02",
+  "article_title": "2022.11.2市场逻辑精选"
+}

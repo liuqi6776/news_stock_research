@@ -1,0 +1,73 @@
+{
+  "market_impact": 3,
+  "market_analysis": "AI应用和算力发展政策利好，市场情绪提升。",
+  "sectors": [
+    {
+      "sector_name": "AI应用",
+      "impact": 4,
+      "analysis": "政策支持，市场潜力大，板块利好。"
+    },
+    {
+      "sector_name": "算力",
+      "impact": 3,
+      "analysis": "国产算力崛起，板块利好。"
+    },
+    {
+      "sector_name": "体育产业",
+      "impact": 2,
+      "analysis": "体育产业政策支持，板块利好。"
+    },
+    {
+      "sector_name": "煤矿智能化",
+      "impact": 2,
+      "analysis": "技术升级应用试点，板块利好。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "环球印务",
+      "stock_code": "000740",
+      "impact": 3,
+      "analysis": "AI投流服务商，受益AI应用发展。"
+    },
+    {
+      "stock_name": "易点天下",
+      "stock_code": "300771",
+      "impact": 3,
+      "analysis": "AI广告技术，受益AI应用发展。"
+    },
+    {
+      "stock_name": "慧博云通",
+      "stock_code": "300414",
+      "impact": 3,
+      "analysis": "服务器和PC整机领域领先服务商，受益算力发展。"
+    },
+    {
+      "stock_name": "寒武纪",
+      "stock_code": "688005",
+      "impact": 3,
+      "analysis": "AI芯片龙头企业，受益算力发展。"
+    },
+    {
+      "stock_name": "珠江股份",
+      "stock_code": "000702",
+      "impact": 2,
+      "analysis": "体育场馆运营管理，受益体育产业发展。"
+    },
+    {
+      "stock_name": "茂业商业",
+      "stock_code": "000889",
+      "impact": 2,
+      "analysis": "零售与批发业务，受益体育产业发展。"
+    },
+    {
+      "stock_name": "云鼎科技",
+      "stock_code": "300598",
+      "impact": 2,
+      "analysis": "智能矿山，受益煤矿智能化发展。"
+    }
+  ],
+  "article_id": "b74d725ed39d4f45a74424ba40d28b7f",
+  "article_date": "2025-07-31",
+  "article_title": "2025.7.31市场逻辑精选"
+}

@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股受积极因素影响",
+  "sectors": [
+    {
+      "sector_name": "中概互联网",
+      "impact": 4,
+      "analysis": "中概股上涨，利好相关板块"
+    },
+    {
+      "sector_name": "锂电池",
+      "impact": 4,
+      "analysis": "碳酸锂价格上涨，利好锂电池产业链"
+    },
+    {
+      "sector_name": "金融",
+      "impact": 3,
+      "analysis": "金融业估值提升座谈会，利好金融板块"
+    },
+    {
+      "sector_name": "苹果产业链",
+      "impact": 3,
+      "analysis": "苹果AR/MR头显准备发布，利好相关产业链"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 3,
+      "analysis": "新冠感染形势及锂电材料价格上涨，利好医药板块"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "腾讯音乐",
+      "stock_code": "TME",
+      "impact": 4,
+      "analysis": "中概互联网指数ETF上涨，利好腾讯音乐"
+    },
+    {
+      "stock_name": "融捷股份",
+      "stock_code": "002192",
+      "impact": 4,
+      "analysis": "碳酸锂价格上涨，利好融捷股份"
+    },
+    {
+      "stock_name": "中国人寿",
+      "stock_code": "601628",
+      "impact": 3,
+      "analysis": "金融业估值提升座谈会，利好中国人寿"
+    },
+    {
+      "stock_name": "立讯精密",
+      "stock_code": "002475",
+      "impact": 3,
+      "analysis": "苹果AR/MR头显准备发布，利好立讯精密"
+    },
+    {
+      "stock_name": "亨迪药业",
+      "stock_code": "002923",
+      "impact": 3,
+      "analysis": "呼吸道合胞病毒病例增加，利好亨迪药业"
+    }
+  ],
+  "article_title": "5月16日 盘前热点事件关注",
+  "html_file": "fj68jyxzch.html",
+  "article_date": "2023-05-16"
+}

@@ -1,0 +1,67 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注后续政策及市场反应。",
+  "sectors": [
+    {
+      "sector_name": "大消费",
+      "impact": 4,
+      "analysis": "白酒提价，CPI转正，板块受益"
+    },
+    {
+      "sector_name": "汽车",
+      "impact": 3,
+      "analysis": "小米汽车发布，相关产业链受益"
+    },
+    {
+      "sector_name": "AI游戏",
+      "impact": 3,
+      "analysis": "AI游戏行业会议召开，板块受益"
+    },
+    {
+      "sector_name": "粮食",
+      "impact": 3,
+      "analysis": "粮食产能提升方案通过，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "星源卓镁",
+      "stock_code": "300049",
+      "impact": 4,
+      "analysis": "供货小米，合作小鹏，股价受益"
+    },
+    {
+      "stock_name": "凯众股份",
+      "stock_code": "603023",
+      "impact": 4,
+      "analysis": "小米为战略投资人，股价受益"
+    },
+    {
+      "stock_name": "榕基软件",
+      "stock_code": "002474",
+      "impact": 3,
+      "analysis": "华为昇思人工智能峰会，股价受益"
+    },
+    {
+      "stock_name": "景嘉微",
+      "stock_code": "300474",
+      "impact": 3,
+      "analysis": "智算模块及整机研发成功，股价受益"
+    },
+    {
+      "stock_name": "鲁西化工",
+      "stock_code": "000830",
+      "impact": 3,
+      "analysis": "三氯甲烷价格上涨，股价受益"
+    },
+    {
+      "stock_name": "福瑞股份",
+      "stock_code": "300049",
+      "impact": 3,
+      "analysis": "有望受益MASH药物审评，股价受益"
+    }
+  ],
+  "article_id": "43ecbdec2b9f4c5984d45c86562bebcc",
+  "article_date": "2024-03-12",
+  "article_title": "2024.3.12市场逻辑精选"
+}

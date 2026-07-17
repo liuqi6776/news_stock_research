@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受多因素影响，整体情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "航空制造",
+      "impact": 4,
+      "analysis": "国产大飞机有望替代波音，产能提升，利好航空制造板块。"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 3,
+      "analysis": "印巴冲突升级，军工产品出口有望增加，利好军工板块。"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 3,
+      "analysis": "减肥药司美格鲁肽销售额增长，利好医药板块。"
+    },
+    {
+      "sector_name": "化工",
+      "impact": 2,
+      "analysis": "化工产品价格上涨，利好化工板块。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中国商飞",
+      "stock_code": "000738",
+      "impact": 4,
+      "analysis": "国产大飞机产能提升，利好中国商飞。"
+    },
+    {
+      "stock_name": "航天长峰",
+      "stock_code": "600855",
+      "impact": 3,
+      "analysis": "航天长峰为航天二院资本运作主平台，利好航天长峰。"
+    },
+    {
+      "stock_name": "诺和诺德",
+      "stock_code": "600529",
+      "impact": 3,
+      "analysis": "减肥药销售额增长，利好诺和诺德。"
+    },
+    {
+      "stock_name": "金浦钛业",
+      "stock_code": "000545",
+      "impact": 2,
+      "analysis": "钛白粉价格上涨，利好金浦钛业。"
+    }
+  ],
+  "article_id": "9cebb1fde6a34e8ba46de06b700d82d3",
+  "article_date": "2025-05-07",
+  "article_title": "2025.5.7市场逻辑精选"
+}

@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受政策及行业利好消息推动",
+  "sectors": [
+    {
+      "sector_name": "民爆行业",
+      "impact": 4,
+      "analysis": "政策推动行业重组整合，利好相关企业"
+    },
+    {
+      "sector_name": "人工智能与机器人",
+      "impact": 3,
+      "analysis": "Deepseek开源带动应用端百花齐放，相关企业受益"
+    },
+    {
+      "sector_name": "固态电池",
+      "impact": 3,
+      "analysis": "技术发展及政策支持，相关企业受益"
+    },
+    {
+      "sector_name": "锑金属",
+      "impact": 4,
+      "analysis": "锑价上涨，相关企业受益"
+    },
+    {
+      "sector_name": "养老",
+      "impact": 3,
+      "analysis": "政策支持养老行业发展，相关企业受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "高争民爆",
+      "stock_code": "600399",
+      "impact": 4,
+      "analysis": "民爆行业政策利好，公司受益"
+    },
+    {
+      "stock_name": "宏景科技",
+      "stock_code": "300545",
+      "impact": 3,
+      "analysis": "Deepseek开源带动应用端百花齐放，公司受益"
+    },
+    {
+      "stock_name": "宁波建工",
+      "stock_code": "600754",
+      "impact": 3,
+      "analysis": "数据中心出租服务，受益于云计算发展"
+    },
+    {
+      "stock_name": "华钰矿业",
+      "stock_code": "600387",
+      "impact": 4,
+      "analysis": "锑价上涨，公司受益"
+    },
+    {
+      "stock_name": "延华智能",
+      "stock_code": "002178",
+      "impact": 3,
+      "analysis": "养老行业发展，公司受益"
+    }
+  ],
+  "article_id": "e6bdfd8e996e4fc9a6b2a5eb2f0d6b7d",
+  "article_date": "2025-03-02",
+  "article_title": "2025.3.2市场逻辑精选"
+}

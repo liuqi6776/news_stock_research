@@ -1,0 +1,56 @@
+{
+  "market_impact": 4,
+  "market_analysis": "AI算力租赁市场受政策利好，市场情绪积极。",
+  "sectors": [
+    {
+      "sector_name": "算力租赁",
+      "impact": 5,
+      "analysis": "算力卡禁售，租赁价格上涨，板块受益明显。"
+    },
+    {
+      "sector_name": "数据要素",
+      "impact": 4,
+      "analysis": "国家数据局挂牌，数据要素市场迎来发展机遇。"
+    },
+    {
+      "sector_name": "AI监管",
+      "impact": 3,
+      "analysis": "AI监管政策出台，相关企业受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中贝通信",
+      "stock_code": "300426",
+      "impact": 5,
+      "analysis": "签订算力服务协议，合作华为，算力业务增长。"
+    },
+    {
+      "stock_name": "恒润股份",
+      "stock_code": "002522",
+      "impact": 4,
+      "analysis": "算力租赁业务有望与主业共振成长。"
+    },
+    {
+      "stock_name": "致远新能",
+      "stock_code": "603359",
+      "impact": 4,
+      "analysis": "三季报业绩全面大增，LNG气瓶市场供不应求。"
+    },
+    {
+      "stock_name": "优刻得",
+      "stock_code": "603260",
+      "impact": 3,
+      "analysis": "英伟达算力补涨潜力，AI算力规模持续增长。"
+    },
+    {
+      "stock_name": "广博股份",
+      "stock_code": "002103",
+      "impact": 4,
+      "analysis": "单季利润创新高，文具业务增长。"
+    }
+  ],
+  "article_id": "611efd343aa048e58c3cd4fe7c22ee8e",
+  "article_date": "2023-10-24",
+  "article_title": "2023.10.24市场逻辑精选"
+}

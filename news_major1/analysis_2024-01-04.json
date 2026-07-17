@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，机器人、石油、数据要素等板块受关注。",
+  "sectors": [
+    {
+      "sector_name": "机器人",
+      "impact": 4,
+      "analysis": "人形机器人技术提升，相关产业链受益"
+    },
+    {
+      "sector_name": "石油",
+      "impact": 3,
+      "analysis": "沙特阿美计划增加中国投资，石油板块受益"
+    },
+    {
+      "sector_name": "数据要素",
+      "impact": 3,
+      "analysis": "数据要素行动计划发布，相关行业受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "新坐标",
+      "stock_code": "300060",
+      "impact": 4,
+      "analysis": "冷精锻细分领域龙头企业，受益人形机器人发展"
+    },
+    {
+      "stock_name": "荣盛石化",
+      "stock_code": "000503",
+      "impact": 3,
+      "analysis": "沙特阿美投资，受益石油板块"
+    },
+    {
+      "stock_name": "思进智能",
+      "stock_code": "300010",
+      "impact": 4,
+      "analysis": "冷成形装备领先，受益机器人发展"
+    },
+    {
+      "stock_name": "拓普集团",
+      "stock_code": "603603",
+      "impact": 4,
+      "analysis": "机器人电驱系统项目，拓展机器人业务"
+    }
+  ],
+  "article_id": "6f081f982eb94298a445fe1737aba76d",
+  "article_date": "2024-01-04",
+  "article_title": "2024.1.4市场逻辑精选"
+}

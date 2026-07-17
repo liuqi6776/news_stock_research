@@ -1,0 +1,56 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受积极因素推动，但需关注潜在风险。",
+  "sectors": [
+    {
+      "sector_name": "AI广告",
+      "impact": 4,
+      "analysis": "AI广告板块受AppLovin业绩超预期推动，板块表现强劲。"
+    },
+    {
+      "sector_name": "GPU",
+      "impact": 3,
+      "analysis": "GPU板块受摩尔线程IPO消息影响，板块关注度提升。"
+    },
+    {
+      "sector_name": "个人征信",
+      "impact": 3,
+      "analysis": "个人征信板块受蚂蚁金服征信业务进展推动，板块活跃。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "易点天下",
+      "stock_code": "300779",
+      "impact": 4,
+      "analysis": "业绩超预期，股价上涨。"
+    },
+    {
+      "stock_name": "蓝色光标",
+      "stock_code": "300058",
+      "impact": 3,
+      "analysis": "作为Meta、Google等平台国内官方授权代理商，受益于AI广告板块上涨。"
+    },
+    {
+      "stock_name": "和而泰",
+      "stock_code": "002402",
+      "impact": 3,
+      "analysis": "持有摩尔线程股份，受益于GPU板块上涨。"
+    },
+    {
+      "stock_name": "君正集团",
+      "stock_code": "603713",
+      "impact": 3,
+      "analysis": "作为天弘基金股东，受益于蚂蚁金服征信业务进展。"
+    },
+    {
+      "stock_name": "传化智联",
+      "stock_code": "002010",
+      "impact": 3,
+      "analysis": "控股股东参股钱塘征信，受益于个人征信板块上涨。"
+    }
+  ],
+  "article_id": "b080c540b8534e76832a94a747b324e6",
+  "article_date": "2024-11-11",
+  "article_title": "2024.11.11市场逻辑精选"
+}

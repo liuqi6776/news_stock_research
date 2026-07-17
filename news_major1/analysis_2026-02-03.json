@@ -1,0 +1,106 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受AI和科技板块利好影响较大。",
+  "sectors": [
+    {
+      "sector_name": "CDN",
+      "impact": 4,
+      "analysis": "AI应用驱动需求提升，板块受益"
+    },
+    {
+      "sector_name": "AI数据分析",
+      "impact": 3,
+      "analysis": "Palantir业绩超预期，板块受提振"
+    },
+    {
+      "sector_name": "AI农业",
+      "impact": 3,
+      "analysis": "中央一号文件支持，板块迎来发展机遇"
+    },
+    {
+      "sector_name": "卫星光伏",
+      "impact": 3,
+      "analysis": "SpaceX太空算力建设，产业链受益"
+    },
+    {
+      "sector_name": "商业火箭",
+      "impact": 3,
+      "analysis": "国内唯一商业火箭垂直回收控制系统供应商，板块受益"
+    },
+    {
+      "sector_name": "半导体设备",
+      "impact": 3,
+      "analysis": "硅光晶圆检测设备出货海外，板块受提振"
+    },
+    {
+      "sector_name": "数据中心",
+      "impact": 3,
+      "analysis": "柴发进军美国市场，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "南兴股份",
+      "stock_code": "002778",
+      "impact": 4,
+      "analysis": "CDN服务网络优势明显"
+    },
+    {
+      "stock_name": "首都在线",
+      "stock_code": "000876",
+      "impact": 4,
+      "analysis": "全球布局广泛，CDN网络优势明显"
+    },
+    {
+      "stock_name": "盛天网络",
+      "stock_code": "300494",
+      "impact": 4,
+      "analysis": "自主研发CDN平台，技术优势明显"
+    },
+    {
+      "stock_name": "拓尔思",
+      "stock_code": "300229",
+      "impact": 3,
+      "analysis": "与Palantir产品矩阵相似，技术优势明显"
+    },
+    {
+      "stock_name": "国投智能",
+      "stock_code": "300520",
+      "impact": 3,
+      "analysis": "深耕公检法司情报分析领域，客户群体高度契合"
+    },
+    {
+      "stock_name": "托普云农",
+      "stock_code": "300651",
+      "impact": 3,
+      "analysis": "主营智慧农业项目，AI智能体“问稷”上线"
+    },
+    {
+      "stock_name": "沃格光电",
+      "stock_code": "300602",
+      "impact": 3,
+      "analysis": "CPI膜材及防护镀膜产品具备优异特性"
+    },
+    {
+      "stock_name": "航发控制",
+      "stock_code": "600893",
+      "impact": 3,
+      "analysis": "FADEC系统技术国内领先"
+    },
+    {
+      "stock_name": "燕麦科技",
+      "stock_code": "688510",
+      "impact": 3,
+      "analysis": "硅光晶圆检测设备性能居全球TOP3"
+    },
+    {
+      "stock_name": "泰豪科技",
+      "stock_code": "600890",
+      "impact": 3,
+      "analysis": "柴发进军美国市场，业绩增长"
+    }
+  ],
+  "article_id": "dca9958fc513431989357d6fd57279ec",
+  "article_date": "2026-02-03",
+  "article_title": "2026.2.3市场逻辑精选"
+}

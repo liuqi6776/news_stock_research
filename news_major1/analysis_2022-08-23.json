@@ -1,0 +1,88 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪偏乐观",
+  "sectors": [
+    {
+      "sector_name": "纺织出口",
+      "impact": 3,
+      "analysis": "人民币贬值利好出口"
+    },
+    {
+      "sector_name": "天然气",
+      "impact": 3,
+      "analysis": "价格创新高，相关企业受益"
+    },
+    {
+      "sector_name": "电子L管",
+      "impact": 3,
+      "analysis": "需求增加，供应缺口"
+    },
+    {
+      "sector_name": "两轮电动车",
+      "impact": 3,
+      "analysis": "出口量增长，产能扩张"
+    },
+    {
+      "sector_name": "旅游发展",
+      "impact": 2,
+      "analysis": "政策支持，行业前景看好"
+    },
+    {
+      "sector_name": "氢能",
+      "impact": 2,
+      "analysis": "政策支持，发展机遇"
+    },
+    {
+      "sector_name": "锂电池",
+      "impact": 2,
+      "analysis": "行业景气持续向上"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "龙头股份",
+      "stock_code": "600595",
+      "impact": 3,
+      "analysis": "纺织出口龙头"
+    },
+    {
+      "stock_name": "新天然气",
+      "stock_code": "603393",
+      "impact": 3,
+      "analysis": "天然气价格上涨"
+    },
+    {
+      "stock_name": "保利联合",
+      "stock_code": "002037",
+      "impact": 3,
+      "analysis": "电子L管需求增加"
+    },
+    {
+      "stock_name": "新日股份",
+      "stock_code": "601580",
+      "impact": 3,
+      "analysis": "两轮电动车出口增长"
+    },
+    {
+      "stock_name": "西域旅游",
+      "stock_code": "600596",
+      "impact": 2,
+      "analysis": "旅游行业政策支持"
+    },
+    {
+      "stock_name": "京城股份",
+      "stock_code": "600860",
+      "impact": 2,
+      "analysis": "氢能产业政策支持"
+    },
+    {
+      "stock_name": "盛新锂能",
+      "stock_code": "002240",
+      "impact": 2,
+      "analysis": "锂电池行业景气"
+    }
+  ],
+  "article_title": "8月23日 盘前早8点 股市要闻关注",
+  "html_file": "6xb4bes6bt.html",
+  "article_date": "2022-08-23"
+}

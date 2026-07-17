@@ -1,0 +1,116 @@
+{
+  "market_impact": 2,
+  "market_analysis": "多事件影响，市场情绪波动较大。",
+  "sectors": [
+    {
+      "sector_name": "生物安全",
+      "impact": -2,
+      "analysis": "法案未纳入国防授权法案，短期利空相关公司。"
+    },
+    {
+      "sector_name": "核污染防治",
+      "impact": 1,
+      "analysis": "核电站安全受威胁，相关公司短期受益。"
+    },
+    {
+      "sector_name": "智能手表",
+      "impact": 2,
+      "analysis": "HW发布新产品，利好相关公司。"
+    },
+    {
+      "sector_name": "超充",
+      "impact": 1,
+      "analysis": "HW超充上珠峰，利好相关公司。"
+    },
+    {
+      "sector_name": "国产芯片",
+      "impact": -2,
+      "analysis": "英伟达回应H20芯片传闻，短期利空相关公司。"
+    },
+    {
+      "sector_name": "自动驾驶",
+      "impact": -2,
+      "analysis": "美国计划禁止多款汽车软件，短期利空相关公司。"
+    },
+    {
+      "sector_name": "黄金",
+      "impact": 2,
+      "analysis": "现货黄金和期货均创新高，利好相关公司。"
+    },
+    {
+      "sector_name": "AI/MR/AR",
+      "impact": 2,
+      "analysis": "Meta Connect 2024将发布新产品，利好相关公司。"
+    },
+    {
+      "sector_name": "券商",
+      "impact": 1,
+      "analysis": "证监会修订风控指标，利好优质券商。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "药明康德",
+      "stock_code": "603259",
+      "impact": -2,
+      "analysis": "生物安全法案未纳入国防授权法案，短期利空。"
+    },
+    {
+      "stock_name": "康龙化成",
+      "stock_code": "300697",
+      "impact": -2,
+      "analysis": "生物安全法案未纳入国防授权法案，短期利空。"
+    },
+    {
+      "stock_name": "捷强装备",
+      "stock_code": "300805",
+      "impact": 1,
+      "analysis": "核电站安全受威胁，短期受益。"
+    },
+    {
+      "stock_name": "乐心医疗",
+      "stock_code": "300008",
+      "impact": 2,
+      "analysis": "HW发布新产品，利好。"
+    },
+    {
+      "stock_name": "宝馨科技",
+      "stock_code": "002511",
+      "impact": 1,
+      "analysis": "HW超充上珠峰，利好。"
+    },
+    {
+      "stock_name": "寒武纪",
+      "stock_code": "688005",
+      "impact": -2,
+      "analysis": "英伟达回应H20芯片传闻，短期利空。"
+    },
+    {
+      "stock_name": "万安科技",
+      "stock_code": "002590",
+      "impact": -2,
+      "analysis": "美国计划禁止多款汽车软件，短期利空。"
+    },
+    {
+      "stock_name": "鹏欣资源",
+      "stock_code": "600099",
+      "impact": 2,
+      "analysis": "现货黄金和期货均创新高，利好。"
+    },
+    {
+      "stock_name": "卓翼科技",
+      "stock_code": "002369",
+      "impact": 2,
+      "analysis": "Meta Connect 2024将发布新产品，利好。"
+    },
+    {
+      "stock_name": "首创证券",
+      "stock_code": "601099",
+      "impact": 1,
+      "analysis": "证监会修订风控指标，利好。"
+    }
+  ],
+  "article_title": "9月23日盘前早报 热点事件关注",
+  "html_file": "806kch5gnu.html",
+  "article_date": "2024-09-23"
+}

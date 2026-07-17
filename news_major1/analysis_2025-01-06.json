@@ -1,0 +1,126 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股受积极因素影响。",
+  "sectors": [
+    {
+      "sector_name": "机器人",
+      "impact": 4,
+      "analysis": "智能机器人研发进展，利好相关产业链。"
+    },
+    {
+      "sector_name": "珠宝",
+      "impact": 3,
+      "analysis": "微信平台开放珠宝类目，利好珠宝行业。"
+    },
+    {
+      "sector_name": "数字货币",
+      "impact": 3,
+      "analysis": "数字人民币应用推广，利好数字货币相关企业。"
+    },
+    {
+      "sector_name": "新材料",
+      "impact": 3,
+      "analysis": "新材料业务优化，利好相关企业。"
+    },
+    {
+      "sector_name": "芯片",
+      "impact": 3,
+      "analysis": "芯片设计企业收购，利好芯片行业。"
+    },
+    {
+      "sector_name": "数据中心",
+      "impact": 3,
+      "analysis": "数据中心建设，利好相关设备供应商。"
+    },
+    {
+      "sector_name": "烧碱",
+      "impact": 3,
+      "analysis": "供需格局改善，价格有望上行，利好烧碱行业。"
+    },
+    {
+      "sector_name": "新能源",
+      "impact": 3,
+      "analysis": "新能源项目签订合同，利好新能源行业。"
+    },
+    {
+      "sector_name": "卫星",
+      "impact": 3,
+      "analysis": "卫星钙钛矿电池带来增长点，利好卫星行业。"
+    },
+    {
+      "sector_name": "通信",
+      "impact": 3,
+      "analysis": "CVD金刚石在通信领域应用，利好通信行业。"
+    },
+    {
+      "sector_name": "化工",
+      "impact": 3,
+      "analysis": "合成香兰素生产线投建，利好化工行业。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "新兴装备",
+      "stock_code": "000733",
+      "impact": 4,
+      "analysis": "智能机器人研发进展，利好公司。"
+    },
+    {
+      "stock_name": "曼卡龙",
+      "stock_code": "002205",
+      "impact": 3,
+      "analysis": "微信平台开放珠宝类目，利好公司。"
+    },
+    {
+      "stock_name": "新国都",
+      "stock_code": "300130",
+      "impact": 3,
+      "analysis": "数字人民币应用推广，利好公司。"
+    },
+    {
+      "stock_name": "飞凯材料",
+      "stock_code": "002002",
+      "impact": 3,
+      "analysis": "新材料业务优化，利好公司。"
+    },
+    {
+      "stock_name": "华阳智能",
+      "stock_code": "002909",
+      "impact": 3,
+      "analysis": "芯片设计企业收购，利好公司。"
+    },
+    {
+      "stock_name": "禾望电气",
+      "stock_code": "300950",
+      "impact": 3,
+      "analysis": "数据中心建设，利好公司。"
+    },
+    {
+      "stock_name": "华电科工",
+      "stock_code": "601226",
+      "impact": 3,
+      "analysis": "新能源项目签订合同，利好公司。"
+    },
+    {
+      "stock_name": "上海港湾",
+      "stock_code": "603688",
+      "impact": 3,
+      "analysis": "卫星钙钛矿电池带来增长点，利好公司。"
+    },
+    {
+      "stock_name": "四方达",
+      "stock_code": "300179",
+      "impact": 3,
+      "analysis": "CVD金刚石在通信领域应用，利好公司。"
+    },
+    {
+      "stock_name": "亚香股份",
+      "stock_code": "002871",
+      "impact": 3,
+      "analysis": "合成香兰素生产线投建，利好公司。"
+    }
+  ],
+  "article_id": "158c7cb34bc64e538636a0db4e66f5e8",
+  "article_date": "2025-01-06",
+  "article_title": "2025.1.6市场逻辑精选"
+}

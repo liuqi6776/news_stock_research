@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股受利好消息影响。",
+  "sectors": [
+    {
+      "sector_name": "机器人",
+      "impact": 4,
+      "analysis": "人形机器人技术发展，相关产业链受益"
+    },
+    {
+      "sector_name": "手机制造",
+      "impact": 3,
+      "analysis": "豆包二代手机启动，手机产业链受关注"
+    },
+    {
+      "sector_name": "谷歌眼镜头显",
+      "impact": 3,
+      "analysis": "谷歌XR发布会，相关产业链受益"
+    },
+    {
+      "sector_name": "俄乌重建",
+      "impact": 2,
+      "analysis": "俄乌和平计划，相关产业链受益"
+    },
+    {
+      "sector_name": "稀土",
+      "impact": 3,
+      "analysis": "稀土价格上涨，相关产业链受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "骏亚科技",
+      "stock_code": "300387",
+      "impact": 4,
+      "analysis": "人形机器人技术发展，股价受益"
+    },
+    {
+      "stock_name": "中兴通讯",
+      "stock_code": "000063",
+      "impact": 3,
+      "analysis": "豆包二代手机研发，股价受益"
+    },
+    {
+      "stock_name": "博士眼镜",
+      "stock_code": "601619",
+      "impact": 3,
+      "analysis": "谷歌XR发布会，股价受益"
+    },
+    {
+      "stock_name": "北新路桥",
+      "stock_code": "002307",
+      "impact": 2,
+      "analysis": "俄乌和平计划，股价受益"
+    },
+    {
+      "stock_name": "厦门钨业",
+      "stock_code": "600549",
+      "impact": 3,
+      "analysis": "稀土价格上涨，股价受益"
+    }
+  ],
+  "article_title": "12月5日盘前纪要",
+  "html_file": "3fb7fmwcw50.html",
+  "article_date": "2025-12-05"
+}

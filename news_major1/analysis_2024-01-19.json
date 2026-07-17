@@ -1,0 +1,101 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个行业和个股受积极事件影响。",
+  "sectors": [
+    {
+      "sector_name": "影视传媒",
+      "impact": 3,
+      "analysis": "抖音微短剧扶持计划利好相关公司。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "台积电先进封装需求强劲，利好相关公司。"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 3,
+      "analysis": "特斯拉扩大电池产能，利好相关正极材料公司。"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "美国风电和太阳能增长，利好相关光伏和风电公司。"
+    },
+    {
+      "sector_name": "华为鸿蒙",
+      "impact": 3,
+      "analysis": "华为鸿蒙生态设备数增长，利好相关公司。"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 3,
+      "analysis": "城中村改造带动投资，利好相关公司。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中文在线",
+      "stock_code": "300364",
+      "impact": 3,
+      "analysis": "抖音微短剧扶持计划利好。"
+    },
+    {
+      "stock_name": "掌阅科技",
+      "stock_code": "002711",
+      "impact": 3,
+      "analysis": "抖音微短剧扶持计划利好。"
+    },
+    {
+      "stock_name": "因赛集团",
+      "stock_code": "002829",
+      "impact": 3,
+      "analysis": "先进封装需求强劲。"
+    },
+    {
+      "stock_name": "晶方科技",
+      "stock_code": "603005",
+      "impact": 3,
+      "analysis": "先进封装需求强劲。"
+    },
+    {
+      "stock_name": "容百科技",
+      "stock_code": "300104",
+      "impact": 3,
+      "analysis": "特斯拉扩大电池产能。"
+    },
+    {
+      "stock_name": "当升科技",
+      "stock_code": "300073",
+      "impact": 3,
+      "analysis": "特斯拉扩大电池产能。"
+    },
+    {
+      "stock_name": "罗普斯金",
+      "stock_code": "002333",
+      "impact": 3,
+      "analysis": "美国风电和太阳能增长。"
+    },
+    {
+      "stock_name": "大金重工",
+      "stock_code": "002487",
+      "impact": 3,
+      "analysis": "美国风电和太阳能增长。"
+    },
+    {
+      "stock_name": "华立股份",
+      "stock_code": "002462",
+      "impact": 3,
+      "analysis": "华为鸿蒙生态设备数增长。"
+    },
+    {
+      "stock_name": "蕾奥规划",
+      "stock_code": "002624",
+      "impact": 3,
+      "analysis": "城中村改造带动投资。"
+    }
+  ],
+  "article_title": "1月19日盘前早报 热点事件关注",
+  "html_file": "fw67fn5l5f.html",
+  "article_date": "2024-01-19"
+}

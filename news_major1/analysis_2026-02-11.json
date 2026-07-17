@@ -1,0 +1,79 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "云计算",
+      "impact": 4,
+      "analysis": "谷歌收购和提价消息利好云计算板块。"
+    },
+    {
+      "sector_name": "边缘计算",
+      "impact": 3,
+      "analysis": "谷歌收购和SD2.0更新利好边缘计算板块。"
+    },
+    {
+      "sector_name": "镍",
+      "impact": 4,
+      "analysis": "印尼减产消息利好镍板块。"
+    },
+    {
+      "sector_name": "液冷",
+      "impact": 3,
+      "analysis": "维谛技术业绩超预期利好液冷板块。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "顺网科技",
+      "stock_code": "300772",
+      "impact": 3,
+      "analysis": "边缘计算核心公司，受益于谷歌收购和SD2.0更新。"
+    },
+    {
+      "stock_name": "首都在线",
+      "stock_code": "002148",
+      "impact": 3,
+      "analysis": "CDN网络布局完善，受益于谷歌收购和SD2.0更新。"
+    },
+    {
+      "stock_name": "优刻得",
+      "stock_code": "603280",
+      "impact": 3,
+      "analysis": "中立云服务商，受益于谷歌收购和SD2.0更新。"
+    },
+    {
+      "stock_name": "青云科技",
+      "stock_code": "603060",
+      "impact": 3,
+      "analysis": "云计算云服务技术背景，受益于谷歌收购和SD2.0更新。"
+    },
+    {
+      "stock_name": "格林美",
+      "stock_code": "002340",
+      "impact": 4,
+      "analysis": "镍资源业务占比高，受益于印尼减产。"
+    },
+    {
+      "stock_name": "华友钴业",
+      "stock_code": "300074",
+      "impact": 4,
+      "analysis": "全球镍钴一体化龙头，受益于印尼减产。"
+    },
+    {
+      "stock_name": "英维克",
+      "stock_code": "002715",
+      "impact": 3,
+      "analysis": "液冷产品体系完善，受益于维谛技术业绩超预期。"
+    },
+    {
+      "stock_name": "南方泵业",
+      "stock_code": "002552",
+      "impact": 3,
+      "analysis": "液冷泵产品应用于数据中心，受益于维谛技术业绩超预期。"
+    }
+  ],
+  "article_id": "7f0b09c8e8f94f4c8ef6deb0b549b6ed",
+  "article_date": "2026-02-11",
+  "article_title": "2026.2.11市场逻辑精选"
+}

@@ -1,0 +1,56 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策支持数据要素和军工板块，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "数据要素",
+      "impact": 4,
+      "analysis": "政策支持，行业加速发展"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 3,
+      "analysis": "年底结算期，订单提速"
+    },
+    {
+      "sector_name": "航空航天",
+      "impact": 2,
+      "analysis": "波音订单，相关产业链受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "易华录",
+      "stock_code": "600285",
+      "impact": 4,
+      "analysis": "数据要素行业受益股"
+    },
+    {
+      "stock_name": "深桑达A",
+      "stock_code": "000032",
+      "impact": 4,
+      "analysis": "数据要素行业受益股"
+    },
+    {
+      "stock_name": "太极股份",
+      "stock_code": "002368",
+      "impact": 4,
+      "analysis": "数据要素行业受益股"
+    },
+    {
+      "stock_name": "航天科技",
+      "stock_code": "000901",
+      "impact": 3,
+      "analysis": "军工板块受益股"
+    },
+    {
+      "stock_name": "波音",
+      "stock_code": "BA",
+      "impact": 2,
+      "analysis": "波音订单，相关产业链受益"
+    }
+  ],
+  "article_id": "2480fc9355a3482c8ad5de7def57e71c",
+  "article_date": "2023-11-13",
+  "article_title": "2023.11.13市场逻辑精选"
+}

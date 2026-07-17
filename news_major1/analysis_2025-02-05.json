@@ -1,0 +1,79 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注后续发展。",
+  "sectors": [
+    {
+      "sector_name": "石墨烯",
+      "impact": 3,
+      "analysis": "石墨烯超导研究进展利好相关个股。"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 4,
+      "analysis": "ChatGPT搜索功能开放，AI行业受益。"
+    },
+    {
+      "sector_name": "数据中心",
+      "impact": 3,
+      "analysis": "数据中心市场增长预期利好相关个股。"
+    },
+    {
+      "sector_name": "云计算",
+      "impact": 3,
+      "analysis": "DeepSeek模型应用推动云计算行业价值重估。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中超控股",
+      "stock_code": "000777",
+      "impact": 3,
+      "analysis": "石墨烯超导研究进展利好。"
+    },
+    {
+      "stock_name": "华丽家族",
+      "stock_code": "600503",
+      "impact": 3,
+      "analysis": "石墨烯超导研究进展利好。"
+    },
+    {
+      "stock_name": "超讯通信",
+      "stock_code": "300362",
+      "impact": 4,
+      "analysis": "ChatGPT搜索功能开放利好。"
+    },
+    {
+      "stock_name": "鼎捷数智",
+      "stock_code": "300378",
+      "impact": 4,
+      "analysis": "ChatGPT搜索功能开放利好。"
+    },
+    {
+      "stock_name": "数据港",
+      "stock_code": "600847",
+      "impact": 3,
+      "analysis": "数据中心市场增长预期利好。"
+    },
+    {
+      "stock_name": "润泽科技",
+      "stock_code": "300931",
+      "impact": 3,
+      "analysis": "数据中心市场增长预期利好。"
+    },
+    {
+      "stock_name": "杭钢股份",
+      "stock_code": "600126",
+      "impact": 3,
+      "analysis": "DeepSeek模型应用推动云计算行业价值重估利好。"
+    },
+    {
+      "stock_name": "宁波建工",
+      "stock_code": "600982",
+      "impact": 3,
+      "analysis": "DeepSeek模型应用推动云计算行业价值重估利好。"
+    }
+  ],
+  "article_id": "fb8c24ed0b6b48e7b728bd831ffdac69",
+  "article_date": "2025-02-05",
+  "article_title": "2025.2.5市场逻辑精选"
+}

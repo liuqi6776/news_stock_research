@@ -1,0 +1,104 @@
+{
+  "market_impact": 1,
+  "market_analysis": "多个重大利好消息，包括苹果折叠屏手机试产、兆瓦级氢燃料发动机首飞、人民币跨境支付创新高、DeepSeek V4将采用昇腾芯片等，市场整体偏利好。",
+  "sectors": [
+    {
+      "sector_name": "光通信",
+      "impact": 1,
+      "analysis": "汇源通信昨日热点，云南锗业拟投建磷化铟单晶片项目，利好光通信板块。",
+      "stocks": ["汇源通信", "云南锗业"]
+    },
+    {
+      "sector_name": "折叠屏",
+      "impact": 1,
+      "analysis": "苹果首款折叠屏手机已在试产，2026年下半年推出，利好折叠屏板块。",
+      "stocks": ["宜安科技", "精研科技", "科森科技", "联得装备"]
+    },
+    {
+      "sector_name": "氢燃料",
+      "impact": 1,
+      "analysis": "兆瓦级氢燃料航空涡桨发动机首飞成功，全球首次，利好氢燃料板块。",
+      "stocks": ["京城股份", "雄韬股份", "美锦能源", "厚普股份"]
+    },
+    {
+      "sector_name": "跨境支付",
+      "impact": 1,
+      "analysis": "人民币跨境支付系统单日破1.2万亿元，创历史新高，利好跨境支付板块。",
+      "stocks": ["翠微股份", "中油资本", "御银股份", "四方精创", "拉卡拉"]
+    },
+    {
+      "sector_name": "昇腾/DeepSeek",
+      "impact": 1,
+      "analysis": "DeepSeek V4将采用昇腾最新芯片，利好相关板块。",
+      "stocks": ["川润股份", "泰嘉股份", "华丰科技", "每日互动"]
+    },
+    {
+      "sector_name": "足球",
+      "impact": 0,
+      "analysis": "足球超级联赛4月密集开赛，对市场影响中性。",
+      "stocks": ["共创草坪", "金陵体育"]
+    },
+    {
+      "sector_name": "热泵",
+      "impact": 1,
+      "analysis": "中东战争令欧洲热泵供暖需求激增，2月出口额同比增长81.8%，利好热泵板块。",
+      "stocks": ["日出东方", "万和电气", "海鸥住工", "澳柯玛"]
+    },
+    {
+      "sector_name": "AI大模型",
+      "impact": 1,
+      "analysis": "中国AI大模型调用量环比增逾31%，连续五周超越美国，利好AI板块。",
+      "stocks": ["奥瑞德", "宏景科技"]
+    },
+    {
+      "sector_name": "钠离子电池",
+      "impact": 1,
+      "analysis": "我国钠离子电池取得重大突破，彻底阻断热失控，利好钠离子电池板块。",
+      "stocks": ["传艺科技"]
+    },
+    {
+      "sector_name": "存储芯片",
+      "impact": 1,
+      "analysis": "三星电子将第二季度DRAM价格再提高30%，利好存储芯片板块。",
+      "stocks": ["德明利", "佰维存储"]
+    }
+  ],
+  "stocks": [
+    {"stock_name": "汇源通信", "stock_code": "000586", "impact": 1, "analysis": "昨日热点股票，光通信板块。"},
+    {"stock_name": "津药药业", "stock_code": "600488", "impact": 0, "analysis": "昨日热点股票，创新药板块。"},
+    {"stock_name": "网达软件", "stock_code": "603189", "impact": 0, "analysis": "昨日热点股票，算力板块。"},
+    {"stock_name": "翠微股份", "stock_code": "603123", "impact": 1, "analysis": "昨日热点股票，跨境支付板块，人民币跨境支付创新高。"},
+    {"stock_name": "宜安科技", "stock_code": "300328", "impact": 1, "analysis": "苹果折叠屏手机概念股。"},
+    {"stock_name": "精研科技", "stock_code": "300709", "impact": 1, "analysis": "苹果折叠屏手机概念股。"},
+    {"stock_name": "科森科技", "stock_code": "603626", "impact": 1, "analysis": "苹果折叠屏手机概念股。"},
+    {"stock_name": "联得装备", "stock_code": "300545", "impact": 1, "analysis": "苹果折叠屏手机概念股。"},
+    {"stock_name": "京城股份", "stock_code": "600860", "impact": 1, "analysis": "氢燃料板块，兆瓦级氢燃料发动机首飞成功。"},
+    {"stock_name": "雄韬股份", "stock_code": "002733", "impact": 1, "analysis": "氢燃料板块，兆瓦级氢燃料发动机首飞成功。"},
+    {"stock_name": "美锦能源", "stock_code": "000723", "impact": 1, "analysis": "氢燃料板块，兆瓦级氢燃料发动机首飞成功。"},
+    {"stock_name": "厚普股份", "stock_code": "300471", "impact": 1, "analysis": "氢燃料板块，兆瓦级氢燃料发动机首飞成功。"},
+    {"stock_name": "中油资本", "stock_code": "000617", "impact": 1, "analysis": "跨境支付板块，人民币跨境支付创新高。"},
+    {"stock_name": "御银股份", "stock_code": "002177", "impact": 1, "analysis": "跨境支付板块，人民币跨境支付创新高。"},
+    {"stock_name": "四方精创", "stock_code": "300468", "impact": 1, "analysis": "跨境支付板块，人民币跨境支付创新高。"},
+    {"stock_name": "拉卡拉", "stock_code": "300773", "impact": 1, "analysis": "跨境支付板块，人民币跨境支付创新高。"},
+    {"stock_name": "川润股份", "stock_code": "002272", "impact": 1, "analysis": "昇腾芯片概念股。"},
+    {"stock_name": "泰嘉股份", "stock_code": "002843", "impact": 1, "analysis": "昇腾芯片概念股。"},
+    {"stock_name": "华丰科技", "stock_code": "688629", "impact": 1, "analysis": "昇腾芯片概念股。"},
+    {"stock_name": "每日互动", "stock_code": "300766", "impact": 1, "analysis": "DeepSeek概念股。"},
+    {"stock_name": "共创草坪", "stock_code": "605099", "impact": 0, "analysis": "足球板块。"},
+    {"stock_name": "金陵体育", "stock_code": "300651", "impact": 0, "analysis": "足球板块。"},
+    {"stock_name": "日出东方", "stock_code": "603366", "impact": 1, "analysis": "热泵板块，欧洲热泵需求激增。"},
+    {"stock_name": "万和电气", "stock_code": "002543", "impact": 1, "analysis": "热泵板块，欧洲热泵需求激增。"},
+    {"stock_name": "海鸥住工", "stock_code": "002084", "impact": 1, "analysis": "热泵板块，欧洲热泵需求激增。"},
+    {"stock_name": "澳柯玛", "stock_code": "600336", "impact": 1, "analysis": "热泵板块，欧洲热泵需求激增。"},
+    {"stock_name": "奥瑞德", "stock_code": "600666", "impact": 1, "analysis": "AI大模型板块。"},
+    {"stock_name": "宏景科技", "stock_code": "301396", "impact": 1, "analysis": "AI大模型板块。"},
+    {"stock_name": "传艺科技", "stock_code": "002866", "impact": 1, "analysis": "钠离子电池板块，取得重大突破。"},
+    {"stock_name": "德明利", "stock_code": "001309", "impact": 1, "analysis": "存储芯片板块，三星DRAM涨价。"},
+    {"stock_name": "佰维存储", "stock_code": "688525", "impact": 1, "analysis": "存储芯片板块，三星DRAM涨价。"},
+    {"stock_name": "云南锗业", "stock_code": "002428", "impact": 1, "analysis": "拟投1.89亿元建设高品质磷化铟单晶片项目，利好光通信。"},
+    {"stock_name": "博众精工", "stock_code": "688097", "impact": 1, "analysis": "截至3月31日公司在手订单总额为66.34亿元，同比增长163.78%。"}
+  ],
+  "article_title": "4月7日盘前纪要",
+  "html_file": "article_2038b261aup.html",
+  "article_date": "2026-04-07"
+}

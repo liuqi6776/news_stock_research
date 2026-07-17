@@ -1,0 +1,84 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股受积极因素影响。",
+  "sectors": [
+    {
+      "sector_name": "跨境电商",
+      "impact": 4,
+      "analysis": "商务部政策支持，板块受益明显。"
+    },
+    {
+      "sector_name": "电商整合",
+      "impact": 3,
+      "analysis": "阿里整合电商业务，相关概念股受提振。"
+    },
+    {
+      "sector_name": "国资并购重组",
+      "impact": 3,
+      "analysis": "国资委推动央企重组，相关个股有望受益。"
+    },
+    {
+      "sector_name": "新能源车",
+      "impact": 3,
+      "analysis": "固态电池、自动驾驶等概念活跃。"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "机器人概念持续活跃。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "跨境通",
+      "stock_code": "002640",
+      "impact": 4,
+      "analysis": "商务部政策支持，跨境电商概念股。"
+    },
+    {
+      "stock_name": "生意宝",
+      "stock_code": "002624",
+      "impact": 4,
+      "analysis": "商务部政策支持，跨境电商概念股。"
+    },
+    {
+      "stock_name": "丽人丽妆",
+      "stock_code": "603180",
+      "impact": 3,
+      "analysis": "阿里整合电商业务，相关概念股。"
+    },
+    {
+      "stock_name": "新华都",
+      "stock_code": "002264",
+      "impact": 3,
+      "analysis": "阿里整合电商业务，相关概念股。"
+    },
+    {
+      "stock_name": "润农节水",
+      "stock_code": "603158",
+      "impact": 3,
+      "analysis": "国资委推动央企重组，相关个股。"
+    },
+    {
+      "stock_name": "保变电气",
+      "stock_code": "600550",
+      "impact": 3,
+      "analysis": "国资委推动央企重组，相关个股。"
+    },
+    {
+      "stock_name": "粤桂股份",
+      "stock_code": "002711",
+      "impact": 3,
+      "analysis": "新能源车固态电池概念股。"
+    },
+    {
+      "stock_name": "东方精工",
+      "stock_code": "002611",
+      "impact": 3,
+      "analysis": "机器人概念股。"
+    }
+  ],
+  "article_title": "11月22日盘前早报 热点事件关注",
+  "html_file": "6f3cb5xq5s.html",
+  "article_date": "2024-11-22"
+}

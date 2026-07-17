@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "机器人、存储、文旅消费板块受关注，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "机器人",
+      "impact": 4,
+      "analysis": "机器人技术进步，相关产业链受益"
+    },
+    {
+      "sector_name": "存储",
+      "impact": 3,
+      "analysis": "DDR4市场减产，相关企业受益"
+    },
+    {
+      "sector_name": "文旅消费",
+      "impact": 3,
+      "analysis": "文旅消费活动启动，相关行业受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "小鹏机器人",
+      "stock_code": "000951",
+      "impact": 4,
+      "analysis": "Iron机器人亮相，公司技术领先"
+    },
+    {
+      "stock_name": "方正电机",
+      "stock_code": "000938",
+      "impact": 3,
+      "analysis": "为小鹏汽车供应商，人形机器人关节产品开发中"
+    },
+    {
+      "stock_name": "兆易创新",
+      "stock_code": "603986",
+      "impact": 3,
+      "analysis": "存储芯片营收占比高，与长鑫存储合作"
+    },
+    {
+      "stock_name": "三木集团",
+      "stock_code": "002384",
+      "impact": 3,
+      "analysis": "自持旅游项目，受益文旅消费活动"
+    }
+  ],
+  "article_id": "a4156e8fd48e4302a8219575244a1d9d",
+  "article_date": "2025-04-23",
+  "article_title": "2025.4.23市场逻辑精选"
+}

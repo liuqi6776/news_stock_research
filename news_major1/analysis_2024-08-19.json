@@ -1,0 +1,90 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注潜在风险。",
+  "sectors": [
+    {
+      "sector_name": "铁路装备",
+      "impact": 4,
+      "analysis": "招标数量大增，行业前景看好。"
+    },
+    {
+      "sector_name": "文化娱乐",
+      "impact": 3,
+      "analysis": "国产3A游戏发售，文化出海潜力大。"
+    },
+    {
+      "sector_name": "核电",
+      "impact": 3,
+      "analysis": "核电项目获批，行业有望增长。"
+    },
+    {
+      "sector_name": "农产品",
+      "impact": 2,
+      "analysis": "蔬菜价格上涨，相关公司受益。"
+    },
+    {
+      "sector_name": "电商",
+      "impact": 2,
+      "analysis": "上海推动直播经济，相关公司受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "世纪瑞尔",
+      "stock_code": "300150",
+      "impact": 4,
+      "analysis": "车载铁路信息化，行业前景看好。"
+    },
+    {
+      "stock_name": "思维列控",
+      "stock_code": "300396",
+      "impact": 4,
+      "analysis": "机车LKJ列控，行业前景看好。"
+    },
+    {
+      "stock_name": "中国通号",
+      "stock_code": "601779",
+      "impact": 4,
+      "analysis": "动车ATP列控，行业前景看好。"
+    },
+    {
+      "stock_name": "华谊兄弟",
+      "stock_code": "600027",
+      "impact": 3,
+      "analysis": "黑神话相关，文化出海潜力大。"
+    },
+    {
+      "stock_name": "浙版传媒",
+      "stock_code": "600633",
+      "impact": 3,
+      "analysis": "黑神话相关，文化出海潜力大。"
+    },
+    {
+      "stock_name": "中核科技",
+      "stock_code": "002165",
+      "impact": 3,
+      "analysis": "核电项目获批，行业有望增长。"
+    },
+    {
+      "stock_name": "佳电股份",
+      "stock_code": "000922",
+      "impact": 3,
+      "analysis": "核电项目获批，行业有望增长。"
+    },
+    {
+      "stock_name": "中国核电",
+      "stock_code": "601985",
+      "impact": 3,
+      "analysis": "核电项目获批，行业有望增长。"
+    },
+    {
+      "stock_name": "宏辉果蔬",
+      "stock_code": "603413",
+      "impact": 2,
+      "analysis": "蔬菜价格上涨，公司受益。"
+    }
+  ],
+  "article_id": "a0bdc4c5d79d4ee59b548aea808c6f39",
+  "article_date": "2024-08-19",
+  "article_title": "2024.8.19市场逻辑精选"
+}

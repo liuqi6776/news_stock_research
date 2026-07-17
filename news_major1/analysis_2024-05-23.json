@@ -1,0 +1,231 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "电磁屏蔽材料",
+      "impact": 4,
+      "analysis": "英伟达业绩超预期，相关材料需求增加。"
+    },
+    {
+      "sector_name": "畜禽养殖",
+      "impact": 3,
+      "analysis": "猪价上行，白鸡黄鸡价格上涨。"
+    },
+    {
+      "sector_name": "储能",
+      "impact": 3,
+      "analysis": "特斯拉储能超级工厂投产，储能业务增长迅速。"
+    },
+    {
+      "sector_name": "医药健康",
+      "impact": 3,
+      "analysis": "北京医药扶持政策，医药健康产业规模扩大。"
+    },
+    {
+      "sector_name": "核电",
+      "impact": 2,
+      "analysis": "国家重启核电机组审批，乏燃料处理需求增加。"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 2,
+      "analysis": "晶科能源与沙特企业合作，光伏产业有望受益。"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 2,
+      "analysis": "万科贷款持续获批，债务风险化解。"
+    },
+    {
+      "sector_name": "基因工程",
+      "impact": 2,
+      "analysis": "三元基因有望受益北京医药扶持政策。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "沃特股份",
+      "stock_code": "002886",
+      "impact": 4,
+      "analysis": "产品间接供货英伟达，受益电磁屏蔽材料需求增加。"
+    },
+    {
+      "stock_name": "康达新材",
+      "stock_code": "002669",
+      "impact": 4,
+      "analysis": "产品主要包括电磁屏蔽材料等。"
+    },
+    {
+      "stock_name": "隆扬电子",
+      "stock_code": "002601",
+      "impact": 4,
+      "analysis": "掌握电磁屏蔽材料生产中前、中、后端多项核心技术。"
+    },
+    {
+      "stock_name": "正业科技",
+      "stock_code": "300059",
+      "impact": 3,
+      "analysis": "电磁屏蔽膜主要用于挠性电路板。"
+    },
+    {
+      "stock_name": "方邦股份",
+      "stock_code": "300352",
+      "impact": 3,
+      "analysis": "电磁屏蔽膜市占率位居国内第一、全球第二。"
+    },
+    {
+      "stock_name": "正虹科技",
+      "stock_code": "600752",
+      "impact": 3,
+      "analysis": "生猪养殖行业受益猪价上行。"
+    },
+    {
+      "stock_name": "牧原股份",
+      "stock_code": "002714",
+      "impact": 3,
+      "analysis": "生猪养殖行业受益猪价上行。"
+    },
+    {
+      "stock_name": "温氏股份",
+      "stock_code": "300498",
+      "impact": 3,
+      "analysis": "生猪养殖行业受益猪价上行。"
+    },
+    {
+      "stock_name": "新五丰",
+      "stock_code": "300357",
+      "impact": 3,
+      "analysis": "生猪养殖行业受益猪价上行。"
+    },
+    {
+      "stock_name": "巨星农牧",
+      "stock_code": "002910",
+      "impact": 3,
+      "analysis": "生猪养殖行业受益猪价上行。"
+    },
+    {
+      "stock_name": "益生股份",
+      "stock_code": "002458",
+      "impact": 3,
+      "analysis": "白羽鸡养殖行业受益白鸡价格上涨。"
+    },
+    {
+      "stock_name": "湘佳股份",
+      "stock_code": "002981",
+      "impact": 3,
+      "analysis": "白羽鸡养殖行业受益白鸡价格上涨。"
+    },
+    {
+      "stock_name": "晓鸣股份",
+      "stock_code": "002915",
+      "impact": 3,
+      "analysis": "白羽鸡养殖行业受益白鸡价格上涨。"
+    },
+    {
+      "stock_name": "圣农发展",
+      "stock_code": "002299",
+      "impact": 3,
+      "analysis": "白羽鸡养殖行业受益白鸡价格上涨。"
+    },
+    {
+      "stock_name": "机器人",
+      "stock_code": "300024",
+      "impact": 3,
+      "analysis": "特斯拉储能超级工厂投产，机器人行业受益。"
+    },
+    {
+      "stock_name": "西典新能",
+      "stock_code": "300833",
+      "impact": 3,
+      "analysis": "特斯拉储能超级工厂投产，电池连接系统产品供货特斯拉。"
+    },
+    {
+      "stock_name": "亚玛顿",
+      "stock_code": "002387",
+      "impact": 3,
+      "analysis": "特斯拉储能超级工厂投产，储能控制柜门玻璃合格供应商。"
+    },
+    {
+      "stock_name": "世运电路",
+      "stock_code": "002148",
+      "impact": 3,
+      "analysis": "特斯拉储能超级工厂投产，储能相关线路板供应商。"
+    },
+    {
+      "stock_name": "新朋股份",
+      "stock_code": "002539",
+      "impact": 3,
+      "analysis": "特斯拉储能超级工厂投产，家用储能项目、汽车零部件项目供应商。"
+    },
+    {
+      "stock_name": "科陆电子",
+      "stock_code": "002121",
+      "impact": 3,
+      "analysis": "特斯拉储能超级工厂投产，集装箱式电池储能系统和PCS供应商。"
+    },
+    {
+      "stock_name": "北京医药",
+      "stock_code": "000538",
+      "impact": 3,
+      "analysis": "北京市加快医药健康协同创新行动计划，医药健康产业规模扩大。"
+    },
+    {
+      "stock_name": "首药控股",
+      "stock_code": "600613",
+      "impact": 3,
+      "analysis": "北京市加快医药健康协同创新行动计划，医药健康产业规模扩大。"
+    },
+    {
+      "stock_name": "昭衍新药",
+      "stock_code": "300541",
+      "impact": 3,
+      "analysis": "北京市加快医药健康协同创新行动计划，医药健康产业规模扩大。"
+    },
+    {
+      "stock_name": "三博脑科",
+      "stock_code": "300229",
+      "impact": 3,
+      "analysis": "北京市加快医药健康协同创新行动计划，医药健康产业规模扩大。"
+    },
+    {
+      "stock_name": "热景生物",
+      "stock_code": "688089",
+      "impact": 3,
+      "analysis": "北京市加快医药健康协同创新行动计划，医药健康产业规模扩大。"
+    },
+    {
+      "stock_name": "科新机电",
+      "stock_code": "002010",
+      "impact": 2,
+      "analysis": "乏燃料运输容器需求增加。"
+    },
+    {
+      "stock_name": "景业智能",
+      "stock_code": "300490",
+      "impact": 2,
+      "analysis": "核化工智能化系统可用于乏燃料后处理。"
+    },
+    {
+      "stock_name": "晶科能源",
+      "stock_code": "601012",
+      "impact": 2,
+      "analysis": "与沙特企业合作，光伏产业有望受益。"
+    },
+    {
+      "stock_name": "万科A",
+      "stock_code": "000002",
+      "impact": 2,
+      "analysis": "贷款持续获批，债务风险化解。"
+    },
+    {
+      "stock_name": "三元基因",
+      "stock_code": "000516",
+      "impact": 2,
+      "analysis": "有望受益北京医药扶持政策。"
+    }
+  ],
+  "article_id": "f15e55bdc2bf42e29cbc9ae774507310",
+  "article_date": "2024-05-23",
+  "article_title": "2024.5.23市场逻辑精选"
+}

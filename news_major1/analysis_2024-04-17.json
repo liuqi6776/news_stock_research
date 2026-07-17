@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "氢能源汽车",
+      "impact": 4,
+      "analysis": "政策支持力度加大，板块有望迎来爆发。"
+    },
+    {
+      "sector_name": "存储芯片",
+      "impact": 3,
+      "analysis": "存储芯片涨价周期，相关公司受益。"
+    },
+    {
+      "sector_name": "注塑机",
+      "impact": 3,
+      "analysis": "消费品更新政策推动，行业景气度提升。"
+    },
+    {
+      "sector_name": "低空经济",
+      "impact": 3,
+      "analysis": "政策支持，相关公司订单落地。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中信海直",
+      "stock_code": "000099",
+      "impact": 4,
+      "analysis": "布局低空经济全应用，股价有望上涨。"
+    },
+    {
+      "stock_name": "海能达",
+      "stock_code": "002583",
+      "impact": 3,
+      "analysis": "恢复海外商业活动，股价有望反弹。"
+    },
+    {
+      "stock_name": "威奥股份",
+      "stock_code": "002308",
+      "impact": 3,
+      "analysis": "Q4扣非净利润环比大涨，业绩增长明显。"
+    },
+    {
+      "stock_name": "四川九洲",
+      "stock_code": "000795",
+      "impact": 3,
+      "analysis": "低空经济订单落地，股价有望上涨。"
+    }
+  ],
+  "article_id": "8b702f25957f4ad58d596c5637942ef8",
+  "article_date": "2024-04-17",
+  "article_title": "2024.4.17市场逻辑精选"
+}

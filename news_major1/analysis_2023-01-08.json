@@ -1,0 +1,51 @@
+{
+  "market_impact": 3,
+  "market_analysis": "光伏产业链相关板块受利好影响，市场情绪积极。",
+  "sectors": [
+    {
+      "sector_name": "光伏板块",
+      "impact": 4,
+      "analysis": "EVA价格反弹，钙钛矿技术发展，光伏电站开工增加，板块利好。"
+    },
+    {
+      "sector_name": "新能源板块",
+      "impact": 3,
+      "analysis": "光伏产业链发展带动新能源板块整体利好。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "联泓新科",
+      "stock_code": "002250",
+      "impact": 3,
+      "analysis": "EVA产能优势，受益光伏产业链发展。"
+    },
+    {
+      "stock_name": "东方盛虹",
+      "stock_code": "000301",
+      "impact": 3,
+      "analysis": "EVA和POE产能规划，受益光伏产业链发展。"
+    },
+    {
+      "stock_name": "荣盛石化",
+      "stock_code": "000493",
+      "impact": 3,
+      "analysis": "EVA和POE产能规划，受益光伏产业链发展。"
+    },
+    {
+      "stock_name": "奥联电子",
+      "stock_code": "300582",
+      "impact": 3,
+      "analysis": "钙钛矿装备和电池组件生产能力，受益钙钛矿技术发展。"
+    },
+    {
+      "stock_name": "杭萧钢构",
+      "stock_code": "600477",
+      "impact": 3,
+      "analysis": "钙钛矿叠层电池中试线投产，受益钙钛矿技术发展。"
+    }
+  ],
+  "article_id": "f711a0af7b9149598d0c746c3434220d",
+  "article_date": "2023-01-08",
+  "article_title": "2023.1.8市场逻辑精选"
+}

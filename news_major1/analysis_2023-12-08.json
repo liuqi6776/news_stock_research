@@ -1,0 +1,89 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪提升",
+  "sectors": [
+    {
+      "sector_name": "数字货币",
+      "impact": 4,
+      "analysis": "数字人民币试点推进，相关概念股受益"
+    },
+    {
+      "sector_name": "环保",
+      "impact": 3,
+      "analysis": "空气质量改善行动计划，环保行业受益"
+    },
+    {
+      "sector_name": "种业",
+      "impact": 3,
+      "analysis": "转基因品种获审定，种业板块受益"
+    },
+    {
+      "sector_name": "数据要素",
+      "impact": 3,
+      "analysis": "数字政府建设峰会，数据要素概念股受益"
+    },
+    {
+      "sector_name": "芯片",
+      "impact": 2,
+      "analysis": "AMD上涨，芯片行业情绪提升"
+    },
+    {
+      "sector_name": "储能芯片",
+      "impact": 2,
+      "analysis": "西部数据涨价，储能芯片行业受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "上海自贸",
+      "stock_code": "600000",
+      "impact": 4,
+      "analysis": "上海自贸区相关概念股受益"
+    },
+    {
+      "stock_name": "艾融软件",
+      "stock_code": "300056",
+      "impact": 4,
+      "analysis": "北交所+上海+数字货币概念股"
+    },
+    {
+      "stock_name": "信达地产",
+      "stock_code": "600657",
+      "impact": 3,
+      "analysis": "中国信达相关概念股"
+    },
+    {
+      "stock_name": "雪迪龙",
+      "stock_code": "002658",
+      "impact": 3,
+      "analysis": "环保行业龙头股"
+    },
+    {
+      "stock_name": "隆平高科",
+      "stock_code": "000998",
+      "impact": 3,
+      "analysis": "种业龙头股"
+    },
+    {
+      "stock_name": "杰创智能",
+      "stock_code": "300712",
+      "impact": 3,
+      "analysis": "数字政府建设峰会协办单位"
+    },
+    {
+      "stock_name": "盈方微",
+      "stock_code": "300345",
+      "impact": 2,
+      "analysis": "AMD上涨，芯片行业相关股"
+    },
+    {
+      "stock_name": "佰维存储",
+      "stock_code": "688012",
+      "impact": 2,
+      "analysis": "西部数据涨价，存储芯片行业相关股"
+    }
+  ],
+  "article_title": "12月8日盘前早报 热点事件关注",
+  "html_file": "e656tzymg8.html",
+  "article_date": "2023-12-08"
+}

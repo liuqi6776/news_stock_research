@@ -1,0 +1,142 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，政策支持力度大。",
+  "sectors": [
+    {
+      "sector_name": "金融",
+      "impact": 4,
+      "analysis": "政策支持，中长期资金入市，利好金融板块。"
+    },
+    {
+      "sector_name": "地产",
+      "impact": 3,
+      "analysis": "政策支持，地产板块受益。"
+    },
+    {
+      "sector_name": "消费",
+      "impact": 3,
+      "analysis": "消费券拉动，消费板块受益。"
+    },
+    {
+      "sector_name": "农业",
+      "impact": 3,
+      "analysis": "政策支持肉牛奶牛生产，农业板块受益。"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 3,
+      "analysis": "央企专业化整合，新能源汽车板块受益。"
+    },
+    {
+      "sector_name": "航天",
+      "impact": 3,
+      "analysis": "商业火箭公司成立，航天板块受益。"
+    },
+    {
+      "sector_name": "低空经济",
+      "impact": 3,
+      "analysis": "低空经济高质量发展，相关板块受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "恒银科技",
+      "stock_code": "600655",
+      "impact": 4,
+      "analysis": "金融板块受益，股价可能上涨。"
+    },
+    {
+      "stock_name": "五矿资本",
+      "stock_code": "600390",
+      "impact": 4,
+      "analysis": "金融板块受益，股价可能上涨。"
+    },
+    {
+      "stock_name": "双成药业",
+      "stock_code": "002693",
+      "impact": 4,
+      "analysis": "并购重组，股价可能上涨。"
+    },
+    {
+      "stock_name": "中南股份",
+      "stock_code": "000435",
+      "impact": 4,
+      "analysis": "并购重组，股价可能上涨。"
+    },
+    {
+      "stock_name": "合肥城建",
+      "stock_code": "002208",
+      "impact": 3,
+      "analysis": "地产板块受益，股价可能上涨。"
+    },
+    {
+      "stock_name": "金融街",
+      "stock_code": "000402",
+      "impact": 3,
+      "analysis": "地产板块受益，股价可能上涨。"
+    },
+    {
+      "stock_name": "张家界",
+      "stock_code": "000430",
+      "impact": 3,
+      "analysis": "消费券拉动，股价可能上涨。"
+    },
+    {
+      "stock_name": "岩石股份",
+      "stock_code": "002785",
+      "impact": 3,
+      "analysis": "消费券拉动，股价可能上涨。"
+    },
+    {
+      "stock_name": "品渥食品",
+      "stock_code": "603719",
+      "impact": 3,
+      "analysis": "政策支持肉牛奶牛生产，股价可能上涨。"
+    },
+    {
+      "stock_name": "阳光乳业",
+      "stock_code": "002572",
+      "impact": 3,
+      "analysis": "政策支持肉牛奶牛生产，股价可能上涨。"
+    },
+    {
+      "stock_name": "力神青岛",
+      "stock_code": "000625",
+      "impact": 3,
+      "analysis": "央企专业化整合，股价可能上涨。"
+    },
+    {
+      "stock_name": "中国一汽",
+      "stock_code": "000800",
+      "impact": 3,
+      "analysis": "央企专业化整合，股价可能上涨。"
+    },
+    {
+      "stock_name": "航天机电",
+      "stock_code": "600151",
+      "impact": 3,
+      "analysis": "商业火箭公司成立，股价可能上涨。"
+    },
+    {
+      "stock_name": "中天火箭",
+      "stock_code": "300308",
+      "impact": 3,
+      "analysis": "商业火箭公司成立，股价可能上涨。"
+    },
+    {
+      "stock_name": "宗申动力",
+      "stock_code": "001696",
+      "impact": 3,
+      "analysis": "低空经济高质量发展，股价可能上涨。"
+    },
+    {
+      "stock_name": "新晨科技",
+      "stock_code": "300670",
+      "impact": 3,
+      "analysis": "低空经济高质量发展，股价可能上涨。"
+    }
+  ],
+  "article_title": "9月27日盘前早报 热点事件关注",
+  "html_file": "9nd147feqj.html",
+  "article_date": "2024-09-27"
+}

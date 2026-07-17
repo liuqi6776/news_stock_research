@@ -1,0 +1,126 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受积极事件提振",
+  "sectors": [
+    {
+      "sector_name": "蚂蚁金服概念",
+      "impact": 4,
+      "analysis": "政策松绑预期提升板块估值"
+    },
+    {
+      "sector_name": "金融科技",
+      "impact": 3,
+      "analysis": "监管环境改善带来正面影响"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "紫光股份收购提升行业关注度"
+    },
+    {
+      "sector_name": "锂电池",
+      "impact": 3,
+      "analysis": "尚太科技成本优势提升板块吸引力"
+    },
+    {
+      "sector_name": "数据要素",
+      "impact": 3,
+      "analysis": "中远海科数据交易业务有望受益"
+    },
+    {
+      "sector_name": "橡胶新材料",
+      "impact": 3,
+      "analysis": "软控股份业绩增长带动板块"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 3,
+      "analysis": "艾迪药业新药上市提升板块关注度"
+    },
+    {
+      "sector_name": "固态电池",
+      "impact": 3,
+      "analysis": "上海洗霸固态电池项目提升板块关注度"
+    },
+    {
+      "sector_name": "氢能源",
+      "impact": 3,
+      "analysis": "赫美集团实控人变更可能带来新业务"
+    },
+    {
+      "sector_name": "数字藏品",
+      "impact": 3,
+      "analysis": "吉宏股份数字藏品业务提升板块关注度"
+    },
+    {
+      "sector_name": "ST板块",
+      "impact": 2,
+      "analysis": "ST中昌债务豁免可能保壳成功"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "蚂蚁金服概念",
+      "stock_code": "000796",
+      "impact": 4,
+      "analysis": "政策松绑预期提升估值"
+    },
+    {
+      "stock_name": "紫光股份",
+      "stock_code": "000938",
+      "impact": 4,
+      "analysis": "收购新华三提升盈利能力"
+    },
+    {
+      "stock_name": "尚太科技",
+      "stock_code": "002819",
+      "impact": 4,
+      "analysis": "成本优势提升盈利能力"
+    },
+    {
+      "stock_name": "中远海科",
+      "stock_code": "002118",
+      "impact": 4,
+      "analysis": "数据交易业务有望受益"
+    },
+    {
+      "stock_name": "软控股份",
+      "stock_code": "603787",
+      "impact": 4,
+      "analysis": "业绩增长带动股价"
+    },
+    {
+      "stock_name": "艾迪药业",
+      "stock_code": "300299",
+      "impact": 4,
+      "analysis": "新药上市提升关注度"
+    },
+    {
+      "stock_name": "上海洗霸",
+      "stock_code": "601678",
+      "impact": 4,
+      "analysis": "固态电池项目提升关注度"
+    },
+    {
+      "stock_name": "赫美集团",
+      "stock_code": "002356",
+      "impact": 4,
+      "analysis": "实控人变更可能带来新业务"
+    },
+    {
+      "stock_name": "吉宏股份",
+      "stock_code": "002803",
+      "impact": 4,
+      "analysis": "数字藏品业务提升关注度"
+    },
+    {
+      "stock_name": "ST中昌",
+      "stock_code": "600382",
+      "impact": 4,
+      "analysis": "债务豁免可能保壳成功"
+    }
+  ],
+  "article_id": "0d2549c374204e57883c014d4d9f908b",
+  "article_date": "2023-01-04",
+  "article_title": "2023.1.4市场逻辑精选"
+}

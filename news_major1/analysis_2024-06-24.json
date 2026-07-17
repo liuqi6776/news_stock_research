@@ -1,0 +1,136 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策推动消费新场景，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "消费电子",
+      "impact": 3,
+      "analysis": "智能驾驶、柔性屏等应用推动增长"
+    },
+    {
+      "sector_name": "餐饮",
+      "impact": 3,
+      "analysis": "预制菜、餐饮外卖等新场景发展"
+    },
+    {
+      "sector_name": "文旅",
+      "impact": 3,
+      "analysis": "旅游业态融合创新，VR体验等新场景"
+    },
+    {
+      "sector_name": "汽车",
+      "impact": 3,
+      "analysis": "自动驾驶商业化落地，智能驾驶新场景"
+    },
+    {
+      "sector_name": "电商",
+      "impact": 3,
+      "analysis": "电商直播、国货潮品等新场景"
+    },
+    {
+      "sector_name": "电子会计凭证",
+      "impact": 3,
+      "analysis": "财税改革推动，市场空间大"
+    },
+    {
+      "sector_name": "储能消防",
+      "impact": 2,
+      "analysis": "韩国电池厂火灾引发关注，相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "皖通科技",
+      "stock_code": "002331",
+      "impact": 3,
+      "analysis": "车路云应用试点"
+    },
+    {
+      "stock_name": "智莱科技",
+      "stock_code": "002712",
+      "impact": 3,
+      "analysis": "无人机物流"
+    },
+    {
+      "stock_name": "岭南控股",
+      "stock_code": "000524",
+      "impact": 3,
+      "analysis": "旅游业态融合创新"
+    },
+    {
+      "stock_name": "西部牧业",
+      "stock_code": "002548",
+      "impact": 3,
+      "analysis": "乳业发展"
+    },
+    {
+      "stock_name": "惠发食品",
+      "stock_code": "002234",
+      "impact": 3,
+      "analysis": "预制菜发展"
+    },
+    {
+      "stock_name": "永辉超市",
+      "stock_code": "601933",
+      "impact": 3,
+      "analysis": "餐饮商超业务"
+    },
+    {
+      "stock_name": "中科江南",
+      "stock_code": "300775",
+      "impact": 3,
+      "analysis": "电子会计凭证应用平台"
+    },
+    {
+      "stock_name": "博思软件",
+      "stock_code": "300292",
+      "impact": 3,
+      "analysis": "电子会计凭证解决方案"
+    },
+    {
+      "stock_name": "国安达",
+      "stock_code": "002367",
+      "impact": 3,
+      "analysis": "储能消防领域"
+    },
+    {
+      "stock_name": "青鸟消防",
+      "stock_code": "002623",
+      "impact": 3,
+      "analysis": "储能电站消防解决方案"
+    },
+    {
+      "stock_name": "凯旺科技",
+      "stock_code": "002602",
+      "impact": 3,
+      "analysis": "铜缆连接线缆产品拓展"
+    },
+    {
+      "stock_name": "万马科技",
+      "stock_code": "300056",
+      "impact": 3,
+      "analysis": "自驾云项目投资"
+    },
+    {
+      "stock_name": "花园生物",
+      "stock_code": "300086",
+      "impact": 3,
+      "analysis": "维生素D3价格跳涨"
+    },
+    {
+      "stock_name": "凯中精密",
+      "stock_code": "002823",
+      "impact": 3,
+      "analysis": "半年度业绩大增"
+    },
+    {
+      "stock_name": "翰宇药业",
+      "stock_code": "002552",
+      "impact": 3,
+      "analysis": "利拉鲁肽注射液获得美国FDA暂定批准"
+    }
+  ],
+  "article_id": "17f77a441c814a72b8c9bf83e475d46f",
+  "article_date": "2024-06-24",
+  "article_title": "2024.6.24市场逻辑精选"
+}

@@ -1,0 +1,56 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受华为算力自主方向和奇瑞与华为合作影响，整体偏利好。",
+  "sectors": [
+    {
+      "sector_name": "算力板块",
+      "impact": 4,
+      "analysis": "华为算力自主方向利好算力板块。"
+    },
+    {
+      "sector_name": "汽车板块",
+      "impact": 3,
+      "analysis": "奇瑞与华为合作利好汽车板块。"
+    },
+    {
+      "sector_name": "医药板块",
+      "impact": 2,
+      "analysis": "GLP-1减肥药相关利好医药板块。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "华鲲振宇",
+      "stock_code": "000938",
+      "impact": 4,
+      "analysis": "华为算力自主方向利好华鲲振宇。"
+    },
+    {
+      "stock_name": "奇瑞汽车",
+      "stock_code": "000733",
+      "impact": 3,
+      "analysis": "奇瑞与华为合作利好奇瑞汽车。"
+    },
+    {
+      "stock_name": "毅昌科技",
+      "stock_code": "002420",
+      "impact": 3,
+      "analysis": "供货华为奇瑞智界S7利好毅昌科技。"
+    },
+    {
+      "stock_name": "保龄宝",
+      "stock_code": "002286",
+      "impact": 2,
+      "analysis": "阿洛酮糖相关利好保龄宝。"
+    },
+    {
+      "stock_name": "科蓝软件",
+      "stock_code": "300192",
+      "impact": 2,
+      "analysis": "华为支付相关利好科蓝软件。"
+    }
+  ],
+  "article_id": "11641251ef364317964d5548ecab338b",
+  "article_date": "2023-10-16",
+  "article_title": "2023.10.16市场逻辑精选"
+}

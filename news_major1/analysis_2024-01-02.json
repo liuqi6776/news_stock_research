@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "氧化铝",
+      "impact": 4,
+      "analysis": "供应受阻，价格上涨，利好相关企业"
+    },
+    {
+      "sector_name": "消费",
+      "impact": 3,
+      "analysis": "促消费活动释放消费潜能，利好相关企业"
+    },
+    {
+      "sector_name": "航运",
+      "impact": 3,
+      "analysis": "新签船舶订单，运力增加，利好相关企业"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 3,
+      "analysis": "军工+VR核心股，利好相关企业"
+    },
+    {
+      "sector_name": "旅游",
+      "impact": 3,
+      "analysis": "东北旅游火爆，利好相关企业"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中国铝业",
+      "stock_code": "601600",
+      "impact": 4,
+      "analysis": "铝土矿资源丰富，氧化铝价格上涨"
+    },
+    {
+      "stock_name": "云铝股份",
+      "stock_code": "000807",
+      "impact": 4,
+      "analysis": "铝加工和电解铝业务占比高，氧化铝价格上涨"
+    },
+    {
+      "stock_name": "天山铝业",
+      "stock_code": "002996",
+      "impact": 4,
+      "analysis": "铝行业一体化，氧化铝产量高"
+    },
+    {
+      "stock_name": "闽发铝业",
+      "stock_code": "002578",
+      "impact": 3,
+      "analysis": "铝型材加工业务占比高"
+    },
+    {
+      "stock_name": "南山铝业",
+      "stock_code": "600219",
+      "impact": 3,
+      "analysis": "铝加工业务占比高，氧化铝主要用于自用"
+    }
+  ],
+  "article_id": "df83f01165e3438da508308655d00b44",
+  "article_date": "2024-01-02",
+  "article_title": "2024.1.2市场逻辑精选"
+}

@@ -1,0 +1,88 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极因素影响",
+  "sectors": [
+    {
+      "sector_name": "激光雷达",
+      "impact": 4,
+      "analysis": "受益于百度Apollo无人车激光雷达需求"
+    },
+    {
+      "sector_name": "教育",
+      "impact": 3,
+      "analysis": "教育综合改革政策利好"
+    },
+    {
+      "sector_name": "半导体设备",
+      "impact": 3,
+      "analysis": "半导体设备国产化需求提升"
+    },
+    {
+      "sector_name": "旅游",
+      "impact": 3,
+      "analysis": "入境游政策利好"
+    },
+    {
+      "sector_name": "跨境电商",
+      "impact": 3,
+      "analysis": "亚马逊会员日表现超预期"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 2,
+      "analysis": "医改及医疗数据安全政策利好"
+    },
+    {
+      "sector_name": "稀土",
+      "impact": 2,
+      "analysis": "稀土或为我国重要反制手段"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "禾赛科技",
+      "stock_code": "688556",
+      "impact": 4,
+      "analysis": "独家供应百度Apollo激光雷达"
+    },
+    {
+      "stock_name": "中公教育",
+      "stock_code": "601649",
+      "impact": 3,
+      "analysis": "公考培训龙头"
+    },
+    {
+      "stock_name": "蓝英装备",
+      "stock_code": "300353",
+      "impact": 3,
+      "analysis": "布局光刻机清洗，具备稳定供货能力"
+    },
+    {
+      "stock_name": "南京商旅",
+      "stock_code": "601915",
+      "impact": 3,
+      "analysis": "有望受益入境游发展"
+    },
+    {
+      "stock_name": "恒林股份",
+      "stock_code": "603866",
+      "impact": 3,
+      "analysis": "亚马逊会员日表现超预期"
+    },
+    {
+      "stock_name": "嘉和美康",
+      "stock_code": "300739",
+      "impact": 2,
+      "analysis": "电子病历龙头受益医改"
+    },
+    {
+      "stock_name": "能特科技",
+      "stock_code": "300685",
+      "impact": 2,
+      "analysis": "有望受益维生素E涨价"
+    }
+  ],
+  "article_id": "f83b2168c1e6484c86f100a6c5159c83",
+  "article_date": "2024-07-18",
+  "article_title": "2024.7.18市场逻辑精选"
+}

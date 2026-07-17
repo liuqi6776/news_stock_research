@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏向利好，多个板块和个股受积极信息推动。",
+  "sectors": [
+    {
+      "sector_name": "核电",
+      "impact": 4,
+      "analysis": "受美股核电板块上涨及重启核电站消息提振。"
+    },
+    {
+      "sector_name": "AI智能体",
+      "impact": 3,
+      "analysis": "OpenAI发布首个智能体，板块受关注。"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "峰岹科技合作及云深处机器人产品发布，板块受提振。"
+    },
+    {
+      "sector_name": "液冷服务器",
+      "impact": 3,
+      "analysis": "快换接头UQD需求增加，相关公司受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中广核技",
+      "stock_code": "000881",
+      "impact": 4,
+      "analysis": "受美股核电板块上涨及重启核电站消息提振。"
+    },
+    {
+      "stock_name": "新炬网络",
+      "stock_code": "300590",
+      "impact": 3,
+      "analysis": "OpenAI发布首个智能体，公司受关注。"
+    },
+    {
+      "stock_name": "峰岹科技",
+      "stock_code": "300677",
+      "impact": 4,
+      "analysis": "与三花控股合作，机器人相关业务受关注。"
+    },
+    {
+      "stock_name": "毅昌科技",
+      "stock_code": "002380",
+      "impact": 3,
+      "analysis": "液冷服务器相关技术，公司产品受关注。"
+    }
+  ],
+  "article_id": "ce9bd1e401904a6f8141b6f894f12369",
+  "article_date": "2025-01-23",
+  "article_title": "2025.1.23市场逻辑精选"
+}

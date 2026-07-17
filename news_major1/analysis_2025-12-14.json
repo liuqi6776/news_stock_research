@@ -1,0 +1,101 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，关注相关板块和个股表现。",
+  "sectors": [
+    {
+      "sector_name": "燃气轮机",
+      "impact": 4,
+      "analysis": "供需缺口大，利好相关设备制造企业。"
+    },
+    {
+      "sector_name": "卫星检测",
+      "impact": 3,
+      "analysis": "卫星发射需求增加，利好检测设备企业。"
+    },
+    {
+      "sector_name": "氢能",
+      "impact": 3,
+      "analysis": "政策支持，产业链发展迅速，利好相关企业。"
+    },
+    {
+      "sector_name": "固态变压器",
+      "impact": 3,
+      "analysis": "技术突破，市场需求增加，利好相关企业。"
+    },
+    {
+      "sector_name": "火箭发射",
+      "impact": 3,
+      "analysis": "火箭发射频次增加，利好相关配套企业。"
+    },
+    {
+      "sector_name": "绿氢醇航油化工",
+      "impact": 3,
+      "analysis": "绿氢醇需求增加，利好相关企业。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "博盈特焊",
+      "stock_code": "000760",
+      "impact": 4,
+      "analysis": "产能扩张，利好公司发展。"
+    },
+    {
+      "stock_name": "东方电气",
+      "stock_code": "600268",
+      "impact": 4,
+      "analysis": "自研产品有望出海，利好公司发展。"
+    },
+    {
+      "stock_name": "苏试试验",
+      "stock_code": "300012",
+      "impact": 4,
+      "analysis": "市场份额高，利好公司发展。"
+    },
+    {
+      "stock_name": "西测测试",
+      "stock_code": "300454",
+      "impact": 4,
+      "analysis": "技术实力强，利好公司发展。"
+    },
+    {
+      "stock_name": "华电科工",
+      "stock_code": "601226",
+      "impact": 4,
+      "analysis": "电解槽市场份额高，利好公司发展。"
+    },
+    {
+      "stock_name": "富瑞特装",
+      "stock_code": "300228",
+      "impact": 4,
+      "analysis": "氢能产业链布局完善，利好公司发展。"
+    },
+    {
+      "stock_name": "中国西电",
+      "stock_code": "600701",
+      "impact": 4,
+      "analysis": "固态变压器技术领先，利好公司发展。"
+    },
+    {
+      "stock_name": "九丰能源",
+      "stock_code": "300385",
+      "impact": 4,
+      "analysis": "火箭发射配套稀缺，利好公司发展。"
+    },
+    {
+      "stock_name": "嘉泽新能",
+      "stock_code": "603871",
+      "impact": 4,
+      "analysis": "绿氢醇项目投资，利好公司发展。"
+    },
+    {
+      "stock_name": "四川九洲",
+      "stock_code": "000801",
+      "impact": 3,
+      "analysis": "航天项目合作，利好公司发展。"
+    }
+  ],
+  "article_id": "ef7cd60c26894e7890d4b05bea35d983",
+  "article_date": "2025-12-14",
+  "article_title": "2025.12.14市场逻辑精选"
+}

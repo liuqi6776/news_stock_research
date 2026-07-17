@@ -1,0 +1,77 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "AI 虚拟人",
+      "impact": 3,
+      "analysis": "AI 虚拟人应用增多，相关公司受益"
+    },
+    {
+      "sector_name": "摘帽股",
+      "impact": 2,
+      "analysis": "摘帽股预期修复，部分个股表现强势"
+    },
+    {
+      "sector_name": "光伏组件",
+      "impact": 3,
+      "analysis": "单晶硅片降价，光伏组件成本压力减轻"
+    },
+    {
+      "sector_name": "锂电池",
+      "impact": 3,
+      "analysis": "碳酸锂拍卖价格高企，锂电池行业受益"
+    },
+    {
+      "sector_name": "工业母机",
+      "impact": 2,
+      "analysis": "国资委推动央企布局新兴产业，相关公司受益"
+    },
+    {
+      "sector_name": "集成电路",
+      "impact": 2,
+      "analysis": "集成电路行业政策支持，相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "引力传媒",
+      "stock_code": "300529",
+      "impact": 3,
+      "analysis": "AI 应用布局，股价有望上涨"
+    },
+    {
+      "stock_name": "恒誉环保",
+      "stock_code": "688070",
+      "impact": 2,
+      "analysis": "摘帽后股价有望修复"
+    },
+    {
+      "stock_name": "阳光电源",
+      "stock_code": "300274",
+      "impact": 3,
+      "analysis": "光伏组件需求增加，股价有望上涨"
+    },
+    {
+      "stock_name": "宁德时代",
+      "stock_code": "300750",
+      "impact": 3,
+      "analysis": "碳酸锂价格上涨，锂电池行业受益"
+    },
+    {
+      "stock_name": "秦川机床",
+      "stock_code": "000837",
+      "impact": 2,
+      "analysis": "国资委推动央企布局新兴产业，股价有望上涨"
+    },
+    {
+      "stock_name": "深科技",
+      "stock_code": "000021",
+      "impact": 2,
+      "analysis": "集成电路行业政策支持，股价有望上涨"
+    }
+  ],
+  "article_title": "5月12日 盘前热点事件关注",
+  "html_file": "dvzt6yl9rj.html",
+  "article_date": "2023-05-12"
+}

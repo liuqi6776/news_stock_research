@@ -1,0 +1,147 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极影响。",
+  "sectors": [
+    {
+      "sector_name": "MLCC",
+      "impact": 4,
+      "analysis": "需求旺盛，价格上涨，板块受益"
+    },
+    {
+      "sector_name": "AI服务器",
+      "impact": 3,
+      "analysis": "AI服务器需求增长，相关产业链受益"
+    },
+    {
+      "sector_name": "半导体设备",
+      "impact": 3,
+      "analysis": "半导体设备需求增加，板块受益"
+    },
+    {
+      "sector_name": "PCB",
+      "impact": 3,
+      "analysis": "PCB用铜球需求增加，板块受益"
+    },
+    {
+      "sector_name": "粘胶短纤",
+      "impact": 3,
+      "analysis": "粘胶短纤价格上涨，板块受益"
+    },
+    {
+      "sector_name": "数据中心",
+      "impact": 3,
+      "analysis": "数据中心需求增长，板块受益"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "机器人需求增长，板块受益"
+    },
+    {
+      "sector_name": "智能驾驶",
+      "impact": 3,
+      "analysis": "智能驾驶技术发展，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "风华高科",
+      "stock_code": "000636",
+      "impact": 4,
+      "analysis": "MLCC价格上涨，公司受益"
+    },
+    {
+      "stock_name": "博迁新材",
+      "stock_code": "603187",
+      "impact": 4,
+      "analysis": "MLCC镍粉需求增加，公司受益"
+    },
+    {
+      "stock_name": "昀冢科技",
+      "stock_code": "688598",
+      "impact": 3,
+      "analysis": "MLCC研发布局，公司受益"
+    },
+    {
+      "stock_name": "洁美科技",
+      "stock_code": "603259",
+      "impact": 3,
+      "analysis": "MLCC离型膜研发，公司受益"
+    },
+    {
+      "stock_name": "三环集团",
+      "stock_code": "002473",
+      "impact": 3,
+      "analysis": "MLCC上游材料供应商，公司受益"
+    },
+    {
+      "stock_name": "国瓷材料",
+      "stock_code": "600158",
+      "impact": 3,
+      "analysis": "MLCC上游材料供应商，公司受益"
+    },
+    {
+      "stock_name": "达利凯普",
+      "stock_code": "603335",
+      "impact": 3,
+      "analysis": "射频微波陶瓷电容器龙头企业，公司受益"
+    },
+    {
+      "stock_name": "博杰股份",
+      "stock_code": "002845",
+      "impact": 3,
+      "analysis": "MLCC设备供应商，公司受益"
+    },
+    {
+      "stock_name": "英维克",
+      "stock_code": "002837",
+      "impact": 3,
+      "analysis": "NV液冷核心公司，公司受益"
+    },
+    {
+      "stock_name": "东方精工",
+      "stock_code": "002611",
+      "impact": 3,
+      "analysis": "NV机器人核心公司，公司受益"
+    },
+    {
+      "stock_name": "豪恩汽电",
+      "stock_code": "603730",
+      "impact": 3,
+      "analysis": "NV机器人核心公司，公司受益"
+    },
+    {
+      "stock_name": "德赛西威",
+      "stock_code": "002912",
+      "impact": 3,
+      "analysis": "NV智驾核心公司，公司受益"
+    },
+    {
+      "stock_name": "江南新材",
+      "stock_code": "002275",
+      "impact": 3,
+      "analysis": "PCB用铜球系列产品市占率国内第一，公司受益"
+    },
+    {
+      "stock_name": "三友化工",
+      "stock_code": "600409",
+      "impact": 3,
+      "analysis": "粘胶短纤价格上涨，公司受益"
+    },
+    {
+      "stock_name": "天润工业",
+      "stock_code": "002113",
+      "impact": 3,
+      "analysis": "产能供不应求，公司受益"
+    },
+    {
+      "stock_name": "宜安科技",
+      "stock_code": "300151",
+      "impact": 3,
+      "analysis": "苹果折叠屏铰链结构件潜在供应商，公司受益"
+    }
+  ],
+  "article_id": "0082b91cc41944d28e992e801a545eaf",
+  "article_date": "2026-02-24",
+  "article_title": "2026.2.24市场逻辑精选"
+}

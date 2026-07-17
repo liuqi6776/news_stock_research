@@ -1,0 +1,99 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪提升",
+  "sectors": [
+    {
+      "sector_name": "券商",
+      "impact": 3,
+      "analysis": "备付金缴纳比例降低，释放资金"
+    },
+    {
+      "sector_name": "特斯拉储能",
+      "impact": 3,
+      "analysis": "特斯拉储能超级工厂项目启动"
+    },
+    {
+      "sector_name": "无人机",
+      "impact": 3,
+      "analysis": "无人驾驶航空器飞行管理暂行条例通过"
+    },
+    {
+      "sector_name": "电源",
+      "impact": 3,
+      "analysis": "大模型开发和训练成本降低需求增加"
+    },
+    {
+      "sector_name": "多模态",
+      "impact": 3,
+      "analysis": "Meta发布Segment Anything Model"
+    },
+    {
+      "sector_name": "AI云算力",
+      "impact": 3,
+      "analysis": "AI云算力需求增长"
+    },
+    {
+      "sector_name": "液冷",
+      "impact": 3,
+      "analysis": "AI服务器需求催化液冷产业链"
+    },
+    {
+      "sector_name": "眼科",
+      "impact": 3,
+      "analysis": "学生近视率纳入政府绩效考核"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "东方证券",
+      "stock_code": "600908",
+      "impact": 3,
+      "analysis": "一季度净利润大幅增长"
+    },
+    {
+      "stock_name": "铭利达",
+      "stock_code": "002902",
+      "impact": 3,
+      "analysis": "特斯拉储能超级工厂项目受益"
+    },
+    {
+      "stock_name": "中无人机",
+      "stock_code": "002013",
+      "impact": 3,
+      "analysis": "无人驾驶航空器飞行管理暂行条例受益"
+    },
+    {
+      "stock_name": "动力源",
+      "stock_code": "600405",
+      "impact": 3,
+      "analysis": "大模型开发和训练成本降低需求增加"
+    },
+    {
+      "stock_name": "大华股份",
+      "stock_code": "002236",
+      "impact": 3,
+      "analysis": "Meta发布Segment Anything Model"
+    },
+    {
+      "stock_name": "光环新网",
+      "stock_code": "300383",
+      "impact": 3,
+      "analysis": "AI云算力需求增长"
+    },
+    {
+      "stock_name": "浪潮信息",
+      "stock_code": "000977",
+      "impact": 3,
+      "analysis": "AI服务器需求催化液冷产业链"
+    },
+    {
+      "stock_name": "爱尔眼科",
+      "stock_code": "300015",
+      "impact": 3,
+      "analysis": "学生近视率纳入政府绩效考核"
+    }
+  ],
+  "article_title": "4月10日 盘前热点事件关注",
+  "html_file": "duf3xtnrpc.html",
+  "article_date": "2023-04-10"
+}

@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件影响，市场情绪波动较大",
+  "sectors": [
+    {
+      "sector_name": "水网建设",
+      "impact": 3,
+      "analysis": "政策支持，板块受益"
+    },
+    {
+      "sector_name": "脑机接口",
+      "impact": 3,
+      "analysis": "临床试验启动，行业前景看好"
+    },
+    {
+      "sector_name": "新冠治疗",
+      "impact": 2,
+      "analysis": "疫情反复，相关药物需求增加"
+    },
+    {
+      "sector_name": "安全",
+      "impact": 2,
+      "analysis": "AI换脸诈骗事件，安全需求提升"
+    },
+    {
+      "sector_name": "数字人",
+      "impact": 2,
+      "analysis": "AI数字人服务推出，行业应用拓展"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "粤水电",
+      "stock_code": "002060",
+      "impact": 3,
+      "analysis": "受益水网建设政策"
+    },
+    {
+      "stock_name": "创新医疗",
+      "stock_code": "300605",
+      "impact": 3,
+      "analysis": "脑机接口行业前景看好"
+    },
+    {
+      "stock_name": "众生药业",
+      "stock_code": "002317",
+      "impact": 2,
+      "analysis": "新冠治疗需求增加"
+    },
+    {
+      "stock_name": "美亚柏科",
+      "stock_code": "300188",
+      "impact": 2,
+      "analysis": "AI换脸诈骗事件，安全需求提升"
+    },
+    {
+      "stock_name": "万兴科技",
+      "stock_code": "300624",
+      "impact": 2,
+      "analysis": "AI数字人服务推出，行业应用拓展"
+    }
+  ],
+  "article_title": "5月26日 盘前热点事件关注",
+  "html_file": "alnyh5v0sh.html",
+  "article_date": "2023-05-26"
+}

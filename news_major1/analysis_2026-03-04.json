@@ -1,0 +1,113 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，关注相关题材和个股表现。",
+  "sectors": [
+    {
+      "sector_name": "钽电容",
+      "impact": 4,
+      "analysis": "需求增长，价格上调，板块利好。"
+    },
+    {
+      "sector_name": "氢能",
+      "impact": 3,
+      "analysis": "政策支持，产业规模化发展可期，板块利好。"
+    },
+    {
+      "sector_name": "绿色电力",
+      "impact": 3,
+      "analysis": "碳达峰及电算融合，板块利好。"
+    },
+    {
+      "sector_name": "电子元件",
+      "impact": 3,
+      "analysis": "英伟达验证顺利，板块利好。"
+    },
+    {
+      "sector_name": "农药",
+      "impact": 3,
+      "analysis": "百草枯产能全球第一，板块利好。"
+    },
+    {
+      "sector_name": "小金属",
+      "impact": 3,
+      "analysis": "战略小金属紧缺，板块利好。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "东方钽业",
+      "stock_code": "000962",
+      "impact": 4,
+      "analysis": "钽粉钽丝市场三强之一，利好。"
+    },
+    {
+      "stock_name": "风华高科",
+      "stock_code": "000636",
+      "impact": 3,
+      "analysis": "布局氧化担固体电解电容器、聚合物担电容，利好。"
+    },
+    {
+      "stock_name": "宏达电子",
+      "stock_code": "300205",
+      "impact": 3,
+      "analysis": "国内军用钽电容器龙头企业，利好。"
+    },
+    {
+      "stock_name": "华电科工",
+      "stock_code": "601226",
+      "impact": 3,
+      "analysis": "电解槽企业中标绿氢项目份额占7.8%，利好。"
+    },
+    {
+      "stock_name": "京城控股",
+      "stock_code": "000710",
+      "impact": 3,
+      "analysis": "储氢瓶龙头，利好。"
+    },
+    {
+      "stock_name": "富瑞特装",
+      "stock_code": "300228",
+      "impact": 3,
+      "analysis": "布局气态氢装备与液态氢装备，利好。"
+    },
+    {
+      "stock_name": "金开新能",
+      "stock_code": "603915",
+      "impact": 3,
+      "analysis": "主营光伏、风电，布局新能源与智算中心一体化领域，利好。"
+    },
+    {
+      "stock_name": "银星能源",
+      "stock_code": "000862",
+      "impact": 3,
+      "analysis": "风电总装机容量161万千瓦时，利好。"
+    },
+    {
+      "stock_name": "赣能股份",
+      "stock_code": "002876",
+      "impact": 3,
+      "analysis": "装机规模625.05万千瓦，利好。"
+    },
+    {
+      "stock_name": "超颖电子",
+      "stock_code": "300677",
+      "impact": 3,
+      "analysis": "英伟达验证顺利，利好。"
+    },
+    {
+      "stock_name": "红太阳",
+      "stock_code": "000525",
+      "impact": 3,
+      "analysis": "百草枯产能全球第一，利好。"
+    },
+    {
+      "stock_name": "东方锆业",
+      "stock_code": "000962",
+      "impact": 3,
+      "analysis": "战略小金属紧缺，利好。"
+    }
+  ],
+  "article_id": "1328ad24ec7a4d0daeaddce5cc4c591d",
+  "article_date": "2026-03-04",
+  "article_title": "2026.3.4市场逻辑精选"
+}

@@ -1,0 +1,61 @@
+{
+  "market_impact": 3,
+  "market_analysis": "机器人、折叠屏等题材活跃，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "机器人",
+      "impact": 4,
+      "analysis": "产业进展加快，预计2025年量产，利好"
+    },
+    {
+      "sector_name": "折叠屏",
+      "impact": 3,
+      "analysis": "出货量持续高增，华为新品发布，利好"
+    },
+    {
+      "sector_name": "AI服务器",
+      "impact": 3,
+      "analysis": "东材科技原材料供应，利好"
+    },
+    {
+      "sector_name": "AI大模型",
+      "impact": 3,
+      "analysis": "人民网语料库助力，利好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "三花智控",
+      "stock_code": "002050",
+      "impact": 4,
+      "analysis": "人形机器人进展顺利，利好"
+    },
+    {
+      "stock_name": "华孚时尚",
+      "stock_code": "002042",
+      "impact": 3,
+      "analysis": "AI算力项目进展顺利，利好"
+    },
+    {
+      "stock_name": "金财互联",
+      "stock_code": "002530",
+      "impact": 3,
+      "analysis": "财税大模型备案通过，利好"
+    },
+    {
+      "stock_name": "ST莫高",
+      "stock_code": "600543",
+      "impact": 3,
+      "analysis": "控股股东拟增持，摘帽预期，利好"
+    },
+    {
+      "stock_name": "润欣科技",
+      "stock_code": "300475",
+      "impact": 3,
+      "analysis": "PZT压电膜量产线，助力新产品应用，利好"
+    }
+  ],
+  "article_id": "7a5c80846d74450e8b428750fa5123e4",
+  "article_date": "2024-02-20",
+  "article_title": "2024.2.20市场逻辑精选"
+}

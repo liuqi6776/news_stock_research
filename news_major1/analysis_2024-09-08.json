@@ -1,0 +1,84 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策推动消费升级，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "消费电子",
+      "impact": 4,
+      "analysis": "以旧换新政策刺激需求，板块受益"
+    },
+    {
+      "sector_name": "家电",
+      "impact": 4,
+      "analysis": "以旧换新政策刺激需求，板块受益"
+    },
+    {
+      "sector_name": "消费",
+      "impact": 3,
+      "analysis": "政策推动消费升级，板块受益"
+    },
+    {
+      "sector_name": "医疗生物技术",
+      "impact": 3,
+      "analysis": "扩大开放试点，板块受益"
+    },
+    {
+      "sector_name": "养老服务",
+      "impact": 3,
+      "analysis": "政策推动养老服务体系建设，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "深赛格",
+      "stock_code": "000058",
+      "impact": 4,
+      "analysis": "受益于消费电子板块"
+    },
+    {
+      "stock_name": "天虹股份",
+      "stock_code": "002419",
+      "impact": 4,
+      "analysis": "受益于消费电子板块"
+    },
+    {
+      "stock_name": "四川长虹",
+      "stock_code": "600839",
+      "impact": 4,
+      "analysis": "受益于家电板块"
+    },
+    {
+      "stock_name": "海尔智家",
+      "stock_code": "600690",
+      "impact": 4,
+      "analysis": "受益于家电板块"
+    },
+    {
+      "stock_name": "东睦股份",
+      "stock_code": "002266",
+      "impact": 5,
+      "analysis": "华为三折叠屏核心供应商"
+    },
+    {
+      "stock_name": "京东方A",
+      "stock_code": "000725",
+      "impact": 4,
+      "analysis": "受益于柔性屏需求"
+    },
+    {
+      "stock_name": "济民健康",
+      "stock_code": "002136",
+      "impact": 4,
+      "analysis": "受益于医疗生物技术板块"
+    },
+    {
+      "stock_name": "尚品宅配",
+      "stock_code": "603816",
+      "impact": 3,
+      "analysis": "受益于养老服务板块"
+    }
+  ],
+  "article_id": "fa3a26f7f4b8441c927d3a5c73a8e7fb",
+  "article_date": "2024-09-08",
+  "article_title": "2024.9.8市场逻辑精选"
+}

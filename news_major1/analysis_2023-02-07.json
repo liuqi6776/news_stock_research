@@ -1,0 +1,229 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "数据特区",
+      "impact": 4,
+      "analysis": "北京数据特区建设推动，相关公司受益"
+    },
+    {
+      "sector_name": "转基因种子",
+      "impact": 3,
+      "analysis": "转基因玉米种子销售预期，相关公司受益"
+    },
+    {
+      "sector_name": "预制菜",
+      "impact": 3,
+      "analysis": "上海首张预制菜身份证颁发，相关公司受益"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "ChatGPT相关技术发展，相关公司受益"
+    },
+    {
+      "sector_name": "纸业",
+      "impact": 2,
+      "analysis": "白卡纸企业提价，纸企盈利能力释放"
+    },
+    {
+      "sector_name": "辅助生殖",
+      "impact": 2,
+      "analysis": "政策支持辅助生殖产业，相关公司受益"
+    },
+    {
+      "sector_name": "数字证书",
+      "impact": 2,
+      "analysis": "数字证书适用范围拓展，相关公司受益"
+    },
+    {
+      "sector_name": "Wi-Fi 7",
+      "impact": 2,
+      "analysis": "Wi-Fi 7商用时代望再提速，相关公司受益"
+    },
+    {
+      "sector_name": "元宇宙",
+      "impact": 2,
+      "analysis": "元宇宙概念持续发酵，相关公司受益"
+    },
+    {
+      "sector_name": "充电桩",
+      "impact": 2,
+      "analysis": "充电桩行业持续发展，相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "直真科技",
+      "stock_code": "300585",
+      "impact": 4,
+      "analysis": "北京数据特区建设受益"
+    },
+    {
+      "stock_name": "铜牛信息",
+      "stock_code": "300387",
+      "impact": 4,
+      "analysis": "北京数据特区建设受益"
+    },
+    {
+      "stock_name": "宁波建工",
+      "stock_code": "601788",
+      "impact": 4,
+      "analysis": "北京数据特区建设受益"
+    },
+    {
+      "stock_name": "博睿数据",
+      "stock_code": "300643",
+      "impact": 4,
+      "analysis": "北京数据特区建设受益"
+    },
+    {
+      "stock_name": "首都在线",
+      "stock_code": "002163",
+      "impact": 4,
+      "analysis": "北京数据特区建设受益"
+    },
+    {
+      "stock_name": "隆平高科",
+      "stock_code": "000998",
+      "impact": 3,
+      "analysis": "转基因玉米种子销售预期"
+    },
+    {
+      "stock_name": "大北农",
+      "stock_code": "002385",
+      "impact": 3,
+      "analysis": "转基因玉米种子销售预期"
+    },
+    {
+      "stock_name": "味知香",
+      "stock_code": "603846",
+      "impact": 3,
+      "analysis": "上海首张预制菜身份证颁发"
+    },
+    {
+      "stock_name": "千味央厨",
+      "stock_code": "603821",
+      "impact": 3,
+      "analysis": "上海首张预制菜身份证颁发"
+    },
+    {
+      "stock_name": "得利斯",
+      "stock_code": "002330",
+      "impact": 3,
+      "analysis": "上海首张预制菜身份证颁发"
+    },
+    {
+      "stock_name": "西安饮食",
+      "stock_code": "600058",
+      "impact": 3,
+      "analysis": "上海首张预制菜身份证颁发"
+    },
+    {
+      "stock_name": "奥飞娱乐",
+      "stock_code": "002292",
+      "impact": 3,
+      "analysis": "ChatGPT相关技术发展"
+    },
+    {
+      "stock_name": "汉邦高科",
+      "stock_code": "300449",
+      "impact": 2,
+      "analysis": "质量强国建设纲要印发"
+    },
+    {
+      "stock_name": "中国科传",
+      "stock_code": "600858",
+      "impact": 2,
+      "analysis": "质量强国建设纲要印发"
+    },
+    {
+      "stock_name": "博汇纸业",
+      "stock_code": "600966",
+      "impact": 2,
+      "analysis": "白卡纸企业提价"
+    },
+    {
+      "stock_name": "冠豪高新",
+      "stock_code": "600966",
+      "impact": 2,
+      "analysis": "白卡纸企业提价"
+    },
+    {
+      "stock_name": "达嘉维康",
+      "stock_code": "300869",
+      "impact": 2,
+      "analysis": "政策支持辅助生殖产业"
+    },
+    {
+      "stock_name": "汉商集团",
+      "stock_code": "000562",
+      "impact": 2,
+      "analysis": "政策支持辅助生殖产业"
+    },
+    {
+      "stock_name": "雄帝科技",
+      "stock_code": "002536",
+      "impact": 2,
+      "analysis": "数字证书适用范围拓展"
+    },
+    {
+      "stock_name": "南威软件",
+      "stock_code": "300599",
+      "impact": 2,
+      "analysis": "数字证书适用范围拓展"
+    },
+    {
+      "stock_name": "共进股份",
+      "stock_code": "603838",
+      "impact": 2,
+      "analysis": "Wi-Fi 7商用时代望再提速"
+    },
+    {
+      "stock_name": "天邑股份",
+      "stock_code": "300588",
+      "impact": 2,
+      "analysis": "Wi-Fi 7商用时代望再提速"
+    },
+    {
+      "stock_name": "捷荣技术",
+      "stock_code": "002855",
+      "impact": 2,
+      "analysis": "元宇宙概念持续发酵"
+    },
+    {
+      "stock_name": "广博股份",
+      "stock_code": "603110",
+      "impact": 2,
+      "analysis": "元宇宙概念持续发酵"
+    },
+    {
+      "stock_name": "积成电子",
+      "stock_code": "002339",
+      "impact": 2,
+      "analysis": "充电桩行业持续发展"
+    },
+    {
+      "stock_name": "金智科技",
+      "stock_code": "600396",
+      "impact": 2,
+      "analysis": "充电桩行业持续发展"
+    },
+    {
+      "stock_name": "英可瑞",
+      "stock_code": "300476",
+      "impact": 2,
+      "analysis": "充电桩行业持续发展"
+    },
+    {
+      "stock_name": "奥特迅",
+      "stock_code": "002227",
+      "impact": 2,
+      "analysis": "充电桩行业持续发展"
+    }
+  ],
+  "article_title": "2月7日盘前早参 热点事件关注",
+  "html_file": "c3f77avyp3.html",
+  "article_date": "2023-02-07"
+}

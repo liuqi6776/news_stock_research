@@ -1,0 +1,125 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，科技板块表现强劲。",
+  "sectors": [
+    {
+      "sector_name": "服务器",
+      "impact": 4,
+      "analysis": "华为服务器订单增加，相关产业链受益"
+    },
+    {
+      "sector_name": "芯片",
+      "impact": 3,
+      "analysis": "华为昇腾芯片技术领先，芯片行业受益"
+    },
+    {
+      "sector_name": "光模块",
+      "impact": 3,
+      "analysis": "华为光模块订单增加，相关公司受益"
+    },
+    {
+      "sector_name": "液冷",
+      "impact": 3,
+      "analysis": "华为液冷技术推出，相关公司受益"
+    },
+    {
+      "sector_name": "火电",
+      "impact": 3,
+      "analysis": "火电容量电价改革预期，火电板块受益"
+    },
+    {
+      "sector_name": "双氧水",
+      "impact": 3,
+      "analysis": "双氧水供需失衡，价格上涨，相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "四川长虹",
+      "stock_code": "600839",
+      "impact": 4,
+      "analysis": "华为鲲鹏天宫服务器供应商"
+    },
+    {
+      "stock_name": "拓维信息",
+      "stock_code": "002261",
+      "impact": 4,
+      "analysis": "华为服务器最大整机供应商"
+    },
+    {
+      "stock_name": "神州数码",
+      "stock_code": "000034",
+      "impact": 4,
+      "analysis": "华为服务器供应商"
+    },
+    {
+      "stock_name": "铭普光磁",
+      "stock_code": "300321",
+      "impact": 3,
+      "analysis": "华为光模块订单供应商"
+    },
+    {
+      "stock_name": "光迅科技",
+      "stock_code": "300383",
+      "impact": 3,
+      "analysis": "华为光模块订单供应商"
+    },
+    {
+      "stock_name": "华工科技",
+      "stock_code": "002004",
+      "impact": 3,
+      "analysis": "华为光模块订单供应商"
+    },
+    {
+      "stock_name": "华能国际",
+      "stock_code": "600011",
+      "impact": 3,
+      "analysis": "火电容量电价改革受益"
+    },
+    {
+      "stock_name": "华电国际",
+      "stock_code": "600027",
+      "impact": 3,
+      "analysis": "火电容量电价改革受益"
+    },
+    {
+      "stock_name": "大唐发电",
+      "stock_code": "600383",
+      "impact": 3,
+      "analysis": "火电容量电价改革受益"
+    },
+    {
+      "stock_name": "世龙实业",
+      "stock_code": "002798",
+      "impact": 3,
+      "analysis": "双氧水产能较大"
+    },
+    {
+      "stock_name": "华尔泰",
+      "stock_code": "002061",
+      "impact": 3,
+      "analysis": "双氧水产能较大"
+    },
+    {
+      "stock_name": "柳化股份",
+      "stock_code": "600386",
+      "impact": 3,
+      "analysis": "双氧水产能较大"
+    },
+    {
+      "stock_name": "科瑞技术",
+      "stock_code": "300790",
+      "impact": 4,
+      "analysis": "华为、苹果检测设备供应商"
+    },
+    {
+      "stock_name": "杰美特",
+      "stock_code": "002358",
+      "impact": 4,
+      "analysis": "华为高端配件研发"
+    }
+  ],
+  "article_id": "09f804045cb44cde8fd03be764d76bf7",
+  "article_date": "2023-09-12",
+  "article_title": "2023.9.12市场逻辑精选"
+}

@@ -1,0 +1,61 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受华为智能汽车和电子纸学习本等热点事件推动，呈现利好。",
+  "sectors": [
+    {
+      "sector_name": "智能汽车",
+      "impact": 4,
+      "analysis": "华为智能汽车发布，相关产业链受益"
+    },
+    {
+      "sector_name": "电子纸",
+      "impact": 3,
+      "analysis": "电子纸学习本销量增长，相关产业链受益"
+    },
+    {
+      "sector_name": "氢燃料电池",
+      "impact": 2,
+      "analysis": "深圳补贴政策，氢燃料电池行业受益"
+    },
+    {
+      "sector_name": "存储芯片",
+      "impact": 2,
+      "analysis": "长鑫存储实现国内市场零的突破，相关产业链受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "智界S7",
+      "stock_code": "000000",
+      "impact": 4,
+      "analysis": "华为智能汽车发布，相关产业链受益"
+    },
+    {
+      "stock_name": "赛力斯",
+      "stock_code": "000559",
+      "impact": 3,
+      "analysis": "华为股权开放邀请，相关产业链受益"
+    },
+    {
+      "stock_name": "元太科技",
+      "stock_code": "000070",
+      "impact": 3,
+      "analysis": "电子纸学习本销量增长，相关产业链受益"
+    },
+    {
+      "stock_name": "华光环能",
+      "stock_code": "600011",
+      "impact": 2,
+      "analysis": "深圳补贴政策，氢燃料电池行业受益"
+    },
+    {
+      "stock_name": "长鑫存储",
+      "stock_code": "688012",
+      "impact": 2,
+      "analysis": "长鑫存储实现国内市场零的突破，相关产业链受益"
+    }
+  ],
+  "article_id": "64474adfee504b5c83afb7d218f2e08f",
+  "article_date": "2023-11-28",
+  "article_title": "2023.11.28市场逻辑精选"
+}

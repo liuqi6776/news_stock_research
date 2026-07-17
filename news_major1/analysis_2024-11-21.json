@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，AI芯片和固态电池相关板块受关注。",
+  "sectors": [
+    {
+      "sector_name": "AI芯片",
+      "impact": 4,
+      "analysis": "国产AI芯片产业化加速，相关产业链受益"
+    },
+    {
+      "sector_name": "固态电池",
+      "impact": 3,
+      "analysis": "氟基固态电池新突破，相关企业受关注"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "日本刺激计划，半导体和AI领域受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "华丰科技",
+      "stock_code": "300094",
+      "impact": 4,
+      "analysis": "国产AI芯片产业化加速，公司受益"
+    },
+    {
+      "stock_name": "华正新材",
+      "stock_code": "603186",
+      "impact": 3,
+      "analysis": "国产AI芯片产业化加速，公司受益"
+    },
+    {
+      "stock_name": "泰嘉股份",
+      "stock_code": "002812",
+      "impact": 3,
+      "analysis": "特斯拉V4超级充电桩机柜供应商，公司受益"
+    },
+    {
+      "stock_name": "中新集团",
+      "stock_code": "600732",
+      "impact": 3,
+      "analysis": "苏州工业园区深化开放创新，公司受益"
+    }
+  ],
+  "article_id": "3a291f0af2ca41cdb5edabf462c5c3e0",
+  "article_date": "2024-11-21",
+  "article_title": "2024.11.21市场逻辑精选"
+}

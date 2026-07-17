@@ -1,0 +1,66 @@
+{
+  "market_impact": 2,
+  "market_analysis": "市场情绪受多事件影响，波动较大。",
+  "sectors": [
+    {
+      "sector_name": "食盐",
+      "impact": 3,
+      "analysis": "韩国盐价上涨，相关企业受益"
+    },
+    {
+      "sector_name": "AI算力",
+      "impact": 2,
+      "analysis": "英伟达上涨，相关企业受益"
+    },
+    {
+      "sector_name": "天然气",
+      "impact": 2,
+      "analysis": "南京天然气价格上调，相关企业受益"
+    },
+    {
+      "sector_name": "电力",
+      "impact": 2,
+      "analysis": "迎峰度夏能源保供，相关企业受益"
+    },
+    {
+      "sector_name": "数字人民币",
+      "impact": 2,
+      "analysis": "试点数字人民币缴纳税费，相关企业受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "江盐集团",
+      "stock_code": "600386",
+      "impact": 3,
+      "analysis": "韩国盐价上涨，公司受益"
+    },
+    {
+      "stock_name": "苏盐井神",
+      "stock_code": "601106",
+      "impact": 3,
+      "analysis": "韩国盐价上涨，公司受益"
+    },
+    {
+      "stock_name": "胜宏科技",
+      "stock_code": "300476",
+      "impact": 2,
+      "analysis": "英伟达上涨，公司受益"
+    },
+    {
+      "stock_name": "和林维纳",
+      "stock_code": "002745",
+      "impact": 2,
+      "analysis": "英伟达上涨，公司受益"
+    },
+    {
+      "stock_name": "浪潮信息",
+      "stock_code": "000977",
+      "impact": 2,
+      "analysis": "英伟达上涨，公司受益"
+    }
+  ],
+  "article_title": "6月15日 盘前热点事件关注",
+  "html_file": "fkmle9ctg1.html",
+  "article_date": "2023-06-15"
+}

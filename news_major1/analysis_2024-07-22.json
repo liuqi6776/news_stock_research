@@ -1,0 +1,94 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "风电",
+      "impact": 4,
+      "analysis": "海上风电需求旺盛，产业链受益"
+    },
+    {
+      "sector_name": "商业航天",
+      "impact": 3,
+      "analysis": "G60首期发射，产业链价值提升"
+    },
+    {
+      "sector_name": "铜连接",
+      "impact": 3,
+      "analysis": "B20加速卡推动铜互联增量"
+    },
+    {
+      "sector_name": "水务",
+      "impact": 2,
+      "analysis": "国中水务拟成为北京汇源控股股东"
+    },
+    {
+      "sector_name": "TGV板级封装",
+      "impact": 2,
+      "analysis": "沃格光电或受益国内首条TGV板级封装线投产"
+    },
+    {
+      "sector_name": "无人驾驶",
+      "impact": 2,
+      "analysis": "启明信息资产注入预期，一汽出行入主"
+    },
+    {
+      "sector_name": "数据要素",
+      "impact": 2,
+      "analysis": "世纪恒通为贵阳本地数据要素重点企业"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "天能重工",
+      "stock_code": "002595",
+      "impact": 4,
+      "analysis": "塔筒桩基设备供应商"
+    },
+    {
+      "stock_name": "大金重工",
+      "stock_code": "002487",
+      "impact": 4,
+      "analysis": "风电出海，外销占比高"
+    },
+    {
+      "stock_name": "上海沪工",
+      "stock_code": "601727",
+      "impact": 3,
+      "analysis": "商业卫星业务合作"
+    },
+    {
+      "stock_name": "沃尔核材",
+      "stock_code": "002130",
+      "impact": 3,
+      "analysis": "安费诺线材供应商"
+    },
+    {
+      "stock_name": "国中水务",
+      "stock_code": "600187",
+      "impact": 2,
+      "analysis": "拟成为北京汇源控股股东"
+    },
+    {
+      "stock_name": "沃格光电",
+      "stock_code": "002083",
+      "impact": 2,
+      "analysis": "TGV板级封装线投产"
+    },
+    {
+      "stock_name": "启明信息",
+      "stock_code": "002232",
+      "impact": 2,
+      "analysis": "资产注入预期，一汽出行入主"
+    },
+    {
+      "stock_name": "世纪恒通",
+      "stock_code": "300295",
+      "impact": 2,
+      "analysis": "贵阳本地数据要素重点企业"
+    }
+  ],
+  "article_id": "ae7b3aa5f54547fc94adc9f49059d6c4",
+  "article_date": "2024-07-22",
+  "article_title": "2024.7.22市场逻辑精选"
+}

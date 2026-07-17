@@ -1,0 +1,225 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股受利好消息影响。",
+  "sectors": [
+    {
+      "sector_name": "虚拟现实",
+      "impact": 4,
+      "analysis": "Meta发布新品Quest 3，板块受提振"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "微软与CoreWeave签署AI算力协议，板块受益"
+    },
+    {
+      "sector_name": "数字人",
+      "impact": 3,
+      "analysis": "小冰公司推出网红明星克隆人，板块受关注"
+    },
+    {
+      "sector_name": "脑机接口",
+      "impact": 3,
+      "analysis": "马斯克脑机接口公司获FDA批准，板块受提振"
+    },
+    {
+      "sector_name": "芯片半导体",
+      "impact": 2,
+      "analysis": "中美半导体领域投资限制，板块受影响"
+    },
+    {
+      "sector_name": "券商",
+      "impact": 2,
+      "analysis": "证监会副主席方星海讲话，板块受提振"
+    },
+    {
+      "sector_name": "电力",
+      "impact": 2,
+      "analysis": "南方多地高温，用电负荷走高，板块受益"
+    },
+    {
+      "sector_name": "充电桩",
+      "impact": 2,
+      "analysis": "上海充换电展即将开幕，板块受关注"
+    },
+    {
+      "sector_name": "人工智能算力",
+      "impact": 2,
+      "analysis": "GPU供应短缺，算力需求带来风口"
+    },
+    {
+      "sector_name": "新能源",
+      "impact": 2,
+      "analysis": "首个海上碳封存示范工程投用，板块受益"
+    },
+    {
+      "sector_name": "操作系统",
+      "impact": 2,
+      "analysis": "首个车用操作系统开源发布，板块受关注"
+    },
+    {
+      "sector_name": "基因检测",
+      "impact": 2,
+      "analysis": "全球首个基因检测产品及服务数据国际标准发布"
+    },
+    {
+      "sector_name": "Wi-Fi芯片",
+      "impact": 2,
+      "analysis": "英特尔将推出Wi-Fi7芯片，板块受关注"
+    },
+    {
+      "sector_name": "MR设备",
+      "impact": 2,
+      "analysis": "苹果MR设备将采用Micro OLED屏幕，板块受关注"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "双象股份",
+      "stock_code": "002395",
+      "impact": 4,
+      "analysis": "苹果概念，MR设备相关"
+    },
+    {
+      "stock_name": "鸿博股份",
+      "stock_code": "002229",
+      "impact": 3,
+      "analysis": "AI算力协议，板块受益"
+    },
+    {
+      "stock_name": "浪潮信息",
+      "stock_code": "000977",
+      "impact": 3,
+      "analysis": "AI算力协议，板块受益"
+    },
+    {
+      "stock_name": "中科曙光",
+      "stock_code": "603019",
+      "impact": 3,
+      "analysis": "AI算力协议，板块受益"
+    },
+    {
+      "stock_name": "寒武纪",
+      "stock_code": "688005",
+      "impact": 3,
+      "analysis": "AI算力协议，板块受益"
+    },
+    {
+      "stock_name": "海光信息",
+      "stock_code": "688041",
+      "impact": 3,
+      "analysis": "AI算力协议，板块受益"
+    },
+    {
+      "stock_name": "奥飞娱乐",
+      "stock_code": "002292",
+      "impact": 3,
+      "analysis": "数字人，网红明星克隆人相关"
+    },
+    {
+      "stock_name": "数字人",
+      "stock_code": "871328",
+      "impact": 3,
+      "analysis": "数字人，网红明星克隆人相关"
+    },
+    {
+      "stock_name": "捷成股份",
+      "stock_code": "600746",
+      "impact": 3,
+      "analysis": "数字人，网红明星克隆人相关"
+    },
+    {
+      "stock_name": "天娱数科",
+      "stock_code": "300572",
+      "impact": 3,
+      "analysis": "数字人，网红明星克隆人相关"
+    },
+    {
+      "stock_name": "蓝色光标",
+      "stock_code": "300058",
+      "impact": 3,
+      "analysis": "数字人，网红明星克隆人相关"
+    },
+    {
+      "stock_name": "海南海药",
+      "stock_code": "600521",
+      "impact": 3,
+      "analysis": "人工耳蜗，脑机接口相关"
+    },
+    {
+      "stock_name": "康芝药业",
+      "stock_code": "600557",
+      "impact": 3,
+      "analysis": "人工耳蜗，脑机接口相关"
+    },
+    {
+      "stock_name": "利通电子",
+      "stock_code": "002100",
+      "impact": 3,
+      "analysis": "AI算力相关项目投资"
+    },
+    {
+      "stock_name": "世纪华通",
+      "stock_code": "002602",
+      "impact": 3,
+      "analysis": "AI算力相关项目合作"
+    },
+    {
+      "stock_name": "百纳千成",
+      "stock_code": "002695",
+      "impact": 3,
+      "analysis": "剧集全媒体播放权授权"
+    },
+    {
+      "stock_name": "建发股份",
+      "stock_code": "600153",
+      "impact": 3,
+      "analysis": "购买美凯龙股份"
+    },
+    {
+      "stock_name": "中国核电",
+      "stock_code": "601985",
+      "impact": 3,
+      "analysis": "子公司收购风电公司"
+    },
+    {
+      "stock_name": "广发证券",
+      "stock_code": "000776",
+      "impact": 3,
+      "analysis": "子公司购买惠理集团股份"
+    },
+    {
+      "stock_name": "比亚迪",
+      "stock_code": "002594",
+      "impact": 3,
+      "analysis": "新能源汽车销量增长"
+    },
+    {
+      "stock_name": "四川路桥",
+      "stock_code": "002928",
+      "impact": 3,
+      "analysis": "签订施工总承包合同"
+    },
+    {
+      "stock_name": "纵横股份",
+      "stock_code": "002747",
+      "impact": 3,
+      "analysis": "无人机系统完成首次飞行测试"
+    },
+    {
+      "stock_name": "云海金属",
+      "stock_code": "002182",
+      "impact": 3,
+      "analysis": "合资公司取得采矿许可证"
+    },
+    {
+      "stock_name": "永清环保",
+      "stock_code": "300187",
+      "impact": 3,
+      "analysis": "设立全资子公司开展新能源业务"
+    }
+  ],
+  "article_title": "6月2日 盘前热点事件关注",
+  "html_file": "c90d376l9z.html",
+  "article_date": "2023-06-02"
+}

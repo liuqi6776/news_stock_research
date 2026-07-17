@@ -1,0 +1,94 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体情绪偏乐观，部分行业和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "半导体设备",
+      "impact": 4,
+      "analysis": "行业需求增长，利好相关公司"
+    },
+    {
+      "sector_name": "数据中心",
+      "impact": 3,
+      "analysis": "市场需求强劲，利好相关公司"
+    },
+    {
+      "sector_name": "存储芯片",
+      "impact": 3,
+      "analysis": "扩产计划，利好相关公司"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "Pre-IPO轮融资，利好相关公司"
+    },
+    {
+      "sector_name": "钢铁",
+      "impact": 2,
+      "analysis": "行业底部复苏，利好相关公司"
+    },
+    {
+      "sector_name": "金属工程",
+      "impact": 2,
+      "analysis": "集团业务扩张，利好相关公司"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 1,
+      "analysis": "转型文旅康养，利好相关公司"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "维谛技术",
+      "stock_code": "300076",
+      "impact": 4,
+      "analysis": "业绩超预期，利好"
+    },
+    {
+      "stock_name": "长江存储",
+      "stock_code": "688012",
+      "impact": 3,
+      "analysis": "IPO预期，利好"
+    },
+    {
+      "stock_name": "乐聚机器人",
+      "stock_code": "688023",
+      "impact": 3,
+      "analysis": "Pre-IPO轮融资，利好"
+    },
+    {
+      "stock_name": "科瑞技术",
+      "stock_code": "688598",
+      "impact": 4,
+      "analysis": "半导体设备业务有望高增，利好"
+    },
+    {
+      "stock_name": "中铝国际",
+      "stock_code": "601696",
+      "impact": 3,
+      "analysis": "集团业务扩张，利好"
+    },
+    {
+      "stock_name": "天保基建",
+      "stock_code": "000965",
+      "impact": 2,
+      "analysis": "参股空客二期项目投产，利好"
+    },
+    {
+      "stock_name": "凌钢股份",
+      "stock_code": "000592",
+      "impact": 2,
+      "analysis": "行业底部复苏，利好"
+    },
+    {
+      "stock_name": "云南城投",
+      "stock_code": "600239",
+      "impact": 2,
+      "analysis": "转型文旅康养，利好"
+    }
+  ],
+  "article_id": "46cefae3c22e481595d24fac3722d5d1",
+  "article_date": "2025-10-22",
+  "article_title": "2025.10.22市场逻辑精选"
+}

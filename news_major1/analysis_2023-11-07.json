@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪提升",
+  "sectors": [
+    {
+      "sector_name": "金融",
+      "impact": 3,
+      "analysis": "金融强国战略，板块受益"
+    },
+    {
+      "sector_name": "卫星通信",
+      "impact": 3,
+      "analysis": "中国电信发布卫星手机，板块受提振"
+    },
+    {
+      "sector_name": "智能汽车",
+      "impact": 3,
+      "analysis": "鸿蒙智行发布新品，板块活跃"
+    },
+    {
+      "sector_name": "互联网药店",
+      "impact": 3,
+      "analysis": "上海试点医保支付，板块受益"
+    },
+    {
+      "sector_name": "碳排放",
+      "impact": 3,
+      "analysis": "国家碳达峰试点建设，板块受关注"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "龙溪股份",
+      "stock_code": "600663",
+      "impact": 3,
+      "analysis": "金融强国战略，股价可能上涨"
+    },
+    {
+      "stock_name": "华力创通",
+      "stock_code": "300045",
+      "impact": 3,
+      "analysis": "卫星手机发布，股价可能上涨"
+    },
+    {
+      "stock_name": "天龙股份",
+      "stock_code": "600129",
+      "impact": 3,
+      "analysis": "鸿蒙智行新品发布，股价可能上涨"
+    },
+    {
+      "stock_name": "第一医药",
+      "stock_code": "603393",
+      "impact": 3,
+      "analysis": "医保支付试点，股价可能上涨"
+    },
+    {
+      "stock_name": "雪迪龙",
+      "stock_code": "002658",
+      "impact": 3,
+      "analysis": "碳达峰试点建设，股价可能上涨"
+    }
+  ],
+  "article_title": "11月7日盘前早报 热点事件关注",
+  "html_file": "e4n6dzryhh.html",
+  "article_date": "2023-11-07"
+}

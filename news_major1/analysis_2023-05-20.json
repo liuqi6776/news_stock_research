@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受积极消息推动，上涨动力强。",
+  "sectors": [
+    {
+      "sector_name": "电子制造",
+      "impact": 4,
+      "analysis": "苹果MR设备发布预期和订单增加，板块受益"
+    },
+    {
+      "sector_name": "电气设备",
+      "impact": 3,
+      "analysis": "智能电表更换周期到来，行业进入放量期"
+    },
+    {
+      "sector_name": "机械设备",
+      "impact": 3,
+      "analysis": "人形机器人需求增长，精密减速器市场空间大"
+    },
+    {
+      "sector_name": "公用事业",
+      "impact": 3,
+      "analysis": "售电价格上限和煤炭价格下降，售电企业利润有望增加"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "荣旗科技",
+      "stock_code": "300710",
+      "impact": 5,
+      "analysis": "苹果MR设备订单增加，公司业绩预期提升"
+    },
+    {
+      "stock_name": "万胜智能",
+      "stock_code": "300821",
+      "impact": 4,
+      "analysis": "智能电表更换周期到来，公司业绩有望增长"
+    },
+    {
+      "stock_name": "丰立智能",
+      "stock_code": "603966",
+      "impact": 4,
+      "analysis": "人形机器人需求增长，精密减速器市场空间大"
+    },
+    {
+      "stock_name": "杭州热电",
+      "stock_code": "600023",
+      "impact": 4,
+      "analysis": "售电价格上限和煤炭价格下降，公司利润有望增加"
+    }
+  ],
+  "article_id": "169c3557f16749c2aec7f7e18e28cf49",
+  "article_date": "2023-05-20",
+  "article_title": "本周大涨股盘点【免费】"
+}

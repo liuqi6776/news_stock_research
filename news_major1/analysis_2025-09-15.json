@@ -1,0 +1,84 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受技术升级和行业政策支持影响，整体偏利好。",
+  "sectors": [
+    {
+      "sector_name": "半导体设备",
+      "impact": 4,
+      "analysis": "英伟达下一代服务器散热技术推动相关设备需求增长。"
+    },
+    {
+      "sector_name": "量子计算",
+      "impact": 3,
+      "analysis": "海外巨头投资加速，国内事件密集，板块受关注。"
+    },
+    {
+      "sector_name": "旅游",
+      "impact": 3,
+      "analysis": "政策支持及小长假效应，旅游板块有望受益。"
+    },
+    {
+      "sector_name": "液冷技术",
+      "impact": 4,
+      "analysis": "液冷散热成为高算力AIDC标配，相关技术受关注。"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "特斯拉机器人概念及国内机器人本体厂商需求旺盛。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "南风股份",
+      "stock_code": "002002",
+      "impact": 4,
+      "analysis": "3D打印纯铜散热板技术领先，受益英伟达散热技术升级。"
+    },
+    {
+      "stock_name": "康盛股份",
+      "stock_code": "002418",
+      "impact": 3,
+      "analysis": "微通道换热器技术领先，液冷相关产品受益行业增长。"
+    },
+    {
+      "stock_name": "国盾量子",
+      "stock_code": "688027",
+      "impact": 4,
+      "analysis": "中标中电信量子科技订单，量子计算业务增长。"
+    },
+    {
+      "stock_name": "凯撒旅业",
+      "stock_code": "600059",
+      "impact": 3,
+      "analysis": "旅游综合服务商，受益国庆中秋双节效应。"
+    },
+    {
+      "stock_name": "君禾股份",
+      "stock_code": "603633",
+      "impact": 4,
+      "analysis": "与兰洋科技合作开发液冷泵，受益液冷散热需求增长。"
+    },
+    {
+      "stock_name": "万向钱潮",
+      "stock_code": "000559",
+      "impact": 3,
+      "analysis": "特斯拉二级供应商，受益特斯拉机器人概念。"
+    },
+    {
+      "stock_name": "浙江世宝",
+      "stock_code": "002703",
+      "impact": 3,
+      "analysis": "线控转向产品获定点，受益智能网联汽车发展。"
+    },
+    {
+      "stock_name": "腾亚精工",
+      "stock_code": "603790",
+      "impact": 3,
+      "analysis": "机器人产品需求旺盛，受益机器人行业增长。"
+    }
+  ],
+  "article_id": "3ae03b800b194548b518fe33cb6fe5f9",
+  "article_date": "2025-09-15",
+  "article_title": "2025.9.15市场逻辑精选"
+}

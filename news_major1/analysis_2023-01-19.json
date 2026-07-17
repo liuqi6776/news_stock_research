@@ -1,0 +1,56 @@
+{
+  "market_impact": 3,
+  "market_analysis": "信创、机器人、国产操作系统等板块受利好消息推动，市场情绪积极。",
+  "sectors": [
+    {
+      "sector_name": "信创",
+      "impact": 4,
+      "analysis": "行业信创有望超预期，二季度业绩拐点，相关公司受益"
+    },
+    {
+      "sector_name": "国产操作系统",
+      "impact": 3,
+      "analysis": "深度受益于信创推进，订单兑现期，头部厂商受益"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "机器人应用行动实施方案发布，行业应用深度和广度提升"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中国软件",
+      "stock_code": "600536",
+      "impact": 4,
+      "analysis": "操作系统龙头，信创受益"
+    },
+    {
+      "stock_name": "太极股份",
+      "stock_code": "600039",
+      "impact": 4,
+      "analysis": "国产数据库龙头，信创受益"
+    },
+    {
+      "stock_name": "江南奕帆",
+      "stock_code": "300950",
+      "impact": 3,
+      "analysis": "光伏机器人，机器人应用行动实施方案受益"
+    },
+    {
+      "stock_name": "中航产融",
+      "stock_code": "600705",
+      "impact": 3,
+      "analysis": "大额发行公司债，或为收购成飞募集资金"
+    },
+    {
+      "stock_name": "广誉远",
+      "stock_code": "600771",
+      "impact": 3,
+      "analysis": "新董事长上任，或将大力发展养生酒行业"
+    }
+  ],
+  "article_id": "220599b0617544f29b8544b51064d170",
+  "article_date": "2023-01-19",
+  "article_title": "2023.1.19市场逻辑精选"
+}

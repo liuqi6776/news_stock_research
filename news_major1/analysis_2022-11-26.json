@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "美元地位受挑战，人民币国际化进程加速。",
+  "sectors": [
+    {
+      "sector_name": "石油",
+      "impact": 3,
+      "analysis": "人民币结算增加，利好石油行业"
+    },
+    {
+      "sector_name": "金融",
+      "impact": 2,
+      "analysis": "人民币国际化，利好金融行业"
+    },
+    {
+      "sector_name": "国际贸易",
+      "impact": 2,
+      "analysis": "去美元化趋势，利好国际贸易"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "贝肯能源",
+      "stock_code": "000815",
+      "impact": 3,
+      "analysis": "人民币结算增加，利好石油行业"
+    },
+    {
+      "stock_name": "中油资本",
+      "stock_code": "000617",
+      "impact": 3,
+      "analysis": "人民币结算增加，利好石油行业"
+    },
+    {
+      "stock_name": "海联金汇",
+      "stock_code": "002537",
+      "impact": 2,
+      "analysis": "人民币国际化，利好金融行业"
+    },
+    {
+      "stock_name": "S *ST仁东",
+      "stock_code": "002647",
+      "impact": 2,
+      "analysis": "人民币国际化，利好金融行业"
+    }
+  ],
+  "article_title": "人民币、美元和石油",
+  "html_file": "5dy9f74rgj.html",
+  "article_date": "2022-11-26"
+}

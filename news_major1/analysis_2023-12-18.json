@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件影响，市场情绪偏积极",
+  "sectors": [
+    {
+      "sector_name": "金融",
+      "impact": 3,
+      "analysis": "国联集团成为民生证券主要股东，利好金融板块"
+    },
+    {
+      "sector_name": "数据要素",
+      "impact": 3,
+      "analysis": "国家发改委征求意见，利好数据要素板块"
+    },
+    {
+      "sector_name": "海运",
+      "impact": 2,
+      "analysis": "红海商船频遇袭，利好海运板块"
+    },
+    {
+      "sector_name": "视听电子",
+      "impact": 2,
+      "analysis": "七部门印发指导意见，利好视听电子板块"
+    },
+    {
+      "sector_name": "固态电池",
+      "impact": 2,
+      "analysis": "蔚来150度电池包技术先进，利好固态电池板块"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "国联证券",
+      "stock_code": "600016",
+      "impact": 3,
+      "analysis": "国联集团成为主要股东，利好国联证券"
+    },
+    {
+      "stock_name": "民生证券",
+      "stock_code": "600093",
+      "impact": 3,
+      "analysis": "国联集团成为主要股东，利好民生证券"
+    },
+    {
+      "stock_name": "零点有数",
+      "stock_code": "300654",
+      "impact": 3,
+      "analysis": "数据要素行动计划，利好零点有数"
+    },
+    {
+      "stock_name": "云创数据",
+      "stock_code": "300619",
+      "impact": 3,
+      "analysis": "数据要素行动计划，利好云创数据"
+    },
+    {
+      "stock_name": "恒大高新",
+      "stock_code": "002591",
+      "impact": 2,
+      "analysis": "《元梦之星》上线，利好恒大高新"
+    }
+  ],
+  "article_title": "12月18日盘前早报 热点事件关注",
+  "html_file": "4an60asyy6.html",
+  "article_date": "2023-12-18"
+}

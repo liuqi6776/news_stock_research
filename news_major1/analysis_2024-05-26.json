@@ -1,0 +1,72 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受政策支持，整体情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "电力板块",
+      "impact": 4,
+      "analysis": "电力市场化改革加速，板块受益明显。"
+    },
+    {
+      "sector_name": "芯片板块",
+      "impact": 3,
+      "analysis": "国产芯片关注度提升，板块有望受益。"
+    },
+    {
+      "sector_name": "智能电网板块",
+      "impact": 3,
+      "analysis": "智能电表招标增加，板块需求旺盛。"
+    },
+    {
+      "sector_name": "储能板块",
+      "impact": 3,
+      "analysis": "储能建设拐点，板块前景看好。"
+    },
+    {
+      "sector_name": "跨境电商板块",
+      "impact": 3,
+      "analysis": "跨境电商政策支持，板块有望受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "国能日新",
+      "stock_code": "300689",
+      "impact": 4,
+      "analysis": "虚拟电厂受益新规，业绩有望提升。"
+    },
+    {
+      "stock_name": "华丰科技",
+      "stock_code": "002869",
+      "impact": 3,
+      "analysis": "华为高速连接器供应商，业绩有望增长。"
+    },
+    {
+      "stock_name": "乐山电力",
+      "stock_code": "600644",
+      "impact": 3,
+      "analysis": "旅游行业与电力行业深度融合，业绩有望增长。"
+    },
+    {
+      "stock_name": "南网科技",
+      "stock_code": "002198",
+      "impact": 4,
+      "analysis": "新型储能领军者，业绩有望增长。"
+    },
+    {
+      "stock_name": "紫光股份",
+      "stock_code": "000938",
+      "impact": 3,
+      "analysis": "新华三并购获重要推进，业绩有望增长。"
+    },
+    {
+      "stock_name": "乐歌股份",
+      "stock_code": "603966",
+      "impact": 3,
+      "analysis": "中大件海外仓行业领先，业绩有望增长。"
+    }
+  ],
+  "article_id": "a95f4ce7d8494406b68102f816862315",
+  "article_date": "2024-05-26",
+  "article_title": "2024.5.26市场逻辑精选"
+}

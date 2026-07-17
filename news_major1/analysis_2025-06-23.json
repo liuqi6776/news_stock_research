@@ -1,0 +1,44 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受战争和科技题材驱动，短期看涨。",
+  "sectors": [
+    {
+      "sector_name": "军工板块",
+      "impact": 4,
+      "analysis": "战争和补库需求推动，板块受益明显。"
+    },
+    {
+      "sector_name": "无人驾驶板块",
+      "impact": 3,
+      "analysis": "技术进步和商业化落地推动，板块有望上涨。"
+    },
+    {
+      "sector_name": "半导体板块",
+      "impact": 3,
+      "analysis": "国产设备加速扩产，板块受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "长城军工",
+      "stock_code": "600118",
+      "impact": 4,
+      "analysis": "核心弹药企业，受益战争和补库需求。"
+    },
+    {
+      "stock_name": "哈啰出行",
+      "stock_code": "600663",
+      "impact": 3,
+      "analysis": "进军Robotaxi赛道，有望受益无人驾驶发展。"
+    },
+    {
+      "stock_name": "赛腾股份",
+      "stock_code": "300433",
+      "impact": 3,
+      "analysis": "HBM制程缺陷检测设备供应商，受益国产设备加速扩产。"
+    }
+  ],
+  "article_id": "e785c794899c4bf6983505991dd4e085",
+  "article_date": "2025-06-23",
+  "article_title": "2025.6.23市场逻辑精选"
+}

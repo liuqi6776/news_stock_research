@@ -1,0 +1,61 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "电子信息",
+      "impact": 4,
+      "analysis": "小米眼镜发布预期及低空经济商业化启动推动板块上涨。"
+    },
+    {
+      "sector_name": "新材料",
+      "impact": 3,
+      "analysis": "缅甸地震引发稀土、锡、锑等资源供应缺口，相关公司受益。"
+    },
+    {
+      "sector_name": "机械制造",
+      "impact": 2,
+      "analysis": "实朴检测与七腾机器人合作开发机器人产品，板块受益。"
+    },
+    {
+      "sector_name": "银行",
+      "impact": 2,
+      "analysis": "多家银行定增计划，资金注入有望支持实体经济。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "小米集团-W",
+      "stock_code": "01810",
+      "impact": 4,
+      "analysis": "小米眼镜发布预期，股价有望上涨。"
+    },
+    {
+      "stock_name": "亿航智能",
+      "stock_code": "688016",
+      "impact": 4,
+      "analysis": "低空经济商业化启动，股价有望受益。"
+    },
+    {
+      "stock_name": "中国稀土",
+      "stock_code": "000831",
+      "impact": 3,
+      "analysis": "缅甸地震引发稀土供应缺口，股价有望上涨。"
+    },
+    {
+      "stock_name": "华宏科技",
+      "stock_code": "002645",
+      "impact": 3,
+      "analysis": "缅甸地震引发稀土供应缺口，股价有望上涨。"
+    },
+    {
+      "stock_name": "建设银行",
+      "stock_code": "601939",
+      "impact": 2,
+      "analysis": "定增计划有望支持实体经济，股价有望受益。"
+    }
+  ],
+  "article_id": "5a7109e6bae44beda0679c43ac4daee0",
+  "article_date": "2025-03-30",
+  "article_title": "2025.3.30市场逻辑精选"
+}

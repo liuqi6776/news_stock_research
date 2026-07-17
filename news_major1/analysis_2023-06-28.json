@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块有望受益。",
+  "sectors": [
+    {
+      "sector_name": "算力",
+      "impact": 4,
+      "analysis": "算力提升推动相关产业增长，利好算力相关企业。"
+    },
+    {
+      "sector_name": "光通信",
+      "impact": 3,
+      "analysis": "6GHz频段划分用于5G/6G系统，利好光通信行业。"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 2,
+      "analysis": "首批上市房企再融资项目落地，利好房地产板块。"
+    },
+    {
+      "sector_name": "AI金融",
+      "impact": 3,
+      "analysis": "AI金融大模型发布，利好AI金融相关企业。"
+    },
+    {
+      "sector_name": "头盔",
+      "impact": 2,
+      "analysis": "头盔新国标实施，利好头盔行业。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "拓维信息",
+      "stock_code": "002261",
+      "impact": 4,
+      "analysis": "算力指数提升，利好拓维信息。"
+    },
+    {
+      "stock_name": "鸿博股份",
+      "stock_code": "002229",
+      "impact": 4,
+      "analysis": "算力指数提升，利好鸿博股份。"
+    },
+    {
+      "stock_name": "工业富联",
+      "stock_code": "601138",
+      "impact": 4,
+      "analysis": "算力指数提升，利好工业富联。"
+    },
+    {
+      "stock_name": "恒生电子",
+      "stock_code": "600570",
+      "impact": 3,
+      "analysis": "AI金融大模型发布，利好恒生电子。"
+    },
+    {
+      "stock_name": "泉为科技",
+      "stock_code": "300138",
+      "impact": 2,
+      "analysis": "头盔新国标实施，利好泉为科技。"
+    }
+  ],
+  "article_title": "6月28日 盘前热点事件关注",
+  "html_file": "ca958u0g72.html",
+  "article_date": "2023-06-28"
+}

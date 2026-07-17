@@ -1,0 +1,80 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪提振，关注央国企及新兴产业。",
+  "sectors": [
+    {
+      "sector_name": "央国企",
+      "impact": 4,
+      "analysis": "市值管理考核全面推开，利好板块表现。"
+    },
+    {
+      "sector_name": "新兴产业",
+      "impact": 3,
+      "analysis": "强化研发投入和产出考核，利好相关企业。"
+    },
+    {
+      "sector_name": "中药",
+      "impact": 3,
+      "analysis": "政策支持，央企带动中特估修复。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中粮科技",
+      "stock_code": "000930",
+      "impact": 3,
+      "analysis": "高股息高分红，受益市值管理。"
+    },
+    {
+      "stock_name": "中国神华",
+      "stock_code": "601088",
+      "impact": 3,
+      "analysis": "高股息高分红，受益市值管理。"
+    },
+    {
+      "stock_name": "东阿阿胶",
+      "stock_code": "000423",
+      "impact": 3,
+      "analysis": "央企背景，中药板块受益。"
+    },
+    {
+      "stock_name": "宝钢包装",
+      "stock_code": "600968",
+      "impact": 3,
+      "analysis": "回购股份，央企背景。"
+    },
+    {
+      "stock_name": "天富能源",
+      "stock_code": "600509",
+      "impact": 3,
+      "analysis": "控股股东重组，回购股份。"
+    },
+    {
+      "stock_name": "三变科技",
+      "stock_code": "002112",
+      "impact": 3,
+      "analysis": "业绩大增，盈利能力提升。"
+    },
+    {
+      "stock_name": "中信博",
+      "stock_code": "601677",
+      "impact": 3,
+      "analysis": "业绩大增，光伏支架业务快速发展。"
+    },
+    {
+      "stock_name": "中持股份",
+      "stock_code": "300795",
+      "impact": 3,
+      "analysis": "深化南迁策略，Q4业绩增长。"
+    },
+    {
+      "stock_name": "德明利",
+      "stock_code": "300345",
+      "impact": 3,
+      "analysis": "Q4单季度业绩创历史新高。"
+    }
+  ],
+  "article_id": "84552e456306444e88c0cf35f035eb68",
+  "article_date": "2024-01-29",
+  "article_title": "2024.1.29市场逻辑精选"
+}

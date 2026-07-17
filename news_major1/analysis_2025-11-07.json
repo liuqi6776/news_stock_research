@@ -1,0 +1,149 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏积极，多板块受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "AI电力",
+      "impact": 3,
+      "analysis": "受摩恩电气、保变电气等个股异动影响"
+    },
+    {
+      "sector_name": "特斯拉概念",
+      "impact": 3,
+      "analysis": "受马斯克薪酬计划通过影响"
+    },
+    {
+      "sector_name": "海南自贸港",
+      "impact": 3,
+      "analysis": "受海南自由贸易港建设启动影响"
+    },
+    {
+      "sector_name": "成渝地区双城经济圈",
+      "impact": 3,
+      "analysis": "受成渝地区双城经济圈国土空间规划批复影响"
+    },
+    {
+      "sector_name": "太空旅游",
+      "impact": 3,
+      "analysis": "受中国太空游项目全球首发影响"
+    },
+    {
+      "sector_name": "核电",
+      "impact": 3,
+      "analysis": "受第四届中国核能高质量发展大会召开影响"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "摩恩电气",
+      "stock_code": "002451",
+      "impact": 3,
+      "analysis": "AI电力板块个股，受板块异动影响"
+    },
+    {
+      "stock_name": "保变电气",
+      "stock_code": "600706",
+      "impact": 3,
+      "analysis": "AI电力板块个股，受板块异动影响"
+    },
+    {
+      "stock_name": "方正电机",
+      "stock_code": "002196",
+      "impact": 3,
+      "analysis": "小鹏机器人概念股，受板块异动影响"
+    },
+    {
+      "stock_name": "芭田股份",
+      "stock_code": "002170",
+      "impact": 3,
+      "analysis": "磷板块个股，受板块异动影响"
+    },
+    {
+      "stock_name": "南山铝业",
+      "stock_code": "000878",
+      "impact": 3,
+      "analysis": "铝板块个股，受板块异动影响"
+    },
+    {
+      "stock_name": "振华股份",
+      "stock_code": "600240",
+      "impact": 3,
+      "analysis": "铬板块个股，受板块异动影响"
+    },
+    {
+      "stock_name": "合富中国",
+      "stock_code": "01905",
+      "impact": 3,
+      "analysis": "福建板块个股，受板块异动影响"
+    },
+    {
+      "stock_name": "重庆建工",
+      "stock_code": "002506",
+      "impact": 3,
+      "analysis": "重庆板块个股，受板块异动影响"
+    },
+    {
+      "stock_name": "三花智控",
+      "stock_code": "002050",
+      "impact": 3,
+      "analysis": "特斯拉概念股，受马斯克薪酬计划通过影响"
+    },
+    {
+      "stock_name": "拓普集团",
+      "stock_code": "601689",
+      "impact": 3,
+      "analysis": "特斯拉概念股，受马斯克薪酬计划通过影响"
+    },
+    {
+      "stock_name": "海峡股份",
+      "stock_code": "000616",
+      "impact": 3,
+      "analysis": "海南自贸港板块个股，受海南自由贸易港建设启动影响"
+    },
+    {
+      "stock_name": "海南发展",
+      "stock_code": "000598",
+      "impact": 3,
+      "analysis": "海南自贸港板块个股，受海南自由贸易港建设启动影响"
+    },
+    {
+      "stock_name": "重庆建工",
+      "stock_code": "002506",
+      "impact": 3,
+      "analysis": "成渝地区双城经济圈板块个股，受成渝地区双城经济圈国土空间规划批复影响"
+    },
+    {
+      "stock_name": "财信发展",
+      "stock_code": "000838",
+      "impact": 3,
+      "analysis": "成渝地区双城经济圈板块个股，受成渝地区双城经济圈国土空间规划批复影响"
+    },
+    {
+      "stock_name": "探路者",
+      "stock_code": "300005",
+      "impact": 3,
+      "analysis": "太空旅游板块个股，受中国太空游项目全球首发影响"
+    },
+    {
+      "stock_name": "烽火电子",
+      "stock_code": "000561",
+      "impact": 3,
+      "analysis": "太空旅游板块个股，受中国太空游项目全球首发影响"
+    },
+    {
+      "stock_name": "海陆重工",
+      "stock_code": "002255",
+      "impact": 3,
+      "analysis": "核电板块个股，受第四届中国核能高质量发展大会召开影响"
+    },
+    {
+      "stock_name": "佳电股份",
+      "stock_code": "000922",
+      "impact": 3,
+      "analysis": "核电板块个股，受第四届中国核能高质量发展大会召开影响"
+    }
+  ],
+  "article_title": "11月7日盘前纪要",
+  "html_file": "10xznhrtsrq.html",
+  "article_date": "2025-11-07"
+}

@@ -1,0 +1,44 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受积极因素推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "固态变压器",
+      "impact": 4,
+      "analysis": "预计2025年后半段迎来规模化应用，利好"
+    },
+    {
+      "sector_name": "光引发剂",
+      "impact": 3,
+      "analysis": "PCB上游材料涨价，利好相关企业"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 3,
+      "analysis": "台湾军事演习及中国纪念活动，利好军工板块"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "新特电气",
+      "stock_code": "600708",
+      "impact": 4,
+      "analysis": "固态变压器业务占比高，利好"
+    },
+    {
+      "stock_name": "久日新材",
+      "stock_code": "300399",
+      "impact": 3,
+      "analysis": "光引发剂营收占比高，利好"
+    },
+    {
+      "stock_name": "长春一东",
+      "stock_code": "600148",
+      "impact": 3,
+      "analysis": "兵器工业集团旗下，利好"
+    }
+  ],
+  "article_id": "1772cb0385f64b72a16d0d5dd20e1955",
+  "article_date": "2025-07-08",
+  "article_title": "2025.7.8市场逻辑精选"
+}

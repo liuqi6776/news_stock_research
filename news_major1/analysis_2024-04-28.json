@@ -1,0 +1,44 @@
+{
+  "market_impact": 3,
+  "market_analysis": "量子科技、生物制造、汽车以旧换新等题材活跃，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "量子科技",
+      "impact": 4,
+      "analysis": "政策支持，技术突破，板块热度提升。"
+    },
+    {
+      "sector_name": "生物制造",
+      "impact": 3,
+      "analysis": "国家行动计划出台，行业前景看好。"
+    },
+    {
+      "sector_name": "汽车",
+      "impact": 3,
+      "analysis": "以旧换新政策超预期，汽车板块受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "格尔软件",
+      "stock_code": "300314",
+      "impact": 4,
+      "analysis": "抗量子密码技术领先，业绩增长。"
+    },
+    {
+      "stock_name": "豪能股份",
+      "stock_code": "603933",
+      "impact": 3,
+      "analysis": "一季度业绩大增，汽车业务增长。"
+    },
+    {
+      "stock_name": "帝科股份",
+      "stock_code": "603868",
+      "impact": 3,
+      "analysis": "一季度业绩翻倍，TOPCon银浆放量。"
+    }
+  ],
+  "article_id": "25c2989c7b674b30b19c958af2a6fc19",
+  "article_date": "2024-04-28",
+  "article_title": "2024.4.28市场逻辑精选"
+}

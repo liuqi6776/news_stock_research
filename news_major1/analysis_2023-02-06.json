@@ -1,0 +1,88 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪提升",
+  "sectors": [
+    {
+      "sector_name": "Web3.0",
+      "impact": 4,
+      "analysis": "Damus下载量激增，板块受关注"
+    },
+    {
+      "sector_name": "华为概念",
+      "impact": 3,
+      "analysis": "华为新品发布会，概念股受益"
+    },
+    {
+      "sector_name": "充电桩",
+      "impact": 3,
+      "analysis": "公共领域车辆电动化试点，充电桩需求增加"
+    },
+    {
+      "sector_name": "辅助生殖",
+      "impact": 3,
+      "analysis": "医保局纳入医保，板块受提振"
+    },
+    {
+      "sector_name": "旅游",
+      "impact": 3,
+      "analysis": "恢复出境游，旅游板块受益"
+    },
+    {
+      "sector_name": "自动驾驶",
+      "impact": 3,
+      "analysis": "无锡车联网法规，自动驾驶受关注"
+    },
+    {
+      "sector_name": "老字号",
+      "impact": 2,
+      "analysis": "老字号嘉年华，消费板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "天地在线",
+      "stock_code": "002999",
+      "impact": 4,
+      "analysis": "Web3.0概念，下载量激增"
+    },
+    {
+      "stock_name": "润和软件",
+      "stock_code": "300339",
+      "impact": 3,
+      "analysis": "华为概念，新品发布会"
+    },
+    {
+      "stock_name": "奥特迅",
+      "stock_code": "002227",
+      "impact": 3,
+      "analysis": "充电桩概念，电动化试点"
+    },
+    {
+      "stock_name": "悦心健康",
+      "stock_code": "002162",
+      "impact": 3,
+      "analysis": "辅助生殖概念，医保纳入"
+    },
+    {
+      "stock_name": "众信旅游",
+      "stock_code": "600610",
+      "impact": 3,
+      "analysis": "旅游概念，恢复出境游"
+    },
+    {
+      "stock_name": "路畅科技",
+      "stock_code": "002813",
+      "impact": 3,
+      "analysis": "自动驾驶概念，无锡车联网法规"
+    },
+    {
+      "stock_name": "西安饮食",
+      "stock_code": "600058",
+      "impact": 2,
+      "analysis": "老字号概念，消费季启动"
+    }
+  ],
+  "article_title": "2月6日盘前早参 热点事件关注",
+  "html_file": "75du0xzfzl.html",
+  "article_date": "2023-02-06"
+}

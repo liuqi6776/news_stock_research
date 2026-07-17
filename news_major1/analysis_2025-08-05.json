@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "机器人",
+      "impact": 4,
+      "analysis": "机器狗和脑机接口发展前景良好，推动板块上涨。"
+    },
+    {
+      "sector_name": "AI制药",
+      "impact": 3,
+      "analysis": "AI制药领域获得海外大单，推动板块上涨。"
+    },
+    {
+      "sector_name": "MIM",
+      "impact": 3,
+      "analysis": "MIM技术在机器人零部件制造中的应用前景看好，推动板块上涨。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "宇树科技",
+      "stock_code": "000938",
+      "impact": 4,
+      "analysis": "发布新款机器狗产品，推动股价上涨。"
+    },
+    {
+      "stock_name": "强脑科技",
+      "stock_code": "000938",
+      "impact": 3,
+      "analysis": "或申请IPO，推动股价上涨。"
+    },
+    {
+      "stock_name": "晶泰控股",
+      "stock_code": "000938",
+      "impact": 3,
+      "analysis": "获得海外大单，推动股价上涨。"
+    },
+    {
+      "stock_name": "海昌新材",
+      "stock_code": "000938",
+      "impact": 3,
+      "analysis": "MIM业务发展良好，推动股价上涨。"
+    }
+  ],
+  "article_id": "ca983980d2d04761944e92959f006593",
+  "article_date": "2025-08-05",
+  "article_title": "2025.8.5市场逻辑精选"
+}

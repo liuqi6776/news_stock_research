@@ -1,0 +1,90 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受积极因素驱动，部分板块和个股表现强劲。",
+  "sectors": [
+    {
+      "sector_name": "教育",
+      "impact": 4,
+      "analysis": "招录培训需求强劲，行业景气度高。"
+    },
+    {
+      "sector_name": "影视动画",
+      "impact": 3,
+      "analysis": "AI技术应用推动行业发展，相关公司受益。"
+    },
+    {
+      "sector_name": "锅炉设备",
+      "impact": 3,
+      "analysis": "设备更新需求推动行业增长。"
+    },
+    {
+      "sector_name": "商业航天",
+      "impact": 4,
+      "analysis": "商业航天市场规模扩大，行业加速发展。"
+    },
+    {
+      "sector_name": "智能驾驶",
+      "impact": 3,
+      "analysis": "智能化元年，加速落地，相关公司受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "华图山鼎",
+      "stock_code": "000652",
+      "impact": 4,
+      "analysis": "业绩增长超预期，行业景气度高。"
+    },
+    {
+      "stock_name": "行动教育",
+      "stock_code": "300681",
+      "impact": 4,
+      "analysis": "业绩增长超预期，行业景气度高。"
+    },
+    {
+      "stock_name": "中公教育",
+      "stock_code": "002607",
+      "impact": 4,
+      "analysis": "业绩增长超预期，行业景气度高。"
+    },
+    {
+      "stock_name": "创业黑马",
+      "stock_code": "300596",
+      "impact": 3,
+      "analysis": "AI技术应用推动行业发展。"
+    },
+    {
+      "stock_name": "科大讯飞",
+      "stock_code": "002230",
+      "impact": 3,
+      "analysis": "AI技术应用推动行业发展。"
+    },
+    {
+      "stock_name": "华光环能",
+      "stock_code": "600715",
+      "impact": 3,
+      "analysis": "设备更新需求推动行业增长。"
+    },
+    {
+      "stock_name": "海陆重工",
+      "stock_code": "002255",
+      "impact": 3,
+      "analysis": "设备更新需求推动行业增长。"
+    },
+    {
+      "stock_name": "盟升电子",
+      "stock_code": "300389",
+      "impact": 4,
+      "analysis": "商业航天市场规模扩大，行业加速发展。"
+    },
+    {
+      "stock_name": "伯特利",
+      "stock_code": "603882",
+      "impact": 3,
+      "analysis": "智能化元年，加速落地，相关公司受益。"
+    }
+  ],
+  "article_id": "418005d8717942869c920e8e2d89053b",
+  "article_date": "2024-02-26",
+  "article_title": "2024.2.26市场逻辑精选"
+}

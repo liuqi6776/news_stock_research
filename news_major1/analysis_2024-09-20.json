@@ -1,0 +1,129 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪提升",
+  "sectors": [
+    {
+      "sector_name": "电动自行车",
+      "impact": 4,
+      "analysis": "新国标提升技术要求，利好相关企业"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 3,
+      "analysis": "政策优化，利好地产股"
+    },
+    {
+      "sector_name": "金融",
+      "impact": 2,
+      "analysis": "富途控股上涨，利好金融科技股"
+    },
+    {
+      "sector_name": "通信安全",
+      "impact": 3,
+      "analysis": "黎巴嫩事件，利好通信安全股"
+    },
+    {
+      "sector_name": "国企改革",
+      "impact": 2,
+      "analysis": "国企改革培训，利好相关国企股"
+    },
+    {
+      "sector_name": "自动驾驶出租车",
+      "impact": 3,
+      "analysis": "特斯拉Robotaxi活动，利好相关股"
+    },
+    {
+      "sector_name": "智能穿戴",
+      "impact": 2,
+      "analysis": "WATCH GT5发布，利好智能穿戴股"
+    },
+    {
+      "sector_name": "AR眼镜",
+      "impact": 2,
+      "analysis": "Meta AR眼镜发布，利好相关股"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "南都电源",
+      "stock_code": "300068",
+      "impact": 4,
+      "analysis": "铅蓄电池需求提升"
+    },
+    {
+      "stock_name": "新日股份",
+      "stock_code": "603787",
+      "impact": 4,
+      "analysis": "电动车行业受益"
+    },
+    {
+      "stock_name": "爱玛科技",
+      "stock_code": "002510",
+      "impact": 4,
+      "analysis": "电动车行业受益"
+    },
+    {
+      "stock_name": "久祺股份",
+      "stock_code": "603555",
+      "impact": 4,
+      "analysis": "电动车行业受益"
+    },
+    {
+      "stock_name": "电子城",
+      "stock_code": "600058",
+      "impact": 3,
+      "analysis": "房地产政策优化"
+    },
+    {
+      "stock_name": "京投发展",
+      "stock_code": "600683",
+      "impact": 3,
+      "analysis": "房地产政策优化"
+    },
+    {
+      "stock_name": "富途控股",
+      "stock_code": "9988",
+      "impact": 4,
+      "analysis": "中概股普涨"
+    },
+    {
+      "stock_name": "国华网安",
+      "stock_code": "300663",
+      "impact": 3,
+      "analysis": "通信安全事件"
+    },
+    {
+      "stock_name": "保变电气",
+      "stock_code": "600550",
+      "impact": 2,
+      "analysis": "国企改革培训"
+    },
+    {
+      "stock_name": "大唐电信",
+      "stock_code": "600198",
+      "impact": 2,
+      "analysis": "国企改革培训"
+    },
+    {
+      "stock_name": "大众交通",
+      "stock_code": "600820",
+      "impact": 3,
+      "analysis": "特斯拉Robotaxi活动"
+    },
+    {
+      "stock_name": "奋达科技",
+      "stock_code": "002681",
+      "impact": 2,
+      "analysis": "智能穿戴新品发布"
+    },
+    {
+      "stock_name": "亚世光电",
+      "stock_code": "300389",
+      "impact": 2,
+      "analysis": "Meta AR眼镜发布"
+    }
+  ],
+  "article_title": "9月20日盘前早报 热点事件关注",
+  "html_file": "g818fhy4l8.html",
+  "article_date": "2024-09-20"
+}

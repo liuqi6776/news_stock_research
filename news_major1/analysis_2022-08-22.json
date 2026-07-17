@@ -1,0 +1,77 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件影响市场，部分利好。",
+  "sectors": [
+    {
+      "sector_name": "石油",
+      "impact": 3,
+      "analysis": "沙特访问及新城建设预期利好"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 3,
+      "analysis": "免征车购税政策延续利好"
+    },
+    {
+      "sector_name": "AR/VR",
+      "impact": 3,
+      "analysis": "Nreal眼镜发布会及市场增长预期利好"
+    },
+    {
+      "sector_name": "电力",
+      "impact": -2,
+      "analysis": "四川限电事件利空"
+    },
+    {
+      "sector_name": "出口",
+      "impact": -2,
+      "analysis": "人民币贬值利空"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 2,
+      "analysis": "LPR下调预期利好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "贝肯能源",
+      "stock_code": "002828",
+      "impact": 3,
+      "analysis": "人民币结算利好"
+    },
+    {
+      "stock_name": "奥特迅",
+      "stock_code": "002231",
+      "impact": 3,
+      "analysis": "充电桩建设利好"
+    },
+    {
+      "stock_name": "GQY视讯",
+      "stock_code": "002074",
+      "impact": 3,
+      "analysis": "AR概念利好"
+    },
+    {
+      "stock_name": "乐山电力",
+      "stock_code": "600644",
+      "impact": -2,
+      "analysis": "四川限电事件利空"
+    },
+    {
+      "stock_name": "龙头股份",
+      "stock_code": "600630",
+      "impact": -2,
+      "analysis": "人民币贬值利空"
+    },
+    {
+      "stock_name": "特发服务",
+      "stock_code": "000070",
+      "impact": 2,
+      "analysis": "LPR下调预期利好"
+    }
+  ],
+  "article_title": "8月22日 盘前早8点 股市要闻关注",
+  "html_file": "dh94t93h9k.html",
+  "article_date": "2022-08-22"
+}

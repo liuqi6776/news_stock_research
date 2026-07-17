@@ -1,0 +1,101 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策支持力度大，市场情绪积极",
+  "sectors": [
+    {
+      "sector_name": "节能降碳",
+      "impact": 4,
+      "analysis": "政策支持力度大，行业前景看好"
+    },
+    {
+      "sector_name": "旅游",
+      "impact": 3,
+      "analysis": "长假密集，旅游景气度持续"
+    },
+    {
+      "sector_name": "家电",
+      "impact": 3,
+      "analysis": "以旧换新政策有望拉动消费"
+    },
+    {
+      "sector_name": "建筑机械",
+      "impact": 3,
+      "analysis": "设备更新政策利好"
+    },
+    {
+      "sector_name": "高端制造",
+      "impact": 3,
+      "analysis": "国产高端产品供不应求"
+    },
+    {
+      "sector_name": "化工物流",
+      "impact": 3,
+      "analysis": "化工景气上升，业绩有望增长"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "峨眉山A",
+      "stock_code": "000888",
+      "impact": 3,
+      "analysis": "旅游景气度持续，业绩有望提升"
+    },
+    {
+      "stock_name": "海尔智家",
+      "stock_code": "600690",
+      "impact": 3,
+      "analysis": "以旧换新政策利好"
+    },
+    {
+      "stock_name": "美的集团",
+      "stock_code": "000333",
+      "impact": 3,
+      "analysis": "以旧换新政策利好"
+    },
+    {
+      "stock_name": "格力电器",
+      "stock_code": "000651",
+      "impact": 3,
+      "analysis": "以旧换新政策利好"
+    },
+    {
+      "stock_name": "北化股份",
+      "stock_code": "000786",
+      "impact": 3,
+      "analysis": "硝化棉需求增加"
+    },
+    {
+      "stock_name": "华锐精密",
+      "stock_code": "603019",
+      "impact": 3,
+      "analysis": "高端产品供不应求"
+    },
+    {
+      "stock_name": "密尔克卫",
+      "stock_code": "603713",
+      "impact": 3,
+      "analysis": "业绩超预期"
+    },
+    {
+      "stock_name": "孚日股份",
+      "stock_code": "002083",
+      "impact": 3,
+      "analysis": "业绩预增"
+    },
+    {
+      "stock_name": "飞龙股份",
+      "stock_code": "002536",
+      "impact": 3,
+      "analysis": "业绩超预期"
+    },
+    {
+      "stock_name": "力盛体育",
+      "stock_code": "603777",
+      "impact": 3,
+      "analysis": "港股同行大涨"
+    }
+  ],
+  "article_id": "0b8d5f134ef44e029d366f0549b535ea",
+  "article_date": "2024-04-11",
+  "article_title": "2024.4.11市场逻辑精选"
+}

@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注后续政策落实。",
+  "sectors": [
+    {
+      "sector_name": "服务器",
+      "impact": 4,
+      "analysis": "交易所扩容及信创招标推动需求增长"
+    },
+    {
+      "sector_name": "互联网金融",
+      "impact": 3,
+      "analysis": "政策支持及市场扩容带来机遇"
+    },
+    {
+      "sector_name": "地产",
+      "impact": 2,
+      "analysis": "一线城市政策优化，但需关注后续效果"
+    },
+    {
+      "sector_name": "螺纹钢",
+      "impact": 3,
+      "analysis": "建筑钢材价格上涨，需求旺盛"
+    },
+    {
+      "sector_name": "车路云",
+      "impact": 2,
+      "analysis": "政策支持及行业发展趋势"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "浪潮信息",
+      "stock_code": "000977",
+      "impact": 4,
+      "analysis": "国产服务器市场份额领先"
+    },
+    {
+      "stock_name": "恒生电子",
+      "stock_code": "600570",
+      "impact": 3,
+      "analysis": "金融科技服务提供商"
+    },
+    {
+      "stock_name": "保利发展",
+      "stock_code": "600048",
+      "impact": 2,
+      "analysis": "广州南沙全面放开限购"
+    },
+    {
+      "stock_name": "中南股份",
+      "stock_code": "000425",
+      "impact": 3,
+      "analysis": "螺纹钢价格上涨"
+    },
+    {
+      "stock_name": "海马汽车",
+      "stock_code": "600732",
+      "impact": 2,
+      "analysis": "智能网联汽车发展"
+    }
+  ],
+  "article_id": "82ec42c662d044e8a8bee308bde98d52",
+  "article_date": "2024-09-29",
+  "article_title": "2024.9.29市场逻辑精选"
+}

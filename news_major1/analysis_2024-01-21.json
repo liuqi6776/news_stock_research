@@ -1,0 +1,55 @@
+{
+  "market_impact": 4,
+  "market_analysis": "AI算力需求旺盛，市场情绪积极",
+  "sectors": [
+    {
+      "sector_name": "AI算力",
+      "impact": 5,
+      "analysis": "需求旺盛，板块全面利好"
+    },
+    {
+      "sector_name": "光模块",
+      "impact": 4,
+      "analysis": "光模块需求增长，板块利好"
+    },
+    {
+      "sector_name": "服务器",
+      "impact": 4,
+      "analysis": "服务器需求增长，板块利好"
+    },
+    {
+      "sector_name": "苹果产业链",
+      "impact": 3,
+      "analysis": "苹果Vision Pro发布，产业链受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "天孚通信",
+      "stock_code": "300362",
+      "impact": 5,
+      "analysis": "业绩超预期，股价有望上涨"
+    },
+    {
+      "stock_name": "顺网科技",
+      "stock_code": "300113",
+      "impact": 4,
+      "analysis": "聚焦AI，股价有望上涨"
+    },
+    {
+      "stock_name": "浪潮信息",
+      "stock_code": "000977",
+      "impact": 4,
+      "analysis": "服务器需求增长，股价有望上涨"
+    },
+    {
+      "stock_name": "立讯精密",
+      "stock_code": "002475",
+      "impact": 3,
+      "analysis": "苹果Vision Pro发布，股价有望上涨"
+    }
+  ],
+  "article_id": "4f5d558c0d824d1a9e38951a3867d282",
+  "article_date": "2024-01-21",
+  "article_title": "2024.1.21市场逻辑精选"
+}

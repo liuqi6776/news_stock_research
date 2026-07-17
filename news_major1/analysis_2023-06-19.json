@@ -1,0 +1,99 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪提升",
+  "sectors": [
+    {
+      "sector_name": "房地产",
+      "impact": 3,
+      "analysis": "房企股权融资政策落地，板块受益"
+    },
+    {
+      "sector_name": "算力-数据中心",
+      "impact": 3,
+      "analysis": "算力需求增长，数据中心板块受益"
+    },
+    {
+      "sector_name": "光刻胶",
+      "impact": 3,
+      "analysis": "光刻胶概念股业绩预增，板块受益"
+    },
+    {
+      "sector_name": "AI 金融",
+      "impact": 3,
+      "analysis": "AI 技术应用推广，金融板块受益"
+    },
+    {
+      "sector_name": "脑机接口",
+      "impact": 3,
+      "analysis": "脑机接口人体试验计划，板块受益"
+    },
+    {
+      "sector_name": "腾讯大模型",
+      "impact": 3,
+      "analysis": "腾讯大模型发布，相关板块受益"
+    },
+    {
+      "sector_name": "乡村振兴",
+      "impact": 3,
+      "analysis": "金融支持乡村振兴，板块受益"
+    },
+    {
+      "sector_name": "虚拟电厂",
+      "impact": 3,
+      "analysis": "虚拟电厂试点，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "招商蛇口",
+      "stock_code": "000024",
+      "impact": 3,
+      "analysis": "房企重组项目注册生效，公司受益"
+    },
+    {
+      "stock_name": "美利云",
+      "stock_code": "002613",
+      "impact": 3,
+      "analysis": "算力需求增长，公司受益"
+    },
+    {
+      "stock_name": "容大感光",
+      "stock_code": "300824",
+      "impact": 3,
+      "analysis": "业绩预增，公司受益"
+    },
+    {
+      "stock_name": "同花顺",
+      "stock_code": "300033",
+      "impact": 3,
+      "analysis": "AI 技术应用，公司受益"
+    },
+    {
+      "stock_name": "创新医疗",
+      "stock_code": "002821",
+      "impact": 3,
+      "analysis": "脑机接口人体试验，公司受益"
+    },
+    {
+      "stock_name": "岭南股份",
+      "stock_code": "002717",
+      "impact": 3,
+      "analysis": "腾讯大模型发布，公司受益"
+    },
+    {
+      "stock_name": "天鹅股份",
+      "stock_code": "002543",
+      "impact": 3,
+      "analysis": "金融支持乡村振兴，公司受益"
+    },
+    {
+      "stock_name": "迦南智能",
+      "stock_code": "300466",
+      "impact": 3,
+      "analysis": "虚拟电厂试点，公司受益"
+    }
+  ],
+  "article_title": "6月19日 盘前热点事件关注",
+  "html_file": "amuex1wmkw.html",
+  "article_date": "2023-06-19"
+}

@@ -1,0 +1,67 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受热点题材推动，短期有望上涨。",
+  "sectors": [
+    {
+      "sector_name": "脑机接口",
+      "impact": 4,
+      "analysis": "行业进展加速，市场预期向好。"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 3,
+      "analysis": "地缘冲突频发，军贸出口受益。"
+    },
+    {
+      "sector_name": "期货",
+      "impact": 2,
+      "analysis": "陆家嘴论坛召开，政策预期利好。"
+    },
+    {
+      "sector_name": "油运",
+      "impact": 3,
+      "analysis": "中东冲突，油运业务受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "东方中科",
+      "stock_code": "000958",
+      "impact": 4,
+      "analysis": "脑机接口行业领先企业。"
+    },
+    {
+      "stock_name": "力合科创",
+      "stock_code": "002825",
+      "impact": 4,
+      "analysis": "脑机接口技术全链条自主技术。"
+    },
+    {
+      "stock_name": "翔宇医疗",
+      "stock_code": "300298",
+      "impact": 3,
+      "analysis": "脑机电产品丰富。"
+    },
+    {
+      "stock_name": "晨曦航空",
+      "stock_code": "002966",
+      "impact": 3,
+      "analysis": "航空惯性导航、航空发动机电子及无人机领域。"
+    },
+    {
+      "stock_name": "永安期货",
+      "stock_code": "600288",
+      "impact": 3,
+      "analysis": "期货公司行业龙头。"
+    },
+    {
+      "stock_name": "招商南油",
+      "stock_code": "000066",
+      "impact": 3,
+      "analysis": "油运业务受益中东冲突。"
+    }
+  ],
+  "article_id": "3063679e5a5842a0a358902c31cb1d76",
+  "article_date": "2025-06-17",
+  "article_title": "2025.6.17市场逻辑精选"
+}

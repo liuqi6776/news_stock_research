@@ -1,0 +1,90 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受多因素驱动，整体情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "燃料电池",
+      "impact": 4,
+      "analysis": "受海外公司扩产消息提振，板块情绪升温。"
+    },
+    {
+      "sector_name": "PCB材料",
+      "impact": 3,
+      "analysis": "英伟达新产品带动需求提升，板块受益。"
+    },
+    {
+      "sector_name": "日化香精",
+      "impact": 3,
+      "analysis": "行业龙头工厂爆炸，短期供应收缩，价格预期上涨。"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "华为合作及机器人行业热度提升，板块受关注。"
+    },
+    {
+      "sector_name": "有色金属",
+      "impact": 2,
+      "analysis": "美联储降息预期，有色板块或受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "三环集团",
+      "stock_code": "002049",
+      "impact": 4,
+      "analysis": "作为固体氧化物燃料电池电解质供应商，业绩有望增厚。"
+    },
+    {
+      "stock_name": "壹石通",
+      "stock_code": "688599",
+      "impact": 3,
+      "analysis": "国内SOFC/SOEC供应商，有望受益行业增长。"
+    },
+    {
+      "stock_name": "东材科技",
+      "stock_code": "600693",
+      "impact": 3,
+      "analysis": "高端树脂产品供应商，受益英伟达新产品需求。"
+    },
+    {
+      "stock_name": "宏和科技",
+      "stock_code": "603090",
+      "impact": 3,
+      "analysis": "特种电子布供应商，受益苹果新机出货周期。"
+    },
+    {
+      "stock_name": "兄弟科技",
+      "stock_code": "002562",
+      "impact": 3,
+      "analysis": "日化香精业务受益行业需求增长。"
+    },
+    {
+      "stock_name": "荣科科技",
+      "stock_code": "300382",
+      "impact": 3,
+      "analysis": "超聚变资产运作预期，重组进入实操阶段。"
+    },
+    {
+      "stock_name": "罗博特科",
+      "stock_code": "300663",
+      "impact": 3,
+      "analysis": "布局硅光+CPO赛道，市场空间广阔。"
+    },
+    {
+      "stock_name": "多伦科技",
+      "stock_code": "300467",
+      "impact": 3,
+      "analysis": "参股机器人公司，受益行业热度提升。"
+    },
+    {
+      "stock_name": "华锡有色",
+      "stock_code": "600998",
+      "impact": 2,
+      "analysis": "锡锑矿产资源丰富，有望受益美联储降息预期。"
+    }
+  ],
+  "article_id": "46fb3e4b885c4397a95080e8c239b365",
+  "article_date": "2025-08-13",
+  "article_title": "2025.8.13市场逻辑精选"
+}

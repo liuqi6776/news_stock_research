@@ -1,0 +1,16 @@
+原始新闻影响分析摘要
+============================================================
+总新闻数: 132998
+含股票代码的新闻数: 0
+成功关联价格数: 0
+情感vs收盘涨幅相关系数: nan
+
+按情感分组的次日收盘涨幅:
+Empty DataFrame
+Columns: [(next_day_open_pct, mean), (next_day_open_pct, count), (next_day_close_pct, mean), (next_day_high_pct, mean)]
+Index: []
+
+板块分析 (Top 15):
+Empty DataFrame
+Columns: [next_day_close_pct_mean, next_day_close_pct_count, next_day_open_pct_mean, next_day_high_pct_mean]
+Index: []

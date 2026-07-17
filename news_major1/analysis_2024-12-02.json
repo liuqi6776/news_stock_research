@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受政策预期和行业热点驱动，整体情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "海南板块",
+      "impact": 4,
+      "analysis": "自贸港政策预期和封关运作利好相关公司。"
+    },
+    {
+      "sector_name": "宠物经济",
+      "impact": 3,
+      "analysis": "宠物市场规模增长，相关公司受益。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": -2,
+      "analysis": "美国管制升级，对相关公司构成利空。"
+    },
+    {
+      "sector_name": "特斯拉概念",
+      "impact": 3,
+      "analysis": "特斯拉FSD软件更新，相关公司受益。"
+    },
+    {
+      "sector_name": "存储芯片",
+      "impact": -2,
+      "analysis": "美国管制升级，对存储芯片相关公司构成利空。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "海德股份",
+      "stock_code": "000567",
+      "impact": 4,
+      "analysis": "海南自贸港政策预期利好。"
+    },
+    {
+      "stock_name": "葫芦娃",
+      "stock_code": "300050",
+      "impact": 3,
+      "analysis": "宠物经济相关公司受益。"
+    },
+    {
+      "stock_name": "万润科技",
+      "stock_code": "300496",
+      "impact": -2,
+      "analysis": "美国管制升级，对相关公司构成利空。"
+    },
+    {
+      "stock_name": "联创电子",
+      "stock_code": "002036",
+      "impact": 3,
+      "analysis": "特斯拉FSD软件更新，相关公司受益。"
+    },
+    {
+      "stock_name": "太极实业",
+      "stock_code": "600193",
+      "impact": -2,
+      "analysis": "美国管制升级，对存储芯片相关公司构成利空。"
+    }
+  ],
+  "article_id": "d3cb3a2f262a4c7196034ee316440f8a",
+  "article_date": "2024-12-02",
+  "article_title": "2024.12.2市场逻辑精选"
+}

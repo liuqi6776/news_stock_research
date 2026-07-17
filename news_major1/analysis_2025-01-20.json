@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多领域利好，市场情绪提升",
+  "sectors": [
+    {
+      "sector_name": "核聚变",
+      "impact": 4,
+      "analysis": "技术突破，长期利好"
+    },
+    {
+      "sector_name": "AI+硬件",
+      "impact": 3,
+      "analysis": "AI应用爆发，硬件升级"
+    },
+    {
+      "sector_name": "汽车内饰件",
+      "impact": 2,
+      "analysis": "并购预期，短期利好"
+    },
+    {
+      "sector_name": "纺织服装",
+      "impact": -2,
+      "analysis": "出口关税不确定性"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "久盛电气",
+      "stock_code": "600070",
+      "impact": 4,
+      "analysis": "核聚变技术突破，长期利好"
+    },
+    {
+      "stock_name": "乐鑫科技",
+      "stock_code": "300003",
+      "impact": 3,
+      "analysis": "AI+硬件布局，短期利好"
+    },
+    {
+      "stock_name": "德尔股份",
+      "stock_code": "002631",
+      "impact": 2,
+      "analysis": "并购预期，短期利好"
+    },
+    {
+      "stock_name": "爱慕股份",
+      "stock_code": "002535",
+      "impact": -2,
+      "analysis": "出口关税不确定性"
+    }
+  ],
+  "article_id": "d8062b90838c4e49946102cb8f6c4fbd",
+  "article_date": "2025-01-20",
+  "article_title": "2025.1.20市场逻辑精选"
+}

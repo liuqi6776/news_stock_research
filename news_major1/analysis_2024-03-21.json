@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注个股风险。",
+  "sectors": [
+    {
+      "sector_name": "生猪养殖",
+      "impact": 4,
+      "analysis": "产能去化加速，市场回暖预期强烈。"
+    },
+    {
+      "sector_name": "低空经济",
+      "impact": 3,
+      "analysis": "政策催化，产业链受益。"
+    },
+    {
+      "sector_name": "预制菜",
+      "impact": 3,
+      "analysis": "行业规范出台，集中度提升。"
+    },
+    {
+      "sector_name": "氢能",
+      "impact": 3,
+      "analysis": "氢能列车试跑，产业链加速发展。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "傲农生物",
+      "stock_code": "002387",
+      "impact": 4,
+      "analysis": "重整有望利好行业。"
+    },
+    {
+      "stock_name": "华设集团",
+      "stock_code": "600771",
+      "impact": 3,
+      "analysis": "低空经济规划受益。"
+    },
+    {
+      "stock_name": "千味央厨",
+      "stock_code": "603517",
+      "impact": 3,
+      "analysis": "预制菜行业规范出台。"
+    },
+    {
+      "stock_name": "动力新科",
+      "stock_code": "600362",
+      "impact": 3,
+      "analysis": "氢能重卡布局。"
+    }
+  ],
+  "article_id": "93806bfca1e041f295d242d1e5e8239c",
+  "article_date": "2024-03-21",
+  "article_title": "2024.3.21市场逻辑精选"
+}

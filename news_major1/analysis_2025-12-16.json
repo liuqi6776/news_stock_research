@@ -1,0 +1,106 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极影响。",
+  "sectors": [
+    {
+      "sector_name": "光刻机",
+      "impact": 4,
+      "analysis": "国产光刻机进展顺利，行业有望迎来大规模扩产。"
+    },
+    {
+      "sector_name": "电科系",
+      "impact": 3,
+      "analysis": "电科蓝天IPO通过，电科系公司深度参与商业航天产业链。"
+    },
+    {
+      "sector_name": "钨",
+      "impact": 3,
+      "analysis": "钨价加速上涨，供需缺口推动钨价中枢稳步上行。"
+    },
+    {
+      "sector_name": "自动驾驶",
+      "impact": 2,
+      "analysis": "L3级自动驾驶车型准入许可发布，线控转向业务受益。"
+    },
+    {
+      "sector_name": "星间通信",
+      "impact": 2,
+      "analysis": "星间通信核心部件已签订单，市场空间巨大。"
+    },
+    {
+      "sector_name": "数字人民币",
+      "impact": 2,
+      "analysis": "数字人民币应用场景拓展，商业价值提升。"
+    },
+    {
+      "sector_name": "钙钛矿叠层组件",
+      "impact": 2,
+      "analysis": "赛伍技术布局钙钛矿叠层组件光转膜，客户包括SpaceX。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "茂莱光学",
+      "stock_code": "002637",
+      "impact": 4,
+      "analysis": "有望在国产替代的浪潮中加速突围。"
+    },
+    {
+      "stock_name": "波长光电",
+      "stock_code": "603896",
+      "impact": 4,
+      "analysis": "加速公司在光刻机核心零部件领域的战略布局与突破。"
+    },
+    {
+      "stock_name": "电科数字",
+      "stock_code": "688019",
+      "impact": 3,
+      "analysis": "子公司柏飞电子为国内高性能嵌入式计算机龙头。"
+    },
+    {
+      "stock_name": "电科网安",
+      "stock_code": "688023",
+      "impact": 3,
+      "analysis": "聚焦星间星地安全认证、数据全链路传输保护等关键技术突破。"
+    },
+    {
+      "stock_name": "中钨高新",
+      "stock_code": "000657",
+      "impact": 3,
+      "analysis": "为中国五矿旗下钨产业的运营管理平台。"
+    },
+    {
+      "stock_name": "厦门钨业",
+      "stock_code": "600549",
+      "impact": 3,
+      "analysis": "隶属福建稀土集团，钨钼业务占45%。"
+    },
+    {
+      "stock_name": "浙江世宝",
+      "stock_code": "002703",
+      "impact": 2,
+      "analysis": "线控转向业务受益L3级自动驾驶。"
+    },
+    {
+      "stock_name": "久之洋",
+      "stock_code": "300776",
+      "impact": 2,
+      "analysis": "星间通信核心部件已签订单。"
+    },
+    {
+      "stock_name": "翠微股份",
+      "stock_code": "600736",
+      "impact": 2,
+      "analysis": "‘第三方支付+商业’双主业驱动。"
+    },
+    {
+      "stock_name": "赛伍技术",
+      "stock_code": "603075",
+      "impact": 2,
+      "analysis": "布局钙钛矿叠层组件光转膜，客户包括SpaceX。"
+    }
+  ],
+  "article_id": "cd4981ecfccc413a8447e46e2b6bd945",
+  "article_date": "2025-12-16",
+  "article_title": "2025.12.16市场逻辑精选"
+}

@@ -1,0 +1,77 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极影响。",
+  "sectors": [
+    {
+      "sector_name": "智慧农业",
+      "impact": 3,
+      "analysis": "政策支持，技术应用场景拓展，板块利好。"
+    },
+    {
+      "sector_name": "AIDC备用电池",
+      "impact": 2,
+      "analysis": "锂电化趋势，铅酸短期波动，长期利好。"
+    },
+    {
+      "sector_name": "AI安全",
+      "impact": 3,
+      "analysis": "永信至诚产品发布，AI安全板块利好。"
+    },
+    {
+      "sector_name": "服务器电源",
+      "impact": 2,
+      "analysis": "威尔高服务器电源业务增长，板块利好。"
+    },
+    {
+      "sector_name": "智能算力",
+      "impact": 3,
+      "analysis": "上海智算生态合作伙伴签约，板块利好。"
+    },
+    {
+      "sector_name": "AI一体机",
+      "impact": 3,
+      "analysis": "AI化转型基础设施，市场空间大，板块利好。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "神农种业",
+      "stock_code": "000928",
+      "impact": 3,
+      "analysis": "智慧农业政策支持，个股利好。"
+    },
+    {
+      "stock_name": "雄韬股份",
+      "stock_code": "002037",
+      "impact": 2,
+      "analysis": "AIDC备用电池需求增长，个股利好。"
+    },
+    {
+      "stock_name": "永信至诚",
+      "stock_code": "603593",
+      "impact": 3,
+      "analysis": "AI安全产品发布，个股利好。"
+    },
+    {
+      "stock_name": "威尔高",
+      "stock_code": "002782",
+      "impact": 2,
+      "analysis": "服务器电源业务增长，个股利好。"
+    },
+    {
+      "stock_name": "云赛智联",
+      "stock_code": "600971",
+      "impact": 3,
+      "analysis": "上海智算生态合作伙伴，个股利好。"
+    },
+    {
+      "stock_name": "深信服",
+      "stock_code": "300456",
+      "impact": 3,
+      "analysis": "AI一体机市场空间大，个股利好。"
+    }
+  ],
+  "article_id": "0448e13c7dab4c59ab65c959b174c1b3",
+  "article_date": "2025-02-23",
+  "article_title": "2025.2.23市场逻辑精选"
+}

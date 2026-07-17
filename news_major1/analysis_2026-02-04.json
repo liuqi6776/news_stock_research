@@ -1,0 +1,97 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受政策预期和行业景气度提升影响，呈现利好趋势。",
+  "sectors": [
+    {
+      "sector_name": "建材",
+      "impact": 4,
+      "analysis": "政策支持房地产，建材行业景气度提升，利好板块。"
+    },
+    {
+      "sector_name": "化工",
+      "impact": 3,
+      "analysis": "溴素价格上涨，化工行业受益，利好板块。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "功率半导体涨价预期，半导体行业受益，利好板块。"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "光伏技术升级，行业景气度提升，利好板块。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "坚朗五金",
+      "stock_code": "002791",
+      "impact": 3,
+      "analysis": "业绩增长，新业务突破，利好个股。"
+    },
+    {
+      "stock_name": "兔宝宝",
+      "stock_code": "002043",
+      "impact": 3,
+      "analysis": "板材业务增长，转型全屋定制，利好个股。"
+    },
+    {
+      "stock_name": "科顺股份",
+      "stock_code": "002816",
+      "impact": 3,
+      "analysis": "防水材料价格上涨，业绩增长，利好个股。"
+    },
+    {
+      "stock_name": "山东海化",
+      "stock_code": "600773",
+      "impact": 3,
+      "analysis": "溴素产能优势，业绩增长，利好个股。"
+    },
+    {
+      "stock_name": "捷捷微电",
+      "stock_code": "300655",
+      "impact": 3,
+      "analysis": "功率半导体业务增长，业绩增长，利好个股。"
+    },
+    {
+      "stock_name": "华润微",
+      "stock_code": "002049",
+      "impact": 3,
+      "analysis": "功率 IDM 龙头，业绩增长，利好个股。"
+    },
+    {
+      "stock_name": "特发信息",
+      "stock_code": "000070",
+      "impact": 3,
+      "analysis": "光纤业务增长，技术优势，利好个股。"
+    },
+    {
+      "stock_name": "中船科技",
+      "stock_code": "600072",
+      "impact": 3,
+      "analysis": "控股股东资源整合，资产注入预期，利好个股。"
+    },
+    {
+      "stock_name": "中来股份",
+      "stock_code": "002620",
+      "impact": 3,
+      "analysis": "光伏无银化技术，业绩增长，利好个股。"
+    },
+    {
+      "stock_name": "协鑫集成",
+      "stock_code": "002506",
+      "impact": 3,
+      "analysis": "光伏技术升级，业绩增长，利好个股。"
+    },
+    {
+      "stock_name": "京城股份",
+      "stock_code": "300860",
+      "impact": 3,
+      "analysis": "储氢瓶业务优势，业绩增长，利好个股。"
+    }
+  ],
+  "article_id": "f75744300b38474dab4878712cc25649",
+  "article_date": "2026-02-04",
+  "article_title": "2026.2.4市场逻辑精选"
+}

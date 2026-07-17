@@ -1,0 +1,100 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股受积极因素影响",
+  "sectors": [
+    {
+      "sector_name": "央企国资",
+      "impact": 3,
+      "analysis": "央企改革预期提升"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 3,
+      "analysis": "疫情防控和中医药需求增长"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "深圳光伏政策推动"
+    },
+    {
+      "sector_name": "大飞机",
+      "impact": 3,
+      "analysis": "C919交付预期"
+    },
+    {
+      "sector_name": "数据要素",
+      "impact": 3,
+      "analysis": "数据确权逻辑关注"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 3,
+      "analysis": "政策支持房地产发展"
+    },
+    {
+      "sector_name": "消费",
+      "impact": 3,
+      "analysis": "消费复苏预期"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "电投产融",
+      "stock_code": "600027",
+      "impact": 3,
+      "analysis": "央企改革预期"
+    },
+    {
+      "stock_name": "五矿资本",
+      "stock_code": "600390",
+      "impact": 3,
+      "analysis": "央企改革预期"
+    },
+    {
+      "stock_name": "中油工程",
+      "stock_code": "601857",
+      "impact": 3,
+      "analysis": "央企改革预期"
+    },
+    {
+      "stock_name": "京东健康",
+      "stock_code": "1699.HK",
+      "impact": 3,
+      "analysis": "疫情防控需求增长"
+    },
+    {
+      "stock_name": "以岭药业",
+      "stock_code": "002603",
+      "impact": 3,
+      "analysis": "中医药需求增长"
+    },
+    {
+      "stock_name": "中装建设",
+      "stock_code": "002544",
+      "impact": 3,
+      "analysis": "深圳光伏政策"
+    },
+    {
+      "stock_name": "润贝航科",
+      "stock_code": "688389",
+      "impact": 3,
+      "analysis": "C919交付预期"
+    },
+    {
+      "stock_name": "万泰生物",
+      "stock_code": "603392",
+      "impact": 3,
+      "analysis": "疫苗行业迭代"
+    },
+    {
+      "stock_name": "阳光股份",
+      "stock_code": "000608",
+      "impact": 3,
+      "analysis": "房地产政策支持"
+    }
+  ],
+  "article_title": "12月6日盘前早参 热点事件关注",
+  "html_file": "72duk129e2.html",
+  "article_date": "2022-12-06"
+}

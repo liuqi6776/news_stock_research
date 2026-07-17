@@ -1,0 +1,44 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受积极事件驱动，整体偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "金融",
+      "impact": 4,
+      "analysis": "金融板块因国泰君安国际牌照升级及虚拟资产交易服务而受益。"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 3,
+      "analysis": "军工板块因阅兵展示新质力量及兵器装备集团分立而受到关注。"
+    },
+    {
+      "sector_name": "锂电池",
+      "impact": 3,
+      "analysis": "锂电池板块因固态电池新技术骨架膜市场前景广阔而受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "国泰君安国际",
+      "stock_code": "未提供",
+      "impact": 5,
+      "analysis": "国泰君安国际牌照升级，股价大涨，对相关金融板块个股有正面影响。"
+    },
+    {
+      "stock_name": "天利科技",
+      "stock_code": "未提供",
+      "impact": 3,
+      "analysis": "天利科技作为互联网金融核心公司，受牌照升级利好影响。"
+    },
+    {
+      "stock_name": "星源材质",
+      "stock_code": "未提供",
+      "impact": 4,
+      "analysis": "星源材质作为固态电池骨架膜核心公司，受市场前景利好影响。"
+    }
+  ],
+  "article_id": "7fc90f16d648449582403d7b6dfa8623",
+  "article_date": "2025-06-25",
+  "article_title": "2025.6.25市场逻辑精选"
+}

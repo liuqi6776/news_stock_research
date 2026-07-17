@@ -1,0 +1,72 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注具体板块和个股表现。",
+  "sectors": [
+    {
+      "sector_name": "AI视频",
+      "impact": 4,
+      "analysis": "AI视频技术进步，相关公司受益"
+    },
+    {
+      "sector_name": "减肥药",
+      "impact": 3,
+      "analysis": "减肥药市场增长，相关公司受益"
+    },
+    {
+      "sector_name": "AI芯片",
+      "impact": 3,
+      "analysis": "ASIC芯片市场潜力大，相关公司受益"
+    },
+    {
+      "sector_name": "教育培训",
+      "impact": 2,
+      "analysis": "教育培训政策利好，相关公司受益"
+    },
+    {
+      "sector_name": "免税",
+      "impact": 2,
+      "analysis": "免税购物增长，相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "万兴科技",
+      "stock_code": "300624",
+      "impact": 4,
+      "analysis": "AI视频技术进步，公司受益"
+    },
+    {
+      "stock_name": "昆仑万维",
+      "stock_code": "300418",
+      "impact": 4,
+      "analysis": "AI视频技术进步，公司受益"
+    },
+    {
+      "stock_name": "华东医药",
+      "stock_code": "000963",
+      "impact": 3,
+      "analysis": "减肥药市场增长，公司受益"
+    },
+    {
+      "stock_name": "恒瑞医药",
+      "stock_code": "600276",
+      "impact": 3,
+      "analysis": "减肥药市场增长，公司受益"
+    },
+    {
+      "stock_name": "智微智能",
+      "stock_code": "300705",
+      "impact": 3,
+      "analysis": "ASIC芯片市场潜力大，公司受益"
+    },
+    {
+      "stock_name": "雷神科技",
+      "stock_code": "002296",
+      "impact": 3,
+      "analysis": "ASIC芯片市场潜力大，公司受益"
+    }
+  ],
+  "article_id": "8fc2a2d4face4d359d4dac24350e3c46",
+  "article_date": "2024-02-18",
+  "article_title": "2024.2.18市场逻辑精选"
+}

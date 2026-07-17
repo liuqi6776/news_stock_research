@@ -1,0 +1,66 @@
+{
+  "market_impact": 4,
+  "market_analysis": "化工板块受多因素利好，市场情绪积极。",
+  "sectors": [
+    {
+      "sector_name": "化工",
+      "impact": 4,
+      "analysis": "产品价格上涨，龙头企业受益"
+    },
+    {
+      "sector_name": "卫星通信",
+      "impact": 3,
+      "analysis": "中国电信卫星业务发展，相关公司受益"
+    },
+    {
+      "sector_name": "农药",
+      "impact": 3,
+      "analysis": "反倾销调查，行业受益"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 2,
+      "analysis": "商汤科技合作，行业前景看好"
+    },
+    {
+      "sector_name": "自动驾驶",
+      "impact": 2,
+      "analysis": "行业融资利好，技术进步"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "百合花",
+      "stock_code": "600827",
+      "impact": 4,
+      "analysis": "有机染料价格上涨，公司受益"
+    },
+    {
+      "stock_name": "联合化学",
+      "stock_code": "600052",
+      "impact": 4,
+      "analysis": "有机染料价格上涨，公司受益"
+    },
+    {
+      "stock_name": "华力创通",
+      "stock_code": "300045",
+      "impact": 3,
+      "analysis": "卫星通信业务发展，公司受益"
+    },
+    {
+      "stock_name": "震有科技",
+      "stock_code": "300576",
+      "impact": 3,
+      "analysis": "卫星互联网业务拓展，公司受益"
+    },
+    {
+      "stock_name": "沃尔核材",
+      "stock_code": "002130",
+      "impact": 3,
+      "analysis": "产能增加，毛利率提升，公司受益"
+    }
+  ],
+  "article_id": "6b199c68f7894dcf8c8d616efdd8d3d1",
+  "article_date": "2024-05-07",
+  "article_title": "2024.5.7市场逻辑精选"
+}

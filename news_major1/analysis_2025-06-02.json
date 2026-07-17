@@ -1,0 +1,68 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受利好消息推动，无人机和星链相关板块表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "无人机",
+      "impact": 4,
+      "analysis": "军用无人机需求增加，产业链受益"
+    },
+    {
+      "sector_name": "卫星通信",
+      "impact": 3,
+      "analysis": "星链覆盖全球，相关公司受益"
+    },
+    {
+      "sector_name": "铜",
+      "impact": 2,
+      "analysis": "铜价上涨，相关企业盈利能力增强"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "永悦科技",
+      "stock_code": "300482",
+      "impact": 3,
+      "analysis": "无人机生产线调试完毕，订单有望增加"
+    },
+    {
+      "stock_name": "海格通信",
+      "stock_code": "002465",
+      "impact": 3,
+      "analysis": "参与“九天”无人机生产，核心部件自主可控"
+    },
+    {
+      "stock_name": "普天科技",
+      "stock_code": "600641",
+      "impact": 3,
+      "analysis": "布局卫星通信网络建设，受益星链发展"
+    },
+    {
+      "stock_name": "洛阳钼业",
+      "stock_code": "603993",
+      "impact": 2,
+      "analysis": "铜业务占比高，铜价上涨受益"
+    },
+    {
+      "stock_name": "申科股份",
+      "stock_code": "002383",
+      "impact": 3,
+      "analysis": "控制权变更，新股东背景实力雄厚"
+    },
+    {
+      "stock_name": "南网能源",
+      "stock_code": "600869",
+      "impact": 3,
+      "analysis": "五省电改技术支持，业务有望增长"
+    },
+    {
+      "stock_name": "万邦德",
+      "stock_code": "002082",
+      "impact": 3,
+      "analysis": "石杉碱甲创新药龙头，市场前景广阔"
+    }
+  ],
+  "article_id": "90381c9e67cb461e838b25388d5fa9d2",
+  "article_date": "2025-06-02",
+  "article_title": "2025.6.2市场逻辑精选"
+}

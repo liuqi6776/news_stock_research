@@ -1,0 +1,67 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "人形机器人",
+      "impact": 4,
+      "analysis": "技术进步和行业应用前景看好"
+    },
+    {
+      "sector_name": "中国-中亚峰会",
+      "impact": 3,
+      "analysis": "基础设施建设投资增加"
+    },
+    {
+      "sector_name": "军贸",
+      "impact": 3,
+      "analysis": "军贸订单增加，相关企业受益"
+    },
+    {
+      "sector_name": "太空计算",
+      "impact": 3,
+      "analysis": "卫星行业新增量，技术发展推动"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "拓斯达",
+      "stock_code": "002383",
+      "impact": 4,
+      "analysis": "华为机器人供应链合作伙伴"
+    },
+    {
+      "stock_name": "亿嘉和",
+      "stock_code": "603666",
+      "impact": 4,
+      "analysis": "华为云合作，布局具身智能"
+    },
+    {
+      "stock_name": "长盛轴承",
+      "stock_code": "603878",
+      "impact": 3,
+      "analysis": "人形机器人丝杠业务放量"
+    },
+    {
+      "stock_name": "中欣氟材",
+      "stock_code": "002915",
+      "impact": 3,
+      "analysis": "特斯拉Optimus机器人材料供应商"
+    },
+    {
+      "stock_name": "祥鑫科技",
+      "stock_code": "002965",
+      "impact": 3,
+      "analysis": "华为机器人相关公司"
+    },
+    {
+      "stock_name": "南凌科技",
+      "stock_code": "300293",
+      "impact": 3,
+      "analysis": "央国企及AI网络安全框架布局"
+    }
+  ],
+  "article_id": "3994c2f816c647cdbc502b7d448944d8",
+  "article_date": "2025-06-08",
+  "article_title": "2025.6.8市场逻辑精选"
+}

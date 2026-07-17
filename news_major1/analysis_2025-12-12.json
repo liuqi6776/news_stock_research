@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，利好因素较多。",
+  "sectors": [
+    {
+      "sector_name": "航天航空",
+      "impact": 4,
+      "analysis": "商业航天、太空算力等概念股受提振"
+    },
+    {
+      "sector_name": "有色金属",
+      "impact": 3,
+      "analysis": "金属普涨，白银、铜等价格创新高"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "OpenAI发布新模型，AI应用相关股受关注"
+    },
+    {
+      "sector_name": "消费",
+      "impact": 2,
+      "analysis": "消费板块受政策支持，东百集团等个股活跃"
+    },
+    {
+      "sector_name": "燃气",
+      "impact": 2,
+      "analysis": "寒潮来袭，燃气需求增加"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "再升科技",
+      "stock_code": "300588",
+      "impact": 4,
+      "analysis": "商业航天概念，连续涨停"
+    },
+    {
+      "stock_name": "东百集团",
+      "stock_code": "600693",
+      "impact": 3,
+      "analysis": "消费板块，受政策支持"
+    },
+    {
+      "stock_name": "华菱线缆",
+      "stock_code": "002404",
+      "impact": 3,
+      "analysis": "商业航天-线缆概念，一字板涨停"
+    },
+    {
+      "stock_name": "安妮股份",
+      "stock_code": "002235",
+      "impact": 3,
+      "analysis": "控制权变更，股价活跃"
+    },
+    {
+      "stock_name": "四川金顶",
+      "stock_code": "000678",
+      "impact": 3,
+      "analysis": "太空算力概念，连续涨停"
+    }
+  ],
+  "article_title": "12月12日盘前纪要",
+  "html_file": "10zp7mppfn6.html",
+  "article_date": "2025-12-12"
+}

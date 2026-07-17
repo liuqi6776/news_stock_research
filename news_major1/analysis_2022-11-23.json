@@ -1,0 +1,44 @@
+{
+  "market_impact": 3,
+  "market_analysis": "光伏、FPGA、锂矿等板块受利好消息推动，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "光伏板块",
+      "impact": 4,
+      "analysis": "硅料价格拐点，辅材环节受益，行业增长确定。"
+    },
+    {
+      "sector_name": "FPGA板块",
+      "impact": 3,
+      "analysis": "AMD涨价，行业高景气，国产替代加速。"
+    },
+    {
+      "sector_name": "锂矿板块",
+      "impact": 3,
+      "analysis": "斯诺威股权拍卖，特大型锂矿资源受关注。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "福斯特",
+      "stock_code": "603806",
+      "impact": 4,
+      "analysis": "光伏辅材核心公司，受益行业增长。"
+    },
+    {
+      "stock_name": "复旦微电",
+      "stock_code": "688385",
+      "impact": 3,
+      "analysis": "FPGA行业龙头，产品涨价，业绩提升。"
+    },
+    {
+      "stock_name": "盛新锂能",
+      "stock_code": "002240",
+      "impact": 3,
+      "analysis": "参与斯诺威股权拍卖，锂矿资源受关注。"
+    }
+  ],
+  "article_id": "f2c2cf779e9f49de8302c6173c2dac5b",
+  "article_date": "2022-11-23",
+  "article_title": "2022.11.23市场逻辑精选"
+}

@@ -1,0 +1,84 @@
+{
+  "market_impact": 2,
+  "market_analysis": "市场情绪偏积极，多板块受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "稳定币",
+      "impact": 3,
+      "analysis": "蚂蚁集团申请稳定币牌照，相关概念股受益"
+    },
+    {
+      "sector_name": "体育经济",
+      "impact": 2,
+      "analysis": "川超、上超联赛即将启动，相关概念股受关注"
+    },
+    {
+      "sector_name": "固态电池",
+      "impact": 2,
+      "analysis": "长安汽车宣布固态电池量产，相关概念股受益"
+    },
+    {
+      "sector_name": "创新药",
+      "impact": 2,
+      "analysis": "创新药出海及国家药监局批准新药，相关概念股受益"
+    },
+    {
+      "sector_name": "稀土",
+      "impact": 2,
+      "analysis": "商务部批准稀土相关物项出口许可，相关概念股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "安妮股份",
+      "stock_code": "002235",
+      "impact": 3,
+      "analysis": "蚂蚁集团申请稳定币牌照，公司受益"
+    },
+    {
+      "stock_name": "朗新集团",
+      "stock_code": "300118",
+      "impact": 3,
+      "analysis": "蚂蚁集团申请稳定币牌照，公司受益"
+    },
+    {
+      "stock_name": "川网传媒",
+      "stock_code": "600894",
+      "impact": 2,
+      "analysis": "川超联赛即将启动，公司受益"
+    },
+    {
+      "stock_name": "天府文旅",
+      "stock_code": "603633",
+      "impact": 2,
+      "analysis": "川超联赛即将启动，公司受益"
+    },
+    {
+      "stock_name": "金龙羽",
+      "stock_code": "002223",
+      "impact": 2,
+      "analysis": "长安汽车宣布固态电池量产，公司受益"
+    },
+    {
+      "stock_name": "龙蟠科技",
+      "stock_code": "603598",
+      "impact": 2,
+      "analysis": "长安汽车宣布固态电池量产，公司受益"
+    },
+    {
+      "stock_name": "易明医药",
+      "stock_code": "002826",
+      "impact": 3,
+      "analysis": "创新药出海及国家药监局批准新药，公司受益"
+    },
+    {
+      "stock_name": "北矿科技",
+      "stock_code": "600970",
+      "impact": 3,
+      "analysis": "商务部批准稀土相关物项出口许可，公司受益"
+    }
+  ],
+  "article_title": "6月13日盘前纪要",
+  "html_file": "1znu3cssh79.html",
+  "article_date": "2025-06-13"
+}

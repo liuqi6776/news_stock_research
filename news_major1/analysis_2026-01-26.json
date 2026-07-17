@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "地缘政治紧张及AI红包大战推动相关板块上涨。",
+  "sectors": [
+    {
+      "sector_name": "石油",
+      "impact": 4,
+      "analysis": "地缘政治紧张推动油价上涨，利好石油板块。"
+    },
+    {
+      "sector_name": "AIDC",
+      "impact": 3,
+      "analysis": "AI红包大战推动AIDC需求，利好AIDC板块。"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 2,
+      "analysis": "尼帕病毒疫情推动医药检测需求，利好医药板块。"
+    },
+    {
+      "sector_name": "光纤光缆",
+      "impact": 3,
+      "analysis": "光纤涨价预期利好光纤光缆板块。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "和顺石油",
+      "stock_code": "600028",
+      "impact": 4,
+      "analysis": "受益于石油价格上涨。"
+    },
+    {
+      "stock_name": "奥飞数据",
+      "stock_code": "300385",
+      "impact": 3,
+      "analysis": "受益于AI红包大战推动的AIDC需求。"
+    },
+    {
+      "stock_name": "之江生物",
+      "stock_code": "300052",
+      "impact": 2,
+      "analysis": "受益于尼帕病毒疫情推动的医药检测需求。"
+    },
+    {
+      "stock_name": "长飞光纤",
+      "stock_code": "600969",
+      "impact": 3,
+      "analysis": "受益于光纤涨价预期。"
+    }
+  ],
+  "article_id": "db018bc25ea24977a091c70f858c1c71",
+  "article_date": "2026-01-26",
+  "article_title": "2026.1.26市场逻辑精选"
+}

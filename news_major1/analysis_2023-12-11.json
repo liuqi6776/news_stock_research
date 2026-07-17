@@ -1,0 +1,80 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多模态AI和煤炭板块利好，XR设备投资机会，部分个股受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "多模态AI",
+      "impact": 4,
+      "analysis": "技术发展推动，相关公司受益"
+    },
+    {
+      "sector_name": "煤炭",
+      "impact": 3,
+      "analysis": "寒潮影响需求，价格上涨"
+    },
+    {
+      "sector_name": "XR设备",
+      "impact": 2,
+      "analysis": "苹果Vision Pro发售临近，产业链受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "网达软件",
+      "stock_code": "300992",
+      "impact": 4,
+      "analysis": "AI抠图嵌入视频图文，多模态技术"
+    },
+    {
+      "stock_name": "苏州科达",
+      "stock_code": "600510",
+      "impact": 3,
+      "analysis": "多模态大模型初具雏形"
+    },
+    {
+      "stock_name": "声迅股份",
+      "stock_code": "300538",
+      "impact": 3,
+      "analysis": "多模态算法有长期积累"
+    },
+    {
+      "stock_name": "昆仑万维",
+      "stock_code": "300418",
+      "impact": 3,
+      "analysis": "多模态能力突出"
+    },
+    {
+      "stock_name": "万兴科技",
+      "stock_code": "300624",
+      "impact": 3,
+      "analysis": "天幕多媒体大模型"
+    },
+    {
+      "stock_name": "中国神华",
+      "stock_code": "601088",
+      "impact": 3,
+      "analysis": "稳健高分红，煤炭行业"
+    },
+    {
+      "stock_name": "广汇能源",
+      "stock_code": "600595",
+      "impact": 3,
+      "analysis": "业绩弹性，煤炭行业"
+    },
+    {
+      "stock_name": "杰普特",
+      "stock_code": "002837",
+      "impact": 3,
+      "analysis": "苹果产业链，镜片环节"
+    },
+    {
+      "stock_name": "立讯精密",
+      "stock_code": "002475",
+      "impact": 3,
+      "analysis": "苹果产业链，整机组装"
+    }
+  ],
+  "article_id": "5329e47c2aa244899afe70428e3bc86c",
+  "article_date": "2023-12-11",
+  "article_title": "2023.12.11市场逻辑精选"
+}

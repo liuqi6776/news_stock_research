@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，利好消息较多。",
+  "sectors": [
+    {
+      "sector_name": "电力电网",
+      "impact": 4,
+      "analysis": "算电协同政策利好，相关个股受益"
+    },
+    {
+      "sector_name": "煤炭",
+      "impact": 3,
+      "analysis": "中东冲突，煤炭价格可能上涨"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "光伏设备需求增加，相关个股受益"
+    },
+    {
+      "sector_name": "储能",
+      "impact": 3,
+      "analysis": "储能需求增加，相关个股受益"
+    },
+    {
+      "sector_name": "芯片",
+      "impact": 3,
+      "analysis": "芯片制造中心建设，相关个股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "华电辽能",
+      "stock_code": "600726",
+      "impact": 4,
+      "analysis": "算电协同政策利好"
+    },
+    {
+      "stock_name": "中利集团",
+      "stock_code": "002309",
+      "impact": 4,
+      "analysis": "光伏设备需求增加"
+    },
+    {
+      "stock_name": "顺灏股份",
+      "stock_code": "002565",
+      "impact": 3,
+      "analysis": "太空算力概念"
+    },
+    {
+      "stock_name": "首开股份",
+      "stock_code": "000628",
+      "impact": 3,
+      "analysis": "宇树机器人IPO"
+    },
+    {
+      "stock_name": "韩建河山",
+      "stock_code": "60073",
+      "impact": 3,
+      "analysis": "雄安新区建设"
+    }
+  ],
+  "article_title": "3月24日盘前纪要",
+  "html_file": "jnmujcsez8.html",
+  "article_date": "2026-03-24"
+}

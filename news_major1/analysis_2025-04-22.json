@@ -1,0 +1,118 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "人民币国际化",
+      "impact": 4,
+      "analysis": "利好，支付和数字货币相关公司受益"
+    },
+    {
+      "sector_name": "旅游",
+      "impact": 3,
+      "analysis": "利好，重庆荣昌旅游热度提升"
+    },
+    {
+      "sector_name": "消费",
+      "impact": 3,
+      "analysis": "利好，陕西释放内需潜能"
+    },
+    {
+      "sector_name": "化工",
+      "impact": 3,
+      "analysis": "利好，烯草酮和金属铬价格上涨"
+    },
+    {
+      "sector_name": "跨境电商",
+      "impact": 3,
+      "analysis": "利好，福建保税仓政策支持"
+    },
+    {
+      "sector_name": "云计算",
+      "impact": 3,
+      "analysis": "利好，新晨科技收购云计算公司"
+    },
+    {
+      "sector_name": "光通信+AI算力",
+      "impact": 3,
+      "analysis": "利好，致尚科技收购相关公司"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "海联金汇",
+      "stock_code": "002537",
+      "impact": 4,
+      "analysis": "利好，拥有MSO牌照"
+    },
+    {
+      "stock_name": "拉卡拉",
+      "stock_code": "300560",
+      "impact": 4,
+      "analysis": "利好，拥有第三方支付牌照"
+    },
+    {
+      "stock_name": "优博讯",
+      "stock_code": "300383",
+      "impact": 4,
+      "analysis": "利好，长期配合央行数字货币研究所"
+    },
+    {
+      "stock_name": "新晨科技",
+      "stock_code": "002695",
+      "impact": 4,
+      "analysis": "利好，参与mBridge项目"
+    },
+    {
+      "stock_name": "青岛金王",
+      "stock_code": "000598",
+      "impact": 3,
+      "analysis": "利好，首批接入CIPS标准收发器"
+    },
+    {
+      "stock_name": "三峡旅游",
+      "stock_code": "600756",
+      "impact": 3,
+      "analysis": "利好，主营旅游业务"
+    },
+    {
+      "stock_name": "美邦股份",
+      "stock_code": "600827",
+      "impact": 3,
+      "analysis": "利好，陕西本地农药股"
+    },
+    {
+      "stock_name": "先达股份",
+      "stock_code": "002456",
+      "impact": 4,
+      "analysis": "利好，烯草酮产能最大"
+    },
+    {
+      "stock_name": "振华股份",
+      "stock_code": "600240",
+      "impact": 4,
+      "analysis": "利好，直接受益金属铬涨价"
+    },
+    {
+      "stock_name": "三木集团",
+      "stock_code": "002743",
+      "impact": 3,
+      "analysis": "利好，福建保税仓核心股"
+    },
+    {
+      "stock_name": "新晨科技",
+      "stock_code": "002695",
+      "impact": 4,
+      "analysis": "利好，拟收购云计算公司"
+    },
+    {
+      "stock_name": "致尚科技",
+      "stock_code": "300816",
+      "impact": 4,
+      "analysis": "利好，拟收购光通信+AI算力公司"
+    }
+  ],
+  "article_id": "ee2d4982b0cd4e1abe635b33f30fe2bd",
+  "article_date": "2025-04-22",
+  "article_title": "2025.4.22市场逻辑精选"
+}

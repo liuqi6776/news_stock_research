@@ -1,0 +1,44 @@
+{
+  "market_impact": 3,
+  "market_analysis": "光伏、MR、触觉传感器等板块受利好消息推动，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "光伏",
+      "impact": 4,
+      "analysis": "隆基HBC电池创新纪录，推动行业技术进步。"
+    },
+    {
+      "sector_name": "MR",
+      "impact": 3,
+      "analysis": "苹果可穿戴设备成为明年业务重点，相关设备和服务公司受益。"
+    },
+    {
+      "sector_name": "触觉传感器",
+      "impact": 3,
+      "analysis": "特斯拉Optimus-Gen 2发布，触觉传感器成为核心增量。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "隆基绿能",
+      "stock_code": "601012",
+      "impact": 4,
+      "analysis": "HBC电池创新纪录，推动公司股价上涨。"
+    },
+    {
+      "stock_name": "杰普特",
+      "stock_code": "002765",
+      "impact": 3,
+      "analysis": "苹果MR设备镜片检测设备供应商，股价受益。"
+    },
+    {
+      "stock_name": "汉威科技",
+      "stock_code": "300007",
+      "impact": 3,
+      "analysis": "电子皮肤技术应用于机器人领域，股价受益。"
+    }
+  ],
+  "article_id": "6851aa55c22e49e29f343c647978103b",
+  "article_date": "2023-12-19",
+  "article_title": "2023.12.19市场逻辑精选"
+}

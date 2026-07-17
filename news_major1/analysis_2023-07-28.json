@@ -1,0 +1,71 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股受积极事件影响",
+  "sectors": [
+    {
+      "sector_name": "存储芯片",
+      "impact": 4,
+      "analysis": "海外存储公司股价大涨，利好相关个股"
+    },
+    {
+      "sector_name": "氢能源",
+      "impact": 3,
+      "analysis": "德国通过国家氢能战略，利好氢能源板块"
+    },
+    {
+      "sector_name": "数据确权",
+      "impact": 3,
+      "analysis": "人民链通过网信部门审核，利好数据确权相关个股"
+    },
+    {
+      "sector_name": "水利",
+      "impact": 2,
+      "analysis": "水利部发布红色山洪灾害气象预警，利好水利板块"
+    },
+    {
+      "sector_name": "牛黄",
+      "impact": 3,
+      "analysis": "牛黄厂商产能不足，利好牛黄相关个股"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 2,
+      "analysis": "住建部落实降低首套住房首付比例等政策，利好房地产板块"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "海力士",
+      "stock_code": "000676",
+      "impact": 4,
+      "analysis": "Q2收入超预期，利好"
+    },
+    {
+      "stock_name": "美光",
+      "stock_code": "000950",
+      "impact": 4,
+      "analysis": "推出业界首款8层24GB HBM3 Gen2内存芯片，利好"
+    },
+    {
+      "stock_name": "京城股份",
+      "stock_code": "000695",
+      "impact": 3,
+      "analysis": "氢能源需求量增加，利好"
+    },
+    {
+      "stock_name": "健民集团",
+      "stock_code": "600989",
+      "impact": 3,
+      "analysis": "牛黄市场需求增加，利好"
+    },
+    {
+      "stock_name": "锦和商管",
+      "stock_code": "600824",
+      "impact": 2,
+      "analysis": "房地产政策利好，利好"
+    }
+  ],
+  "article_title": "7月28日 盘前热点事件关注",
+  "html_file": "cbqgftmqn3.html",
+  "article_date": "2023-07-28"
+}

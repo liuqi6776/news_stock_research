@@ -1,0 +1,77 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多方面利好消息，市场情绪偏乐观",
+  "sectors": [
+    {
+      "sector_name": "一带一路",
+      "impact": 4,
+      "analysis": "中欧班列增长，沿线国家航线增加"
+    },
+    {
+      "sector_name": "海缆",
+      "impact": 3,
+      "analysis": "欧洲海缆产能吃紧，国内厂商出口机会增加"
+    },
+    {
+      "sector_name": "风电光伏",
+      "impact": 3,
+      "analysis": "国家能源局推动大型风电光伏基地建设"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 2,
+      "analysis": "郑州力推停工楼盘复工"
+    },
+    {
+      "sector_name": "锂电池",
+      "impact": 3,
+      "analysis": "宁德时代麒麟电池量产出货时间提前"
+    },
+    {
+      "sector_name": "旅游",
+      "impact": 2,
+      "analysis": "疫情后旅游行业恢复"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中国能建",
+      "stock_code": "601800",
+      "impact": 4,
+      "analysis": "一带一路概念，产能增加"
+    },
+    {
+      "stock_name": "东方电缆",
+      "stock_code": "600873",
+      "impact": 3,
+      "analysis": "海缆需求增加"
+    },
+    {
+      "stock_name": "大金重工",
+      "stock_code": "002487",
+      "impact": 3,
+      "analysis": "风电光伏建设推动"
+    },
+    {
+      "stock_name": "栖霞建设",
+      "stock_code": "600533",
+      "impact": 2,
+      "analysis": "房地产纾困"
+    },
+    {
+      "stock_name": "宁德时代",
+      "stock_code": "300750",
+      "impact": 3,
+      "analysis": "麒麟电池量产出货时间提前"
+    },
+    {
+      "stock_name": "西域旅游",
+      "stock_code": "600537",
+      "impact": 2,
+      "analysis": "疫情后旅游行业恢复"
+    }
+  ],
+  "article_title": "9月8日 盘前早8点 股市要闻关注",
+  "html_file": "dj33lc4le9.html",
+  "article_date": "2022-09-08"
+}

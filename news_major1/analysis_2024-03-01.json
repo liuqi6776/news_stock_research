@@ -1,0 +1,77 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪提升",
+  "sectors": [
+    {
+      "sector_name": "半导体",
+      "impact": 4,
+      "analysis": "AMD涨超9%，相关概念股受益"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "组件企业试探性涨价，板块受益"
+    },
+    {
+      "sector_name": "充电桩",
+      "impact": 3,
+      "analysis": "新增公路服务区充电桩，板块受益"
+    },
+    {
+      "sector_name": "金融",
+      "impact": 3,
+      "analysis": "两大头部券商联合出手，板块受益"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 2,
+      "analysis": "建立融资协调机制，板块情绪提升"
+    },
+    {
+      "sector_name": "氢能源",
+      "impact": 2,
+      "analysis": "指导意见推动氢能产业发展"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "东方精工",
+      "stock_code": "002611",
+      "impact": 4,
+      "analysis": "新质生产力概念股"
+    },
+    {
+      "stock_name": "通富微电",
+      "stock_code": "002156",
+      "impact": 4,
+      "analysis": "AMD概念股"
+    },
+    {
+      "stock_name": "宇晶股份",
+      "stock_code": "002970",
+      "impact": 3,
+      "analysis": "光伏组件企业"
+    },
+    {
+      "stock_name": "双杰电气",
+      "stock_code": "002354",
+      "impact": 3,
+      "analysis": "充电桩概念股"
+    },
+    {
+      "stock_name": "首创证券",
+      "stock_code": "601111",
+      "impact": 3,
+      "analysis": "金融板块受益股"
+    },
+    {
+      "stock_name": "迪马股份",
+      "stock_code": "600565",
+      "impact": 2,
+      "analysis": "房地产板块受益股"
+    }
+  ],
+  "article_title": "3月1日 周五盘前早报 热点事件关注",
+  "html_file": "7q7qknuz9t.html",
+  "article_date": "2024-03-01"
+}

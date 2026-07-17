@@ -1,0 +1,88 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "新能源汽车",
+      "impact": 4,
+      "analysis": "特斯拉连涨，政策支持，板块受益"
+    },
+    {
+      "sector_name": "充电桩",
+      "impact": 3,
+      "analysis": "销量增长，政策支持，板块受益"
+    },
+    {
+      "sector_name": "锂电池",
+      "impact": 3,
+      "analysis": "销量增长，技术进步，板块受益"
+    },
+    {
+      "sector_name": "空间计算",
+      "impact": 3,
+      "analysis": "概念新，市场关注，板块受益"
+    },
+    {
+      "sector_name": "碳中和",
+      "impact": 3,
+      "analysis": "碳博会召开，概念活跃，板块受益"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "政策支持，行业前景看好，板块受益"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "政策支持，技术进步，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "特斯拉",
+      "stock_code": "TSLA",
+      "impact": 4,
+      "analysis": "股价连涨，行业龙头，个股受益"
+    },
+    {
+      "stock_name": "通合科技",
+      "stock_code": "300407",
+      "impact": 3,
+      "analysis": "充电桩概念，销量增长，个股受益"
+    },
+    {
+      "stock_name": "英可瑞",
+      "stock_code": "300610",
+      "impact": 3,
+      "analysis": "充电桩概念，销量增长，个股受益"
+    },
+    {
+      "stock_name": "融捷股份",
+      "stock_code": "002192",
+      "impact": 3,
+      "analysis": "锂电池概念，技术进步，个股受益"
+    },
+    {
+      "stock_name": "永兴材料",
+      "stock_code": "002145",
+      "impact": 3,
+      "analysis": "锂电池概念，技术进步，个股受益"
+    },
+    {
+      "stock_name": "时空科技",
+      "stock_code": "300596",
+      "impact": 3,
+      "analysis": "空间计算概念，市场关注，个股受益"
+    },
+    {
+      "stock_name": "福建金森",
+      "stock_code": "002679",
+      "impact": 3,
+      "analysis": "碳中和概念，碳博会召开，个股受益"
+    }
+  ],
+  "article_title": "6月9日 盘前热点事件关注",
+  "html_file": "c9bwle5tzm.html",
+  "article_date": "2023-06-09"
+}

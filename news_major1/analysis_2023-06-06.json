@@ -1,0 +1,101 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "算力",
+      "impact": 4,
+      "analysis": "算力平台发布，相关企业受益"
+    },
+    {
+      "sector_name": "液冷技术",
+      "impact": 3,
+      "analysis": "电信运营商液冷技术白皮书发布，产业链受益"
+    },
+    {
+      "sector_name": "AI 导游",
+      "impact": 2,
+      "analysis": "AI 导游上线，相关企业受益"
+    },
+    {
+      "sector_name": "消费电子",
+      "impact": 3,
+      "analysis": "苹果发布MR头显，相关企业受益"
+    },
+    {
+      "sector_name": "电力",
+      "impact": 2,
+      "analysis": "用电高峰提前，相关企业受益"
+    },
+    {
+      "sector_name": "电子后视镜",
+      "impact": 2,
+      "analysis": "新国标实施，相关企业受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "利通电子",
+      "stock_code": "002130",
+      "impact": 4,
+      "analysis": "算力平台发布，公司受益"
+    },
+    {
+      "stock_name": "鸿博股份",
+      "stock_code": "002229",
+      "impact": 4,
+      "analysis": "算力平台发布，公司受益"
+    },
+    {
+      "stock_name": "浪潮信息",
+      "stock_code": "000977",
+      "impact": 4,
+      "analysis": "算力平台发布，公司受益"
+    },
+    {
+      "stock_name": "中科曙光",
+      "stock_code": "603019",
+      "impact": 4,
+      "analysis": "算力平台发布，公司受益"
+    },
+    {
+      "stock_name": "工业富联",
+      "stock_code": "601138",
+      "impact": 4,
+      "analysis": "算力平台发布，公司受益"
+    },
+    {
+      "stock_name": "寒武纪",
+      "stock_code": "688256",
+      "impact": 4,
+      "analysis": "算力平台发布，公司受益"
+    },
+    {
+      "stock_name": "曙光数创",
+      "stock_code": "300545",
+      "impact": 3,
+      "analysis": "电信运营商液冷技术白皮书发布，公司受益"
+    },
+    {
+      "stock_name": "高澜股份",
+      "stock_code": "300410",
+      "impact": 3,
+      "analysis": "电信运营商液冷技术白皮书发布，公司受益"
+    },
+    {
+      "stock_name": "申菱环境",
+      "stock_code": "002628",
+      "impact": 3,
+      "analysis": "电信运营商液冷技术白皮书发布，公司受益"
+    },
+    {
+      "stock_name": "英维克",
+      "stock_code": "002837",
+      "impact": 3,
+      "analysis": "电信运营商液冷技术白皮书发布，公司受益"
+    }
+  ],
+  "article_title": "6月6日 盘前热点事件关注",
+  "html_file": "2d7g4rpxwu.html",
+  "article_date": "2023-06-06"
+}

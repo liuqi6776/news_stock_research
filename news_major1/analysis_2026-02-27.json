@@ -1,0 +1,88 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，关注两会主题和AI相关板块。",
+  "sectors": [
+    {
+      "sector_name": "磷化工",
+      "impact": 3,
+      "analysis": "澄星股份、金正大等受关注"
+    },
+    {
+      "sector_name": "磷化铟",
+      "impact": 3,
+      "analysis": "云南锗业等受关注"
+    },
+    {
+      "sector_name": "电力",
+      "impact": 3,
+      "analysis": "赣能股份等受关注"
+    },
+    {
+      "sector_name": "AI编程",
+      "impact": 3,
+      "analysis": "金现代、新炬网络等受关注"
+    },
+    {
+      "sector_name": "环保",
+      "impact": 3,
+      "analysis": "启迪环境、中科环保等受关注"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 3,
+      "analysis": "长城军工、北方长龙等受关注"
+    },
+    {
+      "sector_name": "算力",
+      "impact": 3,
+      "analysis": "泰嘉股份、华胜天成等受关注"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "澄星股份",
+      "stock_code": "600275",
+      "impact": 3,
+      "analysis": "磷化工板块龙头"
+    },
+    {
+      "stock_name": "金正大",
+      "stock_code": "002470",
+      "impact": 3,
+      "analysis": "磷化工板块龙头"
+    },
+    {
+      "stock_name": "云南锗业",
+      "stock_code": "002428",
+      "impact": 3,
+      "analysis": "磷化铟板块龙头"
+    },
+    {
+      "stock_name": "赣能股份",
+      "stock_code": "000838",
+      "impact": 3,
+      "analysis": "电力板块龙头"
+    },
+    {
+      "stock_name": "航天电子",
+      "stock_code": "600879",
+      "impact": 3,
+      "analysis": "商业航天板块龙头"
+    },
+    {
+      "stock_name": "国盾量子",
+      "stock_code": "688027",
+      "impact": 3,
+      "analysis": "量子技术板块龙头"
+    },
+    {
+      "stock_name": "启迪环境",
+      "stock_code": "000826",
+      "impact": 3,
+      "analysis": "环保板块龙头"
+    }
+  ],
+  "article_title": "2月27日盘前纪要",
+  "html_file": "jmer4k3gfx.html",
+  "article_date": "2026-02-27"
+}

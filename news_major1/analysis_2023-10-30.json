@@ -1,0 +1,44 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受积极事件驱动，但需关注风险提示。",
+  "sectors": [
+    {
+      "sector_name": "互动影视游戏",
+      "impact": 4,
+      "analysis": "爆款游戏带动产业链增量逻辑，相关公司受益。"
+    },
+    {
+      "sector_name": "华为生态",
+      "impact": 3,
+      "analysis": "华为鸿蒙生态设备增长，广告业务潜力大。"
+    },
+    {
+      "sector_name": "创新药",
+      "impact": 3,
+      "analysis": "创新药行业驱动和逻辑明确，相关公司受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "唐德影视",
+      "stock_code": "300426",
+      "impact": 4,
+      "analysis": "探索虚拟人制作等业务，受益互动游戏发展。"
+    },
+    {
+      "stock_name": "智度股份",
+      "stock_code": "000676",
+      "impact": 4,
+      "analysis": "华为鲸鸿动能业务推动业绩增长。"
+    },
+    {
+      "stock_name": "恒瑞医药",
+      "stock_code": "600276",
+      "impact": 3,
+      "analysis": "创新药行业龙头，受益行业驱动。"
+    }
+  ],
+  "article_id": "c7e11afd24d340f6b5aed308cbb04f26",
+  "article_date": "2023-10-30",
+  "article_title": "2023.10.30市场逻辑精选"
+}

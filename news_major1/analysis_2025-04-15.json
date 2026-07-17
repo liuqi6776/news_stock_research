@@ -1,0 +1,68 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股有望受益",
+  "sectors": [
+    {
+      "sector_name": "跨境电商",
+      "impact": 4,
+      "analysis": "敦煌网下载量提升，相关公司受益"
+    },
+    {
+      "sector_name": "美妆个护",
+      "impact": 3,
+      "analysis": "国货份额提升，相关公司受益"
+    },
+    {
+      "sector_name": "国产大飞机",
+      "impact": 3,
+      "analysis": "关税催化国产替代，相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "敦煌网",
+      "stock_code": "股票代码未知",
+      "impact": 4,
+      "analysis": "下载量提升，公司受益"
+    },
+    {
+      "stock_name": "华贸物流",
+      "stock_code": "股票代码未知",
+      "impact": 3,
+      "analysis": "敦煌网指定物流供应商，公司受益"
+    },
+    {
+      "stock_name": "浔兴股份",
+      "stock_code": "股票代码未知",
+      "impact": 3,
+      "analysis": "研发全球交易助手，公司受益"
+    },
+    {
+      "stock_name": "两面针",
+      "stock_code": "股票代码未知",
+      "impact": 3,
+      "analysis": "牙膏销量增长，公司受益"
+    },
+    {
+      "stock_name": "洁雅股份",
+      "stock_code": "股票代码未知",
+      "impact": 3,
+      "analysis": "湿巾产品品类齐全，公司受益"
+    },
+    {
+      "stock_name": "中航西飞",
+      "stock_code": "股票代码未知",
+      "impact": 3,
+      "analysis": "C919最大机体结构件供应商，公司受益"
+    },
+    {
+      "stock_name": "洪都航空",
+      "stock_code": "股票代码未知",
+      "impact": 3,
+      "analysis": "C919大部件供应商，公司受益"
+    }
+  ],
+  "article_id": "d072077fd13b4927b77f690b7b8dd5b9",
+  "article_date": "2025-04-15",
+  "article_title": "2025.4.15市场逻辑精选"
+}

@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策利好，市场情绪积极",
+  "sectors": [
+    {
+      "sector_name": "核电",
+      "impact": 4,
+      "analysis": "政策支持，利好明显"
+    },
+    {
+      "sector_name": "无人机",
+      "impact": 3,
+      "analysis": "出口管制，短期利好"
+    },
+    {
+      "sector_name": "操作系统",
+      "impact": 3,
+      "analysis": "基础研究加强，利好长期发展"
+    },
+    {
+      "sector_name": "平台经济",
+      "impact": 2,
+      "analysis": "政策支持，利好行业"
+    },
+    {
+      "sector_name": "华为概念",
+      "impact": 3,
+      "analysis": "鸿蒙欧拉发展，利好相关企业"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "融发核电",
+      "stock_code": "000818",
+      "impact": 4,
+      "analysis": "核电项目核准，利好"
+    },
+    {
+      "stock_name": "中无人机",
+      "stock_code": "002013",
+      "impact": 3,
+      "analysis": "无人机出口管制，短期利好"
+    },
+    {
+      "stock_name": "中国软件",
+      "stock_code": "600536",
+      "impact": 3,
+      "analysis": "操作系统加强，利好"
+    },
+    {
+      "stock_name": "赛维时代",
+      "stock_code": "300006",
+      "impact": 2,
+      "analysis": "政策支持，利好行业"
+    },
+    {
+      "stock_name": "华为",
+      "stock_code": "002502",
+      "impact": 3,
+      "analysis": "鸿蒙欧拉发展，利好相关企业"
+    }
+  ],
+  "article_title": "8月1日盘前早报 热点事件关注",
+  "html_file": "5rxedqd00p.html",
+  "article_date": "2023-08-01"
+}

@@ -1,0 +1,56 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好影响，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "血制品",
+      "impact": 4,
+      "analysis": "关税加征，国产血制品厂家市场份额有望提升。"
+    },
+    {
+      "sector_name": "农业",
+      "impact": 3,
+      "analysis": "农业强国规划发布，农业相关板块受益。"
+    },
+    {
+      "sector_name": "信创",
+      "impact": 3,
+      "analysis": "自主可控重要性提升，信创产业受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "卫光生物",
+      "stock_code": "000538",
+      "impact": 4,
+      "analysis": "血制品业务占比高，静丙集采中标率高。"
+    },
+    {
+      "stock_name": "派林生物",
+      "stock_code": "002166",
+      "impact": 4,
+      "analysis": "血制品业务占比高，采浆量较大。"
+    },
+    {
+      "stock_name": "万向德农",
+      "stock_code": "600381",
+      "impact": 4,
+      "analysis": "玉米种子业务有望受益种业自主可控。"
+    },
+    {
+      "stock_name": "中国软件",
+      "stock_code": "600536",
+      "impact": 4,
+      "analysis": "拥有完整的信创产业链。"
+    },
+    {
+      "stock_name": "达梦数据",
+      "stock_code": "688027",
+      "impact": 4,
+      "analysis": "国内领先的数据库产品开发服务商。"
+    }
+  ],
+  "article_id": "bb623b6c5b9d401ea91ee2ad51661772",
+  "article_date": "2025-04-07",
+  "article_title": "2025.4.7市场逻辑精选"
+}

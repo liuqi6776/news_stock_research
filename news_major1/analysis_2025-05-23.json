@@ -1,0 +1,106 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股受利好消息影响。",
+  "sectors": [
+    {
+      "sector_name": "并购重组",
+      "impact": 4,
+      "analysis": "滨海能源、慧博云通等个股受并购重组利好消息影响"
+    },
+    {
+      "sector_name": "消费",
+      "impact": 3,
+      "analysis": "浪莎股份等消费股受关注"
+    },
+    {
+      "sector_name": "创新药",
+      "impact": 3,
+      "analysis": "三生国建等创新药股受关注"
+    },
+    {
+      "sector_name": "量子科技",
+      "impact": 3,
+      "analysis": "复旦复华、科大国创等量子科技股受关注"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 3,
+      "analysis": "高合汽车等新能源汽车股受关注"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 3,
+      "analysis": "海特高新等军工股受关注"
+    },
+    {
+      "sector_name": "AI",
+      "impact": 3,
+      "analysis": "昆仑万维、国光电器等AI股受关注"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "滨海能源",
+      "stock_code": "000695",
+      "impact": 4,
+      "analysis": "并购重组利好"
+    },
+    {
+      "stock_name": "慧博云通",
+      "stock_code": "300606",
+      "impact": 4,
+      "analysis": "并购重组利好"
+    },
+    {
+      "stock_name": "浪莎股份",
+      "stock_code": "600137",
+      "impact": 3,
+      "analysis": "消费股受关注"
+    },
+    {
+      "stock_name": "三生国建",
+      "stock_code": "300626",
+      "impact": 3,
+      "analysis": "创新药出海利好"
+    },
+    {
+      "stock_name": "复旦复华",
+      "stock_code": "600624",
+      "impact": 3,
+      "analysis": "量子科技概念股"
+    },
+    {
+      "stock_name": "科大国创",
+      "stock_code": "300520",
+      "impact": 3,
+      "analysis": "量子科技概念股"
+    },
+    {
+      "stock_name": "高合汽车",
+      "stock_code": "无",
+      "impact": 3,
+      "analysis": "黎巴嫩资本进入，进入复工倒计时"
+    },
+    {
+      "stock_name": "海特高新",
+      "stock_code": "002023",
+      "impact": 3,
+      "analysis": "军工股受关注"
+    },
+    {
+      "stock_name": "昆仑万维",
+      "stock_code": "300418",
+      "impact": 3,
+      "analysis": "AI股受关注"
+    },
+    {
+      "stock_name": "国光电器",
+      "stock_code": "002045",
+      "impact": 3,
+      "analysis": "AI股受关注"
+    }
+  ],
+  "article_title": "5月23日盘前纪要",
+  "html_file": "j7w5hb9yqs.html",
+  "article_date": "2025-05-23"
+}

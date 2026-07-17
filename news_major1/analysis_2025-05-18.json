@@ -1,0 +1,90 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "化工板块",
+      "impact": 4,
+      "analysis": "共聚聚甲醛反倾销税征收，利好相关企业。"
+    },
+    {
+      "sector_name": "并购重组板块",
+      "impact": 3,
+      "analysis": "并购重组政策优化，市场活跃度提升。"
+    },
+    {
+      "sector_name": "食品饮料板块",
+      "impact": 3,
+      "analysis": "全国食品饮料论坛举办，利好相关企业。"
+    },
+    {
+      "sector_name": "汽车板块",
+      "impact": 2,
+      "analysis": "AEBS新国标实施，利好相关企业。"
+    },
+    {
+      "sector_name": "机器人板块",
+      "impact": 2,
+      "analysis": "华为、优必选等合作，利好相关企业。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "江天化学",
+      "stock_code": "600378",
+      "impact": 4,
+      "analysis": "共聚聚甲醛上游企业，受益反倾销税。"
+    },
+    {
+      "stock_name": "云天化",
+      "stock_code": "600096",
+      "impact": 3,
+      "analysis": "聚甲醛进口替代主力产品，受益政策。"
+    },
+    {
+      "stock_name": "开滦股份",
+      "stock_code": "600995",
+      "impact": 3,
+      "analysis": "聚甲醛产量增长，受益行业需求。"
+    },
+    {
+      "stock_name": "恒而达",
+      "stock_code": "002892",
+      "impact": 3,
+      "analysis": "并购德国磨床企业，拓展业务。"
+    },
+    {
+      "stock_name": "安记食品",
+      "stock_code": "603345",
+      "impact": 3,
+      "analysis": "复合调味粉龙头企业，受益内需增长。"
+    },
+    {
+      "stock_name": "国联水产",
+      "stock_code": "300094",
+      "impact": 3,
+      "analysis": "全球水产企业，受益国际合作。"
+    },
+    {
+      "stock_name": "万安科技",
+      "stock_code": "002590",
+      "impact": 2,
+      "analysis": "受益AEBS新国标，业务增长。"
+    },
+    {
+      "stock_name": "麦迪科技",
+      "stock_code": "002134",
+      "impact": 2,
+      "analysis": "华为、优必选合作，拓展业务。"
+    },
+    {
+      "stock_name": "宜安科技",
+      "stock_code": "300151",
+      "impact": 2,
+      "analysis": "合作华为机器人柔性齿轮，拓展业务。"
+    }
+  ],
+  "article_id": "be126c7ac2cb4a74bed428fa79c99baa",
+  "article_date": "2025-05-18",
+  "article_title": "2025.5.18市场逻辑精选"
+}

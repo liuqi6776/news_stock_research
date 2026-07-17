@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注降息传闻影响。",
+  "sectors": [
+    {
+      "sector_name": "储能",
+      "impact": 4,
+      "analysis": "海外景气预期提升，相关公司受益"
+    },
+    {
+      "sector_name": "AI手机",
+      "impact": 3,
+      "analysis": "AI手机市场增长迅速，相关产业链受益"
+    },
+    {
+      "sector_name": "消费电子",
+      "impact": 2,
+      "analysis": "中美缓和，消费电子板块受益"
+    },
+    {
+      "sector_name": "玻璃",
+      "impact": 1,
+      "analysis": "宜昌国资入主，公司预期改善"
+    },
+    {
+      "sector_name": "环保",
+      "impact": 1,
+      "analysis": "剥离部分业务，跨界AI，公司转型"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "固德威",
+      "stock_code": "603060",
+      "impact": 4,
+      "analysis": "储能逆变器出海龙头，业绩增长"
+    },
+    {
+      "stock_name": "韦尔股份",
+      "stock_code": "603501",
+      "impact": 3,
+      "analysis": "深度受益AI手机，业绩增长"
+    },
+    {
+      "stock_name": "卓胜微",
+      "stock_code": "300782",
+      "impact": 3,
+      "analysis": "射频芯片龙头，AI手机需求增长"
+    },
+    {
+      "stock_name": "佛山照明",
+      "stock_code": "000541",
+      "impact": 2,
+      "analysis": "或供应M9交互式车灯，业绩增长"
+    },
+    {
+      "stock_name": "三峡新材",
+      "stock_code": "600293",
+      "impact": 2,
+      "analysis": "宜昌国资入主，公司预期改善"
+    }
+  ],
+  "article_id": "945d415c540f4c2094d647d00d6eddc1",
+  "article_date": "2023-12-21",
+  "article_title": "2023.12.21市场逻辑精选"
+}

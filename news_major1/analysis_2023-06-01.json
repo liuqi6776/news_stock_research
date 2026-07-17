@@ -1,0 +1,137 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股受利好消息影响。",
+  "sectors": [
+    {
+      "sector_name": "苹果产业链",
+      "impact": 4,
+      "analysis": "苹果开发者大会预期推出新产品，相关产业链受益"
+    },
+    {
+      "sector_name": "特斯拉产业链",
+      "impact": 3,
+      "analysis": "特斯拉Model 3改款车型展示，相关产业链受益"
+    },
+    {
+      "sector_name": "数字人民币",
+      "impact": 3,
+      "analysis": "数字人民币应用场景扩大，相关产业链受益"
+    },
+    {
+      "sector_name": "量子计算",
+      "impact": 3,
+      "analysis": "国盾量子发布量子计算云平台，相关产业链受益"
+    },
+    {
+      "sector_name": "电力",
+      "impact": 2,
+      "analysis": "深圳电网用电负荷创新高，电力企业盈利改善"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "英伟达股价上涨，人工智能产业链受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "双象股份",
+      "stock_code": "002395",
+      "impact": 4,
+      "analysis": "苹果MR产业链相关"
+    },
+    {
+      "stock_name": "兆威机电",
+      "stock_code": "002681",
+      "impact": 4,
+      "analysis": "苹果MR产业链相关"
+    },
+    {
+      "stock_name": "三利谱",
+      "stock_code": "002876",
+      "impact": 4,
+      "analysis": "苹果MR产业链相关"
+    },
+    {
+      "stock_name": "国光电器",
+      "stock_code": "002045",
+      "impact": 4,
+      "analysis": "苹果MR产业链相关"
+    },
+    {
+      "stock_name": "长盈精密",
+      "stock_code": "300223",
+      "impact": 4,
+      "analysis": "苹果MR产业链相关"
+    },
+    {
+      "stock_name": "荣旗科技",
+      "stock_code": "300739",
+      "impact": 4,
+      "analysis": "苹果MR产业链相关"
+    },
+    {
+      "stock_name": "嵘泰股份",
+      "stock_code": "603730",
+      "impact": 3,
+      "analysis": "特斯拉产业链相关"
+    },
+    {
+      "stock_name": "合力科技",
+      "stock_code": "603719",
+      "impact": 3,
+      "analysis": "特斯拉产业链相关"
+    },
+    {
+      "stock_name": "广东鸿图",
+      "stock_code": "002101",
+      "impact": 3,
+      "analysis": "特斯拉产业链相关"
+    },
+    {
+      "stock_name": "瑞鹄模具",
+      "stock_code": "002997",
+      "impact": 3,
+      "analysis": "特斯拉产业链相关"
+    },
+    {
+      "stock_name": "楚天龙",
+      "stock_code": "002052",
+      "impact": 3,
+      "analysis": "数字人民币应用"
+    },
+    {
+      "stock_name": "翠微股份",
+      "stock_code": "600736",
+      "impact": 3,
+      "analysis": "数字人民币应用"
+    },
+    {
+      "stock_name": "京北方",
+      "stock_code": "002149",
+      "impact": 3,
+      "analysis": "数字人民币应用"
+    },
+    {
+      "stock_name": "恒宝股份",
+      "stock_code": "002104",
+      "impact": 3,
+      "analysis": "数字人民币应用"
+    },
+    {
+      "stock_name": "拉卡拉",
+      "stock_code": "300433",
+      "impact": 3,
+      "analysis": "数字人民币应用"
+    },
+    {
+      "stock_name": "国盾量子",
+      "stock_code": "688027",
+      "impact": 3,
+      "analysis": "量子计算云平台发布"
+    }
+  ],
+  "article_title": "6月1日 盘前热点事件关注",
+  "html_file": "alyu1p0e2t.html",
+  "article_date": "2023-06-01"
+}

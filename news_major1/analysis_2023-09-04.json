@@ -1,0 +1,124 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受积极因素影响，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "华为鸿蒙概念",
+      "impact": 4,
+      "analysis": "鸿蒙PC版本推出预期，相关产业链受益"
+    },
+    {
+      "sector_name": "家居行业",
+      "impact": 3,
+      "analysis": "家居焕新消费季活动，行业有望受益"
+    },
+    {
+      "sector_name": "有色金属",
+      "impact": 3,
+      "analysis": "商品价格上涨，相关个股估值提升"
+    },
+    {
+      "sector_name": "电子设备",
+      "impact": 3,
+      "analysis": "中电科、华录集团整合，相关个股受益"
+    },
+    {
+      "sector_name": "卫星通信",
+      "impact": 3,
+      "analysis": "华为Mate60系列销售火爆，相关个股受益"
+    },
+    {
+      "sector_name": "中俄贸易",
+      "impact": 3,
+      "analysis": "中俄远东贸易合作，相关个股受益"
+    },
+    {
+      "sector_name": "锂电池",
+      "impact": 3,
+      "analysis": "下游复产叠加海外需求旺盛，相关个股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "拓维信息",
+      "stock_code": "002261",
+      "impact": 4,
+      "analysis": "鸿蒙生态核心共建单位"
+    },
+    {
+      "stock_name": "软通动力",
+      "stock_code": "300073",
+      "impact": 4,
+      "analysis": "鸿蒙生态企业"
+    },
+    {
+      "stock_name": "润和软件",
+      "stock_code": "300339",
+      "impact": 4,
+      "analysis": "鸿蒙生态企业"
+    },
+    {
+      "stock_name": "龙芯中科",
+      "stock_code": "603019",
+      "impact": 4,
+      "analysis": "鸿蒙生态企业"
+    },
+    {
+      "stock_name": "常山北明",
+      "stock_code": "000158",
+      "impact": 3,
+      "analysis": "鸿蒙概念股"
+    },
+    {
+      "stock_name": "科蓝软件",
+      "stock_code": "300138",
+      "impact": 3,
+      "analysis": "鸿蒙概念股"
+    },
+    {
+      "stock_name": "梦网集团",
+      "stock_code": "002123",
+      "impact": 3,
+      "analysis": "鸿蒙概念股"
+    },
+    {
+      "stock_name": "易华录",
+      "stock_code": "600282",
+      "impact": 4,
+      "analysis": "中电科、华录集团整合"
+    },
+    {
+      "stock_name": "天洋新材",
+      "stock_code": "002547",
+      "impact": 4,
+      "analysis": "华为产业链胶膜黑马"
+    },
+    {
+      "stock_name": "华力创通",
+      "stock_code": "300045",
+      "impact": 4,
+      "analysis": "卫星通信打开成长空间"
+    },
+    {
+      "stock_name": "龙江交通",
+      "stock_code": "600233",
+      "impact": 4,
+      "analysis": "受益中俄远东贸易"
+    },
+    {
+      "stock_name": "索通发展",
+      "stock_code": "002333",
+      "impact": 4,
+      "analysis": "下游复产叠加海外需求旺盛"
+    },
+    {
+      "stock_name": "海光信息",
+      "stock_code": "600881",
+      "impact": 4,
+      "analysis": "深算二号已实现商用"
+    }
+  ],
+  "article_id": "48baf04e73274027aa02baf94a410c34",
+  "article_date": "2023-09-04",
+  "article_title": "2023.9.4市场逻辑精选"
+}

@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极影响。",
+  "sectors": [
+    {
+      "sector_name": "碳纤维",
+      "impact": 4,
+      "analysis": "行业景气度提升，利好相关个股。"
+    },
+    {
+      "sector_name": "制冷剂",
+      "impact": 3,
+      "analysis": "行业景气延续，利好相关个股。"
+    },
+    {
+      "sector_name": "AI芯片",
+      "impact": 4,
+      "analysis": "国产AI芯片受关注，利好相关产业链个股。"
+    },
+    {
+      "sector_name": "数据中心",
+      "impact": 3,
+      "analysis": "数据中心需求增长，利好相关产业链个股。"
+    },
+    {
+      "sector_name": "低空经济",
+      "impact": 3,
+      "analysis": "低空经济司成立，利好相关个股。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "光威复材",
+      "stock_code": "300387",
+      "impact": 4,
+      "analysis": "签订大额合同，利好。"
+    },
+    {
+      "stock_name": "巨化股份",
+      "stock_code": "600160",
+      "impact": 3,
+      "analysis": "制冷剂价格调涨，利好。"
+    },
+    {
+      "stock_name": "哈森股份",
+      "stock_code": "603809",
+      "impact": 4,
+      "analysis": "拟收购辰瓴光学、苏州郎克斯股权，利好。"
+    },
+    {
+      "stock_name": "泰豪科技",
+      "stock_code": "600831",
+      "impact": 3,
+      "analysis": "为字节跳动提供高压发电机组项目，利好。"
+    },
+    {
+      "stock_name": "哈焊华通",
+      "stock_code": "603023",
+      "impact": 3,
+      "analysis": "拟增资控股中达金属，利好。"
+    }
+  ],
+  "article_id": "ec9540eb37fc4202b9aea70e39a015c0",
+  "article_date": "2024-12-25",
+  "article_title": "2024.12.25市场逻辑精选"
+}

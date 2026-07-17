@@ -1,0 +1,80 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好影响，关注存储芯片和脑机接口板块。",
+  "sectors": [
+    {
+      "sector_name": "存储芯片",
+      "impact": 4,
+      "analysis": "存储芯片价格预计上涨，板块受益"
+    },
+    {
+      "sector_name": "脑机接口",
+      "impact": 3,
+      "analysis": "政策支持，市场空间大，板块受益"
+    },
+    {
+      "sector_name": "AI眼镜",
+      "impact": 2,
+      "analysis": "AI眼镜市场有望爆发，相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "兆易创新",
+      "stock_code": "603986",
+      "impact": 4,
+      "analysis": "存储龙头，产能持续释放，业绩增长"
+    },
+    {
+      "stock_name": "普冉股份",
+      "stock_code": "688312",
+      "impact": 3,
+      "analysis": "NOR Flash和EEPROM龙头，拟收购高性能存储芯片"
+    },
+    {
+      "stock_name": "江波龙",
+      "stock_code": "002063",
+      "impact": 3,
+      "analysis": "DRAM和NAND Flash核心厂商，UFS4.1产品获得认可"
+    },
+    {
+      "stock_name": "东方中科",
+      "stock_code": "688029",
+      "impact": 3,
+      "analysis": "脑机接口上游核心公司，提供AI设计方案"
+    },
+    {
+      "stock_name": "美好医疗",
+      "stock_code": "300529",
+      "impact": 3,
+      "analysis": "脑机接口上游核心公司，提供植入式电极片"
+    },
+    {
+      "stock_name": "翔宇医疗",
+      "stock_code": "300292",
+      "impact": 3,
+      "analysis": "脑机接口中游核心公司，储备多款脑机接口产品"
+    },
+    {
+      "stock_name": "创新医疗",
+      "stock_code": "300601",
+      "impact": 3,
+      "analysis": "脑机接口下游应用核心公司，脑机接口产品完成临床测试"
+    },
+    {
+      "stock_name": "龙旗科技",
+      "stock_code": "300682",
+      "impact": 3,
+      "analysis": "豆包AI眼镜底层UI开发，受益AI眼镜市场"
+    },
+    {
+      "stock_name": "润欣科技",
+      "stock_code": "300229",
+      "impact": 3,
+      "analysis": "AI+端侧智能硬件，适配市场主流LLM产品"
+    }
+  ],
+  "article_id": "4227c91be3bc4b5d841728c46c52f6ac",
+  "article_date": "2026-01-05",
+  "article_title": "2026.1.5市场逻辑精选"
+}

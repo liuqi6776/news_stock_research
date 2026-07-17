@@ -1,0 +1,66 @@
+{
+  "market_impact": 4,
+  "market_analysis": "AI服务器和算力产业链业绩超预期，市场情绪提振",
+  "sectors": [
+    {
+      "sector_name": "AI服务器",
+      "impact": 5,
+      "analysis": "业绩超预期，板块整体受益"
+    },
+    {
+      "sector_name": "算力产业链",
+      "impact": 5,
+      "analysis": "业绩超预期，产业链整体受益"
+    },
+    {
+      "sector_name": "变压器",
+      "impact": 3,
+      "analysis": "算力发展面临变压器短缺，板块受益"
+    },
+    {
+      "sector_name": "影视内容",
+      "impact": 3,
+      "analysis": "AI生成电影发布，板块受益"
+    },
+    {
+      "sector_name": "HBM",
+      "impact": 4,
+      "analysis": "AI服务器放量，HBM需求增长"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "戴尔",
+      "stock_code": "股票代码",
+      "impact": 5,
+      "analysis": "AI服务器业务超预期，股价大涨"
+    },
+    {
+      "stock_name": "浪潮信息",
+      "stock_code": "股票代码",
+      "impact": 5,
+      "analysis": "服务器龙头，受益H20预定供货"
+    },
+    {
+      "stock_name": "科润智控",
+      "stock_code": "股票代码",
+      "impact": 3,
+      "analysis": "变压器业务受益算力发展"
+    },
+    {
+      "stock_name": "上海电影",
+      "stock_code": "股票代码",
+      "impact": 3,
+      "analysis": "AI赋能内容创作，板块受益"
+    },
+    {
+      "stock_name": "SK海力士",
+      "stock_code": "股票代码",
+      "impact": 4,
+      "analysis": "HBM需求增长，公司受益"
+    }
+  ],
+  "article_id": "bfcc21c6a99a41a69c109e5f9d46b1b1",
+  "article_date": "2024-03-03",
+  "article_title": "2024.3.3市场逻辑精选"
+}

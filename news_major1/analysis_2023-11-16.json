@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "新能源汽车",
+      "impact": 4,
+      "analysis": "小米汽车、特斯拉皮卡等消息利好"
+    },
+    {
+      "sector_name": "空天信息",
+      "impact": 3,
+      "analysis": "明月湖空天信息产业国际生态活动举办，产业基金群成立"
+    },
+    {
+      "sector_name": "锂电池",
+      "impact": 3,
+      "analysis": "小米汽车搭载磷酸铁锂电池，固态电池技术进展"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "华为发布高压碳化硅黄金动力平台，半导体行业受益"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 2,
+      "analysis": "临港机器人产业基地揭牌，人形机器人发展空间广阔"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "凯众股份",
+      "stock_code": "002823",
+      "impact": 4,
+      "analysis": "小米汽车产业链相关"
+    },
+    {
+      "stock_name": "铭科精技",
+      "stock_code": "002902",
+      "impact": 4,
+      "analysis": "特斯拉皮卡产业链相关"
+    },
+    {
+      "stock_name": "震有科技",
+      "stock_code": "300599",
+      "impact": 3,
+      "analysis": "空天信息产业链相关"
+    },
+    {
+      "stock_name": "中国卫通",
+      "stock_code": "600118",
+      "impact": 3,
+      "analysis": "空天信息产业链相关"
+    },
+    {
+      "stock_name": "富临精工",
+      "stock_code": "300197",
+      "impact": 3,
+      "analysis": "华为高压碳化硅黄金动力平台相关"
+    }
+  ],
+  "article_title": "11月16日盘前热点事件关注",
+  "html_file": "ft2xaywrbn.html",
+  "article_date": "2023-11-16"
+}

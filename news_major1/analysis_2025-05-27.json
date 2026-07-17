@@ -1,0 +1,113 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受消息面影响较大，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "农药",
+      "impact": 3,
+      "analysis": "友道化学爆炸事件可能推动农药板块上涨。"
+    },
+    {
+      "sector_name": "商业航天",
+      "impact": 3,
+      "analysis": "星舰试飞成功将推动商业航天板块上涨。"
+    },
+    {
+      "sector_name": "康复辅助器具",
+      "impact": 2,
+      "analysis": "上海市康复辅助器具产业发展方案将推动相关板块上涨。"
+    },
+    {
+      "sector_name": "大健康",
+      "impact": 2,
+      "analysis": "大健康产品推出将推动相关板块上涨。"
+    },
+    {
+      "sector_name": "无人驾驶",
+      "impact": 2,
+      "analysis": "无人驾驶环卫车运营商有望受益。"
+    },
+    {
+      "sector_name": "培育钻石",
+      "impact": 2,
+      "analysis": "培育钻石受益镶嵌黄金饰品放量。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "海利尔",
+      "stock_code": "002458",
+      "impact": 3,
+      "analysis": "农药制剂及中间体研发企业，受益农药板块上涨。"
+    },
+    {
+      "stock_name": "辉隆股份",
+      "stock_code": "000411",
+      "impact": 3,
+      "analysis": "农药制剂及中间体研发企业，受益农药板块上涨。"
+    },
+    {
+      "stock_name": "上海瀚讯",
+      "stock_code": "688016",
+      "impact": 3,
+      "analysis": "商业航天产业链企业，受益商业航天板块上涨。"
+    },
+    {
+      "stock_name": "斯瑞新材",
+      "stock_code": "603790",
+      "impact": 3,
+      "analysis": "液体火箭发动机推力室供应商，受益商业航天板块上涨。"
+    },
+    {
+      "stock_name": "振江股份",
+      "stock_code": "300660",
+      "impact": 2,
+      "analysis": "康复辅助器具产业链企业，受益康复辅助器具板块上涨。"
+    },
+    {
+      "stock_name": "荣泰健康",
+      "stock_code": "603579",
+      "impact": 2,
+      "analysis": "康复辅助器具产业链企业，受益康复辅助器具板块上涨。"
+    },
+    {
+      "stock_name": "泉阳泉",
+      "stock_code": "600318",
+      "impact": 2,
+      "analysis": "白桦树汁生产商，受益大健康板块上涨。"
+    },
+    {
+      "stock_name": "金枫酒业",
+      "stock_code": "600616",
+      "impact": 2,
+      "analysis": "海派黄酒龙头，受益大健康板块上涨。"
+    },
+    {
+      "stock_name": "锦泓集团",
+      "stock_code": "600693",
+      "impact": 2,
+      "analysis": "IP授权业务企业，受益大健康板块上涨。"
+    },
+    {
+      "stock_name": "华森制药",
+      "stock_code": "002007",
+      "impact": 2,
+      "analysis": "大健康产品推出，受益大健康板块上涨。"
+    },
+    {
+      "stock_name": "劲旅环境",
+      "stock_code": "603966",
+      "impact": 2,
+      "analysis": "无人驾驶环卫车运营商，受益无人驾驶板块上涨。"
+    },
+    {
+      "stock_name": "黄河旋风",
+      "stock_code": "600086",
+      "impact": 2,
+      "analysis": "培育钻石供应商，受益培育钻石板块上涨。"
+    }
+  ],
+  "article_id": "671c33568fd24152836d02ebb3f34ac8",
+  "article_date": "2025-05-27",
+  "article_title": "2025.5.27市场逻辑精选"
+}

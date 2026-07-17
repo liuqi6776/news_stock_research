@@ -1,0 +1,91 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，北交所和固态变压器相关题材受关注。",
+  "sectors": [
+    {
+      "sector_name": "北交所概念",
+      "impact": 4,
+      "analysis": "北交所指数体系建设加速，利好相关个股。"
+    },
+    {
+      "sector_name": "固态变压器",
+      "impact": 3,
+      "analysis": "英伟达推出新产品，行业空间大，利好相关个股。"
+    },
+    {
+      "sector_name": "新能源",
+      "impact": 2,
+      "analysis": "力拓铝厂停运，铝价有望上行，利好相关个股。"
+    },
+    {
+      "sector_name": "磁性元器件",
+      "impact": 3,
+      "analysis": "可立克AI服务器电源磁性元器件价值量或翻倍，利好相关个股。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "贝特瑞",
+      "stock_code": "300762",
+      "impact": 4,
+      "analysis": "北证50第一大市值个股，主营锂电池负极材料。"
+    },
+    {
+      "stock_name": "华信永道",
+      "stock_code": "300845",
+      "impact": 3,
+      "analysis": "北证50互联网金融个股，深耕住房公积金行业信息化领域。"
+    },
+    {
+      "stock_name": "四方股份",
+      "stock_code": "300101",
+      "impact": 4,
+      "analysis": "积极拓展出海渠道，产品成熟度高，适配AIDC需求。"
+    },
+    {
+      "stock_name": "金盘科技",
+      "stock_code": "300454",
+      "impact": 4,
+      "analysis": "AIDC变压器卡位第一梯队，多电压等级HVDC系统及模块解决方案。"
+    },
+    {
+      "stock_name": "中孚实业",
+      "stock_code": "600595",
+      "impact": 3,
+      "analysis": "电解铝营收占比94.76%，拥有电解铝产能75万吨。"
+    },
+    {
+      "stock_name": "江西铜业",
+      "stock_code": "600362",
+      "impact": 3,
+      "analysis": "中国最大的铜生产基地，国内最大的铜加工生产商。"
+    },
+    {
+      "stock_name": "可立克",
+      "stock_code": "002727",
+      "impact": 4,
+      "analysis": "供应nv ai服务器电源磁性元器件，价值量或翻倍。"
+    },
+    {
+      "stock_name": "康盛股份",
+      "stock_code": "002418",
+      "impact": 3,
+      "analysis": "突破高端冷板产能瓶颈，液冷业务有望放量。"
+    },
+    {
+      "stock_name": "中国西电",
+      "stock_code": "600701",
+      "impact": 3,
+      "analysis": "深耕特高压电网建设，具备核电装备资质。"
+    },
+    {
+      "stock_name": "铜冠铜箔",
+      "stock_code": "002181",
+      "impact": 3,
+      "analysis": "HVLP4供货确定性强，Q4迎业绩增长。"
+    }
+  ],
+  "article_id": "0329738687244dfa8e9d5eb3651edf28",
+  "article_date": "2025-10-29",
+  "article_title": "2025.10.29市场逻辑精选"
+}

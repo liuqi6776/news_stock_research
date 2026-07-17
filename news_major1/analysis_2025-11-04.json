@@ -1,0 +1,67 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多题材利好，市场情绪可能提升",
+  "sectors": [
+    {
+      "sector_name": "通信设备",
+      "impact": 4,
+      "analysis": "6G技术发展大会即将召开，板块受益"
+    },
+    {
+      "sector_name": "国防军工",
+      "impact": 3,
+      "analysis": "福建舰入列预期，军工板块受益"
+    },
+    {
+      "sector_name": "生物科技",
+      "impact": 3,
+      "analysis": "异种移植技术突破，生物科技板块受益"
+    },
+    {
+      "sector_name": "电力设备",
+      "impact": 2,
+      "analysis": "海外电力基建需求，电力设备板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中兴通讯",
+      "stock_code": "000063",
+      "impact": 4,
+      "analysis": "6G技术领先，受益6G发展大会"
+    },
+    {
+      "stock_name": "本川智能",
+      "stock_code": "300432",
+      "impact": 3,
+      "analysis": "6G通讯用高端PCB布局，受益6G发展"
+    },
+    {
+      "stock_name": "湘电股份",
+      "stock_code": "600416",
+      "impact": 3,
+      "analysis": "电磁弹射技术领先，受益福建舰入列"
+    },
+    {
+      "stock_name": "华大基因",
+      "stock_code": "600136",
+      "impact": 3,
+      "analysis": "基因编辑技术领先，受益异种移植技术突破"
+    },
+    {
+      "stock_name": "神马电力",
+      "stock_code": "002031",
+      "impact": 3,
+      "analysis": "绝缘子出口业务增长，受益海外电力基建"
+    },
+    {
+      "stock_name": "厦工股份",
+      "stock_code": "601551",
+      "impact": 2,
+      "analysis": "产品服务台湾重点项目，受益两岸交流"
+    }
+  ],
+  "article_id": "7d934b24ce7d448581567c3e076b09a9",
+  "article_date": "2025-11-04",
+  "article_title": "2025.11.4市场逻辑精选"
+}

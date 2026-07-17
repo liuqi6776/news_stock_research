@@ -1,0 +1,159 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分行业和个股表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "电影",
+      "impact": 4,
+      "analysis": "春节档电影票房预期高，相关公司受益"
+    },
+    {
+      "sector_name": "职业教育",
+      "impact": 3,
+      "analysis": "政策支持，行业有望迎来发展机遇"
+    },
+    {
+      "sector_name": "证券IT",
+      "impact": 3,
+      "analysis": "政策支持，行业IT建设投入增加"
+    },
+    {
+      "sector_name": "鳗鱼养殖",
+      "impact": 4,
+      "analysis": "鳗鱼价格上涨预期强烈，相关公司受益"
+    },
+    {
+      "sector_name": "半导体设备",
+      "impact": 3,
+      "analysis": "苹果MR和iPhone15新机型推动设备需求"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 3,
+      "analysis": "创新药研发进展，相关公司受益"
+    },
+    {
+      "sector_name": "汽车电子",
+      "impact": 3,
+      "analysis": "CMS新国标发布，相关公司受益"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "光伏产业带动相关材料需求"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中国电影",
+      "stock_code": "000796",
+      "impact": 4,
+      "analysis": "春节档电影票房预期高"
+    },
+    {
+      "stock_name": "万达电影",
+      "stock_code": "002739",
+      "impact": 4,
+      "analysis": "春节档电影票房预期高"
+    },
+    {
+      "stock_name": "华策影视",
+      "stock_code": "601077",
+      "impact": 4,
+      "analysis": "春节档电影票房预期高"
+    },
+    {
+      "stock_name": "华谊兄弟",
+      "stock_code": "600073",
+      "impact": 4,
+      "analysis": "春节档电影票房预期高"
+    },
+    {
+      "stock_name": "昂立教育",
+      "stock_code": "601820",
+      "impact": 3,
+      "analysis": "职业教育政策支持"
+    },
+    {
+      "stock_name": "全通教育",
+      "stock_code": "300359",
+      "impact": 3,
+      "analysis": "职业教育政策支持"
+    },
+    {
+      "stock_name": "中公教育",
+      "stock_code": "002607",
+      "impact": 3,
+      "analysis": "职业教育政策支持"
+    },
+    {
+      "stock_name": "豆神教育",
+      "stock_code": "300010",
+      "impact": 3,
+      "analysis": "职业教育政策支持"
+    },
+    {
+      "stock_name": "金证股份",
+      "stock_code": "600446",
+      "impact": 3,
+      "analysis": "证券IT获政策支持"
+    },
+    {
+      "stock_name": "恒生电子",
+      "stock_code": "600570",
+      "impact": 3,
+      "analysis": "证券IT行业受益"
+    },
+    {
+      "stock_name": "顶点软件",
+      "stock_code": "300366",
+      "impact": 3,
+      "analysis": "证券IT行业受益"
+    },
+    {
+      "stock_name": "天马科技",
+      "stock_code": "002269",
+      "impact": 4,
+      "analysis": "鳗鱼价格上涨预期强烈"
+    },
+    {
+      "stock_name": "赛腾股份",
+      "stock_code": "300433",
+      "impact": 3,
+      "analysis": "苹果MR和iPhone15新机型推动设备需求"
+    },
+    {
+      "stock_name": "兴齐眼药",
+      "stock_code": "300192",
+      "impact": 3,
+      "analysis": "创新药研发进展"
+    },
+    {
+      "stock_name": "东尼电子",
+      "stock_code": "300712",
+      "impact": 3,
+      "analysis": "签订碳化硅衬底订单"
+    },
+    {
+      "stock_name": "华阳集团",
+      "stock_code": "002907",
+      "impact": 3,
+      "analysis": "CMS新国标发布，相关公司受益"
+    },
+    {
+      "stock_name": "广生堂",
+      "stock_code": "002482",
+      "impact": 3,
+      "analysis": "3cl新冠药具有优越的抗新冠病毒疗效"
+    },
+    {
+      "stock_name": "仕净科技",
+      "stock_code": "688029",
+      "impact": 3,
+      "analysis": "拟建设年产24GW高效N型单晶TOPCon太阳能电池"
+    }
+  ],
+  "article_id": "c662f855a48340b5bf6513931e13eee3",
+  "article_date": "2023-01-09",
+  "article_title": "2023.1.9市场逻辑精选"
+}

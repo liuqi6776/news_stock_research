@@ -1,0 +1,195 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受益。",
+  "sectors": [
+    {
+      "sector_name": "高铁",
+      "impact": 4,
+      "analysis": "雅万高铁项目推动相关产业链发展。"
+    },
+    {
+      "sector_name": "锂电池",
+      "impact": 3,
+      "analysis": "碳纳米管应用前景广阔。"
+    },
+    {
+      "sector_name": "新材料",
+      "impact": 3,
+      "analysis": "以竹代塑产业规模有望扩大。"
+    },
+    {
+      "sector_name": "风电",
+      "impact": 3,
+      "analysis": "博菲电气产能扩张，受益国产替代。"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 3,
+      "analysis": "众生药业新冠药研发进展顺利。"
+    },
+    {
+      "sector_name": "新能源",
+      "impact": 3,
+      "analysis": "芳源股份受益IRA法案延期预期。"
+    },
+    {
+      "sector_name": "软件",
+      "impact": 3,
+      "analysis": "网达软件业务订单饱满。"
+    },
+    {
+      "sector_name": "传媒",
+      "impact": 3,
+      "analysis": "湖北广电互联网彩票和VR业务发展。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中国中车",
+      "stock_code": "601766",
+      "impact": 4,
+      "analysis": "雅万高铁项目主要供应商。"
+    },
+    {
+      "stock_name": "科安达",
+      "stock_code": "002972",
+      "impact": 3,
+      "analysis": "雅万高铁核心防雷产品供应商。"
+    },
+    {
+      "stock_name": "博深股份",
+      "stock_code": "002282",
+      "impact": 3,
+      "analysis": "制动盘产品应用于雅万高铁动车组。"
+    },
+    {
+      "stock_name": "运达科技",
+      "stock_code": "300407",
+      "impact": 3,
+      "analysis": "中标雅万高铁高速动车组仿真模拟驾驶培训设备。"
+    },
+    {
+      "stock_name": "新筑股份",
+      "stock_code": "002480",
+      "impact": 3,
+      "analysis": "桥梁支座产品应用于雅万高铁建设。"
+    },
+    {
+      "stock_name": "金鹰重工",
+      "stock_code": "002069",
+      "impact": 3,
+      "analysis": "轨道工程机械装备供应商。"
+    },
+    {
+      "stock_name": "捷邦科技",
+      "stock_code": "300724",
+      "impact": 3,
+      "analysis": "碳纳米管和浆料产能领先。"
+    },
+    {
+      "stock_name": "天奈科技",
+      "stock_code": "300741",
+      "impact": 3,
+      "analysis": "浆料和粉体产能持续扩张。"
+    },
+    {
+      "stock_name": "道氏技术",
+      "stock_code": "300846",
+      "impact": 3,
+      "analysis": "浆料和粉体产能稳步增长。"
+    },
+    {
+      "stock_name": "德方纳米",
+      "stock_code": "301109",
+      "impact": 3,
+      "analysis": "浆料产能稳定。"
+    },
+    {
+      "stock_name": "龙竹科技",
+      "stock_code": "300843",
+      "impact": 3,
+      "analysis": "竹吸管和竹杯等产品研发。"
+    },
+    {
+      "stock_name": "双枪科技",
+      "stock_code": "002208",
+      "impact": 3,
+      "analysis": "植物纤维复合材料和抗菌材料研发。"
+    },
+    {
+      "stock_name": "宜宾纸业",
+      "stock_code": "600793",
+      "impact": 3,
+      "analysis": "竹浆纸一体化发展战略。"
+    },
+    {
+      "stock_name": "青山纸业",
+      "stock_code": "600206",
+      "impact": 3,
+      "analysis": "有机竹林认证。"
+    },
+    {
+      "stock_name": "永安林业",
+      "stock_code": "000663",
+      "impact": 3,
+      "analysis": "竹业产业集群。"
+    },
+    {
+      "stock_name": "福建金森",
+      "stock_code": "002679",
+      "impact": 3,
+      "analysis": "竹林碳汇开发合作协议。"
+    },
+    {
+      "stock_name": "博菲电气",
+      "stock_code": "603090",
+      "impact": 4,
+      "analysis": "风电绝缘材料产能扩张。"
+    },
+    {
+      "stock_name": "众生药业",
+      "stock_code": "002317",
+      "impact": 4,
+      "analysis": "新冠药研发进展顺利。"
+    },
+    {
+      "stock_name": "芳源股份",
+      "stock_code": "300989",
+      "impact": 4,
+      "analysis": "IRA法案延期预期。"
+    },
+    {
+      "stock_name": "网达软件",
+      "stock_code": "300995",
+      "impact": 4,
+      "analysis": "业务订单饱满。"
+    },
+    {
+      "stock_name": "湖北广电",
+      "stock_code": "000665",
+      "impact": 4,
+      "analysis": "互联网彩票和VR业务发展。"
+    },
+    {
+      "stock_name": "普蕊斯",
+      "stock_code": "300382",
+      "impact": 3,
+      "analysis": "众生药业SMO合作伙伴。"
+    },
+    {
+      "stock_name": "金禄电子",
+      "stock_code": "300460",
+      "impact": 3,
+      "analysis": "BMS和储能产品供应商。"
+    },
+    {
+      "stock_name": "立讯精密",
+      "stock_code": "002475",
+      "impact": 3,
+      "analysis": "歌尔股份良率造假事件。"
+    }
+  ],
+  "article_id": "0bc667110de042ff81b27650a19fa203",
+  "article_date": "2022-11-08",
+  "article_title": "2011.11.8市场逻辑精选"
+}

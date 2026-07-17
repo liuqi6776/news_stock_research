@@ -1,0 +1,62 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "风电",
+      "impact": 4,
+      "analysis": "全球需求景气，业绩持续向上，利好板块。"
+    },
+    {
+      "sector_name": "有色金属",
+      "impact": 3,
+      "analysis": "铜行业供需缺口扩大，价格有望上涨，利好板块。"
+    },
+    {
+      "sector_name": "可控核聚变",
+      "impact": 3,
+      "analysis": "中国聚变公司研发进展，利好板块。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "吉鑫科技",
+      "stock_code": "300021",
+      "impact": 4,
+      "analysis": "风电铸件企业，受益风电行业景气。"
+    },
+    {
+      "stock_name": "新强联",
+      "stock_code": "300896",
+      "impact": 4,
+      "analysis": "风电轴承龙头，主轴出货占比提升。"
+    },
+    {
+      "stock_name": "北方铜业",
+      "stock_code": "000638",
+      "impact": 3,
+      "analysis": "铜业务占比高，受益铜价上涨。"
+    },
+    {
+      "stock_name": "江西铜业",
+      "stock_code": "600362",
+      "impact": 3,
+      "analysis": "中国最大铜生产基地，受益铜价上涨。"
+    },
+    {
+      "stock_name": "合锻智能",
+      "stock_code": "300104",
+      "impact": 3,
+      "analysis": "承接中国聚变能商业化核心部件制造任务。"
+    },
+    {
+      "stock_name": "旭光电子",
+      "stock_code": "300380",
+      "impact": 3,
+      "analysis": "自主研发大功率电子管，填补国内技术空白。"
+    }
+  ],
+  "article_id": "228c930f538a44368a4158ff48aff598",
+  "article_date": "2025-09-25",
+  "article_title": "2025.9.25市场逻辑精选"
+}

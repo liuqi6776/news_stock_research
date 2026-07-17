@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场活跃，多板块受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "并购重组",
+      "impact": 4,
+      "analysis": "并购重组消息频出，板块活跃"
+    },
+    {
+      "sector_name": "消费",
+      "impact": 3,
+      "analysis": "消费月活动启动，相关板块受益"
+    },
+    {
+      "sector_name": "股权转让",
+      "impact": 3,
+      "analysis": "股权转让概念活跃"
+    },
+    {
+      "sector_name": "北交所",
+      "impact": 2,
+      "analysis": "北交所相关个股受关注"
+    },
+    {
+      "sector_name": "通信",
+      "impact": 2,
+      "analysis": "通信板块受关注"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "松发股份",
+      "stock_code": "002454",
+      "impact": 4,
+      "analysis": "公告一字涨停，并购重组概念"
+    },
+    {
+      "stock_name": "电投产融",
+      "stock_code": "002114",
+      "impact": 4,
+      "analysis": "公告一字涨停，并购重组概念"
+    },
+    {
+      "stock_name": "远达环保",
+      "stock_code": "600740",
+      "impact": 4,
+      "analysis": "公告一字涨停，并购重组概念"
+    },
+    {
+      "stock_name": "泰禾智能",
+      "stock_code": "002713",
+      "impact": 4,
+      "analysis": "公告一字涨停，并购重组概念"
+    },
+    {
+      "stock_name": "海能达",
+      "stock_code": "002583",
+      "impact": 3,
+      "analysis": "北交所概念，连续涨停"
+    }
+  ],
+  "article_title": "11月1日盘前早报 热点事件关注",
+  "html_file": "bc2kvu5c0n.html",
+  "article_date": "2024-11-01"
+}

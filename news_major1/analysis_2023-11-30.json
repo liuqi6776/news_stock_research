@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策支持与技术创新推动市场活跃",
+  "sectors": [
+    {
+      "sector_name": "预制菜",
+      "impact": 4,
+      "analysis": "政策支持与市场空间扩大，板块受益"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "瑞萨电子技术突破，半导体板块受提振"
+    },
+    {
+      "sector_name": "汽车零部件",
+      "impact": 3,
+      "analysis": "一体化精密镶嵌注塑件技术提升，汽车零部件板块受益"
+    },
+    {
+      "sector_name": "算力",
+      "impact": 3,
+      "analysis": "算力服务器集群合作，算力板块受关注"
+    },
+    {
+      "sector_name": "旅游",
+      "impact": 3,
+      "analysis": "避寒游带动旅游订单增长，旅游板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "兴瑞科技",
+      "stock_code": "002702",
+      "impact": 4,
+      "analysis": "技术实现与量产交付获得认可"
+    },
+    {
+      "stock_name": "爱施德",
+      "stock_code": "002416",
+      "impact": 3,
+      "analysis": "独家支持魅族门店建设运营"
+    },
+    {
+      "stock_name": "千味央厨",
+      "stock_code": "603517",
+      "impact": 4,
+      "analysis": "增发项目扩产增加利润"
+    },
+    {
+      "stock_name": "润建股份",
+      "stock_code": "002979",
+      "impact": 3,
+      "analysis": "合作打造东盟算力服务器集群"
+    },
+    {
+      "stock_name": "桂林旅游",
+      "stock_code": "600200",
+      "impact": 3,
+      "analysis": "避寒游带动旅游订单增长"
+    }
+  ],
+  "article_id": "b101ddf3615e41c0a2f2d1f292b3bbc0",
+  "article_date": "2023-11-30",
+  "article_title": "2023.11.30市场逻辑精选"
+}

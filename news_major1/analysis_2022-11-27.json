@@ -1,0 +1,97 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "医药生物",
+      "impact": 4,
+      "analysis": "吸入式疫苗及药物概念股受关注"
+    },
+    {
+      "sector_name": "电力",
+      "impact": 3,
+      "analysis": "电力现货市场政策推动储能、虚拟电厂等概念股"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 2,
+      "analysis": "银行流动性支持及降准利好地产板块"
+    },
+    {
+      "sector_name": "科技",
+      "impact": 2,
+      "analysis": "DPU订单落地、新能源功率预测等概念股活跃"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "康希诺",
+      "stock_code": "688185",
+      "impact": 4,
+      "analysis": "吸入式新冠疫苗概念股"
+    },
+    {
+      "stock_name": "前沿生物",
+      "stock_code": "688599",
+      "impact": 4,
+      "analysis": "吸入式新冠治疗用药概念股"
+    },
+    {
+      "stock_name": "南都电源",
+      "stock_code": "300259",
+      "impact": 3,
+      "analysis": "储能电站概念股"
+    },
+    {
+      "stock_name": "金智科技",
+      "stock_code": "600396",
+      "impact": 3,
+      "analysis": "虚拟电厂概念股"
+    },
+    {
+      "stock_name": "中交地产",
+      "stock_code": "600018",
+      "impact": 3,
+      "analysis": "受益于银行流动性支持及降准"
+    },
+    {
+      "stock_name": "ST泰禾",
+      "stock_code": "000732",
+      "impact": 2,
+      "analysis": "市场联想公司与万科债务重组"
+    },
+    {
+      "stock_name": "左江科技",
+      "stock_code": "688516",
+      "impact": 3,
+      "analysis": "DPU订单落地，价格超预期"
+    },
+    {
+      "stock_name": "国能日新",
+      "stock_code": "300790",
+      "impact": 3,
+      "analysis": "新能源功率预测龙头"
+    },
+    {
+      "stock_name": "龙源技术",
+      "stock_code": "601028",
+      "impact": 3,
+      "analysis": "等离子体燃烧器绝对龙头"
+    },
+    {
+      "stock_name": "海默科技",
+      "stock_code": "603014",
+      "impact": 3,
+      "analysis": "中阿数字油田核心股"
+    },
+    {
+      "stock_name": "汉王科技",
+      "stock_code": "300240",
+      "impact": 2,
+      "analysis": "阿凡达定制款即将上市"
+    }
+  ],
+  "article_id": "198c4c1fadf24b6b9afbbdfe678a67f6",
+  "article_date": "2022-11-27",
+  "article_title": "2022.11.27市场逻辑精选"
+}

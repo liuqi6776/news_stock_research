@@ -1,0 +1,72 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极信息影响",
+  "sectors": [
+    {
+      "sector_name": "抖音代运营",
+      "impact": 3,
+      "analysis": "抖音代运营业务增长，相关公司受益"
+    },
+    {
+      "sector_name": "智能眼镜",
+      "impact": 3,
+      "analysis": "智能眼镜技术专利申请，相关公司受益"
+    },
+    {
+      "sector_name": "免税店",
+      "impact": 3,
+      "analysis": "王府井与武商集团合作设立免税店，相关公司受益"
+    },
+    {
+      "sector_name": "低轨卫星互联网",
+      "impact": 3,
+      "analysis": "低轨卫星互联网业务拓展，相关公司受益"
+    },
+    {
+      "sector_name": "AI数据中心",
+      "impact": 3,
+      "analysis": "AI数据中心需求增长，相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "值得买",
+      "stock_code": "300636",
+      "impact": 3,
+      "analysis": "抖音代运营业务增长，公司受益"
+    },
+    {
+      "stock_name": "利安隆",
+      "stock_code": "300190",
+      "impact": 3,
+      "analysis": "PI产品应用于三星手机，机器人领域前景看好"
+    },
+    {
+      "stock_name": "红旗连锁",
+      "stock_code": "002697",
+      "impact": 3,
+      "analysis": "四川省消费月活动，公司受益"
+    },
+    {
+      "stock_name": "丝路视觉",
+      "stock_code": "300053",
+      "impact": 3,
+      "analysis": "智能眼镜专利申请，公司受益"
+    },
+    {
+      "stock_name": "武商集团",
+      "stock_code": "000501",
+      "impact": 3,
+      "analysis": "与王府井合作设立免税店，公司受益"
+    },
+    {
+      "stock_name": "通宇通讯",
+      "stock_code": "002156",
+      "impact": 3,
+      "analysis": "参股鸿擎科技，低轨卫星互联网业务拓展"
+    }
+  ],
+  "article_id": "2b17c9182a6f4f64bc6cff64d500c0e0",
+  "article_date": "2024-12-26",
+  "article_title": "2024.12.26市场逻辑精选"
+}

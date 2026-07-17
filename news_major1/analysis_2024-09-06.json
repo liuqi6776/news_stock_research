@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪提升",
+  "sectors": [
+    {
+      "sector_name": "证券",
+      "impact": 4,
+      "analysis": "国泰君安与海通合并，行业整合预期提升"
+    },
+    {
+      "sector_name": "医药医疗",
+      "impact": 3,
+      "analysis": "海南自由贸易港药品医疗器械零关税，板块受益"
+    },
+    {
+      "sector_name": "电商",
+      "impact": 3,
+      "analysis": "淘宝引入微信支付，电商行业受益"
+    },
+    {
+      "sector_name": "科技",
+      "impact": 3,
+      "analysis": "华为概念持续发酵，科技板块活跃"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 2,
+      "analysis": "政策支持，房地产板块有所提振"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "海通证券",
+      "stock_code": "600837",
+      "impact": 4,
+      "analysis": "合并预期提升股价"
+    },
+    {
+      "stock_name": "国泰君安",
+      "stock_code": "601211",
+      "impact": 4,
+      "analysis": "合并预期提升股价"
+    },
+    {
+      "stock_name": "海南海药",
+      "stock_code": "603558",
+      "impact": 3,
+      "analysis": "海南自由贸易港政策受益"
+    },
+    {
+      "stock_name": "淘宝",
+      "stock_code": "9698.HK",
+      "impact": 3,
+      "analysis": "引入微信支付，电商业务受益"
+    },
+    {
+      "stock_name": "科森科技",
+      "stock_code": "002821",
+      "impact": 4,
+      "analysis": "华为折叠屏概念，股价持续上涨"
+    }
+  ],
+  "article_title": "9月6日盘前早报 热点事件关注",
+  "html_file": "7zcm3zesyl.html",
+  "article_date": "2024-09-06"
+}

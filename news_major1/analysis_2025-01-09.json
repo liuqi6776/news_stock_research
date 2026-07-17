@@ -1,0 +1,149 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏向利好，多个板块和个股受积极消息驱动",
+  "sectors": [
+    {
+      "sector_name": "汽车自动驾驶",
+      "impact": 4,
+      "analysis": "特斯拉自动驾驶技术进展，利好相关产业链"
+    },
+    {
+      "sector_name": "芯片设计",
+      "impact": 3,
+      "analysis": "ASIC AI服务器升级趋势，利好芯片设计相关公司"
+    },
+    {
+      "sector_name": "电力设备",
+      "impact": 2,
+      "analysis": "雅达股份与维谛技术合作，利好电力设备相关公司"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "特斯拉机器人量产目标，利好机器人相关产业链"
+    },
+    {
+      "sector_name": "PCB",
+      "impact": 3,
+      "analysis": "GB200 PCB价值量大增，利好PCB相关公司"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 2,
+      "analysis": "信达地产开启房地产纾困，利好房地产相关公司"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "宜通世纪",
+      "stock_code": "300292",
+      "impact": 4,
+      "analysis": "特斯拉自动驾驶技术进展，利好公司"
+    },
+    {
+      "stock_name": "中海达",
+      "stock_code": "300177",
+      "impact": 4,
+      "analysis": "特斯拉自动驾驶技术进展，利好公司"
+    },
+    {
+      "stock_name": "启明信息",
+      "stock_code": "002592",
+      "impact": 4,
+      "analysis": "特斯拉自动驾驶技术进展，利好公司"
+    },
+    {
+      "stock_name": "信息发展",
+      "stock_code": "300469",
+      "impact": 4,
+      "analysis": "特斯拉自动驾驶技术进展，利好公司"
+    },
+    {
+      "stock_name": "纬颖",
+      "stock_code": "300596",
+      "impact": 3,
+      "analysis": "ASIC AI服务器升级趋势，利好公司"
+    },
+    {
+      "stock_name": "雅达股份",
+      "stock_code": "002683",
+      "impact": 2,
+      "analysis": "与维谛技术合作，利好公司"
+    },
+    {
+      "stock_name": "正海磁材",
+      "stock_code": "002123",
+      "impact": 3,
+      "analysis": "人形机器人电机产品，利好公司"
+    },
+    {
+      "stock_name": "华峰测控",
+      "stock_code": "300655",
+      "impact": 3,
+      "analysis": "SoC测试机订单增长，利好公司"
+    },
+    {
+      "stock_name": "立方数科",
+      "stock_code": "300916",
+      "impact": 2,
+      "analysis": "收购云掌财经业务，利好公司"
+    },
+    {
+      "stock_name": "一博科技",
+      "stock_code": "300560",
+      "impact": 3,
+      "analysis": "PCBA营收增长，利好公司"
+    },
+    {
+      "stock_name": "方正科技",
+      "stock_code": "600601",
+      "impact": 3,
+      "analysis": "进入GB300产业链，利好公司"
+    },
+    {
+      "stock_name": "胜宏科技",
+      "stock_code": "002383",
+      "impact": 3,
+      "analysis": "HDI产品占据GB200高份额，利好公司"
+    },
+    {
+      "stock_name": "生益科技",
+      "stock_code": "600183",
+      "impact": 3,
+      "analysis": "覆铜板M8材料首次出货GB200，利好公司"
+    },
+    {
+      "stock_name": "洪都航空",
+      "stock_code": "600316",
+      "impact": 4,
+      "analysis": "关联交易预计额大幅上涨，利好公司"
+    },
+    {
+      "stock_name": "沃格光电",
+      "stock_code": "002086",
+      "impact": 3,
+      "analysis": "封装玻璃基板加快落地，利好公司"
+    },
+    {
+      "stock_name": "神雾节能",
+      "stock_code": "300156",
+      "impact": 3,
+      "analysis": "签订电池制造项目合同，利好公司"
+    },
+    {
+      "stock_name": "信达地产",
+      "stock_code": "600871",
+      "impact": 3,
+      "analysis": "开启房地产纾困大动作，利好公司"
+    },
+    {
+      "stock_name": "国科军工",
+      "stock_code": "600738",
+      "impact": 3,
+      "analysis": "签订重大合同，利好公司"
+    }
+  ],
+  "article_id": "5754626c0b41497e929ec883272a27a9",
+  "article_date": "2025-01-09",
+  "article_title": "2025.1.9市场逻辑精选"
+}

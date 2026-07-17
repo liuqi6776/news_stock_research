@@ -1,0 +1,187 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策利好，市场情绪积极",
+  "sectors": [
+    {
+      "sector_name": "量子计算",
+      "impact": 4,
+      "analysis": "谷歌进展利好，相关个股受提振"
+    },
+    {
+      "sector_name": "教育",
+      "impact": 3,
+      "analysis": "*ST开元子公司受赠资产，利好公司"
+    },
+    {
+      "sector_name": "通信设备",
+      "impact": 3,
+      "analysis": "移远通信AI玩具表现良好，利好公司"
+    },
+    {
+      "sector_name": "家电",
+      "impact": 4,
+      "analysis": "政策支持扩大内需，家电板块受益"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "申昊科技进军人形机器人赛道，利好公司"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 3,
+      "analysis": "流感疫苗项目转让，利好相关公司"
+    },
+    {
+      "sector_name": "家居",
+      "impact": 3,
+      "analysis": "政策支持消费，家居板块受益"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 3,
+      "analysis": "市场零售增长，新能源汽车板块受益"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 3,
+      "analysis": "生物安全法案未列入国防授权法案，利好相关公司"
+    },
+    {
+      "sector_name": "自主可控",
+      "impact": 3,
+      "analysis": "英伟达涉嫌违反反垄断法，利好相关公司"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "星光股份",
+      "stock_code": "300087",
+      "impact": 4,
+      "analysis": "谷歌量子计算进展利好公司"
+    },
+    {
+      "stock_name": "东方中科",
+      "stock_code": "002819",
+      "impact": 4,
+      "analysis": "谷歌量子计算进展利好公司"
+    },
+    {
+      "stock_name": "科大国创",
+      "stock_code": "688016",
+      "impact": 4,
+      "analysis": "谷歌量子计算进展利好公司"
+    },
+    {
+      "stock_name": "国盾量子",
+      "stock_code": "688027",
+      "impact": 4,
+      "analysis": "谷歌量子计算进展利好公司"
+    },
+    {
+      "stock_name": "*ST开元",
+      "stock_code": "000516",
+      "impact": 3,
+      "analysis": "子公司受赠资产，利好公司"
+    },
+    {
+      "stock_name": "伊戈尔",
+      "stock_code": "002922",
+      "impact": 3,
+      "analysis": "发行股票融资，利好公司"
+    },
+    {
+      "stock_name": "移远通信",
+      "stock_code": "300955",
+      "impact": 3,
+      "analysis": "AI玩具表现良好，利好公司"
+    },
+    {
+      "stock_name": "五新隧装",
+      "stock_code": "603816",
+      "impact": 3,
+      "analysis": "拟收购五新重工和兴中科技，利好公司"
+    },
+    {
+      "stock_name": "美的集团",
+      "stock_code": "000333",
+      "impact": 4,
+      "analysis": "家电板块受益，公司受益"
+    },
+    {
+      "stock_name": "石头科技",
+      "stock_code": "688169",
+      "impact": 4,
+      "analysis": "家电板块受益，公司受益"
+    },
+    {
+      "stock_name": "申昊科技",
+      "stock_code": "300383",
+      "impact": 3,
+      "analysis": "进军人形机器人赛道，利好公司"
+    },
+    {
+      "stock_name": "一品红",
+      "stock_code": "600383",
+      "impact": 3,
+      "analysis": "流感疫苗项目转让，利好公司"
+    },
+    {
+      "stock_name": "居然之家",
+      "stock_code": "601859",
+      "impact": 3,
+      "analysis": "政策支持消费，公司受益"
+    },
+    {
+      "stock_name": "欧派家居",
+      "stock_code": "603833",
+      "impact": 3,
+      "analysis": "政策支持消费，公司受益"
+    },
+    {
+      "stock_name": "顾家家居",
+      "stock_code": "603816",
+      "impact": 3,
+      "analysis": "政策支持消费，公司受益"
+    },
+    {
+      "stock_name": "金龙汽车",
+      "stock_code": "600012",
+      "impact": 3,
+      "analysis": "新能源汽车市场增长，公司受益"
+    },
+    {
+      "stock_name": "赛力斯",
+      "stock_code": "600489",
+      "impact": 3,
+      "analysis": "新能源汽车市场增长，公司受益"
+    },
+    {
+      "stock_name": "药明康德",
+      "stock_code": "603259",
+      "impact": 3,
+      "analysis": "生物安全法案未列入国防授权法案，公司受益"
+    },
+    {
+      "stock_name": "德展健康",
+      "stock_code": "002820",
+      "impact": 3,
+      "analysis": "生物安全法案未列入国防授权法案，公司受益"
+    },
+    {
+      "stock_name": "寒武纪",
+      "stock_code": "688005",
+      "impact": 3,
+      "analysis": "英伟达涉嫌违反反垄断法，公司受益"
+    },
+    {
+      "stock_name": "景嘉微",
+      "stock_code": "300474",
+      "impact": 3,
+      "analysis": "英伟达涉嫌违反反垄断法，公司受益"
+    }
+  ],
+  "article_id": "bff541917d7c41b9bfe06b15957818f5",
+  "article_date": "2024-12-09",
+  "article_title": "2024.12.9市场逻辑精选"
+}

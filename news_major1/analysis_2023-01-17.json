@@ -1,0 +1,91 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受积极因素推动，但需关注后续政策落实。",
+  "sectors": [
+    {
+      "sector_name": "公考培训",
+      "impact": 4,
+      "analysis": "行业复苏，需求增加，利好相关公司"
+    },
+    {
+      "sector_name": "航空装备",
+      "impact": 3,
+      "analysis": "成飞集团上市预期，利好产业链相关公司"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 3,
+      "analysis": "兵器工业集团资产注入预期，利好相关公司"
+    },
+    {
+      "sector_name": "新能源",
+      "impact": 3,
+      "analysis": "硅料价格反弹，利好相关公司"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中公教育",
+      "stock_code": "607385",
+      "impact": 4,
+      "analysis": "行业龙头，业绩改善"
+    },
+    {
+      "stock_name": "通达股份",
+      "stock_code": "002560",
+      "impact": 3,
+      "analysis": "成飞集团产业链公司"
+    },
+    {
+      "stock_name": "爱乐达",
+      "stock_code": "300010",
+      "impact": 3,
+      "analysis": "中航工业下属单位供应商"
+    },
+    {
+      "stock_name": "飞亚达",
+      "stock_code": "000026",
+      "impact": 3,
+      "analysis": "中航工业旗下壳公司，资产注入预期"
+    },
+    {
+      "stock_name": "亿利达",
+      "stock_code": "002686",
+      "impact": 3,
+      "analysis": "浙商资管借壳预期"
+    },
+    {
+      "stock_name": "科新机电",
+      "stock_code": "300705",
+      "impact": 3,
+      "analysis": "颗粒硅设备供应商，业绩增长"
+    },
+    {
+      "stock_name": "欧克科技",
+      "stock_code": "603575",
+      "impact": 3,
+      "analysis": "隔膜设备供应商，市场前景广阔"
+    },
+    {
+      "stock_name": "英威腾",
+      "stock_code": "002334",
+      "impact": 3,
+      "analysis": "业绩超预期，光储业务快速发展"
+    },
+    {
+      "stock_name": "光电股份",
+      "stock_code": "600184",
+      "impact": 3,
+      "analysis": "兵器工业集团潜在资产注入平台"
+    },
+    {
+      "stock_name": "诚迈科技",
+      "stock_code": "300598",
+      "impact": 3,
+      "analysis": "统信软件操作系统供应商，信创市场前景广阔"
+    }
+  ],
+  "article_id": "a9aa8c9c3de149f980bc877e772039cf",
+  "article_date": "2023-01-17",
+  "article_title": "2023.1.17市场逻辑精选"
+}

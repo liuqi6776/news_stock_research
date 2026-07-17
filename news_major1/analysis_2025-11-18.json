@@ -1,0 +1,128 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "国产芯片",
+      "impact": 4,
+      "analysis": "AI芯片国产化加速，利好相关企业"
+    },
+    {
+      "sector_name": "半导体设备",
+      "impact": 3,
+      "analysis": "国产替代需求提升，利好相关设备企业"
+    },
+    {
+      "sector_name": "AI眼镜",
+      "impact": 3,
+      "analysis": "AI眼镜新品上市，利好相关芯片和设备企业"
+    },
+    {
+      "sector_name": "AI应用",
+      "impact": 3,
+      "analysis": "AI业务增长，利好相关应用企业"
+    },
+    {
+      "sector_name": "酒店信息管理",
+      "impact": 3,
+      "analysis": "酒店业务有望受益AI应用，利好相关企业"
+    },
+    {
+      "sector_name": "丝绸产业",
+      "impact": 3,
+      "analysis": "政策支持，利好相关企业"
+    },
+    {
+      "sector_name": "特许生产商",
+      "impact": 3,
+      "analysis": "特许商品销售火爆，利好相关企业"
+    },
+    {
+      "sector_name": "美妆电商",
+      "impact": 3,
+      "analysis": "政策利好，自有品牌发展迅速，利好相关企业"
+    },
+    {
+      "sector_name": "智能驾驶",
+      "impact": 3,
+      "analysis": "合作百度布局智能驾驶，利好相关企业"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "东芯股份",
+      "stock_code": "300331",
+      "impact": 4,
+      "analysis": "参股砺算科技，AI芯片研发进展良好"
+    },
+    {
+      "stock_name": "初灵信息",
+      "stock_code": "300250",
+      "impact": 3,
+      "analysis": "间接持有摩尔线程股份，AI应用产品丰富"
+    },
+    {
+      "stock_name": "摩尔线程",
+      "stock_code": "688598",
+      "impact": 4,
+      "analysis": "AI芯片研发进展良好，即将上市"
+    },
+    {
+      "stock_name": "恒玄科技",
+      "stock_code": "688556",
+      "impact": 4,
+      "analysis": "AI眼镜芯片供应商，技术领先"
+    },
+    {
+      "stock_name": "博通集成",
+      "stock_code": "688528",
+      "impact": 3,
+      "analysis": "AIoT芯片产品丰富，与阿里巴巴合作"
+    },
+    {
+      "stock_name": "利欧股份",
+      "stock_code": "000739",
+      "impact": 3,
+      "analysis": "长期合作百度，AI业务增长迅速"
+    },
+    {
+      "stock_name": "奥飞数据",
+      "stock_code": "300738",
+      "impact": 3,
+      "analysis": "百度数据中心基础设施核心供应商"
+    },
+    {
+      "stock_name": "石基信息",
+      "stock_code": "002153",
+      "impact": 3,
+      "analysis": "酒店业务有望受益AI应用"
+    },
+    {
+      "stock_name": "嘉欣丝绸",
+      "stock_code": "600275",
+      "impact": 3,
+      "analysis": "直接受益“东绸西固”政策"
+    },
+    {
+      "stock_name": "元隆雅图",
+      "stock_code": "002878",
+      "impact": 3,
+      "analysis": "十五运会特许生产商，AIGC技术领先"
+    },
+    {
+      "stock_name": "丽人丽妆",
+      "stock_code": "603180",
+      "impact": 3,
+      "analysis": "超70%收入来自天猫平台，自有品牌发展迅速"
+    },
+    {
+      "stock_name": "路畅科技",
+      "stock_code": "300847",
+      "impact": 3,
+      "analysis": "合作百度布局智能驾驶"
+    }
+  ],
+  "article_id": "a4af33300a2f437fa015c0061b032f68",
+  "article_date": "2025-11-18",
+  "article_title": "2025.11.18市场逻辑精选"
+}

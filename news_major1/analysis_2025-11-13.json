@@ -1,0 +1,91 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "锂电池",
+      "impact": 4,
+      "analysis": "隔膜、电解液等细分领域受供需好转和涨价预期推动，板块整体受益。"
+    },
+    {
+      "sector_name": "液冷技术",
+      "impact": 3,
+      "analysis": "液冷技术需求增长，相关公司有望受益。"
+    },
+    {
+      "sector_name": "锂电池材料",
+      "impact": 3,
+      "analysis": "氯化亚砜等锂电池材料价格上涨，相关公司业绩有望提升。"
+    },
+    {
+      "sector_name": "贵金属",
+      "impact": 2,
+      "analysis": "锡、银业务景气，相关公司业绩有望提升。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "沧州明珠",
+      "stock_code": "002108",
+      "impact": 4,
+      "analysis": "隔膜业务受益于供需好转和涨价预期。"
+    },
+    {
+      "stock_name": "星源材质",
+      "stock_code": "603799",
+      "impact": 4,
+      "analysis": "隔膜业务受益于供需好转和涨价预期。"
+    },
+    {
+      "stock_name": "恩捷股份",
+      "stock_code": "002812",
+      "impact": 4,
+      "analysis": "隔膜业务受益于供需好转和涨价预期。"
+    },
+    {
+      "stock_name": "英维克",
+      "stock_code": "002837",
+      "impact": 3,
+      "analysis": "液冷技术业务受益于需求增长。"
+    },
+    {
+      "stock_name": "凯盛新材",
+      "stock_code": "603011",
+      "impact": 3,
+      "analysis": "氯化亚砜业务受益于价格上涨。"
+    },
+    {
+      "stock_name": "金禾实业",
+      "stock_code": "002597",
+      "impact": 3,
+      "analysis": "氯化亚砜业务受益于价格上涨。"
+    },
+    {
+      "stock_name": "兴业银锡",
+      "stock_code": "000426",
+      "impact": 2,
+      "analysis": "锡、银业务景气，业绩有望提升。"
+    },
+    {
+      "stock_name": "联泓新科",
+      "stock_code": "603603",
+      "impact": 3,
+      "analysis": "锂电添加剂VC业务受益于价格上涨。"
+    },
+    {
+      "stock_name": "佛塑科技",
+      "stock_code": "000973",
+      "impact": 3,
+      "analysis": "布局硫化锂和锂电隔膜业务。"
+    },
+    {
+      "stock_name": "盛屯矿业",
+      "stock_code": "600911",
+      "impact": 2,
+      "analysis": "增资盛屯黄金国际，助力海外金矿收购落地。"
+    }
+  ],
+  "article_id": "4c725f3a9d3146b0a41558fbcf990829",
+  "article_date": "2025-11-13",
+  "article_title": "2025.11.13市场逻辑精选"
+}

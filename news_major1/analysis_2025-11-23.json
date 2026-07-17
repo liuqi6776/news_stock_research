@@ -1,0 +1,62 @@
+{
+  "market_impact": 3,
+  "market_analysis": "军工题材受地缘政治影响，市场情绪波动较大。",
+  "sectors": [
+    {
+      "sector_name": "军工",
+      "impact": 4,
+      "analysis": "地缘政治紧张，军工板块受益"
+    },
+    {
+      "sector_name": "AI",
+      "impact": 3,
+      "analysis": "谷歌AI平台推出，AI板块受关注"
+    },
+    {
+      "sector_name": "商业航天",
+      "impact": 3,
+      "analysis": "卫星物联网商用试验启动，商业航天板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "龙溪股份",
+      "stock_code": "600537",
+      "impact": 4,
+      "analysis": "军工装备承制资格，受益军工板块"
+    },
+    {
+      "stock_name": "久之洋",
+      "stock_code": "300682",
+      "impact": 4,
+      "analysis": "红外热像仪和激光技术产品，受益军工板块"
+    },
+    {
+      "stock_name": "实达集团",
+      "stock_code": "600734",
+      "impact": 3,
+      "analysis": "数据湖和数据仓库技术，受益AI板块"
+    },
+    {
+      "stock_name": "万兴科技",
+      "stock_code": "300624",
+      "impact": 3,
+      "analysis": "AI大模型和视频创意产品，受益AI板块"
+    },
+    {
+      "stock_name": "上海港湾",
+      "stock_code": "601088",
+      "impact": 3,
+      "analysis": "卫星物联网星座建设，受益商业航天板块"
+    },
+    {
+      "stock_name": "航天动力",
+      "stock_code": "600343",
+      "impact": 3,
+      "analysis": "液体火箭发动机核心供应商，受益商业航天板块"
+    }
+  ],
+  "article_id": "a6a7e88cf87249198732243c9a9e73ed",
+  "article_date": "2025-11-23",
+  "article_title": "2025.11.23市场逻辑精选"
+}

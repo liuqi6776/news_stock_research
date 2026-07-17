@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受积极因素驱动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "半导体设备",
+      "impact": 4,
+      "analysis": "国产电子束光刻机应用实验，利好板块。"
+    },
+    {
+      "sector_name": "一体化压铸",
+      "impact": 3,
+      "analysis": "力劲科技涉足镁合金人形机器人，利好板块。"
+    },
+    {
+      "sector_name": "脑机接口",
+      "impact": 3,
+      "analysis": "行业生态快速演进，利好板块。"
+    },
+    {
+      "sector_name": "体育",
+      "impact": 3,
+      "analysis": "体育强国建设成就发布会，利好板块。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "冠石科技",
+      "stock_code": "300386",
+      "impact": 4,
+      "analysis": "电子束光刻机核心公司，利好。"
+    },
+    {
+      "stock_name": "龙图光罩",
+      "stock_code": "300847",
+      "impact": 4,
+      "analysis": "高端半导体芯片掩模版，利好。"
+    },
+    {
+      "stock_name": "伊之密",
+      "stock_code": "300415",
+      "impact": 3,
+      "analysis": "注塑机、压铸机，利好。"
+    },
+    {
+      "stock_name": "金陵体育",
+      "stock_code": "600609",
+      "impact": 3,
+      "analysis": "体育器材，利好。"
+    }
+  ],
+  "article_id": "7498798f50b24b3a8ded78a8815e2b55",
+  "article_date": "2025-08-14",
+  "article_title": "2025.8.14市场逻辑精选"
+}

@@ -1,0 +1,92 @@
+{
+  "market_impact": 3,
+  "market_analysis": "数据要素、陆地盐矿、无人驾驶等题材活跃，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "数据要素",
+      "impact": 4,
+      "analysis": "政策利好，板块活跃度提升。"
+    },
+    {
+      "sector_name": "陆地盐矿",
+      "impact": 3,
+      "analysis": "受核污染替代海盐预期，板块关注度提升。"
+    },
+    {
+      "sector_name": "无人驾驶",
+      "impact": 3,
+      "analysis": "特斯拉FSD V12发布，板块关注度提升。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "三维天地",
+      "stock_code": "300776",
+      "impact": 3,
+      "analysis": "数据可视化分析平台应用推广，受益数据要素政策。"
+    },
+    {
+      "stock_name": "零点有数",
+      "stock_code": "603881",
+      "impact": 3,
+      "analysis": "数据分析与决策支持业务受益数据要素市场发展。"
+    },
+    {
+      "stock_name": "东方国信",
+      "stock_code": "300367",
+      "impact": 3,
+      "analysis": "提供数据采集、存储、加工、分析、应用等闭环服务。"
+    },
+    {
+      "stock_name": "江盐集团",
+      "stock_code": "600386",
+      "impact": 3,
+      "analysis": "主要从事盐矿的开采、盐及盐化工产品的生产与销售。"
+    },
+    {
+      "stock_name": "苏盐井神",
+      "stock_code": "603717",
+      "impact": 3,
+      "analysis": "自主研发的“井下循环一体化制碱工艺”，盐及盐化产品出口。"
+    },
+    {
+      "stock_name": "天迈科技",
+      "stock_code": "300662",
+      "impact": 3,
+      "analysis": "成功开发运营车辆主动安全辅助驾驶系统。"
+    },
+    {
+      "stock_name": "兴民智通",
+      "stock_code": "002355",
+      "impact": 3,
+      "analysis": "子公司英泰思特国内新能源汽车T-BOX市占率40%。"
+    },
+    {
+      "stock_name": "金杨股份",
+      "stock_code": "603678",
+      "impact": 3,
+      "analysis": "主营业务电池精密结构件及材料制造，受益小米汽车。"
+    },
+    {
+      "stock_name": "电工合金",
+      "stock_code": "002376",
+      "impact": 3,
+      "analysis": "高压连接件间接运用于小米汽车、小鹏汽车等众多车型。"
+    },
+    {
+      "stock_name": "中公高科",
+      "stock_code": "603030",
+      "impact": 3,
+      "analysis": "云平台提供公路网检测数据管理分析，受益数据要素政策。"
+    },
+    {
+      "stock_name": "宝明科技",
+      "stock_code": "002992",
+      "impact": 3,
+      "analysis": "PP复合铜箔测试结果落地预期，受益电池行业。"
+    }
+  ],
+  "article_id": "583fe1f6d9f34a49b3a425247f31b19c",
+  "article_date": "2023-08-23",
+  "article_title": "2023.8.23市场逻辑精选"
+}

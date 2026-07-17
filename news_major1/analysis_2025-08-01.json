@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股受利好消息提振。",
+  "sectors": [
+    {
+      "sector_name": "人工智能",
+      "impact": 4,
+      "analysis": "政策支持，AI应用商业化加速，板块受益"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "国产算力芯片发展，半导体板块受关注"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 3,
+      "analysis": "创新药研发进展，医药板块表现活跃"
+    },
+    {
+      "sector_name": "金刚石",
+      "impact": 3,
+      "analysis": "超硬材料突破，金刚石板块受提振"
+    },
+    {
+      "sector_name": "AI设计",
+      "impact": 3,
+      "analysis": "Figma上市，AI设计板块受关注"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "东芯股份",
+      "stock_code": "002793",
+      "impact": 4,
+      "analysis": "国产算力芯片，受政策支持"
+    },
+    {
+      "stock_name": "南兴股份",
+      "stock_code": "002799",
+      "impact": 4,
+      "analysis": "AI智能体，受AI应用商业化加速影响"
+    },
+    {
+      "stock_name": "奇正藏药",
+      "stock_code": "002287",
+      "impact": 3,
+      "analysis": "医药创新药研发进展"
+    },
+    {
+      "stock_name": "黄河旋风",
+      "stock_code": "600176",
+      "impact": 3,
+      "analysis": "金刚石材料突破，股价受提振"
+    },
+    {
+      "stock_name": "郑中设计",
+      "stock_code": "300075",
+      "impact": 3,
+      "analysis": "AI设计领域，受Figma上市影响"
+    }
+  ],
+  "article_title": "8月1日盘前纪要",
+  "html_file": "3xm3bxc19jx.html",
+  "article_date": "2025-08-01"
+}

@@ -1,0 +1,99 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪提升",
+  "sectors": [
+    {
+      "sector_name": "种业农机",
+      "impact": 3,
+      "analysis": "政策支持，行业受益"
+    },
+    {
+      "sector_name": "鲜奶消费",
+      "impact": 3,
+      "analysis": "政策调整，行业前景看好"
+    },
+    {
+      "sector_name": "金融",
+      "impact": 3,
+      "analysis": "证监会会议，市场稳定预期"
+    },
+    {
+      "sector_name": "光模块",
+      "impact": 3,
+      "analysis": "英伟达芯片预订，行业需求增加"
+    },
+    {
+      "sector_name": "华为手机",
+      "impact": 3,
+      "analysis": "华为手机销量回升，行业受益"
+    },
+    {
+      "sector_name": "碳排放",
+      "impact": 3,
+      "analysis": "政策实施，行业迎来发展机遇"
+    },
+    {
+      "sector_name": "疫情相关",
+      "impact": 2,
+      "analysis": "疫情趋势上升，相关药物需求增加"
+    },
+    {
+      "sector_name": "北交所",
+      "impact": 2,
+      "analysis": "转板机制优化，市场期待"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "秋乐种业",
+      "stock_code": "600910",
+      "impact": 3,
+      "analysis": "种业振兴，政策支持"
+    },
+    {
+      "stock_name": "阳光乳业",
+      "stock_code": "600788",
+      "impact": 3,
+      "analysis": "鲜奶消费政策调整，行业前景看好"
+    },
+    {
+      "stock_name": "金证股份",
+      "stock_code": "600446",
+      "impact": 3,
+      "analysis": "证监会会议，市场稳定预期"
+    },
+    {
+      "stock_name": "剑桥科技",
+      "stock_code": "688017",
+      "impact": 3,
+      "analysis": "英伟达芯片预订，行业需求增加"
+    },
+    {
+      "stock_name": "捷荣技术",
+      "stock_code": "002855",
+      "impact": 3,
+      "analysis": "华为手机销量回升，行业受益"
+    },
+    {
+      "stock_name": "福建金森",
+      "stock_code": "002679",
+      "impact": 3,
+      "analysis": "碳排放政策实施，行业迎来发展机遇"
+    },
+    {
+      "stock_name": "拓新药业",
+      "stock_code": "600538",
+      "impact": 2,
+      "analysis": "疫情趋势上升，相关药物需求增加"
+    },
+    {
+      "stock_name": "中马传动",
+      "stock_code": "601968",
+      "impact": 2,
+      "analysis": "北交所转板机制优化，市场期待"
+    }
+  ],
+  "article_title": "2月5日盘前早报 热点事件关注",
+  "html_file": "2r0u60xpj3.html",
+  "article_date": "2024-02-05"
+}

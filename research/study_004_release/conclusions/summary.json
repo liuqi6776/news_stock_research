@@ -1,0 +1,193 @@
+{
+  "study_name": "study_004_daily_level_A_share",
+  "date": "2026-05-05",
+  "market": "A-share (China)",
+  "constraint": "T+1 (cannot sell on purchase day)",
+  "model": "XGBoost Classifier, monthly walk-forward retraining",
+  "prediction_target": "1-day forward return > 1.5%",
+  "optimization_period": "2022-01 to 2024-12",
+  "test_period": "2025-01 to 2026-03",
+  "grid_search_space": {
+    "threshold": [
+      0.5,
+      0.52,
+      0.54,
+      0.56,
+      0.58,
+      0.6,
+      0.62,
+      0.64,
+      0.66
+    ],
+    "max_positions": [
+      1,
+      2,
+      3,
+      5,
+      10
+    ],
+    "stop_loss": [
+      0.0,
+      -0.03,
+      -0.05,
+      -0.07,
+      -0.1
+    ],
+    "take_profit": [
+      0.0,
+      0.05,
+      0.08,
+      0.1,
+      0.15
+    ],
+    "total_combinations": 1125
+  },
+  "best_overall": {
+    "description": "Best by test Sharpe ratio (T+1 constrained)",
+    "threshold": 0.64,
+    "max_positions": 10,
+    "stop_loss": 0.0,
+    "take_profit": 0.05,
+    "opt_cagr": 0.3701622622249518,
+    "opt_sharpe": 2.393028414754716,
+    "opt_max_dd": -0.0620205099639647,
+    "opt_n_trades": 690,
+    "test_cagr": 0.0827235643431332,
+    "test_sharpe": 1.037274863421907,
+    "test_max_dd": -0.065052871040788,
+    "test_n_trades": 233
+  },
+  "critical_findings": {
+    "t1_constraint_destroys_stop_loss": true,
+    "stop_loss_effect_without_t1": "SL=-3% boosts CAGR from 1.6% to 248% (unrealistic)",
+    "stop_loss_effect_with_t1": "SL=-3% makes CAGR -97.8% (catastrophic)",
+    "reason": "A-share T+1 rule prevents same-day stop loss execution; next-day gap-down bypasses stop price",
+    "take_profit_5pct_is_key": "Only TP=5% without SL produces positive test returns",
+    "best_realistic_expectation": "Test CAGR ~8%, Test Sharpe ~1.0, Test MaxDD ~-6.5%",
+    "strategy_edge_is_weak": "Without T+1 violation, strategy barely breaks even in test period"
+  },
+  "top5_test_sharpe": [
+    {
+      "threshold": 0.64,
+      "max_positions": 10,
+      "stop_loss": 0.0,
+      "take_profit": 0.05,
+      "opt_cagr": 0.3701622622249518,
+      "opt_sharpe": 2.393028414754716,
+      "opt_max_dd": -0.0620205099639647,
+      "test_cagr": 0.0827235643431332,
+      "test_sharpe": 1.037274863421907,
+      "test_max_dd": -0.065052871040788
+    },
+    {
+      "threshold": 0.64,
+      "max_positions": 5,
+      "stop_loss": 0.0,
+      "take_profit": 0.05,
+      "opt_cagr": 0.4783367553874427,
+      "opt_sharpe": 2.358970459947456,
+      "opt_max_dd": -0.1247101475120336,
+      "test_cagr": 0.1383997797245217,
+      "test_sharpe": 1.0287266905814063,
+      "test_max_dd": -0.126448798801953
+    },
+    {
+      "threshold": 0.64,
+      "max_positions": 3,
+      "stop_loss": 0.0,
+      "take_profit": 0.05,
+      "opt_cagr": 0.570083619041384,
+      "opt_sharpe": 2.0530585649937367,
+      "opt_max_dd": -0.2174511292132978,
+      "test_cagr": 0.157122230981245,
+      "test_sharpe": 0.8648627368197417,
+      "test_max_dd": -0.1915459805677985
+    },
+    {
+      "threshold": 0.66,
+      "max_positions": 5,
+      "stop_loss": 0.0,
+      "take_profit": 0.05,
+      "opt_cagr": 0.4059185984504041,
+      "opt_sharpe": 2.274484594004777,
+      "opt_max_dd": -0.0905033144406191,
+      "test_cagr": 0.0765309219869208,
+      "test_sharpe": 0.6774179959362426,
+      "test_max_dd": -0.0979473487616651
+    },
+    {
+      "threshold": 0.66,
+      "max_positions": 3,
+      "stop_loss": 0.0,
+      "take_profit": 0.05,
+      "opt_cagr": 0.5007896745955216,
+      "opt_sharpe": 2.093210449156177,
+      "opt_max_dd": -0.1491693797094553,
+      "test_cagr": 0.1035039029965352,
+      "test_sharpe": 0.6760786874040524,
+      "test_max_dd": -0.1313096103147371
+    }
+  ],
+  "top5_test_cagr_positive": [
+    {
+      "threshold": 0.5,
+      "max_positions": 2,
+      "stop_loss": 0.0,
+      "take_profit": 0.05,
+      "opt_cagr": -0.4853052591359676,
+      "opt_sharpe": -0.6781844820933511,
+      "opt_max_dd": -0.8990346355179192,
+      "test_cagr": 0.1744758206834287,
+      "test_sharpe": 0.5805984741930297,
+      "test_max_dd": -0.6273607405205195
+    },
+    {
+      "threshold": 0.64,
+      "max_positions": 3,
+      "stop_loss": 0.0,
+      "take_profit": 0.05,
+      "opt_cagr": 0.570083619041384,
+      "opt_sharpe": 2.0530585649937367,
+      "opt_max_dd": -0.2174511292132978,
+      "test_cagr": 0.157122230981245,
+      "test_sharpe": 0.8648627368197417,
+      "test_max_dd": -0.1915459805677985
+    },
+    {
+      "threshold": 0.64,
+      "max_positions": 5,
+      "stop_loss": 0.0,
+      "take_profit": 0.05,
+      "opt_cagr": 0.4783367553874427,
+      "opt_sharpe": 2.358970459947456,
+      "opt_max_dd": -0.1247101475120336,
+      "test_cagr": 0.1383997797245217,
+      "test_sharpe": 1.0287266905814063,
+      "test_max_dd": -0.126448798801953
+    },
+    {
+      "threshold": 0.66,
+      "max_positions": 3,
+      "stop_loss": 0.0,
+      "take_profit": 0.05,
+      "opt_cagr": 0.5007896745955216,
+      "opt_sharpe": 2.093210449156177,
+      "opt_max_dd": -0.1491693797094553,
+      "test_cagr": 0.1035039029965352,
+      "test_sharpe": 0.6760786874040524,
+      "test_max_dd": -0.1313096103147371
+    },
+    {
+      "threshold": 0.56,
+      "max_positions": 3,
+      "stop_loss": 0.0,
+      "take_profit": 0.05,
+      "opt_cagr": 0.1050081504193738,
+      "opt_sharpe": 0.4543036983032331,
+      "opt_max_dd": -0.6844239019633117,
+      "test_cagr": 0.0856229583290029,
+      "test_sharpe": 0.4053467764093906,
+      "test_max_dd": -0.5799170496179256
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股受利好消息提振。",
+  "sectors": [
+    {
+      "sector_name": "eVTOL科技",
+      "impact": 4,
+      "analysis": "亿航智能业绩大幅增长，带动相关产业链个股上涨。"
+    },
+    {
+      "sector_name": "商业航天",
+      "impact": 3,
+      "analysis": "人类首次商业太空行走，相关航天概念股受关注。"
+    },
+    {
+      "sector_name": "猴痘概念",
+      "impact": 2,
+      "analysis": "泰国确诊亚洲首例猴痘新毒株病例，相关概念股受关注。"
+    },
+    {
+      "sector_name": "华为概念",
+      "impact": 3,
+      "analysis": "华为海思全联接大会即将举行，相关概念股受关注。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "亿航智能",
+      "stock_code": "688016",
+      "impact": 4,
+      "analysis": "业绩大幅增长，带动股价上涨。"
+    },
+    {
+      "stock_name": "烽火电子",
+      "stock_code": "000561",
+      "impact": 3,
+      "analysis": "参与人类首次商业太空行走，股价受关注。"
+    },
+    {
+      "stock_name": "亚太药业",
+      "stock_code": "002370",
+      "impact": 2,
+      "analysis": "猴痘概念股，股价受关注。"
+    },
+    {
+      "stock_name": "深圳华强",
+      "stock_code": "000062",
+      "impact": 3,
+      "analysis": "华为概念股，股价受关注。"
+    }
+  ],
+  "article_title": "8月23日盘前早报 热点事件关注",
+  "html_file": "cwpawlfeax.html",
+  "article_date": "2024-08-23"
+}

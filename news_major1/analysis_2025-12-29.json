@@ -1,0 +1,92 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，数字人民币和3D打印板块受关注。",
+  "sectors": [
+    {
+      "sector_name": "数字货币",
+      "impact": 4,
+      "analysis": "数字人民币计息政策推动板块上涨。"
+    },
+    {
+      "sector_name": "3D打印",
+      "impact": 3,
+      "analysis": "商业航天发展带动3D打印需求。"
+    },
+    {
+      "sector_name": "航天装备",
+      "impact": 3,
+      "analysis": "卫星超级工厂投产，航天装备板块受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "翠微股份",
+      "stock_code": "600736",
+      "impact": 3,
+      "analysis": "数字人民币支付服务提供商。"
+    },
+    {
+      "stock_name": "四方精创",
+      "stock_code": "300179",
+      "impact": 3,
+      "analysis": "数字人民币钱包开发厂商。"
+    },
+    {
+      "stock_name": "铂力特",
+      "stock_code": "300382",
+      "impact": 3,
+      "analysis": "3D打印设备供应商，航天领域合作客户多。"
+    },
+    {
+      "stock_name": "银邦股份",
+      "stock_code": "300231",
+      "impact": 3,
+      "analysis": "3D打印供应商，火箭发动机零部件订单增加。"
+    },
+    {
+      "stock_name": "亚光科技",
+      "stock_code": "600703",
+      "impact": 3,
+      "analysis": "卫星超级工厂供应商。"
+    },
+    {
+      "stock_name": "ST思科瑞",
+      "stock_code": "300610",
+      "impact": 3,
+      "analysis": "文昌航天城卫星产业集群关键供应商。"
+    },
+    {
+      "stock_name": "双良节能",
+      "stock_code": "600481",
+      "impact": 3,
+      "analysis": "为SpaceX供应热交换器。"
+    },
+    {
+      "stock_name": "海格通信",
+      "stock_code": "002465",
+      "impact": 3,
+      "analysis": "卫星终端核心股，特种领域比测第一。"
+    },
+    {
+      "stock_name": "征和工业",
+      "stock_code": "002776",
+      "impact": 3,
+      "analysis": "发布全球首款链式灵巧手。"
+    },
+    {
+      "stock_name": "吉林化纤",
+      "stock_code": "600066",
+      "impact": 3,
+      "analysis": "控股股东碳纤维产能全国第一。"
+    },
+    {
+      "stock_name": "雷科防务",
+      "stock_code": "002413",
+      "impact": 3,
+      "analysis": "多型星上智能处理产品交付。"
+    }
+  ],
+  "article_id": "866a3ae967034b958c051cbe91a07dfe",
+  "article_date": "2025-12-29",
+  "article_title": "2025.12.29市场逻辑精选"
+}

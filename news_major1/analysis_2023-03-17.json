@@ -1,0 +1,356 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪提振",
+  "sectors": [
+    {
+      "sector_name": "跨境支付",
+      "impact": 3,
+      "analysis": "政策支持，板块受益"
+    },
+    {
+      "sector_name": "跨境物流",
+      "impact": 3,
+      "analysis": "政策支持，板块受益"
+    },
+    {
+      "sector_name": "跨境贸易",
+      "impact": 3,
+      "analysis": "政策支持，板块受益"
+    },
+    {
+      "sector_name": "中俄合作",
+      "impact": 3,
+      "analysis": "普京支持，板块受益"
+    },
+    {
+      "sector_name": "智慧旅游",
+      "impact": 3,
+      "analysis": "政策支持，板块受益"
+    },
+    {
+      "sector_name": "人工智能+教育",
+      "impact": 3,
+      "analysis": "政策支持，板块受益"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "微软技术植入，板块受益"
+    },
+    {
+      "sector_name": "国企改革",
+      "impact": 3,
+      "analysis": "深化提升，板块受益"
+    },
+    {
+      "sector_name": "危废处理",
+      "impact": 3,
+      "analysis": "重大工程建设，板块受益"
+    },
+    {
+      "sector_name": "量子芯片",
+      "impact": 3,
+      "analysis": "科研突破，板块受益"
+    },
+    {
+      "sector_name": "无线通信",
+      "impact": 3,
+      "analysis": "技术突破，板块受益"
+    },
+    {
+      "sector_name": "城市黑臭水体",
+      "impact": 3,
+      "analysis": "政策支持，板块受益"
+    },
+    {
+      "sector_name": "6G技术",
+      "impact": 3,
+      "analysis": "技术发展，板块受益"
+    },
+    {
+      "sector_name": "磷矿石",
+      "impact": 3,
+      "analysis": "紧缺延续，板块受益"
+    },
+    {
+      "sector_name": "集成电路",
+      "impact": 3,
+      "analysis": "加快补短板，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中油资本",
+      "stock_code": "000617",
+      "impact": 3,
+      "analysis": "跨境支付政策支持"
+    },
+    {
+      "stock_name": "贝肯能源",
+      "stock_code": "002828",
+      "impact": 3,
+      "analysis": "跨境支付政策支持"
+    },
+    {
+      "stock_name": "新晨科技",
+      "stock_code": "603787",
+      "impact": 3,
+      "analysis": "跨境支付政策支持"
+    },
+    {
+      "stock_name": "华峰超纤",
+      "stock_code": "300095",
+      "impact": 3,
+      "analysis": "跨境支付政策支持"
+    },
+    {
+      "stock_name": "天顺股份",
+      "stock_code": "002800",
+      "impact": 3,
+      "analysis": "跨境物流政策支持"
+    },
+    {
+      "stock_name": "三羊马",
+      "stock_code": "300562",
+      "impact": 3,
+      "analysis": "跨境物流政策支持"
+    },
+    {
+      "stock_name": "东方嘉盛",
+      "stock_code": "002885",
+      "impact": 3,
+      "analysis": "跨境物流政策支持"
+    },
+    {
+      "stock_name": "嘉友国际",
+      "stock_code": "603567",
+      "impact": 3,
+      "analysis": "跨境物流政策支持"
+    },
+    {
+      "stock_name": "跨境通",
+      "stock_code": "002640",
+      "impact": 3,
+      "analysis": "跨境贸易政策支持"
+    },
+    {
+      "stock_name": "生意宝",
+      "stock_code": "002095",
+      "impact": 3,
+      "analysis": "跨境贸易政策支持"
+    },
+    {
+      "stock_name": "焦点科技",
+      "stock_code": "002315",
+      "impact": 3,
+      "analysis": "跨境贸易政策支持"
+    },
+    {
+      "stock_name": "龙建股份",
+      "stock_code": "600193",
+      "impact": 3,
+      "analysis": "中俄合作政策支持"
+    },
+    {
+      "stock_name": "北方国际",
+      "stock_code": "000065",
+      "impact": 3,
+      "analysis": "中俄合作政策支持"
+    },
+    {
+      "stock_name": "锦州港",
+      "stock_code": "600190",
+      "impact": 3,
+      "analysis": "中俄合作政策支持"
+    },
+    {
+      "stock_name": "岭南股份",
+      "stock_code": "002717",
+      "impact": 3,
+      "analysis": "智慧旅游政策支持"
+    },
+    {
+      "stock_name": "宋城演艺",
+      "stock_code": "300144",
+      "impact": 3,
+      "analysis": "智慧旅游政策支持"
+    },
+    {
+      "stock_name": "丽江股份",
+      "stock_code": "600059",
+      "impact": 3,
+      "analysis": "智慧旅游政策支持"
+    },
+    {
+      "stock_name": "云南旅游",
+      "stock_code": "600537",
+      "impact": 3,
+      "analysis": "智慧旅游政策支持"
+    },
+    {
+      "stock_name": "盛通股份",
+      "stock_code": "002599",
+      "impact": 3,
+      "analysis": "人工智能+教育政策支持"
+    },
+    {
+      "stock_name": "鸿博股份",
+      "stock_code": "002229",
+      "impact": 3,
+      "analysis": "人工智能+教育政策支持"
+    },
+    {
+      "stock_name": "魅视科技",
+      "stock_code": "300588",
+      "impact": 3,
+      "analysis": "人工智能+教育政策支持"
+    },
+    {
+      "stock_name": "科大讯飞",
+      "stock_code": "002230",
+      "impact": 3,
+      "analysis": "人工智能+教育政策支持"
+    },
+    {
+      "stock_name": "方直科技",
+      "stock_code": "300235",
+      "impact": 3,
+      "analysis": "人工智能+教育政策支持"
+    },
+    {
+      "stock_name": "浪潮信息",
+      "stock_code": "000977",
+      "impact": 3,
+      "analysis": "微软技术植入，人工智能受益"
+    },
+    {
+      "stock_name": "海天瑞声",
+      "stock_code": "688016",
+      "impact": 3,
+      "analysis": "微软技术植入，人工智能受益"
+    },
+    {
+      "stock_name": "云从科技",
+      "stock_code": "688022",
+      "impact": 3,
+      "analysis": "微软技术植入，人工智能受益"
+    },
+    {
+      "stock_name": "汉王科技",
+      "stock_code": "300240",
+      "impact": 3,
+      "analysis": "微软技术植入，人工智能受益"
+    },
+    {
+      "stock_name": "鸿博股份",
+      "stock_code": "002229",
+      "impact": 3,
+      "analysis": "微软技术植入，人工智能受益"
+    },
+    {
+      "stock_name": "易华录",
+      "stock_code": "600285",
+      "impact": 3,
+      "analysis": "国企改革深化提升"
+    },
+    {
+      "stock_name": "数据港",
+      "stock_code": "600847",
+      "impact": 3,
+      "analysis": "国企改革深化提升"
+    },
+    {
+      "stock_name": "浙数文化",
+      "stock_code": "600633",
+      "impact": 3,
+      "analysis": "国企改革深化提升"
+    },
+    {
+      "stock_name": "浙富控股",
+      "stock_code": "002266",
+      "impact": 3,
+      "analysis": "危废处理重大工程建设"
+    },
+    {
+      "stock_name": "捷强装备",
+      "stock_code": "002532",
+      "impact": 3,
+      "analysis": "危废处理重大工程建设"
+    },
+    {
+      "stock_name": "国盾量子",
+      "stock_code": "688027",
+      "impact": 3,
+      "analysis": "量子芯片科研突破"
+    },
+    {
+      "stock_name": "光迅科技",
+      "stock_code": "300283",
+      "impact": 3,
+      "analysis": "量子芯片科研突破"
+    },
+    {
+      "stock_name": "诚昌科技",
+      "stock_code": "300823",
+      "impact": 3,
+      "analysis": "无线通信技术突破"
+    },
+    {
+      "stock_name": "信维通信",
+      "stock_code": "300136",
+      "impact": 3,
+      "analysis": "无线通信技术突破"
+    },
+    {
+      "stock_name": "青龙管业",
+      "stock_code": "002457",
+      "impact": 3,
+      "analysis": "城市黑臭水体政策支持"
+    },
+    {
+      "stock_name": "节能国祯",
+      "stock_code": "603159",
+      "impact": 3,
+      "analysis": "城市黑臭水体政策支持"
+    },
+    {
+      "stock_name": "盛路通信",
+      "stock_code": "002446",
+      "impact": 3,
+      "analysis": "6G技术发展"
+    },
+    {
+      "stock_name": "海能达",
+      "stock_code": "002583",
+      "impact": 3,
+      "analysis": "6G技术发展"
+    },
+    {
+      "stock_name": "兴发集团",
+      "stock_code": "600141",
+      "impact": 3,
+      "analysis": "磷矿石紧缺延续"
+    },
+    {
+      "stock_name": "云天化",
+      "stock_code": "600096",
+      "impact": 3,
+      "analysis": "磷矿石紧缺延续"
+    },
+    {
+      "stock_name": "华中数控",
+      "stock_code": "300161",
+      "impact": 3,
+      "analysis": "集成电路加快补短板"
+    },
+    {
+      "stock_name": "华东数控",
+      "stock_code": "002248",
+      "impact": 3,
+      "analysis": "集成电路加快补短板"
+    }
+  ],
+  "article_title": "3月17日盘前热点事件关注",
+  "html_file": "3xa4yuhr4h.html",
+  "article_date": "2023-03-17"
+}

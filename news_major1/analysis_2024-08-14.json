@@ -1,0 +1,123 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股受积极因素影响。",
+  "sectors": [
+    {
+      "sector_name": "水利建设",
+      "impact": 3,
+      "analysis": "受央行新增贷款支持防汛救灾影响，板块受益"
+    },
+    {
+      "sector_name": "智能电网",
+      "impact": 3,
+      "analysis": "国家能源局方案推动配电网改造，板块受益"
+    },
+    {
+      "sector_name": "铜缆",
+      "impact": 3,
+      "analysis": "英伟达股价上涨，带动相关铜缆需求"
+    },
+    {
+      "sector_name": "AI手机/PC",
+      "impact": 3,
+      "analysis": "谷歌发布AI加持手机，AI手机/PC板块受益"
+    },
+    {
+      "sector_name": "超导",
+      "impact": 3,
+      "analysis": "美国高温超导突破，超导板块受益"
+    },
+    {
+      "sector_name": "可回收火箭",
+      "impact": 3,
+      "analysis": "深蓝航天可回收火箭首飞，板块受益"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "世界机器人大会即将举办，机器人板块受益"
+    },
+    {
+      "sector_name": "AI眼镜",
+      "impact": 3,
+      "analysis": "同花顺概念板块新建AI眼镜，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "冠龙节能",
+      "stock_code": "002102",
+      "impact": 3,
+      "analysis": "受益于水利建设板块利好"
+    },
+    {
+      "stock_name": "舜禹股份",
+      "stock_code": "300015",
+      "impact": 3,
+      "analysis": "受益于水利建设板块利好"
+    },
+    {
+      "stock_name": "九洲集团",
+      "stock_code": "000159",
+      "impact": 3,
+      "analysis": "受益于智能电网板块利好"
+    },
+    {
+      "stock_name": "电科院",
+      "stock_code": "300012",
+      "impact": 3,
+      "analysis": "受益于智能电网板块利好"
+    },
+    {
+      "stock_name": "神宇股份",
+      "stock_code": "300207",
+      "impact": 3,
+      "analysis": "受益于铜缆板块利好"
+    },
+    {
+      "stock_name": "沃尔核材",
+      "stock_code": "002130",
+      "impact": 3,
+      "analysis": "受益于铜缆板块利好"
+    },
+    {
+      "stock_name": "思泉新材",
+      "stock_code": "603610",
+      "impact": 3,
+      "analysis": "受益于AI手机/PC板块利好"
+    },
+    {
+      "stock_name": "福蓉科技",
+      "stock_code": "300381",
+      "impact": 3,
+      "analysis": "受益于AI手机/PC板块利好"
+    },
+    {
+      "stock_name": "法尔胜",
+      "stock_code": "000890",
+      "impact": 3,
+      "analysis": "受益于超导板块利好"
+    },
+    {
+      "stock_name": "斯瑞新材",
+      "stock_code": "300527",
+      "impact": 3,
+      "analysis": "受益于可回收火箭板块利好"
+    },
+    {
+      "stock_name": "斯菱股份",
+      "stock_code": "603833",
+      "impact": 3,
+      "analysis": "受益于机器人板块利好"
+    },
+    {
+      "stock_name": "伟时电子",
+      "stock_code": "300545",
+      "impact": 3,
+      "analysis": "受益于AI眼镜板块利好"
+    }
+  ],
+  "article_title": "8月14日盘前早报 热点事件关注",
+  "html_file": "ej8eur07a7.html",
+  "article_date": "2024-08-14"
+}

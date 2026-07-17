@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，北交所和基因治疗板块受关注。",
+  "sectors": [
+    {
+      "sector_name": "北交所",
+      "impact": 4,
+      "analysis": "成交活跃，有望纳入中证跨市场指数，利好"
+    },
+    {
+      "sector_name": "基因治疗",
+      "impact": 3,
+      "analysis": "全球首个CRISPR基因编辑疗法获批，利好"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 2,
+      "analysis": "政策表态超预期，利好"
+    },
+    {
+      "sector_name": "芯片封装",
+      "impact": 3,
+      "analysis": "美国投入30亿美金资助芯片封装行业，利好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "曙光数创",
+      "stock_code": "300516",
+      "impact": 4,
+      "analysis": "有望纳入中证1000指数，利好"
+    },
+    {
+      "stock_name": "锦波生物",
+      "stock_code": "300824",
+      "impact": 4,
+      "analysis": "有望纳入中证1000指数，利好"
+    },
+    {
+      "stock_name": "贝瑞基因",
+      "stock_code": "000710",
+      "impact": 3,
+      "analysis": "基因编辑疗法首次获批，利好"
+    },
+    {
+      "stock_name": "兴森科技",
+      "stock_code": "002294",
+      "impact": 3,
+      "analysis": "ABF载板生产基地试产，利好"
+    }
+  ],
+  "article_id": "ade7f05b4f344c4287d15918efd97bc1",
+  "article_date": "2023-11-21",
+  "article_title": "2023.11.21市场逻辑精选"
+}

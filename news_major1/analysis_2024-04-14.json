@@ -1,0 +1,65 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好影响，部分板块和个股表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "金属加工",
+      "impact": 4,
+      "analysis": "俄罗斯金属流入中国市场，利好加工制造企业。"
+    },
+    {
+      "sector_name": "家电",
+      "impact": 3,
+      "analysis": "高端化冰箱产品受益家电更新，利好相关企业。"
+    },
+    {
+      "sector_name": "化肥",
+      "impact": 3,
+      "analysis": "尿素期货大涨，基本面改善预期。"
+    },
+    {
+      "sector_name": "氧化铝",
+      "impact": 3,
+      "analysis": "地缘政治影响，氧化铝价格大涨。"
+    },
+    {
+      "sector_name": "不锈钢",
+      "impact": 3,
+      "analysis": "欧美对俄镍交易限制，利好不锈钢行业。"
+    },
+    {
+      "sector_name": "航运",
+      "impact": 3,
+      "analysis": "地缘危机催动运价上涨。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "广合科技",
+      "stock_code": "002780",
+      "impact": 4,
+      "analysis": "受益于服务器迭代升级，业绩超预期。"
+    },
+    {
+      "stock_name": "雪祺电气",
+      "stock_code": "603816",
+      "impact": 4,
+      "analysis": "受益于消费品更新政策，产品出货量领先。"
+    },
+    {
+      "stock_name": "鹏欣资源",
+      "stock_code": "600419",
+      "impact": 4,
+      "analysis": "布局铜矿，加速金矿项目开采。"
+    },
+    {
+      "stock_name": "毅昌科技",
+      "stock_code": "002420",
+      "impact": 4,
+      "analysis": "一季度扣非净利润增长12倍。"
+    }
+  ],
+  "article_id": "d25d616f2c1f43ed9650055e6f0bcbec",
+  "article_date": "2024-04-14",
+  "article_title": "2024.4.14市场逻辑精选"
+}

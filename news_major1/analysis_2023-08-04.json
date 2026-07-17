@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪提升",
+  "sectors": [
+    {
+      "sector_name": "证券业",
+      "impact": 3,
+      "analysis": "定向降准，活跃市场"
+    },
+    {
+      "sector_name": "房地产行业",
+      "impact": 2,
+      "analysis": "郑州限售政策暂停，稳定市场"
+    },
+    {
+      "sector_name": "国产操作系统",
+      "impact": 3,
+      "analysis": "麒麟软件中标，国产化推进"
+    },
+    {
+      "sector_name": "可再生能源",
+      "impact": 2,
+      "analysis": "绿色电力证书全覆盖，促进消费"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 2,
+      "analysis": "政策支持，消费扩大"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "国联证券",
+      "stock_code": "01456",
+      "impact": 3,
+      "analysis": "证券业定向降准受益"
+    },
+    {
+      "stock_name": "设研院",
+      "stock_code": "000678",
+      "impact": 2,
+      "analysis": "郑州限售政策暂停受益"
+    },
+    {
+      "stock_name": "中国软件",
+      "stock_code": "600536",
+      "impact": 3,
+      "analysis": "麒麟软件中标，国产化推进"
+    },
+    {
+      "stock_name": "南网能源",
+      "stock_code": "600869",
+      "impact": 2,
+      "analysis": "绿色电力证书全覆盖受益"
+    },
+    {
+      "stock_name": "爱美客",
+      "stock_code": "300595",
+      "impact": 2,
+      "analysis": "半年报业绩增长"
+    }
+  ],
+  "article_title": "8月4日盘前早报 热点事件关注",
+  "html_file": "5s2bhqe3v0.html",
+  "article_date": "2023-08-04"
+}

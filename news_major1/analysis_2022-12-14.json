@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好影响，关注自动化、光伏、统一大市场等板块。",
+  "sectors": [
+    {
+      "sector_name": "自动化",
+      "impact": 4,
+      "analysis": "劳动力不足推动自动化需求增长，相关公司受益。"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "TOPCon产业放量，POE胶膜需求提升，相关公司受益。"
+    },
+    {
+      "sector_name": "统一大市场",
+      "impact": 3,
+      "analysis": "政策支持统一大市场建设，相关公司受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "雷赛智能",
+      "stock_code": "002970",
+      "impact": 4,
+      "analysis": "自动化需求增长，公司受益。"
+    },
+    {
+      "stock_name": "信捷电气",
+      "stock_code": "300465",
+      "impact": 4,
+      "analysis": "自动化需求增长，公司受益。"
+    },
+    {
+      "stock_name": "奥普特",
+      "stock_code": "002338",
+      "impact": 3,
+      "analysis": "POE胶膜需求提升，公司受益。"
+    },
+    {
+      "stock_name": "步步高",
+      "stock_code": "002251",
+      "impact": 3,
+      "analysis": "统一大市场建设，公司受益。"
+    }
+  ],
+  "article_id": "d9e8a26cbd8448648fb82c34b0e7c4b1",
+  "article_date": "2022-12-14",
+  "article_title": "2022.12.14市场逻辑精选"
+}

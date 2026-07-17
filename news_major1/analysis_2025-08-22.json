@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏积极，多板块利好。",
+  "sectors": [
+    {
+      "sector_name": "芯片",
+      "impact": 4,
+      "analysis": "DeepSeek-V3.1发布，芯片板块受益"
+    },
+    {
+      "sector_name": "生物医药",
+      "impact": 3,
+      "analysis": "江苏自贸区生物医药全产业链开放创新发展"
+    },
+    {
+      "sector_name": "电力",
+      "impact": 3,
+      "analysis": "中国月度用电量首破万亿，电力需求增加"
+    },
+    {
+      "sector_name": "航天",
+      "impact": 3,
+      "analysis": "星梭科技研制可回收重型运载火箭"
+    },
+    {
+      "sector_name": "区块链",
+      "impact": 2,
+      "analysis": "北京区块链技术应用协会与中科金财达成战略合作"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "DeepSeek",
+      "stock_code": "000931",
+      "impact": 4,
+      "analysis": "DeepSeek-V3.1发布，公司受益"
+    },
+    {
+      "stock_name": "泽璟制药",
+      "stock_code": "300763",
+      "impact": 3,
+      "analysis": "注射用ZG005等获得临床试验批准通知书"
+    },
+    {
+      "stock_name": "华银电力",
+      "stock_code": "600011",
+      "impact": 3,
+      "analysis": "中国月度用电量首破万亿，公司受益"
+    },
+    {
+      "stock_name": "星梭科技",
+      "stock_code": "300833",
+      "impact": 3,
+      "analysis": "研制可回收重型运载火箭"
+    },
+    {
+      "stock_name": "中科金财",
+      "stock_code": "002657",
+      "impact": 2,
+      "analysis": "与北京区块链技术应用协会达成战略合作"
+    }
+  ],
+  "article_title": "8月22日盘前纪要",
+  "html_file": "10u8zk379b8.html",
+  "article_date": "2025-08-22"
+}

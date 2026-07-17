@@ -1,0 +1,91 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，关注AI和数据中心相关板块。",
+  "sectors": [
+    {
+      "sector_name": "AI芯片",
+      "impact": 4,
+      "analysis": "华为开源CANN，利好AI芯片行业。"
+    },
+    {
+      "sector_name": "数据中心",
+      "impact": 3,
+      "analysis": "磁悬浮压缩机需求增长，利好数据中心相关设备。"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 3,
+      "analysis": "无人智能僚机发展，利好军工行业。"
+    },
+    {
+      "sector_name": "养老机器人",
+      "impact": 2,
+      "analysis": "养老机器人市场空间大，利好相关企业。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "东方国信",
+      "stock_code": "300166",
+      "impact": 4,
+      "analysis": "与华为昇思兼容认证，受益AI芯片行业。"
+    },
+    {
+      "stock_name": "皖通科技",
+      "stock_code": "002331",
+      "impact": 3,
+      "analysis": "与昇腾推理兼容性测试，受益数据中心设备。"
+    },
+    {
+      "stock_name": "华孚时尚",
+      "stock_code": "002042",
+      "impact": 3,
+      "analysis": "与华为签署战略合作协议，受益AI算力平台。"
+    },
+    {
+      "stock_name": "磁谷科技",
+      "stock_code": "300424",
+      "impact": 4,
+      "analysis": "磁悬浮压缩机研发生产基地项目，受益磁悬浮压缩机行业。"
+    },
+    {
+      "stock_name": "冰轮环境",
+      "stock_code": "000811",
+      "impact": 3,
+      "analysis": "磁悬浮压缩机产品丰富，受益磁悬浮压缩机行业。"
+    },
+    {
+      "stock_name": "爱乐达",
+      "stock_code": "300762",
+      "impact": 3,
+      "analysis": "无人机装配领域，受益无人智能僚机行业。"
+    },
+    {
+      "stock_name": "航亚科技",
+      "stock_code": "002523",
+      "impact": 3,
+      "analysis": "无人机叶片制造，受益无人智能僚机行业。"
+    },
+    {
+      "stock_name": "新劲刚",
+      "stock_code": "300556",
+      "impact": 3,
+      "analysis": "无人机相关技术，受益无人智能僚机行业。"
+    },
+    {
+      "stock_name": "润阳科技",
+      "stock_code": "603790",
+      "impact": 2,
+      "analysis": "投资傅利叶智能，受益养老机器人行业。"
+    },
+    {
+      "stock_name": "麦迪科技",
+      "stock_code": "002504",
+      "impact": 2,
+      "analysis": "布局康养机器人业务，受益养老机器人行业。"
+    }
+  ],
+  "article_id": "e50177cbf9d44d219a395c4d0775dacf",
+  "article_date": "2025-08-06",
+  "article_title": "2025.8.6市场逻辑精选"
+}

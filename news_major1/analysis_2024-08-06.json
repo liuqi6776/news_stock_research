@@ -1,0 +1,110 @@
+{
+  "market_impact": 2,
+  "market_analysis": "市场情绪偏乐观，多事件利好。",
+  "sectors": [
+    {
+      "sector_name": "乡村振兴",
+      "impact": 3,
+      "analysis": "政策支持，板块受益"
+    },
+    {
+      "sector_name": "国产操作系统",
+      "impact": 3,
+      "analysis": "产业大会召开，板块受关注"
+    },
+    {
+      "sector_name": "核污染",
+      "impact": 2,
+      "analysis": "核污染事件，相关股受影响"
+    },
+    {
+      "sector_name": "商业航天",
+      "impact": 3,
+      "analysis": "卫星发射，板块受益"
+    },
+    {
+      "sector_name": "医药医疗",
+      "impact": 2,
+      "analysis": "创新药政策，板块受关注"
+    },
+    {
+      "sector_name": "大消费",
+      "impact": 2,
+      "analysis": "政策支持，板块受益"
+    },
+    {
+      "sector_name": "次新股",
+      "impact": 2,
+      "analysis": "次新股属性，板块受关注"
+    },
+    {
+      "sector_name": "游戏",
+      "impact": 2,
+      "analysis": "游戏市场增长，板块受益"
+    },
+    {
+      "sector_name": "低价股",
+      "impact": 2,
+      "analysis": "低价股保壳，板块受关注"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "神农种业",
+      "stock_code": "000928",
+      "impact": 3,
+      "analysis": "乡村振兴政策受益"
+    },
+    {
+      "stock_name": "麒麟信安",
+      "stock_code": "688023",
+      "impact": 3,
+      "analysis": "国产操作系统产业大会召开"
+    },
+    {
+      "stock_name": "中电环保",
+      "stock_code": "600795",
+      "impact": 2,
+      "analysis": "核污染事件影响"
+    },
+    {
+      "stock_name": "腾达科技",
+      "stock_code": "300010",
+      "impact": 3,
+      "analysis": "商业航天事件，连板"
+    },
+    {
+      "stock_name": "百花医药",
+      "stock_code": "600596",
+      "impact": 2,
+      "analysis": "创新药政策受益"
+    },
+    {
+      "stock_name": "中央商场",
+      "stock_code": "600280",
+      "impact": 2,
+      "analysis": "大消费政策受益"
+    },
+    {
+      "stock_name": "腾达科技",
+      "stock_code": "300010",
+      "impact": 3,
+      "analysis": "次新股属性，连板"
+    },
+    {
+      "stock_name": "名臣健康",
+      "stock_code": "002919",
+      "impact": 2,
+      "analysis": "游戏市场增长受益"
+    },
+    {
+      "stock_name": "东易日盛",
+      "stock_code": "002713",
+      "impact": 2,
+      "analysis": "低价股保壳"
+    }
+  ],
+  "article_title": "8月6日盘前早报 热点事件关注",
+  "html_file": "cvvcp2kw7j.html",
+  "article_date": "2024-08-06"
+}

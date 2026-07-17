@@ -1,0 +1,66 @@
+{
+  "market_impact": 2,
+  "market_analysis": "市场情绪偏乐观，部分板块和个股受利好消息提振。",
+  "sectors": [
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "特斯拉采购光伏设备，光伏板块受益"
+    },
+    {
+      "sector_name": "光通信",
+      "impact": 3,
+      "analysis": "美股光通信概念领涨，相关个股受益"
+    },
+    {
+      "sector_name": "算力",
+      "impact": 2,
+      "analysis": "算电协同政策利好，算力板块受益"
+    },
+    {
+      "sector_name": "氢能源",
+      "impact": 2,
+      "analysis": "氢能展暨国际氢能大会召开，氢能源板块受益"
+    },
+    {
+      "sector_name": "锂电",
+      "impact": 2,
+      "analysis": "锂电池产业链预排产回升，锂电板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中利集团",
+      "stock_code": "002309",
+      "impact": 3,
+      "analysis": "光伏设备采购利好"
+    },
+    {
+      "stock_name": "瑞斯康达",
+      "stock_code": "600289",
+      "impact": 3,
+      "analysis": "美股光通信概念领涨"
+    },
+    {
+      "stock_name": "奥瑞德",
+      "stock_code": "600703",
+      "impact": 2,
+      "analysis": "算电协同政策利好"
+    },
+    {
+      "stock_name": "科威尔",
+      "stock_code": "002317",
+      "impact": 2,
+      "analysis": "氢能展暨国际氢能大会召开"
+    },
+    {
+      "stock_name": "融捷股份",
+      "stock_code": "002192",
+      "impact": 2,
+      "analysis": "锂电池产业链预排产回升"
+    }
+  ],
+  "article_title": "3月25日盘前纪要",
+  "html_file": "2z0k8w0read.html",
+  "article_date": "2026-03-25"
+}

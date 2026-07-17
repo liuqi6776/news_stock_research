@@ -1,0 +1,66 @@
+{
+  "market_impact": 2,
+  "market_analysis": "市场情绪受消息面影响较大。",
+  "sectors": [
+    {
+      "sector_name": "小米概念",
+      "impact": 3,
+      "analysis": "小米汽车发布，相关产业链受益"
+    },
+    {
+      "sector_name": "固态电池",
+      "impact": 3,
+      "analysis": "固态电池技术突破，相关企业受益"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 2,
+      "analysis": "军工板块受消息面影响"
+    },
+    {
+      "sector_name": "AI",
+      "impact": 2,
+      "analysis": "荣耀IPO辅导备案，AI板块受关注"
+    },
+    {
+      "sector_name": "虚拟资产",
+      "impact": 2,
+      "analysis": "天风国际获虚拟资产交易牌照，相关企业受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "小米集团",
+      "stock_code": "01810",
+      "impact": 3,
+      "analysis": "小米汽车发布，股价受益"
+    },
+    {
+      "stock_name": "海泰科",
+      "stock_code": "002869",
+      "impact": 3,
+      "analysis": "小米汽车供应商，股价受益"
+    },
+    {
+      "stock_name": "神通科技",
+      "stock_code": "300561",
+      "impact": 3,
+      "analysis": "激光雷达技术突破，股价受益"
+    },
+    {
+      "stock_name": "沧州明珠",
+      "stock_code": "002108",
+      "impact": 3,
+      "analysis": "固态电池隔膜企业，股价受益"
+    },
+    {
+      "stock_name": "爱施德",
+      "stock_code": "002416",
+      "impact": 2,
+      "analysis": "荣耀IPO辅导备案，股价受益"
+    }
+  ],
+  "article_title": "6月27日盘前纪要",
+  "html_file": "4e1cxy861l0.html",
+  "article_date": "2025-06-27"
+}

@@ -1,0 +1,228 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件影响，市场情绪波动较大",
+  "sectors": [
+    {
+      "sector_name": "粮食安全",
+      "impact": 3,
+      "analysis": "俄乌冲突影响粮食供应，板块受益"
+    },
+    {
+      "sector_name": "车载摄像头",
+      "impact": 3,
+      "analysis": "自动驾驶技术发展，板块受益"
+    },
+    {
+      "sector_name": "LNG船",
+      "impact": 3,
+      "analysis": "欧洲冬季保供需求旺盛，板块受益"
+    },
+    {
+      "sector_name": "钼",
+      "impact": 3,
+      "analysis": "钼精矿价格创新高，板块受益"
+    },
+    {
+      "sector_name": "石油",
+      "impact": 3,
+      "analysis": "原油价格上涨，板块受益"
+    },
+    {
+      "sector_name": "房地产行业",
+      "impact": 2,
+      "analysis": "政策利好，板块受益"
+    },
+    {
+      "sector_name": "电热毯",
+      "impact": 2,
+      "analysis": "欧洲能源危机，板块受益"
+    },
+    {
+      "sector_name": "调味品",
+      "impact": -2,
+      "analysis": "添加剂事件，板块受影响"
+    },
+    {
+      "sector_name": "生猪",
+      "impact": 2,
+      "analysis": "猪价上涨，板块受益"
+    },
+    {
+      "sector_name": "鸡",
+      "impact": -2,
+      "analysis": "禽流感疫情，板块受影响"
+    },
+    {
+      "sector_name": "教育设备",
+      "impact": 2,
+      "analysis": "政策支持，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "农发种业",
+      "stock_code": "600313",
+      "impact": 3,
+      "analysis": "粮食安全受益"
+    },
+    {
+      "stock_name": "丰乐种业",
+      "stock_code": "600429",
+      "impact": 3,
+      "analysis": "粮食安全受益"
+    },
+    {
+      "stock_name": "敦煌种业",
+      "stock_code": "600353",
+      "impact": 3,
+      "analysis": "粮食安全受益"
+    },
+    {
+      "stock_name": "新农开发",
+      "stock_code": "600359",
+      "impact": 3,
+      "analysis": "粮食安全受益"
+    },
+    {
+      "stock_name": "新赛股份",
+      "stock_code": "600540",
+      "impact": 3,
+      "analysis": "粮食安全受益"
+    },
+    {
+      "stock_name": "永新光学",
+      "stock_code": "603863",
+      "impact": 3,
+      "analysis": "车载摄像头受益"
+    },
+    {
+      "stock_name": "联创电子",
+      "stock_code": "002036",
+      "impact": 3,
+      "analysis": "车载摄像头受益"
+    },
+    {
+      "stock_name": "联合光电",
+      "stock_code": "300073",
+      "impact": 3,
+      "analysis": "车载摄像头受益"
+    },
+    {
+      "stock_name": "中远海能",
+      "stock_code": "600026",
+      "impact": 3,
+      "analysis": "LNG船受益"
+    },
+    {
+      "stock_name": "中远海特",
+      "stock_code": "600026",
+      "impact": 3,
+      "analysis": "LNG船受益"
+    },
+    {
+      "stock_name": "九丰能源",
+      "stock_code": "600383",
+      "impact": 3,
+      "analysis": "LNG船受益"
+    },
+    {
+      "stock_name": "金钼股份",
+      "stock_code": "601958",
+      "impact": 3,
+      "analysis": "钼价格创新高"
+    },
+    {
+      "stock_name": "洛阳钼业",
+      "stock_code": "603993",
+      "impact": 3,
+      "analysis": "钼价格创新高"
+    },
+    {
+      "stock_name": "宝莫股份",
+      "stock_code": "000617",
+      "impact": 3,
+      "analysis": "原油价格上涨"
+    },
+    {
+      "stock_name": "山东墨龙",
+      "stock_code": "002428",
+      "impact": 3,
+      "analysis": "原油价格上涨"
+    },
+    {
+      "stock_name": "贝肯能源",
+      "stock_code": "002828",
+      "impact": 3,
+      "analysis": "原油价格上涨"
+    },
+    {
+      "stock_name": "准油股份",
+      "stock_code": "002207",
+      "impact": 3,
+      "analysis": "原油价格上涨"
+    },
+    {
+      "stock_name": "海泰发展",
+      "stock_code": "600082",
+      "impact": 2,
+      "analysis": "房地产行业政策利好"
+    },
+    {
+      "stock_name": "奥佳华",
+      "stock_code": "002614",
+      "impact": 2,
+      "analysis": "电热毯出口增长"
+    },
+    {
+      "stock_name": "千禾味业",
+      "stock_code": "603369",
+      "impact": -2,
+      "analysis": "调味品添加剂事件"
+    },
+    {
+      "stock_name": "莲花健康",
+      "stock_code": "600433",
+      "impact": -2,
+      "analysis": "调味品添加剂事件"
+    },
+    {
+      "stock_name": "国统股份",
+      "stock_code": "002047",
+      "impact": 2,
+      "analysis": "生猪价格上涨"
+    },
+    {
+      "stock_name": "巨星农牧",
+      "stock_code": "002133",
+      "impact": 2,
+      "analysis": "生猪价格上涨"
+    },
+    {
+      "stock_name": "益生股份",
+      "stock_code": "002458",
+      "impact": -2,
+      "analysis": "禽流感疫情"
+    },
+    {
+      "stock_name": "民和股份",
+      "stock_code": "002234",
+      "impact": -2,
+      "analysis": "禽流感疫情"
+    },
+    {
+      "stock_name": "晓鸣股份",
+      "stock_code": "603833",
+      "impact": -2,
+      "analysis": "禽流感疫情"
+    },
+    {
+      "stock_name": "竞业达",
+      "stock_code": "002619",
+      "impact": 2,
+      "analysis": "教育设备政策支持"
+    }
+  ],
+  "article_title": "10月11日 盘前早8点 股市要闻关注",
+  "html_file": "dkpd7tfrju.html",
+  "article_date": "2022-10-11"
+}

@@ -1,0 +1,250 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策利好，市场情绪提振",
+  "sectors": [
+    {
+      "sector_name": "珠海免税",
+      "impact": 4,
+      "analysis": "横琴封关预期，板块受益"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 3,
+      "analysis": "扩大内需战略，行业受益"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 3,
+      "analysis": "政策支持，行业受益"
+    },
+    {
+      "sector_name": "免税",
+      "impact": 3,
+      "analysis": "免税业发展，行业受益"
+    },
+    {
+      "sector_name": "乡村振兴",
+      "impact": 3,
+      "analysis": "政策支持，行业受益"
+    },
+    {
+      "sector_name": "科技",
+      "impact": 3,
+      "analysis": "政策支持，行业受益"
+    },
+    {
+      "sector_name": "油气",
+      "impact": 3,
+      "analysis": "政策支持，行业受益"
+    },
+    {
+      "sector_name": "中药",
+      "impact": 3,
+      "analysis": "政策支持，行业受益"
+    },
+    {
+      "sector_name": "数字经济",
+      "impact": 3,
+      "analysis": "政策支持，行业受益"
+    },
+    {
+      "sector_name": "养老",
+      "impact": 3,
+      "analysis": "政策支持，行业受益"
+    },
+    {
+      "sector_name": "医药医疗",
+      "impact": 3,
+      "analysis": "政策支持，行业受益"
+    },
+    {
+      "sector_name": "芯片",
+      "impact": 3,
+      "analysis": "政策支持，行业受益"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "政策支持，行业受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "格力地产",
+      "stock_code": "000651",
+      "impact": 4,
+      "analysis": "拟收购珠海免税股权，利好"
+    },
+    {
+      "stock_name": "西安饮食",
+      "stock_code": "000721",
+      "impact": 3,
+      "analysis": "消费复苏，利好"
+    },
+    {
+      "stock_name": "大连友谊",
+      "stock_code": "000679",
+      "impact": 3,
+      "analysis": "消费复苏，利好"
+    },
+    {
+      "stock_name": "美邦服饰",
+      "stock_code": "002269",
+      "impact": 3,
+      "analysis": "消费复苏，利好"
+    },
+    {
+      "stock_name": "敦煌种业",
+      "stock_code": "600354",
+      "impact": 3,
+      "analysis": "粮食安全，利好"
+    },
+    {
+      "stock_name": "农发种业",
+      "stock_code": "300187",
+      "impact": 3,
+      "analysis": "粮食安全，利好"
+    },
+    {
+      "stock_name": "丰乐种业",
+      "stock_code": "000713",
+      "impact": 3,
+      "analysis": "粮食安全，利好"
+    },
+    {
+      "stock_name": "隆平高科",
+      "stock_code": "000998",
+      "impact": 3,
+      "analysis": "粮食安全，利好"
+    },
+    {
+      "stock_name": "悦心健康",
+      "stock_code": "002162",
+      "impact": 3,
+      "analysis": "智慧养老，利好"
+    },
+    {
+      "stock_name": "开能健康",
+      "stock_code": "300272",
+      "impact": 3,
+      "analysis": "智慧养老，利好"
+    },
+    {
+      "stock_name": "九安医疗",
+      "stock_code": "002432",
+      "impact": 3,
+      "analysis": "新冠检测，利好"
+    },
+    {
+      "stock_name": "热景生物",
+      "stock_code": "688089",
+      "impact": 3,
+      "analysis": "新冠检测，利好"
+    },
+    {
+      "stock_name": "东方生物",
+      "stock_code": "603587",
+      "impact": 3,
+      "analysis": "新冠检测，利好"
+    },
+    {
+      "stock_name": "中国中免",
+      "stock_code": "601888",
+      "impact": 3,
+      "analysis": "扩大内需，利好"
+    },
+    {
+      "stock_name": "王府井",
+      "stock_code": "600859",
+      "impact": 3,
+      "analysis": "扩大内需，利好"
+    },
+    {
+      "stock_name": "朗姿股份",
+      "stock_code": "002612",
+      "impact": 3,
+      "analysis": "医美行业，利好"
+    },
+    {
+      "stock_name": "华东医药",
+      "stock_code": "000963",
+      "impact": 3,
+      "analysis": "医美行业，利好"
+    },
+    {
+      "stock_name": "广州酒家",
+      "stock_code": "603369",
+      "impact": 3,
+      "analysis": "消费券发放，利好"
+    },
+    {
+      "stock_name": "广百股份",
+      "stock_code": "002187",
+      "impact": 3,
+      "analysis": "消费券发放，利好"
+    },
+    {
+      "stock_name": "贝因美",
+      "stock_code": "002570",
+      "impact": 3,
+      "analysis": "婴幼儿配方奶新国标，利好"
+    },
+    {
+      "stock_name": "三元股份",
+      "stock_code": "600429",
+      "impact": 3,
+      "analysis": "婴幼儿配方奶新国标，利好"
+    },
+    {
+      "stock_name": "有棵树",
+      "stock_code": "300871",
+      "impact": 3,
+      "analysis": "跨境电商，利好"
+    },
+    {
+      "stock_name": "华凯易佰",
+      "stock_code": "300681",
+      "impact": 3,
+      "analysis": "跨境电商，利好"
+    },
+    {
+      "stock_name": "苏州固锝",
+      "stock_code": "002079",
+      "impact": 3,
+      "analysis": "半导体补贴，利好"
+    },
+    {
+      "stock_name": "芯源微",
+      "stock_code": "688012",
+      "impact": 3,
+      "analysis": "半导体补贴，利好"
+    },
+    {
+      "stock_name": "汉钟精机",
+      "stock_code": "002582",
+      "impact": 3,
+      "analysis": "电解水制氢，利好"
+    },
+    {
+      "stock_name": "兰石重装",
+      "stock_code": "601658",
+      "impact": 3,
+      "analysis": "电解水制氢，利好"
+    },
+    {
+      "stock_name": "精伦电子",
+      "stock_code": "300065",
+      "impact": 3,
+      "analysis": "生物识别标准，利好"
+    },
+    {
+      "stock_name": "汉王科技",
+      "stock_code": "300240",
+      "impact": 3,
+      "analysis": "生物识别标准，利好"
+    }
+  ],
+  "article_title": "12月15日盘前早参 热点事件关注",
+  "html_file": "8quk4s0p66.html",
+  "article_date": "2022-12-15"
+}

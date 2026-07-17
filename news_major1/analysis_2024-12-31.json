@@ -1,0 +1,99 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股受积极因素影响。",
+  "sectors": [
+    {
+      "sector_name": "并购",
+      "impact": 3,
+      "analysis": "并购重组活跃，板块受益"
+    },
+    {
+      "sector_name": "零售",
+      "impact": 2,
+      "analysis": "零售行业受关注，部分个股受益"
+    },
+    {
+      "sector_name": "算力",
+      "impact": 3,
+      "analysis": "算力需求增长，相关个股受益"
+    },
+    {
+      "sector_name": "数据",
+      "impact": 3,
+      "analysis": "数据产业政策支持，板块受益"
+    },
+    {
+      "sector_name": "天然气",
+      "impact": 2,
+      "analysis": "天然气价格上涨，相关个股受益"
+    },
+    {
+      "sector_name": "水利建设",
+      "impact": 2,
+      "analysis": "水利建设政策支持，相关个股受益"
+    },
+    {
+      "sector_name": "旅游",
+      "impact": 2,
+      "analysis": "旅游消费活动增加，相关个股受益"
+    },
+    {
+      "sector_name": "农业科技",
+      "impact": 2,
+      "analysis": "农业科技政策支持，相关个股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "哈森股份",
+      "stock_code": "002832",
+      "impact": 3,
+      "analysis": "并购重组，股价可能受益"
+    },
+    {
+      "stock_name": "中百集团",
+      "stock_code": "000759",
+      "impact": 2,
+      "analysis": "零售行业，股价可能受益"
+    },
+    {
+      "stock_name": "顺钠股份",
+      "stock_code": "002175",
+      "impact": 3,
+      "analysis": "算力需求增长，股价可能受益"
+    },
+    {
+      "stock_name": "数据港",
+      "stock_code": "600845",
+      "impact": 3,
+      "analysis": "数据产业政策支持，股价可能受益"
+    },
+    {
+      "stock_name": "长春燃气",
+      "stock_code": "600333",
+      "impact": 2,
+      "analysis": "天然气价格上涨，股价可能受益"
+    },
+    {
+      "stock_name": "三和管桩",
+      "stock_code": "002847",
+      "impact": 2,
+      "analysis": "水利建设政策支持，股价可能受益"
+    },
+    {
+      "stock_name": "大连圣亚",
+      "stock_code": "600773",
+      "impact": 2,
+      "analysis": "旅游消费活动增加，股价可能受益"
+    },
+    {
+      "stock_name": "星光农机",
+      "stock_code": "603789",
+      "impact": 2,
+      "analysis": "农业科技政策支持，股价可能受益"
+    }
+  ],
+  "article_title": "12月31日盘前早报 热点事件关注",
+  "html_file": "d2z6hm13ul.html",
+  "article_date": "2024-12-31"
+}

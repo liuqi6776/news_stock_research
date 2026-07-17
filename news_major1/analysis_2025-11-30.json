@@ -1,0 +1,68 @@
+{
+  "market_impact": 3,
+  "market_analysis": "太空算力和机器人板块受利好消息推动，市场情绪积极。",
+  "sectors": [
+    {
+      "sector_name": "太空算力",
+      "impact": 4,
+      "analysis": "太空数据中心建设加速，相关产业链受益"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "机器人产业进展披露，ETF增量资金在即"
+    },
+    {
+      "sector_name": "AI手机",
+      "impact": 3,
+      "analysis": "AI手机发布预期，产业链相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "四川金顶",
+      "stock_code": "000678",
+      "impact": 4,
+      "analysis": "参股太空数据中心建设，受益太空算力发展"
+    },
+    {
+      "stock_name": "顺灏股份",
+      "stock_code": "002538",
+      "impact": 4,
+      "analysis": "组建太空数据中心，提供算力服务"
+    },
+    {
+      "stock_name": "长盈精密",
+      "stock_code": "300115",
+      "impact": 3,
+      "analysis": "人形机器人传动件和结构件产品收入增长"
+    },
+    {
+      "stock_name": "斯菱股份",
+      "stock_code": "603966",
+      "impact": 3,
+      "analysis": "谐波减速器产品验证通过，有望成为量产供应商"
+    },
+    {
+      "stock_name": "中兴通讯",
+      "stock_code": "000063",
+      "impact": 3,
+      "analysis": "合作AI手机，年销量预期1000万部"
+    },
+    {
+      "stock_name": "道明光学",
+      "stock_code": "002632",
+      "impact": 3,
+      "analysis": "石墨烯散热膜应用于努比亚手机等旗舰机型"
+    },
+    {
+      "stock_name": "科翔股份",
+      "stock_code": "300795",
+      "impact": 3,
+      "analysis": "为字节AI豆包手机ODM代工厂，受益AI手机销量增长"
+    }
+  ],
+  "article_id": "95a01f71968e44af88d45412df26a0a4",
+  "article_date": "2025-11-30",
+  "article_title": "2025.11.30市场逻辑精选"
+}

@@ -1,0 +1,78 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体情绪偏乐观，多个板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "VR/AR",
+      "impact": 4,
+      "analysis": "PICO新品发布预期，板块有望迎来上涨机会。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "越南半导体产业发展，相关公司受益。"
+    },
+    {
+      "sector_name": "家电",
+      "impact": 2,
+      "analysis": "辰奕智能推出星闪遥控器，相关业务有望增长。"
+    },
+    {
+      "sector_name": "智能穿戴",
+      "impact": 2,
+      "analysis": "共达电声、佳禾智能等布局AR领域，板块有望受益。"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 2,
+      "analysis": "均普智能合作智元机器人，机器人板块有望受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "PICO",
+      "stock_code": "PICO",
+      "impact": 4,
+      "analysis": "新品发布预期，股价有望上涨。"
+    },
+    {
+      "stock_name": "歌尔股份",
+      "stock_code": "002241",
+      "impact": 3,
+      "analysis": "PICO链龙头，受益于PICO新品发布。"
+    },
+    {
+      "stock_name": "舜宇光学",
+      "stock_code": "002072",
+      "impact": 3,
+      "analysis": "光学龙头，受益于VR/AR行业发展。"
+    },
+    {
+      "stock_name": "辰奕智能",
+      "stock_code": "300766",
+      "impact": 3,
+      "analysis": "推出星闪遥控器，相关业务有望增长。"
+    },
+    {
+      "stock_name": "共达电声",
+      "stock_code": "002641",
+      "impact": 3,
+      "analysis": "产品可用于AI眼镜方向，受益于AR行业发展。"
+    },
+    {
+      "stock_name": "佳禾智能",
+      "stock_code": "300928",
+      "impact": 3,
+      "analysis": "前瞻布局AR领域，受益于AR行业发展。"
+    },
+    {
+      "stock_name": "均普智能",
+      "stock_code": "603838",
+      "impact": 3,
+      "analysis": "合作智元机器人，机器人板块有望受益。"
+    }
+  ],
+  "article_id": "800ec0091e9d4cba926fe2f71b10153b",
+  "article_date": "2024-08-18",
+  "article_title": "2024.8.18市场逻辑精选"
+}

@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "旅游消费、食品、影视等板块受利好驱动，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "旅游消费",
+      "impact": 4,
+      "analysis": "春秋假、免税政策等利好消息推动板块上涨。"
+    },
+    {
+      "sector_name": "食品",
+      "impact": 3,
+      "analysis": "CPI数据改善，食品价格降幅收窄，估值有望修复。"
+    },
+    {
+      "sector_name": "影视",
+      "impact": 3,
+      "analysis": "大片上映，新型消费如宠物、影视等板块受关注。"
+    },
+    {
+      "sector_name": "化工",
+      "impact": 3,
+      "analysis": "己内酰胺行业减产，价格上调，利好相关企业。"
+    },
+    {
+      "sector_name": "新能源",
+      "impact": 3,
+      "analysis": "海风大单、行业扶持政策等利好新能源板块。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中国中免",
+      "stock_code": "601888",
+      "impact": 4,
+      "analysis": "免税业务龙头，深度受益海南封关。"
+    },
+    {
+      "stock_name": "众信旅游",
+      "stock_code": "600610",
+      "impact": 4,
+      "analysis": "全国领先的旅游服务综合运营商。"
+    },
+    {
+      "stock_name": "东百集团",
+      "stock_code": "600693",
+      "impact": 3,
+      "analysis": "福建省商业零售龙头，申请免税品经营资质。"
+    },
+    {
+      "stock_name": "鲁西化工",
+      "stock_code": "000830",
+      "impact": 4,
+      "analysis": "国内领先的综合性化工企业，拥有己内酰胺产能。"
+    },
+    {
+      "stock_name": "华电科工",
+      "stock_code": "601226",
+      "impact": 4,
+      "analysis": "签海风大单，迎行业扶持政策。"
+    }
+  ],
+  "article_id": "f1e34ea4a2f24a5fbd77035817abcdb7",
+  "article_date": "2025-11-10",
+  "article_title": "2025.11.10市场逻辑精选"
+}

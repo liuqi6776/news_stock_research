@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受AI和数据中心建设利好影响，有望上涨。",
+  "sectors": [
+    {
+      "sector_name": "AIDC",
+      "impact": 4,
+      "analysis": "数据中心建设加速，相关产业链受益"
+    },
+    {
+      "sector_name": "教育AI",
+      "impact": 3,
+      "analysis": "教育AI产品发布，行业有望增长"
+    },
+    {
+      "sector_name": "AI应用",
+      "impact": 3,
+      "analysis": "AI应用论坛召开，行业关注度提升"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "科华数据",
+      "stock_code": "002335",
+      "impact": 4,
+      "analysis": "数据中心建设加速，公司业务受益"
+    },
+    {
+      "stock_name": "润泽科技",
+      "stock_code": "300259",
+      "impact": 4,
+      "analysis": "数据中心业务增长，公司业绩有望提升"
+    },
+    {
+      "stock_name": "方直科技",
+      "stock_code": "300235",
+      "impact": 3,
+      "analysis": "教育AI产品发布，公司业绩有望增长"
+    },
+    {
+      "stock_name": "鼎捷数智",
+      "stock_code": "603019",
+      "impact": 3,
+      "analysis": "AI应用论坛召开，公司业务有望受益"
+    }
+  ],
+  "article_id": "23aacd7f68e045d5bae1946257b533bc",
+  "article_date": "2025-07-15",
+  "article_title": "2025.7.15市场逻辑精选"
+}

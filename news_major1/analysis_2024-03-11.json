@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，部分行业和个股受益明显。",
+  "sectors": [
+    {
+      "sector_name": "锂电池",
+      "impact": 4,
+      "analysis": "需求旺盛，价格预期上涨。"
+    },
+    {
+      "sector_name": "影视传媒",
+      "impact": 3,
+      "analysis": "三体IP上线，相关公司受益。"
+    },
+    {
+      "sector_name": "超导磁体",
+      "impact": 3,
+      "analysis": "高温超导磁体研发进展，行业前景看好。"
+    },
+    {
+      "sector_name": "数据中心",
+      "impact": 2,
+      "analysis": "数据中心制冷设备需求增加。"
+    },
+    {
+      "sector_name": "黄金",
+      "impact": 2,
+      "analysis": "金价上涨，相关公司受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "天赐材料",
+      "stock_code": "002709",
+      "impact": 4,
+      "analysis": "六氟磷酸锂龙头，检修预期利润上涨。"
+    },
+    {
+      "stock_name": "华星创业",
+      "stock_code": "300045",
+      "impact": 3,
+      "analysis": "三体IP虚拟数字人项目合作。"
+    },
+    {
+      "stock_name": "宁波韵升",
+      "stock_code": "600366",
+      "impact": 3,
+      "analysis": "高温超导磁体研发相关。"
+    },
+    {
+      "stock_name": "朗威股份",
+      "stock_code": "002635",
+      "impact": 3,
+      "analysis": "供货英伟达制冷合作方。"
+    },
+    {
+      "stock_name": "登云股份",
+      "stock_code": "002565",
+      "impact": 3,
+      "analysis": "受益金价上涨。"
+    }
+  ],
+  "article_id": "2a0cb4e5c29c4469afd9ad2d28f0a8d7",
+  "article_date": "2024-03-11",
+  "article_title": "2024.3.11市场逻辑精选"
+}

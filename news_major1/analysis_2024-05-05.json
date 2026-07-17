@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，关注相关板块和个股表现。",
+  "sectors": [
+    {
+      "sector_name": "生物科技",
+      "impact": 4,
+      "analysis": "透明质酸生产技术突破，推动行业增长。"
+    },
+    {
+      "sector_name": "新材料",
+      "impact": 3,
+      "analysis": "石墨税收抵免政策，利好相关企业。"
+    },
+    {
+      "sector_name": "国防军工",
+      "impact": 3,
+      "analysis": "国产航母试航，关注航母产业链。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "广济药业",
+      "stock_code": "000952",
+      "impact": 3,
+      "analysis": "与江南大学合作，推动透明质酸应用。"
+    },
+    {
+      "stock_name": "无锡晶海",
+      "stock_code": "603638",
+      "impact": 4,
+      "analysis": "与江南大学合作，合成生物技术突破。"
+    },
+    {
+      "stock_name": "中科电气",
+      "stock_code": "600881",
+      "impact": 3,
+      "analysis": "石墨类负极材料供应商，受益税收抵免政策。"
+    },
+    {
+      "stock_name": "中国船舶",
+      "stock_code": "601989",
+      "impact": 3,
+      "analysis": "航母制造企业，关注航母产业链。"
+    }
+  ],
+  "article_id": "c31fa861048345a18fe032de5406171a",
+  "article_date": "2024-05-05",
+  "article_title": "2024.5.5市场逻辑精选"
+}

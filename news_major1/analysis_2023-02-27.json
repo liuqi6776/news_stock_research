@@ -1,0 +1,342 @@
+{
+  "market_impact": 2,
+  "market_analysis": "市场情绪波动，部分板块受利好消息提振。",
+  "sectors": [
+    {
+      "sector_name": "科创板",
+      "impact": 3,
+      "analysis": "调入名单公布，相关个股受益"
+    },
+    {
+      "sector_name": "住房租赁",
+      "impact": 2,
+      "analysis": "政策支持，相关企业受益"
+    },
+    {
+      "sector_name": "流感疫苗",
+      "impact": 2,
+      "analysis": "流感疫情高发，相关企业受益"
+    },
+    {
+      "sector_name": "锂矿",
+      "impact": 2,
+      "analysis": "停产整顿，相关企业受益"
+    },
+    {
+      "sector_name": "无人机",
+      "impact": 2,
+      "analysis": "深圳试点无人机送外卖，相关企业受益"
+    },
+    {
+      "sector_name": "氢燃料电池",
+      "impact": 2,
+      "analysis": "松下将销售氢燃料电池，相关企业受益"
+    },
+    {
+      "sector_name": "特斯拉",
+      "impact": 2,
+      "analysis": "特斯拉第三篇章倒计时，相关企业受益"
+    },
+    {
+      "sector_name": "知识产权",
+      "impact": 2,
+      "analysis": "政策支持，相关企业受益"
+    },
+    {
+      "sector_name": "芯片",
+      "impact": 1,
+      "analysis": "原材料价格上涨，相关企业受益"
+    },
+    {
+      "sector_name": "鸡肉",
+      "impact": 1,
+      "analysis": "鸡苗价格上涨，相关企业受益"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 1,
+      "analysis": "AI 大型语言模型竞争激烈，相关企业受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "龙芯中科",
+      "stock_code": "688047",
+      "impact": 3,
+      "analysis": "调入科创板50成分股"
+    },
+    {
+      "stock_name": "昱能科技",
+      "stock_code": "688019",
+      "impact": 3,
+      "analysis": "调入科创板50成分股"
+    },
+    {
+      "stock_name": "三一重能",
+      "stock_code": "688090",
+      "impact": 3,
+      "analysis": "调入科创板50成分股"
+    },
+    {
+      "stock_name": "国博电子",
+      "stock_code": "688050",
+      "impact": 3,
+      "analysis": "调入科创板50成分股"
+    },
+    {
+      "stock_name": "复旦微电",
+      "stock_code": "688385",
+      "impact": 3,
+      "analysis": "调入科创板50成分股"
+    },
+    {
+      "stock_name": "我爱我家",
+      "stock_code": "600777",
+      "impact": 2,
+      "analysis": "政策支持，住房租赁市场受益"
+    },
+    {
+      "stock_name": "世联行",
+      "stock_code": "002285",
+      "impact": 2,
+      "analysis": "政策支持，住房租赁市场受益"
+    },
+    {
+      "stock_name": "三六五网",
+      "stock_code": "300295",
+      "impact": 2,
+      "analysis": "政策支持，住房租赁市场受益"
+    },
+    {
+      "stock_name": "国创高新",
+      "stock_code": "300683",
+      "impact": 2,
+      "analysis": "政策支持，住房租赁市场受益"
+    },
+    {
+      "stock_name": "金迪克",
+      "stock_code": "300439",
+      "impact": 2,
+      "analysis": "流感疫情高发，流感疫苗受益"
+    },
+    {
+      "stock_name": "华兰疫苗",
+      "stock_code": "002007",
+      "impact": 2,
+      "analysis": "流感疫情高发，流感疫苗受益"
+    },
+    {
+      "stock_name": "东阳光药",
+      "stock_code": "000541",
+      "impact": 2,
+      "analysis": "流感疫情高发，流感药受益"
+    },
+    {
+      "stock_name": "人福医药",
+      "stock_code": "600079",
+      "impact": 2,
+      "analysis": "流感疫情高发，流感药受益"
+    },
+    {
+      "stock_name": "博瑞医药",
+      "stock_code": "688266",
+      "impact": 2,
+      "analysis": "流感疫情高发，流感药受益"
+    },
+    {
+      "stock_name": "双鹭药业",
+      "stock_code": "002038",
+      "impact": 2,
+      "analysis": "流感疫情高发，流感药受益"
+    },
+    {
+      "stock_name": "一品红",
+      "stock_code": "600356",
+      "impact": 2,
+      "analysis": "流感疫情高发，流感药受益"
+    },
+    {
+      "stock_name": "科伦药业",
+      "stock_code": "002422",
+      "impact": 2,
+      "analysis": "流感疫情高发，流感药受益"
+    },
+    {
+      "stock_name": "中矿资源",
+      "stock_code": "000058",
+      "impact": 2,
+      "analysis": "停产整顿，锂矿受益"
+    },
+    {
+      "stock_name": "融捷股份",
+      "stock_code": "002192",
+      "impact": 2,
+      "analysis": "停产整顿，锂矿受益"
+    },
+    {
+      "stock_name": "天齐锂业",
+      "stock_code": "002466",
+      "impact": 2,
+      "analysis": "停产整顿，锂矿受益"
+    },
+    {
+      "stock_name": "赣锋锂业",
+      "stock_code": "002460",
+      "impact": 2,
+      "analysis": "停产整顿，锂矿受益"
+    },
+    {
+      "stock_name": "航天彩虹",
+      "stock_code": "002389",
+      "impact": 2,
+      "analysis": "深圳试点无人机送外卖，无人机受益"
+    },
+    {
+      "stock_name": "观典防务",
+      "stock_code": "300383",
+      "impact": 2,
+      "analysis": "深圳试点无人机送外卖，无人机受益"
+    },
+    {
+      "stock_name": "中无人机",
+      "stock_code": "688011",
+      "impact": 2,
+      "analysis": "深圳试点无人机送外卖，无人机受益"
+    },
+    {
+      "stock_name": "厚普股份",
+      "stock_code": "603677",
+      "impact": 2,
+      "analysis": "松下将销售氢燃料电池，氢燃料电池受益"
+    },
+    {
+      "stock_name": "致远新能",
+      "stock_code": "688599",
+      "impact": 2,
+      "analysis": "松下将销售氢燃料电池，氢燃料电池受益"
+    },
+    {
+      "stock_name": "亿华通",
+      "stock_code": "688681",
+      "impact": 2,
+      "analysis": "松下将销售氢燃料电池，氢燃料电池受益"
+    },
+    {
+      "stock_name": "京城股份",
+      "stock_code": "601078",
+      "impact": 2,
+      "analysis": "松下将销售氢燃料电池，氢燃料电池受益"
+    },
+    {
+      "stock_name": "雪人股份",
+      "stock_code": "002639",
+      "impact": 2,
+      "analysis": "松下将销售氢燃料电池，氢燃料电池受益"
+    },
+    {
+      "stock_name": "蓝科高新",
+      "stock_code": "601916",
+      "impact": 2,
+      "analysis": "松下将销售氢燃料电池，氢燃料电池受益"
+    },
+    {
+      "stock_name": "新朋股份",
+      "stock_code": "002328",
+      "impact": 2,
+      "analysis": "特斯拉第三篇章倒计时，光储受益"
+    },
+    {
+      "stock_name": "秀强股份",
+      "stock_code": "603636",
+      "impact": 2,
+      "analysis": "特斯拉第三篇章倒计时，光储受益"
+    },
+    {
+      "stock_name": "亚玛顿",
+      "stock_code": "002623",
+      "impact": 2,
+      "analysis": "特斯拉第三篇章倒计时，光储受益"
+    },
+    {
+      "stock_name": "春兴精工",
+      "stock_code": "002547",
+      "impact": 2,
+      "analysis": "特斯拉第三篇章倒计时，一体压铸受益"
+    },
+    {
+      "stock_name": "合力科技",
+      "stock_code": "603719",
+      "impact": 2,
+      "analysis": "特斯拉第三篇章倒计时，一体压铸受益"
+    },
+    {
+      "stock_name": "文灿股份",
+      "stock_code": "603859",
+      "impact": 2,
+      "analysis": "特斯拉第三篇章倒计时，一体压铸受益"
+    },
+    {
+      "stock_name": "安妮股份",
+      "stock_code": "002235",
+      "impact": 2,
+      "analysis": "政策支持，知识产权受益"
+    },
+    {
+      "stock_name": "中国科传",
+      "stock_code": "601918",
+      "impact": 2,
+      "analysis": "政策支持，知识产权受益"
+    },
+    {
+      "stock_name": "协创数据",
+      "stock_code": "300545",
+      "impact": 1,
+      "analysis": "原材料价格上涨，芯片受益"
+    },
+    {
+      "stock_name": "奥尼电子",
+      "stock_code": "002673",
+      "impact": 1,
+      "analysis": "原材料价格上涨，芯片受益"
+    },
+    {
+      "stock_name": "益生股份",
+      "stock_code": "002458",
+      "impact": 1,
+      "analysis": "鸡苗价格上涨，鸡肉受益"
+    },
+    {
+      "stock_name": "民和股份",
+      "stock_code": "002234",
+      "impact": 1,
+      "analysis": "鸡苗价格上涨，鸡肉受益"
+    },
+    {
+      "stock_name": "拓维信息",
+      "stock_code": "002261",
+      "impact": 1,
+      "analysis": "AI 大型语言模型竞争激烈，人工智能受益"
+    },
+    {
+      "stock_name": "浪潮信息",
+      "stock_code": "000977",
+      "impact": 1,
+      "analysis": "AI 大型语言模型竞争激烈，人工智能受益"
+    },
+    {
+      "stock_name": "云赛智联",
+      "stock_code": "600510",
+      "impact": 1,
+      "analysis": "AI 大型语言模型竞争激烈，人工智能受益"
+    },
+    {
+      "stock_name": "数据港",
+      "stock_code": "600845",
+      "impact": 1,
+      "analysis": "AI 大型语言模型竞争激烈，人工智能受益"
+    }
+  ],
+  "article_title": "2月27日盘前热点事件关注",
+  "html_file": "3wej1dksux.html",
+  "article_date": "2023-02-27"
+}

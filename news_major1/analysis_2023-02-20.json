@@ -1,0 +1,110 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪提升",
+  "sectors": [
+    {
+      "sector_name": "证券",
+      "impact": 3,
+      "analysis": "转融券费率降低，利好证券公司"
+    },
+    {
+      "sector_name": "创投",
+      "impact": 3,
+      "analysis": "全面注册制实施，利好创投板块"
+    },
+    {
+      "sector_name": "百度智能云",
+      "impact": 3,
+      "analysis": "文心一言提供服务，利好相关公司"
+    },
+    {
+      "sector_name": "电信",
+      "impact": 3,
+      "analysis": "中国电信关注ChatGPT，利好相关公司"
+    },
+    {
+      "sector_name": "光储",
+      "impact": 3,
+      "analysis": "特斯拉宏图第三篇章，利好光储行业"
+    },
+    {
+      "sector_name": "游戏",
+      "impact": 3,
+      "analysis": "游戏科技价值被重视，利好游戏行业"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 3,
+      "analysis": "本土检出XBB.1.5，利好医药行业"
+    },
+    {
+      "sector_name": "华为合作汽车",
+      "impact": 3,
+      "analysis": "华为合作造车工厂开建，利好相关公司"
+    },
+    {
+      "sector_name": "鸡苗",
+      "impact": 3,
+      "analysis": "鸡苗报价上涨，利好相关公司"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "信达证券",
+      "stock_code": "600016",
+      "impact": 3,
+      "analysis": "转融券费率降低，利好"
+    },
+    {
+      "stock_name": "锦龙股份",
+      "stock_code": "000712",
+      "impact": 3,
+      "analysis": "转融券费率降低，利好"
+    },
+    {
+      "stock_name": "南京证券",
+      "stock_code": "601915",
+      "impact": 3,
+      "analysis": "转融券费率降低，利好"
+    },
+    {
+      "stock_name": "湘财股份",
+      "stock_code": "600829",
+      "impact": 3,
+      "analysis": "转融券费率降低，利好"
+    },
+    {
+      "stock_name": "创业黑马",
+      "stock_code": "300596",
+      "impact": 3,
+      "analysis": "全面注册制实施，利好"
+    },
+    {
+      "stock_name": "鲁信创投",
+      "stock_code": "600783",
+      "impact": 3,
+      "analysis": "全面注册制实施，利好"
+    },
+    {
+      "stock_name": "宇信科技",
+      "stock_code": "300702",
+      "impact": 3,
+      "analysis": "文心一言提供服务，利好"
+    },
+    {
+      "stock_name": "慧博云通",
+      "stock_code": "300414",
+      "impact": 3,
+      "analysis": "文心一言提供服务，利好"
+    },
+    {
+      "stock_name": "雷柏科技",
+      "stock_code": "002545",
+      "impact": 3,
+      "analysis": "文心一言提供服务，利好"
+    }
+  ],
+  "article_title": "2月20日盘前热点事件关注",
+  "html_file": "3w2z4b0cgp.html",
+  "article_date": "2023-02-20"
+}

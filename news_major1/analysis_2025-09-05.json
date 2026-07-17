@@ -1,0 +1,71 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多板块利好。",
+  "sectors": [
+    {
+      "sector_name": "体育",
+      "impact": 4,
+      "analysis": "政策支持，板块受益"
+    },
+    {
+      "sector_name": "AI智能体",
+      "impact": 3,
+      "analysis": "技术发展，行业前景看好"
+    },
+    {
+      "sector_name": "麒麟芯片",
+      "impact": 3,
+      "analysis": "华为新芯片发布，相关产业链受益"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "人形机器人订单，行业增长"
+    },
+    {
+      "sector_name": "北交所",
+      "impact": 2,
+      "analysis": "周年庆，市场关注度提升"
+    },
+    {
+      "sector_name": "光伏/储能",
+      "impact": 2,
+      "analysis": "需求持续增长，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "金陵体育",
+      "stock_code": "600918",
+      "impact": 4,
+      "analysis": "体育产业政策支持，股价受益"
+    },
+    {
+      "stock_name": "每日互动",
+      "stock_code": "300702",
+      "impact": 3,
+      "analysis": "AI智能体技术发展，股价受益"
+    },
+    {
+      "stock_name": "深圳华强",
+      "stock_code": "000062",
+      "impact": 3,
+      "analysis": "华为麒麟芯片发布，股价受益"
+    },
+    {
+      "stock_name": "智元机器人",
+      "stock_code": "688698",
+      "impact": 3,
+      "analysis": "人形机器人订单，股价受益"
+    },
+    {
+      "stock_name": "宏裕包材",
+      "stock_code": "300825",
+      "impact": 3,
+      "analysis": "北交所周年庆，股价受益"
+    }
+  ],
+  "article_title": "9月5日盘前纪要",
+  "html_file": "1zswau89ahj.html",
+  "article_date": "2025-09-05"
+}

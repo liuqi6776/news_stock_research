@@ -1,0 +1,184 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，国企改革和石化央企盈利预期提升。",
+  "sectors": [
+    {
+      "sector_name": "中字头央企",
+      "impact": 4,
+      "analysis": "国企改革基金成立，利好相关个股。"
+    },
+    {
+      "sector_name": "石化央企",
+      "impact": 3,
+      "analysis": "油价中枢上行，盈利预期改善。"
+    },
+    {
+      "sector_name": "工程设计服务业",
+      "impact": 3,
+      "analysis": "中国海诚业绩增长，在手订单饱满。"
+    },
+    {
+      "sector_name": "汽车零部件",
+      "impact": 3,
+      "analysis": "克莱机电净利润预增，产品价值提升。"
+    },
+    {
+      "sector_name": "数据要素",
+      "impact": 3,
+      "analysis": "中远海科与阿里、华为合作，数据要素业务发展。"
+    },
+    {
+      "sector_name": "电信运营商",
+      "impact": 3,
+      "analysis": "直真科技Q4扣非净利润扭亏大涨。"
+    },
+    {
+      "sector_name": "商用密码",
+      "impact": 3,
+      "analysis": "格尔软件四季度业绩大增。"
+    },
+    {
+      "sector_name": "数字文旅",
+      "impact": 3,
+      "analysis": "风语筑上海数字文旅股业绩大增。"
+    },
+    {
+      "sector_name": "光伏、半导体",
+      "impact": 3,
+      "analysis": "微导纳米年度营收/净利/订单大增。"
+    },
+    {
+      "sector_name": "汽车零部件",
+      "impact": 3,
+      "analysis": "威孚高科预计2023年净利润同比增长1413％-1623％。"
+    },
+    {
+      "sector_name": "基建行业",
+      "impact": 3,
+      "analysis": "央企现金分红，利好相关个股。"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 2,
+      "analysis": "金融监管总局支持房地产产业链。"
+    },
+    {
+      "sector_name": "燃料电池",
+      "impact": 2,
+      "analysis": "我国牵头修订燃料电池国际标准发布。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中国国新",
+      "stock_code": "000039",
+      "impact": 4,
+      "analysis": "国企改革基金成立，利好相关个股。"
+    },
+    {
+      "stock_name": "信达地产",
+      "stock_code": "600657",
+      "impact": 4,
+      "analysis": "国企改革基金成立，利好相关个股。"
+    },
+    {
+      "stock_name": "中国石油",
+      "stock_code": "601857",
+      "impact": 3,
+      "analysis": "油价中枢上行，盈利预期改善。"
+    },
+    {
+      "stock_name": "中国石化",
+      "stock_code": "600028",
+      "impact": 3,
+      "analysis": "油价中枢上行，盈利预期改善。"
+    },
+    {
+      "stock_name": "中国海诚",
+      "stock_code": "002267",
+      "impact": 3,
+      "analysis": "年度业绩增长，在手订单饱满。"
+    },
+    {
+      "stock_name": "克莱机电",
+      "stock_code": "603988",
+      "impact": 3,
+      "analysis": "2023年净利润同比预增42%到52%。"
+    },
+    {
+      "stock_name": "中远海科",
+      "stock_code": "000881",
+      "impact": 3,
+      "analysis": "中字头+上海浦东+数据要素+华为/阿里合作。"
+    },
+    {
+      "stock_name": "直真科技",
+      "stock_code": "300582",
+      "impact": 3,
+      "analysis": "Q4扣非净利润扭亏大涨。"
+    },
+    {
+      "stock_name": "格尔软件",
+      "stock_code": "002686",
+      "impact": 3,
+      "analysis": "四季度业绩大增。"
+    },
+    {
+      "stock_name": "风语筑",
+      "stock_code": "300596",
+      "impact": 3,
+      "analysis": "上海数字文旅股业绩大增。"
+    },
+    {
+      "stock_name": "微导纳米",
+      "stock_code": "688599",
+      "impact": 3,
+      "analysis": "年度营收/净利/订单大增。"
+    },
+    {
+      "stock_name": "威孚高科",
+      "stock_code": "000581",
+      "impact": 3,
+      "analysis": "预计2023年净利润同比增长1413％-1623％。"
+    },
+    {
+      "stock_name": "中国交建",
+      "stock_code": "600018",
+      "impact": 3,
+      "analysis": "央企现金分红，利好相关个股。"
+    },
+    {
+      "stock_name": "保利发展",
+      "stock_code": "600048",
+      "impact": 2,
+      "analysis": "未来三年分红比例跃升至40%。"
+    },
+    {
+      "stock_name": "纳尔股份",
+      "stock_code": "002341",
+      "impact": 2,
+      "analysis": "燃料电池国际标准发布。"
+    },
+    {
+      "stock_name": "动力新科",
+      "stock_code": "600362",
+      "impact": 2,
+      "analysis": "燃料电池国际标准发布。"
+    },
+    {
+      "stock_name": "维科精密",
+      "stock_code": "600550",
+      "impact": 2,
+      "analysis": "燃料电池国际标准发布。"
+    },
+    {
+      "stock_name": "华依科技",
+      "stock_code": "300745",
+      "impact": 2,
+      "analysis": "燃料电池国际标准发布。"
+    }
+  ],
+  "article_id": "94c8106101a84f198885ec405aa74078",
+  "article_date": "2024-01-25",
+  "article_title": "2024.1.25市场逻辑精选"
+}

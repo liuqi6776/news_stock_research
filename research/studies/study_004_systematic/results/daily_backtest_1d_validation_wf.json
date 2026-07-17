@@ -1,0 +1,18 @@
+{
+  "period": "validation",
+  "total_return": 0.7842366994186314,
+  "cagr": 0.22259051440696354,
+  "sharpe": 0.6364952342838279,
+  "max_drawdown": -0.7963584780333411,
+  "win_rate_days": 0.5179063360881543,
+  "avg_daily_return": 0.0017007635702502766,
+  "n_trading_days": 726,
+  "n_trades": 2178,
+  "trade_win_rate": 0.5082644628099173,
+  "avg_trade_return": 0.004700763570250279,
+  "max_daily_loss": -0.10300000000000001,
+  "max_daily_gain": 0.097,
+  "threshold": 0.32,
+  "max_positions": 3,
+  "transaction_cost": 0.003
+}

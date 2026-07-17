@@ -1,0 +1,147 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪活跃，政策利好预期增强。",
+  "sectors": [
+    {
+      "sector_name": "金融",
+      "impact": 3,
+      "analysis": "开户量增长，市场活跃度提升。"
+    },
+    {
+      "sector_name": "地产",
+      "impact": 3,
+      "analysis": "限购政策调整，市场预期改善。"
+    },
+    {
+      "sector_name": "消费",
+      "impact": 2,
+      "analysis": "消费板块受政策影响，预期有所改善。"
+    },
+    {
+      "sector_name": "并购",
+      "impact": 2,
+      "analysis": "并购市场活跃，相关个股受益。"
+    },
+    {
+      "sector_name": "重大工程",
+      "impact": 2,
+      "analysis": "政策支持，相关个股有望受益。"
+    },
+    {
+      "sector_name": "知识产权",
+      "impact": 2,
+      "analysis": "政策支持，相关个股有望受益。"
+    },
+    {
+      "sector_name": "信创",
+      "impact": 2,
+      "analysis": "服务器招标，相关个股受益。"
+    },
+    {
+      "sector_name": "北交所",
+      "impact": 2,
+      "analysis": "北交所个股活跃，相关个股受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "恒银科技",
+      "stock_code": "600655",
+      "impact": 3,
+      "analysis": "金融板块活跃，相关个股受益。"
+    },
+    {
+      "stock_name": "五矿资本",
+      "stock_code": "000677",
+      "impact": 3,
+      "analysis": "金融板块活跃，相关个股受益。"
+    },
+    {
+      "stock_name": "合肥城建",
+      "stock_code": "002208",
+      "impact": 3,
+      "analysis": "地产政策调整，相关个股受益。"
+    },
+    {
+      "stock_name": "金融街",
+      "stock_code": "000402",
+      "impact": 3,
+      "analysis": "地产政策调整，相关个股受益。"
+    },
+    {
+      "stock_name": "岩石股份",
+      "stock_code": "600649",
+      "impact": 2,
+      "analysis": "消费板块受政策影响，相关个股受益。"
+    },
+    {
+      "stock_name": "永辉超市",
+      "stock_code": "601933",
+      "impact": 2,
+      "analysis": "消费板块受政策影响，相关个股受益。"
+    },
+    {
+      "stock_name": "双成药业",
+      "stock_code": "002693",
+      "impact": 2,
+      "analysis": "并购市场活跃，相关个股受益。"
+    },
+    {
+      "stock_name": "中南股份",
+      "stock_code": "000435",
+      "impact": 2,
+      "analysis": "并购市场活跃，相关个股受益。"
+    },
+    {
+      "stock_name": "高争民爆",
+      "stock_code": "002827",
+      "impact": 2,
+      "analysis": "政策支持，相关个股有望受益。"
+    },
+    {
+      "stock_name": "西藏天路",
+      "stock_code": "600321",
+      "impact": 2,
+      "analysis": "政策支持，相关个股有望受益。"
+    },
+    {
+      "stock_name": "安妮股份",
+      "stock_code": "002235",
+      "impact": 2,
+      "analysis": "政策支持，相关个股有望受益。"
+    },
+    {
+      "stock_name": "中国科传",
+      "stock_code": "300369",
+      "impact": 2,
+      "analysis": "政策支持，相关个股有望受益。"
+    },
+    {
+      "stock_name": "海光信息",
+      "stock_code": "603019",
+      "impact": 2,
+      "analysis": "服务器招标，相关个股受益。"
+    },
+    {
+      "stock_name": "拓维信息",
+      "stock_code": "002261",
+      "impact": 2,
+      "analysis": "服务器招标，相关个股受益。"
+    },
+    {
+      "stock_name": "同辉信息",
+      "stock_code": "300392",
+      "impact": 2,
+      "analysis": "北交所个股活跃，相关个股受益。"
+    },
+    {
+      "stock_name": "华信永道",
+      "stock_code": "300654",
+      "impact": 2,
+      "analysis": "北交所个股活跃，相关个股受益。"
+    }
+  ],
+  "article_title": "9月30日盘前早报 热点事件关注",
+  "html_file": "9nhysg3g5g.html",
+  "article_date": "2024-09-30"
+}

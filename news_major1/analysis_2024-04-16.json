@@ -1,0 +1,82 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，部分行业和个股表现强劲。",
+  "sectors": [
+    {
+      "sector_name": "银行",
+      "impact": 4,
+      "analysis": "分红政策利好，估值低，业绩稳定。"
+    },
+    {
+      "sector_name": "制冷剂",
+      "impact": 3,
+      "analysis": "报价上调，旺季需求提升。"
+    },
+    {
+      "sector_name": "航运",
+      "impact": 3,
+      "analysis": "航线费率上调，供需紧张。"
+    },
+    {
+      "sector_name": "低空经济",
+      "impact": 3,
+      "analysis": "政策支持，布局全链条。"
+    },
+    {
+      "sector_name": "存储行业",
+      "impact": 3,
+      "analysis": "产品销售量价齐升，行业回暖。"
+    },
+    {
+      "sector_name": "家电",
+      "impact": 3,
+      "analysis": "以旧换新政策，品牌均价提升。"
+    },
+    {
+      "sector_name": "钒矿",
+      "impact": 3,
+      "analysis": "发现新矿体，价值量提升。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "苏交科",
+      "stock_code": "002336",
+      "impact": 4,
+      "analysis": "布局低空经济全链条，绩优小盘。"
+    },
+    {
+      "stock_name": "佰维存储",
+      "stock_code": "688028",
+      "impact": 4,
+      "analysis": "一季度产品销售量价齐升，行业回暖。"
+    },
+    {
+      "stock_name": "三只松鼠",
+      "stock_code": "603777",
+      "impact": 4,
+      "analysis": "一季度业绩大增，抖音渠道有望翻倍增长。"
+    },
+    {
+      "stock_name": "飞科电器",
+      "stock_code": "002521",
+      "impact": 4,
+      "analysis": "3月收入同比改善，预计维持高分红。"
+    },
+    {
+      "stock_name": "承德露露",
+      "stock_code": "000858",
+      "impact": 4,
+      "analysis": "立足大单品，业绩持续增长。"
+    },
+    {
+      "stock_name": "玉龙股份",
+      "stock_code": "600388",
+      "impact": 4,
+      "analysis": "发现新矿体，价值量提升。"
+    }
+  ],
+  "article_id": "fac30540c80d436f8461435abdb680ce",
+  "article_date": "2024-04-16",
+  "article_title": "2024.4.16市场逻辑精选"
+}

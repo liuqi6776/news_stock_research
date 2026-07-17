@@ -1,0 +1,95 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股受积极消息影响。",
+  "sectors": [
+    {
+      "sector_name": "氢能源",
+      "impact": 4,
+      "analysis": "政策支持，氢能应用规模化，板块受益"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "三井金属调涨价格，半导体需求旺盛"
+    },
+    {
+      "sector_name": "金融",
+      "impact": 3,
+      "analysis": "蚂蚁集团收购耀才证券，金融板块受提振"
+    },
+    {
+      "sector_name": "铝土矿",
+      "impact": 3,
+      "analysis": "铝土矿供应限制，价格支撑"
+    },
+    {
+      "sector_name": "出版",
+      "impact": 2,
+      "analysis": "政府支持出版业，板块受益"
+    },
+    {
+      "sector_name": "英伟达概念",
+      "impact": 2,
+      "analysis": "英伟达发布新一代芯片架构，概念股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "京城股份",
+      "stock_code": "000695",
+      "impact": 4,
+      "analysis": "氢能源政策支持，股价受益"
+    },
+    {
+      "stock_name": "雄韬股份",
+      "stock_code": "002733",
+      "impact": 4,
+      "analysis": "氢能源政策支持，股价受益"
+    },
+    {
+      "stock_name": "厚普股份",
+      "stock_code": "603677",
+      "impact": 4,
+      "analysis": "氢能源政策支持，股价受益"
+    },
+    {
+      "stock_name": "君正集团",
+      "stock_code": "601939",
+      "impact": 3,
+      "analysis": "蚂蚁集团收购，股价受益"
+    },
+    {
+      "stock_name": "传化智联",
+      "stock_code": "002010",
+      "impact": 3,
+      "analysis": "蚂蚁集团收购，股价受益"
+    },
+    {
+      "stock_name": "恒生电子",
+      "stock_code": "600570",
+      "impact": 3,
+      "analysis": "蚂蚁集团收购，股价受益"
+    },
+    {
+      "stock_name": "云铝股份",
+      "stock_code": "000807",
+      "impact": 3,
+      "analysis": "铝土矿供应限制，股价受益"
+    },
+    {
+      "stock_name": "天山铝业",
+      "stock_code": "000932",
+      "impact": 3,
+      "analysis": "铝土矿供应限制，股价受益"
+    },
+    {
+      "stock_name": "中国铝业",
+      "stock_code": "601600",
+      "impact": 3,
+      "analysis": "铝土矿供应限制，股价受益"
+    }
+  ],
+  "article_title": "3月17日盘前纪要",
+  "html_file": "2027tjwvk7y.html",
+  "article_date": "2026-03-17"
+}

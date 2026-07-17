@@ -1,0 +1,86 @@
+{
+  "market_impact": 3,
+  "market_analysis": "氢能、极薄铜箔、香兰素凉味剂板块受政策利好，市场情绪提升。",
+  "sectors": [
+    {
+      "sector_name": "氢能",
+      "impact": 4,
+      "analysis": "政策支持力度大，产业链受益明显。"
+    },
+    {
+      "sector_name": "极薄铜箔",
+      "impact": 3,
+      "analysis": "全球龙头涨价，行业景气度提升。"
+    },
+    {
+      "sector_name": "香兰素凉味剂",
+      "impact": 3,
+      "analysis": "国内龙头调涨产品价格，行业盈利能力增强。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "亿华通",
+      "stock_code": "603719",
+      "impact": 4,
+      "analysis": "燃料电池市占率高，受益氢能政策。"
+    },
+    {
+      "stock_name": "华电科工",
+      "stock_code": "601226",
+      "impact": 4,
+      "analysis": "电解槽业务增长，绿氢项目中标。"
+    },
+    {
+      "stock_name": "京城股份",
+      "stock_code": "600860",
+      "impact": 3,
+      "analysis": "车载储氢瓶市占率高，氢能应用领域广泛。"
+    },
+    {
+      "stock_name": "方邦股份",
+      "stock_code": "300463",
+      "impact": 3,
+      "analysis": "极薄铜箔技术领先，受益行业景气度提升。"
+    },
+    {
+      "stock_name": "德福科技",
+      "stock_code": "603878",
+      "impact": 3,
+      "analysis": "极薄铜箔批量供货，实现国产替代。"
+    },
+    {
+      "stock_name": "亚香股份",
+      "stock_code": "002871",
+      "impact": 3,
+      "analysis": "香兰素凉味剂龙头，产品价格上涨。"
+    },
+    {
+      "stock_name": "兄弟科技",
+      "stock_code": "002562",
+      "impact": 3,
+      "analysis": "香兰素及乙基香兰素产能充足。"
+    },
+    {
+      "stock_name": "兆易创新",
+      "stock_code": "603986",
+      "impact": 3,
+      "analysis": "定制化存储子公司受关注，营收弹性大。"
+    },
+    {
+      "stock_name": "胜利精密",
+      "stock_code": "002426",
+      "impact": 3,
+      "analysis": "复合铜箔产品性能优异，获得小量订单。"
+    },
+    {
+      "stock_name": "朗科科技",
+      "stock_code": "300607",
+      "impact": 3,
+      "analysis": "消费级存储市场景气，产品价格上涨。"
+    }
+  ],
+  "article_id": "cb22239f83a641b6bc6eb32afd7dd85c",
+  "article_date": "2026-03-16",
+  "article_title": "2026.3.16市场逻辑精选"
+}

@@ -1,0 +1,107 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，部分行业和个股表现强劲。",
+  "sectors": [
+    {
+      "sector_name": "免税",
+      "impact": 4,
+      "analysis": "疫情拐点将至，免税行业恢复明显，利好相关个股。"
+    },
+    {
+      "sector_name": "教育",
+      "impact": 3,
+      "analysis": "中公教育困境反转，行业环境向好，利好相关个股。"
+    },
+    {
+      "sector_name": "汽车",
+      "impact": 2,
+      "analysis": "江淮汽车拟收购蔚来资产，深化战略合作，利好相关个股。"
+    },
+    {
+      "sector_name": "物流",
+      "impact": 2,
+      "analysis": "新宁物流大股东易主，河南国资可能性较大，利好相关个股。"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 2,
+      "analysis": "科伦药业向默沙东授权ADC项目，利好相关个股。"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 2,
+      "analysis": "光伏产业链降价，拐点或在未来1-2周，利好相关个股。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中国中免",
+      "stock_code": "601888",
+      "impact": 4,
+      "analysis": "免税行业龙头，业绩有望提升。"
+    },
+    {
+      "stock_name": "海汽集团",
+      "stock_code": "600751",
+      "impact": 4,
+      "analysis": "收购海旅免税，布局四大商业板块。"
+    },
+    {
+      "stock_name": "格力地产",
+      "stock_code": "600185",
+      "impact": 4,
+      "analysis": "重启收购珠免，有望成为新增持牌免税商。"
+    },
+    {
+      "stock_name": "王府井",
+      "stock_code": "601859",
+      "impact": 4,
+      "analysis": "经营离岛免税业务，拟于2023年1月开业。"
+    },
+    {
+      "stock_name": "中公教育",
+      "stock_code": "603855",
+      "impact": 4,
+      "analysis": "困境反转，转向全职业赛道，业绩弹性明确。"
+    },
+    {
+      "stock_name": "江淮汽车",
+      "stock_code": "600418",
+      "impact": 4,
+      "analysis": "拟收购蔚来资产，深化战略合作。"
+    },
+    {
+      "stock_name": "新宁物流",
+      "stock_code": "603696",
+      "impact": 4,
+      "analysis": "大股东易主，河南国资可能性较大。"
+    },
+    {
+      "stock_name": "科伦药业",
+      "stock_code": "002422",
+      "impact": 4,
+      "analysis": "向默沙东授权ADC项目，获得巨额付款。"
+    },
+    {
+      "stock_name": "海源复材",
+      "stock_code": "002533",
+      "impact": 4,
+      "analysis": "拟投建10GW Topcon电池项目。"
+    },
+    {
+      "stock_name": "舒泰神",
+      "stock_code": "300002",
+      "impact": 4,
+      "analysis": "定增募资用于新冠重症药研发。"
+    },
+    {
+      "stock_name": "*ST安控",
+      "stock_code": "600403",
+      "impact": 4,
+      "analysis": "创益产投将成为公司控股股东，聚焦工业自动化与油气服务。"
+    }
+  ],
+  "article_id": "2c5b0b2f56f94fe9b0a7d68d8b481ce2",
+  "article_date": "2022-12-22",
+  "article_title": "2022.12.22市场逻辑精选"
+}

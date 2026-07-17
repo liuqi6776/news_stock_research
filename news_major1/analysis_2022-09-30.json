@@ -1,0 +1,88 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪提升",
+  "sectors": [
+    {
+      "sector_name": "大飞机",
+      "impact": 4,
+      "analysis": "C919取得订单，板块受益"
+    },
+    {
+      "sector_name": "地产",
+      "impact": 3,
+      "analysis": "首套房利率政策放宽，地产板块受益"
+    },
+    {
+      "sector_name": "有色金属",
+      "impact": 3,
+      "analysis": "人民币升值，有色金属价格上涨"
+    },
+    {
+      "sector_name": "储能",
+      "impact": 3,
+      "analysis": "液流电池储能电站投入使用"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "欧盟能源计划，光伏需求增加"
+    },
+    {
+      "sector_name": "医疗",
+      "impact": 3,
+      "analysis": "医疗新基建，设备采购需求增加"
+    },
+    {
+      "sector_name": "纺织服饰",
+      "impact": 3,
+      "analysis": "人民币贬值，外贸企业受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "炼石航空",
+      "stock_code": "000697",
+      "impact": 4,
+      "analysis": "C919订单受益"
+    },
+    {
+      "stock_name": "金地集团",
+      "stock_code": "600383",
+      "impact": 3,
+      "analysis": "首套房利率政策受益"
+    },
+    {
+      "stock_name": "天山铝业",
+      "stock_code": "000831",
+      "impact": 3,
+      "analysis": "有色金属价格上涨"
+    },
+    {
+      "stock_name": "钒钛股份",
+      "stock_code": "000629",
+      "impact": 3,
+      "analysis": "液流电池储能电站投入使用"
+    },
+    {
+      "stock_name": "公元股份",
+      "stock_code": "603259",
+      "impact": 3,
+      "analysis": "欧盟能源计划，光伏需求增加"
+    },
+    {
+      "stock_name": "大博医疗",
+      "stock_code": "002904",
+      "impact": 3,
+      "analysis": "医疗新基建，设备采购需求增加"
+    },
+    {
+      "stock_name": "恒天海龙",
+      "stock_code": "000677",
+      "impact": 3,
+      "analysis": "人民币贬值，外贸企业受益"
+    }
+  ],
+  "article_title": "9月30日 盘前早8点 股市要闻关注",
+  "html_file": "dk59zqr7ec.html",
+  "article_date": "2022-09-30"
+}

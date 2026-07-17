@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极影响。",
+  "sectors": [
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "政策引导减少产能扩张，利好行业健康发展。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "英伟达液冷服务器利润率提升，利好相关产业链。"
+    },
+    {
+      "sector_name": "数据安全",
+      "impact": 3,
+      "analysis": "数据跨境流动合作倡议发布，利好数据安全行业。"
+    },
+    {
+      "sector_name": "固态电池",
+      "impact": 3,
+      "analysis": "新型固态电池生产线落户，利好固态电池产业链。"
+    },
+    {
+      "sector_name": "跨境电商",
+      "impact": 3,
+      "analysis": "跨境电商可持续发展论坛召开，利好跨境电商行业。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "东方日升",
+      "stock_code": "300118",
+      "impact": 3,
+      "analysis": "光伏行业规范条件修订，利好公司发展。"
+    },
+    {
+      "stock_name": "英伟达",
+      "stock_code": "NVDA",
+      "impact": 3,
+      "analysis": "液冷服务器利润率提升，利好相关产业链。"
+    },
+    {
+      "stock_name": "生意宝",
+      "stock_code": "002095",
+      "impact": 3,
+      "analysis": "数据跨境流动合作倡议发布，利好公司业务。"
+    },
+    {
+      "stock_name": "光华科技",
+      "stock_code": "600703",
+      "impact": 3,
+      "analysis": "固态电池硫化物项目，利好公司发展。"
+    },
+    {
+      "stock_name": "佐力药业",
+      "stock_code": "600963",
+      "impact": 3,
+      "analysis": "增资入股凌意生物，利好公司研发能力。"
+    }
+  ],
+  "article_id": "48050a8b4e704f1483a229196f68246f",
+  "article_date": "2024-11-20",
+  "article_title": "2024.11.20市场逻辑精选"
+}

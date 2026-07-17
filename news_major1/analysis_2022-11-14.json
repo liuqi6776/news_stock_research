@@ -1,0 +1,160 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，部分板块受政策影响较大",
+  "sectors": [
+    {
+      "sector_name": "感冒药",
+      "impact": 4,
+      "analysis": "长期化疫情推动需求增长"
+    },
+    {
+      "sector_name": "退烧药",
+      "impact": 3,
+      "analysis": "轻症患者用药需求增加"
+    },
+    {
+      "sector_name": "氧气供给及监测设备",
+      "impact": 3,
+      "analysis": "老年人预防需求提升"
+    },
+    {
+      "sector_name": "连锁药房",
+      "impact": 2,
+      "analysis": "抗疫消费需求增加"
+    },
+    {
+      "sector_name": "高血压用药",
+      "impact": 3,
+      "analysis": "诊断标准调整，患者数量增加"
+    },
+    {
+      "sector_name": "建筑地产SAAS",
+      "impact": 3,
+      "analysis": "保交楼政策支持"
+    },
+    {
+      "sector_name": "破净民营地产",
+      "impact": 3,
+      "analysis": "政策支持，价值重估"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "华润三九",
+      "stock_code": "000999",
+      "impact": 4,
+      "analysis": "感冒药收入占比高"
+    },
+    {
+      "stock_name": "葵花药业",
+      "stock_code": "002737",
+      "impact": 4,
+      "analysis": "感冒药收入占比高"
+    },
+    {
+      "stock_name": "以岭药业",
+      "stock_code": "002603",
+      "impact": 4,
+      "analysis": "感冒药收入占比高"
+    },
+    {
+      "stock_name": "丰原药业",
+      "stock_code": "000153",
+      "impact": 3,
+      "analysis": "扑热息痛原料药生产商"
+    },
+    {
+      "stock_name": "新华制药",
+      "stock_code": "000756",
+      "impact": 3,
+      "analysis": "布洛芬原料药全球产能第一"
+    },
+    {
+      "stock_name": "鱼跃医疗",
+      "stock_code": "002223",
+      "impact": 3,
+      "analysis": "制氧机、指脉血氧仪生产商"
+    },
+    {
+      "stock_name": "健之佳",
+      "stock_code": "002001",
+      "impact": 2,
+      "analysis": "药房连锁企业"
+    },
+    {
+      "stock_name": "一心堂",
+      "stock_code": "002727",
+      "impact": 2,
+      "analysis": "药房连锁企业"
+    },
+    {
+      "stock_name": "老百姓",
+      "stock_code": "603883",
+      "impact": 2,
+      "analysis": "药房连锁企业"
+    },
+    {
+      "stock_name": "信立泰",
+      "stock_code": "002294",
+      "impact": 3,
+      "analysis": "降压药制剂"
+    },
+    {
+      "stock_name": "吉贝尔",
+      "stock_code": "002803",
+      "impact": 3,
+      "analysis": "降压药制剂"
+    },
+    {
+      "stock_name": "广联达",
+      "stock_code": "002049",
+      "impact": 3,
+      "analysis": "建筑地产SAAS"
+    },
+    {
+      "stock_name": "明源云",
+      "stock_code": "300724",
+      "impact": 3,
+      "analysis": "建筑地产SAAS"
+    },
+    {
+      "stock_name": "建龙微纳",
+      "stock_code": "300382",
+      "impact": 4,
+      "analysis": "制氧机核心原料"
+    },
+    {
+      "stock_name": "近岸蛋白",
+      "stock_code": "688599",
+      "impact": 4,
+      "analysis": "mRNA疫苗原料酶"
+    },
+    {
+      "stock_name": "振东制药",
+      "stock_code": "600845",
+      "impact": 4,
+      "analysis": "连翘种植基地"
+    },
+    {
+      "stock_name": "金地集团",
+      "stock_code": "600383",
+      "impact": 3,
+      "analysis": "优质未爆雷民营地产"
+    },
+    {
+      "stock_name": "尚荣医疗",
+      "stock_code": "002551",
+      "impact": 3,
+      "analysis": "医疗资源建设龙头"
+    },
+    {
+      "stock_name": "富士莱",
+      "stock_code": "300282",
+      "impact": 3,
+      "analysis": "治疗新冠丧失味觉嗅觉后遗症"
+    }
+  ],
+  "article_id": "4adbaa6f6b324ce4afaccb795954836f",
+  "article_date": "2022-11-14",
+  "article_title": "2022.11.14市场逻辑精选"
+}

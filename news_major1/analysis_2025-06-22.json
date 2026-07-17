@@ -1,0 +1,101 @@
+{
+  "market_impact": 3,
+  "market_analysis": "地缘政治紧张，市场情绪波动较大。",
+  "sectors": [
+    {
+      "sector_name": "军工",
+      "impact": 4,
+      "analysis": "地缘政治紧张，军工需求增加。"
+    },
+    {
+      "sector_name": "航运",
+      "impact": 3,
+      "analysis": "地缘政治紧张，航运成本上升。"
+    },
+    {
+      "sector_name": "石油燃气",
+      "impact": 3,
+      "analysis": "地缘政治紧张，石油价格有望上涨。"
+    },
+    {
+      "sector_name": "核污染防治",
+      "impact": 2,
+      "analysis": "核设施打击，核污染防治需求增加。"
+    },
+    {
+      "sector_name": "商业航天",
+      "impact": 3,
+      "analysis": "商业航天迎来密集首飞，行业前景看好。"
+    },
+    {
+      "sector_name": "互动影游",
+      "impact": 2,
+      "analysis": "互动影游市场空间大，行业热度上升。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "兴通股份",
+      "stock_code": "002356",
+      "impact": 3,
+      "analysis": "航运业务受益于地缘政治紧张。"
+    },
+    {
+      "stock_name": "宁波海运",
+      "stock_code": "600017",
+      "impact": 3,
+      "analysis": "航运业务受益于地缘政治紧张。"
+    },
+    {
+      "stock_name": "招商南油",
+      "stock_code": "000625",
+      "impact": 3,
+      "analysis": "航运业务受益于地缘政治紧张。"
+    },
+    {
+      "stock_name": "通源石油",
+      "stock_code": "600859",
+      "impact": 3,
+      "analysis": "油价上涨，页岩油气开采受益。"
+    },
+    {
+      "stock_name": "首华燃气",
+      "stock_code": "601918",
+      "impact": 3,
+      "analysis": "天然气勘探开发受益。"
+    },
+    {
+      "stock_name": "潜能恒信",
+      "stock_code": "603699",
+      "impact": 3,
+      "analysis": "油气勘探开发受益。"
+    },
+    {
+      "stock_name": "斯瑞新材",
+      "stock_code": "300366",
+      "impact": 3,
+      "analysis": "商业航天行业受益。"
+    },
+    {
+      "stock_name": "上海瀚讯",
+      "stock_code": "300331",
+      "impact": 3,
+      "analysis": "商业航天行业受益。"
+    },
+    {
+      "stock_name": "中文在线",
+      "stock_code": "300364",
+      "impact": 2,
+      "analysis": "互动影游行业受益。"
+    },
+    {
+      "stock_name": "欢瑞世纪",
+      "stock_code": "000892",
+      "impact": 2,
+      "analysis": "互动影游行业受益。"
+    }
+  ],
+  "article_id": "38f98d96aa9540048d3d409f21372d12",
+  "article_date": "2025-06-22",
+  "article_title": "2025.6.22市场逻辑精选"
+}

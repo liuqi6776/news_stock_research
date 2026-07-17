@@ -1,0 +1,88 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪提升",
+  "sectors": [
+    {
+      "sector_name": "文化自信",
+      "impact": 2,
+      "analysis": "相关文化公司受益"
+    },
+    {
+      "sector_name": "煤电低碳化",
+      "impact": 3,
+      "analysis": "技术改造推动相关企业"
+    },
+    {
+      "sector_name": "低空经济",
+      "impact": 2,
+      "analysis": "政策支持，相关企业受益"
+    },
+    {
+      "sector_name": "电网设备",
+      "impact": 3,
+      "analysis": "大规模投资推动设备更新"
+    },
+    {
+      "sector_name": "电影票房",
+      "impact": 2,
+      "analysis": "电影票房预期高，相关公司受益"
+    },
+    {
+      "sector_name": "自动驾驶",
+      "impact": 3,
+      "analysis": "政策支持，技术发展推动相关企业"
+    },
+    {
+      "sector_name": "北斗卫星",
+      "impact": 2,
+      "analysis": "北斗应用推广，相关企业受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "读客文化",
+      "stock_code": "300577",
+      "impact": 2,
+      "analysis": "文化自信概念股"
+    },
+    {
+      "stock_name": "龙源技术",
+      "stock_code": "601991",
+      "impact": 3,
+      "analysis": "煤电低碳化改造"
+    },
+    {
+      "stock_name": "光洋股份",
+      "stock_code": "002708",
+      "impact": 2,
+      "analysis": "低空经济概念股"
+    },
+    {
+      "stock_name": "南网科技",
+      "stock_code": "600503",
+      "impact": 3,
+      "analysis": "电网设备更新"
+    },
+    {
+      "stock_name": "万达电影",
+      "stock_code": "002739",
+      "impact": 2,
+      "analysis": "电影票房预期高"
+    },
+    {
+      "stock_name": "星网宇达",
+      "stock_code": "002829",
+      "impact": 3,
+      "analysis": "自动驾驶概念股"
+    },
+    {
+      "stock_name": "合众思壮",
+      "stock_code": "002383",
+      "impact": 2,
+      "analysis": "北斗卫星应用"
+    }
+  ],
+  "article_title": "7月16日盘前早报 热点事件关注",
+  "html_file": "cuutkj7cwu.html",
+  "article_date": "2024-07-16"
+}

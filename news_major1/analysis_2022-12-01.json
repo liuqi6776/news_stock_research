@@ -1,0 +1,107 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场预期向好，消费、科技板块受关注。",
+  "sectors": [
+    {
+      "sector_name": "消费品",
+      "impact": 3,
+      "analysis": "消费复苏预期提升板块表现。"
+    },
+    {
+      "sector_name": "食品饮料",
+      "impact": 3,
+      "analysis": "各子板块涨跌幅统计，部分个股表现亮眼。"
+    },
+    {
+      "sector_name": "电信运营商",
+      "impact": 3,
+      "analysis": "公有云业务有望价值重估，相关个股估值弹性空间大。"
+    },
+    {
+      "sector_name": "白酒",
+      "impact": 3,
+      "analysis": "超跌价值股迎来修复机会。"
+    },
+    {
+      "sector_name": "智慧口岸查验系统",
+      "impact": 3,
+      "analysis": "疫后复苏中充分受益。"
+    },
+    {
+      "sector_name": "数据确权",
+      "impact": 3,
+      "analysis": "数据确权国家队，市场空间大。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "徐家汇",
+      "stock_code": "000920",
+      "impact": 3,
+      "analysis": "零售商超，消费复苏预期提升。"
+    },
+    {
+      "stock_name": "国联水产",
+      "stock_code": "300094",
+      "impact": 3,
+      "analysis": "预制菜，消费复苏预期提升。"
+    },
+    {
+      "stock_name": "百润股份",
+      "stock_code": "002568",
+      "impact": 3,
+      "analysis": "啤酒，消费复苏预期提升。"
+    },
+    {
+      "stock_name": "中国电信",
+      "stock_code": "601728",
+      "impact": 3,
+      "analysis": "公有云业务有望价值重估。"
+    },
+    {
+      "stock_name": "妙可蓝多",
+      "stock_code": "603719",
+      "impact": 3,
+      "analysis": "奶酪龙头，疫情激发健康需求。"
+    },
+    {
+      "stock_name": "口子窖",
+      "stock_code": "600568",
+      "impact": 3,
+      "analysis": "同行最低PE，业绩有望高增。"
+    },
+    {
+      "stock_name": "盛视科技",
+      "stock_code": "300204",
+      "impact": 3,
+      "analysis": "智慧口岸查验系统龙头，疫后复苏受益。"
+    },
+    {
+      "stock_name": "人民网",
+      "stock_code": "603000",
+      "impact": 3,
+      "analysis": "数据确权国家队，市场空间大。"
+    },
+    {
+      "stock_name": "ST未来",
+      "stock_code": "300009",
+      "impact": 3,
+      "analysis": "拟收购瑞福锂业70%股权。"
+    },
+    {
+      "stock_name": "芯碁微装",
+      "stock_code": "688568",
+      "impact": 3,
+      "analysis": "设备可用于HJT降本。"
+    },
+    {
+      "stock_name": "华夏幸福",
+      "stock_code": "600340",
+      "impact": 3,
+      "analysis": "定增募资保交楼。"
+    }
+  ],
+  "article_id": "696c24bf05ad4886b118286b65b8dc0b",
+  "article_date": "2022-12-01",
+  "article_title": "2011.12.1市场逻辑精选"
+}

@@ -1,0 +1,127 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多因素利好，市场情绪提升",
+  "sectors": [
+    {
+      "sector_name": "券商",
+      "impact": 3,
+      "analysis": "转融资费率下调，利好券商"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 2,
+      "analysis": "涉房企业融资放开，利好房地产"
+    },
+    {
+      "sector_name": "减肥药",
+      "impact": 3,
+      "analysis": "肥胖率上升，减肥药市场空间大"
+    },
+    {
+      "sector_name": "车规IGBT",
+      "impact": 3,
+      "analysis": "供需缺口大，订单排至明年"
+    },
+    {
+      "sector_name": "钠电池",
+      "impact": 2,
+      "analysis": "行业标准将出炉，利好钠电池"
+    },
+    {
+      "sector_name": "信创",
+      "impact": 3,
+      "analysis": "信创国产替代，业绩拐点明确"
+    },
+    {
+      "sector_name": "医药医疗",
+      "impact": 3,
+      "analysis": "医疗新基建，政策支持力度大"
+    },
+    {
+      "sector_name": "电子商务",
+      "impact": 2,
+      "analysis": "双十一电商活动，利好电商"
+    },
+    {
+      "sector_name": "石油",
+      "impact": 2,
+      "analysis": "原油价格上涨，利好石油"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "供应链国产化提速，利好半导体"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "光大证券",
+      "stock_code": "601788",
+      "impact": 3,
+      "analysis": "转融资费率下调，利好光大证券"
+    },
+    {
+      "stock_name": "国联证券",
+      "stock_code": "601312",
+      "impact": 3,
+      "analysis": "转融资费率下调，利好国联证券"
+    },
+    {
+      "stock_name": "拓荆科技",
+      "stock_code": "688012",
+      "impact": 3,
+      "analysis": "半导体设备公司三季报大增"
+    },
+    {
+      "stock_name": "纳芯微",
+      "stock_code": "688012",
+      "impact": 3,
+      "analysis": "半导体设备公司三季报大增"
+    },
+    {
+      "stock_name": "精测电子",
+      "stock_code": "688012",
+      "impact": 3,
+      "analysis": "半导体设备公司三季报大增"
+    },
+    {
+      "stock_name": "凯美特气",
+      "stock_code": "688012",
+      "impact": 3,
+      "analysis": "半导体设备公司三季报大增"
+    },
+    {
+      "stock_name": "元隆雅图",
+      "stock_code": "002878",
+      "impact": 2,
+      "analysis": "罗永浩淘宝直播，利好电商"
+    },
+    {
+      "stock_name": "星期六",
+      "stock_code": "002291",
+      "impact": 2,
+      "analysis": "罗永浩淘宝直播，利好电商"
+    },
+    {
+      "stock_name": "大港股份",
+      "stock_code": "002231",
+      "impact": 3,
+      "analysis": "半导体供应链国产化提速"
+    },
+    {
+      "stock_name": "盈方微",
+      "stock_code": "300322",
+      "impact": 3,
+      "analysis": "半导体供应链国产化提速"
+    },
+    {
+      "stock_name": "康强电子",
+      "stock_code": "002119",
+      "impact": 3,
+      "analysis": "半导体供应链国产化提速"
+    }
+  ],
+  "article_title": "10月21日 盘前早8点 股市要闻关注",
+  "html_file": "dl5ubt39e7.html",
+  "article_date": "2022-10-21"
+}

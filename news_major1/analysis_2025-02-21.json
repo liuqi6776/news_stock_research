@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，关注AI和消费板块。",
+  "sectors": [
+    {
+      "sector_name": "AI",
+      "impact": 4,
+      "analysis": "AI领域投资增加，板块受益"
+    },
+    {
+      "sector_name": "消费",
+      "impact": 3,
+      "analysis": "消费潜力释放，板块有望上涨"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "机器人技术升级，板块受关注"
+    },
+    {
+      "sector_name": "云计算",
+      "impact": 3,
+      "analysis": "阿里加大云和AI投入，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "阿里巴巴",
+      "stock_code": "9988.HK",
+      "impact": 3,
+      "analysis": "业绩超预期，加大云和AI投入"
+    },
+    {
+      "stock_name": "新时达",
+      "stock_code": "002527.SZ",
+      "impact": 3,
+      "analysis": "成为海尔集团实际控制人"
+    },
+    {
+      "stock_name": "杭齿前进",
+      "stock_code": "002055.SZ",
+      "impact": 3,
+      "analysis": "机器人技术升级，连板"
+    },
+    {
+      "stock_name": "润建股份",
+      "stock_code": "002979.SZ",
+      "impact": 3,
+      "analysis": "AI相关产品收入增长"
+    }
+  ],
+  "article_title": "2月21日盘前早报 热点事件关注",
+  "html_file": "4xh4ra9x38.html",
+  "article_date": "2025-02-21"
+}

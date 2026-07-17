@@ -1,0 +1,66 @@
+{
+  "market_impact": 2,
+  "market_analysis": "市场整体偏利好，多板块受积极因素影响。",
+  "sectors": [
+    {
+      "sector_name": "华为概念",
+      "impact": 3,
+      "analysis": "华为Mate 50系列发布会和苹果秋季发布会将推动相关产业链个股表现。"
+    },
+    {
+      "sector_name": "卫星通信",
+      "impact": 3,
+      "analysis": "华为Mate50和苹果14将搭载卫星通信功能，相关个股受益。"
+    },
+    {
+      "sector_name": "风电",
+      "impact": 2,
+      "analysis": "山东打造千万千瓦级深远海海上风电基地，风电板块受益。"
+    },
+    {
+      "sector_name": "医疗",
+      "impact": 2,
+      "analysis": "创新医疗器械暂不实施带量采购，医疗板块短期利好。"
+    },
+    {
+      "sector_name": "新疆板块",
+      "impact": 2,
+      "analysis": "上合峰会相关，新疆板块受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "三维通信",
+      "stock_code": "002115",
+      "impact": 3,
+      "analysis": "华为Mate50和苹果14将搭载卫星通信功能，相关个股受益。"
+    },
+    {
+      "stock_name": "天富能源",
+      "stock_code": "600498",
+      "impact": 2,
+      "analysis": "山东打造千万千瓦级深远海海上风电基地，风电板块受益。"
+    },
+    {
+      "stock_name": "金雷股份",
+      "stock_code": "002464",
+      "impact": 2,
+      "analysis": "山东打造千万千瓦级深远海海上风电基地，风电板块受益。"
+    },
+    {
+      "stock_name": "迈瑞医疗",
+      "stock_code": "300760",
+      "impact": 2,
+      "analysis": "创新医疗器械暂不实施带量采购，医疗板块短期利好。"
+    },
+    {
+      "stock_name": "天顺股份",
+      "stock_code": "002910",
+      "impact": 2,
+      "analysis": "上合峰会相关，新疆板块受益。"
+    }
+  ],
+  "article_title": "9月5日 盘前早8点 股市要闻关注",
+  "html_file": "a7ybjcylt2.html",
+  "article_date": "2022-09-05"
+}

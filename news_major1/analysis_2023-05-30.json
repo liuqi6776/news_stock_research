@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪积极",
+  "sectors": [
+    {
+      "sector_name": "脑机接口",
+      "impact": 4,
+      "analysis": "政策支持，技术突破"
+    },
+    {
+      "sector_name": "AI 教育",
+      "impact": 3,
+      "analysis": "政策支持，技术发展"
+    },
+    {
+      "sector_name": "电力",
+      "impact": 3,
+      "analysis": "高温天气，用电需求增加"
+    },
+    {
+      "sector_name": "内存",
+      "impact": 3,
+      "analysis": "技术突破，需求增加"
+    },
+    {
+      "sector_name": "特斯拉概念",
+      "impact": 2,
+      "analysis": "马斯克访问中国，市场关注"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "新智认知",
+      "stock_code": "300075",
+      "impact": 4,
+      "analysis": "脑机接口概念，技术突破"
+    },
+    {
+      "stock_name": "学大教育",
+      "stock_code": "300355",
+      "impact": 3,
+      "analysis": "AI 教育概念，政策支持"
+    },
+    {
+      "stock_name": "华电国际",
+      "stock_code": "600011",
+      "impact": 3,
+      "analysis": "电力需求增加"
+    },
+    {
+      "stock_name": "深科技",
+      "stock_code": "000021",
+      "impact": 3,
+      "analysis": "内存技术突破"
+    },
+    {
+      "stock_name": "特斯拉",
+      "stock_code": "TSLA",
+      "impact": 2,
+      "analysis": "马斯克访问中国，市场关注"
+    }
+  ],
+  "article_title": "5月30日 盘前热点事件关注",
+  "html_file": "fjv9j52739.html",
+  "article_date": "2023-05-30"
+}

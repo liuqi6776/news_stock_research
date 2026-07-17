@@ -1,0 +1,88 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个行业和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "互联网",
+      "impact": 4,
+      "analysis": "阿里巴巴业务集团化，利好相关产业链。"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "大模型技术及应用基准工作启动，利好相关企业。"
+    },
+    {
+      "sector_name": "数据中心",
+      "impact": 3,
+      "analysis": "海南国际数据港规划发布，利好相关企业。"
+    },
+    {
+      "sector_name": "网络安全",
+      "impact": 3,
+      "analysis": "微软推出AI安全工具，利好相关企业。"
+    },
+    {
+      "sector_name": "算力",
+      "impact": 3,
+      "analysis": "公共算力平台加速建设，利好相关企业。"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "三部委鼓励建设大型光伏基地，利好相关企业。"
+    },
+    {
+      "sector_name": "屋顶光伏",
+      "impact": 3,
+      "analysis": "北京新建公共机构建筑屋顶光伏覆盖率要求提高，利好相关企业。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "阿里巴巴",
+      "stock_code": "9988.HK",
+      "impact": 4,
+      "analysis": "业务集团化，利好公司整体。"
+    },
+    {
+      "stock_name": "石基信息",
+      "stock_code": "002153.SZ",
+      "impact": 4,
+      "analysis": "AI+酒店概念，受益于阿里巴巴业务集团化。"
+    },
+    {
+      "stock_name": "海兰信",
+      "stock_code": "300220.SZ",
+      "impact": 3,
+      "analysis": "海南国际数据港概念，受益于海南国际数据港规划。"
+    },
+    {
+      "stock_name": "岭南股份",
+      "stock_code": "002717.SZ",
+      "impact": 3,
+      "analysis": "AI+腾讯概念，受益于腾讯AI技术合作。"
+    },
+    {
+      "stock_name": "安恒信息",
+      "stock_code": "603197.SH",
+      "impact": 3,
+      "analysis": "AI+安全概念，受益于微软AI安全工具。"
+    },
+    {
+      "stock_name": "天孚通信",
+      "stock_code": "300458.SZ",
+      "impact": 3,
+      "analysis": "光连接概念，受益于算力平台建设。"
+    },
+    {
+      "stock_name": "亿利洁能",
+      "stock_code": "600277.SH",
+      "impact": 3,
+      "analysis": "沙漠光伏概念，受益于大型光伏基地建设。"
+    }
+  ],
+  "article_title": "3月29日盘前热点事件关注",
+  "html_file": "c5vfsmkt8n.html",
+  "article_date": "2023-03-29"
+}

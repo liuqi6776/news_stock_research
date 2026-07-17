@@ -1,0 +1,84 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注后续政策及供需变化。",
+  "sectors": [
+    {
+      "sector_name": "锡矿",
+      "impact": 4,
+      "analysis": "供需紧张，价格上涨，利好相关公司"
+    },
+    {
+      "sector_name": "信息通信",
+      "impact": 3,
+      "analysis": "信息支援部队成立，利好相关公司"
+    },
+    {
+      "sector_name": "水利水电",
+      "impact": 2,
+      "analysis": "珠江防汛升级，利好相关公司"
+    },
+    {
+      "sector_name": "焦炭",
+      "impact": 2,
+      "analysis": "价格上涨，利好相关公司"
+    },
+    {
+      "sector_name": "石油",
+      "impact": 3,
+      "analysis": "中东局势动荡，利好相关公司"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "华锡有色",
+      "stock_code": "600998",
+      "impact": 4,
+      "analysis": "锡矿价格上涨，利好公司"
+    },
+    {
+      "stock_name": "锡业股份",
+      "stock_code": "000960",
+      "impact": 4,
+      "analysis": "锡矿价格上涨，利好公司"
+    },
+    {
+      "stock_name": "兴业银锡",
+      "stock_code": "600777",
+      "impact": 4,
+      "analysis": "锡矿价格上涨，利好公司"
+    },
+    {
+      "stock_name": "中国电科",
+      "stock_code": "600495",
+      "impact": 3,
+      "analysis": "信息支援部队成立，利好公司"
+    },
+    {
+      "stock_name": "广东建工",
+      "stock_code": "002017",
+      "impact": 2,
+      "analysis": "珠江防汛升级，利好公司"
+    },
+    {
+      "stock_name": "云维股份",
+      "stock_code": "600123",
+      "impact": 2,
+      "analysis": "焦炭价格上涨，利好公司"
+    },
+    {
+      "stock_name": "安泰集团",
+      "stock_code": "000969",
+      "impact": 2,
+      "analysis": "焦炭价格上涨，利好公司"
+    },
+    {
+      "stock_name": "贝肯能源",
+      "stock_code": "002828",
+      "impact": 3,
+      "analysis": "中东局势动荡，利好公司"
+    }
+  ],
+  "article_id": "30e7ed60f0ec47cb9b547283185b5672",
+  "article_date": "2024-04-21",
+  "article_title": "2024.4.21市场逻辑精选"
+}

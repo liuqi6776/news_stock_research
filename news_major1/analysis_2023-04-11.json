@@ -1,0 +1,83 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股受利好消息提振。",
+  "sectors": [
+    {
+      "sector_name": "人工智能",
+      "impact": 4,
+      "analysis": "机构批量买入，商汤发布大模型体系，板块受提振"
+    },
+    {
+      "sector_name": "算力",
+      "impact": 3,
+      "analysis": "我国算力总规模居全球第二，行业前景看好"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "中来刷新N型TOPCon电池世界最高效率，光伏设备需求空间巨大"
+    },
+    {
+      "sector_name": "存储芯片",
+      "impact": 3,
+      "analysis": "美光科技大涨，存储供需平衡，价格底部将近"
+    },
+    {
+      "sector_name": "新能源",
+      "impact": 3,
+      "analysis": "比亚迪云辇系统首发，新能源智能车身控制系统受关注"
+    },
+    {
+      "sector_name": "券商",
+      "impact": 2,
+      "analysis": "转融通保证金比例下调，证券业减负"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "昆仑万维",
+      "stock_code": "300418",
+      "impact": 4,
+      "analysis": "机构批量买入，推出对标ChatGPT的大语言模型"
+    },
+    {
+      "stock_name": "拓维信息",
+      "stock_code": "002261",
+      "impact": 4,
+      "analysis": "机构批量买入"
+    },
+    {
+      "stock_name": "景嘉微",
+      "stock_code": "300474",
+      "impact": 4,
+      "analysis": "机构批量买入"
+    },
+    {
+      "stock_name": "科大讯飞",
+      "stock_code": "002230",
+      "impact": 4,
+      "analysis": "机构批量买入"
+    },
+    {
+      "stock_name": "中来股份",
+      "stock_code": "002182",
+      "impact": 4,
+      "analysis": "刷新N型TOPCon电池世界最高效率"
+    },
+    {
+      "stock_name": "美光科技",
+      "stock_code": "000950",
+      "impact": 4,
+      "analysis": "存储芯片龙头，大涨8%"
+    },
+    {
+      "stock_name": "比亚迪",
+      "stock_code": "002594",
+      "impact": 3,
+      "analysis": "云辇系统首发，新能源智能车身控制系统"
+    }
+  ],
+  "article_title": "4月11日 盘前热点事件关注",
+  "html_file": "c6gur9cb76.html",
+  "article_date": "2023-04-11"
+}

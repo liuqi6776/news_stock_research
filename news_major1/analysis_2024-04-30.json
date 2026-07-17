@@ -1,0 +1,334 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "房地产",
+      "impact": 4,
+      "analysis": "政策利好，板块有望反弹。"
+    },
+    {
+      "sector_name": "数字经济",
+      "impact": 3,
+      "analysis": "政策支持，板块前景看好。"
+    },
+    {
+      "sector_name": "脑机接口",
+      "impact": 3,
+      "analysis": "行业标准推动，板块有望发展。"
+    },
+    {
+      "sector_name": "低空经济",
+      "impact": 3,
+      "analysis": "政策支持，板块前景广阔。"
+    },
+    {
+      "sector_name": "券商",
+      "impact": 2,
+      "analysis": "行业政策利好，板块有望受益。"
+    },
+    {
+      "sector_name": "量子科技",
+      "impact": 2,
+      "analysis": "技术突破，板块有望发展。"
+    },
+    {
+      "sector_name": "汽车拆解",
+      "impact": 2,
+      "analysis": "政策支持，板块有望受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "华远地产",
+      "stock_code": "000607",
+      "impact": 4,
+      "analysis": "政策利好，股价有望上涨。"
+    },
+    {
+      "stock_name": "南国置业",
+      "stock_code": "000732",
+      "impact": 4,
+      "analysis": "政策利好，股价有望上涨。"
+    },
+    {
+      "stock_name": "我爱我家",
+      "stock_code": "000560",
+      "impact": 4,
+      "analysis": "政策利好，股价有望上涨。"
+    },
+    {
+      "stock_name": "荣盛发展",
+      "stock_code": "002146",
+      "impact": 4,
+      "analysis": "政策利好，股价有望上涨。"
+    },
+    {
+      "stock_name": "数字政通",
+      "stock_code": "300075",
+      "impact": 3,
+      "analysis": "政策支持，股价有望上涨。"
+    },
+    {
+      "stock_name": "数字认证",
+      "stock_code": "002252",
+      "impact": 3,
+      "analysis": "政策支持，股价有望上涨。"
+    },
+    {
+      "stock_name": "电科数字",
+      "stock_code": "688019",
+      "impact": 3,
+      "analysis": "政策支持，股价有望上涨。"
+    },
+    {
+      "stock_name": "创新医疗",
+      "stock_code": "002821",
+      "impact": 3,
+      "analysis": "行业标准推动，股价有望上涨。"
+    },
+    {
+      "stock_name": "三博脑科",
+      "stock_code": "300229",
+      "impact": 3,
+      "analysis": "行业标准推动，股价有望上涨。"
+    },
+    {
+      "stock_name": "贵广网络",
+      "stock_code": "600352",
+      "impact": 3,
+      "analysis": "习酒升级，股价有望上涨。"
+    },
+    {
+      "stock_name": "贵绳股份",
+      "stock_code": "600546",
+      "impact": 3,
+      "analysis": "习酒升级，股价有望上涨。"
+    },
+    {
+      "stock_name": "罗平锌电",
+      "stock_code": "002114",
+      "impact": 3,
+      "analysis": "伦锌反弹，股价有望上涨。"
+    },
+    {
+      "stock_name": "锌业股份",
+      "stock_code": "000751",
+      "impact": 3,
+      "analysis": "伦锌反弹，股价有望上涨。"
+    },
+    {
+      "stock_name": "奥维通信",
+      "stock_code": "002231",
+      "impact": 3,
+      "analysis": "连板效应，股价有望上涨。"
+    },
+    {
+      "stock_name": "川大智胜",
+      "stock_code": "002253",
+      "impact": 3,
+      "analysis": "连板效应，股价有望上涨。"
+    },
+    {
+      "stock_name": "南国置业",
+      "stock_code": "000732",
+      "impact": 3,
+      "analysis": "连板效应，股价有望上涨。"
+    },
+    {
+      "stock_name": "鲁北化工",
+      "stock_code": "002297",
+      "impact": 3,
+      "analysis": "连板效应，股价有望上涨。"
+    },
+    {
+      "stock_name": "国盛金控",
+      "stock_code": "000602",
+      "impact": 3,
+      "analysis": "连板效应，股价有望上涨。"
+    },
+    {
+      "stock_name": "太平洋",
+      "stock_code": "600038",
+      "impact": 3,
+      "analysis": "连板效应，股价有望上涨。"
+    },
+    {
+      "stock_name": "格尔软件",
+      "stock_code": "300319",
+      "impact": 3,
+      "analysis": "连板效应，股价有望上涨。"
+    },
+    {
+      "stock_name": "神州信息",
+      "stock_code": "000555",
+      "impact": 3,
+      "analysis": "连板效应，股价有望上涨。"
+    },
+    {
+      "stock_name": "吉大正元",
+      "stock_code": "002839",
+      "impact": 3,
+      "analysis": "连板效应，股价有望上涨。"
+    },
+    {
+      "stock_name": "大名城",
+      "stock_code": "600732",
+      "impact": 3,
+      "analysis": "房地产政策利好，股价有望上涨。"
+    },
+    {
+      "stock_name": "华远地产",
+      "stock_code": "000607",
+      "impact": 3,
+      "analysis": "房地产政策利好，股价有望上涨。"
+    },
+    {
+      "stock_name": "荣盛发展",
+      "stock_code": "002146",
+      "impact": 3,
+      "analysis": "房地产政策利好，股价有望上涨。"
+    },
+    {
+      "stock_name": "福星股份",
+      "stock_code": "000926",
+      "impact": 3,
+      "analysis": "房地产政策利好，股价有望上涨。"
+    },
+    {
+      "stock_name": "天保基建",
+      "stock_code": "000965",
+      "impact": 3,
+      "analysis": "房地产政策利好，股价有望上涨。"
+    },
+    {
+      "stock_name": "金地集团",
+      "stock_code": "600383",
+      "impact": 3,
+      "analysis": "房地产政策利好，股价有望上涨。"
+    },
+    {
+      "stock_name": "荣安地产",
+      "stock_code": "000517",
+      "impact": 3,
+      "analysis": "房地产政策利好，股价有望上涨。"
+    },
+    {
+      "stock_name": "冠城大通",
+      "stock_code": "600644",
+      "impact": 3,
+      "analysis": "房地产政策利好，股价有望上涨。"
+    },
+    {
+      "stock_name": "津滨发展",
+      "stock_code": "000897",
+      "impact": 3,
+      "analysis": "房地产政策利好，股价有望上涨。"
+    },
+    {
+      "stock_name": "京能置业",
+      "stock_code": "600791",
+      "impact": 3,
+      "analysis": "房地产政策利好，股价有望上涨。"
+    },
+    {
+      "stock_name": "荣丰控股",
+      "stock_code": "000662",
+      "impact": 3,
+      "analysis": "房地产政策利好，股价有望上涨。"
+    },
+    {
+      "stock_name": "京投发展",
+      "stock_code": "600683",
+      "impact": 3,
+      "analysis": "房地产政策利好，股价有望上涨。"
+    },
+    {
+      "stock_name": "首开股份",
+      "stock_code": "600376",
+      "impact": 3,
+      "analysis": "房地产政策利好，股价有望上涨。"
+    },
+    {
+      "stock_name": "万科A",
+      "stock_code": "000002",
+      "impact": 3,
+      "analysis": "房地产政策利好，股价有望上涨。"
+    },
+    {
+      "stock_name": "三六五网",
+      "stock_code": "300295",
+      "impact": 3,
+      "analysis": "房地产政策利好，股价有望上涨。"
+    },
+    {
+      "stock_name": "德必集团",
+      "stock_code": "603898",
+      "impact": 3,
+      "analysis": "房地产政策利好，股价有望上涨。"
+    },
+    {
+      "stock_name": "特发服务",
+      "stock_code": "000070",
+      "impact": 3,
+      "analysis": "房地产政策利好，股价有望上涨。"
+    },
+    {
+      "stock_name": "城地香江",
+      "stock_code": "002979",
+      "impact": 3,
+      "analysis": "自动驾驶政策利好，股价有望上涨。"
+    },
+    {
+      "stock_name": "路畅科技",
+      "stock_code": "002813",
+      "impact": 3,
+      "analysis": "自动驾驶政策利好，股价有望上涨。"
+    },
+    {
+      "stock_name": "亚通精工",
+      "stock_code": "603649",
+      "impact": 3,
+      "analysis": "自动驾驶政策利好，股价有望上涨。"
+    },
+    {
+      "stock_name": "宜通世纪",
+      "stock_code": "300292",
+      "impact": 3,
+      "analysis": "自动驾驶政策利好，股价有望上涨。"
+    },
+    {
+      "stock_name": "中海达",
+      "stock_code": "300027",
+      "impact": 3,
+      "analysis": "自动驾驶政策利好，股价有望上涨。"
+    },
+    {
+      "stock_name": "天奇股份",
+      "stock_code": "002009",
+      "impact": 3,
+      "analysis": "汽车拆解政策利好，股价有望上涨。"
+    },
+    {
+      "stock_name": "华宏科技",
+      "stock_code": "002140",
+      "impact": 3,
+      "analysis": "汽车拆解政策利好，股价有望上涨。"
+    },
+    {
+      "stock_name": "格林美",
+      "stock_code": "002340",
+      "impact": 3,
+      "analysis": "汽车拆解政策利好，股价有望上涨。"
+    },
+    {
+      "stock_name": "启迪环境",
+      "stock_code": "000826",
+      "impact": 3,
+      "analysis": "汽车拆解政策利好，股价有望上涨。"
+    }
+  ],
+  "article_title": "4月30日盘前早报 热点事件关注",
+  "html_file": "cr45s3hj30.html",
+  "article_date": "2024-04-30"
+}

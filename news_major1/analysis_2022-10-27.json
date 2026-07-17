@@ -1,0 +1,105 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股受积极因素影响。",
+  "sectors": [
+    {
+      "sector_name": "中概互联网",
+      "impact": 4,
+      "analysis": "人民币汇率反弹和中概股上涨推动板块利好。"
+    },
+    {
+      "sector_name": "教育",
+      "impact": 3,
+      "analysis": "竞业达停牌及教育信息化政策支持板块利好。"
+    },
+    {
+      "sector_name": "基础设施建设",
+      "impact": 3,
+      "analysis": "金门大桥通车及中巴合作利好相关板块。"
+    },
+    {
+      "sector_name": "新能源",
+      "impact": 3,
+      "analysis": "钠离子电池项目投产利好相关板块。"
+    },
+    {
+      "sector_name": "制造业",
+      "impact": 3,
+      "analysis": "深化“放管服”改革政策利好制造业板块。"
+    },
+    {
+      "sector_name": "电力行业",
+      "impact": 2,
+      "analysis": "信创论坛召开利好电力行业信创板块。"
+    },
+    {
+      "sector_name": "5G",
+      "impact": 2,
+      "analysis": "华为推动5.5G发展利好相关板块。"
+    },
+    {
+      "sector_name": "建筑防水",
+      "impact": 2,
+      "analysis": "建筑防水新规利好行业。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "雾芯科技",
+      "stock_code": "600599",
+      "impact": 4,
+      "analysis": "中概互联网指数上涨，公司涨幅显著。"
+    },
+    {
+      "stock_name": "竞业达",
+      "stock_code": "002383",
+      "impact": 4,
+      "analysis": "股价大幅上涨后停牌，关注后续复牌表现。"
+    },
+    {
+      "stock_name": "平潭发展",
+      "stock_code": "000592",
+      "impact": 3,
+      "analysis": "金门大桥通车利好相关股票。"
+    },
+    {
+      "stock_name": "海天股份",
+      "stock_code": "000572",
+      "impact": 3,
+      "analysis": "巴基斯坦总理访华利好中巴合作相关股票。"
+    },
+    {
+      "stock_name": "钠创新能源",
+      "stock_code": "603790",
+      "impact": 3,
+      "analysis": "钠离子电池项目投产利好相关股票。"
+    },
+    {
+      "stock_name": "浙江医药",
+      "stock_code": "600216",
+      "impact": 3,
+      "analysis": "钠离子电池项目投产利好相关股票。"
+    },
+    {
+      "stock_name": "运达科技",
+      "stock_code": "002607",
+      "impact": 3,
+      "analysis": "教育信息化政策支持利好相关股票。"
+    },
+    {
+      "stock_name": "华大智造",
+      "stock_code": "688029",
+      "impact": 3,
+      "analysis": "深圳设备更新改造贷款利好相关股票。"
+    },
+    {
+      "stock_name": "盛路通信",
+      "stock_code": "002446",
+      "impact": 3,
+      "analysis": "华为推动5.5G发展利好相关股票。"
+    }
+  ],
+  "article_title": "10月27日盘前早参 热点事件关注",
+  "html_file": "70g00qm8xm.html",
+  "article_date": "2022-10-27"
+}

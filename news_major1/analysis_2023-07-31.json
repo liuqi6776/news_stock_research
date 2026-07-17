@@ -1,0 +1,88 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策利好，市场情绪积极",
+  "sectors": [
+    {
+      "sector_name": "金融",
+      "impact": 3,
+      "analysis": "证监会政策支持，板块受益"
+    },
+    {
+      "sector_name": "数据中心",
+      "impact": 3,
+      "analysis": "国家数据局局长任命，板块受关注"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 2,
+      "analysis": "城中村改造政策，板块受益"
+    },
+    {
+      "sector_name": "商超",
+      "impact": 2,
+      "analysis": "消费恢复扩大措施，板块受益"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "特斯拉机器人执行器紧缺，板块受益"
+    },
+    {
+      "sector_name": "农业",
+      "impact": 2,
+      "analysis": "全球大米价格上涨，板块受益"
+    },
+    {
+      "sector_name": "平台经济",
+      "impact": 2,
+      "analysis": "国务院平台征集民营经济发展问题，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "太平洋",
+      "stock_code": "600038",
+      "impact": 3,
+      "analysis": "证监会政策支持，券商板块受益"
+    },
+    {
+      "stock_name": "中国联通",
+      "stock_code": "600050",
+      "impact": 3,
+      "analysis": "国家数据局局长任命，数据中心板块受益"
+    },
+    {
+      "stock_name": "国创高新",
+      "stock_code": "000578",
+      "impact": 2,
+      "analysis": "城中村改造政策，房地产板块受益"
+    },
+    {
+      "stock_name": "中兴商业",
+      "stock_code": "000715",
+      "impact": 2,
+      "analysis": "消费恢复扩大措施，商超板块受益"
+    },
+    {
+      "stock_name": "中马传动",
+      "stock_code": "603116",
+      "impact": 3,
+      "analysis": "特斯拉机器人执行器紧缺，机器人板块受益"
+    },
+    {
+      "stock_name": "金健米业",
+      "stock_code": "600127",
+      "impact": 2,
+      "analysis": "全球大米价格上涨，农业板块受益"
+    },
+    {
+      "stock_name": "赛维时代",
+      "stock_code": "300006",
+      "impact": 2,
+      "analysis": "国务院平台征集民营经济发展问题，平台经济板块受益"
+    }
+  ],
+  "article_title": "7月31日盘前早报 热点事件关注",
+  "html_file": "fmv5wjxhvt.html",
+  "article_date": "2023-07-31"
+}

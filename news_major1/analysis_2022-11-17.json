@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极影响。",
+  "sectors": [
+    {
+      "sector_name": "国产密码",
+      "impact": 4,
+      "analysis": "市场空间广阔，龙头厂商加速布局。"
+    },
+    {
+      "sector_name": "ICU",
+      "impact": 3,
+      "analysis": "政策支持，医疗设备需求增长。"
+    },
+    {
+      "sector_name": "mRNA疫苗",
+      "impact": 3,
+      "analysis": "技术突出，临床试验获批。"
+    },
+    {
+      "sector_name": "信创",
+      "impact": 4,
+      "analysis": "国产化趋势明显，市场空间大。"
+    },
+    {
+      "sector_name": "医疗设备",
+      "impact": 3,
+      "analysis": "ICU床位需求增长，带动设备采购。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "亚信安全",
+      "stock_code": "300317",
+      "impact": 4,
+      "analysis": "市场份额高，有望加速成长。"
+    },
+    {
+      "stock_name": "迈瑞医疗",
+      "stock_code": "300760",
+      "impact": 3,
+      "analysis": "ICU床位需求增长，业绩持续增长。"
+    },
+    {
+      "stock_name": "沃森生物",
+      "stock_code": "300142",
+      "impact": 3,
+      "analysis": "mRNA疫苗临床试验获批。"
+    },
+    {
+      "stock_name": "中国长城",
+      "stock_code": "000066",
+      "impact": 4,
+      "analysis": "飞腾在信创领域市占率第一。"
+    },
+    {
+      "stock_name": "爱朋医疗",
+      "stock_code": "300752",
+      "impact": 3,
+      "analysis": "鼻腔冲洗可治疗和防范新冠。"
+    }
+  ],
+  "article_id": "a6c95f5dc8ef4a52b13f7be6757fc944",
+  "article_date": "2022-11-17",
+  "article_title": "2022.11.17市场逻辑精选"
+}

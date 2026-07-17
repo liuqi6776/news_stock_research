@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件影响，市场情绪偏乐观",
+  "sectors": [
+    {
+      "sector_name": "油气合作",
+      "impact": 4,
+      "analysis": "上合峰会合作预期，利好油气板块"
+    },
+    {
+      "sector_name": "锂电池",
+      "impact": 3,
+      "analysis": "宝马集团大单，利好锂电池行业"
+    },
+    {
+      "sector_name": "芯片",
+      "impact": -2,
+      "analysis": "美国扩大芯片出口限制，利空芯片行业"
+    },
+    {
+      "sector_name": "白酒",
+      "impact": 2,
+      "analysis": "财政部支持贵州白酒企业，利好白酒板块"
+    },
+    {
+      "sector_name": "地产",
+      "impact": 2,
+      "analysis": "地产调控政策持续宽松，利好地产板块"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "贝肯能源",
+      "stock_code": "002828",
+      "impact": 4,
+      "analysis": "油气合作预期，利好贝肯能源"
+    },
+    {
+      "stock_name": "宁德时代",
+      "stock_code": "300750",
+      "impact": 4,
+      "analysis": "宝马集团大单，利好宁德时代"
+    },
+    {
+      "stock_name": "亿纬锂能",
+      "stock_code": "300014",
+      "impact": 4,
+      "analysis": "宝马集团大单，利好亿纬锂能"
+    },
+    {
+      "stock_name": "贵州茅台",
+      "stock_code": "600519",
+      "impact": 2,
+      "analysis": "财政部支持贵州白酒企业，利好贵州茅台"
+    },
+    {
+      "stock_name": "中洲控股",
+      "stock_code": "000042",
+      "impact": 2,
+      "analysis": "地产调控政策持续宽松，利好中洲控股"
+    }
+  ],
+  "article_title": "9月13日 盘前早8点 股市要闻关注",
+  "html_file": "5abrlh9pkq.html",
+  "article_date": "2022-09-13"
+}

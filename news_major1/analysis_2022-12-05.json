@@ -1,0 +1,98 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "人工智能",
+      "impact": 4,
+      "analysis": "ChatGPT引发热议，相关公司受益"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 3,
+      "analysis": "智慧药房助力疫情防控，相关公司受益"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 3,
+      "analysis": "大集团小公司房企资产注入预期，相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "海天瑞声",
+      "stock_code": "300138",
+      "impact": 4,
+      "analysis": "ChatGPT相关，大数据训练领域领先"
+    },
+    {
+      "stock_name": "汉王科技",
+      "stock_code": "002362",
+      "impact": 4,
+      "analysis": "自然语言处理技术领先"
+    },
+    {
+      "stock_name": "科大国创",
+      "stock_code": "300520",
+      "impact": 4,
+      "analysis": "聊天机器人系统领先"
+    },
+    {
+      "stock_name": "健麾信息",
+      "stock_code": "300538",
+      "impact": 3,
+      "analysis": "智慧药房项目领先"
+    },
+    {
+      "stock_name": "中华企业",
+      "stock_code": "600675",
+      "impact": 3,
+      "analysis": "大集团小公司房企资产注入预期"
+    },
+    {
+      "stock_name": "城建发展",
+      "stock_code": "600649",
+      "impact": 3,
+      "analysis": "大集团小公司房企资产注入预期"
+    },
+    {
+      "stock_name": "贵州百灵",
+      "stock_code": "002424",
+      "impact": 4,
+      "analysis": "咳速停糖浆疗效优于连花清瘟"
+    },
+    {
+      "stock_name": "云赛智联",
+      "stock_code": "600745",
+      "impact": 4,
+      "analysis": "上海国资系统唯一的数据中心和云服务运营商"
+    },
+    {
+      "stock_name": "阳光股份",
+      "stock_code": "000608",
+      "impact": 4,
+      "analysis": "京基集团或将注入旗下地产有关业务"
+    },
+    {
+      "stock_name": "中油工程",
+      "stock_code": "601857",
+      "impact": 4,
+      "analysis": "破净央企叠加中阿概念"
+    },
+    {
+      "stock_name": "ST三圣",
+      "stock_code": "000731",
+      "impact": 3,
+      "analysis": "对乙酰氨基酚年产5000吨，目前满产满销"
+    },
+    {
+      "stock_name": "亿华通",
+      "stock_code": "688698",
+      "impact": 3,
+      "analysis": "港股"
+    }
+  ],
+  "article_id": "af3a196e0eec44ba8c183abe19b1b799",
+  "article_date": "2022-12-05",
+  "article_title": "2022.12.5市场逻辑精选"
+}

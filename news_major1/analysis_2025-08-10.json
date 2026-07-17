@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "铁路基建",
+      "impact": 4,
+      "analysis": "新藏铁路开工预期利好铁路基建板块。"
+    },
+    {
+      "sector_name": "建材",
+      "impact": 3,
+      "analysis": "西藏水泥缺口利好建材行业。"
+    },
+    {
+      "sector_name": "人力资源",
+      "impact": 2,
+      "analysis": "社保新规利好人力资源服务行业。"
+    },
+    {
+      "sector_name": "养老服务机器人",
+      "impact": 3,
+      "analysis": "养老服务机器人试点项目利好相关行业。"
+    },
+    {
+      "sector_name": "鸡肉产业链",
+      "impact": 3,
+      "analysis": "鸡肉产业链价格上涨利好相关企业。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "新疆交建",
+      "stock_code": "600522",
+      "impact": 4,
+      "analysis": "新藏铁路开工预期利好。"
+    },
+    {
+      "stock_name": "青松建化",
+      "stock_code": "600099",
+      "impact": 3,
+      "analysis": "西藏水泥缺口利好。"
+    },
+    {
+      "stock_name": "德生科技",
+      "stock_code": "002908",
+      "impact": 3,
+      "analysis": "社保新规利好。"
+    },
+    {
+      "stock_name": "欧圣电气",
+      "stock_code": "603035",
+      "impact": 3,
+      "analysis": "养老服务机器人试点项目利好。"
+    },
+    {
+      "stock_name": "晓鸣股份",
+      "stock_code": "002532",
+      "impact": 3,
+      "analysis": "鸡肉产业链价格上涨利好。"
+    }
+  ],
+  "article_id": "db0a7f46e3d04d0b9e5c91edd460c75f",
+  "article_date": "2025-08-10",
+  "article_title": "2025.8.10市场逻辑精选"
+}

@@ -1,0 +1,110 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪偏乐观",
+  "sectors": [
+    {
+      "sector_name": "教育",
+      "impact": 3,
+      "analysis": "教育强国战略，相关概念股受益"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "新科技革命浪潮，相关概念股受益"
+    },
+    {
+      "sector_name": "多胎概念",
+      "impact": 3,
+      "analysis": "生育支持政策，相关概念股受益"
+    },
+    {
+      "sector_name": "养老",
+      "impact": 3,
+      "analysis": "应对老龄化战略，相关概念股受益"
+    },
+    {
+      "sector_name": "充电桩",
+      "impact": 3,
+      "analysis": "新能源汽车下乡，相关概念股受益"
+    },
+    {
+      "sector_name": "旅游",
+      "impact": 3,
+      "analysis": "新冠疫情解除，旅游消费恢复"
+    },
+    {
+      "sector_name": "脑机接口",
+      "impact": 3,
+      "analysis": "脑机接口技术突破，相关概念股受益"
+    },
+    {
+      "sector_name": "锂电池",
+      "impact": 3,
+      "analysis": "碳酸锂价格上涨，相关概念股受益"
+    },
+    {
+      "sector_name": "数字经济",
+      "impact": 3,
+      "analysis": "数字经济立法，相关概念股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "竞业达",
+      "stock_code": "002619",
+      "impact": 3,
+      "analysis": "教育强国战略，受益"
+    },
+    {
+      "stock_name": "汉王科技",
+      "stock_code": "002362",
+      "impact": 3,
+      "analysis": "人工智能技术突破，受益"
+    },
+    {
+      "stock_name": "金发拉比",
+      "stock_code": "002762",
+      "impact": 3,
+      "analysis": "生育支持政策，受益"
+    },
+    {
+      "stock_name": "悦心健康",
+      "stock_code": "002162",
+      "impact": 3,
+      "analysis": "应对老龄化战略，受益"
+    },
+    {
+      "stock_name": "奥特迅",
+      "stock_code": "002227",
+      "impact": 3,
+      "analysis": "新能源汽车下乡，受益"
+    },
+    {
+      "stock_name": "众信旅游",
+      "stock_code": "600640",
+      "impact": 3,
+      "analysis": "新冠疫情解除，受益"
+    },
+    {
+      "stock_name": "创新医疗",
+      "stock_code": "002821",
+      "impact": 3,
+      "analysis": "脑机接口技术突破，受益"
+    },
+    {
+      "stock_name": "天齐锂业",
+      "stock_code": "002466",
+      "impact": 3,
+      "analysis": "碳酸锂价格上涨，受益"
+    },
+    {
+      "stock_name": "数字政通",
+      "stock_code": "300075",
+      "impact": 3,
+      "analysis": "数字经济立法，受益"
+    }
+  ],
+  "article_title": "5月8日 盘前热点事件关注",
+  "html_file": "dvt5z3szxp.html",
+  "article_date": "2023-05-08"
+}

@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股受积极因素影响。",
+  "sectors": [
+    {
+      "sector_name": "果链",
+      "impact": 3,
+      "analysis": "iPhone SE发布预期利好相关产业链"
+    },
+    {
+      "sector_name": "深港金融",
+      "impact": 2,
+      "analysis": "深港金融合作深化，利好相关金融科技公司"
+    },
+    {
+      "sector_name": "锂电池",
+      "impact": 2,
+      "analysis": "锂电池设备订单增加，利好相关设备制造商"
+    },
+    {
+      "sector_name": "影视IP",
+      "impact": 3,
+      "analysis": "《哪吒2》票房火爆，利好相关影视公司"
+    },
+    {
+      "sector_name": "数据要素",
+      "impact": 3,
+      "analysis": "国家数据集团成立，利好数据要素相关公司"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "蓝思科技",
+      "stock_code": "300433",
+      "impact": 3,
+      "analysis": "iPhone SE发布预期利好"
+    },
+    {
+      "stock_name": "赢时胜",
+      "stock_code": "300757",
+      "impact": 2,
+      "analysis": "深港金融合作利好"
+    },
+    {
+      "stock_name": "纳科诺尔",
+      "stock_code": "002389",
+      "impact": 2,
+      "analysis": "锂电池设备订单增加"
+    },
+    {
+      "stock_name": "光线传媒",
+      "stock_code": "600707",
+      "impact": 3,
+      "analysis": "《哪吒2》出品方，票房火爆"
+    },
+    {
+      "stock_name": "易华录",
+      "stock_code": "600289",
+      "impact": 3,
+      "analysis": "国家数据集团利好"
+    }
+  ],
+  "article_id": "621da4c7bcfb4fb88a393782a0d88eb5",
+  "article_date": "2025-02-13",
+  "article_title": "2025.2.13市场逻辑精选"
+}

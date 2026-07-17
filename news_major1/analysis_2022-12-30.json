@@ -1,0 +1,77 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股受积极因素影响。",
+  "sectors": [
+    {
+      "sector_name": "新能源汽车",
+      "impact": 4,
+      "analysis": "政策支持，行业前景看好。"
+    },
+    {
+      "sector_name": "中药",
+      "impact": 3,
+      "analysis": "政策推动，市场需求增加。"
+    },
+    {
+      "sector_name": "止咳药",
+      "impact": 3,
+      "analysis": "需求增加，市场关注度提升。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 4,
+      "analysis": "深圳市集成电路产业规划发布，行业前景广阔。"
+    },
+    {
+      "sector_name": "跨境电商",
+      "impact": 3,
+      "analysis": "政策支持，出口规模有望增长。"
+    },
+    {
+      "sector_name": "医药医疗",
+      "impact": 3,
+      "analysis": "血库告急，相关药品需求增加。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "江淮汽车",
+      "stock_code": "600418",
+      "impact": 4,
+      "analysis": "新能源汽车利好，公司受益。"
+    },
+    {
+      "stock_name": "上海凯宝",
+      "stock_code": "300324",
+      "impact": 3,
+      "analysis": "中药政策推动，公司受益。"
+    },
+    {
+      "stock_name": "特一药业",
+      "stock_code": "002726",
+      "impact": 3,
+      "analysis": "止咳药需求增加，公司受益。"
+    },
+    {
+      "stock_name": "大港股份",
+      "stock_code": "002231",
+      "impact": 4,
+      "analysis": "深圳市集成电路产业规划，公司受益。"
+    },
+    {
+      "stock_name": "小商品城",
+      "stock_code": "600415",
+      "impact": 3,
+      "analysis": "跨境电商政策支持，公司受益。"
+    },
+    {
+      "stock_name": "卫光生物",
+      "stock_code": "002826",
+      "impact": 3,
+      "analysis": "血库告急，公司受益。"
+    }
+  ],
+  "article_title": "12月30日盘前早参 热点事件关注",
+  "html_file": "adk4zj71hu.html",
+  "article_date": "2022-12-30"
+}

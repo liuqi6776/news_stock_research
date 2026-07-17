@@ -1,0 +1,84 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极影响。",
+  "sectors": [
+    {
+      "sector_name": "机器人",
+      "impact": 4,
+      "analysis": "机器人技术进步，相关产业链受益"
+    },
+    {
+      "sector_name": "半导体设备",
+      "impact": 3,
+      "analysis": "半导体设备需求增长，相关公司受益"
+    },
+    {
+      "sector_name": "AI",
+      "impact": 3,
+      "analysis": "AI技术发展，相关公司受益"
+    },
+    {
+      "sector_name": "数据中心",
+      "impact": 2,
+      "analysis": "数据中心建设加速，相关公司受益"
+    },
+    {
+      "sector_name": "游戏",
+      "impact": 2,
+      "analysis": "游戏新机型发布，相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "领益智造",
+      "stock_code": "002600",
+      "impact": 3,
+      "analysis": "机器人产业链相关"
+    },
+    {
+      "stock_name": "震裕科技",
+      "stock_code": "002358",
+      "impact": 3,
+      "analysis": "灵巧手相关"
+    },
+    {
+      "stock_name": "兆威机电",
+      "stock_code": "002681",
+      "impact": 3,
+      "analysis": "电机相关"
+    },
+    {
+      "stock_name": "信雅达",
+      "stock_code": "600571",
+      "impact": 3,
+      "analysis": "AI Agent相关"
+    },
+    {
+      "stock_name": "恒润股份",
+      "stock_code": "300388",
+      "impact": 3,
+      "analysis": "算力相关"
+    },
+    {
+      "stock_name": "共达电声",
+      "stock_code": "002655",
+      "impact": 3,
+      "analysis": "端侧AI相关"
+    },
+    {
+      "stock_name": "大位科技",
+      "stock_code": "300832",
+      "impact": 2,
+      "analysis": "数据中心相关"
+    },
+    {
+      "stock_name": "致尚科技",
+      "stock_code": "002821",
+      "impact": 2,
+      "analysis": "游戏新机型相关"
+    }
+  ],
+  "article_id": "f65ffac47ee84cadb1f44b3eab711e76",
+  "article_date": "2025-03-31",
+  "article_title": "2025.3.31市场逻辑精选"
+}

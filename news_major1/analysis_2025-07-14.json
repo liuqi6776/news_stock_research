@@ -1,0 +1,61 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受积极消息推动，但需关注后续事件验证。",
+  "sectors": [
+    {
+      "sector_name": "机器人",
+      "impact": 4,
+      "analysis": "人形机器人订单增加，板块受益"
+    },
+    {
+      "sector_name": "商业航天",
+      "impact": 3,
+      "analysis": "商业航天企业受政策支持，行业前景看好"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "光伏焊带价格上涨，行业景气度提升"
+    },
+    {
+      "sector_name": "覆铜板",
+      "impact": 3,
+      "analysis": "先进算力推动覆铜板树脂材料升级，需求增加"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中大力德",
+      "stock_code": "002896",
+      "impact": 4,
+      "analysis": "人形机器人减速器供应商，订单增加"
+    },
+    {
+      "stock_name": "恒工精密",
+      "stock_code": "603353",
+      "impact": 4,
+      "analysis": "参股智元，谐波减速器领域领先"
+    },
+    {
+      "stock_name": "新华锦",
+      "stock_code": "000757",
+      "impact": 3,
+      "analysis": "布局机器人领域，电子皮肤和外骨骼方向"
+    },
+    {
+      "stock_name": "宇邦新材",
+      "stock_code": "603719",
+      "impact": 4,
+      "analysis": "光伏焊带龙头，产品毛利率提升"
+    },
+    {
+      "stock_name": "东材科技",
+      "stock_code": "600775",
+      "impact": 4,
+      "analysis": "覆铜板树脂材料全球产能最大"
+    }
+  ],
+  "article_id": "fee1fa079c004341a2b8a804198e6281",
+  "article_date": "2025-07-14",
+  "article_title": "2025.7.14市场逻辑精选"
+}

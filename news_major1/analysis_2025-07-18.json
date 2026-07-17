@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多板块受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "光伏",
+      "impact": 4,
+      "analysis": "多晶硅期货价格大幅上涨，光伏板块受益"
+    },
+    {
+      "sector_name": "脑机接口",
+      "impact": 3,
+      "analysis": "脑机接口技术取得突破，相关概念股受关注"
+    },
+    {
+      "sector_name": "AI智能体",
+      "impact": 3,
+      "analysis": "OpenAI发布ChatGPT Agent，AI智能体概念股受提振"
+    },
+    {
+      "sector_name": "稳定币",
+      "impact": 3,
+      "analysis": "美国众议院通过加密货币法案，稳定币概念股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "亿晶光电",
+      "stock_code": "600571",
+      "impact": 4,
+      "analysis": "多晶硅期货价格上涨，光伏板块龙头股受益"
+    },
+    {
+      "stock_name": "智微智能",
+      "stock_code": "300705",
+      "impact": 3,
+      "analysis": "脑机接口技术突破，相关概念股受益"
+    },
+    {
+      "stock_name": "南兴股份",
+      "stock_code": "002757",
+      "impact": 3,
+      "analysis": "OpenAI发布ChatGPT Agent，AI智能体概念股受益"
+    },
+    {
+      "stock_name": "兰生股份",
+      "stock_code": "600837",
+      "impact": 3,
+      "analysis": "美国众议院通过加密货币法案，稳定币概念股受益"
+    }
+  ],
+  "article_title": "7月18日盘前纪要",
+  "html_file": "3xleb2pxt01.html",
+  "article_date": "2025-07-18"
+}

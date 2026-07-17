@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股受积极因素影响。",
+  "sectors": [
+    {
+      "sector_name": "固态电池",
+      "impact": 4,
+      "analysis": "固态电池技术突破，市场空间巨大，相关产业链受益"
+    },
+    {
+      "sector_name": "自动驾驶",
+      "impact": 3,
+      "analysis": "特斯拉自动驾驶技术进展，相关产业链受益"
+    },
+    {
+      "sector_name": "低空经济",
+      "impact": 3,
+      "analysis": "低空经济试点推进，相关产业链受益"
+    },
+    {
+      "sector_name": "硅基负极",
+      "impact": 3,
+      "analysis": "硅基负极技术突破，相关产业链受益"
+    },
+    {
+      "sector_name": "商业航天",
+      "impact": 2,
+      "analysis": "商业航天试飞进展，相关产业链受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "长阳科技",
+      "stock_code": "300812",
+      "impact": 4,
+      "analysis": "固态电池技术突破，市场空间巨大"
+    },
+    {
+      "stock_name": "特斯拉",
+      "stock_code": "TSLA",
+      "impact": 3,
+      "analysis": "自动驾驶技术进展，相关产业链受益"
+    },
+    {
+      "stock_name": "上汽集团",
+      "stock_code": "600104",
+      "impact": 3,
+      "analysis": "特斯拉FSD入华传闻，相关产业链受益"
+    },
+    {
+      "stock_name": "滨海能源",
+      "stock_code": "000695",
+      "impact": 3,
+      "analysis": "布局硅基负极材料，技术突破"
+    },
+    {
+      "stock_name": "宁波建工",
+      "stock_code": "600754",
+      "impact": 3,
+      "analysis": "受益宁波债务置换，低空经济项目中标"
+    }
+  ],
+  "article_id": "8bd29ac4a1744540a163584903217075",
+  "article_date": "2024-11-18",
+  "article_title": "2024.11.18市场逻辑精选"
+}

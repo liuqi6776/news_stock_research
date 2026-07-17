@@ -1,0 +1,68 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，关注黄金珠宝、自动驾驶和国潮服饰板块。",
+  "sectors": [
+    {
+      "sector_name": "黄金珠宝",
+      "impact": 4,
+      "analysis": "行业估值转向品牌驱动，利好相关个股。"
+    },
+    {
+      "sector_name": "自动驾驶",
+      "impact": 3,
+      "analysis": "小马智行与广州公交集团战略合作，利好相关个股。"
+    },
+    {
+      "sector_name": "国潮服饰",
+      "impact": 3,
+      "analysis": "国潮服饰消费潜力持续释放，利好相关个股。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "周大生",
+      "stock_code": "600291",
+      "impact": 4,
+      "analysis": "黄金业务占比高，创新工艺，利好。"
+    },
+    {
+      "stock_name": "老凤祥",
+      "stock_code": "600612",
+      "impact": 4,
+      "analysis": "中国黄金首饰第一品牌，门店覆盖广，利好。"
+    },
+    {
+      "stock_name": "明牌珠宝",
+      "stock_code": "002574",
+      "impact": 3,
+      "analysis": "拥有黄金饰品、铂金饰品与镶嵌饰品，利好。"
+    },
+    {
+      "stock_name": "小马智行",
+      "stock_code": "09658",
+      "impact": 4,
+      "analysis": "自动驾驶汽车和出行平台业务合作，利好。"
+    },
+    {
+      "stock_name": "锦江在线",
+      "stock_code": "600650",
+      "impact": 3,
+      "analysis": "与小马智行合作，推出准商业化Robotaxi服务，利好。"
+    },
+    {
+      "stock_name": "锦泓集团",
+      "stock_code": "600661",
+      "impact": 3,
+      "analysis": "深耕中国非遗国潮工艺市场，利好。"
+    },
+    {
+      "stock_name": "嘉欣丝绸",
+      "stock_code": "600275",
+      "impact": 3,
+      "analysis": "布局丝绸完整产业链，推出汉服类等新中式系列产品，利好。"
+    }
+  ],
+  "article_id": "9cfba0f9cf674fe0991a5fcacf5d6f88",
+  "article_date": "2025-05-28",
+  "article_title": "2025.5.28市场逻辑精选"
+}

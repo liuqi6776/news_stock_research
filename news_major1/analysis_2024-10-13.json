@@ -1,0 +1,76 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策支持力度大，市场情绪积极。",
+  "sectors": [
+    {
+      "sector_name": "AMC",
+      "impact": 4,
+      "analysis": "政策支持力度大，板块受益明显。"
+    },
+    {
+      "sector_name": "城投公司",
+      "impact": 3,
+      "analysis": "财政化债政策利好，板块有望受益。"
+    },
+    {
+      "sector_name": "金融",
+      "impact": 3,
+      "analysis": "跨境支付布局，金融板块受益。"
+    },
+    {
+      "sector_name": "小商品城",
+      "impact": 3,
+      "analysis": "跨境支付布局，外贸景气度提升。"
+    },
+    {
+      "sector_name": "光电子",
+      "impact": 3,
+      "analysis": "收购全球ITO靶材龙头，板块受益。"
+    },
+    {
+      "sector_name": "航空",
+      "impact": 3,
+      "analysis": "飞机拆解行业迎来发展机遇。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "新产品放量，业绩超预期。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中油资本",
+      "stock_code": "000617",
+      "impact": 4,
+      "analysis": "跨境支付布局，金融业务拓展。"
+    },
+    {
+      "stock_name": "小商品城",
+      "stock_code": "600415",
+      "impact": 4,
+      "analysis": "跨境支付布局，外贸景气度提升。"
+    },
+    {
+      "stock_name": "光智科技",
+      "stock_code": "300472",
+      "impact": 4,
+      "analysis": "收购全球ITO靶材龙头，业绩有望提升。"
+    },
+    {
+      "stock_name": "海特高新",
+      "stock_code": "002023",
+      "impact": 4,
+      "analysis": "飞机拆解行业迎来发展机遇。"
+    },
+    {
+      "stock_name": "瑞芯微",
+      "stock_code": "603906",
+      "impact": 4,
+      "analysis": "新产品放量，业绩超预期。"
+    }
+  ],
+  "article_id": "c7851f7c9937428f8dccae433bfddb6c",
+  "article_date": "2024-10-13",
+  "article_title": "2024.10.13市场逻辑精选"
+}

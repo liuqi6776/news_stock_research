@@ -1,0 +1,68 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注后续政策落实情况。",
+  "sectors": [
+    {
+      "sector_name": "地产链",
+      "impact": 4,
+      "analysis": "监管放松和建材提价推动板块上涨。"
+    },
+    {
+      "sector_name": "消费",
+      "impact": 3,
+      "analysis": "服务消费和白酒动销好转，板块表现积极。"
+    },
+    {
+      "sector_name": "种业",
+      "impact": 3,
+      "analysis": "一号文件发布预期和转基因技术发展推动板块上涨。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "大悦城",
+      "stock_code": "000031",
+      "impact": 4,
+      "analysis": "受益于地产链利好，股价有望上涨。"
+    },
+    {
+      "stock_name": "我爱我家",
+      "stock_code": "600777",
+      "impact": 4,
+      "analysis": "受益于地产链利好，股价有望上涨。"
+    },
+    {
+      "stock_name": "科顺股份",
+      "stock_code": "002939",
+      "impact": 4,
+      "analysis": "建材提价推动股价上涨。"
+    },
+    {
+      "stock_name": "三湘印象",
+      "stock_code": "600429",
+      "impact": 3,
+      "analysis": "受益于消费板块利好，股价有望上涨。"
+    },
+    {
+      "stock_name": "酒鬼酒",
+      "stock_code": "600598",
+      "impact": 3,
+      "analysis": "白酒动销好转推动股价上涨。"
+    },
+    {
+      "stock_name": "大北农",
+      "stock_code": "002385",
+      "impact": 3,
+      "analysis": "受益于种业利好，股价有望上涨。"
+    },
+    {
+      "stock_name": "隆平高科",
+      "stock_code": "000998",
+      "impact": 3,
+      "analysis": "受益于种业利好，股价有望上涨。"
+    }
+  ],
+  "article_id": "0068ee89786d45cabf4e248338c3c520",
+  "article_date": "2026-01-29",
+  "article_title": "2026.1.29市场逻辑精选"
+}

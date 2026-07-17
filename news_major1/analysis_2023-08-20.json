@@ -1,0 +1,88 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，关注一带一路相关板块及个股",
+  "sectors": [
+    {
+      "sector_name": "一带一路",
+      "impact": 4,
+      "analysis": "政策支持，投资机会多"
+    },
+    {
+      "sector_name": "轨交装备",
+      "impact": 3,
+      "analysis": "轨交建设需求旺盛"
+    },
+    {
+      "sector_name": "汽车出海",
+      "impact": 3,
+      "analysis": "出口增长迅速"
+    },
+    {
+      "sector_name": "工程机械",
+      "impact": 3,
+      "analysis": "出口占比提升"
+    },
+    {
+      "sector_name": "环保",
+      "impact": 2,
+      "analysis": "化债预期，板块修复"
+    },
+    {
+      "sector_name": "铁路设备",
+      "impact": 3,
+      "analysis": "招标量增加，投资机会"
+    },
+    {
+      "sector_name": "金融",
+      "impact": 2,
+      "analysis": "政策支持，板块估值修复"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "长青科技",
+      "stock_code": "002698",
+      "impact": 3,
+      "analysis": "轨交装备，一带一路相关"
+    },
+    {
+      "stock_name": "华纬科技",
+      "stock_code": "603019",
+      "impact": 3,
+      "analysis": "汽车零部件，一带一路相关"
+    },
+    {
+      "stock_name": "南矿集团",
+      "stock_code": "002598",
+      "impact": 3,
+      "analysis": "矿山设备，一带一路相关"
+    },
+    {
+      "stock_name": "美丽生态",
+      "stock_code": "000629",
+      "impact": 3,
+      "analysis": "环保，化债预期"
+    },
+    {
+      "stock_name": "成都银行",
+      "stock_code": "600528",
+      "impact": 2,
+      "analysis": "金融，政策支持"
+    },
+    {
+      "stock_name": "信达证券",
+      "stock_code": "600745",
+      "impact": 2,
+      "analysis": "券商，政策支持"
+    },
+    {
+      "stock_name": "中国人寿",
+      "stock_code": "601628",
+      "impact": 2,
+      "analysis": "保险，资产端高弹性"
+    }
+  ],
+  "article_id": "43bbe414bc824c2285b4aa365c77307c",
+  "article_date": "2023-08-20",
+  "article_title": "2023.8.20市场逻辑精选"
+}

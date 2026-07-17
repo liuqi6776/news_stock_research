@@ -1,0 +1,77 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "地下管网",
+      "impact": 4,
+      "analysis": "政策支持，投资需求大，板块受益明显。"
+    },
+    {
+      "sector_name": "存储芯片",
+      "impact": 3,
+      "analysis": "AI需求激增，价格强劲上涨，板块受益。"
+    },
+    {
+      "sector_name": "中韩贸易",
+      "impact": 2,
+      "analysis": "中韩经贸合作加强，相关板块受益。"
+    },
+    {
+      "sector_name": "卫星通信",
+      "impact": 3,
+      "analysis": "政策支持，卫星通信板块受益。"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 2,
+      "analysis": "机器人制造产线订单增加，相关板块受益。"
+    },
+    {
+      "sector_name": "电子元件",
+      "impact": 2,
+      "analysis": "AI服务器、机器人等需求增加，电子元件板块受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "青龙管业",
+      "stock_code": "002457",
+      "impact": 4,
+      "analysis": "压力水管领域市场份额高，受益政策支持。"
+    },
+    {
+      "stock_name": "普冉股份",
+      "stock_code": "688385",
+      "impact": 4,
+      "analysis": "NOR Flash、EEPROM、MCU龙头，受益存储芯片需求增长。"
+    },
+    {
+      "stock_name": "青岛双星",
+      "stock_code": "000599",
+      "impact": 3,
+      "analysis": "地处青岛，受益中韩贸易合作加强。"
+    },
+    {
+      "stock_name": "东珠生态",
+      "stock_code": "300388",
+      "impact": 3,
+      "analysis": "跨界并购卫星通信龙头，受益政策支持。"
+    },
+    {
+      "stock_name": "锦富技术",
+      "stock_code": "300038",
+      "impact": 3,
+      "analysis": "收到人形机器人整条制造产线订单，受益机器人行业增长。"
+    },
+    {
+      "stock_name": "风华高科",
+      "stock_code": "000636",
+      "impact": 3,
+      "analysis": "MLCC国内市占率第一，受益AI服务器、机器人等需求增长。"
+    }
+  ],
+  "article_id": "c9036872eee94d818f6121822cc3a383",
+  "article_date": "2025-10-26",
+  "article_title": "2025.10.26市场逻辑精选"
+}

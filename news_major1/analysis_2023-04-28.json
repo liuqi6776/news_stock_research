@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏积极，部分行业和个股表现强劲。",
+  "sectors": [
+    {
+      "sector_name": "锂电池",
+      "impact": 4,
+      "analysis": "碳酸锂价格反弹，板块受益"
+    },
+    {
+      "sector_name": "一带一路",
+      "impact": 3,
+      "analysis": "中国一中亚峰会，相关概念股受提振"
+    },
+    {
+      "sector_name": "存储",
+      "impact": 3,
+      "analysis": "存储价格触底，行业有望回暖"
+    },
+    {
+      "sector_name": "医药医疗",
+      "impact": 3,
+      "analysis": "一季报业绩超预期，板块表现强劲"
+    },
+    {
+      "sector_name": "AI",
+      "impact": -2,
+      "analysis": "AI概念股回调，市场情绪谨慎"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "天齐锂业",
+      "stock_code": "002466",
+      "impact": 4,
+      "analysis": "碳酸锂价格上涨，公司受益"
+    },
+    {
+      "stock_name": "龙建股份",
+      "stock_code": "600233",
+      "impact": 3,
+      "analysis": "一带一路概念，峰会临近"
+    },
+    {
+      "stock_name": "佰维存储",
+      "stock_code": "688018",
+      "impact": 3,
+      "analysis": "存储价格触底，行业回暖"
+    },
+    {
+      "stock_name": "何氏眼科",
+      "stock_code": "600023",
+      "impact": 4,
+      "analysis": "一季报业绩超预期，股价创新高"
+    },
+    {
+      "stock_name": "中国平安",
+      "stock_code": "601318",
+      "impact": 3,
+      "analysis": "一季报业绩超预期，股价创新高"
+    }
+  ],
+  "article_title": "4月28日 盘前热点事件关注",
+  "html_file": "fhamswb7pz.html",
+  "article_date": "2023-04-28"
+}

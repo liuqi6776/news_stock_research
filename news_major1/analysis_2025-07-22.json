@@ -1,0 +1,143 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注政策落实情况。",
+  "sectors": [
+    {
+      "sector_name": "煤炭",
+      "impact": 4,
+      "analysis": "供给收缩和成本上涨推动价格上涨，利好板块。"
+    },
+    {
+      "sector_name": "化工",
+      "impact": 3,
+      "analysis": "反内卷政策预期和价格上涨利好板块。"
+    },
+    {
+      "sector_name": "多晶硅",
+      "impact": 3,
+      "analysis": "产能整合和价格上涨利好板块。"
+    },
+    {
+      "sector_name": "生猪",
+      "impact": 3,
+      "analysis": "政策引导和产能去化利好板块。"
+    },
+    {
+      "sector_name": "锂矿",
+      "impact": 3,
+      "analysis": "反内卷措施和价格上涨利好板块。"
+    },
+    {
+      "sector_name": "农村公路",
+      "impact": 3,
+      "analysis": "政策推动农村公路建设，利好相关板块。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "美锦能源",
+      "stock_code": "000723",
+      "impact": 4,
+      "analysis": "煤焦化产品业务占比高，受益于煤炭价格上涨。"
+    },
+    {
+      "stock_name": "山西焦化",
+      "stock_code": "600740",
+      "impact": 4,
+      "analysis": "焦炭业务占比高，受益于焦炭价格上涨。"
+    },
+    {
+      "stock_name": "潞安环能",
+      "stock_code": "600798",
+      "impact": 4,
+      "analysis": "煤炭业务占比高，受益于煤炭价格上涨。"
+    },
+    {
+      "stock_name": "晋控煤业",
+      "stock_code": "600649",
+      "impact": 4,
+      "analysis": "煤炭业务占比高，资产负债率低。"
+    },
+    {
+      "stock_name": "沧州大化",
+      "stock_code": "600704",
+      "impact": 4,
+      "analysis": "TDI业务占比高，受益于TDI价格上涨。"
+    },
+    {
+      "stock_name": "东岳硅材",
+      "stock_code": "600381",
+      "impact": 4,
+      "analysis": "有机硅业务占比高，受益于有机硅价格上涨。"
+    },
+    {
+      "stock_name": "云天化",
+      "stock_code": "600678",
+      "impact": 4,
+      "analysis": "磷肥业务占比高，受益于磷肥价格上涨。"
+    },
+    {
+      "stock_name": "特变电工",
+      "stock_code": "600089",
+      "impact": 4,
+      "analysis": "多晶硅业务占比高，受益于多晶硅价格上涨。"
+    },
+    {
+      "stock_name": "通威股份",
+      "stock_code": "600438",
+      "impact": 4,
+      "analysis": "高纯硅料业务占比高，受益于高纯硅料价格上涨。"
+    },
+    {
+      "stock_name": "大禹生物",
+      "stock_code": "002902",
+      "impact": 4,
+      "analysis": "生猪养殖业务占比高，受益于生猪价格上涨。"
+    },
+    {
+      "stock_name": "正虹科技",
+      "stock_code": "000702",
+      "impact": 4,
+      "analysis": "生猪养殖业务占比高，受益于生猪价格上涨。"
+    },
+    {
+      "stock_name": "西藏珠峰",
+      "stock_code": "600339",
+      "impact": 4,
+      "analysis": "锂矿业务占比高，受益于锂矿价格上涨。"
+    },
+    {
+      "stock_name": "中大矿业",
+      "stock_code": "002573",
+      "impact": 4,
+      "analysis": "锂矿业务占比高，受益于锂矿价格上涨。"
+    },
+    {
+      "stock_name": "西藏矿业",
+      "stock_code": "000762",
+      "impact": 4,
+      "analysis": "锂矿业务占比高，受益于锂矿价格上涨。"
+    },
+    {
+      "stock_name": "赣锋锂业",
+      "stock_code": "002460",
+      "impact": 4,
+      "analysis": "锂矿业务占比高，受益于锂矿价格上涨。"
+    },
+    {
+      "stock_name": "中公高科",
+      "stock_code": "603017",
+      "impact": 4,
+      "analysis": "农村公路建设业务占比高，受益于农村公路建设政策。"
+    },
+    {
+      "stock_name": "苏交科",
+      "stock_code": "300057",
+      "impact": 4,
+      "analysis": "农村公路建设业务占比高，受益于农村公路建设政策。"
+    }
+  ],
+  "article_id": "bca950156df444bab007f7ecbd63aa26",
+  "article_date": "2025-07-22",
+  "article_title": "2025.7.22市场逻辑精选"
+}

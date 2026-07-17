@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股受益明显。",
+  "sectors": [
+    {
+      "sector_name": "智能音箱",
+      "impact": 4,
+      "analysis": "ChatGPT Voice开放，智能音箱市场放量潜力大。"
+    },
+    {
+      "sector_name": "微短剧",
+      "impact": 3,
+      "analysis": "政策支持，行业健康发展，相关公司受益。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 2,
+      "analysis": "新业务切入半导体领域，公司业绩有望提升。"
+    },
+    {
+      "sector_name": "冰雪旅游",
+      "impact": 3,
+      "analysis": "冰雪旅游旺季订单暴增，相关公司业绩有望提升。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "惠威科技",
+      "stock_code": "002888",
+      "impact": 4,
+      "analysis": "受益AI聊天功能开放，智能音箱市场受益。"
+    },
+    {
+      "stock_name": "海看股份",
+      "stock_code": "300480",
+      "impact": 3,
+      "analysis": "短剧政策规范化，公司具备稀缺牌照。"
+    },
+    {
+      "stock_name": "思美传媒",
+      "stock_code": "300610",
+      "impact": 3,
+      "analysis": "布局短剧及互动游戏出海，业绩有望提升。"
+    },
+    {
+      "stock_name": "长白山",
+      "stock_code": "600209",
+      "impact": 3,
+      "analysis": "冰雪旅游旺季订单暴增，业绩有望提升。"
+    }
+  ],
+  "article_id": "07ae088329a14715b220349a30181753",
+  "article_date": "2023-11-22",
+  "article_title": "2023.11.22市场逻辑精选"
+}

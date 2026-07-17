@@ -1,0 +1,99 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏多，多个板块和个股受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "电力",
+      "impact": 3,
+      "analysis": "电力板块受结算电价上涨利好"
+    },
+    {
+      "sector_name": "锂矿",
+      "impact": 3,
+      "analysis": "锂矿板块受业绩高增长利好"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "光伏板块受技术突破利好"
+    },
+    {
+      "sector_name": "5G",
+      "impact": 3,
+      "analysis": "5G板块受事件驱动利好"
+    },
+    {
+      "sector_name": "信创",
+      "impact": 3,
+      "analysis": "信创板块受政策利好"
+    },
+    {
+      "sector_name": "供销社",
+      "impact": 3,
+      "analysis": "供销社板块受政策利好"
+    },
+    {
+      "sector_name": "CXO",
+      "impact": 3,
+      "analysis": "CXO板块受业绩增长利好"
+    },
+    {
+      "sector_name": "电子L管",
+      "impact": 3,
+      "analysis": "电子L管板块受市场空间增长利好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "建投能源",
+      "stock_code": "600564",
+      "impact": 3,
+      "analysis": "业绩扭亏，受利好消息影响"
+    },
+    {
+      "stock_name": "吉翔股份",
+      "stock_code": "300378",
+      "impact": 3,
+      "analysis": "业绩高增长，受利好消息影响"
+    },
+    {
+      "stock_name": "藏格矿业",
+      "stock_code": "002770",
+      "impact": 3,
+      "analysis": "业绩高增长，受利好消息影响"
+    },
+    {
+      "stock_name": "江特电机",
+      "stock_code": "002176",
+      "impact": 3,
+      "analysis": "业绩高增长，受利好消息影响"
+    },
+    {
+      "stock_name": "晶科能源",
+      "stock_code": "688571",
+      "impact": 3,
+      "analysis": "技术突破，受利好消息影响"
+    },
+    {
+      "stock_name": "奥赛康",
+      "stock_code": "300840",
+      "impact": 3,
+      "analysis": "公告涨停，受利好消息影响"
+    },
+    {
+      "stock_name": "五矿稀土",
+      "stock_code": "000831",
+      "impact": 3,
+      "analysis": "证券简称变更，受利好消息影响"
+    },
+    {
+      "stock_name": "信创相关个股",
+      "stock_code": "",
+      "impact": 3,
+      "analysis": "信创板块业绩拐点临近，受利好消息影响"
+    }
+  ],
+  "article_title": "10月14日 盘前早8点 股市要闻关注",
+  "html_file": "8mukpu79w6.html",
+  "article_date": "2022-10-14"
+}

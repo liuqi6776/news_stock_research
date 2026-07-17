@@ -1,0 +1,94 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多板块利好。",
+  "sectors": [
+    {
+      "sector_name": "零售",
+      "impact": 3,
+      "analysis": "友好集团、中百集团受关注"
+    },
+    {
+      "sector_name": "算力",
+      "impact": 3,
+      "analysis": "顺钠股份受关注"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "建设工业受关注"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "灿芯股份、芯原股份等受关注"
+    },
+    {
+      "sector_name": "稀土",
+      "impact": 3,
+      "analysis": "银河磁体、金力永磁等受关注"
+    },
+    {
+      "sector_name": "干细胞治疗",
+      "impact": 3,
+      "analysis": "中源协和、南华生物等受关注"
+    },
+    {
+      "sector_name": "AI眼镜",
+      "impact": 3,
+      "analysis": "亿道信息、比依股份等受关注"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "友好集团",
+      "stock_code": "000697",
+      "impact": 3,
+      "analysis": "零售板块受关注"
+    },
+    {
+      "stock_name": "中百集团",
+      "stock_code": "000759",
+      "impact": 3,
+      "analysis": "零售板块受关注"
+    },
+    {
+      "stock_name": "顺钠股份",
+      "stock_code": "002175",
+      "impact": 3,
+      "analysis": "算力板块受关注"
+    },
+    {
+      "stock_name": "建设工业",
+      "stock_code": "600984",
+      "impact": 3,
+      "analysis": "机器人板块受关注"
+    },
+    {
+      "stock_name": "灿芯股份",
+      "stock_code": "688012",
+      "impact": 3,
+      "analysis": "半导体板块受关注"
+    },
+    {
+      "stock_name": "银河磁体",
+      "stock_code": "600388",
+      "impact": 3,
+      "analysis": "稀土板块受关注"
+    },
+    {
+      "stock_name": "中源协和",
+      "stock_code": "600645",
+      "impact": 3,
+      "analysis": "干细胞治疗板块受关注"
+    },
+    {
+      "stock_name": "亿道信息",
+      "stock_code": "301096",
+      "impact": 3,
+      "analysis": "AI眼镜板块受关注"
+    }
+  ],
+  "article_title": "1月3日盘前早报 热点事件关注",
+  "html_file": "d344wesl0y.html",
+  "article_date": "2025-01-03"
+}

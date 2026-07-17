@@ -1,0 +1,116 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，轨交装备和客车板块表现强劲。",
+  "sectors": [
+    {
+      "sector_name": "轨交装备",
+      "impact": 4,
+      "analysis": "招标超预期，行业迎来向上拐点。"
+    },
+    {
+      "sector_name": "客车",
+      "impact": 3,
+      "analysis": "出口景气，内需复苏，股价强势。"
+    },
+    {
+      "sector_name": "游戏",
+      "impact": 2,
+      "analysis": "国产游戏之光《黑神话：悟空》宣发在即。"
+    },
+    {
+      "sector_name": "化工",
+      "impact": 1,
+      "analysis": "硝化棉龙头受益产能监管。"
+    },
+    {
+      "sector_name": "环保",
+      "impact": 1,
+      "analysis": "机构调研，业务布局全国。"
+    },
+    {
+      "sector_name": "电子",
+      "impact": 1,
+      "analysis": "电子雷管核心组件龙头，业绩预测良好。"
+    },
+    {
+      "sector_name": "交通",
+      "impact": 1,
+      "analysis": "哈大线有望受益中俄贸易。"
+    },
+    {
+      "sector_name": "摩托车",
+      "impact": 1,
+      "analysis": "国际业务占比高，有望补涨。"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 2,
+      "analysis": "中标重大异质结光伏组件项目。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "宇通客车",
+      "stock_code": "600066",
+      "impact": 3,
+      "analysis": "客车龙头，出口景气，内需复苏。"
+    },
+    {
+      "stock_name": "中通客车",
+      "stock_code": "000957",
+      "impact": 3,
+      "analysis": "客车出口景气，内需复苏。"
+    },
+    {
+      "stock_name": "金龙汽车",
+      "stock_code": "600686",
+      "impact": 3,
+      "analysis": "客车出口景气，内需复苏。"
+    },
+    {
+      "stock_name": "安凯客车",
+      "stock_code": "600682",
+      "impact": 3,
+      "analysis": "客车出口景气，内需复苏。"
+    },
+    {
+      "stock_name": "北化股份",
+      "stock_code": "002246",
+      "impact": 2,
+      "analysis": "硝化棉龙头，受益产能监管。"
+    },
+    {
+      "stock_name": "惠城环保",
+      "stock_code": "300529",
+      "impact": 2,
+      "analysis": "机构调研，业务布局全国。"
+    },
+    {
+      "stock_name": "盛景微",
+      "stock_code": "300918",
+      "impact": 2,
+      "analysis": "电子雷管核心组件龙头，业绩预测良好。"
+    },
+    {
+      "stock_name": "龙江交通",
+      "stock_code": "600233",
+      "impact": 2,
+      "analysis": "哈大线有望受益中俄贸易。"
+    },
+    {
+      "stock_name": "林海股份",
+      "stock_code": "600090",
+      "impact": 2,
+      "analysis": "国际业务占比高，有望补涨。"
+    },
+    {
+      "stock_name": "金刚光伏",
+      "stock_code": "688599",
+      "impact": 2,
+      "analysis": "中标重大异质结光伏组件项目。"
+    }
+  ],
+  "article_id": "8c5984575d604f39abd5290731e73c3b",
+  "article_date": "2024-05-14",
+  "article_title": "2024.5.14市场逻辑精选"
+}

@@ -1,0 +1,145 @@
+{
+  "market_impact": 3,
+  "market_analysis": "两会前瞻及美伊冲突影响市场情绪，利好相关板块。",
+  "sectors": [
+    {
+      "sector_name": "量子科技",
+      "impact": 4,
+      "analysis": "政策支持，行业前景广阔。"
+    },
+    {
+      "sector_name": "氢能",
+      "impact": 4,
+      "analysis": "政策支持，行业发展迅速。"
+    },
+    {
+      "sector_name": "核聚变",
+      "impact": 3,
+      "analysis": "技术进步，行业前景看好。"
+    },
+    {
+      "sector_name": "脑机接口",
+      "impact": 3,
+      "analysis": "技术突破，应用前景广阔。"
+    },
+    {
+      "sector_name": "6G",
+      "impact": 3,
+      "analysis": "政策支持，行业发展迅速。"
+    },
+    {
+      "sector_name": "航运",
+      "impact": 3,
+      "analysis": "美伊冲突，油运需求增加。"
+    },
+    {
+      "sector_name": "石油",
+      "impact": 3,
+      "analysis": "美伊冲突，石油需求增加。"
+    },
+    {
+      "sector_name": "天青石",
+      "impact": 3,
+      "analysis": "美伊冲突，资源需求增加。"
+    },
+    {
+      "sector_name": "资源",
+      "impact": 3,
+      "analysis": "美伊冲突，资源需求增加。"
+    },
+    {
+      "sector_name": "军贸",
+      "impact": 3,
+      "analysis": "美伊冲突，军贸需求增加。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "国盾量子",
+      "stock_code": "600845",
+      "impact": 4,
+      "analysis": "量子科技核心公司。"
+    },
+    {
+      "stock_name": "格尔软件",
+      "stock_code": "600502",
+      "impact": 4,
+      "analysis": "量子科技相关公司。"
+    },
+    {
+      "stock_name": "华电科工",
+      "stock_code": "600726",
+      "impact": 4,
+      "analysis": "氢能核心公司。"
+    },
+    {
+      "stock_name": "赫美集团",
+      "stock_code": "002356",
+      "impact": 4,
+      "analysis": "氢能相关公司。"
+    },
+    {
+      "stock_name": "合锻智能",
+      "stock_code": "603011",
+      "impact": 3,
+      "analysis": "核聚变核心公司。"
+    },
+    {
+      "stock_name": "兰石重装",
+      "stock_code": "603169",
+      "impact": 3,
+      "analysis": "核聚变相关公司。"
+    },
+    {
+      "stock_name": "创新医疗",
+      "stock_code": "002166",
+      "impact": 3,
+      "analysis": "脑机核心公司。"
+    },
+    {
+      "stock_name": "三博脑科",
+      "stock_code": "300223",
+      "impact": 3,
+      "analysis": "脑机相关公司。"
+    },
+    {
+      "stock_name": "招商轮船",
+      "stock_code": "600017",
+      "impact": 3,
+      "analysis": "油运核心公司。"
+    },
+    {
+      "stock_name": "通源石油",
+      "stock_code": "601558",
+      "impact": 3,
+      "analysis": "石油核心公司。"
+    },
+    {
+      "stock_name": "金瑞矿业",
+      "stock_code": "600390",
+      "impact": 3,
+      "analysis": "天青石核心公司。"
+    },
+    {
+      "stock_name": "金牛化工",
+      "stock_code": "002388",
+      "impact": 3,
+      "analysis": "资源核心公司。"
+    },
+    {
+      "stock_name": "雷科防务",
+      "stock_code": "002413",
+      "impact": 3,
+      "analysis": "军贸核心公司。"
+    },
+    {
+      "stock_name": "长城军工",
+      "stock_code": "600567",
+      "impact": 3,
+      "analysis": "军贸核心公司。"
+    }
+  ],
+  "article_id": "c68f350891b644e5b24a8a18deec723b",
+  "article_date": "2026-03-01",
+  "article_title": "2026.3.1市场逻辑精选"
+}

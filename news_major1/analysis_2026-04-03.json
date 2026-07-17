@@ -1,0 +1,33 @@
+{
+  "market_impact": 0,
+  "market_analysis": "信息中性，无明确市场影响",
+  "sectors": [
+    {
+      "sector_name": "医药",
+      "impact": 0,
+      "analysis": "无具体医药股信息"
+    },
+    {
+      "sector_name": "化工",
+      "impact": 0,
+      "analysis": "无具体化工股信息"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "津药药业",
+      "stock_code": "S津药药业",
+      "impact": 0,
+      "analysis": "无具体股价变动信息"
+    },
+    {
+      "stock_name": "黑猫股份",
+      "stock_code": "黑猫股份",
+      "impact": 0,
+      "analysis": "无具体股价变动信息"
+    }
+  ],
+  "article_title": "4月3日盘前纪要",
+  "html_file": "article_1153fcl6hqx.html",
+  "article_date": "2026-04-03"
+}

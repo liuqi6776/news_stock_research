@@ -1,0 +1,67 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注后续政策落实情况。",
+  "sectors": [
+    {
+      "sector_name": "辅助生殖",
+      "impact": 4,
+      "analysis": "政策支持，市场空间大，利好板块。"
+    },
+    {
+      "sector_name": "煤炭",
+      "impact": 3,
+      "analysis": "焦炭价格提涨，行业有望迎来中期拐点，利好板块。"
+    },
+    {
+      "sector_name": "卫星互联网",
+      "impact": 3,
+      "analysis": "发射节奏加快，组网有望加速推进，利好板块。"
+    },
+    {
+      "sector_name": "服务消费",
+      "impact": 2,
+      "analysis": "政策支持服务消费，培育新增长点，利好板块。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "贝因美",
+      "stock_code": "002570",
+      "impact": 4,
+      "analysis": "投资辅助生殖业务，利好个股。"
+    },
+    {
+      "stock_name": "锦欣生殖",
+      "stock_code": "01448",
+      "impact": 4,
+      "analysis": "具备第三代试管婴儿PGS牌照，利好个股。"
+    },
+    {
+      "stock_name": "安泰集团",
+      "stock_code": "000871",
+      "impact": 3,
+      "analysis": "焦炭价格上涨，利好个股。"
+    },
+    {
+      "stock_name": "山西焦煤",
+      "stock_code": "000983",
+      "impact": 3,
+      "analysis": "煤炭价格上涨，利好个股。"
+    },
+    {
+      "stock_name": "中国卫星",
+      "stock_code": "600118",
+      "impact": 3,
+      "analysis": "卫星互联网发射节奏加快，利好个股。"
+    },
+    {
+      "stock_name": "天府文旅",
+      "stock_code": "600975",
+      "impact": 2,
+      "analysis": "政策支持服务消费，利好个股。"
+    }
+  ],
+  "article_id": "07abafdc369a41fab5ae7cdc0854f191",
+  "article_date": "2025-07-30",
+  "article_title": "2025.7.30市场逻辑精选"
+}

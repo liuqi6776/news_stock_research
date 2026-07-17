@@ -1,0 +1,66 @@
+{
+  "market_impact": 2,
+  "market_analysis": "市场情绪偏积极，部分板块和个股受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "化工",
+      "impact": 3,
+      "analysis": "化工板块受涨价消息提振"
+    },
+    {
+      "sector_name": "充电桩",
+      "impact": 3,
+      "analysis": "充电桩板块受政策支持利好"
+    },
+    {
+      "sector_name": "黄金",
+      "impact": 3,
+      "analysis": "黄金板块受国际金价上涨利好"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 2,
+      "analysis": "机器人板块受行业发展趋势利好"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 2,
+      "analysis": "医药板块受政策利好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "华尔泰",
+      "stock_code": "000979",
+      "impact": 3,
+      "analysis": "化工板块龙头，受化工涨价利好"
+    },
+    {
+      "stock_name": "奥特迅",
+      "stock_code": "002227",
+      "impact": 3,
+      "analysis": "充电桩板块，受政策支持利好"
+    },
+    {
+      "stock_name": "莱绅通灵",
+      "stock_code": "600890",
+      "impact": 3,
+      "analysis": "黄金板块，受国际金价上涨利好"
+    },
+    {
+      "stock_name": "标准股份",
+      "stock_code": "600302",
+      "impact": 2,
+      "analysis": "机器人板块，受行业发展趋势利好"
+    },
+    {
+      "stock_name": "河化股份",
+      "stock_code": "002662",
+      "impact": 2,
+      "analysis": "医药板块，受政策利好"
+    }
+  ],
+  "article_title": "3月28日盘前纪要",
+  "html_file": "1h34bfu5t90.html",
+  "article_date": "2025-03-28"
+}

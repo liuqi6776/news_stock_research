@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多板块受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "机器人",
+      "impact": 4,
+      "analysis": "机器人板块受政策支持及行业热点影响，利好"
+    },
+    {
+      "sector_name": "商业航天",
+      "impact": 3,
+      "analysis": "商业航天板块受政策支持及行业热点影响，利好"
+    },
+    {
+      "sector_name": "消费电子",
+      "impact": 3,
+      "analysis": "消费电子板块受政策支持及行业热点影响，利好"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 2,
+      "analysis": "半导体板块受行业热点影响，利好"
+    },
+    {
+      "sector_name": "造纸",
+      "impact": 2,
+      "analysis": "造纸板块受人民币升值影响，利好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "天奇股份",
+      "stock_code": "002009",
+      "impact": 4,
+      "analysis": "机器人板块龙头，受政策支持及行业热点影响，利好"
+    },
+    {
+      "stock_name": "大业股份",
+      "stock_code": "002741",
+      "impact": 3,
+      "analysis": "商业航天板块龙头，受政策支持及行业热点影响，利好"
+    },
+    {
+      "stock_name": "五洲新春",
+      "stock_code": "603187",
+      "impact": 3,
+      "analysis": "机器人板块，受行业热点影响，利好"
+    },
+    {
+      "stock_name": "三花智控",
+      "stock_code": "002050",
+      "impact": 3,
+      "analysis": "汽车+机器人板块，受行业热点影响，利好"
+    },
+    {
+      "stock_name": "五洲特纸",
+      "stock_code": "600363",
+      "impact": 2,
+      "analysis": "造纸板块，受人民币升值影响，利好"
+    }
+  ],
+  "article_title": "12月31日盘前纪要",
+  "html_file": "4eaejbt7jew.html",
+  "article_date": "2025-12-31"
+}

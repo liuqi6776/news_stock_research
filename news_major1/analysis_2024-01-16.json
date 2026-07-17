@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受利好消息推动，板块个股表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "飞行汽车",
+      "impact": 4,
+      "analysis": "产业化加速，市场空间巨大，板块表现强劲。"
+    },
+    {
+      "sector_name": "有机硅",
+      "impact": 3,
+      "analysis": "价格上涨，产业链相关公司受益。"
+    },
+    {
+      "sector_name": "多元金融",
+      "impact": 3,
+      "analysis": "政策支持，多元金融板块受关注。"
+    },
+    {
+      "sector_name": "旅游",
+      "impact": 3,
+      "analysis": "春节旅游市场火爆，相关公司受益。"
+    },
+    {
+      "sector_name": "智能驾驶",
+      "impact": 3,
+      "analysis": "比亚迪加大投资，智能驾驶板块受提振。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "长源东谷",
+      "stock_code": "300089",
+      "impact": 4,
+      "analysis": "获飞行汽车公司定点，股价涨停。"
+    },
+    {
+      "stock_name": "华鲁恒升",
+      "stock_code": "600426",
+      "impact": 3,
+      "analysis": "有机硅价格上涨，公司受益。"
+    },
+    {
+      "stock_name": "宏柏新材",
+      "stock_code": "603090",
+      "impact": 3,
+      "analysis": "有机硅价格上涨，公司受益。"
+    },
+    {
+      "stock_name": "新力金融",
+      "stock_code": "600318",
+      "impact": 3,
+      "analysis": "多元金融牌照闭环，公司受关注。"
+    },
+    {
+      "stock_name": "良品铺子",
+      "stock_code": "603719",
+      "impact": 3,
+      "analysis": "团购渠道销售火爆，公司业绩增长。"
+    }
+  ],
+  "article_id": "3f48f15e484a4a8a8413fdf30d31661e",
+  "article_date": "2024-01-16",
+  "article_title": "2024.1.16市场逻辑精选"
+}

@@ -1,0 +1,68 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受积极消息推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "航天航空",
+      "impact": 4,
+      "analysis": "SpaceX IPO和C919突破欧洲市场推动板块上涨。"
+    },
+    {
+      "sector_name": "光伏设备",
+      "impact": 3,
+      "analysis": "SpaceX光伏产能规划和二代星系统提升需求。"
+    },
+    {
+      "sector_name": "芯片",
+      "impact": 3,
+      "analysis": "阿里平头哥IPO预期提振芯片板块。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "西部材料",
+      "stock_code": "002149",
+      "impact": 4,
+      "analysis": "SpaceX铌合金供应商，受益于SpaceX发展。"
+    },
+    {
+      "stock_name": "迈为股份",
+      "stock_code": "300905",
+      "impact": 4,
+      "analysis": "SpaceX设备订单落地，业绩有望提升。"
+    },
+    {
+      "stock_name": "双良节能",
+      "stock_code": "600481",
+      "impact": 3,
+      "analysis": "SpaceX星舰基地供应商，受益于SpaceX发展。"
+    },
+    {
+      "stock_name": "航发科技",
+      "stock_code": "600893",
+      "impact": 4,
+      "analysis": "CJ-1000A发动机供应商，受益于国产大飞机发展。"
+    },
+    {
+      "stock_name": "北摩高科",
+      "stock_code": "002246",
+      "impact": 4,
+      "analysis": "C919刹车盘供应商，受益于国产大飞机发展。"
+    },
+    {
+      "stock_name": "利扬芯片",
+      "stock_code": "688012",
+      "impact": 3,
+      "analysis": "平头哥供应商，受益于芯片行业发展。"
+    },
+    {
+      "stock_name": "全志科技",
+      "stock_code": "300452",
+      "impact": 3,
+      "analysis": "平头哥合作伙伴，受益于芯片行业发展。"
+    }
+  ],
+  "article_id": "7de2e98d821040bf9305b476bc60c441",
+  "article_date": "2026-01-22",
+  "article_title": "2026.1.22市场逻辑精选"
+}

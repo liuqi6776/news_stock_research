@@ -1,0 +1,95 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极因素影响",
+  "sectors": [
+    {
+      "sector_name": "苹果产业链",
+      "impact": 4,
+      "analysis": "AI技术融入产品，带动硬件销售"
+    },
+    {
+      "sector_name": "阿尔茨海默症",
+      "impact": 3,
+      "analysis": "新药上市申请结果可能带来市场关注"
+    },
+    {
+      "sector_name": "船舶",
+      "impact": 4,
+      "analysis": "行业大周期来临，业绩持续释放"
+    },
+    {
+      "sector_name": "地产",
+      "impact": 3,
+      "analysis": "政策松绑，市场预期改善"
+    },
+    {
+      "sector_name": "存储",
+      "impact": 3,
+      "analysis": "存储行业景气持续向好"
+    },
+    {
+      "sector_name": "高铁",
+      "impact": 3,
+      "analysis": "中国高铁技术进入欧洲，检修需求高增"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "立讯精密",
+      "stock_code": "002475",
+      "impact": 4,
+      "analysis": "受益出货增长及份额提升"
+    },
+    {
+      "stock_name": "水晶光电",
+      "stock_code": "002273",
+      "impact": 4,
+      "analysis": "光学创新逻辑强"
+    },
+    {
+      "stock_name": "高伟电子",
+      "stock_code": "002372",
+      "impact": 4,
+      "analysis": "后摄份额提升"
+    },
+    {
+      "stock_name": "江龙船艇",
+      "stock_code": "002301",
+      "impact": 4,
+      "analysis": "布局新能源船艇"
+    },
+    {
+      "stock_name": "中国船舶",
+      "stock_code": "601717",
+      "impact": 4,
+      "analysis": "全球造船龙头"
+    },
+    {
+      "stock_name": "城投控股",
+      "stock_code": "600649",
+      "impact": 3,
+      "analysis": "上海土地市场化竞价"
+    },
+    {
+      "stock_name": "江波龙",
+      "stock_code": "300669",
+      "impact": 3,
+      "analysis": "存储模组市场缓步回升"
+    },
+    {
+      "stock_name": "兆易创新",
+      "stock_code": "603986",
+      "impact": 3,
+      "analysis": "存储芯片技术领先"
+    },
+    {
+      "stock_name": "中国中车",
+      "stock_code": "601766",
+      "impact": 3,
+      "analysis": "高铁整车制造"
+    }
+  ],
+  "article_id": "22b78bc1fbb2446b9e43f4cf942c6020",
+  "article_date": "2024-06-10",
+  "article_title": "2024.6.10市场逻辑精选"
+}

@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "固态电池",
+      "impact": 4,
+      "analysis": "产业标准加速设立，技术进步推动板块上涨。"
+    },
+    {
+      "sector_name": "半导体设备/存储",
+      "impact": 3,
+      "analysis": "美企限制影响国产化率提升，板块受益。"
+    },
+    {
+      "sector_name": "AI芯片",
+      "impact": 3,
+      "analysis": "阿里AI业务增长，芯片需求提升。"
+    },
+    {
+      "sector_name": "深海经济",
+      "impact": 2,
+      "analysis": "国家政策支持，板块有望增长。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "国轩高科",
+      "stock_code": "002074",
+      "impact": 4,
+      "analysis": "固态电池技术领先，股价有望上涨。"
+    },
+    {
+      "stock_name": "先导智能",
+      "stock_code": "300450",
+      "impact": 4,
+      "analysis": "固态电池设备供应商，业绩有望增长。"
+    },
+    {
+      "stock_name": "中微公司",
+      "stock_code": "688012",
+      "impact": 4,
+      "analysis": "刻蚀设备龙头，技术领先，股价有望上涨。"
+    },
+    {
+      "stock_name": "全志科技",
+      "stock_code": "300452",
+      "impact": 3,
+      "analysis": "与阿里合作，AI芯片需求提升，股价有望上涨。"
+    }
+  ],
+  "article_id": "d6e2c412def4467b9029e66c1fa8c609",
+  "article_date": "2025-08-31",
+  "article_title": "2025.8.31市场逻辑精选"
+}

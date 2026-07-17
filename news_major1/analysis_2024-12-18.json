@@ -1,0 +1,61 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注美联储政策影响。",
+  "sectors": [
+    {
+      "sector_name": "人工智能",
+      "impact": 4,
+      "analysis": "政策支持及技术进步推动板块上涨"
+    },
+    {
+      "sector_name": "网络安全",
+      "impact": 3,
+      "analysis": "网络安全事件引发关注，板块受益"
+    },
+    {
+      "sector_name": "量子科技",
+      "impact": 3,
+      "analysis": "美股上涨带动A股相关概念股"
+    },
+    {
+      "sector_name": "AI眼镜",
+      "impact": 4,
+      "analysis": "技术升级及市场预期推动板块上涨"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "卓翼科技",
+      "stock_code": "002369",
+      "impact": 3,
+      "analysis": "AR智能眼镜研发完成，关注量产进度"
+    },
+    {
+      "stock_name": "瀛通通讯",
+      "stock_code": "002861",
+      "impact": 3,
+      "analysis": "智能眼镜产品开发及供应链布局"
+    },
+    {
+      "stock_name": "博士眼镜",
+      "stock_code": "601619",
+      "impact": 3,
+      "analysis": "AI眼镜配镜服务及品牌合作"
+    },
+    {
+      "stock_name": "云天励飞",
+      "stock_code": "002383",
+      "impact": 4,
+      "analysis": "AI眼镜新品发布，关注市场反应"
+    },
+    {
+      "stock_name": "安凯微",
+      "stock_code": "688013",
+      "impact": 4,
+      "analysis": "视觉芯片领先企业，关注自研AI ISP进展"
+    }
+  ],
+  "article_id": "4ff750417df34819907fff010a7dc958",
+  "article_date": "2024-12-18",
+  "article_title": "2024.12.18市场逻辑精选"
+}

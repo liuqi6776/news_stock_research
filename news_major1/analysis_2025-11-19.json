@@ -1,0 +1,101 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好影响，部分行业和个股表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "牛肉",
+      "impact": 4,
+      "analysis": "牛肉价格上涨，相关产业链受益"
+    },
+    {
+      "sector_name": "化妆品",
+      "impact": 3,
+      "analysis": "国产化妆品替代趋势明显，相关企业受益"
+    },
+    {
+      "sector_name": "折叠屏手机",
+      "impact": 3,
+      "analysis": "折叠屏手机市场增长，相关供应链企业受益"
+    },
+    {
+      "sector_name": "羽绒服",
+      "impact": 3,
+      "analysis": "羽绒服价格上涨，相关企业受益"
+    },
+    {
+      "sector_name": "旅游",
+      "impact": 2,
+      "analysis": "旅游行业受政策影响，部分企业受益"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 2,
+      "analysis": "军工行业受政策支持，相关企业受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "福成股份",
+      "stock_code": "600965",
+      "impact": 4,
+      "analysis": "牛肉业务受益，股价有望上涨"
+    },
+    {
+      "stock_name": "光明肉业",
+      "stock_code": "600546",
+      "impact": 4,
+      "analysis": "牛羊肉业务受益，股价有望上涨"
+    },
+    {
+      "stock_name": "丽人丽妆",
+      "stock_code": "603180",
+      "impact": 3,
+      "analysis": "美妆电商零售业务增长，股价有望上涨"
+    },
+    {
+      "stock_name": "珀莱雅",
+      "stock_code": "603258",
+      "impact": 3,
+      "analysis": "国产化妆品龙头企业，股价有望上涨"
+    },
+    {
+      "stock_name": "宜安科技",
+      "stock_code": "300151",
+      "impact": 3,
+      "analysis": "液态金属铰链供应商，股价有望上涨"
+    },
+    {
+      "stock_name": "统联精密",
+      "stock_code": "002211",
+      "impact": 3,
+      "analysis": "苹果业务收入占比高，股价有望上涨"
+    },
+    {
+      "stock_name": "华英农业",
+      "stock_code": "002321",
+      "impact": 3,
+      "analysis": "羽绒业务价格上涨，股价有望上涨"
+    },
+    {
+      "stock_name": "云南旅游",
+      "stock_code": "002059",
+      "impact": 2,
+      "analysis": "旅游业务受益，股价有望上涨"
+    },
+    {
+      "stock_name": "朗姿股份",
+      "stock_code": "002612",
+      "impact": 2,
+      "analysis": "韩业务受益，股价有望上涨"
+    },
+    {
+      "stock_name": "亚星锚链",
+      "stock_code": "002025",
+      "impact": 2,
+      "analysis": "军工业务受益，股价有望上涨"
+    }
+  ],
+  "article_id": "bc1b52479bf647389804494e1d122c3c",
+  "article_date": "2025-11-19",
+  "article_title": "2025.11.19市场逻辑精选"
+}

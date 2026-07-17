@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪稳定，部分板块受利好消息提振",
+  "sectors": [
+    {
+      "sector_name": "金融",
+      "impact": 3,
+      "analysis": "证监会强调稳定运行，金融板块受益"
+    },
+    {
+      "sector_name": "互联网",
+      "impact": 2,
+      "analysis": "阿里巴巴增持，互联网板块情绪提升"
+    },
+    {
+      "sector_name": "新能源",
+      "impact": 2,
+      "analysis": "氢燃料电池行业受关注，新能源板块受益"
+    },
+    {
+      "sector_name": "游戏",
+      "impact": 2,
+      "analysis": "游戏《幻兽帕鲁》大热，游戏板块情绪提升"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "金证股份",
+      "stock_code": "600446",
+      "impact": 3,
+      "analysis": "证监会强调稳定运行，金融板块受益"
+    },
+    {
+      "stock_name": "阿里巴巴",
+      "stock_code": "9988.HK",
+      "impact": 2,
+      "analysis": "阿里巴巴增持，互联网板块情绪提升"
+    },
+    {
+      "stock_name": "洪涛股份",
+      "stock_code": "002325",
+      "impact": 2,
+      "analysis": "氢燃料电池行业受关注，新能源板块受益"
+    },
+    {
+      "stock_name": "姚记科技",
+      "stock_code": "002605",
+      "impact": 2,
+      "analysis": "游戏《幻兽帕鲁》大热，游戏板块情绪提升"
+    }
+  ],
+  "article_title": "1月24日盘前早报 热点事件关注",
+  "html_file": "7nevhxqwxt.html",
+  "article_date": "2024-01-24"
+}

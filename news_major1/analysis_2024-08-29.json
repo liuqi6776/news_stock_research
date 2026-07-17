@@ -1,0 +1,67 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受益。",
+  "sectors": [
+    {
+      "sector_name": "消费电子",
+      "impact": 4,
+      "analysis": "手机产业链升级，相关材料加工设备需求增加。"
+    },
+    {
+      "sector_name": "新材料",
+      "impact": 3,
+      "analysis": "钛合金、石墨烯等新材料应用前景广阔。"
+    },
+    {
+      "sector_name": "无线充电",
+      "impact": 3,
+      "analysis": "新规实施，大功率无线充电设备需求提升。"
+    },
+    {
+      "sector_name": "数据要素",
+      "impact": 3,
+      "analysis": "政策支持，数据要素市场规模扩大。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "宇环数控",
+      "stock_code": "002903",
+      "impact": 4,
+      "analysis": "受益钛合金边框发展，订单增加。"
+    },
+    {
+      "stock_name": "银邦股份",
+      "stock_code": "002456",
+      "impact": 3,
+      "analysis": "钛合金复合材料加工，业绩增长。"
+    },
+    {
+      "stock_name": "创世纪",
+      "stock_code": "002301",
+      "impact": 3,
+      "analysis": "拳头产品覆盖3C核心用户。"
+    },
+    {
+      "stock_name": "金太阳",
+      "stock_code": "002716",
+      "impact": 3,
+      "analysis": "钛合金研磨抛光，市场空间大。"
+    },
+    {
+      "stock_name": "英集芯",
+      "stock_code": "688018",
+      "impact": 3,
+      "analysis": "无线充电SoC芯片需求提升。"
+    },
+    {
+      "stock_name": "浙数文化",
+      "stock_code": "600633",
+      "impact": 3,
+      "analysis": "数据交易业务受益政策支持。"
+    }
+  ],
+  "article_id": "dea12c9b35054a709fbb7dacbbd94568",
+  "article_date": "2024-08-29",
+  "article_title": "2024.8.29市场逻辑精选"
+}

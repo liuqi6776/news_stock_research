@@ -1,0 +1,342 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪提升",
+  "sectors": [
+    {
+      "sector_name": "物流",
+      "impact": 3,
+      "analysis": "中欧合作、双十一预热推动"
+    },
+    {
+      "sector_name": "化工",
+      "impact": 3,
+      "analysis": "中欧合作、巴斯夫投资"
+    },
+    {
+      "sector_name": "家电",
+      "impact": 2,
+      "analysis": "菜鸟开通中欧取暖物流专线"
+    },
+    {
+      "sector_name": "可降解塑料",
+      "impact": 2,
+      "analysis": "全国推广可降解塑料"
+    },
+    {
+      "sector_name": "华为鸿蒙",
+      "impact": 2,
+      "analysis": "华为开发者大会"
+    },
+    {
+      "sector_name": "基因检测",
+      "impact": 2,
+      "analysis": "肿瘤基因检测项目纳入医保"
+    },
+    {
+      "sector_name": "信创",
+      "impact": 2,
+      "analysis": "信创国产替代政策"
+    },
+    {
+      "sector_name": "医药医疗",
+      "impact": 2,
+      "analysis": "医疗新基建、药明康德业绩增长"
+    },
+    {
+      "sector_name": "教育",
+      "impact": 2,
+      "analysis": "教育新基建和科教兴国战略"
+    },
+    {
+      "sector_name": "油运",
+      "impact": 2,
+      "analysis": "油运需求回升、价格上行"
+    },
+    {
+      "sector_name": "储能",
+      "impact": 2,
+      "analysis": "储能电池供不应求"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "天顺股份",
+      "stock_code": "002800",
+      "impact": 3,
+      "analysis": "中欧合作、双十一预热"
+    },
+    {
+      "stock_name": "中创物流",
+      "stock_code": "603399",
+      "impact": 3,
+      "analysis": "中欧合作"
+    },
+    {
+      "stock_name": "长久物流",
+      "stock_code": "603019",
+      "impact": 3,
+      "analysis": "中欧合作"
+    },
+    {
+      "stock_name": "三羊马",
+      "stock_code": "603717",
+      "impact": 3,
+      "analysis": "中欧合作"
+    },
+    {
+      "stock_name": "连云港",
+      "stock_code": "600170",
+      "impact": 3,
+      "analysis": "中欧合作、油运"
+    },
+    {
+      "stock_name": "锦州港",
+      "stock_code": "600190",
+      "impact": 3,
+      "analysis": "中欧合作"
+    },
+    {
+      "stock_name": "南京港",
+      "stock_code": "600029",
+      "impact": 3,
+      "analysis": "中欧合作"
+    },
+    {
+      "stock_name": "利柏特",
+      "stock_code": "002220",
+      "impact": 3,
+      "analysis": "化工合作"
+    },
+    {
+      "stock_name": "东华科技",
+      "stock_code": "002140",
+      "impact": 3,
+      "analysis": "化工合作"
+    },
+    {
+      "stock_name": "真爱美家",
+      "stock_code": "603358",
+      "impact": 2,
+      "analysis": "菜鸟开通中欧取暖物流专线"
+    },
+    {
+      "stock_name": "长虹美菱",
+      "stock_code": "000521",
+      "impact": 2,
+      "analysis": "菜鸟开通中欧取暖物流专线"
+    },
+    {
+      "stock_name": "彩虹集团",
+      "stock_code": "000707",
+      "impact": 2,
+      "analysis": "菜鸟开通中欧取暖物流专线"
+    },
+    {
+      "stock_name": "奥佳华",
+      "stock_code": "002614",
+      "impact": 2,
+      "analysis": "菜鸟开通中欧取暖物流专线"
+    },
+    {
+      "stock_name": "丹化科技",
+      "stock_code": "600844",
+      "impact": 2,
+      "analysis": "全国推广可降解塑料"
+    },
+    {
+      "stock_name": "莫高股份",
+      "stock_code": "600543",
+      "impact": 2,
+      "analysis": "全国推广可降解塑料"
+    },
+    {
+      "stock_name": "金丹科技",
+      "stock_code": "002626",
+      "impact": 2,
+      "analysis": "全国推广可降解塑料"
+    },
+    {
+      "stock_name": "瑞丰高材",
+      "stock_code": "300387",
+      "impact": 2,
+      "analysis": "全国推广可降解塑料"
+    },
+    {
+      "stock_name": "润和软件",
+      "stock_code": "300457",
+      "impact": 2,
+      "analysis": "华为鸿蒙"
+    },
+    {
+      "stock_name": "诚迈科技",
+      "stock_code": "300598",
+      "impact": 2,
+      "analysis": "华为鸿蒙"
+    },
+    {
+      "stock_name": "常山北明",
+      "stock_code": "000158",
+      "impact": 2,
+      "analysis": "华为鸿蒙"
+    },
+    {
+      "stock_name": "拓维信息",
+      "stock_code": "002261",
+      "impact": 2,
+      "analysis": "华为鸿蒙"
+    },
+    {
+      "stock_name": "贝瑞基因",
+      "stock_code": "002603",
+      "impact": 2,
+      "analysis": "肿瘤基因检测项目纳入医保"
+    },
+    {
+      "stock_name": "华大基因",
+      "stock_code": "600136",
+      "impact": 2,
+      "analysis": "肿瘤基因检测项目纳入医保"
+    },
+    {
+      "stock_name": "中源协和",
+      "stock_code": "600645",
+      "impact": 2,
+      "analysis": "肿瘤基因检测项目纳入医保"
+    },
+    {
+      "stock_name": "国脉科技",
+      "stock_code": "002093",
+      "impact": 2,
+      "analysis": "信创国产替代"
+    },
+    {
+      "stock_name": "英飞拓",
+      "stock_code": "002528",
+      "impact": 2,
+      "analysis": "信创国产替代"
+    },
+    {
+      "stock_name": "恒久科技",
+      "stock_code": "002101",
+      "impact": 2,
+      "analysis": "信创国产替代"
+    },
+    {
+      "stock_name": "中通国脉",
+      "stock_code": "300058",
+      "impact": 2,
+      "analysis": "信创国产替代"
+    },
+    {
+      "stock_name": "金财互联",
+      "stock_code": "002530",
+      "impact": 2,
+      "analysis": "信创国产替代"
+    },
+    {
+      "stock_name": "荣联科技",
+      "stock_code": "002642",
+      "impact": 2,
+      "analysis": "信创国产替代"
+    },
+    {
+      "stock_name": "京北方",
+      "stock_code": "002149",
+      "impact": 2,
+      "analysis": "信创国产替代"
+    },
+    {
+      "stock_name": "华森制药",
+      "stock_code": "002503",
+      "impact": 2,
+      "analysis": "医疗新基建、药明康德业绩增长"
+    },
+    {
+      "stock_name": "德展健康",
+      "stock_code": "000403",
+      "impact": 2,
+      "analysis": "医疗新基建、药明康德业绩增长"
+    },
+    {
+      "stock_name": "罗欣药业",
+      "stock_code": "600773",
+      "impact": 2,
+      "analysis": "医疗新基建、药明康德业绩增长"
+    },
+    {
+      "stock_name": "欣龙控股",
+      "stock_code": "000875",
+      "impact": 2,
+      "analysis": "医疗新基建、药明康德业绩增长"
+    },
+    {
+      "stock_name": "赛隆药业",
+      "stock_code": "002898",
+      "impact": 2,
+      "analysis": "医疗新基建、药明康德业绩增长"
+    },
+    {
+      "stock_name": "奥赛康",
+      "stock_code": "300846",
+      "impact": 2,
+      "analysis": "医疗新基建、药明康德业绩增长"
+    },
+    {
+      "stock_name": "国新文化",
+      "stock_code": "600846",
+      "impact": 2,
+      "analysis": "教育新基建和科教兴国战略"
+    },
+    {
+      "stock_name": "鸿合科技",
+      "stock_code": "002955",
+      "impact": 2,
+      "analysis": "教育新基建和科教兴国战略"
+    },
+    {
+      "stock_name": "中远海特",
+      "stock_code": "600026",
+      "impact": 2,
+      "analysis": "油运需求回升、价格上行"
+    },
+    {
+      "stock_name": "中远海能",
+      "stock_code": "600026",
+      "impact": 2,
+      "analysis": "油运需求回升、价格上行"
+    },
+    {
+      "stock_name": "宁波海运",
+      "stock_code": "600017",
+      "impact": 2,
+      "analysis": "油运需求回升、价格上行"
+    },
+    {
+      "stock_name": "世嘉科技",
+      "stock_code": "002081",
+      "impact": 2,
+      "analysis": "储能电池供不应求"
+    },
+    {
+      "stock_name": "毅昌科技",
+      "stock_code": "002610",
+      "impact": 2,
+      "analysis": "储能电池供不应求"
+    },
+    {
+      "stock_name": "德赛电池",
+      "stock_code": "002920",
+      "impact": 2,
+      "analysis": "储能电池供不应求"
+    },
+    {
+      "stock_name": "金龙羽",
+      "stock_code": "002223",
+      "impact": 2,
+      "analysis": "储能电池供不应求"
+    }
+  ],
+  "article_title": "10月20日 盘前早8点 股市要闻关注",
+  "html_file": "f843gcrwer.html",
+  "article_date": "2022-10-20"
+}

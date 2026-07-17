@@ -1,0 +1,56 @@
+{
+  "market_impact": 3,
+  "market_analysis": "稀土配额增加，制冷剂价格上涨，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "稀土板块",
+      "impact": 4,
+      "analysis": "配额增加，供需改善，板块受益"
+    },
+    {
+      "sector_name": "制冷剂板块",
+      "impact": 3,
+      "analysis": "配额冻结，价格上涨，板块受益"
+    },
+    {
+      "sector_name": "磁材板块",
+      "impact": 3,
+      "analysis": "稀土价格上涨，磁材需求增加，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中国稀土",
+      "stock_code": "000920",
+      "impact": 4,
+      "analysis": "配额占比高，受益于稀土价格上涨"
+    },
+    {
+      "stock_name": "北方稀土",
+      "stock_code": "600111",
+      "impact": 4,
+      "analysis": "轻稀土龙头，配额占比高"
+    },
+    {
+      "stock_name": "渝三峡A",
+      "stock_code": "000566",
+      "impact": 3,
+      "analysis": "医化化工资产整合，股价有望提升"
+    },
+    {
+      "stock_name": "巨化股份",
+      "stock_code": "600160",
+      "impact": 4,
+      "analysis": "制冷剂价格上涨，市占率高"
+    },
+    {
+      "stock_name": "赛力斯",
+      "stock_code": "600489",
+      "impact": 3,
+      "analysis": "问界M9销量好，品牌影响力提升"
+    }
+  ],
+  "article_id": "89e27ce3da5047ddb52101d95b575817",
+  "article_date": "2024-02-07",
+  "article_title": "2024.2.7市场逻辑精选"
+}

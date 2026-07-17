@@ -1,0 +1,61 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受积极因素推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "AIPC设备",
+      "impact": 4,
+      "analysis": "下游扩产和技术进步推动设备需求增长。"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "行业反内卷趋势明确，关注产业链变化。"
+    },
+    {
+      "sector_name": "华为相关",
+      "impact": 3,
+      "analysis": "麒麟芯片公开展示，算力服务需求提升。"
+    },
+    {
+      "sector_name": "鸿蒙生态",
+      "impact": 2,
+      "analysis": "行业巨头参与生态适配，市场潜力大。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "芯碁微装",
+      "stock_code": "300706",
+      "impact": 4,
+      "analysis": "PCB曝光机设备市占率高，订单爆发。"
+    },
+    {
+      "stock_name": "东威科技",
+      "stock_code": "300388",
+      "impact": 4,
+      "analysis": "电镀设备市占率高，订单同比翻倍。"
+    },
+    {
+      "stock_name": "鼎泰高科",
+      "stock_code": "603966",
+      "impact": 4,
+      "analysis": "PCB钻针市占率高，需求增长。"
+    },
+    {
+      "stock_name": "凯格精机",
+      "stock_code": "300655",
+      "impact": 3,
+      "analysis": "锡膏印刷设备市占率高，AI需求推动产品放量。"
+    },
+    {
+      "stock_name": "拓维信息",
+      "stock_code": "002261",
+      "impact": 3,
+      "analysis": "成为华为战略合作企业，推出高性能AI推理服务器。"
+    }
+  ],
+  "article_id": "c4416b61281e4cb0bfdb5e7419af17d1",
+  "article_date": "2025-08-17",
+  "article_title": "2025.8.17市场逻辑精选"
+}

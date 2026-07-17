@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受低空物流和脑机接口等热点驱动，整体情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "无人机及物流",
+      "impact": 4,
+      "analysis": "低空物流项目首飞成功，无人机物流市场规模扩大，板块受益"
+    },
+    {
+      "sector_name": "脑机接口",
+      "impact": 3,
+      "analysis": "脑机接口技术突破，市场空间巨大，板块迎来发展机遇"
+    },
+    {
+      "sector_name": "设备更新",
+      "impact": 2,
+      "analysis": "设备更新政策推动，相关产业链受益"
+    },
+    {
+      "sector_name": "HBM",
+      "impact": 3,
+      "analysis": "SK海力士扩产，HBM需求增长，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "航天电子",
+      "stock_code": "600343",
+      "impact": 4,
+      "analysis": "无人机物流项目成功，公司业绩有望提升"
+    },
+    {
+      "stock_name": "创新医疗",
+      "stock_code": "002821",
+      "impact": 3,
+      "analysis": "脑机接口项目进展顺利，公司有望受益"
+    },
+    {
+      "stock_name": "华宏科技",
+      "stock_code": "002140",
+      "impact": 2,
+      "analysis": "设备更新政策推动，公司业务有望受益"
+    },
+    {
+      "stock_name": "赛腾股份",
+      "stock_code": "300433",
+      "impact": 3,
+      "analysis": "SK海力士扩产，公司产品有望受益"
+    }
+  ],
+  "article_id": "104596e6fc6d4a598959976c27b0d485",
+  "article_date": "2024-04-24",
+  "article_title": "2024.4.24市场逻辑精选"
+}

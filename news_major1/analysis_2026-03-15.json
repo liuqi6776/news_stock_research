@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受中东冲突和英伟达M10材料测试消息提振，整体偏利好。",
+  "sectors": [
+    {
+      "sector_name": "化肥",
+      "impact": 4,
+      "analysis": "中东冲突导致化肥原料供应紧张，利好化肥板块。"
+    },
+    {
+      "sector_name": "电子元件",
+      "impact": 3,
+      "analysis": "英伟达M10材料测试消息利好电子元件板块。"
+    },
+    {
+      "sector_name": "煤化工",
+      "impact": 3,
+      "analysis": "煤化工迎来重要发展窗口，利好煤化工板块。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "潞化科技",
+      "stock_code": "600585",
+      "impact": 4,
+      "analysis": "尿素价格上涨，利好潞化科技。"
+    },
+    {
+      "stock_name": "云天化",
+      "stock_code": "600678",
+      "impact": 4,
+      "analysis": "磷肥龙头，受益于磷肥价格上涨。"
+    },
+    {
+      "stock_name": "沪电股份",
+      "stock_code": "002463",
+      "impact": 3,
+      "analysis": "M10材料测试消息利好沪电股份。"
+    },
+    {
+      "stock_name": "中国化学",
+      "stock_code": "601117",
+      "impact": 3,
+      "analysis": "煤化工EPC项目受益，利好中国化学。"
+    }
+  ],
+  "article_id": "36f4d73dd234451c8179eab53c4ab8ce",
+  "article_date": "2026-03-15",
+  "article_title": "2026.3.15市场逻辑精选"
+}

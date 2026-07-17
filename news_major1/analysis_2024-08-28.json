@@ -1,0 +1,107 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受积极因素推动，但需关注潜在风险。",
+  "sectors": [
+    {
+      "sector_name": "集换式卡牌",
+      "impact": 4,
+      "analysis": "行业爆发，相关公司受益"
+    },
+    {
+      "sector_name": "三氯蔗糖",
+      "impact": 2,
+      "analysis": "价格上涨，但供需紧平衡"
+    },
+    {
+      "sector_name": "中非合作",
+      "impact": 3,
+      "analysis": "一带一路合作，相关公司受益"
+    },
+    {
+      "sector_name": "智能穿戴",
+      "impact": 3,
+      "analysis": "华为合作，行业增长"
+    },
+    {
+      "sector_name": "eVTOL",
+      "impact": 3,
+      "analysis": "战略合作，行业前景看好"
+    },
+    {
+      "sector_name": "固态电池",
+      "impact": 3,
+      "analysis": "技术合作，行业应用拓展"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "华立科技",
+      "stock_code": "300045",
+      "impact": 4,
+      "analysis": "动漫衍生品营收增长"
+    },
+    {
+      "stock_name": "姚记科技",
+      "stock_code": "002605",
+      "impact": 4,
+      "analysis": "布局球星卡、宝可梦卡牌"
+    },
+    {
+      "stock_name": "奥飞娱乐",
+      "stock_code": "002292",
+      "impact": 4,
+      "analysis": "拥有知名IP"
+    },
+    {
+      "stock_name": "京华激光",
+      "stock_code": "300515",
+      "impact": 4,
+      "analysis": "卡游龙头企业服务"
+    },
+    {
+      "stock_name": "中国交建",
+      "stock_code": "601800",
+      "impact": 4,
+      "analysis": "非洲基础设施投资"
+    },
+    {
+      "stock_name": "中工国际",
+      "stock_code": "002051",
+      "impact": 4,
+      "analysis": "油气和化工业务"
+    },
+    {
+      "stock_name": "奋达科技",
+      "stock_code": "002681",
+      "impact": 4,
+      "analysis": "智能穿戴产品供货华为"
+    },
+    {
+      "stock_name": "宝馨科技",
+      "stock_code": "002511",
+      "impact": 4,
+      "analysis": "华为液冷超充合作"
+    },
+    {
+      "stock_name": "美格智能",
+      "stock_code": "002881",
+      "impact": 4,
+      "analysis": "提供海思产品技术服务"
+    },
+    {
+      "stock_name": "天成自控",
+      "stock_code": "002921",
+      "impact": 4,
+      "analysis": "eVTOL领域战略合作"
+    },
+    {
+      "stock_name": "普利特",
+      "stock_code": "002324",
+      "impact": 4,
+      "analysis": "与北京卫蓝新能源合作"
+    }
+  ],
+  "article_id": "7d07470269c649da9c36ab3204c68b02",
+  "article_date": "2024-08-28",
+  "article_title": "2024.8.28市场逻辑精选"
+}

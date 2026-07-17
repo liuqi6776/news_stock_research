@@ -1,0 +1,92 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注后续政策落地情况。",
+  "sectors": [
+    {
+      "sector_name": "人工智能",
+      "impact": 4,
+      "analysis": "大模型牌照下发，板块迎来利好。"
+    },
+    {
+      "sector_name": "数据要素",
+      "impact": 3,
+      "analysis": "数据要素公共服务平台上线，板块受利好。"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 2,
+      "analysis": "光伏玻璃涨价，板块受利好。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "零点有数",
+      "stock_code": "300654",
+      "impact": 3,
+      "analysis": "政务与商业应用场景建模训练，业务合作处于探索阶段。"
+    },
+    {
+      "stock_name": "汉王科技",
+      "stock_code": "002362",
+      "impact": 3,
+      "analysis": "计划推出全新生成式算法模型，研究“紫东太初”在医疗影像领域的应用。"
+    },
+    {
+      "stock_name": "中科信息",
+      "stock_code": "600488",
+      "impact": 3,
+      "analysis": "AI算法和行业应用能力国家队，掌握多个行业应用的优质数据资源。"
+    },
+    {
+      "stock_name": "拓尔思",
+      "stock_code": "300229",
+      "impact": 3,
+      "analysis": "trsGPT在政务、金融、新闻媒体等垂直领域研发应用落地。"
+    },
+    {
+      "stock_name": "吉视传媒",
+      "stock_code": "600055",
+      "impact": 3,
+      "analysis": "参股吉林东北亚大数据交易中心。"
+    },
+    {
+      "stock_name": "浙数文化",
+      "stock_code": "600633",
+      "impact": 3,
+      "analysis": "参股浙江大数据交易中心。"
+    },
+    {
+      "stock_name": "北玻股份",
+      "stock_code": "600108",
+      "impact": 3,
+      "analysis": "光伏玻璃营收占比高，受光伏玻璃涨价利好。"
+    },
+    {
+      "stock_name": "福鞍股份",
+      "stock_code": "600031",
+      "impact": 3,
+      "analysis": "二季度业绩大增，开拓军工及俄核电市场。"
+    },
+    {
+      "stock_name": "新诺威",
+      "stock_code": "300795",
+      "impact": 3,
+      "analysis": "拟收购巨石生物，布局ADC药物市场。"
+    },
+    {
+      "stock_name": "三七互娱",
+      "stock_code": "002555",
+      "impact": 3,
+      "analysis": "三季度业绩大增，新产品贡献业绩。"
+    },
+    {
+      "stock_name": "岩山科技",
+      "stock_code": "300845",
+      "impact": 3,
+      "analysis": "增资并购智能驾驶头部公司。"
+    }
+  ],
+  "article_id": "bdc4d86cc69e4e9397229c01fa545795",
+  "article_date": "2023-08-30",
+  "article_title": "2023.8.30市场逻辑精选"
+}

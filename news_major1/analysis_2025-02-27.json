@@ -1,0 +1,67 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极影响。",
+  "sectors": [
+    {
+      "sector_name": "新能源汽车",
+      "impact": 4,
+      "analysis": "固态电池产业化推进，板块受益"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "小米机器人应用机会释放，板块受提振"
+    },
+    {
+      "sector_name": "半导体材料",
+      "impact": 3,
+      "analysis": "至纯科技拟收购威顿晶磷，板块受关注"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "原生安全大模型一体机厂商受关注"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "小米",
+      "stock_code": "01810.HK",
+      "impact": 3,
+      "analysis": "发布新产品，股价可能受益"
+    },
+    {
+      "stock_name": "金利华电",
+      "stock_code": "300762.SZ",
+      "impact": 3,
+      "analysis": "中标航天项目，股价可能受益"
+    },
+    {
+      "stock_name": "星环科技",
+      "stock_code": "688049.SH",
+      "impact": 3,
+      "analysis": "推出高性能大模型一体机，股价可能受益"
+    },
+    {
+      "stock_name": "永信至诚",
+      "stock_code": "603593.SH",
+      "impact": 3,
+      "analysis": "推出原生安全大模型一体机，股价可能受益"
+    },
+    {
+      "stock_name": "新致软件",
+      "stock_code": "688598.SH",
+      "impact": 3,
+      "analysis": "与昇腾算力适配成功，股价可能受益"
+    },
+    {
+      "stock_name": "至纯科技",
+      "stock_code": "688012.SH",
+      "impact": 3,
+      "analysis": "拟收购威顿晶磷，股价可能受益"
+    }
+  ],
+  "article_id": "c88c006cae7443179e4a898a56d4b030",
+  "article_date": "2025-02-27",
+  "article_title": "2025.2.27市场逻辑精选"
+}

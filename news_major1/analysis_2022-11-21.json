@@ -1,0 +1,81 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场对HJT电池技术进展反应积极，利好光伏板块。",
+  "sectors": [
+    {
+      "sector_name": "光伏板块",
+      "impact": 3,
+      "analysis": "HJT电池技术突破，推动行业升级。"
+    },
+    {
+      "sector_name": "半导体板块",
+      "impact": -2,
+      "analysis": "半导体资本开支预期下调，利空板块。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "乾景园林",
+      "stock_code": "600377",
+      "impact": 3,
+      "analysis": "HJT电池产能规划利好公司。"
+    },
+    {
+      "stock_name": "金刚光伏",
+      "stock_code": "603348",
+      "impact": 3,
+      "analysis": "HJT电池产能规划利好公司。"
+    },
+    {
+      "stock_name": "正业科技",
+      "stock_code": "300614",
+      "impact": 3,
+      "analysis": "HJT电池产能规划利好公司。"
+    },
+    {
+      "stock_name": "华中数控",
+      "stock_code": "300161",
+      "impact": 3,
+      "analysis": "新能源业务快速增长，利好公司。"
+    },
+    {
+      "stock_name": "昌红科技",
+      "stock_code": "300343",
+      "impact": 3,
+      "analysis": "抗原检测放开，公司有望受益。"
+    },
+    {
+      "stock_name": "隆扬电子",
+      "stock_code": "603019",
+      "impact": 3,
+      "analysis": "布局复合集流体产品及设备，利好公司。"
+    },
+    {
+      "stock_name": "良品铺子",
+      "stock_code": "603719",
+      "impact": 3,
+      "analysis": "机构逆势买入，股价有望反弹。"
+    },
+    {
+      "stock_name": "胜利精密",
+      "stock_code": "002426",
+      "impact": 3,
+      "analysis": "复合铜箔项目进展顺利，利好公司。"
+    },
+    {
+      "stock_name": "众生药业",
+      "stock_code": "002317",
+      "impact": 3,
+      "analysis": "RAY1216临床研究预注册，利好公司。"
+    },
+    {
+      "stock_name": "康恩贝",
+      "stock_code": "600572",
+      "impact": 3,
+      "analysis": "自研产品可用于新冠，利好公司。"
+    }
+  ],
+  "article_id": "649340f6833c4cba8fae099322a3c1bb",
+  "article_date": "2022-11-21",
+  "article_title": "2022.11.21市场逻辑精选"
+}

@@ -1,0 +1,106 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受利好消息推动，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "电解液添加剂",
+      "impact": 4,
+      "analysis": "VC价格大涨，相关企业受益"
+    },
+    {
+      "sector_name": "储能",
+      "impact": 3,
+      "analysis": "国家政策支持，行业需求增长"
+    },
+    {
+      "sector_name": "叶酸",
+      "impact": 3,
+      "analysis": "价格涨幅较大，相关企业受益"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "特斯拉扩产，相关企业受益"
+    },
+    {
+      "sector_name": "硫化工",
+      "impact": 3,
+      "analysis": "硫磺价格上涨，相关企业受益"
+    },
+    {
+      "sector_name": "AI",
+      "impact": 3,
+      "analysis": "实控人变更，引入AI独角兽企业"
+    },
+    {
+      "sector_name": "可持续航空燃料",
+      "impact": 3,
+      "analysis": "SAF价格创历史新高，相关企业受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "华盛锂电",
+      "stock_code": "300750",
+      "impact": 4,
+      "analysis": "产能扩张，受益电解液添加剂价格上涨"
+    },
+    {
+      "stock_name": "海科新源",
+      "stock_code": "603636",
+      "impact": 4,
+      "analysis": "产能扩张，受益电解液添加剂价格上涨"
+    },
+    {
+      "stock_name": "顺发恒能",
+      "stock_code": "603035",
+      "impact": 3,
+      "analysis": "转型清洁能源，受益储能行业需求增长"
+    },
+    {
+      "stock_name": "上能电气",
+      "stock_code": "603636",
+      "impact": 3,
+      "analysis": "储能PCS市场份额领先，受益储能行业需求增长"
+    },
+    {
+      "stock_name": "圣达生物",
+      "stock_code": "300084",
+      "impact": 4,
+      "analysis": "叶酸价格上涨，公司产品受益"
+    },
+    {
+      "stock_name": "天新药业",
+      "stock_code": "600535",
+      "impact": 4,
+      "analysis": "叶酸价格上涨，公司产品受益"
+    },
+    {
+      "stock_name": "康隆达",
+      "stock_code": "603716",
+      "impact": 3,
+      "analysis": "特斯拉扩产，公司产品受益"
+    },
+    {
+      "stock_name": "粤桂股份",
+      "stock_code": "000833",
+      "impact": 3,
+      "analysis": "硫磺价格上涨，公司产品受益"
+    },
+    {
+      "stock_name": "真爱每家",
+      "stock_code": "603599",
+      "impact": 3,
+      "analysis": "实控人变更，引入AI独角兽企业"
+    },
+    {
+      "stock_name": "山高环能",
+      "stock_code": "603639",
+      "impact": 3,
+      "analysis": "SAF价格上涨，公司产品受益"
+    }
+  ],
+  "article_id": "ca4638e2938146f7bb967618c04e25a8",
+  "article_date": "2025-11-12",
+  "article_title": "2025.11.12市场逻辑精选"
+}

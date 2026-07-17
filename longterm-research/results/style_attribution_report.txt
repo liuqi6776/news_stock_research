@@ -1,0 +1,65 @@
+==========================================================================
+                       Strategy Style Attribution Report                  
+==========================================================================
+Backtest Period: 20220104 to 20260311 (1011 trading days)
+==========================================================================
+
+[Model 1: Market & Size Factor Regression (Standard)]
+Formula: R_strategy = alpha + beta_m * R_m + beta_s * SMB + e
+--------------------------------------------------------------------------
+Daily Alpha (Intercept): +0.000152
+Annualized Alpha:        +3.83%
+t-statistic of Alpha:    0.8274 (NOT SIGNIFICANT)
+p-value of Alpha:        0.408185
+Beta Market (beta_m):    0.6769 (t-stat: 46.17)
+Beta Size (beta_s):      0.2139 (t-stat: 11.58)
+R-squared:               0.7626 (Style explains 76.26% of variance)
+
+==========================================================================
+[Model 2: Market, Size & Orthogonalized Industry Excess Regression]
+Formula: R_strategy = alpha + beta_m * R_m + beta_s * SMB + sum(beta_i * (R_ind_i - R_m)) + e
+--------------------------------------------------------------------------
+Daily Alpha (Intercept): +0.000123
+Annualized Alpha:        +3.10%
+t-statistic of Alpha:    0.6410 (NOT SIGNIFICANT)
+p-value of Alpha:        0.521716
+Beta Market (beta_m):    0.7426 (t-stat: 31.22)
+Beta Size (beta_s):      0.1817 (t-stat: 3.20)
+R-squared:               0.8127 (Style explains 81.27% of variance)
+
+Significant Active Industry Exposures (p < 0.05):
+  - 中成药: beta = -0.0868 (t-stat: -2.28, p-val: 0.0229)
+  - 仓储物流: beta = -0.0715 (t-stat: -2.06, p-val: 0.0396)
+  - 保险: beta = +0.0606 (t-stat: 3.38, p-val: 0.0007)
+  - 全国地产: beta = -0.0820 (t-stat: -2.29, p-val: 0.0224)
+  - 其他商业: beta = -0.0500 (t-stat: -2.31, p-val: 0.0209)
+  - 出版业: beta = -0.0487 (t-stat: -2.20, p-val: 0.0280)
+  - 半导体: beta = -0.0649 (t-stat: -2.73, p-val: 0.0064)
+  - 商品城: beta = -0.0347 (t-stat: -2.00, p-val: 0.0463)
+  - 商贸代理: beta = +0.0922 (t-stat: 3.13, p-val: 0.0018)
+  - 旅游景点: beta = -0.0461 (t-stat: -2.17, p-val: 0.0303)
+  - 水泥: beta = -0.0950 (t-stat: -3.09, p-val: 0.0021)
+  - 汽车配件: beta = -0.1350 (t-stat: -2.29, p-val: 0.0223)
+  - 环境保护: beta = -0.1226 (t-stat: -2.57, p-val: 0.0102)
+  - 电气设备: beta = -0.1505 (t-stat: -2.32, p-val: 0.0204)
+  - 白酒: beta = -0.0425 (t-stat: -1.99, p-val: 0.0465)
+  - 石油开采: beta = -0.0442 (t-stat: -2.05, p-val: 0.0409)
+  - 种植业: beta = -0.0506 (t-stat: -2.65, p-val: 0.0082)
+  - 证券: beta = -0.0998 (t-stat: -3.25, p-val: 0.0012)
+  - 路桥: beta = +0.0941 (t-stat: 2.78, p-val: 0.0055)
+  - 软件服务: beta = -0.0802 (t-stat: -2.02, p-val: 0.0434)
+  - 软饮料: beta = +0.0544 (t-stat: 2.22, p-val: 0.0266)
+  - 通信设备: beta = -0.0999 (t-stat: -2.44, p-val: 0.0149)
+  - 食品: beta = -0.1010 (t-stat: -2.01, p-val: 0.0453)
+
+==========================================================================
+                   Year-by-Year Strategy Performance                      
+==========================================================================
+Year   | Strategy   | CSI 1000   | Equal-Weight | Excess vs CSI | Excess vs EW
+--------------------------------------------------------------------------
+2022   | -9.42%     | -21.31%    | -5.30%       | +11.89%       | -4.12%      
+2023   | 7.09%      | -6.28%     | 3.87%        | +13.36%       | +3.21%      
+2024   | -10.29%    | 1.20%      | 3.34%        | -11.49%       | -13.63%     
+2025   | 41.77%     | 27.49%     | 32.48%       | +14.28%       | +9.28%      
+2026   | 4.71%      | 10.11%     | 9.14%        | -5.40%        | -4.43%      
+==========================================================================

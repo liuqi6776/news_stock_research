@@ -1,0 +1,66 @@
+{
+  "market_impact": 2,
+  "market_analysis": "市场整体偏利好，但需关注业绩风险。",
+  "sectors": [
+    {
+      "sector_name": "液冷",
+      "impact": 3,
+      "analysis": "业绩大增，板块利好"
+    },
+    {
+      "sector_name": "火电",
+      "impact": 3,
+      "analysis": "业绩大增，板块利好"
+    },
+    {
+      "sector_name": "地产",
+      "impact": 2,
+      "analysis": "不动产统一登记，板块利好"
+    },
+    {
+      "sector_name": "跨境电商",
+      "impact": 2,
+      "analysis": "政策支持，板块利好"
+    },
+    {
+      "sector_name": "新能源",
+      "impact": -3,
+      "analysis": "业绩不及预期，板块利空"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "曙光数创",
+      "stock_code": "300539",
+      "impact": 3,
+      "analysis": "业绩大增，个股利好"
+    },
+    {
+      "stock_name": "华能国际",
+      "stock_code": "600011",
+      "impact": 3,
+      "analysis": "业绩大增，个股利好"
+    },
+    {
+      "stock_name": "中交地产",
+      "stock_code": "600017",
+      "impact": 2,
+      "analysis": "不动产统一登记，个股利好"
+    },
+    {
+      "stock_name": "焦点科技",
+      "stock_code": "002315",
+      "impact": 2,
+      "analysis": "政策支持，个股利好"
+    },
+    {
+      "stock_name": "宁德时代",
+      "stock_code": "300750",
+      "impact": -3,
+      "analysis": "业绩不及预期，个股利空"
+    }
+  ],
+  "article_title": "4月26日 盘前热点事件关注",
+  "html_file": "2b8121qetq.html",
+  "article_date": "2023-04-26"
+}

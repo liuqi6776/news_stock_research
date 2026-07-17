@@ -1,0 +1,61 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受消息面影响较大，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "半导体",
+      "impact": 4,
+      "analysis": "CoWoP新方案有望推动半导体行业技术升级，利好相关企业。"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 3,
+      "analysis": "COPD药物授权交易利好相关医药企业。"
+    },
+    {
+      "sector_name": "乳业",
+      "impact": 3,
+      "analysis": "多胎政策实施有望刺激乳业需求，利好相关企业。"
+    },
+    {
+      "sector_name": "造纸",
+      "impact": 2,
+      "analysis": "造纸行业反内卷倡议和涨价预期利好相关企业。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "兴森科技",
+      "stock_code": "002436",
+      "impact": 4,
+      "analysis": "CoWoP新方案参与者，有望受益技术升级。"
+    },
+    {
+      "stock_name": "胜宏科技",
+      "stock_code": "002382",
+      "impact": 4,
+      "analysis": "PCB产品市场份额领先，有望受益技术升级。"
+    },
+    {
+      "stock_name": "恒瑞医药",
+      "stock_code": "600276",
+      "impact": 3,
+      "analysis": "COPD药物授权交易，有望获得丰厚收益。"
+    },
+    {
+      "stock_name": "骑士乳业",
+      "stock_code": "002061",
+      "impact": 3,
+      "analysis": "多胎政策实施，有望受益乳业需求增长。"
+    },
+    {
+      "stock_name": "凯恩股份",
+      "stock_code": "002012",
+      "impact": 2,
+      "analysis": "造纸行业反内卷倡议和涨价预期，有望受益。"
+    }
+  ],
+  "article_id": "7843a40cd0c748b49428ccd41c880a7e",
+  "article_date": "2025-07-28",
+  "article_title": "2025.7.28市场逻辑精选"
+}

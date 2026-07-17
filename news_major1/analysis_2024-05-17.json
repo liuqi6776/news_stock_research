@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受政策预期和行业动态影响较大。",
+  "sectors": [
+    {
+      "sector_name": "房地产",
+      "impact": 4,
+      "analysis": "政策预期利好，板块整体上涨"
+    },
+    {
+      "sector_name": "数字人民币",
+      "impact": 3,
+      "analysis": "香港推出数字人民币，相关个股受益"
+    },
+    {
+      "sector_name": "低空经济",
+      "impact": 3,
+      "analysis": "政策支持，板块有望增长"
+    },
+    {
+      "sector_name": "核污染防治",
+      "impact": 2,
+      "analysis": "福岛核污染水排放，相关个股受关注"
+    },
+    {
+      "sector_name": "食品",
+      "impact": 2,
+      "analysis": "康师傅方便面涨价，相关个股受影响"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "天地源",
+      "stock_code": "000715",
+      "impact": 4,
+      "analysis": "房地产政策预期利好"
+    },
+    {
+      "stock_name": "御银股份",
+      "stock_code": "002177",
+      "impact": 3,
+      "analysis": "数字人民币推广"
+    },
+    {
+      "stock_name": "新晨科技",
+      "stock_code": "300447",
+      "impact": 3,
+      "analysis": "低空经济政策支持"
+    },
+    {
+      "stock_name": "中电环保",
+      "stock_code": "600795",
+      "impact": 2,
+      "analysis": "福岛核污染水排放"
+    },
+    {
+      "stock_name": "克明食品",
+      "stock_code": "002661",
+      "impact": 2,
+      "analysis": "康师傅方便面涨价"
+    }
+  ],
+  "article_title": "5月17日盘前早报 热点事件关注",
+  "html_file": "g1xy3twkr2.html",
+  "article_date": "2024-05-17"
+}

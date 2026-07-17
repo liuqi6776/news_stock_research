@@ -1,0 +1,78 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，数字人民币和军工板块受关注。",
+  "sectors": [
+    {
+      "sector_name": "数字人民币产业链",
+      "impact": 4,
+      "analysis": "政策利好，推动数字人民币应用场景拓展。"
+    },
+    {
+      "sector_name": "军工板块",
+      "impact": 3,
+      "analysis": "订单审批落地，行业有望反转。"
+    },
+    {
+      "sector_name": "MR产业链",
+      "impact": 2,
+      "analysis": "苹果Vision Pro发布预期，产业链受益。"
+    },
+    {
+      "sector_name": "储能产业链",
+      "impact": 3,
+      "analysis": "特斯拉储能工厂启动，储能需求增长。"
+    },
+    {
+      "sector_name": "CAE软件",
+      "impact": 2,
+      "analysis": "Synopsys收购Ansys，行业整合预期。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "宇信科技",
+      "stock_code": "300702",
+      "impact": 4,
+      "analysis": "数字人民币产业链龙头，受益政策利好。"
+    },
+    {
+      "stock_name": "神州信息",
+      "stock_code": "000555",
+      "impact": 4,
+      "analysis": "数字人民币产业链龙头，受益政策利好。"
+    },
+    {
+      "stock_name": "菲利华",
+      "stock_code": "300464",
+      "impact": 3,
+      "analysis": "军工板块，受益行业反转。"
+    },
+    {
+      "stock_name": "北方导航",
+      "stock_code": "300357",
+      "impact": 3,
+      "analysis": "军工板块，受益行业反转。"
+    },
+    {
+      "stock_name": "立讯精密",
+      "stock_code": "002475",
+      "impact": 3,
+      "analysis": "MR产业链，受益苹果Vision Pro发布。"
+    },
+    {
+      "stock_name": "世运电路",
+      "stock_code": "002180",
+      "impact": 3,
+      "analysis": "储能产业链，受益特斯拉储能工厂启动。"
+    },
+    {
+      "stock_name": "索辰科技",
+      "stock_code": "300516",
+      "impact": 3,
+      "analysis": "CAE软件，受益行业整合预期。"
+    }
+  ],
+  "article_id": "03a5b75499b94016997acd823b473003",
+  "article_date": "2023-12-24",
+  "article_title": "2023.12.24市场逻辑精选"
+}

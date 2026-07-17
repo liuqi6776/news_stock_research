@@ -1,0 +1,40 @@
+{
+  "period": "202510",
+  "test_dates": [
+    "20251009",
+    "20251010",
+    "20251013",
+    "20251014",
+    "20251015",
+    "20251016",
+    "20251017",
+    "20251020",
+    "20251021",
+    "20251022",
+    "20251023",
+    "20251024",
+    "20251027",
+    "20251028",
+    "20251029",
+    "20251030",
+    "20251031"
+  ],
+  "model_path": "C:\\Users\\liuqi\\quant_system_v2\\research\\models\\model_monthly_v5_202510_20260428_090837.pkl",
+  "scaler_path": "C:\\Users\\liuqi\\quant_system_v2\\research\\models\\scaler_monthly_v5_202510_20260428_090837.pkl",
+  "feature_path": "C:\\Users\\liuqi\\quant_system_v2\\research\\models\\features_monthly_v5_202510_20260428_090837.json",
+  "feature_cols": [
+    "price_change",
+    "body_size",
+    "amplitude",
+    "hot_rank_pct",
+    "chip_concentration",
+    "winner_rate",
+    "circ_mv",
+    "turnover_rate",
+    "volume_ratio",
+    "news_market_impact",
+    "news_stock_impact"
+  ],
+  "n_stocks": 3182,
+  "n_days": 17
+}

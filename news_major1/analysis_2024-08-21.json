@@ -1,0 +1,78 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极因素影响",
+  "sectors": [
+    {
+      "sector_name": "车路云",
+      "impact": 4,
+      "analysis": "北京项目招标推进，板块受益"
+    },
+    {
+      "sector_name": "智能驾驶",
+      "impact": 3,
+      "analysis": "商业化进程加速，板块受益"
+    },
+    {
+      "sector_name": "新能源",
+      "impact": 3,
+      "analysis": "全固态电池重大突破，板块受益"
+    },
+    {
+      "sector_name": "游戏",
+      "impact": 3,
+      "analysis": "多游戏产品销售火爆，板块受益"
+    },
+    {
+      "sector_name": "乳制品",
+      "impact": 3,
+      "analysis": "国内乳制品发展，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "信息发展",
+      "stock_code": "300469",
+      "impact": 4,
+      "analysis": "车路云业务受益"
+    },
+    {
+      "stock_name": "高新兴",
+      "stock_code": "300098",
+      "impact": 4,
+      "analysis": "车路云业务受益"
+    },
+    {
+      "stock_name": "万集科技",
+      "stock_code": "300253",
+      "impact": 4,
+      "analysis": "车路云业务受益"
+    },
+    {
+      "stock_name": "鹏辉能源",
+      "stock_code": "300438",
+      "impact": 4,
+      "analysis": "全固态电池重大突破"
+    },
+    {
+      "stock_name": "雷柏科技",
+      "stock_code": "002545",
+      "impact": 4,
+      "analysis": "游戏产品销售火爆"
+    },
+    {
+      "stock_name": "三湘印象",
+      "stock_code": "600429",
+      "impact": 3,
+      "analysis": "山西演艺项目有望受益"
+    },
+    {
+      "stock_name": "皇氏集团",
+      "stock_code": "002329",
+      "impact": 3,
+      "analysis": "国内乳制品发展受益"
+    }
+  ],
+  "article_id": "ca5944e3c95048ddac5ee914b2ba71e5",
+  "article_date": "2024-08-21",
+  "article_title": "2024.8.21市场逻辑精选"
+}

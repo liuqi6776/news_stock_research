@@ -1,0 +1,62 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，关注智算和半导体板块。",
+  "sectors": [
+    {
+      "sector_name": "智算",
+      "impact": 4,
+      "analysis": "政策支持，需求旺盛，增长潜力大。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "国产替代加速，政策支持力度大。"
+    },
+    {
+      "sector_name": "工业互联网+AI",
+      "impact": 3,
+      "analysis": "政策推动，市场空间大。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "品高股份",
+      "stock_code": "300824",
+      "impact": 4,
+      "analysis": "主导销售江原科技GPU板卡，未来有望增资。"
+    },
+    {
+      "stock_name": "东芯股份",
+      "stock_code": "688019",
+      "impact": 4,
+      "analysis": "自研GPU芯片订单交付，有望拓展数据中心领域。"
+    },
+    {
+      "stock_name": "国风新材",
+      "stock_code": "600777",
+      "impact": 3,
+      "analysis": "光刻胶材料研制，有望实现进口替代。"
+    },
+    {
+      "stock_name": "华融化学",
+      "stock_code": "600291",
+      "impact": 3,
+      "analysis": "电子级盐酸、氢氧化钾产品已实现进口替代。"
+    },
+    {
+      "stock_name": "鼎捷数智",
+      "stock_code": "603019",
+      "impact": 3,
+      "analysis": "推动AI在企业应用场景落地，助力企业数智化转型。"
+    },
+    {
+      "stock_name": "酷特智能",
+      "stock_code": "002691",
+      "impact": 3,
+      "analysis": "打造柔性生产体系，部署AI操作系统。"
+    }
+  ],
+  "article_id": "fd4a31983c0b4521bc903eb44d4240a7",
+  "article_date": "2026-01-07",
+  "article_title": "2026.1.7市场逻辑精选"
+}

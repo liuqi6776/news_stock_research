@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个行业迎来政策支持或技术突破。",
+  "sectors": [
+    {
+      "sector_name": "人工智能",
+      "impact": 4,
+      "analysis": "AIGC 技术发展，带动相关产业链增长。"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "EVA 光伏料提价，行业盈利能力提升。"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 2,
+      "analysis": "首套房贷利率下调，刺激购房需求。"
+    },
+    {
+      "sector_name": "降解塑料",
+      "impact": 3,
+      "analysis": "生物基塑料国家标准实施，行业迎来发展机遇。"
+    },
+    {
+      "sector_name": "智能车载光",
+      "impact": 3,
+      "analysis": "智能车载光产业元年开启，相关企业受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "汉王科技",
+      "stock_code": "002362",
+      "impact": 4,
+      "analysis": "AIGC 技术发展，公司业务有望增长。"
+    },
+    {
+      "stock_name": "联泓新科",
+      "stock_code": "603603",
+      "impact": 3,
+      "analysis": "EVA 光伏料提价，公司盈利能力提升。"
+    },
+    {
+      "stock_name": "中交地产",
+      "stock_code": "600018",
+      "impact": 2,
+      "analysis": "首套房贷利率下调，公司业务有望增长。"
+    },
+    {
+      "stock_name": "丹化科技",
+      "stock_code": "600844",
+      "impact": 3,
+      "analysis": "生物基塑料国家标准实施，公司业务有望增长。"
+    },
+    {
+      "stock_name": "佛山照明",
+      "stock_code": "000541",
+      "impact": 3,
+      "analysis": "智能车载光产业元年开启，公司业务有望增长。"
+    }
+  ],
+  "article_title": "2月1日盘前早参 热点事件关注",
+  "html_file": "755ldqunuw.html",
+  "article_date": "2023-02-01"
+}

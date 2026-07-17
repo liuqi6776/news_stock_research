@@ -1,0 +1,171 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极影响。",
+  "sectors": [
+    {
+      "sector_name": "操作系统",
+      "impact": 4,
+      "analysis": "华为发布操作系统，相关公司受益"
+    },
+    {
+      "sector_name": "量子科技",
+      "impact": 3,
+      "analysis": "量子算力出口，相关公司受关注"
+    },
+    {
+      "sector_name": "低空经济",
+      "impact": 4,
+      "analysis": "首个低空气象产业集群成形，相关公司受益"
+    },
+    {
+      "sector_name": "量子计算",
+      "impact": 3,
+      "analysis": "禾信仪器拟收购量子计算上游设备公司"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "赛力斯布局机器人业务，相关公司受关注"
+    },
+    {
+      "sector_name": "COC材料",
+      "impact": 3,
+      "analysis": "阿科力有望国内首家量产COC"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "铭科精技拟投建机器人项目"
+    },
+    {
+      "sector_name": "模拟芯片",
+      "impact": 3,
+      "analysis": "晶丰明源拟收购模拟芯片龙头企业"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "润和软件",
+      "stock_code": "300339",
+      "impact": 4,
+      "analysis": "华为发布操作系统，公司受益"
+    },
+    {
+      "stock_name": "诚迈科技",
+      "stock_code": "300598",
+      "impact": 4,
+      "analysis": "华为发布操作系统，公司受益"
+    },
+    {
+      "stock_name": "软通动力",
+      "stock_code": "300072",
+      "impact": 4,
+      "analysis": "华为发布操作系统，公司受益"
+    },
+    {
+      "stock_name": "任子行",
+      "stock_code": "300311",
+      "impact": 4,
+      "analysis": "华为发布操作系统，公司受益"
+    },
+    {
+      "stock_name": "科蓝软件",
+      "stock_code": "300138",
+      "impact": 4,
+      "analysis": "华为发布操作系统，公司受益"
+    },
+    {
+      "stock_name": "景嘉微",
+      "stock_code": "300474",
+      "impact": 4,
+      "analysis": "华为发布操作系统，公司受益"
+    },
+    {
+      "stock_name": "国盾量子",
+      "stock_code": "688027",
+      "impact": 3,
+      "analysis": "量子算力出口，公司受关注"
+    },
+    {
+      "stock_name": "科大国创",
+      "stock_code": "688016",
+      "impact": 3,
+      "analysis": "量子算力出口，公司受关注"
+    },
+    {
+      "stock_name": "神州信息",
+      "stock_code": "000555",
+      "impact": 3,
+      "analysis": "量子算力出口，公司受关注"
+    },
+    {
+      "stock_name": "复旦复华",
+      "stock_code": "600196",
+      "impact": 3,
+      "analysis": "量子算力出口，公司受关注"
+    },
+    {
+      "stock_name": "吉大正元",
+      "stock_code": "300378",
+      "impact": 3,
+      "analysis": "量子算力出口，公司受关注"
+    },
+    {
+      "stock_name": "纳睿雷达",
+      "stock_code": "300383",
+      "impact": 4,
+      "analysis": "低空气象产业集群成形，公司受益"
+    },
+    {
+      "stock_name": "四创电子",
+      "stock_code": "600970",
+      "impact": 3,
+      "analysis": "低空气象产业集群成形，公司受益"
+    },
+    {
+      "stock_name": "超图软件",
+      "stock_code": "300036",
+      "impact": 3,
+      "analysis": "低空气象产业集群成形，公司受益"
+    },
+    {
+      "stock_name": "招标股份",
+      "stock_code": "600383",
+      "impact": 3,
+      "analysis": "低空气象产业集群成形，公司受益"
+    },
+    {
+      "stock_name": "禾信仪器",
+      "stock_code": "300956",
+      "impact": 3,
+      "analysis": "拟收购量子计算上游设备公司"
+    },
+    {
+      "stock_name": "赛力斯",
+      "stock_code": "600489",
+      "impact": 3,
+      "analysis": "布局机器人业务，公司受关注"
+    },
+    {
+      "stock_name": "阿科力",
+      "stock_code": "603908",
+      "impact": 3,
+      "analysis": "有望国内首家量产COC"
+    },
+    {
+      "stock_name": "铭科精技",
+      "stock_code": "300595",
+      "impact": 3,
+      "analysis": "拟投建机器人项目"
+    },
+    {
+      "stock_name": "晶丰明源",
+      "stock_code": "300655",
+      "impact": 3,
+      "analysis": "拟收购模拟芯片龙头企业"
+    }
+  ],
+  "article_id": "b1ebd48fd7e94d1e9d14cfb79ef8fbc4",
+  "article_date": "2024-11-04",
+  "article_title": "2024.11.4市场逻辑精选"
+}

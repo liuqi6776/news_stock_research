@@ -1,0 +1,72 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好影响，关注AI相关板块。",
+  "sectors": [
+    {
+      "sector_name": "AI概念",
+      "impact": 4,
+      "analysis": "AI大模型迭代加速，相关产业链受益"
+    },
+    {
+      "sector_name": "云计算",
+      "impact": 3,
+      "analysis": "AI应用推动云计算需求增长"
+    },
+    {
+      "sector_name": "安防",
+      "impact": 2,
+      "analysis": "重大恐袭事件推动安防需求"
+    },
+    {
+      "sector_name": "影视",
+      "impact": 2,
+      "analysis": "AI影视应用加速落地"
+    },
+    {
+      "sector_name": "音乐",
+      "impact": 2,
+      "analysis": "AI音乐生成工具发展迅速"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "宝胜股份",
+      "stock_code": "600973",
+      "impact": 3,
+      "analysis": "服务器线缆产品销售增长"
+    },
+    {
+      "stock_name": "新华传媒",
+      "stock_code": "600635",
+      "impact": 3,
+      "analysis": "语料资源有望受益AI大模型"
+    },
+    {
+      "stock_name": "中文在线",
+      "stock_code": "300364",
+      "impact": 3,
+      "analysis": "AI大模型网络文学领域独家合作"
+    },
+    {
+      "stock_name": "盛天网络",
+      "stock_code": "300494",
+      "impact": 3,
+      "analysis": "AI音乐生成工具发展迅速"
+    },
+    {
+      "stock_name": "弘信电子",
+      "stock_code": "300082",
+      "impact": 3,
+      "analysis": "算力服务器订单增加"
+    },
+    {
+      "stock_name": "能科科技",
+      "stock_code": "300685",
+      "impact": 3,
+      "analysis": "AI大模型销售合同签订"
+    }
+  ],
+  "article_id": "62d67b75269b4534bad4de25a13d2928",
+  "article_date": "2024-03-24",
+  "article_title": "2024.3.24市场逻辑精选"
+}

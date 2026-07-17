@@ -1,0 +1,16 @@
+{
+  "date": "20260416",
+  "ts_filter": true,
+  "picks": [
+    {
+      "rank": 1,
+      "ts_code": "002328.SZ",
+      "prob": 0.4399,
+      "circ_mv_yi": 76.49,
+      "news_stock_impact": -1.0,
+      "ts_score": -0.1463,
+      "ret_1d": 0.0996,
+      "delta_winner_rate": 0.0
+    }
+  ]
+}

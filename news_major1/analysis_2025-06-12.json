@@ -1,0 +1,73 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受积极因素影响，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "区块链",
+      "impact": 4,
+      "analysis": "蚂蚁数科申请稳定币牌照，板块受益"
+    },
+    {
+      "sector_name": "数字货币",
+      "impact": 3,
+      "analysis": "稳定币发展推动，相关个股受益"
+    },
+    {
+      "sector_name": "体育产业",
+      "impact": 2,
+      "analysis": "川超联赛启动，相关公司受益"
+    },
+    {
+      "sector_name": "存储芯片",
+      "impact": 3,
+      "analysis": "美光扩大投资，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "元隆雅图",
+      "stock_code": "002878",
+      "impact": 3,
+      "analysis": "切入RWA领域，受益区块链发展"
+    },
+    {
+      "stock_name": "安妮股份",
+      "stock_code": "002235",
+      "impact": 3,
+      "analysis": "推动区块链中国标准演进，受益区块链发展"
+    },
+    {
+      "stock_name": "科蓝软件",
+      "stock_code": "300138",
+      "impact": 3,
+      "analysis": "研发移动互联网金融平台方案，受益区块链发展"
+    },
+    {
+      "stock_name": "川网传媒",
+      "stock_code": "300689",
+      "impact": 2,
+      "analysis": "参与川超联赛组织、宣传及转播工作"
+    },
+    {
+      "stock_name": "天府文旅",
+      "stock_code": "600965",
+      "impact": 2,
+      "analysis": "体育业务包括城市综合体建设与运营、体育赛事"
+    },
+    {
+      "stock_name": "德明利",
+      "stock_code": "300614",
+      "impact": 3,
+      "analysis": "布局固态硬盘/移动存储/嵌入式存储类产品"
+    },
+    {
+      "stock_name": "香农芯创",
+      "stock_code": "688012",
+      "impact": 3,
+      "analysis": "存储芯片分销商，深度绑定海力士"
+    }
+  ],
+  "article_id": "990210b0f31045c28f0fe94087e57d43",
+  "article_date": "2025-06-12",
+  "article_title": "2025.6.12市场逻辑精选"
+}

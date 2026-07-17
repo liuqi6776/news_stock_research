@@ -1,0 +1,130 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "苹果产业链",
+      "impact": 4,
+      "analysis": "苹果折叠屏项目进展，利好相关产业链个股。"
+    },
+    {
+      "sector_name": "自由贸易区",
+      "impact": 3,
+      "analysis": "自由贸易区政策利好相关板块。"
+    },
+    {
+      "sector_name": "电磁辐射抗扰",
+      "impact": 3,
+      "analysis": "首个网联车辆电磁辐射抗干扰ISO国际标准发布，利好相关个股。"
+    },
+    {
+      "sector_name": "生物制药",
+      "impact": 3,
+      "analysis": "长春高新治疗痛风性关节炎新药获批，利好公司。"
+    },
+    {
+      "sector_name": "覆铜板",
+      "impact": 3,
+      "analysis": "覆铜板行业涨价，利好相关个股。"
+    },
+    {
+      "sector_name": "商业航天",
+      "impact": 3,
+      "analysis": "商业航天政策利好相关个股。"
+    },
+    {
+      "sector_name": "电子铜箔",
+      "impact": 3,
+      "analysis": "电子铜箔头部企业布局新领域，利好公司。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "铂力特",
+      "stock_code": "300382",
+      "impact": 4,
+      "analysis": "折叠屏钛合金部件量产，受益苹果创新周期。"
+    },
+    {
+      "stock_name": "宜安科技",
+      "stock_code": "300374",
+      "impact": 4,
+      "analysis": "液态金属技术领先，有望成为折叠屏液态金属中轴独家方案商。"
+    },
+    {
+      "stock_name": "捷邦科技",
+      "stock_code": "002600",
+      "impact": 4,
+      "analysis": "蚀刻工艺延伸至折叠屏关键结构件，受益苹果精密减重与功能集成。"
+    },
+    {
+      "stock_name": "海马汽车",
+      "stock_code": "600732",
+      "impact": 3,
+      "analysis": "海南自贸港政策利好，推进氢燃料电池汽车示范运营。"
+    },
+    {
+      "stock_name": "神农种业",
+      "stock_code": "002457",
+      "impact": 3,
+      "analysis": "海南自贸港政策利好，深海经济领域重点推进。"
+    },
+    {
+      "stock_name": "南凌科技",
+      "stock_code": "300565",
+      "impact": 3,
+      "analysis": "海南自贸港政策利好，网络等领域实现自由流通全球对接。"
+    },
+    {
+      "stock_name": "隆扬电子",
+      "stock_code": "603090",
+      "impact": 3,
+      "analysis": "电磁屏蔽材料应用于新能源车中控系统和雷达模块。"
+    },
+    {
+      "stock_name": "中石科技",
+      "stock_code": "300684",
+      "impact": 3,
+      "analysis": "EMI屏蔽材料应用于新能源汽车和自动驾驶系统。"
+    },
+    {
+      "stock_name": "飞荣达",
+      "stock_code": "002826",
+      "impact": 3,
+      "analysis": "电磁屏蔽材料应用于车载通信模块和智能座舱系统。"
+    },
+    {
+      "stock_name": "长春高新",
+      "stock_code": "000661",
+      "impact": 3,
+      "analysis": "治疗痛风性关节炎新药获批，市场空间广阔。"
+    },
+    {
+      "stock_name": "朝阳科技",
+      "stock_code": "002981",
+      "impact": 3,
+      "analysis": "布局越南工厂，进入苹果供应链。"
+    },
+    {
+      "stock_name": "金安国纪",
+      "stock_code": "002636",
+      "impact": 3,
+      "analysis": "覆铜板行业涨价，玻纤布自产降低成本。"
+    },
+    {
+      "stock_name": "雷科防务",
+      "stock_code": "002413",
+      "impact": 3,
+      "analysis": "商业航天+存储芯片双驱动，卫星应用业务发展。"
+    },
+    {
+      "stock_name": "铜冠铜箔",
+      "stock_code": "002001",
+      "impact": 3,
+      "analysis": "布局HVLP、固态电池、高频高速铜箔等新领域。"
+    }
+  ],
+  "article_id": "242e41019e33418a84f11b518a3a974f",
+  "article_date": "2025-07-03",
+  "article_title": "2025.7.3市场逻辑精选"
+}

@@ -1,0 +1,62 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，人形机器人、CIS、5G模组等板块表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "机器人",
+      "impact": 4,
+      "analysis": "人形机器人技术突破，带动板块上涨。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "CIS行业龙头营收创新高，带动板块上涨。"
+    },
+    {
+      "sector_name": "通信设备",
+      "impact": 3,
+      "analysis": "5G模组需求旺盛，带动板块上涨。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "丰立智能",
+      "stock_code": "300610",
+      "impact": 4,
+      "analysis": "人形机器人精密减速器产品进入小批量生产。"
+    },
+    {
+      "stock_name": "兆威机电",
+      "stock_code": "002681",
+      "impact": 3,
+      "analysis": "精密行星减速器产品为主。"
+    },
+    {
+      "stock_name": "思特威",
+      "stock_code": "688555",
+      "impact": 3,
+      "analysis": "安防CIS芯片龙头，智能手机CIS产品快速增长。"
+    },
+    {
+      "stock_name": "翱捷科技",
+      "stock_code": "688382",
+      "impact": 3,
+      "analysis": "高性能5G蜂窝通信模组，客户涵盖人工智能头部企业。"
+    },
+    {
+      "stock_name": "纳睿雷达",
+      "stock_code": "688029",
+      "impact": 3,
+      "analysis": "拟收购天津希格玛微电子100%股权。"
+    },
+    {
+      "stock_name": "兆易创新",
+      "stock_code": "603986",
+      "impact": 3,
+      "analysis": "预计2024年业绩增长，NOR Flash市占率国内第二。"
+    }
+  ],
+  "article_id": "7cf6ab5138944b0cac9eb53242441514",
+  "article_date": "2025-01-21",
+  "article_title": "2025.1.21市场逻辑精选"
+}

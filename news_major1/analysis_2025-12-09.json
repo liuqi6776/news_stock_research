@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，关注算力、3D打印和太空散热相关板块。",
+  "sectors": [
+    {
+      "sector_name": "算力服务链",
+      "impact": 4,
+      "analysis": "H200芯片获批，利好算力服务链。"
+    },
+    {
+      "sector_name": "AIDC链",
+      "impact": 4,
+      "analysis": "H200芯片加速国内大模型训练，利好AIDC链。"
+    },
+    {
+      "sector_name": "服务器链",
+      "impact": 4,
+      "analysis": "H200芯片加速国内大模型训练，利好服务器链。"
+    },
+    {
+      "sector_name": "3D打印",
+      "impact": 3,
+      "analysis": "商业航天带来行业新增量，利好3D打印。"
+    },
+    {
+      "sector_name": "太空散热",
+      "impact": 3,
+      "analysis": "太空散热优势明显，利好太空散热相关公司。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "鸿博股份",
+      "stock_code": "000502",
+      "impact": 4,
+      "analysis": "英博数科采购DGX系列服务器和高端GPU芯片，利好公司。"
+    },
+    {
+      "stock_name": "宏景科技",
+      "stock_code": "300827",
+      "impact": 4,
+      "analysis": "签订B系列AI芯片算力服务订单，规模超100亿元，利好公司。"
+    },
+    {
+      "stock_name": "铂力特",
+      "stock_code": "300846",
+      "impact": 4,
+      "analysis": "国内金属3D打印设备龙头企业，深度参与星际荣耀JD-2液氧甲烷发动机的研制与批产，利好公司。"
+    },
+    {
+      "stock_name": "银邦股份",
+      "stock_code": "300806",
+      "impact": 4,
+      "analysis": "参股公司飞而康成为蓝箭航天自主研制的天鹊系列液氧甲烷发动机核心构件的关键供应商，利好公司。"
+    },
+    {
+      "stock_name": "上海沪工",
+      "stock_code": "601727",
+      "impact": 3,
+      "analysis": "子公司璈宇机生产服务电卫星载荷天线热控系统、微型卫星整星热控系统，利好公司。"
+    }
+  ],
+  "article_id": "5427bdb5403e4846b38ab36749fc54b9",
+  "article_date": "2025-12-09",
+  "article_title": "2025.12.9市场逻辑精选"
+}

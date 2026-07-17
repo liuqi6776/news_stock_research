@@ -1,0 +1,79 @@
+{
+  "market_impact": 4,
+  "market_analysis": "人工智能政策推动，市场情绪积极",
+  "sectors": [
+    {
+      "sector_name": "人工智能",
+      "impact": 4,
+      "analysis": "政策支持，行业前景广阔"
+    },
+    {
+      "sector_name": "智能终端",
+      "impact": 3,
+      "analysis": "智能终端普及率提升，市场潜力大"
+    },
+    {
+      "sector_name": "低空经济",
+      "impact": 3,
+      "analysis": "政策支持，市场空间大"
+    },
+    {
+      "sector_name": "服务贸易",
+      "impact": 2,
+      "analysis": "政策推动，服务贸易增长"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "能科科技",
+      "stock_code": "300685",
+      "impact": 4,
+      "analysis": "AI产品与服务业务快速增长"
+    },
+    {
+      "stock_name": "利欧股份",
+      "stock_code": "002528",
+      "impact": 3,
+      "analysis": "AI营销领域大模型布局"
+    },
+    {
+      "stock_name": "奋达科技",
+      "stock_code": "002681",
+      "impact": 3,
+      "analysis": "智能硬件领域合作伙伴关系"
+    },
+    {
+      "stock_name": "君逸数码",
+      "stock_code": "300725",
+      "impact": 3,
+      "analysis": "AI城市生命线大模型等创新产品"
+    },
+    {
+      "stock_name": "新晨科技",
+      "stock_code": "300692",
+      "impact": 3,
+      "analysis": "大数据、AI技术与空管技术融合"
+    },
+    {
+      "stock_name": "深城交",
+      "stock_code": "300695",
+      "impact": 3,
+      "analysis": "AI与具身智能低空经济产品"
+    },
+    {
+      "stock_name": "中国中免",
+      "stock_code": "601888",
+      "impact": 2,
+      "analysis": "免税店龙头，推动免税城发展"
+    },
+    {
+      "stock_name": "长白山",
+      "stock_code": "600209",
+      "impact": 2,
+      "analysis": "冰雪旅游龙头，打造体验业态"
+    }
+  ],
+  "article_id": "d32def971e104d349939bbbc852f9a8a",
+  "article_date": "2025-08-26",
+  "article_title": "2025.8.26市场逻辑精选"
+}

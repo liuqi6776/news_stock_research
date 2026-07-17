@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体情绪偏乐观，多个板块和个股受利好消息驱动。",
+  "sectors": [
+    {
+      "sector_name": "小米汽车",
+      "impact": 4,
+      "analysis": "小米汽车推出预期强烈，相关产业链受益"
+    },
+    {
+      "sector_name": "算力",
+      "impact": 3,
+      "analysis": "算力基础设施行动计划发布，行业前景看好"
+    },
+    {
+      "sector_name": "半导体设备",
+      "impact": 3,
+      "analysis": "国产化加速，全球份额持续上升"
+    },
+    {
+      "sector_name": "钠离子电池",
+      "impact": 3,
+      "analysis": "产业化进程加速，市场前景广阔"
+    },
+    {
+      "sector_name": "半导体设备",
+      "impact": 2,
+      "analysis": "韩国设备获美国同意，行业利好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "小米汽车",
+      "stock_code": "00000",
+      "impact": 4,
+      "analysis": "首款车型推出预期强烈，相关产业链受益"
+    },
+    {
+      "stock_name": "云赛智联",
+      "stock_code": "600019",
+      "impact": 3,
+      "analysis": "算力基础设施行动计划发布，公司受益"
+    },
+    {
+      "stock_name": "盛美上海",
+      "stock_code": "603259",
+      "impact": 3,
+      "analysis": "国产化加速，公司业绩有望提升"
+    },
+    {
+      "stock_name": "宁德时代",
+      "stock_code": "300750",
+      "impact": 3,
+      "analysis": "钠离子电池产业化加速，公司有望受益"
+    },
+    {
+      "stock_name": "亚威股份",
+      "stock_code": "002540",
+      "impact": 2,
+      "analysis": "韩国设备获美国同意，公司有望受益"
+    }
+  ],
+  "article_id": "471f0328424e44a18a31980bfef2a949",
+  "article_date": "2023-10-09",
+  "article_title": "2023.10.9市场逻辑精选"
+}

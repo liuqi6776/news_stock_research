@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股受利好消息影响。",
+  "sectors": [
+    {
+      "sector_name": "AI芯片",
+      "impact": 4,
+      "analysis": "英伟达财报超预期，带动相关个股上涨。"
+    },
+    {
+      "sector_name": "算力基础设施",
+      "impact": 3,
+      "analysis": "多家基金上报算力基础设施ETF，板块受关注。"
+    },
+    {
+      "sector_name": "安全",
+      "impact": 3,
+      "analysis": "《商用密码管理条例》实施，相关个股受益。"
+    },
+    {
+      "sector_name": "实验猴",
+      "impact": 2,
+      "analysis": "实验猴价格上涨，相关个股受关注。"
+    },
+    {
+      "sector_name": "彩票",
+      "impact": 2,
+      "analysis": "彩票销售增长，相关个股受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "海光信息",
+      "stock_code": "600703",
+      "impact": 4,
+      "analysis": "英伟达财报超预期，带动AI芯片相关个股上涨。"
+    },
+    {
+      "stock_name": "光库科技",
+      "stock_code": "300679",
+      "impact": 3,
+      "analysis": "多家基金上报算力基础设施ETF，相关个股受益。"
+    },
+    {
+      "stock_name": "电科网安",
+      "stock_code": "688023",
+      "impact": 3,
+      "analysis": "《商用密码管理条例》实施，相关个股受益。"
+    },
+    {
+      "stock_name": "昭衍新药",
+      "stock_code": "300358",
+      "impact": 2,
+      "analysis": "实验猴价格上涨，相关个股受益。"
+    },
+    {
+      "stock_name": "鸿博股份",
+      "stock_code": "002229",
+      "impact": 2,
+      "analysis": "彩票销售增长，相关个股受益。"
+    }
+  ],
+  "article_title": "5月25日 盘前热点事件关注",
+  "html_file": "8ymdemsvns.html",
+  "article_date": "2023-05-25"
+}

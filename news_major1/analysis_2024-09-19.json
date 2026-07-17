@@ -1,0 +1,62 @@
+{
+  "market_impact": 3,
+  "market_analysis": "低空经济和北斗概念受政策支持，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "低空经济",
+      "impact": 4,
+      "analysis": "多地低空经济大会召开，产业空间加速规划，利好相关个股。"
+    },
+    {
+      "sector_name": "北斗",
+      "impact": 3,
+      "analysis": "北斗多模换单模保障通信信号安全，政策支持力度大，利好相关个股。"
+    },
+    {
+      "sector_name": "国企改革",
+      "impact": 2,
+      "analysis": "国企改革重点任务政策解读，市场预期改革深化，利好相关个股。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "声讯股份",
+      "stock_code": "300084",
+      "impact": 4,
+      "analysis": "低空经济大会召开，公司为相关个股。"
+    },
+    {
+      "stock_name": "海特高新",
+      "stock_code": "002023",
+      "impact": 4,
+      "analysis": "低空经济大会召开，公司为相关个股。"
+    },
+    {
+      "stock_name": "电科芯片",
+      "stock_code": "600949",
+      "impact": 3,
+      "analysis": "北斗多模换单模保障通信信号安全，公司为相关个股。"
+    },
+    {
+      "stock_name": "海能达",
+      "stock_code": "002583",
+      "impact": 3,
+      "analysis": "北斗多模换单模保障通信信号安全，公司为相关个股。"
+    },
+    {
+      "stock_name": "诚邦股份",
+      "stock_code": "300848",
+      "impact": 3,
+      "analysis": "拟收购存储模组公司，公司业绩有望提升。"
+    },
+    {
+      "stock_name": "贝达药业",
+      "stock_code": "300558",
+      "impact": 3,
+      "analysis": "签重组人血清白蛋白注射液经销协议，市场空间广阔。"
+    }
+  ],
+  "article_id": "879ebc79a72440ac8e9276e4e807d67c",
+  "article_date": "2024-09-19",
+  "article_title": "2024.9.19市场逻辑精选"
+}

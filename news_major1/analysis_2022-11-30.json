@@ -1,0 +1,135 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场预期向好，政策支持力度加大。",
+  "sectors": [
+    {
+      "sector_name": "消费零售",
+      "impact": 3,
+      "analysis": "消费复苏预期提升板块表现。"
+    },
+    {
+      "sector_name": "旅游",
+      "impact": 3,
+      "analysis": "疫情管控放松，旅游行业受益。"
+    },
+    {
+      "sector_name": "预制菜",
+      "impact": 3,
+      "analysis": "消费需求增加，预制菜行业受益。"
+    },
+    {
+      "sector_name": "酒店",
+      "impact": 3,
+      "analysis": "旅游放松，酒店行业受益。"
+    },
+    {
+      "sector_name": "免税",
+      "impact": 3,
+      "analysis": "消费放开，免税行业受益。"
+    },
+    {
+      "sector_name": "抗原检测",
+      "impact": 3,
+      "analysis": "核酸检测减少，抗原检测需求增加。"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 3,
+      "analysis": "新冠治疗药物研发进展，医药行业受益。"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 2,
+      "analysis": "政策支持，房地产板块有望回暖。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "徐家汇",
+      "stock_code": "000920",
+      "impact": 3,
+      "analysis": "上海多地解除管控，消费复苏预期提升。"
+    },
+    {
+      "stock_name": "广百股份",
+      "stock_code": "002187",
+      "impact": 3,
+      "analysis": "广州多区解除管控，消费复苏预期提升。"
+    },
+    {
+      "stock_name": "峨眉山A",
+      "stock_code": "000888",
+      "impact": 3,
+      "analysis": "旅游放松，旅游行业受益。"
+    },
+    {
+      "stock_name": "桂林旅游",
+      "stock_code": "600200",
+      "impact": 3,
+      "analysis": "旅游放松，旅游行业受益。"
+    },
+    {
+      "stock_name": "九华旅游",
+      "stock_code": "600885",
+      "impact": 3,
+      "analysis": "旅游放松，旅游行业受益。"
+    },
+    {
+      "stock_name": "天目湖",
+      "stock_code": "300115",
+      "impact": 3,
+      "analysis": "旅游放松，旅游行业受益。"
+    },
+    {
+      "stock_name": "众信转债",
+      "stock_code": "002707",
+      "impact": 3,
+      "analysis": "旅游放松，旅游行业受益。"
+    },
+    {
+      "stock_name": "蓝帆医疗",
+      "stock_code": "002382",
+      "impact": 3,
+      "analysis": "冠脉支架集采中标价格提升，利润有望改善。"
+    },
+    {
+      "stock_name": "赛诺医疗",
+      "stock_code": "300458",
+      "impact": 3,
+      "analysis": "冠脉支架集采中标价格提升，利润有望改善。"
+    },
+    {
+      "stock_name": "乐普医疗",
+      "stock_code": "300003",
+      "impact": 3,
+      "analysis": "冠脉支架集采中标价格提升，利润有望改善。"
+    },
+    {
+      "stock_name": "悦康药业",
+      "stock_code": "002817",
+      "impact": 3,
+      "analysis": "新冠治疗药物研发进展，医药行业受益。"
+    },
+    {
+      "stock_name": "华润双鹤",
+      "stock_code": "600062",
+      "impact": 3,
+      "analysis": "新冠治疗药物研发进展，医药行业受益。"
+    },
+    {
+      "stock_name": "香雪制药",
+      "stock_code": "300147",
+      "impact": 3,
+      "analysis": "新冠治疗药物研发进展，医药行业受益。"
+    },
+    {
+      "stock_name": "大名城",
+      "stock_code": "600732",
+      "impact": 2,
+      "analysis": "政策支持，房地产板块有望回暖。"
+    }
+  ],
+  "article_id": "af7a6bc99fb547edb8617b30f8bc6da0",
+  "article_date": "2022-11-30",
+  "article_title": "2022.11.30市场逻辑精选"
+}

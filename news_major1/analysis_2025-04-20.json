@@ -1,0 +1,73 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，5G和车联网板块受关注。",
+  "sectors": [
+    {
+      "sector_name": "5G",
+      "impact": 4,
+      "analysis": "德国放开华为参与5G建设，利好5G行业。"
+    },
+    {
+      "sector_name": "车联网",
+      "impact": 3,
+      "analysis": "ecall应用试点，利好车联网行业。"
+    },
+    {
+      "sector_name": "充电桩",
+      "impact": 3,
+      "analysis": "华为兆瓦超充新品发布，利好充电桩行业。"
+    },
+    {
+      "sector_name": "低空经济",
+      "impact": 2,
+      "analysis": "低空经济发展工作会议召开，利好低空经济板块。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "武汉凡谷",
+      "stock_code": "002151",
+      "impact": 4,
+      "analysis": "华为滤波器供应商，5G-A、6G技术储备。"
+    },
+    {
+      "stock_name": "华脉科技",
+      "stock_code": "600657",
+      "impact": 3,
+      "analysis": "积极参与海外市场5G通信建设。"
+    },
+    {
+      "stock_name": "硕贝德",
+      "stock_code": "300322",
+      "impact": 3,
+      "analysis": "国产5G基站振子核心供应商，5G-A技术储备。"
+    },
+    {
+      "stock_name": "慧翰股份",
+      "stock_code": "300596",
+      "impact": 3,
+      "analysis": "ecall认证供应商，产品覆盖主流车企。"
+    },
+    {
+      "stock_name": "和顺石油",
+      "stock_code": "600893",
+      "impact": 3,
+      "analysis": "与华为合作推动超快充服务网络建设。"
+    },
+    {
+      "stock_name": "宗申动力",
+      "stock_code": "001696",
+      "impact": 2,
+      "analysis": "子公司宗申航发提供航空发动机。"
+    },
+    {
+      "stock_name": "中信海直",
+      "stock_code": "000099",
+      "impact": 2,
+      "analysis": "业务覆盖低空游览和无人机等新业态。"
+    }
+  ],
+  "article_id": "ec1dbaf7eb2e4279bdbeb5e6b356aac3",
+  "article_date": "2025-04-20",
+  "article_title": "2025.4.20市场逻辑精选"
+}

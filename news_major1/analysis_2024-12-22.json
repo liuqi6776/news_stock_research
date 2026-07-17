@@ -1,0 +1,90 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股受积极因素影响。",
+  "sectors": [
+    {
+      "sector_name": "食品饮料",
+      "impact": 3,
+      "analysis": "年货节旺季，食品饮料需求增加。"
+    },
+    {
+      "sector_name": "智能设备",
+      "impact": 3,
+      "analysis": "AI+AR眼镜技术发展，智能设备需求提升。"
+    },
+    {
+      "sector_name": "新材料",
+      "impact": 3,
+      "analysis": "醋酸纤维材料应用前景广阔。"
+    },
+    {
+      "sector_name": "物流运输",
+      "impact": 3,
+      "analysis": "中吉乌铁路建设，物流运输需求增加。"
+    },
+    {
+      "sector_name": "芯片制造",
+      "impact": 3,
+      "analysis": "AI芯片和光波导技术发展，芯片制造需求增加。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "好想你",
+      "stock_code": "002582",
+      "impact": 3,
+      "analysis": "年货节旺季，产品需求增加。"
+    },
+    {
+      "stock_name": "瑞纳智能",
+      "stock_code": "300896",
+      "impact": 3,
+      "analysis": "自主研发磁悬浮离心热泵机组，技术领先。"
+    },
+    {
+      "stock_name": "宜宾纸业",
+      "stock_code": "603936",
+      "impact": 3,
+      "analysis": "收购醋纤公司，拓展新材料业务。"
+    },
+    {
+      "stock_name": "汇纳科技",
+      "stock_code": "300606",
+      "impact": 3,
+      "analysis": "微信小店送礼物功能，提升品牌知名度。"
+    },
+    {
+      "stock_name": "淳中科技",
+      "stock_code": "300737",
+      "impact": 3,
+      "analysis": "子公司获得芯片散热封测产品专利。"
+    },
+    {
+      "stock_name": "卧龙电驱",
+      "stock_code": "600580",
+      "impact": 3,
+      "analysis": "与仿生机器人下游客户合作，订单增加。"
+    },
+    {
+      "stock_name": "星宸科技",
+      "stock_code": "688016",
+      "impact": 3,
+      "analysis": "发布AI Soc芯片，产品布局完善。"
+    },
+    {
+      "stock_name": "比依股份",
+      "stock_code": "300380",
+      "impact": 3,
+      "analysis": "投资AR眼镜光波导模组供应商，技术领先。"
+    },
+    {
+      "stock_name": "豪鹏科技",
+      "stock_code": "002595",
+      "impact": 3,
+      "analysis": "合作研发高能量密度电池，技术领先。"
+    }
+  ],
+  "article_id": "85551e8032be4bc78dc35c9e716979a1",
+  "article_date": "2024-12-22",
+  "article_title": "2024.12.22市场逻辑精选"
+}

@@ -1,0 +1,68 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好影响，关注新材料和人工智能板块。",
+  "sectors": [
+    {
+      "sector_name": "机器人新材料",
+      "impact": 4,
+      "analysis": "人形机器人产业化加速，新材料应用前景广阔。"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "AI迎来爆发式发展，上海AI产业规模突破4000亿元。"
+    },
+    {
+      "sector_name": "豆粕减量替代",
+      "impact": 2,
+      "analysis": "农业农村部发布节粮行动方案，豆粕减量替代空间大。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "聚赛龙",
+      "stock_code": "002617",
+      "impact": 4,
+      "analysis": "人形机器人改性Peek技术经验丰富。"
+    },
+    {
+      "stock_name": "云赛智联",
+      "stock_code": "600745",
+      "impact": 3,
+      "analysis": "上海国资委旗下数据中心运营商，AI平台接入Deepseek系列模型。"
+    },
+    {
+      "stock_name": "路德环境",
+      "stock_code": "603703",
+      "impact": 3,
+      "analysis": "主营白酒糟生物发酵饲料业务，可替代豆粕和玉米。"
+    },
+    {
+      "stock_name": "塞力医疗",
+      "stock_code": "300258",
+      "impact": 3,
+      "analysis": "华为AI医疗合作方，聚焦精神障碍精准诊疗领域。"
+    },
+    {
+      "stock_name": "新坐标",
+      "stock_code": "603012",
+      "impact": 3,
+      "analysis": "汽配冷锻业务增长，切入机器人滚珠丝杠领域。"
+    },
+    {
+      "stock_name": "雅运股份",
+      "stock_code": "002401",
+      "impact": 3,
+      "analysis": "受益活性染料价格上涨，产能预计1.5-2万吨。"
+    },
+    {
+      "stock_name": "东珠生态",
+      "stock_code": "300377",
+      "impact": 2,
+      "analysis": "参股迪洛斯，布局AI应用。"
+    }
+  ],
+  "article_id": "2d9643f3b614458d8ddf08756914793c",
+  "article_date": "2025-04-29",
+  "article_title": "2025.4.29市场逻辑精选"
+}

@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "skills": {
+    "backtest": {
+      "source": "marketcalls/vectorbt-backtesting-skills",
+      "sourceType": "github",
+      "computedHash": "90651dfebe20d3afcd4a2017fad7cfd64346c9ff8f16e32e4e4996c1dc905fef"
+    },
+    "backtesting-frameworks": {
+      "source": "wshobson/agents",
+      "sourceType": "github",
+      "computedHash": "1cd4ff5bb3666e044cec839c0923ec2b9801f9c902c082452fa78657e6dc87dc"
+    },
+    "macro-regime-detector": {
+      "source": "tradermonty/claude-trading-skills",
+      "sourceType": "github",
+      "computedHash": "330c6981239c634d2b03e48630ac4cc05b51db7ce7b3f098fa8d84a100e8e4f9"
+    },
+    "market-regimes": {
+      "source": "0xhubed/agent-trading-arena",
+      "sourceType": "github",
+      "computedHash": "7754e13e1e948cca5d7abec6316e30eb47fac3c2863ebf28a350713e489ee98d"
+    },
+    "quant-analyst": {
+      "source": "404kidwiz/claude-supercode-skills",
+      "sourceType": "github",
+      "computedHash": "e9c30cd398c42dd05dddb2c8bac4b70d0a38f4ae10da67fc4fe222d1483fb740"
+    },
+    "quantitative-research": {
+      "source": "omer-metin/skills-for-antigravity",
+      "sourceType": "github",
+      "computedHash": "843f83d7b590d39d94f018344675e28cd46ac8e7a842100b01dd05ab90d79f57"
+    },
+    "risk-adjusted-return-optimizer": {
+      "source": "geeksfino/finskills",
+      "sourceType": "github",
+      "computedHash": "95580df3307968f8b6ba84f4d5358aa1500c531ab7ff192749dbb67832b0b77d"
+    },
+    "risk-management": {
+      "source": "0xhubed/agent-trading-arena",
+      "sourceType": "github",
+      "computedHash": "e1056f0cef92648dd44caa5b5975a47afb2c7037288a16d68e4d998847e2b0c2"
+    },
+    "tradingview-quantitative": {
+      "source": "hypier/tradingview-quantitative-skills",
+      "sourceType": "github",
+      "computedHash": "770c7cb4ae2b2b76e7bb35e797c6ac52e01fec7bf57d6dd7e5c8e9de4f4d36e2"
+    }
+  }
+}

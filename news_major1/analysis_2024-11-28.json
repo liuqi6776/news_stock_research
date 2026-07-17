@@ -1,0 +1,110 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息驱动，但需关注政策变动。",
+  "sectors": [
+    {
+      "sector_name": "机器人",
+      "impact": 4,
+      "analysis": "特斯拉机器人团队更新，相关公司受益"
+    },
+    {
+      "sector_name": "羽绒服",
+      "impact": -2,
+      "analysis": "假冒伪劣整治，相关公司受影响"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "美科技大厂囤积零部件，行业需求增加"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 3,
+      "analysis": "国家医保谈判结果公布，相关公司受益"
+    },
+    {
+      "sector_name": "星链",
+      "impact": 2,
+      "analysis": "中国星网集团星链发射，相关公司受益"
+    },
+    {
+      "sector_name": "超市",
+      "impact": 2,
+      "analysis": "永辉超市自主调改店计划，相关公司受益"
+    },
+    {
+      "sector_name": "智能设备",
+      "impact": 3,
+      "analysis": "酷特智能与华为合作，相关公司受益"
+    },
+    {
+      "sector_name": "玻璃基板",
+      "impact": 4,
+      "analysis": "量产线运转，行业加速发展"
+    },
+    {
+      "sector_name": "生物航煤SAF",
+      "impact": 4,
+      "analysis": "退税取消，政策加持，需求爆发"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "兆威机电",
+      "stock_code": "002681",
+      "impact": 4,
+      "analysis": "特斯拉机器人团队更新，相关公司受益"
+    },
+    {
+      "stock_name": "华英农业",
+      "stock_code": "002321",
+      "impact": -2,
+      "analysis": "假冒伪劣整治，相关公司受影响"
+    },
+    {
+      "stock_name": "惠普",
+      "stock_code": "HPQ",
+      "impact": 3,
+      "analysis": "美科技大厂囤积零部件，行业需求增加"
+    },
+    {
+      "stock_name": "戴尔",
+      "stock_code": "DELL",
+      "impact": 3,
+      "analysis": "美科技大厂囤积零部件，行业需求增加"
+    },
+    {
+      "stock_name": "一品红",
+      "stock_code": "600383",
+      "impact": 3,
+      "analysis": "国家医保谈判结果公布，相关公司受益"
+    },
+    {
+      "stock_name": "中国卫通",
+      "stock_code": "600118",
+      "impact": 2,
+      "analysis": "中国星网集团星链发射，相关公司受益"
+    },
+    {
+      "stock_name": "永辉超市",
+      "stock_code": "601933",
+      "impact": 2,
+      "analysis": "永辉超市自主调改店计划，相关公司受益"
+    },
+    {
+      "stock_name": "沃格光电",
+      "stock_code": "603801",
+      "impact": 4,
+      "analysis": "量产线运转，行业加速发展"
+    },
+    {
+      "stock_name": "卓越新能",
+      "stock_code": "300846",
+      "impact": 4,
+      "analysis": "退税取消，政策加持，需求爆发"
+    }
+  ],
+  "article_id": "a89c216bf5f64563af06af6b469638cc",
+  "article_date": "2024-11-28",
+  "article_title": "2024.11.28市场逻辑精选"
+}

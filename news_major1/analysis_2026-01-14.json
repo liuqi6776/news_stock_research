@@ -1,0 +1,61 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "AI及云计算",
+      "impact": 4,
+      "analysis": "AI云市场增长预期强烈，相关个股受益"
+    },
+    {
+      "sector_name": "电商及零售",
+      "impact": 3,
+      "analysis": "阿里生态布局深化，相关个股有望受益"
+    },
+    {
+      "sector_name": "传媒",
+      "impact": 2,
+      "analysis": "官媒语料价值重估，相关个股或受益"
+    },
+    {
+      "sector_name": "高端制造",
+      "impact": 3,
+      "analysis": "高端玻纤布需求增长，相关个股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "石基信息",
+      "stock_code": "002153",
+      "impact": 3,
+      "analysis": "与阿里云战略合作，AI应用场景丰富"
+    },
+    {
+      "stock_name": "用友网络",
+      "stock_code": "600588",
+      "impact": 3,
+      "analysis": "AI技术赋能商旅管理，与阿里商旅合作"
+    },
+    {
+      "stock_name": "数据港",
+      "stock_code": "600845",
+      "impact": 3,
+      "analysis": "阿里云核心客户，数据中心业务稳定"
+    },
+    {
+      "stock_name": "人民网",
+      "stock_code": "603000",
+      "impact": 2,
+      "analysis": "官媒语料价值重估，AI产品布局领先"
+    },
+    {
+      "stock_name": "菲利华",
+      "stock_code": "002461",
+      "impact": 3,
+      "analysis": "Q布全产业链生产能力，下游客户优质"
+    }
+  ],
+  "article_id": "861ca1434d3e4bf0a36fdb4413a85c26",
+  "article_date": "2026-01-14",
+  "article_title": "2026.1.14市场逻辑精选"
+}

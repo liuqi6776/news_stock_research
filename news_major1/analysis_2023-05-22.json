@@ -1,0 +1,77 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件影响，市场情绪波动较大",
+  "sectors": [
+    {
+      "sector_name": "存储芯片国产替代",
+      "impact": 4,
+      "analysis": "美光事件利好国产替代"
+    },
+    {
+      "sector_name": "白糖",
+      "impact": 3,
+      "analysis": "白糖价格上涨，利好相关企业"
+    },
+    {
+      "sector_name": "虚拟电厂",
+      "impact": 3,
+      "analysis": "政策支持，行业前景看好"
+    },
+    {
+      "sector_name": "智能眼镜",
+      "impact": 2,
+      "analysis": "技术升级，关注相关企业"
+    },
+    {
+      "sector_name": "养老",
+      "impact": 2,
+      "analysis": "政策支持，行业前景看好"
+    },
+    {
+      "sector_name": "统一大市场",
+      "impact": 3,
+      "analysis": "政策支持，利好相关企业"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "德明利",
+      "stock_code": "300335",
+      "impact": 4,
+      "analysis": "存储芯片国产替代受益"
+    },
+    {
+      "stock_name": "南宁糖业",
+      "stock_code": "000911",
+      "impact": 3,
+      "analysis": "白糖价格上涨受益"
+    },
+    {
+      "stock_name": "万胜智能",
+      "stock_code": "603733",
+      "impact": 3,
+      "analysis": "虚拟电厂概念受益"
+    },
+    {
+      "stock_name": "漫步者",
+      "stock_code": "002351",
+      "impact": 2,
+      "analysis": "智能眼镜概念受益"
+    },
+    {
+      "stock_name": "悦心健康",
+      "stock_code": "002162",
+      "impact": 2,
+      "analysis": "养老服务概念受益"
+    },
+    {
+      "stock_name": "三羊马",
+      "stock_code": "603717",
+      "impact": 3,
+      "analysis": "统一大市场概念受益"
+    }
+  ],
+  "article_title": "5月22日 盘前热点事件关注",
+  "html_file": "dwg6zutpuy.html",
+  "article_date": "2023-05-22"
+}

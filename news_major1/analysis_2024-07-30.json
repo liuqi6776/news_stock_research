@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注政策变化。",
+  "sectors": [
+    {
+      "sector_name": "新能源汽车",
+      "impact": 4,
+      "analysis": "新能源汽车补贴政策利好，板块上涨"
+    },
+    {
+      "sector_name": "旅游",
+      "impact": 3,
+      "analysis": "海南免签政策推动旅游板块"
+    },
+    {
+      "sector_name": "无人机",
+      "impact": 3,
+      "analysis": "无人岛物流航线开通，无人机板块受益"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 2,
+      "analysis": "医药板块受政策支持，业绩复苏"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "奇瑞汽车",
+      "stock_code": "000733",
+      "impact": 4,
+      "analysis": "新能源汽车补贴政策利好"
+    },
+    {
+      "stock_name": "海南机场",
+      "stock_code": "600023",
+      "impact": 3,
+      "analysis": "海南免签政策推动"
+    },
+    {
+      "stock_name": "航宇微",
+      "stock_code": "688016",
+      "impact": 3,
+      "analysis": "高光谱卫星数据服务能力提升"
+    },
+    {
+      "stock_name": "药明康德",
+      "stock_code": "603259",
+      "impact": 2,
+      "analysis": "在手订单增长，业绩复苏"
+    }
+  ],
+  "article_id": "8df16a0b27b74041bbfac0dff1bfcc40",
+  "article_date": "2024-07-30",
+  "article_title": "2024.7.30市场逻辑精选"
+}

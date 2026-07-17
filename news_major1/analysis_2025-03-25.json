@@ -1,0 +1,90 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "磷化工",
+      "impact": 4,
+      "analysis": "原料成本上升推动价格上涨，板块个股普遍上涨。"
+    },
+    {
+      "sector_name": "兽药原料",
+      "impact": 3,
+      "analysis": "兽药原料价格上涨，行业前景看好。"
+    },
+    {
+      "sector_name": "人形机器人",
+      "impact": 3,
+      "analysis": "人形机器人应用解决方案合作，相关个股受关注。"
+    },
+    {
+      "sector_name": "溴素",
+      "impact": 4,
+      "analysis": "上游涨价，进口成本提升，价格大幅上涨。"
+    },
+    {
+      "sector_name": "化工",
+      "impact": 3,
+      "analysis": "壳牌可能关闭欧洲分支机构，相关产品需求可能增加。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "云天化",
+      "stock_code": "600630",
+      "impact": 4,
+      "analysis": "磷化工板块个股，受原料成本上升利好。"
+    },
+    {
+      "stock_name": "兴发集团",
+      "stock_code": "600141",
+      "impact": 4,
+      "analysis": "磷化工板块个股，受原料成本上升利好。"
+    },
+    {
+      "stock_name": "湖北宜化",
+      "stock_code": "000422",
+      "impact": 4,
+      "analysis": "磷化工板块个股，受原料成本上升利好。"
+    },
+    {
+      "stock_name": "川金诺",
+      "stock_code": "300387",
+      "impact": 4,
+      "analysis": "磷化工板块个股，受原料成本上升利好。"
+    },
+    {
+      "stock_name": "回盛生物",
+      "stock_code": "300414",
+      "impact": 3,
+      "analysis": "兽药原料价格上涨，公司前景看好。"
+    },
+    {
+      "stock_name": "鲁抗医药",
+      "stock_code": "600789",
+      "impact": 3,
+      "analysis": "兽药原料价格上涨，公司前景看好。"
+    },
+    {
+      "stock_name": "山东海化",
+      "stock_code": "600773",
+      "impact": 4,
+      "analysis": "溴素价格上涨，公司受益。"
+    },
+    {
+      "stock_name": "鲁北化工",
+      "stock_code": "600727",
+      "impact": 4,
+      "analysis": "溴素价格上涨，公司受益。"
+    },
+    {
+      "stock_name": "万华化学",
+      "stock_code": "600299",
+      "impact": 3,
+      "analysis": "化工行业，受壳牌可能关闭欧洲分支机构利好。"
+    }
+  ],
+  "article_id": "102303ae51b748d986ad6a162df6a215",
+  "article_date": "2025-03-25",
+  "article_title": "2025.3.25市场逻辑精选"
+}

@@ -1,0 +1,77 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多方面利好，市场情绪偏乐观",
+  "sectors": [
+    {
+      "sector_name": "家电",
+      "impact": 4,
+      "analysis": "欧洲取暖需求增加，热泵订单增长"
+    },
+    {
+      "sector_name": "人民币结算",
+      "impact": 3,
+      "analysis": "人民币清算安排合作备忘录签署"
+    },
+    {
+      "sector_name": "网红经济",
+      "impact": 3,
+      "analysis": "李佳琦复播，直播带货利好"
+    },
+    {
+      "sector_name": "锂矿",
+      "impact": 3,
+      "analysis": "锂辉石精矿拍卖价格创新高"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "特斯拉人形机器人计划部署"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "德国光伏政策利好，光伏组件回收利用推进"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "日出东方",
+      "stock_code": "600685",
+      "impact": 4,
+      "analysis": "热泵生产企业订单增长"
+    },
+    {
+      "stock_name": "京北方",
+      "stock_code": "002981",
+      "impact": 3,
+      "analysis": "人民币清算安排合作备忘录签署"
+    },
+    {
+      "stock_name": "粤传媒",
+      "stock_code": "002181",
+      "impact": 3,
+      "analysis": "李佳琦复播，直播带货利好"
+    },
+    {
+      "stock_name": "天齐锂业",
+      "stock_code": "002466",
+      "impact": 3,
+      "analysis": "锂辉石精矿拍卖价格创新高"
+    },
+    {
+      "stock_name": "中大力德",
+      "stock_code": "002896",
+      "impact": 3,
+      "analysis": "特斯拉人形机器人计划部署"
+    },
+    {
+      "stock_name": "联泓新科",
+      "stock_code": "600834",
+      "impact": 3,
+      "analysis": "德国光伏政策利好"
+    }
+  ],
+  "article_title": "9月21日 盘前早8点 股市要闻关注",
+  "html_file": "6yqu7u6w0t.html",
+  "article_date": "2022-09-21"
+}

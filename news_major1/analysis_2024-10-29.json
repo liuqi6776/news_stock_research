@@ -1,0 +1,79 @@
+{
+  "market_impact": 3,
+  "market_analysis": "信创和干细胞板块受政策支持，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "信创",
+      "impact": 4,
+      "analysis": "政策支持，行业迎来建设高峰。"
+    },
+    {
+      "sector_name": "干细胞",
+      "impact": 3,
+      "analysis": "全球首个干细胞数据管理国际标准发布，行业迎来发展机遇。"
+    },
+    {
+      "sector_name": "激光反无人机",
+      "impact": 3,
+      "analysis": "反无人机业务市场空间广阔，相关产业链受益。"
+    },
+    {
+      "sector_name": "光学",
+      "impact": 3,
+      "analysis": "业绩大超预期，AI赋能多领域智能终端，行业迎来新一轮创新周期。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中国长城",
+      "stock_code": "000066",
+      "impact": 4,
+      "analysis": "国内领先自主芯片提供商，布局高性能服务器CPU、桌面CPU等产品。"
+    },
+    {
+      "stock_name": "中科曙光",
+      "stock_code": "603019",
+      "impact": 4,
+      "analysis": "国内核心技术建设核心企业，布局芯-端-云-算全产业链。"
+    },
+    {
+      "stock_name": "中国软件",
+      "stock_code": "600536",
+      "impact": 4,
+      "analysis": "布局并研发了具有完全自主知识产权的麒麟Kylin操作系统。"
+    },
+    {
+      "stock_name": "中源协和",
+      "stock_code": "600645",
+      "impact": 3,
+      "analysis": "持有我国唯一干细胞产业化基地协和干细胞57%股份。"
+    },
+    {
+      "stock_name": "冠昊生物",
+      "stock_code": "300386",
+      "impact": 3,
+      "analysis": "搭建细胞与干细胞研发应用平台，建立符合国际标准的细胞制备、安全性评估体系。"
+    },
+    {
+      "stock_name": "联创光电",
+      "stock_code": "300363",
+      "impact": 3,
+      "analysis": "激光反无人机产品完成首个出口订单，市场空间广阔。"
+    },
+    {
+      "stock_name": "水晶光电",
+      "stock_code": "002273",
+      "impact": 3,
+      "analysis": "业绩大超预期，AI赋能多领域智能终端，行业迎来新一轮创新周期。"
+    },
+    {
+      "stock_name": "大晟文化",
+      "stock_code": "600704",
+      "impact": 3,
+      "analysis": "唐山文旅借壳预期，公司推进相关业务。"
+    }
+  ],
+  "article_id": "86e892777627480d9cd1b11e993f0f2f",
+  "article_date": "2024-10-29",
+  "article_title": "2024.10.29市场逻辑精选"
+}

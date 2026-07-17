@@ -1,0 +1,73 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注后续政策及市场反应。",
+  "sectors": [
+    {
+      "sector_name": "AI应用",
+      "impact": 4,
+      "analysis": "AI应用领域持续活跃，利好相关板块。"
+    },
+    {
+      "sector_name": "汽车",
+      "impact": 3,
+      "analysis": "汽车更新需求可能增加，利好相关板块。"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 3,
+      "analysis": "AI军工合作有望推动军工板块发展。"
+    },
+    {
+      "sector_name": "合成生物",
+      "impact": 3,
+      "analysis": "合成生物产业大会召开，利好相关板块。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "南方精工",
+      "stock_code": "002555",
+      "impact": 3,
+      "analysis": "车载语音助手合作利好。"
+    },
+    {
+      "stock_name": "川宁生物",
+      "stock_code": "300467",
+      "impact": 3,
+      "analysis": "合成生物产业大会相关。"
+    },
+    {
+      "stock_name": "卧龙电驱",
+      "stock_code": "600580",
+      "impact": 3,
+      "analysis": "人形机器人合作利好。"
+    },
+    {
+      "stock_name": "视觉中国",
+      "stock_code": "000681",
+      "impact": 3,
+      "analysis": "成为字节生态合作伙伴利好。"
+    },
+    {
+      "stock_name": "华如科技",
+      "stock_code": "300068",
+      "impact": 4,
+      "analysis": "AI军事合作利好。"
+    },
+    {
+      "stock_name": "先锋电子",
+      "stock_code": "002767",
+      "impact": 3,
+      "analysis": "参股英伟达机器人合作伙伴公司利好。"
+    },
+    {
+      "stock_name": "世华科技",
+      "stock_code": "300449",
+      "impact": 3,
+      "analysis": "高性能光学材料制造基地建设利好。"
+    }
+  ],
+  "article_id": "7352b2c3b5fc4451aea6bae5f4c83d3f",
+  "article_date": "2024-12-05",
+  "article_title": "2024.12.5市场逻辑精选"
+}

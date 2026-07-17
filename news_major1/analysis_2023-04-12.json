@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股受利好消息提振。",
+  "sectors": [
+    {
+      "sector_name": "智能眼镜",
+      "impact": 4,
+      "analysis": "ChatGPT智能眼镜推出，相关产业链受益"
+    },
+    {
+      "sector_name": "AI+金融",
+      "impact": 3,
+      "analysis": "老虎证券推出ChatGPT炒股软件，AI金融应用前景广阔"
+    },
+    {
+      "sector_name": "凝聚态电池",
+      "impact": 3,
+      "analysis": "宁德时代发布凝聚态电池，电池技术进步"
+    },
+    {
+      "sector_name": "时空大数据",
+      "impact": 2,
+      "analysis": "自然资源部发布规定，时空大数据应用推进"
+    },
+    {
+      "sector_name": "AI大模型",
+      "impact": 2,
+      "analysis": "国产AI大模型竞争加剧，MaaS模式渐成趋势"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "佳禾智能",
+      "stock_code": "300325",
+      "impact": 4,
+      "analysis": "智能眼镜概念股，受益ChatGPT智能眼镜推出"
+    },
+    {
+      "stock_name": "科大讯飞",
+      "stock_code": "002230",
+      "impact": 3,
+      "analysis": "语音交互概念股，受益AI+金融发展"
+    },
+    {
+      "stock_name": "宁德时代",
+      "stock_code": "300750",
+      "impact": 3,
+      "analysis": "凝聚态电池概念股，技术进步"
+    },
+    {
+      "stock_name": "德尔未来",
+      "stock_code": "002631",
+      "impact": 3,
+      "analysis": "凝聚态电池概念股，宁德时代合作伙伴"
+    },
+    {
+      "stock_name": "众合科技",
+      "stock_code": "002464",
+      "impact": 2,
+      "analysis": "时空大数据概念股，受益政策支持"
+    }
+  ],
+  "article_title": "4月12日 盘前热点事件关注",
+  "html_file": "78jrh1nan7.html",
+  "article_date": "2023-04-12"
+}

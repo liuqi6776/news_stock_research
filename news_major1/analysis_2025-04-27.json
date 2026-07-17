@@ -1,0 +1,95 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多政策利好，市场情绪提振",
+  "sectors": [
+    {
+      "sector_name": "旅游",
+      "impact": 3,
+      "analysis": "入境消费政策利好"
+    },
+    {
+      "sector_name": "零售百货",
+      "impact": 3,
+      "analysis": "国货潮品推动"
+    },
+    {
+      "sector_name": "跨境电商",
+      "impact": 3,
+      "analysis": "跨境电商试验区设立"
+    },
+    {
+      "sector_name": "核电",
+      "impact": 3,
+      "analysis": "核电项目获批"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "粤芯半导体IPO"
+    },
+    {
+      "sector_name": "电力",
+      "impact": 3,
+      "analysis": "发电业务高增，绿色能源转型"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "三峡旅游",
+      "stock_code": "000610",
+      "impact": 3,
+      "analysis": "旅游业务受益"
+    },
+    {
+      "stock_name": "丽尚国潮",
+      "stock_code": "603638",
+      "impact": 3,
+      "analysis": "国货潮品推动"
+    },
+    {
+      "stock_name": "众信旅游",
+      "stock_code": "600610",
+      "impact": 3,
+      "analysis": "入境游受益"
+    },
+    {
+      "stock_name": "浔兴股份",
+      "stock_code": "002098",
+      "impact": 3,
+      "analysis": "跨境电商服务"
+    },
+    {
+      "stock_name": "南方路机",
+      "stock_code": "603008",
+      "impact": 3,
+      "analysis": "核电设备出口"
+    },
+    {
+      "stock_name": "智光电气",
+      "stock_code": "002169",
+      "impact": 3,
+      "analysis": "粤芯半导体IPO"
+    },
+    {
+      "stock_name": "华电辽能",
+      "stock_code": "600745",
+      "impact": 3,
+      "analysis": "绿色能源转型"
+    },
+    {
+      "stock_name": "生意宝",
+      "stock_code": "002095",
+      "impact": 3,
+      "analysis": "跨境电商服务"
+    },
+    {
+      "stock_name": "宁波联合",
+      "stock_code": "600051",
+      "impact": 3,
+      "analysis": "电力生产和供应"
+    }
+  ],
+  "article_id": "aab1357c88d849f8b394565c0a7e3b39",
+  "article_date": "2025-04-27",
+  "article_title": "2025.4.27市场逻辑精选"
+}

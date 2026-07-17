@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受积极因素影响，但需关注潜在风险。",
+  "sectors": [
+    {
+      "sector_name": "半导体",
+      "impact": 4,
+      "analysis": "台积电技术转变推动板块利好。"
+    },
+    {
+      "sector_name": "电子信息",
+      "impact": 3,
+      "analysis": "TikTok电商增长及北斗升级助力板块。"
+    },
+    {
+      "sector_name": "传媒",
+      "impact": 2,
+      "analysis": "TikTok电商增长带来板块利好。"
+    },
+    {
+      "sector_name": "汽车",
+      "impact": 2,
+      "analysis": "萝卜快跑体验报告及车载雷达需求增长。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "华天科技",
+      "stock_code": "002185",
+      "impact": 4,
+      "analysis": "受益于FOPLP技术发展。"
+    },
+    {
+      "stock_name": "省广集团",
+      "stock_code": "002400",
+      "impact": 3,
+      "analysis": "TikTok出海核心代理商。"
+    },
+    {
+      "stock_name": "合众思壮",
+      "stock_code": "002383",
+      "impact": 3,
+      "analysis": "北斗三代升级换代受益。"
+    },
+    {
+      "stock_name": "思特威",
+      "stock_code": "688555",
+      "impact": 3,
+      "analysis": "半年度业绩大增。"
+    }
+  ],
+  "article_id": "989f6f9cd0c7409ba7ebe799376f77e1",
+  "article_date": "2024-07-15",
+  "article_title": "2024.7.15市场逻辑精选"
+}

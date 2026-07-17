@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受多事件影响波动较大。",
+  "sectors": [
+    {
+      "sector_name": "医药",
+      "impact": 4,
+      "analysis": "新冠病例增加，医药板块受提振。"
+    },
+    {
+      "sector_name": "光刻机",
+      "impact": 3,
+      "analysis": "中荷电话通话，光刻机板块受益。"
+    },
+    {
+      "sector_name": "存储芯片",
+      "impact": 3,
+      "analysis": "长江存储NAND涨价，存储芯片板块受影响。"
+    },
+    {
+      "sector_name": "AI服务器",
+      "impact": 3,
+      "analysis": "AI服务器价格上涨，相关板块受益。"
+    },
+    {
+      "sector_name": "融媒体AI",
+      "impact": 3,
+      "analysis": "拓尔思在融媒体AI领域表现突出。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "众生药业",
+      "stock_code": "002317",
+      "impact": 4,
+      "analysis": "新冠病例增加，公司受提振。"
+    },
+    {
+      "stock_name": "容大感光",
+      "stock_code": "603083",
+      "impact": 3,
+      "analysis": "中荷电话通话，公司受益。"
+    },
+    {
+      "stock_name": "深科技",
+      "stock_code": "000021",
+      "impact": 3,
+      "analysis": "长江存储NAND涨价，公司受益。"
+    },
+    {
+      "stock_name": "中科曙光",
+      "stock_code": "603019",
+      "impact": 3,
+      "analysis": "AI服务器价格上涨，公司受益。"
+    },
+    {
+      "stock_name": "拓尔思",
+      "stock_code": "300229",
+      "impact": 3,
+      "analysis": "公司在融媒体AI领域表现突出。"
+    }
+  ],
+  "article_title": "5月17日 盘前热点事件关注",
+  "html_file": "2c8kjwtnsz.html",
+  "article_date": "2023-05-17"
+}

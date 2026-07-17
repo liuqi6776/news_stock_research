@@ -1,0 +1,45 @@
+{
+  "market_impact": 3,
+  "market_analysis": "减肥药和创新药板块受利好消息推动，市场情绪积极。",
+  "sectors": [
+    {
+      "sector_name": "减肥药",
+      "impact": 4,
+      "analysis": "龙头业绩增长，产能扩张，板块整体受益"
+    },
+    {
+      "sector_name": "创新药",
+      "impact": 3,
+      "analysis": "医保局新机制鼓励创新，板块前景看好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "华东医药",
+      "stock_code": "000963",
+      "impact": 3,
+      "analysis": "司美格鲁肽在研，受益减肥药板块"
+    },
+    {
+      "stock_name": "丽珠集团",
+      "stock_code": "000538",
+      "impact": 3,
+      "analysis": "司美格鲁肽临床试验，受益减肥药板块"
+    },
+    {
+      "stock_name": "迈威生物",
+      "stock_code": "300843",
+      "impact": 3,
+      "analysis": "生物制品领域，受益创新药政策"
+    },
+    {
+      "stock_name": "科伦药业",
+      "stock_code": "002422",
+      "impact": 3,
+      "analysis": "化学制剂领域，受益创新药政策"
+    }
+  ],
+  "article_id": "f20c044b6458468fb20e595bd1f560b2",
+  "article_date": "2024-02-06",
+  "article_title": "2024.2.6市场逻辑精选"
+}

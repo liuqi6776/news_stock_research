@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多板块受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "影视",
+      "impact": 3,
+      "analysis": "国产电影票房突破，相关公司受益"
+    },
+    {
+      "sector_name": "有色金属",
+      "impact": 3,
+      "analysis": "现货黄金创新高，有色金属普涨"
+    },
+    {
+      "sector_name": "AI医药",
+      "impact": 3,
+      "analysis": "美股AI医药股大涨，国内相关公司受益"
+    },
+    {
+      "sector_name": "东盟合作",
+      "impact": 3,
+      "analysis": "中国-东盟合作新空间报告发布，相关公司受益"
+    },
+    {
+      "sector_name": "石英概念",
+      "impact": 3,
+      "analysis": "高纯石英矿成为新矿种，相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "博纳影业",
+      "stock_code": "600595",
+      "impact": 3,
+      "analysis": "国产电影票房突破，公司受益"
+    },
+    {
+      "stock_name": "四川黄金",
+      "stock_code": "002459",
+      "impact": 3,
+      "analysis": "现货黄金创新高，公司受益"
+    },
+    {
+      "stock_name": "塞力医疗",
+      "stock_code": "300258",
+      "impact": 3,
+      "analysis": "美股AI医药股大涨，公司受益"
+    },
+    {
+      "stock_name": "北部湾港",
+      "stock_code": "000582",
+      "impact": 3,
+      "analysis": "中国-东盟合作新空间报告发布，公司受益"
+    },
+    {
+      "stock_name": "石英股份",
+      "stock_code": "600557",
+      "impact": 3,
+      "analysis": "高纯石英矿成为新矿种，公司受益"
+    }
+  ],
+  "article_title": "4月11日盘前纪要",
+  "html_file": "2yhqtxjs6mk.html",
+  "article_date": "2025-04-11"
+}

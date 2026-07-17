@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "量子信息技术",
+      "impact": 4,
+      "analysis": "技术突破和行业事件推动，板块有望迎来增长。"
+    },
+    {
+      "sector_name": "证券",
+      "impact": 3,
+      "analysis": "政策支持和国企改革预期，板块有望受益。"
+    },
+    {
+      "sector_name": "低空经济",
+      "impact": 3,
+      "analysis": "政策推动和新技术应用，板块有望迎来增长。"
+    },
+    {
+      "sector_name": "锑",
+      "impact": 3,
+      "analysis": "资源稀缺和需求增长，板块有望受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "国盾量子",
+      "stock_code": "300343",
+      "impact": 4,
+      "analysis": "技术突破，公司有望受益。"
+    },
+    {
+      "stock_name": "中信证券",
+      "stock_code": "600030",
+      "impact": 3,
+      "analysis": "政策支持和国企改革预期，公司有望受益。"
+    },
+    {
+      "stock_name": "小鹏汇天",
+      "stock_code": "001339",
+      "impact": 3,
+      "analysis": "新技术应用，公司有望受益。"
+    },
+    {
+      "stock_name": "华钰矿业",
+      "stock_code": "600099",
+      "impact": 3,
+      "analysis": "资源稀缺和需求增长，公司有望受益。"
+    }
+  ],
+  "article_id": "deed3461f06e4c94a3a0c1b637f96de3",
+  "article_date": "2024-04-25",
+  "article_title": "2024.4.25市场逻辑精选"
+}

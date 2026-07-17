@@ -1,0 +1,116 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多板块受政策支持",
+  "sectors": [
+    {
+      "sector_name": "医药",
+      "impact": 4,
+      "analysis": "疫苗、药物研发政策支持"
+    },
+    {
+      "sector_name": "高铁",
+      "impact": 3,
+      "analysis": "G20峰会展示雅万高铁"
+    },
+    {
+      "sector_name": "医美",
+      "impact": 3,
+      "analysis": "化妆品个性化服务试点"
+    },
+    {
+      "sector_name": "REITs",
+      "impact": 3,
+      "analysis": "扩大试点范围覆盖新能源等领域"
+    },
+    {
+      "sector_name": "新钢股份",
+      "impact": 3,
+      "analysis": "宝武与新钢联合重组获批复"
+    },
+    {
+      "sector_name": "供销社",
+      "impact": 3,
+      "analysis": "乡村振兴与供销社恢复重启"
+    },
+    {
+      "sector_name": "信创",
+      "impact": 3,
+      "analysis": "信创国产替代政策支持"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 3,
+      "analysis": "国内疫情上升，医药需求增加"
+    },
+    {
+      "sector_name": "Web3.0",
+      "impact": 3,
+      "analysis": "工业元宇宙和虚拟现实发展"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "特一药业",
+      "stock_code": "000011",
+      "impact": 4,
+      "analysis": "疫苗、药物研发政策支持"
+    },
+    {
+      "stock_name": "康希诺",
+      "stock_code": "002571",
+      "impact": 4,
+      "analysis": "疫苗、药物研发政策支持"
+    },
+    {
+      "stock_name": "威奥股份",
+      "stock_code": "002308",
+      "impact": 3,
+      "analysis": "G20峰会展示雅万高铁"
+    },
+    {
+      "stock_name": "爱美客",
+      "stock_code": "300827",
+      "impact": 3,
+      "analysis": "化妆品个性化服务试点"
+    },
+    {
+      "stock_name": "渤海股份",
+      "stock_code": "000698",
+      "impact": 3,
+      "analysis": "REITs扩大试点范围"
+    },
+    {
+      "stock_name": "新钢股份",
+      "stock_code": "000708",
+      "impact": 3,
+      "analysis": "宝武与新钢联合重组"
+    },
+    {
+      "stock_name": "天鹅股份",
+      "stock_code": "002352",
+      "impact": 3,
+      "analysis": "乡村振兴与供销社恢复重启"
+    },
+    {
+      "stock_name": "榕基软件",
+      "stock_code": "002474",
+      "impact": 3,
+      "analysis": "信创国产替代政策支持"
+    },
+    {
+      "stock_name": "特一药业",
+      "stock_code": "000011",
+      "impact": 3,
+      "analysis": "国内疫情上升，医药需求增加"
+    },
+    {
+      "stock_name": "天地在线",
+      "stock_code": "002999",
+      "impact": 3,
+      "analysis": "工业元宇宙和虚拟现实发展"
+    }
+  ],
+  "article_title": "11月11日盘前早参 热点事件关注",
+  "html_file": "bz6fadgayw.html",
+  "article_date": "2022-11-11"
+}

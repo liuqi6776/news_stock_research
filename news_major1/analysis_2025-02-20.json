@@ -1,0 +1,78 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受积极事件驱动，有望上涨。",
+  "sectors": [
+    {
+      "sector_name": "机器人",
+      "impact": 4,
+      "analysis": "机器人技术升级，相关产业链受益"
+    },
+    {
+      "sector_name": "AI",
+      "impact": 3,
+      "analysis": "AI技术推动产业升级，相关公司受益"
+    },
+    {
+      "sector_name": "农业",
+      "impact": 3,
+      "analysis": "农业机器人应用前景广阔，相关公司受益"
+    },
+    {
+      "sector_name": "数据中心",
+      "impact": 3,
+      "analysis": "数据中心服务需求增加，相关公司受益"
+    },
+    {
+      "sector_name": "新能源",
+      "impact": 3,
+      "analysis": "新能源装机容量提升，相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "蜜雪冰城",
+      "stock_code": "000868",
+      "impact": 3,
+      "analysis": "IPO上市，引入基石投资者"
+    },
+    {
+      "stock_name": "灵巧手",
+      "stock_code": "002938",
+      "impact": 3,
+      "analysis": "机器人技术提升，相关公司受益"
+    },
+    {
+      "stock_name": "英方软件",
+      "stock_code": "300324",
+      "impact": 3,
+      "analysis": "与阿里云合作，产品上架阿里云"
+    },
+    {
+      "stock_name": "同力日升",
+      "stock_code": "002736",
+      "impact": 3,
+      "analysis": "电梯业务受益城市更新政策"
+    },
+    {
+      "stock_name": "亚康股份",
+      "stock_code": "300358",
+      "impact": 3,
+      "analysis": "数据中心综合服务商"
+    },
+    {
+      "stock_name": "内蒙华电",
+      "stock_code": "600869",
+      "impact": 3,
+      "analysis": "控股股东优质风电资产注入"
+    },
+    {
+      "stock_name": "中鼎股份",
+      "stock_code": "000629",
+      "impact": 3,
+      "analysis": "与众擎机器人签署战略合作"
+    }
+  ],
+  "article_id": "fc934885f45b49548d0ede0d44f26a52",
+  "article_date": "2025-02-20",
+  "article_title": "2025.2.20市场逻辑精选"
+}

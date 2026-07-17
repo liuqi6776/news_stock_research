@@ -1,0 +1,131 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多政策利好，市场情绪偏乐观",
+  "sectors": [
+    {
+      "sector_name": "券商",
+      "impact": 3,
+      "analysis": "融资融券标的扩大，利好券商"
+    },
+    {
+      "sector_name": "化工",
+      "impact": 2,
+      "analysis": "德国总理访华，利好化工合作"
+    },
+    {
+      "sector_name": "锂电池",
+      "impact": 3,
+      "analysis": "宁德时代钠电池量产，利好锂电池"
+    },
+    {
+      "sector_name": "锂矿",
+      "impact": 3,
+      "analysis": "南美三国欲打造锂业欧佩克，利好锂矿"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 2,
+      "analysis": "军工信息化发展，利好军工"
+    },
+    {
+      "sector_name": "科研仪器",
+      "impact": 2,
+      "analysis": "高校仪器采购增加，利好科研仪器"
+    },
+    {
+      "sector_name": "医药医疗",
+      "impact": 2,
+      "analysis": "医疗新基建，利好医药医疗"
+    },
+    {
+      "sector_name": "教育",
+      "impact": 2,
+      "analysis": "教育信息化和科教兴国战略，利好教育"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 2,
+      "analysis": "半导体供应链国产化提速，利好半导体"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 1,
+      "analysis": "允许特定条件房地产企业融资，利好房地产"
+    },
+    {
+      "sector_name": "风电",
+      "impact": 2,
+      "analysis": "广东潮州规划海上风电，利好风电"
+    },
+    {
+      "sector_name": "高铁",
+      "impact": 1,
+      "analysis": "印尼G20展示中国高铁，利好高铁"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "天风证券",
+      "stock_code": "601901",
+      "impact": 3,
+      "analysis": "融资融券标的扩大，利好券商"
+    },
+    {
+      "stock_name": "红塔证券",
+      "stock_code": "600871",
+      "impact": 3,
+      "analysis": "融资融券标的扩大，利好券商"
+    },
+    {
+      "stock_name": "浙商证券",
+      "stock_code": "600999",
+      "impact": 3,
+      "analysis": "融资融券标的扩大，利好券商"
+    },
+    {
+      "stock_name": "光大证券",
+      "stock_code": "601788",
+      "impact": 3,
+      "analysis": "融资融券标的扩大，利好券商"
+    },
+    {
+      "stock_name": "国联证券",
+      "stock_code": "601318",
+      "impact": 3,
+      "analysis": "融资融券标的扩大，利好券商"
+    },
+    {
+      "stock_name": "利柏特",
+      "stock_code": "002220",
+      "impact": 2,
+      "analysis": "德国总理访华，利好化工合作"
+    },
+    {
+      "stock_name": "东华科技",
+      "stock_code": "002140",
+      "impact": 2,
+      "analysis": "德国总理访华，利好化工合作"
+    },
+    {
+      "stock_name": "山东章鼓",
+      "stock_code": "002051",
+      "impact": 3,
+      "analysis": "宁德时代钠电池量产，利好锂电池"
+    },
+    {
+      "stock_name": "传艺科技",
+      "stock_code": "002866",
+      "impact": 3,
+      "analysis": "宁德时代钠电池量产，利好锂电池"
+    },
+    {
+      "stock_name": "维科技术",
+      "stock_code": "600152",
+      "impact": 3,
+      "analysis": "宁德时代钠电池量产，利好锂电池"
+    }
+  ],
+  "article_title": "10月24日 盘前早8点 股市要闻关注",
+  "html_file": "byav5lprkb.html",
+  "article_date": "2022-10-24"
+}

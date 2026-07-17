@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "面板价格上涨，行业进入大周期，利好市场。",
+  "sectors": [
+    {
+      "sector_name": "面板行业",
+      "impact": 5,
+      "analysis": "价格上涨，产能提升，需求增加，利好明显。"
+    },
+    {
+      "sector_name": "航空行业",
+      "impact": 3,
+      "analysis": "航空轴承需求增加，利好相关企业。"
+    },
+    {
+      "sector_name": "旅游行业",
+      "impact": 3,
+      "analysis": "境外游客增长，利好相关旅游企业。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "京东方",
+      "stock_code": "000725",
+      "impact": 5,
+      "analysis": "面板价格上涨，产能提升，利好。"
+    },
+    {
+      "stock_name": "华星光电",
+      "stock_code": "000725",
+      "impact": 5,
+      "analysis": "面板价格上涨，产能提升，利好。"
+    },
+    {
+      "stock_name": "龙溪股份",
+      "stock_code": "600519",
+      "impact": 3,
+      "analysis": "航空轴承需求增加，利好。"
+    },
+    {
+      "stock_name": "张家界",
+      "stock_code": "000430",
+      "impact": 3,
+      "analysis": "境外游客增长，利好。"
+    }
+  ],
+  "article_id": "7069c9b970e94ea9ab375002b9810ec3",
+  "article_date": "2024-04-01",
+  "article_title": "2024.4.1市场逻辑精选"
+}

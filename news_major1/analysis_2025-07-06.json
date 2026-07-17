@@ -1,0 +1,44 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受电力需求增长和新技术应用推动，整体偏利好。",
+  "sectors": [
+    {
+      "sector_name": "电力",
+      "impact": 4,
+      "analysis": "电力需求创新高，板块受益明显。"
+    },
+    {
+      "sector_name": "液冷技术",
+      "impact": 3,
+      "analysis": "液冷技术需求增长，行业前景看好。"
+    },
+    {
+      "sector_name": "华为支付",
+      "impact": 2,
+      "analysis": "支付牌照续期，稳定币探索推进，板块受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "华银电力",
+      "stock_code": "600745",
+      "impact": 4,
+      "analysis": "火力发电业务增长，业绩预计提升。"
+    },
+    {
+      "stock_name": "英维克",
+      "stock_code": "002837",
+      "impact": 3,
+      "analysis": "液冷技术领先，市场空间广阔。"
+    },
+    {
+      "stock_name": "新晨科技",
+      "stock_code": "300692",
+      "impact": 2,
+      "analysis": "与华为合作，金融信息化领域布局。"
+    }
+  ],
+  "article_id": "d36ee0dea63e45f892c27196df5bbf78",
+  "article_date": "2025-07-06",
+  "article_title": "2025.7.6市场逻辑精选"
+}

@@ -1,0 +1,79 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息驱动，但需关注潜在风险。",
+  "sectors": [
+    {
+      "sector_name": "游戏",
+      "impact": 4,
+      "analysis": "国产游戏发售及政策支持，板块受益"
+    },
+    {
+      "sector_name": "化工",
+      "impact": 3,
+      "analysis": "巴斯夫火灾影响维生素A、E供应，相关个股受益"
+    },
+    {
+      "sector_name": "旅游",
+      "impact": 2,
+      "analysis": "新疆旅游热度提升，相关个股受益"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 2,
+      "analysis": "日本地震及行业回暖，相关个股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "浙版传媒",
+      "stock_code": "600633",
+      "impact": 4,
+      "analysis": "《黑神话悟空》出版方，受益游戏发售"
+    },
+    {
+      "stock_name": "华谊兄弟",
+      "stock_code": "600079",
+      "impact": 4,
+      "analysis": "参股《黑神话悟空》制作方，受益游戏发售"
+    },
+    {
+      "stock_name": "晓程科技",
+      "stock_code": "300324",
+      "impact": 3,
+      "analysis": "黄金开采业务，受益黄金价格上涨"
+    },
+    {
+      "stock_name": "玉龙股份",
+      "stock_code": "600388",
+      "impact": 3,
+      "analysis": "黄金采选业务，受益黄金价格上涨"
+    },
+    {
+      "stock_name": "能特科技",
+      "stock_code": "300685",
+      "impact": 4,
+      "analysis": "维生素E业务受益巴斯夫火灾"
+    },
+    {
+      "stock_name": "辉隆股份",
+      "stock_code": "600496",
+      "impact": 3,
+      "analysis": "薄荷醇产品受益巴斯夫火灾"
+    },
+    {
+      "stock_name": "西域旅游",
+      "stock_code": "600537",
+      "impact": 2,
+      "analysis": "新疆旅游热度提升，受益景区特许经营"
+    },
+    {
+      "stock_name": "名臣健康",
+      "stock_code": "002919",
+      "impact": 3,
+      "analysis": "与字节跳动合作，小游戏业务受益"
+    }
+  ],
+  "article_id": "da7a9b24dd20469b9e8be1f79b965d4a",
+  "article_date": "2024-08-08",
+  "article_title": "2024.8.8市场逻辑精选"
+}

@@ -1,0 +1,86 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "固态变压器",
+      "impact": 4,
+      "analysis": "英伟达新技术推动，板块受益明显。"
+    },
+    {
+      "sector_name": "充电桩",
+      "impact": 3,
+      "analysis": "国家政策支持，充电桩行业迎来发展机遇。"
+    },
+    {
+      "sector_name": "功率半导体",
+      "impact": 2,
+      "analysis": "出口禁令影响，国产替代加速。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "四方股份",
+      "stock_code": "300101",
+      "impact": 4,
+      "analysis": "SST解决方案应用成熟，业绩有望提升。"
+    },
+    {
+      "stock_name": "新特电气",
+      "stock_code": "002001",
+      "impact": 3,
+      "analysis": "固态变压器产品研发进展顺利。"
+    },
+    {
+      "stock_name": "和顺电气",
+      "stock_code": "002405",
+      "impact": 3,
+      "analysis": "充电桩领域全国领先，市场份额稳定。"
+    },
+    {
+      "stock_name": "特锐德",
+      "stock_code": "300001",
+      "impact": 3,
+      "analysis": "充电运营领域市场份额领先。"
+    },
+    {
+      "stock_name": "新洁能",
+      "stock_code": "300323",
+      "impact": 3,
+      "analysis": "中低压产品替代国际一流厂商，业绩有望提升。"
+    },
+    {
+      "stock_name": "扬杰科技",
+      "stock_code": "300382",
+      "impact": 3,
+      "analysis": "高端领域产品市场占有率较高，盈利能力增强。"
+    },
+    {
+      "stock_name": "五洲新春",
+      "stock_code": "603160",
+      "impact": 3,
+      "analysis": "机器人业务取得订单，有望提升业绩。"
+    },
+    {
+      "stock_name": "国晟科技",
+      "stock_code": "002909",
+      "impact": 3,
+      "analysis": "固态电池项目有望提升业绩。"
+    },
+    {
+      "stock_name": "信质集团",
+      "stock_code": "600362",
+      "impact": 3,
+      "analysis": "业绩大幅增长，机器人业务发展良好。"
+    },
+    {
+      "stock_name": "格尔软件",
+      "stock_code": "603383",
+      "impact": 2,
+      "analysis": "抗量子能力初步具备，未来发展潜力较大。"
+    }
+  ],
+  "article_id": "1de65358bc3548ecaa68f990067f050b",
+  "article_date": "2025-10-15",
+  "article_title": "2025.10.15市场逻辑精选"
+}

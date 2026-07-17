@@ -1,0 +1,93 @@
+{
+  "market_impact": 2,
+  "market_analysis": "市场整体偏利好，多板块受政策支持。",
+  "sectors": [
+    {
+      "sector_name": "新疆板块",
+      "impact": 3,
+      "analysis": "受上合峰会召开影响，相关个股受益"
+    },
+    {
+      "sector_name": "人民币结算板块",
+      "impact": 2,
+      "analysis": "莫斯科交易所测试人民币结算，相关个股受益"
+    },
+    {
+      "sector_name": "医药连锁板块",
+      "impact": 2,
+      "analysis": "药品网络销售政策逐步放开，相关个股受益"
+    },
+    {
+      "sector_name": "数字乡村板块",
+      "impact": 2,
+      "analysis": "数字乡村标准体系建设，相关个股受益"
+    },
+    {
+      "sector_name": "光伏板块",
+      "impact": 2,
+      "analysis": "大力发展新能源和清洁能源，相关个股受益"
+    },
+    {
+      "sector_name": "软件板块",
+      "impact": 2,
+      "analysis": "国产替代，相关个股受益"
+    },
+    {
+      "sector_name": "芯片板块",
+      "impact": -2,
+      "analysis": "芯片厂商断供高端GPU芯片，相关个股受影响"
+    },
+    {
+      "sector_name": "商超百货板块",
+      "impact": 1,
+      "analysis": "成都和深圳出现疫情，相关个股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "天顺股份",
+      "stock_code": "002900",
+      "impact": 3,
+      "analysis": "受上合峰会召开影响，相关个股受益"
+    },
+    {
+      "stock_name": "海联金汇",
+      "stock_code": "002537",
+      "impact": 2,
+      "analysis": "莫斯科交易所测试人民币结算，相关个股受益"
+    },
+    {
+      "stock_name": "第一医药",
+      "stock_code": "601961",
+      "impact": 2,
+      "analysis": "药品网络销售政策逐步放开，相关个股受益"
+    },
+    {
+      "stock_name": "智慧农业",
+      "stock_code": "300054",
+      "impact": 2,
+      "analysis": "数字乡村标准体系建设，相关个股受益"
+    },
+    {
+      "stock_name": "金辰股份",
+      "stock_code": "300251",
+      "impact": 2,
+      "analysis": "大力发展新能源和清洁能源，相关个股受益"
+    },
+    {
+      "stock_name": "拓维信息",
+      "stock_code": "002261",
+      "impact": 2,
+      "analysis": "国产替代，相关个股受益"
+    },
+    {
+      "stock_name": "红旗连锁",
+      "stock_code": "002697",
+      "impact": 1,
+      "analysis": "成都和深圳出现疫情，相关个股受益"
+    }
+  ],
+  "article_title": "9月2日 盘前早8点 股市要闻关注",
+  "html_file": "6xtkhrp8bg.html",
+  "article_date": "2022-09-02"
+}

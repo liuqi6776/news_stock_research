@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股受积极因素影响。",
+  "sectors": [
+    {
+      "sector_name": "医疗设备",
+      "impact": 4,
+      "analysis": "新冠疫苗接种和医院建设推动需求增长。"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 3,
+      "analysis": "新城控股融资和成都限购政策调整带来正面影响。"
+    },
+    {
+      "sector_name": "游戏",
+      "impact": 3,
+      "analysis": "游戏版号获批和行业价值挖掘提升板块关注度。"
+    },
+    {
+      "sector_name": "信创",
+      "impact": 3,
+      "analysis": "政策支持和数字经济发展推动板块增长。"
+    },
+    {
+      "sector_name": "摘帽概念",
+      "impact": 2,
+      "analysis": "摘帽股表现强劲，带动板块情绪。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "尚荣医疗",
+      "stock_code": "002551",
+      "impact": 4,
+      "analysis": "受益于方舱医院建设。"
+    },
+    {
+      "stock_name": "新城控股",
+      "stock_code": "600732",
+      "impact": 3,
+      "analysis": "融资获受理，股价有望上涨。"
+    },
+    {
+      "stock_name": "康希诺",
+      "stock_code": "002571",
+      "impact": 3,
+      "analysis": "新冠疫苗接种推进，股价受益。"
+    },
+    {
+      "stock_name": "大晟文化",
+      "stock_code": "300369",
+      "impact": 3,
+      "analysis": "游戏版号获批，股价有望上涨。"
+    },
+    {
+      "stock_name": "深桑达A",
+      "stock_code": "000032",
+      "impact": 3,
+      "analysis": "信创政策支持，股价有望上涨。"
+    }
+  ],
+  "article_title": "11月18日盘前早参 热点事件关注",
+  "html_file": "5djadk2fmk.html",
+  "article_date": "2022-11-18"
+}

@@ -1,0 +1,108 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏向利好，多个板块和个股受积极信息影响。",
+  "sectors": [
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "AI需求提升，半导体行业受益"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "人形机器人技术突破，相关产业链受益"
+    },
+    {
+      "sector_name": "光模块",
+      "impact": 3,
+      "analysis": "阿里巴巴光模块需求增长，相关供应商受益"
+    },
+    {
+      "sector_name": "AI眼镜",
+      "impact": 3,
+      "analysis": "AI眼镜产业标准化推进，相关公司受益"
+    },
+    {
+      "sector_name": "固态硬盘",
+      "impact": 3,
+      "analysis": "AI驱动下，企业级SSD需求增长"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "沃尔核材",
+      "stock_code": "002130",
+      "impact": 3,
+      "analysis": "NV加单，产线复制一倍"
+    },
+    {
+      "stock_name": "昆仑万维",
+      "stock_code": "300418",
+      "impact": 3,
+      "analysis": "Oprera接入DeepSeekR1模型"
+    },
+    {
+      "stock_name": "华工科技",
+      "stock_code": "002004",
+      "impact": 3,
+      "analysis": "阿里巴巴光模块最大供应商"
+    },
+    {
+      "stock_name": "华中数控",
+      "stock_code": "002061",
+      "impact": 3,
+      "analysis": "LB-1具身智能人形机器人技术领先"
+    },
+    {
+      "stock_name": "亿道信息",
+      "stock_code": "301096",
+      "impact": 3,
+      "analysis": "与Rokid紧密合作"
+    },
+    {
+      "stock_name": "德明利",
+      "stock_code": "688027",
+      "impact": 3,
+      "analysis": "企业级SSD产品研发"
+    },
+    {
+      "stock_name": "江波龙",
+      "stock_code": "002061",
+      "impact": 3,
+      "analysis": "企业级存储实现收入增长"
+    },
+    {
+      "stock_name": "佰维存储",
+      "stock_code": "688188",
+      "impact": 3,
+      "analysis": "企业级PCIeSSD产品应用"
+    },
+    {
+      "stock_name": "丰立智能",
+      "stock_code": "002530",
+      "impact": 3,
+      "analysis": "深度绑定星动纪元机器人"
+    },
+    {
+      "stock_name": "太极股份",
+      "stock_code": "002368",
+      "impact": 3,
+      "analysis": "太极政务云业务发展"
+    },
+    {
+      "stock_name": "震裕科技",
+      "stock_code": "002358",
+      "impact": 3,
+      "analysis": "机器人丝杠开展客户验证"
+    },
+    {
+      "stock_name": "安宁股份",
+      "stock_code": "002978",
+      "impact": 3,
+      "analysis": "拟收购经质矿产100%股权"
+    }
+  ],
+  "article_id": "419f80149381485e88d1db9356cdb339",
+  "article_date": "2025-02-19",
+  "article_title": "2025.2.19市场逻辑精选"
+}

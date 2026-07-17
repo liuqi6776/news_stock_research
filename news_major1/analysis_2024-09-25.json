@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策利好职业教育和无人出租车，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "职业教育",
+      "impact": 4,
+      "analysis": "政策支持，行业前景看好"
+    },
+    {
+      "sector_name": "无人出租车",
+      "impact": 3,
+      "analysis": "技术进步，市场潜力大"
+    },
+    {
+      "sector_name": "短剧",
+      "impact": 3,
+      "analysis": "平台布局，市场增长迅速"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "凯文教育",
+      "stock_code": "002659",
+      "impact": 4,
+      "analysis": "政策支持，行业前景看好"
+    },
+    {
+      "stock_name": "传智教育",
+      "stock_code": "300662",
+      "impact": 4,
+      "analysis": "布局职业实训教育，合作华为"
+    },
+    {
+      "stock_name": "大众交通",
+      "stock_code": "600837",
+      "impact": 3,
+      "analysis": "无人驾驶出租车合作"
+    },
+    {
+      "stock_name": "引力传媒",
+      "stock_code": "300595",
+      "impact": 3,
+      "analysis": "布局短剧市场"
+    }
+  ],
+  "article_id": "189cf12197ee4770b9f6eb471375f4c3",
+  "article_date": "2024-09-25",
+  "article_title": "2024.9.25市场逻辑精选"
+}

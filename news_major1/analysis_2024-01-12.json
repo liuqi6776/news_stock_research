@@ -1,0 +1,77 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪提升",
+  "sectors": [
+    {
+      "sector_name": "环保",
+      "impact": 3,
+      "analysis": "美丽中国建设推进，相关企业受益"
+    },
+    {
+      "sector_name": "碳纤维",
+      "impact": 3,
+      "analysis": "无人机和机械臂需求增长，行业前景看好"
+    },
+    {
+      "sector_name": "鸿蒙操作系统",
+      "impact": 3,
+      "analysis": "鸿蒙系统获科技奖提名，相关企业受益"
+    },
+    {
+      "sector_name": "XR",
+      "impact": 3,
+      "analysis": "XR头显出货量增加，行业增长迅速"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 3,
+      "analysis": "台湾大选和美国计划访台，军工板块受益"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 3,
+      "analysis": "流感季节来临，医药需求增加"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "大千生态",
+      "stock_code": "600558",
+      "impact": 3,
+      "analysis": "环保政策利好，公司业务受益"
+    },
+    {
+      "stock_name": "万丰奥威",
+      "stock_code": "002085",
+      "impact": 3,
+      "analysis": "碳纤维需求增长，公司业务受益"
+    },
+    {
+      "stock_name": "盛通股份",
+      "stock_code": "002599",
+      "impact": 3,
+      "analysis": "鸿蒙系统获科技奖提名，公司受益"
+    },
+    {
+      "stock_name": "双象股份",
+      "stock_code": "002394",
+      "impact": 3,
+      "analysis": "XR头显出货量增加，公司业务受益"
+    },
+    {
+      "stock_name": "晟楠科技",
+      "stock_code": "300795",
+      "impact": 3,
+      "analysis": "台湾大选和美国计划访台，公司业务受益"
+    },
+    {
+      "stock_name": "粤万年青",
+      "stock_code": "002018",
+      "impact": 3,
+      "analysis": "流感季节来临，公司业务受益"
+    }
+  ],
+  "article_title": "1月12日盘前早报 热点事件关注",
+  "html_file": "fvuq0rmdzr.html",
+  "article_date": "2024-01-12"
+}

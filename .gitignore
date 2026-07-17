@@ -1,0 +1,28 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.ipynb_checkpoints/
+output.txt
+v5_signals_result.txt
+
+# Large data files (>100MB, exceed GitHub limit)
+research/**/data/*.parquet
+research/**/predictions/*.parquet
+
+# Global binary and cache ignores
+*.parquet
+*.pkl
+*.joblib
+*.zip
+*.log
+*.mp4
+*.mp3
+*.avi
+*.mov
+
+# Generated data files (should not be in git)
+*.csv
+!/data/.gitkeep
+!/etf-valuation-strategy/data/.gitkeep
+!/research/**/data/.gitkeep

@@ -1,0 +1,90 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受政策预期和行业热点推动，整体偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "证券",
+      "impact": 4,
+      "analysis": "政策预期和资金关注度高，板块受益明显。"
+    },
+    {
+      "sector_name": "光模块",
+      "impact": 3,
+      "analysis": "高端需求景气，行业成长逻辑确立。"
+    },
+    {
+      "sector_name": "数字经济",
+      "impact": 3,
+      "analysis": "政策支持，区域发展潜力大。"
+    },
+    {
+      "sector_name": "广告营销",
+      "impact": 3,
+      "analysis": "AI布局和国际化战略推动。"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 3,
+      "analysis": "换电合作和供应链拓展。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "首创证券",
+      "stock_code": "601390",
+      "impact": 4,
+      "analysis": "流通市值小，上市日期近，受关注度高。"
+    },
+    {
+      "stock_name": "信达证券",
+      "stock_code": "600745",
+      "impact": 4,
+      "analysis": "最新上市，流通市值适中，受关注度高。"
+    },
+    {
+      "stock_name": "华西股份",
+      "stock_code": "000936",
+      "impact": 3,
+      "analysis": "参股光模块厂商，受益行业景气。"
+    },
+    {
+      "stock_name": "剑河科技",
+      "stock_code": "688016",
+      "impact": 3,
+      "analysis": "光模块产品供货微软，业绩增长。"
+    },
+    {
+      "stock_name": "中际旭创",
+      "stock_code": "688385",
+      "impact": 3,
+      "analysis": "800G及相干系列产品出货量增加。"
+    },
+    {
+      "stock_name": "天亿马",
+      "stock_code": "002636",
+      "impact": 3,
+      "analysis": "地处汕头，数字经济布局全面。"
+    },
+    {
+      "stock_name": "洪兴股份",
+      "stock_code": "002229",
+      "impact": 3,
+      "analysis": "地处汕头，强化数字经济应用。"
+    },
+    {
+      "stock_name": "天融信",
+      "stock_code": "300292",
+      "impact": 3,
+      "analysis": "地处汕头，数字化技术研发与应用。"
+    },
+    {
+      "stock_name": "众业达",
+      "stock_code": "002231",
+      "impact": 3,
+      "analysis": "地处汕头，5G网络和数字化工厂布局。"
+    }
+  ],
+  "article_id": "cf12841a72d946768eeec7d96608c707",
+  "article_date": "2023-08-06",
+  "article_title": "2023.8.6市场逻辑精选"
+}

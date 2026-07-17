@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "AI芯片和英伟达突破新高，市场情绪提振。",
+  "sectors": [
+    {
+      "sector_name": "AI芯片",
+      "impact": 4,
+      "analysis": "新品发货和英伟达突破新高，板块利好。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "AI芯片和华为海思自主可控，板块利好。"
+    },
+    {
+      "sector_name": "光通信",
+      "impact": 2,
+      "analysis": "AI算力发展，光通信板块受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "华丰科技",
+      "stock_code": "300453",
+      "impact": 4,
+      "analysis": "华为高速连接器供应商，股价有望上涨。"
+    },
+    {
+      "stock_name": "麦格米特",
+      "stock_code": "002501",
+      "impact": 3,
+      "analysis": "英伟达服务器电源合作，股价有望上涨。"
+    },
+    {
+      "stock_name": "仕佳光子",
+      "stock_code": "300296",
+      "impact": 3,
+      "analysis": "AI算力发展，业绩稳步攀升，股价有望上涨。"
+    },
+    {
+      "stock_name": "华为海思",
+      "stock_code": "000066",
+      "impact": 3,
+      "analysis": "芯片自主可控，股价有望上涨。"
+    }
+  ],
+  "article_id": "594d736329a448589aa60176d0f0ff46",
+  "article_date": "2024-10-17",
+  "article_title": "2024.10.17市场逻辑精选"
+}

@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股受积极事件影响",
+  "sectors": [
+    {
+      "sector_name": "消费",
+      "impact": 3,
+      "analysis": "消费板块受政策支持，利好"
+    },
+    {
+      "sector_name": "量子科技",
+      "impact": 3,
+      "analysis": "量子科技大会召开，利好相关个股"
+    },
+    {
+      "sector_name": "成渝地区双城经济圈",
+      "impact": 3,
+      "analysis": "重大项目投资，利好相关个股"
+    },
+    {
+      "sector_name": "低空经济",
+      "impact": 3,
+      "analysis": "低空经济政策出台，利好相关个股"
+    },
+    {
+      "sector_name": "数字贸易",
+      "impact": 3,
+      "analysis": "数字贸易政策发布，利好相关个股"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "南京化纤",
+      "stock_code": "600889",
+      "impact": 4,
+      "analysis": "连板事件，利好"
+    },
+    {
+      "stock_name": "广博股份",
+      "stock_code": "002103",
+      "impact": 4,
+      "analysis": "连板事件，利好"
+    },
+    {
+      "stock_name": "苏州科达",
+      "stock_code": "300079",
+      "impact": 3,
+      "analysis": "量子科技大会参会，利好"
+    },
+    {
+      "stock_name": "桂发祥",
+      "stock_code": "002820",
+      "impact": 3,
+      "analysis": "消费板块，利好"
+    },
+    {
+      "stock_name": "利欧股份",
+      "stock_code": "002292",
+      "impact": 3,
+      "analysis": "数字贸易政策，利好"
+    }
+  ],
+  "article_title": "11月29日盘前早报 热点事件关注",
+  "html_file": "83esw8dks4.html",
+  "article_date": "2024-11-29"
+}

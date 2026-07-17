@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策支持，市场情绪积极",
+  "sectors": [
+    {
+      "sector_name": "跨境电商",
+      "impact": 4,
+      "analysis": "政策利好，行业空间大"
+    },
+    {
+      "sector_name": "预制菜",
+      "impact": 3,
+      "analysis": "国标出台，行业门槛提升"
+    },
+    {
+      "sector_name": "碳市场",
+      "impact": 3,
+      "analysis": "CCER交易启动，市场扩容"
+    },
+    {
+      "sector_name": "半固态电池",
+      "impact": 3,
+      "analysis": "技术攻关，产能规划增加"
+    },
+    {
+      "sector_name": "智慧医疗",
+      "impact": 3,
+      "analysis": "政策支持，市场前景广阔"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "华鼎股份",
+      "stock_code": "002601",
+      "impact": 4,
+      "analysis": "子公司通拓科技为跨境电商领军企业"
+    },
+    {
+      "stock_name": "华凯易佰",
+      "stock_code": "300086",
+      "impact": 4,
+      "analysis": "SKU超50万，跨境电商业务增长"
+    },
+    {
+      "stock_name": "三态股份",
+      "stock_code": "002158",
+      "impact": 4,
+      "analysis": "SKU83万，跨境电商业务增长"
+    },
+    {
+      "stock_name": "丰山集团",
+      "stock_code": "002074",
+      "impact": 4,
+      "analysis": "半固态电池电解液技术储备"
+    },
+    {
+      "stock_name": "延华智能",
+      "stock_code": "300084",
+      "impact": 4,
+      "analysis": "深耕智慧医疗，布局双碳节能"
+    }
+  ],
+  "article_id": "c6a92ad9b6e145138deb8081263688d2",
+  "article_date": "2024-01-22",
+  "article_title": "2024.1.22市场逻辑精选"
+}

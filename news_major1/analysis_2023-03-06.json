@@ -1,0 +1,77 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策支持与行业利好消息较多，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "科技",
+      "impact": 4,
+      "analysis": "政策支持科技创新，相关个股受益"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 3,
+      "analysis": "国防预算增长，军工板块受益"
+    },
+    {
+      "sector_name": "教育",
+      "impact": 3,
+      "analysis": "教育政策利好，相关个股受益"
+    },
+    {
+      "sector_name": "国资国企",
+      "impact": 3,
+      "analysis": "国企改革推进，相关个股受益"
+    },
+    {
+      "sector_name": "6G",
+      "impact": 3,
+      "analysis": "6G技术发展，相关个股受益"
+    },
+    {
+      "sector_name": "边缘算力",
+      "impact": 3,
+      "analysis": "边缘算力应用前景广阔，相关个股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "亚翔集成",
+      "stock_code": "300299",
+      "impact": 4,
+      "analysis": "科技板块受益股"
+    },
+    {
+      "stock_name": "中船科技",
+      "stock_code": "600072",
+      "impact": 3,
+      "analysis": "军工板块受益股"
+    },
+    {
+      "stock_name": "全通教育",
+      "stock_code": "300359",
+      "impact": 3,
+      "analysis": "教育板块受益股"
+    },
+    {
+      "stock_name": "中成股份",
+      "stock_code": "000151",
+      "impact": 3,
+      "analysis": "国资国企板块受益股"
+    },
+    {
+      "stock_name": "中国卫通",
+      "stock_code": "600118",
+      "impact": 3,
+      "analysis": "6G板块受益股"
+    },
+    {
+      "stock_name": "美格智能",
+      "stock_code": "002881",
+      "impact": 3,
+      "analysis": "边缘算力板块受益股"
+    }
+  ],
+  "article_title": "3月6日盘前热点事件关注",
+  "html_file": "28s4tuly6q.html",
+  "article_date": "2023-03-06"
+}

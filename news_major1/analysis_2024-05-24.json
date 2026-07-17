@@ -1,0 +1,88 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏积极，多板块利好。",
+  "sectors": [
+    {
+      "sector_name": "电力",
+      "impact": 3,
+      "analysis": "电力体制改革座谈会有望推动板块发展。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "存储芯片价格上涨，利好相关企业。"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 3,
+      "analysis": "医药健康产业行动计划将推动行业发展。"
+    },
+    {
+      "sector_name": "中日韩概念",
+      "impact": 2,
+      "analysis": "中日韩领导人会议有望促进区域合作。"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 2,
+      "analysis": "光伏行业高质量发展座谈会有望推动行业进步。"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 2,
+      "analysis": "军演消息利好军工板块。"
+    },
+    {
+      "sector_name": "电磁屏蔽",
+      "impact": 2,
+      "analysis": "英伟达需求推动电磁屏蔽材料需求。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "上海电力",
+      "stock_code": "600021",
+      "impact": 3,
+      "analysis": "国家电力投资集团相关企业。"
+    },
+    {
+      "stock_name": "德明利",
+      "stock_code": "688027",
+      "impact": 3,
+      "analysis": "存储芯片价格上涨受益。"
+    },
+    {
+      "stock_name": "昭衍新药",
+      "stock_code": "688018",
+      "impact": 3,
+      "analysis": "医药健康产业行动计划受益。"
+    },
+    {
+      "stock_name": "青岛金王",
+      "stock_code": "000598",
+      "impact": 2,
+      "analysis": "中日韩领导人会议概念股。"
+    },
+    {
+      "stock_name": "清源股份",
+      "stock_code": "603678",
+      "impact": 2,
+      "analysis": "光伏行业高质量发展座谈会有望推动。"
+    },
+    {
+      "stock_name": "长城军工",
+      "stock_code": "600567",
+      "impact": 2,
+      "analysis": "军演消息利好。"
+    },
+    {
+      "stock_name": "沃特股份",
+      "stock_code": "002886",
+      "impact": 2,
+      "analysis": "英伟达需求推动电磁屏蔽材料需求。"
+    }
+  ],
+  "article_title": "5月24日盘前早报 热点事件关注",
+  "html_file": "g29fuud48e.html",
+  "article_date": "2024-05-24"
+}

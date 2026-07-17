@@ -1,0 +1,107 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，关注数字资产和AI芯片相关板块。",
+  "sectors": [
+    {
+      "sector_name": "数字资产",
+      "impact": 4,
+      "analysis": "RDA和RWA发展推动，相关公司受益"
+    },
+    {
+      "sector_name": "AI芯片",
+      "impact": 3,
+      "analysis": "英伟达发布会和华为AI芯片计划，相关公司受益"
+    },
+    {
+      "sector_name": "数据交易所",
+      "impact": 3,
+      "analysis": "数据资产交易市场发展，相关公司受益"
+    },
+    {
+      "sector_name": "稳定币",
+      "impact": 3,
+      "analysis": "稳定币技术发展，相关公司受益"
+    },
+    {
+      "sector_name": "文化产权",
+      "impact": 2,
+      "analysis": "文化资产数字化，相关公司受益"
+    },
+    {
+      "sector_name": "铀矿",
+      "impact": 2,
+      "analysis": "天然铀生产突破，相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "上海钢联",
+      "stock_code": "600708",
+      "impact": 4,
+      "analysis": "数据服务商，RDA合作"
+    },
+    {
+      "stock_name": "中远海科",
+      "stock_code": "002512",
+      "impact": 4,
+      "analysis": "数据产品，RDA应用"
+    },
+    {
+      "stock_name": "上海物贸",
+      "stock_code": "600822",
+      "impact": 3,
+      "analysis": "有色金属现货指数，数据交易所备案"
+    },
+    {
+      "stock_name": "久远银海",
+      "stock_code": "002777",
+      "impact": 4,
+      "analysis": "医保IT龙头，RDA应用"
+    },
+    {
+      "stock_name": "古鳌科技",
+      "stock_code": "300528",
+      "impact": 4,
+      "analysis": "数字人民币和区块链技术"
+    },
+    {
+      "stock_name": "市北高新",
+      "stock_code": "600838",
+      "impact": 4,
+      "analysis": "蚂蚁链产业开发创新中心"
+    },
+    {
+      "stock_name": "天孚通信",
+      "stock_code": "300458",
+      "impact": 4,
+      "analysis": "1.6T光引擎产品，CPO供应链"
+    },
+    {
+      "stock_name": "中际旭创",
+      "stock_code": "300308",
+      "impact": 4,
+      "analysis": "1.6T产品出货，数据中心需求"
+    },
+    {
+      "stock_name": "掌阅科技",
+      "stock_code": "002711",
+      "impact": 4,
+      "analysis": "接入AI大模型，AI阅读类产品"
+    },
+    {
+      "stock_name": "万兴科技",
+      "stock_code": "300624",
+      "impact": 4,
+      "analysis": "接入Kimi大模型，视频创意软件"
+    },
+    {
+      "stock_name": "中核集团",
+      "stock_code": "601611",
+      "impact": 4,
+      "analysis": "天然铀生产突破，保障能源安全"
+    }
+  ],
+  "article_id": "e9bd32c8a39e4cae872cac6f16717a7c",
+  "article_date": "2025-07-13",
+  "article_title": "2025.7.13市场逻辑精选"
+}

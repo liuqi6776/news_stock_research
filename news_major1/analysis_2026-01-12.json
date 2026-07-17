@@ -1,0 +1,79 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受AI4S和MAS概念驱动，短期看涨。",
+  "sectors": [
+    {
+      "sector_name": "AI4S",
+      "impact": 4,
+      "analysis": "AI4S应用前景广阔，板块受益明显。"
+    },
+    {
+      "sector_name": "MAS",
+      "impact": 4,
+      "analysis": "MAS概念兴起，相关板块有望受益。"
+    },
+    {
+      "sector_name": "商业航天",
+      "impact": 3,
+      "analysis": "商业航天技术突破，板块有望受益。"
+    },
+    {
+      "sector_name": "AI财税",
+      "impact": 3,
+      "analysis": "AI财税应用前景广阔，板块受益明显。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "道氏技术",
+      "stock_code": "300408",
+      "impact": 4,
+      "analysis": "AI4S研发计算，受益明显。"
+    },
+    {
+      "stock_name": "泓博医药",
+      "stock_code": "300246",
+      "impact": 4,
+      "analysis": "AI研发制药平台，受益明显。"
+    },
+    {
+      "stock_name": "托普云农",
+      "stock_code": "300651",
+      "impact": 4,
+      "analysis": "AI育种解决方案，受益明显。"
+    },
+    {
+      "stock_name": "因赛集团",
+      "stock_code": "300797",
+      "impact": 4,
+      "analysis": "MAS平台应用，受益明显。"
+    },
+    {
+      "stock_name": "华如科技",
+      "stock_code": "300194",
+      "impact": 4,
+      "analysis": "MAS建模仿真平台，受益明显。"
+    },
+    {
+      "stock_name": "中科宇航",
+      "stock_code": "688558",
+      "impact": 3,
+      "analysis": "商业航天技术突破，受益明显。"
+    },
+    {
+      "stock_name": "越秀资本",
+      "stock_code": "000987",
+      "impact": 3,
+      "analysis": "持有中科宇航股权，受益明显。"
+    },
+    {
+      "stock_name": "税友股份",
+      "stock_code": "002339",
+      "impact": 3,
+      "analysis": "AI财税核心股，受益明显。"
+    }
+  ],
+  "article_id": "c6188a12993a4eb19c44372fa9eaea4b",
+  "article_date": "2026-01-12",
+  "article_title": "2026.1.12市场逻辑精选"
+}

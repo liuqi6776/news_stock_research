@@ -1,0 +1,56 @@
+{
+  "market_impact": 3,
+  "market_analysis": "信创板块订单密集落地，市场情绪提振。",
+  "sectors": [
+    {
+      "sector_name": "信创",
+      "impact": 4,
+      "analysis": "订单密集落地，利好明显"
+    },
+    {
+      "sector_name": "小米概念",
+      "impact": 2,
+      "analysis": "小米汽车进展，关注度提升"
+    },
+    {
+      "sector_name": "黄金",
+      "impact": 3,
+      "analysis": "央行增持，避险需求增强"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "新晨科技",
+      "stock_code": "300455",
+      "impact": 4,
+      "analysis": "中标中信大单，业绩有望提升"
+    },
+    {
+      "stock_name": "宇信科技",
+      "stock_code": "300702",
+      "impact": 4,
+      "analysis": "深耕金融行业，信创业务增长"
+    },
+    {
+      "stock_name": "神州信息",
+      "stock_code": "000555",
+      "impact": 4,
+      "analysis": "金融领域头部ISV厂商，市场份额领先"
+    },
+    {
+      "stock_name": "一汽富维",
+      "stock_code": "600742",
+      "impact": 2,
+      "analysis": "小米汽车概念，关注进展"
+    },
+    {
+      "stock_name": "中润资源",
+      "stock_code": "000507",
+      "impact": 3,
+      "analysis": "黄金销售营收占比高，央行增持黄金"
+    }
+  ],
+  "article_id": "39599b3140714c5d8cef7178278ddc3c",
+  "article_date": "2023-08-09",
+  "article_title": "2023.8.9市场逻辑精选"
+}

@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪提升",
+  "sectors": [
+    {
+      "sector_name": "券商",
+      "impact": 4,
+      "analysis": "合并重组预期，板块活跃"
+    },
+    {
+      "sector_name": "低空经济",
+      "impact": 3,
+      "analysis": "政策支持，行业前景看好"
+    },
+    {
+      "sector_name": "算力",
+      "impact": 3,
+      "analysis": "政策推动，行业加速发展"
+    },
+    {
+      "sector_name": "智能网联汽车",
+      "impact": 3,
+      "analysis": "政策支持，应用场景拓展"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "国联证券",
+      "stock_code": "600023",
+      "impact": 4,
+      "analysis": "筹划收购民生证券，股价有望上涨"
+    },
+    {
+      "stock_name": "宗申动力",
+      "stock_code": "001696",
+      "impact": 3,
+      "analysis": "低空经济概念，受益政策支持"
+    },
+    {
+      "stock_name": "铜牛信息",
+      "stock_code": "300387",
+      "impact": 3,
+      "analysis": "算力基础设施建设，业绩有望提升"
+    },
+    {
+      "stock_name": "亚太股份",
+      "stock_code": "002284",
+      "impact": 3,
+      "analysis": "智能网联汽车概念，应用场景拓展"
+    }
+  ],
+  "article_title": "4月26日盘前早报 热点事件关注",
+  "html_file": "7sxur00ryf.html",
+  "article_date": "2024-04-26"
+}

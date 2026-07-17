@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，疫苗和工业机器人板块表现强劲。",
+  "sectors": [
+    {
+      "sector_name": "疫苗板块",
+      "impact": 4,
+      "analysis": "复星医药二价疫苗获批，板块受益"
+    },
+    {
+      "sector_name": "工业机器人板块",
+      "impact": 3,
+      "analysis": "产量连续增长，复苏拐点临近"
+    },
+    {
+      "sector_name": "ST板块",
+      "impact": 2,
+      "analysis": "部分ST股预期差，存在机会"
+    },
+    {
+      "sector_name": "复合集流体板块",
+      "impact": 2,
+      "analysis": "技术优势明显，替代逻辑明确"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "复星医药",
+      "stock_code": "600196",
+      "impact": 4,
+      "analysis": "二价疫苗获批，股价有望上涨"
+    },
+    {
+      "stock_name": "秦川机床",
+      "stock_code": "000837",
+      "impact": 3,
+      "analysis": "产量增长，订单增加"
+    },
+    {
+      "stock_name": "ST红太阳",
+      "stock_code": "000525",
+      "impact": 3,
+      "analysis": "ST股预期差，存在机会"
+    },
+    {
+      "stock_name": "奥来德",
+      "stock_code": "300386",
+      "impact": 3,
+      "analysis": "布局钙钛矿光伏电池，技术优势明显"
+    }
+  ],
+  "article_id": "b4b6264bec3f45099fc54dd73ed4e1e7",
+  "article_date": "2022-11-20",
+  "article_title": "2022.11.20市场逻辑精选"
+}

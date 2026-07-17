@@ -1,0 +1,67 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "氟化工",
+      "impact": 4,
+      "analysis": "制冷剂价格上涨，行业景气度提升。"
+    },
+    {
+      "sector_name": "大模型",
+      "impact": 3,
+      "analysis": "工信部推动大模型赋能制造业，相关概念股活跃。"
+    },
+    {
+      "sector_name": "复合铜箔",
+      "impact": 3,
+      "analysis": "复合铜箔产业化推进，市场空间扩大。"
+    },
+    {
+      "sector_name": "航运",
+      "impact": 2,
+      "analysis": "巴尔的摩大桥坍塌影响东海岸航运，相关公司受关注。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "富信科技",
+      "stock_code": "000070",
+      "impact": 3,
+      "analysis": "华为光模块概念发酵，股价上涨。"
+    },
+    {
+      "stock_name": "奥联电子",
+      "stock_code": "002271",
+      "impact": 3,
+      "analysis": "小米汽车供应商，价值量弹性大。"
+    },
+    {
+      "stock_name": "联创股份",
+      "stock_code": "300603",
+      "impact": 3,
+      "analysis": "PVDF供货宁德时代，合作研发电池。"
+    },
+    {
+      "stock_name": "长电科技",
+      "stock_code": "600584",
+      "impact": 2,
+      "analysis": "实控人变更，央企华润接盘。"
+    },
+    {
+      "stock_name": "盛德鑫泰",
+      "stock_code": "603701",
+      "impact": 2,
+      "analysis": "下游订单激增，一季报增长。"
+    },
+    {
+      "stock_name": "平潭发展",
+      "stock_code": "000592",
+      "impact": 2,
+      "analysis": "子公司拥有长链二元酸产能。"
+    }
+  ],
+  "article_id": "45cd7a364132477a87173540e06ed457",
+  "article_date": "2024-03-26",
+  "article_title": "2024.3.26市场逻辑精选"
+}

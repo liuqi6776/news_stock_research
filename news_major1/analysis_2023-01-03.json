@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，数字经济、HJT、次新、工业互联网等板块表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "数字经济",
+      "impact": 4,
+      "analysis": "政策支持，数据要素分配创新，相关公司受益"
+    },
+    {
+      "sector_name": "HJT",
+      "impact": 3,
+      "analysis": "产业链持续兑现，盈利预期提升"
+    },
+    {
+      "sector_name": "次新",
+      "impact": 2,
+      "analysis": "新股发行空窗期，资金炒作可能性增加"
+    },
+    {
+      "sector_name": "工业互联网",
+      "impact": 2,
+      "analysis": "后疫情机器替人需求加大，相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中国联通",
+      "stock_code": "600050",
+      "impact": 3,
+      "analysis": "数字经济板块，数据要素分配创新受益"
+    },
+    {
+      "stock_name": "人民网",
+      "stock_code": "603000",
+      "impact": 3,
+      "analysis": "数据确权及交易，政策支持受益"
+    },
+    {
+      "stock_name": "乾景园林",
+      "stock_code": "603833",
+      "impact": 3,
+      "analysis": "HJT电池及组件项目，产业链持续兑现受益"
+    },
+    {
+      "stock_name": "凌云光",
+      "stock_code": "688316",
+      "impact": 3,
+      "analysis": "工业互联网，机器替人需求加大受益"
+    }
+  ],
+  "article_id": "8011847c566144ac8da8ced1c0aca5d6",
+  "article_date": "2023-01-03",
+  "article_title": "2023.1.3市场逻辑精选"
+}

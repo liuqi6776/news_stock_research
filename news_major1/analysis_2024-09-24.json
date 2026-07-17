@@ -1,0 +1,66 @@
+{
+  "market_impact": 4,
+  "market_analysis": "政策支持力度大，市场情绪提振明显。",
+  "sectors": [
+    {
+      "sector_name": "金融",
+      "impact": 5,
+      "analysis": "政策利好，板块整体受益"
+    },
+    {
+      "sector_name": "证券",
+      "impact": 5,
+      "analysis": "政策支持，板块上涨动力强"
+    },
+    {
+      "sector_name": "金融科技",
+      "impact": 4,
+      "analysis": "政策支持，板块有望受益"
+    },
+    {
+      "sector_name": "消费",
+      "impact": 3,
+      "analysis": "政策预期，板块有望受益"
+    },
+    {
+      "sector_name": "算力",
+      "impact": 4,
+      "analysis": "行业盛会，板块有望受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "天风证券",
+      "stock_code": "601162",
+      "impact": 5,
+      "analysis": "政策支持，股价有望上涨"
+    },
+    {
+      "stock_name": "国海证券",
+      "stock_code": "000750",
+      "impact": 5,
+      "analysis": "政策支持，股价有望上涨"
+    },
+    {
+      "stock_name": "银之杰",
+      "stock_code": "300385",
+      "impact": 4,
+      "analysis": "政策支持，股价有望上涨"
+    },
+    {
+      "stock_name": "汇金科技",
+      "stock_code": "688012",
+      "impact": 4,
+      "analysis": "政策支持，股价有望上涨"
+    },
+    {
+      "stock_name": "荣科科技",
+      "stock_code": "300382",
+      "impact": 4,
+      "analysis": "行业盛会，股价有望上涨"
+    }
+  ],
+  "article_id": "0c18c5a7aa82435ba39ab1f65bd565da",
+  "article_date": "2024-09-24",
+  "article_title": "2024.9.24市场逻辑精选"
+}

@@ -1,0 +1,40 @@
+========================================================================================================================
+  TS ENHANCED STRATEGY - FINAL REPORT
+========================================================================================================================
+
+  Base Strategy: doubao original (trades.csv, 356 trades)
+  Base: Total=2865.62%, Sharpe=5.49, MDD=-68.57%
+
+  TS Features Used:
+    - ret_1d: 1-day return (current close / prev close - 1)
+    - delta_winner_rate: change in chip winner rate
+    - delta_chip_conc: change in chip concentration
+    - ret_5d: 5-day return
+    - ma5_dist: distance from 5-day MA
+    - ts_score_v2: composite score (weighted combination)
+
+  Rank Scheme                              Total   Sharpe        MDD   Calmar  Trades
+  -------------------------------------------------------------------------------------
+     1 12_WR>-2_R1d<0.03_TP25            80.85%   82.94   -24.95%  577.35      32
+     2 11_WR>-2_R1d<0.03                 78.81%   75.79   -24.95%  524.48      32
+     3 13_TS_score>0                   2068.90%   67.18   -56.11%  254.97     156
+     4 14_TS_score>0_TP20              1609.93%   49.22   -59.60%  162.94     156
+     5 10_WR>-2_R1d<0.05_TP25            67.70%   24.38   -31.04%  130.06      37
+     6 9_WR>-2_R1d<0.05                  65.81%   22.54   -31.04%  119.60      37
+     7 8_R1d<0.03_TP25                  416.51%   14.60   -30.07%   69.60     138
+     8 6_R1d<0.05_TP25                  416.37%   12.85   -29.73%   61.22     144
+     9 3_WR>0                           867.49%   11.95   -65.83%   38.37     175
+    10 16_WR>-10_R1d<0.05_TP25          114.45%   11.93   -31.04%   58.82      69
+    11 15_WR>-10_R1d<0.05               112.03%   11.43   -31.04%   56.15      69
+    12 7_R1d<0.03                       342.17%   11.00   -30.07%   51.12     138
+    13 5_R1d<0.05                       342.05%    9.78   -29.73%   45.46     144
+    14 4_WR>0_TP20                      662.76%    8.95   -68.45%   25.78     175
+    15 1_Base_NoTP                     2865.62%    5.49   -68.57%   15.05     356
+    16 2_Base_TP20                     2636.93%    5.47   -73.45%   13.19     356
+
+  CONCLUSIONS:
+  1. TS features significantly improve risk-adjusted returns
+  2. Best single filter: delta_winner_rate > 0 (Sharpe 5.49 -> 11.95)
+  3. Best MDD improvement: ret_1d < 0.05 (MDD -68.6% -> -29.7%)
+  4. Best combined: WR>-2 & R1d<0.05 (Sharpe 22.54, MDD -31.0%)
+  5. Trade-off: fewer trades but much better risk metrics

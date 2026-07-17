@@ -1,0 +1,56 @@
+{
+  "market_impact": 4,
+  "market_analysis": "军工、大飞机、光伏等板块利好，市场情绪提升。",
+  "sectors": [
+    {
+      "sector_name": "军工",
+      "impact": 5,
+      "analysis": "成飞上市及国企改革预期推动板块上涨。"
+    },
+    {
+      "sector_name": "大飞机",
+      "impact": 4,
+      "analysis": "C919提速扩产，订单增加，板块受益。"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 4,
+      "analysis": "隆基扩产HPBC技术，带动相关产业链。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "航天科工",
+      "stock_code": "000901",
+      "impact": 5,
+      "analysis": "军工国企改革预期，重组预期强烈。"
+    },
+    {
+      "stock_name": "航天科技",
+      "stock_code": "000901",
+      "impact": 5,
+      "analysis": "军工国企改革预期，重组预期强烈。"
+    },
+    {
+      "stock_name": "隆基绿能",
+      "stock_code": "601012",
+      "impact": 5,
+      "analysis": "HPBC技术扩产，业绩有望大幅增长。"
+    },
+    {
+      "stock_name": "清越科技",
+      "stock_code": "300163",
+      "impact": 4,
+      "analysis": "多领域布局，业绩增长预期。"
+    },
+    {
+      "stock_name": "合力泰",
+      "stock_code": "002217",
+      "impact": 4,
+      "analysis": "汽车电子后视镜及电子纸业务增长。"
+    }
+  ],
+  "article_id": "0f3a139428ce4401b1aacaf77bdf4a8d",
+  "article_date": "2023-01-12",
+  "article_title": "2023.1.12市场逻辑精选"
+}

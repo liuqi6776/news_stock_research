@@ -1,0 +1,80 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受利好消息推动，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "充电宝",
+      "impact": 4,
+      "analysis": "3C认证政策利好合规企业，板块有望受益。"
+    },
+    {
+      "sector_name": "ASIC芯片",
+      "impact": 3,
+      "analysis": "OpenAI租用谷歌芯片，利好相关芯片设计公司。"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "产能整合和RWA助力光伏电站资产上链，板块有望受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "维科技术",
+      "stock_code": "600553",
+      "impact": 4,
+      "analysis": "3C认证产品受益，股价有望上涨。"
+    },
+    {
+      "stock_name": "长虹能源",
+      "stock_code": "600832",
+      "impact": 4,
+      "analysis": "子公司电芯产品获3C认证，股价有望上涨。"
+    },
+    {
+      "stock_name": "绿联科技",
+      "stock_code": "300464",
+      "impact": 4,
+      "analysis": "3C认证产品热销，股价有望上涨。"
+    },
+    {
+      "stock_name": "芯原股份",
+      "stock_code": "688516",
+      "impact": 3,
+      "analysis": "ASIC设计能力强，股价有望上涨。"
+    },
+    {
+      "stock_name": "科德教育",
+      "stock_code": "300426",
+      "impact": 3,
+      "analysis": "参股TPU芯片研发公司，股价有望上涨。"
+    },
+    {
+      "stock_name": "东方日升",
+      "stock_code": "300118",
+      "impact": 3,
+      "analysis": "光伏组件销量增长，股价有望上涨。"
+    },
+    {
+      "stock_name": "启迪设计",
+      "stock_code": "300682",
+      "impact": 3,
+      "analysis": "分布式光伏项目投产，股价有望上涨。"
+    },
+    {
+      "stock_name": "创益通",
+      "stock_code": "300559",
+      "impact": 3,
+      "analysis": "连接器产品间接供应华为，股价有望上涨。"
+    },
+    {
+      "stock_name": "平安电工",
+      "stock_code": "601311",
+      "impact": 3,
+      "analysis": "石英布市场拓展，股价有望上涨。"
+    }
+  ],
+  "article_id": "b021f6a8c9d74390a7a435128a0b108d",
+  "article_date": "2025-06-29",
+  "article_title": "2025.6.29市场逻辑精选"
+}

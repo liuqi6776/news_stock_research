@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "金刚石散热",
+      "impact": 4,
+      "analysis": "技术进步和市场需求增长，板块有望迎来爆发。"
+    },
+    {
+      "sector_name": "手术机器人",
+      "impact": 3,
+      "analysis": "收费模式明确，行业空间广阔，板块受益。"
+    },
+    {
+      "sector_name": "PVC",
+      "impact": 3,
+      "analysis": "产能出清，行业基本面改善，板块有望受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "沃尔德",
+      "stock_code": "300762",
+      "impact": 4,
+      "analysis": "金刚石散热技术进展，订单量有望增加。"
+    },
+    {
+      "stock_name": "四方达",
+      "stock_code": "300993",
+      "impact": 3,
+      "analysis": "美国大客户订单，价值量较大。"
+    },
+    {
+      "stock_name": "天智航",
+      "stock_code": "300724",
+      "impact": 3,
+      "analysis": "骨科手术机器人领军企业，市场空间广阔。"
+    },
+    {
+      "stock_name": "中泰化学",
+      "stock_code": "000599",
+      "impact": 3,
+      "analysis": "PVC产能260万吨/年，产业链完整。"
+    }
+  ],
+  "article_id": "6cf13be800d947de9fc0200ffe012ac4",
+  "article_date": "2026-01-20",
+  "article_title": "2026.1.20市场逻辑精选"
+}

@@ -1,0 +1,88 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多事件利好。",
+  "sectors": [
+    {
+      "sector_name": "黄金",
+      "impact": 4,
+      "analysis": "黄金价格创新高，板块受益"
+    },
+    {
+      "sector_name": "消费",
+      "impact": 3,
+      "analysis": "提振消费政策预期，板块受益"
+    },
+    {
+      "sector_name": "多胎概念",
+      "impact": 3,
+      "analysis": "育儿补贴政策，板块受益"
+    },
+    {
+      "sector_name": "深海科技",
+      "impact": 3,
+      "analysis": "深海科技发展，板块受益"
+    },
+    {
+      "sector_name": "自动驾驶",
+      "impact": 3,
+      "analysis": "特斯拉与百度合作，板块受益"
+    },
+    {
+      "sector_name": "华为手机",
+      "impact": 3,
+      "analysis": "华为新形态新机发布，板块受益"
+    },
+    {
+      "sector_name": "量子计算机",
+      "impact": 3,
+      "analysis": "量子计算机突破，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "明牌珠宝",
+      "stock_code": "002574",
+      "impact": 4,
+      "analysis": "黄金价格创新高，公司受益"
+    },
+    {
+      "stock_name": "中百集团",
+      "stock_code": "000759",
+      "impact": 3,
+      "analysis": "提振消费政策预期，公司受益"
+    },
+    {
+      "stock_name": "爱婴室",
+      "stock_code": "603027",
+      "impact": 3,
+      "analysis": "育儿补贴政策，公司受益"
+    },
+    {
+      "stock_name": "深海科技",
+      "stock_code": "002798",
+      "impact": 3,
+      "analysis": "深海科技发展，公司受益"
+    },
+    {
+      "stock_name": "路畅科技",
+      "stock_code": "002813",
+      "impact": 3,
+      "analysis": "特斯拉与百度合作，公司受益"
+    },
+    {
+      "stock_name": "福日电子",
+      "stock_code": "600406",
+      "impact": 3,
+      "analysis": "华为新形态新机发布，公司受益"
+    },
+    {
+      "stock_name": "星光股份",
+      "stock_code": "600396",
+      "impact": 3,
+      "analysis": "量子计算机突破，公司受益"
+    }
+  ],
+  "article_title": "3月14日盘前早报 热点事件关注",
+  "html_file": "j4h08k5scx.html",
+  "article_date": "2025-03-14"
+}

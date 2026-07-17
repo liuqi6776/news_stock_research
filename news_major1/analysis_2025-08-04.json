@@ -1,0 +1,91 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受积极因素推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "商业航天",
+      "impact": 4,
+      "analysis": "政策支持，行业加速发展"
+    },
+    {
+      "sector_name": "游戏",
+      "impact": 3,
+      "analysis": "行业景气度提升，关注暑期档表现"
+    },
+    {
+      "sector_name": "机器人轻量化",
+      "impact": 3,
+      "analysis": "技术突破，商业化关键"
+    },
+    {
+      "sector_name": "宽带",
+      "impact": 3,
+      "analysis": "收购事件，市场关注度高"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "佳缘科技",
+      "stock_code": "000990",
+      "impact": 4,
+      "analysis": "商业航天产业链股东"
+    },
+    {
+      "stock_name": "思科瑞",
+      "stock_code": "300827",
+      "impact": 4,
+      "analysis": "商业航天产业链股东"
+    },
+    {
+      "stock_name": "巨人网络",
+      "stock_code": "002558",
+      "impact": 3,
+      "analysis": "游戏行业核心公司"
+    },
+    {
+      "stock_name": "吉比特",
+      "stock_code": "603444",
+      "impact": 3,
+      "analysis": "游戏行业核心公司"
+    },
+    {
+      "stock_name": "中研股份",
+      "stock_code": "300970",
+      "impact": 4,
+      "analysis": "机器人轻量化材料核心公司"
+    },
+    {
+      "stock_name": "中欣氟材",
+      "stock_code": "300972",
+      "impact": 4,
+      "analysis": "机器人轻量化材料核心公司"
+    },
+    {
+      "stock_name": "维科科技",
+      "stock_code": "600634",
+      "impact": 3,
+      "analysis": "宽带行业相关公司"
+    },
+    {
+      "stock_name": "崇达技术",
+      "stock_code": "002815",
+      "impact": 3,
+      "analysis": "宽带行业相关公司"
+    },
+    {
+      "stock_name": "顺钠股份",
+      "stock_code": "002245",
+      "impact": 4,
+      "analysis": "施耐德变压器合作方"
+    },
+    {
+      "stock_name": "航天电子",
+      "stock_code": "600879",
+      "impact": 4,
+      "analysis": "无人机和巡飞弹供应商"
+    }
+  ],
+  "article_id": "f6ec48f350d34555a7b2f37bfd350b1f",
+  "article_date": "2025-08-04",
+  "article_title": "2025.8.4市场逻辑精选"
+}

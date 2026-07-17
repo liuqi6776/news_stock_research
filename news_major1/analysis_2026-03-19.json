@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "算力",
+      "impact": 4,
+      "analysis": "算力需求上涨，相关个股受益"
+    },
+    {
+      "sector_name": "商业航天",
+      "impact": 3,
+      "analysis": "蓝箭航天朱雀火箭发射，相关个股受关注"
+    },
+    {
+      "sector_name": "稳定币",
+      "impact": 3,
+      "analysis": "香港特区政府财政司司长陈茂波赴京出席活动，相关个股受益"
+    },
+    {
+      "sector_name": "石油",
+      "impact": 3,
+      "analysis": "国际油价上涨，相关个股受益"
+    },
+    {
+      "sector_name": "化工",
+      "impact": 2,
+      "analysis": "巴斯夫上调产品价格，相关个股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "美利云",
+      "stock_code": "002636",
+      "impact": 4,
+      "analysis": "算力需求上涨，股价受益"
+    },
+    {
+      "stock_name": "数据港",
+      "stock_code": "600845",
+      "impact": 4,
+      "analysis": "算力需求上涨，股价受益"
+    },
+    {
+      "stock_name": "蓝箭航天",
+      "stock_code": "300383",
+      "impact": 3,
+      "analysis": "朱雀火箭发射，股价受益"
+    },
+    {
+      "stock_name": "御银股份",
+      "stock_code": "002177",
+      "impact": 3,
+      "analysis": "稳定币概念，股价受益"
+    },
+    {
+      "stock_name": "通源石油",
+      "stock_code": "600803",
+      "impact": 3,
+      "analysis": "国际油价上涨，股价受益"
+    }
+  ],
+  "article_title": "3月19日盘前纪要",
+  "html_file": "3fg8j25fyyu.html",
+  "article_date": "2026-03-19"
+}

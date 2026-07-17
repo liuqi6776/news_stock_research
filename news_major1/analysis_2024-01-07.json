@@ -1,0 +1,51 @@
+{
+  "market_impact": 3,
+  "market_analysis": "银发经济和固态电池概念受政策支持，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "大健康",
+      "impact": 4,
+      "analysis": "银发经济推动相关产业链发展"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 3,
+      "analysis": "固态电池技术突破，行业空间扩大"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "云南城投",
+      "stock_code": "600239",
+      "impact": 3,
+      "analysis": "受益皎漂深水港开发"
+    },
+    {
+      "stock_name": "志晟信息",
+      "stock_code": "300528",
+      "impact": 3,
+      "analysis": "深耕智慧养老领域"
+    },
+    {
+      "stock_name": "金龙羽",
+      "stock_code": "002278",
+      "impact": 3,
+      "analysis": "固态电池技术路线突破"
+    },
+    {
+      "stock_name": "锦好医疗",
+      "stock_code": "300712",
+      "impact": 3,
+      "analysis": "全产品线受益银发经济"
+    },
+    {
+      "stock_name": "艾融软件",
+      "stock_code": "300099",
+      "impact": 3,
+      "analysis": "鸿蒙版APP研发受银行重视"
+    }
+  ],
+  "article_id": "eb34d40a5f0048fbad35458d1982bddc",
+  "article_date": "2024-01-07",
+  "article_title": "2024.1.7市场逻辑精选"
+}

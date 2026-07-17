@@ -1,0 +1,93 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件影响，市场情绪波动较大",
+  "sectors": [
+    {
+      "sector_name": "天然气",
+      "impact": 2,
+      "analysis": "北溪管道泄漏事件影响，短期利空"
+    },
+    {
+      "sector_name": "储能",
+      "impact": 3,
+      "analysis": "南网储能更名，板块关注度提升"
+    },
+    {
+      "sector_name": "医疗设备",
+      "impact": 3,
+      "analysis": "医疗新基建政策支持，板块受益"
+    },
+    {
+      "sector_name": "电子阅读",
+      "impact": -2,
+      "analysis": "腾讯QQ阅读停止运营，短期利空"
+    },
+    {
+      "sector_name": "光伏电池",
+      "impact": 3,
+      "analysis": "电池片涨价，板块景气度提升"
+    },
+    {
+      "sector_name": "科技",
+      "impact": 2,
+      "analysis": "科技创新税前扣除力度加大，利好科技板块"
+    },
+    {
+      "sector_name": "医药医疗",
+      "impact": 3,
+      "analysis": "医疗设备采购需求增加，板块受益"
+    },
+    {
+      "sector_name": "宠物食品",
+      "impact": 2,
+      "analysis": "海外需求攀升，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "山东墨龙",
+      "stock_code": "000655",
+      "impact": 2,
+      "analysis": "天然气板块受益股"
+    },
+    {
+      "stock_name": "南网储能",
+      "stock_code": "600369",
+      "impact": 3,
+      "analysis": "公司更名，关注度提升"
+    },
+    {
+      "stock_name": "尚荣医疗",
+      "stock_code": "002551",
+      "impact": 3,
+      "analysis": "医疗设备采购需求增加，公司受益"
+    },
+    {
+      "stock_name": "通威股份",
+      "stock_code": "600438",
+      "impact": 3,
+      "analysis": "电池片涨价，公司受益"
+    },
+    {
+      "stock_name": "大港股份",
+      "stock_code": "002231",
+      "impact": 2,
+      "analysis": "科技创新税前扣除力度加大，公司受益"
+    },
+    {
+      "stock_name": "大博医疗",
+      "stock_code": "002908",
+      "impact": 3,
+      "analysis": "医疗设备采购需求增加，公司受益"
+    },
+    {
+      "stock_name": "依依股份",
+      "stock_code": "002275",
+      "impact": 2,
+      "analysis": "宠物食品海外需求攀升，公司受益"
+    }
+  ],
+  "article_title": "9月28日 盘前早8点 股市要闻关注",
+  "html_file": "212ldzlclg.html",
+  "article_date": "2022-09-28"
+}

@@ -1,0 +1,77 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极影响。",
+  "sectors": [
+    {
+      "sector_name": "林业碳汇",
+      "impact": 4,
+      "analysis": "政策支持，市场潜力大。"
+    },
+    {
+      "sector_name": "先进封装",
+      "impact": 3,
+      "analysis": "台积电扩产，行业需求旺盛。"
+    },
+    {
+      "sector_name": "注射笔",
+      "impact": 3,
+      "analysis": "下游需求增长，国产替代加速。"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 3,
+      "analysis": "华为智选车发布，行业关注度提升。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "石英供需紧张，半导体业务增长。"
+    },
+    {
+      "sector_name": "操作系统",
+      "impact": 2,
+      "analysis": "华为鸿蒙生态发展，国产替代有望。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "翰宇药业",
+      "stock_code": "002552",
+      "impact": 4,
+      "analysis": "多肽药物进入美国市场，业绩有望增长。"
+    },
+    {
+      "stock_name": "中国软件",
+      "stock_code": "600536",
+      "impact": 3,
+      "analysis": "或出海替代俄操作系统，市场前景广阔。"
+    },
+    {
+      "stock_name": "麦迪科技",
+      "stock_code": "300915",
+      "impact": 3,
+      "analysis": "子公司采购大额单晶硅片，营收有望增长。"
+    },
+    {
+      "stock_name": "石英股份",
+      "stock_code": "600559",
+      "impact": 3,
+      "analysis": "石英供需紧张，半导体业务增长。"
+    },
+    {
+      "stock_name": "虹软科技",
+      "stock_code": "603066",
+      "impact": 3,
+      "analysis": "华为推出指向交互大屏，公司受益。"
+    },
+    {
+      "stock_name": "远东传动",
+      "stock_code": "002406",
+      "impact": 3,
+      "analysis": "多热点共振，业绩有望增长。"
+    }
+  ],
+  "article_id": "a660488bcd404c7e8d407c11f4d8b8b8",
+  "article_date": "2023-09-25",
+  "article_title": "2023.9.25市场逻辑精选"
+}

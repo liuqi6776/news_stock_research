@@ -1,0 +1,56 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，关注AI电源和6G相关板块。",
+  "sectors": [
+    {
+      "sector_name": "AI电源",
+      "impact": 4,
+      "analysis": "英伟达技术突破，板块受益"
+    },
+    {
+      "sector_name": "6G",
+      "impact": 3,
+      "analysis": "政府工作报告提及，板块受关注"
+    },
+    {
+      "sector_name": "脑机接口",
+      "impact": 2,
+      "analysis": "江苏省产业创新发展方案发布，板块受提振"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中恒电气",
+      "stock_code": "002364",
+      "impact": 4,
+      "analysis": "HVDC龙头，英伟达供应链"
+    },
+    {
+      "stock_name": "富特科技",
+      "stock_code": "300733",
+      "impact": 3,
+      "analysis": "HVDC和SiC应用经验丰富"
+    },
+    {
+      "stock_name": "麦格米特",
+      "stock_code": "002501",
+      "impact": 3,
+      "analysis": "英伟达AI电源核心供应商"
+    },
+    {
+      "stock_name": "中兴通讯",
+      "stock_code": "000063",
+      "impact": 3,
+      "analysis": "6G标准必要专利占比高"
+    },
+    {
+      "stock_name": "爱朋医疗",
+      "stock_code": "300756",
+      "impact": 2,
+      "analysis": "脑机接口医疗应用领域布局"
+    }
+  ],
+  "article_id": "306dd002360043c2aaecb504e080549c",
+  "article_date": "2026-03-10",
+  "article_title": "2026.3.10市场逻辑精选"
+}

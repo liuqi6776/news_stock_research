@@ -1,0 +1,78 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受益。",
+  "sectors": [
+    {
+      "sector_name": "充电桩",
+      "impact": 4,
+      "analysis": "海外需求增长，国内政策支持，板块利好。"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "硅片价格下降，电站安装需求增加，板块利好。"
+    },
+    {
+      "sector_name": "供销社",
+      "impact": 3,
+      "analysis": "乡村振兴，保障粮食安全，板块利好。"
+    },
+    {
+      "sector_name": "新冠防护",
+      "impact": 3,
+      "analysis": "常态化需求巨大，板块利好。"
+    },
+    {
+      "sector_name": "虚拟现实",
+      "impact": 3,
+      "analysis": "政策支持，市场空间大，板块利好。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "通合科技",
+      "stock_code": "300409",
+      "impact": 4,
+      "analysis": "军工电源+高压直流充电，受益充电桩行业。"
+    },
+    {
+      "stock_name": "炬华科技",
+      "stock_code": "300208",
+      "impact": 4,
+      "analysis": "交流充电桩，出口美国和欧洲，订单增长。"
+    },
+    {
+      "stock_name": "盛弘股份",
+      "stock_code": "300626",
+      "impact": 4,
+      "analysis": "直流充电桩，出口欧洲，储能产品也是主营之一。"
+    },
+    {
+      "stock_name": "道通科技",
+      "stock_code": "603019",
+      "impact": 3,
+      "analysis": "汽车综合诊断产品，充电桩业务增长。"
+    },
+    {
+      "stock_name": "中信博",
+      "stock_code": "002532",
+      "impact": 3,
+      "analysis": "固定支架龙头，光伏电站需求增加。"
+    },
+    {
+      "stock_name": "晶科科技",
+      "stock_code": "601918",
+      "impact": 3,
+      "analysis": "民营光伏电站龙头，自持电站规模大。"
+    },
+    {
+      "stock_name": "歌尔股份",
+      "stock_code": "002241",
+      "impact": 3,
+      "analysis": "VR/AR设备供应声学模组，并即将生产VR/AR整机。"
+    }
+  ],
+  "article_id": "3412fe0db1ba4c4c889fee3acc93a5b3",
+  "article_date": "2022-11-01",
+  "article_title": "2022.11.1市场逻辑精选"
+}

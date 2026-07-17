@@ -1,0 +1,77 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，新能源汽车、房地产、国企改革等板块受关注。",
+  "sectors": [
+    {
+      "sector_name": "新能源汽车",
+      "impact": 4,
+      "analysis": "销量创新高，产业链个股受益"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 3,
+      "analysis": "首套住房贷款利率动态调整，部分城市受益"
+    },
+    {
+      "sector_name": "国企改革",
+      "impact": 3,
+      "analysis": "国资委推动国企改革深化，相关个股受益"
+    },
+    {
+      "sector_name": "物联网",
+      "impact": 3,
+      "analysis": "物联网转售试点启动，相关个股受益"
+    },
+    {
+      "sector_name": "数字经济",
+      "impact": 3,
+      "analysis": "数字经济政策支持，相关个股受益"
+    },
+    {
+      "sector_name": "大消费",
+      "impact": 2,
+      "analysis": "消费恢复，相关个股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "众业达",
+      "stock_code": "002441",
+      "impact": 4,
+      "analysis": "新能源汽车销量创新高，公司受益"
+    },
+    {
+      "stock_name": "中国武夷",
+      "stock_code": "000797",
+      "impact": 3,
+      "analysis": "首套住房贷款利率动态调整，公司受益"
+    },
+    {
+      "stock_name": "中成股份",
+      "stock_code": "000151",
+      "impact": 3,
+      "analysis": "国资委推动国企改革深化，公司受益"
+    },
+    {
+      "stock_name": "优友互联",
+      "stock_code": "002345",
+      "impact": 3,
+      "analysis": "物联网转售试点启动，公司受益"
+    },
+    {
+      "stock_name": "中远海科",
+      "stock_code": "002401",
+      "impact": 3,
+      "analysis": "数字经济政策支持，公司受益"
+    },
+    {
+      "stock_name": "哈尔斯",
+      "stock_code": "002414",
+      "impact": 2,
+      "analysis": "消费恢复，公司受益"
+    }
+  ],
+  "article_title": "1月6日盘前早参 热点事件关注",
+  "html_file": "8rwrl2rt1n.html",
+  "article_date": "2023-01-06"
+}

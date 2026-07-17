@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多事件利好。",
+  "sectors": [
+    {
+      "sector_name": "半导体",
+      "impact": 4,
+      "analysis": "芯片法案生效，国产芯片受益"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 3,
+      "analysis": "智能网联汽车试点启动，相关产业链受益"
+    },
+    {
+      "sector_name": "自行车",
+      "impact": 3,
+      "analysis": "骑行装备需求增长，相关个股受益"
+    },
+    {
+      "sector_name": "华为概念",
+      "impact": 3,
+      "analysis": "华为秋季新品发布会，相关个股受益"
+    },
+    {
+      "sector_name": "制冷剂",
+      "impact": 3,
+      "analysis": "制冷剂行业盈利向好，相关个股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "柏楚电子",
+      "stock_code": "300745",
+      "impact": 3,
+      "analysis": "上交所三季报预约披露，相关个股受益"
+    },
+    {
+      "stock_name": "云南锗业",
+      "stock_code": "002428",
+      "impact": 3,
+      "analysis": "商务部批准镓锗出口申请，相关个股受益"
+    },
+    {
+      "stock_name": "浙江世宝",
+      "stock_code": "002703",
+      "impact": 3,
+      "analysis": "智能网联汽车试点启动，相关个股受益"
+    },
+    {
+      "stock_name": "深中华A",
+      "stock_code": "000017",
+      "impact": 3,
+      "analysis": "自行车销量增长，相关个股受益"
+    },
+    {
+      "stock_name": "日久光电",
+      "stock_code": "300335",
+      "impact": 3,
+      "analysis": "华为秋季新品发布会，相关个股受益"
+    }
+  ],
+  "article_title": "9月22日盘前早报 热点事件关注",
+  "html_file": "7gew0rr0tj.html",
+  "article_date": "2023-09-22"
+}

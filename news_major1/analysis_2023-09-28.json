@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，利好消息较多。",
+  "sectors": [
+    {
+      "sector_name": "港股证券",
+      "impact": 3,
+      "analysis": "香港或将下调印花税，利好港股市场。"
+    },
+    {
+      "sector_name": "石油",
+      "impact": 3,
+      "analysis": "美油创13个月新高，利好石油板块。"
+    },
+    {
+      "sector_name": "跨境电商",
+      "impact": 3,
+      "analysis": "政治局学习世界贸易组织改革，利好跨境电商板块。"
+    },
+    {
+      "sector_name": "数据要素",
+      "impact": 3,
+      "analysis": "ChatGPT升级，利好数据要素和人工智能板块。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "天晟新材",
+      "stock_code": "000906",
+      "impact": 3,
+      "analysis": "受港股证券板块利好影响。"
+    },
+    {
+      "stock_name": "贝肯能源",
+      "stock_code": "002828",
+      "impact": 3,
+      "analysis": "受石油板块利好影响。"
+    },
+    {
+      "stock_name": "三态股份",
+      "stock_code": "002812",
+      "impact": 3,
+      "analysis": "受跨境电商板块利好影响。"
+    },
+    {
+      "stock_name": "人民网",
+      "stock_code": "603000",
+      "impact": 3,
+      "analysis": "受数据要素板块利好影响。"
+    }
+  ],
+  "article_title": "9月28日盘前早报 热点事件关注",
+  "html_file": "7gqqp3dhlc.html",
+  "article_date": "2023-09-28"
+}

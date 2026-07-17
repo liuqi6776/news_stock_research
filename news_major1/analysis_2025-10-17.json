@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏积极，多个板块和个股受利好消息影响。",
+  "sectors": [
+    {
+      "sector_name": "存储芯片",
+      "impact": 4,
+      "analysis": "存储芯片行业受政策支持和市场需求增长利好影响。"
+    },
+    {
+      "sector_name": "煤炭",
+      "impact": 3,
+      "analysis": "煤炭行业供需格局好转，煤价有望上涨。"
+    },
+    {
+      "sector_name": "鸿蒙",
+      "impact": 3,
+      "analysis": "鸿蒙操作系统相关个股受关注。"
+    },
+    {
+      "sector_name": "黄金白银",
+      "impact": 3,
+      "analysis": "黄金白银价格创新高，相关个股受益。"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 3,
+      "analysis": "新能源汽车产业链个股受政策支持利好。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "亚太药业",
+      "stock_code": "002370",
+      "impact": 4,
+      "analysis": "控股股东变更，利好消息刺激股价。"
+    },
+    {
+      "stock_name": "国晟科技",
+      "stock_code": "002979",
+      "impact": 4,
+      "analysis": "子公司增资固态电池产业链项目，利好消息刺激股价。"
+    },
+    {
+      "stock_name": "通达股份",
+      "stock_code": "002576",
+      "impact": 4,
+      "analysis": "业绩增长，股价受提振。"
+    },
+    {
+      "stock_name": "大有能源",
+      "stock_code": "601558",
+      "impact": 4,
+      "analysis": "煤炭行业供需格局好转，股价受益。"
+    },
+    {
+      "stock_name": "常山北明",
+      "stock_code": "000158",
+      "impact": 3,
+      "analysis": "鸿蒙操作系统相关个股，受关注。"
+    }
+  ],
+  "article_title": "10月17日盘前纪要",
+  "html_file": "3xqu042s0br.html",
+  "article_date": "2025-10-17"
+}

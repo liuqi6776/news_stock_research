@@ -1,0 +1,71 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "新材料",
+      "impact": 4,
+      "analysis": "超高分子量聚乙烯纤维需求增长，板块受益"
+    },
+    {
+      "sector_name": "智能汽车",
+      "impact": 3,
+      "analysis": "智能网联汽车试点，相关产业链受益"
+    },
+    {
+      "sector_name": "通信设备",
+      "impact": 3,
+      "analysis": "5G-A增量环节，相关设备需求增长"
+    },
+    {
+      "sector_name": "白酒",
+      "impact": 3,
+      "analysis": "龙头酒企提价，行业库存去化"
+    },
+    {
+      "sector_name": "电力设备",
+      "impact": 2,
+      "analysis": "特高压建设力度加大，相关设备受益"
+    },
+    {
+      "sector_name": "地产",
+      "impact": 2,
+      "analysis": "地产政策预期改善，相关个股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "南山智尚",
+      "stock_code": "300547",
+      "impact": 5,
+      "analysis": "超高分子量聚乙烯纤维需求增长，股价涨停"
+    },
+    {
+      "stock_name": "平高电气",
+      "stock_code": "600709",
+      "impact": 4,
+      "analysis": "特高压建设力度加大，股价受益"
+    },
+    {
+      "stock_name": "山西汾酒",
+      "stock_code": "600809",
+      "impact": 4,
+      "analysis": "龙头酒企提价，股价受益"
+    },
+    {
+      "stock_name": "华安鑫创",
+      "stock_code": "603093",
+      "impact": 3,
+      "analysis": "获小鹏汇天供货资格，股价受益"
+    },
+    {
+      "stock_name": "*ST导航",
+      "stock_code": "300070",
+      "impact": 3,
+      "analysis": "签订武器装备大单，股价受益"
+    }
+  ],
+  "article_id": "d32b17e5a8114f1dbad57012f34d0a60",
+  "article_date": "2024-06-04",
+  "article_title": "2024.6.4市场逻辑精选"
+}

@@ -1,0 +1,61 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，券商板块和部分个股表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "券商",
+      "impact": 4,
+      "analysis": "政策纠偏利好，估值较低，业绩预期增长。"
+    },
+    {
+      "sector_name": "教育",
+      "impact": 3,
+      "analysis": "转型直播带货，品牌触达面拓宽。"
+    },
+    {
+      "sector_name": "农业",
+      "impact": 3,
+      "analysis": "转基因种子安全证书获批，行业集中度提升。"
+    },
+    {
+      "sector_name": "新材料",
+      "impact": 2,
+      "analysis": "EVA粒子价格上涨，需求提振。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "东方证券",
+      "stock_code": "600908",
+      "impact": 4,
+      "analysis": "业绩预期增长，估值较低。"
+    },
+    {
+      "stock_name": "长城证券",
+      "stock_code": "601916",
+      "impact": 4,
+      "analysis": "业绩预期增长，估值较低。"
+    },
+    {
+      "stock_name": "新东方在线",
+      "stock_code": "01797",
+      "impact": 3,
+      "analysis": "品牌触达面拓宽，业绩预期增长。"
+    },
+    {
+      "stock_name": "大北农",
+      "stock_code": "002385",
+      "impact": 3,
+      "analysis": "转基因玉米和大豆性状技术领先。"
+    },
+    {
+      "stock_name": "隆平高科",
+      "stock_code": "000998",
+      "impact": 3,
+      "analysis": "转基因玉米和大豆安全证书获批。"
+    }
+  ],
+  "article_id": "16cba60c8cd44e1a92796dc7594d2b24",
+  "article_date": "2023-01-15",
+  "article_title": "2023.1.15市场逻辑精选"
+}

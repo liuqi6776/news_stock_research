@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪提升",
+  "sectors": [
+    {
+      "sector_name": "风电",
+      "impact": 4,
+      "analysis": "政策支持，装机量增加"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 4,
+      "analysis": "政策支持，装机量增加"
+    },
+    {
+      "sector_name": "AI+广告",
+      "impact": 3,
+      "analysis": "AI技术应用，行业变革"
+    },
+    {
+      "sector_name": "鸿蒙",
+      "impact": 3,
+      "analysis": "开发者大会，生态发展"
+    },
+    {
+      "sector_name": "人造太阳",
+      "impact": 3,
+      "analysis": "技术突破，应用前景"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "大金重工",
+      "stock_code": "002487",
+      "impact": 4,
+      "analysis": "风电政策利好"
+    },
+    {
+      "stock_name": "隆基绿能",
+      "stock_code": "601012",
+      "impact": 4,
+      "analysis": "光伏政策利好"
+    },
+    {
+      "stock_name": "蓝色光标",
+      "stock_code": "300058",
+      "impact": 3,
+      "analysis": "AI技术应用"
+    },
+    {
+      "stock_name": "中国电子",
+      "stock_code": "000066",
+      "impact": 3,
+      "analysis": "数据产业公司成立"
+    },
+    {
+      "stock_name": "润和软件",
+      "stock_code": "300457",
+      "impact": 3,
+      "analysis": "鸿蒙开发者大会"
+    }
+  ],
+  "article_title": "4月13日 盘前热点事件关注",
+  "html_file": "dul1s84aez.html",
+  "article_date": "2023-04-13"
+}

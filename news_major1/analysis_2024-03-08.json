@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股受积极事件影响。",
+  "sectors": [
+    {
+      "sector_name": "减肥药",
+      "impact": 4,
+      "analysis": "诺和诺德新药效果显著，板块受益"
+    },
+    {
+      "sector_name": "新能源车",
+      "impact": 3,
+      "analysis": "东风汽车与华为合作，板块受提振"
+    },
+    {
+      "sector_name": "AI安全",
+      "impact": 3,
+      "analysis": "欧洲AI法案投票，板块受关注"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 3,
+      "analysis": "两会强调新质战斗力，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "诺和诺德",
+      "stock_code": "600085",
+      "impact": 4,
+      "analysis": "新药效果显著，股价大涨"
+    },
+    {
+      "stock_name": "东风汽车",
+      "stock_code": "600006",
+      "impact": 3,
+      "analysis": "与华为合作，股价受提振"
+    },
+    {
+      "stock_name": "国华网安",
+      "stock_code": "300663",
+      "impact": 3,
+      "analysis": "AI安全板块受关注"
+    },
+    {
+      "stock_name": "立航科技",
+      "stock_code": "300605",
+      "impact": 3,
+      "analysis": "两会强调新质战斗力，股价受益"
+    }
+  ],
+  "article_title": "3月8日 周五盘前早报 热点事件关注",
+  "html_file": "b0k1v7qczb.html",
+  "article_date": "2024-03-08"
+}

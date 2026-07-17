@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受多事件影响，波动较大。",
+  "sectors": [
+    {
+      "sector_name": "医疗保健",
+      "impact": 2,
+      "analysis": "骨植入材料事件影响相关个股，市场情绪波动。"
+    },
+    {
+      "sector_name": "券商",
+      "impact": 3,
+      "analysis": "国联证券收购民生证券，券商合并预期升温。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 2,
+      "analysis": "日本地震可能影响半导体行业，市场关注后续报道。"
+    },
+    {
+      "sector_name": "消费",
+      "impact": 2,
+      "analysis": "国新办促销费发布会，关注养老和旅游板块。"
+    },
+    {
+      "sector_name": "新能源",
+      "impact": 2,
+      "analysis": "新能源汽车销量增长，市场关注相关个股。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "威高骨科",
+      "stock_code": "300008",
+      "impact": 2,
+      "analysis": "受骨植入材料事件影响，股价波动。"
+    },
+    {
+      "stock_name": "国联证券",
+      "stock_code": "600011",
+      "impact": 3,
+      "analysis": "收购民生证券，股价可能受益。"
+    },
+    {
+      "stock_name": "礼来",
+      "stock_code": "600529",
+      "impact": 3,
+      "analysis": "收入预期上调，股价上涨。"
+    },
+    {
+      "stock_name": "悦心健康",
+      "stock_code": "002162",
+      "impact": 2,
+      "analysis": "受国新办促销费发布会影响，股价可能受益。"
+    },
+    {
+      "stock_name": "金龙汽车",
+      "stock_code": "600686",
+      "impact": 2,
+      "analysis": "受文远知行Robotaxi首发影响，股价可能受益。"
+    }
+  ],
+  "article_title": "8月9日盘前早报 热点事件关注",
+  "html_file": "cw0amsdphm.html",
+  "article_date": "2024-08-09"
+}

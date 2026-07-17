@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受积极因素驱动，但需关注潜在风险。",
+  "sectors": [
+    {
+      "sector_name": "食品饮料",
+      "impact": 4,
+      "analysis": "蜜雪冰城上市预期提振板块情绪。"
+    },
+    {
+      "sector_name": "电子",
+      "impact": 3,
+      "analysis": "BBU备用电源成为GB300新标配，相关产业链受益。"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 2,
+      "analysis": "干细胞业务进展，行业关注度提升。"
+    },
+    {
+      "sector_name": "地产",
+      "impact": -2,
+      "analysis": "粤宏远A转型高端装备制造，短期或受市场关注。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "蜜雪冰城",
+      "stock_code": "待定",
+      "impact": 4,
+      "analysis": "港股上市预期，股价有望上涨。"
+    },
+    {
+      "stock_name": "蔚蓝锂芯",
+      "stock_code": "002245",
+      "impact": 3,
+      "analysis": "BBU电池客户增加，业绩有望提升。"
+    },
+    {
+      "stock_name": "好想你",
+      "stock_code": "002582",
+      "impact": 3,
+      "analysis": "微信小店布局，业绩有望增长。"
+    },
+    {
+      "stock_name": "粤宏远A",
+      "stock_code": "000613",
+      "impact": -2,
+      "analysis": "转型高端装备制造，短期或受市场关注。"
+    }
+  ],
+  "article_id": "97ab21800f0f4901800efe2f262ee046",
+  "article_date": "2025-01-02",
+  "article_title": "2025.1.2市场逻辑精选"
+}

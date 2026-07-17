@@ -1,0 +1,74 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，AI应用和半导体行业表现强劲。",
+  "sectors": [
+    {
+      "sector_name": "AI应用",
+      "impact": 4,
+      "analysis": "AI应用出海进程加速，相关公司受益"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "行业需求旺盛，晶圆厂提价，产业链景气上行"
+    },
+    {
+      "sector_name": "卫星安全",
+      "impact": -2,
+      "analysis": "星链降轨引发市场担忧，相关公司受影响"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "蓝色光标",
+      "stock_code": "300058",
+      "impact": 3,
+      "analysis": "AI营销预算增加，AI应用落地"
+    },
+    {
+      "stock_name": "利欧股份",
+      "stock_code": "002131",
+      "impact": 3,
+      "analysis": "AI智能体领域发展，AI产品技术升级"
+    },
+    {
+      "stock_name": "万事利",
+      "stock_code": "600703",
+      "impact": 3,
+      "analysis": "AI花型交互智能体，春晚丝绸围巾项目合作伙伴"
+    },
+    {
+      "stock_name": "华虹公司",
+      "stock_code": "600312",
+      "impact": 3,
+      "analysis": "晶圆代工产能提升，晶圆厂提价"
+    },
+    {
+      "stock_name": "晶合集成",
+      "stock_code": "688018",
+      "impact": 3,
+      "analysis": "晶圆代工平台量产，晶圆厂提价"
+    },
+    {
+      "stock_name": "烽火通信",
+      "stock_code": "600498",
+      "impact": 3,
+      "analysis": "供应星间激光通信产品，星间激光通信发展"
+    },
+    {
+      "stock_name": "掌阅科技",
+      "stock_code": "300383",
+      "impact": 3,
+      "analysis": "布局AI阅读，合作KIMI、MiniMax、字节"
+    },
+    {
+      "stock_name": "联创光电",
+      "stock_code": "600363",
+      "impact": 3,
+      "analysis": "首单商业航天电磁弹射项目"
+    }
+  ],
+  "article_id": "5aa948351ca248dc98d3e62571f8c5ad",
+  "article_date": "2026-01-04",
+  "article_title": "2026.1.4市场逻辑精选"
+}

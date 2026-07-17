@@ -1,0 +1,88 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股受积极因素影响。",
+  "sectors": [
+    {
+      "sector_name": "黄金",
+      "impact": 4,
+      "analysis": "黄金价格创新高，相关个股受益"
+    },
+    {
+      "sector_name": "低空经济",
+      "impact": 3,
+      "analysis": "民航局推进低空经济发展，相关个股受提振"
+    },
+    {
+      "sector_name": "小米汽车",
+      "impact": 3,
+      "analysis": "小米汽车上市，相关产业链个股受益"
+    },
+    {
+      "sector_name": "5G-A",
+      "impact": 3,
+      "analysis": "中国移动5G-A商用，相关设备供应商受益"
+    },
+    {
+      "sector_name": "设备更新",
+      "impact": 2,
+      "analysis": "大规模设备更新政策，相关设备制造商受益"
+    },
+    {
+      "sector_name": "存储芯片",
+      "impact": 2,
+      "analysis": "美光西安新厂房动工，存储芯片价格预期上涨"
+    },
+    {
+      "sector_name": "星闪",
+      "impact": 2,
+      "analysis": "国际星闪产业峰会，相关技术公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中润资源",
+      "stock_code": "000506",
+      "impact": 4,
+      "analysis": "黄金价格创新高，公司受益"
+    },
+    {
+      "stock_name": "华生科技",
+      "stock_code": "002352",
+      "impact": 3,
+      "analysis": "低空经济发展，公司受益"
+    },
+    {
+      "stock_name": "凯众股份",
+      "stock_code": "603023",
+      "impact": 3,
+      "analysis": "小米汽车上市，公司受益"
+    },
+    {
+      "stock_name": "通宇通讯",
+      "stock_code": "002792",
+      "impact": 3,
+      "analysis": "5G-A商用，公司受益"
+    },
+    {
+      "stock_name": "必得科技",
+      "stock_code": "002333",
+      "impact": 2,
+      "analysis": "设备更新政策，公司受益"
+    },
+    {
+      "stock_name": "德明利",
+      "stock_code": "688027",
+      "impact": 2,
+      "analysis": "存储芯片价格上涨，公司受益"
+    },
+    {
+      "stock_name": "创耀科技",
+      "stock_code": "688029",
+      "impact": 2,
+      "analysis": "星闪产业峰会，公司受益"
+    }
+  ],
+  "article_title": "3月29日盘前早报 热点事件关注",
+  "html_file": "4fkyleg872.html",
+  "article_date": "2024-03-29"
+}

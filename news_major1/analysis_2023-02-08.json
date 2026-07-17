@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块有望受益。",
+  "sectors": [
+    {
+      "sector_name": "人工智能",
+      "impact": 4,
+      "analysis": "ChatGPT相关技术发展，推动板块上涨。"
+    },
+    {
+      "sector_name": "算力",
+      "impact": 3,
+      "analysis": "算力需求增加，相关企业受益。"
+    },
+    {
+      "sector_name": "教育",
+      "impact": 2,
+      "analysis": "科教兴国战略，教育板块有望受益。"
+    },
+    {
+      "sector_name": "外卖服务",
+      "impact": 2,
+      "analysis": "抖音上线外卖服务，相关企业受益。"
+    },
+    {
+      "sector_name": "数字人",
+      "impact": 2,
+      "analysis": "ChatGPT技术接入数字人产品，相关企业受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "联特科技",
+      "stock_code": "300538",
+      "impact": 3,
+      "analysis": "算力需求增加，公司受益。"
+    },
+    {
+      "stock_name": "通宇通讯",
+      "stock_code": "002792",
+      "impact": 3,
+      "analysis": "算力需求增加，公司受益。"
+    },
+    {
+      "stock_name": "好利科技",
+      "stock_code": "300449",
+      "impact": 3,
+      "analysis": "GPU需求增加，公司受益。"
+    },
+    {
+      "stock_name": "景嘉微",
+      "stock_code": "300474",
+      "impact": 3,
+      "analysis": "GPU需求增加，公司受益。"
+    },
+    {
+      "stock_name": "首都在线",
+      "stock_code": "000739",
+      "impact": 3,
+      "analysis": "为ChatGPT类人工智能应用提供技术服务，公司受益。"
+    }
+  ],
+  "article_title": "2月8日盘前早参 热点事件关注",
+  "html_file": "75h4629dpx.html",
+  "article_date": "2023-02-08"
+}

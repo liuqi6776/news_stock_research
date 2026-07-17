@@ -1,0 +1,61 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但部分板块存在不确定性。",
+  "sectors": [
+    {
+      "sector_name": "光伏玻璃",
+      "impact": 4,
+      "analysis": "减产预期提升板块估值，但实际效果待定。"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 3,
+      "analysis": "利率下调预期利好板块，但需关注政策落地。"
+    },
+    {
+      "sector_name": "电商支付",
+      "impact": 3,
+      "analysis": "微信支付接入淘宝利好相关公司。"
+    },
+    {
+      "sector_name": "电子信息显示",
+      "impact": 3,
+      "analysis": "玻璃基布局利好相关公司。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "凯盛新能",
+      "stock_code": "600558",
+      "impact": 4,
+      "analysis": "光伏玻璃业务受益减产预期。"
+    },
+    {
+      "stock_name": "福莱特",
+      "stock_code": "600806",
+      "impact": 4,
+      "analysis": "光伏玻璃业务受益减产预期。"
+    },
+    {
+      "stock_name": "深深房A",
+      "stock_code": "000029",
+      "impact": 3,
+      "analysis": "房地产板块受益利率下调预期。"
+    },
+    {
+      "stock_name": "拉卡拉",
+      "stock_code": "300773",
+      "impact": 3,
+      "analysis": "电商支付业务受益微信支付接入。"
+    },
+    {
+      "stock_name": "沃格光电",
+      "stock_code": "002081",
+      "impact": 3,
+      "analysis": "玻璃基布局受益。"
+    }
+  ],
+  "article_id": "528b29496a4d4e76b7aa0643992feb17",
+  "article_date": "2024-09-04",
+  "article_title": "2024.9.4市场逻辑精选"
+}

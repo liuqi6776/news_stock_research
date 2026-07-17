@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏暖，多板块受利好消息提振。",
+  "sectors": [
+    {
+      "sector_name": "并购重组",
+      "impact": 4,
+      "analysis": "并购重组活跃，板块受益"
+    },
+    {
+      "sector_name": "创投",
+      "impact": 3,
+      "analysis": "深圳政府投资基金计划，板块受益"
+    },
+    {
+      "sector_name": "创新药",
+      "impact": 3,
+      "analysis": "创新药上市许可审批加速，板块受益"
+    },
+    {
+      "sector_name": "钠离子电池",
+      "impact": 3,
+      "analysis": "宁德时代发布新品，板块受益"
+    },
+    {
+      "sector_name": "AI",
+      "impact": 3,
+      "analysis": "苹果发布AI新产品，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "华立股份",
+      "stock_code": "000607",
+      "impact": 4,
+      "analysis": "并购重组，股价受益"
+    },
+    {
+      "stock_name": "川润股份",
+      "stock_code": "002272",
+      "impact": 4,
+      "analysis": "并购重组，股价受益"
+    },
+    {
+      "stock_name": "松发股份",
+      "stock_code": "002454",
+      "impact": 4,
+      "analysis": "并购重组，股价受益"
+    },
+    {
+      "stock_name": "双成药业",
+      "stock_code": "002294",
+      "impact": 3,
+      "analysis": "并购重组，股价受益"
+    },
+    {
+      "stock_name": "宁德时代",
+      "stock_code": "300750",
+      "impact": 3,
+      "analysis": "新品发布，股价受益"
+    }
+  ],
+  "article_title": "10月25日盘前早报 热点事件关注",
+  "html_file": "33rg2l5fmw.html",
+  "article_date": "2024-10-25"
+}

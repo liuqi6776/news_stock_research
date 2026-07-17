@@ -1,0 +1,118 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多板块利好，市场情绪提升",
+  "sectors": [
+    {
+      "sector_name": "铅酸电池",
+      "impact": 4,
+      "analysis": "政策支持，行业增长"
+    },
+    {
+      "sector_name": "网络安全",
+      "impact": 3,
+      "analysis": "政策推动，市场空间扩大"
+    },
+    {
+      "sector_name": "PBO纤维",
+      "impact": 3,
+      "analysis": "新技术应用，市场潜力大"
+    },
+    {
+      "sector_name": "iPhone供应链",
+      "impact": 3,
+      "analysis": "新品发布预期，相关产业链受益"
+    },
+    {
+      "sector_name": "半导体设备服务",
+      "impact": 3,
+      "analysis": "政策限制，相关企业受益"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 2,
+      "analysis": "政策利好，市场情绪提升"
+    },
+    {
+      "sector_name": "游戏",
+      "impact": 2,
+      "analysis": "审批数量增加，行业受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "天能股份",
+      "stock_code": "600291",
+      "impact": 4,
+      "analysis": "铅酸电池业务占比高"
+    },
+    {
+      "stock_name": "骆驼股份",
+      "stock_code": "601311",
+      "impact": 4,
+      "analysis": "低压铅酸电池营收占比高"
+    },
+    {
+      "stock_name": "粤宏远A",
+      "stock_code": "000546",
+      "impact": 4,
+      "analysis": "废旧铅蓄电池回收业务占比高"
+    },
+    {
+      "stock_name": "再升科技",
+      "stock_code": "300506",
+      "impact": 3,
+      "analysis": "AGM隔膜技术领先"
+    },
+    {
+      "stock_name": "华为相关",
+      "stock_code": "",
+      "impact": 3,
+      "analysis": "网络安全业务受益"
+    },
+    {
+      "stock_name": "东方中科",
+      "stock_code": "002819",
+      "impact": 3,
+      "analysis": "华为海思重要客户"
+    },
+    {
+      "stock_name": "迪普科技",
+      "stock_code": "300770",
+      "impact": 3,
+      "analysis": "PBO纤维下游客户"
+    },
+    {
+      "stock_name": "鼎龙科技",
+      "stock_code": "300054",
+      "impact": 3,
+      "analysis": "PBO单体主要下游客户"
+    },
+    {
+      "stock_name": "郑煤机",
+      "stock_code": "601717",
+      "impact": 3,
+      "analysis": "博世电机业务纳入"
+    },
+    {
+      "stock_name": "东方嘉盛",
+      "stock_code": "002881",
+      "impact": 3,
+      "analysis": "光刻机寄售维修服务"
+    },
+    {
+      "stock_name": "星辉娱乐",
+      "stock_code": "300043",
+      "impact": 2,
+      "analysis": "乙游概念发酵"
+    },
+    {
+      "stock_name": "金地集团",
+      "stock_code": "600383",
+      "impact": 2,
+      "analysis": "房地产政策利好"
+    }
+  ],
+  "article_id": "3bcbc7c84df440e395379dec759e5151",
+  "article_date": "2024-09-01",
+  "article_title": "2024.9.1市场逻辑精选"
+}

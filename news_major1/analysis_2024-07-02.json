@@ -1,0 +1,103 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注后续消息变化。",
+  "sectors": [
+    {
+      "sector_name": "电子元件",
+      "impact": 4,
+      "analysis": "受益于HVLP铜箔需求增长，板块表现强劲。"
+    },
+    {
+      "sector_name": "基建工程",
+      "impact": 3,
+      "analysis": "上合峰会及中吉乌铁路项目推动相关公司受益。"
+    },
+    {
+      "sector_name": "软件服务",
+      "impact": 2,
+      "analysis": "久其软件等公司回购及业务增长带来板块利好。"
+    },
+    {
+      "sector_name": "医药生物",
+      "impact": 2,
+      "analysis": "誉衡药业等公司业绩增长推动板块表现。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "铜冠铜箔",
+      "stock_code": "600331",
+      "impact": 4,
+      "analysis": "受益于HVLP铜箔需求增长，公司产能爬坡。"
+    },
+    {
+      "stock_name": "德福科技",
+      "stock_code": "300685",
+      "impact": 3,
+      "analysis": "具有HVLP铜箔产品，出货量稳定。"
+    },
+    {
+      "stock_name": "宝鼎科技",
+      "stock_code": "002552",
+      "impact": 3,
+      "analysis": "HVLP铜箔项目即将实现小批量供货。"
+    },
+    {
+      "stock_name": "中国海诚",
+      "stock_code": "000881",
+      "impact": 3,
+      "analysis": "受益于海外基建需求增长，公司业务稳定。"
+    },
+    {
+      "stock_name": "青松建化",
+      "stock_code": "600093",
+      "impact": 3,
+      "analysis": "受益于新疆基建项目，公司业绩有望增长。"
+    },
+    {
+      "stock_name": "久其软件",
+      "stock_code": "002279",
+      "impact": 3,
+      "analysis": "回购及业务增长推动股价上涨。"
+    },
+    {
+      "stock_name": "能特科技",
+      "stock_code": "002312",
+      "impact": 3,
+      "analysis": "维生素E业务有望受益行业供应下降。"
+    },
+    {
+      "stock_name": "长亮科技",
+      "stock_code": "300348",
+      "impact": 3,
+      "analysis": "与飞天诚信业务相近，有望估值提升。"
+    },
+    {
+      "stock_name": "先惠技术",
+      "stock_code": "300389",
+      "impact": 3,
+      "analysis": "与清陶合作研发固态电池核心装备。"
+    },
+    {
+      "stock_name": "迪普科技",
+      "stock_code": "300479",
+      "impact": 3,
+      "analysis": "参与多省税务信息化项目，业绩有望增长。"
+    },
+    {
+      "stock_name": "誉衡药业",
+      "stock_code": "002437",
+      "impact": 3,
+      "analysis": "核心产品较快增长，业绩大幅提升。"
+    },
+    {
+      "stock_name": "科大国创",
+      "stock_code": "688016",
+      "impact": 3,
+      "analysis": "将展出自动驾驶大模型，推动股价上涨。"
+    }
+  ],
+  "article_id": "7f196ffafc604bbdbaf31f08679b629c",
+  "article_date": "2024-07-02",
+  "article_title": "2024.7.2市场逻辑精选"
+}

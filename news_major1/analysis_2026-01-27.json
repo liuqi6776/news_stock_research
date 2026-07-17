@@ -1,0 +1,68 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，关注相关题材和个股表现。",
+  "sectors": [
+    {
+      "sector_name": "合成钻石",
+      "impact": 4,
+      "analysis": "合成钻石需求增长，利好相关产业链。"
+    },
+    {
+      "sector_name": "商用航空发动机",
+      "impact": 3,
+      "analysis": "国产商用航空发动机取得进展，利好相关产业链。"
+    },
+    {
+      "sector_name": "卫星通信",
+      "impact": 3,
+      "analysis": "卫星通信领域发展迅速，利好相关产业链。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "黄河旋风",
+      "stock_code": "600169",
+      "impact": 4,
+      "analysis": "功能性金刚石规模化商业应用里程碑，利好。"
+    },
+    {
+      "stock_name": "四方达",
+      "stock_code": "300101",
+      "impact": 4,
+      "analysis": "培育钻石、光学级金刚石等业务发展，利好。"
+    },
+    {
+      "stock_name": "惠丰钻石",
+      "stock_code": "300295",
+      "impact": 4,
+      "analysis": "金刚石微粉、金刚石破碎整形料等业务发展，利好。"
+    },
+    {
+      "stock_name": "航发科技",
+      "stock_code": "600893",
+      "impact": 3,
+      "analysis": "商用发动机配套短舱反推系统等业务发展，利好。"
+    },
+    {
+      "stock_name": "航天动力",
+      "stock_code": "600893",
+      "impact": 3,
+      "analysis": "商用航发核心分系统供应商，利好。"
+    },
+    {
+      "stock_name": "盛洋科技",
+      "stock_code": "300670",
+      "impact": 3,
+      "analysis": "卫星通信终端技术服务商，利好。"
+    },
+    {
+      "stock_name": "航天环宇",
+      "stock_code": "300776",
+      "impact": 3,
+      "analysis": "低轨星座核心供应商，利好。"
+    }
+  ],
+  "article_id": "de1ad9f803874e7ebb1cbe2e70baeb43",
+  "article_date": "2026-01-27",
+  "article_title": "2026.1.27市场逻辑精选"
+}

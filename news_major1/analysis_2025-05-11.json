@@ -1,0 +1,97 @@
+{
+  "market_impact": 3,
+  "market_analysis": "军工、AR/VR、转口贸易、卫星出海等题材受关注，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "军工",
+      "impact": 4,
+      "analysis": "印巴冲突凸显军工数据链和信息化重要性，板块受益"
+    },
+    {
+      "sector_name": "AR/VR",
+      "impact": 3,
+      "analysis": "产业博览会召开，行业关注度提升"
+    },
+    {
+      "sector_name": "转口贸易",
+      "impact": 2,
+      "analysis": "出口数据超预期，转口贸易订单增长"
+    },
+    {
+      "sector_name": "卫星出海",
+      "impact": 3,
+      "analysis": "巴西总统访华，卫星领域合作有望加强"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "七一二",
+      "stock_code": "002070",
+      "impact": 4,
+      "analysis": "军用通信装备供应商，受益军工数据链建设"
+    },
+    {
+      "stock_name": "新劲刚",
+      "stock_code": "300677",
+      "impact": 4,
+      "analysis": "军用数据链业务驱动业绩增长"
+    },
+    {
+      "stock_name": "博士眼镜",
+      "stock_code": "601619",
+      "impact": 3,
+      "analysis": "智能眼镜业务合作增加"
+    },
+    {
+      "stock_name": "瀛通通讯",
+      "stock_code": "002861",
+      "impact": 3,
+      "analysis": "VR设备线材供应商"
+    },
+    {
+      "stock_name": "保税科技",
+      "stock_code": "601616",
+      "impact": 2,
+      "analysis": "转口贸易业务受益出口增长"
+    },
+    {
+      "stock_name": "南宁百货",
+      "stock_code": "600749",
+      "impact": 2,
+      "analysis": "地处中国与东盟经济圈交汇点，受益转口贸易"
+    },
+    {
+      "stock_name": "上海瀚讯",
+      "stock_code": "300845",
+      "impact": 4,
+      "analysis": "专网通信装备供应商，参与“千帆星座”计划"
+    },
+    {
+      "stock_name": "武汉凡谷",
+      "stock_code": "002382",
+      "impact": 3,
+      "analysis": "华为滤波器核心供应商，受益5G-A发展"
+    },
+    {
+      "stock_name": "红墙股份",
+      "stock_code": "002809",
+      "impact": 3,
+      "analysis": "羟基酯产品价格上调"
+    },
+    {
+      "stock_name": "章源钨业",
+      "stock_code": "002378",
+      "impact": 4,
+      "analysis": "军工用钨需求大，价格持续上涨"
+    },
+    {
+      "stock_name": "远大智能",
+      "stock_code": "002689",
+      "impact": 3,
+      "analysis": "曾提供战斗机，受益军工需求"
+    }
+  ],
+  "article_id": "3630b601d9744a7897fec7044d1cf74a",
+  "article_date": "2025-05-11",
+  "article_title": "2025.5.11市场逻辑精选"
+}

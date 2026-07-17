@@ -1,0 +1,95 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪偏乐观",
+  "sectors": [
+    {
+      "sector_name": "养老",
+      "impact": 4,
+      "analysis": "政策支持，板块受益"
+    },
+    {
+      "sector_name": "教育",
+      "impact": 3,
+      "analysis": "政策利好，行业前景看好"
+    },
+    {
+      "sector_name": "猴痘概念",
+      "impact": 3,
+      "analysis": "疫情关注，相关概念股受益"
+    },
+    {
+      "sector_name": "石油",
+      "impact": 3,
+      "analysis": "利比亚停工，油价或受支撑"
+    },
+    {
+      "sector_name": "房屋检测",
+      "impact": 3,
+      "analysis": "新概念板块，相关个股受益"
+    },
+    {
+      "sector_name": "减肥药",
+      "impact": 3,
+      "analysis": "新适应证上市，相关个股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "澳洋健康",
+      "stock_code": "002172",
+      "impact": 4,
+      "analysis": "养老政策利好，股价或上涨"
+    },
+    {
+      "stock_name": "悦心健康",
+      "stock_code": "002162",
+      "impact": 4,
+      "analysis": "养老政策利好，股价或上涨"
+    },
+    {
+      "stock_name": "双箭股份",
+      "stock_code": "002381",
+      "impact": 4,
+      "analysis": "养老政策利好，股价或上涨"
+    },
+    {
+      "stock_name": "恒锋信息",
+      "stock_code": "300082",
+      "impact": 4,
+      "analysis": "养老政策利好，股价或上涨"
+    },
+    {
+      "stock_name": "志晟信息",
+      "stock_code": "301018",
+      "impact": 4,
+      "analysis": "养老政策利好，股价或上涨"
+    },
+    {
+      "stock_name": "昂立教育",
+      "stock_code": "601820",
+      "impact": 3,
+      "analysis": "教育政策利好，股价或上涨"
+    },
+    {
+      "stock_name": "凯文教育",
+      "stock_code": "300092",
+      "impact": 3,
+      "analysis": "教育政策利好，股价或上涨"
+    },
+    {
+      "stock_name": "中公教育",
+      "stock_code": "601619",
+      "impact": 3,
+      "analysis": "教育政策利好，股价或上涨"
+    },
+    {
+      "stock_name": "传智教育",
+      "stock_code": "300667",
+      "impact": 3,
+      "analysis": "教育政策利好，股价或上涨"
+    }
+  ],
+  "article_title": "8月27日盘前早报 热点事件关注",
+  "html_file": "g6vqs983d7.html",
+  "article_date": "2024-08-27"
+}

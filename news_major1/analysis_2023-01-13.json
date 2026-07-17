@@ -1,0 +1,77 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "军工",
+      "impact": 4,
+      "analysis": "中航电测重组，带动军工板块活跃。"
+    },
+    {
+      "sector_name": "基建",
+      "impact": 3,
+      "analysis": "浙江启动万亿工程，基建板块受益。"
+    },
+    {
+      "sector_name": "影视",
+      "impact": 2,
+      "analysis": "电视剧《三体》首播，影视板块受关注。"
+    },
+    {
+      "sector_name": "无人驾驶",
+      "impact": 2,
+      "analysis": "百度无人驾驶商业运营，相关板块受益。"
+    },
+    {
+      "sector_name": "国资改革",
+      "impact": 2,
+      "analysis": "国资委推进国企改革，相关板块受益。"
+    },
+    {
+      "sector_name": "教育",
+      "impact": 2,
+      "analysis": "全国教育工作会议召开，教育板块受关注。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中航电测",
+      "stock_code": "002869",
+      "impact": 5,
+      "analysis": "重组预期，股价有望上涨。"
+    },
+    {
+      "stock_name": "宏润建设",
+      "stock_code": "002062",
+      "impact": 3,
+      "analysis": "浙江基建工程，股价有望受益。"
+    },
+    {
+      "stock_name": "游族网络",
+      "stock_code": "002174",
+      "impact": 3,
+      "analysis": "电视剧《三体》出品方，股价有望受益。"
+    },
+    {
+      "stock_name": "索菱股份",
+      "stock_code": "002766",
+      "impact": 3,
+      "analysis": "百度无人驾驶商业运营，股价有望受益。"
+    },
+    {
+      "stock_name": "中成股份",
+      "stock_code": "000151",
+      "impact": 3,
+      "analysis": "国资委推进国企改革，股价有望受益。"
+    },
+    {
+      "stock_name": "昂立教育",
+      "stock_code": "601811",
+      "impact": 3,
+      "analysis": "全国教育工作会议，股价有望受益。"
+    }
+  ],
+  "article_title": "1月13日盘前早参 热点事件关注",
+  "html_file": "268lfst6bb.html",
+  "article_date": "2023-01-13"
+}

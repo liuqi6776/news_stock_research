@@ -1,0 +1,78 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "机器人",
+      "impact": 4,
+      "analysis": "特斯拉量产指引上调，宇树机器人上市申请，板块利好"
+    },
+    {
+      "sector_name": "消费旅游",
+      "impact": 3,
+      "analysis": "绍兴提振消费，对俄免签，板块利好"
+    },
+    {
+      "sector_name": "半导体设备",
+      "impact": 3,
+      "analysis": "新凯来参展半导体设备展，板块利好"
+    },
+    {
+      "sector_name": "西藏农业",
+      "impact": 2,
+      "analysis": "支持西藏特色农牧业发展，板块利好"
+    },
+    {
+      "sector_name": "其他",
+      "impact": 1,
+      "analysis": "其他板块受利好消息影响较小"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "浙江荣泰",
+      "stock_code": "600666",
+      "impact": 4,
+      "analysis": "特斯拉核心供应商，受益于机器人板块利好"
+    },
+    {
+      "stock_name": "长盛轴承",
+      "stock_code": "600895",
+      "impact": 3,
+      "analysis": "宇树机器人供应商，受益于机器人板块利好"
+    },
+    {
+      "stock_name": "会稽山",
+      "stock_code": "600052",
+      "impact": 3,
+      "analysis": "绍兴黄酒板块龙头，受益于消费旅游板块利好"
+    },
+    {
+      "stock_name": "祥源文旅",
+      "stock_code": "600958",
+      "impact": 3,
+      "analysis": "绍兴文旅企业，受益于消费旅游板块利好"
+    },
+    {
+      "stock_name": "新凯来",
+      "stock_code": "300827",
+      "impact": 3,
+      "analysis": "半导体设备企业，受益于半导体设备板块利好"
+    },
+    {
+      "stock_name": "西藏旅游",
+      "stock_code": "600749",
+      "impact": 2,
+      "analysis": "西藏旅游企业，受益于西藏农业板块利好"
+    },
+    {
+      "stock_name": "天佑德酒",
+      "stock_code": "600557",
+      "impact": 2,
+      "analysis": "青稞白酒企业，受益于西藏农业板块利好"
+    }
+  ],
+  "article_id": "d7abbe637efa4f3cae9c0cf1cdb2515e",
+  "article_date": "2025-09-02",
+  "article_title": "2025.9.2市场逻辑精选"
+}

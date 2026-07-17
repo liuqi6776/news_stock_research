@@ -1,0 +1,77 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪积极",
+  "sectors": [
+    {
+      "sector_name": "海南板块",
+      "impact": 3,
+      "analysis": "博鳌亚洲论坛及免税政策利好"
+    },
+    {
+      "sector_name": "锂电池板块",
+      "impact": 3,
+      "analysis": "宁德时代麒麟电池量产利好"
+    },
+    {
+      "sector_name": "光伏板块",
+      "impact": 3,
+      "analysis": "太阳能发电装机容量增长利好"
+    },
+    {
+      "sector_name": "AI阅读板块",
+      "impact": 2,
+      "analysis": "全民阅读大会及AI技术利好"
+    },
+    {
+      "sector_name": "AI医疗板块",
+      "impact": 2,
+      "analysis": "AI临床笔记软件发布利好"
+    },
+    {
+      "sector_name": "时空大数据板块",
+      "impact": 2,
+      "analysis": "时空大数据云中心项目启动利好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "海汽集团",
+      "stock_code": "600751",
+      "impact": 3,
+      "analysis": "博鳌亚洲论坛及免税政策利好"
+    },
+    {
+      "stock_name": "宁德时代",
+      "stock_code": "300750",
+      "impact": 3,
+      "analysis": "麒麟电池量产利好"
+    },
+    {
+      "stock_name": "海优新材",
+      "stock_code": "603633",
+      "impact": 3,
+      "analysis": "太阳能发电装机容量增长利好"
+    },
+    {
+      "stock_name": "掌阅科技",
+      "stock_code": "300383",
+      "impact": 2,
+      "analysis": "全民阅读大会及AI技术利好"
+    },
+    {
+      "stock_name": "卫宁健康",
+      "stock_code": "300253",
+      "impact": 2,
+      "analysis": "AI临床笔记软件发布利好"
+    },
+    {
+      "stock_name": "众合科技",
+      "stock_code": "600761",
+      "impact": 2,
+      "analysis": "时空大数据云中心项目启动利好"
+    }
+  ],
+  "article_title": "3月22日盘前热点事件关注",
+  "html_file": "ahj1cyz7ht.html",
+  "article_date": "2023-03-22"
+}

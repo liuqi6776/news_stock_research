@@ -1,0 +1,72 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受锂矿停产和AI PC需求增长提振",
+  "sectors": [
+    {
+      "sector_name": "锂矿",
+      "impact": 4,
+      "analysis": "锂矿停产推高锂价，板块受益"
+    },
+    {
+      "sector_name": "AI PC",
+      "impact": 3,
+      "analysis": "联想AI PC需求旺盛，板块受益"
+    },
+    {
+      "sector_name": "氢能",
+      "impact": 3,
+      "analysis": "多地氢能发展规划发布，板块受益"
+    },
+    {
+      "sector_name": "工程机械",
+      "impact": 2,
+      "analysis": "回转减速器产品应用拓展，板块受益"
+    },
+    {
+      "sector_name": "旅游",
+      "impact": 2,
+      "analysis": "新疆旅游市场回暖，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "康普顿",
+      "stock_code": "000043",
+      "impact": 4,
+      "analysis": "氢能发展规划推动股价上涨"
+    },
+    {
+      "stock_name": "金圆股份",
+      "stock_code": "002721",
+      "impact": 3,
+      "analysis": "锂资源布局完善，股价受益"
+    },
+    {
+      "stock_name": "神州泰岳",
+      "stock_code": "300002",
+      "impact": 3,
+      "analysis": "四季度业绩大幅增长，股价受益"
+    },
+    {
+      "stock_name": "中钨高新",
+      "stock_code": "000657",
+      "impact": 3,
+      "analysis": "拟收购钨精矿龙头，股价受益"
+    },
+    {
+      "stock_name": "*ST西域",
+      "stock_code": "600752",
+      "impact": 3,
+      "analysis": "新疆旅游市场回暖，股价受益"
+    },
+    {
+      "stock_name": "小商品城",
+      "stock_code": "600415",
+      "impact": 3,
+      "analysis": "业绩大幅增长，跨境业务发展迅速，股价受益"
+    }
+  ],
+  "article_id": "8723520d879e44d8b395ef3a1f045ff6",
+  "article_date": "2024-01-09",
+  "article_title": "2024.1.9市场逻辑精选"
+}

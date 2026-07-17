@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受积极事件推动，但需关注重组进展。",
+  "sectors": [
+    {
+      "sector_name": "船舶制造",
+      "impact": 4,
+      "analysis": "重组预期提升板块估值。"
+    },
+    {
+      "sector_name": "轻工制造",
+      "impact": 3,
+      "analysis": "数字化转型政策利好相关设备企业。"
+    },
+    {
+      "sector_name": "电子烟",
+      "impact": 2,
+      "analysis": "监管明确，市场前景看好。"
+    },
+    {
+      "sector_name": "直播电商",
+      "impact": 2,
+      "analysis": "政策支持，行业增长潜力大。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中国船舶",
+      "stock_code": "601989",
+      "impact": 4,
+      "analysis": "重组预期提升股价。"
+    },
+    {
+      "stock_name": "中亚股份",
+      "stock_code": "603019",
+      "impact": 3,
+      "analysis": "轻工设备数字化转型受益。"
+    },
+    {
+      "stock_name": "盈趣科技",
+      "stock_code": "002766",
+      "impact": 2,
+      "analysis": "电子烟业务增长。"
+    },
+    {
+      "stock_name": "青木科技",
+      "stock_code": "300359",
+      "impact": 2,
+      "analysis": "直播电商政策受益。"
+    }
+  ],
+  "article_id": "c96e8853b032465c9db6d72cbc594392",
+  "article_date": "2024-09-02",
+  "article_title": "2024.9.2市场逻辑精选"
+}

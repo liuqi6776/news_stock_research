@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股受积极因素影响。",
+  "sectors": [
+    {
+      "sector_name": "商业航天",
+      "impact": 4,
+      "analysis": "政策支持，技术突破，板块受益明显。"
+    },
+    {
+      "sector_name": "金融",
+      "impact": 3,
+      "analysis": "央行降息，金融板块受益。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "台积电资本支出增加，半导体板块受提振。"
+    },
+    {
+      "sector_name": "AI应用",
+      "impact": 3,
+      "analysis": "AI应用发展迅速，相关个股受益。"
+    },
+    {
+      "sector_name": "旅游",
+      "impact": 2,
+      "analysis": "旅游行业复苏，板块受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中国卫通",
+      "stock_code": "600118",
+      "impact": 4,
+      "analysis": "商业航天政策支持，股价受益。"
+    },
+    {
+      "stock_name": "华胜天成",
+      "stock_code": "600273",
+      "impact": 3,
+      "analysis": "AI应用发展迅速，股价受益。"
+    },
+    {
+      "stock_name": "拓日新能",
+      "stock_code": "002218",
+      "impact": 3,
+      "analysis": "商业航天发展，股价受益。"
+    },
+    {
+      "stock_name": "众信旅游",
+      "stock_code": "600610",
+      "impact": 2,
+      "analysis": "旅游行业复苏，股价受益。"
+    },
+    {
+      "stock_name": "海看股份",
+      "stock_code": "300316",
+      "impact": 3,
+      "analysis": "微信短剧生态爆发，股价受益。"
+    }
+  ],
+  "article_title": "1月16日盘前纪要",
+  "html_file": "1hhbxachrj1.html",
+  "article_date": "2026-01-16"
+}

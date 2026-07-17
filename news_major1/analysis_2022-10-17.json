@@ -1,0 +1,99 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策支持与行业利好消息较多，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "工业母机",
+      "impact": 3,
+      "analysis": "政策强调实体经济，制造强国建设受益"
+    },
+    {
+      "sector_name": "养老",
+      "impact": 3,
+      "analysis": "国家战略支持，生育支持政策体系建立"
+    },
+    {
+      "sector_name": "农业",
+      "impact": 3,
+      "analysis": "政策支持，粮食安全重视"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 3,
+      "analysis": "医药医疗板块多重利好，估值低"
+    },
+    {
+      "sector_name": "锂矿",
+      "impact": 3,
+      "analysis": "碳酸锂价格上涨，需求增加"
+    },
+    {
+      "sector_name": "培育钻石",
+      "impact": 3,
+      "analysis": "印度培育钻石出口创新高，市场前景看好"
+    },
+    {
+      "sector_name": "信创",
+      "impact": 3,
+      "analysis": "政策支持，业绩拐点临近"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "美国暂停双反关税，市场需求增加"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "宇环数控",
+      "stock_code": "002903",
+      "impact": 3,
+      "analysis": "工业母机板块受益股"
+    },
+    {
+      "stock_name": "澳洋健康",
+      "stock_code": "002172",
+      "impact": 3,
+      "analysis": "养老板块受益股"
+    },
+    {
+      "stock_name": "天禾股份",
+      "stock_code": "002594",
+      "impact": 3,
+      "analysis": "农业板块受益股"
+    },
+    {
+      "stock_name": "双成药业",
+      "stock_code": "002693",
+      "impact": 3,
+      "analysis": "医药板块受益股"
+    },
+    {
+      "stock_name": "融捷股份",
+      "stock_code": "002192",
+      "impact": 3,
+      "analysis": "锂矿板块受益股"
+    },
+    {
+      "stock_name": "力量钻石",
+      "stock_code": "603959",
+      "impact": 3,
+      "analysis": "培育钻石板块受益股"
+    },
+    {
+      "stock_name": "英飞拓",
+      "stock_code": "002528",
+      "impact": 3,
+      "analysis": "信创板块受益股"
+    },
+    {
+      "stock_name": "德尔未来",
+      "stock_code": "002631",
+      "impact": 3,
+      "analysis": "光伏板块受益股"
+    }
+  ],
+  "article_title": "10月17日 盘前早8点 股市要闻关注",
+  "html_file": "6zzkd0sxdj.html",
+  "article_date": "2022-10-17"
+}

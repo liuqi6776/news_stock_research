@@ -1,0 +1,85 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受利好消息推动，关注相关板块和个股表现。",
+  "sectors": [
+    {
+      "sector_name": "半导体",
+      "impact": 4,
+      "analysis": "谷歌TPU推出，利好半导体行业"
+    },
+    {
+      "sector_name": "云计算",
+      "impact": 3,
+      "analysis": "阿里云业务增长，利好云计算行业"
+    },
+    {
+      "sector_name": "消费电子",
+      "impact": 3,
+      "analysis": "华为Mate80发布，利好消费电子行业"
+    },
+    {
+      "sector_name": "稀有金属",
+      "impact": 3,
+      "analysis": "新金路矿业复产，利好稀有金属行业"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "科德教育",
+      "stock_code": "300426",
+      "impact": 4,
+      "analysis": "中昊芯英核心技术持有者，利好"
+    },
+    {
+      "stock_name": "天普股份",
+      "stock_code": "600780",
+      "impact": 3,
+      "analysis": "中昊芯英资本运作，利好"
+    },
+    {
+      "stock_name": "石基信息",
+      "stock_code": "002153",
+      "impact": 3,
+      "analysis": "阿里云核心客户，利好"
+    },
+    {
+      "stock_name": "数据港",
+      "stock_code": "600847",
+      "impact": 3,
+      "analysis": "阿里云IDC主供，利好"
+    },
+    {
+      "stock_name": "彩讯股份",
+      "stock_code": "300634",
+      "impact": 3,
+      "analysis": "华为生态合作伙伴，利好"
+    },
+    {
+      "stock_name": "福日电子",
+      "stock_code": "600203",
+      "impact": 3,
+      "analysis": "华为系子公司客户，利好"
+    },
+    {
+      "stock_name": "新金路",
+      "stock_code": "002241",
+      "impact": 3,
+      "analysis": "矿业复产，利好"
+    },
+    {
+      "stock_name": "沪电股份",
+      "stock_code": "002463",
+      "impact": 4,
+      "analysis": "谷歌TPU核心PCB供应商，利好"
+    },
+    {
+      "stock_name": "长飞光纤",
+      "stock_code": "600288",
+      "impact": 3,
+      "analysis": "谷歌OCS有源光缆供应商，利好"
+    }
+  ],
+  "article_id": "2202a32944d547409a20553f6f2088e2",
+  "article_date": "2025-11-25",
+  "article_title": "2025.11.25市场逻辑精选"
+}

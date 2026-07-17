@@ -1,0 +1,141 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股受积极因素影响。",
+  "sectors": [
+    {
+      "sector_name": "储能",
+      "impact": 4,
+      "analysis": "政策支持，需求增加，板块受益"
+    },
+    {
+      "sector_name": "新能源",
+      "impact": 3,
+      "analysis": "储能需求提升，新能源装机量有望增长"
+    },
+    {
+      "sector_name": "央企",
+      "impact": 3,
+      "analysis": "央企投资增加，产业链强链补链"
+    },
+    {
+      "sector_name": "信创",
+      "impact": 3,
+      "analysis": "政策支持，业绩拐点明确"
+    },
+    {
+      "sector_name": "虚拟现实",
+      "impact": 3,
+      "analysis": "产业发展规划明确，市场空间大"
+    },
+    {
+      "sector_name": "北斗导航",
+      "impact": 3,
+      "analysis": "白皮书发布，行业受关注"
+    },
+    {
+      "sector_name": "锂矿",
+      "impact": 3,
+      "analysis": "自主可控需求提升"
+    },
+    {
+      "sector_name": "芯片",
+      "impact": 3,
+      "analysis": "自主可控需求提升"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "英维克",
+      "stock_code": "002837",
+      "impact": 4,
+      "analysis": "储能政策支持，公司受益"
+    },
+    {
+      "stock_name": "科华数据",
+      "stock_code": "002335",
+      "impact": 4,
+      "analysis": "储能政策支持，公司受益"
+    },
+    {
+      "stock_name": "科士达",
+      "stock_code": "002518",
+      "impact": 4,
+      "analysis": "储能政策支持，公司受益"
+    },
+    {
+      "stock_name": "泰嘉股份",
+      "stock_code": "002843",
+      "impact": 4,
+      "analysis": "储能政策支持，公司受益"
+    },
+    {
+      "stock_name": "钒钛股份",
+      "stock_code": "000629",
+      "impact": 4,
+      "analysis": "全钒液流电池需求增加，公司受益"
+    },
+    {
+      "stock_name": "河钢股份",
+      "stock_code": "000709",
+      "impact": 4,
+      "analysis": "全钒液流电池需求增加，公司受益"
+    },
+    {
+      "stock_name": "银龙股份",
+      "stock_code": "002237",
+      "impact": 4,
+      "analysis": "全钒液流电池需求增加，公司受益"
+    },
+    {
+      "stock_name": "全志科技",
+      "stock_code": "300452",
+      "impact": 3,
+      "analysis": "云计算推动行业快速发展，公司受益"
+    },
+    {
+      "stock_name": "国民技术",
+      "stock_code": "300077",
+      "impact": 3,
+      "analysis": "云计算推动行业快速发展，公司受益"
+    },
+    {
+      "stock_name": "盐湖股份",
+      "stock_code": "000792",
+      "impact": 3,
+      "analysis": "锂资源开发受关注，公司受益"
+    },
+    {
+      "stock_name": "蓝晓科技",
+      "stock_code": "300487",
+      "impact": 3,
+      "analysis": "锂资源开发受关注，公司受益"
+    },
+    {
+      "stock_name": "南网科技",
+      "stock_code": "002058",
+      "impact": 3,
+      "analysis": "新能源装机量有望增长，公司受益"
+    },
+    {
+      "stock_name": "林洋能源",
+      "stock_code": "600745",
+      "impact": 3,
+      "analysis": "新能源装机量有望增长，公司受益"
+    },
+    {
+      "stock_name": "拓日新能",
+      "stock_code": "002218",
+      "impact": 3,
+      "analysis": "光伏玻璃价格上涨，公司受益"
+    },
+    {
+      "stock_name": "秀强股份",
+      "stock_code": "600461",
+      "impact": 3,
+      "analysis": "光伏玻璃价格上涨，公司受益"
+    }
+  ],
+  "article_title": "11月4日盘前早参 热点事件关注",
+  "html_file": "70v6qg34u9.html",
+  "article_date": "2022-11-04"
+}

@@ -1,0 +1,79 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受积极因素推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "白银",
+      "impact": 4,
+      "analysis": "供需紧张，价格看涨，利好板块"
+    },
+    {
+      "sector_name": "商业航天",
+      "impact": 3,
+      "analysis": "政策支持，企业进展积极，板块受益"
+    },
+    {
+      "sector_name": "高端卫星制造",
+      "impact": 3,
+      "analysis": "融资充足，技术领先，板块前景看好"
+    },
+    {
+      "sector_name": "太空数据中心",
+      "impact": 3,
+      "analysis": "算力需求增长，合作积极，板块潜力大"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "湖南白银",
+      "stock_code": "600372",
+      "impact": 4,
+      "analysis": "产量大，业务占比高，利好个股"
+    },
+    {
+      "stock_name": "白银有色",
+      "stock_code": "601212",
+      "impact": 4,
+      "analysis": "综合生产能力强，资源丰富，利好个股"
+    },
+    {
+      "stock_name": "鲁信创投",
+      "stock_code": "600783",
+      "impact": 3,
+      "analysis": "参股商业航天企业，受益板块发展"
+    },
+    {
+      "stock_name": "航宇科技",
+      "stock_code": "002863",
+      "impact": 3,
+      "analysis": "商业航天产业链深度布局，利好个股"
+    },
+    {
+      "stock_name": "微纳星空",
+      "stock_code": "688012",
+      "impact": 3,
+      "analysis": "融资充足，技术领先，利好个股"
+    },
+    {
+      "stock_name": "苏州高新",
+      "stock_code": "600736",
+      "impact": 3,
+      "analysis": "商业航天振动测试领先，利好个股"
+    },
+    {
+      "stock_name": "江西铜业",
+      "stock_code": "600062",
+      "impact": 3,
+      "analysis": "拟收购南美铜金矿，资源丰富，利好个股"
+    },
+    {
+      "stock_name": "优刻得",
+      "stock_code": "603360",
+      "impact": 3,
+      "analysis": "太空数据中心算力服务商，合作积极，利好个股"
+    }
+  ],
+  "article_id": "6bc9e8ed874d41a6a0485e7c2b215eb4",
+  "article_date": "2025-12-28",
+  "article_title": "2025.12.28市场逻辑精选"
+}

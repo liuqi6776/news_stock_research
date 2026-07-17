@@ -1,0 +1,74 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "光芯片",
+      "impact": 4,
+      "analysis": "光模块需求增长，光芯片缺口扩大，板块受益"
+    },
+    {
+      "sector_name": "PTA",
+      "impact": 3,
+      "analysis": "行业产能减产，供需收紧，板块有望反转"
+    },
+    {
+      "sector_name": "磷化工",
+      "impact": 3,
+      "analysis": "黄磷价格上涨，产业链修复，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "长光华芯",
+      "stock_code": "300810",
+      "impact": 4,
+      "analysis": "光芯片技术突破，订单有望增加"
+    },
+    {
+      "stock_name": "源杰科技",
+      "stock_code": "688516",
+      "impact": 4,
+      "analysis": "光芯片领先企业，产品性能领先"
+    },
+    {
+      "stock_name": "新凤鸣",
+      "stock_code": "600741",
+      "impact": 3,
+      "analysis": "PTA产能较大，行业反转受益"
+    },
+    {
+      "stock_name": "云天化",
+      "stock_code": "600639",
+      "impact": 3,
+      "analysis": "磷化工全产业链龙头，黄磷价格上涨受益"
+    },
+    {
+      "stock_name": "麦格米特",
+      "stock_code": "002183",
+      "impact": 4,
+      "analysis": "英伟达服务器电源合作方，订单有望放量"
+    },
+    {
+      "stock_name": "兄弟科技",
+      "stock_code": "002562",
+      "impact": 3,
+      "analysis": "铬盐业务有望受益AI电力发展"
+    },
+    {
+      "stock_name": "正泰电器",
+      "stock_code": "601877",
+      "impact": 3,
+      "analysis": "低压电器国内市占率第一，合作微软和英伟达"
+    },
+    {
+      "stock_name": "神驰机电",
+      "stock_code": "603696",
+      "impact": 3,
+      "analysis": "小型发电机出口领先企业，对美业务占比高"
+    }
+  ],
+  "article_id": "e4378747221d4adda3d45517befbf549",
+  "article_date": "2025-11-06",
+  "article_title": "2025.11.6市场逻辑精选"
+}

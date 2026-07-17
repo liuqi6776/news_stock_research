@@ -1,0 +1,123 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注政策变化。",
+  "sectors": [
+    {
+      "sector_name": "电影行业",
+      "impact": 4,
+      "analysis": "减少美国影片进口利好国产电影和院线业务。"
+    },
+    {
+      "sector_name": "中马贸易",
+      "impact": 3,
+      "analysis": "中马领导人会晤利好相关贸易和投资。"
+    },
+    {
+      "sector_name": "银发经济",
+      "impact": 3,
+      "analysis": "政策扶持预期利好相关服务和产品。"
+    },
+    {
+      "sector_name": "丝绸行业",
+      "impact": 3,
+      "analysis": "丝绸新国货领军企业利好相关产业链。"
+    },
+    {
+      "sector_name": "城市更新",
+      "impact": 3,
+      "analysis": "文创旅游项目利好相关公司。"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "华为云合作利好相关机器人业务。"
+    },
+    {
+      "sector_name": "生物素/叶酸",
+      "impact": 3,
+      "analysis": "关税豁免利好相关出口业务。"
+    },
+    {
+      "sector_name": "电气设备",
+      "impact": 3,
+      "analysis": "马来工厂布局利好相关业务。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "幸福蓝海",
+      "stock_code": "600547",
+      "impact": 4,
+      "analysis": "国产电影和院线业务受益。"
+    },
+    {
+      "stock_name": "光线传媒",
+      "stock_code": "300251",
+      "impact": 4,
+      "analysis": "电影票房提升利好公司业绩。"
+    },
+    {
+      "stock_name": "博纳影业",
+      "stock_code": "600977",
+      "impact": 4,
+      "analysis": "电影投资发行和院线业务受益。"
+    },
+    {
+      "stock_name": "瑞茂通",
+      "stock_code": "600180",
+      "impact": 3,
+      "analysis": "中马贸易合作受益。"
+    },
+    {
+      "stock_name": "宁波海运",
+      "stock_code": "600017",
+      "impact": 3,
+      "analysis": "中马贸易合作受益。"
+    },
+    {
+      "stock_name": "悦心健康",
+      "stock_code": "002162",
+      "impact": 3,
+      "analysis": "银发经济政策扶持受益。"
+    },
+    {
+      "stock_name": "恒锋信息",
+      "stock_code": "300082",
+      "impact": 3,
+      "analysis": "智慧养老领域先行者。"
+    },
+    {
+      "stock_name": "太湖雪",
+      "stock_code": "603399",
+      "impact": 3,
+      "analysis": "丝绸新国货领军企业。"
+    },
+    {
+      "stock_name": "德必集团",
+      "stock_code": "600832",
+      "impact": 3,
+      "analysis": "文创旅游项目受益。"
+    },
+    {
+      "stock_name": "亿嘉和",
+      "stock_code": "300920",
+      "impact": 3,
+      "analysis": "华为云合作受益。"
+    },
+    {
+      "stock_name": "圣达生物",
+      "stock_code": "300084",
+      "impact": 3,
+      "analysis": "生物素/叶酸关税豁免受益。"
+    },
+    {
+      "stock_name": "欧圣电气",
+      "stock_code": "603035",
+      "impact": 3,
+      "analysis": "马来工厂布局受益。"
+    }
+  ],
+  "article_id": "5b5cac54fcb9492199bd122d9cef9104",
+  "article_date": "2025-04-10",
+  "article_title": "2025.4.10市场逻辑精选"
+}

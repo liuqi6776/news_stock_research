@@ -1,0 +1,91 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受政策预期和新技术驱动，呈现一定利好。",
+  "sectors": [
+    {
+      "sector_name": "教育",
+      "impact": 4,
+      "analysis": "政策支持，行业估值修复，利好明显。"
+    },
+    {
+      "sector_name": "AI",
+      "impact": 3,
+      "analysis": "AI技术发展，相关公司受益，利好。"
+    },
+    {
+      "sector_name": "游戏",
+      "impact": 2,
+      "analysis": "版号发放，行业恢复，利好。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 2,
+      "analysis": "内存及闪存供不应求，利好。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "昂立教育",
+      "stock_code": "605388",
+      "impact": 4,
+      "analysis": "转型素质教育、职业教育，AI+教育布局。"
+    },
+    {
+      "stock_name": "学大教育",
+      "stock_code": "300001",
+      "impact": 3,
+      "analysis": "K12转型全日制培训，布局职业教育。"
+    },
+    {
+      "stock_name": "百度",
+      "stock_code": "301099",
+      "impact": 3,
+      "analysis": "推出国产GPTs，AI技术驱动。"
+    },
+    {
+      "stock_name": "亿道信息",
+      "stock_code": "688528",
+      "impact": 3,
+      "analysis": "MR产品推广，打造AI PC平台。"
+    },
+    {
+      "stock_name": "新五丰",
+      "stock_code": "600975",
+      "impact": 3,
+      "analysis": "湖南国资生猪龙头，业绩增长预期。"
+    },
+    {
+      "stock_name": "安车检测",
+      "stock_code": "603696",
+      "impact": 3,
+      "analysis": "受益于新能源车检标准出台，业绩有望增长。"
+    },
+    {
+      "stock_name": "鸿博股份",
+      "stock_code": "002229",
+      "impact": 3,
+      "analysis": "子公司签算力大单，AI技术驱动。"
+    },
+    {
+      "stock_name": "汉马科技",
+      "stock_code": "603783",
+      "impact": 3,
+      "analysis": "甲醇发动机热销，吉利资产注入预期。"
+    },
+    {
+      "stock_name": "威刚",
+      "stock_code": "300387",
+      "impact": 2,
+      "analysis": "内存及闪存供不应求，利好。"
+    },
+    {
+      "stock_name": "字节跳动",
+      "stock_code": "301099",
+      "impact": 2,
+      "analysis": "加码生成式AI，技术驱动。"
+    }
+  ],
+  "article_id": "a5119cbf4a7c47d3ad57d0d3fc20d73e",
+  "article_date": "2023-12-04",
+  "article_title": "2023.12.4市场逻辑精选"
+}

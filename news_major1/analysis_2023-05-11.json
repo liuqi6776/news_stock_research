@@ -1,0 +1,121 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "芯片",
+      "impact": 4,
+      "analysis": "科技部支持关键核心技术攻坚战，华虹半导体首发上会"
+    },
+    {
+      "sector_name": "雄安新区",
+      "impact": 3,
+      "analysis": "雄安新区建设座谈会推进，冀东装备等受益"
+    },
+    {
+      "sector_name": "石英砂",
+      "impact": 3,
+      "analysis": "石英砂价格上涨，石英股份等受益"
+    },
+    {
+      "sector_name": "镁",
+      "impact": 3,
+      "analysis": "榆林兰炭行业整改，镁价上涨，云海金属等受益"
+    },
+    {
+      "sector_name": "风电",
+      "impact": 3,
+      "analysis": "风电新增装机同比大增，大金重工等受益"
+    },
+    {
+      "sector_name": "传媒",
+      "impact": 3,
+      "analysis": "大模型应用商业化落地，引力传媒等受益"
+    },
+    {
+      "sector_name": "银行",
+      "impact": 2,
+      "analysis": "银行存款利率控制，西安银行等受益"
+    },
+    {
+      "sector_name": "锂电池",
+      "impact": 2,
+      "analysis": "六氟磷酸锂价格反弹，电池环节去库存周期或临近尾声，天赐材料受益"
+    },
+    {
+      "sector_name": "区块链",
+      "impact": 2,
+      "analysis": "区块链算力网络启动建设，中科曙光等受益"
+    },
+    {
+      "sector_name": "汽车",
+      "impact": 2,
+      "analysis": "新能源汽车销量增长，金龙汽车等受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "华虹半导体",
+      "stock_code": "600527",
+      "impact": 4,
+      "analysis": "首发上会，利好"
+    },
+    {
+      "stock_name": "冀东装备",
+      "stock_code": "000856",
+      "impact": 3,
+      "analysis": "雄安新区建设，利好"
+    },
+    {
+      "stock_name": "石英股份",
+      "stock_code": "600559",
+      "impact": 3,
+      "analysis": "石英砂价格上涨，利好"
+    },
+    {
+      "stock_name": "云海金属",
+      "stock_code": "002182",
+      "impact": 3,
+      "analysis": "镁价上涨，利好"
+    },
+    {
+      "stock_name": "大金重工",
+      "stock_code": "002487",
+      "impact": 3,
+      "analysis": "风电装机启动，利好"
+    },
+    {
+      "stock_name": "引力传媒",
+      "stock_code": "300529",
+      "impact": 3,
+      "analysis": "大模型应用商业化落地，利好"
+    },
+    {
+      "stock_name": "西安银行",
+      "stock_code": "600928",
+      "impact": 2,
+      "analysis": "存款利率控制，利好"
+    },
+    {
+      "stock_name": "天赐材料",
+      "stock_code": "002709",
+      "impact": 2,
+      "analysis": "锂电池去库存，利好"
+    },
+    {
+      "stock_name": "中科曙光",
+      "stock_code": "603019",
+      "impact": 2,
+      "analysis": "区块链算力网络建设，利好"
+    },
+    {
+      "stock_name": "金龙汽车",
+      "stock_code": "600012",
+      "impact": 2,
+      "analysis": "新能源汽车销量增长，利好"
+    }
+  ],
+  "article_title": "5月11日 盘前热点事件关注",
+  "html_file": "dvy3s0c8pb.html",
+  "article_date": "2023-05-11"
+}

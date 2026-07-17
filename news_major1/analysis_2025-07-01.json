@@ -1,0 +1,74 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受半导体和铜价上涨影响，有望走强。",
+  "sectors": [
+    {
+      "sector_name": "半导体",
+      "impact": 4,
+      "analysis": "国产自主可控趋势明显，利好板块。"
+    },
+    {
+      "sector_name": "铜",
+      "impact": 3,
+      "analysis": "铜价上涨，利好相关公司。"
+    },
+    {
+      "sector_name": "深海科技",
+      "impact": 3,
+      "analysis": "政策支持，产业景气上行。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "同兴达",
+      "stock_code": "002902",
+      "impact": 4,
+      "analysis": "混合键合技术储备，客户合作良好。"
+    },
+    {
+      "stock_name": "快克智能",
+      "stock_code": "300782",
+      "impact": 3,
+      "analysis": "先进封装键合设备研发中。"
+    },
+    {
+      "stock_name": "博敏电子",
+      "stock_code": "002845",
+      "impact": 3,
+      "analysis": "IC载板供长鑫存储打样试产。"
+    },
+    {
+      "stock_name": "北方铜业",
+      "stock_code": "000635",
+      "impact": 3,
+      "analysis": "铜矿资源丰富，铜价上涨受益。"
+    },
+    {
+      "stock_name": "洛阳钼业",
+      "stock_code": "603993",
+      "impact": 3,
+      "analysis": "铜产量高，资源自给率高。"
+    },
+    {
+      "stock_name": "紫金矿业",
+      "stock_code": "601899",
+      "impact": 3,
+      "analysis": "铜产量高，资源自给率高。"
+    },
+    {
+      "stock_name": "中船应急",
+      "stock_code": "600011",
+      "impact": 3,
+      "analysis": "深海空间站项目研制者。"
+    },
+    {
+      "stock_name": "微光股份",
+      "stock_code": "300792",
+      "impact": 3,
+      "analysis": "深海装备能源补给系统研发者。"
+    }
+  ],
+  "article_id": "30340b9919184beeb2759381ad1f0501",
+  "article_date": "2025-07-01",
+  "article_title": "2025.7.1市场逻辑精选"
+}

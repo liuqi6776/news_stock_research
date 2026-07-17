@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "有机硅",
+      "impact": 4,
+      "analysis": "陶氏化学关闭海外产能，国内反内卷政策推动行业反转，利好明显。"
+    },
+    {
+      "sector_name": "稀土",
+      "impact": 3,
+      "analysis": "全球稀土需求高增，价格有望上涨，利好稀土行业。"
+    },
+    {
+      "sector_name": "商业地产",
+      "impact": 2,
+      "analysis": "商业地产价值拐点临近，利好商业地产板块。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "东岳硅材",
+      "stock_code": "600389",
+      "impact": 4,
+      "analysis": "有机硅行业龙头，受行业反转利好。"
+    },
+    {
+      "stock_name": "硅宝科技",
+      "stock_code": "300019",
+      "impact": 4,
+      "analysis": "有机硅密封胶行业龙头，受行业反转利好。"
+    },
+    {
+      "stock_name": "包钢股份",
+      "stock_code": "600010",
+      "impact": 3,
+      "analysis": "稀土资源优势，受稀土价格上涨利好。"
+    },
+    {
+      "stock_name": "大悦城",
+      "stock_code": "000031",
+      "impact": 2,
+      "analysis": "商业地产领先企业，受商业地产价值拐点利好。"
+    }
+  ],
+  "article_id": "18bff391905e48048df5141889ab625f",
+  "article_date": "2025-07-10",
+  "article_title": "2025.7.10市场逻辑精选"
+}

@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极影响。",
+  "sectors": [
+    {
+      "sector_name": "AI芯片",
+      "impact": 4,
+      "analysis": "昇腾芯片需求增加，相关公司受益"
+    },
+    {
+      "sector_name": "锂电设备",
+      "impact": 3,
+      "analysis": "锂电设备招标增加，行业进入新一轮向上周期"
+    },
+    {
+      "sector_name": "电子制造",
+      "impact": 3,
+      "analysis": "HVLP原材料涨价，相关公司业绩有望提升"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "英维克",
+      "stock_code": "002837",
+      "impact": 4,
+      "analysis": "液冷核心供应商，受益昇腾芯片需求增加"
+    },
+    {
+      "stock_name": "华丰科技",
+      "stock_code": "002869",
+      "impact": 4,
+      "analysis": "华为高速背板连接产品核心供应商，受益昇腾芯片升级"
+    },
+    {
+      "stock_name": "先导智能",
+      "stock_code": "300450",
+      "impact": 4,
+      "analysis": "锂电设备领域市占率第一，受益锂电设备招标增加"
+    },
+    {
+      "stock_name": "铜冠铜箔",
+      "stock_code": "002151",
+      "impact": 4,
+      "analysis": "国产HVLP龙头，受益HVLP原材料涨价"
+    }
+  ],
+  "article_id": "5f9a78cf9bc84944af9e0f9c55747fb4",
+  "article_date": "2025-12-23",
+  "article_title": "2025.12.23市场逻辑精选"
+}

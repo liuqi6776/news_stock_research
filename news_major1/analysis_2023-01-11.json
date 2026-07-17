@@ -1,0 +1,91 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股受利好消息推动",
+  "sectors": [
+    {
+      "sector_name": "充电桩",
+      "impact": 3,
+      "analysis": "出海业务和毛利率提升预期推动"
+    },
+    {
+      "sector_name": "人口相关",
+      "impact": 2,
+      "analysis": "政策支持和人口数据发布预期"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 2,
+      "analysis": "创新药物和业绩改善推动"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 2,
+      "analysis": "长鑫科技获得许可，国产化率提升预期"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "盛弘股份",
+      "stock_code": "300626",
+      "impact": 3,
+      "analysis": "充电桩出海预期"
+    },
+    {
+      "stock_name": "炬华科技",
+      "stock_code": "300208",
+      "impact": 3,
+      "analysis": "充电桩出海预期"
+    },
+    {
+      "stock_name": "诺泰生物",
+      "stock_code": "300705",
+      "impact": 3,
+      "analysis": "司美格鲁肽原料药受理"
+    },
+    {
+      "stock_name": "康达新材",
+      "stock_code": "002669",
+      "impact": 3,
+      "analysis": "业绩扭亏为盈，HJT密封材料测试中"
+    },
+    {
+      "stock_name": "绿能慧充",
+      "stock_code": "301318",
+      "impact": 3,
+      "analysis": "光储充出海一体化发展"
+    },
+    {
+      "stock_name": "汉商集团",
+      "stock_code": "600774",
+      "impact": 3,
+      "analysis": "收购武汉同济科技集团股权"
+    },
+    {
+      "stock_name": "派能科技",
+      "stock_code": "688016",
+      "impact": 3,
+      "analysis": "业绩预告大超预期"
+    },
+    {
+      "stock_name": "天富能源",
+      "stock_code": "600509",
+      "impact": 3,
+      "analysis": "导电碳化硅龙头天科合达第二大股东"
+    },
+    {
+      "stock_name": "麦捷科技",
+      "stock_code": "300463",
+      "impact": 3,
+      "analysis": "BAW滤波器完成封装"
+    },
+    {
+      "stock_name": "众生药业",
+      "stock_code": "002317",
+      "impact": 3,
+      "analysis": "推动RAY1216申报上市"
+    }
+  ],
+  "article_id": "d399c54519794d03bbb18b777cf54af3",
+  "article_date": "2023-01-11",
+  "article_title": "2023.1.11市场逻辑精选"
+}

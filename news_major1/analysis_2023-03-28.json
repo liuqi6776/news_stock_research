@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪提升",
+  "sectors": [
+    {
+      "sector_name": "人工智能",
+      "impact": 4,
+      "analysis": "政策支持，技术突破，板块利好"
+    },
+    {
+      "sector_name": "石油",
+      "impact": 3,
+      "analysis": "沙特阿美入股荣盛石化，油价上涨，板块利好"
+    },
+    {
+      "sector_name": "旅游",
+      "impact": 2,
+      "analysis": "政策支持，科技赋能，板块利好"
+    },
+    {
+      "sector_name": "国资",
+      "impact": 2,
+      "analysis": "国资委强调做强做优，板块利好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "荣盛石化",
+      "stock_code": "000503",
+      "impact": 5,
+      "analysis": "沙特阿美高溢价入股，股价利好"
+    },
+    {
+      "stock_name": "百度",
+      "stock_code": "301099",
+      "impact": 4,
+      "analysis": "发布大模型服务平台，股价利好"
+    },
+    {
+      "stock_name": "阿里巴巴",
+      "stock_code": "9988.HK",
+      "impact": 4,
+      "analysis": "达摩院发布多模态专利，股价利好"
+    },
+    {
+      "stock_name": "岭南股份",
+      "stock_code": "002717",
+      "impact": 3,
+      "analysis": "AI+旅游，政策支持，股价利好"
+    }
+  ],
+  "article_title": "3月28日盘前热点事件关注",
+  "html_file": "c5ttt4ztfn.html",
+  "article_date": "2023-03-28"
+}

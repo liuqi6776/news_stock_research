@@ -1,0 +1,77 @@
+{
+  "market_impact": 2,
+  "market_analysis": "多事件利好，但需关注后续政策落实。",
+  "sectors": [
+    {
+      "sector_name": "汽车",
+      "impact": 3,
+      "analysis": "国六排放标准实施，相关企业受益"
+    },
+    {
+      "sector_name": "数字货币",
+      "impact": 2,
+      "analysis": "数字人民币应用场景拓展"
+    },
+    {
+      "sector_name": "一带一路",
+      "impact": 2,
+      "analysis": "进出口增长，相关企业受益"
+    },
+    {
+      "sector_name": "AI+游戏",
+      "impact": 2,
+      "analysis": "AI技术发展，相关企业受益"
+    },
+    {
+      "sector_name": "光模块",
+      "impact": 2,
+      "analysis": "服务器芯片和云端AI芯片发布"
+    },
+    {
+      "sector_name": "粮食安全+乡村振兴",
+      "impact": 2,
+      "analysis": "政策支持，相关企业受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "艾可蓝",
+      "stock_code": "300633",
+      "impact": 3,
+      "analysis": "受益国六排放标准实施"
+    },
+    {
+      "stock_name": "楚天龙",
+      "stock_code": "002052",
+      "impact": 2,
+      "analysis": "受益数字人民币应用场景拓展"
+    },
+    {
+      "stock_name": "中国外运",
+      "stock_code": "601595",
+      "impact": 2,
+      "analysis": "受益一带一路进出口增长"
+    },
+    {
+      "stock_name": "三七互娱",
+      "stock_code": "002555",
+      "impact": 2,
+      "analysis": "受益AI技术发展"
+    },
+    {
+      "stock_name": "中际旭创",
+      "stock_code": "300308",
+      "impact": 2,
+      "analysis": "受益服务器芯片和云端AI芯片发布"
+    },
+    {
+      "stock_name": "京粮控股",
+      "stock_code": "000591",
+      "impact": 2,
+      "analysis": "受益粮食安全政策支持"
+    }
+  ],
+  "article_title": "5月10日 盘前热点事件关注",
+  "html_file": "3zwz5wjmxx.html",
+  "article_date": "2023-05-10"
+}

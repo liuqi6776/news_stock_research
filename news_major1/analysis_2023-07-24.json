@@ -1,0 +1,110 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪积极",
+  "sectors": [
+    {
+      "sector_name": "房地产",
+      "impact": 4,
+      "analysis": "城中村改造政策支持"
+    },
+    {
+      "sector_name": "建筑工程",
+      "impact": 4,
+      "analysis": "城中村改造相关"
+    },
+    {
+      "sector_name": "精装修",
+      "impact": 3,
+      "analysis": "城中村改造相关"
+    },
+    {
+      "sector_name": "AI应用收费",
+      "impact": 3,
+      "analysis": "妙鸭相机刷屏"
+    },
+    {
+      "sector_name": "体育",
+      "impact": 3,
+      "analysis": "体育消费扩大"
+    },
+    {
+      "sector_name": "草甘膦",
+      "impact": 4,
+      "analysis": "价格反弹"
+    },
+    {
+      "sector_name": "创新药",
+      "impact": 3,
+      "analysis": "医保局续约规则"
+    },
+    {
+      "sector_name": "智能助力",
+      "impact": 3,
+      "analysis": "OpenAI新功能"
+    },
+    {
+      "sector_name": "钙钛矿",
+      "impact": 3,
+      "analysis": "中科大刷新世界纪录"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "荣盛发展",
+      "stock_code": "000712",
+      "impact": 4,
+      "analysis": "城中村改造受益"
+    },
+    {
+      "stock_name": "大龙地产",
+      "stock_code": "600159",
+      "impact": 4,
+      "analysis": "城中村改造受益"
+    },
+    {
+      "stock_name": "东方园林",
+      "stock_code": "002310",
+      "impact": 4,
+      "analysis": "城中村改造受益"
+    },
+    {
+      "stock_name": "万兴科技",
+      "stock_code": "300624",
+      "impact": 3,
+      "analysis": "AI应用收费受益"
+    },
+    {
+      "stock_name": "力盛体育",
+      "stock_code": "002858",
+      "impact": 3,
+      "analysis": "体育消费扩大受益"
+    },
+    {
+      "stock_name": "江山股份",
+      "stock_code": "600383",
+      "impact": 4,
+      "analysis": "草甘膦价格反弹受益"
+    },
+    {
+      "stock_name": "首药控股",
+      "stock_code": "600845",
+      "impact": 3,
+      "analysis": "医保局续约规则受益"
+    },
+    {
+      "stock_name": "漫步者",
+      "stock_code": "002351",
+      "impact": 3,
+      "analysis": "智能助力受益"
+    },
+    {
+      "stock_name": "京山轻机",
+      "stock_code": "000795",
+      "impact": 3,
+      "analysis": "钙钛矿技术突破受益"
+    }
+  ],
+  "article_title": "7月24日 盘前热点事件关注",
+  "html_file": "91j36lvg8v.html",
+  "article_date": "2023-07-24"
+}

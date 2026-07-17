@@ -1,0 +1,106 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "光伏板块",
+      "impact": 4,
+      "analysis": "钙钛矿技术进展推动板块上涨。"
+    },
+    {
+      "sector_name": "激光雷达板块",
+      "impact": 3,
+      "analysis": "禾赛科技业绩增长带动板块上涨。"
+    },
+    {
+      "sector_name": "餐饮智能化板块",
+      "impact": 2,
+      "analysis": "上海餐饮智能化布局推动板块上涨。"
+    },
+    {
+      "sector_name": "医疗设备板块",
+      "impact": 2,
+      "analysis": "三星医疗海外业务发展良好。"
+    },
+    {
+      "sector_name": "食品板块",
+      "impact": 2,
+      "analysis": "保龄宝HMO业务增长。"
+    },
+    {
+      "sector_name": "化工板块",
+      "impact": 2,
+      "analysis": "尼龙66行业减产提价。"
+    },
+    {
+      "sector_name": "矿业板块",
+      "impact": 2,
+      "analysis": "金瑞矿业碳酸锶业务发展。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "金辰股份",
+      "stock_code": "300458",
+      "impact": 3,
+      "analysis": "钙钛矿设备业务增长。"
+    },
+    {
+      "stock_name": "协鑫集成",
+      "stock_code": "002506",
+      "impact": 3,
+      "analysis": "钙钛矿电池技术领先。"
+    },
+    {
+      "stock_name": "神通科技",
+      "stock_code": "002153",
+      "impact": 3,
+      "analysis": "激光雷达业务增长。"
+    },
+    {
+      "stock_name": "永新光学",
+      "stock_code": "603393",
+      "impact": 3,
+      "analysis": "激光雷达光学组件供应商。"
+    },
+    {
+      "stock_name": "巴比食品",
+      "stock_code": "603883",
+      "impact": 3,
+      "analysis": "餐饮智能化布局。"
+    },
+    {
+      "stock_name": "上海九百",
+      "stock_code": "600838",
+      "impact": 3,
+      "analysis": "餐饮智能化布局。"
+    },
+    {
+      "stock_name": "三星医疗",
+      "stock_code": "600686",
+      "impact": 3,
+      "analysis": "海外配电业务发展。"
+    },
+    {
+      "stock_name": "保龄宝",
+      "stock_code": "002286",
+      "impact": 3,
+      "analysis": "HMO业务增长。"
+    },
+    {
+      "stock_name": "神马股份",
+      "stock_code": "000910",
+      "impact": 3,
+      "analysis": "尼龙66业务增长。"
+    },
+    {
+      "stock_name": "金瑞矿业",
+      "stock_code": "600388",
+      "impact": 3,
+      "analysis": "碳酸锶业务增长。"
+    }
+  ],
+  "article_id": "8fd269d1a5a74687b373677b4456c260",
+  "article_date": "2025-11-11",
+  "article_title": "2025.11.11市场逻辑精选"
+}

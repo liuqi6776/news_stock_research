@@ -1,0 +1,67 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注后续政策落实情况。",
+  "sectors": [
+    {
+      "sector_name": "玻璃基板",
+      "impact": 4,
+      "analysis": "先进封装工艺采用玻璃基板，推动相关产业链发展。"
+    },
+    {
+      "sector_name": "旅游",
+      "impact": 3,
+      "analysis": "政策支持旅游业发展，相关产业链受益。"
+    },
+    {
+      "sector_name": "航空",
+      "impact": 3,
+      "analysis": "C919进入量产阶段，航空产业链受益。"
+    },
+    {
+      "sector_name": "贵金属",
+      "impact": 3,
+      "analysis": "贵金属价格上涨，相关产业链受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "沃格光电",
+      "stock_code": "002086",
+      "impact": 4,
+      "analysis": "玻璃基IC载板产品已通过客户验证。"
+    },
+    {
+      "stock_name": "帝尔激光",
+      "stock_code": "300335",
+      "impact": 4,
+      "analysis": "TGV激光微孔设备应用于玻璃基板芯片封装。"
+    },
+    {
+      "stock_name": "黄山旅游",
+      "stock_code": "600054",
+      "impact": 3,
+      "analysis": "探索无人机资源运输，降低运营成本。"
+    },
+    {
+      "stock_name": "三角防务",
+      "stock_code": "300044",
+      "impact": 3,
+      "analysis": "与中国商飞战略绑定共建产能。"
+    },
+    {
+      "stock_name": "白银有色",
+      "stock_code": "600219",
+      "impact": 3,
+      "analysis": "白银工业领域占全球总消耗量50%。"
+    },
+    {
+      "stock_name": "晓程科技",
+      "stock_code": "300348",
+      "impact": 3,
+      "analysis": "黄金零售价格挂牌价刷新纪录。"
+    }
+  ],
+  "article_id": "272cf6de2adc40e29f5da7aae568c37f",
+  "article_date": "2024-05-19",
+  "article_title": "2024.5.19市场逻辑精选"
+}

@@ -1,0 +1,103 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息驱动，但需关注后续政策及市场反应。",
+  "sectors": [
+    {
+      "sector_name": "AR眼镜",
+      "impact": 4,
+      "analysis": "英伟达AR眼镜专利发布，相关公司受益"
+    },
+    {
+      "sector_name": "AI PC",
+      "impact": 3,
+      "analysis": "CES大会AI PC进展，相关产业链受益"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 3,
+      "analysis": "医药行业政策利好，相关公司受益"
+    },
+    {
+      "sector_name": "碳纤维",
+      "impact": 2,
+      "analysis": "光大同创受益于碳纤维行业"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "思泰克",
+      "stock_code": "300602",
+      "impact": 4,
+      "analysis": "AR眼镜专利相关"
+    },
+    {
+      "stock_name": "大恒科技",
+      "stock_code": "600288",
+      "impact": 4,
+      "analysis": "AR眼镜相关"
+    },
+    {
+      "stock_name": "赛微电子",
+      "stock_code": "300459",
+      "impact": 4,
+      "analysis": "AR眼镜相关"
+    },
+    {
+      "stock_name": "光峰科技",
+      "stock_code": "300702",
+      "impact": 4,
+      "analysis": "AR眼镜相关"
+    },
+    {
+      "stock_name": "华勤技术",
+      "stock_code": "603821",
+      "impact": 3,
+      "analysis": "AI PC产业链"
+    },
+    {
+      "stock_name": "亿道信息",
+      "stock_code": "300839",
+      "impact": 3,
+      "analysis": "AI PC产业链"
+    },
+    {
+      "stock_name": "智微智能",
+      "stock_code": "300690",
+      "impact": 3,
+      "analysis": "AI PC产业链"
+    },
+    {
+      "stock_name": "鲁抗医药",
+      "stock_code": "600789",
+      "impact": 3,
+      "analysis": "医药行业政策利好"
+    },
+    {
+      "stock_name": "新华制药",
+      "stock_code": "000756",
+      "impact": 3,
+      "analysis": "医药行业政策利好"
+    },
+    {
+      "stock_name": "罗欣药业",
+      "stock_code": "002001",
+      "impact": 3,
+      "analysis": "医药行业政策利好"
+    },
+    {
+      "stock_name": "哈药股份",
+      "stock_code": "600664",
+      "impact": 3,
+      "analysis": "医药行业政策利好"
+    },
+    {
+      "stock_name": "光大同创",
+      "stock_code": "300775",
+      "impact": 2,
+      "analysis": "碳纤维行业受益"
+    }
+  ],
+  "article_id": "b3885b2124744136a8e502c86e5c107f",
+  "article_date": "2025-01-05",
+  "article_title": "2025.1.5市场逻辑精选"
+}

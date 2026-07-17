@@ -1,0 +1,247 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注具体板块和个股表现。",
+  "sectors": [
+    {
+      "sector_name": "AI+教育",
+      "impact": 3,
+      "analysis": "GPT商店上线预期利好相关教育软件公司。"
+    },
+    {
+      "sector_name": "AI+电商",
+      "impact": 3,
+      "analysis": "GPT商店上线预期利好电商AI应用公司。"
+    },
+    {
+      "sector_name": "AI+作图",
+      "impact": 3,
+      "analysis": "GPT商店上线预期利好AI作图软件公司。"
+    },
+    {
+      "sector_name": "AI+娱乐",
+      "impact": 3,
+      "analysis": "GPT商店上线预期利好AI娱乐内容公司。"
+    },
+    {
+      "sector_name": "AI+影视",
+      "impact": 3,
+      "analysis": "GPT商店上线预期利好AI影视制作公司。"
+    },
+    {
+      "sector_name": "AI+文字创作",
+      "impact": 3,
+      "analysis": "GPT商店上线预期利好AI文字创作公司。"
+    },
+    {
+      "sector_name": "AI+税务",
+      "impact": 3,
+      "analysis": "GPT商店上线预期利好AI税务软件公司。"
+    },
+    {
+      "sector_name": "AI+音乐",
+      "impact": 3,
+      "analysis": "GPT商店上线预期利好AI音乐制作公司。"
+    },
+    {
+      "sector_name": "AI+金融",
+      "impact": 3,
+      "analysis": "GPT商店上线预期利好AI金融科技公司。"
+    },
+    {
+      "sector_name": "AR",
+      "impact": 3,
+      "analysis": "新一代AR眼镜发布，利好AR设备相关公司。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "南方传媒",
+      "stock_code": "601900",
+      "impact": 3,
+      "analysis": "AI+教育板块预期受益。"
+    },
+    {
+      "stock_name": "世纪天鸿",
+      "stock_code": "300136",
+      "impact": 3,
+      "analysis": "AI+教育板块预期受益。"
+    },
+    {
+      "stock_name": "易点天下",
+      "stock_code": "300263",
+      "impact": 3,
+      "analysis": "AI+电商板块预期受益。"
+    },
+    {
+      "stock_name": "焦点科技",
+      "stock_code": "002315",
+      "impact": 3,
+      "analysis": "AI+电商板块预期受益。"
+    },
+    {
+      "stock_name": "万兴科技",
+      "stock_code": "300624",
+      "impact": 3,
+      "analysis": "AI+作图板块预期受益。"
+    },
+    {
+      "stock_name": "华扬联众",
+      "stock_code": "300832",
+      "impact": 3,
+      "analysis": "AI+娱乐板块预期受益。"
+    },
+    {
+      "stock_name": "二六三",
+      "stock_code": "002467",
+      "impact": 3,
+      "analysis": "AI+娱乐板块预期受益。"
+    },
+    {
+      "stock_name": "拓尔思",
+      "stock_code": "300229",
+      "impact": 3,
+      "analysis": "AI+娱乐板块预期受益。"
+    },
+    {
+      "stock_name": "云从科技",
+      "stock_code": "688016",
+      "impact": 3,
+      "analysis": "AI+娱乐板块预期受益。"
+    },
+    {
+      "stock_name": "虹软科技",
+      "stock_code": "603068",
+      "impact": 3,
+      "analysis": "AI+影视板块预期受益。"
+    },
+    {
+      "stock_name": "捷成股份",
+      "stock_code": "002950",
+      "impact": 3,
+      "analysis": "AI+影视板块预期受益。"
+    },
+    {
+      "stock_name": "宣亚国际",
+      "stock_code": "300633",
+      "impact": 3,
+      "analysis": "AI+影视板块预期受益。"
+    },
+    {
+      "stock_name": "果麦文化",
+      "stock_code": "300743",
+      "impact": 3,
+      "analysis": "AI+文字创作板块预期受益。"
+    },
+    {
+      "stock_name": "浙文互联",
+      "stock_code": "300602",
+      "impact": 3,
+      "analysis": "AI+文字创作板块预期受益。"
+    },
+    {
+      "stock_name": "中文在线",
+      "stock_code": "300364",
+      "impact": 3,
+      "analysis": "AI+文字创作板块预期受益。"
+    },
+    {
+      "stock_name": "税友股份",
+      "stock_code": "002825",
+      "impact": 3,
+      "analysis": "AI+税务板块预期受益。"
+    },
+    {
+      "stock_name": "盛天网络",
+      "stock_code": "300080",
+      "impact": 3,
+      "analysis": "AI+音乐板块预期受益。"
+    },
+    {
+      "stock_name": "同花顺",
+      "stock_code": "300033",
+      "impact": 3,
+      "analysis": "AI+金融板块预期受益。"
+    },
+    {
+      "stock_name": "天键股份",
+      "stock_code": "002806",
+      "impact": 3,
+      "analysis": "AR设备板块预期受益。"
+    },
+    {
+      "stock_name": "佳禾智能",
+      "stock_code": "603643",
+      "impact": 3,
+      "analysis": "AR设备板块预期受益。"
+    },
+    {
+      "stock_name": "福光股份",
+      "stock_code": "002847",
+      "impact": 3,
+      "analysis": "AR设备板块预期受益。"
+    },
+    {
+      "stock_name": "腾景科技",
+      "stock_code": "688599",
+      "impact": 3,
+      "analysis": "AR设备板块预期受益。"
+    },
+    {
+      "stock_name": "龙迅股份",
+      "stock_code": "301080",
+      "impact": 3,
+      "analysis": "AR设备板块预期受益。"
+    },
+    {
+      "stock_name": "苏大维格",
+      "stock_code": "300331",
+      "impact": 3,
+      "analysis": "AR设备板块预期受益。"
+    },
+    {
+      "stock_name": "中兴商业",
+      "stock_code": "600185",
+      "impact": 3,
+      "analysis": "东北零售股业绩高增，利好公司。"
+    },
+    {
+      "stock_name": "科新发展",
+      "stock_code": "002280",
+      "impact": 3,
+      "analysis": "主营业务受益相关政策，利好公司。"
+    },
+    {
+      "stock_name": "西陇科学",
+      "stock_code": "002584",
+      "impact": 3,
+      "analysis": "铜蚀刻液实现量产供应，利好公司。"
+    },
+    {
+      "stock_name": "南京熊猫",
+      "stock_code": "600775",
+      "impact": 3,
+      "analysis": "机器人、卫星等增量业务看点，利好公司。"
+    },
+    {
+      "stock_name": "康华生物",
+      "stock_code": "300009",
+      "impact": 3,
+      "analysis": "与HilleVax签署重组六价诺如病毒疫苗许可协议，利好公司。"
+    },
+    {
+      "stock_name": "博威合金",
+      "stock_code": "603799",
+      "impact": 3,
+      "analysis": "年报预增，电池片销量大增，利好公司。"
+    },
+    {
+      "stock_name": "艾比森",
+      "stock_code": "300383",
+      "impact": 3,
+      "analysis": "LED业务高增，并提出百亿目标，利好公司。"
+    }
+  ],
+  "article_id": "3b311d891eaa474baedba12223d143d0",
+  "article_date": "2024-01-08",
+  "article_title": "2024.1.8市场逻辑精选"
+}

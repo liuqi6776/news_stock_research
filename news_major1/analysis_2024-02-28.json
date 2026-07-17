@@ -1,0 +1,56 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，氢能和锂矿板块受政策支持，减肥药概念股受海外需求推动。",
+  "sectors": [
+    {
+      "sector_name": "氢能",
+      "impact": 4,
+      "analysis": "政策支持力度大，产业链各环节利好"
+    },
+    {
+      "sector_name": "锂矿",
+      "impact": 3,
+      "analysis": "海外供给减少，期货价格上涨"
+    },
+    {
+      "sector_name": "减肥药",
+      "impact": 3,
+      "analysis": "海外需求释放，市场空间大"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "旺能环境",
+      "stock_code": "600266",
+      "impact": 4,
+      "analysis": "氢能概念，盈利预测估值排名靠前"
+    },
+    {
+      "stock_name": "双良节能",
+      "stock_code": "600481",
+      "impact": 4,
+      "analysis": "电解槽出海，海外需求释放"
+    },
+    {
+      "stock_name": "众生药业",
+      "stock_code": "002317",
+      "impact": 3,
+      "analysis": "减肥药概念，临床试验进展顺利"
+    },
+    {
+      "stock_name": "西藏珠峰",
+      "stock_code": "600332",
+      "impact": 3,
+      "analysis": "锂矿概念，资源储量丰富"
+    },
+    {
+      "stock_name": "天齐锂业",
+      "stock_code": "002466",
+      "impact": 3,
+      "analysis": "锂矿概念，国内远期锂产能有望超14万吨"
+    }
+  ],
+  "article_id": "e70526c7ee214050a74451816e24f69c",
+  "article_date": "2024-02-28",
+  "article_title": "2024.2.28市场逻辑精选"
+}

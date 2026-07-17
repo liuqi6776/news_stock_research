@@ -1,0 +1,121 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏积极，多板块受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "港口航运",
+      "impact": 4,
+      "analysis": "中美关税政策调整，出口预期增强"
+    },
+    {
+      "sector_name": "纺织",
+      "impact": 3,
+      "analysis": "中美贸易关系改善，纺织行业受益"
+    },
+    {
+      "sector_name": "化工",
+      "impact": 3,
+      "analysis": "部分化工产品价格波动，相关公司受关注"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 3,
+      "analysis": "新质战斗力提升，军工行业受益"
+    },
+    {
+      "sector_name": "城市更新",
+      "impact": 3,
+      "analysis": "城市更新政策推进，相关公司受益"
+    },
+    {
+      "sector_name": "小米芯片",
+      "impact": 3,
+      "analysis": "小米芯片发布，相关公司受益"
+    },
+    {
+      "sector_name": "华为折叠屏",
+      "impact": 3,
+      "analysis": "华为折叠电脑发布，相关公司受益"
+    },
+    {
+      "sector_name": "工业母机",
+      "impact": 3,
+      "analysis": "工业母机产业高质量发展，相关公司受益"
+    },
+    {
+      "sector_name": "新零售",
+      "impact": 3,
+      "analysis": "国内大循环工作推进，新零售行业受益"
+    },
+    {
+      "sector_name": "食品饮料",
+      "impact": 3,
+      "analysis": "国内大循环工作推进，食品饮料行业受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "宁波海运",
+      "stock_code": "600017",
+      "impact": 4,
+      "analysis": "中美关税政策调整，出口预期增强"
+    },
+    {
+      "stock_name": "迎丰股份",
+      "stock_code": "603179",
+      "impact": 3,
+      "analysis": "中美贸易关系改善，纺织行业受益"
+    },
+    {
+      "stock_name": "集泰股份",
+      "stock_code": "002909",
+      "impact": 3,
+      "analysis": "中美关税政策调整，出口预期增强"
+    },
+    {
+      "stock_name": "成飞集成",
+      "stock_code": "002190",
+      "impact": 3,
+      "analysis": "新质战斗力提升，军工行业受益"
+    },
+    {
+      "stock_name": "新城市",
+      "stock_code": "002539",
+      "impact": 3,
+      "analysis": "城市更新政策推进，相关公司受益"
+    },
+    {
+      "stock_name": "东方中科",
+      "stock_code": "002819",
+      "impact": 3,
+      "analysis": "小米芯片发布，相关公司受益"
+    },
+    {
+      "stock_name": "科森科技",
+      "stock_code": "603636",
+      "impact": 3,
+      "analysis": "华为折叠电脑发布，相关公司受益"
+    },
+    {
+      "stock_name": "华东数控",
+      "stock_code": "002248",
+      "impact": 3,
+      "analysis": "工业母机产业高质量发展，相关公司受益"
+    },
+    {
+      "stock_name": "中百集团",
+      "stock_code": "000759",
+      "impact": 3,
+      "analysis": "国内大循环工作推进，新零售行业受益"
+    },
+    {
+      "stock_name": "西王食品",
+      "stock_code": "000639",
+      "impact": 3,
+      "analysis": "国内大循环工作推进，食品饮料行业受益"
+    }
+  ],
+  "article_title": "5月16日盘前纪要",
+  "html_file": "1h5gy13bt27.html",
+  "article_date": "2025-05-16"
+}

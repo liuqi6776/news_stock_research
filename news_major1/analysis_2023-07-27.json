@@ -1,0 +1,77 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪提升",
+  "sectors": [
+    {
+      "sector_name": "车联网",
+      "impact": 4,
+      "analysis": "政策支持，技术合作，板块利好"
+    },
+    {
+      "sector_name": "超导概念",
+      "impact": 3,
+      "analysis": "重大突破，概念股受关注"
+    },
+    {
+      "sector_name": "网络游戏",
+      "impact": 2,
+      "analysis": "审批信息发布，行业利好"
+    },
+    {
+      "sector_name": "虚拟电厂",
+      "impact": 2,
+      "analysis": "政策推动，行业前景看好"
+    },
+    {
+      "sector_name": "钛白粉",
+      "impact": 3,
+      "analysis": "价格上调，行业盈利能力增强"
+    },
+    {
+      "sector_name": "华为算力",
+      "impact": 3,
+      "analysis": "业绩增长，算力需求推动"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "瑞玛精密",
+      "stock_code": "300118",
+      "impact": 4,
+      "analysis": "车联网概念，技术合作利好"
+    },
+    {
+      "stock_name": "法尔胜",
+      "stock_code": "000890",
+      "impact": 3,
+      "analysis": "超导概念，重大突破利好"
+    },
+    {
+      "stock_name": "中青宝",
+      "stock_code": "300055",
+      "impact": 2,
+      "analysis": "网络游戏审批，行业利好"
+    },
+    {
+      "stock_name": "迦南智能",
+      "stock_code": "300466",
+      "impact": 2,
+      "analysis": "虚拟电厂，政策推动利好"
+    },
+    {
+      "stock_name": "金浦钛业",
+      "stock_code": "002858",
+      "impact": 3,
+      "analysis": "钛白粉价格上调，行业盈利增强"
+    },
+    {
+      "stock_name": "华鲲振宇",
+      "stock_code": "688023",
+      "impact": 3,
+      "analysis": "算力需求推动，业绩增长"
+    }
+  ],
+  "article_title": "7月27日 盘前热点事件关注",
+  "html_file": "2fpavvu9y4.html",
+  "article_date": "2023-07-27"
+}

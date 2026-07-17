@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体情绪偏乐观，部分行业和个股受利好消息推动。",
+  "sectors": [
+    {
+      "sector_name": "钠电池",
+      "impact": 4,
+      "analysis": "技术突破，板块受提振"
+    },
+    {
+      "sector_name": "交通运输",
+      "impact": 3,
+      "analysis": "政策支持，基础设施建设受益"
+    },
+    {
+      "sector_name": "低空经济",
+      "impact": 3,
+      "analysis": "空管体制改革，低空经济潜力大"
+    },
+    {
+      "sector_name": "数据中心",
+      "impact": 3,
+      "analysis": "数据中心建设加速，相关产业链受益"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "技术进步，应用场景拓展"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "传艺科技",
+      "stock_code": "002866",
+      "impact": 4,
+      "analysis": "钠电池技术突破，股价有望上涨"
+    },
+    {
+      "stock_name": "北新路桥",
+      "stock_code": "002307",
+      "impact": 3,
+      "analysis": "交通基础设施建设受益，股价有望上涨"
+    },
+    {
+      "stock_name": "威奥股份",
+      "stock_code": "002308",
+      "impact": 3,
+      "analysis": "轨道交通车辆配套产品，股价有望上涨"
+    },
+    {
+      "stock_name": "中恒电气",
+      "stock_code": "002364",
+      "impact": 3,
+      "analysis": "数据中心电源业务，股价有望上涨"
+    },
+    {
+      "stock_name": "城地香江",
+      "stock_code": "002979",
+      "impact": 3,
+      "analysis": "数据中心业务，股价有望上涨"
+    }
+  ],
+  "article_id": "cd007d5e6b3a417d855f80a75721eb5b",
+  "article_date": "2024-12-23",
+  "article_title": "2024.12.23市场逻辑精选"
+}

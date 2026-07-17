@@ -1,0 +1,56 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受半导体和稀土板块利好影响，有望上涨。",
+  "sectors": [
+    {
+      "sector_name": "半导体",
+      "impact": 4,
+      "analysis": "业绩向好，自主可控持续推进，利好板块。"
+    },
+    {
+      "sector_name": "稀土",
+      "impact": 3,
+      "analysis": "战略价值凸显，需求增长，利好板块。"
+    },
+    {
+      "sector_name": "商业航天",
+      "impact": 3,
+      "analysis": "火箭密集发射期，市场空间广阔，利好板块。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "富满微",
+      "stock_code": "300203",
+      "impact": 4,
+      "analysis": "专注高性能模拟及数模混合集成电路，利好个股。"
+    },
+    {
+      "stock_name": "瑞纳智能",
+      "stock_code": "300833",
+      "impact": 4,
+      "analysis": "三代半导体研发取得进展，利好个股。"
+    },
+    {
+      "stock_name": "晶华微",
+      "stock_code": "688018",
+      "impact": 4,
+      "analysis": "专注高性能模拟芯片，利好个股。"
+    },
+    {
+      "stock_name": "京仪装备",
+      "stock_code": "600827",
+      "impact": 4,
+      "analysis": "受益存储NADA升级扩产，利好个股。"
+    },
+    {
+      "stock_name": "上海翰讯",
+      "stock_code": "300828",
+      "impact": 4,
+      "analysis": "低轨卫星相关业务收入增长，利好个股。"
+    }
+  ],
+  "article_id": "4c3acf5654f444afa2a3823173622905",
+  "article_date": "2025-08-07",
+  "article_title": "2025.8.7市场逻辑精选"
+}

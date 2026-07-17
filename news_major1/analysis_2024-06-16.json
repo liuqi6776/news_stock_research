@@ -1,0 +1,80 @@
+{
+  "market_impact": 3,
+  "market_analysis": "利好，智能网联汽车产业链受政策支持",
+  "sectors": [
+    {
+      "sector_name": "智能网联汽车",
+      "impact": 4,
+      "analysis": "政策支持，板块受益"
+    },
+    {
+      "sector_name": "车路云",
+      "impact": 3,
+      "analysis": "项目获批，板块活跃"
+    },
+    {
+      "sector_name": "智慧交通",
+      "impact": 3,
+      "analysis": "技术进步，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "湖北车路云",
+      "stock_code": "000416",
+      "impact": 4,
+      "analysis": "项目获批，股价有望上涨"
+    },
+    {
+      "stock_name": "光庭信息",
+      "stock_code": "300699",
+      "impact": 3,
+      "analysis": "承担关键技术项目，股价有望上涨"
+    },
+    {
+      "stock_name": "长江通信",
+      "stock_code": "600488",
+      "impact": 3,
+      "analysis": "智慧交通产品受益，股价有望上涨"
+    },
+    {
+      "stock_name": "万集科技",
+      "stock_code": "300134",
+      "impact": 3,
+      "analysis": "参与测试场建设，股价有望上涨"
+    },
+    {
+      "stock_name": "楚天高速",
+      "stock_code": "600035",
+      "impact": 2,
+      "analysis": "湖北省内唯一高速公路上市公司，股价有望上涨"
+    },
+    {
+      "stock_name": "高新兴",
+      "stock_code": "300098",
+      "impact": 3,
+      "analysis": "产品矩阵完整，参与多地项目，股价有望上涨"
+    },
+    {
+      "stock_name": "金溢科技",
+      "stock_code": "002869",
+      "impact": 3,
+      "analysis": "参与深圳车路云项目，股价有望上涨"
+    },
+    {
+      "stock_name": "千方科技",
+      "stock_code": "002373",
+      "impact": 3,
+      "analysis": "V2X核心硬件产品，股价有望上涨"
+    },
+    {
+      "stock_name": "小鹏汇天",
+      "stock_code": "688612",
+      "impact": 3,
+      "analysis": "飞行汽车首飞成功，股价有望上涨"
+    }
+  ],
+  "article_id": "21a2b96024ff4ad8b9f4db860e96ef36",
+  "article_date": "2024-06-16",
+  "article_title": "2024.6.16市场逻辑精选"
+}

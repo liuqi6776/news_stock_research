@@ -1,0 +1,117 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "煤炭",
+      "impact": 4,
+      "analysis": "供需改善，价格上涨预期强。"
+    },
+    {
+      "sector_name": "染料",
+      "impact": 3,
+      "analysis": "中间体涨价，染料价格有望上涨。"
+    },
+    {
+      "sector_name": "光刻机",
+      "impact": 3,
+      "analysis": "阿斯麦业绩超预期，光刻机行业受提振。"
+    },
+    {
+      "sector_name": "矿机",
+      "impact": 3,
+      "analysis": "矿企资本开支上行，矿机需求增加。"
+    },
+    {
+      "sector_name": "磁约束聚变",
+      "impact": 2,
+      "analysis": "专家加入，行业关注度提升。"
+    },
+    {
+      "sector_name": "远东股份",
+      "impact": 2,
+      "analysis": "合作进展，业绩有望提升。"
+    },
+    {
+      "sector_name": "怡球资源",
+      "impact": 3,
+      "analysis": "业绩预增，再生铝行业受益。"
+    },
+    {
+      "sector_name": "东方钽业",
+      "impact": 2,
+      "analysis": "钽铌价格上涨，行业受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "山西焦化",
+      "stock_code": "600740",
+      "impact": 4,
+      "analysis": "焦炭价格上涨预期强。"
+    },
+    {
+      "stock_name": "陕西黑猫",
+      "stock_code": "600312",
+      "impact": 4,
+      "analysis": "焦炭价格上涨预期强。"
+    },
+    {
+      "stock_name": "闰土股份",
+      "stock_code": "002440",
+      "impact": 4,
+      "analysis": "染料价格上涨预期强。"
+    },
+    {
+      "stock_name": "浙江龙盛",
+      "stock_code": "600352",
+      "impact": 4,
+      "analysis": "染料价格上涨预期强。"
+    },
+    {
+      "stock_name": "蓝英装备",
+      "stock_code": "300080",
+      "impact": 3,
+      "analysis": "光刻机行业受益。"
+    },
+    {
+      "stock_name": "东方嘉盛",
+      "stock_code": "002889",
+      "impact": 3,
+      "analysis": "光刻机行业受益。"
+    },
+    {
+      "stock_name": "耐普矿机",
+      "stock_code": "300096",
+      "impact": 4,
+      "analysis": "矿机需求增加。"
+    },
+    {
+      "stock_name": "今创集团",
+      "stock_code": "603638",
+      "impact": 3,
+      "analysis": "磁约束聚变行业受益。"
+    },
+    {
+      "stock_name": "远东股份",
+      "stock_code": "600869",
+      "impact": 3,
+      "analysis": "合作进展，业绩有望提升。"
+    },
+    {
+      "stock_name": "怡球资源",
+      "stock_code": "600795",
+      "impact": 4,
+      "analysis": "再生铝行业受益。"
+    },
+    {
+      "stock_name": "东方钽业",
+      "stock_code": "000962",
+      "impact": 3,
+      "analysis": "钽铌价格上涨，行业受益。"
+    }
+  ],
+  "article_id": "42814651186b41de835ed23086edffe5",
+  "article_date": "2026-01-28",
+  "article_title": "2026.1.28市场逻辑精选"
+}

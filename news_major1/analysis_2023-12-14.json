@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注政策变化。",
+  "sectors": [
+    {
+      "sector_name": "传媒",
+      "impact": 4,
+      "analysis": "AI大模型付费合作推动行业重估。"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 3,
+      "analysis": "北京、上海购房政策调整，利好板块。"
+    },
+    {
+      "sector_name": "汽车",
+      "impact": 3,
+      "analysis": "问界M9预订火爆，利好相关产业链。"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 2,
+      "analysis": "奥赛康创新研发管线进入关键阶段。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "大龙地产",
+      "stock_code": "000728",
+      "impact": 3,
+      "analysis": "北京购房政策调整，受益。"
+    },
+    {
+      "stock_name": "城建发展",
+      "stock_code": "000971",
+      "impact": 3,
+      "analysis": "北京购房政策调整，受益。"
+    },
+    {
+      "stock_name": "赛力斯",
+      "stock_code": "600104",
+      "impact": 4,
+      "analysis": "问界M9预订火爆，利好公司。"
+    },
+    {
+      "stock_name": "奥赛康",
+      "stock_code": "300292",
+      "impact": 3,
+      "analysis": "创新研发管线进入关键阶段，利好公司。"
+    }
+  ],
+  "article_id": "8486f4ccb97443e790f98181d68cdeb6",
+  "article_date": "2023-12-14",
+  "article_title": "2023.12.14市场逻辑精选"
+}

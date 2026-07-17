@@ -1,0 +1,116 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多板块利好。",
+  "sectors": [
+    {
+      "sector_name": "黄金",
+      "impact": 3,
+      "analysis": "巴以冲突进展，黄金板块受益"
+    },
+    {
+      "sector_name": "石油",
+      "impact": 3,
+      "analysis": "巴以冲突进展，石油板块受益"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 3,
+      "analysis": "巴以冲突进展，军工板块受益"
+    },
+    {
+      "sector_name": "存算分离",
+      "impact": 3,
+      "analysis": "华为推出存算分离技术，相关企业受益"
+    },
+    {
+      "sector_name": "仪器仪表",
+      "impact": 3,
+      "analysis": "市场监管总局发布指导意见，仪器仪表板块受益"
+    },
+    {
+      "sector_name": "金融",
+      "impact": 3,
+      "analysis": "3000点保卫战，金融板块受益"
+    },
+    {
+      "sector_name": "新能源车",
+      "impact": 3,
+      "analysis": "华为、小米等推动新能源车发展"
+    },
+    {
+      "sector_name": "芯片",
+      "impact": 3,
+      "analysis": "美国限制芯片出口，芯片板块受益"
+    },
+    {
+      "sector_name": "卫星导航",
+      "impact": 3,
+      "analysis": "华为推出卫星通话功能，卫星导航板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "四川黄金",
+      "stock_code": "600595",
+      "impact": 3,
+      "analysis": "巴以冲突进展，黄金板块受益"
+    },
+    {
+      "stock_name": "中润资源",
+      "stock_code": "000506",
+      "impact": 3,
+      "analysis": "巴以冲突进展，石油板块受益"
+    },
+    {
+      "stock_name": "北方长龙",
+      "stock_code": "002059",
+      "impact": 3,
+      "analysis": "巴以冲突进展，军工板块受益"
+    },
+    {
+      "stock_name": "同有科技",
+      "stock_code": "600990",
+      "impact": 3,
+      "analysis": "华为推出存算分离技术，相关企业受益"
+    },
+    {
+      "stock_name": "浪潮信息",
+      "stock_code": "000977",
+      "impact": 3,
+      "analysis": "华为推出存算分离技术，相关企业受益"
+    },
+    {
+      "stock_name": "禾信仪器",
+      "stock_code": "300959",
+      "impact": 3,
+      "analysis": "市场监管总局发布指导意见，仪器仪表板块受益"
+    },
+    {
+      "stock_name": "锦龙股份",
+      "stock_code": "000712",
+      "impact": 3,
+      "analysis": "3000点保卫战，金融板块受益"
+    },
+    {
+      "stock_name": "圣龙股份",
+      "stock_code": "603766",
+      "impact": 3,
+      "analysis": "华为问界汽车，新能源车板块受益"
+    },
+    {
+      "stock_name": "文一科技",
+      "stock_code": "600520",
+      "impact": 3,
+      "analysis": "美国限制芯片出口，芯片板块受益"
+    },
+    {
+      "stock_name": "上海沪工",
+      "stock_code": "601727",
+      "impact": 3,
+      "analysis": "华为推出卫星通话功能，卫星导航板块受益"
+    }
+  ],
+  "article_title": "10月20日盘前早报 热点事件关注",
+  "html_file": "7hsx8dsy1v.html",
+  "article_date": "2023-10-20"
+}

@@ -1,0 +1,82 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策利好，市场情绪积极",
+  "sectors": [
+    {
+      "sector_name": "农业",
+      "impact": 4,
+      "analysis": "一号文件推动，种业、奶业受益"
+    },
+    {
+      "sector_name": "基建",
+      "impact": 3,
+      "analysis": "高标准农田建设，基建板块受益"
+    },
+    {
+      "sector_name": "新能源",
+      "impact": 3,
+      "analysis": "农村新能源发展，相关产业链受益"
+    },
+    {
+      "sector_name": "科技",
+      "impact": 3,
+      "analysis": "Vision Pro发布，相关产业链受益"
+    },
+    {
+      "sector_name": "物流",
+      "impact": 2,
+      "analysis": "低温奶消费增长，冷链物流受益"
+    },
+    {
+      "sector_name": "旅游",
+      "impact": 3,
+      "analysis": "旅游旺季，旅游板块受益"
+    },
+    {
+      "sector_name": "环保",
+      "impact": 2,
+      "analysis": "碳排放权交易条例实施，环保板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "阳光乳业",
+      "stock_code": "000062",
+      "impact": 4,
+      "analysis": "低温奶消费增长，公司受益"
+    },
+    {
+      "stock_name": "丽江股份",
+      "stock_code": "002033",
+      "impact": 4,
+      "analysis": "旅游旺季，公司业绩确定性较强"
+    },
+    {
+      "stock_name": "浦东金桥",
+      "stock_code": "600639",
+      "impact": 3,
+      "analysis": "参与新设合伙企业，投资三大产业赛道"
+    },
+    {
+      "stock_name": "学大教育",
+      "stock_code": "300355",
+      "impact": 3,
+      "analysis": "拟收购珠海隆大70%股权，完善职业教育体系"
+    },
+    {
+      "stock_name": "奥普家居",
+      "stock_code": "603227",
+      "impact": 3,
+      "analysis": "拟回购注销股份，提升公司价值"
+    },
+    {
+      "stock_name": "壹石通",
+      "stock_code": "603688",
+      "impact": 3,
+      "analysis": "投建高纯石英砂项目，满足光伏、半导体需求"
+    }
+  ],
+  "article_id": "0181305c1ca242b58bce30d23268d95a",
+  "article_date": "2024-02-04",
+  "article_title": "2024.2.4市场逻辑精选"
+}

@@ -1,0 +1,132 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极影响。",
+  "sectors": [
+    {
+      "sector_name": "鸿蒙生态",
+      "impact": 4,
+      "analysis": "鸿蒙生态发展加速，相关产业链受益"
+    },
+    {
+      "sector_name": "智能座舱",
+      "impact": 3,
+      "analysis": "智能座舱市场规模扩大，相关企业受益"
+    },
+    {
+      "sector_name": "互联网卫星",
+      "impact": 3,
+      "analysis": "卫星互联网行业持续催化，产业链机会增多"
+    },
+    {
+      "sector_name": "TWS耳机",
+      "impact": 3,
+      "analysis": "TWS耳机产业发展，相关企业受益"
+    },
+    {
+      "sector_name": "AR-HUD",
+      "impact": 3,
+      "analysis": "AR-HUD技术发展，相关企业受益"
+    },
+    {
+      "sector_name": "煤层气",
+      "impact": 3,
+      "analysis": "煤层气开发公司受益甲烷减排政策"
+    },
+    {
+      "sector_name": "新能源汽车零组件",
+      "impact": 3,
+      "analysis": "新能源汽车零组件业务增长，相关企业受益"
+    },
+    {
+      "sector_name": "AI生产力赋能中心",
+      "impact": 3,
+      "analysis": "AI生产力赋能中心发展，相关企业受益"
+    },
+    {
+      "sector_name": "液晶面板",
+      "impact": 3,
+      "analysis": "液晶面板市场供需关系改善，相关企业受益"
+    },
+    {
+      "sector_name": "洁净室工程",
+      "impact": 3,
+      "analysis": "洁净室工程需求增长，相关企业受益"
+    },
+    {
+      "sector_name": "卫星通讯",
+      "impact": 3,
+      "analysis": "卫星通讯行业发展，相关企业受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "鸿蒙生态相关个股",
+      "stock_code": "",
+      "impact": 4,
+      "analysis": "鸿蒙生态发展加速，相关个股受益"
+    },
+    {
+      "stock_name": "智能座舱相关个股",
+      "stock_code": "",
+      "impact": 3,
+      "analysis": "智能座舱市场规模扩大，相关个股受益"
+    },
+    {
+      "stock_name": "互联网卫星相关个股",
+      "stock_code": "",
+      "impact": 3,
+      "analysis": "卫星互联网行业持续催化，相关个股受益"
+    },
+    {
+      "stock_name": "TWS耳机相关个股",
+      "stock_code": "",
+      "impact": 3,
+      "analysis": "TWS耳机产业发展，相关个股受益"
+    },
+    {
+      "stock_name": "AR-HUD相关个股",
+      "stock_code": "",
+      "impact": 3,
+      "analysis": "AR-HUD技术发展，相关个股受益"
+    },
+    {
+      "stock_name": "煤层气相关个股",
+      "stock_code": "",
+      "impact": 3,
+      "analysis": "煤层气开发公司受益甲烷减排政策，相关个股受益"
+    },
+    {
+      "stock_name": "新能源汽车零组件相关个股",
+      "stock_code": "",
+      "impact": 3,
+      "analysis": "新能源汽车零组件业务增长，相关个股受益"
+    },
+    {
+      "stock_name": "AI生产力赋能中心相关个股",
+      "stock_code": "",
+      "impact": 3,
+      "analysis": "AI生产力赋能中心发展，相关个股受益"
+    },
+    {
+      "stock_name": "液晶面板相关个股",
+      "stock_code": "",
+      "impact": 3,
+      "analysis": "液晶面板市场供需关系改善，相关个股受益"
+    },
+    {
+      "stock_name": "洁净室工程相关个股",
+      "stock_code": "",
+      "impact": 3,
+      "analysis": "洁净室工程需求增长，相关个股受益"
+    },
+    {
+      "stock_name": "卫星通讯相关个股",
+      "stock_code": "",
+      "impact": 3,
+      "analysis": "卫星通讯行业发展，相关个股受益"
+    }
+  ],
+  "article_id": "a59d99fddb014309a185e7c683b93747",
+  "article_date": "2023-10-26",
+  "article_title": "2023.10.26市场逻辑精选"
+}

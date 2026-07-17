@@ -1,0 +1,96 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "人工智能",
+      "impact": 4,
+      "analysis": "百度文心一言生态合作伙伴及华为相关合作利好"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "HBM需求增加，AI服务器硬件建设利好"
+    },
+    {
+      "sector_name": "消费电子",
+      "impact": 2,
+      "analysis": "华为技术峰会及AI应用利好"
+    },
+    {
+      "sector_name": "新能源",
+      "impact": 2,
+      "analysis": "新能源汽车及充电桩利好"
+    },
+    {
+      "sector_name": "传媒",
+      "impact": 2,
+      "analysis": "百度文心一言生态合作伙伴利好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "超媒体控股",
+      "stock_code": "000938",
+      "impact": 5,
+      "analysis": "成为百度文心一言首批生态合作伙伴，股价暴涨"
+    },
+    {
+      "stock_name": "新华传媒",
+      "stock_code": "600635",
+      "impact": 4,
+      "analysis": "成为百度“文心一言”首批先行体验官"
+    },
+    {
+      "stock_name": "凡拓数控",
+      "stock_code": "300247",
+      "impact": 4,
+      "analysis": "成为百度“文心一言”首批先行体验官"
+    },
+    {
+      "stock_name": "汉得信息",
+      "stock_code": "600570",
+      "impact": 4,
+      "analysis": "加入百度文心一言生态圈"
+    },
+    {
+      "stock_name": "银之杰",
+      "stock_code": "300385",
+      "impact": 4,
+      "analysis": "成为百度文心一言首批生态合作伙伴"
+    },
+    {
+      "stock_name": "润和软件",
+      "stock_code": "300457",
+      "impact": 4,
+      "analysis": "华为技术峰会相关合作"
+    },
+    {
+      "stock_name": "诚迈科技",
+      "stock_code": "300598",
+      "impact": 4,
+      "analysis": "华为技术峰会相关合作"
+    },
+    {
+      "stock_name": "九联科技",
+      "stock_code": "300394",
+      "impact": 4,
+      "analysis": "华为技术峰会相关合作"
+    },
+    {
+      "stock_name": "软通动力",
+      "stock_code": "300474",
+      "impact": 4,
+      "analysis": "华为技术峰会相关合作"
+    },
+    {
+      "stock_name": "优博讯",
+      "stock_code": "300545",
+      "impact": 4,
+      "analysis": "华为技术峰会相关合作"
+    }
+  ],
+  "article_title": "2月16日盘前早参 热点事件关注",
+  "html_file": "drvxud49k5.html",
+  "article_date": "2023-02-16"
+}

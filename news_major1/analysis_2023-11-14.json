@@ -1,0 +1,61 @@
+{
+  "market_impact": 3,
+  "market_analysis": "AI芯片和光伏板块受利好消息推动，市场情绪积极。",
+  "sectors": [
+    {
+      "sector_name": "AI芯片",
+      "impact": 4,
+      "analysis": "英伟达HBM3E芯片发布，带动相关产业链需求。"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "中美贸易缓和预期，光伏市场有望增长。"
+    },
+    {
+      "sector_name": "半导体设备",
+      "impact": 3,
+      "analysis": "HBM3E芯片发布，带动半导体设备需求。"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 2,
+      "analysis": "政策性银行资金注入，提振住房市场。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "万润科技",
+      "stock_code": "002654",
+      "impact": 3,
+      "analysis": "子公司长江万润致力于存储国产替代。"
+    },
+    {
+      "stock_name": "香农芯创",
+      "stock_code": "688012",
+      "impact": 3,
+      "analysis": "代理HBM等高端存储器。"
+    },
+    {
+      "stock_name": "海光信息",
+      "stock_code": "688041",
+      "impact": 3,
+      "analysis": "国产AI芯片性价比优于英伟达改良版。"
+    },
+    {
+      "stock_name": "鸿路钢构",
+      "stock_code": "002541",
+      "impact": 2,
+      "analysis": "城中村改造受益。"
+    },
+    {
+      "stock_name": "北新建材",
+      "stock_code": "000786",
+      "impact": 2,
+      "analysis": "建材业务稳健，拟收购嘉宝莉补强涂料。"
+    }
+  ],
+  "article_id": "cf461f15c4604cb3bfffe4511fd6cf15",
+  "article_date": "2023-11-14",
+  "article_title": "2023.11.14市场逻辑精选"
+}

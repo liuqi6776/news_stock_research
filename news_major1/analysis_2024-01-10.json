@@ -1,0 +1,67 @@
+{
+  "market_impact": 3,
+  "market_analysis": "消费、美妆、供销社板块受利好，市场情绪提升。",
+  "sectors": [
+    {
+      "sector_name": "消费",
+      "impact": 4,
+      "analysis": "餐饮、预制菜、年货销售火爆，板块受益明显。"
+    },
+    {
+      "sector_name": "美妆",
+      "impact": 3,
+      "analysis": "公司业绩高增，行业延续高增长，板块受利好。"
+    },
+    {
+      "sector_name": "供销社",
+      "impact": 3,
+      "analysis": "ST大集实控人变更，相关公司受益。"
+    },
+    {
+      "sector_name": "飞行汽车",
+      "impact": 3,
+      "analysis": "小鹏汇天开启预订，板块受关注。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "深中华A",
+      "stock_code": "000017",
+      "impact": 3,
+      "analysis": "珠宝销售景气，重组预期。"
+    },
+    {
+      "stock_name": "威领股份",
+      "stock_code": "002951",
+      "impact": 3,
+      "analysis": "碳酸锂量产，储能项目推进。"
+    },
+    {
+      "stock_name": "全聚德",
+      "stock_code": "002186",
+      "impact": 3,
+      "analysis": "年夜饭销售火爆，业绩增长。"
+    },
+    {
+      "stock_name": "鸿博股份",
+      "stock_code": "002229",
+      "impact": 3,
+      "analysis": "业绩超预期，人工智能领域取得优异成绩。"
+    },
+    {
+      "stock_name": "特宝生物",
+      "stock_code": "300255",
+      "impact": 3,
+      "analysis": "生长激素注射液药品注册获受理，产品线丰富。"
+    },
+    {
+      "stock_name": "九号公司",
+      "stock_code": "969588",
+      "impact": 3,
+      "analysis": "大额回购计划，英伟达合作机器人。"
+    }
+  ],
+  "article_id": "dae0d80fddfc4ef9bd3c2b9bb5078c65",
+  "article_date": "2024-01-10",
+  "article_title": "2024.1.10市场逻辑精选"
+}

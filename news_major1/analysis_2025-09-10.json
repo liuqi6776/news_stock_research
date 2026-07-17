@@ -1,0 +1,84 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏向利好，多个板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "云计算",
+      "impact": 4,
+      "analysis": "云基础设施业务增长，相关公司受益"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 4,
+      "analysis": "AI训练和推理市场增长，相关公司受益"
+    },
+    {
+      "sector_name": "存储",
+      "impact": 3,
+      "analysis": "存储需求旺盛，价格有望上涨"
+    },
+    {
+      "sector_name": "有色金属",
+      "impact": 3,
+      "analysis": "降息预期下，贵金属和工业金属行情有望上涨"
+    },
+    {
+      "sector_name": "电子制造",
+      "impact": 3,
+      "analysis": "高阶HDI扩产，相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "甲骨文",
+      "stock_code": "ORCL",
+      "impact": 4,
+      "analysis": "云基础设施业务增长，股价有望上涨"
+    },
+    {
+      "stock_name": "工业富联",
+      "stock_code": "601138",
+      "impact": 3,
+      "analysis": "AI服务器制造商，与甲骨文等有合作"
+    },
+    {
+      "stock_name": "新炬网络",
+      "stock_code": "300990",
+      "impact": 3,
+      "analysis": "与甲骨文合作，提供数据库运维服务"
+    },
+    {
+      "stock_name": "诚邦股份",
+      "stock_code": "603816",
+      "impact": 3,
+      "analysis": "存储产品应用于消费电子等领域"
+    },
+    {
+      "stock_name": "西部黄金",
+      "stock_code": "601377",
+      "impact": 3,
+      "analysis": "黄金产量增加，受益于降息预期"
+    },
+    {
+      "stock_name": "景旺电子",
+      "stock_code": "603187",
+      "impact": 3,
+      "analysis": "高阶HDI扩产，业绩有望增长"
+    },
+    {
+      "stock_name": "博杰股份",
+      "stock_code": "002975",
+      "impact": 3,
+      "analysis": "N客户订单有望快速增长"
+    },
+    {
+      "stock_name": "新华都",
+      "stock_code": "002264",
+      "impact": 3,
+      "analysis": "布局淘宝闪购，受益于即时零售"
+    }
+  ],
+  "article_id": "ea8da9c465624e8baed331804c166595",
+  "article_date": "2025-09-10",
+  "article_title": "2025.9.10市场逻辑精选"
+}

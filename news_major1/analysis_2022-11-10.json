@@ -1,0 +1,122 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "医药生物",
+      "impact": 4,
+      "analysis": "止咳药和新冠药物原料相关个股受关注。"
+    },
+    {
+      "sector_name": "电子",
+      "impact": 3,
+      "analysis": "电子健康码和半导体设备相关个股受关注。"
+    },
+    {
+      "sector_name": "机械设备",
+      "impact": 2,
+      "analysis": "制药设备相关个股受关注。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "金城医药",
+      "stock_code": "600739",
+      "impact": 4,
+      "analysis": "HR2002产能达400吨，产能优势明显。"
+    },
+    {
+      "stock_name": "美诺华",
+      "stock_code": "600711",
+      "impact": 3,
+      "analysis": "SM1片段产能约每月20-25吨，后期产能项目已备案成功。"
+    },
+    {
+      "stock_name": "神思电子",
+      "stock_code": "300479",
+      "impact": 3,
+      "analysis": "开发可识读电子健康码、电子身份证等系列产品。"
+    },
+    {
+      "stock_name": "易联众",
+      "stock_code": "300096",
+      "impact": 3,
+      "analysis": "率先实现多码融合，多码融合指的是电子健康码等电子码的协同应用融合体验。"
+    },
+    {
+      "stock_name": "拓荆科技",
+      "stock_code": "688012",
+      "impact": 3,
+      "analysis": "薄膜沉积设备龙头，国产化率低于5%。"
+    },
+    {
+      "stock_name": "芯源微",
+      "stock_code": "688012",
+      "impact": 3,
+      "analysis": "涂胶显影设备，国产化率低于5%。"
+    },
+    {
+      "stock_name": "富创精密",
+      "stock_code": "688012",
+      "impact": 3,
+      "analysis": "半导体设备零部件最上游，各类零部件的平台型企业。"
+    },
+    {
+      "stock_name": "新莱应材",
+      "stock_code": "688012",
+      "impact": 3,
+      "analysis": "半导体管阀核心零部件，国产化率1%。"
+    },
+    {
+      "stock_name": "超讯通信",
+      "stock_code": "300362",
+      "impact": 4,
+      "analysis": "签订充电桩项目，订单金额18.6亿元。"
+    },
+    {
+      "stock_name": "包钢股份",
+      "stock_code": "600010",
+      "impact": 4,
+      "analysis": "稀土精矿价格市场化，业绩弹性较大。"
+    },
+    {
+      "stock_name": "清水源",
+      "stock_code": "300113",
+      "impact": 3,
+      "analysis": "EDTMPA替代EDTA可用于PET铜箔一步法生产。"
+    },
+    {
+      "stock_name": "迦南科技",
+      "stock_code": "300433",
+      "impact": 3,
+      "analysis": "新冠药设备合作广泛。"
+    },
+    {
+      "stock_name": "明阳智能",
+      "stock_code": "300776",
+      "impact": 3,
+      "analysis": "股权激励考核利润增速不低于30%。"
+    },
+    {
+      "stock_name": "星期六",
+      "stock_code": "002291",
+      "impact": 3,
+      "analysis": "构建NFT相关平台“柚堂”，引入web3.0技术。"
+    },
+    {
+      "stock_name": "华厦眼科",
+      "stock_code": "603908",
+      "impact": 3,
+      "analysis": "眼科全国第二，实力不逊于爱尔。"
+    },
+    {
+      "stock_name": "万里石",
+      "stock_code": "300057",
+      "impact": 3,
+      "analysis": "提锂新技术，锂资源利用率提高3倍以上。"
+    }
+  ],
+  "article_id": "f1e68328b2ae49b3a0df72d7dd978787",
+  "article_date": "2022-11-10",
+  "article_title": "2022.11.10市场逻辑精选"
+}

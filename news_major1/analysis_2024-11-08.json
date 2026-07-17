@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏暖，多板块活跃。",
+  "sectors": [
+    {
+      "sector_name": "券商",
+      "impact": 3,
+      "analysis": "并购重组活跃，板块受益"
+    },
+    {
+      "sector_name": "地产",
+      "impact": 2,
+      "analysis": "地方政府债务限额置换，板块利好"
+    },
+    {
+      "sector_name": "科技",
+      "impact": 3,
+      "analysis": "鸿蒙版微信、氢能源等科技题材活跃"
+    },
+    {
+      "sector_name": "消费",
+      "impact": 2,
+      "analysis": "食品、白酒等消费板块表现"
+    },
+    {
+      "sector_name": "资源",
+      "impact": 2,
+      "analysis": "稀土、贵金属等资源板块受美联储降息影响"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "西部证券",
+      "stock_code": "002673",
+      "impact": 3,
+      "analysis": "拟收购国融证券，利好"
+    },
+    {
+      "stock_name": "华夏幸福",
+      "stock_code": "600023",
+      "impact": 2,
+      "analysis": "地方政府债务限额置换，利好"
+    },
+    {
+      "stock_name": "腾讯",
+      "stock_code": "0700.HK",
+      "impact": 3,
+      "analysis": "鸿蒙版微信，利好相关产业链"
+    },
+    {
+      "stock_name": "四川金顶",
+      "stock_code": "600678",
+      "impact": 3,
+      "analysis": "氢能源发展，利好"
+    },
+    {
+      "stock_name": "莱绅通灵",
+      "stock_code": "600890",
+      "impact": 2,
+      "analysis": "美联储降息，贵金属板块受益"
+    }
+  ],
+  "article_title": "11月8日盘前早报 热点事件关注",
+  "html_file": "bce2esgndr.html",
+  "article_date": "2024-11-08"
+}

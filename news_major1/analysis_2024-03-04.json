@@ -1,0 +1,72 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受多因素驱动，呈现一定程度的活跃。",
+  "sectors": [
+    {
+      "sector_name": "辅助生殖",
+      "impact": 4,
+      "analysis": "政策支持，市场空间大，板块受益明显。"
+    },
+    {
+      "sector_name": "AI芯片",
+      "impact": 3,
+      "analysis": "AI推理芯片需求增加，相关公司受益。"
+    },
+    {
+      "sector_name": "光模块",
+      "impact": 3,
+      "analysis": "薄膜铌酸锂技术升级，光模块行业受益。"
+    },
+    {
+      "sector_name": "3D建模",
+      "impact": 3,
+      "analysis": "3D重建工具火爆，3D建模行业迎来发展机遇。"
+    },
+    {
+      "sector_name": "LED照明",
+      "impact": 2,
+      "analysis": "LED照明市场迎来二次替代需求，行业有望回暖。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "川润股份",
+      "stock_code": "002272",
+      "impact": 4,
+      "analysis": "液冷服务器进入华为供应链，公司受益。"
+    },
+    {
+      "stock_name": "通富微电",
+      "stock_code": "002156",
+      "impact": 4,
+      "analysis": "合作长鑫打造HBM产品，公司受益。"
+    },
+    {
+      "stock_name": "飞凯材料",
+      "stock_code": "002002",
+      "impact": 3,
+      "analysis": "三星考虑引入MUF技术，公司受益。"
+    },
+    {
+      "stock_name": "天通股份",
+      "stock_code": "600966",
+      "impact": 3,
+      "analysis": "光模块核心材料供应商，公司受益。"
+    },
+    {
+      "stock_name": "鸿博股份",
+      "stock_code": "002229",
+      "impact": 3,
+      "analysis": "大模型初创项目融资，公司受益。"
+    },
+    {
+      "stock_name": "因赛集团",
+      "stock_code": "300797",
+      "impact": 3,
+      "analysis": "InsightGPT图生视频上线，公司受益。"
+    }
+  ],
+  "article_id": "83cdf0e3806240d5aed207010fe0b889",
+  "article_date": "2024-03-04",
+  "article_title": "2024.3.4市场逻辑精选"
+}

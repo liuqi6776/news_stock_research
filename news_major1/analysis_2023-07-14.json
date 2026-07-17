@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪积极",
+  "sectors": [
+    {
+      "sector_name": "人工智能",
+      "impact": 4,
+      "analysis": "政策支持，技术突破，板块受益"
+    },
+    {
+      "sector_name": "游戏",
+      "impact": 3,
+      "analysis": "AI赋能，行业升级，个股机会增多"
+    },
+    {
+      "sector_name": "医疗",
+      "impact": 3,
+      "analysis": "AI医疗应用，技术进步，板块前景看好"
+    },
+    {
+      "sector_name": "区块链",
+      "impact": 2,
+      "analysis": "加密货币交易所上涨，板块关注度提升"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "科大讯飞",
+      "stock_code": "002230",
+      "impact": 4,
+      "analysis": "大模型技术领先，业绩增长"
+    },
+    {
+      "stock_name": "奥飞娱乐",
+      "stock_code": "002292",
+      "impact": 3,
+      "analysis": "AI游戏应用，业绩扭亏为盈"
+    },
+    {
+      "stock_name": "润达医疗",
+      "stock_code": "300658",
+      "impact": 3,
+      "analysis": "AI医疗大模型，技术领先"
+    },
+    {
+      "stock_name": "贵州茅台",
+      "stock_code": "600519",
+      "impact": 3,
+      "analysis": "业绩持续增长，行业龙头"
+    }
+  ],
+  "article_title": "7月14日 盘前热点事件关注",
+  "html_file": "431wkm797x.html",
+  "article_date": "2023-07-14"
+}

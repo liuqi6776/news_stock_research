@@ -1,0 +1,56 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受利好消息推动，关注相关题材和个股表现。",
+  "sectors": [
+    {
+      "sector_name": "Micro LED",
+      "impact": 4,
+      "analysis": "技术升级和市场需求推动，板块有望迎来爆发。"
+    },
+    {
+      "sector_name": "生物航煤",
+      "impact": 3,
+      "analysis": "政策支持，需求释放，板块前景看好。"
+    },
+    {
+      "sector_name": "绿色电力",
+      "impact": 3,
+      "analysis": "政策推动，绿色转型，板块受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "兆驰股份",
+      "stock_code": "002429",
+      "impact": 4,
+      "analysis": "Micro LED和光模块业务发展迅速。"
+    },
+    {
+      "stock_name": "华灿光电",
+      "stock_code": "300323",
+      "impact": 3,
+      "analysis": "Micro LED芯片和模组产品布局完善。"
+    },
+    {
+      "stock_name": "三安光电",
+      "stock_code": "600703",
+      "impact": 3,
+      "analysis": "Mini/Micro LED芯片产能充足。"
+    },
+    {
+      "stock_name": "海新能科",
+      "stock_code": "603096",
+      "impact": 3,
+      "analysis": "生物航煤项目稳定生产，订单充足。"
+    },
+    {
+      "stock_name": "ST嘉澳",
+      "stock_code": "002628",
+      "impact": 3,
+      "analysis": "SAF出口配额领先，产能持续扩张。"
+    }
+  ],
+  "article_id": "0687ed251c4f470b9e8e302e7f31f09b",
+  "article_date": "2026-03-05",
+  "article_title": "2026.3.5市场逻辑精选"
+}

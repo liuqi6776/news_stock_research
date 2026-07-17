@@ -1,0 +1,129 @@
+{
+  "market_impact": 3,
+  "market_analysis": "关税下调及矿产出口管控政策影响较大。",
+  "sectors": [
+    {
+      "sector_name": "货代",
+      "impact": 4,
+      "analysis": "关税下调利好，需求修复预期强。"
+    },
+    {
+      "sector_name": "海外仓",
+      "impact": 4,
+      "analysis": "关税下调及补库需求利好，成本优势明显。"
+    },
+    {
+      "sector_name": "稀土",
+      "impact": 3,
+      "analysis": "矿产出口管控政策利好，出口管制加强。"
+    },
+    {
+      "sector_name": "碳纤维",
+      "impact": 3,
+      "analysis": "吉林化纤涨价利好，行业需求旺盛。"
+    },
+    {
+      "sector_name": "化工",
+      "impact": 3,
+      "analysis": "茂化实华产品价格上涨利好。"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 3,
+      "analysis": "甘化科工布局军用非晶合金材料利好。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "综艺股份拟收购功率半导体IDM公司利好。"
+    },
+    {
+      "sector_name": "兽药",
+      "impact": 3,
+      "analysis": "金河生物提高美国市场终端售价利好。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中国外运",
+      "stock_code": "601595",
+      "impact": 4,
+      "analysis": "跨境综合物流龙头，受益关税下调。"
+    },
+    {
+      "stock_name": "华贸物流",
+      "stock_code": "601516",
+      "impact": 4,
+      "analysis": "国内头部货代公司，受益关税下调。"
+    },
+    {
+      "stock_name": "海程邦达",
+      "stock_code": "603617",
+      "impact": 4,
+      "analysis": "美国海外仓布局完善，受益补库需求。"
+    },
+    {
+      "stock_name": "大叶股份",
+      "stock_code": "603815",
+      "impact": 4,
+      "analysis": "美国海外仓布局完善，受益补库需求。"
+    },
+    {
+      "stock_name": "乐歌股份",
+      "stock_code": "603629",
+      "impact": 4,
+      "analysis": "美国海外仓布局完善，受益补库需求。"
+    },
+    {
+      "stock_name": "中国稀土",
+      "stock_code": "000831",
+      "impact": 3,
+      "analysis": "战略矿产出口管制加强，受益政策。"
+    },
+    {
+      "stock_name": "华钰矿业",
+      "stock_code": "600955",
+      "impact": 3,
+      "analysis": "锑资源丰富，受益政策。"
+    },
+    {
+      "stock_name": "云南锗业",
+      "stock_code": "002428",
+      "impact": 3,
+      "analysis": "锗产业链完整，受益政策。"
+    },
+    {
+      "stock_name": "吉林化纤",
+      "stock_code": "000420",
+      "impact": 4,
+      "analysis": "碳纤维涨价，业绩提升。"
+    },
+    {
+      "stock_name": "茂化实华",
+      "stock_code": "000637",
+      "impact": 4,
+      "analysis": "产品价格上涨，业绩提升。"
+    },
+    {
+      "stock_name": "甘化科工",
+      "stock_code": "002268",
+      "impact": 4,
+      "analysis": "军用非晶合金材料布局完善，受益政策。"
+    },
+    {
+      "stock_name": "综艺股份",
+      "stock_code": "600770",
+      "impact": 4,
+      "analysis": "拟收购功率半导体IDM公司，拓展业务。"
+    },
+    {
+      "stock_name": "金河生物",
+      "stock_code": "002688",
+      "impact": 4,
+      "analysis": "提高美国市场终端售价，业绩提升。"
+    }
+  ],
+  "article_id": "7d5ca0bd37414f1f96eea457fb2beb47",
+  "article_date": "2025-05-14",
+  "article_title": "2025.5.14市场逻辑精选"
+}

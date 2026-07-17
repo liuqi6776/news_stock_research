@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极影响。",
+  "sectors": [
+    {
+      "sector_name": "芯片设计",
+      "impact": 4,
+      "analysis": "芯片设计板块受益于小米芯片流片成功和英伟达Blackwell系列推出。"
+    },
+    {
+      "sector_name": "半导体设备",
+      "impact": 3,
+      "analysis": "半导体设备板块受益于英伟达Blackwell系列订单激增。"
+    },
+    {
+      "sector_name": "光刻胶",
+      "impact": 3,
+      "analysis": "光刻胶板块受益于佳先股份光刻胶单体顺利下线。"
+    },
+    {
+      "sector_name": "算力设备",
+      "impact": 3,
+      "analysis": "算力设备板块受益于华丰科技国产算力替代核心受益。"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "机器人板块受益于上海电气拟收购机器人资产。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "同兴达",
+      "stock_code": "002845",
+      "impact": 3,
+      "analysis": "受益于小米芯片流片成功和芯片先进封测全流程封装测试项目。"
+    },
+    {
+      "stock_name": "朗进科技",
+      "stock_code": "300684",
+      "impact": 3,
+      "analysis": "受益于央企应收款和低空经济、芯片设计等概念。"
+    },
+    {
+      "stock_name": "佳先股份",
+      "stock_code": "002846",
+      "impact": 4,
+      "analysis": "受益于光刻胶单体顺利下线和乙酰氧基苯乙烯订单。"
+    },
+    {
+      "stock_name": "华丰科技",
+      "stock_code": "002869",
+      "impact": 4,
+      "analysis": "受益于华为高速背板连接器订单和高速背板产品开发。"
+    },
+    {
+      "stock_name": "上海电气",
+      "stock_code": "601727",
+      "impact": 3,
+      "analysis": "受益于拟收购机器人资产和回购股份。"
+    }
+  ],
+  "article_id": "cc1309bff2b945f0bc92b26d4f208b27",
+  "article_date": "2024-10-20",
+  "article_title": "2024.10.20市场逻辑精选"
+}

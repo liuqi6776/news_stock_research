@@ -1,0 +1,116 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受政策预期和行业需求增长提振",
+  "sectors": [
+    {
+      "sector_name": "房地产",
+      "impact": 3,
+      "analysis": "政策预期和利率下降利好"
+    },
+    {
+      "sector_name": "覆铜板",
+      "impact": 3,
+      "analysis": "AI需求增长推动价格上涨"
+    },
+    {
+      "sector_name": "SIC衬底",
+      "impact": 3,
+      "analysis": "英伟达技术引入推动需求"
+    },
+    {
+      "sector_name": "设备",
+      "impact": 3,
+      "analysis": "相关设备需求增长"
+    },
+    {
+      "sector_name": "容器云",
+      "impact": 3,
+      "analysis": "华为技术发布利好相关设备"
+    },
+    {
+      "sector_name": "PI薄膜",
+      "impact": 3,
+      "analysis": "国产替代预期利好"
+    },
+    {
+      "sector_name": "高频高速树脂",
+      "impact": 3,
+      "analysis": "英伟达需求增长利好"
+    },
+    {
+      "sector_name": "AI服务器电源PCB",
+      "impact": 3,
+      "analysis": "大单利好"
+    },
+    {
+      "sector_name": "证券",
+      "impact": 3,
+      "analysis": "合并预期利好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "我爱我家",
+      "stock_code": "000560",
+      "impact": 3,
+      "analysis": "房地产政策预期利好"
+    },
+    {
+      "stock_name": "财信发展",
+      "stock_code": "000838",
+      "impact": 3,
+      "analysis": "房地产政策预期利好"
+    },
+    {
+      "stock_name": "生益科技",
+      "stock_code": "600183",
+      "impact": 3,
+      "analysis": "覆铜板需求增长利好"
+    },
+    {
+      "stock_name": "金安国纪",
+      "stock_code": "002636",
+      "impact": 3,
+      "analysis": "覆铜板需求增长利好"
+    },
+    {
+      "stock_name": "天岳先进",
+      "stock_code": "688598",
+      "impact": 3,
+      "analysis": "SIC衬底技术利好"
+    },
+    {
+      "stock_name": "瑞斯康达",
+      "stock_code": "600496",
+      "impact": 3,
+      "analysis": "容器云业务利好"
+    },
+    {
+      "stock_name": "国风新材",
+      "stock_code": "600487",
+      "impact": 3,
+      "analysis": "PI薄膜国产替代利好"
+    },
+    {
+      "stock_name": "东材科技",
+      "stock_code": "600691",
+      "impact": 3,
+      "analysis": "高频高速树脂需求增长利好"
+    },
+    {
+      "stock_name": "中富电路",
+      "stock_code": "300053",
+      "impact": 3,
+      "analysis": "AI服务器电源PCB大单利好"
+    },
+    {
+      "stock_name": "华资实业",
+      "stock_code": "600093",
+      "impact": 3,
+      "analysis": "证券合并预期利好"
+    }
+  ],
+  "article_id": "43fdd755b10846b1abbbb9bbe25fc8b8",
+  "article_date": "2025-11-20",
+  "article_title": "2025.11.20市场逻辑精选"
+}

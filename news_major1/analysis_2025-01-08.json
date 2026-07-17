@@ -1,0 +1,78 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受消息面影响较大，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "芯片",
+      "impact": 3,
+      "analysis": "受美国限制出口政策影响，相关公司有望受益。"
+    },
+    {
+      "sector_name": "液态金属",
+      "impact": 3,
+      "analysis": "英伟达采用液态金属技术，相关公司有望受益。"
+    },
+    {
+      "sector_name": "数据中心",
+      "impact": 2,
+      "analysis": "数据中心耗水量大，相关公司有望受益。"
+    },
+    {
+      "sector_name": "谷子经济",
+      "impact": 2,
+      "analysis": "布鲁可即将上市，相关公司有望受益。"
+    },
+    {
+      "sector_name": "养老+机器人",
+      "impact": 2,
+      "analysis": "政策支持，相关公司有望受益。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "寒武纪",
+      "stock_code": "688009",
+      "impact": 3,
+      "analysis": "受美国限制出口政策影响，有望受益。"
+    },
+    {
+      "stock_name": "中科创达",
+      "stock_code": "300208",
+      "impact": 3,
+      "analysis": "与火山引擎合作，有望受益。"
+    },
+    {
+      "stock_name": "大为股份",
+      "stock_code": "002005",
+      "impact": 2,
+      "analysis": "DDR5产品应用在数据中心，有望受益。"
+    },
+    {
+      "stock_name": "唯特偶",
+      "stock_code": "300625",
+      "impact": 2,
+      "analysis": "产品用于HBM芯片堆叠，有望受益。"
+    },
+    {
+      "stock_name": "海兰信",
+      "stock_code": "300220",
+      "impact": 2,
+      "analysis": "海底数据中心运行平稳，有望受益。"
+    },
+    {
+      "stock_name": "布鲁可",
+      "stock_code": "待定",
+      "impact": 2,
+      "analysis": "即将上市，有望受益。"
+    },
+    {
+      "stock_name": "麦迪科技",
+      "stock_code": "002134",
+      "impact": 2,
+      "analysis": "布局康养领域的人形机器人解决方案，有望受益。"
+    }
+  ],
+  "article_id": "a3a60301262d48fe9ff0315d6d39a9b4",
+  "article_date": "2025-01-08",
+  "article_title": "2025.1.8市场逻辑精选"
+}

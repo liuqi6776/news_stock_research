@@ -1,0 +1,68 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受技术限制消息影响，短期波动较大。",
+  "sectors": [
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "技术限制消息利好相关设备材料股，利空芯片制造股。"
+    },
+    {
+      "sector_name": "消费电子",
+      "impact": 2,
+      "analysis": "苹果产品升级利好相关供应链股。"
+    },
+    {
+      "sector_name": "PCB",
+      "impact": 2,
+      "analysis": "PCB上游材料受益于技术进步。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "柏诚股份",
+      "stock_code": "300657",
+      "impact": 3,
+      "analysis": "洁净室系统集成能力受益于GAA技术需求增长。"
+    },
+    {
+      "stock_name": "新莱应材",
+      "stock_code": "300260",
+      "impact": 3,
+      "analysis": "真空半导体产品拓展受益于GAA技术。"
+    },
+    {
+      "stock_name": "朗科科技",
+      "stock_code": "300603",
+      "impact": 3,
+      "analysis": "与三星合作可能受益于GAA技术。"
+    },
+    {
+      "stock_name": "概伦电子",
+      "stock_code": "688312",
+      "impact": 3,
+      "analysis": "EDA工具支持GAA半导体计划路径。"
+    },
+    {
+      "stock_name": "智信精密",
+      "stock_code": "603012",
+      "impact": 2,
+      "analysis": "供货苹果手机产品线受益于苹果产品升级。"
+    },
+    {
+      "stock_name": "赛腾股份",
+      "stock_code": "603719",
+      "impact": 2,
+      "analysis": "苹果+HBM双重驱动，业绩预期良好。"
+    },
+    {
+      "stock_name": "宏昌电子",
+      "stock_code": "603002",
+      "impact": 2,
+      "analysis": "发明专利提高环氧材料性能，利好PCB上游材料。"
+    }
+  ],
+  "article_id": "276e14ab82244c64b65406b10591d0d6",
+  "article_date": "2024-06-12",
+  "article_title": "2024.6.12市场逻辑精选"
+}

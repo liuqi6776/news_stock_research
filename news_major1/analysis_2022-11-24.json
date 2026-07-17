@@ -1,0 +1,61 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极影响。",
+  "sectors": [
+    {
+      "sector_name": "锂电池",
+      "impact": 4,
+      "analysis": "硬碳负极技术发展，推动钠离子电池需求增长。"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 3,
+      "analysis": "国有银行与房企合作，提供大量授信，提振市场信心。"
+    },
+    {
+      "sector_name": "纺织服装",
+      "impact": 3,
+      "analysis": "抗病毒面料商业化落地，应用前景广阔。"
+    },
+    {
+      "sector_name": "风电",
+      "impact": 3,
+      "analysis": "深远海海风补贴方案发布，推动行业长期发展。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "圣泉集团",
+      "stock_code": "600599",
+      "impact": 4,
+      "analysis": "有望进入树脂硬碳领域，叠加抗新冠病毒面料概念。"
+    },
+    {
+      "stock_name": "元力股份",
+      "stock_code": "300074",
+      "impact": 4,
+      "analysis": "生物质硬碳负极打开第二成长曲线。"
+    },
+    {
+      "stock_name": "佰思格",
+      "stock_code": "未上市",
+      "impact": 4,
+      "analysis": "国内生物质硬碳龙头，产能规划10000t。"
+    },
+    {
+      "stock_name": "中交地产",
+      "stock_code": "600018",
+      "impact": 3,
+      "analysis": "央企子公司，受益于房地产合作。"
+    },
+    {
+      "stock_name": "中国武夷",
+      "stock_code": "600775",
+      "impact": 3,
+      "analysis": "地方国资，受益于房地产合作。"
+    }
+  ],
+  "article_id": "0c620edb2e7a447a82c7a8ea40748b75",
+  "article_date": "2022-11-24",
+  "article_title": "2022.11.24市场逻辑精选"
+}

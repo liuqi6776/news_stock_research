@@ -1,0 +1,99 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，多个板块和个股受积极因素影响。",
+  "sectors": [
+    {
+      "sector_name": "元宇宙",
+      "impact": 4,
+      "analysis": "Meta Platforms大涨，相关概念股受益"
+    },
+    {
+      "sector_name": "中字头",
+      "impact": 3,
+      "analysis": "证监会提出中国特色估值体系，相关个股受关注"
+    },
+    {
+      "sector_name": "汽车消费",
+      "impact": 3,
+      "analysis": "商务部聚焦汽车消费，相关个股受益"
+    },
+    {
+      "sector_name": "数字人民币",
+      "impact": 3,
+      "analysis": "苏州数字人民币目标，相关个股受益"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "政策支持人工智能发展，相关个股受益"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "半导体行业政策支持，相关个股受益"
+    },
+    {
+      "sector_name": "大消费",
+      "impact": 3,
+      "analysis": "商务部推动消费，相关个股受益"
+    },
+    {
+      "sector_name": "数字经济",
+      "impact": 3,
+      "analysis": "数据安全产业政策支持，相关个股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "国光电器",
+      "stock_code": "002045",
+      "impact": 4,
+      "analysis": "元宇宙概念，Meta Platforms大涨"
+    },
+    {
+      "stock_name": "中成股份",
+      "stock_code": "000151",
+      "impact": 3,
+      "analysis": "中国特色估值体系，中字头个股"
+    },
+    {
+      "stock_name": "江淮汽车",
+      "stock_code": "600418",
+      "impact": 3,
+      "analysis": "商务部聚焦汽车消费，汽车消费板块"
+    },
+    {
+      "stock_name": "恒宝股份",
+      "stock_code": "002104",
+      "impact": 3,
+      "analysis": "数字人民币试点，数字人民币板块"
+    },
+    {
+      "stock_name": "华为股份",
+      "stock_code": "002502",
+      "impact": 3,
+      "analysis": "人工智能概念，政策支持人工智能发展"
+    },
+    {
+      "stock_name": "同兴达",
+      "stock_code": "002875",
+      "impact": 3,
+      "analysis": "半导体行业政策支持，半导体板块"
+    },
+    {
+      "stock_name": "焦点科技",
+      "stock_code": "002315",
+      "impact": 3,
+      "analysis": "商务部推动消费，大消费板块"
+    },
+    {
+      "stock_name": "华塑控股",
+      "stock_code": "000509",
+      "impact": 3,
+      "analysis": "数据安全产业政策支持，数字经济板块"
+    }
+  ],
+  "article_title": "2月3日盘前早参 热点事件关注",
+  "html_file": "af8qcxzs76.html",
+  "article_date": "2023-02-03"
+}

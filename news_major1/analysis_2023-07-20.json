@@ -1,0 +1,88 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪积极",
+  "sectors": [
+    {
+      "sector_name": "民营经济",
+      "impact": 4,
+      "analysis": "政策支持力度加大"
+    },
+    {
+      "sector_name": "互联网",
+      "impact": 3,
+      "analysis": "中概互联网ETF及平台经济受益"
+    },
+    {
+      "sector_name": "农业",
+      "impact": 3,
+      "analysis": "小麦期货上涨，农业股受益"
+    },
+    {
+      "sector_name": "5G",
+      "impact": 3,
+      "analysis": "5G消息政策推动"
+    },
+    {
+      "sector_name": "苹果概念",
+      "impact": 3,
+      "analysis": "苹果研发AI大语言模型"
+    },
+    {
+      "sector_name": "新能源车",
+      "impact": 3,
+      "analysis": "商务部支持开拓国际市场"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 3,
+      "analysis": "军工专业化产业化整合加速"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中概互联网ETF",
+      "stock_code": "159607",
+      "impact": 3,
+      "analysis": "受益政策支持"
+    },
+    {
+      "stock_name": "省广集团",
+      "stock_code": "002400",
+      "impact": 3,
+      "analysis": "受益平台经济"
+    },
+    {
+      "stock_name": "秋乐种业",
+      "stock_code": "600970",
+      "impact": 3,
+      "analysis": "受益小麦期货上涨"
+    },
+    {
+      "stock_name": "神州泰岳",
+      "stock_code": "300002",
+      "impact": 3,
+      "analysis": "受益5G消息政策"
+    },
+    {
+      "stock_name": "歌尔股份",
+      "stock_code": "002241",
+      "impact": 3,
+      "analysis": "受益苹果AI大语言模型"
+    },
+    {
+      "stock_name": "兴民智通",
+      "stock_code": "002355",
+      "impact": 3,
+      "analysis": "受益新能源车国际市场"
+    },
+    {
+      "stock_name": "航发科技",
+      "stock_code": "600893",
+      "impact": 3,
+      "analysis": "受益军工整合"
+    }
+  ],
+  "article_title": "7月20日 盘前热点事件关注",
+  "html_file": "5rbp90nqzv.html",
+  "article_date": "2023-07-20"
+}

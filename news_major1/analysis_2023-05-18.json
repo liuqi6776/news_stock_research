@@ -1,0 +1,83 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受人民币贬值和峰会等因素影响，整体偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "出口",
+      "impact": 4,
+      "analysis": "人民币贬值利好出口型企业"
+    },
+    {
+      "sector_name": "一带一路",
+      "impact": 3,
+      "analysis": "中国-中亚峰会开幕，相关企业受益"
+    },
+    {
+      "sector_name": "人形机器人",
+      "impact": 3,
+      "analysis": "马斯克看好人形机器人市场"
+    },
+    {
+      "sector_name": "游戏",
+      "impact": 3,
+      "analysis": "腾讯海外游戏收入创新高"
+    },
+    {
+      "sector_name": "电子后视镜",
+      "impact": 3,
+      "analysis": "新国标实施，电子后视镜市场受益"
+    },
+    {
+      "sector_name": "算力",
+      "impact": 3,
+      "analysis": "中国电信发布算力套餐，推动算力发展"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "匠心家居",
+      "stock_code": "002551",
+      "impact": 4,
+      "analysis": "人民币贬值利好出口型企业"
+    },
+    {
+      "stock_name": "久祺股份",
+      "stock_code": "002925",
+      "impact": 4,
+      "analysis": "人民币贬值利好出口型企业"
+    },
+    {
+      "stock_name": "陕西建工",
+      "stock_code": "601569",
+      "impact": 3,
+      "analysis": "中国-中亚峰会开幕，相关企业受益"
+    },
+    {
+      "stock_name": "鸣志电器",
+      "stock_code": "603369",
+      "impact": 3,
+      "analysis": "马斯克看好人形机器人市场"
+    },
+    {
+      "stock_name": "宝通科技",
+      "stock_code": "300031",
+      "impact": 3,
+      "analysis": "腾讯海外游戏收入创新高"
+    },
+    {
+      "stock_name": "好上好",
+      "stock_code": "603348",
+      "impact": 3,
+      "analysis": "新国标实施，电子后视镜市场受益"
+    },
+    {
+      "stock_name": "拓维信息",
+      "stock_code": "002261",
+      "impact": 3,
+      "analysis": "中国电信发布算力套餐，推动算力发展"
+    }
+  ],
+  "article_title": "5月18日 盘前热点事件关注",
+  "html_file": "40a4kvsgmy.html",
+  "article_date": "2023-05-18"
+}

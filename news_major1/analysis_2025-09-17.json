@@ -1,0 +1,74 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受积极消息推动，但需关注消息真实性。",
+  "sectors": [
+    {
+      "sector_name": "半导体设备",
+      "impact": 4,
+      "analysis": "国产光刻机进展可能推动板块上涨。"
+    },
+    {
+      "sector_name": "智能驾驶",
+      "impact": 3,
+      "analysis": "政策推动和行业渗透率提升，板块受益。"
+    },
+    {
+      "sector_name": "激光雷达",
+      "impact": 3,
+      "analysis": "机器人与智能驾驶需求增长，板块前景看好。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "波长光电",
+      "stock_code": "300252",
+      "impact": 3,
+      "analysis": "成为宇量昇供应商，订单可能增加。"
+    },
+    {
+      "stock_name": "凯美特气",
+      "stock_code": "002549",
+      "impact": 3,
+      "analysis": "光刻气产品通过国际认证，订单可能增加。"
+    },
+    {
+      "stock_name": "科博达",
+      "stock_code": "603633",
+      "impact": 3,
+      "analysis": "智能驾驶领域合作加深，订单可能增加。"
+    },
+    {
+      "stock_name": "永新光学",
+      "stock_code": "300071",
+      "impact": 3,
+      "analysis": "激光雷达领域合作伙伴增加，业务可能增长。"
+    },
+    {
+      "stock_name": "世嘉科技",
+      "stock_code": "002081",
+      "impact": 3,
+      "analysis": "光模块业务稳健增长，业绩预期提升。"
+    },
+    {
+      "stock_name": "兴图新科",
+      "stock_code": "300383",
+      "impact": 3,
+      "analysis": "军工AI无人装备进展，订单可能增加。"
+    },
+    {
+      "stock_name": "苏大维格",
+      "stock_code": "300331",
+      "impact": 3,
+      "analysis": "光刻机用定位光栅尺销售，业务拓展。"
+    },
+    {
+      "stock_name": "富佳股份",
+      "stock_code": "603827",
+      "impact": 3,
+      "analysis": "机器人业务拓展，业绩可能增长。"
+    }
+  ],
+  "article_id": "beb5ba5f0b14436995abbd52457c585e",
+  "article_date": "2025-09-17",
+  "article_title": "2025.9.17市场逻辑精选"
+}

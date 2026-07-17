@@ -1,0 +1,67 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极影响。",
+  "sectors": [
+    {
+      "sector_name": "无人机",
+      "impact": 4,
+      "analysis": "无人机产业链受益，复合翼无人机普及推动相关个股上涨。"
+    },
+    {
+      "sector_name": "5.5G",
+      "impact": 3,
+      "analysis": "5.5G技术验证成功，相关硬件和设备供应商受益。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 3,
+      "analysis": "至正股份转型半导体，相关个股受关注。"
+    },
+    {
+      "sector_name": "其他",
+      "impact": 2,
+      "analysis": "其他题材如光伏、机器人等也有积极消息。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中无人机",
+      "stock_code": "000544",
+      "impact": 4,
+      "analysis": "专注于大型固定翼长航时无人机系统，受益无人机产业链。"
+    },
+    {
+      "stock_name": "航天彩虹",
+      "stock_code": "002389",
+      "impact": 4,
+      "analysis": "拥有无人机出口用户国数量最多，受益无人机产业链。"
+    },
+    {
+      "stock_name": "万丰奥威",
+      "stock_code": "002085",
+      "impact": 4,
+      "analysis": "旗下钻石飞机在通航飞机产业中市占率高。"
+    },
+    {
+      "stock_name": "纵横股份",
+      "stock_code": "002061",
+      "impact": 4,
+      "analysis": "主营工业无人机，产品广泛应用于多个领域。"
+    },
+    {
+      "stock_name": "至正股份",
+      "stock_code": "600058",
+      "impact": 3,
+      "analysis": "取得AAMI股权，转型半导体产业。"
+    },
+    {
+      "stock_name": "济南高新",
+      "stock_code": "000961",
+      "impact": 3,
+      "analysis": "山东华芯重组预期，资产注入可能性高。"
+    }
+  ],
+  "article_id": "295ead125bb24771bead68e633e439bf",
+  "article_date": "2024-10-23",
+  "article_title": "2024.10.23市场逻辑精选"
+}

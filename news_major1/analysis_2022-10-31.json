@@ -1,0 +1,77 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受益。",
+  "sectors": [
+    {
+      "sector_name": "数字政务",
+      "impact": 4,
+      "analysis": "政策支持，市场规模扩大，相关个股受益"
+    },
+    {
+      "sector_name": "科创板",
+      "impact": 3,
+      "analysis": "做市交易启动，提升市场活跃度"
+    },
+    {
+      "sector_name": "供销社",
+      "impact": 2,
+      "analysis": "试点工作重启，关注相关个股"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "硅片降价，产业链利润转移"
+    },
+    {
+      "sector_name": "军工",
+      "impact": 3,
+      "analysis": "珠海航展即将举行，军工板块受益"
+    },
+    {
+      "sector_name": "航空",
+      "impact": 2,
+      "analysis": "航线补贴资金预算下达，航空板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "南威软件",
+      "stock_code": "300525",
+      "impact": 4,
+      "analysis": "数据开发开放平台龙头，深度绑定央企"
+    },
+    {
+      "stock_name": "闻泰科技",
+      "stock_code": "600745",
+      "impact": 3,
+      "analysis": "半导体净利润破10亿，创单季新高"
+    },
+    {
+      "stock_name": "熙菱信息",
+      "stock_code": "300568",
+      "impact": 3,
+      "analysis": "大数据服务商，政府客户占比高"
+    },
+    {
+      "stock_name": "永信至诚",
+      "stock_code": "603593",
+      "impact": 3,
+      "analysis": "网络安全、信息安全服务商"
+    },
+    {
+      "stock_name": "ST众泰",
+      "stock_code": "600558",
+      "impact": 2,
+      "analysis": "申请撤销风险警示，复产在即"
+    },
+    {
+      "stock_name": "吉视传媒",
+      "stock_code": "600058",
+      "impact": 2,
+      "analysis": "参股吉林祥云，提供政务大数据业务"
+    }
+  ],
+  "article_id": "a2fdee2ef0344190b6ce549b956fb879",
+  "article_date": "2022-10-31",
+  "article_title": "2022.10.31市场逻辑精选"
+}

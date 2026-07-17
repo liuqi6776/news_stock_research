@@ -1,0 +1,108 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，多个板块和个股受积极影响。",
+  "sectors": [
+    {
+      "sector_name": "铁路装备",
+      "impact": 4,
+      "analysis": "中吉乌铁路项目签署，利好铁路装备行业。"
+    },
+    {
+      "sector_name": "新疆基建",
+      "impact": 3,
+      "analysis": "新疆基建相关个股受中吉乌铁路项目利好。"
+    },
+    {
+      "sector_name": "石油矿产",
+      "impact": 3,
+      "analysis": "中吉乌铁路项目利好石油矿产开发和利用。"
+    },
+    {
+      "sector_name": "CIS",
+      "impact": 3,
+      "analysis": "CIS下游回暖，高端产品产能趋紧，利好相关个股。"
+    },
+    {
+      "sector_name": "PCB",
+      "impact": 3,
+      "analysis": "PCB行业受CIS回暖和英伟达AI电源供应商利好。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "金鹰重工",
+      "stock_code": "000766",
+      "impact": 4,
+      "analysis": "中吉乌铁路项目轨道工程装备供应商。"
+    },
+    {
+      "stock_name": "哈铁科技",
+      "stock_code": "601008",
+      "impact": 3,
+      "analysis": "中吉乌铁路项目安全监测检测产品供应商。"
+    },
+    {
+      "stock_name": "青松建化",
+      "stock_code": "600093",
+      "impact": 3,
+      "analysis": "新疆水泥龙头，受新疆基建利好。"
+    },
+    {
+      "stock_name": "北新路桥",
+      "stock_code": "002307",
+      "impact": 3,
+      "analysis": "新疆兵团路桥工程，受新疆基建利好。"
+    },
+    {
+      "stock_name": "格科微",
+      "stock_code": "688012",
+      "impact": 4,
+      "analysis": "CIS下游回暖，高端产品产能趋紧。"
+    },
+    {
+      "stock_name": "思特威",
+      "stock_code": "688016",
+      "impact": 3,
+      "analysis": "高端CIS产能紧张。"
+    },
+    {
+      "stock_name": "威尔高",
+      "stock_code": "002925",
+      "impact": 4,
+      "analysis": "供货英伟达AI电源供应商。"
+    },
+    {
+      "stock_name": "九丰能源",
+      "stock_code": "600383",
+      "impact": 3,
+      "analysis": "高分红计划，供货商业航天发射场。"
+    },
+    {
+      "stock_name": "华闻集团",
+      "stock_code": "000793",
+      "impact": 3,
+      "analysis": "海南国资举牌。"
+    },
+    {
+      "stock_name": "容大感光",
+      "stock_code": "300474",
+      "impact": 4,
+      "analysis": "致力光刻胶国产替代。"
+    },
+    {
+      "stock_name": "宏昌电子",
+      "stock_code": "603002",
+      "impact": 3,
+      "analysis": "高频高速板材已取得AMD相关认证。"
+    },
+    {
+      "stock_name": "朗进科技",
+      "stock_code": "300684",
+      "impact": 3,
+      "analysis": "签订VE25 eVTOL环控系统项目意向书。"
+    }
+  ],
+  "article_id": "05cc2d003520429bac4949f0cbdcfee3",
+  "article_date": "2024-06-06",
+  "article_title": "2024.6.6市场逻辑精选"
+}

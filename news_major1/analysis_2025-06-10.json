@@ -1,0 +1,109 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多板块利好，市场情绪提升",
+  "sectors": [
+    {
+      "sector_name": "氢能",
+      "impact": 4,
+      "analysis": "政策支持，产业链发展加速"
+    },
+    {
+      "sector_name": "传媒游戏",
+      "impact": 3,
+      "analysis": "暑期档预期，估值修复"
+    },
+    {
+      "sector_name": "深圳相关",
+      "impact": 3,
+      "analysis": "深化改革，扩大开放"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 3,
+      "analysis": "创新药研发，商业化预期"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "石化机械",
+      "stock_code": "000670",
+      "impact": 4,
+      "analysis": "氢能产业链布局"
+    },
+    {
+      "stock_name": "华电科工",
+      "stock_code": "601226",
+      "impact": 4,
+      "analysis": "氢能技术领先"
+    },
+    {
+      "stock_name": "昇辉科技",
+      "stock_code": "300254",
+      "impact": 3,
+      "analysis": "氢能产业链布局"
+    },
+    {
+      "stock_name": "亿华通",
+      "stock_code": "688698",
+      "impact": 4,
+      "analysis": "燃料电池核心供应商"
+    },
+    {
+      "stock_name": "富春股份",
+      "stock_code": "300369",
+      "impact": 3,
+      "analysis": "影视游戏业务"
+    },
+    {
+      "stock_name": "华策影视",
+      "stock_code": "600073",
+      "impact": 3,
+      "analysis": "影视业务"
+    },
+    {
+      "stock_name": "上海电影",
+      "stock_code": "601595",
+      "impact": 3,
+      "analysis": "动画电影业务"
+    },
+    {
+      "stock_name": "粤传媒",
+      "stock_code": "002181",
+      "impact": 3,
+      "analysis": "传媒业务"
+    },
+    {
+      "stock_name": "远望谷",
+      "stock_code": "002776",
+      "impact": 3,
+      "analysis": "科技文创业务"
+    },
+    {
+      "stock_name": "南凌科技",
+      "stock_code": "002354",
+      "impact": 3,
+      "analysis": "AI网络框架"
+    },
+    {
+      "stock_name": "塞力医疗",
+      "stock_code": "300258",
+      "impact": 4,
+      "analysis": "长效高血压疫苗研发"
+    },
+    {
+      "stock_name": "康惠制药",
+      "stock_code": "300833",
+      "impact": 3,
+      "analysis": "医药中间体+AI算力"
+    },
+    {
+      "stock_name": "浩欧博",
+      "stock_code": "603696",
+      "impact": 3,
+      "analysis": "承接创新药BD"
+    }
+  ],
+  "article_id": "14054548084949a287e46c78723c40c4",
+  "article_date": "2025-06-10",
+  "article_title": "2025.6.10市场逻辑精选"
+}

@@ -1,0 +1,68 @@
+{
+  "market_impact": 3,
+  "market_analysis": "地缘政治紧张，相关能源板块受益。",
+  "sectors": [
+    {
+      "sector_name": "石油天然气",
+      "impact": 4,
+      "analysis": "美伊战争及油价上涨预期利好"
+    },
+    {
+      "sector_name": "可控核聚变",
+      "impact": 3,
+      "analysis": "行业招标启动，政策支持，利好"
+    },
+    {
+      "sector_name": "无人机",
+      "impact": 3,
+      "analysis": "现代战争需求提升，利好"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中曼石油",
+      "stock_code": "601990",
+      "impact": 4,
+      "analysis": "油气资源丰富，项目进展良好"
+    },
+    {
+      "stock_name": "贝肯能源",
+      "stock_code": "002828",
+      "impact": 3,
+      "analysis": "油气勘探开发，长期合作"
+    },
+    {
+      "stock_name": "潜能恒信",
+      "stock_code": "603663",
+      "impact": 3,
+      "analysis": "油气勘探开发，合作进展"
+    },
+    {
+      "stock_name": "合锻智能",
+      "stock_code": "300231",
+      "impact": 3,
+      "analysis": "获得核聚变项目订单"
+    },
+    {
+      "stock_name": "旭光电子",
+      "stock_code": "300380",
+      "impact": 3,
+      "analysis": "自主研发大功率电子管"
+    },
+    {
+      "stock_name": "航天彩虹",
+      "stock_code": "002389",
+      "impact": 3,
+      "analysis": "无人机整机及机载武器研制"
+    },
+    {
+      "stock_name": "中无人机",
+      "stock_code": "300112",
+      "impact": 3,
+      "analysis": "大型固定翼无人机系统"
+    }
+  ],
+  "article_id": "c273f77df7914f61819aea1075736054",
+  "article_date": "2026-03-02",
+  "article_title": "2026.3.2市场逻辑精选"
+}

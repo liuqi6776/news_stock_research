@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪受消息面影响较大，部分板块和个股有望受益。",
+  "sectors": [
+    {
+      "sector_name": "反无人机",
+      "impact": 4,
+      "analysis": "需求增长，出口市场潜力大"
+    },
+    {
+      "sector_name": "消费",
+      "impact": 3,
+      "analysis": "消费升级潜力大，相关公司受益"
+    },
+    {
+      "sector_name": "核污染防治",
+      "impact": 3,
+      "analysis": "核污染防治市场规模持续扩张"
+    },
+    {
+      "sector_name": "轨交电气",
+      "impact": 3,
+      "analysis": "轨交设备需求增长，相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "航天长峰",
+      "stock_code": "600855",
+      "impact": 4,
+      "analysis": "布局边海空防领域，反无人机对抗体系"
+    },
+    {
+      "stock_name": "中百集团",
+      "stock_code": "000759",
+      "impact": 3,
+      "analysis": "华中地区物流体系完善的商业企业"
+    },
+    {
+      "stock_name": "捷强装备",
+      "stock_code": "300724",
+      "impact": 4,
+      "analysis": "核辐射监测设备，核化生防御装备"
+    },
+    {
+      "stock_name": "通业科技",
+      "stock_code": "300614",
+      "impact": 3,
+      "analysis": "轨交电气产品核心供应商"
+    }
+  ],
+  "article_id": "77f3dea1e7c0499aa0ce0851d0d46bd3",
+  "article_date": "2025-05-08",
+  "article_title": "2025.5.8市场逻辑精选"
+}

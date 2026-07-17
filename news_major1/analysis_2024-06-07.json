@@ -1,0 +1,72 @@
+{
+  "market_impact": 2,
+  "market_analysis": "市场整体偏利好，关注退市、摘星摘帽及政策导向。",
+  "sectors": [
+    {
+      "sector_name": "ST板块",
+      "impact": 3,
+      "analysis": "ST公司摘星摘帽，板块短期利好"
+    },
+    {
+      "sector_name": "有色金属",
+      "impact": 2,
+      "analysis": "欧洲央行降息，有色金属板块受益"
+    },
+    {
+      "sector_name": "铁路基建",
+      "impact": 2,
+      "analysis": "中吉乌铁路项目签署，铁路基建板块受益"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 2,
+      "analysis": "医药卫生体制改革，医药板块受益"
+    },
+    {
+      "sector_name": "AI手机",
+      "impact": 2,
+      "analysis": "苹果开发者大会，AI手机板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "ST实达",
+      "stock_code": "000765",
+      "impact": 3,
+      "analysis": "摘帽停牌，短期利好"
+    },
+    {
+      "stock_name": "ST国安",
+      "stock_code": "000768",
+      "impact": 3,
+      "analysis": "摘帽停牌，短期利好"
+    },
+    {
+      "stock_name": "玉龙股份",
+      "stock_code": "600383",
+      "impact": 2,
+      "analysis": "欧洲央行降息，白银黄金板块受益"
+    },
+    {
+      "stock_name": "金鹰重工",
+      "stock_code": "002063",
+      "impact": 2,
+      "analysis": "中吉乌铁路项目签署，铁路基建板块受益"
+    },
+    {
+      "stock_name": "陇神戎发",
+      "stock_code": "300238",
+      "impact": 2,
+      "analysis": "医药卫生体制改革，中药板块受益"
+    },
+    {
+      "stock_name": "思泉新材",
+      "stock_code": "300873",
+      "impact": 2,
+      "analysis": "苹果开发者大会，AI手机板块受益"
+    }
+  ],
+  "article_title": "6月7日盘前早报 热点事件关注",
+  "html_file": "4jz31492p2.html",
+  "article_date": "2024-06-07"
+}

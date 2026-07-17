@@ -1,0 +1,99 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪偏乐观",
+  "sectors": [
+    {
+      "sector_name": "石油",
+      "impact": 4,
+      "analysis": "减产协议利好石油板块"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 3,
+      "analysis": "政策支持，板块受益"
+    },
+    {
+      "sector_name": "办公软件",
+      "impact": 2,
+      "analysis": "AI功能提价，相关公司受益"
+    },
+    {
+      "sector_name": "减肥药",
+      "impact": 2,
+      "analysis": "新适应证上市申请，相关公司受益"
+    },
+    {
+      "sector_name": "大模型",
+      "impact": 3,
+      "analysis": "华为、360大模型发布，相关公司受益"
+    },
+    {
+      "sector_name": "边缘计算",
+      "impact": 2,
+      "analysis": "英伟达推出工业级模块，相关公司受益"
+    },
+    {
+      "sector_name": "储能",
+      "impact": 2,
+      "analysis": "新型电力系统发展，储能需求增加"
+    },
+    {
+      "sector_name": "6G通信",
+      "impact": 2,
+      "analysis": "6G技术研发推进，相关公司受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中曼石油",
+      "stock_code": "601938",
+      "impact": 4,
+      "analysis": "石油板块受益股"
+    },
+    {
+      "stock_name": "比亚迪",
+      "stock_code": "002594",
+      "impact": 3,
+      "analysis": "新能源汽车板块受益股"
+    },
+    {
+      "stock_name": "金山办公",
+      "stock_code": "002377",
+      "impact": 2,
+      "analysis": "办公软件板块受益股"
+    },
+    {
+      "stock_name": "诺泰生物",
+      "stock_code": "300816",
+      "impact": 2,
+      "analysis": "减肥药板块受益股"
+    },
+    {
+      "stock_name": "三六零",
+      "stock_code": "601360",
+      "impact": 3,
+      "analysis": "大模型板块受益股"
+    },
+    {
+      "stock_name": "美格智能",
+      "stock_code": "002881",
+      "impact": 2,
+      "analysis": "边缘计算板块受益股"
+    },
+    {
+      "stock_name": "盛弘股份",
+      "stock_code": "300614",
+      "impact": 2,
+      "analysis": "储能板块受益股"
+    },
+    {
+      "stock_name": "本川智能",
+      "stock_code": "300432",
+      "impact": 2,
+      "analysis": "6G通信板块受益股"
+    }
+  ],
+  "article_title": "6月5日 盘前热点事件关注",
+  "html_file": "8z5gn8xde3.html",
+  "article_date": "2023-06-05"
+}

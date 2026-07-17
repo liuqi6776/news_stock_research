@@ -1,0 +1,61 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体利好，关注半导体材料、OLED、碳陶刹车等板块。",
+  "sectors": [
+    {
+      "sector_name": "半导体材料",
+      "impact": 4,
+      "analysis": "国产化前景广阔，利好相关公司。"
+    },
+    {
+      "sector_name": "OLED",
+      "impact": 3,
+      "analysis": "Meta入局，市场空间大，利好相关公司。"
+    },
+    {
+      "sector_name": "碳陶刹车",
+      "impact": 3,
+      "analysis": "特斯拉高端车型配套，市场空间大，利好相关公司。"
+    },
+    {
+      "sector_name": "先进封装",
+      "impact": 3,
+      "analysis": "台积电扩产，利好相关公司。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "沪硅产业",
+      "stock_code": "688126",
+      "impact": 4,
+      "analysis": "12英寸大硅片国产替代率提升，利好。"
+    },
+    {
+      "stock_name": "彤程新材",
+      "stock_code": "603678",
+      "impact": 4,
+      "analysis": "光刻胶及配套试剂国内市场领先，利好。"
+    },
+    {
+      "stock_name": "和远气体",
+      "stock_code": "300555",
+      "impact": 4,
+      "analysis": "电子特气国产化率提升，利好。"
+    },
+    {
+      "stock_name": "易天股份",
+      "stock_code": "300936",
+      "impact": 3,
+      "analysis": "硅基OLED设备供应商，利好。"
+    },
+    {
+      "stock_name": "金麒麟",
+      "stock_code": "601966",
+      "impact": 3,
+      "analysis": "特斯拉碳陶刹车供应商，利好。"
+    }
+  ],
+  "article_id": "84605aa97b5140bf82c62f309db514a0",
+  "article_date": "2023-11-20",
+  "article_title": "2023.11.20市场逻辑精选"
+}

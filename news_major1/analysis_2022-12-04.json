@@ -1,0 +1,62 @@
+{
+  "market_impact": 3,
+  "market_analysis": "数据产业链和光伏行业利好，抗病毒面料专利公司表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "数据产业链",
+      "impact": 4,
+      "analysis": "政策支持，数据确权和交易模式明确，利好相关公司。"
+    },
+    {
+      "sector_name": "光伏行业",
+      "impact": 3,
+      "analysis": "美国反规避调查初裁结果利好，海外产能扩张预期增强。"
+    },
+    {
+      "sector_name": "抗病毒面料",
+      "impact": 2,
+      "analysis": "疫情催化下，抗病毒面料专利申请增加，部分公司拥有相关专利。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "易华录",
+      "stock_code": "300212",
+      "impact": 4,
+      "analysis": "央企数据要素排头兵，数据湖业务发展良好。"
+    },
+    {
+      "stock_name": "深桑达A",
+      "stock_code": "000032",
+      "impact": 3,
+      "analysis": "数据安全与数据要素化工程试点，受益数据产业链发展。"
+    },
+    {
+      "stock_name": "人民网",
+      "stock_code": "603000",
+      "impact": 3,
+      "analysis": "推出我国首个数据确权平台，受益数据确权发展。"
+    },
+    {
+      "stock_name": "安奈儿",
+      "stock_code": "002875",
+      "impact": 2,
+      "analysis": "拥有抗病毒专利，主营童装。"
+    },
+    {
+      "stock_name": "晶科科技",
+      "stock_code": "600869",
+      "impact": 3,
+      "analysis": "海外产能扩张，受益美国光伏市场。"
+    },
+    {
+      "stock_name": "隆基绿能",
+      "stock_code": "601012",
+      "impact": 3,
+      "analysis": "海外产能扩张，受益美国光伏市场。"
+    }
+  ],
+  "article_id": "738a7b989101410aa97ae7e26557daeb",
+  "article_date": "2022-12-04",
+  "article_title": "2022.12.4市场逻辑精选"
+}

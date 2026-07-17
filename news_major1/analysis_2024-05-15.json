@@ -1,0 +1,112 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策导向明显，市场情绪受提振",
+  "sectors": [
+    {
+      "sector_name": "地产",
+      "impact": 4,
+      "analysis": "政策收储库存，利好地产股"
+    },
+    {
+      "sector_name": "化工",
+      "impact": 3,
+      "analysis": "磷酸一铵价格上涨，利好相关化工股"
+    },
+    {
+      "sector_name": "国资物业",
+      "impact": 3,
+      "analysis": "政府收储预期，利好国资物业股"
+    },
+    {
+      "sector_name": "机器人",
+      "impact": 3,
+      "analysis": "机器人产品上架，利好机器人相关股"
+    },
+    {
+      "sector_name": "航空航天",
+      "impact": 3,
+      "analysis": "定增募资深耕航空航天，利好航空航天股"
+    },
+    {
+      "sector_name": "外贸",
+      "impact": 2,
+      "analysis": "外贸企业表现活跃，利好外贸股"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 2,
+      "analysis": "地产政策预期，利好房地产股"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "滨江集团",
+      "stock_code": "002244",
+      "impact": 4,
+      "analysis": "杭州龙头地产企业，财务稳健"
+    },
+    {
+      "stock_name": "荣安地产",
+      "stock_code": "600983",
+      "impact": 4,
+      "analysis": "杭州地产，财务稳健"
+    },
+    {
+      "stock_name": "保利发展",
+      "stock_code": "600048",
+      "impact": 4,
+      "analysis": "央企地产，受益政策收储"
+    },
+    {
+      "stock_name": "招商蛇口",
+      "stock_code": "001979",
+      "impact": 4,
+      "analysis": "央企地产，受益政策收储"
+    },
+    {
+      "stock_name": "荣盛发展",
+      "stock_code": "002146",
+      "impact": 3,
+      "analysis": "物业租赁增加受益"
+    },
+    {
+      "stock_name": "南国置业",
+      "stock_code": "002305",
+      "impact": 3,
+      "analysis": "物业租赁增加受益"
+    },
+    {
+      "stock_name": "宇树机器人",
+      "stock_code": "300827",
+      "impact": 3,
+      "analysis": "人形机器人产品上架"
+    },
+    {
+      "stock_name": "特斯拉供应链",
+      "stock_code": "000651",
+      "impact": 3,
+      "analysis": "特斯拉供应链受益"
+    },
+    {
+      "stock_name": "新研股份",
+      "stock_code": "002945",
+      "impact": 3,
+      "analysis": "定增募资深耕航空航天"
+    },
+    {
+      "stock_name": "南京商旅",
+      "stock_code": "600052",
+      "impact": 2,
+      "analysis": "化工化纤及房地产"
+    },
+    {
+      "stock_name": "栖霞建设",
+      "stock_code": "600341",
+      "impact": 2,
+      "analysis": "南京下调首套房贷利率"
+    }
+  ],
+  "article_id": "46062f4e234e4c3896b709707f425367",
+  "article_date": "2024-05-15",
+  "article_title": "2024.5.15市场逻辑精选"
+}

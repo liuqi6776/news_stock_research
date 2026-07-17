@@ -1,0 +1,124 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受积极因素推动，但需关注风险。",
+  "sectors": [
+    {
+      "sector_name": "影视短剧",
+      "impact": 4,
+      "analysis": "行业受巨头扶持，发展前景看好。"
+    },
+    {
+      "sector_name": "核能",
+      "impact": 3,
+      "analysis": "钍基熔盐堆技术突破，板块受益。"
+    },
+    {
+      "sector_name": "创新药",
+      "impact": 3,
+      "analysis": "政策支持，海外市场回暖，板块受益。"
+    },
+    {
+      "sector_name": "半导体",
+      "impact": 2,
+      "analysis": "亚翔集成业绩增长，板块受提振。"
+    },
+    {
+      "sector_name": "食品加工",
+      "impact": 2,
+      "analysis": "日辰股份新品放量，板块受益。"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 2,
+      "analysis": "海马汽车受益自贸港政策，板块受益。"
+    },
+    {
+      "sector_name": "污水处理",
+      "impact": 2,
+      "analysis": "中持股份业绩增长，板块受提振。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "博纳影业",
+      "stock_code": "600595",
+      "impact": 4,
+      "analysis": "AI短剧生成平台公测，公司受益。"
+    },
+    {
+      "stock_name": "中文在线",
+      "stock_code": "300364",
+      "impact": 4,
+      "analysis": "自研AI工具链覆盖全流程，公司受益。"
+    },
+    {
+      "stock_name": "华策影视",
+      "stock_code": "600079",
+      "impact": 3,
+      "analysis": "影视短剧行业发展前景看好，公司受益。"
+    },
+    {
+      "stock_name": "慈文传媒",
+      "stock_code": "300602",
+      "impact": 3,
+      "analysis": "影视短剧行业发展前景看好，公司受益。"
+    },
+    {
+      "stock_name": "百纳千成",
+      "stock_code": "002865",
+      "impact": 3,
+      "analysis": "影视短剧行业发展前景看好，公司受益。"
+    },
+    {
+      "stock_name": "包钢股份",
+      "stock_code": "600010",
+      "impact": 4,
+      "analysis": "钍基熔盐堆技术突破，公司受益。"
+    },
+    {
+      "stock_name": "上海电气",
+      "stock_code": "600701",
+      "impact": 4,
+      "analysis": "深度参与钍基熔盐堆项目，公司受益。"
+    },
+    {
+      "stock_name": "联环药业",
+      "stock_code": "600513",
+      "impact": 3,
+      "analysis": "创新药研发进展顺利，公司受益。"
+    },
+    {
+      "stock_name": "三生国健",
+      "stock_code": "600610",
+      "impact": 3,
+      "analysis": "创新药出海逻辑稳健，公司受益。"
+    },
+    {
+      "stock_name": "亚翔集成",
+      "stock_code": "300299",
+      "impact": 4,
+      "analysis": "半导体洁净室业务利润率大升，公司受益。"
+    },
+    {
+      "stock_name": "日辰股份",
+      "stock_code": "603369",
+      "impact": 4,
+      "analysis": "百胜新品放量，公司受益。"
+    },
+    {
+      "stock_name": "海马汽车",
+      "stock_code": "600732",
+      "impact": 4,
+      "analysis": "海南自贸港政策支持，公司受益。"
+    },
+    {
+      "stock_name": "中持股份",
+      "stock_code": "300795",
+      "impact": 4,
+      "analysis": "业绩增长，芯长征拟借壳，公司受益。"
+    }
+  ],
+  "article_id": "4d5d364757ff43e0b5ca4de7194ea42e",
+  "article_date": "2025-11-02",
+  "article_title": "2025.11.2市场逻辑精选"
+}

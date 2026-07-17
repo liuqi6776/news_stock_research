@@ -1,0 +1,61 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受政策支持，部分板块和个股有望受益",
+  "sectors": [
+    {
+      "sector_name": "深海科技",
+      "impact": 4,
+      "analysis": "政策支持，行业前景广阔"
+    },
+    {
+      "sector_name": "算力",
+      "impact": 3,
+      "analysis": "腾讯AI采购芯片，行业需求增加"
+    },
+    {
+      "sector_name": "消费",
+      "impact": 2,
+      "analysis": "促销活动，消费需求提升"
+    },
+    {
+      "sector_name": "资源股",
+      "impact": 3,
+      "analysis": "限产政策，行业利润回升"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中科海迅",
+      "stock_code": "300760",
+      "impact": 4,
+      "analysis": "深海科技核心公司"
+    },
+    {
+      "stock_name": "利通电子",
+      "stock_code": "002396",
+      "impact": 3,
+      "analysis": "腾讯AI算力核心公司"
+    },
+    {
+      "stock_name": "湖北广电",
+      "stock_code": "000665",
+      "impact": 3,
+      "analysis": "腾讯AI算力核心公司"
+    },
+    {
+      "stock_name": "大有能源",
+      "stock_code": "601868",
+      "impact": 3,
+      "analysis": "煤炭行业相关公司"
+    },
+    {
+      "stock_name": "宝地矿业",
+      "stock_code": "000923",
+      "impact": 3,
+      "analysis": "钢铁行业相关公司"
+    }
+  ],
+  "article_id": "33e95e36262742fdaa21bdf2faff822b",
+  "article_date": "2025-03-13",
+  "article_title": "2025.3.13市场逻辑精选"
+}

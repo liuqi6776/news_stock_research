@@ -1,0 +1,88 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪积极",
+  "sectors": [
+    {
+      "sector_name": "中德制造业",
+      "impact": 3,
+      "analysis": "总理访问德国，利好相关制造业"
+    },
+    {
+      "sector_name": "太空旅游",
+      "impact": 3,
+      "analysis": "维珍银河商业太空飞行，利好太空旅游板块"
+    },
+    {
+      "sector_name": "零售百货",
+      "impact": 2,
+      "analysis": "商务部推动扩消费政策，利好零售百货"
+    },
+    {
+      "sector_name": "新能源车",
+      "impact": 3,
+      "analysis": "新能源车下乡活动，利好新能源车板块"
+    },
+    {
+      "sector_name": "国资",
+      "impact": 2,
+      "analysis": "国资委推动央企并购重组，利好国资板块"
+    },
+    {
+      "sector_name": "农业建设",
+      "impact": 2,
+      "analysis": "设施农业建设规划，利好农业建设板块"
+    },
+    {
+      "sector_name": "中药",
+      "impact": 3,
+      "analysis": "中药材价格上涨，利好中药板块"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中大力德",
+      "stock_code": "002504",
+      "impact": 3,
+      "analysis": "总理访问德国，利好相关制造业"
+    },
+    {
+      "stock_name": "欧比特",
+      "stock_code": "300373",
+      "impact": 3,
+      "analysis": "维珍银河商业太空飞行，利好太空旅游板块"
+    },
+    {
+      "stock_name": "人人乐",
+      "stock_code": "002336",
+      "impact": 2,
+      "analysis": "商务部推动扩消费政策，利好零售百货"
+    },
+    {
+      "stock_name": "赛力斯",
+      "stock_code": "600104",
+      "impact": 3,
+      "analysis": "新能源车下乡活动，利好新能源车板块"
+    },
+    {
+      "stock_name": "中成股份",
+      "stock_code": "000151",
+      "impact": 2,
+      "analysis": "国资委推动央企并购重组，利好国资板块"
+    },
+    {
+      "stock_name": "中粮科工",
+      "stock_code": "600949",
+      "impact": 2,
+      "analysis": "设施农业建设规划，利好农业建设板块"
+    },
+    {
+      "stock_name": "太极集团",
+      "stock_code": "600085",
+      "impact": 3,
+      "analysis": "中药材价格上涨，利好中药板块"
+    }
+  ],
+  "article_title": "6月16日 盘前热点事件关注",
+  "html_file": "fkp8bcv182.html",
+  "article_date": "2023-06-16"
+}

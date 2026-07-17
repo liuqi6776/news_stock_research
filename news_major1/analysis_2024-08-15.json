@@ -1,0 +1,78 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，但需关注后续事件发展。",
+  "sectors": [
+    {
+      "sector_name": "机器人",
+      "impact": 4,
+      "analysis": "苹果进军机器人市场，相关产业链受益"
+    },
+    {
+      "sector_name": "核电",
+      "impact": 3,
+      "analysis": "核电发展进入黄金时期，相关设备供应商受益"
+    },
+    {
+      "sector_name": "锑",
+      "impact": 3,
+      "analysis": "锑出口管制，锑价有望上涨，相关企业受益"
+    },
+    {
+      "sector_name": "美妆",
+      "impact": 2,
+      "analysis": "美妆零售获股神建仓，相关企业受益"
+    },
+    {
+      "sector_name": "清洁机器人",
+      "impact": 2,
+      "analysis": "清洁机器人市场前景广阔，相关企业受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "田中精机",
+      "stock_code": "002359",
+      "impact": 4,
+      "analysis": "有望成为苹果机器人设备供应商"
+    },
+    {
+      "stock_name": "兆威机电",
+      "stock_code": "002681",
+      "impact": 4,
+      "analysis": "有望向机器人拓展"
+    },
+    {
+      "stock_name": "哈尔滨电气",
+      "stock_code": "600720",
+      "impact": 3,
+      "analysis": "蒸汽发生器供应商"
+    },
+    {
+      "stock_name": "上海电气",
+      "stock_code": "600627",
+      "impact": 3,
+      "analysis": "多款核岛设备供应商"
+    },
+    {
+      "stock_name": "华钰矿业",
+      "stock_code": "600387",
+      "impact": 3,
+      "analysis": "锑储量丰富"
+    },
+    {
+      "stock_name": "青岛金王",
+      "stock_code": "002094",
+      "impact": 2,
+      "analysis": "美妆供应链平台"
+    },
+    {
+      "stock_name": "朗特智能",
+      "stock_code": "300689",
+      "impact": 2,
+      "analysis": "扫地机器人智能控制器"
+    }
+  ],
+  "article_id": "66abeb67641e43e2a84aac9a6261164b",
+  "article_date": "2024-08-15",
+  "article_title": "2024.8.15市场逻辑精选"
+}

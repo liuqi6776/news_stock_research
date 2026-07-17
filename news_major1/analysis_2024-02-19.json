@@ -1,0 +1,50 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场受新技术驱动，整体利好。",
+  "sectors": [
+    {
+      "sector_name": "光模块",
+      "impact": 4,
+      "analysis": "硅光技术放量，板块受益"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "大模型发展迅速，相关公司受益"
+    },
+    {
+      "sector_name": "算力",
+      "impact": 3,
+      "analysis": "新技术推动，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "赛微电子",
+      "stock_code": "300457",
+      "impact": 4,
+      "analysis": "硅光芯片代工，受益技术发展"
+    },
+    {
+      "stock_name": "仕佳光子",
+      "stock_code": "300696",
+      "impact": 4,
+      "analysis": "布局核心硅光光模块，受益技术发展"
+    },
+    {
+      "stock_name": "云从科技",
+      "stock_code": "688016",
+      "impact": 3,
+      "analysis": "大模型基座，受益行业快速发展"
+    },
+    {
+      "stock_name": "科大讯飞",
+      "stock_code": "002230",
+      "impact": 3,
+      "analysis": "大模型研发，受益行业快速发展"
+    }
+  ],
+  "article_id": "c8b574e6fc8647d291e532103258834b",
+  "article_date": "2024-02-19",
+  "article_title": "2024.2.19市场逻辑精选"
+}

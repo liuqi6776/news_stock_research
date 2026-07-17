@@ -1,0 +1,90 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体受利好消息推动，部分板块和个股表现活跃。",
+  "sectors": [
+    {
+      "sector_name": "锗行业",
+      "impact": 4,
+      "analysis": "锗价上涨，行业前景看好。"
+    },
+    {
+      "sector_name": "房地产开发",
+      "impact": 2,
+      "analysis": "世荣兆业控股权变更，板块受关注。"
+    },
+    {
+      "sector_name": "食品安全检测",
+      "impact": 2,
+      "analysis": "易瑞生物产品受关注，板块受提振。"
+    },
+    {
+      "sector_name": "智能驾驶",
+      "impact": 2,
+      "analysis": "万马科技助力车企智能驾驶，板块受关注。"
+    },
+    {
+      "sector_name": "化肥行业",
+      "impact": 2,
+      "analysis": "金正大业绩大增，板块受提振。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "恒光股份",
+      "stock_code": "300702",
+      "impact": 4,
+      "analysis": "锗产品应用广泛，股价上涨。"
+    },
+    {
+      "stock_name": "云南锗业",
+      "stock_code": "002428",
+      "impact": 4,
+      "analysis": "锗产业链完整，股价上涨。"
+    },
+    {
+      "stock_name": "驰宏锌锗",
+      "stock_code": "600497",
+      "impact": 4,
+      "analysis": "锗资源储量丰富，股价上涨。"
+    },
+    {
+      "stock_name": "中金岭南",
+      "stock_code": "000060",
+      "impact": 4,
+      "analysis": "锗金属资源量充足，股价上涨。"
+    },
+    {
+      "stock_name": "罗平锌电",
+      "stock_code": "002114",
+      "impact": 4,
+      "analysis": "锗精矿生产量稳定，股价上涨。"
+    },
+    {
+      "stock_name": "世荣兆业",
+      "stock_code": "000606",
+      "impact": 3,
+      "analysis": "控股权变更，股价上涨。"
+    },
+    {
+      "stock_name": "易瑞生物",
+      "stock_code": "300685",
+      "impact": 3,
+      "analysis": "食用油安全检测产品受关注，股价上涨。"
+    },
+    {
+      "stock_name": "万马科技",
+      "stock_code": "300134",
+      "impact": 3,
+      "analysis": "助力车企智能驾驶，股价上涨。"
+    },
+    {
+      "stock_name": "金正大",
+      "stock_code": "002470",
+      "impact": 3,
+      "analysis": "业绩大增，股价上涨。"
+    }
+  ],
+  "article_id": "3867b3a8aceb4ef298434170be2f9207",
+  "article_date": "2024-07-08",
+  "article_title": "2024.7.8市场逻辑精选"
+}

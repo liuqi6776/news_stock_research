@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪提升",
+  "sectors": [
+    {
+      "sector_name": "一带一路",
+      "impact": 4,
+      "analysis": "沙特和伊朗恢复关系，板块受益"
+    },
+    {
+      "sector_name": "稀土",
+      "impact": 3,
+      "analysis": "G7峰会稀土供应链合作，板块受益"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 3,
+      "analysis": "天合光能业绩高增长，板块受益"
+    },
+    {
+      "sector_name": "旅游",
+      "impact": 2,
+      "analysis": "恢复出境团队旅游，板块受益"
+    },
+    {
+      "sector_name": "芯片",
+      "impact": 3,
+      "analysis": "G7峰会芯片供应链合作，板块受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "北方国际",
+      "stock_code": "000065",
+      "impact": 4,
+      "analysis": "一带一路概念，受益沙特和伊朗关系恢复"
+    },
+    {
+      "stock_name": "中国稀土",
+      "stock_code": "000831",
+      "impact": 3,
+      "analysis": "稀土板块，受益G7峰会稀土供应链合作"
+    },
+    {
+      "stock_name": "天合光能",
+      "stock_code": "688599",
+      "impact": 4,
+      "analysis": "光伏板块，业绩高增长"
+    },
+    {
+      "stock_name": "众信旅游",
+      "stock_code": "600610",
+      "impact": 2,
+      "analysis": "旅游板块，恢复出境团队旅游"
+    },
+    {
+      "stock_name": "圣晖集成",
+      "stock_code": "688019",
+      "impact": 3,
+      "analysis": "芯片板块，受益G7峰会芯片供应链合作"
+    }
+  ],
+  "article_title": "3月13日盘前热点事件关注",
+  "html_file": "293n520xzk.html",
+  "article_date": "2023-03-13"
+}

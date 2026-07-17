@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "消费税改革预期升温，利好消费相关板块。",
+  "sectors": [
+    {
+      "sector_name": "免税",
+      "impact": 4,
+      "analysis": "免税价差有望扩大，利好免税行业。"
+    },
+    {
+      "sector_name": "百货零售",
+      "impact": 3,
+      "analysis": "地方政府扶持线下消费，利好百货零售行业。"
+    },
+    {
+      "sector_name": "车路云一体化",
+      "impact": 3,
+      "analysis": "试点城市名单公布，利好相关设备供应商。"
+    },
+    {
+      "sector_name": "纯碱",
+      "impact": 2,
+      "analysis": "期货价格上涨，下游适量补库。"
+    },
+    {
+      "sector_name": "黄金珠宝",
+      "impact": 2,
+      "analysis": "消费税改革利好头部合规企业。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "信息发展",
+      "stock_code": "300469",
+      "impact": 3,
+      "analysis": "车路云一体化试点城市名单公布，利好公司业务。"
+    },
+    {
+      "stock_name": "浩云科技",
+      "stock_code": "300448",
+      "impact": 3,
+      "analysis": "车路云一体化试点城市名单公布，利好公司业务。"
+    },
+    {
+      "stock_name": "金溢科技",
+      "stock_code": "002869",
+      "impact": 3,
+      "analysis": "车路云一体化试点城市名单公布，利好公司业务。"
+    },
+    {
+      "stock_name": "山东海化",
+      "stock_code": "000737",
+      "impact": 2,
+      "analysis": "纯碱期货价格上涨，利好公司业务。"
+    },
+    {
+      "stock_name": "莱绅通灵",
+      "stock_code": "603900",
+      "impact": 2,
+      "analysis": "消费税改革利好头部合规企业。"
+    }
+  ],
+  "article_id": "fc9bfbe4a3494a71b05ed2a488a40087",
+  "article_date": "2024-07-03",
+  "article_title": "2024.7.3市场逻辑精选"
+}

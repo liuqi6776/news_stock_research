@@ -1,0 +1,102 @@
+{
+  "market_impact": 3,
+  "market_analysis": "政策支持力度加大，市场情绪偏乐观。",
+  "sectors": [
+    {
+      "sector_name": "基建地产",
+      "impact": 3,
+      "analysis": "政策性金融工具增加，利好板块"
+    },
+    {
+      "sector_name": "元宇宙",
+      "impact": 3,
+      "analysis": "北京副中心元宇宙计划，板块受关注"
+    },
+    {
+      "sector_name": "特斯拉机器人",
+      "impact": 3,
+      "analysis": "特斯拉AI DAY，板块受关注"
+    },
+    {
+      "sector_name": "白酒",
+      "impact": 3,
+      "analysis": "中秋备货，板块受关注"
+    },
+    {
+      "sector_name": "储能",
+      "impact": 3,
+      "analysis": "政策支持，板块受关注"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中青宝",
+      "stock_code": "300118",
+      "impact": 3,
+      "analysis": "北京副中心元宇宙计划，公司受关注"
+    },
+    {
+      "stock_name": "恒信东方",
+      "stock_code": "600570",
+      "impact": 3,
+      "analysis": "北京副中心元宇宙计划，公司受关注"
+    },
+    {
+      "stock_name": "佳创视讯",
+      "stock_code": "300264",
+      "impact": 3,
+      "analysis": "北京副中心元宇宙计划，公司受关注"
+    },
+    {
+      "stock_name": "绿的谐波",
+      "stock_code": "688388",
+      "impact": 3,
+      "analysis": "特斯拉机器人，公司受关注"
+    },
+    {
+      "stock_name": "汉宇集团",
+      "stock_code": "603710",
+      "impact": 3,
+      "analysis": "特斯拉机器人，公司受关注"
+    },
+    {
+      "stock_name": "古井贡酒",
+      "stock_code": "600519",
+      "impact": 3,
+      "analysis": "中秋备货，公司受关注"
+    },
+    {
+      "stock_name": "迎驾贡酒",
+      "stock_code": "600897",
+      "impact": 3,
+      "analysis": "中秋备货，公司受关注"
+    },
+    {
+      "stock_name": "水井坊",
+      "stock_code": "600779",
+      "impact": 3,
+      "analysis": "中秋备货，公司受关注"
+    },
+    {
+      "stock_name": "山西汾酒",
+      "stock_code": "600809",
+      "impact": 3,
+      "analysis": "中秋备货，公司受关注"
+    },
+    {
+      "stock_name": "协鑫能科",
+      "stock_code": "002015",
+      "impact": 3,
+      "analysis": "协鑫集团与宁德时代合作，公司受关注"
+    },
+    {
+      "stock_name": "协鑫集成",
+      "stock_code": "002021",
+      "impact": 3,
+      "analysis": "协鑫集团与宁德时代合作，公司受关注"
+    }
+  ],
+  "article_title": "8月25日 盘前早8点 股市要闻关注",
+  "html_file": "6xee4yhnls.html",
+  "article_date": "2022-08-25"
+}

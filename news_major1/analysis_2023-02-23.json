@@ -1,0 +1,66 @@
+{
+  "market_impact": 2,
+  "market_analysis": "市场情绪受多事件影响，波动较大。",
+  "sectors": [
+    {
+      "sector_name": "煤炭",
+      "impact": 3,
+      "analysis": "内蒙古煤矿坍塌事件可能短期提振煤炭板块。"
+    },
+    {
+      "sector_name": "储能",
+      "impact": 3,
+      "analysis": "新型储能标准发布，利好储能行业。"
+    },
+    {
+      "sector_name": "鸡苗",
+      "impact": 2,
+      "analysis": "鸡苗价格上涨，相关企业受益。"
+    },
+    {
+      "sector_name": "数字产权",
+      "impact": 2,
+      "analysis": "数字产权链平台上线，相关概念股受关注。"
+    },
+    {
+      "sector_name": "淡水鱼",
+      "impact": 2,
+      "analysis": "福岛核污染水排海计划通过，淡水鱼板块受影响。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "山西焦煤",
+      "stock_code": "000983",
+      "impact": 3,
+      "analysis": "内蒙古煤矿坍塌事件可能短期提振。"
+    },
+    {
+      "stock_name": "盛弘股份",
+      "stock_code": "300626",
+      "impact": 3,
+      "analysis": "新型储能标准发布，利好公司。"
+    },
+    {
+      "stock_name": "民和股份",
+      "stock_code": "002234",
+      "impact": 2,
+      "analysis": "鸡苗价格上涨，公司受益。"
+    },
+    {
+      "stock_name": "博瑞传播",
+      "stock_code": "600880",
+      "impact": 2,
+      "analysis": "数字产权链平台上线，概念股受关注。"
+    },
+    {
+      "stock_name": "大湖股份",
+      "stock_code": "600257",
+      "impact": 2,
+      "analysis": "福岛核污染水排海计划通过，公司受影响。"
+    }
+  ],
+  "article_title": "2月23日盘前热点事件关注",
+  "html_file": "3w7y5w03lg.html",
+  "article_date": "2023-02-23"
+}

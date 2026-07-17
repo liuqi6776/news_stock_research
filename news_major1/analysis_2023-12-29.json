@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场整体偏利好，关注年报披露和行业动态。",
+  "sectors": [
+    {
+      "sector_name": "光伏",
+      "impact": 4,
+      "analysis": "光伏产业链减产，行业出清，利好板块。"
+    },
+    {
+      "sector_name": "金融",
+      "impact": 3,
+      "analysis": "央行加大货币政策实施力度，利好金融板块。"
+    },
+    {
+      "sector_name": "医药",
+      "impact": 3,
+      "analysis": "新冠变异株可能成为国内流行株，利好医药板块。"
+    },
+    {
+      "sector_name": "新能源汽车",
+      "impact": 3,
+      "analysis": "小米汽车发布高压平台，利好新能源汽车板块。"
+    },
+    {
+      "sector_name": "氢能",
+      "impact": 3,
+      "analysis": "中石化发布氢能展望报告，利好氢能板块。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "晶科能源",
+      "stock_code": "600869",
+      "impact": 4,
+      "analysis": "获得中东地区最大储能订单，利好。"
+    },
+    {
+      "stock_name": "凯龙股份",
+      "stock_code": "002789",
+      "impact": 3,
+      "analysis": "实施整区分布式光伏项目，利好。"
+    },
+    {
+      "stock_name": "航锦科技",
+      "stock_code": "002818",
+      "impact": 3,
+      "analysis": "子公司获英伟达授权设立卓越中心，利好。"
+    },
+    {
+      "stock_name": "中贝通信",
+      "stock_code": "600869",
+      "impact": 3,
+      "analysis": "中标中移动内蒙古2024年补充招标项目，利好。"
+    },
+    {
+      "stock_name": "节能铁汉",
+      "stock_code": "002818",
+      "impact": 3,
+      "analysis": "联合体中标76.78亿元总承包工程，利好。"
+    }
+  ],
+  "article_title": "12月29日盘前早报 热点事件关注",
+  "html_file": "9960b51q04.html",
+  "article_date": "2023-12-29"
+}

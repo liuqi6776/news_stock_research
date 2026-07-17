@@ -1,0 +1,115 @@
+{
+  "market_impact": 3,
+  "market_analysis": "多事件利好，市场情绪偏乐观",
+  "sectors": [
+    {
+      "sector_name": "人形机器人",
+      "impact": 4,
+      "analysis": "特斯拉AI Day活动，相关概念股受益"
+    },
+    {
+      "sector_name": "中朝概念",
+      "impact": 3,
+      "analysis": "中朝重启铁路货运，相关概念股受益"
+    },
+    {
+      "sector_name": "四川基建",
+      "impact": 3,
+      "analysis": "四川集中开工多条高速，相关基建股受益"
+    },
+    {
+      "sector_name": "云南磷化工",
+      "impact": 3,
+      "analysis": "云南实施能效管理，相关磷化工股受益"
+    },
+    {
+      "sector_name": "电热毯",
+      "impact": 3,
+      "analysis": "欧洲气荒，电热毯需求增加，相关概念股受益"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 2,
+      "analysis": "房地产金融化泡沫化势头得到扭转，相关概念股受益"
+    },
+    {
+      "sector_name": "光伏",
+      "impact": 2,
+      "analysis": "欧盟能源计划，光伏概念股受益"
+    },
+    {
+      "sector_name": "储能",
+      "impact": 2,
+      "analysis": "欧盟能源计划，储能概念股受益"
+    },
+    {
+      "sector_name": "酒店",
+      "impact": 2,
+      "analysis": "香港放宽入境限制，酒店概念股受益"
+    },
+    {
+      "sector_name": "元宇宙",
+      "impact": 2,
+      "analysis": "元宇宙电商爆发，相关概念股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "中大力德",
+      "stock_code": "002896",
+      "impact": 4,
+      "analysis": "特斯拉AI Day活动，人形机器人概念股"
+    },
+    {
+      "stock_name": "铁龙物流",
+      "stock_code": "600197",
+      "impact": 3,
+      "analysis": "中朝重启铁路货运，中朝概念股"
+    },
+    {
+      "stock_name": "四川金顶",
+      "stock_code": "000638",
+      "impact": 3,
+      "analysis": "四川集中开工多条高速，四川基建股"
+    },
+    {
+      "stock_name": "云图控股",
+      "stock_code": "002539",
+      "impact": 3,
+      "analysis": "云南实施能效管理，云南磷化工股"
+    },
+    {
+      "stock_name": "彩虹集团",
+      "stock_code": "000707",
+      "impact": 3,
+      "analysis": "欧洲气荒，电热毯概念股"
+    },
+    {
+      "stock_name": "海鸥住工",
+      "stock_code": "002084",
+      "impact": 2,
+      "analysis": "房地产金融化泡沫化势头得到扭转，房地产概念股"
+    },
+    {
+      "stock_name": "日出东方",
+      "stock_code": "600266",
+      "impact": 2,
+      "analysis": "欧盟能源计划，光伏概念股"
+    },
+    {
+      "stock_name": "华天酒店",
+      "stock_code": "000428",
+      "impact": 2,
+      "analysis": "香港放宽入境限制，酒店概念股"
+    },
+    {
+      "stock_name": "捷成股份",
+      "stock_code": "600746",
+      "impact": 2,
+      "analysis": "元宇宙电商爆发，元宇宙概念股"
+    }
+  ],
+  "article_title": "9月27日 盘前早8点 股市要闻关注",
+  "html_file": "6z0pts4j2k.html",
+  "article_date": "2022-09-27"
+}

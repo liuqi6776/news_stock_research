@@ -1,0 +1,55 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏暖，多个板块有潜在利好。",
+  "sectors": [
+    {
+      "sector_name": "超导",
+      "impact": 4,
+      "analysis": "超导材料研究进展，利好相关个股。"
+    },
+    {
+      "sector_name": "房地产",
+      "impact": 3,
+      "analysis": "央行调整个人住房贷款利率，利好房地产板块。"
+    },
+    {
+      "sector_name": "智能制造",
+      "impact": 3,
+      "analysis": "智能制造试点示范行动，利好相关个股。"
+    },
+    {
+      "sector_name": "CPO概念",
+      "impact": 3,
+      "analysis": "OpenAI提交GPT-5商标申请，利好相关个股。"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "法尔胜",
+      "stock_code": "000890",
+      "impact": 4,
+      "analysis": "超导材料研究进展，利好。"
+    },
+    {
+      "stock_name": "国创高新",
+      "stock_code": "000540",
+      "impact": 3,
+      "analysis": "央行调整个人住房贷款利率，利好。"
+    },
+    {
+      "stock_name": "盘古智能",
+      "stock_code": "301096",
+      "impact": 3,
+      "analysis": "智能制造试点示范行动，利好。"
+    },
+    {
+      "stock_name": "中际旭创",
+      "stock_code": "300308",
+      "impact": 3,
+      "analysis": "OpenAI提交GPT-5商标申请，利好。"
+    }
+  ],
+  "article_title": "8月2日盘前早报 热点事件关注",
+  "html_file": "2fz6zbv9j4.html",
+  "article_date": "2023-08-02"
+}

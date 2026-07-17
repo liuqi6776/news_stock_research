@@ -1,0 +1,28 @@
+==========================================================================
+                 Incremental Factor Regression Report                    
+==========================================================================
+Comparison Period: 2024-09-02 to 2026-03-11 (Features Active)
+Regresion Model: Model 2 (Market + SMB + Orthogonalized Industry Excess)
+==========================================================================
+Metric                    | Config A (Baseline)       | Config B (+Vibe Alphas)  
+--------------------------------------------------------------------------
+Total Return              | 85.93%                    | 90.81%                   
+Sharpe Ratio              | 2.00                      | 2.09                     
+Max Drawdown              | -13.88%                   | -15.01%                  
+--------------------------------------------------------------------------
+Annualized Alpha          | 8.34%                     | 8.23%                    
+Alpha t-statistic         | 0.7839                    | 0.7858                   
+Alpha p-value             | 0.433806                  | 0.432714                 
+Beta Market (beta_m)      | 1.0126                    | 0.9722                   
+Beta Size (beta_s)        | 0.1071                    | 0.1727                   
+R-squared                 | 86.39%                    | 86.61%                   
+==========================================================================
+
+Empirical Conclusions:
+1. Preprocessed Vibe Alphas Incremental Value (Config B vs A):
+   - Annualized Alpha change: -0.10%
+   - Alpha t-stat: A = 0.78 (not sig) | B = 0.79 (not sig)
+
+2. Style Explanation:
+   - Config B's style/industry R2 is 86.61%, meaning style exposures explain the vast majority of daily return fluctuations.
+==========================================================================

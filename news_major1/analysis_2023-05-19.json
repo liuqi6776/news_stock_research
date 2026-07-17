@@ -1,0 +1,66 @@
+{
+  "market_impact": 3,
+  "market_analysis": "市场情绪偏乐观，多个板块和个股受利好消息影响",
+  "sectors": [
+    {
+      "sector_name": "锂电池",
+      "impact": 4,
+      "analysis": "锂价上涨，板块受益"
+    },
+    {
+      "sector_name": "人工智能",
+      "impact": 3,
+      "analysis": "ChatGPT概念股受关注"
+    },
+    {
+      "sector_name": "存储芯片",
+      "impact": 3,
+      "analysis": "英伟达和美光科技股价创新高，板块受益"
+    },
+    {
+      "sector_name": "铁路建设",
+      "impact": 3,
+      "analysis": "中吉乌铁路开工备忘录或签署，板块受益"
+    },
+    {
+      "sector_name": "云手机",
+      "impact": 2,
+      "analysis": "中国移动发布云手机，相关个股受益"
+    }
+  ],
+  "stocks": [
+    {
+      "stock_name": "融捷股份",
+      "stock_code": "002192",
+      "impact": 4,
+      "analysis": "锂电池价格上涨，公司受益"
+    },
+    {
+      "stock_name": "永兴材料",
+      "stock_code": "002456",
+      "impact": 4,
+      "analysis": "锂电池价格上涨，公司受益"
+    },
+    {
+      "stock_name": "天齐锂业",
+      "stock_code": "002466",
+      "impact": 4,
+      "analysis": "锂电池价格上涨，公司受益"
+    },
+    {
+      "stock_name": "中文在线",
+      "stock_code": "300364",
+      "impact": 3,
+      "analysis": "ChatGPT概念股，公司受益"
+    },
+    {
+      "stock_name": "昆仑万维",
+      "stock_code": "300418",
+      "impact": 3,
+      "analysis": "ChatGPT概念股，公司受益"
+    }
+  ],
+  "article_title": "5月19日 盘前热点事件关注",
+  "html_file": "40bshhtuyx.html",
+  "article_date": "2023-05-19"
+}
