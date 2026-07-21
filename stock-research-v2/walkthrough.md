@@ -49,11 +49,11 @@ The out-of-sample backtest of the BSE-free strategy (top 50 equal-weight, 0.3% s
 > - **2025**: Strategy 35.72% vs Benchmark 47.04% (Excess = -11.32%)
 > In all three years, the strategy failed to beat the equal-weight benchmark.
 
-![NAV Main vs Benchmark](C:\Users\liuqi\.gemini\antigravity\brain\7605f628-18c5-44bf-9009-df1901a187cf\nav_main_vs_benchmark.png)
+![NAV Main vs Benchmark](./nav_main_vs_benchmark.png)
 
-![Drawdown Curve](C:\Users\liuqi\.gemini\antigravity\brain\7605f628-18c5-44bf-9009-df1901a187cf\drawdown_main.png)
+![Drawdown Curve](./drawdown_main.png)
 
-![Annual Returns Comparison](C:\Users\liuqi\.gemini\antigravity\brain\7605f628-18c5-44bf-9009-df1901a187cf\annual_returns.png)
+![Annual Returns Comparison](./annual_returns.png)
 
 ---
 
@@ -76,7 +76,7 @@ To verify if the strategy has style-neutral alpha, we analyzed its performance u
 - **A0 (BSE-Free)**: Annual style-adjusted net alpha (geometric) is **+0.21%** per year; Monthly-aligned style-adjusted net alpha is **-2.85%** per year.
 - **A2 (BSE-Free & Size > 20%)**: Annual style-adjusted net alpha is **-1.33%** per year; Monthly-aligned style-adjusted net alpha is **-1.94%** per year.
 
-![Size Domains NAV](C:\Users\liuqi\.gemini\antigravity\brain\7605f628-18c5-44bf-9009-df1901a187cf\size_domains_nav.png)
+![Size Domains NAV](./size_domains_nav.png)
 
 ---
 
@@ -89,3 +89,44 @@ To verify if the strategy has style-neutral alpha, we analyzed its performance u
 > We recommend:
 > 1. **Do not deploy the stock selection layer A0 to live production.**
 > 2. **Formally adopt [候选方案_v0.9_未通过净成本alpha门槛.md](file:///C:/Users/liuqi/Documents/kimi/workspace/候选方案_v0.9_未通过净成本alpha门槛.md) as the default strategy configuration.**
+
+---
+
+## 6. Route B Feasibility Pre-Research: Market-Neutral Hedged Portfolios
+
+To explore if we can salvage the stock layer's selection alpha (Rank IC 0.107, monthly win rate 88.9%) by removing the style and market beta, we conducted a feasibility study for Route B (Market-Neutral) over the 2023-2025 out-of-sample period.
+
+### 6.1 Backtest Performance Comparison (2023 - 2025)
+
+We backtested A0 (BSE-Free) under three different hedging schemes using [backtest_hedged.py](file:///c:/Users/liuqi/quant_system_v2/research/studies/study_007_cross_sectional/fix/backtest_hedged.py):
+1. **Spot Index Hedged**: Long A0 Stocks, Short CSI 1000 Spot (No shorting friction/basis drag).
+2. **IM Futures Directly Hedged**: Long A0 Stocks, Short IM continuous futures index (direct pct change, subject to roll splicing artifact).
+3. **IM Futures Hedged (Basis-Drag Adjusted)**: Long A0 Stocks, Short CSI 1000 Spot index minus rolling 60-day basis convergence drag (real-world futures hedge).
+
+| Scheme / Metric | Annual Return (CAGR) | Volatility | Sharpe Ratio | Max Drawdown | Monthly Win Rate | Calmar Ratio |
+|:---|:---:|:---:|:---:|:---:|:---:|:---:|
+| **A0 Strategy (Long-Only)** | 16.78% | 26.25% | 0.723 | -36.35% | 61.11% | 0.46 |
+| **CSI 1000 Spot Index (Short Asset)** | 5.74% | 24.32% | 0.351 | -39.22% | 47.22% | 0.15 |
+| **A0 - Spot Index Hedged (Pure Alpha)** | **9.85%** | **12.77%** | **0.801** | **-21.46%** | **63.89%** | **0.46** |
+| **A0 - IM Futures Directly Hedged (Continuous Price)** | 9.75% | 15.52% | 0.678 | -23.93% | 66.67% | 0.41 |
+| **A0 - IM Futures Hedged (Realistic Basis-Drag)** | **0.57%** | **12.79%** | **0.109** | **-22.11%** | **52.78%** | **0.03** |
+
+![Hedged Backtest NAV](./hedged_backtest_nav.png)
+
+### 6.2 The "Continuous Contract Splicing" Roll Trap
+
+While the continuous index return (Scheme 2) shows a misleadingly high return (**9.75% CAGR**), this is a pure backtest artifact:
+- Since CSI 1000 index futures (IM) trade at a deep discount (贴水), the continuous price jumps DOWN when splicing to the cheaper next contract. 
+- A short position gains on a price drop, so continuous price index backtests show a fake roll profit.
+- In reality, rolling over requires buying back the near contract at a higher price and selling the far contract at a lower price, realizing a **physical cash loss**.
+- Once adjusted for the actual basis convergence drag (averaging **9.30%** annually over 2023-2025), the realistic hedged CAGR drops to **0.57%** and Sharpe drops to **0.109**.
+
+### 6.3 Hedging Cost Sensitivity & Feasibility Threshold
+
+We ran a cost sensitivity analysis using [sensitivity_analysis.py](file:///c:/Users/liuqi/quant_system_v2/research/studies/study_007_cross_sectional/fix/sensitivity_analysis.py) to find the maximum annual friction cost we can tolerate while keeping the hedged portfolio Sharpe ratio $\ge 0.5$:
+- **Maximum Tolerable Hedging Cost**: **3.85% per year**.
+- **Implication**: Any hedging tool with an annual cost $> 3.85\%$ (such as IM futures at $9.30\%$) makes the strategy unviable.
+- **ETF Securities Lending (融券)**: If we can borrow CSI 1000 ETFs (e.g. 512100) at a rate below **3.85%** (typically 2.8% to 3.5%), the portfolio can achieve a Sharpe $> 0.5$, offering a realistic Absolute Return alternative.
+
+![Hedging Cost Sensitivity](./hedging_cost_sensitivity.png)
+
