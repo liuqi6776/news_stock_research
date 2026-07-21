@@ -1,0 +1,3 @@
+variant,n_months,corr_Q1minusQ5,beta_Q1minusQ5,alpha_monthly,alpha_ann_simple,r2
+B1_全宇宙LS,36,-0.104608,-0.140503,0.029625,0.419551,0.010943
+B2_剔BJ剔小市值LS,36,-0.166307,-0.229737,0.026060,0.361667,0.027658

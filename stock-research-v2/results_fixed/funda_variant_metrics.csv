@@ -1,0 +1,2 @@
+config,ann_return,sharpe,max_drawdown,monthly_win_rate,ann_turnover,ann_cost,total_return,delist_count,ic_mean,ic_ir,ic_pos_rate,n_rebalances
+funda_价量+roe+or_yoy,0.194177,0.883284,-0.276702,0.562500,15.858552,0.047576,0.579366,0,0.089335,0.871664,0.812500,32

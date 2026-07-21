@@ -1,0 +1,3 @@
+config,ann_return,sharpe,max_drawdown,monthly_win_rate,ann_turnover,ann_cost,total_return,delist_count,ic_mean,ic_ir,ic_pos_rate,n_rebalances
+Q1_小市值_top30,0.246468,0.846121,-0.474719,0.694444,18.481549,0.055445,0.888134,0,0.110347,0.975848,0.805556,36
+Q5_大市值_top30,0.074027,0.440793,-0.368606,0.555556,18.284451,0.054853,0.228785,1,0.076366,0.761648,0.694444,36
