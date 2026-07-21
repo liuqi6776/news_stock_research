@@ -1,0 +1,11 @@
+{
+  "oos_window": "20230101~20251231",
+  "top_n": 50,
+  "cost_rate": 0.003,
+  "n_signals": 37,
+  "baseline_check": {
+    "A0_ann": 0.17533904916360976,
+    "fixed_ann": 0.175339
+  },
+  "elapsed_sec": 55.0
+}

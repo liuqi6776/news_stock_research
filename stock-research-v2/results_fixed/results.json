@@ -1,0 +1,233 @@
+{
+  "frozen_factors": [
+    {
+      "factor": "ret_1m_cs",
+      "direction": 1,
+      "weight": 0.13859,
+      "mean_ic": 0.053284,
+      "IR": 0.635893,
+      "ic_pos_rate": 0.705882
+    },
+    {
+      "factor": "low_vol_cs",
+      "direction": 1,
+      "weight": 0.193181,
+      "mean_ic": 0.090015,
+      "IR": 0.886377,
+      "ic_pos_rate": 0.823529
+    },
+    {
+      "factor": "ivol_cs",
+      "direction": 1,
+      "weight": 0.2171,
+      "mean_ic": 0.094351,
+      "IR": 0.996122,
+      "ic_pos_rate": 0.852941
+    },
+    {
+      "factor": "turn_20d_cs",
+      "direction": 1,
+      "weight": 0.234284,
+      "mean_ic": 0.098692,
+      "IR": 1.074971,
+      "ic_pos_rate": 0.852941
+    },
+    {
+      "factor": "oi_spread_cs",
+      "direction": 1,
+      "weight": 0.216845,
+      "mean_ic": 0.058346,
+      "IR": 0.994954,
+      "ic_pos_rate": 0.852941
+    }
+  ],
+  "train_summary": [
+    {
+      "factor": "ret_1m_cs",
+      "n_months": 34,
+      "mean_ic": 0.053284,
+      "ic_std": 0.083794,
+      "IR": 0.635893,
+      "ic_pos_rate": 0.705882,
+      "direction": 1,
+      "eff_mean_ic": 0.053284,
+      "eff_IR": 0.635893,
+      "selected": true,
+      "weight": 0.13859
+    },
+    {
+      "factor": "low_vol_cs",
+      "n_months": 34,
+      "mean_ic": 0.090015,
+      "ic_std": 0.101554,
+      "IR": 0.886377,
+      "ic_pos_rate": 0.823529,
+      "direction": 1,
+      "eff_mean_ic": 0.090015,
+      "eff_IR": 0.886377,
+      "selected": true,
+      "weight": 0.193181
+    },
+    {
+      "factor": "ivol_cs",
+      "n_months": 34,
+      "mean_ic": 0.094351,
+      "ic_std": 0.094719,
+      "IR": 0.996122,
+      "ic_pos_rate": 0.852941,
+      "direction": 1,
+      "eff_mean_ic": 0.094351,
+      "eff_IR": 0.996122,
+      "selected": true,
+      "weight": 0.2171
+    },
+    {
+      "factor": "turn_20d_cs",
+      "n_months": 34,
+      "mean_ic": 0.098692,
+      "ic_std": 0.091809,
+      "IR": 1.074971,
+      "ic_pos_rate": 0.852941,
+      "direction": 1,
+      "eff_mean_ic": 0.098692,
+      "eff_IR": 1.074971,
+      "selected": true,
+      "weight": 0.234284
+    },
+    {
+      "factor": "oi_spread_cs",
+      "n_months": 34,
+      "mean_ic": 0.058346,
+      "ic_std": 0.058642,
+      "IR": 0.994954,
+      "ic_pos_rate": 0.852941,
+      "direction": 1,
+      "eff_mean_ic": 0.058346,
+      "eff_IR": 0.994954,
+      "selected": true,
+      "weight": 0.216845
+    }
+  ],
+  "main_sensitivity": [
+    {
+      "config": "top50_cost0.003(主)",
+      "ann_return": 0.175339,
+      "sharpe": 0.738053,
+      "max_drawdown": -0.363478,
+      "monthly_win_rate": 0.611111,
+      "ann_turnover": 20.603434,
+      "ann_cost": 0.06181,
+      "total_return": 0.593732,
+      "delist_count": 1,
+      "ic_mean": 0.106914,
+      "ic_ir": 1.185703,
+      "ic_pos_rate": 0.888889,
+      "n_rebalances": 36
+    },
+    {
+      "config": "top50_cost0.0015",
+      "ann_return": 0.212131,
+      "sharpe": 0.852616,
+      "max_drawdown": -0.358279,
+      "monthly_win_rate": 0.666667,
+      "ann_turnover": 20.603434,
+      "ann_cost": 0.030905,
+      "total_return": 0.741941,
+      "delist_count": 1,
+      "ic_mean": 0.106914,
+      "ic_ir": 1.185703,
+      "ic_pos_rate": 0.888889,
+      "n_rebalances": 36
+    },
+    {
+      "config": "top30_cost0.003",
+      "ann_return": 0.203507,
+      "sharpe": 0.81994,
+      "max_drawdown": -0.345624,
+      "monthly_win_rate": 0.611111,
+      "ann_turnover": 21.012727,
+      "ann_cost": 0.063038,
+      "total_return": 0.706429,
+      "delist_count": 1,
+      "ic_mean": 0.106914,
+      "ic_ir": 1.185703,
+      "ic_pos_rate": 0.888889,
+      "n_rebalances": 36
+    },
+    {
+      "config": "top100_cost0.003",
+      "ann_return": 0.142208,
+      "sharpe": 0.651157,
+      "max_drawdown": -0.359215,
+      "monthly_win_rate": 0.555556,
+      "ann_turnover": 19.761192,
+      "ann_cost": 0.059284,
+      "total_return": 0.467542,
+      "delist_count": 1,
+      "ic_mean": 0.106914,
+      "ic_ir": 1.185703,
+      "ic_pos_rate": 0.888889,
+      "n_rebalances": 36
+    }
+  ],
+  "benchmark": {
+    "total_return": 0.8338835422324731,
+    "ann_return": 0.23393575057070093,
+    "sharpe": 0.9489314927178113,
+    "max_drawdown": -0.30713927553596665,
+    "monthly_win_rate": 0.6111111111111112,
+    "n_days": 727
+  },
+  "size_tilt": {
+    "holdings_median_mv_ratio": 0.7956253171762243
+  },
+  "size_domains": [
+    {
+      "config": "Q1_小市值_top30",
+      "ann_return": 0.246468,
+      "sharpe": 0.846121,
+      "max_drawdown": -0.474719,
+      "monthly_win_rate": 0.694444,
+      "ann_turnover": 18.481549,
+      "ann_cost": 0.055445,
+      "total_return": 0.888134,
+      "delist_count": 0,
+      "ic_mean": 0.110347,
+      "ic_ir": 0.975848,
+      "ic_pos_rate": 0.805556,
+      "n_rebalances": 36
+    },
+    {
+      "config": "Q5_大市值_top30",
+      "ann_return": 0.074027,
+      "sharpe": 0.440793,
+      "max_drawdown": -0.368606,
+      "monthly_win_rate": 0.555556,
+      "ann_turnover": 18.284451,
+      "ann_cost": 0.054853,
+      "total_return": 0.228785,
+      "delist_count": 1,
+      "ic_mean": 0.076366,
+      "ic_ir": 0.761648,
+      "ic_pos_rate": 0.694444,
+      "n_rebalances": 36
+    }
+  ],
+  "funda_variant": [
+    {
+      "config": "funda_价量+roe+or_yoy",
+      "ann_return": 0.194177,
+      "sharpe": 0.883284,
+      "max_drawdown": -0.276702,
+      "monthly_win_rate": 0.5625,
+      "ann_turnover": 15.858552,
+      "ann_cost": 0.047576,
+      "total_return": 0.579366,
+      "delist_count": 0,
+      "ic_mean": 0.089335,
+      "ic_ir": 0.871664,
+      "ic_pos_rate": 0.8125,
+      "n_rebalances": 32
+    }
+  ]
+}
