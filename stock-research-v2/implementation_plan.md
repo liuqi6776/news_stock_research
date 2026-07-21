@@ -1,72 +1,54 @@
-# A-Share Quant Trading System Upgrade: Verification & Configuration Downgrade
+# A0 市场中性对冲策略预研 (路线 B 可行性分析)
 
-This implementation plan aims to address the critical consensus findings from the model reviews (GPT/Claude/Gemini) concerning the A-share quant trading system's production configuration and factor research. Specifically, we will clarify the verification file confusion, downgrade the production config to a candidate proposal, and strictly retrain/retest the stock factor layer A0 by excluding Beijing Stock Exchange (BSE) stocks to verify if it has any positive net alpha after transaction costs.
+本计划旨在对股票层 A0 组合进行“Alpha 提纯”，通过做空对冲工具（中证1000现货或 IM 股指期货）剥离市场与小盘 Beta 暴露，量化纯 Alpha 收益及其实际可行性。
 
-## User Review Required
+---
 
-We require user review and approval on the following key decisions and clarifications before proceeding to execution:
+## 核心发现：基差贴水的“联合绞杀”
 
-> [!IMPORTANT]
-> **1. Clarification on `final_quant_VERIFICATION.md` (-7.07% Alpha, t = -2.46)**
-> We conducted a thorough recursive disk search across `C:\Users\liuqi` for any file matching `final_quant_VERIFICATION` or containing `-7.07%` / `t = -2.46` in markdown/python files. **No such file exists on the local disk.** 
-> The origin of these two numbers has been traced to `research/studies/study_007_cross_sectional/fix/results_enhanced/style_attribution.csv`:
-> - **`-7.07%`** corresponds to the annualized excess return of **A1 (剔北交所)**, which is `-7.01%` (geometric) or `-7.07%` (arithmetic) in the CSV.
-> - **`-2.46`** corresponds to the arithmetic monthly-average annualized net alpha of **A2 (剔北交所+剔最小市值20%)**, which is `-2.4632%` in the CSV.
-> - **Conclusion**: In a previous LLM session, the reviewing model synthesized these two numbers, misread the arithmetic net alpha percentage `-2.46%` as a t-statistic `t = -2.46`, and hallucinated the filename `final_quant_VERIFICATION.md`. However, the underlying numbers are **real** and confirm that **once we exclude BJ and control for style, the selection alpha becomes negative (-3.69% to -6.13%)**.
+经 2023.01 - 2025.12 样本外数据对齐实测，各对冲方案的绩效指标对比展示出极大的背离：
+
+| 方案 / 指标 | 年化收益 (CAGR) | 年化波动率 | 夏普比率 (Sharpe) | 最大回撤 (MaxDD) | 月度胜率 |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **A0 股票多头组合 (未对冲)** | 16.78% | 26.25% | 0.723 | -36.35% | 61.11% |
+| **中证1000现货指数 (做空标的)** | 5.74% | 24.32% | 0.351 | -39.22% | 47.22% |
+| **A0 - 理论现货对冲 (纯选股Alpha)** | **9.85%** | **12.77%** | **0.801** | **-21.46%** | **63.89%** |
+| **A0 - IM期货直接对冲 (主力拼接版)** | 9.75% | 15.52% | 0.678 | -23.93% | 66.67% |
+| **A0 - 现货对冲扣除贴水拖累 (理论IM对冲)** | **0.57%** | **12.79%** | **0.109** | **-22.11%** | **52.78%** |
 
 > [!WARNING]
-> **2. Downgrading the Production Configuration to Candidate Proposal v0.9**
-> Following the unanimous consensus that the stock layer has questionable net alpha after friction, that `H_L60_k50` is a data-mining product that should not be in production, and that Study005 has a negative Sharpe ratio, we will:
-> - Rename [生产配置书.md](file:///C:/Users/liuqi/Documents/kimi/workspace/生产配置书.md) to [候选方案_v0.9_未通过净成本alpha门槛.md](file:///C:/Users/liuqi/Documents/kimi/workspace/候选方案_v0.9_未通过净成本alpha门槛.md).
-> - Rewrite the document to explicitly state it is a "Candidate Proposal" that failed the net cost alpha gate.
-> - Downgrade `H_L60_k50` and `CbLiQ` to the shadow track (observation only).
-> - Formally document the decision to halt the Study005 options live trading.
-
-> [!IMPORTANT]
-> **3. Strictly Re-building and Retraining A0 (Excluding BJ)**
-> To determine if the stock layer has any standalone value, we will modify the core research pipeline in [run_fixed.py](file:///c:/Users/liuqi/quant_system_v2/research/studies/study_007_cross_sectional/fix/run_fixed.py) to define `is_bj_code` and filter out Beijing Stock Exchange stocks during both the training phase (Step 3) and testing phases (Steps 4, 5, 6). This will give us a clean, non-BJ A0 portfolio with factor weights optimized purely on the non-BJ universe. If its net alpha remains negative after dual-side 0.6% costs, we will recommend permanently shutting down the stock layer.
+> **警惕“主力连续合约”的换月拼接陷阱**
+> 如果直接使用新浪主力连续合约收盘价的 `pct_change()` 作为做空收益（表中的“IM期货直接对冲”），会录得 **9.75%** 的 CAGR。但这是一个**回测假象**。
+>
+> 原因在于：IM 期货长期处于深幅贴水（折价）状态。在换月时，主力合约会向下跳空切换到更便宜的远月合约。在连续价格序列中，这个“向下跳空”被记为价格下跌，使短头（Short）产生暴利。
+>
+> 然而在实盘滚仓（Roll Over）中，由于我们必须在近月平仓（买回）并同时在远月开仓（卖出），**近月与远月的折价会变成真实的账面滚仓亏损**。
+>
+> 扣除真实的贴水收敛损耗（近三年均值约为年化 **-9.30%**）后，真实的 IM 期货对冲年化收益率（“现货对冲扣除贴水拖累”）将从 9.85% 暴跌至 **0.57%**，夏普比率跌至 **0.109**，基本失去投资价值。
 
 ---
 
-## Proposed Changes
+## 拟推进的研究方案
 
-### Configuration Components
+为了寻找摆脱贴水绞杀的路径，我们提出以下改进与验证步骤：
 
-#### [DELETE] [生产配置书.md](file:///C:/Users/liuqi/Documents/kimi/workspace/生产配置书.md)
-#### [NEW] [候选方案_v0.9_未通过净成本alpha门槛.md](file:///C:/Users/liuqi/Documents/kimi/workspace/候选方案_v0.9_未通过净成本alpha门槛.md)
+### 1. 对冲工具的多样化测试
+- **任务**：对比使用 **中证1000 ETF 融券** 替代 IM 期货对冲的可行性。
+- **逻辑**：融券做空 ETF 没有基差收敛的阻尼（不承受贴水损失），其摩擦成本表现为固定的融券年化利息（通常为 2.8% - 5.0%）。
+- **目标**：测算在 3% - 5% 融券成本约束下，A0 的融券对冲净收益是否能稳定在 **5.0% - 7.0% CAGR**。
 
-- Downgrade the title and header to a Candidate Proposal.
-- Shift the size timing `H_L60_k50` and convertible bond timing `CbLiQ` from the production section to the shadow observation section.
-- Add a dedicated section clarifying the negative net alpha gate and the Study005 options live trading halt.
-
----
-
-### Research Components
-
-#### [MODIFY] [run_fixed.py](file:///c:/Users/liuqi/quant_system_v2/research/studies/study_007_cross_sectional/fix/run_fixed.py)
-
-- Add a helper function `is_bj_code(ts)` to identify Beijing Stock Exchange tickers (ending with `.BJ` or starting with `920`, `8`, `4`).
-- Modify `step3()` to filter out BSE stocks from the `proc` DataFrame prior to computing monthly Rank ICs. This ensures the factor weights in `frozen_factors.csv` are trained strictly on the non-BSE universe.
-- Modify `step4()` to filter out BSE stocks from `proc` before score synthesis.
-- Modify `step5()` and `step6()` to filter out BSE stocks from scores and preprocessed data frames.
+### 2. 行业/风格中性化与多空匹配度优化
+- **任务**：测试在选股端加入严格的“中证1000行业中性”或“风格中性”约束。
+- **逻辑**：当前 A0 组合未作中性化，对冲后的年化波动率仍有 12.77%，这说明残余的非系统性风格/行业暴露很大。
+- **目标**：在中性化后降低跟踪误差，提升纯 Alpha 稳定性。
 
 ---
 
-## Verification Plan
+## 验证计划 (Verification Plan)
 
-### Automated Tests
+### 自动化回测
+- 运行 `backtest_hedged.py`，输出 `hedged_backtest_metrics.csv` 及对比图表 `hedged_backtest_nav.png`。
 
-1. Run the modified training and backtesting pipeline in `c:/Users/liuqi/quant_system_v2/research/studies/study_007_cross_sectional/fix`:
-   ```powershell
-   python run_fixed.py --steps 3,4,5,6,7
-   ```
-2. Regenerate the backtesting plots:
-   ```powershell
-   python make_charts.py
-   ```
-
-### Manual Verification
-
-- Inspect the generated `results_fixed/results.json` and `results_fixed/main_metrics_sensitivity.csv` to check the new out-of-sample CAGR, Sharpe, and MaxDD of `A0` (non-BJ trained and tested).
-- Compare the new non-BJ `A0` results with the original A0 (which included BJ in training/testing) to quantify the exact return decay.
-- Provide a clear conclusion on whether the stock layer has any remaining positive net alpha.
+### 敏感度分析
+- 测算做空工具成本从 2% 变化到 10% 时，对冲组合的净夏普比率变动曲线。
+- 确认融券费率门槛：找出使对冲 Sharpe 维持在 $> 0.5$ 的最高容忍融券成本。
