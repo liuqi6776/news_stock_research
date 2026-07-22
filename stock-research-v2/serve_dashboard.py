@@ -151,13 +151,29 @@ def get_my_holdings_status():
             })
             
     tot_pnl_pct = round(((tot_val / tot_cost - 1.0) * 100), 2) if tot_cost > 0 else 0.0
+    
+    # 计算月度调仓日与倒计时
+    trading_dates = sorted(df_pit['trade_date'].unique())
+    curr_date = latest_dt
+    df_dates = pd.DataFrame({'trade_date': trading_dates})
+    df_dates['year_month'] = df_dates['trade_date'].dt.strftime('%Y-%m')
+    last_trading_days = df_dates.groupby('year_month')['trade_date'].max().tolist()
+    
+    is_rebalance_day = (curr_date in last_trading_days)
+    next_rebalance_date = min([d for d in last_trading_days if d >= curr_date]) if any(d >= curr_date for d in last_trading_days) else curr_date
+    
+    days_left = len([d for d in trading_dates if curr_date < d <= next_rebalance_date])
+    
     return {
         'items': items,
         'tot_cost': round(tot_cost, 2),
         'tot_val': round(tot_val, 2),
         'tot_pnl_pct': tot_pnl_pct,
         'alerts': alerts,
-        'latest_date': latest_dt.strftime('%Y-%m-%d')
+        'latest_date': latest_dt.strftime('%Y-%m-%d'),
+        'is_rebalance_day': is_rebalance_day,
+        'next_rebalance_date': next_rebalance_date.strftime('%Y-%m-%d'),
+        'days_left': days_left
     }
 
 class DashboardHandler(BaseHTTPRequestHandler):
@@ -300,9 +316,10 @@ HTML_UI = """<!DOCTYPE html>
 
         <!-- Top Action Banner -->
         <div class="banner">
-            <div class="banner-title">
+            <div class="banner-title" id="rebalanceStatusTitle">
                 💡 手上 10 万元资金，今日该怎么买、怎么做？ (Action Directives)
             </div>
+            <div id="rebalanceWarningBanner" style="margin-top:8px; margin-bottom:12px;"></div>
             <div class="steps-grid">
                 <div class="step-card">
                     <div class="step-num">步骤 1 · 现金拨备 (40%)</div>
@@ -310,14 +327,14 @@ HTML_UI = """<!DOCTYPE html>
                     <div class="step-desc">选 银华日利(511880) 或 支付宝/微信理财，提供无风险 3% 底座。</div>
                 </div>
                 <div class="step-card">
-                    <div class="step-num">步骤 2 · 选券建仓 (60%)</div>
-                    <div class="step-text">6.0 万元 平均买入下表 TOP 20 转债</div>
-                    <div class="step-desc">单只买入约 3,000 元（约 20-30 张/整手），在券商软件按买入张数挂单。</div>
+                    <div class="step-num">步骤 2 · 月度调仓执行 (60%)</div>
+                    <div class="step-text" id="step2Text">6.0 万元 平均买入下表 TOP 20 转债</div>
+                    <div class="step-desc" id="step2Desc">仅在【月末最后一个交易日】调仓！日常请勿每日买卖。</div>
                 </div>
                 <div class="step-card">
-                    <div class="step-num">步骤 3 · 盘中盯防与月度调仓</div>
-                    <div class="step-text">日常盯防 -5% 止损 & 130元强平</div>
-                    <div class="step-desc">若持仓触发红/绿预警则卖出；月末最后一个交易日一键刷新调仓。</div>
+                    <div class="step-num">步骤 3 · 盘中风控防守</div>
+                    <div class="step-text">日常仅盯防 -5% 止损 & 130元强平</div>
+                    <div class="step-desc">若持仓触发红/绿预警才单只卖出，无预警则安心持仓锁仓。</div>
                 </div>
             </div>
         </div>
@@ -417,10 +434,25 @@ HTML_UI = """<!DOCTYPE html>
         }
 
         function renderDashboard(data) {
-            document.getElementById('dateBadge').innerText = '行情最新计算日期: ' + data.latest_date;
-            
-            // Render PnL
             const h = data.holdings;
+            const isRebal = h.is_rebalance_day;
+            const daysLeft = h.days_left;
+            
+            document.getElementById('dateBadge').innerHTML = `行情最新计算日期: ${data.latest_date} | 下次调仓日: ${h.next_rebalance_date} (还剩 <b>${daysLeft}</b> 个交易日)`;
+            
+            const warnBanner = document.getElementById('rebalanceWarningBanner');
+            if(isRebal) {
+                warnBanner.innerHTML = `<div style="background:rgba(16,185,129,0.15); border:1px solid rgba(16,185,129,0.4); border-radius:8px; padding:12px; color:#34d399; font-size:14px; font-weight:600;">
+                    🟢 今天是官方月度调仓日！请按下表 TOP 20 建议挂单卖旧买新，刷新组合。
+                </div>`;
+            } else {
+                warnBanner.innerHTML = `<div style="background:rgba(245,158,11,0.15); border:1px solid rgba(245,158,11,0.4); border-radius:8px; padding:12px; color:#fbbf24; font-size:13px;">
+                    <b>⚠️ 交易纪律锁仓提醒：</b> 今日非月度调仓日（距下次调仓日还剩 <b>${daysLeft}</b> 个交易日）。<br/>
+                    <b>实证数据警告：</b> 【日频每天换仓 19年累计亏损 -11.2%】，而【月频 4W 调仓年化盈利 +8.36%】！日常刷新仅用于查看持仓盈亏与 -5% 止损，<b>请勿每日手动卖旧买新</b>！
+                </div>`;
+            }
+
+            // Render PnL
             const pnlEl = document.getElementById('trialPnl');
             pnlEl.innerText = (h.tot_pnl_pct >= 0 ? '+' : '') + h.tot_pnl_pct + '%';
             pnlEl.style.color = h.tot_pnl_pct >= 0 ? 'var(--success)' : 'var(--danger)';
