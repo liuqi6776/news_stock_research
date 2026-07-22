@@ -46,32 +46,37 @@ def generate_signals(capital_allocated=1200000.0, top_n=20):
         return 0
     df_today['rating_rank'] = df_today['rating'].apply(get_rating_rank)
     
-    # 硬性防雷过滤 (按消融实验验证结果：保留硬评级/正股/规模/期限过滤，剔除溢价上限过滤)
+    # 1. 硬性防雷与安全过滤 (含强赎前置预警剔除 convert_value < 130)
     df_active = df_today.dropna(subset=['close', 'premium']).copy()
-    df_active = df_active[~df_active['stock_name'].str.contains('ST', na=False)] # 剔除 ST
-    df_active = df_active[df_active['issue_size'] >= 1.0]                          # 规模 >= 1.0亿
-    df_active = df_active[df_active['years_to_maturity'] >= 0.5]                  # 存续期 >= 0.5年
-    df_active = df_active[df_active['rating_rank'] >= 1]                           # 评级 >= A
+    df_active = df_active[~df_active['stock_name'].str.contains('ST', na=False)]  # 剔除 ST
+    df_active = df_active[df_active['issue_size'] >= 1.0]                           # 规模 >= 1.0亿
+    df_active = df_active[df_active['years_to_maturity'] >= 0.5]                   # 存续期 >= 0.5年
+    df_active = df_active[df_active['rating_rank'] >= 1]                            # 评级 >= A
+    if 'convert_value' in df_active.columns:
+        df_active = df_active[df_active['convert_value'] < 130.0]                  # 增强防雷：剔除已进入强赎区标的
     
-    # 多因子打分
-    r_dl = df_active['double_low'].rank(pct=True, ascending=True)
-    r_prem = df_active['premium'].rank(pct=True, ascending=True)
+    # 2. 因子解耦打分体系 (解耦双低与溢价率共线性，避免重复加权)
+    r_price = df_active['close'].rank(pct=True, ascending=True)                    # 20% 绝对低价防守
+    r_prem = df_active['premium'].rank(pct=True, ascending=True)                    # 25% 溢价率进攻弹性
+    
     mom_filled = df_active['stock_mom_20'].fillna(df_active['stock_mom_20'].median())
     vol_filled = df_active['stock_vol_20'].fillna(df_active['stock_vol_20'].median())
-    r_mom = mom_filled.rank(pct=True, ascending=False)
-    r_vol = vol_filled.rank(pct=True, ascending=True)
-    r_scale = df_active['issue_size'].rank(pct=True, ascending=True)
-    r_ytm = df_active['ytm'].rank(pct=True, ascending=False)
-    r_dist = df_active['dist_redempt'].rank(pct=True, ascending=False)
+    r_mom = mom_filled.rank(pct=True, ascending=False)                             # 15% 正股动量
+    r_vol = vol_filled.rank(pct=True, ascending=True)                              # 10% 低波优先
+    r_scale = df_active['issue_size'].rank(pct=True, ascending=True)               # 10% 小盘溢价
+    
+    pb_prem_filled = df_active['pure_bond_premium'].fillna(df_active['pure_bond_premium'].median())
+    r_pb_prem = pb_prem_filled.rank(pct=True, ascending=True)                      # 10% 纯债溢价率 (债底保护)
+    r_ytm = df_active['ytm'].rank(pct=True, ascending=False)                       # 10% 到期收益率 YTM (保本防守)
     
     df_active['score'] = (
-        0.30 * r_dl + 
-        0.30 * r_prem + 
-        0.10 * r_mom + 
+        0.20 * r_price + 
+        0.25 * r_prem + 
+        0.15 * r_mom + 
         0.10 * r_vol + 
         0.10 * r_scale + 
-        0.05 * r_ytm + 
-        0.05 * r_dist
+        0.10 * r_pb_prem + 
+        0.10 * r_ytm
     )
     
     df_top = df_active.sort_values('score').head(top_n).copy()
