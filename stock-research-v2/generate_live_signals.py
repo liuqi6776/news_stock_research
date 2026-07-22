@@ -46,12 +46,13 @@ def generate_signals(capital_allocated=1200000.0, top_n=20):
         return 0
     df_today['rating_rank'] = df_today['rating'].apply(get_rating_rank)
     
-    # 硬性防雷过滤
+    # 硬性防雷过滤 (含 Angle 4 溢价率<=70% 过滤)
     df_active = df_today.dropna(subset=['close', 'premium']).copy()
     df_active = df_active[~df_active['stock_name'].str.contains('ST', na=False)] # 剔除 ST
     df_active = df_active[df_active['issue_size'] >= 1.0]                          # 规模 >= 1.0亿
     df_active = df_active[df_active['years_to_maturity'] >= 0.5]                  # 存续期 >= 0.5年
     df_active = df_active[df_active['rating_rank'] >= 1]                           # 评级 >= A
+    df_active = df_active[df_active['premium'] <= 70.0]                           # Angle 4: 剔除溢价率 > 70% 的纯债性僵尸券
     
     # 多因子打分
     r_dl = df_active['double_low'].rank(pct=True, ascending=True)
