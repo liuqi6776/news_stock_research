@@ -487,7 +487,7 @@ def main():
     httpd = HTTPServer(server_address, DashboardHandler)
     url = f"http://127.0.0.1:{port}"
     print("\n" + "="*80)
-    print(f"       🚀 10万资金转债实盘控制台 Web 服务已启动！")
+    print(f"       [OK] 10万资金转债实盘控制台 Web 服务已启动！")
     print(f"       请在浏览器打开访问: {url}")
     print("="*80)
     webbrowser.open(url)
