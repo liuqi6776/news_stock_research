@@ -53,30 +53,28 @@ def generate_signals(capital_allocated=1200000.0, top_n=20):
     df_active = df_active[df_active['years_to_maturity'] >= 0.5]                   # 存续期 >= 0.5年
     df_active = df_active[df_active['rating_rank'] >= 1]                            # 评级 >= A
     if 'convert_value' in df_active.columns:
-        df_active = df_active[df_active['convert_value'] < 130.0]                  # 增强防雷：剔除已进入强赎区标的
+        df_active = df_active[df_active['convert_value'] < 130.0]                  # 优化1保留：剔除已进入强赎区标的
     
-    # 2. 因子解耦打分体系 (解耦双低与溢价率共线性，避免重复加权)
-    r_price = df_active['close'].rank(pct=True, ascending=True)                    # 20% 绝对低价防守
-    r_prem = df_active['premium'].rank(pct=True, ascending=True)                    # 25% 溢价率进攻弹性
+    # 2. 双低 7 因子打分体系 (保留原始 30% 双低 + 30% 溢价率架构，坚决不作过度优化)
+    r_dl = df_active['double_low'].rank(pct=True, ascending=True)                  # 30% 双低值
+    r_prem = df_active['premium'].rank(pct=True, ascending=True)                    # 30% 溢价率
     
     mom_filled = df_active['stock_mom_20'].fillna(df_active['stock_mom_20'].median())
     vol_filled = df_active['stock_vol_20'].fillna(df_active['stock_vol_20'].median())
-    r_mom = mom_filled.rank(pct=True, ascending=False)                             # 15% 正股动量
+    r_mom = mom_filled.rank(pct=True, ascending=False)                             # 10% 正股动量
     r_vol = vol_filled.rank(pct=True, ascending=True)                              # 10% 低波优先
     r_scale = df_active['issue_size'].rank(pct=True, ascending=True)               # 10% 小盘溢价
-    
-    pb_prem_filled = df_active['pure_bond_premium'].fillna(df_active['pure_bond_premium'].median())
-    r_pb_prem = pb_prem_filled.rank(pct=True, ascending=True)                      # 10% 纯债溢价率 (债底保护)
-    r_ytm = df_active['ytm'].rank(pct=True, ascending=False)                       # 10% 到期收益率 YTM (保本防守)
+    r_ytm = df_active['ytm'].rank(pct=True, ascending=False)                       # 5% 到期收益率 YTM
+    r_dist = df_active['dist_redempt'].rank(pct=True, ascending=False)             # 5% 强赎距离
     
     df_active['score'] = (
-        0.20 * r_price + 
-        0.25 * r_prem + 
-        0.15 * r_mom + 
+        0.30 * r_dl + 
+        0.30 * r_prem + 
+        0.10 * r_mom + 
         0.10 * r_vol + 
         0.10 * r_scale + 
-        0.10 * r_pb_prem + 
-        0.10 * r_ytm
+        0.05 * r_ytm + 
+        0.05 * r_dist
     )
     
     df_top = df_active.sort_values('score').head(top_n).copy()
