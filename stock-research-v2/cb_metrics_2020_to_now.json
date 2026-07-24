@@ -1,0 +1,45 @@
+{
+    "period": "2020-01-02 to 2026-07-14",
+    "cagr": "7.62%",
+    "sharpe": "0.762",
+    "max_drawdown": "-14.72%",
+    "calmar": "0.518",
+    "stop_loss_count": 296,
+    "yearly_performance": [
+        {
+            "Year": "2020",
+            "Return": "+14.60%",
+            "MaxDrawdown": "-9.35%"
+        },
+        {
+            "Year": "2021",
+            "Return": "+28.23%",
+            "MaxDrawdown": "-8.84%"
+        },
+        {
+            "Year": "2022",
+            "Return": "-4.56%",
+            "MaxDrawdown": "-9.67%"
+        },
+        {
+            "Year": "2023",
+            "Return": "+5.29%",
+            "MaxDrawdown": "-6.44%"
+        },
+        {
+            "Year": "2024",
+            "Return": "+1.15%",
+            "MaxDrawdown": "-10.25%"
+        },
+        {
+            "Year": "2025",
+            "Return": "+3.89%",
+            "MaxDrawdown": "-5.20%"
+        },
+        {
+            "Year": "2026",
+            "Return": "+2.33%",
+            "MaxDrawdown": "-6.65%"
+        }
+    ]
+}
