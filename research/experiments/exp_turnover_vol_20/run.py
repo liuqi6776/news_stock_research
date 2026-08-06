@@ -41,6 +41,18 @@ def main():
     print(f"[env] {env['python']} numpy={env['numpy']} pandas={env['pandas']} "
           f"upstream_commit={env['upstream_commit']}")
 
+    # 1.5) 数据快照检测（审查 P0-2: 数据漂移阻断）
+    snap = _common.check_data_manifest()
+    for msg in snap["update_msgs"]:
+        print(f"  [DATA-UPDATE] {msg}")
+    if not snap["ok"]:
+        for msg in snap["drift_msgs"]:
+            print(f"  [DATA-DRIFT] {msg}")
+        print("❌ 数据漂移: 实验结果不可复现。请先运行 make_data_manifest.py 重建快照。")
+        sys.exit(2)
+    if snap["baseline_generated_at"]:
+        print(f"[data] 基线快照 {snap['baseline_generated_at']} ({snap['mode']}) 与当前数据一致")
+
     # 2) 参数一致性校验（experiment.yaml vs 上游常量）
     import research.factor_dic.run_validation as rv
     assert rv.TOP_N == cfg["top_n"], f"TOP_N 漂移: {rv.TOP_N} != {cfg['top_n']}"
