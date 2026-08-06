@@ -33,3 +33,6 @@ memory/
 
 # Nested repo git backup (moved from .tmp_qc/.git, keep local only)
 .tmp_qc/.git_backup/
+
+# Conclusion archive repo (nested independent git, keep local only)
+quant_conclusion/
