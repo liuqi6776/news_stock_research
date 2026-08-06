@@ -1,0 +1,39 @@
+{
+  "snapshot_id": "data_20260806-v2",
+  "generated_at": "2026-08-06 22:21:15",
+  "mode": "quick",
+  "sources": {
+    "daily": {
+      "path": "D:/iquant_data/data_v2\\data_day1",
+      "exists": true,
+      "file_count": 2817,
+      "total_size": 595897158,
+      "mtime_min": "2024-07-28 20:22:02",
+      "mtime_max": "2026-08-05 23:58:57"
+    },
+    "index_weight": {
+      "path": "C:\\Users\\liuqi\\quant_system_v2\\research\\chip_momentum\\data\\index_weight",
+      "exists": true,
+      "file_count": 78,
+      "total_size": 950409,
+      "mtime_min": "2026-08-01 18:31:12",
+      "mtime_max": "2026-08-01 18:31:29"
+    },
+    "index_daily": {
+      "path": "C:\\Users\\liuqi\\quant_system_v2\\research\\chip_momentum\\data\\index_daily",
+      "exists": true,
+      "file_count": 7,
+      "total_size": 1127687,
+      "mtime_min": "2026-08-06 22:21:01",
+      "mtime_max": "2026-08-06 22:21:05"
+    },
+    "factor_data": {
+      "path": "C:\\Users\\liuqi\\quant_system_v2\\research\\factor_dic\\data",
+      "exists": true,
+      "file_count": 83,
+      "total_size": 36371598,
+      "mtime_min": "2026-08-02 09:19:16",
+      "mtime_max": "2026-08-04 07:16:09"
+    }
+  }
+}

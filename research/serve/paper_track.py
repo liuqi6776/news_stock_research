@@ -80,6 +80,7 @@ def load_idx_ret(code, start_date, end_date):
     df = pd.read_parquet(fp)
     df["trade_date"] = df["trade_date"].astype(str).str[:8]
     s = df.set_index("trade_date")["pct_chg"].astype(float) / 100.0
+    s = s.sort_index()  # parquet 为降序, 统一升序（cumprod/reindex 依赖时间序）
     return s.loc[(s.index >= start_date) & (s.index <= end_date)]
 
 
@@ -122,60 +123,60 @@ def main():
     bench_nav = (1 + bench.fillna(0.0)).cumprod()
     bench_nav = bench_nav / bench_nav.iloc[0]
 
-    # 组合模拟
+    # 组合模拟（单时间线）:
+    #  - 按 execution_date 去重（同日多份信号取最后生成; 如 RS12 翻转日 ETF→股票以最新为准）
+    #  - 执行日: 换仓 + 扣成本（换手近似 Σ|Δw|/2, 上限 20bps 固定口径）, 当日按开盘执行口径计新持仓收益
+    #  - 非执行日: 持有收益（目标权重固定, buy-and-hold 近似; 权重合计<1 部分视为现金 0 收益）
+    by_exec = {}
+    for s in signals:
+        by_exec[s["execution_date"]] = s
+    execs = sorted(by_exec)
+
     port_nav = 1.0
     nav_records = []
     holdings = {}       # code -> weight
     hold_ret = {}       # code -> Series(daily ret)
     pos_label = "现金"
+    exec_ptr = 0
 
-    for si, s in enumerate(signals):
-        exec_d = s["execution_date"]
-        if exec_d < first_exec or exec_d not in days:
-            continue
-        nxt_d = signals[si + 1]["execution_date"] if si + 1 < len(signals) else last_day
-        # 调仓: 换仓 + 扣固定成本
-        ops = s.get("order_picks") or s.get("picks") or []
-        new_hold = {}
-        if s.get("position") == "512100 ETF" or (isinstance(s.get("position"), str) and "ETF" in s["position"]):
-            new_hold = {"512100.SH": 1.0}
-            pos_label = "512100 ETF"
-        else:
-            wsum = sum(float(p["target_weight"]) for p in ops)
-            new_hold = {p["code"]: float(p["target_weight"]) for p in ops if float(p["target_weight"]) > 0}
-            pos_label = "股票组合"
-        # 成本: 换手近似 = Σ|Δw|/2, 成本 = 换手 × 双边 bps（上限 20bps 固定口径）
-        if holdings:
-            codes = set(new_hold) | set(holdings)
-            turn = sum(abs(new_hold.get(c, 0.0) - holdings.get(c, 0.0)) for c in codes) / 2.0
-        else:
-            turn = 1.0
-        cost = min(COST_BPS / 10000.0, turn * COST_BPS / 10000.0)
-        port_nav *= (1.0 - cost)
-        holdings = new_hold
-
-        # 持仓日收益序列
-        hold_ret = {}
-        for c, w in holdings.items():
-            if c in ETFS:
-                hold_ret[c] = load_idx_ret(c, exec_d, nxt_d)
+    for d in days:
+        if exec_ptr < len(execs) and execs[exec_ptr] == d:
+            s = by_exec[d]
+            new_hold = {}
+            if s.get("position") == "512100 ETF" or (isinstance(s.get("position"), str) and "ETF" in s["position"]):
+                new_hold = {"512100.SH": 1.0}
+                pos_label = "512100 ETF"
             else:
-                r = pct_df[c] if c in pct_df.columns else None
-                hold_ret[c] = (r / 100.0).loc[(r.index >= exec_d) & (r.index <= nxt_d)] if r is not None else None
-
-        for d in days:
-            if d < exec_d or d > nxt_d:
-                continue
-            if d == exec_d:
-                nav_records.append((d, port_nav, pos_label))
-                continue
-            r = 0.0
+                ops = s.get("order_picks") or s.get("picks") or []
+                new_hold = {p["code"]: float(p["target_weight"]) for p in ops if float(p["target_weight"]) > 0}
+                pos_label = "股票组合"
+            # 成本: 换手近似 = Σ|Δw|/2, 成本 = 换手 × 双边 bps（上限 20bps 固定口径）
+            if holdings:
+                codes = set(new_hold) | set(holdings)
+                turn = sum(abs(new_hold.get(c, 0.0) - holdings.get(c, 0.0)) for c in codes) / 2.0
+            else:
+                turn = 1.0
+            cost = min(COST_BPS / 10000.0, turn * COST_BPS / 10000.0)
+            port_nav *= (1.0 - cost)
+            holdings = new_hold
+            # 持仓日收益序列（执行日至末日; ETF 取 index_daily, 个股取日频面板）
+            hold_ret = {}
             for c, w in holdings.items():
-                sr = hold_ret.get(c)
-                if sr is not None and d in sr.index:
-                    r += w * sr.loc[d]
+                if c in ETFS:
+                    hold_ret[c] = load_idx_ret(c, d, last_day)
+                else:
+                    rr = pct_df[c] if c in pct_df.columns else None
+                    hold_ret[c] = (rr / 100.0).loc[(rr.index >= d) & (rr.index <= last_day)] if rr is not None else None
+            exec_ptr += 1
+
+        r = 0.0
+        for c, w in holdings.items():
+            sr = hold_ret.get(c)
+            if sr is not None and d in sr.index:
+                r += w * float(sr.loc[d])
+        if r:
             port_nav *= (1.0 + r)
-            nav_records.append((d, port_nav, pos_label))
+        nav_records.append((d, port_nav, pos_label))
 
     out = pd.DataFrame(nav_records, columns=["date", "port_nav", "position"]).set_index("date")
     out["bench_nav"] = bench_nav.reindex(out.index).ffill()

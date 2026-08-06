@@ -12,7 +12,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(
 from config.settings import settings
 
 OUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "chip_momentum", "data", "index_daily")
-START, END = "20180101", "20260731"
+START, END = "20180101", "20260806"
 
 INDICES = {"000300.SH": "沪深300", "000905.SH": "中证500", "000016.SH": "上证50", "932000.CSI": "中证2000", "000852.SH": "中证1000"}
 ETFS = {"512100.SH": "中证1000ETF", "510300.SH": "沪深300ETF"}

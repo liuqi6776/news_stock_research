@@ -1,7 +1,7 @@
 {
-  "snapshot_id": "data_20260806-v1",
-  "generated_at": "2026-08-06 16:21:50",
-  "mode": "full",
-  "manifest_sha256": "273e8e4b154970263952af94703acffab9f20120e3a052d41c718af7ac8115ed",
-  "path": "snapshots\\data_manifest_data_20260806-v1.json"
+  "snapshot_id": "data_20260806-v2",
+  "generated_at": "2026-08-06 22:21:15",
+  "mode": "quick",
+  "manifest_sha256": "29e7e9e0e6b7dcc61a147f99de83def0b2c01e9a1266edeef154ddc715cc6d77",
+  "path": "snapshots\\data_manifest_data_20260806-v2.json"
 }
