@@ -393,12 +393,14 @@ def run_fast(fkey):
     if n > 0:
         pr = pd.Series(port_rets)
         nav = (1 + pr).cumprod()
+        assert nav.min() > 0, f"nav 跌破 0 (min={nav.min():.4f}): 组合月收益存在异常值, 先排查数据"
         port_nav = nav.iloc[-1]
         bench_nav = (1 + pd.Series(bench_rets)).prod() if bench_rets else np.nan
         years = n / 12.0
         cagr_p = port_nav ** (1 / years) - 1 if port_nav > 0 else np.nan
         cagr_b = bench_nav ** (1 / years) - 1 if bench_nav > 0 and not np.isnan(bench_nav) else np.nan
-        mdd = (nav.cummax() - nav).max()
+        mdd = ((nav.cummax() - nav) / nav.cummax()).max()   # 相对回撤, ∈[0,1]
+        assert 0 <= mdd <= 1, f"MaxDD 超出 [0,1]: {mdd:.4f}"
         sharpe = pr.mean() / pr.std(ddof=1) * np.sqrt(12) if pr.std(ddof=1) > 0 else np.nan
         win = (pr > 0).mean()
         br = pd.Series(bench_rets) if bench_rets else pd.Series(np.nan, index=pr.index)

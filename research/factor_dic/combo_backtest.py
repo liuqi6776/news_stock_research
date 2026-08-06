@@ -278,7 +278,9 @@ def run_combo(rebal_dates, all_codes, ret_1m, ivol, turn, fwd, roe_pit, pct_df, 
         nav = pr.add(1).prod()
         cagr = nav ** (1 / years) - 1 if nav > 0 else np.nan
         nav_ser = pr.add(1).cumprod()
-        mdd = (nav_ser.cummax() - nav_ser).max()
+        assert nav_ser.min() > 0, f"nav 跌破 0 (min={nav_ser.min():.4f}): 组合月收益存在异常值"
+        mdd = ((nav_ser.cummax() - nav_ser) / nav_ser.cummax()).max()   # 相对回撤, ∈[0,1]
+        assert 0 <= mdd <= 1, f"MaxDD 超出 [0,1]: {mdd:.4f}"
         sharpe = pr.mean() / pr.std(ddof=1) * np.sqrt(12) if pr.std(ddof=1) > 0 else np.nan
         win = (pr > 0).mean()
         ex = nav / bench_nav - 1 if bench_nav == bench_nav else np.nan
