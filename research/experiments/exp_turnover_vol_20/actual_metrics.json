@@ -18,6 +18,6 @@
   "cagr_b": 0.03384656223037674,
   "excess": 0.4997189647152376,
   "data_snapshot": "data_20260806-v1",
-  "manifest_sha256": "84a551962ae8ec3d4abe417a7a5383deedf2d9971bce4c893a97a0072099c925",
-  "upstream_commit": "bc108c4"
+  "manifest_sha256": "273e8e4b154970263952af94703acffab9f20120e3a052d41c718af7ac8115ed",
+  "upstream_commit": "5be4c15"
 }

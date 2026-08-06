@@ -349,9 +349,9 @@ def run_fast(fkey):
         gmeans.append(m)
         print(f"  Q{q+1}: {m:.4f}  (n={len(vals)})")
 
-    # Top50 回测
+    # Top60 回测
     print(f"\n[回测] Top{TOP_N} 月度调仓, 成本 {COST_BPS}bps, 基准 {INDEX_CODE}")
-    port_rets, bench_rets = [], []
+    port_rets, bench_rets, port_dates, turnovers = [], [], [], []
     bench_daily = None
     bench_fp = os.path.join(IDX_DIR, f"{INDEX_CODE}.parquet")
     if os.path.exists(bench_fp):
@@ -359,6 +359,7 @@ def run_fast(fkey):
         bdf["trade_date"] = bdf["trade_date"].astype(str).str[:8]
         bench_daily = bdf.set_index("trade_date")
 
+    prev_picks = None
     for i, rb in enumerate(rebal_dates):
         members = load_index_weight(rb)
         if members is None:
@@ -384,6 +385,13 @@ def run_fast(fkey):
         gross = (1 + rm_daily).prod() - 1
         net = gross - COST_BPS / 10000.0
         port_rets.append(net)
+        port_dates.append(rb)
+        # 实际换手率 = 相对上期持仓替换比例（r5 成本敏感性用; 首期视为全换）
+        if prev_picks is None:
+            turnovers.append(1.0)
+        else:
+            turnovers.append(1.0 - len(set(picks) & set(prev_picks)) / TOP_N)
+        prev_picks = picks
         if bench_daily is not None:
             b = bench_daily["pct_chg"].reindex(hold_dates).fillna(0.0) / 100.0
             bench_rets.append((1 + b).prod() - 1)
@@ -391,7 +399,7 @@ def run_fast(fkey):
     n = len(port_rets)
     backtest_stats = {}
     if n > 0:
-        pr = pd.Series(port_rets)
+        pr = pd.Series(port_rets, index=port_dates, name="net_ret")
         nav = (1 + pr).cumprod()
         assert nav.min() > 0, f"nav 跌破 0 (min={nav.min():.4f}): 组合月收益存在异常值, 先排查数据"
         port_nav = nav.iloc[-1]
@@ -413,9 +421,16 @@ def run_fast(fkey):
     else:
         print("  无有效回测期")
 
-    # 保存结果(IC 序列 + 汇总文本)
+    # 保存结果(IC 序列 + 月度净收益序列 + 汇总文本)
     os.makedirs(OUT_DIR, exist_ok=True)
     ics.to_csv(os.path.join(OUT_DIR, f"ic_{fkey}.csv"))
+    if n > 0:
+        pr.to_csv(os.path.join(OUT_DIR, f"returns_{fkey}.csv"), header=["net_ret"])
+        pd.Series(turnovers, index=port_dates, name="turnover").to_csv(
+            os.path.join(OUT_DIR, f"turnover_{fkey}.csv"), header=["turnover"])
+        if bench_rets:
+            pd.Series(bench_rets, index=port_dates, name="bench_ret").to_csv(
+                os.path.join(OUT_DIR, "returns_bench.csv"), header=["bench_ret"])
     with open(os.path.join(OUT_DIR, f"summary_{fkey}.txt"), "w", encoding="utf-8") as fh:
         fh.write(f"factor={fkey}\nname={name}\ndirection={direction}\n")
         fh.write(f"ic_n={len(ics)}\nic_mean={ic_mean:.6f}\nicir={icir:.6f}\n")

@@ -1,0 +1,59 @@
+{
+  "scope": "P2-r4 strategy-return DSR/PBO (2026-08-06)",
+  "data_source": "research/factor_dic/results/returns_*.csv (run_validation.run_fast Top50 月度净收益)",
+  "n_factors": 21,
+  "n_month": 78,
+  "turnover_vol_20": {
+    "n_month": 78,
+    "sr_monthly": 0.151734007317678,
+    "skew": 0.3138275056193505,
+    "kurt": 4.539917445512584,
+    "dsr_by_n_trials": {
+      "21": 0.2836170956764562,
+      "100": 0.11887555803835942,
+      "600": 0.03946360994333068
+    }
+  },
+  "turnover_vol_20_excess_vs_bench": {
+    "n_month": 78,
+    "excess_sr_monthly": 0.14674971362807646,
+    "skew": 1.797960966384642,
+    "kurt": 13.51069638298652,
+    "dsr_by_n_trials": {
+      "21": 0.313649699327465,
+      "100": 0.1369712559604419,
+      "600": 0.04742539650457079
+    }
+  },
+  "family_rank_by_monthly_sr": {
+    "chip_new_profit": 0.17302526193651618,
+    "csad_std_21": 0.15556654548510576,
+    "turnover_vol_20": 0.151734007317678,
+    "volume_surge_vol": 0.13784352397166572,
+    "chip_bias": 0.09995336652724862,
+    "turnover_evil": 0.08994268608111984,
+    "net_mf_5d": 0.08258126263060685,
+    "momentum_long": 0.0822729476490803,
+    "csad_ratio_20_120": 0.0716357330016855,
+    "lg_net_5d": 0.06368390137228369,
+    "friday_momentum": 0.05703403155303555,
+    "reversal_5": 0.048338691435012945,
+    "chip_winner_rate": 0.04220067457985163,
+    "illiq_vol_20": 0.03722309701881662,
+    "loud_vol": 0.036561805188474183,
+    "turnover_extreme": 0.0314328497521287,
+    "moderate_loud_vol": 0.015285213298011194,
+    "illiq_traj_20": 0.011306367172846126,
+    "chip_bandwidth": -0.016667288710045924,
+    "net_support_vol": -0.018608498428371076,
+    "illiq_money_20": -0.02598862846603967
+  },
+  "turnover_vol_20_rank_in_family": 3,
+  "bench_monthly_sr": 0.07462504178854093,
+  "pbo_cscv": {
+    "n_splits_used": 1000,
+    "lambda_mean": 0.2012220528502163,
+    "pbo": 0.224
+  },
+  "interpretation": "PBO<0.50: 族内最佳选择无明显过拟合; DSR≥0.95: 收益序列显著性经 deflate 后仍稳健。两者均为策略层证据, 仍不替代冻结后独立 OOS。"
+}

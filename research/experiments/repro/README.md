@@ -1,0 +1,79 @@
+# repro — 核心策略逻辑最小公开复现包
+
+> quant_system_v2 的「公开复现实验成最小验证包」（外部评审 P1 建议）。
+> 定位：把研究仓库的核心数学逻辑提取为**纯函数**，配**固定种子合成数据**，
+> 让外部研究者**无需私有数据**即可独立验证 MaxDD 口径、PIT 对齐、T-1 信号、
+> walk-forward 拼接、HRP、数据漂移检测与文档指标同步的正确性。
+
+## 为什么存在
+
+外部多模型审查对结论库评级为「PASS-WITH-CONCERNS（归档）/ FAIL（可复现策略库）」，
+核心问题是：私有数据 + 文档表格难以外部核验。本包回应「P1: 公开复现实验成最小验证包」：
+
+- **纯函数**: 所有模块输入/输出为 pandas/numpy, 不读私有路径
+- **固定种子**: 合成数据与期望指标完全可复现
+- **冻结期望**: `expected_metrics/metrics.json` 冻结一次, 回归测试防逻辑漂移
+
+## 结构
+
+```
+repro/
+├── README.md                  # 本文件
+├── pyproject.toml             # 独立可安装（numpy/pandas/scipy/scikit-learn）
+├── conftest.py                # pytest 路径配置
+├── repro_core/                # 核心纯逻辑（7 模块 + 实验编排）
+│   ├── metrics.py             # MaxDD(相对口径)/CAGR/Sharpe/Calmar/月胜率/超额
+│   ├── alignment.py           # walk-forward 持有期拼接 + 基准/组合月收益
+│   ├── signals.py             # MA20 三/五/十/廿档、Vol、DD、CPPI/TIPP + T-1 位移
+│   ├── hrp.py                 # HRP 权重（LedoitWolf + single linkage）
+│   ├── pit.py                 # PIT: 成分股<=调仓日 / 未来收益 T+1~T+N / Rank IC / NW t
+│   ├── drift.py               # 数据漂移检测（轻量指纹 + sha256 核验）
+│   ├── docs_sync.py           # 文档指标同步（txt 解析 / 容差对比 / md 表格行）
+│   ├── synthetic.py           # 固定种子合成数据生成器
+│   └── experiment.py          # 端到端复现链路（IC -> Top-N -> 回测 -> 绩效）
+├── synthetic_data/            # 冻结的合成数据（外部可直接查看）
+├── expected_metrics/metrics.json  # 冻结期望指标
+├── scripts/generate_expected.py  # 冻结流程（生成期望 + 落盘数据）
+└── tests/                     # 62 项测试（纯逻辑性质 + 端到端回归）
+```
+
+## 快速开始
+
+```bash
+cd research/experiments/repro
+pip install -e ".[test]"        # 或使用已有环境（numpy/pandas/scipy/scikit-learn 即可）
+
+# 1) 跑全部测试（62 项）:
+python -m pytest tests -q
+
+# 2) （可选）重新冻结期望指标 + 合成数据:
+python scripts/generate_expected.py
+```
+
+> 注意: Windows 上 `pyproject.toml` 已配置 `addopts = "--assert=plain"`,
+> 规避 pytest 断言重写与 sklearn import 的已知死锁问题。
+
+## 与上游脚本的对应关系
+
+| repro_core 模块 | 上游来源 | 提取的核心口径 |
+|---|---|---|
+| metrics.max_drawdown | run_validation.py / risk_control_bt.py | `((cummax-nav)/cummax).max()` ∈ [0,1] |
+| alignment.hold_slices | risk_control_bt.py | `hold = trade_dates[hi+1:hn+1]`, rb 当日不含 |
+| alignment.portfolio_monthly | risk_control_bt.py | `net = gross - cost_bps/10000` |
+| signals.t1_shift | risk_control_bt.py | `idx_close_1 = idx_close.shift(1)`（2026-08-03 前视修复） |
+| signals.ma20_n_tier | risk_control_bt.py | `trend = clip((c/m-0.96)/0.04, 0, 1)`（RS12 段内） |
+| signals.cppi_weight | risk_control_bt.py | `floor = max(floor, alpha*hwm)`（TIPP 棘轮） |
+| hrp.hrp_weights | risk_control_bt._hrp_weights | 120 日窗口 / LedoitWolf / single linkage / 递归二分逆波动率 |
+| pit.forward_returns | run_validation.py | `cum.shift(-N)/cum - 1`（不含当日） |
+| pit.latest_index_weight | run_validation.py | 成分股 PIT: 取 <= 调仓日的最近一期 |
+| drift.check_manifest | experiments/_common.py | size/mtime 快速跳过 + sha256 核验 + 指针哈希 |
+| docs_sync.compare_metrics | experiments/_common.py | 数值容差 1% / 非数值仅存在性 |
+
+## 冻结流程与变更纪律
+
+1. 修改 repro_core 逻辑 → 先改 `tests/` 中对应性质断言
+2. 运行 `scripts/generate_expected.py` → 人工核对指标
+3. 冻结 `expected_metrics/metrics.json`（含参数）
+4. CI 中 `tests/test_end_to_end.py` 回归: 重跑与冻结值容差对比（rtol=1%）
+
+**纪律**: 冻结文件只在「逻辑有意的口径变更」时更新, 不允许为通过测试而改期望值。

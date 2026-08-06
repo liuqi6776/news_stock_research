@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "repro-core"
+version = "0.1.0"
+description = "quant_system_v2 核心策略逻辑最小公开复现包（纯函数, 无私有数据依赖, 固定种子可独立验证）"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.21",
+    "pandas>=1.3",
+    "scipy>=1.7",
+    "scikit-learn>=1.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7.0"]
+
+[tool.setuptools]
+packages = ["repro_core"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# Windows 上 pytest 断言重写与 sklearn import 死锁（已知兼容问题）: 禁用重写
+addopts = "--assert=plain"

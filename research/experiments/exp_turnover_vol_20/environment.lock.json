@@ -5,5 +5,5 @@
   "scipy": "1.9.1",
   "pyarrow": "21.0.0",
   "matplotlib": "3.5.2",
-  "upstream_commit": "bc108c4"
+  "upstream_commit": "5be4c15"
 }

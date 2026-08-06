@@ -1,0 +1,22 @@
+name: repro-consistency
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+
+jobs:
+  repro-tests:
+    name: 公开复现包 pytest (repro)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - name: 安装 repro 依赖
+        run: |
+          pip install -e research/experiments/repro
+      - name: 运行 repro 测试
+        run: |
+          python -m pytest research/experiments/repro -q
