@@ -1,0 +1,20 @@
+{
+  "BASE+VAL": {
+    "cagr": 0.1444,
+    "sharpe": 0.75,
+    "mdd": 0.2034,
+    "win": 0.603,
+    "excess_v_etf": 0.655,
+    "calmar": 0.71,
+    "avg_weight": 1.0
+  },
+  "+MA20三档098": {
+    "cagr": 0.1383,
+    "sharpe": 0.81,
+    "mdd": 0.1836,
+    "win": 0.564,
+    "excess_v_etf": 0.5991,
+    "calmar": 0.75,
+    "avg_weight": 0.63
+  }
+}

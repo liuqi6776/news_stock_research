@@ -1,0 +1,35 @@
+experiment: exp_ma20_risk_control
+title: MA20 三档风控（fixed deep=0.98）最小可复现实验
+strategy: BASE+VAL Top50 + RS12 择时 + MA20 三档风控（deep=0.98）
+variants_used: ["BASE+VAL", "+MA20三档098"]
+universe: 中证1000 成分股 Top50（月度调仓）
+cost_bps: 20            # 固定双边，非 turnover-based
+rebalance: 月末调仓，调仓期收益归属 rb_next
+risk_rule: 日频仓位系数 w（T-1 信号 T 日生效，2026-08-03 修复同日前视）；降仓部分按现金缓冲；RS12 弱时持 512100 ETF
+period: 2020-01 ~ 2026-07
+data_snapshot: "2026-08-06 运行 (数据含 2026-07-31 调仓日)"
+data_drift_note: |
+  与生成结论库旧数字(2026-06 快照)相比已漂移且结论方向变化:
+  +MA20三档098 年化 16.04%->13.83%, 无风控 BASE+VAL 15.12%->14.44%。
+  新快照下 MA20 风控收益已低于无风控(13.83% < 14.44%), 仅回撤改善仍成立
+  (18.36% vs 20.34%)。根因: 基准 512100/000852 序列更新 + 数据滚动。
+  结论库 risk_control.md 数字对应旧快照。
+is_oos: component_only  # 2018-2019 ETF/指数 MA20 独立验证（降回撤迹象，无成本）；完整策略 OOS 未验证
+upstream:
+  repo: quant_system_v2
+  script: research/factor_dic/risk_control_bt.py
+  entry: main()         # 全 21 变体，run.py 仅解析 "+MA20三档098" 与 "BASE+VAL"
+  commit: 9e0fa6b       # 由 run.py 环境锁定期核对
+data:
+  daily: "D:/iquant_data/data_v2/data_day1 (settings.daily_data_path, 私有)"
+  index_weight: research/chip_momentum/data/index_weight（PIT 快照）
+  index_daily: research/chip_momentum/data/index_daily（000852/000300/512100）
+expected_source: research/factor_dic/results/risk_control_bt.txt
+conclusion_doc: quant_conclusion/STOCK/risk_control.md
+environment:
+  python: ">=3.9"
+  numpy: ">=1.20"
+  pandas: ">=1.3"
+  pyarrow: ">=6"
+  matplotlib: ">=3.3"
+tolerance: {rtol: 0.01}

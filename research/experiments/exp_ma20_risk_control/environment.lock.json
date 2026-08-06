@@ -1,0 +1,9 @@
+{
+  "python": "3.9.13",
+  "numpy": "1.21.6",
+  "pandas": "2.0.3",
+  "scipy": "1.9.1",
+  "pyarrow": "21.0.0",
+  "matplotlib": "3.5.2",
+  "upstream_commit": "9e0fa6b"
+}
