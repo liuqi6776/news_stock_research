@@ -13,8 +13,10 @@ P2-r6: forward paper test 跟踪器（纸面组合绩效记录）
   - 基准: 000852.SH 从首个执行日起累计; 超额 = 组合/基准 - 1
 
 输出: research/serve/data/paper/paper_nav.csv（date, port_nav, bench_nav, excess, position）
+      + paper_nav_monthly.csv（自然月汇总: 组合/基准收益、月超额、换仓成本）
       + 控制台摘要。纸面组合为「进行中的前向 OOS 记录」, 不参与结论升降级,
       累计足够样本后（建议 ≥12 个完整调仓周期）再与回测对照。
+      观察维度（2026-08-06 所有者确认）: 先看逐日信号流, 再看逐月绩效。
 
 用法:
     python research/serve/paper_track.py
@@ -134,6 +136,7 @@ def main():
 
     port_nav = 1.0
     nav_records = []
+    cost_records = []   # (execution_date, cost_fraction)
     holdings = {}       # code -> weight
     hold_ret = {}       # code -> Series(daily ret)
     pos_label = "现金"
@@ -158,6 +161,7 @@ def main():
                 turn = 1.0
             cost = min(COST_BPS / 10000.0, turn * COST_BPS / 10000.0)
             port_nav *= (1.0 - cost)
+            cost_records.append((d, cost))
             holdings = new_hold
             # 持仓日收益序列（执行日至末日; ETF 取 index_daily, 个股取日频面板）
             hold_ret = {}
@@ -186,6 +190,30 @@ def main():
     fp = os.path.join(PAPER_DIR, "paper_nav.csv")
     out.to_csv(fp)
     print(f"[saved] {fp}")
+
+    # ---- 月频汇总（自然月; "再看逐月"观察维度） ----
+    monthly_rows = []
+    for month, g in out.groupby(out.index.str[:6], sort=True):
+        p0, p1 = g["port_nav"].iloc[0], g["port_nav"].iloc[-1]
+        b0, b1 = g["bench_nav"].iloc[0], g["bench_nav"].iloc[-1]
+        port_ret = p1 / p0 - 1.0
+        bench_ret = b1 / b0 - 1.0
+        month_cost = sum(c for d, c in cost_records if str(d)[:6] == month)
+        monthly_rows.append({
+            "month": month,
+            "days": len(g),
+            "port_ret": port_ret,
+            "bench_ret": bench_ret,
+            "excess": (1.0 + port_ret) / (1.0 + bench_ret) - 1.0,
+            "turnover_cost": month_cost,
+            "port_nav_end": p1,
+            "bench_nav_end": b1,
+        })
+    mout = pd.DataFrame(monthly_rows).set_index("month")
+    mfp = os.path.join(PAPER_DIR, "paper_nav_monthly.csv")
+    mout.to_csv(mfp)
+    print(f"[saved] {mfp}")
+    print(mout.round(6).to_string())
 
     # ---- 摘要 ----
     n = len(out)
