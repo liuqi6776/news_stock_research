@@ -29,21 +29,25 @@ C:\Users\liuqi\anaconda3\python.exe research/experiments/exp_ma20_risk_control/r
 5. 运行 invariants（nav>0、0≤MaxDD≤1 等）；
 6. 退出码 0=通过 / 1=指标不匹配 / 2=数据漂移。
 
-## 数据快照（审查 P0-2 可复现性）
+## 数据快照（审查 P0-2 可复现性 / 复审快照治理）
 
 `make_data_manifest.py` 对 4 个数据源（daily / index_weight / index_daily / factor_data）生成轻量指纹 + 全量 sha256：
 
-- `--quick` 仅聚合指纹（文件数/总大小/mtime 范围），适合快速巡检；
-- 默认 full 模式逐文件记录 `{sha256, size, mtime}` —— 实验 run.py 前置检测时用 size/mtime 快速跳过未变文件，仅在异常时 hash 核验，日常运行零 hash 开销；
-- 数据更新（仅新增文件，如 daily 新交易日）→ 提示 `[DATA-UPDATE]`，不阻断；既有文件内容/缺失 → `[DATA-DRIFT]` 阻断（退出码 2），需重建快照；
-- 逻辑测试: `python -m pytest research/experiments/tests/test_data_manifest.py`（无变化/内容修改/同尺寸修改/新增/删除/缺基线 6 例）。
+- **快照 ID 与历史保留（复审）**：每次生成 `snapshots/data_manifest_<snapshot_id>.json`（`data_YYYYMMDD-vN`），**历史快照永不覆盖**；`data_manifest.json` 仅作指针 `{snapshot_id, manifest_sha256, path}`，实验通过指针解析活动快照；
+- `--quick` 仅聚合指纹（文件数/总大小/mtime 范围），适合快速巡检；`--quick --no-pointer` 纯巡检不落盘；
+- 默认 full 模式逐文件记录 `{sha256, size, mtime}` —— 实验 run.py 前置检测时用 size/mtime 快速跳过未变文件，仅在异常时 hash 核验，日常运行零 hash 开销；快照文件自身有指针哈希核验（防篡改/损坏）；
+- 数据更新（仅新增文件，如 daily 新交易日）→ 提示 `[DATA-UPDATE]`，不阻断；既有文件内容/缺失 → `[DATA-DRIFT]` 阻断（退出码 2）；
+- **漂移处理流程（勿直接改期望值硬过）**：停实验 → `make_data_manifest.py` 生成新快照 → 重跑全部实验 → 对比 old-vs-new 指标差异 → 人工批准结论升级/降级（历史快照保留于 snapshots/）；
+- **结果绑定快照**：`actual_metrics.json` 记录 `data_snapshot` + `manifest_sha256` + `upstream_commit`；`expected_metrics.json` 记录冻结时的 `data_snapshot`，运行快照不一致时打印 `[WARN]`（不阻断，跨快照复现通过仅表示代码一致）；
+- 逻辑测试: `python -m pytest research/experiments/tests/test_data_manifest.py`（无变化/内容修改/同尺寸修改/新增/删除/缺指针/哈希篡改/快照缺失/旧格式兼容 9 例）。
 
 ## 目录结构约定（每实验）
 
 ```text
 experiments/
-├── make_data_manifest.py    # 数据快照生成器
-├── data_manifest.json       # 数据快照基线 (自动生成)
+├── make_data_manifest.py    # 数据快照生成器（快照 ID + 历史保留 + 指针）
+├── data_manifest.json       # 数据快照指针 (自动生成: {snapshot_id, manifest_sha256, path})
+├── snapshots/               # 历史快照归档 (data_manifest_<id>.json, 永不覆盖)
 ├── _common.py               # 共享: 环境探测/指标对比/txt 解析/数据漂移检测
 ├── tests/
 │   └── test_data_manifest.py  # 数据快照检测逻辑测试
@@ -51,8 +55,8 @@ experiments/
     ├── experiment.yaml        # 参数锁定: 股票池/调仓/成本/区间/上游 commit/数据路径
     ├── environment.lock.json  # 运行时自动生成: python/依赖版本 + 上游 commit
     ├── run.py                 # 一条命令入口
-    ├── expected_metrics.json  # 期望指标 (与结论库文档一致, 人工核对后冻结)
-    ├── actual_metrics.json    # 运行产物 (自动生成)
+    ├── expected_metrics.json  # 期望指标 (含冻结时 data_snapshot, 人工核对后冻结)
+    ├── actual_metrics.json    # 运行产物 (含 data_snapshot/manifest_sha256/upstream_commit)
     ├── report.md              # 实验说明与结论库对应关系
     └── tests/
         ├── __init__.py

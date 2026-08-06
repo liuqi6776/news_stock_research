@@ -16,5 +16,8 @@
   "win": 0.5384615384615384,
   "bench_nav": 1.2415510220368169,
   "cagr_b": 0.03384656223037674,
-  "excess": 0.4997189647152376
+  "excess": 0.4997189647152376,
+  "data_snapshot": "data_20260806-v1",
+  "manifest_sha256": "84a551962ae8ec3d4abe417a7a5383deedf2d9971bce4c893a97a0072099c925",
+  "upstream_commit": "bc108c4"
 }

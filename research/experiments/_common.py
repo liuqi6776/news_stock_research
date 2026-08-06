@@ -54,7 +54,10 @@ def write_json(path, obj):
 
 
 def compare_metrics(actual, expected, rtol=0.01, atol=0.0):
-    """递归对比 actual/expected, 返回差异字符串列表; 空列表 = 全部通过。"""
+    """递归对比 actual/expected, 返回差异字符串列表; 空列表 = 全部通过。
+
+    数值键做容差比较; 非数值键（如 data_snapshot 字符串）仅做存在性检查。
+    """
     diffs = []
 
     def walk(a, e, prefix=""):
@@ -66,7 +69,7 @@ def compare_metrics(actual, expected, rtol=0.01, atol=0.0):
                 walk(a.get(k, {}), ev, key + ".")
             elif k not in a:
                 diffs.append(f"missing {key}")
-            else:
+            elif isinstance(ev, (int, float)):
                 av = a[k]
                 if av is None or (isinstance(av, float) and av != av):
                     diffs.append(f"{key}: actual NaN")
@@ -74,6 +77,7 @@ def compare_metrics(actual, expected, rtol=0.01, atol=0.0):
                 tol = rtol * abs(ev) + atol
                 if abs(av - ev) > tol:
                     diffs.append(f"{key}: {av:.6f} vs expected {ev:.6f} (tol {tol:.6f})")
+            # 非数值（如快照 ID）: 仅要求 actual 存在, 不比较内容
 
     walk(actual, expected)
     return diffs
@@ -156,25 +160,58 @@ def _scan_light(path):
 
 
 def check_data_manifest(manifest_path=None):
-    """检测数据漂移: 对比当前数据源与基线 manifest（审查 P0-2 可复现性）。
+    """检测数据漂移: 对比当前数据源与活动快照（审查 P0-2 / 复审快照治理）。
 
-    基线: research/experiments/data_manifest.json（make_data_manifest.py 生成）
+    基线: research/experiments/data_manifest.json（指针）-> snapshots/data_manifest_<id>.json
     返回 dict:
-        ok          True=可安全运行
-        drift_msgs  漂移（既有文件被修改/删除）→ 必须阻断, 先重建 manifest
-        update_msgs 仅新增文件/数据更新 → 提示, 不阻断
-        baseline_generated_at, mode
+        ok             True=可安全运行
+        drift_msgs     漂移（既有文件被修改/删除/指针损坏）→ 必须阻断
+        update_msgs    仅新增文件/数据更新 → 提示, 不阻断
+        snapshot_id, manifest_sha256, baseline_generated_at, mode
+    漂移处理流程（勿直接改期望值硬过）:
+        停实验 → make_data_manifest.py 生成新快照 → 重跑全部实验
+        → old-vs-new 指标差异 → 人工批准结论升级/降级（历史快照保留于 snapshots/）
     """
     path = manifest_path or _default_manifest_path()
     base = {"drift_msgs": [], "update_msgs": [], "ok": True,
+            "snapshot_id": None, "manifest_sha256": None,
             "baseline_generated_at": None, "mode": None}
     if not os.path.isfile(path):
-        base["drift_msgs"].append(f"缺少数据快照 {os.path.basename(path)}: "
-                                  f"先运行 make_data_manifest.py 生成基线")
+        base["drift_msgs"].append(f"缺少数据快照指针 {os.path.basename(path)}: "
+                                  f"先运行 make_data_manifest.py 生成快照")
         base["ok"] = False
         return base
     with open(path, encoding="utf-8") as fh:
-        m = json.load(fh)
+        try:
+            ptr = json.load(fh)
+        except json.JSONDecodeError as e:
+            base["drift_msgs"].append(f"数据快照指针损坏（{os.path.basename(path)} 非合法 JSON: {e}）")
+            base["ok"] = False
+            return base
+
+    # 指针格式: {snapshot_id, path, manifest_sha256}; 兼容旧格式(顶层含 sources 直接当 manifest)
+    if "sources" in ptr:
+        m, base["snapshot_id"], base["manifest_sha256"] = ptr, "legacy", None
+    else:
+        snap_path = os.path.join(os.path.dirname(path), ptr.get("path", ""))
+        if not os.path.isfile(snap_path):
+            base["drift_msgs"].append(f"快照文件缺失: {snap_path}（指针指向的活动快照被移动/删除）")
+            base["ok"] = False
+            return base
+        with open(snap_path, encoding="utf-8") as fh:
+            try:
+                m = json.load(fh)
+            except json.JSONDecodeError as e:
+                base["drift_msgs"].append(f"快照文件损坏（{snap_path} 非合法 JSON: {e}）")
+                base["ok"] = False
+                return base
+        digest = _sha256_file(snap_path)
+        if ptr.get("manifest_sha256") and digest != ptr["manifest_sha256"]:
+            base["drift_msgs"].append(f"快照文件与指针哈希不一致（{snap_path} 疑似被修改/损坏）")
+            base["ok"] = False
+            return base
+        base["snapshot_id"] = ptr.get("snapshot_id") or m.get("snapshot_id")
+        base["manifest_sha256"] = ptr.get("manifest_sha256")
     base["baseline_generated_at"] = m.get("generated_at")
     base["mode"] = m.get("mode")
 

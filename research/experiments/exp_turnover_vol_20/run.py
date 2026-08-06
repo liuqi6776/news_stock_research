@@ -48,10 +48,14 @@ def main():
     if not snap["ok"]:
         for msg in snap["drift_msgs"]:
             print(f"  [DATA-DRIFT] {msg}")
-        print("❌ 数据漂移: 实验结果不可复现。请先运行 make_data_manifest.py 重建快照。")
+        print("❌ 数据漂移/快照异常: 实验结果不可复现。处理流程（勿直接改期望值硬过）:")
+        print("   1) 停实验 2) 运行 make_data_manifest.py 生成新快照 "
+              "3) 重跑全部实验 4) 对比 old-vs-new 指标差异 5) 人工批准结论升级/降级")
         sys.exit(2)
     if snap["baseline_generated_at"]:
-        print(f"[data] 基线快照 {snap['baseline_generated_at']} ({snap['mode']}) 与当前数据一致")
+        print(f"[data] 活动快照 {snap['snapshot_id']} @ {snap['baseline_generated_at']} "
+              f"({snap['mode']}) 与当前数据一致")
+        print(f"       manifest_sha256={snap['manifest_sha256']}")
 
     # 2) 参数一致性校验（experiment.yaml vs 上游常量）
     import research.factor_dic.run_validation as rv
@@ -63,14 +67,21 @@ def main():
     print(f"\n[run] 执行上游 run_fast('{FACTOR}') ...")
     rv.run_fast(FACTOR)
 
-    # 4) 采集指标
+    # 4) 采集指标 + 绑定数据快照（复审: 结果必须绑定唯一快照）
     summary = os.path.join(os.path.dirname(rv.__file__), "results", f"summary_{FACTOR}.txt")
     actual = _common.parse_summary_txt(summary)
+    actual["data_snapshot"] = snap["snapshot_id"]
+    actual["manifest_sha256"] = snap["manifest_sha256"]
+    actual["upstream_commit"] = env["upstream_commit"]
     _common.write_json(os.path.join(HERE, "actual_metrics.json"), actual)
 
     # 5) 对比 expected
     with open(os.path.join(HERE, "expected_metrics.json"), encoding="utf-8") as fh:
         expected = json.load(fh)
+    exp_snap = expected.get("data_snapshot")
+    if exp_snap and exp_snap != snap["snapshot_id"]:
+        print(f"  [WARN] expected_metrics.json 冻结于快照 {exp_snap}, 当前活动快照 "
+              f"{snap['snapshot_id']} — 数字跨快照, 复现通过仅表示代码一致")
     diffs = _common.compare_metrics(actual, expected, rtol=cfg["tolerance"]["rtol"])
 
     # 6) invariants
