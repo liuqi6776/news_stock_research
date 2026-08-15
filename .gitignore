@@ -28,6 +28,9 @@ research/**/predictions/*.parquet
 !/research/**/data/.gitkeep
 daily_chip.csv
 
+# 抓取新闻网页数据（运行时生成，不应进 git）
+jiayo-analysis/data/
+
 # Agent session memory (private, not for repo)
 memory/
 
