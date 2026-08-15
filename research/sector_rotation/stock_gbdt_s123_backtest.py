@@ -277,7 +277,9 @@ def run_backtest(score_src, top_tag, sell_mode, timing, tgt_vol=None,
     month_last_map = {d // 100: d for d in sorted(panel["trade_date"].unique())}
 
     def rebal_scores(d):
-        prev_ym = d // 100 - 1
+        y = d // 10000
+        m = (d // 100) % 100
+        prev_ym = (y - 1) * 100 + 12 if m == 1 else y * 100 + (m - 1)
         snap = month_last_map.get(prev_ym)
         if snap is None:
             return None
@@ -351,7 +353,7 @@ def run_backtest(score_src, top_tag, sell_mode, timing, tgt_vol=None,
                         o = open_w.at[d, c]
                         if np.isnan(o) or o <= 0:
                             continue
-                        plim = preclose_w.at[d, c] * (0.9 if c[:3] in ("300", "688") else 0.95) if not np.isnan(preclose_w.at[d, c]) else 0
+                        plim = preclose_w.at[d, c] * (0.8 if c[:3] in ("300", "688") else 0.9) if not np.isnan(preclose_w.at[d, c]) else 0
                         if not np.isnan(plim) and o <= plim * 1.0:  # 跌停不买
                             continue
                         sh = int(alloc / (o * 1.001) // 100 * 100)
@@ -402,7 +404,7 @@ def run_backtest(score_src, top_tag, sell_mode, timing, tgt_vol=None,
                         have = positions.get(c, 0) * close_w.at[d, c]
                         diff = alloc - have
                         if diff > 100:  # 买
-                            plim = preclose_w.at[d, c] * (0.9 if c[:3] in ("300", "688") else 0.95) if not np.isnan(preclose_w.at[d, c]) else 0
+                            plim = preclose_w.at[d, c] * (0.8 if c[:3] in ("300", "688") else 0.9) if not np.isnan(preclose_w.at[d, c]) else 0
                             if not np.isnan(plim) and o <= plim:
                                 continue
                             sh = int(diff / (o * 1.001) // 100 * 100)
@@ -529,6 +531,24 @@ rows.append({"版本": "T7_ETF对照", "CAGR": st7["CAGR"], "MaxDD": st7["MaxDD"
              "Calmar": st7["Calmar"], "Sharpe": st7["Sharpe"]})
 pd.DataFrame(rows).to_csv(os.path.join(OUT_DIR, "stock_gbdt_s123_matrix.csv"),
                           index=False, encoding="utf-8-sig")
+
+# ============ 7b. 2023-01 起子区间: ENS vs ENH4 vs GBDT (坐实 GBDT 增量) ============
+print("\n[7b] 2023-01 起子区间: ENS vs ENH4 vs GBDT (T40_S123_ONLY_S123)...", flush=True)
+sub_configs = [
+    ("ENS_T40_S123_ONLY_S123", "ENS", "T40", "S123_ONLY", True),
+    ("ENH_T40_S123_ONLY_S123", "ENH", "T40", "S123_ONLY", True),
+    ("GBDT_T40_S123_ONLY_S123", "GBDT", "T40", "S123_ONLY", True),
+]
+sub_rows = []
+for tag, score_src, top_tag, sell_mode, timing in sub_configs:
+    res = run_backtest(score_src, top_tag, sell_mode, timing, period=2023)
+    sub_rows.append({"版本": f"{tag}_2023起", "CAGR": res["ann"], "MaxDD": res["maxdd"],
+                     "Calmar": res["calmar"], "Sharpe": res["sharpe"]})
+    print(f"  {tag:<36} CAGR={res['ann']:>7.2%} MaxDD={res['maxdd']:>7.2%} "
+          f"Calmar={res['calmar']:>5.2f} Sharpe={res['sharpe']:>5.2f}", flush=True)
+pd.DataFrame(sub_rows).to_csv(os.path.join(OUT_DIR, "stock_gbdt_s123_subperiod_2023.csv"),
+                              index=False, encoding="utf-8-sig")
+print(f"[存] 子区间结果已保存: stock_gbdt_s123_subperiod_2023.csv")
 
 # ============ 8. 对比图 (NAV + 回撤 + 年度) ============
 KEY = [

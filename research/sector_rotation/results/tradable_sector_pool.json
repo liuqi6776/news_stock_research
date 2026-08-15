@@ -1,0 +1,272 @@
+{
+  "一带一路": {
+    "funds": 14,
+    "with_nav": 14,
+    "sample": "007786",
+    "sample_name": "富国中证国企一带一路ETF联接A",
+    "first_date": "2019-12-31 00:00:00",
+    "last_date": "2026-08-06 00:00:00",
+    "rows": 1594
+  },
+  "交通运输": {
+    "funds": 7,
+    "with_nav": 7,
+    "sample": "018905",
+    "sample_name": "国泰交通运输ETF联接A",
+    "first_date": "2023-08-03 00:00:00",
+    "last_date": "2026-08-04 00:00:00",
+    "rows": 728
+  },
+  "人工智能": {
+    "funds": 176,
+    "with_nav": 176,
+    "sample": "008020",
+    "sample_name": "华富中证人工智能产业ETF联接A",
+    "first_date": "2020-04-23 00:00:00",
+    "last_date": "2026-08-06 00:00:00",
+    "rows": 1528
+  },
+  "传媒": {
+    "funds": 27,
+    "with_nav": 27,
+    "sample": "004752",
+    "sample_name": "广发中证传媒ETF联接A",
+    "first_date": "2018-01-02 00:00:00",
+    "last_date": "2026-08-06 00:00:00",
+    "rows": 2082
+  },
+  "公用事业": {
+    "funds": 12,
+    "with_nav": 12,
+    "sample": "022869",
+    "sample_name": "华夏公用事业ETF联接A",
+    "first_date": "2024-12-24 00:00:00",
+    "last_date": "2026-08-06 00:00:00",
+    "rows": 388
+  },
+  "军工": {
+    "funds": 66,
+    "with_nav": 63,
+    "sample": "000596",
+    "sample_name": "前海开源中证军工指数A",
+    "first_date": "2014-05-27 00:00:00",
+    "last_date": "2026-08-06 00:00:00",
+    "rows": 2970
+  },
+  "农业": {
+    "funds": 45,
+    "with_nav": 43,
+    "sample": "001027",
+    "sample_name": "前海开源中证大农业指数增强A",
+    "first_date": "2015-02-13 00:00:00",
+    "last_date": "2026-08-06 00:00:00",
+    "rows": 2777
+  },
+  "化工": {
+    "funds": 28,
+    "with_nav": 26,
+    "sample": "012537",
+    "sample_name": "华宝中证细分化工产业主题ETF联接A",
+    "first_date": "2021-06-24 00:00:00",
+    "last_date": "2026-08-06 00:00:00",
+    "rows": 1244
+  },
+  "医药医疗": {
+    "funds": 273,
+    "with_nav": 269,
+    "sample": "000059",
+    "sample_name": "国联安中证医药100A",
+    "first_date": "2013-08-21 00:00:00",
+    "last_date": "2026-08-06 00:00:00",
+    "rows": 3140
+  },
+  "半导体芯片": {
+    "funds": 152,
+    "with_nav": 147,
+    "sample": "007300",
+    "sample_name": "国联安中证半导体ETF联接A",
+    "first_date": "2019-06-26 00:00:00",
+    "last_date": "2026-08-06 00:00:00",
+    "rows": 1731
+  },
+  "地产": {
+    "funds": 29,
+    "with_nav": 28,
+    "sample": "001469",
+    "sample_name": "广发中证全指金融地产联接A",
+    "first_date": "2015-07-09 00:00:00",
+    "last_date": "2026-08-06 00:00:00",
+    "rows": 2696
+  },
+  "基建": {
+    "funds": 16,
+    "with_nav": 16,
+    "sample": "005223",
+    "sample_name": "广发中证基建工程ETF联接A",
+    "first_date": "2018-02-01 00:00:00",
+    "last_date": "2026-08-06 00:00:00",
+    "rows": 2063
+  },
+  "家电": {
+    "funds": 20,
+    "with_nav": 20,
+    "sample": "012461",
+    "sample_name": "东财龙头家电A",
+    "first_date": "2021-07-05 00:00:00",
+    "last_date": "2026-08-06 00:00:00",
+    "rows": 1221
+  },
+  "建材": {
+    "funds": 3,
+    "with_nav": 3,
+    "sample": "159745",
+    "sample_name": "建材ETF国泰",
+    "first_date": "2021-06-09 00:00:00",
+    "last_date": "2026-08-06 00:00:00",
+    "rows": 1253
+  },
+  "建筑": {
+    "funds": 2,
+    "with_nav": 2,
+    "sample": "004856",
+    "sample_name": "广发中证全指建筑材料指数A",
+    "first_date": "2017-08-02 00:00:00",
+    "last_date": "2026-08-06 00:00:00",
+    "rows": 2178
+  },
+  "新能源": {
+    "funds": 211,
+    "with_nav": 205,
+    "sample": "009067",
+    "sample_name": "国泰中证新能源汽车ETF联接A",
+    "first_date": "2020-04-03 00:00:00",
+    "last_date": "2026-08-06 00:00:00",
+    "rows": 1540
+  },
+  "有色金属": {
+    "funds": 101,
+    "with_nav": 99,
+    "sample": "004432",
+    "sample_name": "南方有色金属ETF联接A",
+    "first_date": "2017-09-08 00:00:00",
+    "last_date": "2026-08-06 00:00:00",
+    "rows": 2156
+  },
+  "机械": {
+    "funds": 34,
+    "with_nav": 33,
+    "sample": "020903",
+    "sample_name": "广发工程机械ETF联接A",
+    "first_date": "2024-03-25 00:00:00",
+    "last_date": "2026-08-06 00:00:00",
+    "rows": 573
+  },
+  "汽车": {
+    "funds": 70,
+    "with_nav": 68,
+    "sample": "004854",
+    "sample_name": "广发中证全指汽车指数A",
+    "first_date": "2017-07-31 00:00:00",
+    "last_date": "2026-08-06 00:00:00",
+    "rows": 2180
+  },
+  "煤炭": {
+    "funds": 11,
+    "with_nav": 11,
+    "sample": "008279",
+    "sample_name": "国泰中证煤炭ETF联接A",
+    "first_date": "2020-01-16 00:00:00",
+    "last_date": "2026-08-06 00:00:00",
+    "rows": 1572
+  },
+  "环保": {
+    "funds": 12,
+    "with_nav": 12,
+    "sample": "001064",
+    "sample_name": "广发中证环保ETF联接A",
+    "first_date": "2015-03-25 00:00:00",
+    "last_date": "2026-08-06 00:00:00",
+    "rows": 2768
+  },
+  "电力": {
+    "funds": 50,
+    "with_nav": 47,
+    "sample": "016185",
+    "sample_name": "广发电力ETF联接A",
+    "first_date": "2022-07-19 00:00:00",
+    "last_date": "2026-08-06 00:00:00",
+    "rows": 983
+  },
+  "电子": {
+    "funds": 11,
+    "with_nav": 11,
+    "sample": "001617",
+    "sample_name": "天弘中证电子ETF联接A",
+    "first_date": "2015-07-29 00:00:00",
+    "last_date": "2026-08-06 00:00:00",
+    "rows": 2685
+  },
+  "白酒消费": {
+    "funds": 141,
+    "with_nav": 140,
+    "sample": "000248",
+    "sample_name": "汇添富中证主要消费ETF联接A",
+    "first_date": "2015-03-24 00:00:00",
+    "last_date": "2026-08-06 00:00:00",
+    "rows": 2743
+  },
+  "石油石化": {
+    "funds": 43,
+    "with_nav": 43,
+    "sample": "017855",
+    "sample_name": "华夏中证石化产业ETF发起式联接A",
+    "first_date": "2023-03-14 00:00:00",
+    "last_date": "2026-08-06 00:00:00",
+    "rows": 821
+  },
+  "计算机软件": {
+    "funds": 134,
+    "with_nav": 129,
+    "sample": "001113",
+    "sample_name": "南方大数据100A",
+    "first_date": "2015-04-24 00:00:00",
+    "last_date": "2026-08-06 00:00:00",
+    "rows": 2737
+  },
+  "证券保险": {
+    "funds": 103,
+    "with_nav": 102,
+    "sample": "000950",
+    "sample_name": "易方达证券保险ETF联接A",
+    "first_date": "2015-01-22 00:00:00",
+    "last_date": "2026-08-06 00:00:00",
+    "rows": 2809
+  },
+  "通信": {
+    "funds": 48,
+    "with_nav": 47,
+    "sample": "001361",
+    "sample_name": "景顺长城中证科技传媒通信150ETF联接A",
+    "first_date": "2015-06-15 00:00:00",
+    "last_date": "2026-08-06 00:00:00",
+    "rows": 2703
+  },
+  "钢铁": {
+    "funds": 9,
+    "with_nav": 9,
+    "sample": "008189",
+    "sample_name": "国泰中证钢铁ETF联接A",
+    "first_date": "2020-01-20 00:00:00",
+    "last_date": "2026-08-06 00:00:00",
+    "rows": 1571
+  },
+  "银行": {
+    "funds": 51,
+    "with_nav": 50,
+    "sample": "001594",
+    "sample_name": "天弘中证银行ETF联接A",
+    "first_date": "2015-07-08 00:00:00",
+    "last_date": "2026-08-06 00:00:00",
+    "rows": 2700
+  }
+}
