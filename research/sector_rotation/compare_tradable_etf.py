@@ -40,6 +40,7 @@ ETFS = {
     "沪深300指数 000300": "000300.SH",
     "上证50指数 000016": "000016.SH",
 }
+# 注意: 中证2000(932000) 2023-08 才发布, 此前"历史"为指数公司回算, 引用其全区间 CAGR 需加脚注
 
 def load_etf(code):
     df = pd.read_parquet(os.path.join(IDX_DIR, f"{code}.parquet"))
@@ -51,6 +52,7 @@ def load_etf(code):
     return s / s.iloc[0] * INIT
 
 def stats(nav):
+    nav = nav.dropna()  # 晚成立标的剔除上市前的 NaN, 年化按自身有效区间计算(否则全区间 8.9 年摊薄 CAGR)
     tr = nav.iloc[-1] / INIT - 1
     years = (nav.index[-1] - nav.index[0]).days / 365.25
     ann = (1 + tr) ** (1 / years) - 1 if years > 0 else np.nan

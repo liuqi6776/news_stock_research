@@ -15,7 +15,7 @@
 
 对照: 全市场等权 (无成本)
 """
-import os, glob, time, warnings
+import os, glob, time, warnings, bisect
 warnings.filterwarnings("ignore")
 import numpy as np
 import pandas as pd
@@ -82,12 +82,24 @@ def get_close(code, dt):
             hi = mid - 1
     return None
 
+def get_close_asof(code, dt):
+    """最近 <= dt 的收盘价(停牌/缺价时用最后可得价结转); 无任何可得价返回 None"""
+    if code not in CL_MAP:
+        return None
+    dates, closes = CL_MAP[code]
+    i = bisect.bisect_right(dates, dt) - 1
+    return closes[i] if i >= 0 else None
+
+# 每只股票的最后交易日/最后收盘价: 用于识别退市(数据终止)并强平
+LAST_DATE = {code: dates[-1] for code, (dates, _) in CL_MAP.items()}
+LAST_CLOSE = {code: closes[-1] for code, (_, closes) in CL_MAP.items()}
+
 # 月末选股 → 下一个交易日生效
 RB = {}
 for m, plist in PICKS.items():
     m_dt = pd.to_datetime(str(m), format="%Y%m%d")
     for td in ALL_DAYS:
-        if td >= m_dt:
+        if td > m_dt:  # 收盘生成信号, 下一交易日成交(与 freeze 口径一致)
             RB[td] = plist
             break
 
@@ -95,12 +107,24 @@ START = pd.Timestamp("2018-01-01")
 start_idx = next(i for i, d in enumerate(ALL_DAYS) if d >= START)
 
 # ---------- 3. 回测引擎 ----------
+DELIST_DISCOUNT = 0.0  # 退市强平在最后收盘价基础上再折(DELIST_DISCOUNT=0 即按最后收盘价; 可设 0.3 更保守)
+
 def run(rule, use_cost=True):
     cash, holdings = INIT, {}
     bought = False
     nav_series = []
+    delist_log = []  # (code, 强平日, 买入价, 最后收盘价, 强平价, 数量)
     for di in range(start_idx, len(ALL_DAYS)):
         day = ALL_DAYS[di]
+        # 退市强平: 持仓股价格数据已终止(day 超过其最后交易日) → 按最后收盘价(打折)卖出
+        # 修复: 此前退市股按买入价兜底(=0%损失), 现按最后可得价强平
+        for code in list(holdings.keys()):
+            if code in LAST_DATE and day > LAST_DATE[code]:
+                h = holdings[code]
+                sp = LAST_CLOSE[code] * (1 - DELIST_DISCOUNT)
+                cash += sp * h["qty"] * (1 - SELL_FEE if use_cost else 1.0)
+                delist_log.append((code, day, h["bp"], LAST_CLOSE[code], sp, h["qty"]))
+                del holdings[code]
         # 调仓
         if rule == "buyhold":
             if not bought and day in RB:
@@ -124,7 +148,7 @@ def run(rule, use_cost=True):
                 for code in list(holdings.keys()):
                     if code not in new_codes:
                         h = holdings[code]
-                        sp = get_close(code, day)
+                        sp = get_close_asof(code, day)
                         if sp is None:
                             sp = h["bp"]
                         proceeds = sp * h["qty"] * (1 - SELL_FEE if use_cost else 1.0)
@@ -162,7 +186,7 @@ def run(rule, use_cost=True):
                         holdings[code] = {"bp": bp, "qty": qty, "ind": ind, "buy_i": di}
             for code in list(holdings.keys()):
                 h = holdings[code]
-                cnow = get_close(code, day)
+                cnow = get_close_asof(code, day)
                 if cnow is None:
                     continue
                 ret = cnow / h["bp"] - 1
@@ -173,21 +197,23 @@ def run(rule, use_cost=True):
         # 估值
         total = cash
         for code, h in holdings.items():
-            cnow = get_close(code, day) or h["bp"]
+            cnow = get_close_asof(code, day)
+            if cnow is None:
+                cnow = h["bp"]
             total += cnow * h["qty"]
         nav_series.append((day, total))
     nav = pd.Series(dict(nav_series)).sort_index()
-    return nav
+    return nav, delist_log
 
 print("[3] 回测各变体...")
-nav_orig = run("stop", True)
-print(f"    V_orig(止盈止损) 完成, {time.time()-t0:.0f}s")
-nav_monthly = run("monthly", True)
-print(f"    V_monthly(月度再平衡) 完成, {time.time()-t0:.0f}s")
-nav_monthly0 = run("monthly", False)
-print(f"    V_monthly0(月度无成本) 完成, {time.time()-t0:.0f}s")
-nav_buyhold = run("buyhold", True)
-print(f"    V_buyhold(买入持有) 完成, {time.time()-t0:.0f}s")
+nav_orig, dl_orig = run("stop", True)
+print(f"    V_orig(止盈止损) 完成, 退市强平 {len(dl_orig)} 笔, {time.time()-t0:.0f}s")
+nav_monthly, dl_monthly = run("monthly", True)
+print(f"    V_monthly(月度再平衡) 完成, 退市强平 {len(dl_monthly)} 笔, {time.time()-t0:.0f}s")
+nav_monthly0, dl_monthly0 = run("monthly", False)
+print(f"    V_monthly0(月度无成本) 完成, 退市强平 {len(dl_monthly0)} 笔, {time.time()-t0:.0f}s")
+nav_buyhold, dl_buyhold = run("buyhold", True)
+print(f"    V_buyhold(买入持有) 完成, 退市强平 {len(dl_buyhold)} 笔, {time.time()-t0:.0f}s")
 
 # ---------- 4. 全市场等权 ----------
 ew = pd.read_csv(os.path.join(OUT, "equal_weight_benchmark_compare.csv"), index_col=0, parse_dates=True)
@@ -222,6 +248,22 @@ for name, nav in series.items():
     res[name] = (ann, mdd, shp)
     print(f"{name:<24}{tr:>9.1%}{ann:>9.1%}{mdd:>9.1%}{shp:>7.2f}{end/1e4:>10.0f}")
 print("=" * 92)
+
+# ---------- 5.5 退市/缺价处理披露 ----------
+print("\n--- 退市/缺价处理披露 (买入价兜底已修复) ---")
+dl_map = {
+    "V_buyhold 买入持有": dl_buyhold,
+    "V_monthly0 月度无成本": dl_monthly0,
+    "V_monthly 月度含成本": dl_monthly,
+    "V_orig 止盈止损": dl_orig,
+}
+for name, log in dl_map.items():
+    if not log:
+        print(f"  {name:<20} 无退市强平")
+        continue
+    uniq = len({e[0] for e in log})
+    loss = sum((e[2] - e[4]) * e[5] for e in log)  # (买入价 - 强平价) * 数量
+    print(f"  {name:<20} 退市强平 {len(log)} 笔 / {uniq} 只, 相对买入价损失 {loss:,.0f} 元")
 
 # ---------- 6. 拆解 ----------
 print("\n--- 负 alpha 来源拆解 (相对全市场等权 15.3%) ---")
