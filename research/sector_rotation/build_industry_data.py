@@ -42,7 +42,7 @@ DAY_DIR = settings.daily_data_path     # data_day1 (pct_chg)
 IND_PATH = os.path.join(settings.DATA_PATH, "industry1", "industry.parquet")
 
 MIN_STOCKS = 5  # 行业最少成分股数
-START_YEAR = 2020
+START_YEAR = 2015
 
 
 def load_industry_map():
