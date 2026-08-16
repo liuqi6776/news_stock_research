@@ -8,7 +8,7 @@
      V3 扩展因子 (12个)
 3. 分年度收益拆解 (验证非单年暴涨带动)
 """
-import os, glob, time, warnings, bisect
+import os, glob, time, warnings, bisect, json
 warnings.filterwarnings("ignore")
 import numpy as np
 import pandas as pd
@@ -307,11 +307,11 @@ def backtest(df, tag, delist_discount=0.0):
         print(f"  退市强平 {len(delist_log)} 笔 / {uniq} 只, 相对买入价损失 {loss:,.0f} 元 (DELIST_DISCOUNT={delist_discount})")
     else:
         print(f"  无退市强平 (DELIST_DISCOUNT={delist_discount})")
-    return nav
+    return nav, delist_log
 
-nav_v2 = backtest(df_v2, "V2 资金流(4因子)")
-nav_v3 = backtest(df_v3, "V3 资金流扩展(12因子) DELIST_DISCOUNT=0.0", delist_discount=0.0)
-nav_v3_d30 = backtest(df_v3, "V3 资金流扩展(12因子) DELIST_DISCOUNT=0.3", delist_discount=0.3)
+nav_v2, delist_v2 = backtest(df_v2, "V2 资金流(4因子)")
+nav_v3, delist_v3 = backtest(df_v3, "V3 资金流扩展(12因子) DELIST_DISCOUNT=0.0", delist_discount=0.0)
+nav_v3_d30, delist_v3_d30 = backtest(df_v3, "V3 资金流扩展(12因子) DELIST_DISCOUNT=0.3", delist_discount=0.3)
 
 # 特征重要性
 fi = sorted(zip(V3_COLS, model_v3.feature_importances_), key=lambda x: -x[1])
@@ -324,4 +324,21 @@ df_v3.to_csv(os.path.join(OUT_DIR, "fullmarket_moneyflow_v3_2015_oos_pred.csv"),
 nav_v3.to_csv(os.path.join(OUT_DIR, "fullmarket_moneyflow_v3_2015_nav.csv"), header=True)
 nav_v3_d30.to_csv(os.path.join(OUT_DIR, "fullmarket_moneyflow_v3_2015_nav_delist30.csv"), header=True)
 nav_v2.to_csv(os.path.join(OUT_DIR, "fullmarket_moneyflow_2015_nav.csv"), header=True)
+
+# 退市强平明细落盘(下次重跑产出真实明细, 不再只留在 stdout)
+def _delist_records(log):
+    return [{"ts_code": e[0], "force_date": str(e[1].date()),
+             "buy_price": round(float(e[2]), 4), "last_close": round(float(e[3]), 4),
+             "force_price": round(float(e[4]), 4), "qty": int(e[5])} for e in log]
+
+delist_summary = {
+    "note": "退市强平明细(backtest 返回 delist_log 落盘); 相对买入价损失 = (buy_price - force_price) * qty",
+    "v2_4factor": {"discount": 0.0, "count": len(delist_v2), "records": _delist_records(delist_v2)},
+    "v3_12factor_d0": {"discount": 0.0, "count": len(delist_v3), "records": _delist_records(delist_v3)},
+    "v3_12factor_d30": {"discount": 0.3, "count": len(delist_v3_d30), "records": _delist_records(delist_v3_d30)},
+}
+with open(os.path.join(OUT_DIR, "delist_log.json"), "w", encoding="utf-8") as f:
+    json.dump(delist_summary, f, ensure_ascii=False, indent=2)
+print(f"[saved] delist_log.json")
+
 print(f"\n总耗时 {time.time()-t0:.0f}s")
