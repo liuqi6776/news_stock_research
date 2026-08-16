@@ -1,0 +1,38 @@
+{
+  "v2_4factor": {
+    "end_value": 2002184.75,
+    "end_date": "2026-08-14",
+    "start_date": "2018-01-03",
+    "cagr": 0.084,
+    "maxdd": -0.3694,
+    "sharpe": 0.506
+  },
+  "v3_12factor_d0": {
+    "end_value": 1923366.82,
+    "end_date": "2026-08-14",
+    "start_date": "2018-01-03",
+    "cagr": 0.0789,
+    "maxdd": -0.4186,
+    "sharpe": 0.471
+  },
+  "v3_12factor_d30": {
+    "end_value": 1921521.09,
+    "end_date": "2026-08-14",
+    "start_date": "2018-01-03",
+    "cagr": 0.0788,
+    "maxdd": -0.4186,
+    "sharpe": 0.471
+  },
+  "v3_d30_minus_d0_end_value": -1845.73,
+  "delist_forced_liquidation": {
+    "count": 2,
+    "loss_vs_buy_price_yuan_approx": 10000,
+    "note": "明细(ts_code/日期/买入价/最后收盘价/强平价/股数)未落盘, 仅脚本 stdout 汇总; count/loss 来源为引擎运行日志, d30-d0 期末差为 DELIST_DISCOUNT 0.0→0.3 敏感性净额"
+  },
+  "engine_fixes": [
+    "退市股按最后收盘价强平(LAST_DATE/LAST_CLOSE, DELIST_DISCOUNT 可调)",
+    "停牌/缺价按最后可得价结转(get_close_asof, bisect)",
+    "月末信号下一交易日成交(td > m_dt, 对齐 freeze 口径)"
+  ],
+  "generated_from": "train_fullmarket_moneyflow_v2.py 重跑产物(nav CSV)"
+}
