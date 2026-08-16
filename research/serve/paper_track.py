@@ -40,6 +40,12 @@ PAPER_DIR = os.path.join(SERVE_DIR, "data", "paper")
 COST_BPS = 20
 ETFS = {"512100.SH", "510300.SH", "000852.SH", "932000.CSI"}
 
+# ---- ENS_T60_TV12 前向闸门判据（见 definition_freeze.md §四.5） ----
+GATE_SHARPE_UP = 0.5          # 升: 前向滚动 6 个月年化 Sharpe > 0.5
+GATE_SHARPE_DOWN = 0.0        # 降: Sharpe < 0
+GATE_DD_THRESHOLD = -0.2432   # 回撤线: 回测月频 MaxDD -19.32% 放宽 5pp；破线即降
+GATE_WINDOW = 6               # 滚动窗口（月）
+
 
 def load_signals():
     """按 rebalance 日去重（同日多份 JSON 取最后生成的一份）。
@@ -84,6 +90,44 @@ def load_idx_ret(code, start_date, end_date):
     s = df.set_index("trade_date")["pct_chg"].astype(float) / 100.0
     s = s.sort_index()  # parquet 为降序, 统一升序（cumprod/reindex 依赖时间序）
     return s.loc[(s.index >= start_date) & (s.index <= end_date)]
+
+
+def _gate_progress(mout):
+    """ENS_T60_TV12 前向闸门进度（滚动 6 个月，月频口径）。
+
+    判据见 definition_freeze.md §四.5:
+      升: Sharpe_6m > 0.5 且 MaxDD_6m >= -24.32%; 降: Sharpe_6m < 0 或 MaxDD_6m < -24.32%。
+    返回 (state, 描述文本); 样本 < 6 个月返回 (None, 提示)。
+    """
+    if len(mout) < GATE_WINDOW:
+        return None, f"样本不足（{len(mout)} 个月 < 需 {GATE_WINDOW} 个月），闸门未启动"
+
+    rets = mout["port_ret"].iloc[-GATE_WINDOW:]
+    # 月频回撤需窗口起点 NAV（再往前取 1 个月末净值）
+    nav_win = mout["port_nav_end"].iloc[-(GATE_WINDOW + 1):]
+    nav = nav_win.values.astype(float)
+    cummax = np.maximum.accumulate(nav)
+    mdd = float(((cummax - nav) / cummax).max())  # 相对口径
+
+    mu = float(rets.mean())
+    sd = float(rets.std(ddof=1)) if len(rets) > 1 else 0.0
+    sharpe = mu / sd * np.sqrt(12) if sd > 0 else 0.0
+
+    sharpe_to_up = sharpe - GATE_SHARPE_UP      # >0 满足升线
+    sharpe_to_down = sharpe - GATE_SHARPE_DOWN  # <0 触发降
+    dd_to_line = mdd - GATE_DD_THRESHOLD        # <0 破线（降）；>0 在带内
+
+    if sharpe > GATE_SHARPE_UP and dd_to_line >= 0:
+        state = "升 ✅"
+    elif sharpe < GATE_SHARPE_DOWN or dd_to_line < 0:
+        state = "降 ❌"
+    else:
+        state = "观察"
+
+    txt = (f"当前状态: {state} | "
+           f"Sharpe_6m {sharpe:+.2f}（升线 {GATE_SHARPE_UP:.2f} 差 {sharpe_to_up:+.2f}；降线 {GATE_SHARPE_DOWN:.2f} 余 {sharpe_to_down:+.2f}）| "
+           f"MaxDD_6m {mdd:+.2%}（破线 {GATE_DD_THRESHOLD:.2%} 余 {dd_to_line:+.2%}）")
+    return state, txt
 
 
 def main():
@@ -214,6 +258,11 @@ def main():
     mout.to_csv(mfp)
     print(f"[saved] {mfp}")
     print(mout.round(6).to_string())
+
+    # ---- ENS_T60_TV12 前向闸门进度（月频；ENS_T60_TV12 信号接入前为 RS12 样本，仅示意） ----
+    print("\n== ENS_T60_TV12 前向闸门（滚动 6 个月，月频口径）==")
+    _state, _txt = _gate_progress(mout)
+    print(_txt)
 
     # ---- 摘要 ----
     n = len(out)

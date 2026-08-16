@@ -41,6 +41,19 @@
 
 （v5/v6/etf 引擎用 `close_panel.ffill()` 最后可得价结转，无此 bug。）
 
+### ENS_T60_TV12 前向闸门（进行中 OOS）
+
+*登记: 2026-08-16*
+
+- **起点 NAV**: 1.0
+- **口径**: 月频（月末净值，与回测月频 MaxDD 同口径）
+- **回测参考线**: 月频 MaxDD -19.32%
+- **升降级判据**（见 `definition_freeze.md` §四.5）:
+  - 升 ✅: 前向满 6 个月 且 年化 Sharpe > 0.5 且 月频 MaxDD ≥ -24.32%（-19.32% 放宽 5pp）
+  - 降 ❌: Sharpe < 0 或 月频 MaxDD < -24.32%
+- **回撤口径（写死）**: MaxDD 一律以月频口径计算，与回测参考线 -19.32% 同口径，禁止用日频回撤对线
+- **落地**: `research/serve/paper_track.py` 月频汇总「闸门进度行」；前向信号生成器待接入。
+
 ---
 
 ## Study 007: 截面选股策略（Cross-Sectional Stock Selection）
