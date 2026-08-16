@@ -1,0 +1,408 @@
+{
+  "strategy": "ENS_T60_TV12",
+  "signal_date": "20260731",
+  "execution_date": "20260803",
+  "as_of_date": "20260731",
+  "rebalance_date": "20260803",
+  "s123_on": false,
+  "s123_value": 1,
+  "s123_detail": {
+    "pe_pct": 0.613,
+    "erp_z": 1.752,
+    "dd_pct": -0.2193,
+    "s1": 0,
+    "s2": 1,
+    "s3": 0
+  },
+  "prev_state_in": false,
+  "tgt_vol_w": 0.4,
+  "action": "s123 弱 (<=1) 或选股为空, 清仓转 V8 避险组合 (等权)",
+  "position": "V8避险组合",
+  "picks": [
+    {
+      "code": "603360.SH",
+      "name": "百傲化学",
+      "score": 0.9738,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "688016.SH",
+      "name": "心脉医疗",
+      "score": 0.971,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "600577.SH",
+      "name": "精达股份",
+      "score": 0.9647,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "301268.SZ",
+      "name": "铭利达",
+      "score": 0.9465,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "301622.SZ",
+      "name": "英思特",
+      "score": 0.9435,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "600338.SH",
+      "name": "西藏珠峰",
+      "score": 0.943,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "300855.SZ",
+      "name": "图南股份",
+      "score": 0.943,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "688128.SH",
+      "name": "中国电研",
+      "score": 0.9415,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "300827.SZ",
+      "name": "上能电气",
+      "score": 0.934,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "601882.SH",
+      "name": "海天精工",
+      "score": 0.9275,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "301050.SZ",
+      "name": "雷电微力",
+      "score": 0.9245,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "605555.SH",
+      "name": "德昌股份",
+      "score": 0.924,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "000688.SZ",
+      "name": "国城矿业",
+      "score": 0.922,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "000758.SZ",
+      "name": "中色股份",
+      "score": 0.922,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "600531.SH",
+      "name": "豫光金铅",
+      "score": 0.9218,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "300337.SZ",
+      "name": "银邦股份",
+      "score": 0.9178,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "603219.SH",
+      "name": "富佳股份",
+      "score": 0.9143,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "300035.SZ",
+      "name": "中科电气",
+      "score": 0.913,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "601096.SH",
+      "name": "宏盛华源",
+      "score": 0.9085,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "688032.SH",
+      "name": "禾迈股份",
+      "score": 0.9085,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "300360.SZ",
+      "name": "炬华科技",
+      "score": 0.9065,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "600480.SH",
+      "name": "凌云股份",
+      "score": 0.903,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "601778.SH",
+      "name": "晶科科技",
+      "score": 0.9015,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "300641.SZ",
+      "name": "正丹股份",
+      "score": 0.9015,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "601975.SH",
+      "name": "招商南油",
+      "score": 0.9013,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "000420.SZ",
+      "name": "吉林化纤",
+      "score": 0.898,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "002081.SZ",
+      "name": "金螳螂",
+      "score": 0.8975,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "603227.SH",
+      "name": "雪峰科技",
+      "score": 0.895,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "603612.SH",
+      "name": "索通发展",
+      "score": 0.8935,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "002170.SZ",
+      "name": "芭田股份",
+      "score": 0.888,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "601890.SH",
+      "name": "亚星锚链",
+      "score": 0.8855,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "002176.SZ",
+      "name": "江特电机",
+      "score": 0.8835,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "300910.SZ",
+      "name": "瑞丰新材",
+      "score": 0.883,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "688586.SH",
+      "name": "江航装备",
+      "score": 0.8825,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "002985.SZ",
+      "name": "北摩高科",
+      "score": 0.8805,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "000422.SZ",
+      "name": "湖北宜化",
+      "score": 0.8785,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "601609.SH",
+      "name": "金田股份",
+      "score": 0.875,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "002011.SZ",
+      "name": "盾安环境",
+      "score": 0.8735,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "600867.SH",
+      "name": "通化东宝",
+      "score": 0.873,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "603418.SH",
+      "name": "友升股份",
+      "score": 0.8727,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "002345.SZ",
+      "name": "潮宏基",
+      "score": 0.8715,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "603248.SH",
+      "name": "锡华科技",
+      "score": 0.8707,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "002182.SZ",
+      "name": "宝武镁业",
+      "score": 0.8698,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "002639.SZ",
+      "name": "雪人集团",
+      "score": 0.867,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "002006.SZ",
+      "name": "精工科技",
+      "score": 0.8647,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "002204.SZ",
+      "name": "大连重工",
+      "score": 0.864,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "002675.SZ",
+      "name": "东诚药业",
+      "score": 0.862,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "300482.SZ",
+      "name": "万孚生物",
+      "score": 0.8598,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "603014.SH",
+      "name": "威高血净",
+      "score": 0.8582,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "600916.SH",
+      "name": "中国黄金",
+      "score": 0.8575,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "301207.SZ",
+      "name": "华兰疫苗",
+      "score": 0.849,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "002097.SZ",
+      "name": "山河智能",
+      "score": 0.8475,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "605099.SH",
+      "name": "共创草坪",
+      "score": 0.8442,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "600361.SH",
+      "name": "创新新材",
+      "score": 0.842,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "002961.SZ",
+      "name": "瑞达期货",
+      "score": 0.8387,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "000065.SZ",
+      "name": "北方国际",
+      "score": 0.838,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "600266.SH",
+      "name": "城建发展",
+      "score": 0.835,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "688190.SH",
+      "name": "云路股份",
+      "score": 0.8327,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "301035.SZ",
+      "name": "润丰股份",
+      "score": 0.8325,
+      "target_weight": 0.00667
+    },
+    {
+      "code": "601068.SH",
+      "name": "中铝国际",
+      "score": 0.831,
+      "target_weight": 0.00667
+    }
+  ],
+  "picks_count": 60,
+  "order_picks": [
+    {
+      "code": "511990.SH",
+      "name": "短债(511990)",
+      "target_weight": 0.33333
+    },
+    {
+      "code": "511260.SH",
+      "name": "信用债(511260)",
+      "target_weight": 0.33333
+    },
+    {
+      "code": "518880.SH",
+      "name": "黄金(518880)",
+      "target_weight": 0.33333
+    }
+  ],
+  "order_picks_count": 3,
+  "data_notes": [
+    "成分股清单截至 20260630 (index_weight 最新一期, 用于调仓日 20260803)",
+    "GBDT 训练数据截至 20260630 (trade_date < 20260731), 模型只用快照月之前训练的版本",
+    "财务 PIT: 面板 ann_date 口径, 无前视"
+  ],
+  "generated_at": "2026-08-16 15:10:00"
+}
