@@ -43,7 +43,29 @@ def get_sources():
         "index_weight": _rel(["research", "chip_momentum", "data", "index_weight"]),
         "index_daily": _rel(["research", "chip_momentum", "data", "index_daily"]),
         "factor_data": _rel(["research", "factor_dic", "data"]),
+        "fund_cache": _rel(["research", "fund_research", "cache"]),
     }
+
+
+def read_cache_end_date():
+    """读取 s123 共享缓存(PE/ERP)的数据截止日, 用于过期可见性提示(不阻断)。
+
+    返回 {"pe": "YYYY-MM-DD"|None, "bond": "YYYY-MM-DD"|None}。
+    惰性缓存机制下, 截止日 == 最后一次拉取日; 过期不自知会污染 s123 择时信号。
+    """
+    import pandas as pd
+    out = {}
+    for name, fn in [("pe", "pe_csi300.parquet"), ("bond", "bond10y.parquet")]:
+        fp = _rel(["research", "fund_research", "cache", fn])
+        if not os.path.exists(fp):
+            out[name] = None
+            continue
+        try:
+            idx = pd.read_parquet(fp).index[-1]
+            out[name] = str(pd.Timestamp(idx).date())
+        except Exception:
+            out[name] = None
+    return out
 
 
 def sha256_file(path, chunk=1024 * 1024):
@@ -122,6 +144,18 @@ def main():
         n = fp.get("file_count", 0)
         print(f"        files={n} size={fp.get('total_size', 0) / 1e6:.1f}MB "
               f"mtime={fp.get('mtime_min')}~{fp.get('mtime_max')}")
+
+    # fund_cache 时效性: 记录 PE/ERP 数据截止日, 过期可见性提示（不阻断, 但月末跑 ENS 信号前须刷新）
+    if "fund_cache" in manifest["sources"]:
+        end_dates = read_cache_end_date()
+        manifest["sources"]["fund_cache"]["data_end_date"] = end_dates
+        pe_d, bond_d = end_dates.get("pe"), end_dates.get("bond")
+        age_days = None
+        if pe_d:
+            age_days = (datetime.date.today() - datetime.date.fromisoformat(pe_d)).days
+        warn = "  ⚠️ PE 数据已过期, 月末跑信号前请删缓存重跑刷新" if (age_days is not None and age_days > 10) else ""
+        print(f"[freshness] PE 截止 {pe_d or '缺失'} | bond 截止 {bond_d or '缺失'} | "
+              f"PE 距今 {age_days if age_days is not None else '?'} 天{warn}")
 
     if args.no_pointer:
         # 纯巡检: 不落盘、不更新指针（与活动快照的漂移对比由实验 run.py 完成）

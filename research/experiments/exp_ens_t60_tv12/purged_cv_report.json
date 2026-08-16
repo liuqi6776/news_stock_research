@@ -1,0 +1,28 @@
+{
+  "scope": "P2-r7 C8 GBDT purged k-fold CV (2026-08-16)",
+  "model": "LGBMRegressor d3/nl7/mc80/λ2 C8(10 features), 与 engine.py 同超参",
+  "label": "fwd_20 (未来20交易日收益)",
+  "purge": "验证月 ±1 月 (fwd_20 跨月标签窗口)",
+  "embargo": "验证月后 1 月",
+  "cv": {
+    "k_folds": 5,
+    "n_rep": 10,
+    "folds_used": 50,
+    "seed": 42
+  },
+  "purged_cv": {
+    "n_month": 72,
+    "ic_mean": 0.03330180687752424,
+    "icir": 2.6238816410580825,
+    "pos_rate": 0.8194444444444444,
+    "q1q5_spread_mean": -0.5787593884504858
+  },
+  "rolling_wfo_2023": {
+    "n_month": 36,
+    "ic_mean": 0.08156938422009069,
+    "icir": 2.335248764005324,
+    "pos_rate": 0.7777777777777778,
+    "q1q5_spread_mean": -0.9599967264493898
+  },
+  "interpretation": "purged CV IC/ICIR 与滚动 WFO 同量级 → GBDT 预测能力不依赖单一时间路径; purge 排除标签窗口重叠后仍稳健。模型层证据, 与策略层 PBO/DSR 互补。"
+}

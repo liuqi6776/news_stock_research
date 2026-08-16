@@ -43,6 +43,13 @@
 - Rank IC（winsorize 后因子值秩 vs 未来 20 日收益秩，Spearman）
 - Newey-West HAC t（lag=4）；多重检验: BH-FDR / Bonferroni（N=21 因子族）
 - DSR（Bailey-López de Prado 2014，偏度/峰度 + N 档敏感性）；PBO（CSCV，随机 1000 切分，seed=42）
+- **ENS_T60_TV12 参数族级检验（P2-r7, 2026-08-16 落库）**: 策略族 222 配置（score×top×TV×floor×lb 网格），
+  71 个月频收益矩阵 → PBO(CSCV,1000 切分,seed=42)=**0.110**（<0.50, 族内选优无过拟合）；
+  冻结版 ENS_T60_TV0.12_F0.4_L20 月 Sharpe 0.264/族内 48 名, DSR(N=222)=**0.30**<0.95（71 个月频样本 + 222 次自由度下绝对显著性不足）;
+  模型层 purged k-fold CV（5 折×10 重复, purge=验证月±1 月 + embargo=后 1 月）: IC 0.033/ICIR **2.62**/正率 82%
+  vs 滚动 WFO 对照 IC 0.082/ICIR 2.34 → GBDT 预测能力跨随机时间切分稳健。
+  解读: 结构性证据（PBO/purged CV）成立, 绝对显著性（DSR）需更长样本 → 支持「独立 OOS 2027-2032 保留」纪律。
+  权威实现: `experiments/exp_ens_t60_tv12/{engine,pbo_cscv,purged_cv}.py`
 - 回撤: 相对口径 `max((cummax-nav)/cummax)`
 
 ## 四、冻结纪律
@@ -74,6 +81,9 @@ research/serve/paper_track.py            # 前向纸面跟踪（双策略：RS12
 research/experiments/exp_turnover_vol_20/run.py   # 最小可复现实验
 research/experiments/exp_turnover_vol_20/dsr_pbo.py
 research/experiments/exp_turnover_vol_20/cost_sensitivity.py
+research/experiments/exp_ens_t60_tv12/engine.py     # ENS_T60_TV12 参数族回测引擎（函数化, P2-r7）
+research/experiments/exp_ens_t60_tv12/pbo_cscv.py   # 族级 PBO(CSCV)/DSR（222 配置 × 71 月）
+research/experiments/exp_ens_t60_tv12/purged_cv.py  # 模型层 purged k-fold CV（C8 GBDT）
 ```
 
 ### 五.1 共享数据缓存（跨任务，须登记刷新职责）
@@ -87,4 +97,4 @@ s123 状态机的 PE/ERP 依赖两个共享缓存，**惰性刷新、无自动�
 
 - 刷新频率：每月末跑 `ens_t60_tv12_signal.py` 前，删旧缓存重跑一次，使 PE/ERP 覆盖到最新交易日。
 - 消费者：`ens_t60_tv12_signal.py`、`stock_gbdt_s123_backtest.py` 等所有 s123 择时脚本（20+ 处）。
-- 待办：纳入 `make_data_manifest.py` 漂移检测（PE 缓存过期应阻断或告警，而非静默复用）。
+- 漂移监控：已纳入 `make_data_manifest.py` 的 sources（`fund_cache` 目录）；生成快照时记录并提示 PE/ERP 数据截止日（距今 >10 天告警，不阻断）。
