@@ -8,7 +8,7 @@
      V3 扩展因子 (12个)
 3. 分年度收益拆解 (验证非单年暴涨带动)
 """
-import os, glob, time, warnings
+import os, glob, time, warnings, bisect
 warnings.filterwarnings("ignore")
 import numpy as np
 import pandas as pd
@@ -161,7 +161,7 @@ df_v2, _ = run_wfo(V2_COLS, "V2 资金流(4因子)")
 df_v3, model_v3 = run_wfo(V3_COLS, "V3 资金流扩展(12因子)")
 
 # ============ 5. 回测 (含分年度) ============
-def backtest(df, tag):
+def backtest(df, tag, delist_discount=0.0):
     print(f"\n{'='*70}\n[回测] {tag}\n{'='*70}")
     codes_bt = set(df["ts_code"].unique())
     px_files = sorted(glob.glob(os.path.join(DATA, "data_day1", "*.parquet")))
@@ -199,6 +199,18 @@ def backtest(df, tag):
                 hi = m - 1
         return None
 
+    def get_close_asof(code, dt):
+        """最近 <= dt 的收盘价(停牌/缺价时用最后可得价结转); 无任何可得价返回 None"""
+        if code not in CL_MAP:
+            return None
+        dates, closes = CL_MAP[code]
+        i = bisect.bisect_right(dates, dt) - 1
+        return closes[i] if i >= 0 else None
+
+    # 每只股票的最后交易日/最后收盘价: 用于识别退市(数据终止)并强平
+    LAST_DATE = {code: dates[-1] for code, (dates, _) in CL_MAP.items()}
+    LAST_CLOSE = {code: closes[-1] for code, (_, closes) in CL_MAP.items()}
+
     TOP_GLOBAL, MAXK = 20, 3
     RB_PICKS = {}
     for m_int in sorted(df["trade_date"].unique()):
@@ -207,7 +219,7 @@ def backtest(df, tag):
         picks = sub.groupby("industry", sort=False).head(MAXK).head(TOP_GLOBAL)
         plist = [(r["ts_code"], r["industry"], r["prob"]) for _, r in picks.iterrows()]
         for td in ALL_DAYS:
-            if td >= m_dt:
+            if td > m_dt:  # 收盘生成信号, 下一交易日成交(与 freeze 口径一致)
                 RB_PICKS[td] = plist
                 break
 
@@ -215,11 +227,19 @@ def backtest(df, tag):
     TP, MAX_HOLD = 0.30, 180
     START = pd.Timestamp("2018-01-01")
     cash, holdings = INIT, {}
-    nav_series, trades = [], []
+    nav_series, trades, delist_log = [], [], []
     start_idx = next(i for i, d in enumerate(ALL_DAYS) if d >= START)
 
     for di in range(start_idx, len(ALL_DAYS)):
         day = ALL_DAYS[di]
+        # 退市强平: 持仓股价格数据已终止(day 超过其最后交易日) → 按最后收盘价(打折)卖出
+        for code in list(holdings.keys()):
+            if code in LAST_DATE and day > LAST_DATE[code]:
+                h = holdings[code]
+                sp = LAST_CLOSE[code] * (1 - delist_discount)
+                cash += sp * h["qty"] * (1 - SELL_FEE)
+                delist_log.append((code, day, h["buy_price"], LAST_CLOSE[code], sp, h["qty"]))
+                del holdings[code]
         if day in RB_PICKS:
             picks = RB_PICKS[day]
             held_inds = set(h["industry"] for h in holdings.values())
@@ -241,7 +261,7 @@ def backtest(df, tag):
                     trades.append((day, "BUY", code, cost, np.nan, 0, ind))
         for code in list(holdings.keys()):
             h = holdings[code]
-            cnow = get_close(code, day)
+            cnow = get_close_asof(code, day)
             if cnow is None:
                 continue
             ret = cnow / h["buy_price"] - 1
@@ -254,7 +274,9 @@ def backtest(df, tag):
                 del holdings[code]
         total = cash
         for code, h in holdings.items():
-            cnow = get_close(code, day) or h["buy_price"]
+            cnow = get_close_asof(code, day)
+            if cnow is None:
+                cnow = h["buy_price"]
             total += cnow * h["qty"]
         nav_series.append((day, total))
 
@@ -279,10 +301,17 @@ def backtest(df, tag):
         ret = v / prev - 1
         print(f"    {y.year}: {ret:+.1%}  (期末{v/1e4:.0f}万)")
         prev = v
+    if delist_log:
+        uniq = len({e[0] for e in delist_log})
+        loss = sum((e[2] - e[4]) * e[5] for e in delist_log)
+        print(f"  退市强平 {len(delist_log)} 笔 / {uniq} 只, 相对买入价损失 {loss:,.0f} 元 (DELIST_DISCOUNT={delist_discount})")
+    else:
+        print(f"  无退市强平 (DELIST_DISCOUNT={delist_discount})")
     return nav
 
 nav_v2 = backtest(df_v2, "V2 资金流(4因子)")
-nav_v3 = backtest(df_v3, "V3 资金流扩展(12因子)")
+nav_v3 = backtest(df_v3, "V3 资金流扩展(12因子) DELIST_DISCOUNT=0.0", delist_discount=0.0)
+nav_v3_d30 = backtest(df_v3, "V3 资金流扩展(12因子) DELIST_DISCOUNT=0.3", delist_discount=0.3)
 
 # 特征重要性
 fi = sorted(zip(V3_COLS, model_v3.feature_importances_), key=lambda x: -x[1])
@@ -293,5 +322,6 @@ for f, imp in fi[:20]:
 # 保存
 df_v3.to_csv(os.path.join(OUT_DIR, "fullmarket_moneyflow_v3_2015_oos_pred.csv"), index=False, encoding="utf-8-sig")
 nav_v3.to_csv(os.path.join(OUT_DIR, "fullmarket_moneyflow_v3_2015_nav.csv"), header=True)
+nav_v3_d30.to_csv(os.path.join(OUT_DIR, "fullmarket_moneyflow_v3_2015_nav_delist30.csv"), header=True)
 nav_v2.to_csv(os.path.join(OUT_DIR, "fullmarket_moneyflow_2015_nav.csv"), header=True)
 print(f"\n总耗时 {time.time()-t0:.0f}s")

@@ -103,8 +103,7 @@ trainer.train(df)
   * **[build_features_with_options.py](research/期权/build_features_with_options.py)**：7大期权特征预处理与高速合并广播。
   * **[train_models_with_options.py](research/期权/train_models_with_options.py)**：Walk-Forward 滚动 XGBoost 双模型训练。
   * **[backtest_options_model.py](research/期权/backtest_options_model.py)**：**【核心回测代码】 Baseline vs Option-Enhanced 严格对账回测器**。
-  * **[download_all_pcr.py](research/期权/download_all_pcr.py)**：历史 PCR 数据下载工具。
-  * **[historical_pcr.csv](research/期权/data/historical_pcr.csv)**：期权 PCR 轻量基准数据库。
+  * **[download_all_pcr.py](research/期权/download_all_pcr.py)**：历史 PCR 数据下载工具（`historical_pcr.csv` 为本地生成数据，不入库）。
   * **[model_options_comparison.png](research/期权/results/model_options_comparison.png)**：**【回测结果图】全周期净值与回撤对比曲线**。
 * **📂 [research/study_005_1d_advanced/](research/study_005_1d_advanced/)**：Study 005 进阶版 Baseline 模型研究线：
   * **[step3_backtest_advanced.py](research/study_005_1d_advanced/scripts/step3_backtest_advanced.py)**：**【核心回测代码】Baseline 进阶版严格 T+1 回测器**。

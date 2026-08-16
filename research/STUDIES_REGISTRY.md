@@ -1,6 +1,45 @@
 # 研究注册表
 
-*最后更新: 2026-07-15*
+*最后更新: 2026-08-15*
+
+---
+
+## Sector Rotation（行业轮动 + 全市场选股）
+
+*新增: 2026-08-15*
+
+### 研究概述
+
+全市场 GBDT 选股（中证1000 PIT 成分池扩展至全市场），价量/筹码/资金流因子滚动 Walk-Forward，月度全局 Top20 等权 + 每行业 ≤3 + 30% 止盈 + 180 天止损。引擎已修复三处高估来源：退市股按最后收盘价强平（DELIST_DISCOUNT 可调）、停牌按最后可得价结转（get_close_asof）、月末信号次日成交（与 freeze 口径一致）。
+
+### 关键结果（修复后重跑，2018-2026）
+
+| 策略 | 年化 | MaxDD | 夏普 |
+|------|------|-------|------|
+| V2 资金流 GBDT（4因子） | 8.4% | -36.9% | 0.51 |
+| V3 资金流 GBDT（12因子） | 7.9% | -41.9% | 0.47 |
+| 全市场等权（不可交易基准） | 15.3% | -36.5% | 0.73 |
+| 传统行业等权 | 13.4% | -37.3% | 0.68 |
+
+### 关键结论
+
+1. **12 因子（V3）相对 4 因子（V2）为负增量**：「个股端最优」以 V2（4 因子）为准。
+2. **幸存者偏差影响趋近 0**：股票池为中证1000 PIT 成分快照（三重保护），退市强平仅 2 笔 / 损失约 1 万元（DELIST_DISCOUNT=0 与 0.3 无实质差异）。
+3. **可交易基准 vs 全市场等权**：全市场等权 15.3% 由微盘股溢价撑起（不可交易）；相对可交易宽基 ETF（中证1000 ETF 512100 年化 3.7%），V2/V3 仍有约 +4~5pp 正 alpha。
+
+### 文件位置
+
+`research/sector_rotation/`（主引擎 `train_fullmarket_moneyflow_v2.py`，幸存者偏差结论 `results/survivorship_bias_conclusion.md`）
+
+### 已知待清理（归档脚本残留 buy_price 兜底）
+
+以下 8 个归档/被取代脚本仍有 `get_close(code, day) or h["buy_price"]` 零损失兜底（退市/停牌按买入价估值），结论均已定为「被取代」或「无增量」，暂不重跑，待后续套用 LAST_CLOSE 模式统一修复：
+
+- 全市场系列：`train_fullmarket_moneyflow.py`、`train_fullmarket_quality.py`、`train_fullmarket_cyq.py`
+- 组合整合：`integrate_v3_s123.py`
+- universe/hit30 系列：`train_safe_hit30.py`、`train_universe_safe_hit30.py`、`backtest_universe_v2.py`、`backtest_hit30_mix.py`
+
+（v5/v6/etf 引擎用 `close_panel.ffill()` 最后可得价结转，无此 bug。）
 
 ---
 
