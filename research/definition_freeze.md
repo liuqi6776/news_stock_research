@@ -59,7 +59,7 @@
    - **升 ✅**: 前向满 6 个月 且 年化 Sharpe > 0.5 且 月频 MaxDD ≥ -24.32%（= 回测月频口径 -19.32% 放宽 5pp 容差）。
    - **降 ❌**: 年化 Sharpe < 0 或 月频 MaxDD < -24.32%（破线）。
    - 中间态（0 ≤ Sharpe ≤ 0.5 且回撤未破线）→ 维持观察，不升不降。
-   - 前向信号生成器尚未接入（`serve/` 下仅 RS12 `daily_signal.py`）；接入后闸门进度行自动生效。
+   - 前向信号生成器已接入：`serve/ens_t60_tv12_signal.py`（月末输出目标权重表）+ `serve/paper_track.py` 双策略跟踪（RS12 → `paper_nav.csv`、ENS → `paper_nav_ens.csv`）；闸门进度行由 ENS 真样本驱动，累计满 6 个月自动启动。
 
 ## 五、权威代码路径
 
@@ -68,9 +68,23 @@ research/factor_dic/run_validation.py    # 单因子验证（IC/Top60 回测/收
 research/factor_dic/combo_backtest.py    # 合成组合回测（BASE/BASE_F/ENH...）
 research/factor_dic/factor_lib.py        # 因子实现（含 turnover_vol_20）
 research/factor_dic/style_factors.py     # VAL 合成价值（PIT）
-research/serve/daily_signal.py           # 生产前向信号
-research/serve/paper_track.py            # 前向纸面跟踪
+research/serve/daily_signal.py           # 生产前向信号（RS12）
+research/serve/ens_t60_tv12_signal.py    # ENS_T60_TV12 前向信号生成器（月末目标权重表）
+research/serve/paper_track.py            # 前向纸面跟踪（双策略：RS12 + ENS）
 research/experiments/exp_turnover_vol_20/run.py   # 最小可复现实验
 research/experiments/exp_turnover_vol_20/dsr_pbo.py
 research/experiments/exp_turnover_vol_20/cost_sensitivity.py
 ```
+
+### 五.1 共享数据缓存（跨任务，须登记刷新职责）
+
+s123 状态机的 PE/ERP 依赖两个共享缓存，**惰性刷新、无自动过期检测**（有缓存即读，无缓存才拉取）。月末跑 ENS 信号前须刷新，否则静默用过期数据。
+
+| 缓存文件 | 内容 | 刷新函数（源） | 数据源 | 刷新方式 |
+|---|---|---|---|---|
+| `fund_research/cache/pe_csi300.parquet` | 沪深300 PE-TTM 日频 | `timing_dingtou.py::fetch_pe_csi300()` | legulegu.com | 手动删缓存后重跑即拉取 |
+| `fund_research/cache/bond10y.parquet` | 中债 10 年国债收益率 | `timing_dingtou.py::fetch_bond10y()` | akshare `bond_zh_us_rate` | 手动删缓存后重跑即拉取 |
+
+- 刷新频率：每月末跑 `ens_t60_tv12_signal.py` 前，删旧缓存重跑一次，使 PE/ERP 覆盖到最新交易日。
+- 消费者：`ens_t60_tv12_signal.py`、`stock_gbdt_s123_backtest.py` 等所有 s123 择时脚本（20+ 处）。
+- 待办：纳入 `make_data_manifest.py` 漂移检测（PE 缓存过期应阻断或告警，而非静默复用）。
