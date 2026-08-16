@@ -144,7 +144,8 @@ def _gate_progress(mout):
     nav_win = mout["port_nav_end"].iloc[-(GATE_WINDOW + 1):]
     nav = nav_win.values.astype(float)
     cummax = np.maximum.accumulate(nav)
-    mdd = float(((cummax - nav) / cummax).max())  # 相对口径
+    # 带符号口径 (<=0), 与 freeze 的 -24.32% 对齐; 否则减负阈值恒为正, 破线判据成死代码
+    mdd = -float(((cummax - nav) / cummax).max())
 
     mu = float(rets.mean())
     sd = float(rets.std(ddof=1)) if len(rets) > 1 else 0.0
@@ -164,6 +165,15 @@ def _gate_progress(mout):
     txt = (f"当前状态: {state} | "
            f"Sharpe_6m {sharpe:+.2f}（升线 {GATE_SHARPE_UP:.2f} 差 {sharpe_to_up:+.2f}；降线 {GATE_SHARPE_DOWN:.2f} 余 {sharpe_to_down:+.2f}）| "
            f"MaxDD_6m {mdd:+.2%}（破线 {GATE_DD_THRESHOLD:.2%} 余 {dd_to_line:+.2%}）")
+
+    # 避险月占比（不剔除, 仅信息透明: 闸门验证的是含 s123 择时/避险决策的完整产品）
+    if "is_hedge" in mout.columns:
+        hedge = mout["is_hedge"].iloc[-GATE_WINDOW:]
+        n_hedge = int(hedge.sum())
+        hedge_rets = rets[hedge.values]
+        v8_contrib = float((1.0 + hedge_rets).prod() - 1.0) if len(hedge_rets) else 0.0
+        txt += (f"\n       近 6 个月避险月 {n_hedge} 个（V8 收益贡献 {v8_contrib:+.2%}）")
+
     return state, txt
 
 
@@ -259,6 +269,7 @@ def simulate_strategy(signals, trade_dates, pct_df, label):
             "turnover_cost": month_cost,
             "port_nav_end": p1,
             "bench_nav_end": b1,
+            "is_hedge": bool(g["position"].astype(str).str.contains("避险").any()),
         })
     mout = pd.DataFrame(monthly_rows).set_index("month")
     return out, mout, cost_records
