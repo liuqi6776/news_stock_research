@@ -460,7 +460,7 @@ def run_backtest(shared, score_src, top_tag, tgt_vol=None, floor_w=0.4, vol_look
 
 def run_backtest_tiered(shared, score_src, top_tag, tgt_vol=None, floor_w=0.4, vol_lookback=20,
                         cap_ind_l1=None, timing_mode="tiered", dd_degrade=None,
-                        dd_degrade_scale=0.5, log_holdings=False):
+                        dd_degrade_scale=0.5, log_holdings=False, return_exposure=False):
     """权重梯度版回测（杠杆二）。
 
     timing_mode:
@@ -534,6 +534,7 @@ def run_backtest_tiered(shared, score_src, top_tag, tgt_vol=None, floor_w=0.4, v
     cash = 0.0
     reserve = 1.0e6
     navs = []
+    exposures = []
     holdings_log = {}
     prev_s123 = None
     state_in = False
@@ -641,6 +642,7 @@ def run_backtest_tiered(shared, score_src, top_tag, tgt_vol=None, floor_w=0.4, v
                       for c, sh in positions.items())
         nav = cash + reserve + pos_val
         navs.append(nav)
+        exposures.append(pos_val / nav if nav > 0 else 0.0)
         last_nav = nav
         peak_nav = max(peak_nav, nav)
         reserve += cash
@@ -651,4 +653,7 @@ def run_backtest_tiered(shared, score_src, top_tag, tgt_vol=None, floor_w=0.4, v
     monthly = nav_m.pct_change().dropna()
     if log_holdings:
         return nav_s, monthly, holdings_log
+    if return_exposure:
+        w_s = pd.Series(exposures, index=pd.Index(cal_dates, name="trade_date"))
+        return nav_s, monthly, w_s
     return nav_s, monthly
