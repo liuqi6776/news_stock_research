@@ -460,7 +460,8 @@ def run_backtest(shared, score_src, top_tag, tgt_vol=None, floor_w=0.4, vol_look
 
 def run_backtest_tiered(shared, score_src, top_tag, tgt_vol=None, floor_w=0.4, vol_lookback=20,
                         cap_ind_l1=None, timing_mode="tiered", dd_degrade=None,
-                        dd_degrade_scale=0.5, log_holdings=False, return_exposure=False):
+                        dd_degrade_scale=0.5, log_holdings=False, return_exposure=False,
+                        post_whitelist=None, pre_whitelist_ind=None):
     """权重梯度版回测（杠杆二）。
 
     timing_mode:
@@ -592,7 +593,11 @@ def run_backtest_tiered(shared, score_src, top_tag, tgt_vol=None, floor_w=0.4, v
             else:
                 pool = rebal_scores(d)
                 if pool is not None and len(pool):
+                    if pre_whitelist_ind is not None:
+                        pool = pool[[ind_map.get(c, "其他") in pre_whitelist_ind for c in pool.index]]
                     sel = select_with_limit(pool)
+                    if post_whitelist is not None:
+                        sel = [c for c in sel if ind_map.get(c, "其他") in post_whitelist]
                     if log_holdings:
                         holdings_log[d] = list(sel)
                     equity = cash + reserve + sum(
