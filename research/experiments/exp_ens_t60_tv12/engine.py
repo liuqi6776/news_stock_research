@@ -26,6 +26,7 @@ sys.path.insert(0, os.path.join(ROOT, "research", "sector_rotation"))
 
 from timing_dingtou import fetch_pe_csi300, fetch_bond10y, _rolling_pct, _zscore  # noqa: E402
 from etf_optimize_backtest2 import load_hv_daily, load_index_ret  # noqa: E402
+from industry_l1 import build_l1_map  # noqa: E402
 
 SQRT_242 = np.sqrt(242.0)
 TOP_N_CHOICES = {"T40": 40, "T60": 60}
@@ -42,6 +43,8 @@ GBDT_FEATS = ["ivol", "ret_1m", "momentum_20", "volatility_20", "alpha_006", "al
               "enh4_score", "vwap_20_resid", "float_pnl_20_resid", "chip_shift_5_resid"]
 
 PANEL_PATH = os.path.join(ROOT, "research", "sector_rotation", "stock_ml_panel_72m.parquet")
+FULLMARKET_PANEL_PATH = os.path.join(ROOT, "research", "sector_rotation",
+                                     "stock_ml_panel_fullmarket_72m.parquet")
 IND_MAP_PATH = os.path.join(ROOT, "research", "studies", "study_008_enhancements",
                             "data", "industry_map.parquet")
 PX_DIR = r"D:/iquant_data/data_v2/data_day1"
@@ -90,25 +93,40 @@ def prep_feats(df, feats):
     return df
 
 
-def init_shared():
-    """一次性加载全部共享数据, 返回 dict（打分字典 + 行情宽表 + s123 + V8）。"""
-    panel = pd.read_parquet(PANEL_PATH)
-    im = pd.read_parquet(IND_MAP_PATH)
-    ind_map = dict(zip(im["ts_code"], im["industry"]))
+def init_shared(universe="csi1000"):
+    """一次性加载全部共享数据, 返回 dict（打分字典 + 行情宽表 + s123 + V8）。
 
-    iw = pd.concat([pd.read_parquet(f) for f in glob.glob(IW_GLOB)], ignore_index=True)
-    iw = iw[iw["index_code"] == "000852.SH"]
-    iw["iw_date"] = iw["trade_date"].astype(int)
-    iw_dates = sorted(iw["iw_date"].unique())
-    iw_by_date = {d: set(g["con_code"]) for d, g in iw.groupby("iw_date")}
+    universe: "csi1000"=中证1000成分(冻结基线) | "fullmarket"=全市场(5869只, 流动性/停牌已过滤)。
+    """
+    full = (universe == "fullmarket")
+    panel = pd.read_parquet(FULLMARKET_PANEL_PATH if full else PANEL_PATH)
 
-    def latest_members(rebal_d):
-        for d in reversed(iw_dates):
-            if d <= rebal_d:
-                return iw_by_date[d]
-        return set()
+    if full:
+        # 全市场面板已内嵌 industry(110通达信细分), 直接取最新快照去重
+        latest_ind = panel.drop_duplicates("ts_code", keep="last")
+        ind_map = dict(zip(latest_ind["ts_code"], latest_ind["industry"]))
+    else:
+        im = pd.read_parquet(IND_MAP_PATH)
+        ind_map = dict(zip(im["ts_code"], im["industry"]))
+    ind_l1_map = build_l1_map(ind_map)
 
     panel_codes = set(panel["ts_code"].unique())
+
+    if full:
+        def latest_members(rebal_d):
+            return panel_codes
+    else:
+        iw = pd.concat([pd.read_parquet(f) for f in glob.glob(IW_GLOB)], ignore_index=True)
+        iw = iw[iw["index_code"] == "000852.SH"]
+        iw["iw_date"] = iw["trade_date"].astype(int)
+        iw_dates = sorted(iw["iw_date"].unique())
+        iw_by_date = {d: set(g["con_code"]) for d, g in iw.groupby("iw_date")}
+
+        def latest_members(rebal_d):
+            for d in reversed(iw_dates):
+                if d <= rebal_d:
+                    return iw_by_date[d]
+            return set()
     px_parts = []
     for f in sorted(glob.glob(os.path.join(PX_DIR, "*.parquet"))):
         if os.path.getsize(f) <= 1024:
@@ -201,12 +219,16 @@ def init_shared():
               for ym in sorted(set(d // 100 for d in cal_dates))]
     month_last_map = {d // 100: d for d in sorted(panel["trade_date"].unique())}
 
+    ma20_w_daily = build_ma20_w(cal_dates)
+
     return {
-        "panel": panel, "ind_map": ind_map, "latest_members": latest_members,
+        "panel": panel, "ind_map": ind_map, "ind_l1_map": ind_l1_map,
+        "latest_members": latest_members,
         "ret_w": ret_w, "close_w": close_w, "open_w": open_w, "preclose_w": preclose_w,
         "cal_dates": cal_dates, "sig_df": sig_df, "v8_daily": v8_daily,
         "scores": {"ENH": score_enh4, "GBDT": score_gbdt, "ENS": score_ens},
         "rebals": rebals, "month_last_map": month_last_map,
+        "ma20_w_daily": ma20_w_daily,
     }
 
 
@@ -219,19 +241,48 @@ def build_vol_signal(shared, vol_lookback):
     return ix_vol.shift(1)
 
 
-def run_backtest(shared, score_src, top_tag, tgt_vol=None, floor_w=0.4, vol_lookback=20):
+def build_ma20_w(cal_dates, deep=0.98, window=20):
+    """中证1000(000852) MA20 三档日频仓位（T-1 信号、T 日生效）。
+
+    NAV vs MA20（NAV 与 close 等价线性缩放）:
+      close >= MA20          -> 1.0
+      deep*MA20 <= close < MA20 -> 0.5
+      close <  deep*MA20     -> 0.0
+    与 risk_control 线 risk_control_bt.py 的 MA20 三档一致。
+    """
+    r = load_index_ret("000852.SH")
+    r.index = r.index.astype(int)
+    r = r.sort_index()
+    nav = (1 + r).cumprod()
+    ma = nav.rolling(window).mean()
+    close_1 = nav.shift(1)
+    ma_1 = ma.shift(1)
+    w = pd.Series(1.0, index=nav.index)
+    below = close_1 < ma_1
+    deep_below = close_1 < ma_1 * deep
+    w[below & ~deep_below] = 0.5
+    w[deep_below] = 0.0
+    return w.reindex(cal_dates).ffill().fillna(1.0)
+
+
+def run_backtest(shared, score_src, top_tag, tgt_vol=None, floor_w=0.4, vol_lookback=20,
+                 cap_ind_l1=None, log_holdings=False):
     """日频回测（s123 择时 + S123_ONLY 卖出 + V8 避险 + 双边20bps）。
 
-    返回 (nav_s, monthly_ret): nav_s=日频 NAV(int 日期 index), monthly_ret=月频收益 Series(ym)。
+    cap_ind_l1: 单申万一级行业 <= cap_ind_l1（占股票端权重, 等价于每级 <= int(top_n*cap) 只）,
+                None=不约束（冻结版基线）。
+    log_holdings: True 时返回 (nav_s, monthly, {调仓日: [持仓ts_code列表]}) 三元素, 否则两元素。
     """
     top_n = TOP_N_CHOICES[top_tag]
     max_ind = MAX_PER_IND[top_tag]
+    max_per_ind_l1 = int(top_n * cap_ind_l1) if cap_ind_l1 is not None else None
     scores = shared["scores"][score_src]
     cal_dates = shared["cal_dates"]
     rebals = shared["rebals"]
     month_last_map = shared["month_last_map"]
     latest_members = shared["latest_members"]
     ind_map = shared["ind_map"]
+    ind_l1_map = shared["ind_l1_map"]
     panel = shared["panel"]
     ret_w, close_w, open_w, preclose_w = shared["ret_w"], shared["close_w"], shared["open_w"], shared["preclose_w"]
     v8_daily = shared["v8_daily"]
@@ -263,12 +314,20 @@ def run_backtest(shared, score_src, top_tag, tgt_vol=None, floor_w=0.4, vol_look
     def select_with_limit(scores_in):
         scores_in = scores_in.dropna()
         sorted_codes = scores_in.sort_values(ascending=False)
-        selected, ind_count = [], {}
+        selected, ind_count, l1_count = [], {}, {}
         for code in sorted_codes.index:
             ind = ind_map.get(code, "其他")
-            if ind_count.get(ind, 0) < max_ind:
-                selected.append(code)
-                ind_count[ind] = ind_count.get(ind, 0) + 1
+            if ind_count.get(ind, 0) >= max_ind:
+                continue
+            if max_per_ind_l1 is not None:
+                l1 = ind_l1_map.get(code, "其他")
+                if l1_count.get(l1, 0) >= max_per_ind_l1:
+                    continue
+            selected.append(code)
+            ind_count[ind] = ind_count.get(ind, 0) + 1
+            if max_per_ind_l1 is not None:
+                l1 = ind_l1_map.get(code, "其他")
+                l1_count[l1] = l1_count.get(l1, 0) + 1
             if len(selected) >= top_n:
                 break
         return selected
@@ -278,6 +337,7 @@ def run_backtest(shared, score_src, top_tag, tgt_vol=None, floor_w=0.4, vol_look
     cash = 0.0
     reserve = 1.0e6
     navs = []
+    holdings_log = {}
     prev_s123 = None
     for i, d in enumerate(cal_dates):
         ym = d // 100
@@ -304,6 +364,8 @@ def run_backtest(shared, score_src, top_tag, tgt_vol=None, floor_w=0.4, vol_look
                 pool = rebal_scores(d)
                 if pool is not None:
                     sel = select_with_limit(pool)
+                    if log_holdings:
+                        holdings_log[d] = list(sel)
                     equity = cash + reserve
                     w = tgt_w(d)
                     stock_budget = equity * w
@@ -337,6 +399,8 @@ def run_backtest(shared, score_src, top_tag, tgt_vol=None, floor_w=0.4, vol_look
                 pool = rebal_scores(d)
                 if pool is not None:
                     sel = select_with_limit(pool)
+                    if log_holdings:
+                        holdings_log[d] = list(sel)
                     equity = cash + reserve + sum(sh * close_w.at[d, c] if not np.isnan(close_w.at[d, c]) else 0
                                                   for c, sh in positions.items())
                     w = tgt_w(d)
@@ -389,4 +453,202 @@ def run_backtest(shared, score_src, top_tag, tgt_vol=None, floor_w=0.4, vol_look
     # 月频收益（月末净值 pct_change）
     nav_m = nav_s.groupby((nav_s.index // 100).astype(str)).last()
     monthly = nav_m.pct_change().dropna()
+    if log_holdings:
+        return nav_s, monthly, holdings_log
+    return nav_s, monthly
+
+
+def run_backtest_tiered(shared, score_src, top_tag, tgt_vol=None, floor_w=0.4, vol_lookback=20,
+                        cap_ind_l1=None, timing_mode="tiered", dd_degrade=None,
+                        dd_degrade_scale=0.5, log_holdings=False):
+    """权重梯度版回测（杠杆二）。
+
+    timing_mode:
+      - 'binary':    滞回二元开关（与 run_backtest 冻结基线一致: s123>=3 满仓 / <=1 清仓 / =2 维持）
+      - 'tiered':    s123 三档梯度（>=3 → 1.0, ==2 → 0.5, <=1 → 0.0），无滞回
+      - 'ma20':      纯 MA20 三档（中证1000 NAV vs MA20 → 1.0/0.5/0），无 s123 门槛, 始终在场
+      - 's123_ma20': s123 三档 × MA20 三档 相乘合成（sw*mw ∈ {0,0.25,0.5,1.0}）
+    dd_degrade: 组合自身回撤阈值（负值, 如 -0.10），用 T-1 收盘净值算回撤, 触发时仓位 × dd_degrade_scale（硬降档）。
+    dd_degrade_scale: 触发降档后的仓位保留比例（0.5=减半, 0.3=减到三成）。
+    """
+    top_n = TOP_N_CHOICES[top_tag]
+    max_ind = MAX_PER_IND[top_tag]
+    max_per_ind_l1 = int(top_n * cap_ind_l1) if cap_ind_l1 is not None else None
+    scores = shared["scores"][score_src]
+    cal_dates = shared["cal_dates"]
+    rebals = shared["rebals"]
+    month_last_map = shared["month_last_map"]
+    latest_members = shared["latest_members"]
+    ind_map = shared["ind_map"]
+    ind_l1_map = shared["ind_l1_map"]
+    panel = shared["panel"]
+    ret_w, close_w, open_w, preclose_w = shared["ret_w"], shared["close_w"], shared["open_w"], shared["preclose_w"]
+    v8_daily = shared["v8_daily"]
+    sig_map = shared["sig_df"]["s123"].to_dict()
+    vol_sig = build_vol_signal(shared, vol_lookback) if tgt_vol is not None else None
+
+    def rebal_scores(d):
+        y = d // 10000
+        m = (d // 100) % 100
+        prev_ym = (y - 1) * 100 + 12 if m == 1 else y * 100 + (m - 1)
+        snap = month_last_map.get(prev_ym)
+        if snap is None:
+            return None
+        pool = scores.get(snap)
+        if pool is None:
+            return None
+        trad_codes = set(panel.loc[(panel["trade_date"] == snap) & (panel["is_traditional"]), "ts_code"])
+        members = latest_members(d)
+        return pool[pool.index.isin(members) & pool.index.isin(trad_codes)]
+
+    def tgt_w(d):
+        if tgt_vol is None:
+            return 1.0
+        v = vol_sig.get(d, np.nan)
+        if not np.isfinite(v) or v <= 0:
+            return 1.0
+        return float(np.clip(tgt_vol / v, floor_w, 1.0))
+
+    def select_with_limit(scores_in):
+        scores_in = scores_in.dropna()
+        sorted_codes = scores_in.sort_values(ascending=False)
+        selected, ind_count, l1_count = [], {}, {}
+        for code in sorted_codes.index:
+            ind = ind_map.get(code, "其他")
+            if ind_count.get(ind, 0) >= max_ind:
+                continue
+            if max_per_ind_l1 is not None:
+                l1 = ind_l1_map.get(code, "其他")
+                if l1_count.get(l1, 0) >= max_per_ind_l1:
+                    continue
+            selected.append(code)
+            ind_count[ind] = ind_count.get(ind, 0) + 1
+            if max_per_ind_l1 is not None:
+                l1 = ind_l1_map.get(code, "其他")
+                l1_count[l1] = l1_count.get(l1, 0) + 1
+            if len(selected) >= top_n:
+                break
+        return selected
+
+    positions = {}
+    cash = 0.0
+    reserve = 1.0e6
+    navs = []
+    holdings_log = {}
+    prev_s123 = None
+    state_in = False
+    last_nav = 1.0e6
+    peak_nav = 1.0e6
+    ma20_w_daily = shared["ma20_w_daily"]
+
+    for i, d in enumerate(cal_dates):
+        ym = d // 100
+        if d == rebals[0]:
+            prev_s123 = sig_map.get(ym, 0)
+        if i > 0 and cal_dates[i-1] // 100 != ym:
+            prev_s123 = sig_map.get(cal_dates[i-1] // 100, 0)
+
+        # ---- 择时权重 ----
+        if prev_s123 is None:
+            tw = 0.0
+        elif timing_mode == "binary":
+            if not state_in and prev_s123 >= 3:
+                state_in = True
+            elif state_in and prev_s123 <= 1:
+                state_in = False
+            tw = 1.0 if state_in else 0.0
+        elif timing_mode == "tiered":
+            tw = 1.0 if prev_s123 >= 3 else (0.5 if prev_s123 == 2 else 0.0)
+        elif timing_mode == "ma20":
+            tw = float(ma20_w_daily.get(d, 1.0))
+        elif timing_mode == "s123_ma20":
+            sw = 1.0 if prev_s123 >= 3 else (0.5 if prev_s123 == 2 else 0.0)
+            mw = float(ma20_w_daily.get(d, 1.0))
+            tw = sw * mw
+        else:
+            tw = 0.0
+
+        reserve *= (1 + v8_daily.at[d])
+
+        if d in rebals:
+            vw = tgt_w(d)
+            w = tw * vw
+            # 组合回撤硬降档（T-1 收盘净值）
+            if dd_degrade is not None and last_nav > 0:
+                dd = last_nav / peak_nav - 1.0
+                if dd < dd_degrade:
+                    w = w * dd_degrade_scale
+
+            if w <= 1e-9:
+                for c, sh in positions.items():
+                    o = open_w.at[d, c]
+                    if not np.isnan(o) and o > 0:
+                        cash += sh * o * 0.999
+                positions = {}
+                reserve += cash
+                cash = 0.0
+                state_in = False
+            else:
+                pool = rebal_scores(d)
+                if pool is not None and len(pool):
+                    sel = select_with_limit(pool)
+                    if log_holdings:
+                        holdings_log[d] = list(sel)
+                    equity = cash + reserve + sum(
+                        sh * close_w.at[d, c] if not np.isnan(close_w.at[d, c]) else 0
+                        for c, sh in positions.items())
+                    target_stock = equity * w
+                    for c in list(positions):
+                        if c not in sel:
+                            o = open_w.at[d, c]
+                            if not np.isnan(o) and o > 0:
+                                cash += positions[c] * o * 0.999
+                            del positions[c]
+                    cur_val = sum(
+                        positions.get(c, 0) * close_w.at[d, c]
+                        if not np.isnan(close_w.at[d, c]) else 0 for c in positions)
+                    deficit = target_stock - cur_val
+                    if deficit > 0:
+                        avail = min(reserve, deficit)
+                        reserve -= avail
+                        cash += avail
+                    alloc = target_stock / len(sel) if len(sel) else 0
+                    for c in sel:
+                        o = open_w.at[d, c]
+                        if np.isnan(o) or o <= 0:
+                            continue
+                        have = positions.get(c, 0) * (close_w.at[d, c] if not np.isnan(close_w.at[d, c]) else 0)
+                        diff = alloc - have
+                        if diff > 100:
+                            plim = preclose_w.at[d, c] * (0.8 if c[:3] in ("300", "688") else 0.9) if not np.isnan(preclose_w.at[d, c]) else 0
+                            if not np.isnan(plim) and o <= plim:
+                                continue
+                            sh = int(diff / (o * 1.001) // 100 * 100)
+                            if sh > 0 and cash >= sh * o * 1.001:
+                                cash -= sh * o * 1.001
+                                positions[c] = positions.get(c, 0) + sh
+                        elif diff < -100:
+                            sh = int(-diff / (o * 0.999) // 100 * 100)
+                            sh = min(sh, positions.get(c, 0))
+                            if sh > 0:
+                                cash += sh * o * 0.999
+                                positions[c] -= sh
+                                if positions[c] <= 0:
+                                    del positions[c]
+                    state_in = True
+
+        pos_val = sum(sh * close_w.at[d, c] if not np.isnan(close_w.at[d, c]) else 0
+                      for c, sh in positions.items())
+        nav = cash + reserve + pos_val
+        navs.append(nav)
+        last_nav = nav
+        peak_nav = max(peak_nav, nav)
+        reserve += cash
+        cash = 0.0
+
+    nav_s = pd.Series(navs, index=pd.Index(cal_dates, name="trade_date"))
+    nav_m = nav_s.groupby((nav_s.index // 100).astype(str)).last()
+    monthly = nav_m.pct_change().dropna()
+    if log_holdings:
+        return nav_s, monthly, holdings_log
     return nav_s, monthly
