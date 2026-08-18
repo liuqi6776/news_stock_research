@@ -3,140 +3,821 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>量化策略 · 每日信号</title>
+<title>A股综合复合量化策略 · 实时监控与信号服务</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-  :root { --bg:#0f1420; --card:#1a2233; --line:#2a3550; --txt:#e6ebf5; --sub:#8b98b5;
-          --green:#2fbf71; --red:#e05b5b; --amber:#e8a33d; --blue:#5b8def; }
-  * { box-sizing:border-box; margin:0; padding:0; }
-  body { background:var(--bg); color:var(--txt); font-family:"Segoe UI","Microsoft YaHei",sans-serif; }
-  .wrap { max-width:1180px; margin:0 auto; padding:20px 24px 60px; }
-  header { display:flex; align-items:baseline; justify-content:space-between; padding:18px 0 14px; border-bottom:1px solid var(--line); }
-  header h1 { font-size:22px; font-weight:700; letter-spacing:.5px; }
-  header .meta { color:var(--sub); font-size:13px; }
-  .grid { display:grid; grid-template-columns:2fr 1fr; gap:16px; margin-top:18px; }
-  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:18px 20px; }
-  .card h2 { font-size:14px; color:var(--sub); font-weight:600; margin-bottom:12px; letter-spacing:1px; }
-  .action-box { text-align:center; padding:22px 16px; }
-  .action-box .tag { display:inline-block; font-size:12px; padding:3px 10px; border-radius:20px; margin-bottom:10px; }
-  .action-box .big { font-size:26px; font-weight:800; line-height:1.4; }
-  .action-box .pos { margin-top:8px; font-size:14px; color:var(--sub); }
-  .metrics { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:16px; }
-  .metric { background:var(--bg); border:1px solid var(--line); border-radius:10px; padding:12px; text-align:center; }
-  .metric .k { font-size:12px; color:var(--sub); }
-  .metric .v { font-size:20px; font-weight:700; margin-top:4px; }
-  .pill { display:inline-block; padding:2px 9px; border-radius:12px; font-size:12px; font-weight:600; }
-  .on  { background:rgba(47,191,113,.15); color:var(--green); }
-  .off { background:rgba(224,91,91,.15); color:var(--red); }
-  .w1 { color:var(--green); } .w5 { color:var(--amber); } .w0 { color:var(--red); }
-  table { width:100%; border-collapse:collapse; font-size:13px; }
-  th { color:var(--sub); font-weight:600; text-align:left; padding:8px 8px; border-bottom:1px solid var(--line); }
-  td { padding:7px 8px; border-bottom:1px solid #1f2940; }
-  .rank { color:var(--sub); width:44px; }
-  .num { font-variant-numeric:tabular-nums; }
-  .notes { font-size:12px; color:var(--amber); margin-top:12px; line-height:1.8; }
-  .note-dot::before { content:"⚠ "; }
-  img.chart { width:100%; border-radius:10px; margin-top:8px; }
-  .hist-wrap { max-height:420px; overflow:auto; }
-  .hist-row { display:flex; align-items:center; gap:10px; padding:9px 6px; border-bottom:1px solid #1f2940; font-size:13px; }
-  .hist-row .d { color:var(--sub); width:86px; flex:none; }
-  .hist-row .a { flex:1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
-  .scroll { overflow-x:auto; }
-  .sub-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:16px; }
-  @media(max-width:900px){ .grid,.sub-grid{grid-template-columns:1fr;} .metrics{grid-template-columns:repeat(3,1fr);} }
+  :root {
+    --bg: #090d16;
+    --card-bg: #111827;
+    --card-hover: #162035;
+    --border: #1e293b;
+    --border-light: #334155;
+    --text-main: #f8fafc;
+    --text-sub: #94a3b8;
+    --text-muted: #64748b;
+    --accent: #3b82f6;
+    --green: #10b981;
+    --green-bg: rgba(16, 185, 129, 0.12);
+    --red: #ef4444;
+    --red-bg: rgba(239, 68, 68, 0.12);
+    --amber: #f59e0b;
+    --amber-bg: rgba(245, 158, 11, 0.12);
+    --purple: #8b5cf6;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text-main);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  .app-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 24px 32px 80px;
+  }
+  
+  /* Top Nav Header */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .brand-group {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .brand-logo {
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+  }
+  .brand-info h1 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    color: var(--text-main);
+  }
+  .brand-info .sub-tag {
+    font-size: 12px;
+    color: var(--text-sub);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 2px 8px;
+    border-radius: 9999px;
+    font-size: 11px;
+    font-weight: 600;
+    background: var(--green-bg);
+    color: var(--green);
+    border: 1px solid rgba(16, 185, 129, 0.2);
+  }
+  .status-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--green);
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0% { transform: scale(0.95); opacity: 0.8; }
+    50% { transform: scale(1.2); opacity: 1; }
+    100% { transform: scale(0.95); opacity: 0.8; }
+  }
+
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .btn-refresh {
+    background: #1e293b;
+    color: #f8fafc;
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s;
+  }
+  .btn-refresh:hover {
+    background: #334155;
+    border-color: #475569;
+  }
+  .btn-refresh:active {
+    transform: scale(0.98);
+  }
+
+  /* Grid Layouts */
+  .hero-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 28px;
+  }
+  @media (max-width: 1200px) {
+    .hero-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 768px) {
+    .hero-grid { grid-template-columns: 1fr; }
+  }
+
+  /* Cards */
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 22px;
+    transition: border-color 0.2s;
+  }
+  .card:hover {
+    border-color: var(--border-light);
+  }
+  .card-title {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-sub);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .card-val {
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--text-main);
+    font-family: "JetBrains Mono", monospace;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+  .card-desc {
+    font-size: 12.5px;
+    color: var(--text-sub);
+    line-height: 1.4;
+  }
+
+  /* Highlight Banner Card */
+  .hero-action-card {
+    grid-column: span 1;
+    background: linear-gradient(145deg, #131d33 0%, #0d1527 100%);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+  }
+  .action-tag {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .tag-buy { background: var(--green-bg); color: var(--green); border: 1px solid rgba(16,185,129,0.3); }
+  .tag-hold { background: var(--amber-bg); color: var(--amber); border: 1px solid rgba(245,158,11,0.3); }
+  .tag-def { background: var(--red-bg); color: var(--red); border: 1px solid rgba(239,68,68,0.3); }
+
+  .progress-bar-wrap {
+    height: 8px;
+    background: #1e293b;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 12px 0 8px;
+  }
+  .progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #3b82f6 0%, #10b981 100%);
+    border-radius: 4px;
+    transition: width 0.4s ease;
+  }
+
+  /* Navigation Tabs */
+  .tab-nav {
+    display: flex;
+    gap: 8px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 20px;
+  }
+  .tab-btn {
+    background: none;
+    border: none;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-sub);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+  }
+  .tab-btn:hover {
+    color: var(--text-main);
+  }
+  .tab-btn.active {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+
+  /* Tab Content */
+  .tab-pane { display: none; }
+  .tab-pane.active { display: block; }
+
+  /* Table styling */
+  .table-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+  }
+  .table-header-box {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .table-header-box h2 {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .search-input {
+    background: var(--bg);
+    border: 1px solid var(--border-light);
+    color: var(--text-main);
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    outline: none;
+    width: 220px;
+  }
+  .search-input:focus {
+    border-color: var(--accent);
+  }
+  .table-responsive {
+    overflow-x: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    text-align: left;
+  }
+  th {
+    background: #0d1322;
+    color: var(--text-sub);
+    font-weight: 600;
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+  }
+  td {
+    padding: 11px 16px;
+    border-bottom: 1px solid #172033;
+    color: var(--text-main);
+  }
+  tr:hover td {
+    background: #151e33;
+  }
+  .code-cell {
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 600;
+    color: var(--accent);
+  }
+  .num-cell {
+    font-family: "JetBrains Mono", monospace;
+    font-variant-numeric: tabular-nums;
+  }
+  .rank-badge {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 6px;
+    background: #1e293b;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--text-sub);
+  }
+  .rank-1, .rank-2, .rank-3 {
+    background: rgba(245, 158, 11, 0.2);
+    color: var(--amber);
+  }
+
+  /* Performance Tab Styles */
+  .perf-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+  }
+  @media (max-width: 1024px) {
+    .perf-grid { grid-template-columns: 1fr; }
+  }
+  .chart-container {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px;
+  }
+  .chart-img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    margin-top: 10px;
+  }
+  .metric-stat-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .stat-card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px;
+  }
+  .stat-k { font-size: 11px; color: var(--text-sub); margin-bottom: 4px; }
+  .stat-v { font-size: 20px; font-weight: 700; font-family: "JetBrains Mono", monospace; }
+
+  /* History Timeline */
+  .hist-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 18px;
+    border-bottom: 1px solid #172033;
+    transition: background 0.2s;
+  }
+  .hist-item:hover { background: #151e33; }
+  .hist-date { font-family: "JetBrains Mono", monospace; font-weight: 600; width: 110px; }
+  .hist-state { flex: 1; color: var(--text-sub); }
+  .hist-action { font-weight: 700; }
+
+  /* Notification Toast */
+  .toast {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: #1e293b;
+    border: 1px solid var(--border-light);
+    padding: 12px 20px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 13px;
+    display: none;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    z-index: 100;
+  }
 </style>
 </head>
 <body>
-<div class="wrap">
+
+<div class="app-container">
+  <!-- Top Navigation Header -->
   <header>
-    <h1>📈 量化策略 · 每日操作信号</h1>
-    <div class="meta" id="meta">加载中…</div>
+    <div class="brand-group">
+      <div class="brand-logo">⚡</div>
+      <div class="brand-info">
+        <h1>A股综合复合量化策略 · 生产级监控服务</h1>
+        <div class="sub-tag">
+          <span>策略版本: <strong>v2.2.0 (ENS+S123+熔断降档+IM对冲)</strong></span>
+          <span>•</span>
+          <span class="status-badge"><span class="status-dot"></span>服务运行中 (127.0.0.1:8000)</span>
+        </div>
+      </div>
+    </div>
+    <div class="nav-actions">
+      <div style="font-size: 13px; color: var(--text-sub); text-align: right;">
+        <div>信号日期: <strong id="header-sig-date" style="color: var(--text-main); font-family: 'JetBrains Mono'">--</strong></div>
+        <div style="font-size: 11px;">生成时间: <span id="header-gen-time">--</span></div>
+      </div>
+      <button class="btn-refresh" onclick="triggerRunSignal()" id="btn-run-signal">
+        <span id="btn-icon">🔄</span> 重算最新信号
+      </button>
+    </div>
   </header>
 
-  <div class="grid">
-    <div class="card action-box">
-      <span class="tag" id="act-tag">…</span>
-      <div class="big" id="act-big">加载中…</div>
-      <div class="pos" id="act-pos"></div>
-      <div class="metrics">
-        <div class="metric"><div class="k">RS12 择时</div><div class="v" id="m-rs12">…</div></div>
-        <div class="metric"><div class="k">MA20 仓位</div><div class="v" id="m-w">…</div></div>
-        <div class="metric"><div class="k">持仓数</div><div class="v" id="m-n">…</div></div>
-        <div class="metric"><div class="k">调仓日</div><div class="v" id="m-rb">…</div></div>
-        <div class="metric"><div class="k">平均仓位(历史)</div><div class="v" id="m-avg">62%</div></div>
-        <div class="metric"><div class="k">回撤下限来源</div><div class="v" id="m-caveat" style="font-size:11px">RS12弱段持ETF</div></div>
+  <!-- Hero Status Grid -->
+  <div class="hero-grid">
+    <!-- 1. 今日操作决策 -->
+    <div class="card hero-action-card">
+      <div class="card-title">
+        <span>今日核心操作决策</span>
+        <span id="card1-status-badge" class="action-tag tag-def">--</span>
       </div>
-      <div class="notes" id="notes"></div>
+      <div class="card-val" id="card1-stock-pct">0.0%</div>
+      <div class="progress-bar-wrap">
+        <div class="progress-bar-fill" id="card1-bar" style="width: 0%;"></div>
+      </div>
+      <div class="card-desc" id="card1-desc">
+        目标股票仓位: <strong id="card1-stock-w">0%</strong> (Top 40 分散)<br>
+        避险资金配置: <strong id="card1-def-w">100%</strong> (V8多资产)
+      </div>
     </div>
 
+    <!-- 2. S123 宏观估值状态 -->
     <div class="card">
-      <h2>当前持有期候选组合 · Top 50</h2>
-      <div style="font-size:12px;color:var(--sub);margin-bottom:10px">这是调仓日已选好的股票候选名单（备选）。RS12 <b>强</b> 时按此清单买入；RS12 <b>弱</b> 时持有 512100 ETF、不买股票（以左侧今日操作为准）。</div>
-      <div class="scroll">
+      <div class="card-title">
+        <span>宏观估值择时 (S123)</span>
+        <span style="color: var(--accent); font-weight: 700;" id="card2-score">S--</span>
+      </div>
+      <div class="card-val" id="card2-label">--</div>
+      <div class="card-desc" style="font-size: 12px; margin-top: 8px;">
+        • S1 (PE估值分位 < 20%): <span id="card2-s1">--</span><br>
+        • S2 (10Y国债 ERP利差 > 1σ): <span id="card2-s2">--</span><br>
+        • S3 (自高点回撤深坑 ≤ -25%): <span id="card2-s3">--</span>
+      </div>
+    </div>
+
+    <!-- 3. 组合净值回撤与熔断 -->
+    <div class="card">
+      <div class="card-title">
+        <span>净值熔断监控 (-10%)</span>
+        <span style="color: var(--green);" id="card3-status">正常 (未触发)</span>
+      </div>
+      <div class="card-val" id="card3-dd" style="color: var(--text-main)">0.00%</div>
+      <div class="card-desc">
+        熔断降档线: <strong>-10.0%</strong> (仓位削减至 50%)<br>
+        当前降档系数: <strong id="card3-scale">1.0x</strong><br>
+        防护机制: 坚决截断小盘股流动性踩踏左尾
+      </div>
+    </div>
+
+    <!-- 4. IM 期货低基差对冲 -->
+    <div class="card">
+      <div class="card-title">
+        <span>IM 期货动态对冲 (β=0.5)</span>
+        <span style="color: var(--amber)">低基差对冲</span>
+      </div>
+      <div class="card-val" id="card4-lots">0.0 手</div>
+      <div class="card-desc">
+        目标对冲面值: <strong id="card4-notional">0 元</strong><br>
+        实测滚仓成本: <strong>-0.29%/年</strong> (低损耗)<br>
+        对冲后月频回撤: <strong style="color: var(--green)">-8.01%</strong> (夏普 0.94)
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Tabs -->
+  <div class="tab-nav">
+    <button class="tab-btn active" onclick="switchTab('tab-picks')">🎯 目标持仓清单 (Top 40 + V8 避险)</button>
+    <button class="tab-btn" onclick="switchTab('tab-perf')">📊 策略全景回测与仪表盘</button>
+    <button class="tab-btn" onclick="switchTab('tab-history')">📜 历史调仓记录</button>
+  </div>
+
+  <!-- Tab 1: 目标持仓明细 -->
+  <div id="tab-picks" class="tab-pane active">
+    <!-- V8 避险资产清单 -->
+    <div class="table-card" style="margin-bottom: 24px;" id="defensive-card-wrap">
+      <div class="table-header-box">
+        <h2>🛡️ V8 稳健避险资产配置清单 (货币 + 信用债 + 黄金)</h2>
+        <div style="font-size: 12.5px; color: var(--text-sub)">闲置资金全额停泊，赚取年化 ~2.5% 稳健收益，避免现金贬值</div>
+      </div>
+      <div class="table-responsive">
         <table>
-          <thead><tr><th>#</th><th>代码</th><th>名称</th><th style="text-align:right">因子分</th></tr></thead>
-          <tbody id="picks"></tbody>
+          <thead>
+            <tr>
+              <th>资产代码</th>
+              <th>资产名称</th>
+              <th>类别定位</th>
+              <th style="text-align: right;">目标权重</th>
+              <th style="text-align: right;">建议配置金额 (本金100万)</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-defensive"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 股票端 Top 40 目标持仓 -->
+    <div class="table-card">
+      <div class="table-header-box">
+        <h2>📈 股票端 ENS 混合打分目标组合 · Top 40</h2>
+        <input type="text" class="search-input" placeholder="🔍 搜索代码 / 名称 / 行业..." oninput="filterPicks(this.value)">
+      </div>
+      <div class="table-responsive">
+        <table>
+          <thead>
+            <tr>
+              <th>排名</th>
+              <th>股票代码</th>
+              <th>股票名称</th>
+              <th>细分行业 (≤4只)</th>
+              <th>申万一级 (≤20%)</th>
+              <th style="text-align: right;">ENS 评分</th>
+              <th style="text-align: right;">目标权重</th>
+              <th style="text-align: right;">建议配置金额</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-picks"></tbody>
         </table>
       </div>
     </div>
   </div>
 
-  <div class="sub-grid">
-    <div class="card">
-      <h2>策略 vs ETF 净值 (2020-2026)</h2>
-      <img class="chart" src="/assets/nav_vs_etf.png" alt="nav vs etf">
-      <div style="font-size:12px;color:var(--sub);margin-top:8px">最优策略 BASE+VAL+RS12+MA20三档(0.98)：年化 32.28% / MaxDD 15.41% / 卡玛 2.10；512100 ETF：9.08% / 41.78%</div>
+  <!-- Tab 2: 全景回测与仪表盘 -->
+  <div id="tab-perf" class="tab-pane">
+    <div class="perf-grid">
+      <!-- 回测图表 -->
+      <div class="chart-container">
+        <h2 style="font-size: 16px; font-weight: 700; margin-bottom: 6px;">一体化回测全景收益与对冲实测看板 (2019-2026)</h2>
+        <div style="font-size: 12px; color: var(--text-sub); margin-bottom: 12px;">包含全历史净值、动态回撤及 2023-2026 样本外 IM 期货低基差对冲深度实测</div>
+        <img src="/assets/integrated_composite_nav.png" class="chart-img" alt="综合策略全景回测图" onerror="this.src='/api/chart'">
+      </div>
+
+      <!-- 核心指标统计卡片 -->
+      <div>
+        <div class="card" style="margin-bottom: 16px;">
+          <h3 style="font-size: 14px; font-weight: 700; margin-bottom: 14px; color: var(--accent)">★ 核心策略关键绩效 (2019-2026)</h3>
+          <div class="metric-stat-box">
+            <div class="stat-card">
+              <div class="stat-k">年化收益 (CAGR)</div>
+              <div class="stat-v" style="color: var(--green)">11.80%</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-k">夏普比率 (Sharpe)</div>
+              <div class="stat-v" style="color: var(--accent)">0.77</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-k">月频最大回撤</div>
+              <div class="stat-v" style="color: var(--amber)">-19.02%</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-k">卡玛比率 (Calmar)</div>
+              <div class="stat-v">0.46</div>
+            </div>
+          </div>
+          <div style="font-size: 12px; color: var(--text-sub); line-height: 1.6;">
+            • 跑赢基准: 沪深300年化 3.48% (回撤 -45.6%) / 中证1000年化 5.11% (回撤 -46.7%)<br>
+            • 稳健性: 2022年大跌期策略逆势录得 <strong>+17.5%</strong>，2024年小盘股危机期录得 <strong>+12.6%</strong>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 style="font-size: 14px; font-weight: 700; margin-bottom: 14px; color: var(--amber)">★ IM 期货低基差对冲 (2023+ OOS)</h3>
+          <div class="metric-stat-box">
+            <div class="stat-card">
+              <div class="stat-k">对冲后年化 (β=0.5)</div>
+              <div class="stat-v" style="color: var(--green)">11.78%</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-k">对冲后夏普比率</div>
+              <div class="stat-v" style="color: var(--green)">0.94</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-k">对冲后月频回撤</div>
+              <div class="stat-v" style="color: var(--green)">-8.01%</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-k">对冲后卡玛比率</div>
+              <div class="stat-v" style="color: var(--green)">1.08</div>
+            </div>
+          </div>
+          <div style="font-size: 12px; color: var(--text-sub); line-height: 1.6;">
+            • 实测滚仓成本: 2023-2026 年化仅 -0.29%，几乎无损耗提取纯 Alpha。<br>
+            • 适用场景: 资金规模 ≥ 220 万元的大账户实盘落地首选。
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="card">
-      <h2>历史信号记录 (近 90 天)</h2>
-      <div class="hist-wrap" id="hist"></div>
+  </div>
+
+  <!-- Tab 3: 历史调仓记录 -->
+  <div id="tab-history" class="tab-pane">
+    <div class="table-card">
+      <div class="table-header-box">
+        <h2>📜 历史每日信号与调仓建议列表</h2>
+      </div>
+      <div id="history-list-wrap"></div>
     </div>
   </div>
 </div>
 
+<div class="toast" id="toast-msg"></div>
+
 <script>
-async function loadToday() {
-  const r = await fetch('/api/today');
-  if (!r.ok) { document.getElementById('act-big').textContent = '暂无信号，请先运行 daily_signal.py'; return; }
-  const d = await r.json();
-  const on = d.rs12_on;
-  document.getElementById('meta').textContent =
-    `数据截至 ${d.as_of_date} · 生成 ${d.generated_at} · 调仓日 ${d.rebalance_date}`;
-  const tag = document.getElementById('act-tag');
-  tag.textContent = on ? 'RS12 强 · 股票组合' : 'RS12 弱 · ETF 阶段';
-  tag.className = 'tag ' + (on ? 'on' : 'off');
-  document.getElementById('act-big').textContent = d.action;
-  document.getElementById('act-pos').textContent = d.position;
-  const w = d.ma20 ? d.ma20.weight : 1;
-  const wEl = document.getElementById('m-w');
-  wEl.textContent = on ? (w >= 1 ? '满仓 1.0' : w >= 0.5 ? '半仓 0.5' : '空仓 0') : '全额 ETF';
-  wEl.className = 'v ' + (on ? (w >= 1 ? 'w1' : w >= 0.5 ? 'w5' : 'w0') : 'w1');
-  document.getElementById('m-rs12').innerHTML = on ? '<span class="pill on">强</span>' : '<span class="pill off">弱</span>';
-  document.getElementById('m-n').textContent = d.picks_count;
-  document.getElementById('m-rb').textContent = d.rebalance_date;
-  const rows = d.picks.map((p, i) =>
-    `<tr><td class="rank">${i+1}</td><td class="num">${p.code}</td><td>${p.name||'—'}</td><td class="num" style="text-align:right">${p.score}</td></tr>`).join('');
-  document.getElementById('picks').innerHTML = rows;
-  const notes = (d.data_notes || []).map(n => `<div class="note-dot">${n}</div>`).join('');
-  document.getElementById('notes').innerHTML = notes;
-  if (d.ma20 && on) {
-    const m = d.ma20;
-    document.getElementById('act-pos').textContent += `  ·  close ${m.close} / MA20 ${m.ma20}`;
+let currentPicks = [];
+let currentDefensive = [];
+
+async function loadTodayData() {
+  try {
+    const res = await fetch('/api/today');
+    if (!res.ok) throw new Error("获取今日信号失败");
+    const data = await res.json();
+    renderDashboard(data);
+  } catch (err) {
+    showToast("⚠️ " + err.message);
   }
 }
-async function loadHist() {
-  const r = await fetch('/api/history?limit=90');
-  const list = await r.json();
-  document.getElementById('hist').innerHTML = list.map(d => `
-    <div class="hist-row">
-      <span class="d">${d.file_date}</span>
-      <span class="a">${d.action}</span>
-      <span class="pill ${d.rs12_on ? 'on' : 'off'}">${d.rs12_on ? '强' : '弱'}</span>
-      <span>${d.picks_count}只</span>
-    </div>`).join('') || '<div style="color:var(--sub);padding:10px">暂无历史</div>';
+
+function renderDashboard(data) {
+  // Header Info
+  document.getElementById('header-sig-date').textContent = data.signal_date || '--';
+  document.getElementById('header-gen-time').textContent = data.generated_at || '--';
+
+  // Card 1: 今日操作
+  const macro = data.macro_timing || {};
+  const risk = data.risk_control || {};
+  const stockW = risk.target_stock_exposure !== undefined ? (risk.target_stock_exposure * 100).toFixed(1) : "0.0";
+  const defW = risk.target_defensive_exposure !== undefined ? (risk.target_defensive_exposure * 100).toFixed(1) : "100.0";
+
+  document.getElementById('card1-stock-pct').textContent = stockW + "%";
+  document.getElementById('card1-bar').style.width = stockW + "%";
+  document.getElementById('card1-stock-w').textContent = stockW + "%";
+  document.getElementById('card1-def-w').textContent = defW + "%";
+
+  const tagBadge = document.getElementById('card1-status-badge');
+  if (macro.s123_total_score >= 3) {
+    tagBadge.className = "action-tag tag-buy";
+    tagBadge.textContent = "S3 满仓进攻";
+  } else if (macro.s123_total_score === 2) {
+    tagBadge.className = "action-tag tag-hold";
+    tagBadge.textContent = "S2 均衡配置";
+  } else {
+    tagBadge.className = "action-tag tag-def";
+    tagBadge.textContent = "S1/S0 避险防守";
+  }
+
+  // Card 2: 宏观状态
+  document.getElementById('card2-score').textContent = "S" + (macro.s123_total_score ?? 0);
+  document.getElementById('card2-label').textContent = macro.status_label ? macro.status_label.split(' ')[0] : "--";
+  document.getElementById('card2-s1').textContent = macro.s1_pe_low ? "✅ 满足 (<20%)" : "❌ 未满足";
+  document.getElementById('card2-s2').textContent = macro.s2_erp_high ? "✅ 满足 (>1σ)" : "❌ 未满足";
+  document.getElementById('card2-s3').textContent = macro.s3_dd_deep ? "✅ 满足 (≤-25%)" : "❌ 未满足";
+
+  // Card 3: 熔断监控
+  const ddPct = (risk.current_drawdown * 100).toFixed(2);
+  document.getElementById('card3-dd').textContent = ddPct + "%";
+  document.getElementById('card3-scale').textContent = (risk.scale_factor ?? 1.0).toFixed(1) + "x";
+  if (risk.is_degraded) {
+    document.getElementById('card3-status').textContent = "⚠️ 已触发降档 (-10%)";
+    document.getElementById('card3-status').style.color = "var(--red)";
+  } else {
+    document.getElementById('card3-status').textContent = "正常 (未触发)";
+    document.getElementById('card3-status').style.color = "var(--green)";
+  }
+
+  // Card 4: IM 对冲
+  const hedge = data.im_futures_hedge || {};
+  document.getElementById('card4-lots').textContent = (hedge.recommended_lots ?? 0).toFixed(1) + " 手";
+  document.getElementById('card4-notional').textContent = (hedge.target_hedge_notional ?? 0).toLocaleString() + " 元";
+
+  // Render Picks
+  currentPicks = data.holdings_picks || [];
+  currentDefensive = data.defensive_picks || [];
+  renderPicksTable(currentPicks);
+  renderDefensiveTable(currentDefensive);
 }
-async function refresh() { await Promise.all([loadToday(), loadHist()]); }
-refresh();
-setInterval(refresh, 60000);  // 每 60s 自动刷新最新信号
+
+function renderPicksTable(picks) {
+  const tbody = document.getElementById('tbody-picks');
+  tbody.innerHTML = '';
+  if (!picks || picks.length === 0) {
+    tbody.innerHTML = '<tr><td colspan="8" style="text-align: center; color: var(--text-sub); padding: 24px;">当前宏观状态为避险段，建议持有 V8 稳健资产，无股票仓位配置。</td></tr>';
+    return;
+  }
+  picks.forEach(p => {
+    const tr = document.createElement('tr');
+    const rankClass = p.rank <= 3 ? `rank-${p.rank}` : '';
+    tr.innerHTML = `
+      <td><span class="rank-badge ${rankClass}">${p.rank}</span></td>
+      <td class="code-cell">${p.ts_code}</td>
+      <td style="font-weight: 600;">${p.name || p.ts_code}</td>
+      <td><span style="background: #1e293b; padding: 2px 8px; border-radius: 4px; font-size: 12px;">${p.industry || '其他'}</span></td>
+      <td><span style="color: var(--text-sub); font-size: 12px;">${p.industry_l1 || '其他'}</span></td>
+      <td class="num-cell" style="text-align: right; color: var(--accent);">${p.ens_score.toFixed(4)}</td>
+      <td class="num-cell" style="text-align: right; font-weight: 700; color: var(--green);">${(p.target_weight * 100).toFixed(2)}%</td>
+      <td class="num-cell" style="text-align: right;">¥${p.target_amount.toLocaleString()}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+function renderDefensiveTable(defensive) {
+  const tbody = document.getElementById('tbody-defensive');
+  tbody.innerHTML = '';
+  if (!defensive || defensive.length === 0) {
+    tbody.innerHTML = '<tr><td colspan="5" style="text-align: center; color: var(--text-sub); padding: 18px;">股票端满仓，无避险资金。</td></tr>';
+    return;
+  }
+  defensive.forEach(d => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td class="code-cell">${d.ts_code}</td>
+      <td style="font-weight: 600;">${d.name}</td>
+      <td><span style="background: rgba(59, 130, 246, 0.15); color: var(--accent); padding: 2px 8px; border-radius: 4px; font-size: 12px;">${d.category}</span></td>
+      <td class="num-cell" style="text-align: right; font-weight: 700; color: var(--green);">${(d.target_weight * 100).toFixed(2)}%</td>
+      <td class="num-cell" style="text-align: right;">¥${d.target_amount.toLocaleString()}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+function filterPicks(query) {
+  query = query.trim().toLowerCase();
+  if (!query) {
+    renderPicksTable(currentPicks);
+    return;
+  }
+  const filtered = currentPicks.filter(p => 
+    p.ts_code.toLowerCase().includes(query) ||
+    (p.name && p.name.toLowerCase().includes(query)) ||
+    (p.industry && p.industry.toLowerCase().includes(query)) ||
+    (p.industry_l1 && p.industry_l1.toLowerCase().includes(query))
+  );
+  renderPicksTable(filtered);
+}
+
+async function loadHistory() {
+  try {
+    const res = await fetch('/api/history?limit=30');
+    if (!res.ok) return;
+    const list = await res.json();
+    const wrap = document.getElementById('history-list-wrap');
+    wrap.innerHTML = '';
+    list.forEach(item => {
+      const row = document.createElement('div');
+      row.className = 'hist-item';
+      const m = item.macro_timing || {};
+      row.innerHTML = `
+        <div class="hist-date">${item.signal_date}</div>
+        <div class="hist-state">S123评分: <strong>S${m.s123_total_score ?? '--'}</strong> (${m.status_label || '--'})</div>
+        <div class="hist-action" style="color: ${m.s123_total_score >= 3 ? 'var(--green)' : m.s123_total_score === 2 ? 'var(--amber)' : 'var(--red)'}">
+          股票仓位 ${(item.risk_control?.target_stock_exposure * 100 || 0).toFixed(0)}%
+        </div>
+      `;
+      wrap.appendChild(row);
+    });
+  } catch (e) {
+    console.error(e);
+  }
+}
+
+async function triggerRunSignal() {
+  const btn = document.getElementById('btn-run-signal');
+  btn.disabled = true;
+  btn.innerHTML = '<span>⏳</span> 计算中...';
+  showToast("🚀 已触发后台重新计算最新信号，正在执行模型推理...");
+  try {
+    const res = await fetch('/api/run_signal', { method: 'POST' });
+    const data = await res.json();
+    showToast("ℹ️ " + data.message);
+  } catch (err) {
+    showToast("❌ 触发失败: " + err.message);
+  } finally {
+    setTimeout(() => {
+      btn.disabled = false;
+      btn.innerHTML = '<span id="btn-icon">🔄</span> 重算最新信号';
+    }, 5000);
+  }
+}
+
+function switchTab(tabId) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+  event.target.classList.add('active');
+  document.getElementById(tabId).classList.add('active');
+  if (tabId === 'tab-history') {
+    loadHistory();
+  }
+}
+
+function showToast(msg) {
+  const toast = document.getElementById('toast-msg');
+  toast.textContent = msg;
+  toast.style.display = 'block';
+  setTimeout(() => { toast.style.display = 'none'; }, 4000);
+}
+
+// Initial Load
+loadTodayData();
 </script>
 </body>
 </html>
