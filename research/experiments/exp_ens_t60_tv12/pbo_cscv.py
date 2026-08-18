@@ -158,8 +158,8 @@ def main():
         "family_top10_by_monthly_sr": {f: float(v) for f, v in sr_all.head(10).items()},
         "dsr": dsr_out,
         "pbo_cscv": pbo_out,
-        "interpretation": ("PBO<0.50: 族内选优无明显过拟合; DSR≥0.95: 冻结版收益经 deflate 后仍显著。"
-                           "策略层证据, 不替代冻结后独立 OOS(2027-2032)。"),
+        "interpretation": ("PBO<0.50: 族内选优无明显过拟合; DSR<0.95: 71月样本量下未达绝对显著门槛(功效不足),"
+                           "需保留2027-2032独立OOS验证纪律。策略层证据, 不替代冻结后独立 OOS(2027-2032)。"),
     }
     with open(os.path.join(HERE, "pbo_cscv_report.json"), "w", encoding="utf-8") as fh:
         json.dump(report, fh, ensure_ascii=False, indent=2)

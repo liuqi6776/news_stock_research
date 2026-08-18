@@ -39,3 +39,9 @@ memory/
 
 # Conclusion archive repo (nested independent git, keep local only)
 quant_conclusion/
+
+# Sensitive authentication QR codes and screenshots (keep local only)
+lark*.png
+qr*.png
+*auth_qr*.png
+*qrcode*.png

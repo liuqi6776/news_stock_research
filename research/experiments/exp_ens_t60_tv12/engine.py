@@ -266,12 +266,13 @@ def build_ma20_w(cal_dates, deep=0.98, window=20):
 
 
 def run_backtest(shared, score_src, top_tag, tgt_vol=None, floor_w=0.4, vol_lookback=20,
-                 cap_ind_l1=None, log_holdings=False):
+                 cap_ind_l1=None, log_holdings=False, delist_discount=0.0):
     """日频回测（s123 择时 + S123_ONLY 卖出 + V8 避险 + 双边20bps）。
 
     cap_ind_l1: 单申万一级行业 <= cap_ind_l1（占股票端权重, 等价于每级 <= int(top_n*cap) 只）,
                 None=不约束（冻结版基线）。
     log_holdings: True 时返回 (nav_s, monthly, {调仓日: [持仓ts_code列表]}) 三元素, 否则两元素。
+    delist_discount: 退市/停牌缺失开盘价时按最后收盘价折价清算比例 (默认 0.0, 遵从 LAST_CLOSE 口径)。
     """
     top_n = TOP_N_CHOICES[top_tag]
     max_ind = MAX_PER_IND[top_tag]
@@ -391,6 +392,10 @@ def run_backtest(shared, score_src, top_tag, tgt_vol=None, floor_w=0.4, vol_look
                     o = open_w.at[d, c]
                     if not np.isnan(o) and o > 0:
                         cash += sh * o * 0.999
+                    else:
+                        pc = preclose_w.at[d, c] if not np.isnan(preclose_w.at[d, c]) else close_w.at[d, c]
+                        if not np.isnan(pc) and pc > 0:
+                            cash += sh * pc * (1.0 - delist_discount) * 0.999
                 positions = {}
                 reserve += cash
                 cash = 0.0
@@ -410,6 +415,10 @@ def run_backtest(shared, score_src, top_tag, tgt_vol=None, floor_w=0.4, vol_look
                             o = open_w.at[d, c]
                             if not np.isnan(o) and o > 0:
                                 cash += positions[c] * o * 0.999
+                            else:
+                                pc = preclose_w.at[d, c] if not np.isnan(preclose_w.at[d, c]) else close_w.at[d, c]
+                                if not np.isnan(pc) and pc > 0:
+                                    cash += positions[c] * pc * (1.0 - delist_discount) * 0.999
                             del positions[c]
                     cur_val = sum(positions.get(c, 0) * close_w.at[d, c]
                                   if not np.isnan(close_w.at[d, c]) else 0 for c in positions)
@@ -461,7 +470,7 @@ def run_backtest(shared, score_src, top_tag, tgt_vol=None, floor_w=0.4, vol_look
 def run_backtest_tiered(shared, score_src, top_tag, tgt_vol=None, floor_w=0.4, vol_lookback=20,
                         cap_ind_l1=None, timing_mode="tiered", dd_degrade=None,
                         dd_degrade_scale=0.5, log_holdings=False, return_exposure=False,
-                        post_whitelist=None, pre_whitelist_ind=None):
+                        post_whitelist=None, pre_whitelist_ind=None, delist_discount=0.0):
     """权重梯度版回测（杠杆二）。
 
     timing_mode:
@@ -586,6 +595,10 @@ def run_backtest_tiered(shared, score_src, top_tag, tgt_vol=None, floor_w=0.4, v
                     o = open_w.at[d, c]
                     if not np.isnan(o) and o > 0:
                         cash += sh * o * 0.999
+                    else:
+                        pc = preclose_w.at[d, c] if not np.isnan(preclose_w.at[d, c]) else close_w.at[d, c]
+                        if not np.isnan(pc) and pc > 0:
+                            cash += sh * pc * (1.0 - delist_discount) * 0.999
                 positions = {}
                 reserve += cash
                 cash = 0.0
@@ -609,6 +622,10 @@ def run_backtest_tiered(shared, score_src, top_tag, tgt_vol=None, floor_w=0.4, v
                             o = open_w.at[d, c]
                             if not np.isnan(o) and o > 0:
                                 cash += positions[c] * o * 0.999
+                            else:
+                                pc = preclose_w.at[d, c] if not np.isnan(preclose_w.at[d, c]) else close_w.at[d, c]
+                                if not np.isnan(pc) and pc > 0:
+                                    cash += positions[c] * pc * (1.0 - delist_discount) * 0.999
                             del positions[c]
                     cur_val = sum(
                         positions.get(c, 0) * close_w.at[d, c]
