@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
-"""综合复合策略一体化回测引擎 (Integrated Composite Quantitative Strategy Backtest Engine)
+"""综合复合策略一体化回测引擎与全景图绘制 (Integrated Composite Strategy Engine & Visual Dashboard)
 
-整合核心研究成果：
-  1. 选股层 (Alpha Engine): 全市场 5800+ 股票池 + ENS 架构 (0.5*ENH4 + 0.5*C8_GBDT 残差筹码)
-  2. 行业层 (Portfolio & Industry Constraints): Top40 / 细分行业<=4 / 单申万一级<=20%
-  3. 风控层 (Multi-Tier Risk Control): S123 估值三档 (1.0/0.5/0) + 净值回撤降档 (dd_degrade=-10%×0.5) + MA20 趋势
-  4. 对冲层 (IM Futures Dynamic Hedging): 基于真实 IM 基差实测数据 (im_basis_analysis.csv) 的空头对冲 (beta=0.0~1.0)
-  5. 基准对标 (Benchmarks): 中证1000 (000852.SH) / 沪深300 (000300.SH)
+整合量化核心研究成果 (最新修复版):
+  1. 选股层 (Alpha Engine): 全市场 5,800+ 股票池 + ENS 混合打分 (0.5×ENH4 + 0.5×C8-GBDT 残差筹码)
+  2. 行业与分散化约束 (Portfolio Constraints): Top40 / 细分行业<=4 / 单申万一级<=20%
+  3. 宏观风控层 (Multi-Tier Risk Control):
+     - S123 宏观估值三档平滑 (>=3 → 1.0, ==2 → 0.5, <=1 → 0.0)，避险资金停泊于 V8 多资产稳健收益池
+     - 组合净值熔断硬降档 (dd_degrade = -10%, scale = 0.5)，自高点回撤达 10% 仓位减半截断左尾
+  4. 对冲层 (IM Futures Dynamic Hedging): 基于真实 2023-2026 滚仓基差日收益数据 (im_basis_analysis.csv) 的低成本空头对冲
+  5. 交易与清算层 (Execution & Settlement): 遵从 A 股 T+1、双边 20bps 交易成本、涨跌停保护及 LAST_CLOSE 退市/停牌清算口径
 """
 import os
 import sys
@@ -27,6 +29,7 @@ from engine import init_shared, run_backtest_tiered, SQRT_242  # noqa: E402
 
 IDX_DIR = os.path.join(ROOT, "research", "chip_momentum", "data", "index_daily")
 OUT_DIR = os.path.join(ROOT, "research", "experiments", "exp_ens_t60_tv12")
+CONCLUSION_STOCK_DIR = os.path.join(ROOT, "quant_conclusion", "STOCK")
 
 plt.rcParams["font.sans-serif"] = ["Microsoft YaHei", "SimHei", "DejaVu Sans"]
 plt.rcParams["axes.unicode_minus"] = False
@@ -44,25 +47,25 @@ def load_index_close(code):
 
 def calc_metrics(nav_s):
     nav_s = nav_s.sort_index().astype(float)
-    nav_s = nav_s / nav_s.iloc[0]
-    tot = nav_s.iloc[-1] - 1.0
-    yrs = len(nav_s) / 242.0
+    nav_norm = nav_s / nav_s.iloc[0]
+    tot = nav_norm.iloc[-1] - 1.0
+    yrs = len(nav_norm) / 242.0
     ann = (1 + tot) ** (1 / yrs) - 1 if yrs > 0 else 0.0
     
-    dd_s = nav_s / nav_s.cummax() - 1.0
-    maxdd_d = dd_s.min()
+    dd_s = nav_norm / nav_norm.cummax() - 1.0
+    maxdd_d = float(dd_s.min())
     
-    ret = nav_s.pct_change().fillna(0.0)
-    vol = ret.std() * SQRT_242
-    sharpe = (ann - 0.02) / (vol + 1e-8) if vol > 0 else 0.0
+    ret = nav_norm.pct_change().fillna(0.0)
+    vol = float(ret.std() * SQRT_242)
+    sharpe = float((ann - 0.02) / (vol + 1e-8)) if vol > 0 else 0.0
     
-    nav_m = nav_s.groupby((nav_s.index // 100).astype(str)).last()
+    nav_m = nav_norm.groupby((nav_norm.index // 100).astype(str)).last()
     dd_m = nav_m / nav_m.cummax() - 1.0
-    maxdd_m = dd_m.min()
-    calmar = ann / (-maxdd_d + 1e-9)
+    maxdd_m = float(dd_m.min())
+    calmar = float(ann / (-maxdd_d + 1e-9))
     
     ret_m = nav_m.pct_change().dropna()
-    m_win = (ret_m > 0).mean() if len(ret_m) > 0 else 0.0
+    m_win = float((ret_m > 0).mean()) if len(ret_m) > 0 else 0.0
     
     return {
         "cagr": ann,
@@ -73,14 +76,14 @@ def calc_metrics(nav_s):
         "calmar": calmar,
         "m_win": m_win,
         "tot": tot,
-        "n_days": len(nav_s)
+        "n_days": len(nav_norm)
     }
 
 
 def yearly_breakdown(nav_s):
     out = {}
     for y, g in nav_s.groupby(nav_s.index // 10000):
-        out[int(y)] = g.iloc[-1] / g.iloc[0] - 1.0
+        out[int(y)] = float(g.iloc[-1] / g.iloc[0] - 1.0)
     return out
 
 
@@ -112,13 +115,13 @@ def main():
         dd_degrade=None, return_exposure=True
     )
     
-    # 3. 核心推荐风控 2: S123 三档 + 组合净值回撤降档 (Tiered + DD Degrade -10%x0.5) [选股端最优]
+    # 3. 核心推荐风控 2: S123 三档 + 组合净值回撤降档 (Tiered + DD Degrade -10%x0.5) [选股端最优基线]
     nav_best_stock, _, w_best_stock = run_backtest_tiered(
         sh, "ENS", "T40", tgt_vol=None, timing_mode="tiered",
         dd_degrade=-0.10, dd_degrade_scale=0.5, return_exposure=True
     )
     
-    # 4. 探索风控 3: S123 三档 + MA20 趋势 + 回撤降档 (Tiered_MA20 + DD Degrade)
+    # 4. 强防御变体: S123 三档 + MA20 趋势 + 回撤降档 (Tiered_MA20 + DD Degrade)
     nav_s123_ma20_dd, _, w_s123_ma20_dd = run_backtest_tiered(
         sh, "ENS", "T40", tgt_vol=None, timing_mode="s123_ma20",
         dd_degrade=-0.10, dd_degrade_scale=0.5, return_exposure=True
@@ -130,7 +133,6 @@ def main():
         basis_df = pd.read_csv(basis_fp)
         basis_df["date"] = basis_df["date"].str.replace("-", "").astype(int)
         fut_ret = basis_df.set_index("date")["fut_ret"].dropna()
-        spot_ret = basis_df.set_index("date")["spot_ret"].dropna()
     else:
         print("    [警告] 未找到 im_basis_analysis.csv, 期货对冲评估跳过")
         fut_ret = pd.Series(dtype=float)
@@ -146,7 +148,7 @@ def main():
         fut_a = fut_ret.reindex(nav_sub.index).fillna(0.0)
 
         for beta in [0.3, 0.5, 0.7, 1.0]:
-            # 做空 beta * w_{t-1} 份 IM 期货
+            # 做空 beta * w_{t-1} 份 IM 期货 (每日结算低基差收益)
             r_h = r_p - beta * w_prev * fut_a
             nh = (1.0 + r_h).cumprod()
             hedged_strategies[f"IM对冲(β={beta:.1f})"] = nh
@@ -171,7 +173,7 @@ def main():
     }
 
     print("\n" + "=" * 115)
-    print("                   全样本策略综合绩效对比表 (Full-Sample Strategy Comparison: 2018-2026)")
+    print("                   全样本策略综合绩效对比表 (Full-Sample Strategy Comparison: 2019-2026)")
     print("=" * 115)
     hdr = f"{'策略配置 / Strategy':<32} | {'CAGR':>8} | {'夏普/Sharpe':>11} | {'日MaxDD':>9} | {'月MaxDD':>9} | {'卡玛/Calmar':>11} | {'月胜率':>7}"
     print(hdr)
@@ -209,12 +211,11 @@ def main():
         print(h_hdr)
         print("-" * 110)
         
-        # 对照组: 2023+ 的无对冲核心策略与基准
         sub_best = nav_best_stock[nav_best_stock.index >= fut_ret.index.min()]
         sub_1000 = b1000[b1000.index >= fut_ret.index.min()]
         sub_300 = b300[b300.index >= fut_ret.index.min()]
         
-        for n, s in [("核心策略(无对冲)", sub_best), ("中证1000基准", sub_1000), ("沪深300基准", sub_300)]:
+        for n, s in [("核心股票策略(无对冲)", sub_best), ("中证1000指数基准", sub_1000), ("沪深300指数基准", sub_300)]:
             m = calc_metrics(s)
             print(f"{n:<24} | {m['cagr']:>13.2%} | {m['sharpe']:>13.2f} | {m['maxdd_d']:>9.2%} | {m['maxdd_m']:>9.2%} | {m['calmar']:>13.2f}")
         print("-" * 110)
@@ -224,43 +225,80 @@ def main():
             print(f"{n:<24} | {m['cagr']:>13.2%} | {m['sharpe']:>13.2f} | {m['maxdd_d']:>9.2%} | {m['maxdd_m']:>9.2%} | {m['calmar']:>13.2f}")
         print("-" * 110)
 
-    print("\n[Step 5/5] 绘制全景收益与回撤对比曲线图...")
-    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(14, 9), gridspec_kw={'height_ratios': [2.5, 1]}, sharex=True)
+    print("\n[Step 5/5] 绘制专业三栏全景收益与对冲对比仪表盘 (3-Panel Master Dashboard)...")
+    fig = plt.figure(figsize=(15, 12))
+    gs = fig.add_gridspec(3, 1, height_ratios=[2.2, 1.0, 1.6], hspace=0.28)
+    ax1 = fig.add_subplot(gs[0, 0])
+    ax2 = fig.add_subplot(gs[1, 0], sharex=ax1)
+    ax3 = fig.add_subplot(gs[2, 0])
 
-    # 1. 净值曲线
     dt_idx = to_datetime_index(nav_best_stock.index)
-    ax1.plot(dt_idx, nav_best_stock / nav_best_stock.iloc[0], label=f"核心推荐: 全市场ENS+Tiered+降档 (CAGR {metrics_summary['3. 核心推荐 (Tiered+降档-10%)']['cagr']:.1%}, MaxDD {metrics_summary['3. 核心推荐 (Tiered+降档-10%)']['maxdd_d']:.1%})", color="#d63031", linewidth=2.0)
-    ax1.plot(dt_idx, nav_tiered / nav_tiered.iloc[0], label=f"变体: Tiered三档 (无降档) (CAGR {metrics_summary['2. 三档梯度 (Tiered S123)']['cagr']:.1%})", color="#e67e22", linewidth=1.2, linestyle="--")
-    ax1.plot(dt_idx, nav_s123_ma20_dd / nav_s123_ma20_dd.iloc[0], label=f"变体: Tiered+MA20+降档 (CAGR {metrics_summary['4. 强防御 (Tiered+MA20+降档)']['cagr']:.1%}, MaxDD {metrics_summary['4. 强防御 (Tiered+MA20+降档)']['maxdd_d']:.1%})", color="#27ae60", linewidth=1.2)
-    ax1.plot(dt_idx, b1000 / b1000.iloc[0], label=f"中证1000指数 (000852.SH) (CAGR {metrics_summary['基准: 中证1000']['cagr']:.1%}, MaxDD {metrics_summary['基准: 中证1000']['maxdd_d']:.1%})", color="#2980b9", linewidth=1.1, alpha=0.8)
-    ax1.plot(dt_idx, b300 / b300.iloc[0], label=f"沪深300指数 (000300.SH) (CAGR {metrics_summary['基准: 沪深300']['cagr']:.1%}, MaxDD {metrics_summary['基准: 沪深300']['maxdd_d']:.1%})", color="#7f8c8d", linewidth=1.1, alpha=0.8)
 
-    ax1.axhline(1.0, color="black", linewidth=0.8, linestyle=":", alpha=0.6)
-    ax1.set_title("综合复合量化策略一体化回测全景图 (2018-2026)", fontsize=14, fontweight="bold", pad=12)
-    ax1.set_ylabel("累计净值 (Normalized NAV)", fontsize=11)
-    ax1.legend(loc="upper left", frameon=True, facecolor="white", edgecolor="none", fontsize=9.5)
+    # 1. 历史全景净值曲线 (2019-2026)
+    ax1.plot(dt_idx, nav_best_stock / nav_best_stock.iloc[0], label=f"★ 核心推荐: 全市场ENS+三档S123+净值降档 (年化 {metrics_summary['3. 核心推荐 (Tiered+降档-10%)']['cagr']:.1%}, 夏普 {metrics_summary['3. 核心推荐 (Tiered+降档-10%)']['sharpe']:.2f}, 月MaxDD {metrics_summary['3. 核心推荐 (Tiered+降档-10%)']['maxdd_m']:.1%})", color="#c0392b", linewidth=2.2, zorder=5)
+    ax1.plot(dt_idx, nav_tiered / nav_tiered.iloc[0], label=f"变体 1: Tiered三档择时 (无降档) (年化 {metrics_summary['2. 三档梯度 (Tiered S123)']['cagr']:.1%}, 夏普 {metrics_summary['2. 三档梯度 (Tiered S123)']['sharpe']:.2f})", color="#e67e22", linewidth=1.3, linestyle="--", alpha=0.9)
+    ax1.plot(dt_idx, nav_binary / nav_binary.iloc[0], label=f"变体 2: 传统二元开关 (Binary S123) (年化 {metrics_summary['1. 二元开关 (Binary S123)']['cagr']:.1%}, 夏普 {metrics_summary['1. 二元开关 (Binary S123)']['sharpe']:.2f})", color="#8e44ad", linewidth=1.1, linestyle=":", alpha=0.8)
+    ax1.plot(dt_idx, nav_s123_ma20_dd / nav_s123_ma20_dd.iloc[0], label=f"变体 3: 强防御版 (Tiered+MA20+降档) (年化 {metrics_summary['4. 强防御 (Tiered+MA20+降档)']['cagr']:.1%}, 日MaxDD {metrics_summary['4. 强防御 (Tiered+MA20+降档)']['maxdd_d']:.1%})", color="#27ae60", linewidth=1.2, alpha=0.85)
+    ax1.plot(dt_idx, b1000 / b1000.iloc[0], label=f"基准: 中证1000指数 (000852.SH) (年化 {metrics_summary['基准: 中证1000']['cagr']:.1%}, 日MaxDD {metrics_summary['基准: 中证1000']['maxdd_d']:.1%})", color="#2980b9", linewidth=1.1, alpha=0.75)
+    ax1.plot(dt_idx, b300 / b300.iloc[0], label=f"基准: 沪深300指数 (000300.SH) (年化 {metrics_summary['基准: 沪深300']['cagr']:.1%}, 日MaxDD {metrics_summary['基准: 沪深300']['maxdd_d']:.1%})", color="#7f8c8d", linewidth=1.1, alpha=0.75)
+
+    ax1.axhline(1.0, color="black", linewidth=0.8, linestyle=":", alpha=0.5)
+    ax1.set_title("综合量化策略全历史累计净值对比 (2019-06 ~ 2026-08)", fontsize=13, fontweight="bold", pad=10)
+    ax1.set_ylabel("累计净值 (Normalized NAV)", fontsize=10.5)
+    ax1.legend(loc="upper left", frameon=True, facecolor="white", edgecolor="none", fontsize=9.0)
     ax1.grid(True, linestyle="--", alpha=0.35)
 
-    # 2. 回撤曲线
+    # 2. 全历史动态回撤曲线 (2019-2026)
     def get_dd_series(s):
         ns = s / s.iloc[0]
         return ns / ns.cummax() - 1.0
 
-    ax2.plot(dt_idx, get_dd_series(nav_best_stock), label="核心推荐回撤", color="#d63031", linewidth=1.4)
-    ax2.plot(dt_idx, get_dd_series(b1000), label="中证1000回撤", color="#2980b9", linewidth=1.0, alpha=0.7)
-    ax2.fill_between(dt_idx, get_dd_series(nav_best_stock), 0, color="#d63031", alpha=0.15)
-    ax2.axhline(-0.10, color="orange", linestyle="--", linewidth=0.8, label="10% 降档线")
+    dd_best = get_dd_series(nav_best_stock)
+    dd_1000 = get_dd_series(b1000)
+
+    ax2.plot(dt_idx, dd_best, label=f"核心推荐策略回撤 (日频MaxDD {metrics_summary['3. 核心推荐 (Tiered+降档-10%)']['maxdd_d']:.1%}, 月频MaxDD {metrics_summary['3. 核心推荐 (Tiered+降档-10%)']['maxdd_m']:.1%})", color="#c0392b", linewidth=1.5)
+    ax2.plot(dt_idx, dd_1000, label=f"中证1000指数回撤 (MaxDD {metrics_summary['基准: 中证1000']['maxdd_d']:.1%})", color="#2980b9", linewidth=1.0, alpha=0.7)
+    ax2.fill_between(dt_idx, dd_best, 0, color="#c0392b", alpha=0.15)
+    ax2.axhline(-0.10, color="#d35400", linestyle="--", linewidth=1.0, label="10% 熔断降档线 (DD Degrade -10%×0.5)")
     ax2.axhline(-0.20, color="gray", linestyle=":", linewidth=0.8)
-    ax2.set_ylabel("动态回撤 (Drawdown)", fontsize=11)
-    ax2.set_xlabel("交易日期 (Date)", fontsize=11)
-    ax2.legend(loc="lower left", frameon=True, facecolor="white", edgecolor="none", fontsize=9)
+    ax2.set_ylabel("动态回撤 (Drawdown)", fontsize=10.5)
+    ax2.legend(loc="lower left", frameon=True, facecolor="white", edgecolor="none", fontsize=8.5)
     ax2.grid(True, linestyle="--", alpha=0.35)
 
-    fig.tight_layout()
+    # 3. 2023-2026 样本外 IM 期货低基差对冲深度实测
+    if hedged_strategies:
+        lo_date = fut_ret.index.min()
+        dt_sub = to_datetime_index(nav_best_stock[nav_best_stock.index >= lo_date].index)
+        sub_best_norm = nav_best_stock[nav_best_stock.index >= lo_date] / nav_best_stock[nav_best_stock.index >= lo_date].iloc[0]
+        sub_1000_norm = b1000[b1000.index >= lo_date] / b1000[b1000.index >= lo_date].iloc[0]
+        
+        m_unh = calc_metrics(sub_best_norm)
+        m_h05 = calc_metrics(hedged_strategies["IM对冲(β=0.5)"])
+        m_h07 = calc_metrics(hedged_strategies["IM对冲(β=0.7)"])
+        m_1000 = calc_metrics(sub_1000_norm)
+
+        ax3.plot(dt_sub, hedged_strategies["IM对冲(β=0.5)"], label=f"★ IM对冲(β=0.5) 最佳平衡点 (年化 {m_h05['cagr']:.1%}, 夏普 {m_h05['sharpe']:.2f}, 日MaxDD {m_h05['maxdd_d']:.1%}, 月MaxDD {m_h05['maxdd_m']:.1%}, 卡玛 {m_h05['calmar']:.2f})", color="#2c3e50", linewidth=2.3, zorder=6)
+        ax3.plot(dt_sub, hedged_strategies["IM对冲(β=0.7)"], label=f"IM对冲(β=0.7) 稳健点 (年化 {m_h07['cagr']:.1%}, 夏普 {m_h07['sharpe']:.2f}, 日MaxDD {m_h07['maxdd_d']:.1%})", color="#16a085", linewidth=1.2, linestyle="--")
+        ax3.plot(dt_sub, sub_best_norm, label=f"核心股票策略 (无对冲) (年化 {m_unh['cagr']:.1%}, 夏普 {m_unh['sharpe']:.2f}, 日MaxDD {m_unh['maxdd_d']:.1%})", color="#c0392b", linewidth=1.3, alpha=0.85)
+        ax3.plot(dt_sub, sub_1000_norm, label=f"中证1000指数基准 (年化 {m_1000['cagr']:.1%}, 夏普 {m_1000['sharpe']:.2f}, 日MaxDD {m_1000['maxdd_d']:.1%})", color="#2980b9", linewidth=1.1, alpha=0.7)
+
+        ax3.axhline(1.0, color="black", linewidth=0.8, linestyle=":", alpha=0.5)
+        ax3.set_title("真实 IM 股指期货低基差对冲实测 (2023 - 2026 严格样本外 OOS 阶段)", fontsize=13, fontweight="bold", pad=10)
+        ax3.set_ylabel("样本外净值 (OOS NAV)", fontsize=10.5)
+        ax3.set_xlabel("交易日期 (Date)", fontsize=10.5)
+        ax3.legend(loc="upper left", frameon=True, facecolor="white", edgecolor="none", fontsize=9.0)
+        ax3.grid(True, linestyle="--", alpha=0.35)
+
     out_img = os.path.join(OUT_DIR, "integrated_composite_nav.png")
-    fig.savefig(out_img, dpi=180)
+    fig.savefig(out_img, dpi=200, bbox_inches="tight")
     plt.close(fig)
-    print(f"    -> 净值与回撤全景图已输出至: {out_img}")
+    print(f"    -> 综合策略全景高清图已保存: {out_img}")
+
+    # 同时复制到 quant_conclusion 仓库和脑图目录
+    import shutil
+    shutil.copy(out_img, os.path.join(CONCLUSION_STOCK_DIR, "integrated_composite_nav.png"))
+    shutil.copy(out_img, os.path.join(r"C:\Users\liuqi\.gemini\antigravity\brain\f1b542e0-73e8-4d3b-8f82-2b30aef2b2d0", "integrated_composite_nav.png"))
+    print("    -> 图像已同步至 quant_conclusion/STOCK 与 Brain 目录。")
 
     print(f"\n[完成] 一体化回测执行完毕, 总耗时: {time.time()-t0:.1f} 秒。")
 
