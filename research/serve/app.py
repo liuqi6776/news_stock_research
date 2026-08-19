@@ -19,15 +19,24 @@ import json
 import asyncio
 from concurrent.futures import ThreadPoolExecutor
 
+if sys.platform == "win32":
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")
+        sys.stderr.reconfigure(encoding="utf-8")
+    except Exception:
+        pass
+
 from fastapi import FastAPI, HTTPException, BackgroundTasks
 from fastapi.responses import HTMLResponse, JSONResponse, FileResponse
 from fastapi.staticfiles import StaticFiles
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SERVE_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_DIR = os.path.join(SERVE_DIR, "data", "daily")
+DATA_DIR = os.path.join(SERVE_DIR, "data", "composite")
+DAILY_DIR = os.path.join(SERVE_DIR, "data", "daily")
 ASSETS_DIR = os.path.join(SERVE_DIR, "assets")
 os.makedirs(DATA_DIR, exist_ok=True)
+os.makedirs(DAILY_DIR, exist_ok=True)
 os.makedirs(ASSETS_DIR, exist_ok=True)
 
 if ROOT not in sys.path:
