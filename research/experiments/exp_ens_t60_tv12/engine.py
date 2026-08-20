@@ -189,30 +189,46 @@ def init_shared(universe="csi1000"):
                        + 0.05 * p["netprofit_yoy"].rank(pct=True))
     score_enh4 = {d: g.set_index("ts_code")["enh4_score"] for d, g in p.groupby("trade_date")}
 
-    # GBDT 滚动重训（2023+ 每月, 与回测口径一致）
-    oos_months = [d for d in sorted(panel["trade_date"].unique()) if d >= 20230101]
+    # GBDT 严格 Purged Walk-Forward 滚动训练（带 Embargo，彻底消除 fwd_20 标签未来泄漏）
+    # 规则：对于预测快照 m，训练样本必须在 m 之前至少 1 个完整截面（即 <= prev_month_2），
+    # 确保任何样本的 20 交易日标签收益在预测月决策时刻之前已完全结算并入库，杜绝任何时间重叠。
+    all_panel_dates = sorted(panel["trade_date"].unique())
     score_gbdt = {}
-    for i, m in enumerate(oos_months):
-        tr = prep_feats(panel[panel["trade_date"] < m], GBDT_FEATS).sort_values("trade_date")
+    for idx, m in enumerate(all_panel_dates):
+        if idx < 6:
+            continue  # 至少需要 6 个月历史数据
+        train_cut_date = all_panel_dates[idx - 2]
+        tr = prep_feats(panel[panel["trade_date"] <= train_cut_date], GBDT_FEATS).sort_values("trade_date")
+        if len(tr) < 500:
+            continue
         X, y = tr[GBDT_FEATS].values, tr["fwd_20"].values
-        val_months = sorted(tr["trade_date"].unique())[-3:]
-        vm = tr["trade_date"].isin(val_months).values
+        tr_months = sorted(tr["trade_date"].unique())
+        if len(tr_months) >= 5:
+            val_months = tr_months[-2:]
+            vm = tr["trade_date"].isin(val_months).values
+            X_train, y_train = X[~vm], y[~vm]
+            X_val, y_val = X[vm], y[vm]
+        else:
+            X_train, y_train = X, y
+            X_val, y_val = X, y
+            
         mdl = lgb.LGBMRegressor(n_estimators=500, learning_rate=0.05, num_leaves=7,
                                 max_depth=3, min_child_samples=80, reg_lambda=2.0, reg_alpha=0.1,
                                 subsample=0.9, colsample_bytree=0.9, random_state=42, verbose=-1)
-        mdl.fit(X[~vm], y[~vm], eval_set=[(X[vm], y[vm])],
+        mdl.fit(X_train, y_train, eval_set=[(X_val, y_val)],
                 callbacks=[lgb.early_stopping(50, verbose=False)])
         om = prep_feats(panel[panel["trade_date"] == m], GBDT_FEATS)
         score_gbdt[m] = pd.Series(mdl.predict(om[GBDT_FEATS]), index=om["ts_code"])
-    for d in sorted(panel["trade_date"].unique()):
-        if d not in score_gbdt:
-            score_gbdt[d] = score_enh4[d]
 
     score_ens = {}
     for d in sorted(panel["trade_date"].unique()):
-        e, g = score_enh4[d], score_gbdt[d]
-        common = e.index.intersection(g.index)
-        score_ens[d] = 0.5 * e[common].rank(pct=True) + 0.5 * g[common].rank(pct=True)
+        e = score_enh4[d]
+        if d in score_gbdt:
+            g = score_gbdt[d]
+            common = e.index.intersection(g.index)
+            score_ens[d] = 0.5 * e[common].rank(pct=True) + 0.5 * g[common].rank(pct=True)
+        else:
+            score_ens[d] = e.rank(pct=True)
 
     # 调仓日: 每月首个交易日; 打分用上月末收盘快照
     rebals = [min(d for d in cal_dates if d // 100 == ym)

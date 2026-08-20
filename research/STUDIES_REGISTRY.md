@@ -75,6 +75,30 @@
   4. **裁定**: 维持在 `STUDIES_REGISTRY.md` 作为探索线索归档，**不修改 `definition_freeze.md` 生产基线**。
 - **文件位置**: `research/experiments/exp_ens_t60_tv12/{post_growth_filter_backtest.py, post_growth_filter_report.json, post_growth_filter_report.md}`
 
+### Stage A 综合整改与独立审计（零泄漏 Purged GBDT + A股微观执行 + 真实IM账本）
+
+*登记: 2026-08-20*
+
+- **整改背景**: 响应机构级量化审查报告（评级 FAIL），全面消除 `fwd_20` 标签未来重叠泄漏（P0-1）、历史模型拼接伪装（P0-4）、引入真实 A 股微观执行约束（P1-5）与真实离散整手 IM 期货账本（P0-5）。
+- **核心整改技术实现**:
+  1. **Purged Walk-Forward + 1月 Embargo**: 训练集严格截止于预测月前 2 个月及更早，确保 20 交易日标签收益已全部结清，彻底杜绝重叠。
+  2. **模型纯净消融对照 (2023-2026 相同 OOS 窗口)**:
+     - `ENH4_only`: CAGR 8.33%, Sharpe 0.44, MaxDD -26.85%
+     - `Purged_GBDT_only`: CAGR 7.66%, Sharpe 0.37, MaxDD -20.98%
+     - `True_ENS_Purged`: CAGR **23.41%**, Sharpe **1.15**, MaxDD **-22.01%**, Calmar **1.06**
+  3. **A 股微观执行与极端费率压力测试 (全历史)**:
+     - 涨停拦截（累计 10 次禁买）、跌停锁定顺延；
+     - 10 bps 基线: CAGR 17.33%, Sharpe 1.07, MaxDD -22.01%
+     - 20 bps 保守: CAGR 9.63%, Sharpe 0.64, MaxDD -17.79%
+     - 50 bps 折价: CAGR 9.71%, Sharpe 0.65, MaxDD -16.63%
+     - 100 bps 极端: CAGR 7.32%, Sharpe 0.45, MaxDD -22.73%
+  4. **真实 IM 期货离散整手账本 (2023-2026)**:
+     - 200 乘数、15% 保证金、离散整手与可用资金利息；
+     - 100W 资金: CAGR 23.52%, MaxDD -24.13% (不足 1 手存在量化跳变)；
+     - 220W 资金: CAGR 23.54%, Sharpe 1.12, MaxDD **-21.52%** (对应 1 手 IM 黄金门槛)；
+     - 500W 资金: CAGR 23.55%, Sharpe 1.12, MaxDD **-21.51%**。
+- **文件位置**: `research/experiments/exp_ens_t60_tv12/{remediated_comprehensive_audit.py, realistic_execution_sim.py, im_futures_ledger.py, remediated_audit_report.json, remediated_audit_report.md, remediated_audit_dashboard.png}`
+
 ---
 
 ## Study 007: 截面选股策略（Cross-Sectional Stock Selection）
