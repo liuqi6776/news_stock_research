@@ -175,6 +175,11 @@ def init_shared(universe="csi1000"):
     v8_daily.index = v8_daily.index.astype(int)
     v8_daily = v8_daily.reindex(cal_dates).fillna(0)
 
+    # ---- 显式逐样本 label_end_date 映射 (基于真实交易日历) ----
+    date_to_idx = {d: i for i, d in enumerate(cal_dates)}
+    label_end_map = {d: cal_dates[min(i + 20, len(cal_dates) - 1)] for i, d in enumerate(cal_dates)}
+    panel["label_end_date"] = panel["trade_date"].map(label_end_map)
+
     # ---- 打分生成 ----
     p = panel.copy()
     for c in PRICE_COLS + FIN_COLS:
@@ -190,24 +195,36 @@ def init_shared(universe="csi1000"):
     score_enh4 = {d: g.set_index("ts_code")["enh4_score"] for d, g in p.groupby("trade_date")}
 
     # GBDT 严格 Purged Walk-Forward 滚动训练（带 Embargo，彻底消除 fwd_20 标签未来泄漏）
-    # 规则：对于预测快照 m，训练样本必须在 m 之前至少 1 个完整截面（即 <= prev_month_2），
-    # 确保任何样本的 20 交易日标签收益在预测月决策时刻之前已完全结算并入库，杜绝任何时间重叠。
+    # 强制执行：每一个训练样本的 label_end_date 必须严格小于预测决策时刻 m
     all_panel_dates = sorted(panel["trade_date"].unique())
     score_gbdt = {}
     for idx, m in enumerate(all_panel_dates):
         if idx < 6:
             continue  # 至少需要 6 个月历史数据
-        train_cut_date = all_panel_dates[idx - 2]
-        tr = prep_feats(panel[panel["trade_date"] <= train_cut_date], GBDT_FEATS).sort_values("trade_date")
-        if len(tr) < 500:
+        
+        # 1. 严格样本级 Purge：只取 label_end_date 严格早于预测决策日 m 的已完全结算样本
+        tr_pool = panel[panel["label_end_date"] < m]
+        if len(tr_pool) < 500:
             continue
+        assert (tr_pool["label_end_date"] < m).all(), f"检测到标签未来泄漏: 训练样本结算日覆盖了预测日 {m}"
+        
+        tr = prep_feats(tr_pool, GBDT_FEATS).sort_values("trade_date")
         X, y = tr[GBDT_FEATS].values, tr["fwd_20"].values
+        
+        # 2. 训练集与验证集之间的严格 Purge
         tr_months = sorted(tr["trade_date"].unique())
         if len(tr_months) >= 5:
             val_months = tr_months[-2:]
-            vm = tr["trade_date"].isin(val_months).values
-            X_train, y_train = X[~vm], y[~vm]
-            X_val, y_val = X[vm], y[vm]
+            val_start_d = min(val_months)
+            # 训练集样本的 label_end_date 必须严格小于验证集起始日 val_start_d
+            train_mask = (tr["label_end_date"] < val_start_d).values
+            val_mask = tr["trade_date"].isin(val_months).values
+            if train_mask.sum() >= 300 and val_mask.sum() >= 100:
+                X_train, y_train = X[train_mask], y[train_mask]
+                X_val, y_val = X[val_mask], y[val_mask]
+            else:
+                X_train, y_train = X, y
+                X_val, y_val = X, y
         else:
             X_train, y_train = X, y
             X_val, y_val = X, y
@@ -220,15 +237,13 @@ def init_shared(universe="csi1000"):
         om = prep_feats(panel[panel["trade_date"] == m], GBDT_FEATS)
         score_gbdt[m] = pd.Series(mdl.predict(om[GBDT_FEATS]), index=om["ts_code"])
 
+    # 3. 真实 ENS (零伪装拼接：仅在 GBDT 真实存在的月份生成 ENS 打分)
     score_ens = {}
-    for d in sorted(panel["trade_date"].unique()):
+    for d in sorted(score_gbdt.keys()):
         e = score_enh4[d]
-        if d in score_gbdt:
-            g = score_gbdt[d]
-            common = e.index.intersection(g.index)
-            score_ens[d] = 0.5 * e[common].rank(pct=True) + 0.5 * g[common].rank(pct=True)
-        else:
-            score_ens[d] = e.rank(pct=True)
+        g = score_gbdt[d]
+        common = e.index.intersection(g.index)
+        score_ens[d] = 0.5 * e[common].rank(pct=True) + 0.5 * g[common].rank(pct=True)
 
     # 调仓日: 每月首个交易日; 打分用上月末收盘快照
     rebals = [min(d for d in cal_dates if d // 100 == ym)

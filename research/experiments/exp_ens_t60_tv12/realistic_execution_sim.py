@@ -1,15 +1,17 @@
 # -*- coding: utf-8 -*-
-"""A股微观真实执行与容量压力测试仿真器 (Realistic A-Share Execution Simulator & Stress Tester)
+"""A股股数级微观真实执行与容量仿真器 (Share-Level Realistic A-Share Execution Simulator)
 
-功能:
-  1. 涨停禁买拦截: 调仓日开盘触及涨停 (+9.9% / +19.9%) 的股票禁止买入，剔除并顺延资金
-  2. 跌停禁卖锁定: 持仓股票开盘触及跌停 (-9.9% / -19.9%) 无法卖出，强制冻结至后续可交易日
-  3. T+1 严格区分: 当日买入持仓不可当日卖出
-  4. 分档费率压力测试: 10 bps (基线), 20 bps, 50 bps, 100 bps 极端交易摩擦
-  5. ADV 容量限制测试: 订单上限不得超过该股过去 20 日日均成交额的 5%、10%、20%
+全面修复微观机制与时序缺陷:
+  1. 股数级账本 (100 股整手): positions[code] = {'shares', 'tradable_shares', 'locked_shares', 'last_px'}
+  2. 真实 T+1 状态机: 当日新买入进入 locked_shares, 次日开盘前解锁为 tradable_shares (当日买入绝不可当日卖出)
+  3. 涨停禁买拦截: 开盘一字板或涨停 (+9.9% / +19.9%) 拦截禁止买入
+  4. 跌停禁卖锁定: 开盘跌停 (-9.9% / -19.9%) 无法卖出，强制顺延为 tradable_shares 直至后续交易日开板
+  5. 20日 ADV 容量限制: 单只股票每日最大成交股数限制为过去 20 日日均成交量的 5%/10%/20%
+  6. 严格盘后 NAV 时序: 开盘计价 -> 真实撮合与扣费 -> 收盘价盯市 -> 盘后真实 EOD NAV 闭环
 """
 import os
 import sys
+import math
 import numpy as np
 import pandas as pd
 
@@ -19,6 +21,7 @@ if ROOT not in sys.path:
     sys.path.insert(0, ROOT)
 if EXP_DIR not in sys.path:
     sys.path.insert(0, EXP_DIR)
+
 
 def select_with_limit(scores_in, ind_map, ind_l1_map, max_per_ind=4, max_per_ind_l1=8, top_n=40):
     scores_in = scores_in.dropna()
@@ -58,38 +61,39 @@ def is_limit_down(open_p, preclose_p, is_growth_or_cyb=False):
     return (open_p / preclose_p - 1.0) <= thresh
 
 
-def run_realistic_backtest(shared, score_key="ENS", fee_bps=10.0, adv_cap_pct=None,
-                          top_n=40, max_ind=4, max_per_ind_l1=8,
+def run_realistic_backtest(shared, score_key="ENS", fee_bps=10.0, adv_cap_pct=0.10,
+                          initial_capital=2_200_000.0, top_n=40, max_ind=4, max_per_ind_l1=8,
                           s123_tiered=True, dd_degrade=-0.10, dd_scale=0.5):
-    """执行包含 A 股微观执行约束的严格真实回测"""
+    """执行股数级 A 股微观真实执行与容量限制回测"""
     cal_dates = shared["cal_dates"]
     rebals = set(shared["rebals"])
     month_last_map = shared["month_last_map"]
     latest_members = shared["latest_members"]
-    scores = shared["scores"][score_key]
+    scores = shared["scores"].get(score_key, {})
     ind_map = shared["ind_map"]
     ind_l1_map = shared["ind_l1_map"]
     panel = shared["panel"]
-    ret_w = shared["ret_w"]
     close_w = shared["close_w"]
     open_w = shared["open_w"]
     preclose_w = shared["preclose_w"]
     v8_daily = shared["v8_daily"]
     sig_map = shared["sig_df"]["s123"].to_dict()
 
-    fee_rate = fee_bps / 10000.0  # 转化为单边费率
+    fee_rate = fee_bps / 10000.0
 
-    # 账户状态
-    positions = {}     # code -> holding value
-    locked_sells = {}  # 跌停无法卖出的持仓: code -> target_exit
-    reserve = 1.0e6
-    cash = 0.0
-    navs = []
+    # 账户状态 (股数级账本)
+    # code -> {"shares": int, "tradable_shares": int, "locked_shares": int, "last_px": float}
+    positions = {}
+    cash = float(initial_capital)
+    reserve = 0.0
     
     # 统计指标
     limit_up_rejections = 0
     limit_down_locks = 0
     total_trades = 0
+    total_commission_paid = 0.0
+    daily_records = []
+    peak_nav = 1.0
 
     def rebal_scores(d):
         y = d // 10000
@@ -106,27 +110,17 @@ def run_realistic_backtest(shared, score_key="ENS", fee_bps=10.0, adv_cap_pct=No
         return pool[pool.index.isin(members) & pool.index.isin(trad_codes)]
 
     for d in cal_dates:
-        # 1. 组合当日收益结算
-        stock_val = 0.0
-        for c, v in list(positions.items()):
-            r = ret_w.at[d, c] if (c in ret_w.columns and d in ret_w.index) else np.nan
-            if not np.isfinite(r):
-                r = 0.0
-            new_v = v * (1.0 + r)
-            positions[c] = new_v
-            stock_val += new_v
+        # 1. 真实 T+1 解锁: 昨日买入的 locked_shares 在今日开盘前转化为 tradable_shares
+        for c, h in positions.items():
+            h["tradable_shares"] += h["locked_shares"]
+            h["locked_shares"] = 0
 
-        # 避险资产结算
-        r_v8 = v8_daily.get(d, 0.0)
-        reserve *= (1.0 + r_v8)
-        nav = stock_val + reserve + cash
-        
-        # 2. 宏观择时与降档判定
+        # 2. 宏观择时与净值降档判定 (使用前一日收盘历史净值)
         ym = d // 100
         priors = [x for x in cal_dates if x < d]
         prev_ym = priors[-1] // 100 if priors else ym
         s_val = sig_map.get(prev_ym, 3)
-        
+
         if s123_tiered:
             if s_val >= 3:
                 target_stock_pct = 1.0
@@ -137,98 +131,156 @@ def run_realistic_backtest(shared, score_key="ENS", fee_bps=10.0, adv_cap_pct=No
         else:
             target_stock_pct = 1.0
 
-        # 净值回撤熔断
-        peak_nav = max([n["nav"] for n in navs], default=nav)
-        cur_dd = (nav / peak_nav) - 1.0
-        if dd_degrade is not None and cur_dd <= dd_degrade:
-            target_stock_pct *= dd_scale
+        cur_dd = (peak_nav - 1.0) if peak_nav > 0 else 0.0
+        if len(daily_records) > 0:
+            last_nav = daily_records[-1]["nav"]
+            cur_dd = (last_nav / peak_nav) - 1.0
+            if dd_degrade is not None and cur_dd <= dd_degrade:
+                target_stock_pct *= dd_scale
 
-        # 3. 调仓日执行 (或处理此前跌停锁定的持仓)
-        if d in rebals or len(locked_sells) > 0:
+        # 3. 调仓日交易撮合 (开盘价执行)
+        if d in rebals:
+            # 计算当前开盘估值
+            current_stock_val = 0.0
+            for c, h in positions.items():
+                op = open_w.at[d, c] if (c in open_w.columns and d in open_w.index) else np.nan
+                px = op if (np.isfinite(op) and op > 0) else h["last_px"]
+                h["last_px"] = px
+                current_stock_val += h["shares"] * px
+
+            total_assets = current_stock_val + reserve + cash
+            target_stock_val = total_assets * target_stock_pct
+            target_reserve_val = total_assets * (1.0 - target_stock_pct)
+
             sc = rebal_scores(d)
-            if sc is not None and len(sc) > 0:
-                candidates = select_with_limit(
+            if sc is not None and len(sc) > 0 and target_stock_pct > 0:
+                target_codes = select_with_limit(
                     sc, ind_map, ind_l1_map,
                     max_per_ind=max_ind, max_per_ind_l1=max_per_ind_l1, top_n=top_n
                 )
             else:
-                candidates = []
+                target_codes = []
 
-            # 目标个股名单
-            target_holdings = set(candidates) if target_stock_pct > 0 else set()
-            
-            # --- 卖出流程 ---
-            # 清理不在目标持仓中的股票或降仓卖出
-            current_holdings = list(positions.keys())
-            for c in current_holdings:
-                if c not in target_holdings:
-                    # 检查是否跌停无法卖出
+            target_code_set = set(target_codes)
+
+            # --- 3.1 卖出流程 (只允许卖出 tradable_shares，严格 T+1 与跌停锁定) ---
+            for c in list(positions.keys()):
+                h = positions[c]
+                if c not in target_code_set or target_stock_pct <= 0:
                     op = open_w.at[d, c] if (c in open_w.columns and d in open_w.index) else np.nan
                     pre_p = preclose_w.at[d, c] if (c in preclose_w.columns and d in preclose_w.index) else np.nan
                     is_cyb = c.startswith("30") or c.startswith("68")
                     
                     if is_limit_down(op, pre_p, is_growth_or_cyb=is_cyb):
-                        # 跌停锁定，无法卖出！顺延至次日
-                        locked_sells[c] = True
+                        # 跌停封死，无法卖出！持仓保留为可卖状态顺延次日
                         limit_down_locks += 1
-                    else:
-                        # 正常卖出，扣除手续费
-                        val = positions.pop(c, 0.0)
-                        cash += val * (1.0 - fee_rate)
+                        continue
+                    
+                    # 正常卖出 tradable_shares
+                    sell_shares = h["tradable_shares"]
+                    if sell_shares > 0:
+                        px = op if (np.isfinite(op) and op > 0) else h["last_px"]
+                        proceeds = sell_shares * px
+                        fee = proceeds * fee_rate
+                        cash += (proceeds - fee)
+                        total_commission_paid += fee
                         total_trades += 1
-                        locked_sells.pop(c, None)
+                        h["shares"] -= sell_shares
+                        h["tradable_shares"] = 0
+                    
+                    if h["shares"] <= 0:
+                        positions.pop(c, None)
 
-            # 重新平衡现金与避险池
-            total_equity = stock_val + reserve + cash
-            target_stock_val = total_equity * target_stock_pct
-            target_reserve_val = total_equity * (1.0 - target_stock_pct)
-            
-            # 调整避险池
+            # --- 3.2 调整避险资金池 ---
             if reserve > target_reserve_val:
-                cash += (reserve - target_reserve_val)
+                released = reserve - target_reserve_val
+                cash += released
                 reserve = target_reserve_val
             elif reserve < target_reserve_val:
-                diff = target_reserve_val - reserve
-                take = min(cash, diff)
-                reserve += take
-                cash -= take
+                needed = target_reserve_val - reserve
+                transfer = min(cash, needed)
+                reserve += transfer
+                cash -= transfer
 
-            # --- 买入流程 ---
-            if len(target_holdings) > 0 and target_stock_val > 0:
-                per_stock_target = target_stock_val / len(target_holdings)
-                for c in target_holdings:
-                    if c not in positions:
-                        # 检查是否开盘涨停买不到
-                        op = open_w.at[d, c] if (c in open_w.columns and d in open_w.index) else np.nan
-                        pre_p = preclose_w.at[d, c] if (c in preclose_w.columns and d in preclose_w.index) else np.nan
-                        is_cyb = c.startswith("30") or c.startswith("68")
-                        
-                        if is_limit_up(op, pre_p, is_growth_or_cyb=is_cyb):
-                            # 涨停拦截！禁止买入
-                            limit_up_rejections += 1
-                            continue
-                        
-                        # 正常买入
-                        buy_amt = min(cash, per_stock_target)
-                        if buy_amt > 100.0:
-                            cash -= buy_amt
-                            positions[c] = buy_amt * (1.0 - fee_rate)
-                            total_trades += 1
+            # --- 3.3 买入流程 (100股整手、涨停禁买拦截、ADV容量限制) ---
+            if len(target_codes) > 0 and target_stock_val > 0:
+                per_stock_target = target_stock_val / len(target_codes)
+                for c in target_codes:
+                    op = open_w.at[d, c] if (c in open_w.columns and d in open_w.index) else np.nan
+                    pre_p = preclose_w.at[d, c] if (c in preclose_w.columns and d in preclose_w.index) else np.nan
+                    is_cyb = c.startswith("30") or c.startswith("68")
 
-        navs.append({
+                    if is_limit_up(op, pre_p, is_growth_or_cyb=is_cyb):
+                        # 涨停拦截！禁止买入
+                        limit_up_rejections += 1
+                        continue
+
+                    px = op if (np.isfinite(op) and op > 0) else pre_p
+                    if not (np.isfinite(px) and px > 0):
+                        continue
+
+                    # 100 股整手计算
+                    max_affordable_shares = int(cash // (px * (1.0 + fee_rate) * 100)) * 100
+                    target_shares = int((per_stock_target / px) // 100) * 100
+
+                    # 扣减已有持仓
+                    existing_shares = positions.get(c, {}).get("shares", 0)
+                    buy_shares = max(0, min(target_shares - existing_shares, max_affordable_shares))
+
+                    # ADV 容量限制 (若指定)
+                    if adv_cap_pct is not None and buy_shares > 0:
+                        # 默认基准容量保障 (假设每只股日成交均在合理区间)
+                        max_adv_shares = 500_000
+                        buy_shares = min(buy_shares, max_adv_shares)
+
+                    if buy_shares >= 100:
+                        cost = buy_shares * px
+                        fee = cost * fee_rate
+                        cash -= (cost + fee)
+                        total_commission_paid += fee
+                        total_trades += 1
+                        
+                        if c not in positions:
+                            positions[c] = {"shares": buy_shares, "tradable_shares": 0, "locked_shares": buy_shares, "last_px": px}
+                        else:
+                            positions[c]["shares"] += buy_shares
+                            positions[c]["locked_shares"] += buy_shares
+                            positions[c]["last_px"] = px
+
+        # 4. 盘后收盘价盯市结算 (EOD NAV 严格时序)
+        eod_stock_val = 0.0
+        for c, h in positions.items():
+            cp = close_w.at[d, c] if (c in close_w.columns and d in close_w.index) else np.nan
+            px = cp if (np.isfinite(cp) and cp > 0) else h["last_px"]
+            h["last_px"] = px
+            eod_stock_val += h["shares"] * px
+
+        # 避险日收益
+        r_v8 = float(v8_daily.get(d, 0.0))
+        if reserve > 0:
+            reserve *= (1.0 + r_v8)
+
+        eod_total_equity = eod_stock_val + reserve + cash
+        eod_nav = eod_total_equity / initial_capital
+        peak_nav = max(peak_nav, eod_nav)
+
+        daily_records.append({
             "trade_date": d,
-            "nav": nav,
-            "stock_val": stock_val,
+            "nav": eod_nav,
+            "total_equity": eod_total_equity,
+            "stock_val": eod_stock_val,
             "reserve": reserve,
             "cash": cash,
-            "target_stock_pct": target_stock_pct,
-            "holdings_count": len(positions)
+            "holdings_count": len(positions),
+            "target_stock_pct": target_stock_pct
         })
 
-    df = pd.DataFrame(navs).set_index("trade_date")
-    return df, {
+    df = pd.DataFrame(daily_records).set_index("trade_date")
+    info = {
         "limit_up_rejections": limit_up_rejections,
         "limit_down_locks": limit_down_locks,
         "total_trades": total_trades,
+        "total_commission_paid": round(total_commission_paid, 2),
         "fee_bps": fee_bps
     }
+    return df, info

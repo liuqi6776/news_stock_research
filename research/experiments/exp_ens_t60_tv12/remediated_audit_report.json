@@ -1,114 +1,105 @@
 {
-  "audit_version": "Stage_A_Remediated_v1.0",
-  "generated_at": "2026-08-20 15:54:36",
-  "audit_summary": {
-    "p0_1_label_leakage_fixed": "PASS (Purged Walk-Forward with 1-month embargo)",
-    "p0_4_model_splicing_fixed": "PASS (Strictly split ENH4 baseline and True Purged ENS)",
-    "p0_5_im_ledger_fixed": "PASS (Discrete integer lots with 200 multiplier and 15% margin)",
-    "p1_5_realistic_execution": "PASS (Limit-up rejections: 10, Limit-down locks: 0)"
+  "audit_version": "Stage_A2_Remediated_v2.0",
+  "generated_at": "2026-08-20 17:02:12",
+  "audit_checks": {
+    "p0_1_explicit_label_end_purge": "PASS (Exact calendar label_end_date asserted)",
+    "p0_4_zero_model_splicing": "PASS (Strictly split tracks, zero fallback to ENH4)",
+    "p0_5_unified_futures_ledger": "PASS (Cumulative futures PnL: -424,563.30 RMB, Margin calls: 0, Forced liq: 0)",
+    "p1_5_share_level_t1_execution": "PASS (Limit-up rejections: 27, Limit-down locks: 1, Total trades: 2933)"
   },
   "model_ablation_2023_2026_oos": {
     "ENH4_only": {
-      "cagr": 8.33,
-      "sharpe": 0.44,
-      "vol": 14.27,
-      "max_dd": -26.85,
-      "calmar": 0.31,
-      "total_return": 33.62,
+      "cagr": 9.21,
+      "sharpe": 0.5,
+      "vol": 14.44,
+      "max_dd": -22.5,
+      "calmar": 0.41,
+      "total_return": 37.61,
       "days": 877
     },
     "Purged_GBDT_only": {
-      "cagr": 7.66,
-      "sharpe": 0.37,
-      "vol": 15.13,
-      "max_dd": -20.98,
+      "cagr": 9.12,
+      "sharpe": 0.42,
+      "vol": 17.0,
+      "max_dd": -24.52,
       "calmar": 0.37,
-      "total_return": 30.67,
+      "total_return": 37.19,
       "days": 877
     },
     "True_ENS_Purged": {
-      "cagr": 23.41,
-      "sharpe": 1.15,
-      "vol": 18.57,
-      "max_dd": -22.01,
-      "calmar": 1.06,
-      "total_return": 114.28,
+      "cagr": 14.92,
+      "sharpe": 0.81,
+      "vol": 16.03,
+      "max_dd": -22.36,
+      "calmar": 0.67,
+      "total_return": 65.51,
       "days": 877
     }
   },
   "friction_stress_test_full_period": {
     "fee_10bps_baseline": {
-      "cagr": 17.33,
-      "sharpe": 1.07,
-      "vol": 14.38,
-      "max_dd": -22.01,
-      "calmar": 0.79,
-      "total_return": 217.39,
+      "cagr": 11.98,
+      "sharpe": 0.78,
+      "vol": 12.72,
+      "max_dd": -22.36,
+      "calmar": 0.54,
+      "total_return": 126.58,
       "days": 1749
     },
     "fee_20bps": {
-      "cagr": 9.63,
-      "sharpe": 0.64,
-      "vol": 11.96,
-      "max_dd": -17.79,
-      "calmar": 0.54,
-      "total_return": 94.31,
+      "cagr": 11.65,
+      "sharpe": 0.77,
+      "vol": 12.6,
+      "max_dd": -23.48,
+      "calmar": 0.5,
+      "total_return": 121.78,
       "days": 1749
     },
     "fee_50bps": {
-      "cagr": 9.71,
-      "sharpe": 0.65,
-      "vol": 11.95,
-      "max_dd": -16.63,
-      "calmar": 0.58,
-      "total_return": 95.42,
+      "cagr": 9.87,
+      "sharpe": 0.66,
+      "vol": 11.94,
+      "max_dd": -24.81,
+      "calmar": 0.4,
+      "total_return": 97.46,
       "days": 1749
     },
     "fee_100bps_extreme": {
-      "cagr": 7.32,
-      "sharpe": 0.45,
-      "vol": 11.89,
-      "max_dd": -22.73,
-      "calmar": 0.32,
-      "total_return": 66.67,
+      "cagr": 6.42,
+      "sharpe": 0.37,
+      "vol": 12.05,
+      "max_dd": -28.67,
+      "calmar": 0.22,
+      "total_return": 56.75,
       "days": 1749
     }
   },
-  "im_futures_real_ledger_2023_2026": {
-    "theoretical_continuous_beta_05": {
-      "cagr": 23.18,
-      "sharpe": 0.94,
-      "vol": 22.6,
-      "max_dd": -35.17,
-      "calmar": 0.66,
-      "total_return": 112.89,
-      "days": 877
-    },
-    "real_ledger_capital_100W": {
-      "cagr": 23.52,
-      "sharpe": 0.91,
-      "vol": 23.75,
-      "max_dd": -24.13,
-      "calmar": 0.97,
-      "total_return": 113.54,
+  "im_futures_unified_ledger_2023_2026": {
+    "real_unified_capital_220W_sweet_spot": {
+      "cagr": -24.22,
+      "sharpe": -0.23,
+      "vol": 112.32,
+      "max_dd": -71.47,
+      "calmar": -0.34,
+      "total_return": -63.06,
       "days": 869
     },
-    "real_ledger_capital_220W": {
-      "cagr": 23.54,
-      "sharpe": 1.12,
-      "vol": 19.22,
-      "max_dd": -21.52,
-      "calmar": 1.09,
-      "total_return": 113.61,
+    "real_unified_capital_100W_sub_lot": {
+      "cagr": -40.18,
+      "sharpe": -0.19,
+      "vol": 223.09,
+      "max_dd": -88.4,
+      "calmar": -0.45,
+      "total_return": -84.2,
       "days": 869
     },
-    "real_ledger_capital_500W": {
-      "cagr": 23.55,
-      "sharpe": 1.15,
-      "vol": 18.79,
-      "max_dd": -22.22,
-      "calmar": 1.06,
-      "total_return": 113.69,
+    "real_unified_capital_500W_multi_lot": {
+      "cagr": -12.62,
+      "sharpe": -0.25,
+      "vol": 58.02,
+      "max_dd": -49.34,
+      "calmar": -0.26,
+      "total_return": -38.38,
       "days": 869
     }
   }
