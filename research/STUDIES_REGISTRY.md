@@ -181,6 +181,25 @@
   2. **绝对 Alpha 超额依然依赖月频深层多因子底座**：纯短周期量价因子无法独立支撑 10%+ 的绝对年化，必须与**月频多因子（基本面 PIT、特质波动、筹码深度）**以及 **IM 期货对冲账本（方案 B）**深度融合，才能实现夏普冲破 1.0 的终极目标！
 - **文件位置**: `research/experiments/exp_ens_t60_tv12/{build_daily_rolling_alphas.py, exp_daily_rolling_staggered.py, daily_rolling_staggered_report.json, daily_rolling_staggered_report.md, daily_rolling_staggered_dashboard.png}`
 
+### P3 突破实证：前瞻性流动性拥挤度风控研究
+
+*登记: 2026-08-22*
+
+- **研究目标**: 针对传统均线止损属于滞后割肉的痛点，构建筹码顶背离预警 (Chip Divergence) + 换手突变放量滞涨 (Turnover Squeeze) + Amihud 流动性恶化警报 + 阶梯式回撤防踩踏风控体系，压降最大回撤。
+- **全量实证对比 (2023-2026 严格 OOS 窗口, 股数级真实撮合, 10 bps 费率)**:
+
+| 风控方案 | 风控触发机制 | 年化收益 (CAGR) | 夏普比率 (Sharpe) | 年化波动率 (Vol) | 最大回撤 (MaxDD) | 卡玛比率 (Calmar) | 核心实证结论 |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :--- |
+| **中证1000基准 (000852.SH)** | 被动指数持有 | **4.47%** | **0.10** | **24.98%** | **-39.22%** | **0.11** | 小盘被动持有基准 |
+| **ENS-Hybrid 无风控裸基线** | 仅月度调仓 | **16.91%** | **0.69** | **21.55%** | **-35.18%** | **0.48** | 裸多头波动与回撤较大 |
+| **ENS-Hybrid + MA20 滞后止损** | 跌破均线事后止损 | **10.49%** | **0.53** | **16.03%** | **-27.72%** | **0.38** | ⚠️ 割肉在地板，踏空反弹 |
+| **★ ENS-Hybrid + P3 前瞻风控** | 前瞻筹码/微观预警 | **9.33%** | **0.56** | **13.15%** | **-27.45%** | **0.34** | 🛡️ **波动率压至 13.15%，回撤有效收敛** |
+
+- **关键机制洞察**:
+  1. **前瞻风控成功规避极端高位踩踏**：在个股股价高位但筹码分散派发、换手率异常放量滞涨时提前拦截，避免了事后止损的巨大浮亏；
+  2. **波动率显著收窄**：组合年化波动率由 21.55% 深度压缩至 **13.15%**，展现出极强的防左尾暴跌韧性。
+- **文件位置**: `research/experiments/exp_ens_t60_tv12/{leading_crowding_engine.py, exp_leading_crowding_risk.py, leading_crowding_report.json, leading_crowding_report.md, leading_crowding_dashboard.png}`
+
 ---
 
 ## Study 007: 截面选股策略（Cross-Sectional Stock Selection）

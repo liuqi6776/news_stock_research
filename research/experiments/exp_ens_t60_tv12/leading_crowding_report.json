@@ -1,0 +1,42 @@
+{
+  "experiment": "P3_Leading_Crowding_Risk_Control_Ablation",
+  "generated_at": "2026-08-22 21:30:27",
+  "metrics_oos_2023_2026": {
+    "CSI1000_Benchmark": {
+      "cagr": 4.47,
+      "sharpe": 0.1,
+      "vol": 24.98,
+      "max_dd": -39.22,
+      "calmar": 0.11,
+      "total_return": 17.23,
+      "days": 879
+    },
+    "ENS_Hybrid_Raw_Baseline": {
+      "cagr": 16.91,
+      "sharpe": 0.69,
+      "vol": 21.55,
+      "max_dd": -35.18,
+      "calmar": 0.48,
+      "total_return": 76.4,
+      "days": 879
+    },
+    "ENS_Hybrid_MA20_Lagging_Stop": {
+      "cagr": 10.49,
+      "sharpe": 0.53,
+      "vol": 16.03,
+      "max_dd": -27.72,
+      "calmar": 0.38,
+      "total_return": 43.68,
+      "days": 879
+    },
+    "ENS_Hybrid_P3_Leading_Crowding_Guard": {
+      "cagr": 9.33,
+      "sharpe": 0.56,
+      "vol": 13.15,
+      "max_dd": -27.45,
+      "calmar": 0.34,
+      "total_return": 38.27,
+      "days": 879
+    }
+  }
+}
