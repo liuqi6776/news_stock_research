@@ -1,0 +1,69 @@
+{
+  "experiment": "Staggered_Rolling_Tranches_Sharpe_Optimization",
+  "generated_at": "2026-08-22 20:46:18",
+  "metrics_oos_2023_2026": {
+    "CSI1000_Benchmark": {
+      "cagr": 4.47,
+      "sharpe": 0.1,
+      "vol": 24.98,
+      "max_dd": -39.22,
+      "calmar": 0.11,
+      "total_return": 17.23,
+      "days": 879
+    },
+    "ENH4_K1_Monthly": {
+      "cagr": 2.5,
+      "sharpe": 0.03,
+      "vol": 15.07,
+      "max_dd": -26.94,
+      "calmar": 0.09,
+      "total_return": 9.4,
+      "days": 879
+    },
+    "ENS_GBDT20_K1_Monthly": {
+      "cagr": 0.82,
+      "sharpe": -0.08,
+      "vol": 15.35,
+      "max_dd": -30.64,
+      "calmar": 0.03,
+      "total_return": 3.01,
+      "days": 879
+    },
+    "ENS_GBDT20_K4_Weekly": {
+      "cagr": 5.76,
+      "sharpe": 0.23,
+      "vol": 16.7,
+      "max_dd": -30.51,
+      "calmar": 0.19,
+      "total_return": 22.56,
+      "days": 879
+    },
+    "ENS_Hybrid_K1_Monthly": {
+      "cagr": 1.44,
+      "sharpe": -0.04,
+      "vol": 14.95,
+      "max_dd": -29.79,
+      "calmar": 0.05,
+      "total_return": 5.34,
+      "days": 879
+    },
+    "ENS_Hybrid_K2_BiWeekly": {
+      "cagr": 4.85,
+      "sharpe": 0.2,
+      "vol": 14.48,
+      "max_dd": -26.46,
+      "calmar": 0.18,
+      "total_return": 18.79,
+      "days": 879
+    },
+    "ENS_Hybrid_K4_Weekly": {
+      "cagr": 4.21,
+      "sharpe": 0.15,
+      "vol": 14.99,
+      "max_dd": -28.47,
+      "calmar": 0.15,
+      "total_return": 16.17,
+      "days": 879
+    }
+  }
+}
