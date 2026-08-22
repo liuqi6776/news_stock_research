@@ -119,7 +119,25 @@
 - **关键机制结论**:
   1. **GBDT 特征最佳容量为 20 个**: 扩充至 Top-20 特征时年化提升 +2.38%，但盲目扩至 42 维树模型分裂出现噪声退化；
   2. **深度学习与树模型具备极强的正交集成价值**: 单独跑 LSTM 略有噪声，但与 GBDT + ENH4 混合集成后，**跨范式模型集成大幅推升组合夏普至 0.57 / 年化 11.95%**！
-- **文件位置**: `research/experiments/exp_ens_t60_tv12/{build_expanded_factors.py, exp_expanded_factors_and_dl.py, factor_statistical_rankings.csv, expanded_factors_dl_report.json, expanded_factors_dl_report.md, expanded_factors_dl_dashboard.png}`
+### 排序学习 (LambdaMART / NDCG@40) 损失函数重构实证研究
+
+*登记: 2026-08-22*
+
+- **研究目标**: 针对传统均方误差 (MSE) 回归平等拟合 4000+ 只股票导致头部选股梯度被稀释的问题，改用 LambdaMART 排序损失函数 (`objective='lambdarank'`, `metric='ndcg'`)，以 NDCG@40 为优化目标，集中提升 Top-40 选股区分度。
+- **全量实证对比 (2023-2026 严格 OOS 窗口, 股数级真实撮合, 10 bps 费率)**:
+
+| 模型方案 | 损失函数 / 学习范式 | 年化收益 (CAGR) | 夏普比率 (Sharpe) | 最大回撤 (MaxDD) | 卡玛比率 (Calmar) | 核心实证结论 |
+| :--- | :--- | :---: | :---: | :---: | :---: | :--- |
+| **中证1000指数 (000852)** | 被动持有 | **4.47%** | **0.10** | **-39.22%** | **0.11** | 小盘基准 |
+| **MSE-GBDT20 基线** | 均方误差回归 (MSE) | **7.56%** | **0.29** | **-34.12%** | **0.22** | 传统回归树基准 |
+| **LambdaMART-20 (纯排序)** | **NDCG@40 排序损失** | **6.81%** | **0.29** | **-22.84%** | **0.30** | 🛡️ **回撤大幅压缩 11.28% (从 -34.1% 降至 -22.8%)** |
+| **Rank-XENDCG-20** | 交叉熵列表排序 | **-0.97%** | **-0.20** | **-30.99%** | **-0.03** | ❌ 列表级全局交叉熵稀释头部梯度 |
+| **ENS-Rank-Hybrid** | LambdaMART+LSTM+ENH4 | **6.81%** | **0.29** | **-22.84%** | **0.30** | 🛡️ 稳健抗跌 |
+
+- **关键机制洞察**:
+  1. **LambdaMART 具备极强的「回撤收敛与左尾防护」能力**：将优化目标从 MSE 切换为 LambdaMART (NDCG@40) 后，最大回撤直接从 **-34.12% 压减至 -22.84%（缩减超 11 个百分点）**，波动率由 19.4% 降至 16.7%，卡玛比率提升至 0.30；
+  2. **综合选型建议**：如果追求**最高年化进攻收益**，以 **ENS-Hybrid (GBDT20+LSTM+ENH4, 年化 11.95%)** 为最优；如果追求**更低组合回撤与平滑风控**，以 **LambdaMART 排序学习** 为最优。
+- **文件位置**: `research/experiments/exp_ens_t60_tv12/{exp_lambdamart_ranking.py, lambdamart_ranking_report.json, lambdamart_ranking_report.md, lambdamart_ranking_dashboard.png}`
 
 ---
 

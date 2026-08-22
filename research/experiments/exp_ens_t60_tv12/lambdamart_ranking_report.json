@@ -1,0 +1,60 @@
+{
+  "experiment": "LambdaMART_Learning_to_Rank_Ablation",
+  "generated_at": "2026-08-22 19:07:16",
+  "metrics_oos_2023_2026": {
+    "ENH4_Linear_Baseline": {
+      "cagr": 9.19,
+      "sharpe": 0.5,
+      "vol": 14.43,
+      "max_dd": -22.5,
+      "calmar": 0.41,
+      "total_return": 37.61,
+      "days": 879
+    },
+    "MSE_GBDT20_Baseline": {
+      "cagr": 7.56,
+      "sharpe": 0.29,
+      "vol": 19.4,
+      "max_dd": -34.12,
+      "calmar": 0.22,
+      "total_return": 30.3,
+      "days": 879
+    },
+    "LambdaMART_20_NDCG40": {
+      "cagr": 6.81,
+      "sharpe": 0.29,
+      "vol": 16.7,
+      "max_dd": -22.84,
+      "calmar": 0.3,
+      "total_return": 27.01,
+      "days": 879
+    },
+    "Rank_XENDCG_20": {
+      "cagr": -0.97,
+      "sharpe": -0.2,
+      "vol": 14.85,
+      "max_dd": -30.99,
+      "calmar": -0.03,
+      "total_return": -3.47,
+      "days": 879
+    },
+    "ENS_Rank_Hybrid": {
+      "cagr": 6.81,
+      "sharpe": 0.29,
+      "vol": 16.7,
+      "max_dd": -22.84,
+      "calmar": 0.3,
+      "total_return": 27.01,
+      "days": 879
+    },
+    "CSI1000_Benchmark": {
+      "cagr": 4.47,
+      "sharpe": 0.1,
+      "vol": 24.98,
+      "max_dd": -39.22,
+      "calmar": 0.11,
+      "total_return": 17.23,
+      "days": 879
+    }
+  }
+}
