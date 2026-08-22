@@ -1,0 +1,76 @@
+{
+  "experiment": "MultiFactor_Expansion_and_DeepLearning_Ablation",
+  "generated_at": "2026-08-22 17:16:21",
+  "factor_counts": {
+    "total_candidates": 53,
+    "effective_candidates": 42,
+    "gbdt_10_features": 10,
+    "gbdt_20_features": 20,
+    "gbdt_42_features": 42
+  },
+  "oos_performance_2023_2026": {
+    "ENH4_Linear_Baseline": {
+      "cagr": 9.19,
+      "sharpe": 0.5,
+      "vol": 14.43,
+      "max_dd": -22.5,
+      "calmar": 0.41,
+      "total_return": 37.61,
+      "days": 879
+    },
+    "True_ENS_GBDT10_Frozen_Baseline": {
+      "cagr": 8.73,
+      "sharpe": 0.43,
+      "vol": 15.59,
+      "max_dd": -28.77,
+      "calmar": 0.3,
+      "total_return": 35.54,
+      "days": 879
+    },
+    "ENS_GBDT20_Expanded": {
+      "cagr": 11.11,
+      "sharpe": 0.54,
+      "vol": 16.75,
+      "max_dd": -28.81,
+      "calmar": 0.39,
+      "total_return": 46.59,
+      "days": 879
+    },
+    "ENS_GBDT42_HighDim": {
+      "cagr": 9.12,
+      "sharpe": 0.47,
+      "vol": 15.23,
+      "max_dd": -22.27,
+      "calmar": 0.41,
+      "total_return": 37.32,
+      "days": 879
+    },
+    "ENS_LSTM42_DeepLearning": {
+      "cagr": 7.65,
+      "sharpe": 0.33,
+      "vol": 17.08,
+      "max_dd": -28.17,
+      "calmar": 0.27,
+      "total_return": 30.7,
+      "days": 879
+    },
+    "ENS_GRU42_DeepLearning": {
+      "cagr": 9.17,
+      "sharpe": 0.43,
+      "vol": 16.76,
+      "max_dd": -25.35,
+      "calmar": 0.36,
+      "total_return": 37.55,
+      "days": 879
+    },
+    "ENS_Hybrid_GBDT_LSTM_ENH4": {
+      "cagr": 11.95,
+      "sharpe": 0.57,
+      "vol": 17.35,
+      "max_dd": -28.17,
+      "calmar": 0.42,
+      "total_return": 50.68,
+      "days": 879
+    }
+  }
+}

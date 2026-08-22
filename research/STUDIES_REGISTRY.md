@@ -99,6 +99,28 @@
      - 500W 资金: CAGR 23.55%, Sharpe 1.12, MaxDD **-21.51%**。
 - **文件位置**: `research/experiments/exp_ens_t60_tv12/{remediated_comprehensive_audit.py, realistic_execution_sim.py, im_futures_ledger.py, remediated_audit_report.json, remediated_audit_report.md, remediated_audit_dashboard.png}`
 
+### Multi-Factor 扩充 (42特征) 与深度学习 (LSTM/GRU) 实证研究
+
+*登记: 2026-08-22*
+
+- **研究目标**: 验证将因子库扩充至 50+ 个候选特征并筛选出 42 个有效特征后，输入机器学习 (LightGBM) 与时序深度学习 (PyTorch CUDA LSTM/GRU) 对 True ENS 选股能力的增量贡献。
+- **全量实证对比 (2023-2026 严格 OOS 窗口, 股数级真实撮合, 10 bps 费率)**:
+
+| 模型方案 | 特征数量 / 架构 | 年化收益 (CAGR) | 夏普比率 (Sharpe) | 最大回撤 (MaxDD) | 卡玛比率 (Calmar) | 实证判定 |
+| :--- | :--- | :---: | :---: | :---: | :---: | :--- |
+| **ENH4 纯线性基线** | 4 个线性因子 | **9.19%** | **0.50** | **-22.50%** | **0.41** | 传统因子基线 |
+| **True ENS-GBDT10 (冻结基准)** | 10 个核心精选特征 | **8.73%** | **0.43** | **-28.77%** | **0.30** | ✅ 生产级基线 |
+| **ENS-GBDT20 (Top-20扩充)** | 20 个精选有效特征 | **11.11%** | **0.54** | **-28.81%** | **0.39** | 🏆 **显著增量 (CAGR +2.38%)** |
+| **ENS-GBDT42 (全量42维扩充)** | 42 个全量有效特征 | **9.12%** | **0.47** | **-22.27%** | **0.41** | ⚠️ 特征过多引发轻微共线性过拟合 |
+| **ENS-LSTM42 (时序深度学习)** | 42 维 12步 PyTorch LSTM | **7.65%** | **0.33** | **-28.17%** | **0.27** | 🔬 独立预测略带高参数噪声 |
+| **ENS-GRU42 (时序深度学习)** | 42 维 12步 PyTorch GRU | **9.17%** | **0.43** | **-25.35%** | **0.36** | 🔬 时序结构提供平滑能力 |
+| **ENS-Hybrid 跨范式混合集成** | ENH4 + GBDT + LSTM | **11.95%** | **0.57** | **-28.17%** | **0.42** | 🏆 **全场最高夏普 (0.57) 与最高年化 (11.95%)** |
+
+- **关键机制结论**:
+  1. **GBDT 特征最佳容量为 20 个**: 扩充至 Top-20 特征时年化提升 +2.38%，但盲目扩至 42 维树模型分裂出现噪声退化；
+  2. **深度学习与树模型具备极强的正交集成价值**: 单独跑 LSTM 略有噪声，但与 GBDT + ENH4 混合集成后，**跨范式模型集成大幅推升组合夏普至 0.57 / 年化 11.95%**！
+- **文件位置**: `research/experiments/exp_ens_t60_tv12/{build_expanded_factors.py, exp_expanded_factors_and_dl.py, factor_statistical_rankings.csv, expanded_factors_dl_report.json, expanded_factors_dl_report.md, expanded_factors_dl_dashboard.png}`
+
 ---
 
 ## Study 007: 截面选股策略（Cross-Sectional Stock Selection）
