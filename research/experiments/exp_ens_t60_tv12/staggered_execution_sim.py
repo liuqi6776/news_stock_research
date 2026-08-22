@@ -24,8 +24,8 @@ def run_staggered_tranches_backtest(
     num_tranches=4,
     rebalance_freq=20,
     top_n=40,
-    max_ind=2,
-    max_per_ind_l1=4,
+    max_ind=4,
+    max_per_ind_l1=8,
     fee_bps=10.0,
     initial_capital=2200000.0,
     s123_tiered=True,
@@ -85,7 +85,15 @@ def run_staggered_tranches_backtest(
     peak_nav = 1.0
 
     def get_latest_scores_for_day(d):
-        # 寻找此前最新的月度决策截面
+        priors = [x for x in cal_dates if x < d]
+        prev_d = priors[-1] if priors else d
+        # 1. 优先尝试提取前一交易日的新鲜日级 Alpha
+        if prev_d in scores:
+            pool = scores[prev_d]
+            members = latest_members(d)
+            return pool[pool.index.isin(members)]
+            
+        # 2. 回退至月度决策截面
         y = d // 10000
         m = (d // 100) % 100
         prev_ym = (y - 1) * 100 + 12 if m == 1 else y * 100 + (m - 1)

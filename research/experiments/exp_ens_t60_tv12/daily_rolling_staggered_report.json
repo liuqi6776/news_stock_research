@@ -1,0 +1,51 @@
+{
+  "experiment": "Daily_Rolling_Alpha_Staggered_Tranches_Scheme_A",
+  "generated_at": "2026-08-22 21:15:54",
+  "metrics_oos_2023_2026": {
+    "CSI1000_Benchmark": {
+      "cagr": 4.47,
+      "sharpe": 0.1,
+      "vol": 24.98,
+      "max_dd": -39.22,
+      "calmar": 0.11,
+      "total_return": 17.23,
+      "days": 879
+    },
+    "Monthly_ENS_K1_Baseline": {
+      "cagr": 7.03,
+      "sharpe": 0.32,
+      "vol": 15.47,
+      "max_dd": -27.02,
+      "calmar": 0.26,
+      "total_return": 27.98,
+      "days": 879
+    },
+    "DailyAlpha_K1_Monthly": {
+      "cagr": 2.73,
+      "sharpe": 0.05,
+      "vol": 13.63,
+      "max_dd": -22.36,
+      "calmar": 0.12,
+      "total_return": 10.27,
+      "days": 879
+    },
+    "DailyAlpha_K2_BiWeekly": {
+      "cagr": 2.34,
+      "sharpe": 0.03,
+      "vol": 12.18,
+      "max_dd": -22.32,
+      "calmar": 0.1,
+      "total_return": 8.75,
+      "days": 879
+    },
+    "DailyAlpha_K4_Weekly_Fresh": {
+      "cagr": 2.59,
+      "sharpe": 0.04,
+      "vol": 13.73,
+      "max_dd": -24.94,
+      "calmar": 0.1,
+      "total_return": 9.74,
+      "days": 879
+    }
+  }
+}
