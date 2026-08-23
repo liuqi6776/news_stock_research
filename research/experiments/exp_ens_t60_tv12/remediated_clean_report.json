@@ -1,0 +1,52 @@
+{
+  "experiment": "Remediated_Clean_Production_Pipeline",
+  "generated_at": "2026-08-23 16:29:34",
+  "audit_classification": "Exploratory Development Pipeline (Strict Accounting & In-Fold Features)",
+  "metrics_oos_2023_2026": {
+    "CSI1000_Benchmark": {
+      "cagr": 4.47,
+      "sharpe": 0.1,
+      "vol": 24.98,
+      "max_dd": -39.22,
+      "calmar": 0.11,
+      "total_return": 17.23,
+      "days": 879
+    },
+    "Clean_Pure_Stock_Alpha": {
+      "cagr": 11.12,
+      "sharpe": 0.45,
+      "vol": 20.47,
+      "max_dd": -36.49,
+      "calmar": 0.3,
+      "total_return": 46.67,
+      "days": 879
+    },
+    "Clean_IM_Hedged_Single_Account": {
+      "cagr": 11.23,
+      "sharpe": 0.61,
+      "vol": 15.1,
+      "max_dd": -28.15,
+      "calmar": 0.4,
+      "total_return": 47.2,
+      "days": 879
+    },
+    "Clean_Multi_Asset_Static_60_25_15": {
+      "cagr": 8.72,
+      "sharpe": 0.49,
+      "vol": 13.83,
+      "max_dd": -21.3,
+      "calmar": 0.41,
+      "total_return": 35.5,
+      "days": 879
+    },
+    "Clean_Multi_Asset_Hedged_Neutral_Star": {
+      "cagr": 6.3,
+      "sharpe": 0.54,
+      "vol": 7.95,
+      "max_dd": -10.71,
+      "calmar": 0.59,
+      "total_return": 24.83,
+      "days": 879
+    }
+  }
+}
