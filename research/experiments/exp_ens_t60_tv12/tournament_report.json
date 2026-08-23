@@ -1,0 +1,97 @@
+{
+  "experiment": "Strict_Production_Model_Tournament",
+  "generated_at": "2026-08-23 17:43:09",
+  "audit_ledger": "UnifiedProductionLedger (Single-Cash, 100-Share Lots, Rolling ADV, Suspension Safe)",
+  "metrics_oos_2023_2026": {
+    "ENH4_Linear": {
+      "cagr": 10.0,
+      "sharpe": 0.45,
+      "vol": 17.96,
+      "max_dd": -32.26,
+      "calmar": 0.31,
+      "total_return": 41.38,
+      "days": 879
+    },
+    "LightGBM_10_MSE": {
+      "cagr": 13.57,
+      "sharpe": 0.54,
+      "vol": 21.4,
+      "max_dd": -31.8,
+      "calmar": 0.43,
+      "total_return": 58.75,
+      "days": 879
+    },
+    "LightGBM_20_Nested": {
+      "cagr": 9.66,
+      "sharpe": 0.33,
+      "vol": 23.02,
+      "max_dd": -37.84,
+      "calmar": 0.26,
+      "total_return": 39.79,
+      "days": 879
+    },
+    "LightGBM_42_MSE": {
+      "cagr": 12.2,
+      "sharpe": 0.53,
+      "vol": 19.11,
+      "max_dd": -24.74,
+      "calmar": 0.49,
+      "total_return": 51.9,
+      "days": 879
+    },
+    "LambdaMART_20_NDCG": {
+      "cagr": 11.17,
+      "sharpe": 0.39,
+      "vol": 23.53,
+      "max_dd": -26.36,
+      "calmar": 0.42,
+      "total_return": 46.9,
+      "days": 879
+    },
+    "PyTorch_CUDA_LSTM": {
+      "cagr": 8.05,
+      "sharpe": 0.28,
+      "vol": 21.72,
+      "max_dd": -37.19,
+      "calmar": 0.22,
+      "total_return": 32.49,
+      "days": 879
+    },
+    "PyTorch_CUDA_GRU": {
+      "cagr": 8.3,
+      "sharpe": 0.28,
+      "vol": 22.7,
+      "max_dd": -39.64,
+      "calmar": 0.21,
+      "total_return": 33.6,
+      "days": 879
+    },
+    "True_ENS_Rank_Hybrid": {
+      "cagr": 13.7,
+      "sharpe": 0.61,
+      "vol": 19.34,
+      "max_dd": -32.83,
+      "calmar": 0.42,
+      "total_return": 59.43,
+      "days": 879
+    },
+    "True_ENS_MSE_Hybrid": {
+      "cagr": 10.7,
+      "sharpe": 0.4,
+      "vol": 21.72,
+      "max_dd": -41.37,
+      "calmar": 0.26,
+      "total_return": 44.68,
+      "days": 879
+    },
+    "CSI1000_Benchmark": {
+      "cagr": 4.47,
+      "sharpe": 0.1,
+      "vol": 24.98,
+      "max_dd": -39.22,
+      "calmar": 0.11,
+      "total_return": 17.23,
+      "days": 879
+    }
+  }
+}
