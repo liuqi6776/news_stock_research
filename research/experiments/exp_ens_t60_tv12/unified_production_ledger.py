@@ -309,8 +309,16 @@ class UnifiedProductionLedger:
                 self.pending_sell_orders.pop(c, None)
                 continue
 
+            order_info = self.pending_sell_orders[c]
+            if isinstance(order_info, dict):
+                req_sh = order_info["shares"]
+                order_reason = order_info.get("reason", "timing")
+            else:
+                req_sh = order_info
+                order_reason = "timing"
+
             h = self.stock_positions[c]
-            pending_sh = min(self.pending_sell_orders[c], h["shares"])
+            pending_sh = min(req_sh, h["shares"])
             if pending_sh < 100:
                 self.pending_sell_orders.pop(c, None)
                 continue
@@ -355,17 +363,24 @@ class UnifiedProductionLedger:
                 self.total_stock_commission += fee
                 self.total_trades += 1
                 self.total_traded_value += proceeds
-                self.timing_traded_value += proceeds
+                # 审计整改(2026-09-07 第三轮问题D): 继承原挂单触发原因，月度换股延期成交严格归入 selection
+                if order_reason == "monthly":
+                    self.selection_traded_value += proceeds
+                else:
+                    self.timing_traded_value += proceeds
                 h["shares"] -= sell_sh
                 h["tradable_shares"] -= sell_sh
                 h["last_px"] = op
                 self._record_executed_volume(c, current_date, sell_sh)
 
-                rem = self.pending_sell_orders[c] - sell_sh
+                rem = pending_sh - sell_sh
                 if rem < 100:
                     self.pending_sell_orders.pop(c, None)
                 else:
-                    self.pending_sell_orders[c] = rem
+                    if isinstance(self.pending_sell_orders[c], dict):
+                        self.pending_sell_orders[c]["shares"] = rem
+                    else:
+                        self.pending_sell_orders[c] = rem
 
             if h["shares"] <= 0:
                 self.stock_positions.pop(c, None)
@@ -525,8 +540,8 @@ class UnifiedProductionLedger:
 
             if is_suspended:
                 self.suspension_blocks += 1
-                # 赋值而非累加，严格防止多次调仓挂单翻倍
-                self.pending_sell_orders[c] = excess_sh
+                # 赋值而非累加，严格防止多次调仓挂单翻倍，并记录触发原因
+                self.pending_sell_orders[c] = {"shares": excess_sh, "reason": rebalance_reason}
                 continue
 
             # 跌停检查
@@ -538,13 +553,13 @@ class UnifiedProductionLedger:
                         break
             if is_limit_down_code(c, op, pre_p, is_st=is_st):
                 self.limit_down_locks += 1
-                self.pending_sell_orders[c] = excess_sh
+                self.pending_sell_orders[c] = {"shares": excess_sh, "reason": rebalance_reason}
                 continue
 
             # 共享 ADV 容量约束 (同日两阶段共享，无数据返回0)
             max_adv = self._get_daily_adv_quota(stock_vol_w, c, current_date)
             if max_adv < 100:
-                self.pending_sell_orders[c] = excess_sh
+                self.pending_sell_orders[c] = {"shares": excess_sh, "reason": rebalance_reason}
                 continue
 
             sell_shares = min(h["tradable_shares"], excess_sh, max_adv)
@@ -566,10 +581,10 @@ class UnifiedProductionLedger:
                 h["last_px"] = op
                 self._record_executed_volume(c, current_date, sell_shares)
 
-            # 更新未成交卖单队列 (严格赋值为当前持股与目标股数的缺口)
+            # 更新未成交卖单队列 (严格赋值为当前持股与目标股数的缺口，继承当前调仓原因)
             remaining_excess = h["shares"] - target_sh
             if remaining_excess >= 100:
-                self.pending_sell_orders[c] = remaining_excess
+                self.pending_sell_orders[c] = {"shares": remaining_excess, "reason": rebalance_reason}
             else:
                 self.pending_sell_orders.pop(c, None)
 
@@ -697,6 +712,7 @@ class UnifiedProductionLedger:
                             fee = cost * self.etf_fee_rate
                             self.cash -= (cost + fee)
                             self.total_etf_commission += fee
+                            self.total_trades += 1
                             self.total_traded_value += cost
                             if rebalance_reason == "monthly":
                                 self.selection_traded_value += cost
@@ -732,3 +748,258 @@ class UnifiedProductionLedger:
         else:
             self.im_lots = 0
             self.im_prev_px = im_price
+
+    def scale_stock_exposure(
+        self,
+        current_date,
+        target_stock_pct,
+        stock_open_w,
+        stock_preclose_w,
+        stock_vol_w,
+        etf_targets=None,
+        etf_price_dict=None,
+        st_dict=None,
+        rebalance_reason="timing"
+    ):
+        """
+        审计整改(2026-09-07 第三轮实验1): 已有股票篮子等比例缩放 (Proportional Basket Scaling)
+        当选股名单未变、仅需按SCS信号调整总股票仓位时，对已有持仓股票按照相同比例进行增减持。
+        彻底避免每次择时微调触发40只个股强制等权再平衡，消除无谓换手与滑点冲击。
+        """
+        if self.last_execution_date != current_date:
+            self.daily_executed_shares = {}
+            self.last_execution_date = current_date
+
+        # 1. 计算开盘当前总资产与股票持仓总值
+        open_stock_val = 0.0
+        stock_px_map = {}
+        for c, h in list(self.stock_positions.items()):
+            op = stock_open_w.at[current_date, c] if (c in stock_open_w.columns and current_date in stock_open_w.index) else np.nan
+            pre_p = stock_preclose_w.at[current_date, c] if (c in stock_preclose_w.columns and current_date in stock_preclose_w.index) else np.nan
+            px = op if (np.isfinite(op) and op > 0) else (pre_p if (np.isfinite(pre_p) and pre_p > 0) else h["last_px"])
+            stock_px_map[c] = px
+            open_stock_val += h["shares"] * px
+
+        open_etf_val = 0.0
+        for c, h in list(self.etf_positions.items()):
+            s_df = etf_price_dict.get(c) if etf_price_dict else None
+            op = s_df.get(current_date, np.nan) if s_df is not None else np.nan
+            px = op if (np.isfinite(op) and op > 0) else h["last_px"]
+            open_etf_val += h["shares"] * px
+
+        total_open_equity = open_stock_val + open_etf_val + self.cash
+        target_total_stock_val = total_open_equity * target_stock_pct
+
+        # 2. 计算每只现有股票的目标股数 (严格按比例缩放，不重置相对权重)
+        target_shares_map = {}
+        if open_stock_val > 0 and target_total_stock_val > 0:
+            scale_ratio = target_total_stock_val / open_stock_val
+            for c, h in self.stock_positions.items():
+                target_sh = int(round(h["shares"] * scale_ratio / 100.0)) * 100
+                target_shares_map[c] = target_sh
+        else:
+            for c in self.stock_positions.keys():
+                target_shares_map[c] = 0
+
+        # 3. 确定每只目标 ETF 的目标股数
+        target_etf_shares_map = {}
+        if etf_targets is not None and len(etf_targets) > 0 and etf_price_dict:
+            for etf_code, tgt_pct in etf_targets.items():
+                s_df = etf_price_dict.get(etf_code)
+                op = s_df.get(current_date, np.nan) if s_df is not None else np.nan
+                if np.isfinite(op) and op > 0:
+                    target_val = total_open_equity * tgt_pct
+                    target_etf_shares_map[etf_code] = int((target_val / op) // 100) * 100
+                else:
+                    target_etf_shares_map[etf_code] = 0
+
+        # =========================================================================
+        # 第一阶段：卖出流程 (PHASE 1: SELLS & TRIMS)
+        # =========================================================================
+        all_current_stocks = list(self.stock_positions.keys())
+        for c in all_current_stocks:
+            h = self.stock_positions[c]
+            target_sh = target_shares_map.get(c, 0)
+            if target_sh >= h["shares"]:
+                self.pending_sell_orders.pop(c, None)
+                continue
+
+            excess_sh = h["shares"] - target_sh
+            op = stock_open_w.at[current_date, c] if (c in stock_open_w.columns and current_date in stock_open_w.index) else np.nan
+            pre_p = stock_preclose_w.at[current_date, c] if (c in stock_preclose_w.columns and current_date in stock_preclose_w.index) else np.nan
+
+            is_suspended = (not (np.isfinite(op) and op > 0))
+            if not is_suspended and stock_vol_w is not None and c in stock_vol_w.columns and current_date in stock_vol_w.index:
+                day_vol = stock_vol_w.at[current_date, c]
+                if np.isnan(day_vol) or day_vol <= 0:
+                    is_suspended = True
+
+            if is_suspended:
+                self.suspension_blocks += 1
+                self.pending_sell_orders[c] = {"shares": excess_sh, "reason": rebalance_reason}
+                continue
+
+            is_st = False
+            if st_dict is not None and c in st_dict:
+                for (s, e) in st_dict[c]:
+                    if s <= current_date <= e:
+                        is_st = True
+                        break
+            if is_limit_down_code(c, op, pre_p, is_st=is_st):
+                self.limit_down_locks += 1
+                self.pending_sell_orders[c] = {"shares": excess_sh, "reason": rebalance_reason}
+                continue
+
+            max_adv = self._get_daily_adv_quota(stock_vol_w, c, current_date)
+            if max_adv < 100:
+                self.pending_sell_orders[c] = {"shares": excess_sh, "reason": rebalance_reason}
+                continue
+
+            sell_shares = min(h["tradable_shares"], excess_sh, max_adv)
+            sell_shares = (sell_shares // 100) * 100
+
+            if sell_shares >= 100:
+                proceeds = sell_shares * op
+                fee = proceeds * self.stock_fee_rate
+                self.cash += (proceeds - fee)
+                self.total_stock_commission += fee
+                self.total_trades += 1
+                self.total_traded_value += proceeds
+                if rebalance_reason == "monthly":
+                    self.selection_traded_value += proceeds
+                else:
+                    self.timing_traded_value += proceeds
+                h["shares"] -= sell_shares
+                h["tradable_shares"] -= sell_shares
+                h["last_px"] = op
+                self._record_executed_volume(c, current_date, sell_shares)
+
+            remaining_excess = h["shares"] - target_sh
+            if remaining_excess >= 100:
+                self.pending_sell_orders[c] = {"shares": remaining_excess, "reason": rebalance_reason}
+            else:
+                self.pending_sell_orders.pop(c, None)
+
+            if h["shares"] <= 0:
+                self.stock_positions.pop(c, None)
+                self.pending_sell_orders.pop(c, None)
+
+        # ETF 卖出
+        all_current_etfs = list(self.etf_positions.keys())
+        for etf_code in all_current_etfs:
+            h_etf = self.etf_positions[etf_code]
+            target_etf_sh = target_etf_shares_map.get(etf_code, 0)
+            if h_etf["shares"] > target_etf_sh:
+                excess_etf_sh = h_etf["shares"] - target_etf_sh
+                s_df = etf_price_dict.get(etf_code) if etf_price_dict else None
+                op = s_df.get(current_date, np.nan) if s_df is not None else np.nan
+                if np.isfinite(op) and op > 0:
+                    sell_etf_sh = min(h_etf["tradable_shares"], excess_etf_sh)
+                    sell_etf_sh = (sell_etf_sh // 100) * 100
+                    if sell_etf_sh >= 100:
+                        proceeds = sell_etf_sh * op
+                        fee = proceeds * self.etf_fee_rate
+                        self.cash += (proceeds - fee)
+                        self.total_etf_commission += fee
+                        self.total_trades += 1
+                        self.total_traded_value += proceeds
+                        if rebalance_reason == "monthly":
+                            self.selection_traded_value += proceeds
+                        else:
+                            self.timing_traded_value += proceeds
+                        h_etf["shares"] -= sell_etf_sh
+                        h_etf["tradable_shares"] -= sell_etf_sh
+                        h_etf["last_px"] = op
+                if h_etf["shares"] <= 0:
+                    self.etf_positions.pop(etf_code, None)
+
+        # =========================================================================
+        # 第二阶段：买入流程 (PHASE 2: BUYS)
+        # =========================================================================
+        for c in list(self.stock_positions.keys()):
+            h = self.stock_positions[c]
+            target_sh = target_shares_map.get(c, 0)
+            if target_sh > h["shares"]:
+                needed_sh = target_sh - h["shares"]
+                op = stock_open_w.at[current_date, c] if (c in stock_open_w.columns and current_date in stock_open_w.index) else np.nan
+                pre_p = stock_preclose_w.at[current_date, c] if (c in stock_preclose_w.columns and current_date in stock_preclose_w.index) else np.nan
+
+                is_suspended = (not (np.isfinite(op) and op > 0))
+                if not is_suspended and stock_vol_w is not None and c in stock_vol_w.columns and current_date in stock_vol_w.index:
+                    day_vol = stock_vol_w.at[current_date, c]
+                    if np.isnan(day_vol) or day_vol <= 0:
+                        is_suspended = True
+
+                if is_suspended:
+                    self.suspension_blocks += 1
+                    continue
+
+                is_st = False
+                if st_dict is not None and c in st_dict:
+                    for (s, e) in st_dict[c]:
+                        if s <= current_date <= e:
+                            is_st = True
+                            break
+                if is_limit_up_code(c, op, pre_p, is_st=is_st):
+                    self.limit_up_rejections += 1
+                    continue
+
+                max_adv = self._get_daily_adv_quota(stock_vol_w, c, current_date)
+                if max_adv < 100:
+                    continue
+
+                max_afford_sh = int(self.cash // (op * (1.0 + self.stock_fee_rate) * 100)) * 100
+                buy_shares = min(needed_sh, max_adv, max_afford_sh)
+                buy_shares = (buy_shares // 100) * 100
+
+                if buy_shares >= 100:
+                    cost = buy_shares * op
+                    fee = cost * self.stock_fee_rate
+                    self.cash -= (cost + fee)
+                    self.total_stock_commission += fee
+                    self.total_trades += 1
+                    self.total_traded_value += cost
+                    if rebalance_reason == "monthly":
+                        self.selection_traded_value += cost
+                    else:
+                        self.timing_traded_value += cost
+                    h["shares"] += buy_shares
+                    h["locked_shares"] += buy_shares
+                    h["last_px"] = op
+                    self._record_executed_volume(c, current_date, buy_shares)
+
+        # ETF 买入
+        if etf_targets is not None and len(etf_targets) > 0 and etf_price_dict:
+            for etf_code, tgt_pct in etf_targets.items():
+                target_etf_sh = target_etf_shares_map.get(etf_code, 0)
+                curr_etf_sh = self.etf_positions.get(etf_code, {}).get("shares", 0)
+                if target_etf_sh > curr_etf_sh:
+                    needed_etf_sh = target_etf_sh - curr_etf_sh
+                    s_df = etf_price_dict.get(etf_code)
+                    op = s_df.get(current_date, np.nan) if s_df is not None else np.nan
+                    if np.isfinite(op) and op > 0:
+                        max_aff_etf_sh = int(self.cash // (op * (1.0 + self.etf_fee_rate) * 100)) * 100
+                        buy_etf_sh = min(needed_etf_sh, max_aff_etf_sh)
+                        buy_etf_sh = (buy_etf_sh // 100) * 100
+                        if buy_etf_sh >= 100:
+                            cost = buy_etf_sh * op
+                            fee = cost * self.etf_fee_rate
+                            self.cash -= (cost + fee)
+                            self.total_etf_commission += fee
+                            self.total_trades += 1
+                            self.total_traded_value += cost
+                            if rebalance_reason == "monthly":
+                                self.selection_traded_value += cost
+                            else:
+                                self.timing_traded_value += cost
+                            if etf_code not in self.etf_positions:
+                                self.etf_positions[etf_code] = {
+                                    "shares": buy_etf_sh,
+                                    "tradable_shares": 0,
+                                    "locked_shares": buy_etf_sh,
+                                    "last_px": op
+                                }
+                            else:
+                                self.etf_positions[etf_code]["shares"] += buy_etf_sh
+                                self.etf_positions[etf_code]["locked_shares"] += buy_etf_sh
+                                self.etf_positions[etf_code]["last_px"] = op

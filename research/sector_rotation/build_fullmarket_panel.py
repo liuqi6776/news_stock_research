@@ -64,6 +64,8 @@ px["ret_1m"] = g["r"].transform(lambda s: (1 + s).rolling(20).apply(np.prod, raw
 px["ivol"] = g["ex_ret"].transform(lambda s: s.rolling(20).std(ddof=1))
 px["cum20"] = g["r"].transform(lambda s: (1 + s).rolling(20).apply(np.prod, raw=True))
 px["fwd_20"] = px.groupby("ts_code")["cum20"].shift(-20) - 1
+# 审计整改(2026-09-07 第三轮问题A)：真实标签成熟时间(个股交易日排序流原生 shift(-20)，遇停牌自动顺延，不足20天或退市为NaN)
+px["label_available_date"] = px.groupby("ts_code")["trade_date"].shift(-20)
 for w in (5, 10, 20, 60):
     px[f"momentum_{w}"] = g["close"].pct_change(w)
 for w in (5, 10, 20):
@@ -117,7 +119,7 @@ print(f"  [3.4] forward100 标签 完成, {time.time()-t0:.0f}s")
 cal = sorted(px["trade_date"].unique())
 cal_s = pd.Series(cal)
 month_last = cal_s.groupby(cal_s // 100).max().tolist()
-month_last = [d for d in month_last if 20150401 <= d <= 20251231]
+month_last = [d for d in month_last if 20150401 <= d <= 20260904]
 print(f"[4] 月末快照: {len(month_last)} 月 ({month_last[0]}~{month_last[-1]})")
 
 panel = px[px["trade_date"].isin(month_last)].copy()
@@ -156,7 +158,7 @@ feat_cols = ["ret_1m", "ivol", "momentum_5", "momentum_10", "momentum_20", "mome
              "roe", "or_yoy", "netprofit_yoy",
              "vwap_20", "float_pnl_20", "prof_pct_20", "chip_conc_20", "chip_shift_5", "pos_vol_20"]
 out_cols = ["trade_date", "ts_code", "industry", "is_traditional"] + feat_cols + \
-           ["fwd_20", "fwd100_maxret", "fwd100_minret"]
+           ["fwd_20", "label_available_date", "fwd100_maxret", "fwd100_minret"]
 panel = panel[out_cols].copy()
 panel["fwd_20"] = panel["fwd_20"] * 100  # %
 # 审计整改(2026-09-07): 彻底移除未来标签筛选!

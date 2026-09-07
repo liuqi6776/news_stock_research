@@ -45,6 +45,13 @@ def create_mock_market_data():
     return dates, open_df, close_df, preclose_df, vol_df
 
 
+def _get_pending_shares(ledger, code):
+    val = ledger.pending_sell_orders.get(code)
+    if isinstance(val, dict):
+        return val.get("shares", 0)
+    return val if val is not None else 0
+
+
 def test_scenario_1_repeated_rebalance_suspension():
     print("\n--- Running Test Scenario 1: Suspension Pending Sell Accumulation Fix ---")
     dates, open_df, close_df, preclose_df, vol_df = create_mock_market_data()
@@ -58,7 +65,6 @@ def test_scenario_1_repeated_rebalance_suspension():
         "last_px": 10.0
     }
     
-    # Suspend 000001.SZ on 2025-01-21 and 2025-01-22 (vol=0, open=nan)
     d1 = "2025-01-21"
     d2 = "2025-01-22"
     d3 = "2025-01-23" # Resumes
@@ -72,8 +78,8 @@ def test_scenario_1_repeated_rebalance_suspension():
     ledger.execute_rebalance(
         d1, [], 0.0, open_df, preclose_df, vol_df, {}, {}
     )
-    assert ledger.pending_sell_orders.get("000001.SZ") == 1000, (
-        f"Expected 1000 pending shares, got {ledger.pending_sell_orders.get('000001.SZ')}"
+    assert _get_pending_shares(ledger, "000001.SZ") == 1000, (
+        f"Expected 1000 pending shares, got {_get_pending_shares(ledger, '000001.SZ')}"
     )
     print("  [Pass] Rebalance 1 (suspended): pending_sell_orders = 1000")
     
@@ -82,8 +88,8 @@ def test_scenario_1_repeated_rebalance_suspension():
         d2, [], 0.0, open_df, preclose_df, vol_df, {}, {}
     )
     # Under old bug, this became 2000! With fix, it MUST remain 1000.
-    assert ledger.pending_sell_orders.get("000001.SZ") == 1000, (
-        f"BUG DETECTED: Pending sell orders doubled! Got {ledger.pending_sell_orders.get('000001.SZ')} instead of 1000"
+    assert _get_pending_shares(ledger, "000001.SZ") == 1000, (
+        f"BUG DETECTED: Pending sell orders doubled! Got {_get_pending_shares(ledger, '000001.SZ')} instead of 1000"
     )
     print("  [Pass] Rebalance 2 (suspended): pending_sell_orders is still 1000 (no += accumulation)")
     
@@ -134,8 +140,8 @@ def test_scenario_2_shared_daily_adv_quota():
     assert ledger.stock_positions["000002.SZ"]["shares"] == 4000, (
         f"Expected 4000 shares remaining, got {ledger.stock_positions['000002.SZ']['shares']}"
     )
-    assert ledger.pending_sell_orders["000002.SZ"] == 4000, (
-        f"Expected 4000 pending shares, got {ledger.pending_sell_orders.get('000002.SZ')}"
+    assert _get_pending_shares(ledger, "000002.SZ") == 4000, (
+        f"Expected 4000 pending shares, got {_get_pending_shares(ledger, '000002.SZ')}"
     )
     print("  [Pass] Shared daily ADV quota strictly enforced at 1000 shares across both phases")
 
@@ -159,7 +165,7 @@ def test_scenario_3_signal_reversal_protection():
     open_df.at[d1, "000003.SZ"] = np.nan
     vol_df.at[d1, "000003.SZ"] = 0.0
     ledger.execute_rebalance(d1, [], 0.0, open_df, preclose_df, vol_df, {}, {})
-    assert ledger.pending_sell_orders.get("000003.SZ") == 1000
+    assert _get_pending_shares(ledger, "000003.SZ") == 1000
     print("  [Pass] d1: Stock suspended, pending sell = 1000 shares queued")
     
     # On d2, stock resumes trading, BUT signal reverses: model now selects 000003.SZ!
@@ -205,14 +211,132 @@ def test_scenario_4_zero_missing_adv_guard():
     print("  [Pass] Buy blocked for stock completely missing from volume history")
 
 
+def test_scenario_5_reason_inheritance():
+    print("\n--- Running Test Scenario 5: Pending Order Reason Inheritance ---")
+    dates, open_df, close_df, preclose_df, vol_df = create_mock_market_data()
+    
+    ledger = UnifiedProductionLedger(initial_capital=100000.0, adv_cap_pct=0.10)
+    ledger.stock_positions["000001.SZ"] = {
+        "shares": 1000,
+        "tradable_shares": 1000,
+        "locked_shares": 0,
+        "last_px": 10.0
+    }
+    
+    d1 = "2025-01-21"
+    d2 = "2025-01-22"
+    
+    # Suspend on d1 during monthly rebalance
+    open_df.at[d1, "000001.SZ"] = np.nan
+    vol_df.at[d1, "000001.SZ"] = 0.0
+    
+    ledger.execute_rebalance(
+        d1, [], 0.0, open_df, preclose_df, vol_df, {}, {}, rebalance_reason="monthly"
+    )
+    assert ledger.pending_sell_orders["000001.SZ"]["reason"] == "monthly", "Pending order must store reason='monthly'"
+    print("  [Pass] Pending sell queued with reason='monthly'")
+    
+    # On d2, resumes trading and executes via process_daily_pending_orders
+    ledger.process_daily_pending_orders(d2, open_df, preclose_df, vol_df)
+    assert ledger.selection_traded_value == 1000 * 10.0, (
+        f"Expected selection_traded_value = 10,000, got {ledger.selection_traded_value}"
+    )
+    assert ledger.timing_traded_value == 0.0, (
+        f"Expected timing_traded_value = 0.0, got {ledger.timing_traded_value}"
+    )
+    print("  [Pass] Delayed sell of 10,000 strictly inherited 'monthly' and credited to selection_traded_value!")
+
+
+def test_scenario_6_etf_trades_symmetry():
+    print("\n--- Running Test Scenario 6: ETF Trades Symmetry ---")
+    dates, open_df, close_df, preclose_df, vol_df = create_mock_market_data()
+    
+    etf_prices = pd.Series(1.0, index=dates)
+    etf_price_dict = {"511010.SH": etf_prices}
+    
+    ledger = UnifiedProductionLedger(initial_capital=100000.0, adv_cap_pct=0.10)
+    d1 = "2025-01-21"
+    
+    # Buy ETF (50% target = 50,000 / 1.0 = 50,000 shares)
+    ledger.execute_rebalance(
+        d1, [], 0.0, open_df, preclose_df, vol_df,
+        etf_targets={"511010.SH": 0.50}, etf_price_dict=etf_price_dict
+    )
+    assert ledger.total_trades == 1, f"Expected 1 trade after ETF buy, got {ledger.total_trades}"
+    assert "511010.SH" in ledger.etf_positions, "ETF should be in positions"
+    print("  [Pass] ETF buy successfully incremented total_trades to 1")
+    
+    # Day 2: unlock shares (T+1) and sell ETF
+    d2 = "2025-01-22"
+    ledger.etf_positions["511010.SH"]["tradable_shares"] = ledger.etf_positions["511010.SH"]["shares"]
+    ledger.execute_rebalance(
+        d2, [], 0.0, open_df, preclose_df, vol_df,
+        etf_targets={"511010.SH": 0.0}, etf_price_dict=etf_price_dict
+    )
+    assert ledger.total_trades == 2, f"Expected 2 trades after ETF sell, got {ledger.total_trades}"
+    print("  [Pass] ETF sell successfully incremented total_trades to 2")
+
+
+def test_scenario_7_proportional_stock_scaling():
+    print("\n--- Running Test Scenario 7: Proportional Stock Basket Scaling ---")
+    dates, open_df, close_df, preclose_df, vol_df = create_mock_market_data()
+    
+    # 2 stocks with 1:2 ratio:
+    # 000001.SZ: 1,000 shares @ 10.0 = 10,000
+    # 000003.SZ: 2,000 shares @ 10.0 = 20,000
+    # Total stock val = 30,000. Cash = 70,000. Total equity = 100,000 (stock_pct = 30%)
+    ledger = UnifiedProductionLedger(initial_capital=100000.0, adv_cap_pct=0.10)
+    ledger.cash = 70000.0
+    ledger.stock_positions["000001.SZ"] = {
+        "shares": 1000, "tradable_shares": 1000, "locked_shares": 0, "last_px": 10.0
+    }
+    ledger.stock_positions["000003.SZ"] = {
+        "shares": 2000, "tradable_shares": 2000, "locked_shares": 0, "last_px": 10.0
+    }
+    
+    d1 = "2025-01-21"
+    # SCS scales exposure up to 60% (scale_ratio = 2.0)
+    ledger.scale_stock_exposure(
+        d1, 0.60, open_df, preclose_df, vol_df, rebalance_reason="timing"
+    )
+    
+    sh1 = ledger.stock_positions["000001.SZ"]["shares"]
+    sh3 = ledger.stock_positions["000003.SZ"]["shares"]
+    
+    assert sh1 == 2000, f"Expected 2000 shares for 000001.SZ, got {sh1}"
+    assert sh3 == 4000, f"Expected 4000 shares for 000003.SZ, got {sh3}"
+    # Crucial check: Relative ratio must remain exactly 1:2! No within-basket rebalancing!
+    assert sh3 / sh1 == 2.0, f"Relative ratio distorted! {sh3}/{sh1} != 2.0"
+    assert ledger.timing_traded_value == (1000 + 2000) * 10.0, "Timing traded value should reflect scale up"
+    print("  [Pass] Exposure scaled up 2x while strictly preserving 1:2 relative constituent weighting!")
+    
+    # Now unlock (T+1) and scale down to 30% on d2
+    d2 = "2025-01-22"
+    ledger.stock_positions["000001.SZ"]["tradable_shares"] = 2000
+    ledger.stock_positions["000003.SZ"]["tradable_shares"] = 4000
+    ledger.scale_stock_exposure(
+        d2, 0.30, open_df, preclose_df, vol_df, rebalance_reason="timing"
+    )
+    sh1_down = ledger.stock_positions["000001.SZ"]["shares"]
+    sh3_down = ledger.stock_positions["000003.SZ"]["shares"]
+    assert sh1_down == 1000, f"Expected 1000 shares for 000001.SZ, got {sh1_down}"
+    assert sh3_down == 2000, f"Expected 2000 shares for 000003.SZ, got {sh3_down}"
+    assert sh3_down / sh1_down == 2.0, "Relative ratio preserved during scale down"
+    print("  [Pass] Exposure scaled down 0.5x while strictly preserving 1:2 relative weighting!")
+
+
 if __name__ == "__main__":
     print("=================================================================")
-    print("RUNNING SYNTHETIC UNIT TESTS FOR UnifiedProductionLedger v2.1")
+    print("RUNNING SYNTHETIC UNIT TESTS FOR UnifiedProductionLedger v2.2")
     print("=================================================================")
     test_scenario_1_repeated_rebalance_suspension()
     test_scenario_2_shared_daily_adv_quota()
     test_scenario_3_signal_reversal_protection()
     test_scenario_4_zero_missing_adv_guard()
+    test_scenario_5_reason_inheritance()
+    test_scenario_6_etf_trades_symmetry()
+    test_scenario_7_proportional_stock_scaling()
     print("\n=================================================================")
-    print("ALL 4 UNIT TESTS PASSED WITH 100% SUCCESS!")
+    print("ALL 7 UNIT TESTS PASSED WITH 100% SUCCESS!")
     print("=================================================================")
+

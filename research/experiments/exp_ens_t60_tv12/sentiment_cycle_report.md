@@ -16,9 +16,9 @@
 1. **简单线性 SCS 显著优于复杂六阶段状态机**：
    - 真正连续线性 SCS 控仓实现了 **CAGR 16.81% / 夏普 0.94 / 最大回撤 -13.20% / 总收益率 +76.98%**；
    - 5 档离散 SCS 控仓实现了 **CAGR 16.54% / 夏普 0.91 / 最大回撤 -13.06% / 总收益率 +75.48%**；
-   - 相比之下，黄金窗口六阶段状态机仅实现 **CAGR 8.77% / 夏普 0.60 / 最大回撤 -10.77% / 总收益率 +36.20%**。
+   - 相比之下，黄金窗口六阶段状态机仅实现 **CAGR 8.77% / 夏普 0.60 / 最大回撤 -10.80% / 总收益率 +36.20%**。
 2. **黄金窗口的超额本质解构**：
-   - 黄金窗口较低的回撤 (-10.77% vs -13.20%) 并非源于更卓越的择时买卖点，而是源于其在分歧期强制“只卖不买”、在冰点期和退潮期完全空仓导致的**平均权益仓位大幅偏低**。在 2024 年以来的修复行情中，该状态机频繁踏空反弹，导致夏普比率由 0.94 断崖式下跌至 0.60，总收益缩水超过一半。
+   - 黄金窗口较低的回撤 (-10.80% vs -13.20%) 并非源于更卓越的择时买卖点，而是源于其在分歧期强制“只卖不买”、在冰点期和退潮期完全空仓导致的**平均权益仓位大幅偏低**。在 2024 年以来的修复行情中，该状态机频繁踏空反弹，导致夏普比率显著落后，总收益大幅缩水。
    - **结论：六阶段状态机与特定规则（只卖不买）属于白白增加系统复杂性与过拟合风险的冗余构造，量化研究应果断向更稳健的连续/离散 SCS 风险预算机制回归。**
 
 ### English Summary
@@ -28,9 +28,9 @@ Following the external quantitative audit review (2026-09-07), this study conduc
 1. **Monotonic SCS Rules Significantly Outperform the 6-Phase State Machine**:
    - Truly continuous linear SCS achieved **CAGR 16.81%, Sharpe 0.94, MaxDD -13.20%, Total Return +76.98%**.
    - Discrete 5-tier SCS achieved **CAGR 16.54%, Sharpe 0.91, MaxDD -13.06%, Total Return +75.48%**.
-   - In contrast, the Golden Window 6-phase state machine achieved only **CAGR 8.77%, Sharpe 0.60, MaxDD -10.77%, Total Return +36.20%**.
+   - In contrast, the Golden Window 6-phase state machine achieved only **CAGR 8.77%, Sharpe 0.60, MaxDD -10.80%, Total Return +36.20%**.
 2. **Deconstruction of Golden Window's Excess Performance**:
-   - Golden Window's slightly lower drawdown (-10.77% vs -13.20%) stems almost entirely from low average equity exposure rather than superior predictive timing. By enforcing a rigid "sell-only" heuristic during divergence and staying completely flat in freezing/ebbing states, it missed massive post-trough rebounds in 2024–2025.
+   - Golden Window's slightly lower drawdown (-10.80% vs -13.20%) stems almost entirely from low average equity exposure rather than superior predictive timing. By enforcing a rigid "sell-only" heuristic during divergence and staying completely flat in freezing/ebbing states, it missed massive post-trough rebounds in 2024–2025.
    - **Conclusion: The complex 6-phase state machine introduces substantial overfitting risk and behavioral drag. Quantitative research should decisively retreat to transparent, continuous SCS risk budgeting.**
 
 ---
@@ -83,11 +83,6 @@ $$\prod_{yr} (1 + R_{yr}) - 1 \equiv \text{Total Return}$$
 | 基线4: 5 档离散 SCS 控仓 (0/25/50/75/100%) | 31.4x | 3.4x | 28.0x | 48.34 万元 | 22.6% | 16916 笔 |
 | 基线5: 真正连续线性 SCS 控仓 | 30.4x | 3.3x | 27.1x | 47.45 万元 | 21.9% | 23177 笔 |
 | 实验组: 黄金窗口六阶段状态机实战版 | 23.0x | 1.8x | 21.2x | 28.73 万元 | 26.5% | 11847 笔 |
-
-**归因分析**：
-- 纯股票多头的年化换手为 7.7x，完全由月度股票池换仓构成；
-- 连续与 5 档 SCS 控仓的年化单边换手约为 30x~31x，其中择时换手占比达 90% (约 27x~28x)。累计消耗印花税与佣金约 47~48 万元，占总毛利约 22%；
-- 黄金窗口虽然总换手略低 (23.0x)，但在净收益上牺牲了约 40 个百分点的绝对超额，因此省下的税费无法弥补策略错失的 Alpha。
 
 ---
 
