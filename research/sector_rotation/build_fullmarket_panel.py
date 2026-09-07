@@ -159,7 +159,9 @@ out_cols = ["trade_date", "ts_code", "industry", "is_traditional"] + feat_cols +
            ["fwd_20", "fwd100_maxret", "fwd100_minret"]
 panel = panel[out_cols].copy()
 panel["fwd_20"] = panel["fwd_20"] * 100  # %
-panel = panel.dropna(subset=["fwd100_maxret"])  # 去掉未来数据不足的尾部
+# 审计整改(2026-09-07): 彻底移除未来标签筛选!
+# 候选股票池与 PIT 特征必须独立于未来收益，严禁按未来 100 天行情完整度剔除临近退市/停牌标的
+# 仅在模型训练层按真正需要的成熟状态单独 dropna(subset=['fwd_20'])
 panel.to_parquet(OUT, index=False)
 print(f"[7] 保存: {OUT}")
 print(f"    面板: {len(panel):,} 股-月, 月份={panel['trade_date'].nunique()}, "

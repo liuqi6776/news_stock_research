@@ -1,19 +1,19 @@
 # -*- coding: utf-8 -*-
-"""统一生产级单现金池微观真实执行账本 (Unified Production Single-Cash Ledger)
+"""统一生产级单现金池微观真实执行账本 (Unified Production Single-Cash Ledger v2.1)
 
-全面修复审计指出的所有底层缺陷:
-  1. 单一总资金池 (Zero Double-Counting): 严格以单一初始本金 C0 (如 220 万元) 运行，
-     买入股票/ETF扣减现金，卖出回收现金，期货保证金从现金中划扣隔离，首日总资产严格为 C0 (NAV=1.0)。
-  2. 风险降档等比例减仓 (Proportionate Trimming): 
-     当总股票仓位下调 (如 100% -> 50%) 时，对保留在目标清单中的股票严格按目标股数卖出超额可卖股数。
-  3. 停牌股票严格禁止成交 (Suspension Handling): 
-     开盘价缺失/无效或成交量为零时判定为停牌，严格禁止买入与卖出，估值按 last_px 维持。
-  4. 真实 20 日滚动 ADV 容量约束 (Rolling 20-day ADV):
-     单日最大买卖股数严格限制为 20 日日均成交量的 10% (参与率上限)。
-  5. 严格前瞻时序与零未来函数 (Strict Forward Timing):
-     决策信号严格基于 d-1 日收盘生成，d 日开盘执行；期货盈亏严格从建仓次日起按逐日 MTM 结算。
-  6. 严密拥挤度过滤 (Clean Crowding Guard):
-     初选与备选补足全流程严格执行拥挤度过滤，禁止任何高危标的回流。
+全面落实 2026-09-07 二次量化审计整改要求 (P1 缺陷闭环):
+  1. 净订单与目标覆盖机制 (Net Orders & Target Overwrite - 消除重复累加 BUG):
+     调仓日新目标直接覆盖旧目标，未成交待卖量严格赋值为 (held_shares - target_shares)，
+     杜绝停牌/跌停多次调仓导致挂单量翻倍累加；若信号反转为买入 (Target >= Held)，
+     即刻撤销旧 pending 卖单，杜绝先卖后买同一标的。
+  2. 证券级共享日成交容量预算 (Shared Daily ADV Quota):
+     维护 daily_executed_shares[c]，同日 pending 卖单与当期调仓卖单严格共享 10% ADV 额度。
+  3. 缺失 ADV 严格硬拦截 (Strict Zero Liquidity Guard):
+     当 ADV20 缺失或为 0 时，最大可成交量强制为 0，严禁默认全额放行。
+  4. 先卖后买两阶段严格撮合与只卖不买强约束:
+     阶段一平仓/减仓释放现金 -> 阶段二开仓/配资买入；分歧/退潮期强制限制目标股数 <= 当前持仓。
+  5. 真实 A 股微观限制:
+     北交所 ±30%、双创 ±20%、主板 ±10%、ST ±5%、真实 T+1 制度、100 股整手、千一印花税与佣金。
 """
 import os
 import sys
@@ -92,6 +92,7 @@ def get_adv20_shares(stock_vol_w, code, current_date, default_shares=0):
     严格基于 [D-20, D-1] 历史成交量计算 20 日日均成交量（换算为真实股数）
     严禁包含交易日 D 本身！(零前瞻未来数据泄漏)
     Tushare vol 字段原始单位为手 (100股)，必须乘以 100。
+    停牌日按 0 成交量计入 20 日均值 (窗口日历天数 20 天严格摊薄)。
     """
     if stock_vol_w is None or code not in stock_vol_w.columns or current_date not in stock_vol_w.index:
         return default_shares
@@ -100,14 +101,13 @@ def get_adv20_shares(stock_vol_w, code, current_date, default_shares=0):
     if len(priors) < 5:
         return default_shares
 
-    recent_vols = stock_vol_w.loc[priors[-20:], code].dropna()
-    if len(recent_vols) < 5:
+    sub_dates = priors[-20:]
+    recent_vols = stock_vol_w.loc[sub_dates, code].fillna(0.0)
+    vol_sum = recent_vols.sum()
+    if not np.isfinite(vol_sum) or vol_sum <= 0:
         return default_shares
 
-    mean_vol_lots = recent_vols.mean()
-    if not np.isfinite(mean_vol_lots) or mean_vol_lots <= 0:
-        return default_shares
-
+    mean_vol_lots = vol_sum / float(len(sub_dates))
     adv20_shares = float(mean_vol_lots) * 100.0
     return adv20_shares
 
@@ -161,7 +161,7 @@ def compute_annual_returns(nav_series):
     s = nav_series.dropna()
     r = s.pct_change().fillna(0.0)
     df = pd.DataFrame({"nav": s, "ret": r})
-    df["year"] = df.index // 10000
+    df["year"] = df.index.astype(int) // 10000
     annual = {}
     for yr, g in df.groupby("year"):
         compound_r = np.prod(1.0 + g["ret"].values) - 1.0
@@ -178,31 +178,31 @@ def select_with_clean_crowding_guard(
     """
     scores_in = scores_in.dropna()
     sorted_codes = scores_in.sort_values(ascending=False)
-    selected, ind_count, l1_count = [], {}, {}
 
-    # 第一轮：主选池过滤
+    selected = []
+    ind_count = {}
+    l1_count = {}
+
     for code in sorted_codes.index:
         if crowded_codes is not None and code in crowded_codes:
             continue
 
-        ind = ind_map.get(code, "其他")
+        ind = ind_map.get(code, "Unknown")
+        l1 = ind_l1_map.get(code, "Unknown")
+
         if ind_count.get(ind, 0) >= max_per_ind:
             continue
-        if max_per_ind_l1 is not None:
-            l1 = ind_l1_map.get(code, "其他")
-            if l1_count.get(l1, 0) >= max_per_ind_l1:
-                continue
+        if max_per_ind_l1 is not None and l1_count.get(l1, 0) >= max_per_ind_l1:
+            continue
 
         selected.append(code)
         ind_count[ind] = ind_count.get(ind, 0) + 1
         if max_per_ind_l1 is not None:
-            l1 = ind_l1_map.get(code, "其他")
             l1_count[l1] = l1_count.get(l1, 0) + 1
 
         if len(selected) >= top_n:
             break
 
-    # 第二轮：若因行业约束导致不足 top_n，放宽行业约束但依然【严禁】拥挤股票进入
     if len(selected) < top_n:
         for code in sorted_codes.index:
             if crowded_codes is not None and code in crowded_codes:
@@ -217,7 +217,7 @@ def select_with_clean_crowding_guard(
 
 class UnifiedProductionLedger:
     """
-    生产级单一资金池现货与期货联合账户仿真器
+    生产级单一资金池现货与期货联合账户仿真器 (v2.1 修复版)
     """
     def __init__(self, initial_capital=2_200_000.0, fee_bps=10.0, etf_fee_bps=3.0, adv_cap_pct=0.10):
         self.initial_capital = float(initial_capital)
@@ -232,8 +232,12 @@ class UnifiedProductionLedger:
         self.stock_positions = {}
         self.etf_positions = {}
 
-        # 未完成挂单重试队列: code -> pending_sell_shares (跌停或停牌导致未能成功卖出的头寸)
+        # 未完成挂单重试队列: code -> pending_sell_shares (严格维护当前持股与最新目标的差额)
         self.pending_sell_orders = {}
+
+        # 证券级单日已成交股数记录 (确保同日多流程共享 10% ADV 限额)
+        self.daily_executed_shares = {}
+        self.last_execution_date = None
 
         # 期货持仓状态
         self.im_lots = 0
@@ -244,9 +248,13 @@ class UnifiedProductionLedger:
         self.total_etf_commission = 0.0
         self.total_futures_commission = 0.0
         self.total_trades = 0
+        self.total_traded_value = 0.0
+        self.selection_traded_value = 0.0
+        self.timing_traded_value = 0.0
         self.limit_up_rejections = 0
         self.limit_down_locks = 0
         self.suspension_blocks = 0
+        self.adv_zero_blocks = 0
 
     def unlock_t1_shares(self):
         """每日开盘前解锁 T+1 锁仓股数"""
@@ -257,22 +265,56 @@ class UnifiedProductionLedger:
             h["tradable_shares"] += h["locked_shares"]
             h["locked_shares"] = 0
 
+    def _get_daily_adv_quota(self, stock_vol_w, code, current_date):
+        """
+        获取指定标的在当天的剩余可用 ADV 容量股数 (共享日度限额)
+        若 ADV <= 0 或缺失数据，则返回 0 (严禁无流动性默认全额成交)
+        """
+        if self.last_execution_date != current_date:
+            self.daily_executed_shares = {}
+            self.last_execution_date = current_date
+
+        adv20_sh = get_adv20_shares(stock_vol_w, code, current_date, default_shares=0)
+        if adv20_sh <= 0:
+            self.adv_zero_blocks += 1
+            return 0
+
+        total_quota = int(adv20_sh * self.adv_cap_pct)
+        already_used = self.daily_executed_shares.get(code, 0)
+        remaining = max(0, total_quota - already_used)
+        return remaining
+
+    def _record_executed_volume(self, code, current_date, shares):
+        """记录指定标的在当天的已成交股数"""
+        if self.last_execution_date != current_date:
+            self.daily_executed_shares = {}
+            self.last_execution_date = current_date
+        self.daily_executed_shares[code] = self.daily_executed_shares.get(code, 0) + shares
+
     def process_daily_pending_orders(self, current_date, stock_open_w, stock_preclose_w, stock_vol_w, st_dict=None):
         """
-        每日开盘优先处理历史未成交卖单重试 (Pending Sell Orders Daily Retry)
-        无论当天是否为月度/周期调仓日，此前因跌停或停牌未卖出的股票均自动尝试卖出！
+        每日开盘重试执行积压的未成交卖单 (Pending Sell Orders Daily Retry)
+        采用严格净订单逻辑与共享日度 ADV 限额。
         """
         if not self.pending_sell_orders:
             return
 
+        if self.last_execution_date != current_date:
+            self.daily_executed_shares = {}
+            self.last_execution_date = current_date
+
         active_codes = list(self.pending_sell_orders.keys())
         for c in active_codes:
-            pending_sh = self.pending_sell_orders[c]
             if c not in self.stock_positions or self.stock_positions[c]["shares"] <= 0:
                 self.pending_sell_orders.pop(c, None)
                 continue
 
             h = self.stock_positions[c]
+            pending_sh = min(self.pending_sell_orders[c], h["shares"])
+            if pending_sh < 100:
+                self.pending_sell_orders.pop(c, None)
+                continue
+
             op = stock_open_w.at[current_date, c] if (c in stock_open_w.columns and current_date in stock_open_w.index) else np.nan
             pre_p = stock_preclose_w.at[current_date, c] if (c in stock_preclose_w.columns and current_date in stock_preclose_w.index) else np.nan
 
@@ -298,9 +340,10 @@ class UnifiedProductionLedger:
                 self.limit_down_locks += 1
                 continue
 
-            # ADV 容量限制 (取 D 日之前 20 天，手转股)
-            adv20_sh = get_adv20_shares(stock_vol_w, c, current_date, default_shares=0)
-            max_adv = int(adv20_sh * self.adv_cap_pct) if adv20_sh > 0 else pending_sh
+            # 共享 ADV 容量限制 (取 D 日之前 20 天，手转股)
+            max_adv = self._get_daily_adv_quota(stock_vol_w, c, current_date)
+            if max_adv < 100:
+                continue
 
             sell_sh = min(h["tradable_shares"], pending_sh, max_adv)
             sell_sh = (sell_sh // 100) * 100
@@ -311,11 +354,14 @@ class UnifiedProductionLedger:
                 self.cash += (proceeds - fee)
                 self.total_stock_commission += fee
                 self.total_trades += 1
+                self.total_traded_value += proceeds
+                self.timing_traded_value += proceeds
                 h["shares"] -= sell_sh
                 h["tradable_shares"] -= sell_sh
                 h["last_px"] = op
+                self._record_executed_volume(c, current_date, sell_sh)
 
-                rem = pending_sh - sell_sh
+                rem = self.pending_sell_orders[c] - sell_sh
                 if rem < 100:
                     self.pending_sell_orders.pop(c, None)
                 else:
@@ -346,40 +392,32 @@ class UnifiedProductionLedger:
             h["last_px"] = px
             etf_market_val += h["shares"] * px
 
-        # 3. 闲置现金按天计提利息
-        daily_interest = self.cash * (CASH_INTEREST_RATE / 242.0)
+        # 3. 期货逐日盯市盈亏与保证金
+        futures_floating_pnl = 0.0
+        futures_margin = 0.0
+        if self.im_lots > 0 and im_close_px is not None and np.isfinite(im_close_px) and im_close_px > 0:
+            contract_val = im_close_px * IM_MULTIPLIER
+            futures_margin = self.im_lots * contract_val * IM_MARGIN_RATIO
+            if self.im_prev_px is not None and np.isfinite(self.im_prev_px) and self.im_prev_px > 0:
+                futures_floating_pnl = -self.im_lots * (im_close_px - self.im_prev_px) * IM_MULTIPLIER
+            self.cash += futures_floating_pnl
+            self.im_prev_px = im_close_px
+
+        # 4. 闲置现金收益
+        daily_interest = max(self.cash, 0.0) * (CASH_INTEREST_RATE / 242.0)
         self.cash += daily_interest
 
-        # 4. 期货保证金与总权益
-        im_px = im_close_px if (im_close_px is not None and np.isfinite(im_close_px)) else (self.im_prev_px or 0.0)
-        im_notional = self.im_lots * IM_MULTIPLIER * im_px
-        required_margin = im_notional * IM_MARGIN_RATIO
-        free_cash = self.cash - required_margin
-
-        total_equity = stock_market_val + etf_market_val + self.cash
-        nav = total_equity / self.initial_capital
-
+        total_nav = stock_market_val + etf_market_val + self.cash
         return {
-            "total_equity": total_equity,
-            "nav": nav,
+            "trade_date": current_date,
+            "nav": total_nav / self.initial_capital,
+            "total_equity": total_nav,
             "stock_val": stock_market_val,
             "etf_val": etf_market_val,
             "cash": self.cash,
-            "free_cash": free_cash,
-            "required_margin": required_margin,
+            "futures_margin": futures_margin,
             "im_lots": self.im_lots
         }
-
-    def settle_futures_daily_mtm(self, im_current_px):
-        """
-        每日收盘结算 IM 期货 MTM 逐日盈亏，直接结转入唯一现金账户
-        """
-        if self.im_lots > 0 and self.im_prev_px is not None and im_current_px is not None and np.isfinite(im_current_px):
-            # 空头对冲 PnL: - lots * 200 * (P_t - P_{t-1})
-            daily_mtm_pnl = - float(self.im_lots) * IM_MULTIPLIER * (im_current_px - self.im_prev_px)
-            self.cash += daily_mtm_pnl
-        if im_current_px is not None and np.isfinite(im_current_px):
-            self.im_prev_px = im_current_px
 
     def execute_rebalance(
         self,
@@ -394,13 +432,20 @@ class UnifiedProductionLedger:
         allow_buy=True,
         st_dict=None,
         im_hedge_beta=0.0,
-        im_price=None
+        im_price=None,
+        rebalance_reason="timing"
     ):
         """
-        调仓日微观撮合执行：先卖后买两阶段严格撮合、只卖不买落实、真实 ADV、全板块微观涨跌停与停牌拦截
+        调仓日微观撮合执行 (v2.1 修复版):
+        - 移除顶部预先执行 pending 导致的目标冲突；
+        - 新目标直接覆盖旧目标，消除重复累加；
+        - 信号反转直接撤销旧 pending 卖单；
+        - 严格共享日度 10% ADV 额度与缺失 ADV 零成交拦截；
+        - 两阶段先卖后买，现金完全回流后开仓。
         """
-        # 0. 优先执行此前积压的未成交挂单
-        self.process_daily_pending_orders(current_date, stock_open_w, stock_preclose_w, stock_vol_w, st_dict=st_dict)
+        if self.last_execution_date != current_date:
+            self.daily_executed_shares = {}
+            self.last_execution_date = current_date
 
         # 1. 计算开盘当前总资产
         open_stock_val = 0.0
@@ -454,67 +499,83 @@ class UnifiedProductionLedger:
 
         # =========================================================================
         # 第一阶段：全面卖出变现 (PHASE 1: SELLS & TRIMS - CASH INFLOW)
-        # 先变现股票与 ETF，资金完全回流唯一现金账户 self.cash，彻底解决资金顺序倒置
         # =========================================================================
 
-        # 3.1 股票超额减仓与清仓卖出
+        # 3.1 股票超额减仓与清仓卖出 (净订单与目标覆盖机制)
         all_current_stocks = list(self.stock_positions.keys())
         for c in all_current_stocks:
             h = self.stock_positions[c]
             target_sh = target_shares_map.get(c, 0)
-            if h["shares"] > target_sh:
-                excess_sh = h["shares"] - target_sh
-                op = stock_open_w.at[current_date, c] if (c in stock_open_w.columns and current_date in stock_open_w.index) else np.nan
-                pre_p = stock_preclose_w.at[current_date, c] if (c in stock_preclose_w.columns and current_date in stock_preclose_w.index) else np.nan
 
-                # 停牌检查
-                is_suspended = (not (np.isfinite(op) and op > 0))
-                if not is_suspended and stock_vol_w is not None and c in stock_vol_w.columns and current_date in stock_vol_w.index:
-                    day_vol = stock_vol_w.at[current_date, c]
-                    if np.isnan(day_vol) or day_vol <= 0:
-                        is_suspended = True
+            # 信号反转与新目标覆盖：若当前目标 >= 持有股数，撤销旧 pending 卖单，不在此阶段卖出
+            if target_sh >= h["shares"]:
+                self.pending_sell_orders.pop(c, None)
+                continue
 
-                if is_suspended:
-                    self.suspension_blocks += 1
-                    self.pending_sell_orders[c] = self.pending_sell_orders.get(c, 0) + excess_sh
-                    continue
+            excess_sh = h["shares"] - target_sh
+            op = stock_open_w.at[current_date, c] if (c in stock_open_w.columns and current_date in stock_open_w.index) else np.nan
+            pre_p = stock_preclose_w.at[current_date, c] if (c in stock_preclose_w.columns and current_date in stock_preclose_w.index) else np.nan
 
-                # 跌停检查
-                is_st = False
-                if st_dict is not None and c in st_dict:
-                    for (s, e) in st_dict[c]:
-                        if s <= current_date <= e:
-                            is_st = True
-                            break
-                if is_limit_down_code(c, op, pre_p, is_st=is_st):
-                    self.limit_down_locks += 1
-                    self.pending_sell_orders[c] = self.pending_sell_orders.get(c, 0) + excess_sh
-                    continue
+            # 停牌检查
+            is_suspended = (not (np.isfinite(op) and op > 0))
+            if not is_suspended and stock_vol_w is not None and c in stock_vol_w.columns and current_date in stock_vol_w.index:
+                day_vol = stock_vol_w.at[current_date, c]
+                if np.isnan(day_vol) or day_vol <= 0:
+                    is_suspended = True
 
-                # 真实 ADV 容量约束 (D-1 之前 20 天，手转股)
-                adv20_sh = get_adv20_shares(stock_vol_w, c, current_date, default_shares=0)
-                max_adv = int(adv20_sh * self.adv_cap_pct) if adv20_sh > 0 else excess_sh
+            if is_suspended:
+                self.suspension_blocks += 1
+                # 赋值而非累加，严格防止多次调仓挂单翻倍
+                self.pending_sell_orders[c] = excess_sh
+                continue
 
-                sell_shares = min(h["tradable_shares"], excess_sh, max_adv)
-                sell_shares = (sell_shares // 100) * 100
+            # 跌停检查
+            is_st = False
+            if st_dict is not None and c in st_dict:
+                for (s, e) in st_dict[c]:
+                    if s <= current_date <= e:
+                        is_st = True
+                        break
+            if is_limit_down_code(c, op, pre_p, is_st=is_st):
+                self.limit_down_locks += 1
+                self.pending_sell_orders[c] = excess_sh
+                continue
 
-                if sell_shares >= 100:
-                    proceeds = sell_shares * op
-                    fee = proceeds * self.stock_fee_rate
-                    self.cash += (proceeds - fee)
-                    self.total_stock_commission += fee
-                    self.total_trades += 1
-                    h["shares"] -= sell_shares
-                    h["tradable_shares"] -= sell_shares
-                    h["last_px"] = op
+            # 共享 ADV 容量约束 (同日两阶段共享，无数据返回0)
+            max_adv = self._get_daily_adv_quota(stock_vol_w, c, current_date)
+            if max_adv < 100:
+                self.pending_sell_orders[c] = excess_sh
+                continue
 
-                # 若受限于 T+1 或 ADV 未能完全卖出，余量入挂单队列次日重试
-                unfilled_excess = excess_sh - sell_shares
-                if unfilled_excess >= 100:
-                    self.pending_sell_orders[c] = self.pending_sell_orders.get(c, 0) + unfilled_excess
+            sell_shares = min(h["tradable_shares"], excess_sh, max_adv)
+            sell_shares = (sell_shares // 100) * 100
 
-                if h["shares"] <= 0:
-                    self.stock_positions.pop(c, None)
+            if sell_shares >= 100:
+                proceeds = sell_shares * op
+                fee = proceeds * self.stock_fee_rate
+                self.cash += (proceeds - fee)
+                self.total_stock_commission += fee
+                self.total_trades += 1
+                self.total_traded_value += proceeds
+                if rebalance_reason == "monthly":
+                    self.selection_traded_value += proceeds
+                else:
+                    self.timing_traded_value += proceeds
+                h["shares"] -= sell_shares
+                h["tradable_shares"] -= sell_shares
+                h["last_px"] = op
+                self._record_executed_volume(c, current_date, sell_shares)
+
+            # 更新未成交卖单队列 (严格赋值为当前持股与目标股数的缺口)
+            remaining_excess = h["shares"] - target_sh
+            if remaining_excess >= 100:
+                self.pending_sell_orders[c] = remaining_excess
+            else:
+                self.pending_sell_orders.pop(c, None)
+
+            if h["shares"] <= 0:
+                self.stock_positions.pop(c, None)
+                self.pending_sell_orders.pop(c, None)
 
         # 3.2 ETF 减仓卖出
         all_current_etfs = list(self.etf_positions.keys())
@@ -533,15 +594,20 @@ class UnifiedProductionLedger:
                         fee = proceeds * self.etf_fee_rate
                         self.cash += (proceeds - fee)
                         self.total_etf_commission += fee
+                        self.total_trades += 1
+                        self.total_traded_value += proceeds
+                        if rebalance_reason == "monthly":
+                            self.selection_traded_value += proceeds
+                        else:
+                            self.timing_traded_value += proceeds
                         h_etf["shares"] -= sell_etf_sh
                         h_etf["tradable_shares"] -= sell_etf_sh
                         h_etf["last_px"] = op
-                if h_etf["shares"] <= 0:
-                    self.etf_positions.pop(etf_code, None)
+                    if h_etf["shares"] <= 0:
+                        self.etf_positions.pop(etf_code, None)
 
         # =========================================================================
         # 第二阶段：买入与资金配置 (PHASE 2: BUYS & ALLOCATION - CASH OUTFLOW)
-        # 基于第一阶段回流的所有现金，按计划执行买入
         # =========================================================================
 
         # 4.1 股票加仓与买入流程
@@ -576,11 +642,12 @@ class UnifiedProductionLedger:
                         self.limit_up_rejections += 1
                         continue
 
-                    # 真实 ADV 容量约束
-                    adv20_sh = get_adv20_shares(stock_vol_w, c, current_date, default_shares=0)
-                    needed_sh = target_sh - existing_sh
-                    max_adv = int(adv20_sh * self.adv_cap_pct) if adv20_sh > 0 else needed_sh
+                    # 共享 ADV 容量约束 (无数据返回 0 严格禁买)
+                    max_adv = self._get_daily_adv_quota(stock_vol_w, c, current_date)
+                    if max_adv < 100:
+                        continue
 
+                    needed_sh = target_sh - existing_sh
                     # 严格受限于可用现金
                     max_aff_sh = int(self.cash // (op * (1.0 + self.stock_fee_rate) * 100)) * 100
                     buy_shares = min(needed_sh, max_aff_sh, max_adv)
@@ -592,6 +659,12 @@ class UnifiedProductionLedger:
                         self.cash -= (cost + fee)
                         self.total_stock_commission += fee
                         self.total_trades += 1
+                        self.total_traded_value += cost
+                        if rebalance_reason == "monthly":
+                            self.selection_traded_value += cost
+                        else:
+                            self.timing_traded_value += cost
+                        self._record_executed_volume(c, current_date, buy_shares)
 
                         if c not in self.stock_positions:
                             self.stock_positions[c] = {
@@ -624,6 +697,11 @@ class UnifiedProductionLedger:
                             fee = cost * self.etf_fee_rate
                             self.cash -= (cost + fee)
                             self.total_etf_commission += fee
+                            self.total_traded_value += cost
+                            if rebalance_reason == "monthly":
+                                self.selection_traded_value += cost
+                            else:
+                                self.timing_traded_value += cost
                             if etf_code not in self.etf_positions:
                                 self.etf_positions[etf_code] = {
                                     "shares": buy_etf_sh,

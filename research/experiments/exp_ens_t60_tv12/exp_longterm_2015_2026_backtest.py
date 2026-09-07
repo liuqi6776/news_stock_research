@@ -309,7 +309,9 @@ def main():
     # 5. 滚动训练 Walk-Forward 选股模型 (修复日历截断)
     # ---------------------------------------------------------
     print(f"[5/7] 执行 2015–2026 全周期 Walk-Forward 滚动建模 ({len(panel_dates)} 期)...")
-    label_end_map = {d: panel_dates[min(i + 20, len(panel_dates) - 1)] for i, d in enumerate(panel_dates)}
+    day_files_all = sorted(glob.glob(os.path.join(DATA_DIR, "data_day1", "*.parquet")))
+    full_cal_dates = sorted([int(os.path.basename(f).replace('.parquet', '')) for f in day_files_all if os.path.basename(f).replace('.parquet', '').isdigit()])
+    label_end_map = {d: full_cal_dates[min(i + 20, len(full_cal_dates) - 1)] for i, d in enumerate(full_cal_dates)}
     panel["label_end_date"] = panel["trade_date"].map(label_end_map)
 
     excluded_prefixes = ("fwd", "label", "ret_", "target", "open_fwd")
@@ -324,45 +326,63 @@ def main():
     ]
 
     pred_scores_cache = {}
-    for idx, d in enumerate(panel_dates):
-        test_df = panel[panel["trade_date"] == d].copy()
-        if len(test_df) < 50:
-            continue
+    cache_path = os.path.join(EXP_DIR, "pred_scores_wf_longterm_cache.parquet")
+    if os.path.exists(cache_path):
+        print(f"  加载已存在的全周期模型预测打分缓存: {cache_path}")
+        df_cache = pd.read_parquet(cache_path)
+        for d, g in df_cache.groupby("trade_date"):
+            pred_scores_cache[d] = pd.Series(g["score"].values, index=g["ts_code"].values)
+    else:
+        cache_records = []
+        for idx, d in enumerate(panel_dates):
+            test_df = panel[panel["trade_date"] == d].copy()
+            if len(test_df) < 50:
+                continue
 
-        train_mask = (panel["trade_date"] < d) & (panel["label_end_date"] < d)
-        train_df = panel[train_mask].dropna(subset=["fwd_20"]).copy()
+            train_mask = (panel["trade_date"] < d) & (panel["label_end_date"] < d)
+            train_df = panel[train_mask].dropna(subset=["fwd_20"]).copy()
 
-        if len(train_df) < 3000:
-            sub = test_df.set_index("ts_code")
-            score = (
-                sub["momentum_20"].rank(pct=True) * 0.35 +
-                (-sub["volatility_20"]).rank(pct=True) * 0.25 +
-                (-sub["ivol"]).rank(pct=True) * 0.20 +
-                sub["roe"].fillna(0).rank(pct=True) * 0.20
-            )
-            pred_scores_cache[d] = score
-        else:
-            feat_ics = []
-            for feat in candidate_features:
-                s_tr = train_df[[feat, "fwd_20"]].dropna()
-                if len(s_tr) > 200:
-                    ic_val = s_tr[feat].corr(s_tr["fwd_20"], method="spearman")
-                    if not np.isnan(ic_val):
-                        feat_ics.append((feat, abs(ic_val)))
-            feat_ics.sort(key=lambda x: x[1], reverse=True)
-            top_feats = [x[0] for x in feat_ics[:20]]
+            if len(train_df) < 3000:
+                sub = test_df.set_index("ts_code")
+                score = (
+                    sub["momentum_20"].rank(pct=True) * 0.35 +
+                    (-sub["volatility_20"]).rank(pct=True) * 0.25 +
+                    (-sub["ivol"]).rank(pct=True) * 0.20 +
+                    sub["roe"].fillna(0).rank(pct=True) * 0.20
+                )
+                pred_scores_cache[d] = score
+                for code, sc in score.items():
+                    cache_records.append({"trade_date": d, "ts_code": code, "score": float(sc)})
+            else:
+                # 向量化截面 Rank IC 特征选择
+                ranked = train_df.groupby("trade_date")[["fwd_20"] + candidate_features].rank()
+                ranked["trade_date"] = train_df["trade_date"]
+                feat_ics = []
+                for feat in candidate_features:
+                    ics = ranked.groupby("trade_date")[[feat, "fwd_20"]].corr().iloc[0::2, 1]
+                    m_ic = float(ics.mean())
+                    if np.isfinite(m_ic):
+                        feat_ics.append((feat, abs(m_ic)))
+                feat_ics.sort(key=lambda x: x[1], reverse=True)
+                top_feats = [x[0] for x in feat_ics[:15]]
 
-            X_tr = train_df[top_feats].fillna(0.0)
-            y_tr = train_df["fwd_20"]
-            X_te = test_df[top_feats].fillna(0.0)
+                X_tr = train_df[top_feats].fillna(0.0)
+                y_tr = train_df["fwd_20"]
+                X_te = test_df[top_feats].fillna(0.0)
 
-            m = lgb.LGBMRegressor(
-                n_estimators=100, learning_rate=0.03, num_leaves=15, max_depth=4,
-                subsample=0.8, colsample_bytree=0.8, random_state=42, verbose=-1, n_jobs=-1
-            )
-            m.fit(X_tr, y_tr)
-            preds = m.predict(X_te)
-            pred_scores_cache[d] = pd.Series(preds, index=test_df["ts_code"])
+                m = lgb.LGBMRegressor(
+                    n_estimators=100, learning_rate=0.03, num_leaves=15, max_depth=4,
+                    subsample=0.8, colsample_bytree=0.8, random_state=42, verbose=-1, n_jobs=4
+                )
+                m.fit(X_tr, y_tr)
+                preds = pd.Series(m.predict(X_te), index=test_df["ts_code"])
+                pred_scores_cache[d] = preds
+                for code, sc in preds.items():
+                    cache_records.append({"trade_date": d, "ts_code": code, "score": float(sc)})
+
+        if cache_records:
+            pd.DataFrame(cache_records).to_parquet(cache_path)
+            print(f"  已成功生成并落盘全周期 Walk-Forward 预测打分缓存: {cache_path}")
 
     print(f"  选股打分构建完成: 累计生成 {len(pred_scores_cache)} 期预测打分")
 
@@ -432,7 +452,8 @@ def main():
                     etf_targets=etf_targets,
                     etf_price_dict=etf_px_dict,
                     allow_buy=True,
-                    st_dict=st_dict
+                    st_dict=st_dict,
+                    rebalance_reason="monthly" if is_month_start else "timing"
                 )
             else:
                 ledger.process_daily_pending_orders(
@@ -503,11 +524,11 @@ def main():
 
     # 子图 1: 累计净值
     ax1 = axes[0, 0]
-    ax1.plot(dates_dt, df_nav["benchmark_csi1000"], label="官方基准: 中证1000 (000852.SH)", color="#7f7f7f", linestyle="--", linewidth=1.5)
-    ax1.plot(dates_dt, df_nav["pure_stock_base"], label="纯股票多头 (Top 40, 无风控)", color="#9467bd", linewidth=1.8)
-    ax1.plot(dates_dt, df_nav["triple_shields_stock"], label="三大前置排雷纯多头 (100% 股票)", color="#1f77b4", linewidth=1.8)
-    ax1.plot(dates_dt, df_nav["optimal_production"], label="★ 当前终局生产协同版 (排雷+熔断+多资产)", color="#d62728", linewidth=2.5)
-    ax1.set_title("2015–2026 全周期 11.3 年累计净值走势 (单一现金池 220W 生产账本)", fontsize=12, fontweight="bold")
+    ax1.plot(dates_dt, df_nav["benchmark_csi1000"], label="官方基准: 中证1000价格指数 (000852.SH)", color="#7f7f7f", linestyle="--", linewidth=1.5)
+    ax1.plot(dates_dt, df_nav["pure_stock_base"], label="对照1: 纯股票多头 (Top 40, 无风控)", color="#9467bd", linewidth=1.8)
+    ax1.plot(dates_dt, df_nav["triple_shields_stock"], label="对照2: 三大排雷纯多头 (100% 股票)", color="#1f77b4", linewidth=1.8)
+    ax1.plot(dates_dt, df_nav["optimal_production"], label="基线3: 连板冰点熔断多资产基线 (2档熔断)", color="#d62728", linewidth=2.5)
+    ax1.set_title("2015–2026 连板冰点熔断多资产基线历史压力测试 (单一现金池 220W 生产账本)", fontsize=12, fontweight="bold")
     ax1.set_ylabel("累计净值 (NAV)")
     ax1.legend(loc="upper left")
     ax1.grid(True, alpha=0.3)
@@ -523,7 +544,7 @@ def main():
     ]:
         dd = (df_nav[col] / df_nav[col].cummax() - 1.0) * 100.0
         ax2.plot(dates_dt, dd, label=col, color=c, linewidth=lw)
-    ax2.set_title("2015–2026 全周期动态水下回撤对比 (%)", fontsize=12, fontweight="bold")
+    ax2.set_title("2015–2026 全周期动态水下回撤对比 (客观揭示2015年-67%系统性回撤)", fontsize=12, fontweight="bold")
     ax2.set_ylabel("回撤幅度 (%)")
     ax2.legend(loc="lower left")
     ax2.grid(True, alpha=0.3)
@@ -546,7 +567,7 @@ def main():
 
     # 子图 4: 风险收益对比
     ax4 = axes[1, 1]
-    labels_lt = ["中证1000", "纯股票多头", "三大排雷多头", "生产协同版"]
+    labels_lt = ["中证1000", "纯股票多头", "三大排雷多头", "连板熔断多资产"]
     keys_lt = ["benchmark_csi1000", "pure_stock_base", "triple_shields_stock", "optimal_production"]
     cagrs = [df_perf.loc[k, "cagr"] for k in keys_lt]
     dds = [abs(df_perf.loc[k, "max_dd"]) for k in keys_lt]

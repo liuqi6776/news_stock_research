@@ -315,8 +315,10 @@ def main():
                 sub = df_ths[df_ths["trade_date"].isin(win_dates)]
                 ths_hot_dict[d] = set(sub.groupby("ts_code")["hot"].count().loc[lambda s: s >= 5].index)
 
-    # 完整历史训练日历映射
-    label_end_map = {d: panel_dates[min(i + 20, len(panel_dates) - 1)] for i, d in enumerate(panel_dates)}
+    # 修复日历映射 (问题 A)：严格基于 data_day1 全历史交易日历构建 20 个交易日成熟期 label_end_date (恢复 20 个月丢失数据)
+    day_files_all = sorted(glob.glob(os.path.join(DATA_DIR, "data_day1", "*.parquet")))
+    full_cal_dates = sorted([int(os.path.basename(f).replace('.parquet', '')) for f in day_files_all if os.path.basename(f).replace('.parquet', '').isdigit()])
+    label_end_map = {d: full_cal_dates[min(i + 20, len(full_cal_dates) - 1)] for i, d in enumerate(full_cal_dates)}
     panel["label_end_date"] = panel["trade_date"].map(label_end_map)
 
     excluded_prefixes = ("fwd", "label", "ret_", "target", "open_fwd")
@@ -332,33 +334,51 @@ def main():
     test_dates = [d for d in panel_dates if d >= 20230101]
     print(f"  滚动训练 Walk-Forward 模型 ({len(test_dates)} 期)...")
     pred_scores_cache = {}
-    for d in test_dates:
-        train_mask = (panel["trade_date"] < d) & (panel["label_end_date"] < d)
-        train_df = panel[train_mask].dropna(subset=["fwd_20"]).copy()
-        test_df = panel[panel["trade_date"] == d].copy()
-        if len(train_df) < 500 or len(test_df) < 50:
-            continue
-        feat_ics = []
-        for feat in candidate_features:
-            s_feat = train_df[feat].dropna()
-            if len(s_feat) < 200:
+    
+    cache_path = os.path.join(EXP_DIR, "pred_scores_wf_cache.parquet")
+    if os.path.exists(cache_path):
+        print(f"  加载已存在的模型预测打分缓存: {cache_path}")
+        df_cache = pd.read_parquet(cache_path)
+        for d, g in df_cache.groupby("trade_date"):
+            pred_scores_cache[d] = pd.Series(g["score"].values, index=g["ts_code"].values)
+    else:
+        cache_records = []
+        for d in test_dates:
+            train_mask = (panel["trade_date"] < d) & (panel["label_end_date"] < d)
+            train_df = panel[train_mask].dropna(subset=["fwd_20"]).copy()
+            test_df = panel[panel["trade_date"] == d].copy()
+            if len(train_df) < 500 or len(test_df) < 50:
                 continue
-            ic = train_df[[feat, "fwd_20"]].dropna().corr().iloc[0, 1]
-            if np.isfinite(ic):
-                feat_ics.append((feat, abs(ic)))
-        feat_ics.sort(key=lambda x: x[1], reverse=True)
-        top_feats = [x[0] for x in feat_ics[:20]]
 
-        X_tr = train_df[top_feats].fillna(0.0)
-        y_tr = train_df["fwd_20"]
-        X_te = test_df[top_feats].fillna(0.0)
+            # 标准截面 Spearman Rank IC 特征选择 (按期计算 rank IC 再取均值)
+            ranked = train_df.groupby("trade_date")[["fwd_20"] + candidate_features].rank()
+            ranked["trade_date"] = train_df["trade_date"]
+            feat_ics = []
+            for feat in candidate_features:
+                ics = ranked.groupby("trade_date")[[feat, "fwd_20"]].corr().iloc[0::2, 1]
+                m_ic = float(ics.mean())
+                if np.isfinite(m_ic):
+                    feat_ics.append((feat, abs(m_ic)))
+            feat_ics.sort(key=lambda x: x[1], reverse=True)
+            top_feats = [x[0] for x in feat_ics[:15]]
 
-        m = lgb.LGBMRegressor(
-            n_estimators=100, learning_rate=0.03, num_leaves=15, max_depth=4,
-            subsample=0.8, colsample_bytree=0.8, random_state=42, verbose=-1, n_jobs=-1
-        )
-        m.fit(X_tr, y_tr)
-        pred_scores_cache[d] = pd.Series(m.predict(X_te), index=test_df["ts_code"])
+            X_tr = train_df[top_feats].fillna(0.0)
+            y_tr = train_df["fwd_20"]
+            X_te = test_df[top_feats].fillna(0.0)
+
+            m = lgb.LGBMRegressor(
+                n_estimators=100, learning_rate=0.03, num_leaves=15, max_depth=4,
+                subsample=0.8, colsample_bytree=0.8, random_state=42, verbose=-1, n_jobs=4
+            )
+            m.fit(X_tr, y_tr)
+            preds = pd.Series(m.predict(X_te), index=test_df["ts_code"])
+            pred_scores_cache[d] = preds
+            for code, sc in preds.items():
+                cache_records.append({"trade_date": d, "ts_code": code, "score": float(sc)})
+
+        if cache_records:
+            pd.DataFrame(cache_records).to_parquet(cache_path)
+            print(f"  已成功生成并落盘 Walk-Forward 预测缓存: {cache_path}")
 
     # ---------------------------------------------------------
     # 5. 统一生产账本执行 5 大板块并行纯净仿真 (严格 D-1 -> D 开盘)
@@ -446,7 +466,8 @@ def main():
                     cur_date, target_codes, target_stock_pct,
                     open_w, preclose_w, vol_w,
                     etf_targets, etf_price_dict,
-                    allow_buy=allow_buy, st_dict=st_dict
+                    allow_buy=allow_buy, st_dict=st_dict,
+                    rebalance_reason="monthly" if is_month_start_rebal else "timing"
                 )
             else:
                 leg.process_daily_pending_orders(
@@ -485,11 +506,39 @@ def main():
     df_annual = pd.DataFrame(annual_dict)
     print(df_annual)
 
+    # 换手率拆解与交易费用归因 (优先级 2)
+    print("\n>>> 【各板块换手率拆解与交易费用归因分析】:")
+    turnover_stats = {}
+    for k, leg in ledgers.items():
+        mean_equity = float(np.mean(nav_hist[k])) * leg.initial_capital
+        tot_traded = leg.total_traded_value
+        ann_factor = 242.0 / len(cal_dates)
+        annual_turnover = (tot_traded / (2.0 * mean_equity)) * ann_factor
+        sel_turnover = (leg.selection_traded_value / (2.0 * mean_equity)) * ann_factor
+        tim_turnover = (leg.timing_traded_value / (2.0 * mean_equity)) * ann_factor
+        tot_fee = leg.total_stock_commission + leg.total_etf_commission
+        tot_pnl = (nav_hist[k][-1] - 1.0) * leg.initial_capital
+        gross_pnl = tot_pnl + tot_fee
+        fee_pct = (tot_fee / gross_pnl * 100.0) if gross_pnl > 0 else 0.0
+        turnover_stats[k] = {
+            "annual_turnover": annual_turnover,
+            "selection_turnover": sel_turnover,
+            "timing_turnover": tim_turnover,
+            "total_fee": tot_fee,
+            "fee_to_gross_pnl_pct": fee_pct,
+            "total_trades": leg.total_trades
+        }
+        print(f"  {board_configs[k]['name']:24s} | 年化单边换手={annual_turnover:5.1f}x (选股={sel_turnover:4.1f}x, 择时={tim_turnover:4.1f}x) | 总费用={tot_fee/10000:5.2f}万 | 占总毛利={fee_pct:5.1f}%")
+
+    df_turnover = pd.DataFrame(turnover_stats).T
+    df_turnover.to_csv(os.path.join(EXP_DIR, "sentiment_cycle_board_turnover_attribution.csv"))
+    df_turnover.to_csv(r"C:\Users\liuqi\.gemini\antigravity\brain\f1b542e0-73e8-4d3b-8f82-2b30aef2b2d0\scratch\sentiment_cycle_board_turnover_attribution.csv")
+
     # 打印审计拦截统计
     print("\n>>> 【各板块账本微观撮合审计统计明细】:")
     for k, leg in ledgers.items():
         print(f"  {board_configs[k]['name']}: 涨停拦截={leg.limit_up_rejections}, 跌停锁定={leg.limit_down_locks}, "
-              f"停牌拦截={leg.suspension_blocks}, 总交易笔数={leg.total_trades}, "
+              f"停牌拦截={leg.suspension_blocks}, 零ADV拦截={leg.adv_zero_blocks}, 总交易笔数={leg.total_trades}, "
               f"股票佣金={leg.total_stock_commission:.1f}元, ETF佣金={leg.total_etf_commission:.1f}元")
 
     # ---------------------------------------------------------
