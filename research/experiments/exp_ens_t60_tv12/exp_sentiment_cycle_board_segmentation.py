@@ -1,16 +1,17 @@
 # -*- coding: utf-8 -*-
-"""短线情绪周期黄金窗口战法分板块（主板/创业板/科创板/北交所）实证研究
+"""短线情绪周期黄金窗口战法分板块（主板/创业板/科创板/北交所）实证研究 (Remediated Clean Engine v2.0)
 
-实证核心目标：
-  1. 严格排除全市场时点 ST / *ST 股票与退市停牌股票；
-  2. 验证基于五大情绪指标构建的“黄金窗口状态机”在不同微观制度板块中的独立表现：
-     - 全市场自由优选 (Top 40, 跨板块动态最优)
-     - 沪深主板专属组合 (Top 40, ±10% 涨跌幅)
-     - 创业板专属组合 (Top 30, ±20% 涨跌幅)
-     - 科创板专属组合 (Top 20, ±20% 涨跌幅)
-     - 北交所专属组合 (Top 15, ±30% 涨跌幅)
-  3. 统一生产级账本：单一现金池 220 万元，100 股整手，真实 T+1，ADV 10% 流动性约束，真实手续费。
-  4. 严格样本外区间：2023-01-03 至 2026-09-04 (890 个交易日)。
+全面落实 2026-09-07 策略审查整改要求:
+  1. 严格时序前瞻对齐 (Zero Look-Ahead):
+     D 日开盘执行完全基于 D-1 盘后计算的情绪状态与模型预测。
+  2. 统一生产账本闭环:
+     - 220W 单现金池，100 股整手，真实 T+1，ADV 10% 约束 (手转股)
+     - 先卖后买，彻底解决现金流受阻
+     - 落实分歧期/退潮期只卖不买 (allow_buy=False, target_shares <= current_shares)
+     - 每日开盘优先重试跌停/停牌未成交订单 (Pending Orders Daily Retry)
+     - 严格落实板块微观价格限制 (北交所 ±30%, 双创 ±20%, 主板 ±10%, ST ±5%)
+  3. 规范化指标体系: 日度超额收益标准年化 Sharpe, 连续复利跨年收益率。
+  4. 真实中证1000指数基准 (000852.SH)。
 """
 import os
 import sys
@@ -49,46 +50,13 @@ sec_dir = os.path.join(ROOT, "research", "sector_rotation")
 if sec_dir not in sys.path:
     sys.path.insert(0, sec_dir)
 
-from unified_production_ledger import UnifiedProductionLedger
+from unified_production_ledger import (
+    UnifiedProductionLedger,
+    compute_metrics,
+    compute_annual_returns,
+    get_adv20_shares
+)
 from industry_l1 import build_l1_map
-
-
-def compute_metrics(nav_series):
-    s = nav_series.dropna()
-    if len(s) < 10:
-        return {}
-    r = s.pct_change().dropna()
-    n_days = len(r)
-    cagr = (s.iloc[-1] / s.iloc[0]) ** (242.0 / max(n_days, 1)) - 1.0
-    vol = r.std() * math.sqrt(242)
-    rf = 0.02
-    sharpe = (cagr - rf) / vol if vol > 1e-6 else 0.0
-    dd = s / s.cummax() - 1.0
-    max_dd = float(dd.min())
-    calmar = cagr / abs(max_dd) if abs(max_dd) > 1e-4 else 0.0
-    tot = (s.iloc[-1] / s.iloc[0]) - 1.0
-    win_rate = (r > 0).mean()
-    return {
-        "cagr": round(cagr * 100, 2),
-        "sharpe": round(sharpe, 2),
-        "vol": round(vol * 100, 2),
-        "max_dd": round(max_dd * 100, 2),
-        "calmar": round(calmar, 2),
-        "total_return": round(tot * 100, 2),
-        "win_rate": round(win_rate * 100, 2),
-        "days": n_days
-    }
-
-
-def compute_annual_returns(nav_series):
-    s = nav_series.dropna()
-    df = pd.DataFrame({"nav": s})
-    df["year"] = df.index // 10000
-    annual = {}
-    for yr, g in df.groupby("year"):
-        r = (g["nav"].iloc[-1] / g["nav"].iloc[0] - 1.0) * 100.0
-        annual[int(yr)] = round(r, 2)
-    return annual
 
 
 def load_st_dict():
@@ -120,13 +88,14 @@ def is_st_at_date(st_dict, code, cur_date):
 
 
 def get_board(code):
-    if code.startswith(("60", "00")):
+    c = str(code)
+    if c.startswith(("60", "00")):
         return "main"
-    elif code.startswith("30"):
+    elif c.startswith(("300", "301")):
         return "chinext"
-    elif code.startswith("68"):
+    elif c.startswith(("688", "689")):
         return "star"
-    elif code.startswith(("8", "4", "92")):
+    elif c.startswith(("8", "4", "920")):
         return "bse"
     return "other"
 
@@ -184,7 +153,7 @@ def select_top_stocks_board(
 def main():
     t_start = time.time()
     print("=" * 80)
-    print(">>> 启动短线微观情绪周期黄金窗口战法分板块实证研究...")
+    print(">>> 启动短线微观情绪周期黄金窗口战法分板块实证研究 (v2.0 纯净前瞻版)...")
     print("=" * 80)
 
     # ---------------------------------------------------------
@@ -193,7 +162,7 @@ def main():
     csv_path = r"C:\Users\liuqi\.gemini\antigravity\brain\f1b542e0-73e8-4d3b-8f82-2b30aef2b2d0\scratch\sentiment_daily_2020_2026.csv"
     if not os.path.exists(csv_path):
         csv_path = os.path.join(EXP_DIR, "sentiment_daily_2020_2026.csv")
-        
+
     print(f"[1/7] 读取五大情绪指标时序数据: {csv_path}")
     df_senti = pd.read_csv(csv_path)
     df_senti["trade_date"] = df_senti["trade_date"].astype(int)
@@ -259,12 +228,12 @@ def main():
     phase_dict = dict(zip(df_senti["trade_date"], df_senti["phase"]))
 
     # ---------------------------------------------------------
-    # 2. 读取日频行情宽表 (2023–2026 OOS)
+    # 2. 加载全市场日频行情与构建交易宽表
     # ---------------------------------------------------------
-    print(f"[2/7] 加载 2023–2026 全市场日频行情宽表...")
+    print(f"[2/7] 加载全市场日频行情 (从 D:/iquant_data/data_v2/data_day1)...")
     day_files = sorted(glob.glob(os.path.join(DATA_DIR, "data_day1", "*.parquet")))
     day_files = [f for f in day_files if os.path.basename(f) >= "20230101" and os.path.getsize(f) > 1024]
-    
+
     px_records = []
     t_load = time.time()
     for f in day_files:
@@ -273,7 +242,7 @@ def main():
             px_records.append(df)
         except Exception:
             continue
-            
+
     px_all = pd.concat(px_records, ignore_index=True)
     px_all["trade_date"] = px_all["trade_date"].astype(int)
     print(f"  日频行情加载完成: {len(px_all):,} 行, 耗时 {time.time()-t_load:.1f}s")
@@ -283,12 +252,12 @@ def main():
     preclose_w = px_all.pivot_table(index="trade_date", columns="ts_code", values="pre_close", aggfunc="last")
     vol_w = px_all.pivot_table(index="trade_date", columns="ts_code", values="vol", aggfunc="last")
     cal_dates = sorted(close_w.index)
-    print(f"  回测交易日历: {len(cal_dates)} 天 ({cal_dates[0]} ~ {cal_dates[-1]})")
+    print(f"  回测执行日历: {len(cal_dates)} 天 ({cal_dates[0]} ~ {cal_dates[-1]})")
 
     # ---------------------------------------------------------
-    # 3. 读取基准指数与 ETF
+    # 3. 读取基准指数 (中证1000 000852.SH) 与 ETF
     # ---------------------------------------------------------
-    print(f"[3/7] 加载中证1000指数 (000852.SH) 与防御 ETF 价格...")
+    print(f"[3/7] 加载中证1000指数 (000852.SH) 与 ETF 价格...")
     idx_p = os.path.join(ROOT, "research", "chip_momentum", "data", "index_daily", "000852.SH.parquet")
     df_idx = pd.read_parquet(idx_p)
     df_idx["trade_date"] = df_idx["trade_date"].astype(int)
@@ -315,9 +284,9 @@ def main():
         etf_close_dict[code] = g.set_index("trade_date")["close"].reindex(cal_dates).ffill()
 
     # ---------------------------------------------------------
-    # 4. 加载月度多因子预测与排雷字典 (ST + 热股)
+    # 4. 加载月度多因子预测与排雷字典 (修复日历截断与日期运算)
     # ---------------------------------------------------------
-    print(f"[4/7] 构建月度 Purged Walk-Forward ML 预测与排雷护盾...")
+    print(f"[4/7] 构建月度 Purged Walk-Forward ML 预测与三大排雷护盾...")
     p15_path = os.path.join(ROOT, "research", "sector_rotation", "stock_ml_panel_fullmarket_2015.parquet")
     pfwd_path = os.path.join(ROOT, "research", "sector_rotation", "stock_ml_panel_fwd.parquet")
     df15 = pd.read_parquet(p15_path)
@@ -333,18 +302,23 @@ def main():
     ind_l1_map = build_l1_map(ind_map)
 
     st_dict = load_st_dict()
-    
+
     ths_p = os.path.join(EXP_DIR, "ths_hot_rank_2020_2026.parquet")
     ths_hot_dict = {}
     if os.path.exists(ths_p):
         df_ths = pd.read_parquet(ths_p)
+        ths_dates = sorted(df_ths["trade_date"].unique())
         for d in cal_dates:
-            sub = df_ths[(df_ths["trade_date"] <= d) & (df_ths["trade_date"] >= d - 100)]
-            if len(sub) >= 5:
+            prior_d = [td for td in ths_dates if td <= d]
+            if len(prior_d) >= 5:
+                win_dates = set(prior_d[-20:])
+                sub = df_ths[df_ths["trade_date"].isin(win_dates)]
                 ths_hot_dict[d] = set(sub.groupby("ts_code")["hot"].count().loc[lambda s: s >= 5].index)
 
-    label_end_map = {d: cal_dates[min(i + 20, len(cal_dates) - 1)] for i, d in enumerate(cal_dates)}
+    # 完整历史训练日历映射
+    label_end_map = {d: panel_dates[min(i + 20, len(panel_dates) - 1)] for i, d in enumerate(panel_dates)}
     panel["label_end_date"] = panel["trade_date"].map(label_end_map)
+
     excluded_prefixes = ("fwd", "label", "ret_", "target", "open_fwd")
     non_factor_cols = {
         "ts_code", "trade_date", "label_end_date", "fwd_20", "open_fwd_20",
@@ -366,11 +340,12 @@ def main():
             continue
         feat_ics = []
         for feat in candidate_features:
-            s_tr = train_df[[feat, "fwd_20"]].dropna()
-            if len(s_tr) > 200:
-                ic_val = s_tr[feat].corr(s_tr["fwd_20"], method="spearman")
-                if not np.isnan(ic_val):
-                    feat_ics.append((feat, abs(ic_val)))
+            s_feat = train_df[feat].dropna()
+            if len(s_feat) < 200:
+                continue
+            ic = train_df[[feat, "fwd_20"]].dropna().corr().iloc[0, 1]
+            if np.isfinite(ic):
+                feat_ics.append((feat, abs(ic)))
         feat_ics.sort(key=lambda x: x[1], reverse=True)
         top_feats = [x[0] for x in feat_ics[:20]]
 
@@ -385,13 +360,10 @@ def main():
         m.fit(X_tr, y_tr)
         pred_scores_cache[d] = pd.Series(m.predict(X_te), index=test_df["ts_code"])
 
-    month_last_map = {ym: max([d for d in cal_dates if d // 100 == ym]) for ym in set([d // 100 for d in cal_dates])}
-    rebal_dates = sorted(set(month_last_map.values()))
-
     # ---------------------------------------------------------
-    # 5. 统一生产账本执行 5 大板块并行仿真
+    # 5. 统一生产账本执行 5 大板块并行纯净仿真 (严格 D-1 -> D 开盘)
     # ---------------------------------------------------------
-    print(f"[5/7] 在统一生产级单现金池账本 (220W) 中执行各板块黄金窗口全量仿真...")
+    print(f"[5/7] 在统一生产级单现金池账本 (220W) 中执行各板块纯净前瞻仿真...")
 
     board_configs = {
         "all_market_gw": {"board": None, "top_n": 40, "name": "全市场自由优选 (Top 40)"},
@@ -416,27 +388,35 @@ def main():
         "退潮期": 0.00
     }
 
-    for cur_date in cal_dates:
-        # 1. 解锁 T+1
+    for i, cur_date in enumerate(cal_dates):
+        # 1. 开盘前解锁 T+1
         for leg in ledgers.values():
             leg.unlock_t1_shares()
 
-        is_monthly_rebal = (cur_date in rebal_dates)
-        if is_monthly_rebal:
-            avail_p = [d for d in pred_scores_cache.keys() if d <= cur_date]
+        # 2. 严格 D-1 决策
+        if i == 0:
+            prev_date = cur_date
+            decision_phase = "冰点期"
+        else:
+            prev_date = cal_dates[i - 1]
+            decision_phase = phase_dict.get(prev_date, "冰点期")
+
+        # 检查是否为月初首个交易日 (执行上月末模型得分)
+        is_month_start_rebal = (i == 0 or (cur_date // 100 != prev_date // 100))
+        if is_month_start_rebal:
+            avail_p = [d for d in pred_scores_cache.keys() if d <= prev_date]
             if avail_p:
                 p_date = avail_p[-1]
                 scores = pred_scores_cache[p_date]
                 for k, cfg in board_configs.items():
                     current_target_stocks[k] = select_top_stocks_board(
                         scores, ind_map, ind_l1_map, cur_date,
-                        st_dict, ths_hot_dict.get(cur_date, set()),
+                        st_dict, ths_hot_dict.get(prev_date, set()),
                         board_filter=cfg["board"],
                         max_per_ind=4, max_per_ind_l1=8, top_n=cfg["top_n"]
                     )
 
-        cur_phase = phase_dict.get(cur_date, "发酵期")
-        target_stock_pct = gw_pct_map[cur_phase]
+        target_stock_pct = gw_pct_map.get(decision_phase, 0.0)
         rem_pct = max(1.0 - target_stock_pct, 0.0)
         etf_targets = {
             "511010.SH": rem_pct * 0.60,
@@ -444,17 +424,19 @@ def main():
             "511880.SH": rem_pct * 0.10
         }
 
-        # 遍历各个板块策略
+        allow_buy = (decision_phase not in ["分歧期", "退潮期", "冰点期"])
+
+        # 遍历各个板块策略执行
         for k in board_configs.keys():
             leg = ledgers[k]
             prev_ph = prev_phase_dict[k]
-            is_phase_change = (cur_phase != prev_ph)
+            is_phase_change = (decision_phase != prev_ph)
 
-            if is_monthly_rebal or is_phase_change:
-                prev_phase_dict[k] = cur_phase
+            if is_month_start_rebal or is_phase_change:
+                prev_phase_dict[k] = decision_phase
 
                 # 分歧期/退潮期/冰点期: 只卖不买
-                if cur_phase in ["分歧期", "退潮期", "冰点期"]:
+                if not allow_buy:
                     current_held = list(leg.stock_positions.keys())
                     target_codes = [c for c in current_target_stocks[k] if c in current_held]
                 else:
@@ -463,15 +445,21 @@ def main():
                 leg.execute_rebalance(
                     cur_date, target_codes, target_stock_pct,
                     open_w, preclose_w, vol_w,
-                    etf_targets, etf_price_dict
+                    etf_targets, etf_price_dict,
+                    allow_buy=allow_buy, st_dict=st_dict
+                )
+            else:
+                leg.process_daily_pending_orders(
+                    cur_date, open_w, preclose_w, vol_w, st_dict=st_dict
                 )
 
         # 盘后统一估值
         nav_hist["benchmark_csi1000"].append(bm_s.loc[cur_date])
-        for k, leg in ledgers.items():
-            eq = leg.compute_equity(cur_date, close_w, etf_close_dict)
+        for k in board_configs.keys():
+            eq = ledgers[k].compute_equity(cur_date, close_w, etf_close_dict)
             nav_hist[k].append(eq["nav"])
 
+    # 整理为 DataFrame
     df_nav = pd.DataFrame(nav_hist, index=cal_dates)
     df_nav["benchmark_csi1000"] = df_nav["benchmark_csi1000"] / df_nav["benchmark_csi1000"].iloc[0]
 
@@ -479,7 +467,7 @@ def main():
     # 6. 计算绩效指标与对账表
     # ---------------------------------------------------------
     print("\n" + "=" * 80)
-    print(">>> 【2023–2026 严格样本外各细分板块黄金窗口战法全景绩效表】:")
+    print(">>> 【整改后 2023–2026 分板块纯净生产账本全景绩效对账表】:")
     print("=" * 80)
 
     perf_table = {}
@@ -490,81 +478,93 @@ def main():
     df_perf = pd.DataFrame(perf_table).T
     print(df_perf[["cagr", "sharpe", "vol", "max_dd", "calmar", "total_return", "win_rate"]])
 
-    print("\n>>> 【分年度收益率对账】:")
+    print("\n>>> 【分年度收益率连续复利对账】:")
     annual_dict = {}
     for col in df_nav.columns:
         annual_dict[col] = compute_annual_returns(df_nav[col])
     df_annual = pd.DataFrame(annual_dict)
     print(df_annual)
 
+    # 打印审计拦截统计
+    print("\n>>> 【各板块账本微观撮合审计统计明细】:")
+    for k, leg in ledgers.items():
+        print(f"  {board_configs[k]['name']}: 涨停拦截={leg.limit_up_rejections}, 跌停锁定={leg.limit_down_locks}, "
+              f"停牌拦截={leg.suspension_blocks}, 总交易笔数={leg.total_trades}, "
+              f"股票佣金={leg.total_stock_commission:.1f}元, ETF佣金={leg.total_etf_commission:.1f}元")
+
     # ---------------------------------------------------------
-    # 7. 绘制 4 面板专业看板
+    # 7. 绘制看板与落盘
     # ---------------------------------------------------------
-    print(f"\n[6/7] 绘制分板块实证全景看板...")
+    print(f"\n[6/7] 绘制分板块整改对比看板...")
     fig, axes = plt.subplots(2, 2, figsize=(18, 11), dpi=150)
     dates_dt = pd.to_datetime(df_nav.index.astype(str))
 
-    palette = {
-        "benchmark_csi1000": ("#7f7f7f", "--", 1.5, "中证1000 基准 (000852.SH)"),
-        "all_market_gw":     ("#d62728", "-", 2.5, "🏆 全市场自由优选 (Top 40)"),
-        "chinext_gw":        ("#ff7f0e", "-", 2.0, "创业板专属 (Top 30, ±20%)"),
-        "bse_gw":            ("#9467bd", "-", 2.0, "北交所专属 (Top 15, ±30%)"),
-        "main_board_gw":     ("#1f77b4", "-", 1.8, "沪深主板专属 (Top 40, ±10%)"),
-        "star_gw":           ("#2ca02c", "-", 1.8, "科创板专属 (Top 20, ±20%)")
-    }
-
     # 子图 1: 累计净值走势
     ax1 = axes[0, 0]
-    for col, (color, ls, lw, label) in palette.items():
-        ax1.plot(dates_dt, df_nav[col], label=label, color=color, linestyle=ls, linewidth=lw)
-    ax1.set_title("各细分板块黄金窗口战法累计净值走势 (2023–2026 严格样本外)", fontsize=12, fontweight="bold")
+    ax1.plot(dates_dt, df_nav["benchmark_csi1000"], label="基准: 中证1000 (000852.SH)", color="#7f7f7f", linestyle="--", linewidth=1.5)
+    ax1.plot(dates_dt, df_nav["all_market_gw"], label="全市场自由优选 (Top 40)", color="#d62728", linewidth=2.5)
+    ax1.plot(dates_dt, df_nav["chinext_gw"], label="创业板专属 (Top 30, ±20%)", color="#ff7f0e", linewidth=2.0)
+    ax1.plot(dates_dt, df_nav["main_board_gw"], label="沪深主板专属 (Top 40, ±10%)", color="#1f77b4", linewidth=1.8)
+    ax1.plot(dates_dt, df_nav["star_gw"], label="科创板专属 (Top 20, ±20%)", color="#9467bd", linewidth=1.8)
+    ax1.plot(dates_dt, df_nav["bse_gw"], label="北交所专属 (Top 15, ±30%)", color="#2ca02c", linewidth=1.8)
+    ax1.set_title("2023–2026 各板块黄金窗口纯净账本净值走势 (严格 D-1 决策 -> D 开盘)", fontsize=12, fontweight="bold")
     ax1.set_ylabel("累计净值 (NAV)")
     ax1.legend(loc="upper left")
     ax1.grid(True, alpha=0.3)
     ax1.xaxis.set_major_formatter(mdates.DateFormatter("%Y-%m"))
 
-    # 子图 2: 相对中证1000超额收益曲线
+    # 子图 2: 动态水下回撤
     ax2 = axes[0, 1]
-    for col, (color, ls, lw, label) in palette.items():
-        if col == "benchmark_csi1000": continue
-        excess = df_nav[col] / df_nav["benchmark_csi1000"]
-        ax2.plot(dates_dt, excess, label=label, color=color, linewidth=lw)
-    ax2.set_title("各细分板块相对中证1000的超额净值倍数 (Excess Return)", fontsize=12, fontweight="bold")
-    ax2.set_ylabel("超额倍数 (Excess NAV)")
-    ax2.legend(loc="upper left")
+    colors_board = {
+        "benchmark_csi1000": ("#7f7f7f", 1.2),
+        "all_market_gw": ("#d62728", 2.2),
+        "chinext_gw": ("#ff7f0e", 1.8),
+        "main_board_gw": ("#1f77b4", 1.8),
+        "star_gw": ("#9467bd", 1.8),
+        "bse_gw": ("#2ca02c", 1.8)
+    }
+    for col, (c, lw) in colors_board.items():
+        dd = (df_nav[col] / df_nav[col].cummax() - 1.0) * 100.0
+        ax2.plot(dates_dt, dd, label=col, color=c, linewidth=lw)
+    ax2.set_title("分板块动态水下回撤对比 (%)", fontsize=12, fontweight="bold")
+    ax2.set_ylabel("回撤幅度 (%)")
+    ax2.legend(loc="lower left")
     ax2.grid(True, alpha=0.3)
     ax2.xaxis.set_major_formatter(mdates.DateFormatter("%Y-%m"))
 
-    # 子图 3: 动态水下回撤对比
+    # 子图 3: 年化收益与夏普比率
     ax3 = axes[1, 0]
-    for col, (color, ls, lw, label) in palette.items():
-        dd = (df_nav[col] / df_nav[col].cummax() - 1.0) * 100.0
-        ax3.plot(dates_dt, dd, label=label, color=color, linestyle=ls, linewidth=lw)
-    ax3.set_title("各细分板块动态水下回撤对比 (Underwater Drawdown %)", fontsize=12, fontweight="bold")
-    ax3.set_ylabel("回撤幅度 (%)")
-    ax3.legend(loc="lower left")
+    labels_b = ["中证1000", "全市场", "创业板", "沪深主板", "科创板", "北交所"]
+    keys_b = ["benchmark_csi1000", "all_market_gw", "chinext_gw", "main_board_gw", "star_gw", "bse_gw"]
+    cagrs = [df_perf.loc[k, "cagr"] for k in keys_b]
+    sharpes = [df_perf.loc[k, "sharpe"] for k in keys_b]
+
+    x = np.arange(len(labels_b))
+    width = 0.35
+    ax3.bar(x - width/2, cagrs, width, label="年化收益率 CAGR (%)", color="#2ca02c", alpha=0.85)
+    ax3_twin = ax3.twinx()
+    ax3_twin.plot(x, sharpes, color="#d62728", marker="o", linewidth=2.0, label="夏普比率 (Sharpe)")
+    ax3.set_xticks(x)
+    ax3.set_xticklabels(labels_b, fontsize=10)
+    ax3.set_title("分板块年化收益率与夏普比率综合对比", fontsize=12, fontweight="bold")
+    ax3.set_ylabel("CAGR (%)")
+    ax3_twin.set_ylabel("Sharpe Ratio")
+    ax3.legend(loc="upper left")
+    ax3_twin.legend(loc="upper right")
     ax3.grid(True, alpha=0.3)
-    ax3.xaxis.set_major_formatter(mdates.DateFormatter("%Y-%m"))
 
-    # 子图 4: 年化收益率与夏普比率横向条形对比
+    # 子图 4: 年化波动率与最大回撤
     ax4 = axes[1, 1]
-    cols_order = ["all_market_gw", "chinext_gw", "bse_gw", "main_board_gw", "star_gw", "benchmark_csi1000"]
-    labels_order = [palette[c][3].split()[0] for c in cols_order]
-    cagrs = [df_perf.loc[c, "cagr"] for c in cols_order]
-    sharpes = [df_perf.loc[c, "sharpe"] for c in cols_order]
+    vols = [df_perf.loc[k, "vol"] for k in keys_b]
+    dds = [abs(df_perf.loc[k, "max_dd"]) for k in keys_b]
 
-    y = np.arange(len(cols_order))
-    h = 0.35
-    b1 = ax4.barh(y - h/2, cagrs, h, label="年化收益率 CAGR (%)", color="#d62728", alpha=0.85)
-    ax4_twin = ax4.twiny()
-    b2 = ax4_twin.barh(y + h/2, sharpes, h, label="夏普比率 (Sharpe)", color="#1f77b4", alpha=0.85)
-    
-    ax4.set_yticks(y)
-    ax4.set_yticklabels(labels_order, fontsize=10)
-    ax4.invert_yaxis()
-    ax4.set_xlabel("年化收益率 (%)", color="#d62728", fontweight="bold")
-    ax4_twin.set_xlabel("夏普比率 Sharpe", color="#1f77b4", fontweight="bold")
-    ax4.set_title("各板块年化收益率与夏普比率横向对比", fontsize=12, fontweight="bold")
+    ax4.bar(x - width/2, vols, width, label="年化波动率 Vol (%)", color="#1f77b4", alpha=0.85)
+    ax4.bar(x + width/2, dds, width, label="最大回撤 |MaxDD| (%)", color="#d62728", alpha=0.75)
+    ax4.set_xticks(x)
+    ax4.set_xticklabels(labels_b, fontsize=10)
+    ax4.set_title("分板块风险特征对比 (年化波动率 vs 最大回撤)", fontsize=12, fontweight="bold")
+    ax4.set_ylabel("比率 (%)")
+    ax4.legend(loc="upper right")
     ax4.grid(True, alpha=0.3)
 
     plt.tight_layout()
@@ -575,76 +575,11 @@ def main():
     plt.close()
     print(f"  看板已保存至: {chart_p1} 与 {chart_p2}")
 
-    # ---------------------------------------------------------
-    # 8. 撰写详尽双语实证研报
-    # ---------------------------------------------------------
-    print(f"[7/7] 撰写双语实证研报...")
-    report_content = f"""# 短线微观情绪周期黄金窗口战法分板块（主板/创业板/科创板/北交所）实证研报 / Sentiment Cycle Board Segmentation Report
+    # 保存分板块 NAV
+    df_nav.to_csv(os.path.join(EXP_DIR, "sentiment_cycle_board_nav_remediated.csv"))
+    df_nav.to_csv(r"C:\Users\liuqi\.gemini\antigravity\brain\f1b542e0-73e8-4d3b-8f82-2b30aef2b2d0\scratch\sentiment_cycle_board_nav_remediated.csv")
 
-**报告日期 / Date**: {time.strftime("%Y-%m-%d")}  
-**实证区间 / Period**: 2023-01-03 至 {cal_dates[-1]} (严格样本外 OOS，共 {len(cal_dates)} 个交易日)  
-**生产账本约束 / Production Ledger**: 220 万元单一现金池，100 股整手，真实 T+1 制度，ADV 10% 约束，股票 10 bps，ETF 3 bps  
-**标的清洗标准 / Clean Universe**: 严格按公告时点 100% 排除 ST/*ST 与退市停牌标的  
-**基准标的 / Benchmark**: 中证1000 指数 (000852.SH)  
-
----
-
-## 一、各细分板块生产级账本全景绩效对账总表 / Multi-Board Production Performance Table
-
-| 方案 / 板块组合 | 交易制度与样本定位 / Universe & Limit | 年化收益率 (CAGR) | 夏普比率 (Sharpe, Rf=2%) | 年化波动率 (Vol) | 最大回撤 (MaxDD) | 卡玛比率 (Calmar) | 累计总收益 (Total Return) | 日胜率 (Win Rate) | 相对中证1000超额 / Alpha |
-| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **中证1000 指数** | 被动持有基准 (000852.SH) | **{df_perf.loc['benchmark_csi1000', 'cagr']}%** | **{df_perf.loc['benchmark_csi1000', 'sharpe']}** | **{df_perf.loc['benchmark_csi1000', 'vol']}%** | **{df_perf.loc['benchmark_csi1000', 'max_dd']}%** | **{df_perf.loc['benchmark_csi1000', 'calmar']}** | **{df_perf.loc['benchmark_csi1000', 'total_return']}%** | **{df_perf.loc['benchmark_csi1000', 'win_rate']}%** | **0.0%** |
-| **🏆 全市场自由优选** | **跨板块最优优选 (Top 40, 生产推荐)** | 🏆 **{df_perf.loc['all_market_gw', 'cagr']}%** | 🏆 **{df_perf.loc['all_market_gw', 'sharpe']}** | 🛡️ **{df_perf.loc['all_market_gw', 'vol']}%** | 🛡️ **{df_perf.loc['all_market_gw', 'max_dd']}%** | 🏆 **{df_perf.loc['all_market_gw', 'calmar']}** | 🏆 **{df_perf.loc['all_market_gw', 'total_return']}%** | 🏆 **{df_perf.loc['all_market_gw', 'win_rate']}%** | 🏆 **+{df_perf.loc['all_market_gw', 'total_return'] - df_perf.loc['benchmark_csi1000', 'total_return']:.1f}%** |
-| **创业板专属组合** | 创业板 (Top 30, ±20% 涨跌幅) | **{df_perf.loc['chinext_gw', 'cagr']}%** | **{df_perf.loc['chinext_gw', 'sharpe']}** | **{df_perf.loc['chinext_gw', 'vol']}%** | **{df_perf.loc['chinext_gw', 'max_dd']}%** | **{df_perf.loc['chinext_gw', 'calmar']}** | **{df_perf.loc['chinext_gw', 'total_return']}%** | **{df_perf.loc['chinext_gw', 'win_rate']}%** | **+{df_perf.loc['chinext_gw', 'total_return'] - df_perf.loc['benchmark_csi1000', 'total_return']:.1f}%** |
-| **北交所专属组合** | 北交所 (Top 15, ±30% 涨跌幅) | **{df_perf.loc['bse_gw', 'cagr']}%** | **{df_perf.loc['bse_gw', 'sharpe']}** | **{df_perf.loc['bse_gw', 'vol']}%** | **{df_perf.loc['bse_gw', 'max_dd']}%** | **{df_perf.loc['bse_gw', 'calmar']}** | **{df_perf.loc['bse_gw', 'total_return']}%** | **{df_perf.loc['bse_gw', 'win_rate']}%** | **+{df_perf.loc['bse_gw', 'total_return'] - df_perf.loc['benchmark_csi1000', 'total_return']:.1f}%** |
-| **沪深主板专属组合** | 主板 (Top 40, ±10% 涨跌幅) | **{df_perf.loc['main_board_gw', 'cagr']}%** | **{df_perf.loc['main_board_gw', 'sharpe']}** | 🛡️ **{df_perf.loc['main_board_gw', 'vol']}%** | 🛡️ **{df_perf.loc['main_board_gw', 'max_dd']}%** | **{df_perf.loc['main_board_gw', 'calmar']}** | **{df_perf.loc['main_board_gw', 'total_return']}%** | **{df_perf.loc['main_board_gw', 'win_rate']}%** | **+{df_perf.loc['main_board_gw', 'total_return'] - df_perf.loc['benchmark_csi1000', 'total_return']:.1f}%** |
-| **科创板专属组合** | 科创板 (Top 20, ±20% 涨跌幅) | **{df_perf.loc['star_gw', 'cagr']}%** | **{df_perf.loc['star_gw', 'sharpe']}** | **{df_perf.loc['star_gw', 'vol']}%** | **{df_perf.loc['star_gw', 'max_dd']}%** | **{df_perf.loc['star_gw', 'calmar']}** | **{df_perf.loc['star_gw', 'total_return']}%** | **{df_perf.loc['star_gw', 'win_rate']}%** | **+{df_perf.loc['star_gw', 'total_return'] - df_perf.loc['benchmark_csi1000', 'total_return']:.1f}%** |
-
----
-
-## 二、分年度收益率对账表 / Annual Returns Table (2023–2026)
-
-| 年份 / Year | 中证1000 | 🏆 全市场自由优选 | 创业板专属 (±20%) | 北交所专属 (±30%) | 沪深主板 (±10%) | 科创板专属 (±20%) |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **2023** | {df_annual.loc[2023, 'benchmark_csi1000']:+.2f}% | **{df_annual.loc[2023, 'all_market_gw']:+.2f}%** | {df_annual.loc[2023, 'chinext_gw']:+.2f}% | {df_annual.loc[2023, 'bse_gw']:+.2f}% | {df_annual.loc[2023, 'main_board_gw']:+.2f}% | {df_annual.loc[2023, 'star_gw']:+.2f}% |
-| **2024** | {df_annual.loc[2024, 'benchmark_csi1000']:+.2f}% | **{df_annual.loc[2024, 'all_market_gw']:+.2f}%** | {df_annual.loc[2024, 'chinext_gw']:+.2f}% | {df_annual.loc[2024, 'bse_gw']:+.2f}% | {df_annual.loc[2024, 'main_board_gw']:+.2f}% | {df_annual.loc[2024, 'star_gw']:+.2f}% |
-| **2025** | {df_annual.loc[2025, 'benchmark_csi1000']:+.2f}% | **{df_annual.loc[2025, 'all_market_gw']:+.2f}%** | {df_annual.loc[2025, 'chinext_gw']:+.2f}% | {df_annual.loc[2025, 'bse_gw']:+.2f}% | {df_annual.loc[2025, 'main_board_gw']:+.2f}% | {df_annual.loc[2025, 'star_gw']:+.2f}% |
-| **2026** | {df_annual.loc[2026, 'benchmark_csi1000']:+.2f}% | **{df_annual.loc[2026, 'all_market_gw']:+.2f}%** | {df_annual.loc[2026, 'chinext_gw']:+.2f}% | {df_annual.loc[2026, 'bse_gw']:+.2f}% | {df_annual.loc[2026, 'main_board_gw']:+.2f}% | {df_annual.loc[2026, 'star_gw']:+.2f}% |
-
----
-
-## 三、各细分板块微观金融机理解析与定论 / Microstructure Insights & Verdict
-
-### 1. 创业板 (ChiNext, ±20%)：情绪周期战法的最佳契合引擎
-- 创业板专属组合年化收益率高达 **{df_perf.loc['chinext_gw', 'cagr']}%**，夏普比率达到 **{df_perf.loc['chinext_gw', 'sharpe']}**，最大回撤仅 **{df_perf.loc['chinext_gw', 'max_dd']}%**；
-- ±20% 的涨跌幅限制赋予了创业板极高的高潮爆发力，在“回暖 $\to$ 发酵 $\to$ 高潮”窗口期，创业板标的往往是游资与短线主力抢筹的第一阵地；
-- 而在以往容易遭遇“天地板/大面”的退潮期，由于策略**坚决空仓（0% 股票）**，彻底过滤掉了创业板大跌的高波动下行风险，实现了“吃满主升浪，避开大跌浪”。
-
-### 2. 北交所 (BSE, ±30%)：极致高弹性但容量受限
-- 北交所专属组合年化达 **{df_perf.loc['bse_gw', 'cagr']}%**，夏普比率达 **{df_perf.loc['bse_gw', 'sharpe']}**，最大回撤锁定在 **{df_perf.loc['bse_gw', 'max_dd']}%**；
-- 30cm 涨跌幅带来了惊人的向上进攻弹性；在情绪周期空仓的保护下，北交所流动性枯竭时的连续阴跌被完美躲避；
-- 但由于受 10% ADV 容量上限约束，资金容量在 500W 以上时冲击成本会显著抬升，适合作为 10%~20% 仓位的进取型卫星配置。
-
-### 3. 沪深主板 (Main Board, ±10%)：大资金容量的稳健压舱石
-- 主板专属组合年化收益率 **{df_perf.loc['main_board_gw', 'cagr']}%**，年化波动率仅 **{df_perf.loc['main_board_gw', 'vol']}%**，最大回撤仅 **{df_perf.loc['main_board_gw', 'max_dd']}%**，夏普比率达到 **{df_perf.loc['main_board_gw', 'sharpe']}**；
-- 波动率全场最低，标的容量最大（可承载数千万级以上规模），属于大资金机构级配置的首选标的池。
-
-### 4. 科创板 (STAR Market, ±20%)：机构主导，短线情绪传导偏弱
-- 科创板专属组合年化 **{df_perf.loc['star_gw', 'cagr']}%**，夏普比率 **{df_perf.loc['star_gw', 'sharpe']}**；
-- 科创板受 50 万门槛限制，散户参与度较低，缺乏短线游资追板的群体性狂热，且 2023–2024 年受半导体与生物医药行业下行周期拖累；在情绪周期战法中表现较为温和。
-
-### 5. 🏆 全市场自由优选：胜过任何单一细分板块的终局方案
-- 全市场自由优选方案以年化 **{df_perf.loc['all_market_gw', 'cagr']}%**、夏普比率 **{df_perf.loc['all_market_gw', 'sharpe']}**、最大回撤 **{df_perf.loc['all_market_gw', 'max_dd']}%** 居全场第一；
-- **核心逻辑**：跨板块自由优选不自我设限，在行情初期敏锐捕捉创业板与北交所的最强动量爆发龙头，而在情绪分歧退潮期又能够平稳回流主板避险，实现了板块间的天然动态轮动与最优帕累托前沿！
-"""
-    out_rep1 = os.path.join(EXP_DIR, "sentiment_cycle_board_report.md")
-    out_rep2 = os.path.join(ROOT, "quant_conclusion", "STOCK", "sentiment_cycle_board_report.md")
-    with open(out_rep1, "w", encoding="utf-8") as f:
-        f.write(report_content)
-    with open(out_rep2, "w", encoding="utf-8") as f:
-        f.write(report_content)
-    print(f"  研报已保存至: {out_rep1} 与 {out_rep2}")
-    print(f"\n[OK] 全板块仿真与研报归档成功，总耗时: {time.time()-t_start:.1f}s")
+    print(f"\n[OK] 分板块纯净重测全部完成，总耗时: {time.time()-t_start:.1f}s")
 
 
 if __name__ == "__main__":
