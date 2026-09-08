@@ -1,0 +1,683 @@
+{
+  "signal_date": "20260831",
+  "execution_date": "20260831",
+  "as_of_date": "20260831",
+  "rebalance_date": "20260831",
+  "rs12_on": true,
+  "rs12_value": null,
+  "action": "满仓持有组合 (Top60→订单60, IVW120 权重 + 集中度约束)",
+  "position": "股票组合",
+  "picks": [
+    {
+      "code": "002110.SZ",
+      "name": "三钢闽光",
+      "score": 1.738,
+      "target_weight": 0.01545
+    },
+    {
+      "code": "002936.SZ",
+      "name": "郑州银行",
+      "score": 1.72,
+      "target_weight": 0.0267
+    },
+    {
+      "code": "600248.SH",
+      "name": "陕建股份",
+      "score": 1.685,
+      "target_weight": 0.01631
+    },
+    {
+      "code": "600787.SH",
+      "name": "中储股份",
+      "score": 1.679,
+      "target_weight": 0.01995
+    },
+    {
+      "code": "600502.SH",
+      "name": "安徽建工",
+      "score": 1.664,
+      "target_weight": 0.01254
+    },
+    {
+      "code": "600022.SH",
+      "name": "山东钢铁",
+      "score": 1.651,
+      "target_weight": 0.01823
+    },
+    {
+      "code": "600710.SH",
+      "name": "苏美达",
+      "score": 1.624,
+      "target_weight": 0.01255
+    },
+    {
+      "code": "600782.SH",
+      "name": "新钢股份",
+      "score": 1.52,
+      "target_weight": 0.01627
+    },
+    {
+      "code": "002004.SZ",
+      "name": "华邦健康",
+      "score": 1.505,
+      "target_weight": 0.01593
+    },
+    {
+      "code": "002091.SZ",
+      "name": "江苏国泰",
+      "score": 1.494,
+      "target_weight": 0.01373
+    },
+    {
+      "code": "002183.SZ",
+      "name": "怡亚通",
+      "score": 1.48,
+      "target_weight": 0.00836
+    },
+    {
+      "code": "002061.SZ",
+      "name": "浙江交科",
+      "score": 1.466,
+      "target_weight": 0.02035
+    },
+    {
+      "code": "000498.SZ",
+      "name": "山东路桥",
+      "score": 1.451,
+      "target_weight": 0.02036
+    },
+    {
+      "code": "002839.SZ",
+      "name": "张家港行",
+      "score": 1.42,
+      "target_weight": 0.02086
+    },
+    {
+      "code": "002958.SZ",
+      "name": "青农商行",
+      "score": 1.398,
+      "target_weight": 0.02185
+    },
+    {
+      "code": "000913.SZ",
+      "name": "钱江摩托",
+      "score": 1.387,
+      "target_weight": 0.01169
+    },
+    {
+      "code": "002761.SZ",
+      "name": "浙江建投",
+      "score": 1.384,
+      "target_weight": 0.01439
+    },
+    {
+      "code": "600866.SH",
+      "name": "星湖科技",
+      "score": 1.375,
+      "target_weight": 0.01345
+    },
+    {
+      "code": "002572.SZ",
+      "name": "索菲亚",
+      "score": 1.369,
+      "target_weight": 0.0139
+    },
+    {
+      "code": "002060.SZ",
+      "name": "广东建工",
+      "score": 1.366,
+      "target_weight": 0.01547
+    },
+    {
+      "code": "000829.SZ",
+      "name": "天音控股",
+      "score": 1.312,
+      "target_weight": 0.00983
+    },
+    {
+      "code": "001227.SZ",
+      "name": "兰州银行",
+      "score": 1.307,
+      "target_weight": 0.02801
+    },
+    {
+      "code": "600859.SH",
+      "name": "王府井",
+      "score": 1.307,
+      "target_weight": 0.01721
+    },
+    {
+      "code": "002807.SZ",
+      "name": "江阴银行",
+      "score": 1.305,
+      "target_weight": 0.02185
+    },
+    {
+      "code": "600057.SH",
+      "name": "厦门象屿",
+      "score": 1.284,
+      "target_weight": 0.01301
+    },
+    {
+      "code": "600827.SH",
+      "name": "百联股份",
+      "score": 1.275,
+      "target_weight": 0.01906
+    },
+    {
+      "code": "000028.SZ",
+      "name": "国药一致",
+      "score": 1.265,
+      "target_weight": 0.01939
+    },
+    {
+      "code": "601860.SH",
+      "name": "紫金银行",
+      "score": 1.259,
+      "target_weight": 0.02173
+    },
+    {
+      "code": "601333.SH",
+      "name": "广深铁路",
+      "score": 1.257,
+      "target_weight": 0.02079
+    },
+    {
+      "code": "603508.SH",
+      "name": "思维列控",
+      "score": 1.249,
+      "target_weight": 0.01576
+    },
+    {
+      "code": "600273.SH",
+      "name": "嘉化能源",
+      "score": 1.247,
+      "target_weight": 0.01492
+    },
+    {
+      "code": "600717.SH",
+      "name": "天津港",
+      "score": 1.245,
+      "target_weight": 0.01793
+    },
+    {
+      "code": "600269.SH",
+      "name": "赣粤高速",
+      "score": 1.238,
+      "target_weight": 0.02017
+    },
+    {
+      "code": "600908.SH",
+      "name": "无锡银行",
+      "score": 1.237,
+      "target_weight": 0.02118
+    },
+    {
+      "code": "300070.SZ",
+      "name": "碧水源",
+      "score": 1.234,
+      "target_weight": 0.01594
+    },
+    {
+      "code": "600325.SH",
+      "name": "华发股份",
+      "score": 1.207,
+      "target_weight": 0.01138
+    },
+    {
+      "code": "000543.SZ",
+      "name": "皖能电力",
+      "score": 1.206,
+      "target_weight": 0.01276
+    },
+    {
+      "code": "600373.SH",
+      "name": "中文传媒",
+      "score": 1.201,
+      "target_weight": 0.01846
+    },
+    {
+      "code": "600033.SH",
+      "name": "福建高速",
+      "score": 1.182,
+      "target_weight": 0.01933
+    },
+    {
+      "code": "000550.SZ",
+      "name": "江铃汽车",
+      "score": 1.168,
+      "target_weight": 0.01621
+    },
+    {
+      "code": "000778.SZ",
+      "name": "新兴铸管",
+      "score": 1.163,
+      "target_weight": 0.01454
+    },
+    {
+      "code": "601311.SH",
+      "name": "骆驼股份",
+      "score": 1.153,
+      "target_weight": 0.01568
+    },
+    {
+      "code": "600361.SH",
+      "name": "创新新材",
+      "score": 1.148,
+      "target_weight": 0.01295
+    },
+    {
+      "code": "600123.SH",
+      "name": "兰花科创",
+      "score": 1.146,
+      "target_weight": 0.01119
+    },
+    {
+      "code": "601528.SH",
+      "name": "瑞丰银行",
+      "score": 1.146,
+      "target_weight": 0.02116
+    },
+    {
+      "code": "600928.SH",
+      "name": "西安银行",
+      "score": 1.129,
+      "target_weight": 0.01807
+    },
+    {
+      "code": "600662.SH",
+      "name": "外服控股",
+      "score": 1.122,
+      "target_weight": 0.01811
+    },
+    {
+      "code": "603866.SH",
+      "name": "桃李面包",
+      "score": 1.108,
+      "target_weight": 0.01936
+    },
+    {
+      "code": "002101.SZ",
+      "name": "广东鸿图",
+      "score": 1.098,
+      "target_weight": 0.01627
+    },
+    {
+      "code": "002557.SZ",
+      "name": "洽洽食品",
+      "score": 1.095,
+      "target_weight": 0.01457
+    },
+    {
+      "code": "601200.SH",
+      "name": "上海环境",
+      "score": 1.088,
+      "target_weight": 0.02058
+    },
+    {
+      "code": "600528.SH",
+      "name": "中铁工业",
+      "score": 1.088,
+      "target_weight": 0.01438
+    },
+    {
+      "code": "600064.SH",
+      "name": "南京高科",
+      "score": 1.075,
+      "target_weight": 0.01855
+    },
+    {
+      "code": "600963.SH",
+      "name": "岳阳林纸",
+      "score": 1.073,
+      "target_weight": 0.013
+    },
+    {
+      "code": "600682.SH",
+      "name": "南京新百",
+      "score": 1.065,
+      "target_weight": 0.01102
+    },
+    {
+      "code": "603323.SH",
+      "name": "苏农银行",
+      "score": 1.055,
+      "target_weight": 0.02285
+    },
+    {
+      "code": "000030.SZ",
+      "name": "富奥股份",
+      "score": 1.042,
+      "target_weight": 0.01207
+    },
+    {
+      "code": "300360.SZ",
+      "name": "炬华科技",
+      "score": 1.038,
+      "target_weight": 0.01553
+    },
+    {
+      "code": "000727.SZ",
+      "name": "冠捷科技",
+      "score": 1.031,
+      "target_weight": 0.00972
+    },
+    {
+      "code": "601900.SH",
+      "name": "南方传媒",
+      "score": 1.027,
+      "target_weight": 0.01717
+    }
+  ],
+  "picks_count": 60,
+  "order_picks": [
+    {
+      "code": "002110.SZ",
+      "name": "三钢闽光",
+      "target_weight": 0.01593
+    },
+    {
+      "code": "002936.SZ",
+      "name": "郑州银行",
+      "target_weight": 0.02381
+    },
+    {
+      "code": "600248.SH",
+      "name": "陕建股份",
+      "target_weight": 0.01682
+    },
+    {
+      "code": "600787.SH",
+      "name": "中储股份",
+      "target_weight": 0.02057
+    },
+    {
+      "code": "600502.SH",
+      "name": "安徽建工",
+      "target_weight": 0.01293
+    },
+    {
+      "code": "600022.SH",
+      "name": "山东钢铁",
+      "target_weight": 0.0188
+    },
+    {
+      "code": "600710.SH",
+      "name": "苏美达",
+      "target_weight": 0.01294
+    },
+    {
+      "code": "600782.SH",
+      "name": "新钢股份",
+      "target_weight": 0.01678
+    },
+    {
+      "code": "002004.SZ",
+      "name": "华邦健康",
+      "target_weight": 0.01643
+    },
+    {
+      "code": "002091.SZ",
+      "name": "江苏国泰",
+      "target_weight": 0.01416
+    },
+    {
+      "code": "002183.SZ",
+      "name": "怡亚通",
+      "target_weight": 0.00863
+    },
+    {
+      "code": "002061.SZ",
+      "name": "浙江交科",
+      "target_weight": 0.02099
+    },
+    {
+      "code": "000498.SZ",
+      "name": "山东路桥",
+      "target_weight": 0.021
+    },
+    {
+      "code": "002839.SZ",
+      "name": "张家港行",
+      "target_weight": 0.0186
+    },
+    {
+      "code": "002958.SZ",
+      "name": "青农商行",
+      "target_weight": 0.01949
+    },
+    {
+      "code": "000913.SZ",
+      "name": "钱江摩托",
+      "target_weight": 0.01205
+    },
+    {
+      "code": "002761.SZ",
+      "name": "浙江建投",
+      "target_weight": 0.01484
+    },
+    {
+      "code": "600866.SH",
+      "name": "星湖科技",
+      "target_weight": 0.01387
+    },
+    {
+      "code": "002572.SZ",
+      "name": "索菲亚",
+      "target_weight": 0.01434
+    },
+    {
+      "code": "002060.SZ",
+      "name": "广东建工",
+      "target_weight": 0.01595
+    },
+    {
+      "code": "000829.SZ",
+      "name": "天音控股",
+      "target_weight": 0.01013
+    },
+    {
+      "code": "001227.SZ",
+      "name": "兰州银行",
+      "target_weight": 0.02498
+    },
+    {
+      "code": "600859.SH",
+      "name": "王府井",
+      "target_weight": 0.01775
+    },
+    {
+      "code": "002807.SZ",
+      "name": "江阴银行",
+      "target_weight": 0.01948
+    },
+    {
+      "code": "600057.SH",
+      "name": "厦门象屿",
+      "target_weight": 0.01342
+    },
+    {
+      "code": "600827.SH",
+      "name": "百联股份",
+      "target_weight": 0.01965
+    },
+    {
+      "code": "000028.SZ",
+      "name": "国药一致",
+      "target_weight": 0.01999
+    },
+    {
+      "code": "601860.SH",
+      "name": "紫金银行",
+      "target_weight": 0.01938
+    },
+    {
+      "code": "601333.SH",
+      "name": "广深铁路",
+      "target_weight": 0.02144
+    },
+    {
+      "code": "603508.SH",
+      "name": "思维列控",
+      "target_weight": 0.01625
+    },
+    {
+      "code": "600273.SH",
+      "name": "嘉化能源",
+      "target_weight": 0.01539
+    },
+    {
+      "code": "600717.SH",
+      "name": "天津港",
+      "target_weight": 0.01849
+    },
+    {
+      "code": "600269.SH",
+      "name": "赣粤高速",
+      "target_weight": 0.0208
+    },
+    {
+      "code": "600908.SH",
+      "name": "无锡银行",
+      "target_weight": 0.01889
+    },
+    {
+      "code": "300070.SZ",
+      "name": "碧水源",
+      "target_weight": 0.01643
+    },
+    {
+      "code": "600325.SH",
+      "name": "华发股份",
+      "target_weight": 0.01174
+    },
+    {
+      "code": "000543.SZ",
+      "name": "皖能电力",
+      "target_weight": 0.01316
+    },
+    {
+      "code": "600373.SH",
+      "name": "中文传媒",
+      "target_weight": 0.01904
+    },
+    {
+      "code": "600033.SH",
+      "name": "福建高速",
+      "target_weight": 0.01993
+    },
+    {
+      "code": "000550.SZ",
+      "name": "江铃汽车",
+      "target_weight": 0.01672
+    },
+    {
+      "code": "000778.SZ",
+      "name": "新兴铸管",
+      "target_weight": 0.01499
+    },
+    {
+      "code": "601311.SH",
+      "name": "骆驼股份",
+      "target_weight": 0.01617
+    },
+    {
+      "code": "600361.SH",
+      "name": "创新新材",
+      "target_weight": 0.01336
+    },
+    {
+      "code": "600123.SH",
+      "name": "兰花科创",
+      "target_weight": 0.01154
+    },
+    {
+      "code": "601528.SH",
+      "name": "瑞丰银行",
+      "target_weight": 0.01887
+    },
+    {
+      "code": "600928.SH",
+      "name": "西安银行",
+      "target_weight": 0.01611
+    },
+    {
+      "code": "600662.SH",
+      "name": "外服控股",
+      "target_weight": 0.01867
+    },
+    {
+      "code": "603866.SH",
+      "name": "桃李面包",
+      "target_weight": 0.01997
+    },
+    {
+      "code": "002101.SZ",
+      "name": "广东鸿图",
+      "target_weight": 0.01678
+    },
+    {
+      "code": "002557.SZ",
+      "name": "洽洽食品",
+      "target_weight": 0.01502
+    },
+    {
+      "code": "601200.SH",
+      "name": "上海环境",
+      "target_weight": 0.02122
+    },
+    {
+      "code": "600528.SH",
+      "name": "中铁工业",
+      "target_weight": 0.01482
+    },
+    {
+      "code": "600064.SH",
+      "name": "南京高科",
+      "target_weight": 0.01913
+    },
+    {
+      "code": "600963.SH",
+      "name": "岳阳林纸",
+      "target_weight": 0.0134
+    },
+    {
+      "code": "600682.SH",
+      "name": "南京新百",
+      "target_weight": 0.01137
+    },
+    {
+      "code": "603323.SH",
+      "name": "苏农银行",
+      "target_weight": 0.02038
+    },
+    {
+      "code": "000030.SZ",
+      "name": "富奥股份",
+      "target_weight": 0.01245
+    },
+    {
+      "code": "300360.SZ",
+      "name": "炬华科技",
+      "target_weight": 0.01602
+    },
+    {
+      "code": "000727.SZ",
+      "name": "冠捷科技",
+      "target_weight": 0.01002
+    },
+    {
+      "code": "601900.SH",
+      "name": "南方传媒",
+      "target_weight": 0.01771
+    }
+  ],
+  "order_picks_count": 60,
+  "tradability_removed": {},
+  "fail_closed": false,
+  "data_notes": [
+    "估值数据截至 20260731 (VAL 因子使用该旧快照)",
+    "成分股清单截至 20260630 (使用最近一期)"
+  ],
+  "generated_at": "2026-09-01 08:03:04"
+}

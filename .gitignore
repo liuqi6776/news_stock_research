@@ -45,3 +45,5 @@ lark*.png
 qr*.png
 *auth_qr*.png
 *qrcode*.png
+.*lark*.png
+.*qr*.png
