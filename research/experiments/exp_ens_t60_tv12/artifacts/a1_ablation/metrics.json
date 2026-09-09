@@ -1,0 +1,57 @@
+{
+  "rule_signature": {
+    "rule_version": "v1.1-bad-news-drop-filter",
+    "rule_hash": "7dfc6580e0a2d451",
+    "rule_spec": "filter(stock) <=> (stock in bad_news_stocks) and (ret_1m < 0.0)"
+  },
+  "a0_raw_cst": {
+    "name": "CS-Transformer A0 (Raw / No Fundamental Filter)",
+    "cagr_pct": 16.68,
+    "sharpe": 1.26,
+    "vol_pct": 11.17,
+    "max_dd_pct": -8.89,
+    "calmar": 1.88,
+    "trades": 17297,
+    "commission_rmb": 192916.16
+  },
+  "a1_filtered_cst": {
+    "name": "CS-Transformer A1 (News-Filtered / Direction A1)",
+    "cagr_pct": 17.0,
+    "sharpe": 1.28,
+    "vol_pct": 11.21,
+    "max_dd_pct": -9.13,
+    "calmar": 1.86,
+    "trades": 17303,
+    "commission_rmb": 197396.42
+  },
+  "tradeoff_analysis": {
+    "delta_cagr_pct": 0.32,
+    "delta_sharpe": 0.02,
+    "delta_max_dd_pct": -0.24,
+    "trades_diff": 6,
+    "commission_saved_rmb": -4480.26
+  },
+  "annual_returns": {
+    "a0": {
+      "2022": 0.0,
+      "2023": 2.35,
+      "2024": 30.59,
+      "2025": 24.95,
+      "2026": 4.27
+    },
+    "a1": {
+      "2022": 0.0,
+      "2023": 4.92,
+      "2024": 30.55,
+      "2025": 22.95,
+      "2026": 4.41
+    },
+    "delta": {
+      "2022": 0.0,
+      "2023": 2.57,
+      "2024": -0.04,
+      "2025": -2.0,
+      "2026": 0.14
+    }
+  }
+}

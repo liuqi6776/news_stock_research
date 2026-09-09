@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "dataset_alignment": {
+    "trading_days": 870,
+    "paired_etf_days": 871,
+    "is_dates_identical": true
+  },
+  "lookahead_audit": {
+    "ths_hot_rank_lookahead_fixed": true,
+    "condition": "prior_trade_date < decision_date"
+  }
+}

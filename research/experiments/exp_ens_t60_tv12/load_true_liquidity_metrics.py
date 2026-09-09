@@ -60,15 +60,18 @@ class TrueLiquidityManager:
             return pd.DataFrame()
 
         panel_20 = pd.concat(day_dfs, ignore_index=True)
-        # amount 单位通常是千元或元，换算为亿元: amount / 1e8
-        # amihud ratio: |pct_chg| / (amount_yi + 1e-4)
-        panel_20["amount_yi"] = panel_20["amount"] / 1e8
+        # 数据字典定义与单位说明:
+        # Tushare daily 行情 amount 单位是千元 (thousands RMB). 换算为亿元: amount * 1000 / 1e8 = amount / 1e5
+        # Tushare daily_basic circ_mv 单位是万元 (ten-thousands RMB). 换算为亿元: circ_mv * 10000 / 1e8 = circ_mv / 10000.0
+        # 标准 Amihud 非流动性比率: |pct_chg| / (amount_yi + 1e-4) (日绝对收益率 / 日成交金额亿元)
+        panel_20["amount_yi"] = panel_20["amount"] / 1e5
+        panel_20["circ_mv_yi"] = panel_20["circ_mv"] / 10000.0
         panel_20["daily_illiq"] = panel_20["pct_chg"].abs() / (panel_20["amount_yi"] + 1e-4)
 
         agg_dict = {
             "daily_illiq": "mean",
             "turnover_rate": ["std", "mean", "last"],
-            "circ_mv": "last",
+            "circ_mv_yi": "last",
             "amount_yi": "mean"
         }
         res = panel_20.groupby("ts_code").agg(agg_dict)
@@ -77,7 +80,7 @@ class TrueLiquidityManager:
             "true_turnover_vol_20",
             "true_avg_turnover_20",
             "last_day_turnover",
-            "circ_mv_last",
+            "circ_mv_yi_last",
             "avg_daily_amount_yi"
         ]
         res = res.reset_index()

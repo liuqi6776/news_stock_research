@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "dataset_alignment": {
+    "source": "D:\\iquant_data\\data_v2\\fund1\\512100.SH",
+    "trading_days": 870,
+    "missing_open_count": 0,
+    "missing_close_count": 0,
+    "missing_vol_count": 0,
+    "zero_open_count": 0
+  },
+  "anomaly_audit": {
+    "saturday_file_detected": "20260418.parquet in data_day1",
+    "diagnosis": "20260418.parquet is an exact duplicate snapshot of Friday 20260417",
+    "resolution": "fund1 correctly has only 20260417, exactly 870 genuine trading days are evaluated with zero forward fill."
+  },
+  "ffill_audit": {
+    "open_ffill_applied": false,
+    "valuation_execution_separated": true
+  }
+}

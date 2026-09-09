@@ -1,0 +1,23 @@
+{
+  "strategy_id": "cs_transformer_scs_clean_v1",
+  "description": "Clean production-grade evaluation of CS-Transformer top 40 stocks + SCS timing + 100% Cash defensive leg",
+  "evaluation_period": {
+    "start_date": 20230103,
+    "end_date": 20260806,
+    "trading_days": 870,
+    "t0_initial_date": 20221230
+  },
+  "capital_and_costs": {
+    "initial_capital_rmb": 2200000.0,
+    "stock_commission_bps": 10.0,
+    "adv_quota_pct": 0.1,
+    "cash_risk_free_rate_pct": 2.0
+  },
+  "paired_baseline": "etf_scs_clean_v1",
+  "hashes": {
+    "pred_scores_sha256": "65799209f7664d4498f265d8da25b1a54ae9cfe4139482312dba237a77a5819e",
+    "sentiment_data_sha256": "a45090a4bfa4ab29db5d4450b7db729081ff6b3b1e094c38cea6e420e61f2309",
+    "ledger_code_sha256": "7ea49256c4ccf8ea2c46ddd445b6d763e12eb417894b26727a683ed6b741334f"
+  },
+  "created_at": "2026-09-09 17:11:53"
+}

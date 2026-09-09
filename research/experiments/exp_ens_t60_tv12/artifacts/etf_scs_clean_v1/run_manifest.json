@@ -1,0 +1,29 @@
+{
+  "strategy_id": "etf_scs_clean_v1",
+  "description": "Canonical clean baseline of CSI 1000 ETF (512100.SH) + SCS timing + 100% Cash defensive leg",
+  "evaluation_period": {
+    "start_date": 20230103,
+    "end_date": 20260806,
+    "trading_days": 870,
+    "t0_initial_date": 20221230
+  },
+  "capital_and_costs": {
+    "initial_capital_rmb": 2200000.0,
+    "etf_commission_bps": 3.0,
+    "etf_slippage_bps": 2.0,
+    "min_etf_fee_rmb": 5.0,
+    "adv_quota_pct": 0.1,
+    "cash_risk_free_rate_pct": 2.0
+  },
+  "variants": {
+    "B0": "Direct target exposure without smoothing",
+    "B1": "Cost-aware smoothing (8% deadband, 0.5 step, 0.0 hard exit)"
+  },
+  "defensive_leg": "100% Cash (strictly zero bonds or gold)",
+  "hashes": {
+    "etf_data_sha256": "f8ea65012c1d1f9a426473b373bd5daa8a6012c341187c731e51612443061f33",
+    "sentiment_data_sha256": "a45090a4bfa4ab29db5d4450b7db729081ff6b3b1e094c38cea6e420e61f2309",
+    "ledger_code_sha256": "f6bcf7c4d4125d1c263eb2a1a96c24c7243fc377cd34068e27cfc5a58a82fa80"
+  },
+  "created_at": "2026-09-09 15:41:45"
+}

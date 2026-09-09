@@ -38,6 +38,18 @@ ETF_FEE_RATE = 0.0003         # ETF 单边费率 3 bps
 CASH_INTEREST_RATE = 0.020    # 闲置现金年化利息 2.0%
 
 
+def format_trade_date(d):
+    """规范化交易日输出格式：支持整数YYYYMMDD或字符串YYYY-MM-DD"""
+    if d is None:
+        return ""
+    if isinstance(d, (int, np.integer)):
+        return int(d)
+    s = str(d).strip().replace("-", "")
+    if s.isdigit():
+        return int(s)
+    return str(d).strip()
+
+
 def get_price_limit_thresholds(code, is_st=False):
     """
     根据标的代码和ST状态确定微观涨跌停幅度：
@@ -112,6 +124,26 @@ def get_adv20_shares(stock_vol_w, code, current_date, default_shares=0):
     return adv20_shares
 
 
+def get_etf_adv20_shares(etf_vol_series, current_date, default_shares=0):
+    """
+    严格基于 [D-20, D-1] 历史成交量计算 ETF 20 日日均成交量（换算为真实股数）
+    严禁包含交易日 D 本身！(零前瞻未来数据泄漏防范)
+    A 股基金日行情成交量 (vol) 字段原始单位通常为手 (100份)，转换为股数必须乘以 100。
+    """
+    if etf_vol_series is None or len(etf_vol_series) == 0:
+        return default_shares
+    priors = [d for d in etf_vol_series.index if d < current_date]
+    if len(priors) < 5:
+        return default_shares
+    sub_dates = priors[-20:]
+    recent_vols = etf_vol_series.loc[sub_dates].fillna(0.0)
+    vol_sum = recent_vols.sum()
+    if not np.isfinite(vol_sum) or vol_sum <= 0:
+        return default_shares
+    mean_vol_lots = vol_sum / float(len(sub_dates))
+    return float(mean_vol_lots) * 100.0
+
+
 def compute_metrics(nav_series):
     """
     标准化绩效评估函数：
@@ -151,7 +183,7 @@ def compute_metrics(nav_series):
 
 
 def compute_annual_returns(nav_series):
-    """
+    r"""
     连续复利跨年收益率计算：
     使用每日收益率进行年内连乘累积，确保：
     1. 不丢失跨年至首个交易日的收益；
@@ -217,16 +249,28 @@ def select_with_clean_crowding_guard(
 
 class UnifiedProductionLedger:
     """
-    生产级单一资金池现货与期货联合账户仿真器 (v2.3 增强版)
-    - 增加 scale_stock_exposure 的 allow_buy 支持 (分歧退潮期严格只卖不买)；
-    - 支持空仓状态合法重入当前月度优选股票篮子 (active_monthly_basket)；
-    - 保持 100 股整手、T+1、10% 共享 ADV 约束与挂单原因继承。
+    生产级单一资金池现货与期货联合账户仿真器 (v2.4 审计整改版)
+    - 落实 P0-1: ETF 成交价严禁 ffill/bfill，缺失开盘价或停牌时严格阻断并记录拒单；
+    - 落实 P0-2: 加载 ETF 真实成交量并施加 10% ADV 限额、3 bps 佣金、最低 5 元手续费及 2 bps 滑点；
+    - 落实 P0-4: 增加 record_initial_state(T0)，保留首日建仓费用与真实日内收益；
+    - 增加 orders_log, fills_log, fees_log, blocked_orders_log, daily_holdings_log, daily_nav_log 全流程审计制品。
     """
-    def __init__(self, initial_capital=2_200_000.0, fee_bps=10.0, etf_fee_bps=3.0, adv_cap_pct=0.10):
+    def __init__(
+        self,
+        initial_capital=2_200_000.0,
+        fee_bps=10.0,
+        etf_fee_bps=3.0,
+        adv_cap_pct=0.10,
+        etf_slippage_bps=2.0,
+        min_etf_fee=5.0
+    ):
         self.initial_capital = float(initial_capital)
         self.stock_fee_rate = float(fee_bps) / 10000.0
         self.etf_fee_rate = float(etf_fee_bps) / 10000.0
         self.adv_cap_pct = float(adv_cap_pct)
+        self.etf_slippage_bps = float(etf_slippage_bps)
+        self.etf_slippage_rate = float(etf_slippage_bps) / 10000.0
+        self.min_etf_fee = float(min_etf_fee)
 
         # 唯一真实总现金余额 (全部从 C0 出发)
         self.cash = float(initial_capital)
@@ -238,10 +282,11 @@ class UnifiedProductionLedger:
         # 活跃月度持仓篮子 (用于空仓后重新入场建仓)
         self.active_monthly_basket = []
 
-        # 未完成挂单重试队列: code -> pending_sell_shares (严格维护当前持股与最新目标的差额)
+        # 未完成挂单重试队列: code -> pending_sell_shares
         self.pending_sell_orders = {}
+        self.pending_etf_sell_orders = {}
 
-        # 证券级单日已成交股数记录 (确保同日多流程共享 10% ADV 限额)
+        # 证券级单日已成交股数记录 (确保同日多流程共享 ADV 限额)
         self.daily_executed_shares = {}
         self.last_execution_date = None
 
@@ -261,6 +306,29 @@ class UnifiedProductionLedger:
         self.limit_down_locks = 0
         self.suspension_blocks = 0
         self.adv_zero_blocks = 0
+        self.etf_missing_price_blocks = 0
+
+        # 全套标准化审计追踪流水 (对应任务书第四节)
+        self.orders_log = []
+        self.fills_log = []
+        self.fees_log = []
+        self.blocked_orders_log = []
+        self.daily_holdings_log = []
+        self.daily_nav_log = []
+        self.stale_price_age = {}
+
+    def record_initial_state(self, date_0):
+        """记录建仓前一日 (T0) 初始基准净值记录: NAV=1.0, 现金=初始本金 (P0-4)"""
+        self.daily_nav_log.append({
+            "trade_date": format_trade_date(date_0),
+            "nav": 1.0,
+            "total_equity": self.initial_capital,
+            "stock_val": 0.0,
+            "etf_val": 0.0,
+            "cash": self.cash,
+            "futures_margin": 0.0,
+            "im_lots": 0
+        })
 
     def unlock_t1_shares(self):
         """每日开盘前解锁 T+1 锁仓股数"""
@@ -273,7 +341,7 @@ class UnifiedProductionLedger:
 
     def _get_daily_adv_quota(self, stock_vol_w, code, current_date):
         """
-        获取指定标的在当天的剩余可用 ADV 容量股数 (共享日度限额)
+        获取指定股票在当天的剩余可用 ADV 容量股数 (共享日度限额)
         若 ADV <= 0 或缺失数据，则返回 0 (严禁无流动性默认全额成交)
         """
         if self.last_execution_date != current_date:
@@ -289,6 +357,28 @@ class UnifiedProductionLedger:
         already_used = self.daily_executed_shares.get(code, 0)
         remaining = max(0, total_quota - already_used)
         return remaining
+
+    def _get_daily_etf_adv_quota(self, etf_vol_dict, etf_code, current_date):
+        """
+        获取指定 ETF 在当天的剩余可用 ADV 容量股数 (P0-2 流动性平权)
+        若未传入 etf_vol_dict，则向后兼容不加容量硬约束；若传入且 ADV<=0 则返回 0 (禁买)
+        """
+        if self.last_execution_date != current_date:
+            self.daily_executed_shares = {}
+            self.last_execution_date = current_date
+
+        if etf_vol_dict is None or etf_code not in etf_vol_dict:
+            return 10**10
+
+        vol_s = etf_vol_dict.get(etf_code)
+        adv20_sh = get_etf_adv20_shares(vol_s, current_date, default_shares=0)
+        if adv20_sh <= 0:
+            self.adv_zero_blocks += 1
+            return 0
+
+        total_quota = int(adv20_sh * self.adv_cap_pct)
+        already_used = self.daily_executed_shares.get(etf_code, 0)
+        return max(0, total_quota - already_used)
 
     def _record_executed_volume(self, code, current_date, shares):
         """记录指定标的在当天的已成交股数"""
@@ -379,6 +469,25 @@ class UnifiedProductionLedger:
                 h["last_px"] = op
                 self._record_executed_volume(c, current_date, sell_sh)
 
+                self.fills_log.append({
+                    "trade_date": format_trade_date(current_date),
+                    "code": c,
+                    "side": "SELL",
+                    "shares": int(sell_sh),
+                    "price": float(op),
+                    "value": float(proceeds),
+                    "fee": float(fee)
+                })
+                self.fees_log.append({
+                    "trade_date": format_trade_date(current_date),
+                    "code": c,
+                    "side": "SELL",
+                    "asset_type": "STOCK",
+                    "commission": float(fee),
+                    "slippage": 0.0,
+                    "total_fee": float(fee)
+                })
+
                 rem = pending_sh - sell_sh
                 if rem < 100:
                     self.pending_sell_orders.pop(c, None)
@@ -386,7 +495,7 @@ class UnifiedProductionLedger:
                     if isinstance(self.pending_sell_orders[c], dict):
                         self.pending_sell_orders[c]["shares"] = rem
                     else:
-                        self.pending_sell_orders[c] = rem
+                        self.pending_sell_orders[c] = {"shares": rem, "reason": order_reason}
 
             if h["shares"] <= 0:
                 self.stock_positions.pop(c, None)
@@ -407,9 +516,14 @@ class UnifiedProductionLedger:
         # 2. ETF 总市值
         etf_market_val = 0.0
         for c, h in self.etf_positions.items():
-            s_df = etf_close_dict.get(c)
+            s_df = etf_close_dict.get(c) if etf_close_dict else None
             cl = s_df.get(current_date, np.nan) if s_df is not None else np.nan
-            px = cl if (np.isfinite(cl) and cl > 0) else h["last_px"]
+            if np.isfinite(cl) and cl > 0:
+                px = cl
+                self.stale_price_age[c] = 0
+            else:
+                px = h["last_px"]
+                self.stale_price_age[c] = self.stale_price_age.get(c, 0) + 1
             h["last_px"] = px
             etf_market_val += h["shares"] * px
 
@@ -429,8 +543,8 @@ class UnifiedProductionLedger:
         self.cash += daily_interest
 
         total_nav = stock_market_val + etf_market_val + self.cash
-        return {
-            "trade_date": current_date,
+        eq_record = {
+            "trade_date": format_trade_date(current_date),
             "nav": total_nav / self.initial_capital,
             "total_equity": total_nav,
             "stock_val": stock_market_val,
@@ -439,6 +553,224 @@ class UnifiedProductionLedger:
             "futures_margin": futures_margin,
             "im_lots": self.im_lots
         }
+        self.daily_nav_log.append(eq_record)
+
+        # 记录持仓明细 (每日实际持仓)
+        for c, h in self.stock_positions.items():
+            if h["shares"] > 0:
+                mv = h["shares"] * h["last_px"]
+                self.daily_holdings_log.append({
+                    "trade_date": format_trade_date(current_date), "code": c, "asset_type": "STOCK",
+                    "shares": h["shares"], "tradable_shares": h["tradable_shares"],
+                    "price": h["last_px"], "market_val": mv, "weight": mv / max(total_nav, 1e-6)
+                })
+        for c, h in self.etf_positions.items():
+            if h["shares"] > 0:
+                mv = h["shares"] * h["last_px"]
+                self.daily_holdings_log.append({
+                    "trade_date": format_trade_date(current_date), "code": c, "asset_type": "ETF",
+                    "shares": h["shares"], "tradable_shares": h["tradable_shares"],
+                    "price": h["last_px"], "market_val": mv, "weight": mv / max(total_nav, 1e-6)
+                })
+        return eq_record
+
+    def _execute_etf_sells(
+        self,
+        current_date,
+        target_etf_shares_map,
+        etf_price_dict,
+        rebalance_reason="timing",
+        etf_vol_dict=None
+    ):
+        if not etf_price_dict:
+            return
+        all_current_etfs = list(self.etf_positions.keys())
+        for etf_code in all_current_etfs:
+            h_etf = self.etf_positions.get(etf_code)
+            if not h_etf:
+                continue
+            target_etf_sh = target_etf_shares_map.get(etf_code, 0)
+            if h_etf["shares"] > target_etf_sh:
+                excess_etf_sh = h_etf["shares"] - target_etf_sh
+                s_df = etf_price_dict.get(etf_code)
+                op = s_df.get(current_date, np.nan) if s_df is not None else np.nan
+
+                # P0-1: 严格校验开盘执行价，若缺失/非正数则拒绝执行并记录阻塞日志，绝不使用估值价/前收价/未来价填补
+                if not (np.isfinite(op) and op > 0):
+                    self.blocked_orders_log.append({
+                        "trade_date": format_trade_date(current_date),
+                        "code": etf_code,
+                        "side": "SELL",
+                        "order_shares": excess_etf_sh,
+                        "reason": "missing_or_invalid_open_price"
+                    })
+                    continue
+
+                max_etf_adv = self._get_daily_etf_adv_quota(etf_vol_dict, etf_code, current_date)
+                if max_etf_adv < 100:
+                    self.blocked_orders_log.append({
+                        "trade_date": format_trade_date(current_date),
+                        "code": etf_code,
+                        "side": "SELL",
+                        "order_shares": excess_etf_sh,
+                        "reason": "etf_adv_exhausted_or_zero"
+                    })
+                    continue
+
+                sell_etf_sh = min(h_etf["tradable_shares"], excess_etf_sh, max_etf_adv)
+                sell_etf_sh = (sell_etf_sh // 100) * 100
+
+                self.orders_log.append({
+                    "trade_date": format_trade_date(current_date),
+                    "code": etf_code,
+                    "asset_type": "ETF",
+                    "side": "SELL",
+                    "target_shares": target_etf_sh,
+                    "order_shares": excess_etf_sh,
+                    "reason": rebalance_reason
+                })
+
+                if sell_etf_sh >= 100:
+                    fill_px = op * (1.0 - self.etf_slippage_bps / 10000.0)
+                    proceeds = sell_etf_sh * fill_px
+                    raw_fee = proceeds * self.etf_fee_rate
+                    fee = max(self.min_etf_fee, raw_fee)
+                    self.cash += (proceeds - fee)
+                    self.total_etf_commission += fee
+                    self.total_trades += 1
+                    self.total_traded_value += proceeds
+                    if rebalance_reason == "monthly":
+                        self.selection_traded_value += proceeds
+                    else:
+                        self.timing_traded_value += proceeds
+                    h_etf["shares"] -= sell_etf_sh
+                    h_etf["tradable_shares"] -= sell_etf_sh
+                    h_etf["last_px"] = op
+                    self._record_executed_volume(etf_code, current_date, sell_etf_sh)
+
+                    self.fills_log.append({
+                        "trade_date": format_trade_date(current_date),
+                        "code": etf_code,
+                        "side": "SELL",
+                        "shares": sell_etf_sh,
+                        "price": fill_px,
+                        "value": proceeds,
+                        "fee": fee
+                    })
+                    self.fees_log.append({
+                        "trade_date": format_trade_date(current_date),
+                        "code": etf_code,
+                        "fee_type": "ETF_COMMISSION",
+                        "amount": fee
+                    })
+
+                if h_etf["shares"] <= 0:
+                    self.etf_positions.pop(etf_code, None)
+
+    def _execute_etf_buys(
+        self,
+        current_date,
+        etf_targets,
+        target_etf_shares_map,
+        etf_price_dict,
+        rebalance_reason="timing",
+        etf_vol_dict=None
+    ):
+        if not etf_targets or not etf_price_dict:
+            return
+        for etf_code, tgt_pct in etf_targets.items():
+            target_etf_sh = target_etf_shares_map.get(etf_code, 0)
+            curr_etf_sh = self.etf_positions.get(etf_code, {}).get("shares", 0)
+
+            if target_etf_sh > curr_etf_sh:
+                needed_etf_sh = target_etf_sh - curr_etf_sh
+                s_df = etf_price_dict.get(etf_code)
+                op = s_df.get(current_date, np.nan) if s_df is not None else np.nan
+
+                # P0-1: 缺失开盘价严格拦截
+                if not (np.isfinite(op) and op > 0):
+                    self.blocked_orders_log.append({
+                        "trade_date": format_trade_date(current_date),
+                        "code": etf_code,
+                        "side": "BUY",
+                        "order_shares": needed_etf_sh,
+                        "reason": "missing_or_invalid_open_price"
+                    })
+                    continue
+
+                max_etf_adv = self._get_daily_etf_adv_quota(etf_vol_dict, etf_code, current_date)
+                if max_etf_adv < 100:
+                    self.blocked_orders_log.append({
+                        "trade_date": format_trade_date(current_date),
+                        "code": etf_code,
+                        "side": "BUY",
+                        "order_shares": needed_etf_sh,
+                        "reason": "etf_adv_exhausted_or_zero"
+                    })
+                    continue
+
+                self.orders_log.append({
+                    "trade_date": format_trade_date(current_date),
+                    "code": etf_code,
+                    "asset_type": "ETF",
+                    "side": "BUY",
+                    "target_shares": target_etf_sh,
+                    "order_shares": needed_etf_sh,
+                    "reason": rebalance_reason
+                })
+
+                fill_px = op * (1.0 + self.etf_slippage_bps / 10000.0)
+                eff_cost_per_sh = fill_px * (1.0 + self.etf_fee_rate)
+                if self.cash > self.min_etf_fee:
+                    max_aff_etf_sh = int((self.cash - self.min_etf_fee) // (eff_cost_per_sh * 100)) * 100
+                else:
+                    max_aff_etf_sh = 0
+
+                buy_etf_sh = min(needed_etf_sh, max_aff_etf_sh, max_etf_adv)
+                buy_etf_sh = (buy_etf_sh // 100) * 100
+
+                if buy_etf_sh >= 100:
+                    cost = buy_etf_sh * fill_px
+                    raw_fee = cost * self.etf_fee_rate
+                    fee = max(self.min_etf_fee, raw_fee)
+                    if self.cash >= (cost + fee):
+                        self.cash -= (cost + fee)
+                        self.total_etf_commission += fee
+                        self.total_trades += 1
+                        self.total_traded_value += cost
+                        if rebalance_reason == "monthly":
+                            self.selection_traded_value += cost
+                        else:
+                            self.timing_traded_value += cost
+                        self._record_executed_volume(etf_code, current_date, buy_etf_sh)
+
+                        if etf_code not in self.etf_positions:
+                            self.etf_positions[etf_code] = {
+                                "shares": buy_etf_sh,
+                                "tradable_shares": 0,
+                                "locked_shares": buy_etf_sh,
+                                "last_px": op
+                            }
+                        else:
+                            self.etf_positions[etf_code]["shares"] += buy_etf_sh
+                            self.etf_positions[etf_code]["locked_shares"] += buy_etf_sh
+                            self.etf_positions[etf_code]["last_px"] = op
+
+                        self.fills_log.append({
+                            "trade_date": format_trade_date(current_date),
+                            "code": etf_code,
+                            "side": "BUY",
+                            "shares": buy_etf_sh,
+                            "price": fill_px,
+                            "value": cost,
+                            "fee": fee
+                        })
+                        self.fees_log.append({
+                            "trade_date": format_trade_date(current_date),
+                            "code": etf_code,
+                            "fee_type": "ETF_COMMISSION",
+                            "amount": fee
+                        })
 
     def execute_rebalance(
         self,
@@ -454,7 +786,8 @@ class UnifiedProductionLedger:
         st_dict=None,
         im_hedge_beta=0.0,
         im_price=None,
-        rebalance_reason="timing"
+        rebalance_reason="timing",
+        etf_vol_dict=None
     ):
         """
         调仓日微观撮合执行 (v2.1 修复版):
@@ -520,6 +853,14 @@ class UnifiedProductionLedger:
                     target_etf_shares_map[etf_code] = int((target_val / op) // 100) * 100
                 else:
                     target_etf_shares_map[etf_code] = 0
+                    if tgt_pct > 0:
+                        self.blocked_orders_log.append({
+                            "trade_date": format_trade_date(current_date),
+                            "code": etf_code,
+                            "side": "BUY",
+                            "order_shares": 0,
+                            "reason": "missing_or_invalid_open_price"
+                        })
 
         # =========================================================================
         # 第一阶段：全面卖出变现 (PHASE 1: SELLS & TRIMS - CASH INFLOW)
@@ -537,6 +878,15 @@ class UnifiedProductionLedger:
                 continue
 
             excess_sh = h["shares"] - target_sh
+            self.orders_log.append({
+                "trade_date": format_trade_date(current_date),
+                "code": c,
+                "asset_type": "STOCK",
+                "side": "SELL",
+                "target_shares": int(target_sh),
+                "order_shares": int(excess_sh),
+                "reason": rebalance_reason
+            })
             op = stock_open_w.at[current_date, c] if (c in stock_open_w.columns and current_date in stock_open_w.index) else np.nan
             pre_p = stock_preclose_w.at[current_date, c] if (c in stock_preclose_w.columns and current_date in stock_preclose_w.index) else np.nan
 
@@ -549,6 +899,13 @@ class UnifiedProductionLedger:
 
             if is_suspended:
                 self.suspension_blocks += 1
+                self.blocked_orders_log.append({
+                    "trade_date": format_trade_date(current_date),
+                    "code": c,
+                    "side": "SELL",
+                    "order_shares": int(excess_sh),
+                    "reason": "suspended"
+                })
                 # 赋值而非累加，严格防止多次调仓挂单翻倍，并记录触发原因
                 self.pending_sell_orders[c] = {"shares": excess_sh, "reason": rebalance_reason}
                 continue
@@ -562,6 +919,13 @@ class UnifiedProductionLedger:
                         break
             if is_limit_down_code(c, op, pre_p, is_st=is_st):
                 self.limit_down_locks += 1
+                self.blocked_orders_log.append({
+                    "trade_date": format_trade_date(current_date),
+                    "code": c,
+                    "side": "SELL",
+                    "order_shares": int(excess_sh),
+                    "reason": "limit_down"
+                })
                 self.pending_sell_orders[c] = {"shares": excess_sh, "reason": rebalance_reason}
                 continue
 
@@ -590,6 +954,25 @@ class UnifiedProductionLedger:
                 h["last_px"] = op
                 self._record_executed_volume(c, current_date, sell_shares)
 
+                self.fills_log.append({
+                    "trade_date": format_trade_date(current_date),
+                    "code": c,
+                    "side": "SELL",
+                    "shares": int(sell_shares),
+                    "price": float(op),
+                    "value": float(proceeds),
+                    "fee": float(fee)
+                })
+                self.fees_log.append({
+                    "trade_date": format_trade_date(current_date),
+                    "code": c,
+                    "side": "SELL",
+                    "asset_type": "STOCK",
+                    "commission": float(fee),
+                    "slippage": 0.0,
+                    "total_fee": float(fee)
+                })
+
             # 更新未成交卖单队列 (严格赋值为当前持股与目标股数的缺口，继承当前调仓原因)
             remaining_excess = h["shares"] - target_sh
             if remaining_excess >= 100:
@@ -602,33 +985,13 @@ class UnifiedProductionLedger:
                 self.pending_sell_orders.pop(c, None)
 
         # 3.2 ETF 减仓卖出
-        all_current_etfs = list(self.etf_positions.keys())
-        for etf_code in all_current_etfs:
-            h_etf = self.etf_positions[etf_code]
-            target_etf_sh = target_etf_shares_map.get(etf_code, 0)
-            if h_etf["shares"] > target_etf_sh:
-                excess_etf_sh = h_etf["shares"] - target_etf_sh
-                s_df = etf_price_dict.get(etf_code)
-                op = s_df.get(current_date, np.nan) if s_df is not None else np.nan
-                if np.isfinite(op) and op > 0:
-                    sell_etf_sh = min(h_etf["tradable_shares"], excess_etf_sh)
-                    sell_etf_sh = (sell_etf_sh // 100) * 100
-                    if sell_etf_sh >= 100:
-                        proceeds = sell_etf_sh * op
-                        fee = proceeds * self.etf_fee_rate
-                        self.cash += (proceeds - fee)
-                        self.total_etf_commission += fee
-                        self.total_trades += 1
-                        self.total_traded_value += proceeds
-                        if rebalance_reason == "monthly":
-                            self.selection_traded_value += proceeds
-                        else:
-                            self.timing_traded_value += proceeds
-                        h_etf["shares"] -= sell_etf_sh
-                        h_etf["tradable_shares"] -= sell_etf_sh
-                        h_etf["last_px"] = op
-                    if h_etf["shares"] <= 0:
-                        self.etf_positions.pop(etf_code, None)
+        self._execute_etf_sells(
+            current_date=current_date,
+            target_etf_shares_map=target_etf_shares_map,
+            etf_price_dict=etf_price_dict,
+            rebalance_reason=rebalance_reason,
+            etf_vol_dict=etf_vol_dict
+        )
 
         # =========================================================================
         # 第二阶段：买入与资金配置 (PHASE 2: BUYS & ALLOCATION - CASH OUTFLOW)
@@ -641,6 +1004,16 @@ class UnifiedProductionLedger:
                 existing_sh = self.stock_positions.get(c, {}).get("shares", 0)
 
                 if target_sh > existing_sh:
+                    needed_sh = target_sh - existing_sh
+                    self.orders_log.append({
+                        "trade_date": format_trade_date(current_date),
+                        "code": c,
+                        "asset_type": "STOCK",
+                        "side": "BUY",
+                        "target_shares": int(target_sh),
+                        "order_shares": int(needed_sh),
+                        "reason": rebalance_reason
+                    })
                     op = stock_open_w.at[current_date, c] if (c in stock_open_w.columns and current_date in stock_open_w.index) else np.nan
                     pre_p = stock_preclose_w.at[current_date, c] if (c in stock_preclose_w.columns and current_date in stock_preclose_w.index) else np.nan
 
@@ -653,6 +1026,13 @@ class UnifiedProductionLedger:
 
                     if is_suspended:
                         self.suspension_blocks += 1
+                        self.blocked_orders_log.append({
+                            "trade_date": format_trade_date(current_date),
+                            "code": c,
+                            "side": "BUY",
+                            "order_shares": int(needed_sh),
+                            "reason": "suspended"
+                        })
                         continue
 
                     # 涨停检查: 涨停封死禁止买入
@@ -664,6 +1044,13 @@ class UnifiedProductionLedger:
                                 break
                     if is_limit_up_code(c, op, pre_p, is_st=is_st):
                         self.limit_up_rejections += 1
+                        self.blocked_orders_log.append({
+                            "trade_date": format_trade_date(current_date),
+                            "code": c,
+                            "side": "BUY",
+                            "order_shares": int(needed_sh),
+                            "reason": "limit_up"
+                        })
                         continue
 
                     # 共享 ADV 容量约束 (无数据返回 0 严格禁买)
@@ -690,6 +1077,25 @@ class UnifiedProductionLedger:
                             self.timing_traded_value += cost
                         self._record_executed_volume(c, current_date, buy_shares)
 
+                        self.fills_log.append({
+                            "trade_date": format_trade_date(current_date),
+                            "code": c,
+                            "side": "BUY",
+                            "shares": int(buy_shares),
+                            "price": float(op),
+                            "value": float(cost),
+                            "fee": float(fee)
+                        })
+                        self.fees_log.append({
+                            "trade_date": format_trade_date(current_date),
+                            "code": c,
+                            "side": "BUY",
+                            "asset_type": "STOCK",
+                            "commission": float(fee),
+                            "slippage": 0.0,
+                            "total_fee": float(fee)
+                        })
+
                         if c not in self.stock_positions:
                             self.stock_positions[c] = {
                                 "shares": buy_shares,
@@ -703,41 +1109,14 @@ class UnifiedProductionLedger:
                             self.stock_positions[c]["last_px"] = op
 
         # 4.2 ETF 买入流程
-        if etf_targets is not None and len(etf_targets) > 0:
-            for etf_code, tgt_pct in etf_targets.items():
-                target_etf_sh = target_etf_shares_map.get(etf_code, 0)
-                curr_etf_sh = self.etf_positions.get(etf_code, {}).get("shares", 0)
-
-                if target_etf_sh > curr_etf_sh:
-                    needed_etf_sh = target_etf_sh - curr_etf_sh
-                    s_df = etf_price_dict.get(etf_code)
-                    op = s_df.get(current_date, np.nan) if s_df is not None else np.nan
-                    if np.isfinite(op) and op > 0:
-                        max_aff_etf_sh = int(self.cash // (op * (1.0 + self.etf_fee_rate) * 100)) * 100
-                        buy_etf_sh = min(needed_etf_sh, max_aff_etf_sh)
-                        buy_etf_sh = (buy_etf_sh // 100) * 100
-                        if buy_etf_sh >= 100:
-                            cost = buy_etf_sh * op
-                            fee = cost * self.etf_fee_rate
-                            self.cash -= (cost + fee)
-                            self.total_etf_commission += fee
-                            self.total_trades += 1
-                            self.total_traded_value += cost
-                            if rebalance_reason == "monthly":
-                                self.selection_traded_value += cost
-                            else:
-                                self.timing_traded_value += cost
-                            if etf_code not in self.etf_positions:
-                                self.etf_positions[etf_code] = {
-                                    "shares": buy_etf_sh,
-                                    "tradable_shares": 0,
-                                    "locked_shares": buy_etf_sh,
-                                    "last_px": op
-                                }
-                            else:
-                                self.etf_positions[etf_code]["shares"] += buy_etf_sh
-                                self.etf_positions[etf_code]["locked_shares"] += buy_etf_sh
-                                self.etf_positions[etf_code]["last_px"] = op
+        self._execute_etf_buys(
+            current_date=current_date,
+            etf_targets=etf_targets,
+            target_etf_shares_map=target_etf_shares_map,
+            etf_price_dict=etf_price_dict,
+            rebalance_reason=rebalance_reason,
+            etf_vol_dict=etf_vol_dict
+        )
 
         # =========================================================================
         # 第三阶段：IM 期货对冲手数调整 (PHASE 3: FUTURES HEDGING ADJUSTMENT)
@@ -769,7 +1148,8 @@ class UnifiedProductionLedger:
         etf_price_dict=None,
         allow_buy=True,
         st_dict=None,
-        rebalance_reason="timing"
+        rebalance_reason="timing",
+        etf_vol_dict=None
     ):
         """
         审计整改(v2.3): 已有股票篮子等比例缩放与空仓重入 (Proportional Basket Scaling & Re-entry)
@@ -846,6 +1226,14 @@ class UnifiedProductionLedger:
                     target_etf_shares_map[etf_code] = int((target_val / op) // 100) * 100
                 else:
                     target_etf_shares_map[etf_code] = 0
+                    if tgt_pct > 0:
+                        self.blocked_orders_log.append({
+                            "trade_date": format_trade_date(current_date),
+                            "code": etf_code,
+                            "side": "BUY",
+                            "order_shares": 0,
+                            "reason": "missing_or_invalid_open_price"
+                        })
 
         # =========================================================================
         # 第一阶段：卖出流程 (PHASE 1: SELLS & TRIMS)
@@ -859,6 +1247,15 @@ class UnifiedProductionLedger:
                 continue
 
             excess_sh = h["shares"] - target_sh
+            self.orders_log.append({
+                "trade_date": format_trade_date(current_date),
+                "code": c,
+                "asset_type": "STOCK",
+                "side": "SELL",
+                "target_shares": int(target_sh),
+                "order_shares": int(excess_sh),
+                "reason": rebalance_reason
+            })
             op = stock_open_w.at[current_date, c] if (c in stock_open_w.columns and current_date in stock_open_w.index) else np.nan
             pre_p = stock_preclose_w.at[current_date, c] if (c in stock_preclose_w.columns and current_date in stock_preclose_w.index) else np.nan
 
@@ -870,6 +1267,13 @@ class UnifiedProductionLedger:
 
             if is_suspended:
                 self.suspension_blocks += 1
+                self.blocked_orders_log.append({
+                    "trade_date": format_trade_date(current_date),
+                    "code": c,
+                    "side": "SELL",
+                    "order_shares": int(excess_sh),
+                    "reason": "suspended"
+                })
                 self.pending_sell_orders[c] = {"shares": excess_sh, "reason": rebalance_reason}
                 continue
 
@@ -881,6 +1285,13 @@ class UnifiedProductionLedger:
                         break
             if is_limit_down_code(c, op, pre_p, is_st=is_st):
                 self.limit_down_locks += 1
+                self.blocked_orders_log.append({
+                    "trade_date": format_trade_date(current_date),
+                    "code": c,
+                    "side": "SELL",
+                    "order_shares": int(excess_sh),
+                    "reason": "limit_down"
+                })
                 self.pending_sell_orders[c] = {"shares": excess_sh, "reason": rebalance_reason}
                 continue
 
@@ -908,6 +1319,25 @@ class UnifiedProductionLedger:
                 h["last_px"] = op
                 self._record_executed_volume(c, current_date, sell_shares)
 
+                self.fills_log.append({
+                    "trade_date": format_trade_date(current_date),
+                    "code": c,
+                    "side": "SELL",
+                    "shares": int(sell_shares),
+                    "price": float(op),
+                    "value": float(proceeds),
+                    "fee": float(fee)
+                })
+                self.fees_log.append({
+                    "trade_date": format_trade_date(current_date),
+                    "code": c,
+                    "side": "SELL",
+                    "asset_type": "STOCK",
+                    "commission": float(fee),
+                    "slippage": 0.0,
+                    "total_fee": float(fee)
+                })
+
             remaining_excess = h["shares"] - target_sh
             if remaining_excess >= 100:
                 self.pending_sell_orders[c] = {"shares": remaining_excess, "reason": rebalance_reason}
@@ -919,33 +1349,13 @@ class UnifiedProductionLedger:
                 self.pending_sell_orders.pop(c, None)
 
         # ETF 卖出
-        all_current_etfs = list(self.etf_positions.keys())
-        for etf_code in all_current_etfs:
-            h_etf = self.etf_positions[etf_code]
-            target_etf_sh = target_etf_shares_map.get(etf_code, 0)
-            if h_etf["shares"] > target_etf_sh:
-                excess_etf_sh = h_etf["shares"] - target_etf_sh
-                s_df = etf_price_dict.get(etf_code) if etf_price_dict else None
-                op = s_df.get(current_date, np.nan) if s_df is not None else np.nan
-                if np.isfinite(op) and op > 0:
-                    sell_etf_sh = min(h_etf["tradable_shares"], excess_etf_sh)
-                    sell_etf_sh = (sell_etf_sh // 100) * 100
-                    if sell_etf_sh >= 100:
-                        proceeds = sell_etf_sh * op
-                        fee = proceeds * self.etf_fee_rate
-                        self.cash += (proceeds - fee)
-                        self.total_etf_commission += fee
-                        self.total_trades += 1
-                        self.total_traded_value += proceeds
-                        if rebalance_reason == "monthly":
-                            self.selection_traded_value += proceeds
-                        else:
-                            self.timing_traded_value += proceeds
-                        h_etf["shares"] -= sell_etf_sh
-                        h_etf["tradable_shares"] -= sell_etf_sh
-                        h_etf["last_px"] = op
-                if h_etf["shares"] <= 0:
-                    self.etf_positions.pop(etf_code, None)
+        self._execute_etf_sells(
+            current_date=current_date,
+            target_etf_shares_map=target_etf_shares_map,
+            etf_price_dict=etf_price_dict,
+            rebalance_reason=rebalance_reason,
+            etf_vol_dict=etf_vol_dict
+        )
 
         # =========================================================================
         # 第二阶段：买入流程 (PHASE 2: BUYS)
@@ -955,6 +1365,15 @@ class UnifiedProductionLedger:
                 curr_sh = self.stock_positions.get(c, {}).get("shares", 0)
                 if target_sh > curr_sh:
                     needed_sh = target_sh - curr_sh
+                    self.orders_log.append({
+                        "trade_date": format_trade_date(current_date),
+                        "code": c,
+                        "asset_type": "STOCK",
+                        "side": "BUY",
+                        "target_shares": int(target_sh),
+                        "order_shares": int(needed_sh),
+                        "reason": rebalance_reason
+                    })
                     op = stock_open_w.at[current_date, c] if (c in stock_open_w.columns and current_date in stock_open_w.index) else np.nan
                     pre_p = stock_preclose_w.at[current_date, c] if (c in stock_preclose_w.columns and current_date in stock_preclose_w.index) else np.nan
 
@@ -966,6 +1385,13 @@ class UnifiedProductionLedger:
 
                     if is_suspended:
                         self.suspension_blocks += 1
+                        self.blocked_orders_log.append({
+                            "trade_date": format_trade_date(current_date),
+                            "code": c,
+                            "side": "BUY",
+                            "order_shares": int(needed_sh),
+                            "reason": "suspended"
+                        })
                         continue
 
                     is_st = False
@@ -976,6 +1402,13 @@ class UnifiedProductionLedger:
                                 break
                     if is_limit_up_code(c, op, pre_p, is_st=is_st):
                         self.limit_up_rejections += 1
+                        self.blocked_orders_log.append({
+                            "trade_date": format_trade_date(current_date),
+                            "code": c,
+                            "side": "BUY",
+                            "order_shares": int(needed_sh),
+                            "reason": "limit_up"
+                        })
                         continue
 
                     max_adv = self._get_daily_adv_quota(stock_vol_w, c, current_date)
@@ -1011,38 +1444,68 @@ class UnifiedProductionLedger:
                             h["last_px"] = op
                         self._record_executed_volume(c, current_date, buy_shares)
 
+                        self.fills_log.append({
+                            "trade_date": format_trade_date(current_date),
+                            "code": c,
+                            "side": "BUY",
+                            "shares": int(buy_shares),
+                            "price": float(op),
+                            "value": float(cost),
+                            "fee": float(fee)
+                        })
+                        self.fees_log.append({
+                            "trade_date": format_trade_date(current_date),
+                            "code": c,
+                            "side": "BUY",
+                            "asset_type": "STOCK",
+                            "commission": float(fee),
+                            "slippage": 0.0,
+                            "total_fee": float(fee)
+                        })
+
         # ETF 买入
-        if etf_targets is not None and len(etf_targets) > 0 and etf_price_dict:
-            for etf_code, tgt_pct in etf_targets.items():
-                target_etf_sh = target_etf_shares_map.get(etf_code, 0)
-                curr_etf_sh = self.etf_positions.get(etf_code, {}).get("shares", 0)
-                if target_etf_sh > curr_etf_sh:
-                    needed_etf_sh = target_etf_sh - curr_etf_sh
-                    s_df = etf_price_dict.get(etf_code)
-                    op = s_df.get(current_date, np.nan) if s_df is not None else np.nan
-                    if np.isfinite(op) and op > 0:
-                        max_aff_etf_sh = int(self.cash // (op * (1.0 + self.etf_fee_rate) * 100)) * 100
-                        buy_etf_sh = min(needed_etf_sh, max_aff_etf_sh)
-                        buy_etf_sh = (buy_etf_sh // 100) * 100
-                        if buy_etf_sh >= 100:
-                            cost = buy_etf_sh * op
-                            fee = cost * self.etf_fee_rate
-                            self.cash -= (cost + fee)
-                            self.total_etf_commission += fee
-                            self.total_trades += 1
-                            self.total_traded_value += cost
-                            if rebalance_reason == "monthly":
-                                self.selection_traded_value += cost
-                            else:
-                                self.timing_traded_value += cost
-                            if etf_code not in self.etf_positions:
-                                self.etf_positions[etf_code] = {
-                                    "shares": buy_etf_sh,
-                                    "tradable_shares": 0,
-                                    "locked_shares": buy_etf_sh,
-                                    "last_px": op
-                                }
-                            else:
-                                self.etf_positions[etf_code]["shares"] += buy_etf_sh
-                                self.etf_positions[etf_code]["locked_shares"] += buy_etf_sh
-                                self.etf_positions[etf_code]["last_px"] = op
+        self._execute_etf_buys(
+            current_date=current_date,
+            etf_targets=etf_targets,
+            target_etf_shares_map=target_etf_shares_map,
+            etf_price_dict=etf_price_dict,
+            rebalance_reason=rebalance_reason,
+            etf_vol_dict=etf_vol_dict
+        )
+
+    def export_manifest_logs(self, output_dir: str):
+        """
+        导出符合审计规范的全套流水与状态日志
+        """
+        import os
+        os.makedirs(output_dir, exist_ok=True)
+        if self.daily_nav_log:
+            pd.DataFrame(self.daily_nav_log).to_csv(os.path.join(output_dir, "daily_nav.csv"), index=False)
+        else:
+            pd.DataFrame(columns=["trade_date", "nav", "total_equity", "stock_val", "etf_val", "cash", "futures_margin", "im_lots"]).to_csv(os.path.join(output_dir, "daily_nav.csv"), index=False)
+
+        if self.daily_holdings_log:
+            pd.DataFrame(self.daily_holdings_log).to_csv(os.path.join(output_dir, "daily_actual_holdings.csv"), index=False)
+        else:
+            pd.DataFrame(columns=["trade_date", "code", "asset_type", "shares", "tradable_shares", "price", "market_val", "weight"]).to_csv(os.path.join(output_dir, "daily_actual_holdings.csv"), index=False)
+
+        if self.orders_log:
+            pd.DataFrame(self.orders_log).to_csv(os.path.join(output_dir, "orders.csv"), index=False)
+        else:
+            pd.DataFrame(columns=["trade_date", "code", "asset_type", "side", "target_shares", "order_shares", "reason"]).to_csv(os.path.join(output_dir, "orders.csv"), index=False)
+
+        if self.fills_log:
+            pd.DataFrame(self.fills_log).to_csv(os.path.join(output_dir, "fills.csv"), index=False)
+        else:
+            pd.DataFrame(columns=["trade_date", "code", "side", "shares", "price", "value", "fee"]).to_csv(os.path.join(output_dir, "fills.csv"), index=False)
+
+        if self.fees_log:
+            pd.DataFrame(self.fees_log).to_csv(os.path.join(output_dir, "fees.csv"), index=False)
+        else:
+            pd.DataFrame(columns=["trade_date", "code", "fee_type", "amount"]).to_csv(os.path.join(output_dir, "fees.csv"), index=False)
+
+        if self.blocked_orders_log:
+            pd.DataFrame(self.blocked_orders_log).to_csv(os.path.join(output_dir, "blocked_orders.csv"), index=False)
+        else:
+            pd.DataFrame(columns=["trade_date", "code", "side", "order_shares", "reason"]).to_csv(os.path.join(output_dir, "blocked_orders.csv"), index=False)
+

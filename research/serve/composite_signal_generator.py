@@ -165,17 +165,40 @@ def generate_composite_signal(trade_date=None, capital=1_000_000.0):
     else:
         snap_scores = pd.Series(dtype=float)
     
-    # 阶段4.1: Direction A1 条件反转与基本面排雷 (PIT: ann_date <= target_d)
+    # 阶段4.1: Direction A1 条件反转与基本面排雷 (P0-7 & P0-8: 严格调用单一共享函数 evaluate_a1_filter)
     bad_news_removed = []
+    a1_rule_ver = "unknown"
+    a1_rule_hash = "unknown"
     try:
         from load_pit_fundamental_events import PITFundamentalEventManager
+        from pit_filter_rule import evaluate_a1_filter, PITFilterFailureError
+
         pit_mgr = PITFundamentalEventManager()
         bad_news_stocks = pit_mgr.get_negative_news_stocks(target_d, lookback_calendar_days=30)
-        if bad_news_stocks:
-            bad_news_removed = [c for c in snap_scores.index if c in bad_news_stocks]
-            snap_scores = snap_scores[~snap_scores.index.isin(bad_news_stocks)]
+        
+        # 提取截面 ret_1m
+        sub_panel = panel[panel["trade_date"] == snap]
+        ret_1m_dict = dict(zip(sub_panel["ts_code"], sub_panel["ret_1m"]))
+        
+        filter_res = evaluate_a1_filter(
+            candidate_codes=snap_scores.index,
+            bad_news_stocks=bad_news_stocks,
+            ret_1m_dict=ret_1m_dict,
+            fail_closed=True
+        )
+        a1_rule_ver = filter_res["rule_version"]
+        a1_rule_hash = filter_res["rule_hash"]
+        bad_news_removed = filter_res["filtered_codes"]
+        snap_scores = snap_scores.loc[filter_res["passed_codes"]]
     except Exception as e:
-        print(f"[Warning] PIT 暴雷股过滤加载异常: {e}")
+        # P0-8: 异常必须熔断，严禁静默放行
+        print(f"[CRITICAL FAIL-CLOSED] PIT 暴雷排雷异常触发安全熔断: {e}")
+        timing_w = 0.0
+        final_stock_w = 0.0
+        defensive_w = 1.0
+        timing_label = f"BLOCKED (PIT Filter Error: {e})"
+        timing_tag = "BLOCKED_SAFETY_FAIL_CLOSED"
+        snap_scores = pd.Series(dtype=float)
 
     top_n = TOP_N_CHOICES["T40"]
     max_ind = MAX_PER_IND["T40"]
@@ -262,6 +285,8 @@ def generate_composite_signal(trade_date=None, capital=1_000_000.0):
         },
         "pit_fundamental_filter": {
             "applied": True,
+            "rule_version": a1_rule_ver,
+            "rule_hash": a1_rule_hash,
             "lookback_calendar_days": 30,
             "bad_news_filtered_count": len(bad_news_removed),
             "filtered_samples": bad_news_removed[:10]

@@ -247,4 +247,11 @@ def run_attribution():
 
 
 if __name__ == "__main__":
-    run_attribution()
+    from run_phase27_ablation_and_ch4 import main
+    main()
+    # 同步更新根目录下的 ch3_ch4_attribution_report.json
+    src_json = os.path.join(EXP_DIR, "artifacts", "ch4_attribution", "regression_summary.json")
+    if os.path.exists(src_json):
+        import shutil
+        shutil.copyfile(src_json, OUT_ATTRIBUTION_JSON)
+        print(f"[OK] 已将最新 Newey-West HAC 归因同步至 {OUT_ATTRIBUTION_JSON}")
