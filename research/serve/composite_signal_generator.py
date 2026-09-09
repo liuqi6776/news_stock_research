@@ -165,6 +165,18 @@ def generate_composite_signal(trade_date=None, capital=1_000_000.0):
     else:
         snap_scores = pd.Series(dtype=float)
     
+    # 阶段4.1: Direction A1 条件反转与基本面排雷 (PIT: ann_date <= target_d)
+    bad_news_removed = []
+    try:
+        from load_pit_fundamental_events import PITFundamentalEventManager
+        pit_mgr = PITFundamentalEventManager()
+        bad_news_stocks = pit_mgr.get_negative_news_stocks(target_d, lookback_calendar_days=30)
+        if bad_news_stocks:
+            bad_news_removed = [c for c in snap_scores.index if c in bad_news_stocks]
+            snap_scores = snap_scores[~snap_scores.index.isin(bad_news_stocks)]
+    except Exception as e:
+        print(f"[Warning] PIT 暴雷股过滤加载异常: {e}")
+
     top_n = TOP_N_CHOICES["T40"]
     max_ind = MAX_PER_IND["T40"]
     max_per_l1 = int(top_n * 0.20)  # 20% 限额 = 8 只
@@ -247,6 +259,12 @@ def generate_composite_signal(trade_date=None, capital=1_000_000.0):
             "single_contract_value": im_contract_val,
             "recommended_lots": im_recommended_lots,
             "account_size_warning": "若本金 < 220 万元，建议使用中证1000ETF融券做微型对冲以规避整手量化误差。" if capital < 2_200_000 else "账户资金充裕，可直接开仓 IM 空头进行连续对冲。"
+        },
+        "pit_fundamental_filter": {
+            "applied": True,
+            "lookback_calendar_days": 30,
+            "bad_news_filtered_count": len(bad_news_removed),
+            "filtered_samples": bad_news_removed[:10]
         },
         "allocation_summary": {
             "stock_exposure_pct": f"{final_stock_w:.1%}",

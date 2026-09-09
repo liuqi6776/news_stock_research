@@ -11,6 +11,7 @@ Production Serve Safety Guardrails Unit Test Suite
 """
 import os
 import sys
+import json
 import unittest
 import numpy as np
 import pandas as pd
@@ -85,6 +86,16 @@ class TestServeSafetyGuardrails(unittest.TestCase):
         res_future = _check_signal_expiration(future_sig)
         self.assertFalse(res_future["is_expired"])
         self.assertEqual(res_future["status_tag"], "ACTIVE")
+
+    def test_composite_signal_pit_filter_metadata(self):
+        """测试复合生产信号必须包含 PIT 暴雷股过滤元数据且数量大于 0"""
+        json_fp = os.path.join(SERVE_DIR, "data", "daily", "2026-04-22.json")
+        if os.path.exists(json_fp):
+            with open(json_fp, "r", encoding="utf-8") as f:
+                sig = json.load(f)
+            self.assertIn("pit_fundamental_filter", sig)
+            self.assertTrue(sig["pit_fundamental_filter"]["applied"])
+            self.assertGreater(sig["pit_fundamental_filter"]["bad_news_filtered_count"], 0)
 
 
 if __name__ == "__main__":

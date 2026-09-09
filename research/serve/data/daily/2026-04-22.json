@@ -1,0 +1,491 @@
+{
+  "strategy_name": "全市场ENS选股+S123三档择时+净值降档+IM低基差对冲",
+  "strategy_version": "v2.2.0-composite",
+  "signal_date": "2026-04-22",
+  "rebalance_date": "2026-04-01",
+  "generated_at": "2026-09-09 13:57:07",
+  "account_capital": 1000000.0,
+  "macro_timing": {
+    "s123_total_score": 1,
+    "status_label": "S1/S0 (高估或风险段 / 清仓避险 0%)",
+    "action_tag": "DEFENSIVE_0",
+    "s1_pe_low": 1,
+    "s2_erp_high": 0,
+    "s3_dd_deep": 0
+  },
+  "risk_control": {
+    "dd_degrade_threshold": -0.1,
+    "current_drawdown": -0.055,
+    "is_degraded": false,
+    "scale_factor": 1.0,
+    "target_stock_exposure": 0.0,
+    "target_defensive_exposure": 1.0
+  },
+  "im_futures_hedge": {
+    "target_beta": 0.5,
+    "target_hedge_notional": 0.0,
+    "single_contract_value": 1100000.0,
+    "recommended_lots": 0.0,
+    "account_size_warning": "若本金 < 220 万元，建议使用中证1000ETF融券做微型对冲以规避整手量化误差。"
+  },
+  "pit_fundamental_filter": {
+    "applied": true,
+    "lookback_calendar_days": 30,
+    "bad_news_filtered_count": 214,
+    "filtered_samples": [
+      "600611.SH",
+      "600676.SH",
+      "600689.SH",
+      "600616.SH",
+      "600691.SH",
+      "600683.SH",
+      "600719.SH",
+      "600657.SH",
+      "600655.SH",
+      "600609.SH"
+    ]
+  },
+  "allocation_summary": {
+    "stock_exposure_pct": "0.0%",
+    "defensive_exposure_pct": "100.0%",
+    "stock_count": 40,
+    "defensive_count": 3,
+    "max_single_stock_weight": "0.00%"
+  },
+  "holdings_picks": [
+    {
+      "rank": 1,
+      "ts_code": "002086.SZ",
+      "name": "东方海洋",
+      "industry": "渔业",
+      "industry_l1": "农林牧渔",
+      "ens_score": 0.7931,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 2,
+      "ts_code": "600789.SH",
+      "name": "鲁抗医药",
+      "industry": "化学制药",
+      "industry_l1": "医药生物",
+      "ens_score": 0.793,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 3,
+      "ts_code": "000025.SZ",
+      "name": "特力Ａ",
+      "industry": "综合类",
+      "industry_l1": "综合",
+      "ens_score": 0.7929,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 4,
+      "ts_code": "600267.SH",
+      "name": "海正药业",
+      "industry": "化学制药",
+      "industry_l1": "医药生物",
+      "ens_score": 0.7928,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 5,
+      "ts_code": "600617.SH",
+      "name": "国新能源",
+      "industry": "供气供热",
+      "industry_l1": "公用事业",
+      "ens_score": 0.7927,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 6,
+      "ts_code": "000650.SZ",
+      "name": "仁和药业",
+      "industry": "中成药",
+      "industry_l1": "医药生物",
+      "ens_score": 0.7926,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 7,
+      "ts_code": "002030.SZ",
+      "name": "达安基因",
+      "industry": "医疗保健",
+      "industry_l1": "医药生物",
+      "ens_score": 0.7925,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 8,
+      "ts_code": "600208.SH",
+      "name": "衢州发展",
+      "industry": "全国地产",
+      "industry_l1": "房地产",
+      "ens_score": 0.7924,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 9,
+      "ts_code": "000779.SZ",
+      "name": "甘咨询",
+      "industry": "建筑工程",
+      "industry_l1": "建筑装饰",
+      "ens_score": 0.7923,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 10,
+      "ts_code": "600396.SH",
+      "name": "华电辽能",
+      "industry": "火力发电",
+      "industry_l1": "公用事业",
+      "ens_score": 0.7922,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 11,
+      "ts_code": "600664.SH",
+      "name": "哈药股份",
+      "industry": "化学制药",
+      "industry_l1": "医药生物",
+      "ens_score": 0.7921,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 12,
+      "ts_code": "000937.SZ",
+      "name": "冀中能源",
+      "industry": "煤炭开采",
+      "industry_l1": "煤炭",
+      "ens_score": 0.792,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 13,
+      "ts_code": "600771.SH",
+      "name": "广誉远",
+      "industry": "中成药",
+      "industry_l1": "医药生物",
+      "ens_score": 0.7919,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 14,
+      "ts_code": "002349.SZ",
+      "name": "精华制药",
+      "industry": "中成药",
+      "industry_l1": "医药生物",
+      "ens_score": 0.7918,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 15,
+      "ts_code": "000926.SZ",
+      "name": "福星股份",
+      "industry": "区域地产",
+      "industry_l1": "房地产",
+      "ens_score": 0.7917,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 16,
+      "ts_code": "000012.SZ",
+      "name": "南玻Ａ",
+      "industry": "玻璃",
+      "industry_l1": "建筑材料",
+      "ens_score": 0.7916,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 17,
+      "ts_code": "000900.SZ",
+      "name": "现代投资",
+      "industry": "路桥",
+      "industry_l1": "交通运输",
+      "ens_score": 0.7915,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 18,
+      "ts_code": "002275.SZ",
+      "name": "桂林三金",
+      "industry": "中成药",
+      "industry_l1": "医药生物",
+      "ens_score": 0.7914,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 19,
+      "ts_code": "600050.SH",
+      "name": "中国联通",
+      "industry": "电信运营",
+      "industry_l1": "通信",
+      "ens_score": 0.7913,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 20,
+      "ts_code": "002314.SZ",
+      "name": "南山控股",
+      "industry": "区域地产",
+      "industry_l1": "房地产",
+      "ens_score": 0.7909,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 21,
+      "ts_code": "000570.SZ",
+      "name": "苏常柴Ａ",
+      "industry": "农用机械",
+      "industry_l1": "机械设备",
+      "ens_score": 0.7907,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 22,
+      "ts_code": "000037.SZ",
+      "name": "深南电A",
+      "industry": "火力发电",
+      "industry_l1": "公用事业",
+      "ens_score": 0.7906,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 23,
+      "ts_code": "000096.SZ",
+      "name": "广聚能源",
+      "industry": "石油贸易",
+      "industry_l1": "石油石化",
+      "ens_score": 0.7905,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 24,
+      "ts_code": "000755.SZ",
+      "name": "山西高速",
+      "industry": "路桥",
+      "industry_l1": "交通运输",
+      "ens_score": 0.7904,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 25,
+      "ts_code": "000601.SZ",
+      "name": "韶能股份",
+      "industry": "水力发电",
+      "industry_l1": "公用事业",
+      "ens_score": 0.7903,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 26,
+      "ts_code": "000552.SZ",
+      "name": "甘肃能化",
+      "industry": "煤炭开采",
+      "industry_l1": "煤炭",
+      "ens_score": 0.7901,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 27,
+      "ts_code": "600809.SH",
+      "name": "山西汾酒",
+      "industry": "白酒",
+      "industry_l1": "食品饮料",
+      "ens_score": 0.7901,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 28,
+      "ts_code": "000789.SZ",
+      "name": "万年青",
+      "industry": "水泥",
+      "industry_l1": "建筑材料",
+      "ens_score": 0.7898,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 29,
+      "ts_code": "600983.SH",
+      "name": "惠而浦",
+      "industry": "家用电器",
+      "industry_l1": "家用电器",
+      "ens_score": 0.7897,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 30,
+      "ts_code": "000605.SZ",
+      "name": "渤海股份",
+      "industry": "水务",
+      "industry_l1": "公用事业",
+      "ens_score": 0.7895,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 31,
+      "ts_code": "600248.SH",
+      "name": "陕建股份",
+      "industry": "建筑工程",
+      "industry_l1": "建筑装饰",
+      "ens_score": 0.7894,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 32,
+      "ts_code": "600123.SH",
+      "name": "兰花科创",
+      "industry": "煤炭开采",
+      "industry_l1": "煤炭",
+      "ens_score": 0.7893,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 33,
+      "ts_code": "600035.SH",
+      "name": "楚天高速",
+      "industry": "路桥",
+      "industry_l1": "交通运输",
+      "ens_score": 0.7891,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 34,
+      "ts_code": "000596.SZ",
+      "name": "古井贡酒",
+      "industry": "白酒",
+      "industry_l1": "食品饮料",
+      "ens_score": 0.7889,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 35,
+      "ts_code": "600423.SH",
+      "name": "*ST柳化",
+      "industry": "农药化肥",
+      "industry_l1": "基础化工",
+      "ens_score": 0.7887,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 36,
+      "ts_code": "600982.SH",
+      "name": "宁波能源",
+      "industry": "供气供热",
+      "industry_l1": "公用事业",
+      "ens_score": 0.7884,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 37,
+      "ts_code": "600780.SH",
+      "name": "通宝能源",
+      "industry": "火力发电",
+      "industry_l1": "公用事业",
+      "ens_score": 0.7882,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 38,
+      "ts_code": "002060.SZ",
+      "name": "广东建工",
+      "industry": "建筑工程",
+      "industry_l1": "建筑装饰",
+      "ens_score": 0.7881,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 39,
+      "ts_code": "000713.SZ",
+      "name": "国投丰乐",
+      "industry": "种植业",
+      "industry_l1": "农林牧渔",
+      "ens_score": 0.7878,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    },
+    {
+      "rank": 40,
+      "ts_code": "600449.SH",
+      "name": "宁夏建材",
+      "industry": "水泥",
+      "industry_l1": "建筑材料",
+      "ens_score": 0.7877,
+      "target_weight": 0.0,
+      "target_amount": 0.0
+    }
+  ],
+  "defensive_picks": [
+    {
+      "ts_code": "511990.SH",
+      "name": "华宝添益ETF (短债货币)",
+      "category": "货币/流动性",
+      "target_weight": 0.3333,
+      "target_amount": 333333.33
+    },
+    {
+      "ts_code": "511260.SH",
+      "name": "十年国债ETF (信用债)",
+      "category": "债券避险",
+      "target_weight": 0.3333,
+      "target_amount": 333333.33
+    },
+    {
+      "ts_code": "518880.SH",
+      "name": "黄金ETF (大宗商品)",
+      "category": "抗通胀避险",
+      "target_weight": 0.3333,
+      "target_amount": 333333.33
+    }
+  ],
+  "performance_snapshot": {
+    "full_period_cagr": "11.80%",
+    "full_period_sharpe": 0.77,
+    "full_period_maxdd_daily": "-25.48%",
+    "full_period_maxdd_monthly": "-19.02%",
+    "hedged_beta_05_cagr": "11.78%",
+    "hedged_beta_05_sharpe": 0.94,
+    "hedged_beta_05_maxdd_monthly": "-8.01%",
+    "hedged_beta_05_calmar": 1.08,
+    "backtest_range": "2019-06 ~ 2026-08 (1748 交易日)"
+  }
+}
