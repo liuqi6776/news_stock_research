@@ -16,8 +16,14 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 
-class PearsonRankLoss(nn.Module):
-    """截面皮尔逊/近似排序损失函数 (直接最大化截面 IC)"""
+class PearsonCorrelationLoss(nn.Module):
+    """
+    截面皮尔逊相关系数损失函数 (Cross-Sectional Pearson Correlation Loss)
+    
+    用于直接最大化截面连续预测值与目标值之间的皮尔逊相关性 (Loss = 1 - Pearson_Corr)。
+    注：这是截面排序 IC (Spearman Rank IC) 的高效可微平滑代理 (Smooth Surrogate)，
+    在反向传播中提供良好梯度，训练时直接驱动预测序列与收益率正相关。
+    """
     def __init__(self, eps=1e-8):
         super().__init__()
         self.eps = eps
@@ -33,9 +39,13 @@ class PearsonRankLoss(nn.Module):
         cov = torch.mean(pred_c * target_c)
         corr = cov / (pred_std * target_std + self.eps)
 
-        # 损失为 1 - IC
+        # 损失为 1 - Corr
         loss = 1.0 - corr
         return loss
+
+
+# 向后兼容别名
+PearsonRankLoss = PearsonCorrelationLoss
 
 
 class CSRelationalTransformer(nn.Module):

@@ -38,9 +38,18 @@ def main():
         return
 
     with open(JSON_PATH, "r", encoding="utf-8") as f:
-        metrics = json.load(f)
+        raw_metrics = json.load(f)
+
+    metrics = {}
+    for k, v in raw_metrics.items():
+        nk = "★ ens_hybrid_cs_ultimate_synergy" if "ultimate" in k else k
+        metrics[nk] = v
 
     df_nav = pd.read_csv(NAV_CSV, index_col=0)
+    df_nav.columns = [
+        "★ ens_hybrid_cs_ultimate_synergy" if "ultimate" in c else c
+        for c in df_nav.columns
+    ]
     df_nav_raw = df_nav.copy()
     df_nav.index = pd.to_datetime(df_nav.index.astype(str))
 
@@ -215,7 +224,7 @@ def main():
 # Comprehensive Research Report: Integrating Sentiment Cycle Timing with ENS-Hybrid-CS Alpha Engine
 
 **实验时间 / Experiment Time**: 2026-09-08  
-**账本标准 / Ledger Standard**: 生产级 A 股微观单现金池真实账本 v2.2 (100股整手 / 真实 T+1 状态机 / 10 bps 双边交易摩擦 / 开盘涨跌停拦截 / 方案 1C 成本感知平滑微调 / 已有持仓篮子等比例缩放 `scale_stock_exposure`)  
+**账本标准 / Ledger Standard**: 生产级 A 股微观单现金池真实账本 v2.3 (100股整手 / 真实 T+1 状态机 / 10 bps 双边交易摩擦 / 开盘涨跌停拦截 / 方案 1C 成本感知平滑微调 / 已有持仓篮子等比例缩放 `scale_stock_exposure`，支持背离仅允许平仓与零持仓平稳建仓)  
 **验证窗口 / OOS Window**: 2023-01 至 2026-08 (严格 D-1 盘后信号判定 -> D 日开盘撮合执行，全周期零前瞻偏差)  
 
 ---
@@ -226,12 +235,12 @@ def main():
    - 当我们将新研发的当前最优选股模型 **`★ ENS-Hybrid-CS`**（70% 紧凑正交 GBDT-14 + 30% 截面分层关系 Transformer）与**短线微观情绪周期择时体系**（五大指标合成连续 SCS）深度融合后，策略表现实现了非线性的跨越式提升！
    - 在无择时的纯多头状态下，ENS-Hybrid-CS 年化收益为 **{metrics[pure_col]['cagr']:.2f}%**，夏普为 **{metrics[pure_col]['sharpe']:.2f}**，最大回撤 **{metrics[pure_col]['max_dd']:.2f}%**；
    - 接入 **连续线性 SCS 情绪择时（结合方案 1C 成本感知平滑与已有篮子等比例缩放）** 后，策略在 2024 年初流动性踩踏与熊市震荡期间主动空仓避险，将年化收益提升至 **{metrics[scs_col]['cagr']:.2f}%**，夏普比率跃升至 **{metrics[scs_col]['sharpe']:.2f}**，最大回撤收敛至 **{metrics[scs_col]['max_dd']:.2f}%**；
-   - 最终，叠加动态逆波动率上限与大类资产避险停泊的 **`★ 终极多要素协同方案 (Ultimate Integrated Solution)`** 实现了惊人的巅峰业绩：**年化收益率 (CAGR) {metrics[ult_col]['cagr']:.2f}%**，**夏普比率 (Sharpe) {metrics[ult_col]['sharpe']:.2f}**，**全历史最大回撤收窄至 {metrics[ult_col]['max_dd']:.2f}%**，**卡玛比率 (Calmar) 突破至 {metrics[ult_col]['calmar']:.2f}**，累计总收益达到 **+{metrics[ult_col]['total_return']:.2f}%**（大幅超越中证1000指数基准的 {metrics[bm_col]['total_return']:+.2f}%）！
+   - 最终，叠加动态逆波动率上限与大类资产避险停泊的 **`★ 终极多要素协同方案 (Ultimate Integrated Solution)`** 实现了坚实的实证表现：**年化收益率 (CAGR) {metrics[ult_col]['cagr']:.2f}%**，**夏普比率 (Sharpe) {metrics[ult_col]['sharpe']:.2f}**，**全历史最大回撤为 {metrics[ult_col]['max_dd']:.2f}%**，**卡玛比率 (Calmar) 为 {metrics[ult_col]['calmar']:.2f}**，累计总收益达到 **+{metrics[ult_col]['total_return']:.2f}%**（大幅超越中证1000指数基准的 {metrics[bm_col]['total_return']:+.2f}%）！
 
 2. **微观择时机制的关键归因 / Microscopic Mechanism Attribution**:
-   - **方案 1C 成本感知平滑显著压降交易摩擦**：通过 8% 缓冲区与 0.5 调整系数，配合 `scale_stock_exposure` 规避了个股篮子强制等权再平衡，将全期交易笔数压缩至 1,200~1,400 笔，较未平滑版本减少了 **40% 以上的无谓换手**，净节省手续费摩擦 **4.5 万元**；
-   - **连续线性 SCS 完胜离散状态机**：消融实测证实，连续线性 SCS 的收益风险比显著优于复杂的六阶段离散状态机，消除了临界点附近的虚假频繁翻转，具备顶级的实盘鲁棒性；
-   - **多资产防御停泊提供安全气囊**：在情绪冰点与退潮期间，闲置资金停泊于国债 ETF (511010) 与黄金 ETF (518880)，使策略在左尾极端踩踏期间不仅没有资产缩水，反而斩获了避险资产的抗通胀与降息红利。
+   - **方案 1C 成本感知平滑与微观仓位缩放**：通过 8% 缓冲区与 0.5 调整系数，配合 `scale_stock_exposure` (支持背离仅允许平仓与零持仓重新买入)，在全期真实完成 **{metrics[ult_col]['trades']:,} 笔** 交易，累计手续费摩擦为 **{metrics[ult_col]['fees']/10000.0:.2f} 万元**。相比未作微调的频繁调仓，有效抑制了过度换手损耗；
+   - **连续线性 SCS 优于离散状态机**：消融实测证实，连续线性 SCS 的收益风险比显著优于复杂的六阶段离散状态机，消除了临界点附近的虚假频繁翻转，具备更好的实盘平滑度；
+   - **多资产防御停泊提供安全气囊**：在情绪冰点与退潮期间，闲置资金停泊于国债 ETF (511010) 与黄金 ETF (518880)，使策略在极端踩踏期间不仅避免了股票资产缩水，还获得了防御资产的抗通胀与降息红利。
 
 ---
 
@@ -267,15 +276,16 @@ def main():
 
 ---
 
-## 五、 生产级最终部署建议 / Production Deployment Recommendations
+## 五、 生产级最终部署建议与风险警示 / Production Deployment Recommendations & Risk Warnings
 
-1. **确立 `★ ens_hybrid_cs_ultimate_synergy` 为终局生产方案**:
-   - 彻底解决了过去单一依赖选股导致熊市跟随大盘大幅回撤（-23%~-25%）的问题；
-   - 借助短线情绪周期的微观温度计精准避开流动性冰点，使年化收益提升至 **{metrics[ult_col]['cagr']:.2f}%**，夏普由选股单模型的 {metrics[pure_col]['sharpe']:.2f} 跃升至 **{metrics[ult_col]['sharpe']:.2f}**，回撤锁死在 **{metrics[ult_col]['max_dd']:.2f}%**，具备顶级私募机构的收益风险特征。
-2. **生产环境流水线调度**:
-   - 每日 15:10 盘后：运行情绪指标更新脚本，计算当日 $SCS$ 得分与次日目标仓位；
-   - 每月末盘后：运行 `ENS-Hybrid-CS` 选股引擎，更新次月 40 只精选股票池；
-   - 每日 9:25 开盘前：挂单执行 `scale_stock_exposure` 比例平滑调仓。
+1. **客观评估历史回测表现与风险边界**:
+   - 历史回测表现不代表未来，更不能作为加杠杆或承诺保本的依据；
+   - 生产微观账本已严格计提每笔交易 100 股整手、开盘涨跌停拒绝、T+1 状态锁定与双边 10 bps 手续费，但实盘仍可能面临个股突发停牌、流动性冲击成本等滑点风险。
+2. **生产环境流水线调度与安全护栏 (S1–S6 严格防御)**:
+   - **每日 15:10 盘后**: 运行情绪指标更新脚本，计算当日 $SCS$ 得分；若 RS12 或关键择时信号缺失或出现 NaN，严格触发 `BLOCKED` 熔断机制，强制切入全现金或防御型 ETF，严禁默认看多；
+   - **每日 15:30 盘后**: 动态跟踪策略累计 NAV 回撤，若当前回撤超过 10%，自动触发敞口减半保护 (`dd_scale = 0.5`)；
+   - **每月末盘后**: 运行 `ENS-Hybrid-CS` 选股引擎，更新次月精选股票池；若合格股票不足 10 只，一律熔断不开新仓；
+   - **每日 9:25 开盘前**: 校验信号有效性（杜绝使用过期信号），挂单执行 `scale_stock_exposure` 比例平滑调仓。
 """
 
     with open(OUT_MD, "w", encoding="utf-8") as f:

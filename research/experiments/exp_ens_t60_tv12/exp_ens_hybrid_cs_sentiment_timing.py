@@ -46,12 +46,12 @@ from unified_production_ledger import (
     get_adv20_shares
 )
 from industry_l1 import build_l1_map
-from cs_relational_transformer import CSRelationalTransformer, PearsonRankLoss
+from cs_relational_transformer import CSRelationalTransformer, PearsonRankLoss, PearsonCorrelationLoss
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 REFINED_PANEL_FP = os.path.join(EXP_DIR, "stock_refined_factors_panel.parquet")
 SENTIMENT_CSV = os.path.join(EXP_DIR, "sentiment_daily_2020_2026.csv")
-PRED_CACHE_FP = os.path.join(EXP_DIR, "pred_scores_ens_hybrid_cs.parquet")
+PRED_CACHE_FP = os.path.join(EXP_DIR, "pred_scores_ens_hybrid_cs_v23.parquet")
 OUT_JSON = os.path.join(EXP_DIR, "ens_hybrid_cs_sentiment_timing_report.json")
 OUT_NAV_CSV = os.path.join(EXP_DIR, "ens_hybrid_cs_sentiment_timing_nav.csv")
 
@@ -147,22 +147,17 @@ def get_or_generate_ens_hybrid_scores():
     print(f"[选股打分] 缓存不存在，启动 GBDT-14 + CS-Transformer 训练生成打分...")
     panel = pd.read_parquet(REFINED_PANEL_FP)
 
-    # 日历与行业离散化
-    day_files = sorted(glob.glob(os.path.join(DATA_DIR, "data_day1", "*.parquet")))
-    cal_dates = sorted([int(os.path.basename(f).replace('.parquet', '')) for f in day_files if os.path.basename(f).replace('.parquet', '').isdigit()])
-    label_end_map = {d: cal_dates[min(i + 20, len(cal_dates) - 1)] for i, d in enumerate(cal_dates)}
-    panel["label_end_date"] = panel["trade_date"].map(label_end_map)
-
+    # 行业离散化
     panel["ind_clean"] = panel["industry"].fillna("其他")
     ind_cats = sorted(panel["ind_clean"].unique())
     ind_to_idx = {ind: i for i, ind in enumerate(ind_cats)}
     panel["ind_idx"] = panel["ind_clean"].map(ind_to_idx)
     num_industries = len(ind_cats)
 
-    FEATS_ORTHO_7 = [c for c in panel.columns if c.startswith("ortho_")]
+    FEATS_ORTHO_7 = sorted([c for c in panel.columns if c.startswith("ortho_")])
     FEATS_CORE_7 = ["ivol", "quality_safety_margin", "alpha_pv_divergence", "enh4_score",
                     "alpha_combo_short", "amihud_proxy_20", "chip_conc_20"]
-    FEATS_14 = list(set(FEATS_CORE_7 + FEATS_ORTHO_7))
+    FEATS_14 = sorted(list(set(FEATS_CORE_7 + FEATS_ORTHO_7)))
 
     all_dates = sorted(panel["trade_date"].unique())
     oos_start = 20230101
@@ -180,12 +175,13 @@ def get_or_generate_ens_hybrid_scores():
         cs_dict[d] = (X, ind, y, codes)
 
     # 初始化 CS-Transformer 并在 2023 样本外起点前进行全量基准预训练 (Warm-Start)
-    print(f"[选股引擎] 对 CS-Transformer 进行基准预训练 (2019-2022 样本内, 15 Epochs)...", flush=True)
+    # 严格使用 20221201 前已到期样本 (label_available_date < 20230101)
+    print(f"[选股引擎] 对 CS-Transformer 进行基准预训练 (2019-2022 纯样本内成熟期, 15 Epochs)...", flush=True)
     cs_model = CSRelationalTransformer(input_dim=len(FEATS_14), num_industries=num_industries, d_model=64, n_heads=4).to(DEVICE)
     optimizer = torch.optim.AdamW(cs_model.parameters(), lr=1e-3, weight_decay=1e-3)
-    criterion = PearsonRankLoss()
+    criterion = PearsonCorrelationLoss()
 
-    init_train_dates = [d for d in all_dates if d < oos_start and d in cs_dict]
+    init_train_dates = [d for d in all_dates if d in cs_dict and d < 20221201]
     for epoch in range(15):
         cs_model.train()
         for d in init_train_dates:
@@ -208,7 +204,8 @@ def get_or_generate_ens_hybrid_scores():
         if idx < 6 or m < oos_start:
             continue
 
-        tr_pool = panel[panel["label_end_date"] < m]
+        # 严格使用真实 label_available_date 判定成熟度，杜绝粗糙 i+20
+        tr_pool = panel[panel["label_available_date"] < m]
         if len(tr_pool) < 500:
             continue
 
@@ -216,7 +213,7 @@ def get_or_generate_ens_hybrid_scores():
         val_months = tr_months[-2:] if len(tr_months) >= 5 else []
         val_start_d = min(val_months) if val_months else m
 
-        train_mask = (tr_pool["label_end_date"] < val_start_d).values if val_months else np.ones(len(tr_pool), dtype=bool)
+        train_mask = (tr_pool["label_available_date"] < val_start_d).values if val_months else np.ones(len(tr_pool), dtype=bool)
         val_mask = tr_pool["trade_date"].isin(val_months).values if val_months else np.zeros(len(tr_pool), dtype=bool)
         om = panel[panel["trade_date"] == m]
 
@@ -262,8 +259,8 @@ def get_or_generate_ens_hybrid_scores():
         for code, sc in pen.items():
             cache_rows.append({"trade_date": m, "ts_code": code, "score": float(sc)})
 
-        if m % 10000 == 1231 or m == all_dates[-1]:
-            print(f"  -> 决策期 {m} 预测完成", flush=True)
+        if idx % 5 == 0 or m == all_dates[-1]:
+            print(f"  -> 决策期 {m} (进度: {idx}/{len(all_dates)}) 预测完成", flush=True)
 
     pd.DataFrame(cache_rows).to_parquet(PRED_CACHE_FP)
     print(f"[选股打分] 预测缓存生成完成并保存至: {PRED_CACHE_FP}", flush=True)
@@ -544,8 +541,11 @@ def main():
         # 策略 5: 连续线性 SCS 控仓 (方案 1C 成本感知平滑)
         # -----------------------------------------------------
         raw_linear_target = target_stock_pct_scs
-        # 方案 1C: 8% 宽带 + 0.5 调整系数
-        if abs(raw_linear_target - prev_scs_linear) >= 0.08:
+        # 方案 1C: 8% 宽带 + 0.5 调整系数 + 0.0 硬清仓避险通道
+        if raw_linear_target <= 0.001:
+            smooth_linear_target = 0.0
+            is_linear_change = (prev_scs_linear > 0.0)
+        elif abs(raw_linear_target - prev_scs_linear) >= 0.08:
             smooth_linear_target = prev_scs_linear + 0.50 * (raw_linear_target - prev_scs_linear)
             is_linear_change = True
         else:
@@ -565,7 +565,8 @@ def main():
         elif is_linear_change:
             prev_scs_linear = smooth_linear_target
             ledgers["ens_hybrid_cs_continuous_scs"].scale_stock_exposure(
-                cur_date, smooth_linear_target, open_w, preclose_w, vol_w, etf_lin, etf_price_dict, st_dict=st_dict
+                cur_date, smooth_linear_target, open_w, preclose_w, vol_w, etf_lin, etf_price_dict,
+                allow_buy=(smooth_linear_target > 0.0), st_dict=st_dict
             )
         else:
             ledgers["ens_hybrid_cs_continuous_scs"].process_daily_pending_orders(
@@ -591,8 +592,10 @@ def main():
             )
         elif is_gw_change:
             prev_phase_gw = decision_phase
+            allow_buy_gw = (decision_phase in ["回暖期", "发酵期", "高潮期"])
             ledgers["ens_hybrid_cs_golden_window"].scale_stock_exposure(
-                cur_date, target_gw, open_w, preclose_w, vol_w, etf_gw, etf_price_dict, st_dict=st_dict
+                cur_date, target_gw, open_w, preclose_w, vol_w, etf_gw, etf_price_dict,
+                allow_buy=allow_buy_gw, st_dict=st_dict
             )
         else:
             ledgers["ens_hybrid_cs_golden_window"].process_daily_pending_orders(
@@ -609,7 +612,10 @@ def main():
             vol_scale = 1.0
 
         raw_ult_target = raw_linear_target * vol_scale
-        if abs(raw_ult_target - prev_ultimate_tier) >= 0.08:
+        if raw_ult_target <= 0.001:
+            smooth_ult_target = 0.0
+            is_ult_change = (prev_ultimate_tier > 0.0)
+        elif abs(raw_ult_target - prev_ultimate_tier) >= 0.08:
             smooth_ult_target = prev_ultimate_tier + 0.50 * (raw_ult_target - prev_ultimate_tier)
             is_ult_change = True
         else:
@@ -628,8 +634,10 @@ def main():
             )
         elif is_ult_change:
             prev_ultimate_tier = smooth_ult_target
+            allow_buy_ult = (decision_phase not in ["分歧期", "退潮期"])
             ledgers["★ ens_hybrid_cs_ultimate_synergy"].scale_stock_exposure(
-                cur_date, smooth_ult_target, open_w, preclose_w, vol_w, etf_ult, etf_price_dict, st_dict=st_dict
+                cur_date, smooth_ult_target, open_w, preclose_w, vol_w, etf_ult, etf_price_dict,
+                allow_buy=allow_buy_ult, st_dict=st_dict
             )
         else:
             ledgers["★ ens_hybrid_cs_ultimate_synergy"].process_daily_pending_orders(

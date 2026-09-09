@@ -91,15 +91,27 @@ def build_signal(rb, execution_date, picks, ivw_weights, sig_rs12, name_map,
     removed    : {code: reason} 阶段4 剔除明细
     fail_closed: 订单名单 <10 只 → 沿用最近一期历史信号持仓
     """
-    rs12_on = bool(sig_rs12.loc[rb]) if rb in sig_rs12.index else True
-    rs12_val = float(sig_rs12.loc[rb]) if rb in sig_rs12.index else np.nan
+    # S2 安全阻断: 择时指标缺失或 NaN 时必须强制进入避险/阻断状态，严禁默认满仓
+    if rb not in sig_rs12.index or pd.isna(sig_rs12.loc[rb]):
+        rs12_on = False
+        rs12_val = np.nan
+        rs12_status = "BLOCKED (Missing RS12 Data)"
+    else:
+        raw_v = sig_rs12.loc[rb]
+        rs12_val = float(raw_v)
+        rs12_on = bool(rs12_val > 0)
+        rs12_status = "ACTIVE (Bullish)" if rs12_on else "DEFENSIVE (Bearish)"
 
     n_order = len(order_picks) if order_picks is not None else len(picks)
     if fail_closed:
-        action = f"订单名单过少, 沿用最近一期持仓 ({n_order} 只, fail-closed)"
-        position = "沿用上期持仓"
+        if n_order == 0:
+            action = "BLOCKED: 订单名单不足10只且无历史持仓，触发硬安全阻断 (空仓避险)"
+            position = "BLOCKED / 空仓"
+        else:
+            action = f"订单名单过少, 沿用最近一期持仓 ({n_order} 只, fail-closed)"
+            position = "沿用上期持仓"
     elif not rs12_on:
-        action = "持有 512100 ETF (全额, RS12 弱)"
+        action = f"持有 512100 ETF (全额, RS12 状态: {rs12_status})"
         position = "512100 ETF"
     else:
         action = f"满仓持有组合 (Top{TOP_N}→订单{n_order}, IVW120 权重 + 集中度约束)"
@@ -264,12 +276,16 @@ def main():
             order_codes, carry_w = prev
             print(f"[warn] {rb} 订单名单过少, fail-closed 沿用最近一期 {len(order_codes)} 只", flush=True)
         else:
-            order_codes = top_codes[:10]
-            print(f"[warn] {rb} 订单名单过少且无历史信号, 取信号名单前 10 只兜底", flush=True)
+            # S5 硬安全锁: 杜绝回退买入未经排雷的 top_codes[:10]！标记为不可执行阻断状态
+            print(f"[BLOCKED] {rb} 可交易股票不足 10 只且无历史信号，触发硬安全阻断！", flush=True)
+            order_codes = []
+            carry_w = {}
 
     # ---------- 阶段5: 集中度约束 (单股4% / 行业20% / Top5 20% / 容量5%×ADTV60) ----------
     if fail_closed and carry_w is not None:
         w2 = carry_w                          # fail-closed: 保持上期权重不动
+    elif not order_codes:
+        w2 = {}                               # 空仓阻断
     else:
         w_sub = ivw.reindex(order_codes)
         w_sub = w_sub / w_sub.sum()
@@ -284,7 +300,13 @@ def main():
 
     # execution_date = 下一交易日 (开盘执行)
     nxt = [d for d in trade_dates if d > rb]
-    execution_date = nxt[0] if nxt else rb
+    if nxt:
+        execution_date = nxt[0]
+    else:
+        # S2 日历对齐: 使用下一工作日推算，严禁回退填入 rb (昨天)
+        cur_dt = pd.to_datetime(str(rb), format="%Y%m%d")
+        next_dt = cur_dt + pd.offsets.BDay(1)
+        execution_date = next_dt.strftime("%Y%m%d")
 
     sig = build_signal(rb, execution_date, top, ivw, sig_rs12, name_map,
                        order_picks=list(w2.items()), removed=removed,

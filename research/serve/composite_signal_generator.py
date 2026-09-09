@@ -123,11 +123,25 @@ def generate_composite_signal(trade_date=None, capital=1_000_000.0):
         timing_tag = "DEFENSIVE_0"
 
     # 3. 组合净值回撤与降档监控 (-10% 熔断线)
-    peak_nav = 1.0
+    nav_history_fp = os.path.join(EXP_DIR, "ens_hybrid_cs_sentiment_timing_nav.csv")
     current_nav = 1.0
+    peak_nav = 1.0
     dd_val = 0.0
-    dd_degraded = False
-    dd_scale = 1.0
+    if os.path.exists(nav_history_fp):
+        try:
+            df_nav = pd.read_csv(nav_history_fp)
+            col = "★ ens_hybrid_cs_ultimate_synergy" if "★ ens_hybrid_cs_ultimate_synergy" in df_nav.columns else df_nav.columns[1]
+            if col in df_nav.columns and "trade_date" in df_nav.columns:
+                sub_nav = df_nav[df_nav["trade_date"] <= target_d][col].dropna()
+                if len(sub_nav) > 0:
+                    current_nav = float(sub_nav.iloc[-1])
+                    peak_nav = float(sub_nav.cummax().iloc[-1])
+                    dd_val = float((current_nav / max(peak_nav, 1e-6)) - 1.0)
+        except Exception:
+            pass
+
+    dd_degraded = bool(dd_val <= -0.10)
+    dd_scale = 0.5 if dd_degraded else 1.0
 
     final_stock_w = timing_w * dd_scale
     defensive_w = round(1.0 - final_stock_w, 4)

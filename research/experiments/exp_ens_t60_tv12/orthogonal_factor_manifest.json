@@ -1,0 +1,157 @@
+{
+  "version": "2.3-anti-leakage",
+  "date_fitted": 20260908,
+  "min_trade_date": 20170101,
+  "max_label_date": 20230101,
+  "num_in_sample_dates": 71,
+  "num_selected_features": 13,
+  "selected_factors": [
+    "enh4_score",
+    "alpha_pv_divergence",
+    "alpha_023",
+    "ivol",
+    "alpha_combo_short",
+    "chip_conc_20",
+    "pos_vol_20",
+    "rev_20",
+    "or_yoy",
+    "chip_trapped_pressure",
+    "ret_1m",
+    "alpha_006_resid",
+    "alpha_012_resid"
+  ],
+  "ortho_columns": [
+    "ortho_01_enh4_score",
+    "ortho_02_alpha_pv_divergence",
+    "ortho_03_alpha_023",
+    "ortho_04_ivol",
+    "ortho_05_alpha_combo_short",
+    "ortho_06_chip_conc_20",
+    "ortho_07_pos_vol_20",
+    "ortho_08_rev_20",
+    "ortho_09_or_yoy",
+    "ortho_10_chip_trapped_pressure",
+    "ortho_11_ret_1m",
+    "ortho_12_alpha_006_resid",
+    "ortho_13_alpha_012_resid"
+  ],
+  "selection_steps": [
+    {
+      "step": 1,
+      "factor_name": "enh4_score",
+      "ortho_col": "ortho_01_enh4_score",
+      "residual_ic": 0.0987,
+      "residual_icir": 3.21,
+      "t_stat": 8.04,
+      "pos_rate": 84.5
+    },
+    {
+      "step": 2,
+      "factor_name": "alpha_pv_divergence",
+      "ortho_col": "ortho_02_alpha_pv_divergence",
+      "residual_ic": 0.0344,
+      "residual_icir": 1.82,
+      "t_stat": 4.38,
+      "pos_rate": 76.1
+    },
+    {
+      "step": 3,
+      "factor_name": "alpha_023",
+      "ortho_col": "ortho_03_alpha_023",
+      "residual_ic": -0.0223,
+      "residual_icir": -1.14,
+      "t_stat": -2.63,
+      "pos_rate": 31.0
+    },
+    {
+      "step": 4,
+      "factor_name": "ivol",
+      "ortho_col": "ortho_04_ivol",
+      "residual_ic": -0.0285,
+      "residual_icir": -0.94,
+      "t_stat": -2.3,
+      "pos_rate": 43.7
+    },
+    {
+      "step": 5,
+      "factor_name": "alpha_combo_short",
+      "ortho_col": "ortho_05_alpha_combo_short",
+      "residual_ic": 0.0141,
+      "residual_icir": 1.08,
+      "t_stat": 2.47,
+      "pos_rate": 66.2
+    },
+    {
+      "step": 6,
+      "factor_name": "chip_conc_20",
+      "ortho_col": "ortho_06_chip_conc_20",
+      "residual_ic": 0.0209,
+      "residual_icir": 0.91,
+      "t_stat": 2.22,
+      "pos_rate": 56.3
+    },
+    {
+      "step": 7,
+      "factor_name": "pos_vol_20",
+      "ortho_col": "ortho_07_pos_vol_20",
+      "residual_ic": -0.0141,
+      "residual_icir": -0.81,
+      "t_stat": -1.98,
+      "pos_rate": 43.7
+    },
+    {
+      "step": 8,
+      "factor_name": "rev_20",
+      "ortho_col": "ortho_08_rev_20",
+      "residual_ic": -0.0278,
+      "residual_icir": -1.14,
+      "t_stat": -2.7,
+      "pos_rate": 35.2
+    },
+    {
+      "step": 9,
+      "factor_name": "or_yoy",
+      "ortho_col": "ortho_09_or_yoy",
+      "residual_ic": 0.0169,
+      "residual_icir": 1.01,
+      "t_stat": 2.27,
+      "pos_rate": 59.2
+    },
+    {
+      "step": 10,
+      "factor_name": "chip_trapped_pressure",
+      "ortho_col": "ortho_10_chip_trapped_pressure",
+      "residual_ic": 0.0177,
+      "residual_icir": 0.9,
+      "t_stat": 2.14,
+      "pos_rate": 59.2
+    },
+    {
+      "step": 11,
+      "factor_name": "ret_1m",
+      "ortho_col": "ortho_11_ret_1m",
+      "residual_ic": 0.0215,
+      "residual_icir": 0.97,
+      "t_stat": 2.2,
+      "pos_rate": 66.2
+    },
+    {
+      "step": 12,
+      "factor_name": "alpha_006_resid",
+      "ortho_col": "ortho_12_alpha_006_resid",
+      "residual_ic": -0.0093,
+      "residual_icir": -0.94,
+      "t_stat": -2.23,
+      "pos_rate": 38.0
+    },
+    {
+      "step": 13,
+      "factor_name": "alpha_012_resid",
+      "ortho_col": "ortho_13_alpha_012_resid",
+      "residual_ic": -0.0157,
+      "residual_icir": -1.11,
+      "t_stat": -2.34,
+      "pos_rate": 42.3
+    }
+  ]
+}

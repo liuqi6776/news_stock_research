@@ -1,20 +1,23 @@
 # -*- coding: utf-8 -*-
-"""阶段二与终极消融比武：截面关系注意力 Transformer 与跨范式集成
-(CS-Relational Transformer & Cross-Paradigm Tournament)
+"""阶段二与终极消融比武：截面关系注意力 Transformer 与跨范式集成 (审计整改修复版)
+(CS-Relational Transformer & Cross-Paradigm Tournament v2.3)
 
-实验矩阵:
-  1. GBDT-10-Base: 经典 10 维树模型基准
-  2. GBDT-14-HybridOrtho: 阶段一精选 14 维正交与核心特征增强树模型
-  3. CS-Transformer: 路径三截面分层关系注意力网络 (Intra-Industry Attention + Inter-Industry Sector Attention)
-  4. ★ ENS-Hybrid-CS: 跨范式集成 (70% GBDT-14 + 30% CS-Transformer)
-
-全部在严格 2023–2026 零泄漏 Purged Walk-Forward 与 A 股微观真实撮合 (100股整手/T+1/10bps/涨跌停) 下对账。
+第五轮独立审查(2026-09-08) P1 整改重点：
+1. 修复 CS-Transformer 验证集评估缺陷：
+   - 显式传入独立的 val_cs_samples，确保各 Epoch 真实计算出非零的验证集 Rank IC；
+   - 基于最佳非零 Val IC 实施权重恢复与早停保护；
+2. 彻底剥离旧版 realistic_execution_sim 与旧 S123 择时，统一采用生产级 UnifiedProductionLedger v2.3
+   运行 2023–2026 纯股票多头消融 (100股整手/T+1/10bps/涨跌停/Top 40)；
+3. 严格遵循因果律，使用 label_available_date < m 判定样本成熟度；
+4. 固定随机种子 (seed=42) 与特征列表排序 sorted(list(set(...)))，确保完全确定性复现；
+5. 损失函数准确采用 PearsonCorrelationLoss (截面皮尔逊相关系数损失)。
 """
 import os
 import sys
 import math
 import time
 import json
+import glob
 import warnings
 warnings.filterwarnings("ignore")
 
@@ -27,14 +30,29 @@ import torch.nn as nn
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 EXP_DIR = os.path.join(ROOT, "research", "experiments", "exp_ens_t60_tv12")
+SEC_DIR = os.path.join(ROOT, "research", "sector_rotation")
+DATA_DIR = r"D:\iquant_data\data_v2"
 if ROOT not in sys.path:
     sys.path.insert(0, ROOT)
 if EXP_DIR not in sys.path:
     sys.path.insert(0, EXP_DIR)
+if SEC_DIR not in sys.path:
+    sys.path.insert(0, SEC_DIR)
 
-from engine import init_shared  # noqa: E402
-from realistic_execution_sim import run_realistic_backtest  # noqa: E402
-from cs_relational_transformer import CSRelationalTransformer, PearsonRankLoss  # noqa: E402
+from unified_production_ledger import (
+    UnifiedProductionLedger,
+    compute_metrics,
+    compute_annual_returns,
+    select_with_clean_crowding_guard
+)
+from industry_l1 import build_l1_map
+from cs_relational_transformer import CSRelationalTransformer, PearsonCorrelationLoss
+
+# 固定确定性随机种子
+np.random.seed(42)
+torch.manual_seed(42)
+if torch.cuda.is_available():
+    torch.cuda.manual_seed_all(42)
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 REFINED_PANEL_FP = os.path.join(EXP_DIR, "stock_refined_factors_panel.parquet")
@@ -43,31 +61,6 @@ OUT_JSON = os.path.join(EXP_DIR, "cs_transformer_tournament_report.json")
 
 def zscore_series(s):
     return (s - s.mean()) / (s.std(ddof=1) + 1e-12)
-
-
-def compute_metrics(nav_series):
-    s = nav_series.dropna()
-    if len(s) < 10:
-        return {}
-    r = s.pct_change().dropna()
-    n_days = len(r)
-    cagr = (s.iloc[-1] / s.iloc[0]) ** (242.0 / max(n_days, 1)) - 1.0
-    vol = r.std() * math.sqrt(242)
-    rf = 0.02
-    sharpe = (cagr - rf) / vol if vol > 1e-6 else 0.0
-    dd = s / s.cummax() - 1.0
-    max_dd = float(dd.min())
-    calmar = cagr / abs(max_dd) if abs(max_dd) > 1e-4 else 0.0
-    total_ret = (s.iloc[-1] / s.iloc[0]) - 1.0
-    return {
-        "cagr": round(cagr * 100, 2),
-        "sharpe": round(sharpe, 2),
-        "vol": round(vol * 100, 2),
-        "max_dd": round(max_dd * 100, 2),
-        "calmar": round(calmar, 2),
-        "total_return": round(total_ret * 100, 2),
-        "days": n_days
-    }
 
 
 def compute_ic_stats(score_dict, label_df):
@@ -86,10 +79,10 @@ def compute_ic_stats(score_dict, label_df):
         return {"mean_ic": 0.0, "icir": 0.0, "pos_rate": 0.0}
 
     ic_arr = np.array(ic_list)
-    mic = np.mean(ic_arr)
-    std = np.std(ic_arr, ddof=1)
-    icir = (mic / (std + 1e-12)) * math.sqrt(12.0)
-    pos_r = (ic_arr > 0).mean() * 100.0
+    mic = float(np.mean(ic_arr))
+    std = float(np.std(ic_arr, ddof=1))
+    icir = float((mic / (std + 1e-12)) * math.sqrt(12.0))
+    pos_r = float((ic_arr > 0).mean() * 100.0)
     return {
         "mean_ic": round(mic, 4),
         "icir": round(icir, 2),
@@ -97,21 +90,22 @@ def compute_ic_stats(score_dict, label_df):
     }
 
 
-def train_cs_transformer(model, date_samples, val_dates, epochs=12, lr=1e-3):
-    """逐截面训练 CS-Transformer 模型 (使用 Pearson Rank Loss)"""
+def train_cs_transformer(model, train_samples, val_samples=None, epochs=12, lr=1e-3):
+    """
+    逐截面训练 CS-Transformer 模型 (显式评估 val_samples 验证集，基于真实 Val IC 保存最佳权重)
+    """
     optimizer = torch.optim.AdamW(model.parameters(), lr=lr, weight_decay=1e-3)
     scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=epochs, eta_min=1e-5)
-    criterion = PearsonRankLoss()
+    criterion = PearsonCorrelationLoss()
 
-    best_val_ic = -1.0
+    best_val_ic = -999.0
     best_weights = None
 
     for epoch in range(epochs):
         model.train()
-        # 遍历训练月份截面
-        perm_dates = np.random.permutation(list(date_samples.keys()))
+        perm_dates = np.random.permutation(list(train_samples.keys()))
         for d in perm_dates:
-            x_t, ind_t, y_t = date_samples[d]
+            x_t, ind_t, y_t = train_samples[d]
             if len(x_t) < 100:
                 continue
 
@@ -130,29 +124,92 @@ def train_cs_transformer(model, date_samples, val_dates, epochs=12, lr=1e-3):
 
         scheduler.step()
 
-        # 验证集评估
-        if val_dates:
+        # 显式评估验证集
+        if val_samples and len(val_samples) > 0:
             model.eval()
             val_ics = []
             with torch.no_grad():
-                for vd in val_dates:
-                    if vd in date_samples:
-                        x_t, ind_t, y_t = date_samples[vd]
-                        x_tensor = torch.tensor(x_t, dtype=torch.float32, device=DEVICE)
-                        ind_tensor = torch.tensor(ind_t, dtype=torch.long, device=DEVICE)
-                        preds = model(x_tensor, ind_tensor).cpu().numpy()
-                        ic, _ = stats.spearmanr(preds, y_t)
-                        if np.isfinite(ic):
-                            val_ics.append(ic)
-            mean_vic = np.mean(val_ics) if val_ics else 0.0
+                for vd, (x_t, ind_t, y_t) in val_samples.items():
+                    x_tensor = torch.tensor(x_t, dtype=torch.float32, device=DEVICE)
+                    ind_tensor = torch.tensor(ind_t, dtype=torch.long, device=DEVICE)
+                    preds = model(x_tensor, ind_tensor).cpu().numpy()
+                    ic, _ = stats.spearmanr(preds, y_t)
+                    if np.isfinite(ic):
+                        val_ics.append(ic)
+            mean_vic = float(np.mean(val_ics)) if val_ics else -999.0
             if mean_vic > best_val_ic:
                 best_val_ic = mean_vic
                 best_weights = {k: v.cpu().clone() for k, v in model.state_dict().items()}
 
+    # 恢复验证集表现最佳的模型权重
     if best_weights is not None:
         model.load_state_dict({k: v.to(DEVICE) for k, v in best_weights.items()})
 
-    return model
+    return model, best_val_ic
+
+
+def load_st_dict():
+    fp = os.path.join(ROOT, "research", "studies", "study_008_enhancements", "data", "st_history.parquet")
+    if not os.path.exists(fp):
+        return {}
+    df_st = pd.read_parquet(fp)
+    df_st["start_date"] = df_st["start_date"].astype(str)
+    df_st["end_date"] = df_st["end_date"].astype(str).replace("None", "99999999")
+    st_sub = df_st[df_st["name"].str.contains("ST", na=False)]
+    st_dict = {}
+    for code, g in st_sub.groupby("ts_code"):
+        spans = []
+        for _, row in g.iterrows():
+            s = int(row["start_date"].replace("-", ""))
+            e = int(row["end_date"].replace("-", ""))
+            spans.append((s, e))
+        st_dict[code] = spans
+    return st_dict
+
+
+def run_pure_stock_ledger_backtest(scores_dict, open_w, preclose_w, vol_w, close_w, ind_map, ind_l1_map, st_dict, cal_dates):
+    """
+    使用 UnifiedProductionLedger v2.3 进行同口径 100% 纯股票多头 A 股微观撮合
+    """
+    ledger = UnifiedProductionLedger(initial_capital=2_200_000.0, fee_bps=10.0, adv_cap_pct=0.10)
+    nav_list = []
+    current_target_stocks = []
+
+    for i, cur_date in enumerate(cal_dates):
+        ledger.unlock_t1_shares()
+        prev_date = cal_dates[i - 1] if i > 0 else cur_date
+
+        is_month_start_rebal = (i == 0 or (cur_date // 100 != prev_date // 100))
+        if is_month_start_rebal:
+            avail_p = [d for d in scores_dict.keys() if d <= prev_date]
+            if avail_p:
+                p_date = avail_p[-1]
+                scores = scores_dict[p_date]
+                current_target_stocks = select_with_clean_crowding_guard(
+                    scores, ind_map, ind_l1_map, crowded_codes=None,
+                    max_per_ind=4, max_per_ind_l1=8, top_n=40
+                )
+            ledger.execute_rebalance(
+                cur_date, current_target_stocks, 1.00,
+                open_w, preclose_w, vol_w, {}, {},
+                allow_buy=True, st_dict=st_dict, rebalance_reason="monthly"
+            )
+        else:
+            ledger.process_daily_pending_orders(
+                cur_date, open_w, preclose_w, vol_w, st_dict=st_dict
+            )
+
+        eq = ledger.compute_equity(cur_date, close_w, {})
+        nav_list.append(eq["nav"])
+
+    nav_series = pd.Series(nav_list, index=cal_dates)
+    m = compute_metrics(nav_series)
+    m["trades"] = ledger.total_trades
+    m["fees"] = round(ledger.total_stock_commission, 2)
+    m["limit_up_rejects"] = ledger.limit_up_rejections
+    m["limit_down_locks"] = ledger.limit_down_locks
+    m["suspension_blocks"] = ledger.suspension_blocks
+    return m, nav_series
 
 
 def main():
@@ -162,31 +219,25 @@ def main():
     print(f">>> 计算设备: {DEVICE} (Torch {torch.__version__})", flush=True)
     print("=" * 80, flush=True)
 
-    # 1. 加载共享数据与精细面板
-    sh = init_shared("fullmarket")
-    cal_dates = sh["cal_dates"]
+    # 1. 加载精细化无前视正交面板
     panel = pd.read_parquet(REFINED_PANEL_FP)
-    print(f"[数据] 成功加载面板: 样本量={panel.shape}", flush=True)
+    print(f"[数据] 成功加载面板: 样本量={panel.shape}, 截面数={panel['trade_date'].nunique()}", flush=True)
 
-    # 显式逐样本 label_end_date 映射
-    label_end_map = {d: cal_dates[min(i + 20, len(cal_dates) - 1)] for i, d in enumerate(cal_dates)}
-    panel["label_end_date"] = panel["trade_date"].map(label_end_map)
-
-    # 行业离散编码 (0 ~ num_industries - 1)
+    # 行业离散编码
     panel["ind_clean"] = panel["industry"].fillna("其他")
     ind_categories = sorted(panel["ind_clean"].unique())
     ind_to_idx = {ind: i for i, ind in enumerate(ind_categories)}
     panel["ind_idx"] = panel["ind_clean"].map(ind_to_idx)
     num_industries = len(ind_categories)
-    print(f"[行业] 成功编码申万/中信行业共 {num_industries} 个", flush=True)
+    print(f"[行业] 成功编码行业共 {num_industries} 个", flush=True)
 
-    # 2. 定义特征集
-    FEATS_10 = ["ivol", "ret_1m", "momentum_20", "volatility_20", "alpha_006", "alpha_012",
-                "enh4_score", "vwap_20", "float_pnl_20", "chip_shift_5"]
-    FEATS_ORTHO_7 = [c for c in panel.columns if c.startswith("ortho_")]
+    # 2. 严格确定性特征集配置 (有序集合)
+    FEATS_10 = sorted(["ivol", "ret_1m", "momentum_20", "volatility_20", "alpha_006", "alpha_012",
+                       "enh4_score", "vwap_20", "float_pnl_20", "chip_shift_5"])
+    FEATS_ORTHO_7 = sorted([c for c in panel.columns if c.startswith("ortho_")])
     FEATS_CORE_7 = ["ivol", "quality_safety_margin", "alpha_pv_divergence", "enh4_score",
                     "alpha_combo_short", "amihud_proxy_20", "chip_conc_20"]
-    FEATS_14 = list(set(FEATS_CORE_7 + FEATS_ORTHO_7))
+    FEATS_14 = sorted(list(set(FEATS_CORE_7 + FEATS_ORTHO_7)))
 
     print(f"[特征配置] GBDT-10 ({len(FEATS_10)}维) | GBDT-14 ({len(FEATS_14)}维) | CS-Transformer ({len(FEATS_14)}维输入)", flush=True)
 
@@ -212,12 +263,13 @@ def main():
     score_cs_transformer = {}
     score_ens_hybrid = {}
 
-    print("\n>>> 开始滚动 Purged Walk-Forward 训练...", flush=True)
+    print("\n>>> 开始严格零前瞻 Purged Walk-Forward 滚动模型比武...", flush=True)
     for idx, m in enumerate(all_dates):
         if idx < 6 or m < oos_start:
             continue
 
-        tr_pool = panel[panel["label_end_date"] < m]
+        # 严格使用 label_available_date < m 判定成熟度
+        tr_pool = panel[panel["label_available_date"] < m]
         if len(tr_pool) < 500:
             continue
 
@@ -225,7 +277,7 @@ def main():
         val_months = tr_months[-2:] if len(tr_months) >= 5 else []
         val_start_d = min(val_months) if val_months else m
 
-        train_mask = (tr_pool["label_end_date"] < val_start_d).values if val_months else np.ones(len(tr_pool), dtype=bool)
+        train_mask = (tr_pool["label_available_date"] < val_start_d).values if val_months else np.ones(len(tr_pool), dtype=bool)
         val_mask = tr_pool["trade_date"].isin(val_months).values if val_months else np.zeros(len(tr_pool), dtype=bool)
         om = panel[panel["trade_date"] == m]
 
@@ -249,10 +301,12 @@ def main():
         p14 = pd.Series(m14.predict(om[FEATS_14]), index=om["ts_code"])
         score_gbdt_14[m] = p14
 
-        # --- C. CS-Transformer (截面关系注意力) ---
+        # --- C. CS-Transformer (截面关系注意力，显式传递 val_cs_samples) ---
         train_cs_samples = {d: (cs_dict[d][0], cs_dict[d][1], cs_dict[d][2]) for d in tr_months if d in cs_dict and d < val_start_d}
+        val_cs_samples = {d: (cs_dict[d][0], cs_dict[d][1], cs_dict[d][2]) for d in val_months if d in cs_dict}
+
         cs_model = CSRelationalTransformer(input_dim=len(FEATS_14), num_industries=num_industries, d_model=64, n_heads=4, dropout=0.15).to(DEVICE)
-        cs_model = train_cs_transformer(cs_model, train_cs_samples, val_months, epochs=12, lr=1e-3)
+        cs_model, best_vic = train_cs_transformer(cs_model, train_cs_samples, val_cs_samples, epochs=12, lr=1e-3)
 
         # 截面推理
         om_X = om[FEATS_14].values.astype(np.float32)
@@ -272,12 +326,13 @@ def main():
 
         corr_g_cs = stats.spearmanr(p14.loc[common_stocks], pcs.loc[common_stocks])[0]
         if m % 10000 == 1231 or m == all_dates[-1]:
-            print(f"   -> 决策期 {m}: 模型更新完成 | GBDT vs CS-Transformer 预测相关度: {corr_g_cs:.3f}", flush=True)
+            print(f"   -> 决策期 {m}: 验证 IC={best_vic:.4f} | GBDT vs CS-Transformer 预测相关度: {corr_g_cs:.3f}", flush=True)
 
     # 5. 计算样本外 Rank IC 系列
     print("\n" + "=" * 80, flush=True)
     print(">>> 样本外 (OOS 2023–2026) 选股 Rank IC 与正交性统计评测:", flush=True)
     print("=" * 80, flush=True)
+
     exp_models = [
         ("GBDT-10-Base", score_gbdt_10),
         ("GBDT-14-HybridOrtho", score_gbdt_14),
@@ -291,7 +346,7 @@ def main():
         ic_metrics[name] = stat
         print(f"  {name:<22} | Mean Rank IC: {stat['mean_ic']:+.4f} | ICIR: {stat['icir']:+.2f} | IC胜率: {stat['pos_rate']:.1f}%", flush=True)
 
-    # 计算模型残差相关性
+    # 计算模型预测相关性
     all_corrs = []
     for d in score_gbdt_14:
         g = score_gbdt_14[d]
@@ -301,30 +356,51 @@ def main():
             sc, _ = stats.spearmanr(g.loc[comm], c.loc[comm])
             if np.isfinite(sc):
                 all_corrs.append(sc)
-    avg_model_corr = np.mean(all_corrs) if all_corrs else 0.0
+    avg_model_corr = float(np.mean(all_corrs)) if all_corrs else 0.0
     print(f"\n[模型正交性] GBDT-14 与 CS-Transformer 截面预测相关度均值: {avg_model_corr:.3f} (正交残差空间显著)", flush=True)
 
-    # 6. A 股真实生产微观账本回测
+    # 6. A 股真实生产微观账本 v2.3 回测 (100% 纯股票多头消融)
     print("\n" + "=" * 80, flush=True)
-    print(">>> 接入 A 股微观生产真实账本 (100股整手/T+1/10bps/涨跌停) 绩效对账:", flush=True)
+    print(">>> 接入 A 股生产级微观真实账本 v2.3 (100股整手/T+1/10bps/涨跌停) 纯股票对账:", flush=True)
     print("=" * 80, flush=True)
+
+    # 加载 2023-2026 日频数据
+    day_files = sorted(glob.glob(os.path.join(DATA_DIR, "data_day1", "*.parquet")))
+    day_files = [f for f in day_files if os.path.basename(f) >= "20230101"]
+
+    px_records = []
+    for f in day_files:
+        try:
+            df = pd.read_parquet(f, columns=["ts_code", "trade_date", "open", "close", "pre_close", "vol"])
+            px_records.append(df)
+        except Exception:
+            continue
+    px_all = pd.concat(px_records, ignore_index=True)
+    px_all["trade_date"] = px_all["trade_date"].astype(int)
+
+    close_w = px_all.pivot_table(index="trade_date", columns="ts_code", values="close", aggfunc="last").ffill()
+    open_w = px_all.pivot_table(index="trade_date", columns="ts_code", values="open", aggfunc="last")
+    preclose_w = px_all.pivot_table(index="trade_date", columns="ts_code", values="pre_close", aggfunc="last")
+    vol_w = px_all.pivot_table(index="trade_date", columns="ts_code", values="vol", aggfunc="last")
+    cal_dates = sorted(close_w.index)
+
+    latest_ind = panel.drop_duplicates("ts_code", keep="last")
+    ind_map = dict(zip(latest_ind["ts_code"], latest_ind["industry"]))
+    ind_l1_map = build_l1_map(ind_map)
+    st_dict = load_st_dict()
 
     results_summary = {}
     for name, s_dict in exp_models:
-        sh["scores"][name] = s_dict
-        res_df, info = run_realistic_backtest(sh, score_key=name, fee_bps=10.0, s123_tiered=True)
-        m = compute_metrics(res_df["nav"])
-        m["trades"] = info["total_trades"]
-        m["fees"] = round(info["total_commission_paid"], 2)
-        m["limit_up_rejects"] = info["limit_up_rejections"]
-        m["limit_down_locks"] = info["limit_down_locks"]
+        m, nav_series = run_pure_stock_ledger_backtest(
+            s_dict, open_w, preclose_w, vol_w, close_w, ind_map, ind_l1_map, st_dict, cal_dates
+        )
         m.update(ic_metrics[name])
         m["model_ortho_corr"] = round(avg_model_corr, 3)
         results_summary[name] = m
 
-        print(f"  {name:<22} | CAGR: {m['cagr']:>6.2f}% | Sharpe: {m['sharpe']:>4.2f} | Vol: {m['vol']:>5.2f}% | MaxDD: {m['max_dd']:>6.2f}% | Calmar: {m['calmar']:>4.2f}", flush=True)
+        print(f"  {name:<22} | CAGR: {m['cagr']:>6.2f}% | Sharpe: {m['sharpe']:>4.2f} | Vol: {m['vol']:>5.2f}% | MaxDD: {m['max_dd']:>6.2f}% | Calmar: {m['calmar']:>4.2f} | 交易: {m['trades']}笔 | 手续费: {m['fees']}元", flush=True)
 
-    # 持久化 JSON
+    # 持久化 JSON 评测报告
     with open(OUT_JSON, "w", encoding="utf-8") as f:
         json.dump(results_summary, f, ensure_ascii=False, indent=2)
     print(f"\n[保存] 终极消融实验指标已保存至: {OUT_JSON}", flush=True)

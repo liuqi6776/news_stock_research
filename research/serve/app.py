@@ -57,8 +57,8 @@ executor = ThreadPoolExecutor(max_workers=2)
 is_generating = False
 
 
-def _load_daily_signals():
-    files = sorted(glob.glob(os.path.join(DATA_DIR, "*.json")))
+def _load_signals_from_dir(dir_path):
+    files = sorted(glob.glob(os.path.join(dir_path, "*.json")))
     out = []
     for fp in files:
         try:
@@ -72,6 +72,24 @@ def _load_daily_signals():
     return out
 
 
+def _check_signal_expiration(sig_dict):
+    """S1 安全锁: 校验信号执行日期是否已过期并注入告警状态"""
+    import datetime
+    today_str = datetime.date.today().strftime("%Y%m%d")
+    exec_d = str(sig_dict.get("execution_date", sig_dict.get("trade_date", ""))).replace("-", "")
+    is_expired = False
+    if exec_d and exec_d < today_str:
+        is_expired = True
+    sig_dict["is_expired"] = is_expired
+    sig_dict["system_date"] = today_str
+    if is_expired:
+        sig_dict["status_tag"] = "EXPIRED"
+        sig_dict["safety_warning"] = f"[EXPIRED] 本信号执行日期 ({exec_d}) 早于系统当前日期 ({today_str})，禁止直接实盘，请触发重新生成！"
+    else:
+        sig_dict["status_tag"] = "ACTIVE"
+    return sig_dict
+
+
 @app.get("/", response_class=HTMLResponse)
 def index():
     html_path = os.path.join(SERVE_DIR, "templates", "index.html")
@@ -82,21 +100,31 @@ def index():
 
 
 @app.get("/api/today")
+@app.get("/api/composite/today")
 def api_today():
-    daily = _load_daily_signals()
-    if not daily:
-        # 若暂无历史文件，现场生成一期
+    signals = _load_signals_from_dir(DATA_DIR)
+    if not signals:
         try:
             sig = generate_composite_signal()
-            return JSONResponse(sig)
+            return JSONResponse(_check_signal_expiration(sig))
         except Exception as e:
             raise HTTPException(500, f"信号生成失败: {str(e)}")
-    return JSONResponse(daily[0])
+    res = _check_signal_expiration(signals[0])
+    return JSONResponse(res)
+
+
+@app.get("/api/daily/today")
+def api_daily_today():
+    signals = _load_signals_from_dir(DAILY_DIR)
+    if not signals:
+        raise HTTPException(404, "暂无 BASE+VAL 每日信号文件，请先运行 daily_signal.py")
+    res = _check_signal_expiration(signals[0])
+    return JSONResponse(res)
 
 
 @app.get("/api/history")
 def api_history(limit: int = 90):
-    daily = _load_daily_signals()
+    daily = _load_signals_from_dir(DATA_DIR)
     return JSONResponse(daily[:limit])
 
 

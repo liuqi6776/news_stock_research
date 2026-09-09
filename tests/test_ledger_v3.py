@@ -325,9 +325,74 @@ def test_scenario_7_proportional_stock_scaling():
     print("  [Pass] Exposure scaled down 0.5x while strictly preserving 1:2 relative weighting!")
 
 
+def test_scenario_8_divergence_sell_only_guard():
+    print("\n--- Running Test Scenario 8: Divergence Phase Strict Sell-Only Guard ---")
+    dates, open_df, close_df, preclose_df, vol_df = create_mock_market_data()
+
+    # Initial: 20% stock (20,000), 80,000 cash, total 100,000
+    ledger = UnifiedProductionLedger(initial_capital=100000.0, adv_cap_pct=0.10)
+    ledger.cash = 80000.0
+    ledger.stock_positions["000001.SZ"] = {
+        "shares": 1000, "tradable_shares": 1000, "locked_shares": 0, "last_px": 10.0
+    }
+    ledger.stock_positions["000003.SZ"] = {
+        "shares": 1000, "tradable_shares": 1000, "locked_shares": 0, "last_px": 10.0
+    }
+
+    d1 = "2025-01-21"
+    # Case A: In divergence phase (allow_buy=False), target is 50% (higher than current 20%)
+    # Ledger MUST block buying and keep existing shares intact!
+    ledger.scale_stock_exposure(
+        d1, 0.50, open_df, preclose_df, vol_df, allow_buy=False, rebalance_reason="timing"
+    )
+    sh1 = ledger.stock_positions["000001.SZ"]["shares"]
+    sh3 = ledger.stock_positions["000003.SZ"]["shares"]
+    assert sh1 == 1000, f"allow_buy=False failed to block buying! 000001.SZ shares: {sh1}"
+    assert sh3 == 1000, f"allow_buy=False failed to block buying! 000003.SZ shares: {sh3}"
+    print("  [Pass] allow_buy=False strictly blocked buying when target was higher than held!")
+
+    # Case B: In divergence phase (allow_buy=False), target is 10% (lower than current 20%)
+    # Ledger MUST allow selling down to 10% (500 shares each)
+    d2 = "2025-01-22"
+    ledger.scale_stock_exposure(
+        d2, 0.10, open_df, preclose_df, vol_df, allow_buy=False, rebalance_reason="timing"
+    )
+    sh1_cut = ledger.stock_positions["000001.SZ"]["shares"]
+    sh3_cut = ledger.stock_positions["000003.SZ"]["shares"]
+    assert sh1_cut == 500, f"Expected 500 shares for 000001.SZ, got {sh1_cut}"
+    assert sh3_cut == 500, f"Expected 500 shares for 000003.SZ, got {sh3_cut}"
+    print("  [Pass] allow_buy=False smoothly executed sell-down when target was lower!")
+
+
+def test_scenario_9_empty_basket_reentry():
+    print("\n--- Running Test Scenario 9: Clean Re-entry From 0% Cash After Full Liquidation ---")
+    dates, open_df, close_df, preclose_df, vol_df = create_mock_market_data()
+
+    # Initial: 100,000 cash, 0 stocks (completely liquidated)
+    ledger = UnifiedProductionLedger(initial_capital=100000.0, adv_cap_pct=0.10)
+    ledger.cash = 100000.0
+    ledger.stock_positions = {}
+    ledger.active_monthly_basket = ["000001.SZ", "000003.SZ"]
+
+    d1 = "2025-01-21"
+    # Target 40% total stock (20,000 per stock -> 2,000 shares each @ 10.0)
+    ledger.scale_stock_exposure(
+        d1, 0.40, open_df, preclose_df, vol_df, allow_buy=True, rebalance_reason="timing"
+    )
+
+    assert "000001.SZ" in ledger.stock_positions, "000001.SZ should be re-entered"
+    assert "000003.SZ" in ledger.stock_positions, "000003.SZ should be re-entered"
+    sh1 = ledger.stock_positions["000001.SZ"]["shares"]
+    sh3 = ledger.stock_positions["000003.SZ"]["shares"]
+    assert sh1 == 2000, f"Expected 2000 shares for 000001.SZ, got {sh1}"
+    assert sh3 == 2000, f"Expected 2000 shares for 000003.SZ, got {sh3}"
+    assert ledger.total_trades == 2, f"Expected 2 re-entry buy trades, got {ledger.total_trades}"
+    print("  [Pass] Successfully re-entered into active monthly basket from 100% cash position!")
+
+
 if __name__ == "__main__":
     print("=================================================================")
-    print("RUNNING SYNTHETIC UNIT TESTS FOR UnifiedProductionLedger v2.2")
+    print("RUNNING SYNTHETIC UNIT TESTS FOR UnifiedProductionLedger v2.3")
     print("=================================================================")
     test_scenario_1_repeated_rebalance_suspension()
     test_scenario_2_shared_daily_adv_quota()
@@ -336,7 +401,9 @@ if __name__ == "__main__":
     test_scenario_5_reason_inheritance()
     test_scenario_6_etf_trades_symmetry()
     test_scenario_7_proportional_stock_scaling()
+    test_scenario_8_divergence_sell_only_guard()
+    test_scenario_9_empty_basket_reentry()
     print("\n=================================================================")
-    print("ALL 7 UNIT TESTS PASSED WITH 100% SUCCESS!")
+    print("ALL 9 UNIT TESTS PASSED WITH 100% SUCCESS!")
     print("=================================================================")
 

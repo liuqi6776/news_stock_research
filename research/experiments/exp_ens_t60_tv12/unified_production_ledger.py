@@ -217,7 +217,10 @@ def select_with_clean_crowding_guard(
 
 class UnifiedProductionLedger:
     """
-    生产级单一资金池现货与期货联合账户仿真器 (v2.1 修复版)
+    生产级单一资金池现货与期货联合账户仿真器 (v2.3 增强版)
+    - 增加 scale_stock_exposure 的 allow_buy 支持 (分歧退潮期严格只卖不买)；
+    - 支持空仓状态合法重入当前月度优选股票篮子 (active_monthly_basket)；
+    - 保持 100 股整手、T+1、10% 共享 ADV 约束与挂单原因继承。
     """
     def __init__(self, initial_capital=2_200_000.0, fee_bps=10.0, etf_fee_bps=3.0, adv_cap_pct=0.10):
         self.initial_capital = float(initial_capital)
@@ -231,6 +234,9 @@ class UnifiedProductionLedger:
         # 股票与 ETF 持仓字典: code -> {shares, tradable_shares, locked_shares, last_px}
         self.stock_positions = {}
         self.etf_positions = {}
+
+        # 活跃月度持仓篮子 (用于空仓后重新入场建仓)
+        self.active_monthly_basket = []
 
         # 未完成挂单重试队列: code -> pending_sell_shares (严格维护当前持股与最新目标的差额)
         self.pending_sell_orders = {}
@@ -480,6 +486,9 @@ class UnifiedProductionLedger:
         target_total_stock_val = total_open_equity * target_stock_pct
 
         # 2. 计算每只目标股票的目标股数
+        if target_stock_codes:
+            self.active_monthly_basket = list(target_stock_codes)
+
         target_shares_map = {}
         if len(target_stock_codes) > 0 and target_total_stock_val > 0:
             per_stock_target_val = target_total_stock_val / len(target_stock_codes)
@@ -758,13 +767,16 @@ class UnifiedProductionLedger:
         stock_vol_w,
         etf_targets=None,
         etf_price_dict=None,
+        allow_buy=True,
         st_dict=None,
         rebalance_reason="timing"
     ):
         """
-        审计整改(2026-09-07 第三轮实验1): 已有股票篮子等比例缩放 (Proportional Basket Scaling)
-        当选股名单未变、仅需按SCS信号调整总股票仓位时，对已有持仓股票按照相同比例进行增减持。
-        彻底避免每次择时微调触发40只个股强制等权再平衡，消除无谓换手与滑点冲击。
+        审计整改(v2.3): 已有股票篮子等比例缩放与空仓重入 (Proportional Basket Scaling & Re-entry)
+        - 当选股名单未变、仅需按SCS信号调整总股票仓位时，对已有持仓股票按照相同比例进行增减持；
+        - allow_buy=False (分歧期/退潮期): 严格只卖不买，目标股数截断为现有持仓，杜绝逆向增仓；
+        - 空仓合法重入: 若因清仓导致 open_stock_val=0，但在有效月内收到再进场信号且 allow_buy=True，
+          自动基于当前 active_monthly_basket 等权买入重建底仓，避免执行不对称。
         """
         if self.last_execution_date != current_date:
             self.daily_executed_shares = {}
@@ -790,16 +802,38 @@ class UnifiedProductionLedger:
         total_open_equity = open_stock_val + open_etf_val + self.cash
         target_total_stock_val = total_open_equity * target_stock_pct
 
-        # 2. 计算每只现有股票的目标股数 (严格按比例缩放，不重置相对权重)
+        # 2. 计算每只股票的目标股数
         target_shares_map = {}
         if open_stock_val > 0 and target_total_stock_val > 0:
             scale_ratio = target_total_stock_val / open_stock_val
             for c, h in self.stock_positions.items():
                 target_sh = int(round(h["shares"] * scale_ratio / 100.0)) * 100
                 target_shares_map[c] = target_sh
+        elif open_stock_val <= 0 and target_total_stock_val > 0 and allow_buy and self.active_monthly_basket:
+            # 空仓合法重入：基于本月优选股票篮子等额建仓
+            valid_basket = [c for c in self.active_monthly_basket if (c in stock_open_w.columns and current_date in stock_open_w.index)]
+            if valid_basket:
+                per_stock_val = target_total_stock_val / len(valid_basket)
+                for c in valid_basket:
+                    op = stock_open_w.at[current_date, c]
+                    pre_p = stock_preclose_w.at[current_date, c] if (c in stock_preclose_w.columns and current_date in stock_preclose_w.index) else np.nan
+                    px = op if (np.isfinite(op) and op > 0) else pre_p
+                    if np.isfinite(px) and px > 0:
+                        target_shares_map[c] = int((per_stock_val / px) // 100) * 100
+                    else:
+                        target_shares_map[c] = 0
+            else:
+                for c in self.stock_positions.keys():
+                    target_shares_map[c] = 0
         else:
             for c in self.stock_positions.keys():
                 target_shares_map[c] = 0
+
+        # 只卖不买强约束: 当 allow_buy=False 时，严格截断目标股数不超过现有持仓，未持仓股票目标置 0
+        if not allow_buy:
+            for c in list(target_shares_map.keys()):
+                curr_sh = self.stock_positions.get(c, {}).get("shares", 0)
+                target_shares_map[c] = min(target_shares_map[c], curr_sh)
 
         # 3. 确定每只目标 ETF 的目标股数
         target_etf_shares_map = {}
@@ -916,57 +950,66 @@ class UnifiedProductionLedger:
         # =========================================================================
         # 第二阶段：买入流程 (PHASE 2: BUYS)
         # =========================================================================
-        for c in list(self.stock_positions.keys()):
-            h = self.stock_positions[c]
-            target_sh = target_shares_map.get(c, 0)
-            if target_sh > h["shares"]:
-                needed_sh = target_sh - h["shares"]
-                op = stock_open_w.at[current_date, c] if (c in stock_open_w.columns and current_date in stock_open_w.index) else np.nan
-                pre_p = stock_preclose_w.at[current_date, c] if (c in stock_preclose_w.columns and current_date in stock_preclose_w.index) else np.nan
+        if allow_buy:
+            for c, target_sh in target_shares_map.items():
+                curr_sh = self.stock_positions.get(c, {}).get("shares", 0)
+                if target_sh > curr_sh:
+                    needed_sh = target_sh - curr_sh
+                    op = stock_open_w.at[current_date, c] if (c in stock_open_w.columns and current_date in stock_open_w.index) else np.nan
+                    pre_p = stock_preclose_w.at[current_date, c] if (c in stock_preclose_w.columns and current_date in stock_preclose_w.index) else np.nan
 
-                is_suspended = (not (np.isfinite(op) and op > 0))
-                if not is_suspended and stock_vol_w is not None and c in stock_vol_w.columns and current_date in stock_vol_w.index:
-                    day_vol = stock_vol_w.at[current_date, c]
-                    if np.isnan(day_vol) or day_vol <= 0:
-                        is_suspended = True
+                    is_suspended = (not (np.isfinite(op) and op > 0))
+                    if not is_suspended and stock_vol_w is not None and c in stock_vol_w.columns and current_date in stock_vol_w.index:
+                        day_vol = stock_vol_w.at[current_date, c]
+                        if np.isnan(day_vol) or day_vol <= 0:
+                            is_suspended = True
 
-                if is_suspended:
-                    self.suspension_blocks += 1
-                    continue
+                    if is_suspended:
+                        self.suspension_blocks += 1
+                        continue
 
-                is_st = False
-                if st_dict is not None and c in st_dict:
-                    for (s, e) in st_dict[c]:
-                        if s <= current_date <= e:
-                            is_st = True
-                            break
-                if is_limit_up_code(c, op, pre_p, is_st=is_st):
-                    self.limit_up_rejections += 1
-                    continue
+                    is_st = False
+                    if st_dict is not None and c in st_dict:
+                        for (s, e) in st_dict[c]:
+                            if s <= current_date <= e:
+                                is_st = True
+                                break
+                    if is_limit_up_code(c, op, pre_p, is_st=is_st):
+                        self.limit_up_rejections += 1
+                        continue
 
-                max_adv = self._get_daily_adv_quota(stock_vol_w, c, current_date)
-                if max_adv < 100:
-                    continue
+                    max_adv = self._get_daily_adv_quota(stock_vol_w, c, current_date)
+                    if max_adv < 100:
+                        continue
 
-                max_afford_sh = int(self.cash // (op * (1.0 + self.stock_fee_rate) * 100)) * 100
-                buy_shares = min(needed_sh, max_adv, max_afford_sh)
-                buy_shares = (buy_shares // 100) * 100
+                    max_afford_sh = int(self.cash // (op * (1.0 + self.stock_fee_rate) * 100)) * 100
+                    buy_shares = min(needed_sh, max_adv, max_afford_sh)
+                    buy_shares = (buy_shares // 100) * 100
 
-                if buy_shares >= 100:
-                    cost = buy_shares * op
-                    fee = cost * self.stock_fee_rate
-                    self.cash -= (cost + fee)
-                    self.total_stock_commission += fee
-                    self.total_trades += 1
-                    self.total_traded_value += cost
-                    if rebalance_reason == "monthly":
-                        self.selection_traded_value += cost
-                    else:
-                        self.timing_traded_value += cost
-                    h["shares"] += buy_shares
-                    h["locked_shares"] += buy_shares
-                    h["last_px"] = op
-                    self._record_executed_volume(c, current_date, buy_shares)
+                    if buy_shares >= 100:
+                        cost = buy_shares * op
+                        fee = cost * self.stock_fee_rate
+                        self.cash -= (cost + fee)
+                        self.total_stock_commission += fee
+                        self.total_trades += 1
+                        self.total_traded_value += cost
+                        if rebalance_reason == "monthly":
+                            self.selection_traded_value += cost
+                        else:
+                            self.timing_traded_value += cost
+                        if c not in self.stock_positions:
+                            self.stock_positions[c] = {
+                                "shares": buy_shares,
+                                "tradable_shares": 0,
+                                "locked_shares": buy_shares,
+                                "last_px": op
+                            }
+                        else:
+                            h = self.stock_positions[c]
+                            h["shares"] += buy_shares
+                            h["locked_shares"] += buy_shares
+                            h["last_px"] = op
+                        self._record_executed_volume(c, current_date, buy_shares)
 
         # ETF 买入
         if etf_targets is not None and len(etf_targets) > 0 and etf_price_dict:
