@@ -1,0 +1,138 @@
+{
+  "benchmark_csi1000": {
+    "cagr": 4.33,
+    "sharpe": 0.22,
+    "vol": 25.12,
+    "max_dd": -39.22,
+    "calmar": 0.11,
+    "total_return": 16.88,
+    "win_rate": 53.54,
+    "days": 891,
+    "annual_returns": {
+      "2023": -8.35,
+      "2024": 1.2,
+      "2025": 27.49,
+      "2026": -1.15
+    },
+    "trades": 0,
+    "fees": 0.0,
+    "stock_fees": 0.0,
+    "etf_fees": 0.0,
+    "compounding_err": 0.005797
+  },
+  "etf_static_multi_asset": {
+    "cagr": 8.19,
+    "sharpe": 0.6,
+    "vol": 10.88,
+    "max_dd": -14.76,
+    "calmar": 0.55,
+    "total_return": 33.61,
+    "win_rate": 54.77,
+    "days": 891,
+    "annual_returns": {
+      "2023": 1.1,
+      "2024": 10.09,
+      "2025": 19.89,
+      "2026": 0.13
+    },
+    "trades": 139,
+    "fees": 1721.92,
+    "stock_fees": 0.0,
+    "etf_fees": 1721.92,
+    "limit_up_rejects": 0,
+    "limit_down_locks": 0,
+    "compounding_err": 0.003113
+  },
+  "etf_scs_timing": {
+    "cagr": 15.06,
+    "sharpe": 1.06,
+    "vol": 12.08,
+    "max_dd": -10.1,
+    "calmar": 1.49,
+    "total_return": 67.64,
+    "win_rate": 56.45,
+    "days": 891,
+    "annual_returns": {
+      "2023": 8.63,
+      "2024": 24.4,
+      "2025": 21.05,
+      "2026": 2.48
+    },
+    "trades": 2147,
+    "fees": 117889.66,
+    "stock_fees": 0.0,
+    "etf_fees": 117889.66,
+    "limit_up_rejects": 0,
+    "limit_down_locks": 0,
+    "compounding_err": 0.001437
+  },
+  "gbdt14_scs_timing": {
+    "cagr": 16.98,
+    "sharpe": 1.05,
+    "vol": 13.94,
+    "max_dd": -13.2,
+    "calmar": 1.29,
+    "total_return": 78.14,
+    "win_rate": 56.0,
+    "days": 891,
+    "annual_returns": {
+      "2023": 9.8,
+      "2024": 40.31,
+      "2025": 17.63,
+      "2026": -1.7
+    },
+    "trades": 21241,
+    "fees": 318441.28,
+    "stock_fees": 255080.24,
+    "etf_fees": 63361.04,
+    "limit_up_rejects": 38,
+    "limit_down_locks": 13,
+    "compounding_err": 0.004763
+  },
+  "cs_transformer_scs_timing": {
+    "cagr": 22.15,
+    "sharpe": 1.56,
+    "vol": 12.01,
+    "max_dd": -9.03,
+    "calmar": 2.45,
+    "total_return": 108.88,
+    "win_rate": 56.79,
+    "days": 891,
+    "annual_returns": {
+      "2023": 6.44,
+      "2024": 38.55,
+      "2025": 37.43,
+      "2026": 3.06
+    },
+    "trades": 19403,
+    "fees": 291064.3,
+    "stock_fees": 224562.03,
+    "etf_fees": 66502.26,
+    "limit_up_rejects": 46,
+    "limit_down_locks": 14,
+    "compounding_err": 0.001875
+  },
+  "★ ens_hybrid_scs_timing": {
+    "cagr": 14.76,
+    "sharpe": 0.92,
+    "vol": 13.88,
+    "max_dd": -12.45,
+    "calmar": 1.18,
+    "total_return": 65.99,
+    "win_rate": 54.88,
+    "days": 891,
+    "annual_returns": {
+      "2023": 10.4,
+      "2024": 35.52,
+      "2025": 14.06,
+      "2026": -2.74
+    },
+    "trades": 21473,
+    "fees": 312804.49,
+    "stock_fees": 250848.07,
+    "etf_fees": 61956.42,
+    "limit_up_rejects": 45,
+    "limit_down_locks": 18,
+    "compounding_err": 0.017954
+  }
+}
