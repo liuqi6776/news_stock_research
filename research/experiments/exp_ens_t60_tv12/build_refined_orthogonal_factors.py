@@ -53,8 +53,9 @@ def generate_candidate_factors(panel_df):
     p["rev_20"] = -p["momentum_20"]
     p["low_vol_anomaly"] = -p["volatility_20"]
 
-    # 2. 流动性冲击与非流动性代理
-    p["amihud_proxy_20"] = p["volatility_20"] / (p["pos_vol_20"] + 1e-4)
+    # 2. 流动性冲击与特征比率 (注：原 amihud_proxy_20 系波动率与上涨成交量占比之比，非经典成交金额 Amihud 因子)
+    p["vol_posvol_ratio_20"] = p["volatility_20"] / (p["pos_vol_20"] + 1e-4)
+    p["amihud_proxy_20"] = p["vol_posvol_ratio_20"]  # 保留兼容历史模型与 manifest 命名
     p["turnover_stability"] = - (p["pos_vol_20"] / (p["volatility_20"] + 1e-4))
     p["liquidity_premium"] = - p["pos_vol_20"]
     p["turnover_reversal"] = p["pos_vol_20"] * (-p["ret_1m"])
