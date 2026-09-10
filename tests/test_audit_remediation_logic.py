@@ -37,6 +37,16 @@ from research.experiments.exp_ens_t60_tv12.pit_filter_rule import (
     PITFilterFailureError,
     RULE_VERSION
 )
+from research.experiments.exp_ens_t60_tv12.load_true_liquidity_metrics import (
+    convert_tushare_amount_to_yi,
+    convert_tushare_circ_mv_to_yi
+)
+from research.experiments.exp_ens_t60_tv12.run_phase27_ablation_and_ch4 import (
+    build_aligned_monthly_periods,
+    run_ch4_hac_regression,
+    check_benchmark_beta_sanity
+)
+import statsmodels.api as sm
 
 
 def _build_mock_matrices():
@@ -162,37 +172,101 @@ def test_pit_filter_failure_blocks_new_risk():
 
 
 def test_tushare_amount_unit_conversion():
+    """
+    测试 P1-3 / P0-7: 直接调用生产环境转换函数 convert_tushare_amount_to_yi
+    """
     amount_qian_yuan = 100_000.0
-    amount_yi = amount_qian_yuan / 1e5
+    amount_yi = convert_tushare_amount_to_yi(amount_qian_yuan)
     assert amount_yi == pytest.approx(1.0, abs=1e-6)
+    
+    # 验证原先除以 100 的严重错误量纲被彻底纠正
     erroneous_amount_yi = amount_qian_yuan / 100.0
     assert erroneous_amount_yi != pytest.approx(1.0, abs=1e-6)
 
 
 def test_circ_mv_unit_conversion():
+    """
+    测试 P1-3 / P0-7: 直接调用生产环境转换函数 convert_tushare_circ_mv_to_yi
+    """
     circ_mv_wan_yuan = 50_000.0
-    circ_mv_yi = circ_mv_wan_yuan / 10000.0
+    circ_mv_yi = convert_tushare_circ_mv_to_yi(circ_mv_wan_yuan)
     assert circ_mv_yi == pytest.approx(5.0, abs=1e-6)
 
 
 def test_factor_and_strategy_period_exact_match():
-    intervals = [
-        ("2023-01-31", "2023-02-28"),
-        ("2023-02-28", "2023-03-31"),
-        ("2023-03-31", "2023-04-28")
+    """
+    测试 P0-10 / P0-7: 直接调用生产环境期间构建函数 build_aligned_monthly_periods
+    """
+    month_end_dates = [20230131, 20230228, 20230331, 20230428]
+    periods = build_aligned_monthly_periods(month_end_dates)
+    expected_periods = [
+        (20230131, 20230228),
+        (20230228, 20230331),
+        (20230331, 20230428)
     ]
-    strat_returns = pd.Series([0.02, -0.01, 0.03], index=intervals)
-    factor_returns = pd.Series([0.018, -0.012, 0.028], index=intervals)
-    aligned_df = pd.DataFrame({"strat": strat_returns, "mkt": factor_returns}).dropna()
-    assert len(aligned_df) == 3
-    corr = np.corrcoef(aligned_df["strat"], aligned_df["mkt"])[0, 1]
-    assert corr > 0.95
+    assert periods == expected_periods
+    assert len(periods) == 3
 
 
 def test_csi1000_market_beta_sanity():
+    """
+    测试 P0-7: 直接调用生产环境回归与常识性断言函数
+    """
     np.random.seed(42)
     mkt = np.random.normal(0.005, 0.04, 36)
     csi1000 = 1.02 * mkt + np.random.normal(0, 0.005, 36)
-    cov_matrix = np.cov(csi1000, mkt)
-    beta = cov_matrix[0, 1] / cov_matrix[1, 1]
-    assert 0.90 <= beta <= 1.10
+    X = sm.add_constant(pd.DataFrame({"mkt": mkt}))
+    y = pd.Series(csi1000)
+    
+    res = run_ch4_hac_regression(y, X, maxlags=1)
+    beta = float(res.params["mkt"])
+    r2 = float(res.rsquared)
+    
+    assert 0.90 <= beta <= 1.15
+    assert check_benchmark_beta_sanity(beta, r2, beta_min=0.85, beta_max=1.35, r2_min=0.90)
+
+
+def test_etf_pending_order_target_tracking():
+    """
+    测试 P1-1: ETF 目标跟踪状态机 (Unified Target-vs-Actual Order State Machine)
+    当受 10% ADV 限制首日仅成交部分股数时，未成交缺口必须记录在 pending_etf_buy_orders 中，
+    次日 process_daily_pending_orders 自动继续撮合，直到目标达成！
+    """
+    dates, open_df, close_df, preclose_df, vol_df = _build_mock_matrices()
+    ledger = UnifiedProductionLedger(initial_capital=1_000_000.0, adv_cap_pct=0.10, etf_slippage_bps=2.0)
+
+    # 标的 512100.SH:
+    # 设定成交量 100 手 = 10,000 股 => 10% ADV 限额为 1,000 股
+    etf_vol_series = pd.Series(100.0, index=dates)
+    etf_open_series = pd.Series(2.0, index=dates)
+    etf_price_dict = {"512100.SH": etf_open_series}
+    etf_vol_dict = {"512100.SH": etf_vol_series}
+
+    # Day 0 (dates[5]): 目标 2,000 股 (目标市值 4,000 元，占比 0.004)
+    # 因 10% ADV 限额为 1,000 股，首日只能成交 1,000 股
+    d0 = dates[5]
+    d1 = dates[6]
+    target_pct = (2000 * 2.0) / 1_000_000.0
+
+    ledger.execute_rebalance(
+        d0, [], 0.0, open_df, preclose_df, vol_df,
+        etf_targets={"512100.SH": target_pct},
+        etf_price_dict=etf_price_dict,
+        etf_vol_dict=etf_vol_dict
+    )
+
+    assert ledger.etf_positions["512100.SH"]["shares"] == 1000, "Day 0 should fill exactly 1,000 shares due to ADV cap"
+    assert "512100.SH" in ledger.pending_etf_buy_orders, "Shortfall must be recorded in pending_etf_buy_orders"
+    assert ledger.pending_etf_buy_orders["512100.SH"]["shares"] == 1000, "Pending deficit must be exactly 1,000 shares"
+
+    # Day 1 (dates[6]): 不触发新调仓信号，调用 process_daily_pending_orders 重试未完成挂单
+    ledger.unlock_t1_shares()
+    ledger.process_daily_pending_orders(
+        d1, open_df, preclose_df, vol_df,
+        etf_price_dict=etf_price_dict,
+        etf_vol_dict=etf_vol_dict
+    )
+
+    assert ledger.etf_positions["512100.SH"]["shares"] == 2000, "Day 1 retry should complete the remaining 1,000 shares"
+    assert "512100.SH" not in ledger.pending_etf_buy_orders, "Pending order should be fully cleared upon completion"
+

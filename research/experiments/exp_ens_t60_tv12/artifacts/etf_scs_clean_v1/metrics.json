@@ -1,35 +1,62 @@
 {
-  "benchmark_bh": {
-    "name": "512100.SH Buy & Hold",
-    "cagr_pct": 5.6,
+  "status": "PASS",
+  "evaluation_period": {
+    "start_date": 20230103,
+    "end_date": 20260806,
+    "trading_days": 870
+  },
+  "buy_and_hold_512100": {
+    "cagr": 5.6,
     "sharpe": 0.26,
-    "vol_pct": 24.91,
-    "max_dd_pct": -38.36,
+    "vol": 24.91,
+    "max_dd": -38.36,
     "calmar": 0.15,
-    "total_trades": 1,
-    "total_commission_rmb": 659.8,
-    "total_traded_value_rmb": 2199328.78
+    "total_return": 21.66,
+    "win_rate": 53.33,
+    "days": 870
   },
-  "etf_scs_clean_v1_b0": {
-    "name": "ETF+SCS Clean v1 (B0 Direct Target)",
-    "cagr_pct": 10.84,
+  "etf_scs_b0_direct": {
+    "cagr": 10.84,
     "sharpe": 0.74,
-    "vol_pct": 12.14,
-    "max_dd_pct": -9.97,
+    "vol": 12.14,
+    "max_dd": -9.97,
     "calmar": 1.09,
-    "total_trades": 709,
-    "total_commission_rmb": 86466.23,
-    "total_traded_value_rmb": 288111366.46
+    "total_return": 44.78,
+    "win_rate": 60.69,
+    "days": 870
   },
-  "etf_scs_clean_v1_b1": {
-    "name": "ETF+SCS Clean v1 (B1 8% Deadband Half-Step)",
-    "cagr_pct": 10.31,
+  "etf_scs_b1_smoothed": {
+    "cagr": 10.31,
     "sharpe": 0.75,
-    "vol_pct": 11.23,
-    "max_dd_pct": -10.44,
+    "vol": 11.23,
+    "max_dd": -10.44,
     "calmar": 0.99,
+    "total_return": 42.32,
+    "win_rate": 63.79,
+    "days": 870
+  },
+  "ledger_summary_b1": {
     "total_trades": 512,
     "total_commission_rmb": 50143.12,
+    "total_slippage_rmb": 33428.71,
+    "total_friction_rmb": 83571.83,
     "total_traded_value_rmb": 167143728.57
+  },
+  "cash_sensitivity": {
+    "0.0%": {
+      "cagr_pct": 8.66,
+      "sharpe": 0.62,
+      "max_dd_pct": -10.47
+    },
+    "1.5%": {
+      "cagr_pct": 9.9,
+      "sharpe": 0.72,
+      "max_dd_pct": -10.45
+    },
+    "2.0%": {
+      "cagr_pct": 10.31,
+      "sharpe": 0.75,
+      "max_dd_pct": -10.44
+    }
   }
 }

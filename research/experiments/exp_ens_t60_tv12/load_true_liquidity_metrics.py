@@ -16,6 +16,22 @@ DAY1_DIR = os.path.join(DATA_DIR, "data_day1")
 OTHER1_DIR = os.path.join(DATA_DIR, "other_day1")
 
 
+def convert_tushare_amount_to_yi(amount_thousand):
+    """
+    Tushare daily 行情 amount 字段单位为千元 (thousands RMB)
+    换算为亿元: amount * 1000 / 1e8 = amount / 1e5
+    """
+    return amount_thousand / 1e5
+
+
+def convert_tushare_circ_mv_to_yi(circ_mv_wan):
+    """
+    Tushare daily_basic circ_mv 字段单位为万元 (ten-thousands RMB)
+    换算为亿元: circ_mv * 10000 / 1e8 = circ_mv / 10000.0
+    """
+    return circ_mv_wan / 10000.0
+
+
 class TrueLiquidityManager:
     """真实流动性与交易摩擦度量管理器"""
 
@@ -64,8 +80,8 @@ class TrueLiquidityManager:
         # Tushare daily 行情 amount 单位是千元 (thousands RMB). 换算为亿元: amount * 1000 / 1e8 = amount / 1e5
         # Tushare daily_basic circ_mv 单位是万元 (ten-thousands RMB). 换算为亿元: circ_mv * 10000 / 1e8 = circ_mv / 10000.0
         # 标准 Amihud 非流动性比率: |pct_chg| / (amount_yi + 1e-4) (日绝对收益率 / 日成交金额亿元)
-        panel_20["amount_yi"] = panel_20["amount"] / 1e5
-        panel_20["circ_mv_yi"] = panel_20["circ_mv"] / 10000.0
+        panel_20["amount_yi"] = convert_tushare_amount_to_yi(panel_20["amount"])
+        panel_20["circ_mv_yi"] = convert_tushare_circ_mv_to_yi(panel_20["circ_mv"])
         panel_20["daily_illiq"] = panel_20["pct_chg"].abs() / (panel_20["amount_yi"] + 1e-4)
 
         agg_dict = {

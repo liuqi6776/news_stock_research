@@ -1,40 +1,156 @@
 {
-  "cs_transformer_clean_v1_b0": {
-    "name": "CS-Transformer + SCS (B0 Direct Target)",
-    "cagr_pct": 18.95,
-    "sharpe": 1.31,
-    "vol_pct": 12.28,
-    "max_dd_pct": -10.57,
-    "calmar": 1.79,
-    "total_trades": 22506,
-    "total_commission_rmb": 311693.81,
-    "total_traded_value_rmb": 311693808.0
+  "status": "PASS",
+  "evaluation_period": {
+    "start_date": 20230103,
+    "end_date": 20260806,
+    "trading_days": 870
   },
-  "cs_transformer_clean_v1_b1": {
-    "name": "CS-Transformer + SCS (B1 8% Deadband Half-Step)",
-    "cagr_pct": 16.68,
+  "cs_transformer_b0_direct": {
+    "cagr": 18.95,
+    "sharpe": 1.31,
+    "vol": 12.28,
+    "max_dd": -10.57,
+    "calmar": 1.79,
+    "total_return": 86.59,
+    "win_rate": 65.29,
+    "days": 870
+  },
+  "cs_transformer_b1_smoothed": {
+    "cagr": 16.68,
     "sharpe": 1.26,
-    "vol_pct": 11.17,
-    "max_dd_pct": -8.89,
+    "vol": 11.17,
+    "max_dd": -8.89,
     "calmar": 1.88,
-    "total_trades": 17297,
-    "total_commission_rmb": 192916.16,
-    "total_traded_value_rmb": 192916162.0
+    "total_return": 74.12,
+    "win_rate": 68.28,
+    "days": 870
   },
   "paired_incremental_alpha_b0": {
     "delta_cagr_pct": 8.11,
     "delta_sharpe": 0.57,
+    "delta_vol_pct": 0.14,
     "delta_max_dd_pct": -0.6,
-    "tracking_error_pct": 8.21,
+    "tracking_error_pct": 8.22,
     "information_ratio": 0.86,
-    "incremental_commission_rmb": 225227.58
+    "delta_trades": 21800,
+    "delta_commission_rmb": 225227.1,
+    "delta_total_friction_rmb": 167604.88
   },
   "paired_incremental_alpha_b1": {
     "delta_cagr_pct": 6.37,
     "delta_sharpe": 0.51,
+    "delta_vol_pct": -0.06,
     "delta_max_dd_pct": 1.55,
-    "tracking_error_pct": 7.27,
+    "tracking_error_pct": 7.28,
     "information_ratio": 0.77,
-    "incremental_commission_rmb": 142773.04
+    "delta_trades": 16785,
+    "delta_commission_rmb": 142773.04,
+    "delta_total_friction_rmb": 109344.33,
+    "hac_test": {
+      "alpha_ann_pct": 5.61,
+      "t_stat": 1.14,
+      "p_value_2sided": 0.2546,
+      "p_value_1sided": 0.1273,
+      "maxlags": 5,
+      "n_obs": 870
+    },
+    "bootstrap_95ci": {
+      "alpha_ann_pct_mean": 6.57,
+      "alpha_ann_pct_95ci": [
+        -2.35,
+        18.3
+      ],
+      "sharpe_diff_mean": 0.59,
+      "sharpe_diff_95ci": [
+        -0.15,
+        1.56
+      ],
+      "n_iterations": 1000,
+      "block_length_days": 15
+    }
+  },
+  "ledger_summary_b1": {
+    "total_trades": 17297,
+    "total_commission_rmb": 192916.16,
+    "total_slippage_rmb": 0.0,
+    "total_tax_rmb": 48139.09,
+    "total_friction_rmb": 192916.16,
+    "total_traded_value_rmb": 192916162.0
+  },
+  "cash_sensitivity": {
+    "0.0%": {
+      "cash_interest_rate_pct": 0.0,
+      "etf_b1_cagr_pct": 8.66,
+      "etf_b1_sharpe": 0.62,
+      "etf_b1_max_dd_pct": -10.47,
+      "cs_b1_cagr_pct": 14.87,
+      "cs_b1_sharpe": 1.12,
+      "cs_b1_max_dd_pct": -9.75,
+      "delta_cagr_pct": 6.21,
+      "delta_sharpe": 0.5
+    },
+    "1.5%": {
+      "cash_interest_rate_pct": 1.5,
+      "etf_b1_cagr_pct": 9.9,
+      "etf_b1_sharpe": 0.72,
+      "etf_b1_max_dd_pct": -10.45,
+      "cs_b1_cagr_pct": 16.28,
+      "cs_b1_sharpe": 1.23,
+      "cs_b1_max_dd_pct": -9.11,
+      "delta_cagr_pct": 6.38,
+      "delta_sharpe": 0.51
+    },
+    "2.0%": {
+      "cash_interest_rate_pct": 2.0,
+      "etf_b1_cagr_pct": 10.31,
+      "etf_b1_sharpe": 0.75,
+      "etf_b1_max_dd_pct": -10.44,
+      "cs_b1_cagr_pct": 16.68,
+      "cs_b1_sharpe": 1.26,
+      "cs_b1_max_dd_pct": -8.89,
+      "delta_cagr_pct": 6.37,
+      "delta_sharpe": 0.51
+    }
+  },
+  "friction_sensitivity": {
+    "10bps": {
+      "stock_commission_bps": 10.0,
+      "stock_slippage_bps": 0.0,
+      "nominal_friction_bps": 10.0,
+      "cagr_pct": 16.68,
+      "sharpe": 1.26,
+      "max_dd_pct": -8.89,
+      "total_friction_rmb": 192916.16,
+      "total_commission_rmb": 192916.16,
+      "total_slippage_rmb": 0.0,
+      "delta_cagr_vs_etf": 6.37,
+      "delta_sharpe_vs_etf": 0.51
+    },
+    "20bps": {
+      "stock_commission_bps": 10.0,
+      "stock_slippage_bps": 10.0,
+      "nominal_friction_bps": 20.0,
+      "cagr_pct": 14.3,
+      "sharpe": 1.08,
+      "max_dd_pct": -9.93,
+      "total_friction_rmb": 370621.03,
+      "total_commission_rmb": 185310.67,
+      "total_slippage_rmb": 185310.36,
+      "delta_cagr_vs_etf": 3.99,
+      "delta_sharpe_vs_etf": 0.33
+    },
+    "50bps": {
+      "stock_commission_bps": 10.0,
+      "stock_slippage_bps": 40.0,
+      "nominal_friction_bps": 50.0,
+      "cagr_pct": 8.33,
+      "sharpe": 0.6,
+      "max_dd_pct": -12.96,
+      "total_friction_rmb": 833907.15,
+      "total_commission_rmb": 166781.86,
+      "total_slippage_rmb": 667125.28,
+      "delta_cagr_vs_etf": -1.98,
+      "delta_sharpe_vs_etf": -0.15
+    }
   }
 }

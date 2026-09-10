@@ -5,6 +5,10 @@
     "paired_etf_days": 871,
     "is_dates_identical": true
   },
+  "industry_pit_invariance": {
+    "stocks_with_multiple_industries": 0,
+    "status": "PASS"
+  },
   "lookahead_audit": {
     "ths_hot_rank_lookahead_fixed": true,
     "condition": "prior_trade_date < decision_date"

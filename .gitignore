@@ -26,6 +26,7 @@ research/**/predictions/*.parquet
 !/data/.gitkeep
 !/etf-valuation-strategy/data/.gitkeep
 !/research/**/data/.gitkeep
+!research/experiments/exp_ens_t60_tv12/artifacts/**
 daily_chip.csv
 
 # 抓取新闻网页数据（运行时生成，不应进 git）

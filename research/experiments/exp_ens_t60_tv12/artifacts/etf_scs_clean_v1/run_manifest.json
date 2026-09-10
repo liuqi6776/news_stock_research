@@ -1,6 +1,6 @@
 {
   "strategy_id": "etf_scs_clean_v1",
-  "description": "Canonical clean baseline of CSI 1000 ETF (512100.SH) + SCS timing + 100% Cash defensive leg",
+  "description": "Canonical clean baseline of 512100.SH ETF + SCS sentiment timing with 100% Cash defense",
   "evaluation_period": {
     "start_date": 20230103,
     "end_date": 20260806,
@@ -15,15 +15,88 @@
     "adv_quota_pct": 0.1,
     "cash_risk_free_rate_pct": 2.0
   },
-  "variants": {
-    "B0": "Direct target exposure without smoothing",
-    "B1": "Cost-aware smoothing (8% deadband, 0.5 step, 0.0 hard exit)"
-  },
   "defensive_leg": "100% Cash (strictly zero bonds or gold)",
   "hashes": {
     "etf_data_sha256": "f8ea65012c1d1f9a426473b373bd5daa8a6012c341187c731e51612443061f33",
     "sentiment_data_sha256": "a45090a4bfa4ab29db5d4450b7db729081ff6b3b1e094c38cea6e420e61f2309",
-    "ledger_code_sha256": "f6bcf7c4d4125d1c263eb2a1a96c24c7243fc377cd34068e27cfc5a58a82fa80"
+    "ledger_code_sha256": "86e3002147797e39432b11efcf244c60372aed97241402c8225119367a644b0c"
   },
-  "created_at": "2026-09-09 15:41:45"
+  "artifact_catalog": {
+    "README.md": {
+      "sha256": "c0fd174f4913cf7ddac641b943b401be5b89da958f6aee9d3ba9fe8fdef9a210",
+      "size_bytes": 1952,
+      "relative_path": "README.md"
+    },
+    "annual_returns.json": {
+      "sha256": "f4f764153be8e15151f8733dd56b39e9978b1cbd742bb4fd6db0e8c6f41ccbda",
+      "size_bytes": 338,
+      "relative_path": "annual_returns.json"
+    },
+    "blocked_orders.csv": {
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "size_bytes": 2,
+      "relative_path": "blocked_orders.csv"
+    },
+    "daily_actual_holdings.csv": {
+      "sha256": "e37ee0fc3517b4868acaf6379afa69c44895f38d88fcfef334388e94ae9f6c3e",
+      "size_bytes": 44652,
+      "relative_path": "daily_actual_holdings.csv"
+    },
+    "daily_nav.csv": {
+      "sha256": "dd2381ab02eb75c46a31ee035cbbb6b43499ced84c94149b48a51db8cb28a4f6",
+      "size_bytes": 138779,
+      "relative_path": "daily_nav.csv"
+    },
+    "daily_nav_b0.csv": {
+      "sha256": "716b67efd71e2ee044367c2a4ded49a8c2b0c1e0389166c7010840818a3cd460",
+      "size_bytes": 74399,
+      "relative_path": "daily_nav_b0.csv"
+    },
+    "daily_nav_b1.csv": {
+      "sha256": "3355a80a46eddf8b2479a46163c7fc3d318b100c3407b7f4db3e11946424f01a",
+      "size_bytes": 74218,
+      "relative_path": "daily_nav_b1.csv"
+    },
+    "daily_target_holdings.csv": {
+      "sha256": "2452db664ad02a849ced64af26929c0b2974b126574153b70c3d8018c55c550c",
+      "size_bytes": 50591,
+      "relative_path": "daily_target_holdings.csv"
+    },
+    "data_quality_report.json": {
+      "sha256": "62af42c14e0c9b4096b38b775e7f81cfe944921dd2147188281b83a52d4187d8",
+      "size_bytes": 306,
+      "relative_path": "data_quality_report.json"
+    },
+    "fees.csv": {
+      "sha256": "822a1a58e3218521d938e8835706d2b61f4d70a714bb87fd95ce4362b5a109c5",
+      "size_bytes": 41519,
+      "relative_path": "fees.csv"
+    },
+    "fills.csv": {
+      "sha256": "41276fc0a04b0395aff54540b000cc9dafa4e8b9c4f0d2ae5d47730d3cca811a",
+      "size_bytes": 37951,
+      "relative_path": "fills.csv"
+    },
+    "metrics.json": {
+      "sha256": "14d0e8ffbd013a1be6136ed46b944f9d5006cbd7746dfd974ae04ea9357562e0",
+      "size_bytes": 1295,
+      "relative_path": "metrics.json"
+    },
+    "orders.csv": {
+      "sha256": "21165a74a446074ddb1ea49932514ad07ee18b88e5a67694a0aae0a99cf626d2",
+      "size_bytes": 24766,
+      "relative_path": "orders.csv"
+    },
+    "run_manifest.json": {
+      "sha256": "cc0fc6c1d07c09e1cac2b3dabe60259dae7eb28c44db6e67947d5fff8ebb1e46",
+      "size_bytes": 3811,
+      "relative_path": "run_manifest.json"
+    },
+    "signal_inputs.csv": {
+      "sha256": "8db639ef6241e9ff65064a8b11d436c7632979a22e2c7eb886168276c7157c21",
+      "size_bytes": 46798,
+      "relative_path": "signal_inputs.csv"
+    }
+  },
+  "created_at": "2026-09-10 10:33:49"
 }

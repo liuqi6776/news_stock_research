@@ -1,76 +1,518 @@
 {
   "status": "PASS",
   "alignment_rule": "strict_(period_start, period_end)_matching",
-  "periods_count": 44,
-  "sanity_check": {
-    "benchmark_beta_mkt": 1.274,
-    "benchmark_r2": 0.9808,
-    "result": "PASS (Beta within [0.85, 1.35], R2 >= 0.90)"
-  },
-  "hac_regressions": {
-    "512100_bh": {
-      "name": "中证1000 ETF 买入持有",
-      "alpha_annualized_pct": 1.96,
-      "t_stat_hac": 0.94,
-      "p_value_hac": 0.3461,
-      "beta_mkt": 1.274,
-      "t_mkt": 36.61,
-      "beta_smb": 0.137,
-      "t_smb": 1.85,
-      "beta_vmg": -0.139,
-      "t_vmg": -1.38,
-      "beta_pmo": -0.168,
-      "t_pmo": -1.91,
-      "r_squared": 0.9808
+  "samples": {
+    "full_43_months": {
+      "periods_count": 43,
+      "annualization_factor": 12.0,
+      "models": {
+        "512100_bh": {
+          "name": "中证1000 ETF 买入持有",
+          "primary_lag1": {
+            "alpha_annualized_pct": 2.01,
+            "t_stat_hac": 0.97,
+            "p_value_hac": 0.3344,
+            "beta_mkt": 1.274,
+            "t_mkt": 36.81,
+            "beta_smb": 0.138,
+            "t_smb": 1.85,
+            "beta_vmg": -0.142,
+            "t_vmg": -1.4,
+            "beta_pmo": -0.166,
+            "t_pmo": -1.89,
+            "r_squared": 0.9806
+          },
+          "lag_sensitivity": {
+            "lag_1": {
+              "alpha_annualized_pct": 2.01,
+              "t_stat_hac": 0.97,
+              "p_value_hac": 0.3344,
+              "beta_mkt": 1.274,
+              "t_mkt": 36.81,
+              "beta_smb": 0.138,
+              "t_smb": 1.85,
+              "beta_vmg": -0.142,
+              "t_vmg": -1.4,
+              "beta_pmo": -0.166,
+              "t_pmo": -1.89,
+              "r_squared": 0.9806
+            },
+            "lag_2": {
+              "alpha_annualized_pct": 2.01,
+              "t_stat_hac": 0.95,
+              "p_value_hac": 0.3433,
+              "beta_mkt": 1.274,
+              "t_mkt": 35.48,
+              "beta_smb": 0.138,
+              "t_smb": 2.02,
+              "beta_vmg": -0.142,
+              "t_vmg": -1.48,
+              "beta_pmo": -0.166,
+              "t_pmo": -1.93,
+              "r_squared": 0.9806
+            },
+            "lag_3": {
+              "alpha_annualized_pct": 2.01,
+              "t_stat_hac": 0.96,
+              "p_value_hac": 0.3365,
+              "beta_mkt": 1.274,
+              "t_mkt": 34.98,
+              "beta_smb": 0.138,
+              "t_smb": 2.26,
+              "beta_vmg": -0.142,
+              "t_vmg": -1.46,
+              "beta_pmo": -0.166,
+              "t_pmo": -1.91,
+              "r_squared": 0.9806
+            }
+          }
+        },
+        "etf_scs_b1": {
+          "name": "ETF+SCS 择时基准 (B1)",
+          "primary_lag1": {
+            "alpha_annualized_pct": 6.98,
+            "t_stat_hac": 1.78,
+            "p_value_hac": 0.0746,
+            "beta_mkt": 0.676,
+            "t_mkt": 3.65,
+            "beta_smb": 0.163,
+            "t_smb": 1.9,
+            "beta_vmg": 0.33,
+            "t_vmg": 1.04,
+            "beta_pmo": -0.213,
+            "t_pmo": -0.91,
+            "r_squared": 0.6956
+          },
+          "lag_sensitivity": {
+            "lag_1": {
+              "alpha_annualized_pct": 6.98,
+              "t_stat_hac": 1.78,
+              "p_value_hac": 0.0746,
+              "beta_mkt": 0.676,
+              "t_mkt": 3.65,
+              "beta_smb": 0.163,
+              "t_smb": 1.9,
+              "beta_vmg": 0.33,
+              "t_vmg": 1.04,
+              "beta_pmo": -0.213,
+              "t_pmo": -0.91,
+              "r_squared": 0.6956
+            },
+            "lag_2": {
+              "alpha_annualized_pct": 6.98,
+              "t_stat_hac": 1.7,
+              "p_value_hac": 0.0883,
+              "beta_mkt": 0.676,
+              "t_mkt": 3.65,
+              "beta_smb": 0.163,
+              "t_smb": 2.12,
+              "beta_vmg": 0.33,
+              "t_vmg": 1.21,
+              "beta_pmo": -0.213,
+              "t_pmo": -1.09,
+              "r_squared": 0.6956
+            },
+            "lag_3": {
+              "alpha_annualized_pct": 6.98,
+              "t_stat_hac": 1.64,
+              "p_value_hac": 0.102,
+              "beta_mkt": 0.676,
+              "t_mkt": 3.69,
+              "beta_smb": 0.163,
+              "t_smb": 2.21,
+              "beta_vmg": 0.33,
+              "t_vmg": 1.25,
+              "beta_pmo": -0.213,
+              "t_pmo": -1.14,
+              "r_squared": 0.6956
+            }
+          }
+        },
+        "cs_transformer_a0_b1": {
+          "name": "CS-Transformer A0 原始 (B1)",
+          "primary_lag1": {
+            "alpha_annualized_pct": 12.95,
+            "t_stat_hac": 2.4,
+            "p_value_hac": 0.0164,
+            "beta_mkt": 0.573,
+            "t_mkt": 6.3,
+            "beta_smb": 0.335,
+            "t_smb": 1.39,
+            "beta_vmg": 0.365,
+            "t_vmg": 1.73,
+            "beta_pmo": -0.272,
+            "t_pmo": -1.56,
+            "r_squared": 0.4604
+          },
+          "lag_sensitivity": {
+            "lag_1": {
+              "alpha_annualized_pct": 12.95,
+              "t_stat_hac": 2.4,
+              "p_value_hac": 0.0164,
+              "beta_mkt": 0.573,
+              "t_mkt": 6.3,
+              "beta_smb": 0.335,
+              "t_smb": 1.39,
+              "beta_vmg": 0.365,
+              "t_vmg": 1.73,
+              "beta_pmo": -0.272,
+              "t_pmo": -1.56,
+              "r_squared": 0.4604
+            },
+            "lag_2": {
+              "alpha_annualized_pct": 12.95,
+              "t_stat_hac": 2.39,
+              "p_value_hac": 0.017,
+              "beta_mkt": 0.573,
+              "t_mkt": 6.43,
+              "beta_smb": 0.335,
+              "t_smb": 1.37,
+              "beta_vmg": 0.365,
+              "t_vmg": 2.04,
+              "beta_pmo": -0.272,
+              "t_pmo": -1.81,
+              "r_squared": 0.4604
+            },
+            "lag_3": {
+              "alpha_annualized_pct": 12.95,
+              "t_stat_hac": 2.41,
+              "p_value_hac": 0.0159,
+              "beta_mkt": 0.573,
+              "t_mkt": 6.48,
+              "beta_smb": 0.335,
+              "t_smb": 1.34,
+              "beta_vmg": 0.365,
+              "t_vmg": 2.32,
+              "beta_pmo": -0.272,
+              "t_pmo": -2.07,
+              "r_squared": 0.4604
+            }
+          }
+        },
+        "cs_transformer_a1_b1": {
+          "name": "CS-Transformer A1 过滤 (B1)",
+          "primary_lag1": {
+            "alpha_annualized_pct": 13.13,
+            "t_stat_hac": 2.42,
+            "p_value_hac": 0.0154,
+            "beta_mkt": 0.564,
+            "t_mkt": 6.12,
+            "beta_smb": 0.351,
+            "t_smb": 1.46,
+            "beta_vmg": 0.339,
+            "t_vmg": 1.56,
+            "beta_pmo": -0.26,
+            "t_pmo": -1.46,
+            "r_squared": 0.463
+          },
+          "lag_sensitivity": {
+            "lag_1": {
+              "alpha_annualized_pct": 13.13,
+              "t_stat_hac": 2.42,
+              "p_value_hac": 0.0154,
+              "beta_mkt": 0.564,
+              "t_mkt": 6.12,
+              "beta_smb": 0.351,
+              "t_smb": 1.46,
+              "beta_vmg": 0.339,
+              "t_vmg": 1.56,
+              "beta_pmo": -0.26,
+              "t_pmo": -1.46,
+              "r_squared": 0.463
+            },
+            "lag_2": {
+              "alpha_annualized_pct": 13.13,
+              "t_stat_hac": 2.39,
+              "p_value_hac": 0.0168,
+              "beta_mkt": 0.564,
+              "t_mkt": 6.24,
+              "beta_smb": 0.351,
+              "t_smb": 1.45,
+              "beta_vmg": 0.339,
+              "t_vmg": 1.81,
+              "beta_pmo": -0.26,
+              "t_pmo": -1.65,
+              "r_squared": 0.463
+            },
+            "lag_3": {
+              "alpha_annualized_pct": 13.13,
+              "t_stat_hac": 2.39,
+              "p_value_hac": 0.0171,
+              "beta_mkt": 0.564,
+              "t_mkt": 6.3,
+              "beta_smb": 0.351,
+              "t_smb": 1.42,
+              "beta_vmg": 0.339,
+              "t_vmg": 2.0,
+              "beta_pmo": -0.26,
+              "t_pmo": -1.84,
+              "r_squared": 0.463
+            }
+          }
+        }
+      }
     },
-    "etf_scs_b1": {
-      "name": "ETF+SCS 择时基准 (B1)",
-      "alpha_annualized_pct": 7.0,
-      "t_stat_hac": 1.81,
-      "p_value_hac": 0.0705,
-      "beta_mkt": 0.676,
-      "t_mkt": 3.64,
-      "beta_smb": 0.163,
-      "t_smb": 1.91,
-      "beta_vmg": 0.328,
-      "t_vmg": 1.03,
-      "beta_pmo": -0.212,
-      "t_pmo": -0.9,
-      "r_squared": 0.6954
-    },
-    "cs_transformer_a0_b1": {
-      "name": "CS-Transformer A0 原始 (B1)",
-      "alpha_annualized_pct": 12.83,
-      "t_stat_hac": 2.42,
-      "p_value_hac": 0.0155,
-      "beta_mkt": 0.573,
-      "t_mkt": 6.29,
-      "beta_smb": 0.332,
-      "t_smb": 1.39,
-      "beta_vmg": 0.368,
-      "t_vmg": 1.77,
-      "beta_pmo": -0.273,
-      "t_pmo": -1.58,
-      "r_squared": 0.4594
-    },
-    "cs_transformer_a1_b1": {
-      "name": "CS-Transformer A1 过滤 (B1)",
-      "alpha_annualized_pct": 12.96,
-      "t_stat_hac": 2.43,
-      "p_value_hac": 0.015,
-      "beta_mkt": 0.564,
-      "t_mkt": 6.11,
-      "beta_smb": 0.348,
-      "t_smb": 1.46,
-      "beta_vmg": 0.345,
-      "t_vmg": 1.61,
-      "beta_pmo": -0.262,
-      "t_pmo": -1.48,
-      "r_squared": 0.4616
+    "all_44_periods": {
+      "periods_count": 44,
+      "annualization_factor": 12.24,
+      "models": {
+        "512100_bh": {
+          "name": "中证1000 ETF 买入持有",
+          "primary_lag1": {
+            "alpha_annualized_pct": 1.99,
+            "t_stat_hac": 0.94,
+            "p_value_hac": 0.3488,
+            "beta_mkt": 1.274,
+            "t_mkt": 36.61,
+            "beta_smb": 0.137,
+            "t_smb": 1.84,
+            "beta_vmg": -0.139,
+            "t_vmg": -1.39,
+            "beta_pmo": -0.167,
+            "t_pmo": -1.91,
+            "r_squared": 0.9808
+          },
+          "lag_sensitivity": {
+            "lag_1": {
+              "alpha_annualized_pct": 1.99,
+              "t_stat_hac": 0.94,
+              "p_value_hac": 0.3488,
+              "beta_mkt": 1.274,
+              "t_mkt": 36.61,
+              "beta_smb": 0.137,
+              "t_smb": 1.84,
+              "beta_vmg": -0.139,
+              "t_vmg": -1.39,
+              "beta_pmo": -0.167,
+              "t_pmo": -1.91,
+              "r_squared": 0.9808
+            },
+            "lag_2": {
+              "alpha_annualized_pct": 1.99,
+              "t_stat_hac": 0.92,
+              "p_value_hac": 0.3563,
+              "beta_mkt": 1.274,
+              "t_mkt": 35.33,
+              "beta_smb": 0.137,
+              "t_smb": 2.0,
+              "beta_vmg": -0.139,
+              "t_vmg": -1.46,
+              "beta_pmo": -0.167,
+              "t_pmo": -1.95,
+              "r_squared": 0.9808
+            },
+            "lag_3": {
+              "alpha_annualized_pct": 1.99,
+              "t_stat_hac": 0.94,
+              "p_value_hac": 0.3474,
+              "beta_mkt": 1.274,
+              "t_mkt": 34.85,
+              "beta_smb": 0.137,
+              "t_smb": 2.24,
+              "beta_vmg": -0.139,
+              "t_vmg": -1.44,
+              "beta_pmo": -0.167,
+              "t_pmo": -1.93,
+              "r_squared": 0.9808
+            }
+          }
+        },
+        "etf_scs_b1": {
+          "name": "ETF+SCS 择时基准 (B1)",
+          "primary_lag1": {
+            "alpha_annualized_pct": 7.15,
+            "t_stat_hac": 1.81,
+            "p_value_hac": 0.0697,
+            "beta_mkt": 0.676,
+            "t_mkt": 3.65,
+            "beta_smb": 0.163,
+            "t_smb": 1.91,
+            "beta_vmg": 0.329,
+            "t_vmg": 1.04,
+            "beta_pmo": -0.213,
+            "t_pmo": -0.9,
+            "r_squared": 0.6961
+          },
+          "lag_sensitivity": {
+            "lag_1": {
+              "alpha_annualized_pct": 7.15,
+              "t_stat_hac": 1.81,
+              "p_value_hac": 0.0697,
+              "beta_mkt": 0.676,
+              "t_mkt": 3.65,
+              "beta_smb": 0.163,
+              "t_smb": 1.91,
+              "beta_vmg": 0.329,
+              "t_vmg": 1.04,
+              "beta_pmo": -0.213,
+              "t_pmo": -0.9,
+              "r_squared": 0.6961
+            },
+            "lag_2": {
+              "alpha_annualized_pct": 7.15,
+              "t_stat_hac": 1.73,
+              "p_value_hac": 0.0828,
+              "beta_mkt": 0.676,
+              "t_mkt": 3.65,
+              "beta_smb": 0.163,
+              "t_smb": 2.15,
+              "beta_vmg": 0.329,
+              "t_vmg": 1.21,
+              "beta_pmo": -0.213,
+              "t_pmo": -1.08,
+              "r_squared": 0.6961
+            },
+            "lag_3": {
+              "alpha_annualized_pct": 7.15,
+              "t_stat_hac": 1.66,
+              "p_value_hac": 0.0961,
+              "beta_mkt": 0.676,
+              "t_mkt": 3.69,
+              "beta_smb": 0.163,
+              "t_smb": 2.25,
+              "beta_vmg": 0.329,
+              "t_vmg": 1.24,
+              "beta_pmo": -0.213,
+              "t_pmo": -1.13,
+              "r_squared": 0.6961
+            }
+          }
+        },
+        "cs_transformer_a0_b1": {
+          "name": "CS-Transformer A0 原始 (B1)",
+          "primary_lag1": {
+            "alpha_annualized_pct": 13.1,
+            "t_stat_hac": 2.42,
+            "p_value_hac": 0.0154,
+            "beta_mkt": 0.574,
+            "t_mkt": 6.29,
+            "beta_smb": 0.333,
+            "t_smb": 1.39,
+            "beta_vmg": 0.369,
+            "t_vmg": 1.77,
+            "beta_pmo": -0.274,
+            "t_pmo": -1.59,
+            "r_squared": 0.4604
+          },
+          "lag_sensitivity": {
+            "lag_1": {
+              "alpha_annualized_pct": 13.1,
+              "t_stat_hac": 2.42,
+              "p_value_hac": 0.0154,
+              "beta_mkt": 0.574,
+              "t_mkt": 6.29,
+              "beta_smb": 0.333,
+              "t_smb": 1.39,
+              "beta_vmg": 0.369,
+              "t_vmg": 1.77,
+              "beta_pmo": -0.274,
+              "t_pmo": -1.59,
+              "r_squared": 0.4604
+            },
+            "lag_2": {
+              "alpha_annualized_pct": 13.1,
+              "t_stat_hac": 2.41,
+              "p_value_hac": 0.0159,
+              "beta_mkt": 0.574,
+              "t_mkt": 6.42,
+              "beta_smb": 0.333,
+              "t_smb": 1.38,
+              "beta_vmg": 0.369,
+              "t_vmg": 2.09,
+              "beta_pmo": -0.274,
+              "t_pmo": -1.83,
+              "r_squared": 0.4604
+            },
+            "lag_3": {
+              "alpha_annualized_pct": 13.1,
+              "t_stat_hac": 2.44,
+              "p_value_hac": 0.0148,
+              "beta_mkt": 0.574,
+              "t_mkt": 6.47,
+              "beta_smb": 0.333,
+              "t_smb": 1.34,
+              "beta_vmg": 0.369,
+              "t_vmg": 2.37,
+              "beta_pmo": -0.274,
+              "t_pmo": -2.09,
+              "r_squared": 0.4604
+            }
+          }
+        },
+        "cs_transformer_a1_b1": {
+          "name": "CS-Transformer A1 过滤 (B1)",
+          "primary_lag1": {
+            "alpha_annualized_pct": 13.24,
+            "t_stat_hac": 2.44,
+            "p_value_hac": 0.0149,
+            "beta_mkt": 0.564,
+            "t_mkt": 6.11,
+            "beta_smb": 0.348,
+            "t_smb": 1.46,
+            "beta_vmg": 0.346,
+            "t_vmg": 1.62,
+            "beta_pmo": -0.263,
+            "t_pmo": -1.49,
+            "r_squared": 0.4626
+          },
+          "lag_sensitivity": {
+            "lag_1": {
+              "alpha_annualized_pct": 13.24,
+              "t_stat_hac": 2.44,
+              "p_value_hac": 0.0149,
+              "beta_mkt": 0.564,
+              "t_mkt": 6.11,
+              "beta_smb": 0.348,
+              "t_smb": 1.46,
+              "beta_vmg": 0.346,
+              "t_vmg": 1.62,
+              "beta_pmo": -0.263,
+              "t_pmo": -1.49,
+              "r_squared": 0.4626
+            },
+            "lag_2": {
+              "alpha_annualized_pct": 13.24,
+              "t_stat_hac": 2.41,
+              "p_value_hac": 0.0162,
+              "beta_mkt": 0.564,
+              "t_mkt": 6.23,
+              "beta_smb": 0.348,
+              "t_smb": 1.45,
+              "beta_vmg": 0.346,
+              "t_vmg": 1.86,
+              "beta_pmo": -0.263,
+              "t_pmo": -1.68,
+              "r_squared": 0.4626
+            },
+            "lag_3": {
+              "alpha_annualized_pct": 13.24,
+              "t_stat_hac": 2.4,
+              "p_value_hac": 0.0164,
+              "beta_mkt": 0.564,
+              "t_mkt": 6.28,
+              "beta_smb": 0.348,
+              "t_smb": 1.42,
+              "beta_vmg": 0.346,
+              "t_vmg": 2.06,
+              "beta_pmo": -0.263,
+              "t_pmo": -1.87,
+              "r_squared": 0.4626
+            }
+          }
+        }
+      }
     }
   },
-  "micro_cap_diagnosis": {
-    "bottom_30pct_micro_cap_ratio": 26.69,
-    "top_70pct_investable_ratio": 73.31
+  "sanity_check": {
+    "benchmark_beta_mkt": 1.274,
+    "benchmark_r2": 0.9806,
+    "result": "PASS (Beta within [0.85, 1.35], R2 >= 0.90)"
+  },
+  "real_holdings_micro_cap_diagnosis": {
+    "source_ledger_file": "artifacts/cs_transformer_scs_clean_v1/daily_actual_holdings.csv",
+    "bottom_30pct_micro_cap_count_ratio_pct": 28.7,
+    "bottom_30pct_micro_cap_value_weighted_ratio_pct": 28.81,
+    "top_70pct_investable_value_weighted_ratio_pct": 71.19,
+    "average_holding_circ_mv_yi": 212.47
   }
 }

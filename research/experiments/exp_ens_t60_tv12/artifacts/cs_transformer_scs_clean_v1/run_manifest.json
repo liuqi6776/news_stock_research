@@ -10,14 +10,120 @@
   "capital_and_costs": {
     "initial_capital_rmb": 2200000.0,
     "stock_commission_bps": 10.0,
+    "stock_slippage_bps": 0.0,
+    "stamp_duty_sell_bps": 5.0,
+    "transfer_fee_bps": 0.1,
     "adv_quota_pct": 0.1,
     "cash_risk_free_rate_pct": 2.0
   },
   "paired_baseline": "etf_scs_clean_v1",
+  "model_hyperparameters": {
+    "model_class": "CSRelationalTransformer",
+    "d_model": 64,
+    "n_heads": 4,
+    "dropout": 0.15,
+    "num_industries": 35,
+    "epochs": 12,
+    "learning_rate": 0.001,
+    "loss_function": "PearsonCorrelationLoss (1 - Pearson_Corr)",
+    "optimizer": "AdamW (weight_decay=1e-3)",
+    "scheduler": "CosineAnnealingLR (T_max=12, eta_min=1e-5)",
+    "early_stopping": "Best Validation Spearman Rank IC across last 2 months"
+  },
+  "input_features_14d": [
+    "alpha_combo_short",
+    "alpha_pv_divergence",
+    "amihud_proxy_20",
+    "chip_conc_20",
+    "enh4_score",
+    "ivol",
+    "ortho_01_enh4_score",
+    "ortho_02_alpha_pv_divergence",
+    "ortho_03_alpha_023",
+    "ortho_04_ivol",
+    "ortho_05_alpha_combo_short",
+    "ortho_06_chip_conc_20",
+    "ortho_07_pos_vol_20",
+    "ortho_08_rev_20",
+    "ortho_09_or_yoy",
+    "ortho_10_chip_trapped_pressure",
+    "ortho_11_ret_1m",
+    "ortho_12_alpha_006_resid",
+    "ortho_13_alpha_012_resid",
+    "quality_safety_margin"
+  ],
   "hashes": {
     "pred_scores_sha256": "65799209f7664d4498f265d8da25b1a54ae9cfe4139482312dba237a77a5819e",
+    "panel_data_sha256": "75c7dc977e3f854f8148405b01972d17a3f4554025feb5d3807e7300addb8296",
     "sentiment_data_sha256": "a45090a4bfa4ab29db5d4450b7db729081ff6b3b1e094c38cea6e420e61f2309",
-    "ledger_code_sha256": "7ea49256c4ccf8ea2c46ddd445b6d763e12eb417894b26727a683ed6b741334f"
+    "ledger_code_sha256": "86e3002147797e39432b11efcf244c60372aed97241402c8225119367a644b0c"
   },
-  "created_at": "2026-09-09 17:11:53"
+  "artifact_catalog": {
+    "README.md": {
+      "sha256": "9632fdc1349312056616f7665a45aee2efc62999160dae84a51adcfb894a2680",
+      "size_bytes": 2547,
+      "relative_path": "README.md"
+    },
+    "annual_returns.json": {
+      "sha256": "7dfdc981f1c2b73b80b58759e57623edb555293f3faa406c22b455019f62e1f4",
+      "size_bytes": 701,
+      "relative_path": "annual_returns.json"
+    },
+    "blocked_orders.csv": {
+      "sha256": "93bfce8ea21e8be4fd9e0cfd8b8fb58bacbbf32a19e1fc5a6799fd4af4546d29",
+      "size_bytes": 7295,
+      "relative_path": "blocked_orders.csv"
+    },
+    "daily_actual_holdings.csv": {
+      "sha256": "e6a63ac0f620fefd228bca44b5b41e96cd138cfef29d247e80eb0795f970ab9e",
+      "size_bytes": 1401971,
+      "relative_path": "daily_actual_holdings.csv"
+    },
+    "daily_nav.csv": {
+      "sha256": "3534e31472838eac41d72de1918c40d3e6c7ff4d202e5308562e8e5b3e8e7f3b",
+      "size_bytes": 148443,
+      "relative_path": "daily_nav.csv"
+    },
+    "daily_target_holdings.csv": {
+      "sha256": "cd639d4f58fbb10c171d9102c9a1c196113f3e1ee64c774c1121fde6946c9730",
+      "size_bytes": 887271,
+      "relative_path": "daily_target_holdings.csv"
+    },
+    "data_quality_report.json": {
+      "sha256": "b2b65099a36d4aee1ed11ceab567bb92ee2bbb613883d491d5d21d26a5381db0",
+      "size_bytes": 372,
+      "relative_path": "data_quality_report.json"
+    },
+    "fees.csv": {
+      "sha256": "6fc11992cfd0039162a31d69ae2284f474cd8712e188213f6d3d8406bbcc56eb",
+      "size_bytes": 1250697,
+      "relative_path": "fees.csv"
+    },
+    "fills.csv": {
+      "sha256": "13e159e0aa1aae47a5e2f55d59443845c80ede20dc6ee9ce9c601dfdc2a8aeec",
+      "size_bytes": 887155,
+      "relative_path": "fills.csv"
+    },
+    "metrics.json": {
+      "sha256": "158ca70f320d633d2bbe4d20ce68b493ad461a31c0d6c4496ffe2dd623dcfbe2",
+      "size_bytes": 4159,
+      "relative_path": "metrics.json"
+    },
+    "orders.csv": {
+      "sha256": "228c749fa05772a6627a223a12f1f152272051636c462463176701d7675ca607",
+      "size_bytes": 814254,
+      "relative_path": "orders.csv"
+    },
+    "run_manifest.json": {
+      "sha256": "430c8c71307ccf03d87a740ea756a8ce3fcfea54ffdb6a70935fa377546577f7",
+      "size_bytes": 4634,
+      "relative_path": "run_manifest.json"
+    },
+    "signal_inputs.csv": {
+      "sha256": "222c0f5153a037f1be2b83ac80a7680aaf6f751e4c733b7c9a8ddb31f1adbbf7",
+      "size_bytes": 42753,
+      "relative_path": "signal_inputs.csv"
+    }
+  },
+  "created_at": "2026-09-10 10:33:49"
 }
