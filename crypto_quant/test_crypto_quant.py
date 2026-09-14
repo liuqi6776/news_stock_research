@@ -274,6 +274,177 @@ class TestCryptoQuantOffline(unittest.TestCase):
         self.assertLess(size_trial_trade2, size_base_trade2)
         self.assertLessEqual(size_trial_trade2, 0.80)
 
+    def test_long_intrabar_low_triggers_stop(self):
+        """测试多头盘中触及 Low 触发真实 Intrabar 止损 (Phase 16)"""
+        from crypto_quant.execution_model import ExecutionModel
+        exec_model = ExecutionModel(stop_slippage=0.0010)
+        # 成本价 3000, 止损 3.5% -> stop_price = 2895.0
+        # K 线: open=2950, high=2980, low=2880 (穿透), close=2940 (收盘反弹)
+        res = exec_model.check_intrabar_stop(
+            pos_direction=1,
+            entry_price=3000.0,
+            stop_loss_pct=0.035,
+            open_p=2950.0,
+            high_p=2980.0,
+            low_p=2880.0,
+            close_p=2940.0,
+        )
+        self.assertTrue(res.is_stopped)
+        self.assertEqual(res.reason, "intrabar_stop")
+        expected_fill = 2895.0 * (1.0 - 0.0010)
+        self.assertAlmostEqual(res.fill_price, expected_fill, places=2)
+
+    def test_short_intrabar_high_triggers_stop(self):
+        """测试空头盘中触及 High 触发真实 Intrabar 止损 (Phase 16)"""
+        from crypto_quant.execution_model import ExecutionModel
+        exec_model = ExecutionModel(stop_slippage=0.0010)
+        # 成本价 3000, 止损 3.5% -> stop_price = 3105.0
+        # K 线: open=3050, high=3120 (穿透), low=3020, close=3040 (收盘回落)
+        res = exec_model.check_intrabar_stop(
+            pos_direction=-1,
+            entry_price=3000.0,
+            stop_loss_pct=0.035,
+            open_p=3050.0,
+            high_p=3120.0,
+            low_p=3020.0,
+            close_p=3040.0,
+        )
+        self.assertTrue(res.is_stopped)
+        self.assertEqual(res.reason, "intrabar_stop")
+        expected_fill = 3105.0 * (1.0 + 0.0010)
+        self.assertAlmostEqual(res.fill_price, expected_fill, places=2)
+
+    def test_gap_through_stop_uses_conservative_fill(self):
+        """测试跳空低开穿透止损线使用保守开盘价成交 (Phase 16)"""
+        from crypto_quant.execution_model import ExecutionModel
+        exec_model = ExecutionModel(gap_slippage=0.0015)
+        # 成本价 3000, 止损 3.5% -> stop_price = 2895.0
+        # K 线跳空低开: open=2850 (直接低于 2895)
+        res = exec_model.check_intrabar_stop(
+            pos_direction=1,
+            entry_price=3000.0,
+            stop_loss_pct=0.035,
+            open_p=2850.0,
+            high_p=2870.0,
+            low_p=2820.0,
+            close_p=2860.0,
+        )
+        self.assertTrue(res.is_stopped)
+        self.assertTrue(res.is_gap)
+        self.assertEqual(res.reason, "gap_stop")
+        expected_fill = 2850.0 * (1.0 - 0.0015)
+        self.assertAlmostEqual(res.fill_price, expected_fill, places=2)
+
+    def test_funding_applies_only_at_settlement(self):
+        """测试资金费率仅在真实 8h 结算时刻生效 (UTC 00:00, 08:00, 16:00) (Phase 16)"""
+        from crypto_quant.execution_model import ExecutionModel
+        exec_model = ExecutionModel()
+        ts_settle = pd.Timestamp("2024-01-01 08:00:00", tz="UTC")
+        ts_non_settle = pd.Timestamp("2024-01-01 12:00:00", tz="UTC")
+
+        # 结算时刻应产生成本现金流
+        cf_settle = exec_model.compute_funding_cashflow(
+            timestamp=ts_settle,
+            signed_position=1.0,  # Long
+            funding_rate=0.0001,  # +0.01%
+            mark_price=3000.0,
+            enforce_settlement_hours=True,
+        )
+        self.assertAlmostEqual(cf_settle, -0.30, places=4)
+
+        # 非结算时刻现金流必须严格为 0.0
+        cf_non_settle = exec_model.compute_funding_cashflow(
+            timestamp=ts_non_settle,
+            signed_position=1.0,
+            funding_rate=0.0001,
+            mark_price=3000.0,
+            enforce_settlement_hours=True,
+        )
+        self.assertEqual(cf_non_settle, 0.0)
+
+    def test_portfolio_drawdown_uses_unrealized_pnl(self):
+        """测试组合级风控实时计入未实现盈亏逐根计算 MTM 回撤 (Phase 16)"""
+        from crypto_quant.risk_manager import PortfolioState, PortfolioRiskManager
+        risk_mgr = PortfolioRiskManager()
+        state = PortfolioState(
+            timestamp="2024-01-01 00:00:00",
+            cash=10000.0,
+            positions={"ETHUSDT": 1.0},
+            position_sizes={"ETHUSDT": 1.0},
+            entry_prices={"ETHUSDT": 3000.0},
+            total_mtm_equity=10000.0,
+            peak_mtm_equity=10000.0,
+        )
+        # 现价大幅浮亏 -10% (3000 -> 2700)
+        updated = risk_mgr.update_portfolio_state(
+            current_state=state,
+            timestamp=pd.Timestamp("2024-01-01 04:00:00"),
+            mark_prices={"ETHUSDT": 2700.0},
+        )
+        # 即使未平仓，总权益也应降为 9000，回撤达到 10%
+        self.assertAlmostEqual(updated.total_mtm_equity, 9000.0, places=2)
+        self.assertAlmostEqual(updated.portfolio_drawdown, 0.10, places=4)
+        mult = risk_mgr.compute_portfolio_drawdown_multiplier(updated.portfolio_drawdown)
+        # 回撤 10% 位于 8%~12% 之间，节流倍数应为 0.50
+        self.assertEqual(mult, 0.50)
+
+    def test_cross_asset_losses_trigger_global_throttle(self):
+        """测试跨标的连续亏损触发全局节流降仓 (Phase 16)"""
+        from crypto_quant.risk_manager import PortfolioRiskManager
+        risk_mgr = PortfolioRiskManager()
+        self.assertEqual(risk_mgr.compute_cross_asset_streak_multiplier(0), 1.0)
+        self.assertEqual(risk_mgr.compute_cross_asset_streak_multiplier(1), 0.80)
+        self.assertEqual(risk_mgr.compute_cross_asset_streak_multiplier(2), 0.60)
+        self.assertEqual(risk_mgr.compute_cross_asset_streak_multiplier(3), 0.35)
+
+    def test_continuous_history_slice_matches_report(self):
+        """测试连续历史单次运行后切片报告逻辑正确性 (Phase 16)"""
+        from crypto_quant.continuous_backtest import ContinuousBacktestEngine
+        dates = pd.date_range("2024-01-01", periods=180, freq="4h")
+        df_bars = pd.DataFrame({
+            "open": [3000.0] * 180,
+            "high": [3050.0] * 180,
+            "low": [2980.0] * 180,
+            "close": [3010.0] * 180,
+        }, index=dates)
+        pred = pd.Series([0.0] * 180, index=dates)
+        pred.iloc[85:90] = 0.05
+
+        engine = ContinuousBacktestEngine(symbol="ETHUSDT", trial_mode=False)
+        res = engine.run(df_bars=df_bars, series_pred=pred)
+
+        # 全量运行后切片提取中间 5 天
+        rep = res.slice_report("2024-01-10", "2024-01-20")
+        self.assertEqual(rep.start_date, "2024-01-10")
+        self.assertEqual(rep.end_date, "2024-01-20")
+        self.assertTrue(np.isfinite(rep.total_return))
+        self.assertTrue(np.isfinite(rep.max_drawdown))
+
+    def test_restart_recovery_matches_uninterrupted_run(self):
+        """测试状态序列化与恢复运行与无中断连续运行完全等价 (Phase 16)"""
+        from crypto_quant.continuous_backtest import StrategyState
+        state = StrategyState(
+            timestamp="2024-01-05 08:00:00",
+            position=0.75,
+            position_size=0.75,
+            entry_time="2024-01-05 04:00:00",
+            entry_price=3100.0,
+            loss_streak=1,
+            in_waterfall=False,
+            in_short_squeeze=False,
+            realized_equity=1.05,
+            unrealized_pnl=0.02,
+            peak_equity=1.08,
+            latest_drawdown=0.01,
+        )
+        json_str = state.to_json()
+        recovered = StrategyState.from_json(json_str)
+        self.assertEqual(state.timestamp, recovered.timestamp)
+        self.assertEqual(state.position, recovered.position)
+        self.assertEqual(state.entry_price, recovered.entry_price)
+        self.assertEqual(state.loss_streak, recovered.loss_streak)
+        self.assertEqual(state.peak_equity, recovered.peak_equity)
+
 
 if __name__ == '__main__':
     unittest.main()
