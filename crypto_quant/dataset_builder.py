@@ -1,0 +1,274 @@
+# -*- coding: utf-8 -*-
+"""
+Multi-Asset 4h Dataset Builder & Feature Engineering (2020-2026 Full Horizon)
+构建多币种4小时数据集与时空特征工程模块 (BTC, ETH, SOL, BNB + Macro + On-Chain TVL/Stablecoins + News Sentiment)
+支持严格三段式切分：
+  - 训练集 (Train): 2020-08-11 至 2023-12-31 (3.4年，样本内拟合)
+  - 验证集 (Val / Tuning): 2024-01-01 至 2025-12-31 (2.0年，标的与频次调优)
+  - 终极封存盲测集 (Blind Test): 2026-01-01 至 2026-09-13 (8.5个月，最终实证检验)
+"""
+import os
+import numpy as np
+import pandas as pd
+import torch
+from torch.utils.data import Dataset
+
+TOKENS = ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'BNBUSDT']
+
+
+def compute_token_features(
+    df: pd.DataFrame, 
+    df_btc: pd.DataFrame, 
+    df_eth: pd.DataFrame, 
+    df_sol: pd.DataFrame, 
+    df_macro: pd.DataFrame,
+    df_onchain: pd.DataFrame
+) -> pd.DataFrame:
+    """计算单个代币的时空动量、微观结构、宏观美股、以太坊链上资金流与新闻情绪特征 (共29维)"""
+    c = df['close']
+    h = df['high']
+    l = df['low']
+    v = df['volume']
+    tbv = df['taker_buy_volume'] if 'taker_buy_volume' in df.columns else v * 0.5
+
+    feats = pd.DataFrame(index=df.index)
+
+    # 1. 多尺度动量对数收益率
+    feats['ret_1'] = np.log(c / c.shift(1))
+    feats['ret_3'] = np.log(c / c.shift(3))
+    feats['ret_6'] = np.log(c / c.shift(6))
+    feats['ret_18'] = np.log(c / c.shift(18))
+    feats['ret_42'] = np.log(c / c.shift(42))
+
+    # 2. 均线偏离度 (Trend Bias)
+    ema20 = c.ewm(span=20, adjust=False).mean()
+    ema60 = c.ewm(span=60, adjust=False).mean()
+    feats['bias_ema20'] = (c - ema20) / (ema20 + 1e-8)
+    feats['bias_ema60'] = (c - ema60) / (ema60 + 1e-8)
+
+    # 3. 波动率与布林带
+    tr1 = h - l
+    tr2 = (h - c.shift(1)).abs()
+    tr3 = (l - c.shift(1)).abs()
+    tr = pd.concat([tr1, tr2, tr3], axis=1).max(axis=1)
+    atr14 = tr.rolling(14).mean()
+    feats['atr_ratio'] = atr14 / (c + 1e-8)
+    feats['hl_range'] = (h - l) / (c + 1e-8)
+
+    sma20 = c.rolling(20).mean()
+    rstd20 = c.rolling(20).std()
+    bb_upper = sma20 + 2 * rstd20
+    bb_lower = sma20 - 2 * rstd20
+    feats['bb_pct_b'] = (c - bb_lower) / (bb_upper - bb_lower + 1e-8)
+    feats['bb_bandwidth'] = (bb_upper - bb_lower) / (sma20 + 1e-8)
+
+    # 4. 微观结构与主动订单流失衡 (Order Flow Imbalance)
+    feats['taker_buy_ratio'] = tbv / (v + 1e-8)
+    vol_ma18 = v.rolling(18).mean()
+    feats['volume_ratio'] = v / (vol_ma18 + 1e-8)
+
+    # 5. 跨币种相对强弱特征 (Cross-Asset Relational Features)
+    btc_c = df_btc['close']
+    eth_c = df_eth['close']
+    sol_c = df_sol['close']
+    
+    btc_ret1 = np.log(btc_c / btc_c.shift(1))
+    eth_ret1 = np.log(eth_c / eth_c.shift(1))
+    
+    feats['rel_ret_btc'] = feats['ret_1'] - btc_ret1
+    feats['rel_ret_eth'] = feats['ret_1'] - eth_ret1
+
+    eth_btc_ratio = eth_c / btc_c
+    sol_eth_ratio = sol_c / eth_c
+    feats['eth_btc_zscore'] = (eth_btc_ratio - eth_btc_ratio.rolling(60).mean()) / (eth_btc_ratio.rolling(60).std() + 1e-8)
+    feats['sol_eth_zscore'] = (sol_eth_ratio - sol_eth_ratio.rolling(60).mean()) / (sol_eth_ratio.rolling(60).std() + 1e-8)
+
+    # 6. 美股宏观参数对齐 (严格因果前向填充，滞后1天，无未来函数)
+    macro_daily_lag = df_macro.shift(1)
+    macro_aligned = macro_daily_lag.reindex(df.index.normalize(), method='ffill')
+    feats['ndx_ret_1d'] = macro_aligned['ndx_ret_1d'].values
+    feats['spx_ret_1d'] = macro_aligned['spx_ret_1d'].values
+    feats['ndx_ma20_bias'] = macro_aligned['ndx_ma20_bias'].values
+
+    # 7. 交易时段与周期编码 (US Session & Hour Encoding)
+    hours = df.index.hour
+    feats['is_us_session'] = ((hours >= 12) & (hours <= 20)).astype(float)
+    feats['hour_sin'] = np.sin(2 * np.pi * hours / 24.0)
+    feats['hour_cos'] = np.cos(2 * np.pi * hours / 24.0)
+
+    # 8. 以太坊链上资金流与加密新闻情绪特征 (严格滞后 1 天以保证因果性)
+    onchain_lag = df_onchain.shift(1)
+    onchain_aligned = onchain_lag.reindex(df.index.normalize(), method='ffill')
+    
+    feats['tvl_flow_1d'] = onchain_aligned['tvl_flow_1d'].values
+    feats['tvl_flow_7d'] = onchain_aligned['tvl_flow_7d'].values
+    feats['stb_flow_1d'] = onchain_aligned['stb_flow_1d'].values
+    feats['stb_flow_7d'] = onchain_aligned['stb_flow_7d'].values
+    feats['fng_score'] = onchain_aligned['fng_score'].values / 100.0
+    feats['fng_bias'] = onchain_aligned['fng_bias'].values
+
+    # 9. 预测目标 (Forward 4h and 8h Returns)
+    feats['target_ret_4h'] = np.log(c.shift(-1) / c)
+    feats['target_ret_8h'] = np.log(c.shift(-2) / c)
+
+    return feats
+
+
+class CryptoMultiAssetDataset(Dataset):
+    """PyTorch Dataset for Spatio-Temporal Crypto Transformer"""
+    def __init__(self, X_tensors, y_4h, y_8h, timestamps, close_prices, open_prices):
+        self.X = torch.tensor(X_tensors, dtype=torch.float32)  # (N, K, L, D)
+        self.y_4h = torch.tensor(y_4h, dtype=torch.float32)    # (N, K)
+        self.y_8h = torch.tensor(y_8h, dtype=torch.float32)    # (N, K)
+        self.timestamps = timestamps
+        self.close_prices = close_prices  # dict of token -> close array
+        self.open_prices = open_prices    # dict of token -> open array
+
+    def __len__(self):
+        return len(self.X)
+
+    def __getitem__(self, idx):
+        return {
+            'X': self.X[idx],
+            'y_4h': self.y_4h[idx],
+            'y_8h': self.y_8h[idx],
+            'idx': idx
+        }
+
+
+def prepare_crypto_datasets(lookback_len: int = 12, train_end='2023-12-31', val_end='2025-12-31'):
+    """
+    严格三段式切分：
+    - Train Set: 2020-08-11 -> 2023-12-31
+    - Val Set (2024-2025 探索集): 2024-01-01 -> 2025-12-31
+    - Blind Test Set (2026 终极封存测试集): 2026-01-01 -> 2026-09-13
+    """
+    print("Loading 2020-2026 4h crypto data from cache...")
+    raw_dfs = {}
+    for t in TOKENS:
+        p = f'data/crypto_cache/{t}_4h_2020_2026.parquet'
+        if not os.path.exists(p):
+            p = f'data/crypto_cache/{t}_4h_2021_2026.parquet'
+        raw_dfs[t] = pd.read_parquet(p)
+
+    macro_path = 'data/crypto_cache/us_stock_macro.parquet'
+    if not os.path.exists(macro_path):
+        raise FileNotFoundError(f"Macro stock cache {macro_path} not found.")
+    df_macro = pd.read_parquet(macro_path)
+
+    onchain_path = 'data/crypto_cache/eth_onchain_sentiment_daily.parquet'
+    if not os.path.exists(onchain_path):
+        raise FileNotFoundError(f"On-chain sentiment cache {onchain_path} not found.")
+    df_onchain = pd.read_parquet(onchain_path)
+
+    # 计算各币种特征
+    print("Engineering 29 spatio-temporal, on-chain & sentiment features for all assets...")
+    feat_dfs = {}
+    for t in TOKENS:
+        feat_dfs[t] = compute_token_features(
+            raw_dfs[t], 
+            raw_dfs['BTCUSDT'], 
+            raw_dfs['ETHUSDT'], 
+            raw_dfs['SOLUSDT'], 
+            df_macro,
+            df_onchain
+        )
+
+    # 确定有效索引 (剔除前期 rolling nan 与后期 target nan)
+    valid_mask = (
+        ~feat_dfs['SOLUSDT']['ret_42'].isna() & 
+        ~feat_dfs['SOLUSDT']['target_ret_8h'].isna() & 
+        ~feat_dfs['SOLUSDT']['ndx_ret_1d'].isna() &
+        ~feat_dfs['SOLUSDT']['tvl_flow_7d'].isna()
+    )
+    common_idx = feat_dfs['SOLUSDT'][valid_mask].index
+
+    feature_cols = [c for c in feat_dfs['ETHUSDT'].columns if not c.startswith('target_')]
+    num_features = len(feature_cols)
+    print(f"Features count: {num_features}")
+
+    T = len(common_idx)
+    K = len(TOKENS)
+    feature_matrix = np.zeros((T, K, num_features), dtype=np.float32)
+    target_4h_matrix = np.zeros((T, K), dtype=np.float32)
+    target_8h_matrix = np.zeros((T, K), dtype=np.float32)
+
+    for k, t in enumerate(TOKENS):
+        fdf = feat_dfs[t].loc[common_idx]
+        feature_matrix[:, k, :] = fdf[feature_cols].fillna(0.0).values
+        target_4h_matrix[:, k] = fdf['target_ret_4h'].values
+        target_8h_matrix[:, k] = fdf['target_ret_8h'].values
+
+    # 标准化：严格只用 Train Set (2020-08 到 2023-12) 计算均值方差
+    train_core_indices = np.where(common_idx <= train_end)[0]
+    print(f"Normalizing features strictly using Train period ({common_idx[train_core_indices[0]].date()} to {common_idx[train_core_indices[-1]].date()})...")
+    scaler_mean = np.nanmean(feature_matrix[train_core_indices], axis=(0, 1), keepdims=True)
+    scaler_std = np.nanstd(feature_matrix[train_core_indices], axis=(0, 1), keepdims=True)
+    scaler_std[scaler_std < 1e-6] = 1.0
+
+    norm_features = (feature_matrix - scaler_mean) / scaler_std
+    norm_features = np.clip(norm_features, -5.0, 5.0)
+
+    # 构造滚动窗口序列
+    N_samples = T - lookback_len + 1
+    X_all = np.zeros((N_samples, K, lookback_len, num_features), dtype=np.float32)
+    y_4h_all = np.zeros((N_samples, K), dtype=np.float32)
+    y_8h_all = np.zeros((N_samples, K), dtype=np.float32)
+    timestamps = common_idx[lookback_len - 1:]
+
+    for i in range(N_samples):
+        X_all[i] = norm_features[i : i + lookback_len].transpose(1, 0, 2)
+        y_4h_all[i] = target_4h_matrix[i + lookback_len - 1]
+        y_8h_all[i] = target_8h_matrix[i + lookback_len - 1]
+
+    # 保存各币种的价格行情
+    close_prices = {t: raw_dfs[t].loc[timestamps, 'close'].values for t in TOKENS}
+    open_prices = {t: raw_dfs[t].loc[timestamps, 'open'].values for t in TOKENS}
+
+    # 严格三段式样本切分
+    train_mask = timestamps <= train_end
+    val_mask = (timestamps > train_end) & (timestamps <= val_end)
+    blind_test_mask = timestamps > val_end
+
+    print(f"Total sequences (L={lookback_len}): {len(timestamps)}")
+    print(f"1. Train Set (2020-2023):      {train_mask.sum()} bars ({timestamps[train_mask][0]} -> {timestamps[train_mask][-1]})")
+    print(f"2. Val/Tuning Set (2024-2025): {val_mask.sum()} bars ({timestamps[val_mask][0]} -> {timestamps[val_mask][-1]})")
+    print(f"3. Blind Test Set (2026 YTD):  {blind_test_mask.sum()} bars ({timestamps[blind_test_mask][0]} -> {timestamps[blind_test_mask][-1]})")
+
+    train_ds = CryptoMultiAssetDataset(
+        X_all[train_mask], y_4h_all[train_mask], y_8h_all[train_mask],
+        timestamps[train_mask],
+        {t: close_prices[t][train_mask] for t in TOKENS},
+        {t: open_prices[t][train_mask] for t in TOKENS}
+    )
+    val_ds = CryptoMultiAssetDataset(
+        X_all[val_mask], y_4h_all[val_mask], y_8h_all[val_mask],
+        timestamps[val_mask],
+        {t: close_prices[t][val_mask] for t in TOKENS},
+        {t: open_prices[t][val_mask] for t in TOKENS}
+    )
+    blind_test_ds = CryptoMultiAssetDataset(
+        X_all[blind_test_mask], y_4h_all[blind_test_mask], y_8h_all[blind_test_mask],
+        timestamps[blind_test_mask],
+        {t: close_prices[t][blind_test_mask] for t in TOKENS},
+        {t: open_prices[t][blind_test_mask] for t in TOKENS}
+    )
+
+    metadata = {
+        'tokens': TOKENS,
+        'feature_cols': feature_cols,
+        'num_features': num_features,
+        'lookback_len': lookback_len,
+        'scaler_mean': scaler_mean,
+        'scaler_std': scaler_std,
+        'timestamps': timestamps,
+        'val_timestamps': timestamps[val_mask],
+        'blind_test_timestamps': timestamps[blind_test_mask]
+    }
+
+    return train_ds, val_ds, blind_test_ds, metadata
+
+
+if __name__ == '__main__':
+    train_ds, val_ds, blind_test_ds, meta = prepare_crypto_datasets()
+    print("3-Way Dataset Builder test passed successfully!")
