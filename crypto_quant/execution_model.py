@@ -34,11 +34,13 @@ class ExecutionModel:
         stop_slippage: float = 0.0010,
         gap_slippage: float = 0.0015,
         normal_slippage: float = 0.0004,
+        latency_penalty: float = 0.0,
     ):
         self.taker_fee = taker_fee
         self.stop_slippage = stop_slippage
         self.gap_slippage = gap_slippage
         self.normal_slippage = normal_slippage
+        self.latency_penalty = latency_penalty
 
     def check_intrabar_stop(
         self,
@@ -128,13 +130,16 @@ class ExecutionModel:
         intended_price: float,
         side: int,  # +1 buy, -1 sell
         is_aggressive: bool = True,
+        latency_penalty: Optional[float] = None,
     ) -> float:
         """
-        Calculates execution fill price with normal slippage.
+        Calculates execution fill price with normal slippage and optional latency penalty.
         side = +1 (buy): fills higher
         side = -1 (sell): fills lower
+        latency_penalty: models 50ms-300ms adverse selection / queue delay on taker orders.
         """
-        slip = self.normal_slippage if is_aggressive else 0.0
+        pen = self.latency_penalty if latency_penalty is None else latency_penalty
+        slip = (self.normal_slippage + pen) if is_aggressive else 0.0
         if side == 1:
             return intended_price * (1.0 + slip)
         else:

@@ -65,13 +65,19 @@ class MultiAssetPortfolioEngine:
         trial_mode: bool = True,
         execution_model: Optional[ExecutionModel] = None,
         risk_manager: Optional[PortfolioRiskManager] = None,
+        cost_filter_mult: float = 0.0,
+        latency_penalty: float = 0.0,
     ):
         self.weights = weights or {"ETHUSDT": 0.50, "SOLUSDT": 0.50}
         self.stop_losses = stop_losses or {"ETHUSDT": 0.025, "SOLUSDT": 0.050}
         self.deadband = deadband
         self.trial_mode = trial_mode
-        self.exec_model = execution_model or ExecutionModel()
+        self.exec_model = execution_model or ExecutionModel(latency_penalty=latency_penalty)
+        if latency_penalty > 0.0 and execution_model is not None:
+            self.exec_model.latency_penalty = latency_penalty
         self.risk_manager = risk_manager or PortfolioRiskManager()
+        self.cost_filter_mult = cost_filter_mult
+        self.latency_penalty = latency_penalty
 
     def run(
         self,
@@ -144,10 +150,12 @@ class MultiAssetPortfolioEngine:
                 "lows": bars["low"].values,
                 "closes": bars["close"].values,
                 "z_vals": z_vals.values,
+                "raw_preds": preds.values,
                 "funding": fund.values,
                 "base_l": base_size_long.values,
                 "base_s": base_size_short.values,
                 "m_vol": m_vol.values,
+                "atr_ratio": atr_ratio.values,
                 "trend": trend_bias.values,
                 "stop_loss": self.stop_losses.get(sym, 0.035),
             }
@@ -509,9 +517,19 @@ class MultiAssetPortfolioEngine:
                         s_long = float(base_sz_l * norm_weights[sym] * m_global_risk)
                         s_short = float(base_sz_s * norm_weights[sym] * m_global_risk)
 
-                    if cur_z > 1.0 and cur_fng < 85 and not asset_waterfall[sym]:
+                    cur_raw_pred = float(ind["raw_preds"][i])
+                    cur_fund = float(ind["funding"][i])
+                    roundtrip_friction = (self.exec_model.taker_fee + self.exec_model.normal_slippage + self.exec_model.latency_penalty) * 2.0
+                    cost_hurdle = self.cost_filter_mult * (roundtrip_friction + abs(cur_fund))
+                    signal_magnitude = abs(cur_raw_pred)
+
+                    passes_cost_filter = True
+                    if self.cost_filter_mult > 0.0:
+                        passes_cost_filter = (signal_magnitude >= cost_hurdle)
+
+                    if cur_z > 1.0 and cur_fng < 85 and not asset_waterfall[sym] and passes_cost_filter:
                         candidate_entries[sym] = {"side": 1, "size": s_long}
-                    elif cur_z < -1.0 and cur_fng > 15 and not asset_squeeze[sym]:
+                    elif cur_z < -1.0 and cur_fng > 15 and not asset_squeeze[sym] and passes_cost_filter:
                         candidate_entries[sym] = {"side": -1, "size": s_short}
 
             # Enforce Gross & Net Leverage Limits

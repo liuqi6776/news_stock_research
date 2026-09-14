@@ -121,14 +121,20 @@ class ContinuousBacktestEngine:
         trial_mode: bool = True,
         execution_model: Optional[ExecutionModel] = None,
         initial_state: Optional[StrategyState] = None,
+        cost_filter_mult: float = 0.0,
+        latency_penalty: float = 0.0,
     ):
         self.symbol = symbol
         self.stop_loss = stop_loss
         self.deadband = deadband
         self.use_short = use_short
         self.trial_mode = trial_mode
-        self.exec_model = execution_model or ExecutionModel()
+        self.exec_model = execution_model or ExecutionModel(latency_penalty=latency_penalty)
+        if latency_penalty > 0.0 and execution_model is not None:
+            self.exec_model.latency_penalty = latency_penalty
         self.initial_state = initial_state
+        self.cost_filter_mult = cost_filter_mult
+        self.latency_penalty = latency_penalty
 
     def run(
         self,
@@ -158,6 +164,11 @@ class ContinuousBacktestEngine:
         equity_records = []
         position_records = []
         trades: List[TradeRecord] = []
+        filter_stats = {
+            "total_signals_generated": 0,
+            "signals_cost_filtered": 0,
+            "signals_executed": 0,
+        }
 
         active_trade: Optional[Dict[str, Any]] = None
         if state.active_trade is not None:
@@ -507,20 +518,41 @@ class ContinuousBacktestEngine:
                     s_long = base_size_long
                     s_short = base_size_short
 
+                # Cost-Aware Execution Filter (Phase 18 P0 Enhancement)
+                # Evaluates whether predicted return magnitude overcomes transaction friction + funding
+                roundtrip_friction = (self.exec_model.taker_fee + self.exec_model.normal_slippage + self.exec_model.latency_penalty) * 2.0
+                est_funding_cost = abs(cur_fund)
+                cost_hurdle = self.cost_filter_mult * (roundtrip_friction + est_funding_cost)
+                signal_magnitude = abs(cur_pred)
+
+                passes_cost_filter = True
+                if self.cost_filter_mult > 0.0:
+                    passes_cost_filter = (signal_magnitude >= cost_hurdle)
+
                 if cur_z > 1.0 and cur_fng < 85 and not state.in_waterfall:
-                    pending_order = {
-                        "type": "entry",
-                        "side": 1,
-                        "size": s_long,
-                        "signal_time": str(ts),
-                    }
+                    filter_stats["total_signals_generated"] += 1
+                    if passes_cost_filter:
+                        filter_stats["signals_executed"] += 1
+                        pending_order = {
+                            "type": "entry",
+                            "side": 1,
+                            "size": s_long,
+                            "signal_time": str(ts),
+                        }
+                    else:
+                        filter_stats["signals_cost_filtered"] += 1
                 elif self.use_short and cur_z < -1.0 and cur_fng > 15 and not state.in_short_squeeze:
-                    pending_order = {
-                        "type": "entry",
-                        "side": -1,
-                        "size": s_short,
-                        "signal_time": str(ts),
-                    }
+                    filter_stats["total_signals_generated"] += 1
+                    if passes_cost_filter:
+                        filter_stats["signals_executed"] += 1
+                        pending_order = {
+                            "type": "entry",
+                            "side": -1,
+                            "size": s_short,
+                            "signal_time": str(ts),
+                        }
+                    else:
+                        filter_stats["signals_cost_filtered"] += 1
 
             # ----------------------------------------------------
             # 7. Update Mark-to-Market PnL & Drawdown at Bar Close
@@ -585,6 +617,7 @@ class ContinuousBacktestEngine:
             trades=trades,
             final_state=state,
             common_index=common_idx,
+            filter_stats=filter_stats,
         )
 
 
@@ -597,6 +630,7 @@ class BacktestResult:
     trades: List[TradeRecord]
     final_state: StrategyState
     common_index: pd.DatetimeIndex
+    filter_stats: Dict[str, int] = field(default_factory=dict)
 
     def slice_report(self, start_date: str, end_date: str) -> SliceReport:
         """
