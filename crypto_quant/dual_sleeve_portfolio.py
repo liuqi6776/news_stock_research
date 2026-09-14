@@ -52,7 +52,8 @@ def compute_sleeve_adaptive(preds, opens, closes, lows=None, highs=None,
                             fng=None, stb=None, funding=None, basis=None,
                             stop_loss=0.035, deadband=0.20,
                             fee_and_slippage=0.0008,
-                            use_dyn=True, use_top_derisking=True, use_short=True):
+                            use_dyn=True, use_top_derisking=True, use_short=True,
+                            trial_mode=False):
     """
     Sleeve 1: Symmetrical Adaptive Momentum with Dynamic Sizing & Hard Stop-Loss
     Supports both Long and Short positions:
@@ -61,6 +62,12 @@ def compute_sleeve_adaptive(preds, opens, closes, lows=None, highs=None,
     - Exit: |z| < deadband or Stop-Loss
     - Incorporates realistic fee + slippage (default 0.08% per turnover)
     - Causal 8h perpetual funding cash flow (4h bar carries 0.5 * 8h funding rate)
+    - trial_mode (Phase 15): Activates 5-dimensional trial-trading dynamic downsizing:
+      1. m_streak: Consecutive loss/stop-loss penalty sizing (1.0 -> 0.7 -> 0.5 -> 0.25)
+      2. m_dd: Portfolio peak-drawdown throttle (1.0 -> 0.75 -> 0.50 -> 0.25)
+      3. m_vol: Realized ATR target inverse volatility sizing [0.40, 1.10]
+      4. m_trend: Macro 144 EMA regime filter (counter-trend capped at 0.40-0.50)
+      5. m_conf: Prediction confidence gradient sizing (0.65 for 1.0 < |z| < 1.4, 1.0 for |z| >= 1.4)
     """
     p_series = pd.Series(preds.values, index=preds.index)
     prior_mean = p_series.shift(1).rolling(72).mean()
@@ -76,13 +83,34 @@ def compute_sleeve_adaptive(preds, opens, closes, lows=None, highs=None,
         size_long = np.ones(len(preds))
         size_short = np.ones(len(preds))
 
+    # Precompute trial-trading ATR volatility and macro trend if trial_mode is enabled
+    if trial_mode:
+        if highs is not None and lows is not None:
+            tr1 = highs - lows
+            tr2 = (highs - closes.shift(1)).abs()
+            tr3 = (lows - closes.shift(1)).abs()
+            tr = pd.concat([tr1, tr2, tr3], axis=1).max(axis=1)
+        else:
+            tr = (closes - closes.shift(1)).abs()
+        atr14 = tr.rolling(14).mean().bfill()
+        atr_ratio = (atr14 / (closes + 1e-8)).values
+        m_vol = np.clip(0.025 / (atr_ratio + 1e-8), 0.40, 1.10)
+
+        ema144 = closes.shift(1).ewm(span=144).mean()
+        trend_bias = (closes.shift(1) - ema144).values
+
     n = len(preds)
     pos = np.zeros(n)
     in_pos = 0  # +1 Long, -1 Short, 0 Cash
     entry_bar = 0
+    current_size = 0.0
     in_waterfall = False  # Long stop-loss cooldown flag
     in_short_squeeze = False  # Short stop-loss cooldown flag
     trades = []
+
+    loss_streak = 0
+    cum_equity = 1.0
+    peak_equity = 1.0
 
     for i in range(n - 2):
         # State-driven re-entry unlocking (zero clock freeze)
@@ -104,14 +132,54 @@ def compute_sleeve_adaptive(preds, opens, closes, lows=None, highs=None,
         curr_c = closes.iloc[i]
 
         if in_pos == 0:
+            if trial_mode:
+                # 1. Streak multiplier
+                if loss_streak == 0:
+                    m_str = 1.0
+                elif loss_streak == 1:
+                    m_str = 0.70
+                elif loss_streak == 2:
+                    m_str = 0.50
+                else:
+                    m_str = 0.25
+
+                # 2. Drawdown throttle
+                dd = max(0.0, (peak_equity - cum_equity) / (peak_equity + 1e-8))
+                if dd <= 0.04:
+                    m_dd = 1.0
+                elif dd <= 0.08:
+                    m_dd = 0.75
+                elif dd <= 0.12:
+                    m_dd = 0.50
+                else:
+                    m_dd = 0.25
+
+                # 3. Volatility multiplier
+                m_v = m_vol[i]
+
+                # 4. Confidence gradient
+                m_conf = 0.65 if abs(curr_z) < 1.4 else 1.0
+
+                # 5. Macro trend constraint
+                m_tr_long = 0.40 if trend_bias[i] < 0 else 1.0
+                m_tr_short = 0.50 if trend_bias[i] > 0 else 1.0
+
+                s_long = float(np.clip(size_long[i] * m_str * m_dd * m_v * m_tr_long * m_conf, 0.15, 1.0))
+                s_short = float(np.clip(size_short[i] * m_str * m_dd * m_v * m_tr_short * m_conf, 0.15, 1.0))
+            else:
+                s_long = size_long[i]
+                s_short = size_short[i]
+
             if curr_z > 1.0 and fng_vals[i] < 85:
                 in_pos = 1
                 entry_bar = i
-                pos[i] = size_long[i]
+                current_size = s_long
+                pos[i] = current_size
             elif use_short and curr_z < -1.0 and fng_vals[i] > 15:
                 in_pos = -1
                 entry_bar = i
-                pos[i] = -size_short[i]
+                current_size = s_short
+                pos[i] = -current_size
             else:
                 pos[i] = 0.0
         elif in_pos == 1:  # Currently in Long
@@ -135,6 +203,7 @@ def compute_sleeve_adaptive(preds, opens, closes, lows=None, highs=None,
                 # Long pays positive funding: cashflow = -funding
                 trade_funding_carry = -np.sum(funding_vals[entry_idx:exit_idx] * 0.5)
                 net_ret = actual_gross - roundtrip_cost + trade_funding_carry
+                weighted_pnl = net_ret * current_size
 
                 trades.append({
                     'type': 'LONG',
@@ -142,19 +211,27 @@ def compute_sleeve_adaptive(preds, opens, closes, lows=None, highs=None,
                     'exit_time': opens.index[exit_idx],
                     'entry_price': entry_p,
                     'exit_price': exit_p,
-                    'size': size_long[entry_bar],
+                    'size': current_size,
                     'duration_hours': duration_hours,
                     'gross_ret': actual_gross,
                     'net_ret': net_ret,
                     'funding_carry': trade_funding_carry,
-                    'weighted_pnl': net_ret * size_long[entry_bar],
+                    'weighted_pnl': weighted_pnl,
                     'is_stop_loss': is_stop
                 })
+
+                if trial_mode:
+                    cum_equity *= (1.0 + weighted_pnl)
+                    peak_equity = max(peak_equity, cum_equity)
+                    if is_stop or net_ret < 0:
+                        loss_streak += 1
+                    else:
+                        loss_streak = 0
 
                 if is_stop:
                     in_waterfall = True
             else:
-                pos[i] = size_long[entry_bar]
+                pos[i] = current_size
         elif in_pos == -1:  # Currently in Short
             entry_p = opens.iloc[entry_bar + 1]
             gross_ret = 1.0 - curr_c / entry_p
@@ -176,6 +253,7 @@ def compute_sleeve_adaptive(preds, opens, closes, lows=None, highs=None,
                 # Short receives positive funding: cashflow = +funding
                 trade_funding_carry = np.sum(funding_vals[entry_idx:exit_idx] * 0.5)
                 net_ret = actual_gross - roundtrip_cost + trade_funding_carry
+                weighted_pnl = net_ret * current_size
 
                 trades.append({
                     'type': 'SHORT',
@@ -183,19 +261,27 @@ def compute_sleeve_adaptive(preds, opens, closes, lows=None, highs=None,
                     'exit_time': opens.index[exit_idx],
                     'entry_price': entry_p,
                     'exit_price': exit_p,
-                    'size': size_short[entry_bar],
+                    'size': current_size,
                     'duration_hours': duration_hours,
                     'gross_ret': actual_gross,
                     'net_ret': net_ret,
                     'funding_carry': trade_funding_carry,
-                    'weighted_pnl': net_ret * size_short[entry_bar],
+                    'weighted_pnl': weighted_pnl,
                     'is_stop_loss': is_stop
                 })
+
+                if trial_mode:
+                    cum_equity *= (1.0 + weighted_pnl)
+                    peak_equity = max(peak_equity, cum_equity)
+                    if is_stop or net_ret < 0:
+                        loss_streak += 1
+                    else:
+                        loss_streak = 0
 
                 if is_stop:
                     in_short_squeeze = True
             else:
-                pos[i] = -size_short[entry_bar]
+                pos[i] = -current_size
 
     o_series = pd.Series(opens.values, index=opens.index)
     rets_oto = (o_series.shift(-2) / o_series.shift(-1) - 1).values
@@ -206,6 +292,23 @@ def compute_sleeve_adaptive(preds, opens, closes, lows=None, highs=None,
     sleeve_rets = (pos * rets_oto - cost_bar + funding_carry)[:-2]
 
     return pd.Series(sleeve_rets, index=opens.index[:-2]), pd.DataFrame(trades), pd.Series(pos[:-2], index=opens.index[:-2])
+
+
+def compute_sleeve_trial_trading(preds, opens, closes, lows=None, highs=None,
+                                 fng=None, stb=None, funding=None, basis=None,
+                                 stop_loss=0.035, deadband=0.20,
+                                 fee_and_slippage=0.0008,
+                                 use_dyn=True, use_top_derisking=True, use_short=True):
+    """
+    Convenience wrapper for Sleeve 1 under Institutional Trial Trading Mode (Phase 15).
+    Enables multi-dimensional dynamic downsizing (loss streak, drawdown throttle, ATR vol, macro trend, confidence).
+    """
+    return compute_sleeve_adaptive(preds, opens, closes, lows=lows, highs=highs,
+                                   fng=fng, stb=stb, funding=funding, basis=basis,
+                                   stop_loss=stop_loss, deadband=deadband,
+                                   fee_and_slippage=fee_and_slippage,
+                                   use_dyn=use_dyn, use_top_derisking=use_top_derisking,
+                                   use_short=use_short, trial_mode=True)
 
 
 def compute_sleeve_8h(preds, opens, fng=None, stb=None, funding=None, fee_and_slippage=0.0008, use_short=True):

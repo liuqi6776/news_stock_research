@@ -238,6 +238,42 @@ class TestCryptoQuantOffline(unittest.TestCase):
         self.assertTrue((pos > 0.5).any(), "Expected positive (Long) position")
         self.assertTrue((pos < -0.5).any(), "Expected negative (Short) position")
 
+    def test_trial_trading_downsizing_mechanics(self):
+        """测试机构级试盘全套动态降仓与风控机制 (Phase 15)"""
+        from crypto_quant.dual_sleeve_portfolio import compute_sleeve_adaptive, compute_sleeve_trial_trading
+        dates = pd.date_range('2024-01-01', periods=300, freq='4h')
+        opens = pd.Series([3000.0] * 300, index=dates)
+        closes = pd.Series([3000.0] * 300, index=dates)
+
+        # 构造多次预测脉冲，其中第1次人为让价格暴跌触发硬止损，观察第2次入场仓位是否惩罚性缩减
+        preds = pd.Series([0.0] * 300, index=dates)
+        preds.iloc[85:90] = 0.05    # 第1次多头建仓
+        # 在多头持仓期间制造大幅下跌触发止损 (sl=0.03)
+        closes.iloc[87:95] = 2800.0 # 跌幅 -6.7%，触发硬止损
+
+        preds.iloc[140:145] = 0.05  # 第2次多头建仓 (此时处于连损惩罚状态)
+
+        # 1. 运行原版基准模式 (trial_mode=False)
+        _, trades_base, _ = compute_sleeve_adaptive(
+            preds=preds, opens=opens, closes=closes,
+            stop_loss=0.03, deadband=0.20, trial_mode=False
+        )
+
+        # 2. 运行试盘风控模式 (trial_mode=True)
+        _, trades_trial, _ = compute_sleeve_trial_trading(
+            preds=preds, opens=opens, closes=closes,
+            stop_loss=0.03, deadband=0.20
+        )
+
+        self.assertGreaterEqual(len(trades_trial), 2)
+        # 验证第1笔交易被打止损
+        self.assertTrue(trades_trial.iloc[0]['is_stop_loss'])
+        # 验证在试盘模式下，由于第1笔打损，第2笔仓位触发惩罚性降仓 (显著低于基准模式)
+        size_trial_trade2 = trades_trial.iloc[1]['size']
+        size_base_trade2 = trades_base.iloc[1]['size']
+        self.assertLess(size_trial_trade2, size_base_trade2)
+        self.assertLessEqual(size_trial_trade2, 0.80)
+
 
 if __name__ == '__main__':
     unittest.main()
