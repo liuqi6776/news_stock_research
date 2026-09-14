@@ -19,10 +19,11 @@ def run_5yr_ab_test():
     print("==========================================================================================")
     
     # 1. Load 5-year 1h data
-    btc = pd.read_parquet("data/crypto_cache/BTCUSDT_1h_2021_2026.parquet")
-    eth = pd.read_parquet("data/crypto_cache/ETHUSDT_1h_2021_2026.parquet")
-    bnb = pd.read_parquet("data/crypto_cache/BNBUSDT_1h_2021_2026.parquet")
-    sol = pd.read_parquet("data/crypto_cache/SOLUSDT_1h_2021_2026.parquet")
+    data_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
+    btc = pd.read_parquet(os.path.join(data_dir, "BTCUSDT_1h_2021_2026.parquet"))
+    eth = pd.read_parquet(os.path.join(data_dir, "ETHUSDT_1h_2021_2026.parquet"))
+    bnb = pd.read_parquet(os.path.join(data_dir, "BNBUSDT_1h_2021_2026.parquet"))
+    sol = pd.read_parquet(os.path.join(data_dir, "SOLUSDT_1h_2021_2026.parquet"))
     
     print(f"[+] Data loaded: ~{len(eth)} hourly bars ({eth.index[0].date()} to {eth.index[-1].date()})")
     print("------------------------------------------------------------------------------------------")

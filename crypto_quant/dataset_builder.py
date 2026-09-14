@@ -22,9 +22,13 @@ def compute_token_features(
     df_eth: pd.DataFrame, 
     df_sol: pd.DataFrame, 
     df_macro: pd.DataFrame,
-    df_onchain: pd.DataFrame
+    df_onchain: pd.DataFrame,
+    df_basis: pd.DataFrame = None,
+    df_funding: pd.DataFrame = None,
+    df_okx: pd.DataFrame = None,
+    token_name: str = 'ETHUSDT'
 ) -> pd.DataFrame:
-    """计算单个代币的时空动量、微观结构、宏观美股、以太坊链上资金流与新闻情绪特征 (共29维)"""
+    """计算单个代币的时空动量、微观结构、宏观美股、以太坊链上资金流、新闻情绪与衍生品特征 (共33维)"""
     c = df['close']
     h = df['high']
     l = df['low']
@@ -107,7 +111,33 @@ def compute_token_features(
     feats['fng_score'] = onchain_aligned['fng_score'].values / 100.0
     feats['fng_bias'] = onchain_aligned['fng_bias'].values
 
-    # 9. 预测目标 (Forward 4h and 8h Returns)
+    # 9. 衍生品微观结构特征 (现货-永续基差、资金费率与OKX跨交易所价差)
+    if df_basis is not None and token_name in df_basis.columns:
+        basis_series = df_basis[token_name].reindex(df.index).ffill().fillna(0.0)
+        basis_mean = basis_series.rolling(72).mean()
+        basis_std = basis_series.rolling(72).std() + 1e-8
+        feats['basis_zscore_72'] = ((basis_series - basis_mean) / basis_std).fillna(0.0)
+        feats['basis_mom_6'] = (basis_series - basis_series.shift(6)).fillna(0.0)
+    else:
+        feats['basis_zscore_72'] = 0.0
+        feats['basis_mom_6'] = 0.0
+
+    if df_funding is not None and token_name in df_funding.columns:
+        funding_lag = df_funding[token_name].shift(1)
+        feats['funding_rate_lag'] = funding_lag.reindex(df.index, method='ffill').fillna(0.0)
+    else:
+        feats['funding_rate_lag'] = 0.0
+
+    if df_okx is not None and token_name in df_okx.columns:
+        okx_c = df_okx[token_name].reindex(df.index).ffill()
+        spread = (okx_c - df['close']) / (df['close'] + 1e-8)
+        spread_mean = spread.rolling(18).mean()
+        spread_std = spread.rolling(18).std() + 1e-8
+        feats['okx_binance_spread_z18'] = ((spread - spread_mean) / spread_std).fillna(0.0)
+    else:
+        feats['okx_binance_spread_z18'] = 0.0
+
+    # 10. 预测目标 (Forward 4h and 8h Returns)
     feats['target_ret_4h'] = np.log(c.shift(-1) / c)
     feats['target_ret_8h'] = np.log(c.shift(-2) / c)
 
@@ -146,23 +176,41 @@ def prepare_crypto_datasets(lookback_len: int = 12, train_end='2023-12-31', val_
     print("Loading 2020-2026 4h crypto data from cache...")
     raw_dfs = {}
     for t in TOKENS:
-        p = f'data/crypto_cache/{t}_4h_2020_2026.parquet'
+        p = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'data', f'{t}_4h_2020_2026.parquet')
         if not os.path.exists(p):
-            p = f'data/crypto_cache/{t}_4h_2021_2026.parquet'
+            p = f'data/{t}_4h_2020_2026.parquet' 
+        if not os.path.exists(p):
+            p = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'data', f'{t}_4h_2021_2026.parquet')
         raw_dfs[t] = pd.read_parquet(p)
 
-    macro_path = 'data/crypto_cache/us_stock_macro.parquet'
+    macro_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'data', 'us_stock_macro.parquet')
     if not os.path.exists(macro_path):
         raise FileNotFoundError(f"Macro stock cache {macro_path} not found.")
     df_macro = pd.read_parquet(macro_path)
 
-    onchain_path = 'data/crypto_cache/eth_onchain_sentiment_daily.parquet'
+    onchain_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'data', 'eth_onchain_sentiment_daily.parquet')
     if not os.path.exists(onchain_path):
         raise FileNotFoundError(f"On-chain sentiment cache {onchain_path} not found.")
     df_onchain = pd.read_parquet(onchain_path)
 
+    # 加载衍生品特征 (基差、资金费率与OKX价差)
+    basis_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'data', 'binance_basis_4h.parquet')
+    df_basis = pd.read_parquet(basis_path) if os.path.exists(basis_path) else None
+    if df_basis is not None:
+        df_basis.index = df_basis.index.tz_localize(None)
+
+    funding_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'data', 'binance_funding_8h.parquet')
+    df_funding = pd.read_parquet(funding_path) if os.path.exists(funding_path) else None
+    if df_funding is not None:
+        df_funding.index = df_funding.index.tz_localize(None)
+
+    okx_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'data', 'okx_swap_candles_4h.parquet')
+    df_okx = pd.read_parquet(okx_path) if os.path.exists(okx_path) else None
+    if df_okx is not None:
+        df_okx.index = df_okx.index.tz_localize(None)
+
     # 计算各币种特征
-    print("Engineering 29 spatio-temporal, on-chain & sentiment features for all assets...")
+    print("Engineering 33 spatio-temporal, on-chain, sentiment & derivatives features for all assets...")
     feat_dfs = {}
     for t in TOKENS:
         feat_dfs[t] = compute_token_features(
@@ -171,17 +219,22 @@ def prepare_crypto_datasets(lookback_len: int = 12, train_end='2023-12-31', val_
             raw_dfs['ETHUSDT'], 
             raw_dfs['SOLUSDT'], 
             df_macro,
-            df_onchain
+            df_onchain,
+            df_basis,
+            df_funding,
+            df_okx,
+            token_name=t
         )
 
-    # 确定有效索引 (剔除前期 rolling nan 与后期 target nan)
-    valid_mask = (
-        ~feat_dfs['SOLUSDT']['ret_42'].isna() & 
-        ~feat_dfs['SOLUSDT']['target_ret_8h'].isna() & 
-        ~feat_dfs['SOLUSDT']['ndx_ret_1d'].isna() &
-        ~feat_dfs['SOLUSDT']['tvl_flow_7d'].isna()
-    )
-    common_idx = feat_dfs['SOLUSDT'][valid_mask].index
+    # 确定有效索引：联合检查全部4大资产特征与目标有效性 (解决审查问题 11: 杜绝单一标的掩码导致的 NaN 泄露)
+    valid_mask = pd.Series(True, index=feat_dfs['BTCUSDT'].index)
+    for t in TOKENS:
+        valid_mask &= ~feat_dfs[t]['ret_42'].isna()
+        valid_mask &= ~feat_dfs[t]['target_ret_8h'].isna()
+        valid_mask &= ~feat_dfs[t]['target_ret_4h'].isna()
+        valid_mask &= ~feat_dfs[t]['ndx_ret_1d'].isna()
+        valid_mask &= ~feat_dfs[t]['tvl_flow_7d'].isna()
+    common_idx = feat_dfs['BTCUSDT'][valid_mask].index
 
     feature_cols = [c for c in feat_dfs['ETHUSDT'].columns if not c.startswith('target_')]
     num_features = len(feature_cols)

@@ -180,7 +180,7 @@ def fetch_full_history(
     interval: str = "1d",
     start_date: str = "2017-08-17",
     use_cache: bool = True,
-    cache_dir: str = "data/crypto_cache"
+    cache_dir: str = "data"
 ) -> pd.DataFrame:
     """
     Fetch multi-year historical K-lines from Binance since inception, with parquet caching.

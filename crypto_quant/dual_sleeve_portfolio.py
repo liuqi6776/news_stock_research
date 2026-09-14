@@ -51,6 +51,7 @@ def compute_top_exhaustion_risk(closes, funding_rate, fng_score):
 def compute_sleeve_adaptive(preds, opens, closes, lows=None, highs=None,
                             fng=None, stb=None, funding=None, basis=None,
                             stop_loss=0.035, deadband=0.20,
+                            fee_and_slippage=0.0008,
                             use_dyn=True, use_top_derisking=True, use_short=True):
     """
     Sleeve 1: Symmetrical Adaptive Momentum with Dynamic Sizing & Hard Stop-Loss
@@ -58,6 +59,8 @@ def compute_sleeve_adaptive(preds, opens, closes, lows=None, highs=None,
     - Long: z > 1.0 and fng < 85
     - Short: z < -1.0 and fng > 15 (if use_short=True)
     - Exit: |z| < deadband or Stop-Loss
+    - Incorporates realistic fee + slippage (default 0.08% per turnover)
+    - Causal 8h perpetual funding cash flow (4h bar carries 0.5 * 8h funding rate)
     """
     p_series = pd.Series(preds.values, index=preds.index)
     prior_mean = p_series.shift(1).rolling(72).mean()
@@ -128,9 +131,10 @@ def compute_sleeve_adaptive(preds, opens, closes, lows=None, highs=None,
                 actual_gross = exit_p / entry_p - 1.0
                 duration_bars = exit_idx - entry_idx
                 duration_hours = duration_bars * 4
-                taker_fee = 2 * 0.0005
-                funding_fee = duration_bars * 0.00005
-                net_ret = actual_gross - taker_fee - funding_fee
+                roundtrip_cost = 2 * fee_and_slippage
+                # Long pays positive funding: cashflow = -funding
+                trade_funding_carry = -np.sum(funding_vals[entry_idx:exit_idx] * 0.5)
+                net_ret = actual_gross - roundtrip_cost + trade_funding_carry
 
                 trades.append({
                     'type': 'LONG',
@@ -142,6 +146,7 @@ def compute_sleeve_adaptive(preds, opens, closes, lows=None, highs=None,
                     'duration_hours': duration_hours,
                     'gross_ret': actual_gross,
                     'net_ret': net_ret,
+                    'funding_carry': trade_funding_carry,
                     'weighted_pnl': net_ret * size_long[entry_bar],
                     'is_stop_loss': is_stop
                 })
@@ -167,9 +172,10 @@ def compute_sleeve_adaptive(preds, opens, closes, lows=None, highs=None,
                 actual_gross = 1.0 - exit_p / entry_p
                 duration_bars = exit_idx - entry_idx
                 duration_hours = duration_bars * 4
-                taker_fee = 2 * 0.0005
-                funding_fee = duration_bars * 0.00005
-                net_ret = actual_gross - taker_fee - funding_fee
+                roundtrip_cost = 2 * fee_and_slippage
+                # Short receives positive funding: cashflow = +funding
+                trade_funding_carry = np.sum(funding_vals[entry_idx:exit_idx] * 0.5)
+                net_ret = actual_gross - roundtrip_cost + trade_funding_carry
 
                 trades.append({
                     'type': 'SHORT',
@@ -181,6 +187,7 @@ def compute_sleeve_adaptive(preds, opens, closes, lows=None, highs=None,
                     'duration_hours': duration_hours,
                     'gross_ret': actual_gross,
                     'net_ret': net_ret,
+                    'funding_carry': trade_funding_carry,
                     'weighted_pnl': net_ret * size_short[entry_bar],
                     'is_stop_loss': is_stop
                 })
@@ -193,13 +200,15 @@ def compute_sleeve_adaptive(preds, opens, closes, lows=None, highs=None,
     o_series = pd.Series(opens.values, index=opens.index)
     rets_oto = (o_series.shift(-2) / o_series.shift(-1) - 1).values
     trade_signals = pd.Series(pos).diff().abs().fillna(0).values
-    cost_bar = trade_signals * 0.0005
-    sleeve_rets = (pos * rets_oto - cost_bar)[:-2]
+    cost_bar = trade_signals * fee_and_slippage
+    # Causal continuous 8h funding carry: each 4h bar carries 4h/8h = 0.5 funding
+    funding_carry = -pos * (funding_vals * 0.5)
+    sleeve_rets = (pos * rets_oto - cost_bar + funding_carry)[:-2]
 
     return pd.Series(sleeve_rets, index=opens.index[:-2]), pd.DataFrame(trades), pd.Series(pos[:-2], index=opens.index[:-2])
 
 
-def compute_sleeve_8h(preds, opens, fng=None, stb=None, use_short=True):
+def compute_sleeve_8h(preds, opens, fng=None, stb=None, funding=None, fee_and_slippage=0.0008, use_short=True):
     """
     Sleeve 2: 8h Symmetrical Fixed Horizon (3x / Day) Basis Momentum
     """
@@ -208,6 +217,7 @@ def compute_sleeve_8h(preds, opens, fng=None, stb=None, use_short=True):
     prior_std = p_series.shift(1).rolling(72).std() + 1e-8
     z_vals = ((p_series - prior_mean) / prior_std).values
 
+    funding_vals = funding.values if funding is not None else np.zeros(len(preds))
     fng_vals = fng if fng is not None else np.ones(len(preds)) * 50.0
 
     n = len(preds)
@@ -232,10 +242,12 @@ def compute_sleeve_8h(preds, opens, fng=None, stb=None, use_short=True):
     o_series = pd.Series(opens.values, index=opens.index)
     rets_oto = (o_series.shift(-2) / o_series.shift(-1) - 1).values
     trade_signals = pd.Series(pos).diff().abs().fillna(0).values
-    cost_bar = trade_signals * 0.0005
-    sleeve_rets = (pos * rets_oto - cost_bar)[:-2]
+    cost_bar = trade_signals * fee_and_slippage
+    funding_carry = -pos * (funding_vals * 0.5)
+    sleeve_rets = (pos * rets_oto - cost_bar + funding_carry)[:-2]
 
     return pd.Series(sleeve_rets, index=opens.index[:-2]), pd.Series(pos[:-2], index=opens.index[:-2])
+
 
 
 def build_dual_sleeve_portfolio(sleeve1_rets, sleeve2_rets, w1=0.70, w2=0.30):

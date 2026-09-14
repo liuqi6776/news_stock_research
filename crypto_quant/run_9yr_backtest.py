@@ -29,7 +29,10 @@ CYCLES = {
 }
 
 def load_data(symbol="BTCUSDT"):
-    cache_path = f"data/crypto_cache/{symbol}_1d_2017_2026.parquet"
+    root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    cache_path = os.path.join(root_dir, "data", f"{symbol}_1d_2017_2026.parquet")
+    if not os.path.exists(cache_path):
+        cache_path = os.path.join(root_dir, "data", "crypto_cache", f"{symbol}_1d_2017_2026.parquet")
     if not os.path.exists(cache_path):
         raise FileNotFoundError(f"Cache not found at {cache_path}")
     df = pd.read_parquet(cache_path)

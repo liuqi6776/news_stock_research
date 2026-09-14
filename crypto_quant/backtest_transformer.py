@@ -2,16 +2,34 @@
 """
 Out-of-Sample Backtesting Engine for CryptoSTTransformer (Augmented with On-Chain & Sentiment)
 时空关系 Transformer 样本外实盘级别回测引擎 (融合链上资金流与新闻情绪)
+严格 Open-to-Open 执行 + shift(1) 滚动 z-score (零自我参照) + 机构级日频重采样夏普
 """
 import os
+import sys
+
+if hasattr(sys.stdout, "reconfigure"):
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")
+    except Exception:
+        pass
+
 import numpy as np
 import pandas as pd
 
 TOKENS = ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'BNBUSDT']
 
 
+def find_project_root():
+    current = os.path.abspath(os.path.dirname(__file__))
+    candidates = [os.path.abspath(os.path.join(current, '..')), current, os.getcwd()]
+    for c in candidates:
+        if os.path.exists(os.path.join(c, 'data')) and os.path.exists(os.path.join(c, 'predictions')):
+            return c
+    return os.getcwd()
+
+
 def calculate_metrics(returns_series, bars_per_year=2190):
-    """计算专业机构量化指标 (4小时周期，每年 2,190 根K线)"""
+    """计算专业机构量化指标 (支持 4h 逐根夏普与 GIPS 机构级日频重采样夏普)"""
     cum = (1 + returns_series).cumprod()
     total_ret = cum.iloc[-1] - 1
     n_bars = len(returns_series)
@@ -20,6 +38,11 @@ def calculate_metrics(returns_series, bars_per_year=2190):
     
     ann_vol = returns_series.std() * np.sqrt(bars_per_year)
     sharpe = (returns_series.mean() / (returns_series.std() + 1e-8)) * np.sqrt(bars_per_year)
+
+    # 机构级日频重采样夏普 (解决审查问题 6: 杜绝 4h 空仓零值对夏普的稀释/失真)
+    daily_equity = cum.resample('1D').last().ffill()
+    daily_rets = daily_equity.pct_change().dropna()
+    sharpe_daily = daily_rets.mean() / (daily_rets.std() + 1e-8) * np.sqrt(365)
 
     downside = returns_series[returns_series < 0]
     down_vol = downside.std() * np.sqrt(bars_per_year) if len(downside) > 0 else 1e-8
@@ -42,6 +65,7 @@ def calculate_metrics(returns_series, bars_per_year=2190):
         'ann_ret': ann_ret,
         'ann_vol': ann_vol,
         'sharpe': sharpe,
+        'sharpe_daily': sharpe_daily,
         'sortino': sortino,
         'mdd': mdd,
         'calmar': calmar,
@@ -52,26 +76,39 @@ def calculate_metrics(returns_series, bars_per_year=2190):
 
 
 def run_transformer_backtest():
-    pred_path = 'crypto_quant/predictions/test_predictions.parquet'
+    root_dir = find_project_root()
+    pred_path = os.path.join(root_dir, 'predictions', 'test_predictions.parquet')
+    if not os.path.exists(pred_path):
+        pred_path = os.path.join(root_dir, 'crypto_quant', 'predictions', 'test_predictions.parquet')
     if not os.path.exists(pred_path):
         raise FileNotFoundError(f"Predictions file {pred_path} not found.")
 
     df_pred = pd.read_parquet(pred_path)
     test_idx = df_pred.index
 
-    # 1. 加载底层 4h 真实行情
-    raw_dfs = {t: pd.read_parquet(f'data/crypto_cache/{t}_4h_2021_2026.parquet') for t in TOKENS}
+    # 1. 加载底层 4h 行情
+    raw_dfs = {}
+    for t in TOKENS:
+        p = os.path.join(root_dir, 'data', f'{t}_4h_2020_2026.parquet')
+        if not os.path.exists(p):
+            p = os.path.join(root_dir, 'data', f'{t}_4h_2021_2026.parquet')
+        if not os.path.exists(p):
+            p = os.path.join(root_dir, 'data', 'crypto_cache', f'{t}_4h_2021_2026.parquet')
+        raw_dfs[t] = pd.read_parquet(p)
 
-    # 计算各资产逐根下根K线收益率 (严格在次根 open 挂单进场，无未来函数)
+    # 严格在次根 open 执行 (收益率 = open[t+2] / open[t+1] - 1, 解决审查问题 10)
     rets_df = pd.DataFrame(index=test_idx)
     for t in TOKENS:
-        c = raw_dfs[t].loc[test_idx, 'close']
-        rets_df[t] = c.shift(-1) / c - 1
+        o = raw_dfs[t].loc[test_idx, 'open']
+        rets_df[t] = o.shift(-2) / o.shift(-1) - 1
 
     # 加载链上资金流与情绪日线数据 (严格因果前向填充，滞后 1 天)
-    onchain_path = 'data/crypto_cache/eth_onchain_sentiment_daily.parquet'
+    onchain_path = os.path.join(root_dir, 'data', 'eth_onchain_sentiment_daily.parquet')
+    if not os.path.exists(onchain_path):
+        onchain_path = os.path.join(root_dir, 'data', 'crypto_cache', 'eth_onchain_sentiment_daily.parquet')
     df_onchain = pd.read_parquet(onchain_path)
     onchain_aligned = df_onchain.shift(1).reindex(test_idx.normalize(), method='ffill')
+    onchain_aligned.index = test_idx
     fng = onchain_aligned['fng_score'].values
     stb_flow_7d = onchain_aligned['stb_flow_7d'].values
 
@@ -84,14 +121,17 @@ def run_transformer_backtest():
     # -------------------------------------------------------------
     # 策略 1: ETH 双层分级强化系统 (Transformer + 链上资金流 + 情绪风控)
     # -------------------------------------------------------------
-    eth_pred = df_pred['eth_pred_4h']
-    z_score = (eth_pred - eth_pred.rolling(rolling_w).mean()) / (eth_pred.rolling(rolling_w).std() + 1e-8)
+    eth_pred = df_pred['ETHUSDT_pred_4h'] if 'ETHUSDT_pred_4h' in df_pred.columns else df_pred['eth_pred_4h']
+    # 严格先 shift(1) 再 rolling，消除自我参照偏差 (解决审查问题 4)
+    prior_mean = eth_pred.shift(1).rolling(rolling_w).mean()
+    prior_std = eth_pred.shift(1).rolling(rolling_w).std() + 1e-8
+    z_score = (eth_pred - prior_mean) / prior_std
 
     # 复合条件：模型高置信度(z>1.0) + 链上稳定币净流入(stb>0) + 避开非理性癫狂(fng<85)
     cond_hierarchical = (z_score > 1.0) & (stb_flow_7d > 0.0) & (fng < 85)
     eth_sig_hier = cond_hierarchical.astype(float)
     eth_tr_hier = eth_sig_hier.diff().abs().fillna(0)
-    eth_rets_hier = (eth_sig_hier * rets_df['ETHUSDT'] - eth_tr_hier * taker_cost).iloc[:-1]
+    eth_rets_hier = (eth_sig_hier * rets_df['ETHUSDT'] - eth_tr_hier * taker_cost).iloc[:-2]
     results['ETH Hierarchical (AI+OnChain+News)'] = {**calculate_metrics(eth_rets_hier), 'trades': int(eth_tr_hier.sum())}
 
     # -------------------------------------------------------------
@@ -99,7 +139,7 @@ def run_transformer_backtest():
     # -------------------------------------------------------------
     eth_sig_base = (z_score > 1.0).astype(float)
     eth_tr_base = eth_sig_base.diff().abs().fillna(0)
-    eth_rets_base = (eth_sig_base * rets_df['ETHUSDT'] - eth_tr_base * taker_cost).iloc[:-1]
+    eth_rets_base = (eth_sig_base * rets_df['ETHUSDT'] - eth_tr_base * taker_cost).iloc[:-2]
     results['ETH Baseline Transformer (z>1.0)'] = {**calculate_metrics(eth_rets_base), 'trades': int(eth_tr_base.sum())}
 
     # -------------------------------------------------------------
@@ -114,7 +154,7 @@ def run_transformer_backtest():
     current_holding = None
     rot_trade_count = 0
 
-    for i in range(len(test_idx) - 1):
+    for i in range(len(test_idx) - 2):
         target_t = top1_token.iloc[i]
         expected_ret = preds_df.loc[test_idx[i], target_t]
 
@@ -132,14 +172,14 @@ def run_transformer_backtest():
             current_holding = None
             rot_rets.append(0.0 - fee_deduction)
 
-    rot_strat_rets = pd.Series(rot_rets, index=test_idx[:-1])
+    rot_strat_rets = pd.Series(rot_rets, index=test_idx[:-2])
     results['Multi-Asset Rotation (Top-1)'] = {**calculate_metrics(rot_strat_rets), 'trades': rot_trade_count}
 
     # -------------------------------------------------------------
-    # 基准策略 (Benchmarks)
+    # 基准策略 (Benchmarks - 同样在 Open-to-Open 口径下评测)
     # -------------------------------------------------------------
-    eth_bh_rets = rets_df['ETHUSDT'].iloc[:-1]
-    btc_bh_rets = rets_df['BTCUSDT'].iloc[:-1]
+    eth_bh_rets = rets_df['ETHUSDT'].iloc[:-2]
+    btc_bh_rets = rets_df['BTCUSDT'].iloc[:-2]
 
     results['ETH Buy & Hold'] = {**calculate_metrics(eth_bh_rets), 'trades': 1}
     results['BTC Buy & Hold'] = {**calculate_metrics(btc_bh_rets), 'trades': 1}
@@ -152,16 +192,16 @@ def run_transformer_backtest():
     equity_df['ETH_Buy_Hold'] = results['ETH Buy & Hold']['cum_curve']
     equity_df['BTC_Buy_Hold'] = results['BTC Buy & Hold']['cum_curve']
 
-    # 打印对比表格
-    print("\n" + "=" * 94)
+    # 打印对比表格 (同时展示 4h Sharpe 与 Daily Resampled Sharpe)
+    print("\n" + "=" * 106)
     print("        OUT-OF-SAMPLE 2.7-YEAR PERFORMANCE COMPARISON: BASELINE vs AUGMENTED (2024-2026)      ")
-    print("=" * 94)
-    header = f"{'Strategy / Benchmark':<35} | {'Total Ret':<10} | {'CAGR':<8} | {'MDD':<8} | {'Sharpe':<7} | {'Calmar':<7} | {'Win%':<6} | {'Trades':<6}"
+    print("=" * 106)
+    header = f"{'Strategy / Benchmark':<35} | {'Total Ret':<10} | {'CAGR':<8} | {'MDD':<8} | {'4h Sh':<7} | {'Daily Sh':<8} | {'Win%':<6} | {'Trades':<6}"
     print(header)
-    print("-" * 94)
+    print("-" * 106)
     for name, m in results.items():
-        print(f"{name:<35} | {m['total_ret']*100:+8.2f}% | {m['ann_ret']*100:+6.2f}% | {m['mdd']*100:6.2f}% | {m['sharpe']:6.2f} | {m['calmar']:6.2f} | {m['win_rate']*100:5.1f}% | {m['trades']:<6}")
-    print("=" * 94)
+        print(f"{name:<35} | {m['total_ret']*100:+8.2f}% | {m['ann_ret']*100:+6.2f}% | {m['mdd']*100:6.2f}% | {m['sharpe']:6.2f} | {m['sharpe_daily']:8.2f} | {m['win_rate']*100:5.1f}% | {m['trades']:<6}")
+    print("=" * 106)
 
     # 年度收益分解表 (Annual Breakdown)
     print("\n" + "=" * 72)
@@ -188,7 +228,7 @@ def run_transformer_backtest():
         print(f"{s_name:<35} | {ret_2024*100:+8.1f}%  | {ret_2025*100:+8.1f}%  | {ret_2026*100:+8.1f}%")
     print("=" * 72)
 
-    equity_path = 'data/crypto_cache/transformer_backtest_equity.csv'
+    equity_path = os.path.join(root_dir, 'data', 'transformer_backtest_equity.csv')
     equity_df.to_csv(equity_path)
     print(f"\nEquity curves successfully saved to {equity_path}")
 
