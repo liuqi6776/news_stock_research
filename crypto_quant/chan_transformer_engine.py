@@ -60,6 +60,8 @@ class ChanTransformerHybridEngine:
         pred_12d_threshold: float = -0.01,
         exp_pct: float = 50.0,
         use_transformer_gate: bool = True,
+        fixed_exp_thresh: Optional[float] = None,
+        min_warmup_bars: int = 120,
     ):
         self.token = token
         self.atr_period = atr_period
@@ -69,6 +71,8 @@ class ChanTransformerHybridEngine:
         self.pred_12d_threshold = pred_12d_threshold
         self.exp_pct = exp_pct
         self.use_transformer_gate = use_transformer_gate
+        self.fixed_exp_thresh = fixed_exp_thresh
+        self.min_warmup_bars = min_warmup_bars
 
     def backtest(
         self,
@@ -79,6 +83,8 @@ class ChanTransformerHybridEngine:
     ) -> Dict[str, Any]:
         """
         Executes causal mark-to-market backtest on historical 4h bars.
+        Zero bfill: indicators computed with historical warmup or causal expanding windows.
+        Zero look-ahead: expansion thresholds determined strictly from past data or fixed training calibration.
         """
         common_idx = df_candles.index.intersection(df_preds.index)
         if len(common_idx) == 0:
@@ -94,40 +100,51 @@ class ChanTransformerHybridEngine:
         lows = df['low'].values
         closes = df['close'].values
 
-        # 1. ATR
-        tr1 = highs - lows
-        tr2 = np.abs(highs - np.roll(closes, 1))
-        tr3 = np.abs(lows - np.roll(closes, 1))
-        tr = np.maximum(tr1, np.maximum(tr2, tr3))
-        tr[0] = tr1[0]
-        atr = pd.Series(tr, index=idx).rolling(self.atr_period).mean().bfill().values
+        # 1. ATR & Trend Indicators computed on available history without bfill
+        s_c_full = df_candles['close']
+        s_h_full = df_candles['high']
+        s_l_full = df_candles['low']
 
-        # 2. Trend & Channel Indicators (120-bar lookback matching Phase 19)
-        s_closes = pd.Series(closes, index=idx)
-        s_highs = pd.Series(highs, index=idx)
-        s_lows = pd.Series(lows, index=idx)
+        tr1_full = s_h_full - s_l_full
+        tr2_full = (s_h_full - s_c_full.shift(1)).abs()
+        tr3_full = (s_l_full - s_c_full.shift(1)).abs()
+        tr_full = pd.concat([tr1_full, tr2_full, tr3_full], axis=1).max(axis=1)
 
-        bb_mid = s_closes.shift(1).rolling(120).mean().bfill().values
-        bb_std = s_closes.shift(1).rolling(120).std().bfill().values
-        bb_upper = bb_mid + 2.0 * bb_std
-        swing_low = s_lows.shift(1).rolling(30).min().bfill().values
+        atr_full = tr_full.rolling(self.atr_period, min_periods=1).mean()
+        bb_mid_full = s_c_full.shift(1).rolling(120, min_periods=min(30, self.min_warmup_bars)).mean()
+        bb_std_full = s_c_full.shift(1).rolling(120, min_periods=min(30, self.min_warmup_bars)).std()
+        bb_upper_full = bb_mid_full + 2.0 * bb_std_full
+        swing_low_full = s_l_full.shift(1).rolling(30, min_periods=min(10, self.min_warmup_bars)).min()
+        zg_full = s_h_full.shift(1).rolling(60, min_periods=min(15, self.min_warmup_bars)).quantile(0.85)
+        zd_full = s_l_full.shift(1).rolling(60, min_periods=min(15, self.min_warmup_bars)).quantile(0.15)
+        ema200_full = s_c_full.shift(1).ewm(span=200).mean()
 
-        # 3. Chan-Lun 60-bar Central Hub levels [ZD, ZG]
-        zg = s_highs.shift(1).rolling(60).quantile(0.85).bfill().values
-        zd = s_lows.shift(1).rolling(60).quantile(0.15).bfill().values
+        atr = atr_full.loc[common_idx].values
+        bb_mid = bb_mid_full.loc[common_idx].values
+        bb_upper = bb_upper_full.loc[common_idx].values
+        swing_low = swing_low_full.loc[common_idx].values
+        zg = zg_full.loc[common_idx].values
+        zd = zd_full.loc[common_idx].values
+        ema200 = ema200_full.loc[common_idx].values
 
         # 4. Transformer Multi-Horizon Predictions
         p_12d = df_p[f'{self.token}_pred_12d'].values
         p_6d = df_p[f'{self.token}_pred_6d'].values
         prob_exp = df_p[f'{self.token}_prob_exp'].values
-        exp_thresh = np.percentile(prob_exp, self.exp_pct)
+
+        # Strictly Causal Expansion Threshold (Eliminates full-sample lookahead percentile)
+        if self.fixed_exp_thresh is not None:
+            # Option A: Calibrated strictly on training set (2020-2023)
+            exp_thresh_arr = np.full(n, self.fixed_exp_thresh)
+        else:
+            # Option B: Strictly causal rolling historical quantile with shift(1)
+            s_prob = pd.Series(prob_exp, index=idx)
+            exp_thresh_arr = s_prob.shift(1).expanding(min_periods=15).quantile(self.exp_pct / 100.0).fillna(0.5).values
 
         # 5. Funding Rate & Macro 200 EMA
         fund_vals = np.zeros(n)
         if df_funding is not None and self.token in df_funding.columns:
             fund_vals = df_funding[self.token].reindex(idx).fillna(0.0).values
-
-        ema200 = s_closes.shift(1).ewm(span=200).mean().values
 
         active_pos = np.zeros(n)
         stop_levels = np.zeros(n)
@@ -143,13 +160,16 @@ class ChanTransformerHybridEngine:
             curr_h = highs[i]
             curr_atr = atr[i]
 
+            if i < self.min_warmup_bars or np.isnan(curr_atr) or np.isnan(bb_upper[i]):
+                continue
+
             if in_pos == 0:
                 # Geometric Breakout Trigger: Bollinger Upper Breakout OR Chan Hub Breakout
                 breakout = (curr_c > bb_upper[i]) or (curr_c > zg[i] and curr_c > ema200[i])
 
-                # Transformer Predictive Verification Gate
+                # Transformer Predictive Verification Gate (Using causal expansion threshold)
                 if self.use_transformer_gate:
-                    trans_conf = (p_12d[i] > self.pred_12d_threshold) and (prob_exp[i] >= exp_thresh * 0.98)
+                    trans_conf = (p_12d[i] > self.pred_12d_threshold) and (prob_exp[i] >= exp_thresh_arr[i] * 0.98)
                 else:
                     trans_conf = True
 

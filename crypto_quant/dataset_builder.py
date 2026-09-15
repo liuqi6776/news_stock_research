@@ -365,16 +365,34 @@ class ChanWaveDataset(Dataset):
         }
 
 
-def prepare_chan_wave_datasets(lookback_len: int = 18, train_end='2023-12-31', val_end='2025-12-31'):
+def prepare_chan_wave_datasets(
+    lookback_len: int = 18,
+    train_end: str = '2023-12-31 23:59:59',
+    val_end: str = '2025-12-31 23:59:59',
+    purge_bars: int = 72,
+    embargo_bars: int = 18,
+):
     """
-    Spatio-Temporal Chan-Lun Wave Dataset Pipeline (Phase 20):
+    Spatio-Temporal Chan-Lun Wave Dataset Pipeline (Phase 20/21):
     - Features: 41 dimensions (33 base features + 8 Chan-Lun topological features)
     - Targets: 3-day (18-bar), 6-day (36-bar), 12-day (72-bar) wave returns + true expansion label
-    - Strict 3-way split: 2020-2023 Train, 2024-2025 Val, 2026 Locked Stress Set
+    - Strict 3-way split with Purge & Embargo:
+      * Train: label_end_time <= train_end (sample_time <= train_end - 72 bars)
+      * Val: sample_time >= train_end + 18 bars AND label_end_time <= val_end (sample_time <= val_end - 72 bars)
+      * Blind Test: sample_time >= val_end + 18 bars
     """
     print("Loading 2020-2026 4h crypto data for Chan-Lun Wave Transformer...")
     root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     data_dir = os.path.join(root_dir, 'data')
+    if not os.path.exists(os.path.join(data_dir, 'BTCUSDT_4h_2020_2026.parquet')) and not os.path.exists(os.path.join(data_dir, 'BTCUSDT_4h_2021_2026.parquet')):
+        for alt in [
+            os.path.join(root_dir, 'data', 'crypto_cache'),
+            os.path.join(os.path.expanduser('~'), 'crypto', 'data'),
+            r'C:\Users\liuqi\crypto\data',
+        ]:
+            if os.path.exists(os.path.join(alt, 'BTCUSDT_4h_2020_2026.parquet')) or os.path.exists(os.path.join(alt, 'BTCUSDT_4h_2021_2026.parquet')):
+                data_dir = alt
+                break
 
     raw_dfs = {}
     for t in TOKENS:
@@ -439,8 +457,13 @@ def prepare_chan_wave_datasets(lookback_len: int = 18, train_end='2023-12-31', v
         target_12d_matrix[:, k] = fdf['target_wave_12d'].values
         target_exp_matrix[:, k] = (fdf['target_wave_12d'] > 0.03).astype(float).values
 
-    # Train scaler strictly on Train period (<= train_end)
-    train_core_indices = np.where(common_idx <= train_end)[0]
+    train_end_dt = pd.to_datetime(train_end)
+    val_end_dt = pd.to_datetime(val_end)
+    purge_delta = pd.Timedelta(hours=purge_bars * 4)
+    embargo_delta = pd.Timedelta(hours=embargo_bars * 4)
+
+    # Train scaler strictly on purged Train period (<= train_end - purge_delta)
+    train_core_indices = np.where(common_idx <= (train_end_dt - purge_delta))[0]
     scaler_mean = np.nanmean(feature_matrix[train_core_indices], axis=(0, 1), keepdims=True)
     scaler_std = np.nanstd(feature_matrix[train_core_indices], axis=(0, 1), keepdims=True)
     scaler_std[scaler_std < 1e-6] = 1.0
@@ -466,14 +489,17 @@ def prepare_chan_wave_datasets(lookback_len: int = 18, train_end='2023-12-31', v
     close_prices = {t: raw_dfs[t].loc[timestamps, 'close'].values for t in TOKENS}
     open_prices = {t: raw_dfs[t].loc[timestamps, 'open'].values for t in TOKENS}
 
-    train_mask = timestamps <= train_end
-    val_mask = (timestamps > train_end) & (timestamps <= val_end)
-    blind_test_mask = timestamps > val_end
+    # Strict Purge & Embargo masks to eliminate boundary label leakage:
+    train_mask = timestamps <= (train_end_dt - purge_delta)
+    val_mask = (timestamps >= (train_end_dt + embargo_delta)) & (timestamps <= (val_end_dt - purge_delta))
+    blind_test_mask = timestamps >= (val_end_dt + embargo_delta)
 
     print(f"Total Chan-Wave sequences (L={lookback_len}): {len(timestamps)}")
-    print(f"1. Train Set (2020-2023):      {train_mask.sum()} bars")
-    print(f"2. Val Set (2024-2025):        {val_mask.sum()} bars")
-    print(f"3. Blind Test Set (2026 YTD):  {blind_test_mask.sum()} bars")
+    print(f"1. Train Set (Purged):         {train_mask.sum()} bars ({timestamps[train_mask][0]} -> {timestamps[train_mask][-1]})")
+    print(f"2. Val Set (Purged & Embargo): {val_mask.sum()} bars ({timestamps[val_mask][0]} -> {timestamps[val_mask][-1]})")
+    print(f"3. Blind Test Set (Embargo):   {blind_test_mask.sum()} bars ({timestamps[blind_test_mask][0]} -> {timestamps[blind_test_mask][-1]})")
+    print(f"   Purge Gap Train->Val:       {(timestamps[val_mask][0] - timestamps[train_mask][-1]).days} days (>= {purge_bars*4//24} days)")
+    print(f"   Purge Gap Val->Test:        {(timestamps[blind_test_mask][0] - timestamps[val_mask][-1]).days} days (>= {purge_bars*4//24} days)")
 
     train_ds = ChanWaveDataset(
         X_all[train_mask], y_3d_all[train_mask], y_6d_all[train_mask], y_12d_all[train_mask], y_exp_all[train_mask],
@@ -499,9 +525,14 @@ def prepare_chan_wave_datasets(lookback_len: int = 18, train_end='2023-12-31', v
         'feature_cols': feature_cols,
         'num_features': num_features,
         'lookback_len': lookback_len,
+        'purge_bars': purge_bars,
+        'embargo_bars': embargo_bars,
+        'train_end': str(train_end_dt),
+        'val_end': str(val_end_dt),
         'scaler_mean': scaler_mean,
         'scaler_std': scaler_std,
         'timestamps': timestamps,
+        'train_timestamps': timestamps[train_mask],
         'val_timestamps': timestamps[val_mask],
         'blind_test_timestamps': timestamps[blind_test_mask]
     }

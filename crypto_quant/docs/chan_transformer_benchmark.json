@@ -1,46 +1,36 @@
 {
-  "phase": "Phase 20 - Spatio-Temporal Chan-Lun Wave Transformer",
-  "evaluation_period": "2024-01-01 to 2026-03-31 (Out-of-Sample)",
+  "phase": "Phase 20 / Phase 21 - ST-ChanTransformer Clean Benchmark",
+  "status": "EXPERIMENTAL_RESEARCH_FILTER_ONLY",
+  "evaluation_period": "2024-01-01 00:00:00 to 2026-09-01 12:00:00 (Development Backtest)",
+  "debiasing_protocols_enforced": {
+    "zero_bfill": true,
+    "zero_full_sample_percentile": true,
+    "train_only_fixed_threshold": true,
+    "purge_bars": 72,
+    "embargo_bars": 18
+  },
   "st_chan_transformer": {
     "ETHUSDT": {
-      "total_return_pct": 147.67,
-      "cagr_pct": 40.4,
+      "total_return_pct": 135.54,
+      "cagr_pct": 37.79,
       "max_drawdown_pct": -24.98,
-      "daily_sharpe": 1.28,
-      "calmar_ratio": 1.62,
-      "num_trades": 41,
-      "avg_duration_days": 4.36,
-      "win_rate_pct": 31.7,
-      "profit_factor": 2.5,
-      "cumulative_fee_drag_pct": 6.56
+      "daily_sharpe": 1.23,
+      "calmar_ratio": 1.51,
+      "num_trades": 39,
+      "avg_duration_days": 4.48,
+      "win_rate_pct": 30.8,
+      "profit_factor": 2.44,
+      "cumulative_fee_drag_pct": 6.24
     },
     "ETHUSDT_trades_list": [
       {
-        "entry_time": "2024-01-02 04:00:00",
-        "entry_price": 2386.42,
-        "exit_time": "2024-01-02 08:00:00",
-        "exit_price": 2385.84,
-        "net_ret": -0.18,
+        "entry_time": "2024-02-05 12:00:00",
+        "entry_price": 2329.63,
+        "exit_time": "2024-02-05 16:00:00",
+        "exit_price": 2298.72,
+        "net_ret": -1.49,
         "duration_days": 0.2,
         "reason": "CHANNEL_EXIT"
-      },
-      {
-        "entry_time": "2024-01-02 12:00:00",
-        "entry_price": 2391.24,
-        "exit_time": "2024-01-02 16:00:00",
-        "exit_price": 2357.48,
-        "net_ret": -1.57,
-        "duration_days": 0.2,
-        "reason": "CHANNEL_EXIT"
-      },
-      {
-        "entry_time": "2024-01-10 12:00:00",
-        "entry_price": 2402.21,
-        "exit_time": "2024-01-14 12:00:00",
-        "exit_price": 2538.01,
-        "net_ret": 5.44,
-        "duration_days": 4.0,
-        "reason": "TRAILING_STOP"
       },
       {
         "entry_time": "2024-02-06 16:00:00",
@@ -386,27 +376,18 @@
       }
     ],
     "SOLUSDT": {
-      "total_return_pct": 40.68,
-      "cagr_pct": 13.62,
-      "max_drawdown_pct": -30.6,
-      "daily_sharpe": 0.54,
-      "calmar_ratio": 0.45,
-      "num_trades": 45,
-      "avg_duration_days": 3.86,
-      "win_rate_pct": 40.0,
-      "profit_factor": 1.49,
-      "cumulative_fee_drag_pct": 7.2
+      "total_return_pct": 27.74,
+      "cagr_pct": 9.59,
+      "max_drawdown_pct": -33.96,
+      "daily_sharpe": 0.44,
+      "calmar_ratio": 0.28,
+      "num_trades": 42,
+      "avg_duration_days": 3.9,
+      "win_rate_pct": 38.1,
+      "profit_factor": 1.38,
+      "cumulative_fee_drag_pct": 6.72
     },
     "SOLUSDT_trades_list": [
-      {
-        "entry_time": "2024-01-01 20:00:00",
-        "entry_price": 108.82,
-        "exit_time": "2024-01-03 00:00:00",
-        "exit_price": 106.72,
-        "net_ret": -2.19,
-        "duration_days": 1.2,
-        "reason": "TRAILING_STOP"
-      },
       {
         "entry_time": "2024-01-28 04:00:00",
         "entry_price": 96.65,
@@ -525,12 +506,12 @@
         "reason": "TRAILING_STOP"
       },
       {
-        "entry_time": "2024-07-18 04:00:00",
-        "entry_price": 158.93,
+        "entry_time": "2024-07-19 04:00:00",
+        "entry_price": 161.84,
         "exit_time": "2024-07-23 20:00:00",
         "exit_price": 171.99,
-        "net_ret": 7.99,
-        "duration_days": 5.7,
+        "net_ret": 6.06,
+        "duration_days": 4.7,
         "reason": "TRAILING_STOP"
       },
       {
@@ -543,30 +524,21 @@
         "reason": "TRAILING_STOP"
       },
       {
-        "entry_time": "2024-08-26 04:00:00",
-        "entry_price": 160.12,
+        "entry_time": "2024-08-26 08:00:00",
+        "entry_price": 159.12,
         "exit_time": "2024-08-28 00:00:00",
         "exit_price": 146.78,
-        "net_ret": -8.5,
-        "duration_days": 1.8,
+        "net_ret": -7.92,
+        "duration_days": 1.7,
         "reason": "TRAILING_STOP"
       },
       {
-        "entry_time": "2024-09-19 08:00:00",
-        "entry_price": 138.56,
-        "exit_time": "2024-09-22 16:00:00",
-        "exit_price": 143.12,
-        "net_ret": 3.1,
-        "duration_days": 3.3,
-        "reason": "TRAILING_STOP"
-      },
-      {
-        "entry_time": "2024-09-23 04:00:00",
-        "entry_price": 147.73,
+        "entry_time": "2024-09-21 00:00:00",
+        "entry_price": 146.67,
         "exit_time": "2024-09-30 16:00:00",
         "exit_price": 154.16,
-        "net_ret": 4.13,
-        "duration_days": 7.5,
+        "net_ret": 4.87,
+        "duration_days": 9.7,
         "reason": "TRAILING_STOP"
       },
       {
@@ -705,30 +677,21 @@
         "reason": "TRAILING_STOP"
       },
       {
-        "entry_time": "2025-07-10 12:00:00",
-        "entry_price": 157.66,
-        "exit_time": "2025-07-15 04:00:00",
-        "exit_price": 159.14,
-        "net_ret": 0.76,
-        "duration_days": 4.7,
-        "reason": "TRAILING_STOP"
-      },
-      {
-        "entry_time": "2025-07-16 16:00:00",
-        "entry_price": 168.45,
+        "entry_time": "2025-07-17 08:00:00",
+        "entry_price": 174.02,
         "exit_time": "2025-07-23 20:00:00",
         "exit_price": 188.09,
-        "net_ret": 11.44,
-        "duration_days": 7.2,
+        "net_ret": 7.87,
+        "duration_days": 6.5,
         "reason": "TRAILING_STOP"
       },
       {
-        "entry_time": "2025-08-13 00:00:00",
-        "entry_price": 191.77,
+        "entry_time": "2025-08-13 08:00:00",
+        "entry_price": 198.74,
         "exit_time": "2025-08-15 16:00:00",
         "exit_price": 185.55,
-        "net_ret": -3.42,
-        "duration_days": 2.7,
+        "net_ret": -6.81,
+        "duration_days": 2.3,
         "reason": "TRAILING_STOP"
       },
       {
@@ -768,12 +731,12 @@
         "reason": "TRAILING_STOP"
       },
       {
-        "entry_time": "2025-10-05 04:00:00",
-        "entry_price": 230.91,
+        "entry_time": "2025-10-05 12:00:00",
+        "entry_price": 232.66,
         "exit_time": "2025-10-07 16:00:00",
         "exit_price": 223.79,
-        "net_ret": -3.24,
-        "duration_days": 2.5,
+        "net_ret": -3.97,
+        "duration_days": 2.2,
         "reason": "TRAILING_STOP"
       },
       {
@@ -805,151 +768,155 @@
       }
     ],
     "PORTFOLIO_50_50": {
-      "total_return_pct": 94.57,
-      "cagr_pct": 28.28,
+      "total_return_pct": 80.73,
+      "cagr_pct": 24.79,
       "max_drawdown_pct": -22.1,
-      "daily_sharpe": 1.08,
-      "calmar_ratio": 1.28,
-      "num_trades": 86,
-      "avg_duration_days": 4.11,
-      "win_rate_pct": 35.9,
-      "cumulative_fee_drag_pct": 13.76
+      "daily_sharpe": 0.99,
+      "calmar_ratio": 1.12,
+      "num_trades": 81,
+      "avg_duration_days": 4.19,
+      "win_rate_pct": 34.5,
+      "cumulative_fee_drag_pct": 12.96
     }
   },
   "baselines_reference": {
     "ETHUSDT": {
-      "buy_and_hold_return_pct": 10.24,
-      "transformer_baseline": {
-        "total_return_pct": 27.71,
-        "cagr_pct": 9.47,
-        "max_drawdown_pct": -60.63,
-        "daily_sharpe": 0.42,
-        "calmar_ratio": 0.16,
-        "num_trades": 406,
-        "avg_duration_days": 1.13,
-        "win_rate_pct": 50.0,
-        "profit_factor": 1.09,
-        "cumulative_fee_drag_pct": 64.96
-      },
-      "transformer_trial_mode": {
-        "total_return_pct": 21.87,
-        "cagr_pct": 7.59,
-        "max_drawdown_pct": -27.63,
-        "daily_sharpe": 0.51,
-        "calmar_ratio": 0.27,
-        "num_trades": 406,
-        "avg_duration_days": 1.13,
-        "win_rate_pct": 50.0,
-        "profit_factor": 1.09,
-        "cumulative_fee_drag_pct": 64.96
-      },
-      "donchian_turtle": {
-        "total_return_pct": 95.96,
-        "cagr_pct": 28.24,
-        "max_drawdown_pct": -29.73,
-        "daily_sharpe": 1.08,
-        "calmar_ratio": 0.95,
-        "num_trades": 27,
-        "avg_duration_days": 5.24,
-        "win_rate_pct": 33.3,
-        "profit_factor": 2.46,
-        "cumulative_fee_drag_pct": 4.32
-      },
-      "bollinger_breakout": {
-        "total_return_pct": 105.63,
-        "cagr_pct": 30.55,
-        "max_drawdown_pct": -29.46,
-        "daily_sharpe": 1.16,
-        "calmar_ratio": 1.04,
-        "num_trades": 28,
-        "avg_duration_days": 5.2,
-        "win_rate_pct": 46.4,
-        "profit_factor": 2.71,
-        "cumulative_fee_drag_pct": 4.48
-      },
-      "structural_trend_macro": {
-        "total_return_pct": 122.41,
-        "cagr_pct": 34.39,
-        "max_drawdown_pct": -25.64,
-        "daily_sharpe": 1.29,
-        "calmar_ratio": 1.34,
-        "num_trades": 28,
-        "avg_duration_days": 5.2,
-        "win_rate_pct": 46.4,
-        "profit_factor": 2.71,
-        "cumulative_fee_drag_pct": 4.48
+      "total_return_pct": 126.36,
+      "cagr_pct": 35.79,
+      "max_drawdown_pct": -29.25,
+      "daily_sharpe": 1.29,
+      "calmar_ratio": 1.22,
+      "num_trades": 30,
+      "win_rate_pct": 46.7,
+      "profit_factor": 2.71,
+      "avg_duration_days": 5.0,
+      "annual_breakdown": {
+        "2024": {
+          "total_return_pct": 54.79,
+          "cagr_pct": 54.6,
+          "max_drawdown_pct": -14.38,
+          "daily_sharpe": 1.84,
+          "calmar_ratio": 3.8,
+          "num_trades": 11,
+          "win_rate_pct": 72.7,
+          "profit_factor": 6.21,
+          "avg_duration_days": 6.6
+        },
+        "2025": {
+          "total_return_pct": 57.26,
+          "cagr_pct": 57.26,
+          "max_drawdown_pct": -16.65,
+          "daily_sharpe": 1.73,
+          "calmar_ratio": 3.44,
+          "num_trades": 9,
+          "win_rate_pct": 33.3,
+          "profit_factor": 3.21,
+          "avg_duration_days": 4.7
+        },
+        "2026": {
+          "total_return_pct": -7.01,
+          "cagr_pct": -10.31,
+          "max_drawdown_pct": -24.31,
+          "daily_sharpe": -0.32,
+          "calmar_ratio": -0.42,
+          "num_trades": 10,
+          "win_rate_pct": 30.0,
+          "profit_factor": 0.77,
+          "avg_duration_days": 3.6
+        }
       }
     },
     "SOLUSDT": {
-      "buy_and_hold_return_pct": 0.09,
-      "transformer_baseline": {
-        "total_return_pct": 26.87,
-        "cagr_pct": 9.2,
-        "max_drawdown_pct": -72.52,
-        "daily_sharpe": 0.43,
-        "calmar_ratio": 0.13,
-        "num_trades": 378,
-        "avg_duration_days": 1.27,
-        "win_rate_pct": 54.2,
-        "profit_factor": 1.11,
-        "cumulative_fee_drag_pct": 60.48
-      },
-      "transformer_trial_mode": {
-        "total_return_pct": 39.53,
-        "cagr_pct": 13.11,
-        "max_drawdown_pct": -24.88,
-        "daily_sharpe": 0.84,
-        "calmar_ratio": 0.53,
-        "num_trades": 378,
-        "avg_duration_days": 1.27,
-        "win_rate_pct": 54.2,
-        "profit_factor": 1.11,
-        "cumulative_fee_drag_pct": 60.48
-      },
-      "donchian_turtle": {
-        "total_return_pct": 39.61,
-        "cagr_pct": 13.13,
-        "max_drawdown_pct": -35.1,
-        "daily_sharpe": 0.56,
-        "calmar_ratio": 0.37,
-        "num_trades": 30,
-        "avg_duration_days": 4.81,
-        "win_rate_pct": 46.7,
-        "profit_factor": 1.65,
-        "cumulative_fee_drag_pct": 4.8
-      },
-      "bollinger_breakout": {
-        "total_return_pct": 68.98,
-        "cagr_pct": 21.41,
-        "max_drawdown_pct": -32.03,
-        "daily_sharpe": 0.76,
-        "calmar_ratio": 0.67,
-        "num_trades": 34,
-        "avg_duration_days": 4.96,
-        "win_rate_pct": 44.1,
-        "profit_factor": 1.87,
-        "cumulative_fee_drag_pct": 5.44
-      },
-      "structural_trend_macro": {
-        "total_return_pct": 75.41,
-        "cagr_pct": 23.09,
-        "max_drawdown_pct": -29.45,
-        "daily_sharpe": 0.81,
-        "calmar_ratio": 0.78,
-        "num_trades": 34,
-        "avg_duration_days": 4.96,
-        "win_rate_pct": 44.1,
-        "profit_factor": 1.87,
-        "cumulative_fee_drag_pct": 5.44
+      "total_return_pct": 75.75,
+      "cagr_pct": 23.51,
+      "max_drawdown_pct": -31.4,
+      "daily_sharpe": 0.81,
+      "calmar_ratio": 0.75,
+      "num_trades": 34,
+      "win_rate_pct": 44.1,
+      "profit_factor": 1.94,
+      "avg_duration_days": 5.0,
+      "annual_breakdown": {
+        "2024": {
+          "total_return_pct": 60.07,
+          "cagr_pct": 59.86,
+          "max_drawdown_pct": -17.7,
+          "daily_sharpe": 1.38,
+          "calmar_ratio": 3.38,
+          "num_trades": 13,
+          "win_rate_pct": 46.2,
+          "profit_factor": 2.74,
+          "avg_duration_days": 6.2
+        },
+        "2025": {
+          "total_return_pct": -1.38,
+          "cagr_pct": -1.38,
+          "max_drawdown_pct": -27.56,
+          "daily_sharpe": 0.09,
+          "calmar_ratio": -0.05,
+          "num_trades": 11,
+          "win_rate_pct": 36.4,
+          "profit_factor": 1.01,
+          "avg_duration_days": 4.2
+        },
+        "2026": {
+          "total_return_pct": 11.34,
+          "cagr_pct": 17.46,
+          "max_drawdown_pct": -20.51,
+          "daily_sharpe": 0.76,
+          "calmar_ratio": 0.85,
+          "num_trades": 10,
+          "win_rate_pct": 50.0,
+          "profit_factor": 1.81,
+          "avg_duration_days": 4.2
+        }
       }
     },
-    "portfolio_50_50_structural_trend": {
-      "total_return_pct": 105.1,
-      "cagr_pct": 30.42,
-      "max_drawdown_pct": -22.19,
+    "PORTFOLIO_50_50": {
+      "total_return_pct": 107.36,
+      "cagr_pct": 31.4,
+      "max_drawdown_pct": -25.26,
       "daily_sharpe": 1.27,
-      "calmar_ratio": 1.37,
-      "total_trades": 62
+      "calmar_ratio": 1.24,
+      "num_trades": 0,
+      "win_rate_pct": 0.0,
+      "profit_factor": 0.0,
+      "avg_duration_days": 0.0,
+      "annual_breakdown": {
+        "2024": {
+          "total_return_pct": 60.94,
+          "cagr_pct": 60.73,
+          "max_drawdown_pct": -12.82,
+          "daily_sharpe": 1.98,
+          "calmar_ratio": 4.74,
+          "num_trades": 0,
+          "win_rate_pct": 0.0,
+          "profit_factor": 0.0,
+          "avg_duration_days": 0.0
+        },
+        "2025": {
+          "total_return_pct": 26.08,
+          "cagr_pct": 26.08,
+          "max_drawdown_pct": -14.33,
+          "daily_sharpe": 1.13,
+          "calmar_ratio": 1.82,
+          "num_trades": 0,
+          "win_rate_pct": 0.0,
+          "profit_factor": 0.0,
+          "avg_duration_days": 0.0
+        },
+        "2026": {
+          "total_return_pct": 2.2,
+          "cagr_pct": 3.31,
+          "max_drawdown_pct": -20.33,
+          "daily_sharpe": 0.26,
+          "calmar_ratio": 0.16,
+          "num_trades": 0,
+          "win_rate_pct": 0.0,
+          "profit_factor": 0.0,
+          "avg_duration_days": 0.0
+        }
+      }
     }
   }
 }

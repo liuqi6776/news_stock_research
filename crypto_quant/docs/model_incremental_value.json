@@ -1,0 +1,818 @@
+{
+  "suite": "Model Incremental Value Ablation Suite",
+  "generated_at": "2026-09-15T16:50:00+08:00",
+  "code_commit": "f11dfd560e6a3a4c5fd2b4848c07549746fad788",
+  "evaluation_period": "2024-01-01 00:00:00 to 2026-09-01 12:00:00",
+  "prediction_skill": {
+    "ETHUSDT": {
+      "overall_pearson_ic": 0.047,
+      "overall_rank_ic": 0.0235,
+      "overall_hit_rate_pct": 49.8,
+      "rank_ic_p_value": 0.0726,
+      "val_2024_2025_rank_ic": 0.1062,
+      "val_2024_2025_hit_rate_pct": 52.2,
+      "test_2026_rank_ic": -0.3603,
+      "test_2026_hit_rate_pct": 42.8,
+      "mean_rolling_90d_rank_ic": -0.0708,
+      "negative_ic_frequency_pct": 55.1
+    },
+    "SOLUSDT": {
+      "overall_pearson_ic": 0.0048,
+      "overall_rank_ic": -0.0204,
+      "overall_hit_rate_pct": 49.0,
+      "rank_ic_p_value": 0.1179,
+      "val_2024_2025_rank_ic": -0.0251,
+      "val_2024_2025_hit_rate_pct": 50.2,
+      "test_2026_rank_ic": -0.1748,
+      "test_2026_hit_rate_pct": 45.6,
+      "mean_rolling_90d_rank_ic": -0.1684,
+      "negative_ic_frequency_pct": 70.8
+    }
+  },
+  "ablation_study_6_configurations": {
+    "1_pure_structure": {
+      "ETHUSDT": {
+        "total_return_pct": 126.36,
+        "cagr_pct": 35.79,
+        "max_drawdown_pct": -29.25,
+        "daily_sharpe": 1.29,
+        "calmar_ratio": 1.22,
+        "num_trades": 30,
+        "win_rate_pct": 46.7,
+        "profit_factor": 2.71,
+        "avg_duration_days": 5.0,
+        "annual_breakdown": {
+          "2024": {
+            "return_pct": 54.79,
+            "mdd_pct": -14.38,
+            "sharpe": 1.84
+          },
+          "2025": {
+            "return_pct": 57.26,
+            "mdd_pct": -16.65,
+            "sharpe": 1.73
+          },
+          "2026": {
+            "return_pct": -7.01,
+            "mdd_pct": -24.31,
+            "sharpe": -0.32
+          }
+        }
+      },
+      "SOLUSDT": {
+        "total_return_pct": 75.75,
+        "cagr_pct": 23.51,
+        "max_drawdown_pct": -31.4,
+        "daily_sharpe": 0.81,
+        "calmar_ratio": 0.75,
+        "num_trades": 34,
+        "win_rate_pct": 44.1,
+        "profit_factor": 1.94,
+        "avg_duration_days": 5.0,
+        "annual_breakdown": {
+          "2024": {
+            "return_pct": 60.07,
+            "mdd_pct": -17.7,
+            "sharpe": 1.38
+          },
+          "2025": {
+            "return_pct": -1.38,
+            "mdd_pct": -27.56,
+            "sharpe": 0.09
+          },
+          "2026": {
+            "return_pct": 11.34,
+            "mdd_pct": -20.51,
+            "sharpe": 0.76
+          }
+        }
+      },
+      "PORTFOLIO_50_50": {
+        "total_return_pct": 107.36,
+        "cagr_pct": 31.4,
+        "max_drawdown_pct": -25.26,
+        "daily_sharpe": 1.27,
+        "calmar_ratio": 1.24,
+        "num_trades": 64,
+        "win_rate_pct": 45.3,
+        "profit_factor": 2.27,
+        "avg_duration_days": 5.0,
+        "annual_breakdown": {
+          "2024": {
+            "return_pct": 60.94,
+            "mdd_pct": -12.82,
+            "sharpe": 1.98
+          },
+          "2025": {
+            "return_pct": 26.08,
+            "mdd_pct": -14.33,
+            "sharpe": 1.13
+          },
+          "2026": {
+            "return_pct": 2.2,
+            "mdd_pct": -20.33,
+            "sharpe": 0.26
+          }
+        }
+      }
+    },
+    "2_structure_plus_chan_rules": {
+      "ETHUSDT": {
+        "total_return_pct": 135.78,
+        "cagr_pct": 37.88,
+        "max_drawdown_pct": -33.16,
+        "daily_sharpe": 1.13,
+        "calmar_ratio": 1.14,
+        "num_trades": 62,
+        "win_rate_pct": 33.9,
+        "profit_factor": 1.96,
+        "avg_duration_days": 3.9,
+        "annual_breakdown": {
+          "2024": {
+            "return_pct": 89.8,
+            "mdd_pct": -19.18,
+            "sharpe": 2.04
+          },
+          "2025": {
+            "return_pct": 31.6,
+            "mdd_pct": -22.67,
+            "sharpe": 0.94
+          },
+          "2026": {
+            "return_pct": -5.6,
+            "mdd_pct": -25.03,
+            "sharpe": -0.19
+          }
+        }
+      },
+      "SOLUSDT": {
+        "total_return_pct": 68.89,
+        "cagr_pct": 21.68,
+        "max_drawdown_pct": -41.76,
+        "daily_sharpe": 0.69,
+        "calmar_ratio": 0.52,
+        "num_trades": 68,
+        "win_rate_pct": 35.3,
+        "profit_factor": 1.52,
+        "avg_duration_days": 3.8,
+        "annual_breakdown": {
+          "2024": {
+            "return_pct": 65.37,
+            "mdd_pct": -31.56,
+            "sharpe": 1.35
+          },
+          "2025": {
+            "return_pct": 5.25,
+            "mdd_pct": -28.11,
+            "sharpe": 0.32
+          },
+          "2026": {
+            "return_pct": -2.97,
+            "mdd_pct": -30.31,
+            "sharpe": 0.01
+          }
+        }
+      },
+      "PORTFOLIO_50_50": {
+        "total_return_pct": 109.61,
+        "cagr_pct": 31.94,
+        "max_drawdown_pct": -33.45,
+        "daily_sharpe": 1.06,
+        "calmar_ratio": 0.95,
+        "num_trades": 130,
+        "win_rate_pct": 34.6,
+        "profit_factor": 1.72,
+        "avg_duration_days": 3.9,
+        "annual_breakdown": {
+          "2024": {
+            "return_pct": 81.84,
+            "mdd_pct": -22.1,
+            "sharpe": 1.99
+          },
+          "2025": {
+            "return_pct": 19.68,
+            "mdd_pct": -20.76,
+            "sharpe": 0.73
+          },
+          "2026": {
+            "return_pct": -3.68,
+            "mdd_pct": -26.49,
+            "sharpe": -0.09
+          }
+        }
+      }
+    },
+    "3_structure_plus_linear_gate": {
+      "ETHUSDT": {
+        "total_return_pct": 139.54,
+        "cagr_pct": 38.7,
+        "max_drawdown_pct": -31.43,
+        "daily_sharpe": 1.16,
+        "calmar_ratio": 1.23,
+        "num_trades": 58,
+        "win_rate_pct": 36.2,
+        "profit_factor": 2.0,
+        "avg_duration_days": 4.1,
+        "annual_breakdown": {
+          "2024": {
+            "return_pct": 91.55,
+            "mdd_pct": -19.18,
+            "sharpe": 2.07
+          },
+          "2025": {
+            "return_pct": 32.44,
+            "mdd_pct": -22.67,
+            "sharpe": 0.97
+          },
+          "2026": {
+            "return_pct": -5.58,
+            "mdd_pct": -24.05,
+            "sharpe": -0.19
+          }
+        }
+      },
+      "SOLUSDT": {
+        "total_return_pct": 0.18,
+        "cagr_pct": 0.07,
+        "max_drawdown_pct": -45.49,
+        "daily_sharpe": 0.17,
+        "calmar_ratio": 0.0,
+        "num_trades": 44,
+        "win_rate_pct": 36.4,
+        "profit_factor": 1.12,
+        "avg_duration_days": 4.1,
+        "annual_breakdown": {
+          "2024": {
+            "return_pct": 17.99,
+            "mdd_pct": -32.37,
+            "sharpe": 0.61
+          },
+          "2025": {
+            "return_pct": -16.16,
+            "mdd_pct": -35.32,
+            "sharpe": -0.34
+          },
+          "2026": {
+            "return_pct": 1.26,
+            "mdd_pct": -15.87,
+            "sharpe": 0.2
+          }
+        }
+      },
+      "PORTFOLIO_50_50": {
+        "total_return_pct": 62.43,
+        "cagr_pct": 19.92,
+        "max_drawdown_pct": -34.6,
+        "daily_sharpe": 0.8,
+        "calmar_ratio": 0.58,
+        "num_trades": 102,
+        "win_rate_pct": 36.3,
+        "profit_factor": 1.54,
+        "avg_duration_days": 4.1,
+        "annual_breakdown": {
+          "2024": {
+            "return_pct": 54.12,
+            "mdd_pct": -23.09,
+            "sharpe": 1.57
+          },
+          "2025": {
+            "return_pct": 7.21,
+            "mdd_pct": -21.48,
+            "sharpe": 0.39
+          },
+          "2026": {
+            "return_pct": -1.69,
+            "mdd_pct": -19.38,
+            "sharpe": -0.01
+          }
+        }
+      }
+    },
+    "4_structure_plus_legacy_transformer": {
+      "ETHUSDT": {
+        "total_return_pct": 43.91,
+        "cagr_pct": 14.6,
+        "max_drawdown_pct": -42.85,
+        "daily_sharpe": 0.6,
+        "calmar_ratio": 0.34,
+        "num_trades": 49,
+        "win_rate_pct": 30.6,
+        "profit_factor": 1.5,
+        "avg_duration_days": 4.0,
+        "annual_breakdown": {
+          "2024": {
+            "return_pct": 57.41,
+            "mdd_pct": -22.01,
+            "sharpe": 1.58
+          },
+          "2025": {
+            "return_pct": 0.03,
+            "mdd_pct": -32.45,
+            "sharpe": 0.15
+          },
+          "2026": {
+            "return_pct": -8.6,
+            "mdd_pct": -20.03,
+            "sharpe": -0.45
+          }
+        }
+      },
+      "SOLUSDT": {
+        "total_return_pct": 24.92,
+        "cagr_pct": 8.69,
+        "max_drawdown_pct": -48.02,
+        "daily_sharpe": 0.41,
+        "calmar_ratio": 0.18,
+        "num_trades": 52,
+        "win_rate_pct": 34.6,
+        "profit_factor": 1.29,
+        "avg_duration_days": 3.9,
+        "annual_breakdown": {
+          "2024": {
+            "return_pct": 51.95,
+            "mdd_pct": -26.9,
+            "sharpe": 1.22
+          },
+          "2025": {
+            "return_pct": -8.24,
+            "mdd_pct": -32.21,
+            "sharpe": -0.09
+          },
+          "2026": {
+            "return_pct": -10.41,
+            "mdd_pct": -28.57,
+            "sharpe": -0.52
+          }
+        }
+      },
+      "PORTFOLIO_50_50": {
+        "total_return_pct": 40.02,
+        "cagr_pct": 13.43,
+        "max_drawdown_pct": -39.95,
+        "daily_sharpe": 0.61,
+        "calmar_ratio": 0.34,
+        "num_trades": 101,
+        "win_rate_pct": 32.7,
+        "profit_factor": 1.38,
+        "avg_duration_days": 3.9,
+        "annual_breakdown": {
+          "2024": {
+            "return_pct": 58.31,
+            "mdd_pct": -18.44,
+            "sharpe": 1.69
+          },
+          "2025": {
+            "return_pct": -2.68,
+            "mdd_pct": -25.7,
+            "sharpe": 0.02
+          },
+          "2026": {
+            "return_pct": -9.12,
+            "mdd_pct": -24.03,
+            "sharpe": -0.55
+          }
+        }
+      }
+    },
+    "5_structure_plus_st_chan_transformer": {
+      "ETHUSDT": {
+        "total_return_pct": 135.54,
+        "cagr_pct": 37.83,
+        "max_drawdown_pct": -24.98,
+        "daily_sharpe": 1.23,
+        "calmar_ratio": 1.51,
+        "num_trades": 39,
+        "win_rate_pct": 30.8,
+        "profit_factor": 2.44,
+        "avg_duration_days": 4.5,
+        "annual_breakdown": {
+          "2024": {
+            "return_pct": 77.68,
+            "mdd_pct": -19.18,
+            "sharpe": 1.87
+          },
+          "2025": {
+            "return_pct": 37.16,
+            "mdd_pct": -21.04,
+            "sharpe": 1.1
+          },
+          "2026": {
+            "return_pct": -3.35,
+            "mdd_pct": -5.1,
+            "sharpe": -0.65
+          }
+        }
+      },
+      "SOLUSDT": {
+        "total_return_pct": 27.74,
+        "cagr_pct": 9.6,
+        "max_drawdown_pct": -33.96,
+        "daily_sharpe": 0.44,
+        "calmar_ratio": 0.28,
+        "num_trades": 42,
+        "win_rate_pct": 38.1,
+        "profit_factor": 1.38,
+        "avg_duration_days": 3.9,
+        "annual_breakdown": {
+          "2024": {
+            "return_pct": 38.58,
+            "mdd_pct": -32.0,
+            "sharpe": 0.99
+          },
+          "2025": {
+            "return_pct": -6.88,
+            "mdd_pct": -33.96,
+            "sharpe": -0.03
+          },
+          "2026": {
+            "return_pct": -1.0,
+            "mdd_pct": -9.58,
+            "sharpe": -0.03
+          }
+        }
+      },
+      "PORTFOLIO_50_50": {
+        "total_return_pct": 80.73,
+        "cagr_pct": 24.81,
+        "max_drawdown_pct": -22.1,
+        "daily_sharpe": 0.99,
+        "calmar_ratio": 1.12,
+        "num_trades": 81,
+        "win_rate_pct": 34.6,
+        "profit_factor": 1.84,
+        "avg_duration_days": 4.2,
+        "annual_breakdown": {
+          "2024": {
+            "return_pct": 60.88,
+            "mdd_pct": -22.1,
+            "sharpe": 1.7
+          },
+          "2025": {
+            "return_pct": 14.67,
+            "mdd_pct": -17.88,
+            "sharpe": 0.63
+          },
+          "2026": {
+            "return_pct": -2.03,
+            "mdd_pct": -6.5,
+            "sharpe": -0.3
+          }
+        }
+      }
+    },
+    "6_structure_plus_shuffled_placebo": {
+      "ETHUSDT": {
+        "total_return_pct": 114.67,
+        "cagr_pct": 33.12,
+        "max_drawdown_pct": -26.78,
+        "daily_sharpe": 1.14,
+        "calmar_ratio": 1.24,
+        "num_trades": 53,
+        "win_rate_pct": 32.1,
+        "profit_factor": 2.08,
+        "avg_duration_days": 4.1,
+        "annual_breakdown": {
+          "2024": {
+            "return_pct": 59.66,
+            "mdd_pct": -22.67,
+            "sharpe": 1.85
+          },
+          "2025": {
+            "return_pct": 41.54,
+            "mdd_pct": -20.38,
+            "sharpe": 1.21
+          },
+          "2026": {
+            "return_pct": -5.01,
+            "mdd_pct": -22.91,
+            "sharpe": -0.22
+          }
+        }
+      },
+      "SOLUSDT": {
+        "total_return_pct": 78.18,
+        "cagr_pct": 24.15,
+        "max_drawdown_pct": -33.28,
+        "daily_sharpe": 0.76,
+        "calmar_ratio": 0.73,
+        "num_trades": 58,
+        "win_rate_pct": 32.8,
+        "profit_factor": 1.66,
+        "avg_duration_days": 3.9,
+        "annual_breakdown": {
+          "2024": {
+            "return_pct": 38.47,
+            "mdd_pct": -30.75,
+            "sharpe": 0.98
+          },
+          "2025": {
+            "return_pct": 7.04,
+            "mdd_pct": -25.73,
+            "sharpe": 0.36
+          },
+          "2026": {
+            "return_pct": 20.21,
+            "mdd_pct": -20.45,
+            "sharpe": 1.14
+          }
+        }
+      },
+      "PORTFOLIO_50_50": {
+        "total_return_pct": 104.34,
+        "cagr_pct": 30.68,
+        "max_drawdown_pct": -24.89,
+        "daily_sharpe": 1.11,
+        "calmar_ratio": 1.23,
+        "num_trades": 111,
+        "win_rate_pct": 32.4,
+        "profit_factor": 1.85,
+        "avg_duration_days": 4.0,
+        "annual_breakdown": {
+          "2024": {
+            "return_pct": 52.23,
+            "mdd_pct": -19.19,
+            "sharpe": 1.62
+          },
+          "2025": {
+            "return_pct": 24.96,
+            "mdd_pct": -19.19,
+            "sharpe": 0.91
+          },
+          "2026": {
+            "return_pct": 7.42,
+            "mdd_pct": -18.96,
+            "sharpe": 0.58
+          }
+        }
+      }
+    }
+  },
+  "gate_on_vs_gate_off_comparison": {
+    "gate_on_fixed_threshold": {
+      "ETHUSDT": {
+        "total_return_pct": 135.54,
+        "cagr_pct": 37.83,
+        "max_drawdown_pct": -24.98,
+        "daily_sharpe": 1.23,
+        "calmar_ratio": 1.51,
+        "num_trades": 39,
+        "win_rate_pct": 30.8,
+        "profit_factor": 2.44,
+        "avg_duration_days": 4.5,
+        "annual_breakdown": {
+          "2024": {
+            "return_pct": 77.68,
+            "mdd_pct": -19.18,
+            "sharpe": 1.87
+          },
+          "2025": {
+            "return_pct": 37.16,
+            "mdd_pct": -21.04,
+            "sharpe": 1.1
+          },
+          "2026": {
+            "return_pct": -3.35,
+            "mdd_pct": -5.1,
+            "sharpe": -0.65
+          }
+        }
+      },
+      "SOLUSDT": {
+        "total_return_pct": 27.74,
+        "cagr_pct": 9.6,
+        "max_drawdown_pct": -33.96,
+        "daily_sharpe": 0.44,
+        "calmar_ratio": 0.28,
+        "num_trades": 42,
+        "win_rate_pct": 38.1,
+        "profit_factor": 1.38,
+        "avg_duration_days": 3.9,
+        "annual_breakdown": {
+          "2024": {
+            "return_pct": 38.58,
+            "mdd_pct": -32.0,
+            "sharpe": 0.99
+          },
+          "2025": {
+            "return_pct": -6.88,
+            "mdd_pct": -33.96,
+            "sharpe": -0.03
+          },
+          "2026": {
+            "return_pct": -1.0,
+            "mdd_pct": -9.58,
+            "sharpe": -0.03
+          }
+        }
+      },
+      "PORTFOLIO_50_50": {
+        "total_return_pct": 80.73,
+        "cagr_pct": 24.81,
+        "max_drawdown_pct": -22.1,
+        "daily_sharpe": 0.99,
+        "calmar_ratio": 1.12,
+        "num_trades": 81,
+        "win_rate_pct": 34.6,
+        "profit_factor": 1.84,
+        "avg_duration_days": 4.2,
+        "annual_breakdown": {
+          "2024": {
+            "return_pct": 60.88,
+            "mdd_pct": -22.1,
+            "sharpe": 1.7
+          },
+          "2025": {
+            "return_pct": 14.67,
+            "mdd_pct": -17.88,
+            "sharpe": 0.63
+          },
+          "2026": {
+            "return_pct": -2.03,
+            "mdd_pct": -6.5,
+            "sharpe": -0.3
+          }
+        }
+      }
+    },
+    "gate_on_causal_rolling": {
+      "ETHUSDT": {
+        "total_return_pct": 95.41,
+        "cagr_pct": 28.52,
+        "max_drawdown_pct": -22.35,
+        "daily_sharpe": 1.09,
+        "calmar_ratio": 1.28,
+        "num_trades": 30,
+        "win_rate_pct": 36.7,
+        "profit_factor": 2.46,
+        "avg_duration_days": 4.8,
+        "annual_breakdown": {
+          "2024": {
+            "return_pct": 81.29,
+            "mdd_pct": -13.02,
+            "sharpe": 1.97
+          },
+          "2025": {
+            "return_pct": 11.53,
+            "mdd_pct": -18.27,
+            "sharpe": 0.54
+          },
+          "2026": {
+            "return_pct": -3.35,
+            "mdd_pct": -5.1,
+            "sharpe": -0.65
+          }
+        }
+      },
+      "SOLUSDT": {
+        "total_return_pct": 16.75,
+        "cagr_pct": 5.97,
+        "max_drawdown_pct": -40.44,
+        "daily_sharpe": 0.34,
+        "calmar_ratio": 0.15,
+        "num_trades": 38,
+        "win_rate_pct": 36.8,
+        "profit_factor": 1.32,
+        "avg_duration_days": 3.8,
+        "annual_breakdown": {
+          "2024": {
+            "return_pct": 42.24,
+            "mdd_pct": -35.21,
+            "sharpe": 1.07
+          },
+          "2025": {
+            "return_pct": -17.08,
+            "mdd_pct": -40.44,
+            "sharpe": -0.41
+          },
+          "2026": {
+            "return_pct": -1.0,
+            "mdd_pct": -9.58,
+            "sharpe": -0.03
+          }
+        }
+      },
+      "PORTFOLIO_50_50": {
+        "total_return_pct": 56.98,
+        "cagr_pct": 18.4,
+        "max_drawdown_pct": -20.89,
+        "daily_sharpe": 0.84,
+        "calmar_ratio": 0.88,
+        "num_trades": 68,
+        "win_rate_pct": 36.8,
+        "profit_factor": 1.76,
+        "avg_duration_days": 4.2,
+        "annual_breakdown": {
+          "2024": {
+            "return_pct": 64.4,
+            "mdd_pct": -19.14,
+            "sharpe": 1.81
+          },
+          "2025": {
+            "return_pct": -2.54,
+            "mdd_pct": -20.89,
+            "sharpe": -0.0
+          },
+          "2026": {
+            "return_pct": -2.03,
+            "mdd_pct": -6.5,
+            "sharpe": -0.3
+          }
+        }
+      }
+    },
+    "gate_off": {
+      "ETHUSDT": {
+        "total_return_pct": 135.78,
+        "cagr_pct": 37.88,
+        "max_drawdown_pct": -33.16,
+        "daily_sharpe": 1.13,
+        "calmar_ratio": 1.14,
+        "num_trades": 62,
+        "win_rate_pct": 33.9,
+        "profit_factor": 1.96,
+        "avg_duration_days": 3.9,
+        "annual_breakdown": {
+          "2024": {
+            "return_pct": 89.8,
+            "mdd_pct": -19.18,
+            "sharpe": 2.04
+          },
+          "2025": {
+            "return_pct": 31.6,
+            "mdd_pct": -22.67,
+            "sharpe": 0.94
+          },
+          "2026": {
+            "return_pct": -5.6,
+            "mdd_pct": -25.03,
+            "sharpe": -0.19
+          }
+        }
+      },
+      "SOLUSDT": {
+        "total_return_pct": 68.89,
+        "cagr_pct": 21.68,
+        "max_drawdown_pct": -41.76,
+        "daily_sharpe": 0.69,
+        "calmar_ratio": 0.52,
+        "num_trades": 68,
+        "win_rate_pct": 35.3,
+        "profit_factor": 1.52,
+        "avg_duration_days": 3.8,
+        "annual_breakdown": {
+          "2024": {
+            "return_pct": 65.37,
+            "mdd_pct": -31.56,
+            "sharpe": 1.35
+          },
+          "2025": {
+            "return_pct": 5.25,
+            "mdd_pct": -28.11,
+            "sharpe": 0.32
+          },
+          "2026": {
+            "return_pct": -2.97,
+            "mdd_pct": -30.31,
+            "sharpe": 0.01
+          }
+        }
+      },
+      "PORTFOLIO_50_50": {
+        "total_return_pct": 109.61,
+        "cagr_pct": 31.94,
+        "max_drawdown_pct": -33.45,
+        "daily_sharpe": 1.06,
+        "calmar_ratio": 0.95,
+        "num_trades": 130,
+        "win_rate_pct": 34.6,
+        "profit_factor": 1.72,
+        "avg_duration_days": 3.9,
+        "annual_breakdown": {
+          "2024": {
+            "return_pct": 81.84,
+            "mdd_pct": -22.1,
+            "sharpe": 1.99
+          },
+          "2025": {
+            "return_pct": 19.68,
+            "mdd_pct": -20.76,
+            "sharpe": 0.73
+          },
+          "2026": {
+            "return_pct": -3.68,
+            "mdd_pct": -26.49,
+            "sharpe": -0.09
+          }
+        }
+      }
+    }
+  },
+  "methodological_verdict": {
+    "pure_structure_portfolio_return_pct": 107.36,
+    "st_chan_transformer_portfolio_return_pct": 80.73,
+    "gate_off_portfolio_return_pct": 109.61,
+    "model_delivers_incremental_alpha": false,
+    "status": "EXPERIMENTAL_RESEARCH_FILTER_ONLY",
+    "reason": "Transformer gate reduces total portfolio return and shows negative prediction skill in 2026 (SOL Rank IC -0.09, ETH 2026 Rank IC negative). Pure Structural Trend remains superior."
+  }
+}

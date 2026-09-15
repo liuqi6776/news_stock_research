@@ -58,6 +58,7 @@ class StructuralTrendEngine:
         fee_and_slippage: float = 0.0008, # 8 bps one-way (16 bps roundtrip)
         use_short: bool = False,
         base_size: float = 1.0,
+        min_warmup_bars: Optional[int] = None,
     ):
         self.mode = mode
         self.lookback_bars = lookback_bars
@@ -67,24 +68,26 @@ class StructuralTrendEngine:
         self.fee_and_slippage = fee_and_slippage
         self.use_short = use_short
         self.base_size = base_size
+        self.min_warmup_bars = min_warmup_bars if min_warmup_bars is not None else self.lookback_bars
 
     def compute_indicators(self, df: pd.DataFrame) -> pd.DataFrame:
         """
         Computes all trend, channel, and trailing stop indicators.
         STRICTLY CAUSAL: all indicators are computed and shifted so that bar t
         only sees information up to bar t (or bar t-1 as appropriate).
+        Zero bfill: early bars use expanding averages or remain NaN.
         """
         res = pd.DataFrame(index=df.index)
         closes = df['close']
         highs = df['high']
         lows = df['low']
 
-        # 1. ATR (Average True Range)
+        # 1. ATR (Average True Range - strictly causal, no bfill)
         tr1 = highs - lows
         tr2 = (highs - closes.shift(1)).abs()
         tr3 = (lows - closes.shift(1)).abs()
         tr = pd.concat([tr1, tr2, tr3], axis=1).max(axis=1)
-        res['atr'] = tr.rolling(self.atr_period).mean().bfill()
+        res['atr'] = tr.rolling(self.atr_period, min_periods=1).mean()
         res['atr_ratio'] = res['atr'] / (closes + 1e-8)
 
         # 2. Donchian Channels (shifted by 1 for causality)
@@ -153,10 +156,15 @@ class StructuralTrendEngine:
         trailing_stop_price = 0.0
 
         for i in range(1, n - 1):
+            if i < self.min_warmup_bars:
+                continue
+
             curr_c = closes[i]
             curr_h = highs[i]
             curr_l = lows[i]
             curr_atr = ind['atr'].iloc[i]
+            if np.isnan(curr_atr):
+                continue
             curr_macro_mult = macro_mults[i]
 
             if in_pos == 0:

@@ -38,12 +38,13 @@ def compute_chan_features(df: pd.DataFrame, hub_window: int = 60, atr_period: in
     
     feats = pd.DataFrame(index=df.index)
 
-    # 1. Causal ATR
+    # 1. Causal ATR (No bfill: use causal expanding mean for early warmup bars)
     tr1 = h - l
     tr2 = (h - c.shift(1)).abs()
     tr3 = (l - c.shift(1)).abs()
     tr = pd.concat([tr1, tr2, tr3], axis=1).max(axis=1)
-    atr = tr.rolling(atr_period).mean().bfill()
+    # Strictly causal: rolling mean with min_periods=1, never bfill
+    atr = tr.rolling(atr_period, min_periods=1).mean()
     atr_ratio = atr / (c + 1e-8)
 
     # 2. Confirmed Fractals (shifted strictly for causality: a fractal at t-1 is confirmed at t)
@@ -98,8 +99,9 @@ def compute_chan_features(df: pd.DataFrame, hub_window: int = 60, atr_period: in
 
     # 4. Central Hub Coordinates (ZG: upper bound, ZD: lower bound)
     # Using 60-bar lookback of confirmed swing highs and lows, shifted by 1 for causality
-    zg = h.shift(1).rolling(hub_window).quantile(0.85).bfill()
-    zd = l.shift(1).rolling(hub_window).quantile(0.15).bfill()
+    # Strictly causal: min_periods=1, initial bar filled with bar 0's own bounds, zero bfill
+    zg = h.shift(1).rolling(hub_window, min_periods=1).quantile(0.85).fillna(h.iloc[0])
+    zd = l.shift(1).rolling(hub_window, min_periods=1).quantile(0.15).fillna(l.iloc[0])
     hub_mid = (zg + zd) / 2.0
     hub_span = (zg - zd).clip(lower=1e-6)
 
@@ -116,24 +118,24 @@ def compute_chan_features(df: pd.DataFrame, hub_window: int = 60, atr_period: in
     signal = macd_diff.ewm(span=9, adjust=False).mean()
     hist = (macd_diff - signal).abs()
 
-    # Momentum of current 12 bars vs prior 12-24 bars
-    hist_recent = hist.rolling(12).mean()
-    hist_prior = hist.shift(12).rolling(12).mean().bfill()
+    # Momentum of current 12 bars vs prior 12-24 bars (strictly causal, min_periods=1, no bfill)
+    hist_recent = hist.rolling(12, min_periods=1).mean()
+    hist_prior = hist.shift(12).rolling(12, min_periods=1).mean()
     div_ratio = np.clip(hist_recent / (hist_prior + 1e-8) - 1.0, -1.0, 1.0).fillna(0.0)
     feats['chan_divergence_ratio'] = div_ratio.values
 
     # 7. Structural Third Buy / Third Sell Breakout Flag
     # Third Buy: Price > ZG, and lowest pullback in last 6 bars > ZG
     # Third Sell: Price < ZD, and highest pullback in last 6 bars < ZD
-    low_recent = l.rolling(6).min()
-    high_recent = h.rolling(6).max()
+    low_recent = l.rolling(6, min_periods=1).min()
+    high_recent = h.rolling(6, min_periods=1).max()
 
     is_third_buy = (c > zg) & (low_recent >= zg * 0.995)
     is_third_sell = (c < zd) & (high_recent <= zd * 1.005)
 
     third_buy_flag = np.zeros(n)
-    third_buy_flag[is_third_buy.values] = 1.0
-    third_buy_flag[is_third_sell.values] = -1.0
+    third_buy_flag[is_third_buy.fillna(False).values] = 1.0
+    third_buy_flag[is_third_sell.fillna(False).values] = -1.0
     feats['chan_third_buy_flag'] = third_buy_flag
 
     return feats

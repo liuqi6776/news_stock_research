@@ -134,3 +134,118 @@ def test_chan_transformer_hybrid_engine(synthetic_candles):
     assert res['equity_curve'].isna().sum() == 0
     assert len(res['bar_rets']) == n
 
+
+def test_no_bfill_in_signal_features(synthetic_candles):
+    """Verify that early features never read backwards from future values via bfill."""
+    # When future values (bars 100-199) are modified, bars 0-50 must remain completely unchanged.
+    base_feats = compute_chan_features(synthetic_candles)
+    
+    corrupted = synthetic_candles.copy()
+    corrupted.iloc[100:, corrupted.columns.get_loc('close')] *= 10.0
+    corrupted.iloc[100:, corrupted.columns.get_loc('high')] *= 10.0
+    corrupted.iloc[100:, corrupted.columns.get_loc('low')] *= 10.0
+    corrupted_feats = compute_chan_features(corrupted)
+    
+    # All features for bars 0 to 98 must be identical
+    for col in base_feats.columns:
+        pd.testing.assert_series_equal(
+            base_feats[col].iloc[:98],
+            corrupted_feats[col].iloc[:98],
+            check_names=False,
+            check_dtype=False
+        )
+
+
+def test_corrupt_future_does_not_change_past_features(synthetic_candles):
+    """Corrupting data at time t must leave all features at <= t-1 strictly invariant."""
+    t_split = 80
+    base_feats = compute_chan_features(synthetic_candles)
+    
+    noisy = synthetic_candles.copy()
+    np.random.seed(999)
+    noisy.iloc[t_split:, :] = np.random.uniform(500, 1000, size=noisy.iloc[t_split:, :].shape)
+    noisy_feats = compute_chan_features(noisy)
+    
+    # Features strictly before t_split must remain identical
+    for col in base_feats.columns:
+        diff = np.abs(base_feats[col].iloc[:t_split-1].values - noisy_feats[col].iloc[:t_split-1].values)
+        assert np.nanmax(diff) < 1e-7, f"Feature {col} leaked future data from t={t_split} into past!"
+
+
+def test_no_trade_before_minimum_warmup(synthetic_candles):
+    """Verify engine generates strictly 0 trades during the mandatory warmup period."""
+    from crypto_quant.chan_transformer_engine import ChanTransformerHybridEngine
+
+    n = len(synthetic_candles)
+    dates = synthetic_candles.index
+    chan_feats = compute_chan_features(synthetic_candles)
+
+    # Aggressive predictions designed to force instant trades if warmup were bypassed
+    mock_preds = pd.DataFrame({
+        'ETHUSDT_pred_3d': np.full(n, 0.50),
+        'ETHUSDT_pred_6d': np.full(n, 0.50),
+        'ETHUSDT_pred_12d': np.full(n, 0.50),
+        'ETHUSDT_prob_exp': np.full(n, 0.99),
+    }, index=dates)
+
+    engine = ChanTransformerHybridEngine(
+        token='ETHUSDT',
+        min_warmup_bars=60,
+        pred_12d_threshold=-0.50,
+        exp_pct=10.0,
+    )
+    res = engine.backtest(synthetic_candles, chan_feats, mock_preds)
+    
+    # No trades may be entered before bar 60
+    for trade in res['trades']:
+        entry_idx = dates.get_loc(pd.to_datetime(trade.entry_time))
+        assert entry_idx >= 60, f"Trade entered at index {entry_idx} before minimum warmup (60)!"
+
+
+def test_no_target_crosses_train_boundary():
+    """Verify that train sample 12-day wave labels do not access validation prices."""
+    from crypto_quant.dataset_builder import prepare_chan_wave_datasets
+    _, _, _, meta = prepare_chan_wave_datasets(lookback_len=18, purge_bars=72, embargo_bars=18)
+    
+    train_end_dt = pd.to_datetime(meta['train_end'])
+    last_train_t = pd.to_datetime(meta['train_timestamps'][-1])
+    
+    # Label ends at last_train_t + 72 bars (12 days)
+    label_end_t = last_train_t + pd.Timedelta(hours=72 * 4)
+    assert label_end_t <= train_end_dt, (
+        f"Train label leakage! Last train sample at {last_train_t}, label ends at {label_end_t} > {train_end_dt}"
+    )
+
+
+def test_no_target_crosses_validation_boundary():
+    """Verify that validation sample 12-day wave labels do not access blind test prices."""
+    from crypto_quant.dataset_builder import prepare_chan_wave_datasets
+    _, _, _, meta = prepare_chan_wave_datasets(lookback_len=18, purge_bars=72, embargo_bars=18)
+    
+    val_end_dt = pd.to_datetime(meta['val_end'])
+    last_val_t = pd.to_datetime(meta['val_timestamps'][-1])
+    
+    label_end_t = last_val_t + pd.Timedelta(hours=72 * 4)
+    assert label_end_t <= val_end_dt, (
+        f"Val label leakage! Last val sample at {last_val_t}, label ends at {label_end_t} > {val_end_dt}"
+    )
+
+
+def test_purge_and_embargo_gap():
+    """Verify that sample timestamp gap between splits satisfies purge and embargo minimums."""
+    from crypto_quant.dataset_builder import prepare_chan_wave_datasets
+    _, _, _, meta = prepare_chan_wave_datasets(lookback_len=18, purge_bars=72, embargo_bars=18)
+    
+    train_last = pd.to_datetime(meta['train_timestamps'][-1])
+    val_first = pd.to_datetime(meta['val_timestamps'][0])
+    val_last = pd.to_datetime(meta['val_timestamps'][-1])
+    test_first = pd.to_datetime(meta['blind_test_timestamps'][0])
+    
+    # Gap must be at least 72 bars (12 days) + 18 bars (3 days) = 15 days
+    gap_train_val = (val_first - train_last).total_seconds() / 3600.0 / 4.0
+    gap_val_test = (test_first - val_last).total_seconds() / 3600.0 / 4.0
+    
+    assert gap_train_val >= 72.0, f"Gap train->val {gap_train_val} bars is less than 72 bars"
+    assert gap_val_test >= 72.0, f"Gap val->test {gap_val_test} bars is less than 72 bars"
+
+

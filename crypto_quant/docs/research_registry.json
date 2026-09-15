@@ -1,0 +1,100 @@
+{
+  "metadata": {
+    "project": "Crypto Quantitative Systematic Architecture",
+    "repository": "https://github.com/liuqi6776/crypto",
+    "audit_commit": "f11dfd560e6a3a4c5fd2b4848c07549746fad788",
+    "audit_standard": "Crypto Phase 18-20 Methodological Corrections and De-biasing Directives",
+    "last_updated": "2026-09-15T16:55:00+08:00"
+  },
+  "experiments": [
+    {
+      "experiment_id": "EXP-19-STRUCTURAL-TREND-CLEAN",
+      "phase": "Phase 19 / Phase 21",
+      "model_type": "Macro Structural Trend Following (Bollinger 120 + 3 ATR Trailing Stop + EMA200 Sizing)",
+      "status": "APPROVED_FOR_FROZEN_FORWARD_PAPER_TEST",
+      "code_commit": "f11dfd5",
+      "data_hash": "sha256:246cf4910e242c80",
+      "prediction_hash": "N/A (Rule-based Causal Trend)",
+      "checkpoint_hash": "N/A",
+      "train_period": "2020-08-11 00:00:00 to 2023-12-31 23:59:59 (Pre-warmup & in-sample)",
+      "validation_period": "2024-01-01 00:00:00 to 2025-12-31 23:59:59",
+      "test_period": "2026-01-01 00:00:00 to 2026-09-01 12:00:00",
+      "purge_bars": 0,
+      "embargo_bars": 0,
+      "whether_test_data_was_previously_observed": true,
+      "research_classification": "Development Backtest (Subject to strategy selection bias)",
+      "parameters": {
+        "lookback_bars": 120,
+        "exit_lookback_bars": 60,
+        "atr_period": 14,
+        "atr_trailing_mult": 3.0,
+        "fee_and_slippage": 0.0008,
+        "min_warmup_bars": 120,
+        "zero_bfill_enforced": true
+      },
+      "key_results": {
+        "ETHUSDT_return_pct": 126.36,
+        "ETHUSDT_sharpe": 1.29,
+        "SOLUSDT_return_pct": 75.75,
+        "SOLUSDT_sharpe": 0.81,
+        "portfolio_50_50_return_pct": 107.36,
+        "portfolio_50_50_sharpe": 1.27,
+        "stitched_walk_forward_eth_sharpe": 0.83,
+        "cost_stress_30bps_sharpe": 1.04,
+        "top1_trade_share_eth": 35.9,
+        "return_ex_top1_eth": 64.34
+      },
+      "compliance_check": {
+        "zero_bfill": true,
+        "history_warmup_enforced": true,
+        "parameter_neighborhood_stable": true,
+        "positive_at_15bps": true,
+        "walk_forward_sharpe_above_0_5": true,
+        "positive_ex_top1_trade": true
+      }
+    },
+    {
+      "experiment_id": "EXP-20-ST-CHAN-TRANSFORMER-CLEAN",
+      "phase": "Phase 20 / Phase 21",
+      "model_type": "Spatio-Temporal Chan-Lun Wave Transformer (ST-ChanTransformer)",
+      "status": "EXPERIMENTAL_RESEARCH_FILTER_ONLY",
+      "code_commit": "f11dfd5",
+      "data_hash": "sha256:246cf4910e242c80",
+      "prediction_hash": "sha256:5519bdfaad17aa49",
+      "checkpoint_hash": "sha256:b6e976d5fab4f435",
+      "train_period": "2020-08-21 00:00:00 to 2023-12-19 20:00:00 (Purged)",
+      "validation_period": "2024-01-04 00:00:00 to 2025-12-19 20:00:00 (Purged & Embargoed)",
+      "test_period": "2026-01-04 00:00:00 to 2026-09-01 12:00:00 (Embargoed)",
+      "purge_bars": 72,
+      "embargo_bars": 18,
+      "whether_test_data_was_previously_observed": true,
+      "research_classification": "Experimental Research Filter (Not verified production alpha)",
+      "parameters": {
+        "d_model": 64,
+        "lookback_len": 18,
+        "in_features": 41,
+        "loss": "Huber (3d/6d/12d) + BCE (Expansion)",
+        "fixed_exp_thresh_eth": 0.4135,
+        "fixed_exp_thresh_sol": 0.4367,
+        "zero_full_sample_percentile": true,
+        "zero_bfill_enforced": true
+      },
+      "key_results": {
+        "gate_on_portfolio_return_pct": 80.73,
+        "gate_on_portfolio_sharpe": 0.99,
+        "gate_off_portfolio_return_pct": 109.61,
+        "gate_off_portfolio_sharpe": 1.06,
+        "pure_structure_return_pct": 107.36,
+        "shuffled_placebo_return_pct": 104.34,
+        "eth_2024_2025_rank_ic": 0.1062,
+        "eth_2026_rank_ic": -0.3603,
+        "sol_overall_rank_ic": -0.0204,
+        "sol_2026_rank_ic": -0.1748
+      },
+      "methodological_verdict": {
+        "incremental_alpha_proven": false,
+        "action_taken": "Model downgraded to experimental filter. Gate-off / pure structure recommended for production."
+      }
+    }
+  ]
+}
