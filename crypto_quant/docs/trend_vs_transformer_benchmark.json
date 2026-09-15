@@ -1,0 +1,136 @@
+{
+  "ETHUSDT": {
+    "buy_and_hold_return_pct": 10.24,
+    "transformer_baseline": {
+      "total_return_pct": 27.71,
+      "cagr_pct": 9.47,
+      "max_drawdown_pct": -60.63,
+      "daily_sharpe": 0.42,
+      "calmar_ratio": 0.16,
+      "num_trades": 406,
+      "avg_duration_days": 1.13,
+      "win_rate_pct": 50.0,
+      "profit_factor": 1.09,
+      "cumulative_fee_drag_pct": 64.96
+    },
+    "transformer_trial_mode": {
+      "total_return_pct": 21.87,
+      "cagr_pct": 7.59,
+      "max_drawdown_pct": -27.63,
+      "daily_sharpe": 0.51,
+      "calmar_ratio": 0.27,
+      "num_trades": 406,
+      "avg_duration_days": 1.13,
+      "win_rate_pct": 50.0,
+      "profit_factor": 1.09,
+      "cumulative_fee_drag_pct": 64.96
+    },
+    "donchian_turtle": {
+      "total_return_pct": 95.96,
+      "cagr_pct": 28.24,
+      "max_drawdown_pct": -29.73,
+      "daily_sharpe": 1.08,
+      "calmar_ratio": 0.95,
+      "num_trades": 27,
+      "avg_duration_days": 5.24,
+      "win_rate_pct": 33.3,
+      "profit_factor": 2.46,
+      "cumulative_fee_drag_pct": 4.32
+    },
+    "bollinger_breakout": {
+      "total_return_pct": 105.63,
+      "cagr_pct": 30.55,
+      "max_drawdown_pct": -29.46,
+      "daily_sharpe": 1.16,
+      "calmar_ratio": 1.04,
+      "num_trades": 28,
+      "avg_duration_days": 5.2,
+      "win_rate_pct": 46.4,
+      "profit_factor": 2.71,
+      "cumulative_fee_drag_pct": 4.48
+    },
+    "structural_trend_macro": {
+      "total_return_pct": 122.41,
+      "cagr_pct": 34.39,
+      "max_drawdown_pct": -25.64,
+      "daily_sharpe": 1.29,
+      "calmar_ratio": 1.34,
+      "num_trades": 28,
+      "avg_duration_days": 5.2,
+      "win_rate_pct": 46.4,
+      "profit_factor": 2.71,
+      "cumulative_fee_drag_pct": 4.48
+    }
+  },
+  "SOLUSDT": {
+    "buy_and_hold_return_pct": 0.09,
+    "transformer_baseline": {
+      "total_return_pct": 26.87,
+      "cagr_pct": 9.2,
+      "max_drawdown_pct": -72.52,
+      "daily_sharpe": 0.43,
+      "calmar_ratio": 0.13,
+      "num_trades": 378,
+      "avg_duration_days": 1.27,
+      "win_rate_pct": 54.2,
+      "profit_factor": 1.11,
+      "cumulative_fee_drag_pct": 60.48
+    },
+    "transformer_trial_mode": {
+      "total_return_pct": 39.53,
+      "cagr_pct": 13.11,
+      "max_drawdown_pct": -24.88,
+      "daily_sharpe": 0.84,
+      "calmar_ratio": 0.53,
+      "num_trades": 378,
+      "avg_duration_days": 1.27,
+      "win_rate_pct": 54.2,
+      "profit_factor": 1.11,
+      "cumulative_fee_drag_pct": 60.48
+    },
+    "donchian_turtle": {
+      "total_return_pct": 39.61,
+      "cagr_pct": 13.13,
+      "max_drawdown_pct": -35.1,
+      "daily_sharpe": 0.56,
+      "calmar_ratio": 0.37,
+      "num_trades": 30,
+      "avg_duration_days": 4.81,
+      "win_rate_pct": 46.7,
+      "profit_factor": 1.65,
+      "cumulative_fee_drag_pct": 4.8
+    },
+    "bollinger_breakout": {
+      "total_return_pct": 68.98,
+      "cagr_pct": 21.41,
+      "max_drawdown_pct": -32.03,
+      "daily_sharpe": 0.76,
+      "calmar_ratio": 0.67,
+      "num_trades": 34,
+      "avg_duration_days": 4.96,
+      "win_rate_pct": 44.1,
+      "profit_factor": 1.87,
+      "cumulative_fee_drag_pct": 5.44
+    },
+    "structural_trend_macro": {
+      "total_return_pct": 75.41,
+      "cagr_pct": 23.09,
+      "max_drawdown_pct": -29.45,
+      "daily_sharpe": 0.81,
+      "calmar_ratio": 0.78,
+      "num_trades": 34,
+      "avg_duration_days": 4.96,
+      "win_rate_pct": 44.1,
+      "profit_factor": 1.87,
+      "cumulative_fee_drag_pct": 5.44
+    }
+  },
+  "portfolio_50_50_structural_trend": {
+    "total_return_pct": 105.1,
+    "cagr_pct": 30.42,
+    "max_drawdown_pct": -22.19,
+    "daily_sharpe": 1.27,
+    "calmar_ratio": 1.37,
+    "total_trades": 62
+  }
+}

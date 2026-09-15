@@ -246,9 +246,157 @@ class CryptoCombinedLoss(nn.Module):
         }
 
 
+class CryptoSTChanTransformer(nn.Module):
+    """
+    Spatio-Temporal Chan-Lun Wave Transformer (Phase 20)
+    时空缠论多尺度大波段 Transformer 大模型:
+    - 结合 41 维多资产与缠论分形拓扑几何特征 (33 维基础 + 8 维缠论拓扑特征)
+    - 预测 3 天 (18 根 4h)、6 天 (36 根 4h)、12 天 (72 根 4h) 大波段主升浪收益
+    - 输出中枢突破与真实波段扩张概率 prob_expansion
+    """
+    def __init__(self, num_assets=4, in_features=41, lookback=18, d_model=64, n_heads=4, num_layers=2, dropout=0.15, temporal_mode='conv'):
+        super().__init__()
+        self.num_assets = num_assets
+        self.d_model = d_model
+        self.temporal_mode = temporal_mode
+
+        if temporal_mode == 'attention':
+            self.temporal_encoder = TemporalTransformerEncoder(in_features, d_model, nhead=n_heads, num_layers=num_layers, dropout=dropout)
+        else:
+            self.temporal_encoder = TemporalConvEncoder(in_features, d_model, dropout=dropout)
+
+        self.asset_emb = nn.Embedding(num_assets, d_model)
+
+        self.rel_layers = nn.ModuleList()
+        for _ in range(num_layers):
+            layer = nn.ModuleDict({
+                'attn': nn.MultiheadAttention(embed_dim=d_model, num_heads=n_heads, dropout=dropout, batch_first=True),
+                'ln1': nn.LayerNorm(d_model),
+                'mlp': nn.Sequential(
+                    nn.Linear(d_model, d_model * 2),
+                    nn.GELU(),
+                    nn.Dropout(dropout),
+                    nn.Linear(d_model * 2, d_model)
+                ),
+                'ln2': nn.LayerNorm(d_model)
+            })
+            self.rel_layers.append(layer)
+
+        # Multi-scale Wave Prediction Heads
+        self.head_wave_3d = nn.Sequential(
+            nn.Linear(d_model, 32),
+            nn.GELU(),
+            nn.Dropout(dropout),
+            nn.Linear(32, 1)
+        )
+        self.head_wave_6d = nn.Sequential(
+            nn.Linear(d_model, 32),
+            nn.GELU(),
+            nn.Dropout(dropout),
+            nn.Linear(32, 1)
+        )
+        self.head_wave_12d = nn.Sequential(
+            nn.Linear(d_model, 32),
+            nn.GELU(),
+            nn.Dropout(dropout),
+            nn.Linear(32, 1)
+        )
+        self.head_expansion_prob = nn.Sequential(
+            nn.Linear(d_model, 32),
+            nn.GELU(),
+            nn.Linear(32, 1)
+        )
+
+    def forward(self, x):
+        B, K, L, D = x.size()
+        if self.temporal_mode == 'attention':
+            x_reshaped = x.view(B * K, L, D)
+            temp_repr = self.temporal_encoder(x_reshaped)
+        else:
+            x_reshaped = x.view(B * K, L, D).permute(0, 2, 1)
+            temp_repr = self.temporal_encoder(x_reshaped)
+
+        temp_repr = temp_repr.view(B, K, self.d_model)
+
+        asset_ids = torch.arange(K, device=x.device).unsqueeze(0).expand(B, -1)
+        h = temp_repr + self.asset_emb(asset_ids)
+
+        last_weights = None
+        for layer in self.rel_layers:
+            attn_out, weights = layer['attn'](h, h, h)
+            h = layer['ln1'](h + attn_out)
+            mlp_out = layer['mlp'](h)
+            h = layer['ln2'](h + mlp_out)
+            last_weights = weights
+
+        pred_3d = self.head_wave_3d(h).squeeze(-1)
+        pred_6d = self.head_wave_6d(h).squeeze(-1)
+        pred_12d = self.head_wave_12d(h).squeeze(-1)
+        prob_exp = torch.sigmoid(self.head_expansion_prob(h).squeeze(-1))
+
+        return {
+            'pred_wave_3d': pred_3d,
+            'pred_wave_6d': pred_6d,
+            'pred_wave_12d': pred_12d,
+            'prob_expansion': prob_exp,
+            'attn_weights': last_weights
+        }
+
+
+class ChanWaveCombinedLoss(nn.Module):
+    """多尺度大波段与中枢突破联合损失函数"""
+    def __init__(self, w_3d=0.35, w_6d=0.35, w_12d=0.30, beta_huber=0.05, gamma_cls=0.1, delta=1.0):
+        super().__init__()
+        self.w_3d = w_3d
+        self.w_6d = w_6d
+        self.w_12d = w_12d
+        self.beta = beta_huber
+        self.gamma = gamma_cls
+        self.pearson = PearsonCorrelationLoss()
+        self.huber = nn.SmoothL1Loss(beta=delta)
+        self.bce = nn.BCELoss()
+
+    def forward(self, outputs, target_3d, target_6d, target_12d, target_exp=None):
+        p_3d = outputs['pred_wave_3d']
+        p_6d = outputs['pred_wave_6d']
+        p_12d = outputs['pred_wave_12d']
+        prob_exp = outputs['prob_expansion']
+
+        l_ic_3d = self.pearson(p_3d.view(-1), target_3d.view(-1))
+        l_ic_6d = self.pearson(p_6d.view(-1), target_6d.view(-1))
+        l_ic_12d = self.pearson(p_12d.view(-1), target_12d.view(-1))
+        l_ic = self.w_3d * l_ic_3d + self.w_6d * l_ic_6d + self.w_12d * l_ic_12d
+
+        std_3d = target_3d.std().clamp(min=1e-4)
+        std_6d = target_6d.std().clamp(min=1e-4)
+        std_12d = target_12d.std().clamp(min=1e-4)
+        l_huber = (
+            self.w_3d * self.huber(p_3d / std_3d, target_3d / std_3d) +
+            self.w_6d * self.huber(p_6d / std_6d, target_6d / std_6d) +
+            self.w_12d * self.huber(p_12d / std_12d, target_12d / std_12d)
+        )
+
+        if target_exp is not None:
+            l_cls = self.bce(prob_exp, target_exp)
+        else:
+            exp_label = (target_12d > 0.03).float()
+            l_cls = self.bce(prob_exp, exp_label)
+
+        total_loss = l_ic + self.beta * l_huber + self.gamma * l_cls
+        return total_loss, {
+            'ic_3d': l_ic_3d.item(),
+            'ic_6d': l_ic_6d.item(),
+            'ic_12d': l_ic_12d.item(),
+            'total_ic': l_ic.item(),
+            'huber': l_huber.item(),
+            'cls': l_cls.item(),
+            'total': total_loss.item()
+        }
+
+
 if __name__ == '__main__':
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    print(f"Testing CryptoSTTransformer on {device}...")
+    print(f"Testing CryptoSTTransformer and CryptoSTChanTransformer on {device}...")
     
     # 1. 测试时序卷积模式
     model_conv = CryptoSTTransformer(num_assets=4, in_features=23, lookback=12, temporal_mode='conv').to(device)
@@ -261,10 +409,21 @@ if __name__ == '__main__':
     out_attn = model_attn(dummy_x)
     print("Attention temporal mode forward pass OK, shape:", out_attn['pred_4h'].shape)
 
-    # 3. 测试平衡损失函数
-    criterion = CryptoCombinedLoss(alpha_pearson=1.0, beta_huber=1.0, gamma_cls=0.5)
-    dummy_y4h = torch.randn(16, 4).to(device) * 0.02
-    dummy_y8h = torch.randn(16, 4).to(device) * 0.03
-    loss, loss_dict = criterion(out_attn, dummy_y4h, dummy_y8h)
+    # 3. 测试时空缠论波段大模型 (CryptoSTChanTransformer)
+    dummy_chan_x = torch.randn(16, 4, 18, 41).to(device)
+    model_chan = CryptoSTChanTransformer(num_assets=4, in_features=41, lookback=18).to(device)
+    out_chan = model_chan(dummy_chan_x)
+    print("CryptoSTChanTransformer forward pass OK!")
+    print("  pred_wave_3d shape: ", out_chan['pred_wave_3d'].shape)
+    print("  pred_wave_6d shape: ", out_chan['pred_wave_6d'].shape)
+    print("  pred_wave_12d shape:", out_chan['pred_wave_12d'].shape)
+    print("  prob_expansion shape:", out_chan['prob_expansion'].shape)
+
+    # 4. 测试平衡损失函数
+    criterion = ChanWaveCombinedLoss()
+    d_3d = torch.randn(16, 4).to(device) * 0.05
+    d_6d = torch.randn(16, 4).to(device) * 0.08
+    d_12d = torch.randn(16, 4).to(device) * 0.12
+    loss, loss_dict = criterion(out_chan, d_3d, d_6d, d_12d)
     loss.backward()
-    print("Balanced Multi-Task Loss verified:", loss_dict)
+    print("ChanWaveCombinedLoss backward pass verified OK:", loss_dict)

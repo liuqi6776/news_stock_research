@@ -137,9 +137,26 @@ def compute_token_features(
     else:
         feats['okx_binance_spread_z18'] = 0.0
 
-    # 10. 预测目标 (Forward 4h and 8h Returns)
+    # 10. 缠论分形拓扑几何特征 (8维)
+    try:
+        from crypto_quant.chan_features import compute_chan_features
+    except ModuleNotFoundError:
+        try:
+            from chan_features import compute_chan_features
+        except Exception:
+            compute_chan_features = None
+
+    if compute_chan_features is not None:
+        chan_feats = compute_chan_features(df)
+        for col in chan_feats.columns:
+            feats[col] = chan_feats[col].values
+
+    # 11. 预测目标 (Micro 4h/8h + Multi-Horizon Waves 3d/6d/12d)
     feats['target_ret_4h'] = np.log(c.shift(-1) / c)
     feats['target_ret_8h'] = np.log(c.shift(-2) / c)
+    feats['target_wave_3d'] = np.log(c.shift(-18) / c)   # 3-day swing return
+    feats['target_wave_6d'] = np.log(c.shift(-36) / c)   # 6-day wave return
+    feats['target_wave_12d'] = np.log(c.shift(-72) / c)  # 12-day macro wave return
 
     return feats
 
@@ -322,6 +339,176 @@ def prepare_crypto_datasets(lookback_len: int = 12, train_end='2023-12-31', val_
     return train_ds, val_ds, blind_test_ds, metadata
 
 
+class ChanWaveDataset(Dataset):
+    """PyTorch Dataset for Spatio-Temporal Chan-Lun Wave Transformer (Phase 20)"""
+    def __init__(self, X_tensors, y_3d, y_6d, y_12d, y_exp, timestamps, close_prices, open_prices):
+        self.X = torch.tensor(X_tensors, dtype=torch.float32)        # (N, K, L=18, D=41)
+        self.y_3d = torch.tensor(y_3d, dtype=torch.float32)          # (N, K)
+        self.y_6d = torch.tensor(y_6d, dtype=torch.float32)          # (N, K)
+        self.y_12d = torch.tensor(y_12d, dtype=torch.float32)        # (N, K)
+        self.y_exp = torch.tensor(y_exp, dtype=torch.float32)        # (N, K)
+        self.timestamps = timestamps
+        self.close_prices = close_prices
+        self.open_prices = open_prices
+
+    def __len__(self):
+        return len(self.X)
+
+    def __getitem__(self, idx):
+        return {
+            'X': self.X[idx],
+            'y_3d': self.y_3d[idx],
+            'y_6d': self.y_6d[idx],
+            'y_12d': self.y_12d[idx],
+            'y_exp': self.y_exp[idx],
+            'idx': idx
+        }
+
+
+def prepare_chan_wave_datasets(lookback_len: int = 18, train_end='2023-12-31', val_end='2025-12-31'):
+    """
+    Spatio-Temporal Chan-Lun Wave Dataset Pipeline (Phase 20):
+    - Features: 41 dimensions (33 base features + 8 Chan-Lun topological features)
+    - Targets: 3-day (18-bar), 6-day (36-bar), 12-day (72-bar) wave returns + true expansion label
+    - Strict 3-way split: 2020-2023 Train, 2024-2025 Val, 2026 Locked Stress Set
+    """
+    print("Loading 2020-2026 4h crypto data for Chan-Lun Wave Transformer...")
+    root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    data_dir = os.path.join(root_dir, 'data')
+
+    raw_dfs = {}
+    for t in TOKENS:
+        p = os.path.join(data_dir, f'{t}_4h_2020_2026.parquet')
+        if not os.path.exists(p):
+            p = os.path.join(data_dir, f'{t}_4h_2021_2026.parquet')
+        raw_dfs[t] = pd.read_parquet(p)
+
+    df_macro = pd.read_parquet(os.path.join(data_dir, 'us_stock_macro.parquet'))
+    df_onchain = pd.read_parquet(os.path.join(data_dir, 'eth_onchain_sentiment_daily.parquet'))
+
+    basis_path = os.path.join(data_dir, 'binance_basis_4h.parquet')
+    df_basis = pd.read_parquet(basis_path) if os.path.exists(basis_path) else None
+    if df_basis is not None and df_basis.index.tz is not None:
+        df_basis.index = df_basis.index.tz_localize(None)
+
+    funding_path = os.path.join(data_dir, 'binance_funding_8h.parquet')
+    df_funding = pd.read_parquet(funding_path) if os.path.exists(funding_path) else None
+    if df_funding is not None and df_funding.index.tz is not None:
+        df_funding.index = df_funding.index.tz_localize(None)
+
+    okx_path = os.path.join(data_dir, 'okx_swap_candles_4h.parquet')
+    df_okx = pd.read_parquet(okx_path) if os.path.exists(okx_path) else None
+    if df_okx is not None and df_okx.index.tz is not None:
+        df_okx.index = df_okx.index.tz_localize(None)
+
+    print("Engineering 41 spatio-temporal & Chan-Lun topological features...")
+    feat_dfs = {}
+    for t in TOKENS:
+        feat_dfs[t] = compute_token_features(
+            raw_dfs[t], raw_dfs['BTCUSDT'], raw_dfs['ETHUSDT'], raw_dfs['SOLUSDT'],
+            df_macro, df_onchain, df_basis, df_funding, df_okx, token_name=t
+        )
+
+    # Valid mask across all 4 tokens
+    valid_mask = pd.Series(True, index=feat_dfs['BTCUSDT'].index)
+    for t in TOKENS:
+        valid_mask &= ~feat_dfs[t]['ret_42'].isna()
+        valid_mask &= ~feat_dfs[t]['target_wave_12d'].isna()
+        valid_mask &= ~feat_dfs[t]['ndx_ret_1d'].isna()
+        valid_mask &= ~feat_dfs[t]['tvl_flow_7d'].isna()
+        valid_mask &= ~feat_dfs[t]['chan_hub_dist'].isna()
+
+    common_idx = feat_dfs['BTCUSDT'][valid_mask].index
+    feature_cols = [c for c in feat_dfs['ETHUSDT'].columns if not c.startswith('target_')]
+    num_features = len(feature_cols)
+    print(f"Chan-Lun Wave features count: {num_features} (Columns: {feature_cols[-8:]})")
+
+    T = len(common_idx)
+    K = len(TOKENS)
+    feature_matrix = np.zeros((T, K, num_features), dtype=np.float32)
+    target_3d_matrix = np.zeros((T, K), dtype=np.float32)
+    target_6d_matrix = np.zeros((T, K), dtype=np.float32)
+    target_12d_matrix = np.zeros((T, K), dtype=np.float32)
+    target_exp_matrix = np.zeros((T, K), dtype=np.float32)
+
+    for k, t in enumerate(TOKENS):
+        fdf = feat_dfs[t].loc[common_idx]
+        feature_matrix[:, k, :] = fdf[feature_cols].fillna(0.0).values
+        target_3d_matrix[:, k] = fdf['target_wave_3d'].values
+        target_6d_matrix[:, k] = fdf['target_wave_6d'].values
+        target_12d_matrix[:, k] = fdf['target_wave_12d'].values
+        target_exp_matrix[:, k] = (fdf['target_wave_12d'] > 0.03).astype(float).values
+
+    # Train scaler strictly on Train period (<= train_end)
+    train_core_indices = np.where(common_idx <= train_end)[0]
+    scaler_mean = np.nanmean(feature_matrix[train_core_indices], axis=(0, 1), keepdims=True)
+    scaler_std = np.nanstd(feature_matrix[train_core_indices], axis=(0, 1), keepdims=True)
+    scaler_std[scaler_std < 1e-6] = 1.0
+
+    norm_features = np.clip((feature_matrix - scaler_mean) / scaler_std, -5.0, 5.0)
+
+    # Sequence rolling
+    N_samples = T - lookback_len + 1
+    X_all = np.zeros((N_samples, K, lookback_len, num_features), dtype=np.float32)
+    y_3d_all = np.zeros((N_samples, K), dtype=np.float32)
+    y_6d_all = np.zeros((N_samples, K), dtype=np.float32)
+    y_12d_all = np.zeros((N_samples, K), dtype=np.float32)
+    y_exp_all = np.zeros((N_samples, K), dtype=np.float32)
+    timestamps = common_idx[lookback_len - 1:]
+
+    for i in range(N_samples):
+        X_all[i] = norm_features[i : i + lookback_len].transpose(1, 0, 2)
+        y_3d_all[i] = target_3d_matrix[i + lookback_len - 1]
+        y_6d_all[i] = target_6d_matrix[i + lookback_len - 1]
+        y_12d_all[i] = target_12d_matrix[i + lookback_len - 1]
+        y_exp_all[i] = target_exp_matrix[i + lookback_len - 1]
+
+    close_prices = {t: raw_dfs[t].loc[timestamps, 'close'].values for t in TOKENS}
+    open_prices = {t: raw_dfs[t].loc[timestamps, 'open'].values for t in TOKENS}
+
+    train_mask = timestamps <= train_end
+    val_mask = (timestamps > train_end) & (timestamps <= val_end)
+    blind_test_mask = timestamps > val_end
+
+    print(f"Total Chan-Wave sequences (L={lookback_len}): {len(timestamps)}")
+    print(f"1. Train Set (2020-2023):      {train_mask.sum()} bars")
+    print(f"2. Val Set (2024-2025):        {val_mask.sum()} bars")
+    print(f"3. Blind Test Set (2026 YTD):  {blind_test_mask.sum()} bars")
+
+    train_ds = ChanWaveDataset(
+        X_all[train_mask], y_3d_all[train_mask], y_6d_all[train_mask], y_12d_all[train_mask], y_exp_all[train_mask],
+        timestamps[train_mask],
+        {t: close_prices[t][train_mask] for t in TOKENS},
+        {t: open_prices[t][train_mask] for t in TOKENS}
+    )
+    val_ds = ChanWaveDataset(
+        X_all[val_mask], y_3d_all[val_mask], y_6d_all[val_mask], y_12d_all[val_mask], y_exp_all[val_mask],
+        timestamps[val_mask],
+        {t: close_prices[t][val_mask] for t in TOKENS},
+        {t: open_prices[t][val_mask] for t in TOKENS}
+    )
+    blind_test_ds = ChanWaveDataset(
+        X_all[blind_test_mask], y_3d_all[blind_test_mask], y_6d_all[blind_test_mask], y_12d_all[blind_test_mask], y_exp_all[blind_test_mask],
+        timestamps[blind_test_mask],
+        {t: close_prices[t][blind_test_mask] for t in TOKENS},
+        {t: open_prices[t][blind_test_mask] for t in TOKENS}
+    )
+
+    metadata = {
+        'tokens': TOKENS,
+        'feature_cols': feature_cols,
+        'num_features': num_features,
+        'lookback_len': lookback_len,
+        'scaler_mean': scaler_mean,
+        'scaler_std': scaler_std,
+        'timestamps': timestamps,
+        'val_timestamps': timestamps[val_mask],
+        'blind_test_timestamps': timestamps[blind_test_mask]
+    }
+
+    return train_ds, val_ds, blind_test_ds, metadata
+
+
 if __name__ == '__main__':
-    train_ds, val_ds, blind_test_ds, meta = prepare_crypto_datasets()
-    print("3-Way Dataset Builder test passed successfully!")
+    train_ds, val_ds, blind_test_ds, meta = prepare_chan_wave_datasets(lookback_len=18)
+    print("Chan-Lun Wave Dataset Builder test passed successfully!")

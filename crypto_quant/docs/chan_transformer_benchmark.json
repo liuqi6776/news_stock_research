@@ -1,0 +1,955 @@
+{
+  "phase": "Phase 20 - Spatio-Temporal Chan-Lun Wave Transformer",
+  "evaluation_period": "2024-01-01 to 2026-03-31 (Out-of-Sample)",
+  "st_chan_transformer": {
+    "ETHUSDT": {
+      "total_return_pct": 147.67,
+      "cagr_pct": 40.4,
+      "max_drawdown_pct": -24.98,
+      "daily_sharpe": 1.28,
+      "calmar_ratio": 1.62,
+      "num_trades": 41,
+      "avg_duration_days": 4.36,
+      "win_rate_pct": 31.7,
+      "profit_factor": 2.5,
+      "cumulative_fee_drag_pct": 6.56
+    },
+    "ETHUSDT_trades_list": [
+      {
+        "entry_time": "2024-01-02 04:00:00",
+        "entry_price": 2386.42,
+        "exit_time": "2024-01-02 08:00:00",
+        "exit_price": 2385.84,
+        "net_ret": -0.18,
+        "duration_days": 0.2,
+        "reason": "CHANNEL_EXIT"
+      },
+      {
+        "entry_time": "2024-01-02 12:00:00",
+        "entry_price": 2391.24,
+        "exit_time": "2024-01-02 16:00:00",
+        "exit_price": 2357.48,
+        "net_ret": -1.57,
+        "duration_days": 0.2,
+        "reason": "CHANNEL_EXIT"
+      },
+      {
+        "entry_time": "2024-01-10 12:00:00",
+        "entry_price": 2402.21,
+        "exit_time": "2024-01-14 12:00:00",
+        "exit_price": 2538.01,
+        "net_ret": 5.44,
+        "duration_days": 4.0,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2024-02-06 16:00:00",
+        "entry_price": 2343.73,
+        "exit_time": "2024-03-05 20:00:00",
+        "exit_price": 3376.46,
+        "net_ret": 42.99,
+        "duration_days": 28.2,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2024-03-06 00:00:00",
+        "entry_price": 3553.66,
+        "exit_time": "2024-03-14 16:00:00",
+        "exit_price": 3845.81,
+        "net_ret": 7.58,
+        "duration_days": 8.7,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2024-03-31 08:00:00",
+        "entry_price": 3625.38,
+        "exit_time": "2024-04-01 08:00:00",
+        "exit_price": 3546.88,
+        "net_ret": -2.39,
+        "duration_days": 1.0,
+        "reason": "CHANNEL_EXIT"
+      },
+      {
+        "entry_time": "2024-04-08 12:00:00",
+        "entry_price": 3633.07,
+        "exit_time": "2024-04-09 16:00:00",
+        "exit_price": 3529.93,
+        "net_ret": -3.01,
+        "duration_days": 1.2,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2024-04-11 08:00:00",
+        "entry_price": 3583.4,
+        "exit_time": "2024-04-12 16:00:00",
+        "exit_price": 3440.7,
+        "net_ret": -4.16,
+        "duration_days": 1.3,
+        "reason": "CHANNEL_EXIT"
+      },
+      {
+        "entry_time": "2024-04-28 04:00:00",
+        "entry_price": 3308.86,
+        "exit_time": "2024-04-29 04:00:00",
+        "exit_price": 3177.6,
+        "net_ret": -4.14,
+        "duration_days": 1.0,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2024-05-17 16:00:00",
+        "entry_price": 3111.54,
+        "exit_time": "2024-05-29 16:00:00",
+        "exit_price": 3759.84,
+        "net_ret": 20.52,
+        "duration_days": 12.0,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2024-07-17 00:00:00",
+        "entry_price": 3444.14,
+        "exit_time": "2024-07-23 00:00:00",
+        "exit_price": 3439.61,
+        "net_ret": -0.34,
+        "duration_days": 6.0,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2024-09-20 04:00:00",
+        "entry_price": 2520.56,
+        "exit_time": "2024-09-25 20:00:00",
+        "exit_price": 2570.69,
+        "net_ret": 1.79,
+        "duration_days": 5.7,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2024-09-27 20:00:00",
+        "entry_price": 2701.38,
+        "exit_time": "2024-09-30 12:00:00",
+        "exit_price": 2628.94,
+        "net_ret": -2.86,
+        "duration_days": 2.7,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2024-10-15 12:00:00",
+        "entry_price": 2586.2,
+        "exit_time": "2024-10-21 16:00:00",
+        "exit_price": 2679.43,
+        "net_ret": 3.37,
+        "duration_days": 6.2,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2024-10-21 20:00:00",
+        "entry_price": 2680.1,
+        "exit_time": "2024-10-23 12:00:00",
+        "exit_price": 2580.94,
+        "net_ret": -3.88,
+        "duration_days": 1.7,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2024-11-06 20:00:00",
+        "entry_price": 2687.25,
+        "exit_time": "2024-11-14 16:00:00",
+        "exit_price": 3077.68,
+        "net_ret": 14.21,
+        "duration_days": 7.8,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2024-11-21 20:00:00",
+        "entry_price": 3347.0,
+        "exit_time": "2024-11-26 16:00:00",
+        "exit_price": 3296.33,
+        "net_ret": -1.83,
+        "duration_days": 4.8,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2024-11-27 12:00:00",
+        "entry_price": 3460.43,
+        "exit_time": "2024-12-03 16:00:00",
+        "exit_price": 3571.8,
+        "net_ret": 2.93,
+        "duration_days": 6.2,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2024-12-04 12:00:00",
+        "entry_price": 3729.09,
+        "exit_time": "2024-12-09 04:00:00",
+        "exit_price": 3929.37,
+        "net_ret": 5.05,
+        "duration_days": 4.7,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2024-12-16 20:00:00",
+        "entry_price": 4056.89,
+        "exit_time": "2024-12-18 08:00:00",
+        "exit_price": 3847.33,
+        "net_ret": -5.34,
+        "duration_days": 1.5,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2025-01-03 16:00:00",
+        "entry_price": 3565.14,
+        "exit_time": "2025-01-07 16:00:00",
+        "exit_price": 3462.65,
+        "net_ret": -3.09,
+        "duration_days": 4.0,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2025-01-17 12:00:00",
+        "entry_price": 3423.25,
+        "exit_time": "2025-01-18 04:00:00",
+        "exit_price": 3384.08,
+        "net_ret": -1.31,
+        "duration_days": 0.7,
+        "reason": "CHANNEL_EXIT"
+      },
+      {
+        "entry_time": "2025-01-19 20:00:00",
+        "entry_price": 3418.93,
+        "exit_time": "2025-01-20 00:00:00",
+        "exit_price": 3215.2,
+        "net_ret": -6.12,
+        "duration_days": 0.2,
+        "reason": "CHANNEL_EXIT"
+      },
+      {
+        "entry_time": "2025-01-31 16:00:00",
+        "entry_price": 3427.65,
+        "exit_time": "2025-02-01 12:00:00",
+        "exit_price": 3252.17,
+        "net_ret": -5.29,
+        "duration_days": 0.8,
+        "reason": "CHANNEL_EXIT"
+      },
+      {
+        "entry_time": "2025-04-25 12:00:00",
+        "entry_price": 1790.49,
+        "exit_time": "2025-04-28 16:00:00",
+        "exit_price": 1763.27,
+        "net_ret": -1.67,
+        "duration_days": 3.2,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2025-05-02 00:00:00",
+        "entry_price": 1838.1,
+        "exit_time": "2025-05-05 00:00:00",
+        "exit_price": 1808.86,
+        "net_ret": -1.75,
+        "duration_days": 3.0,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2025-05-08 04:00:00",
+        "entry_price": 1901.09,
+        "exit_time": "2025-05-17 00:00:00",
+        "exit_price": 2537.13,
+        "net_ret": 33.25,
+        "duration_days": 8.8,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2025-05-22 04:00:00",
+        "entry_price": 2629.24,
+        "exit_time": "2025-05-24 16:00:00",
+        "exit_price": 2555.64,
+        "net_ret": -2.97,
+        "duration_days": 2.5,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2025-05-27 12:00:00",
+        "entry_price": 2652.64,
+        "exit_time": "2025-05-30 16:00:00",
+        "exit_price": 2598.21,
+        "net_ret": -2.22,
+        "duration_days": 3.2,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2025-06-10 00:00:00",
+        "entry_price": 2680.13,
+        "exit_time": "2025-06-13 00:00:00",
+        "exit_price": 2642.66,
+        "net_ret": -1.57,
+        "duration_days": 3.0,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2025-06-30 00:00:00",
+        "entry_price": 2500.09,
+        "exit_time": "2025-06-30 04:00:00",
+        "exit_price": 2499.2,
+        "net_ret": -0.2,
+        "duration_days": 0.2,
+        "reason": "CHANNEL_EXIT"
+      },
+      {
+        "entry_time": "2025-06-30 20:00:00",
+        "entry_price": 2515.71,
+        "exit_time": "2025-07-01 00:00:00",
+        "exit_price": 2485.47,
+        "net_ret": -1.36,
+        "duration_days": 0.2,
+        "reason": "CHANNEL_EXIT"
+      },
+      {
+        "entry_time": "2025-07-02 16:00:00",
+        "entry_price": 2498.82,
+        "exit_time": "2025-07-04 16:00:00",
+        "exit_price": 2500.52,
+        "net_ret": -0.09,
+        "duration_days": 2.0,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2025-07-08 20:00:00",
+        "entry_price": 2610.61,
+        "exit_time": "2025-07-23 20:00:00",
+        "exit_price": 3587.74,
+        "net_ret": 37.18,
+        "duration_days": 15.0,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2025-07-29 08:00:00",
+        "entry_price": 3877.36,
+        "exit_time": "2025-08-01 08:00:00",
+        "exit_price": 3650.73,
+        "net_ret": -6.02,
+        "duration_days": 3.0,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2025-08-07 16:00:00",
+        "entry_price": 3837.01,
+        "exit_time": "2025-08-15 16:00:00",
+        "exit_price": 4430.87,
+        "net_ret": 15.27,
+        "duration_days": 8.0,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2025-08-22 20:00:00",
+        "entry_price": 4833.0,
+        "exit_time": "2025-08-25 08:00:00",
+        "exit_price": 4591.37,
+        "net_ret": -5.17,
+        "duration_days": 2.5,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2025-09-11 08:00:00",
+        "entry_price": 4440.4,
+        "exit_time": "2025-09-11 12:00:00",
+        "exit_price": 4429.81,
+        "net_ret": -0.4,
+        "duration_days": 0.2,
+        "reason": "CHANNEL_EXIT"
+      },
+      {
+        "entry_time": "2025-09-13 12:00:00",
+        "entry_price": 4719.53,
+        "exit_time": "2025-09-15 12:00:00",
+        "exit_price": 4530.66,
+        "net_ret": -4.17,
+        "duration_days": 2.0,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2025-10-02 16:00:00",
+        "entry_price": 4437.1,
+        "exit_time": "2025-10-07 16:00:00",
+        "exit_price": 4511.99,
+        "net_ret": 1.51,
+        "duration_days": 5.0,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2026-08-22 04:00:00",
+        "entry_price": 2515.06,
+        "exit_time": "2026-08-28 20:00:00",
+        "exit_price": 2435.68,
+        "net_ret": -3.36,
+        "duration_days": 6.7,
+        "reason": "TRAILING_STOP"
+      }
+    ],
+    "SOLUSDT": {
+      "total_return_pct": 40.68,
+      "cagr_pct": 13.62,
+      "max_drawdown_pct": -30.6,
+      "daily_sharpe": 0.54,
+      "calmar_ratio": 0.45,
+      "num_trades": 45,
+      "avg_duration_days": 3.86,
+      "win_rate_pct": 40.0,
+      "profit_factor": 1.49,
+      "cumulative_fee_drag_pct": 7.2
+    },
+    "SOLUSDT_trades_list": [
+      {
+        "entry_time": "2024-01-01 20:00:00",
+        "entry_price": 108.82,
+        "exit_time": "2024-01-03 00:00:00",
+        "exit_price": 106.72,
+        "net_ret": -2.19,
+        "duration_days": 1.2,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2024-01-28 04:00:00",
+        "entry_price": 96.65,
+        "exit_time": "2024-02-01 00:00:00",
+        "exit_price": 96.96,
+        "net_ret": 0.12,
+        "duration_days": 3.8,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2024-02-02 12:00:00",
+        "entry_price": 101.97,
+        "exit_time": "2024-02-05 00:00:00",
+        "exit_price": 95.48,
+        "net_ret": -6.55,
+        "duration_days": 2.5,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2024-02-10 08:00:00",
+        "entry_price": 108.86,
+        "exit_time": "2024-02-12 12:00:00",
+        "exit_price": 104.21,
+        "net_ret": -4.46,
+        "duration_days": 2.2,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2024-02-12 20:00:00",
+        "entry_price": 109.79,
+        "exit_time": "2024-02-16 16:00:00",
+        "exit_price": 109.67,
+        "net_ret": -0.36,
+        "duration_days": 3.8,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2024-02-28 16:00:00",
+        "entry_price": 113.08,
+        "exit_time": "2024-03-05 20:00:00",
+        "exit_price": 119.24,
+        "net_ret": 4.6,
+        "duration_days": 6.2,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2024-03-07 04:00:00",
+        "entry_price": 138.2,
+        "exit_time": "2024-03-19 12:00:00",
+        "exit_price": 177.84,
+        "net_ret": 27.79,
+        "duration_days": 12.3,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2024-03-30 08:00:00",
+        "entry_price": 195.76,
+        "exit_time": "2024-04-01 16:00:00",
+        "exit_price": 188.08,
+        "net_ret": -4.25,
+        "duration_days": 2.3,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2024-04-24 12:00:00",
+        "entry_price": 159.32,
+        "exit_time": "2024-04-24 16:00:00",
+        "exit_price": 151.51,
+        "net_ret": -5.06,
+        "duration_days": 0.2,
+        "reason": "CHANNEL_EXIT"
+      },
+      {
+        "entry_time": "2024-05-06 12:00:00",
+        "entry_price": 153.99,
+        "exit_time": "2024-05-08 00:00:00",
+        "exit_price": 148.03,
+        "net_ret": -4.04,
+        "duration_days": 1.5,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2024-05-10 04:00:00",
+        "entry_price": 153.93,
+        "exit_time": "2024-05-11 04:00:00",
+        "exit_price": 143.65,
+        "net_ret": -6.85,
+        "duration_days": 1.0,
+        "reason": "CHANNEL_EXIT"
+      },
+      {
+        "entry_time": "2024-05-16 00:00:00",
+        "entry_price": 158.52,
+        "exit_time": "2024-05-23 16:00:00",
+        "exit_price": 172.69,
+        "net_ret": 8.7,
+        "duration_days": 7.7,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2024-06-05 00:00:00",
+        "entry_price": 171.78,
+        "exit_time": "2024-06-06 20:00:00",
+        "exit_price": 169.12,
+        "net_ret": -1.76,
+        "duration_days": 1.8,
+        "reason": "CHANNEL_EXIT"
+      },
+      {
+        "entry_time": "2024-07-01 16:00:00",
+        "entry_price": 148.51,
+        "exit_time": "2024-07-03 12:00:00",
+        "exit_price": 144.07,
+        "net_ret": -3.16,
+        "duration_days": 1.8,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2024-07-18 04:00:00",
+        "entry_price": 158.93,
+        "exit_time": "2024-07-23 20:00:00",
+        "exit_price": 171.99,
+        "net_ret": 7.99,
+        "duration_days": 5.7,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2024-07-26 16:00:00",
+        "entry_price": 181.53,
+        "exit_time": "2024-07-30 12:00:00",
+        "exit_price": 181.01,
+        "net_ret": -0.48,
+        "duration_days": 3.8,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2024-08-26 04:00:00",
+        "entry_price": 160.12,
+        "exit_time": "2024-08-28 00:00:00",
+        "exit_price": 146.78,
+        "net_ret": -8.5,
+        "duration_days": 1.8,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2024-09-19 08:00:00",
+        "entry_price": 138.56,
+        "exit_time": "2024-09-22 16:00:00",
+        "exit_price": 143.12,
+        "net_ret": 3.1,
+        "duration_days": 3.3,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2024-09-23 04:00:00",
+        "entry_price": 147.73,
+        "exit_time": "2024-09-30 16:00:00",
+        "exit_price": 154.16,
+        "net_ret": 4.13,
+        "duration_days": 7.5,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2024-10-19 16:00:00",
+        "entry_price": 156.51,
+        "exit_time": "2024-10-25 20:00:00",
+        "exit_price": 167.95,
+        "net_ret": 7.06,
+        "duration_days": 6.2,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2024-10-27 16:00:00",
+        "entry_price": 175.78,
+        "exit_time": "2024-10-31 16:00:00",
+        "exit_price": 170.65,
+        "net_ret": -3.11,
+        "duration_days": 4.0,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2024-11-06 04:00:00",
+        "entry_price": 184.94,
+        "exit_time": "2024-11-24 16:00:00",
+        "exit_price": 244.18,
+        "net_ret": 31.47,
+        "duration_days": 18.5,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2025-01-02 08:00:00",
+        "entry_price": 205.91,
+        "exit_time": "2025-01-07 16:00:00",
+        "exit_price": 207.76,
+        "net_ret": 0.72,
+        "duration_days": 5.3,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2025-01-16 12:00:00",
+        "entry_price": 212.77,
+        "exit_time": "2025-01-20 04:00:00",
+        "exit_price": 241.38,
+        "net_ret": 13.29,
+        "duration_days": 3.7,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2025-01-20 08:00:00",
+        "entry_price": 261.91,
+        "exit_time": "2025-01-26 16:00:00",
+        "exit_price": 254.59,
+        "net_ret": -2.98,
+        "duration_days": 6.3,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2025-04-24 08:00:00",
+        "entry_price": 147.16,
+        "exit_time": "2025-04-27 04:00:00",
+        "exit_price": 147.56,
+        "net_ret": 0.11,
+        "duration_days": 2.8,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2025-05-08 08:00:00",
+        "entry_price": 151.57,
+        "exit_time": "2025-05-13 04:00:00",
+        "exit_price": 166.98,
+        "net_ret": 9.98,
+        "duration_days": 4.8,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2025-05-14 08:00:00",
+        "entry_price": 181.73,
+        "exit_time": "2025-05-17 00:00:00",
+        "exit_price": 167.4,
+        "net_ret": -8.05,
+        "duration_days": 2.7,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2025-05-22 08:00:00",
+        "entry_price": 178.49,
+        "exit_time": "2025-05-25 08:00:00",
+        "exit_price": 172.35,
+        "net_ret": -3.61,
+        "duration_days": 3.0,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2025-06-10 00:00:00",
+        "entry_price": 161.16,
+        "exit_time": "2025-06-10 04:00:00",
+        "exit_price": 159.18,
+        "net_ret": -1.39,
+        "duration_days": 0.2,
+        "reason": "CHANNEL_EXIT"
+      },
+      {
+        "entry_time": "2025-06-10 12:00:00",
+        "entry_price": 160.85,
+        "exit_time": "2025-06-10 16:00:00",
+        "exit_price": 158.03,
+        "net_ret": -1.91,
+        "duration_days": 0.2,
+        "reason": "CHANNEL_EXIT"
+      },
+      {
+        "entry_time": "2025-06-10 20:00:00",
+        "entry_price": 163.61,
+        "exit_time": "2025-06-12 00:00:00",
+        "exit_price": 160.98,
+        "net_ret": -1.78,
+        "duration_days": 1.2,
+        "reason": "CHANNEL_EXIT"
+      },
+      {
+        "entry_time": "2025-06-28 20:00:00",
+        "entry_price": 150.67,
+        "exit_time": "2025-07-01 08:00:00",
+        "exit_price": 150.06,
+        "net_ret": -0.57,
+        "duration_days": 2.5,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2025-07-02 20:00:00",
+        "entry_price": 153.02,
+        "exit_time": "2025-07-04 16:00:00",
+        "exit_price": 146.56,
+        "net_ret": -4.38,
+        "duration_days": 1.8,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2025-07-10 12:00:00",
+        "entry_price": 157.66,
+        "exit_time": "2025-07-15 04:00:00",
+        "exit_price": 159.14,
+        "net_ret": 0.76,
+        "duration_days": 4.7,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2025-07-16 16:00:00",
+        "entry_price": 168.45,
+        "exit_time": "2025-07-23 20:00:00",
+        "exit_price": 188.09,
+        "net_ret": 11.44,
+        "duration_days": 7.2,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2025-08-13 00:00:00",
+        "entry_price": 191.77,
+        "exit_time": "2025-08-15 16:00:00",
+        "exit_price": 185.55,
+        "net_ret": -3.42,
+        "duration_days": 2.7,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2025-08-23 00:00:00",
+        "entry_price": 200.69,
+        "exit_time": "2025-08-25 20:00:00",
+        "exit_price": 191.47,
+        "net_ret": -4.76,
+        "duration_days": 2.8,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2025-08-28 20:00:00",
+        "entry_price": 209.95,
+        "exit_time": "2025-08-31 20:00:00",
+        "exit_price": 204.61,
+        "net_ret": -2.72,
+        "duration_days": 3.0,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2025-09-08 12:00:00",
+        "entry_price": 214.28,
+        "exit_time": "2025-09-15 12:00:00",
+        "exit_price": 236.46,
+        "net_ret": 10.16,
+        "duration_days": 7.0,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2025-09-18 00:00:00",
+        "entry_price": 244.84,
+        "exit_time": "2025-09-19 16:00:00",
+        "exit_price": 237.54,
+        "net_ret": -3.15,
+        "duration_days": 1.7,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2025-10-05 04:00:00",
+        "entry_price": 230.91,
+        "exit_time": "2025-10-07 16:00:00",
+        "exit_price": 223.79,
+        "net_ret": -3.24,
+        "duration_days": 2.5,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2026-05-08 16:00:00",
+        "entry_price": 89.6,
+        "exit_time": "2026-05-13 16:00:00",
+        "exit_price": 90.43,
+        "net_ret": 0.75,
+        "duration_days": 5.0,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2026-08-27 08:00:00",
+        "entry_price": 101.81,
+        "exit_time": "2026-08-30 08:00:00",
+        "exit_price": 104.84,
+        "net_ret": 2.81,
+        "duration_days": 3.0,
+        "reason": "TRAILING_STOP"
+      },
+      {
+        "entry_time": "2026-08-30 16:00:00",
+        "entry_price": 106.29,
+        "exit_time": "2026-08-31 00:00:00",
+        "exit_price": 101.75,
+        "net_ret": -4.43,
+        "duration_days": 0.3,
+        "reason": "TRAILING_STOP"
+      }
+    ],
+    "PORTFOLIO_50_50": {
+      "total_return_pct": 94.57,
+      "cagr_pct": 28.28,
+      "max_drawdown_pct": -22.1,
+      "daily_sharpe": 1.08,
+      "calmar_ratio": 1.28,
+      "num_trades": 86,
+      "avg_duration_days": 4.11,
+      "win_rate_pct": 35.9,
+      "cumulative_fee_drag_pct": 13.76
+    }
+  },
+  "baselines_reference": {
+    "ETHUSDT": {
+      "buy_and_hold_return_pct": 10.24,
+      "transformer_baseline": {
+        "total_return_pct": 27.71,
+        "cagr_pct": 9.47,
+        "max_drawdown_pct": -60.63,
+        "daily_sharpe": 0.42,
+        "calmar_ratio": 0.16,
+        "num_trades": 406,
+        "avg_duration_days": 1.13,
+        "win_rate_pct": 50.0,
+        "profit_factor": 1.09,
+        "cumulative_fee_drag_pct": 64.96
+      },
+      "transformer_trial_mode": {
+        "total_return_pct": 21.87,
+        "cagr_pct": 7.59,
+        "max_drawdown_pct": -27.63,
+        "daily_sharpe": 0.51,
+        "calmar_ratio": 0.27,
+        "num_trades": 406,
+        "avg_duration_days": 1.13,
+        "win_rate_pct": 50.0,
+        "profit_factor": 1.09,
+        "cumulative_fee_drag_pct": 64.96
+      },
+      "donchian_turtle": {
+        "total_return_pct": 95.96,
+        "cagr_pct": 28.24,
+        "max_drawdown_pct": -29.73,
+        "daily_sharpe": 1.08,
+        "calmar_ratio": 0.95,
+        "num_trades": 27,
+        "avg_duration_days": 5.24,
+        "win_rate_pct": 33.3,
+        "profit_factor": 2.46,
+        "cumulative_fee_drag_pct": 4.32
+      },
+      "bollinger_breakout": {
+        "total_return_pct": 105.63,
+        "cagr_pct": 30.55,
+        "max_drawdown_pct": -29.46,
+        "daily_sharpe": 1.16,
+        "calmar_ratio": 1.04,
+        "num_trades": 28,
+        "avg_duration_days": 5.2,
+        "win_rate_pct": 46.4,
+        "profit_factor": 2.71,
+        "cumulative_fee_drag_pct": 4.48
+      },
+      "structural_trend_macro": {
+        "total_return_pct": 122.41,
+        "cagr_pct": 34.39,
+        "max_drawdown_pct": -25.64,
+        "daily_sharpe": 1.29,
+        "calmar_ratio": 1.34,
+        "num_trades": 28,
+        "avg_duration_days": 5.2,
+        "win_rate_pct": 46.4,
+        "profit_factor": 2.71,
+        "cumulative_fee_drag_pct": 4.48
+      }
+    },
+    "SOLUSDT": {
+      "buy_and_hold_return_pct": 0.09,
+      "transformer_baseline": {
+        "total_return_pct": 26.87,
+        "cagr_pct": 9.2,
+        "max_drawdown_pct": -72.52,
+        "daily_sharpe": 0.43,
+        "calmar_ratio": 0.13,
+        "num_trades": 378,
+        "avg_duration_days": 1.27,
+        "win_rate_pct": 54.2,
+        "profit_factor": 1.11,
+        "cumulative_fee_drag_pct": 60.48
+      },
+      "transformer_trial_mode": {
+        "total_return_pct": 39.53,
+        "cagr_pct": 13.11,
+        "max_drawdown_pct": -24.88,
+        "daily_sharpe": 0.84,
+        "calmar_ratio": 0.53,
+        "num_trades": 378,
+        "avg_duration_days": 1.27,
+        "win_rate_pct": 54.2,
+        "profit_factor": 1.11,
+        "cumulative_fee_drag_pct": 60.48
+      },
+      "donchian_turtle": {
+        "total_return_pct": 39.61,
+        "cagr_pct": 13.13,
+        "max_drawdown_pct": -35.1,
+        "daily_sharpe": 0.56,
+        "calmar_ratio": 0.37,
+        "num_trades": 30,
+        "avg_duration_days": 4.81,
+        "win_rate_pct": 46.7,
+        "profit_factor": 1.65,
+        "cumulative_fee_drag_pct": 4.8
+      },
+      "bollinger_breakout": {
+        "total_return_pct": 68.98,
+        "cagr_pct": 21.41,
+        "max_drawdown_pct": -32.03,
+        "daily_sharpe": 0.76,
+        "calmar_ratio": 0.67,
+        "num_trades": 34,
+        "avg_duration_days": 4.96,
+        "win_rate_pct": 44.1,
+        "profit_factor": 1.87,
+        "cumulative_fee_drag_pct": 5.44
+      },
+      "structural_trend_macro": {
+        "total_return_pct": 75.41,
+        "cagr_pct": 23.09,
+        "max_drawdown_pct": -29.45,
+        "daily_sharpe": 0.81,
+        "calmar_ratio": 0.78,
+        "num_trades": 34,
+        "avg_duration_days": 4.96,
+        "win_rate_pct": 44.1,
+        "profit_factor": 1.87,
+        "cumulative_fee_drag_pct": 5.44
+      }
+    },
+    "portfolio_50_50_structural_trend": {
+      "total_return_pct": 105.1,
+      "cagr_pct": 30.42,
+      "max_drawdown_pct": -22.19,
+      "daily_sharpe": 1.27,
+      "calmar_ratio": 1.37,
+      "total_trades": 62
+    }
+  }
+}
