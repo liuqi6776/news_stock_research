@@ -48,3 +48,9 @@ qr*.png
 *qrcode*.png
 .*lark*.png
 .*qr*.png
+
+# Paper Signal Service Runtime
+paper_state/*
+!paper_state/.gitkeep
+paper_logs/*
+!paper_logs/.gitkeep

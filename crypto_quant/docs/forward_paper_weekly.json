@@ -1,0 +1,54 @@
+{
+  "code_commit": "4c7dfcdcfa4830cba1f0e0c2e6f991797a11c82a",
+  "config_hash": "99db491d174b6345f8db15af6587d13cab35ea63043e101a32cc7b5b06431f73",
+  "experiment_id": "exp_paper_structural_trend_v1",
+  "forward_trading_stats": {
+    "assumed_friction_bps": 8.0,
+    "missed_bars": 0,
+    "state_mismatches": 0,
+    "total_closed_trades": 1,
+    "total_service_errors": 0,
+    "total_service_runs": 3
+  },
+  "portfolio": {
+    "equity": 1.0,
+    "max_drawdown_pct": 0.0,
+    "peak": 1.0,
+    "return_pct": 0.0
+  },
+  "recent_closed_trades": [
+    {
+      "bar_time": "2026-09-14 00:00:00+00:00",
+      "code_commit": "4c7dfcdcfa4830cba1f0e0c2e6f991797a11c82a",
+      "config_hash": "99db491d174b6345f8db15af6587d13cab35ea63043e101a32cc7b5b06431f73",
+      "event_id": "b7228e7906039789",
+      "event_type": "POSITION_CLOSED",
+      "payload": {
+        "entry_price": 2561.4775439999994,
+        "exit_price": 2475.11832,
+        "gross_ret": -0.033714612963111734,
+        "net_ret": -0.03531461296311173,
+        "reason": "TRAILING_STOP"
+      },
+      "symbol": "ETHUSDT",
+      "timestamp_utc": "2026-09-16T05:32:19.790911+00:00"
+    }
+  ],
+  "report_generated_utc": "2026-09-16T05:32:24.746148+00:00",
+  "sleeves": {
+    "ETH": {
+      "drawdown_pct": 0.0,
+      "equity": 1.0,
+      "position": 0,
+      "position_size": 0.0,
+      "total_fees": 0.0
+    },
+    "SOL": {
+      "drawdown_pct": 0.0,
+      "equity": 1.0,
+      "position": 0,
+      "position_size": 0.0,
+      "total_fees": 0.0
+    }
+  }
+}
