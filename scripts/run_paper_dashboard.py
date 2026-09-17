@@ -127,7 +127,9 @@ def main():
     if not args.no_ngrok:
         ngrok_proc, public_url = start_ngrok_tunnel(args.port)
 
-    effective_url = public_url if public_url else f"http://127.0.0.1:{args.port}"
+    effective_url = public_url if (public_url and public_url.startswith("https://")) else "https://percolate-zipfile-corned.ngrok-free.dev"
+    import crypto_quant.paper.web_server as ws_module
+    ws_module.PUBLIC_TUNNEL_URL = effective_url
     print(f"\n[DASHBOARD READY] Accessible URL: {effective_url}")
     print(f"[LOCAL ACCESS]   Local URL:      http://127.0.0.1:{args.port}\n")
 

@@ -17,6 +17,7 @@ from email.mime.text import MIMEText
 import threading
 import time as time_lib
 from typing import Any, Dict, Optional
+import urllib.request
 
 from flask import Flask, jsonify, render_template_string, request
 import pandas as pd
@@ -61,7 +62,46 @@ PORT: int = 8088
 
 app = Flask(__name__)
 service_lock = threading.Lock()
+DEFAULT_PUBLIC_URL: str = "https://percolate-zipfile-corned.ngrok-free.dev"
 PUBLIC_TUNNEL_URL: Optional[str] = None
+
+
+def get_effective_public_url() -> str:
+    """
+    Dynamically resolves external public HTTPS URL:
+    1. Query local ngrok API (http://127.0.0.1:4040/api/tunnels).
+    2. Check PUBLIC_TUNNEL_URL global.
+    3. Check PUBLIC_TUNNEL_URL or NGROK_URL in environment.
+    4. Fallback to DEFAULT_PUBLIC_URL ('https://percolate-zipfile-corned.ngrok-free.dev').
+    Never falls back to localhost / 127.0.0.1 for external reports.
+    """
+    global PUBLIC_TUNNEL_URL
+    # 1. Try querying local ngrok inspection endpoint
+    try:
+        req = urllib.request.Request("http://127.0.0.1:4040/api/tunnels", headers={"User-Agent": "PaperRunner/1.0"})
+        with urllib.request.urlopen(req, timeout=1.5) as resp:
+            data = json.loads(resp.read().decode())
+            for t in data.get("tunnels", []):
+                u = t.get("public_url", "")
+                if u.startswith("https://"):
+                    PUBLIC_TUNNEL_URL = u
+                    return u
+    except Exception:
+        pass
+
+    # 2. Check global
+    if PUBLIC_TUNNEL_URL and PUBLIC_TUNNEL_URL.startswith("https://"):
+        return PUBLIC_TUNNEL_URL
+
+    # 3. Check environment
+    env_url = os.getenv("PUBLIC_TUNNEL_URL") or os.getenv("NGROK_URL")
+    if env_url and env_url.startswith("https://"):
+        PUBLIC_TUNNEL_URL = env_url
+        return env_url
+
+    # 4. Fallback to known persistent dev domain
+    PUBLIC_TUNNEL_URL = DEFAULT_PUBLIC_URL
+    return DEFAULT_PUBLIC_URL
 
 
 # ============================================================================
@@ -120,7 +160,7 @@ def get_current_dashboard_data() -> Dict[str, Any]:
         "timestamp_bjt": now_bjt.strftime("%Y-%m-%d %H:%M:%S BJT"),
         "experiment_id": EXPERIMENT_ID,
         "strategy_name": STRATEGY_NAME,
-        "public_url": PUBLIC_TUNNEL_URL or "http://127.0.0.1:8088",
+        "public_url": get_effective_public_url(),
         "capital": {
             "initial_usdt": round(INITIAL_CAPITAL_USDT, 2),
             "current_equity_usdt": round(equity_usdt, 2),
@@ -222,6 +262,9 @@ def send_email_report(to_email: str = DEFAULT_RECIPIENT, is_manual: bool = False
             </div>
 
             <a href="{pub_url}" class="btn" target="_blank">👉 点击打开实时在线监控网页 (随时刷新数据)</a>
+            <div style="text-align: center; margin-top: -6px; margin-bottom: 20px; font-size: 13px; color: #8b949e;">
+                外部公网访问直达地址: <a href="{pub_url}" target="_blank" style="color: #58a6ff; text-decoration: underline; word-break: break-all;">{pub_url}</a>
+            </div>
 
             <div class="stat-grid">
                 <div class="card">
