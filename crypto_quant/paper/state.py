@@ -51,6 +51,9 @@ class PaperStrategyState:
     total_slippage: float = 0.0
     bars_in_position: int = 0
     last_signal: Optional[str] = None
+    last_bar_open: Optional[float] = None
+    last_bar_pos: float = 0.0
+    last_bar_turnover: float = 0.0
     version: str = STRATEGY_NAME
 
     def to_dict(self) -> Dict[str, Any]:
@@ -80,6 +83,9 @@ class PortfolioPaperState:
     portfolio_peak: float = INITIAL_EQUITY
     portfolio_drawdown: float = 0.0
     last_update_time: Optional[str] = None
+    service_first_start_time: Optional[str] = None
+    forward_start_bar_time: Optional[str] = None
+    recovery_replay_completed: bool = False
     code_commit: str = field(default_factory=get_code_commit)
     config_hash: str = CONFIG_HASH
 
@@ -91,6 +97,9 @@ class PortfolioPaperState:
             "portfolio_peak": float(self.portfolio_peak),
             "portfolio_drawdown": float(self.portfolio_drawdown),
             "last_update_time": self.last_update_time,
+            "service_first_start_time": self.service_first_start_time,
+            "forward_start_bar_time": self.forward_start_bar_time,
+            "recovery_replay_completed": bool(self.recovery_replay_completed),
             "code_commit": self.code_commit,
             "config_hash": self.config_hash,
         }
@@ -109,6 +118,9 @@ class PortfolioPaperState:
             portfolio_peak=float(d["portfolio_peak"]),
             portfolio_drawdown=float(d["portfolio_drawdown"]),
             last_update_time=d.get("last_update_time"),
+            service_first_start_time=d.get("service_first_start_time"),
+            forward_start_bar_time=d.get("forward_start_bar_time"),
+            recovery_replay_completed=bool(d.get("recovery_replay_completed", False)),
             code_commit=d.get("code_commit", "UNKNOWN"),
             config_hash=d.get("config_hash", "UNKNOWN"),
         )
@@ -117,7 +129,9 @@ class PortfolioPaperState:
         """
         Saves portfolio state atomically using a temporary file and atomic replace.
         Guarantees that state is never partially written or corrupted by interruption.
+        Includes exponential backoff retry for Windows file locking contention.
         """
+        import time
         target_path = Path(filepath)
         target_path.parent.mkdir(parents=True, exist_ok=True)
 
@@ -135,8 +149,16 @@ class PortfolioPaperState:
                 f.flush()
                 os.fsync(f.fileno())
 
-            # Atomic rename / replace
-            os.replace(temp_path, target_path)
+            # Atomic rename / replace with Windows retry logic
+            max_retries = 5
+            for attempt in range(max_retries):
+                try:
+                    os.replace(temp_path, target_path)
+                    break
+                except PermissionError as pe:
+                    if attempt == max_retries - 1:
+                        raise pe
+                    time.sleep(0.05 * (2 ** attempt))
         except Exception as e:
             if os.path.exists(temp_path):
                 try:

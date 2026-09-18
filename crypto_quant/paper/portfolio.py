@@ -6,7 +6,7 @@ Tracks normalized equity for ETH sleeve, SOL sleeve, and 50/50 portfolio.
 Maintains both independent sleeve accounting and shared cash accounting.
 """
 
-from typing import Any, Dict, Tuple
+from typing import Any, Dict, Optional, Tuple
 from crypto_quant.paper.config import INITIAL_EQUITY, ONE_WAY_COST, PORTFOLIO_WEIGHTS
 from crypto_quant.paper.state import PaperStrategyState, PortfolioPaperState
 
@@ -29,22 +29,33 @@ class PaperPortfolioManager:
     def update_single_asset_bar_return(
         self,
         state: PaperStrategyState,
-        curr_open: float,
-        next_open: float,
-        turnover: float,
+        curr_open: float = 0.0,
+        next_open: Optional[float] = None,
+        turnover: float = 0.0,
         funding_pnl: float = 0.0,
+        holding_pos: Optional[float] = None,
+        curr_close: Optional[float] = None,
     ) -> float:
         """
-        Updates single-asset equity causally from open_k to open_k+1:
-        bar_ret = active_pos * (open_{k+1} / open_k - 1) - turnover * cost + funding
+        Updates single-asset equity causally from open_k to open_{k+1}:
+        bar_ret = active_pos * (open_{k+1} / open_k - 1) - turnover * cost + funding_pnl
+        Supports both (curr_open, next_open) call style and incremental step style.
         """
-        if curr_open <= 0 or next_open <= 0:
-            return 0.0
+        if next_open is not None:
+            # Called with (curr_open, next_open)
+            open_to_open_ret = (next_open / (curr_open + 1e-8)) - 1.0 if curr_open > 0 else 0.0
+            active_pos = float(state.position) * float(state.position_size) if holding_pos is None else holding_pos
+            fric_turnover = turnover
+        else:
+            # Called incrementally using state.last_bar_open
+            if state.last_bar_open is not None and state.last_bar_open > 0:
+                open_to_open_ret = (curr_open / (state.last_bar_open + 1e-8)) - 1.0
+            else:
+                open_to_open_ret = 0.0
+            active_pos = state.last_bar_pos if holding_pos is None else holding_pos
+            fric_turnover = state.last_bar_turnover if turnover == 0.0 else turnover
 
-        open_to_open_ret = (next_open / curr_open) - 1.0
-        active_pos = float(state.position) * float(state.position_size)
-        friction = turnover * self.one_way_cost
-
+        friction = fric_turnover * self.one_way_cost
         bar_ret = active_pos * open_to_open_ret - friction + funding_pnl
 
         # Compound total equity
@@ -58,6 +69,15 @@ class PaperPortfolioManager:
             state.drawdown = (state.total_equity - state.peak_equity) / state.peak_equity
         else:
             state.drawdown = 0.0
+
+        # Update realized vs unrealized equity
+        if state.position == 0:
+            state.realized_equity = state.total_equity
+            state.unrealized_pnl = 0.0
+        else:
+            ref_c = curr_close if curr_close is not None else curr_open
+            if state.entry_price > 0:
+                state.unrealized_pnl = state.position_size * ((ref_c / state.entry_price) - 1.0)
 
         return bar_ret
 

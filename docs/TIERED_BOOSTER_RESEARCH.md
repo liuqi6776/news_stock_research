@@ -1,79 +1,101 @@
-# Research Report: Tiered Multi-Indicator Entry & Profit-Protected Free-Roll Booster Strategy
-# 科研报告：多指标阶梯建仓与零本金风险浮盈加速器（Booster）策略体系
+# Research Report: Score-Based Initial Position Sizing & Floating-Profit Booster Strategy
+# 科研报告：基于技术共振评分的初始定额与浮盈加码（Booster）策略体系
 
 ---
 
-## 1. Executive Summary / 核心执行总结
+## 1. Executive Summary & Methodological Rectification / 核心执行总结与方法论整改
 
-In response to the imperative of maximizing quantitative returns while strictly preventing catastrophic drawdowns and liquidation risks, this research explores a **Tiered Multi-Indicator Pyramiding Architecture with a Profit-Protected Free-Roll Booster**.
+In response to rigorous quantitative audit and peer review, this research presents the corrected implementation of **Score-Based Initial Position Sizing with a Conditional Floating-Profit Booster**.
 
-为了在严格防范穿仓与深度回撤的前提下最大化量化收益，本研究提出了**“多指标分批阶梯建仓 + 零本金风险浮盈加速器（Free-Roll Booster）”**的系统化交易架构。
+为落实量化评审与严谨审计要求，本研究对原策略体系进行了全面整改，确立了**“基于技术共振评分的初始定额配置（Score-Based Initial Position Sizing）与受控浮盈加码（Conditional Booster）”**的真实量化模型。
 
-### Strict Methodological Discipline / 严格方法论纪律:
-1. **No Data Snooping on 2026 (严禁对 2026 年数据调参)**:
-   - **In-Sample Exploration Period (样本内探索集)**: `2021-01-01` to `2025-12-31` (5 full years, spanning bull/bear/consolidation cycles).
-   - **Blind Out-of-Sample Test Period (盲测样本外验证集)**: `2026-01-01` to `2026-09-01` (completely untouched during research, evaluated once at the end).
-2. **Free-Roll Capital Guarantee (零本金风险保本铁律)**:
-   - The **Booster multiplier (1.25x ~ 1.50x)** is **NEVER** activated on initial entry.
-   - It can **ONLY** be activated when the monotonic trailing stop has moved **above the average entry price** ($\text{Trailing Stop} \ge \text{Entry Price}$) and floating profit exceeds $1.2 \times \text{ATR}$.
-   - **Worst-case scenario**: If the market suffers an immediate flash collapse after the Booster triggers, the position exits at the trailing stop at break-even or micro-profit. **The initial 10,000 USDT principal is mathematically protected from loss.**
+### Methodological Corrections & Invariants / 方法论整改要点与硬性约束:
+1. **Accurate Terminology (精准命名，拒绝误导)**:
+   - Renamed from "Tiered Entry" to **"Score-Based Initial Position Sizing"**.
+   - Sizing is determined purely at initial entry based on indicator confluence ($S \in \{1, 2, 3\}$), sizing the trade as $0.33\text{x}$, $0.67\text{x}$, or $1.00\text{x}$. It is **not** cost-averaging or pyramiding into losers.
+   - 更名为“基于技术共振评分的初始定额”，仅在建仓首根 K 线根据评分确定单笔初始仓位，绝非逆势补仓或向下摊平。
+
+2. **Eradication of "Zero Principal Risk" Claims (彻底剔除“零本金风险”宣称)**:
+   - **Market Risk Acknowledgment**: When a position is scaled up with booster leverage, the average entry price ($P_{\text{avg}}$) increases. In the event of overnight gap-downs, illiquidity, or severe slippage, the market can gap directly through the trailing stop, incurring losses to accumulated profit and potentially principal.
+   - **Protection Invariant**: The booster is strictly **rejected** if the new volume-weighted average entry price would be greater than or equal to the trailing stop:
+     $$\text{new\_avg\_entry} < \text{trailing\_stop}$$
+   - **Default Safety**: `use_booster` is set to `False` by default across all production and paper execution configurations.
+   - 彻底删除“绝对保本/零本金风险”表述。加仓必拉高均价，遭遇跳空或滑点将击穿止损。代码中强制实施“加仓后新均价必须严格低于止损线”的硬核校验，且默认全面禁用 Booster。
+
+3. **Data Period Qualification (纠正 2026 年数据集定性)**:
+   - **In-Sample Development Period (样本内开发集)**: `2021-01-01` to `2025-12-31` (5 full years).
+   - **Post-hoc Recent Stress-Test Period (事后近期压力测试期)**: `2026-01-01` to `2026-09-01`. Because 2026 data has been repeatedly evaluated and analyzed during iterative development, it is designated as a post-hoc stress test rather than an untouched validation benchmark.
+   - 2026 年数据因在多轮迭代中被测试与审阅，定性更正为“事后近期压力测试集”，不再宣称为纯盲测。
+
+4. **Calmar Ratio Metric Integrity (修正 Calmar 比率公式)**:
+   - Correct formula enforced: $\text{Calmar} = \text{CAGR} / |\text{Max Drawdown}|$.
+   - A negative CAGR correctly yields a negative Calmar ratio, reflecting actual strategy underperformance.
+   - 修复 Calmar 公式，亏损区间真实反映为负值。
 
 ---
 
-## 2. Multi-Indicator Tiered Architecture / 多指标阶梯建仓架构
+## 2. Quantitative Architecture / 策略量化架构
 
-Instead of binary all-in execution, initial position sizing is partitioned into discrete stages based on indicator confirmation score $S \in \{1, 2, 3\}$:
+### 2.1 Confluence Score & Initial Sizing / 技术共振评分与初始仓位
 
-| Tier / 阶梯 | Position / 仓位 | Trigger Condition / 触发条件 | Quantitative Logic / 逻辑目的 |
+| Confluence Score / 评分 | Initial Size / 初始仓位 | Entry Criteria / 触发条件 | Quantitative Logic / 逻辑目的 |
 | :---: | :---: | :--- | :--- |
-| **Tier 1 (试盘仓)** | **0.33x (1/3)** | **Score = 1 (仅突破上轨)**<br>• $Close > \text{BB}_{\text{Upper}}(120)$<br>• EMA200 / 动量未确认 | **防假突破探路**：加密市场多数假突破在弱势区发生。仅以 1/3 仓位试水，单笔打损仅亏本金 ~2.7%，本金磨损极小。 |
-| **Tier 2 (顺势仓)** | **0.67x (2/3)** | **Score = 2 (突破 + 宏观共振)**<br>• $Close > \text{BB}_{\text{Upper}}(120)$<br>• $Close > \text{EMA}_{200}$ | **宏观顺势确认**：大级别趋势与局部突破同向，胜率大幅提高，加仓至 2/3 仓位。 |
-| **Tier 3 (全额仓)** | **1.00x (全仓)** | **Score = 3 (全指标三星共振)**<br>• 突破布林上轨 + 站在 EMA200 之上<br>• 短期 $\text{EMA}_{20} > \text{EMA}_{60}$ 且 $\text{RSI} > 50$ | **全技术面共振**：所有短期和中长期技术指标全线翻多，直接建满 1.0x 标准无杠杆仓位。 |
-| **Tier 4 (Booster)** | **1.25x ~ 1.50x** | **【浮盈安全垫加码】**<br>1. $\text{Trailing Stop} \ge \text{Avg Entry Price}$<br>2. 浮盈 $\ge 1.2 \times \text{ATR}$<br>3. $Close > \text{EMA}_{200}$ 且 $50 < \text{RSI} < 75$ | **零本金风险的超级推进器**！<br>借用市场的利润去博取杠杆收益。行情单边暴涨时收益翻倍，行情反转时保本出场。 |
+| **Score = 1** | **0.33x (1/3 探路仓)** | $Close > \text{BB}_{\text{Upper}}(120)$ only | **防假突破**：仅布林上轨突破，均线或动量尚未确认。以 1/3 仓位试探，大幅降低假突破震荡磨损。 |
+| **Score = 2** | **0.67x (2/3 顺势仓)** | $Close > \text{BB}_{\text{Upper}}(120)$ and $Close > \text{EMA}_{200}$ | **宏观顺势**：突破与宏观牛市共振，提高仓位至 2/3。 |
+| **Score = 3** | **1.00x (全额标准仓)** | Above conditions + $\text{EMA}_{20} > \text{EMA}_{60}$ and $\text{RSI} > 50$ | **全维度共振**：趋势、均线多头排列、动量全线合力，满额标准仓 1.0x 运行。 |
+
+### 2.2 Conditional Floating-Profit Booster / 条件浮盈加码机制
+
+The booster expands leverage (e.g. 1.25x or 1.50x) **only** when all of the following conditions are met simultaneously:
+1. $\text{Trailing Stop} \ge \text{Average Entry Price}$
+2. Floating Profit Cushion $\ge 1.2 \times \text{ATR}$
+3. Macro alignment: $Close > \text{EMA}_{200}$ and $\text{RSI} > 50$
+4. **Mandatory Invariant**: $\text{new\_avg\_entry} < \text{trailing\_stop}$ (if adding size pushes average cost to or above the stop, the booster is rejected).
 
 ---
 
-## 3. Empirical Results Across Assets / 多资产实证对比
+## 3. Empirical Multi-Asset Benchmark Results / 多资产实证审计数据
 
-*Data Source: Binance 4h closed candles (2021-01-01 to 2026-09-01), 8 bps friction, 6% APR borrow interest on leveraged capital.*
+*Friction: 8 bps one-way transaction cost and slippage; 6% APR financing interest on leveraged exposure; 8h Binance funding rates included.*
 
 ### 3.1 Ethereum (ETHUSDT)
-- **In-Sample (2021–2025, 5 Full Years)**:
-  - Baseline (All-In 1.0x / 0.5x): Total Return **+349.01%** | MDD **-37.36%** | Sharpe **1.05**
-  - Tiered 1/3 $\to$ 2/3 $\to$ 1.0x: Total Return **+356.06%** | MDD **-36.90%** | Sharpe **1.07**
-  - **Tiered + Booster 1.25x**: Total Return **+429.31% (+80.3% 增益)** | MDD -45.45% | Sharpe **1.03** | 29 Boosters
-  - **Tiered + Booster 1.50x**: Total Return **+528.74% (+179.7% 增益)** | MDD -51.71% | Sharpe **1.02** | 29 Boosters
-- **Blind Out-of-Sample (2026-01-01 to 2026-09-01, Untouched)**:
-  - Baseline: -8.22% | MDD -25.29% | Sharpe -0.39
-  - Tiered + Booster 1.25x: -8.52% | MDD -27.42% | Sharpe -0.34 (夏普有所改善)
-  - Tiered + Booster 1.50x: **-7.94%** | MDD -28.77% | Sharpe **-0.24 (盲测期表现优于原版基准)**
+| Configuration | IS Ret (2021-2025) | IS MDD | IS Sharpe | IS Calmar | 2026 Stress Ret | 2026 MDD | 2026 Sharpe | 2026 Calmar | Boosters |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Baseline (1.0x / 0.5x)** | +349.01% | -37.36% | 1.05 | 0.94 | -8.22% | -25.29% | -0.39 | -0.48 | 0 / 60 |
+| **Score-Based Sizing** | +356.06% | -36.90% | 1.07 | 0.96 | -8.25% | -25.32% | -0.44 | -0.48 | 0 / 60 |
+| **Score Sizing + Booster 1.25x** | +412.48% | -42.67% | 1.03 | 0.91 | -10.39% | -28.69% | -0.49 | -0.53 | 27 / 60 |
+| **Score Sizing + Booster 1.50x** | +527.46% | -47.57% | 1.04 | 0.94 | -9.02% | -29.22% | -0.34 | -0.45 | 25 / 60 |
 
 ### 3.2 Solana (SOLUSDT)
-- **In-Sample (2021–2025)**:
-  - Baseline: +4357.68% | MDD -44.22% | Sharpe 1.54
-  - **Tiered + Booster 1.50x**: **+5219.23% (+861.5% 额外暴利)** | MDD -53.54% | Sharpe 1.40 | 38 Boosters
-- **Blind Out-of-Sample (2026)**:
-  - Baseline: +11.14% | MDD -20.55% | Sharpe 0.75
-  - Tiered (1/3 $\to$ 2/3 $\to$ 1.0x): **+12.40%** | MDD **-19.65%** | Sharpe **0.84 (全面优于基准)**
-  - Tiered + Booster 1.25x: **+12.49%** | MDD -20.54% | Sharpe 0.76
-  - Tiered + Booster 1.50x: **+12.43%** | MDD -21.46% | Sharpe 0.70
+| Configuration | IS Ret (2021-2025) | IS MDD | IS Sharpe | IS Calmar | 2026 Stress Ret | 2026 MDD | 2026 Sharpe | 2026 Calmar | Boosters |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Baseline (1.0x / 0.5x)** | +4357.68% | -44.22% | 1.54 | 2.56 | +11.14% | -20.55% | 0.75 | 0.84 | 0 / 70 |
+| **Score-Based Sizing** | +3267.35% | -43.53% | 1.49 | 2.34 | **+12.40%** | **-19.65%** | **0.84** | **0.99** | 0 / 70 |
+| **Score Sizing + Booster 1.25x** | +4046.82% | -45.06% | 1.43 | 2.45 | +13.07% | -20.54% | 0.80 | 1.00 | 35 / 70 |
+| **Score Sizing + Booster 1.50x** | +4181.52% | -45.08% | 1.40 | 2.48 | +8.01% | -22.50% | 0.53 | 0.55 | 33 / 70 |
 
 ### 3.3 Binance Coin (BNBUSDT)
-- **In-Sample (2021–2025)**:
-  - Baseline: +1123.87% | MDD -34.13% | Sharpe 1.18
-  - **Tiered + Booster 1.25x**: **+1778.23% (+654.4% 增益)** | MDD -37.74% | Sharpe **1.20** | 33 Boosters
-  - **Tiered + Booster 1.50x**: **+2542.12% (+1418.2% 增益)** | MDD -41.32% | Sharpe **1.19** | 33 Boosters
-- **Blind Out-of-Sample (2026)**:
-  - Baseline: -2.88% | MDD -16.84%
-  - Tiered 1/3 $\to$ 2/3 $\to$ 1.0x: -2.86% | MDD -16.77%
+| Configuration | IS Ret (2021-2025) | IS MDD | IS Sharpe | IS Calmar | 2026 Stress Ret | 2026 MDD | 2026 Sharpe | 2026 Calmar | Boosters |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Baseline (1.0x / 0.5x)** | +1123.87% | -34.13% | 1.18 | 1.91 | -2.88% | -16.84% | -0.21 | -0.26 | 0 / 64 |
+| **Score-Based Sizing** | +1138.03% | -34.13% | 1.19 | 1.93 | -2.86% | -16.77% | -0.21 | -0.25 | 0 / 64 |
+| **Score Sizing + Booster 1.25x** | +1603.92% | -37.74% | 1.17 | 1.99 | -3.01% | -17.61% | -0.20 | -0.25 | 32 / 64 |
+| **Score Sizing + Booster 1.50x** | +2093.55% | -41.32% | 1.15 | 2.05 | -2.63% | -18.01% | -0.15 | -0.22 | 32 / 64 |
 
 ---
 
-## 4. Key Takeaways & Recommendations / 核心结论与配置建议
+## 4. Key Findings & Recommendations / 核心结论与部署建议
 
-1. **Why the Booster Multiplier Works (为什么 Booster 能够两全其美)**:
-   - Ordinary leverage kills traders during whipsaws because they enter with high leverage on bar 1.
-   - The Free-Roll Booster delays leverage until the trade is already a confirmed runaway winner with capital mathematically insulated by the ratchet trailing stop.
-2. **Recommended Parameter Configuration (推荐配置)**:
-   - **For 10,000 USDT Base Capital**: Set Booster Leverage to **`1.25x` (Conservative / 稳健推荐)** or **`1.50x` (Aggressive / 进攻推荐)**.
-   - Never exceed `2.0x`.
+1. **Booster Reality & Downside / Booster 的真实代价**:
+   - While Booster improves in-sample returns on ETH (+527% vs +349%) and BNB (+2093% vs +1123%), it expands maximum drawdown from -37% to -47% on ETH and from -34% to -41% on BNB.
+   - During the 2026 choppy stress period, Booster configurations suffered deeper drawdowns on ETH (-29.2% vs -25.3%).
+   - Booster 绝非免费午餐。加仓显著放大了回撤深度，在 2026 震荡市表现弱于未加仓版本。
+
+2. **Score-Based Initial Sizing Outperformed on SOL / SOL 标的上评分定额表现优异**:
+   - On SOLUSDT during the 2026 stress period, Score-Based Sizing achieved higher returns (**+12.40%** vs +11.14%), lower maximum drawdown (**-19.65%** vs -20.55%), and higher Sharpe (**0.84** vs 0.75).
+   - In accordance with the audit directive, this variant is isolated in an independent forward paper experiment (`exp_paper_sol_score_sizing`) without contaminating the primary Pure Structural Trend baseline.
+   - SOL 上的分档探路定额有效抑制了假突破磨损，已建立独立实验进行前向观察，绝不污染主实验。
+
+3. **Operational Recommendation / 生产上线建议**:
+   - Primary Paper Service: Enforce `use_booster = False`.
+   - Real automatic trading remains strictly disabled (`ENABLE_REAL_ORDERS = False`).

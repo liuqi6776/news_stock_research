@@ -37,6 +37,11 @@ from crypto_quant.paper.strategy import StructuralTrendPaperStrategy
 import crypto_quant.paper.config as paper_config
 
 
+class UnrecoverableDataGapError(Exception):
+    """Raised when a gap in 4h klines exceeds the fetch window or cannot be reconciled causally."""
+    pass
+
+
 class PaperService:
     """
     Continuous, idempotent, restart-safe Paper Signal Service.
@@ -46,6 +51,7 @@ class PaperService:
         self,
         state_path: Union[str, Path] = STATE_PATH,
         journal_path: Union[str, Path] = JOURNAL_PATH,
+        snapshot_path: Optional[Union[str, Path]] = None,
         symbols: Optional[List[str]] = None,
         one_way_cost: float = ONE_WAY_COST,
         dry_run: bool = False,
@@ -58,13 +64,14 @@ class PaperService:
 
         self.state_path = Path(state_path)
         self.journal_path = Path(journal_path)
+        self.snapshot_path = Path(snapshot_path) if snapshot_path else Path(paper_config.STATUS_SNAPSHOT_PATH)
         self.symbols = symbols or SYMBOLS
         self.one_way_cost = one_way_cost
         self.dry_run = dry_run
 
         self.fetcher = MarketDataFetcher()
         self.journal = PaperJournal(self.journal_path)
-        self.monitor = PaperMonitor()
+        self.monitor = PaperMonitor(snapshot_path=self.snapshot_path)
         self.execution = PaperExecutionEngine(one_way_cost=self.one_way_cost)
         self.strategy = StructuralTrendPaperStrategy()
         self.portfolio_manager = PaperPortfolioManager(one_way_cost=self.one_way_cost)
@@ -90,8 +97,13 @@ class PaperService:
         4. Replays unprocessed gap bars in strict chronological order.
         5. Atomically saves state and records audit events.
         """
+        from datetime import datetime, timezone
+
         self.journal.log_event(EventTypes.SERVICE_STARTED, {"dry_run": self.dry_run})
         self.load_or_initialize_state()
+
+        if self.state.service_first_start_time is None:
+            self.state.service_first_start_time = datetime.now(timezone.utc).isoformat()
 
         candles_data: Dict[str, pd.DataFrame] = {}
         candles_info: Dict[str, Any] = {"latest_closed_bars": {}, "data_age_seconds": {}}
@@ -113,6 +125,11 @@ class PaperService:
                 symbol=sym,
                 bar_time=latest_bar_time,
             )
+
+        # Establish forward boundary at initial run if not set
+        if self.state.forward_start_bar_time is None:
+            common_latest = min([str(candles_data[s].index[-1]) for s in self.symbols])
+            self.state.forward_start_bar_time = common_latest
 
         # Process each symbol through incremental state machine
         processed_counts = {}
@@ -152,11 +169,21 @@ class PaperService:
         last_proc_time = state.last_processed_bar_time
 
         if last_proc_time is None:
-            # First run: warmup is required. We take all bars from minimum_warmup_bars to end
+            # First run: warmup is required. We take all bars from minimum_warmup_bars - 1 to end
             unprocessed_idx = full_df.index[self.strategy.minimum_warmup_bars - 1 :]
         else:
             last_ts = pd.to_datetime(last_proc_time)
             unprocessed_idx = full_df.index[full_df.index > last_ts]
+
+            if len(unprocessed_idx) > 0:
+                expected_next = last_ts + pd.Timedelta(hours=4)
+                first_unprocessed = unprocessed_idx[0]
+                if first_unprocessed != expected_next:
+                    raise UnrecoverableDataGapError(
+                        f"Unrecoverable downtime gap detected for {symbol}: "
+                        f"last processed bar was {last_ts}, expected next bar is {expected_next}, "
+                        f"but received {first_unprocessed}. State advance blocked."
+                    )
 
         if len(unprocessed_idx) == 0:
             # Idempotent skip
@@ -179,10 +206,12 @@ class PaperService:
     ) -> None:
         """
         Executes a single closed bar step causally:
-        1. Fills any existing pending order at this bar's OPEN.
-        2. Evaluates strategy at this bar's CLOSE.
-        3. Generates any new pending order to be filled at next bar's OPEN.
-        4. Updates state.
+        1. Evaluates open-to-open return for position held from previous bar.
+        2. Fills any existing pending order at this bar's OPEN.
+        3. Updates single asset equity, fees, and realized PnL.
+        4. Evaluates strategy at this bar's CLOSE.
+        5. Generates any new pending order to be filled at next bar's OPEN.
+        6. Updates state.
         """
         bar_loc = full_df.index.get_loc(current_bar_time)
         bar_series = full_df.iloc[bar_loc]
@@ -190,8 +219,24 @@ class PaperService:
         curr_close = float(bar_series["close"])
         bar_time_str = str(current_bar_time)
 
+        # Classify as RECOVERY_REPLAY vs TRUE_FORWARD
+        is_recovery = False
+        if self.state.forward_start_bar_time is not None:
+            is_recovery = (bar_time_str < self.state.forward_start_bar_time)
+        if not is_recovery:
+            self.state.recovery_replay_completed = True
+
         # -------------------------------------------------------------
-        # STEP 1: Execute Pending Order at curr_open
+        # STEP 1: Update equity from previous completed bar interval
+        # -------------------------------------------------------------
+        self.portfolio_manager.update_single_asset_bar_return(
+            state=state,
+            curr_open=curr_open,
+            curr_close=curr_close,
+        )
+
+        # -------------------------------------------------------------
+        # STEP 2: Execute Pending Order at curr_open
         # -------------------------------------------------------------
         turnover = 0.0
         if state.pending_order is not None:
@@ -200,7 +245,7 @@ class PaperService:
 
             self.journal.log_event(
                 EventTypes.ORDER_FILLED,
-                fill.to_dict(),
+                {**fill.to_dict(), "is_recovery_replay": is_recovery},
                 symbol=symbol,
                 bar_time=bar_time_str,
             )
@@ -209,30 +254,31 @@ class PaperService:
                 turnover = p_order.quantity_fraction
                 state.position = 1
                 state.position_size = p_order.quantity_fraction
-                state.entry_price = fill.simulated_fill_price
+                state.entry_price = curr_open
                 state.entry_time = bar_time_str
                 state.highest_price_since_entry = curr_close
                 state.trailing_stop_price = float(p_order.metadata.get("initial_stop", curr_close * 0.95))
                 state.bars_in_position = 0
                 self.journal.log_event(
                     EventTypes.POSITION_OPENED,
-                    {"entry_price": state.entry_price, "size": state.position_size},
+                    {"entry_price": state.entry_price, "size": state.position_size, "is_recovery_replay": is_recovery},
                     symbol=symbol,
                     bar_time=bar_time_str,
                 )
             elif p_order.side == "SELL":
                 turnover = state.position_size
-                gross_ret = (fill.simulated_fill_price / (state.entry_price + 1e-8)) - 1.0
+                gross_ret = (curr_open / (state.entry_price + 1e-8)) - 1.0
                 net_ret = gross_ret - 2.0 * self.one_way_cost
 
                 self.journal.log_event(
                     EventTypes.POSITION_CLOSED,
                     {
-                        "exit_price": fill.simulated_fill_price,
+                        "exit_price": curr_open,
                         "entry_price": state.entry_price,
                         "gross_ret": gross_ret,
                         "net_ret": net_ret,
                         "reason": p_order.reason,
+                        "is_recovery_replay": is_recovery,
                     },
                     symbol=symbol,
                     bar_time=bar_time_str,
@@ -249,13 +295,20 @@ class PaperService:
             state.pending_order = None
 
         # -------------------------------------------------------------
-        # STEP 2: Evaluate Strategy at bar CLOSE
+        # STEP 3: Record interval state for the upcoming bar
+        # -------------------------------------------------------------
+        state.last_bar_open = curr_open
+        state.last_bar_pos = float(state.position) * float(state.position_size)
+        state.last_bar_turnover = turnover
+
+        # -------------------------------------------------------------
+        # STEP 4: Evaluate Strategy at bar CLOSE
         # -------------------------------------------------------------
         history_df = full_df.iloc[: bar_loc + 1]
         signal, order_details, ind = self.strategy.evaluate_bar(history_df, state)
 
         # -------------------------------------------------------------
-        # STEP 3: Emit New Pending Order for Next Bar OPEN
+        # STEP 5: Emit New Pending Order for Next Bar OPEN
         # -------------------------------------------------------------
         if signal == "BUY" and order_details is not None:
             order = self.execution.create_order(
@@ -271,13 +324,13 @@ class PaperService:
             state.last_signal = "BUY"
             self.journal.log_event(
                 EventTypes.SIGNAL_CREATED,
-                {"signal": "BUY", "indicators": ind},
+                {"signal": "BUY", "indicators": ind, "is_recovery_replay": is_recovery},
                 symbol=symbol,
                 bar_time=bar_time_str,
             )
             self.journal.log_event(
                 EventTypes.ORDER_CREATED,
-                order.to_dict(),
+                {**order.to_dict(), "is_recovery_replay": is_recovery},
                 symbol=symbol,
                 bar_time=bar_time_str,
             )
@@ -296,13 +349,13 @@ class PaperService:
             state.last_signal = "EXIT"
             self.journal.log_event(
                 EventTypes.SIGNAL_CREATED,
-                {"signal": "EXIT", "reason": order_details["reason"]},
+                {"signal": "EXIT", "reason": order_details["reason"], "is_recovery_replay": is_recovery},
                 symbol=symbol,
                 bar_time=bar_time_str,
             )
             self.journal.log_event(
                 EventTypes.ORDER_CREATED,
-                order.to_dict(),
+                {**order.to_dict(), "is_recovery_replay": is_recovery},
                 symbol=symbol,
                 bar_time=bar_time_str,
             )
@@ -313,7 +366,14 @@ class PaperService:
         state.last_processed_bar_time = bar_time_str
         self.journal.log_event(
             EventTypes.BAR_ACCEPTED,
-            {"close": curr_close, "position": state.position, "stop": state.trailing_stop_price},
+            {
+                "close": curr_close,
+                "position": state.position,
+                "stop": state.trailing_stop_price,
+                "total_equity": state.total_equity,
+                "realized_equity": state.realized_equity,
+                "is_recovery_replay": is_recovery,
+            },
             symbol=symbol,
             bar_time=bar_time_str,
         )

@@ -1,21 +1,29 @@
 # -*- coding: utf-8 -*-
 """
-Tiered Multi-Indicator Entry & Profit-Protected Free-Roll Booster Engine (Phase 24)
-===================================================================================
-A systematic quantitative execution engine implementing staged 1/3 pyramiding and
-risk-free floating profit leverage expansion.
+Score-Based Initial Position Sizing & Floating-Profit Booster Engine (Phase 24/25)
+================================================================================
+A systematic quantitative execution engine implementing score-based initial position
+sizing and conditional floating-profit leverage expansion.
 
-Architecture:
-- Tier 1 (0.33x / 1/3 Position): Initial breakout probe (Close > 120-bar BB Upper).
-  Minimizes capital loss on false breakouts.
-- Tier 2 (0.67x / 2/3 Position): Macro trend confirmation (Close > EMA200).
-- Tier 3 (1.00x / Full Position): Multi-indicator resonance (EMA20 > EMA60 & RSI > 50).
-- Tier 4 (1.25x - 1.50x "Booster"): Accelerated free-roll leverage.
-  STRICT SAFETY ASSERTION: Activated ONLY when trailing stop >= average entry price
-  (guaranteed zero principal loss), floating profit >= 1.2 ATR, and momentum is healthy.
+Key Architecture:
+- Confluence Score 1 (0.33x / 1/3 Position): Initial breakout probe (Close > 120-bar BB Upper).
+  Minimizes capital exposure on false breakouts.
+- Confluence Score 2 (0.67x / 2/3 Position): Macro trend confirmation (Close > EMA200).
+- Confluence Score 3 (1.00x / Full Position): Multi-indicator resonance (EMA20 > EMA60 & RSI > 50).
+- Booster (1.25x - 1.50x): Conditional leverage expansion on established trends.
+
+CRITICAL RISK DISCLOSURE & INVARIANTS:
+- There is NO "zero principal risk" in leveraged trading. Adding to a position raises
+  the average entry price.
+- In rapid reversals, flash crashes, gap downs, or liquidity voids, prices can blow
+  through stop levels, resulting in loss of floating profits or principal.
+- Protection Invariant: The booster is STRICTLY REJECTED if the resulting new average
+  entry price would be greater than or equal to the current trailing stop:
+  `new_avg_entry < trailing_stop` is mandatory.
+- Default configuration disables booster (`use_booster = False`).
 """
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import Any, Dict, List, Optional, Tuple
 import numpy as np
 import pandas as pd
@@ -35,11 +43,15 @@ class TieredBoosterTrade:
     duration_days: float
     reason: str  # 'TRAILING_STOP', 'MID_EXIT'
     booster_activated: bool
+    fills: List[Dict[str, Any]] = field(default_factory=list)
+    borrowing_cost_total: float = 0.0
+    funding_cost_total: float = 0.0
+    fees_total: float = 0.0
 
 
-class TieredBoosterEngine:
+class ScoreBasedBoosterEngine:
     """
-    Tiered Pyramiding & Free-Roll Booster Trading Engine.
+    Score-Based Initial Position Sizing & Conditional Floating-Profit Booster Engine.
     """
 
     def __init__(
@@ -52,7 +64,7 @@ class TieredBoosterEngine:
         fee_and_slippage: float = 0.0008,
         borrow_rate_apr: float = 0.06,
         use_tiered_entry: bool = True,
-        use_booster: bool = True,
+        use_booster: bool = False,
         min_warmup_bars: int = 200,
     ):
         self.lookback_bars = lookback_bars
@@ -115,7 +127,7 @@ class TieredBoosterEngine:
         funding_rate: Optional[pd.Series] = None,
     ) -> Tuple[pd.Series, List[TieredBoosterTrade], pd.Series]:
         """
-        Executes causal backtest with discrete tier transitions and financing costs.
+        Executes causal backtest with discrete initial sizing tiers and financing costs.
         """
         ind = self.compute_indicators(df)
         closes = df['close'].values
@@ -141,6 +153,11 @@ class TieredBoosterEngine:
         bars_in_pos = 0
         booster_activated = False
 
+        trade_fills: List[Dict[str, Any]] = []
+        trade_borrow_cost = 0.0
+        trade_funding_cost = 0.0
+        trade_fees = 0.0
+
         for i in range(self.min_warmup_bars, n - 1):
             c = closes[i]
             h = highs[i]
@@ -157,8 +174,8 @@ class TieredBoosterEngine:
             if cur_size > 0:
                 price_ret = (nxt_o - opens[i]) / opens[i]
                 funding_ret = -fund_vals[i] if (idx[i].hour % 8 == 0) else 0.0
-                borrow_cost = -borrow_rate_4h * max(0.0, cur_size - 1.0)
-                bar_rets[i] = cur_size * price_ret + cur_size * funding_ret + borrow_cost
+                borrow_cost = borrow_rate_4h * max(0.0, cur_size - 1.0)
+                bar_rets[i] = cur_size * price_ret + cur_size * funding_ret - borrow_cost
                 positions[i] = cur_size
                 bars_in_pos += 1
                 highest_price = max(highest_price, h)
@@ -166,6 +183,11 @@ class TieredBoosterEngine:
                 # Monotonic ratchet stop
                 new_stop = highest_price - self.atr_trailing_mult * cur_atr
                 trailing_stop = max(trailing_stop, new_stop)
+
+                # Accumulate trade carry costs
+                if idx[i].hour % 8 == 0:
+                    trade_funding_cost += cur_size * fund_vals[i]
+                trade_borrow_cost += borrow_cost
 
             # Check exit triggers
             exit_trade = False
@@ -180,9 +202,19 @@ class TieredBoosterEngine:
 
             if exit_trade:
                 # Deduct exit friction
-                bar_rets[i] -= cur_size * self.fee_and_slippage
+                exit_fee = cur_size * self.fee_and_slippage
+                bar_rets[i] -= exit_fee
+                trade_fees += exit_fee
+                trade_fills.append({
+                    "time": idx[i + 1],
+                    "price": float(nxt_o),
+                    "size": float(cur_size),
+                    "type": "EXIT",
+                    "fee": float(exit_fee),
+                })
                 gross_ret = nxt_o / avg_entry_price - 1.0
-                net_ret = gross_ret - 2.0 * self.fee_and_slippage
+                size_denom = cur_size if cur_size > 0 else 1.0
+                net_ret = gross_ret - (trade_fees + trade_borrow_cost + trade_funding_cost) / size_denom
                 trades.append(
                     TieredBoosterTrade(
                         token=token,
@@ -197,15 +229,23 @@ class TieredBoosterEngine:
                         duration_days=bars_in_pos * 4.0 / 24.0,
                         reason=exit_reason,
                         booster_activated=booster_activated,
+                        fills=trade_fills,
+                        borrowing_cost_total=trade_borrow_cost,
+                        funding_cost_total=trade_funding_cost,
+                        fees_total=trade_fees,
                     )
                 )
                 cur_size = 0.0
                 in_pos = 0
                 bars_in_pos = 0
                 booster_activated = False
+                trade_fills = []
+                trade_borrow_cost = 0.0
+                trade_funding_cost = 0.0
+                trade_fees = 0.0
                 continue
 
-            # Position scaling logic
+            # Position sizing logic
             if cur_size == 0:
                 # Initial entry check
                 if c > cur_bb_u:
@@ -235,15 +275,22 @@ class TieredBoosterEngine:
                     trailing_stop = c - self.atr_trailing_mult * cur_atr
                     bars_in_pos = 0
                     booster_activated = False
-                    bar_rets[i] -= size * self.fee_and_slippage
+                    entry_fee = size * self.fee_and_slippage
+                    bar_rets[i] -= entry_fee
+                    trade_fees = entry_fee
+                    trade_borrow_cost = 0.0
+                    trade_funding_cost = 0.0
+                    trade_fills = [{
+                        "time": idx[entry_idx],
+                        "price": float(nxt_o),
+                        "size": float(size),
+                        "type": "INITIAL_ENTRY",
+                        "fee": float(entry_fee),
+                    }]
 
             else:
-                # In position: check for Free-Roll Booster activation
+                # In position: check for Booster activation
                 if self.use_booster and not booster_activated and self.booster_leverage > cur_size:
-                    # STRICT ZERO-PRINCIPAL-RISK CRITERIA:
-                    # 1. Trailing stop is already at or above average entry price (guaranteed break-even)
-                    # 2. Profit cushion >= 1.2 * ATR
-                    # 3. Macro bull (c > EMA200) and healthy momentum (RSI > 50)
                     stop_protects_principal = (trailing_stop >= avg_entry_price)
                     profit_cushion = (c - avg_entry_price) >= 1.2 * cur_atr
                     trend_healthy = (c > cur_ema200) and (cur_rsi > 50)
@@ -252,10 +299,28 @@ class TieredBoosterEngine:
                         target_size = self.booster_leverage
                         add_size = target_size - cur_size
                         if add_size > 0:
-                            bar_rets[i] -= add_size * self.fee_and_slippage
-                            avg_entry_price = (avg_entry_price * cur_size + nxt_o * add_size) / target_size
-                            cur_size = target_size
-                            in_pos = 4
-                            booster_activated = True
+                            new_avg_entry = (avg_entry_price * cur_size + nxt_o * add_size) / target_size
+                            # STRICT INVARIANT: new average entry price must remain strictly below trailing stop
+                            if new_avg_entry < trailing_stop:
+                                add_fee = add_size * self.fee_and_slippage
+                                bar_rets[i] -= add_fee
+                                trade_fees += add_fee
+                                trade_fills.append({
+                                    "time": idx[i + 1],
+                                    "price": float(nxt_o),
+                                    "size": float(add_size),
+                                    "type": "BOOSTER_ADD",
+                                    "fee": float(add_fee),
+                                })
+                                avg_entry_price = new_avg_entry
+                                cur_size = target_size
+                                in_pos = 4
+                                booster_activated = True
 
         return pd.Series(bar_rets, index=idx), trades, pd.Series(positions, index=idx)
+
+
+# Aliases for backwards compatibility and clarity
+TieredBoosterEngine = ScoreBasedBoosterEngine
+ScoreBasedInitialSizingEngine = ScoreBasedBoosterEngine
+

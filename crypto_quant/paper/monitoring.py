@@ -27,12 +27,15 @@ class PaperMonitor:
     def generate_snapshot(
         self,
         portfolio_state: PortfolioPaperState,
-        latest_candles_info: Dict[str, Any],
+        latest_candles_info: Optional[Dict[str, Any]] = None,
         last_error: Optional[str] = None,
     ) -> Dict[str, Any]:
         """
         Builds structured operational status dictionary.
         """
+        if latest_candles_info is None:
+            latest_candles_info = {}
+
         eth_s = portfolio_state.eth_state
         sol_s = portfolio_state.sol_state
 
@@ -85,11 +88,33 @@ class PaperMonitor:
             "service_status": "HEALTHY" if last_error is None else "DEGRADED",
         }
 
-        # Atomically write snapshot
-        tmp_path = self.snapshot_path.with_suffix(".json.tmp")
-        with open(tmp_path, "w", encoding="utf-8") as f:
-            json.dump(snapshot, f, indent=2, sort_keys=True)
-        tmp_path.replace(self.snapshot_path)
+        # Atomically write snapshot with unique tempfile, fsync, and Windows retry
+        import uuid
+        import os
+        import time
+
+        tmp_path = self.snapshot_path.parent / f"{self.snapshot_path.name}.{uuid.uuid4().hex[:8]}.tmp"
+        try:
+            with open(tmp_path, "w", encoding="utf-8") as f:
+                json.dump(snapshot, f, indent=2, sort_keys=True)
+                f.flush()
+                os.fsync(f.fileno())
+
+            max_retries = 15
+            for attempt in range(max_retries):
+                try:
+                    os.replace(tmp_path, self.snapshot_path)
+                    break
+                except (PermissionError, OSError) as pe:
+                    if attempt == max_retries - 1:
+                        raise pe
+                    time.sleep(0.008 + 0.004 * attempt)
+        finally:
+            if tmp_path.exists():
+                try:
+                    tmp_path.unlink()
+                except Exception:
+                    pass
 
         return snapshot
 

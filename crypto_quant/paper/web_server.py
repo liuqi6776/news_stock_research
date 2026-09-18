@@ -57,12 +57,13 @@ from crypto_quant.paper.strategy import StructuralTrendPaperStrategy
 # CONSTANTS & CAPITAL CONFIGURATION
 # ============================================================================
 INITIAL_CAPITAL_USDT: float = 10000.0  # 10,000 USDT base capital
-DEFAULT_RECIPIENT: str = "568701293@qq.com"
-PORT: int = 8088
+DEFAULT_RECIPIENT: str = os.getenv("PAPER_EMAIL_RECIPIENT", "")
+DEFAULT_PUBLIC_URL: str = os.getenv("PAPER_PUBLIC_URL", "")
+BIND_HOST: str = os.getenv("BIND_HOST", "127.0.0.1")
+PORT: int = int(os.getenv("PORT", "8088"))
 
 app = Flask(__name__)
 service_lock = threading.Lock()
-DEFAULT_PUBLIC_URL: str = "https://percolate-zipfile-corned.ngrok-free.dev"
 PUBLIC_TUNNEL_URL: Optional[str] = None
 
 
@@ -72,8 +73,7 @@ def get_effective_public_url() -> str:
     1. Query local ngrok API (http://127.0.0.1:4040/api/tunnels).
     2. Check PUBLIC_TUNNEL_URL global.
     3. Check PUBLIC_TUNNEL_URL or NGROK_URL in environment.
-    4. Fallback to DEFAULT_PUBLIC_URL ('https://percolate-zipfile-corned.ngrok-free.dev').
-    Never falls back to localhost / 127.0.0.1 for external reports.
+    4. Fallback to DEFAULT_PUBLIC_URL if configured, else localhost.
     """
     global PUBLIC_TUNNEL_URL
     # 1. Try querying local ngrok inspection endpoint
@@ -99,9 +99,11 @@ def get_effective_public_url() -> str:
         PUBLIC_TUNNEL_URL = env_url
         return env_url
 
-    # 4. Fallback to known persistent dev domain
-    PUBLIC_TUNNEL_URL = DEFAULT_PUBLIC_URL
-    return DEFAULT_PUBLIC_URL
+    # 4. Fallback to configured default or local host
+    if DEFAULT_PUBLIC_URL:
+        PUBLIC_TUNNEL_URL = DEFAULT_PUBLIC_URL
+        return DEFAULT_PUBLIC_URL
+    return f"http://{BIND_HOST}:{PORT}"
 
 
 # ============================================================================
@@ -521,9 +523,16 @@ def api_refresh():
 
 @app.route("/api/send_email", methods=["POST"])
 def api_send_email():
-    """Manual endpoint to test sending report email."""
+    """Restricted manual endpoint to test sending report email (localhost callers only)."""
+    client_ip = request.remote_addr
+    if client_ip not in ("127.0.0.1", "localhost", "::1"):
+        return jsonify({"success": False, "error": "Forbidden: /api/send_email restricted to localhost callers"}), 403
+
     req_data = request.get_json(silent=True) or {}
-    recipient = req_data.get("email", DEFAULT_RECIPIENT)
+    recipient = req_data.get("email") or DEFAULT_RECIPIENT
+    if not recipient:
+        return jsonify({"success": False, "error": "No recipient specified and PAPER_EMAIL_RECIPIENT not set"}), 400
+
     success = send_email_report(to_email=recipient, is_manual=True)
     return jsonify({"success": success, "recipient": recipient})
 
@@ -535,7 +544,7 @@ def background_morning_scheduler():
     """
     Background worker that runs daily at 08:02 Beijing Time (00:02 UTC).
     1. Triggers data refresh.
-    2. Sends email with public URL to 568701293@qq.com.
+    2. Sends email with public URL to configured recipient.
     """
     last_sent_date = None
     print("[SCHEDULER] Daily morning scheduler initialized (Target: 08:02 BJT / 00:02 UTC)...")
@@ -553,7 +562,8 @@ def background_morning_scheduler():
                     with service_lock:
                         service = PaperService()
                         service.run_once()
-                    send_email_report(to_email=DEFAULT_RECIPIENT, is_manual=False)
+                    if DEFAULT_RECIPIENT:
+                        send_email_report(to_email=DEFAULT_RECIPIENT, is_manual=False)
                     last_sent_date = current_date_str
         except Exception as e:
             print(f"[SCHEDULER ERROR] {e}")
@@ -571,8 +581,8 @@ def start_server(port: int = PORT, public_url: Optional[str] = None):
     scheduler_thread = threading.Thread(target=background_morning_scheduler, daemon=True)
     scheduler_thread.start()
 
-    print(f"[DASHBOARD] Starting Paper Dashboard on port {port} (Public URL: {PUBLIC_TUNNEL_URL})...")
-    app.run(host="0.0.0.0", port=port, debug=False, use_reloader=False)
+    print(f"[DASHBOARD] Starting Paper Dashboard on {BIND_HOST}:{port} (Public URL: {PUBLIC_TUNNEL_URL or 'None'})...")
+    app.run(host=BIND_HOST, port=port, debug=False, use_reloader=False)
 
 
 if __name__ == "__main__":

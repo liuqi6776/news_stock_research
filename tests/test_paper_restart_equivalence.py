@@ -67,18 +67,20 @@ def test_restart_equivalence(tmp_path):
     # Run A: Continuous run
     state_file_a = tmp_path / "state_a.json"
     journal_file_a = tmp_path / "journal_a.jsonl"
-    service_a = PaperService(state_path=state_file_a, journal_path=journal_file_a)
+    snapshot_file_a = tmp_path / "snapshot_a.json"
+    service_a = PaperService(state_path=state_file_a, journal_path=journal_file_a, snapshot_path=snapshot_file_a)
     service_a.run_once(external_candles=candles)
     final_state_a = PortfolioPaperState.load(state_file_a)
 
     # Run B: Step-by-step with new service instance created for each bar step
     state_file_b = tmp_path / "state_b.json"
     journal_file_b = tmp_path / "journal_b.jsonl"
+    snapshot_file_b = tmp_path / "snapshot_b.json"
 
     # Step through from warmup to end
     for k in range(200, len(df) + 1):
         sub_candles = {"ETHUSDT": df.iloc[:k], "SOLUSDT": df.iloc[:k]}
-        service_b = PaperService(state_path=state_file_b, journal_path=journal_file_b)
+        service_b = PaperService(state_path=state_file_b, journal_path=journal_file_b, snapshot_path=snapshot_file_b)
         service_b.run_once(external_candles=sub_candles)
 
     final_state_b = PortfolioPaperState.load(state_file_b)
